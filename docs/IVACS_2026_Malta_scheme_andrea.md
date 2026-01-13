@@ -1,8 +1,8 @@
-# andrea_malta_2026 — Project Scheme
+# andrea_malta_2026 - Project Scheme
 
 CORPUS comprises 800 television commercials, with 100 commercials sampled per decade, sourced from YouTube compilations, segmented into individual video files. The corpus is divided into a verbal and a visual subcorpus.
 
-## Corpus Structure
+## Research Plan
 
 | Stage / Component                            | Description | Tools / Methods                                                                                                                                                                           | Output |
 |----------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|

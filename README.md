@@ -39,7 +39,9 @@ Tasks:
    - `URL`: The YouTube URL of the video containing the TV commercial
    - `Start`: The start time of the TV commercial in the video
    - `End`: The end time of the TV commercial in the video
-
+3. There may be incomplete rows in `df_tv_commercials`. For a row to be eligible to be processed, all columns except `Category`, which is optional, must be filled.
+4. Create the column `File_ID` by concatenating the `Decade` and `Sequence` columns separated by an underscore for each eligible row. Use `tv_commercial_` as the prefix. Code `Sequence` as 3-digit integer. Example: `tv_commercial_1950_001`
+5..
 . The script should accept a list of video URLs and a list of time ranges for slicing, and output the sliced videos with appropriate naming conventions.
 
 ## Phase 1 - Data Collection

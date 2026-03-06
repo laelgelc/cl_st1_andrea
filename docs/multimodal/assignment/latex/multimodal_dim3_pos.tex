@@ -1,0 +1,202 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[aspectratio=169]{article}   
+%\documentclass[aspectratio=169,dvipsnames]{beamer}   %  dvipsnames: for predefined color names
+
+% TYPESET WITH LUALATEX BECAUSE OF USEPACKAGE{EMOJI}
+% CHOOSE LUALATEX IN THE DROPDOWN ABOVE, TO THE RIGHT OF THE TYPESET BUTTON
+
+\usepackage{emoji}
+%\usepackage{fdsymbol}  %conflicts with package emoji, use one or the other
+
+\usepackage{adjustbox} % for shifting tables to the left and cutting down the blank space
+
+\usepackage{url} % to format URLs correctly in the bibliography
+%\usepackage{hyperref} % to make the URLs clickable
+
+\usepackage{float} % to control the location of figures:
+%[H]: Place the float exactly "here" (within the text) where it's defined.
+%[h]: Place the float approximately "here" (within the text) where it's defined.
+%[t]: Place the float at the "top" of the page.
+%[b]: Place the float at the "bottom" of the page.
+%[p]: Place the float on a "separate page" dedicated to floats.
+%[!]: Override LaTeX's default float placement behavior.
+
+\usepackage{tikz}
+%\usepackage{graphicx}
+\tikzset{>=latex}  % arrow heads / tips
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}   % for boxplot
+\usepgfplotslibrary{statistics}       % for boxplot
+\usepackage[normalem]{ulem}  % for fancy underlining, etc.
+\usepackage{multicol}
+\usepackage{fancybox}  % for ovalbox
+%\usepackage{color}
+\usepackage{xcolor}% table cell colors
+\usepackage{hhline}% better horizontal lines in tabular with cellcolor
+
+\setlength{\columnsep}{0pt}  % for multicol
+
+\usepackage{longtable}
+\usepackage{pifont}
+
+\usepackage{fancyvrb}  % to center verbatim ; begin{BVerbatim}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{decorations.pathmorphing}  % clipping the bar charts
+
+\usepackage{multirow}
+
+\usepackage{forest} % for tree diagrams
+
+\usepackage{calc}   % for textwidth calculation
+\usepackage{caption}
+
+%\usepackage[natbibapa]{apacite}
+\usepackage[alf]{abntex2cite}
+\usepackage[brazilian]{babel}
+
+\newlength{\exampleindent}
+\setlength{\exampleindent}{.25in} % Adjust as needed
+
+\newcounter{examplecounter}
+\newenvironment{example}[2]
+  {\refstepcounter{examplecounter}
+   \par\noindent\hspace*{\exampleindent}
+   \minipage{\textwidth-\exampleindent}
+   \vspace{1em}
+   Example \theexamplecounter: #1
+   \vspace{.5em}
+ %  \hrule
+ %  \vspace{.5em}
+   \label{#2}}
+  {\vspace{.75em}
+  % \hrule
+   \endminipage\par}
+
+
+%\usepackage[applemac]{inputenc}
+\usepackage[utf8]{inputenc}
+
+% Set the default font to sans-serif
+\renewcommand{\rmdefault}{\sfdefault}
+
+% Title and author
+\title{Análise multimodal: Xenofobia anti-chinesa\\Dimensão 3 polo positivo}
+\author{xxx Autores separados por vírgula, com a/o líder do grupo em primeiro lugar}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este documento apresenta a análise multimodal da dimensão 3 do projeto sobre Xenofobia anti-chinesa, referente ao grupo 4 do projeto CAPES Infodemia, liderado por Cícero Soares da Silva, segundo \citeonline{kresstvl96} e \citeonline{jewittoyama01}.
+\end{abstract}
+
+\section{Dimensões}
+
+\begin{table}[H]
+\begin{tabular}{r l  p{1\textwidth}} \hline
+Dim.&Pole& Label \\ \hline
+1&pos&Manipulation during the pandemic involves protecting corrupt local officials and lawmakers, withholding access to available treatments, inflating death figures, and damaging the economy \\
+1&neg&Hashtag-driven messages ridiculing China, supporting the president's policies, and attacking his opponents \\ \hline
+2&pos&Hashtag-driven rejection of the political system, corporate media, and its association with China \\
+2&neg&Normalizing anti-Chinese sentiment by appealing to common sense while distorting Chinese culture \\  \hline
+3&pos&Hashtag-based criticism of corporate media, local officials, and China \\
+3&neg&Rejection of Chinese vaccine treatment to combat a virus originating from China \\  \hline
+4&pos&China is a dictatorship that suppresses freedom of speech  \\
+4&neg&Elected officials should reduce their salaries and reallocate the party fund budget toward COVID-19 relief efforts \\  \hline
+5&pos&Emoji and hashtag-centered outrage against the corrupt political system and calls for military overthrow of government  \\
+5&neg&Misrepresenting Chinese eating habits \\  \hline
+6&pos&Hashtag-based Anti-Chinese messages for a national and international audience  \\
+6&neg&Framing the pandemic as a hoax funded by China orchestrated by corporate media, corrupt leaders \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Postagem}
+
+\begin{center}
+Publicação do dia 1 de janeiro. Alguém tem dúvidas que o governo chinês tentou esconder isso o máximo possível? \#VirusChines \#Wuhan \#COVID19
+\end{center}
+
+\begin{figure}[H]
+
+  \centering
+  \includegraphics[width=.5\textwidth]{../input/image_f3pos_000001.jpg}  % Adjust the width as needed
+
+\end{figure}
+
+\section{Análise}
+
+\subsection{Metafunção Representacional}
+
+\begin{table}[H]
+\begin{tabular}{p{.2\textwidth} p{.2\textwidth} p{.5\textwidth}} \hline
+Estruturas & Processos \\ \hline \hline
+Narrativo  &  Ativo  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Narrativo  &  Reacional  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Conceitual  &  Classificatório  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Conceitual  &  Analítico  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Conceitual  &  Simbólico  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Metafunção Interpessoal}
+
+\begin{table}[H]
+\begin{tabular}{p{.2\textwidth} p{.2\textwidth} p{.5\textwidth}} \hline
+Características & Processos \\ \hline \hline
+Atuação da imagem e olhar  &  Ordem  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Atuação da imagem e olhar  &  Pedido  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Intimidade e distância social  &  Distância íntima  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Intimidade e distância social  &  Distância pessoal próxima  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Intimidade e distância social  &  Distância social próxima  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Intimidade e distância social  &  Distância social afastada  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Intimidade e distância social  &  Distância pública  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Perspectiva: Ângulo horizontal e envolvimento &  Ângulo frontal  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Perspectiva: Ângulo horizontal e envolvimento &  Ângulo oblíquo  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Perspectiva: Ângulo vertical e poder &  Ângulo alto  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Perspectiva: Ângulo vertical e poder &  Ângulo mediano  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Perspectiva: Ângulo vertical e poder &  Ângulo baixo  &  Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Metafunção Composicional}
+
+\begin{table}[H]
+\begin{tabular}{p{.2\textwidth} p{.2\textwidth} p{.5\textwidth}} \hline
+Sistema & Elementos \\ \hline \hline
+Valor informacional & Esquerda/direita & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Valor informacional & Em cima/Embaixo & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Saliência & Tamanho & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Saliência & Foco & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Saliência & Contraste tonal & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Saliência & Contraste de cor & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Saliência & Primeiro e segundo planos & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Enquadramento & Linhas internas & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Enquadramento & Bordas & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Modalidade}
+
+\begin{table}[H]
+\begin{tabular}{p{.2\textwidth} p{.2\textwidth} p{.5\textwidth}} \hline
+Sistema & Marcadores/elementos \\ \hline \hline
+Marcadores & Saturação de cor & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Marcadores & Contextualização & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Elementos & Pano de fundo inexistente & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Elementos & Profundidade & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+Elementos & Iluminação & Se existir, coloque aqui a análise, caso contrário, apague a linha \\ \hline
+\end{tabular}
+\end{table}
+
+
+%\bibliographystyle{apacite}  % Specify the bibliography style
+%\bibliographystyle{abntex2-alf}
+
+\bibliography{./this.bib}  % Path to your .bib file without the .bib extension
+
+\end{document}
+
+

@@ -1313,7 +1313,6 @@ The programme is considered complete when the following conditions are met:
 
 The following section can be added to project documentation.
 
-```markdown
 ## Download source videos
 
 The `download_videos.py` programme downloads the source YouTube videos listed in

@@ -46,3 +46,46 @@ Tasks:
 
 ## Phase 1 - Data Collection
 
+### Download source videos
+
+The `download_videos.py` programme downloads the source YouTube videos listed in
+`corpus/00_sources/tv_commercials.ndjson`.
+
+Each unique video is identified by the `Video ID` field and downloaded from the
+corresponding `URL`. Videos are saved as `.mp4` files named after their video ID.
+
+Default test run:
+
+```bash
+python download_videos.py
+```
+
+This processes up to 5 videos.
+
+Full run:
+
+```bash
+python download_videos.py --no-test-mode
+```
+
+Outputs are written to:
+
+```text
+corpus/01_videos/
+```
+
+The programme is safe to re-run: existing videos are skipped by default. To
+force re-downloading, use:
+
+```bash
+python download_videos.py --no-test-mode --reprocess
+```
+
+The programme writes:
+
+```text
+corpus/01_videos/download_videos.log
+corpus/01_videos/download_videos_manifest.json
+```
+
+A timestamped per-run manifest is also created for each execution.

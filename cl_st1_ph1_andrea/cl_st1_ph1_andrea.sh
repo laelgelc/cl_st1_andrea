@@ -20,6 +20,8 @@ nohup bash run_python_ec2.sh \
        --start-video-id video_0504 \
 > process_output.log 2>&1 &
 
-#
+# Split files on the indicated directory that are larger than recommended by GitHub
 python split4git.py disband corpus/01_videos --dry-run
+
+python split4git.py disband corpus/01_videos
 

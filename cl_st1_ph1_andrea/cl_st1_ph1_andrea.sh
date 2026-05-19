@@ -8,13 +8,14 @@ python download_videos.py --cookies env/cookies.txt
 # using a cookies export extension.
 
 # Full run
-python download_videos.py --no-test-mode
+python download_videos.py --no-test-mode --start-video-id video_0504
 
-python download_videos.py --no-test-mode --cookies env/cookies.txt
+python download_videos.py --no-test-mode --cookies env/cookies.txt --start-video-id video_0504
 
 # Full run on an EC2 instance
 nohup bash run_python_ec2.sh \
    download_videos.py \
        --no-test-mode \
        --cookies env/cookies.txt \
+       --start-video-id video_0504 \
 > process_output.log 2>&1 &

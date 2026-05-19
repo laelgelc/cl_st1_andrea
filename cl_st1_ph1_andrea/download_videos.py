@@ -12,14 +12,19 @@ making the script safe to re-run.
 If YouTube requires authentication or bot confirmation, pass a Netscape-format
 cookies file exported from a browser with --cookies.
 
+Use --start-video-id to start planning downloads from a specific Video ID onward.
+
 Example:
     python download_videos.py
 
 Example with cookies:
-    python download_videos.py --cookies youtube_cookies.txt
+    python download_videos.py --cookies env/cookies.txt
+
+Example starting from a specific video:
+    python download_videos.py --no-test-mode --cookies env/cookies.txt --start-video-id video_0123
 
 Full run:
-    python download_videos.py --no-test-mode --cookies youtube_cookies.txt
+    python download_videos.py --no-test-mode --cookies env/cookies.txt
 
 The script writes an append-only log file and JSON manifests describing
 run-level metadata and per-video status.
@@ -183,6 +188,12 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional Netscape-format cookies.txt file to pass to yt-dlp.",
     )
+    parser.add_argument(
+        "--start-video-id",
+        type=str,
+        default=None,
+        help="Optional Video ID from which to start planning downloads, e.g. video_0123.",
+    )
 
     return parser.parse_args()
 
@@ -266,6 +277,9 @@ def validate_args(args: argparse.Namespace) -> str:
             raise ConfigurationError(f"Cookies file does not exist: {args.cookies}")
         if not args.cookies.is_file():
             raise ConfigurationError(f"Cookies path is not a file: {args.cookies}")
+
+    if args.start_video_id is not None and not args.start_video_id.strip():
+        raise ConfigurationError("--start-video-id must not be empty when provided")
 
     yt_dlp_path = shutil.which("yt-dlp")
     if yt_dlp_path is None:
@@ -443,6 +457,7 @@ def plan_downloads(
         test_mode: bool,
         test_limit: int,
         reprocess: bool,
+        start_video_id: str | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Create skipped and planned download records.
 
@@ -454,16 +469,40 @@ def plan_downloads(
         test_mode: Whether to limit planned attempts.
         test_limit: Maximum planned attempts when test mode is active.
         reprocess: Whether existing files should be downloaded again.
+        start_video_id: Optional Video ID from which planning should start.
 
     Returns:
         A tuple containing:
         - planned download records;
         - skipped-existing result records.
+
+    Raises:
+        ConfigurationError: If start_video_id is provided but not found in videos.
     """
     planned: list[dict[str, Any]] = []
     skipped: list[dict[str, Any]] = []
 
-    for video in videos:
+    filtered_videos = videos
+
+    if start_video_id is not None:
+        clean_start_video_id = start_video_id.strip()
+        start_index = next(
+            (
+                index
+                for index, video in enumerate(videos)
+                if video["video_id"] == clean_start_video_id
+            ),
+            None,
+        )
+
+        if start_index is None:
+            raise ConfigurationError(
+                f"--start-video-id was not found in metadata: {clean_start_video_id}"
+            )
+
+        filtered_videos = videos[start_index:]
+
+    for video in filtered_videos:
         output_path = output_dir / f"{video['video_id']}.mp4"
 
         if output_path.exists() and not reprocess:
@@ -671,6 +710,7 @@ def create_manifest(
                 "max_retries": args.max_retries,
                 "retry_delay_seconds": args.retry_delay,
                 "cookies_provided": args.cookies is not None,
+                "start_video_id": args.start_video_id,
             },
             "summary": {
                 "metadata_records": metadata_records,
@@ -749,6 +789,7 @@ def log_configuration(
     logger.info("Max retries: %s", args.max_retries)
     logger.info("Retry delay seconds: %s", args.retry_delay)
     logger.info("Cookies file provided: %s", args.cookies is not None)
+    logger.info("Start video ID: %s", args.start_video_id)
     logger.info("yt-dlp version: %s", yt_dlp_version)
 
 
@@ -798,6 +839,7 @@ def main() -> int:
             test_mode=args.test_mode,
             test_limit=args.test_limit,
             reprocess=args.reprocess,
+            start_video_id=args.start_video_id,
         )
         planned_count = len(planned)
         results.extend(skipped_existing)

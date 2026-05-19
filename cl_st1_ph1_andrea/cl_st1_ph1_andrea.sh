@@ -19,3 +19,4 @@ nohup bash run_python_ec2.sh \
        --cookies env/cookies.txt \
        --start-video-id video_0504 \
 > process_output.log 2>&1 &
+

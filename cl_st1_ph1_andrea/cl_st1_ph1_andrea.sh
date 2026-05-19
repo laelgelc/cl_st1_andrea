@@ -20,3 +20,6 @@ nohup bash run_python_ec2.sh \
        --start-video-id video_0504 \
 > process_output.log 2>&1 &
 
+#
+python split4git.py disband corpus/01_videos --dry-run
+

@@ -5,7 +5,7 @@
 ### Download (`yt-dlp`) and slice (`ffmpeg`) videos
 The following commands were used to test downloading and slicing videos from YouTube.
 
-```
+```bash
 # Test 1
 ## 1. Download the whole video first
 yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" "https://youtu.be/WMIMxj0PGGY" -o "full_video_1.mp4"
@@ -40,11 +40,56 @@ Tasks:
    - `Start`: The start time of the TV commercial in the video
    - `End`: The end time of the TV commercial in the video
 3. There may be incomplete rows in `df_tv_commercials`. For a row to be eligible to be processed, all columns except `Category`, which is optional, must be filled.
-4. Create the column `File_ID` by concatenating the `Decade` and `Sequence` columns separated by an underscore for each eligible row. Use `tv_commercial_` as the prefix. Code `Sequence` as 3-digit integer. Example: `tv_commercial_1950_001`
-5..
-. The script should accept a list of video URLs and a list of time ranges for slicing, and output the sliced videos with appropriate naming conventions.
+4. Create the column `File_ID` by concatenating the `Decade` and `Sequence` columns separated by an underscore for each eligible row. Use `tv_commercial_` as the prefix. Code `Sequence` as 3-digit integer. Example: `tv_commercial_1950_001`.
+5. The script should accept a list of video URLs and a list of time ranges for slicing, and output the sliced videos with appropriate naming conventions.
 
 ## Phase 1 - Data Collection
+
+### Source metadata
+
+The source metadata for the television commercials is stored in:
+
+```text
+corpus/00_sources/
+```
+
+Current metadata files:
+
+```text
+corpus/00_sources/TV_commercials_1950_2025.xlsx
+corpus/00_sources/tv_commercials.ndjson
+corpus/00_sources/tv_commercials.xlsx
+```
+
+The original spreadsheet, `TV_commercials_1950_2025.xlsx`, is processed into a structured metadata table. The processed metadata includes:
+
+- `Decade`
+- `Sequence`
+- `Title`
+- `Category`
+- `Commercial ID`
+- `Video ID`
+- `URL`
+- `Start`
+- `End`
+- `Download Success`
+- `Reason`
+
+The processed metadata is saved in two formats:
+
+- `tv_commercials.ndjson`: newline-delimited JSON, used by the download pipeline
+- `tv_commercials.xlsx`: Excel version for inspection, sharing, and manual review
+
+`Commercial ID` identifies each individual commercial, while `Video ID` identifies each unique source YouTube video. Multiple commercials may come from the same source video.
+
+The `Download Success` column records whether the source video was successfully downloaded. The `Reason` column records either `Success` or the corresponding error message for failed downloads.
+
+Known failed source videos:
+
+| Video ID | Download Success | Reason |
+|---|---:|---|
+| `video_0300` | `False` | `Error: Unsupported URL: https://www.youtube.com/watch?v=_pHfv_HVSr&feature=youtu.be` |
+| `video_0739` | `False` | `Error: [youtube] WX1wgKCVJzc: Private video.` |
 
 ### Download source videos
 

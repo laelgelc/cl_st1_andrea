@@ -9,11 +9,17 @@ By default, the script runs in test mode and attempts only the first 5 planned
 videos. Existing output files are skipped unless --reprocess is provided,
 making the script safe to re-run.
 
+If YouTube requires authentication or bot confirmation, pass a Netscape-format
+cookies file exported from a browser with --cookies.
+
 Example:
     python download_videos.py
 
+Example with cookies:
+    python download_videos.py --cookies youtube_cookies.txt
+
 Full run:
-    python download_videos.py --no-test-mode
+    python download_videos.py --no-test-mode --cookies youtube_cookies.txt
 
 The script writes an append-only log file and JSON manifests describing
 run-level metadata and per-video status.
@@ -171,6 +177,12 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_RETRY_DELAY_SECONDS,
         help=f"Delay in seconds between retries. Default: {DEFAULT_RETRY_DELAY_SECONDS}",
     )
+    parser.add_argument(
+        "--cookies",
+        type=Path,
+        default=None,
+        help="Optional Netscape-format cookies.txt file to pass to yt-dlp.",
+    )
 
     return parser.parse_args()
 
@@ -248,6 +260,12 @@ def validate_args(args: argparse.Namespace) -> str:
 
     if args.retry_delay < 0:
         raise ConfigurationError("--retry-delay must be 0 or greater")
+
+    if args.cookies is not None:
+        if not args.cookies.exists():
+            raise ConfigurationError(f"Cookies file does not exist: {args.cookies}")
+        if not args.cookies.is_file():
+            raise ConfigurationError(f"Cookies path is not a file: {args.cookies}")
 
     yt_dlp_path = shutil.which("yt-dlp")
     if yt_dlp_path is None:
@@ -467,24 +485,37 @@ def plan_downloads(
     return planned, skipped
 
 
-def build_yt_dlp_command(url: str, output_path: Path) -> list[str]:
+def build_yt_dlp_command(
+        url: str,
+        output_path: Path,
+        cookies_path: Path | None = None,
+) -> list[str]:
     """Build the yt-dlp command for one video.
 
     Args:
         url: YouTube video URL.
         output_path: Output path for the downloaded .mp4 file.
+        cookies_path: Optional Netscape-format cookies file for authenticated downloads.
 
     Returns:
         A subprocess-safe argument list.
     """
-    return [
-        "yt-dlp",
-        "-f",
-        YT_DLP_FORMAT,
-        url,
-        "-o",
-        str(output_path),
-    ]
+    command = ["yt-dlp"]
+
+    if cookies_path is not None:
+        command.extend(["--cookies", str(cookies_path)])
+
+    command.extend(
+        [
+            "-f",
+            YT_DLP_FORMAT,
+            url,
+            "-o",
+            str(output_path),
+        ]
+    )
+
+    return command
 
 
 def download_one_video(
@@ -494,6 +525,7 @@ def download_one_video(
         timeout: int,
         max_retries: int,
         retry_delay: int = DEFAULT_RETRY_DELAY_SECONDS,
+        cookies_path: Path | None = None,
 ) -> dict[str, Any]:
     """Download one video with yt-dlp and return a structured result.
 
@@ -508,12 +540,13 @@ def download_one_video(
         timeout: Maximum seconds allowed per yt-dlp attempt.
         max_retries: Number of retries after the first failed attempt.
         retry_delay: Seconds to wait between failed attempts.
+        cookies_path: Optional Netscape-format cookies file for authenticated downloads.
 
     Returns:
         A structured result dictionary containing status, error, return code,
         timing, retry count, and command metadata.
     """
-    command = build_yt_dlp_command(url, output_path)
+    command = build_yt_dlp_command(url, output_path, cookies_path)
     start_time = utc_timestamp()
     start_monotonic = time.monotonic()
     attempts_allowed = max_retries + 1
@@ -637,6 +670,7 @@ def create_manifest(
                 "timeout_seconds": args.timeout,
                 "max_retries": args.max_retries,
                 "retry_delay_seconds": args.retry_delay,
+                "cookies_provided": args.cookies is not None,
             },
             "summary": {
                 "metadata_records": metadata_records,
@@ -714,6 +748,7 @@ def log_configuration(
     logger.info("Timeout seconds: %s", args.timeout)
     logger.info("Max retries: %s", args.max_retries)
     logger.info("Retry delay seconds: %s", args.retry_delay)
+    logger.info("Cookies file provided: %s", args.cookies is not None)
     logger.info("yt-dlp version: %s", yt_dlp_version)
 
 
@@ -791,6 +826,7 @@ def main() -> int:
                 timeout=args.timeout,
                 max_retries=args.max_retries,
                 retry_delay=args.retry_delay,
+                cookies_path=args.cookies,
             )
             results.append(result)
 

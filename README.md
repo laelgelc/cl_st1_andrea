@@ -156,3 +156,79 @@ youtube_cookies.txt
 *cookies*.txt
 env/youtube_cookies.txt
 ```
+### Extract commercial clips
+
+The `extract_commercials.py` programme extracts individual commercial clips from the downloaded source videos listed in:
+
+```text
+corpus/00_sources/tv_commercials.ndjson
+```
+
+Only rows where `Download Success` is `True` are processed.
+
+Source videos are read from:
+
+```text
+corpus/01_videos/
+```
+
+Each source video is identified by the `Video ID` field and expected to exist as:
+
+```text
+corpus/01_videos/<Video ID>.mp4
+```
+
+Commercial clips are written to:
+
+```text
+corpus/02_commercials/
+```
+
+Each clip is named after its `Commercial ID`:
+
+```text
+corpus/02_commercials/<Commercial ID>.mp4
+```
+
+The clipping command generated for each eligible row is equivalent to:
+
+```bash
+ffmpeg -y -ss "<Start>" -to "<End>" -i "corpus/01_videos/<Video ID>.mp4" -c:v libx264 -c:a aac -avoid_negative_ts make_zero "corpus/02_commercials/<Commercial ID>.mp4"
+```
+
+Default test run:
+
+```bash
+python extract_commercials.py
+```
+
+This processes up to 5 eligible commercials.
+
+Full run:
+
+```bash
+python extract_commercials.py --no-test-mode
+```
+
+To resume planning from a specific commercial ID onward, use:
+
+```bash
+python extract_commercials.py \
+  --no-test-mode \
+  --start-commercial-id tv_com_1950_25
+```
+
+The programme is safe to re-run: existing commercial clips are skipped by default. To force re-extraction, use:
+
+```bash
+python extract_commercials.py --no-test-mode --reprocess
+```
+
+The programme writes:
+
+```text
+corpus/02_commercials/extract_commercials.log
+corpus/02_commercials/extract_commercials_manifest.json
+```
+
+A timestamped per-run manifest is also created for each execution.

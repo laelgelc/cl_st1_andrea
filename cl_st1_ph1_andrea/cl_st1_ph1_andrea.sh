@@ -25,3 +25,11 @@ python split4git.py disband corpus/01_videos --dry-run
 
 python split4git.py disband corpus/01_videos
 
+# Clip individual television commercials from previously downloaded source video files.
+# By default, the script runs in test mode and attempts only the first 5 commercials
+
+python extract_commercials.py
+
+# Full run
+
+python extract_commercials.py --no-test-mode

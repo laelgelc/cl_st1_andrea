@@ -68,6 +68,17 @@ Full run:
 python download_videos.py --no-test-mode
 ```
 
+If YouTube blocks automated downloads with authentication or bot-confirmation checks,
+provide a Netscape-format cookies file exported from a signed-in browser session:
+
+```bash
+python download_videos.py \
+  --no-test-mode \
+  --cookies env/youtube_cookies.txt
+```
+
+`cookies.txt` is needed when YouTube blocks automated downloads with authentication or bot-confirmation checks; it can be obtained by signing in to YouTube in Firefox and exporting browser cookies in Netscape `cookies.txt` format using a cookies export extension.
+
 Outputs are written to:
 
 ```text
@@ -89,3 +100,14 @@ corpus/01_videos/download_videos_manifest.json
 ```
 
 A timestamped per-run manifest is also created for each execution.
+
+Security note: treat the cookies file like a password and do not commit it to Git.
+
+Also add the cookies file to `.gitignore` if it is not already ignored:
+
+```text
+cookies.txt
+youtube_cookies.txt
+*cookies*.txt
+env/youtube_cookies.txt
+```

@@ -33,3 +33,12 @@ python extract_commercials.py
 # Full run
 
 python extract_commercials.py --no-test-mode
+
+# Extract Whisper-ready audio from television commercial video files
+
+python extract_commercials_audio.py
+
+# Full run
+
+python extract_commercials_audio.py --no-test-mode
+

@@ -1,0 +1,101 @@
+[2026-05-20 14:00:08] INFO  Starting transcribe_commercials_whisper.py run_id=20260520T140008Z
+[2026-05-20 14:00:08] INFO  Metadata path: corpus/00_sources/tv_commercials.ndjson
+[2026-05-20 14:00:08] INFO  Input directory: corpus/03_audio
+[2026-05-20 14:00:08] INFO  Output directory: corpus/04_transcripts
+[2026-05-20 14:00:08] INFO  Model: backend=faster-whisper model=large-v3 device=cuda compute_type=float16
+[2026-05-20 14:00:08] INFO  Transcription: language=en task=transcribe beam_size=5 vad_filter=true
+[2026-05-20 14:00:08] INFO  Test mode: true; test_limit=5
+[2026-05-20 14:00:08] INFO  Reprocess: false
+[2026-05-20 14:00:08] INFO  Start commercial ID: None
+[2026-05-20 14:00:08] INFO  Dependency available: faster_whisper
+[2026-05-20 14:00:08] INFO  Found 960 metadata records; 958 eligible for transcription; 2 ignored; 0 invalid
+[2026-05-20 14:00:08] INFO  Planned transcriptions: 5
+[2026-05-20 14:00:09] INFO  Loading Whisper model large-v3 device=cuda compute_type=float16
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-large-v3/revision/main "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-large-v3/resolve/edaa852ec7e145841d8ffdb056a99866b5f0a478/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 14:00:10] WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/config.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-large-v3/resolve/edaa852ec7e145841d8ffdb056a99866b5f0a478/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/config.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/tokenizer.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-large-v3/resolve/edaa852ec7e145841d8ffdb056a99866b5f0a478/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-large-v3/resolve/edaa852ec7e145841d8ffdb056a99866b5f0a478/model.bin "HTTP/1.1 302 Found"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/preprocessor_config.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/tokenizer.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/preprocessor_config.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-large-v3/resolve/edaa852ec7e145841d8ffdb056a99866b5f0a478/vocabulary.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 14:00:10] INFO  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/vocabulary.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-large-v3/edaa852ec7e145841d8ffdb056a99866b5f0a478/vocabulary.json "HTTP/1.1 200 OK"
+[2026-05-20 14:00:10] INFO  HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-large-v3/xet-read-token/edaa852ec7e145841d8ffdb056a99866b5f0a478 "HTTP/1.1 200 OK"
+[2026-05-20 14:00:44] INFO  Whisper model loaded successfully
+[2026-05-20 14:00:44] INFO  Processing audio with duration 00:59.025
+[2026-05-20 14:00:45] INFO  VAD filter removed 00:00.880 of audio
+[2026-05-20 14:00:45] ERROR FAILED tv_com_1950_1 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:00:45] INFO  RETRY tv_com_1950_1 attempt=2/2
+[2026-05-20 14:00:50] INFO  Processing audio with duration 00:59.025
+[2026-05-20 14:00:50] INFO  VAD filter removed 00:00.880 of audio
+[2026-05-20 14:00:50] ERROR FAILED tv_com_1950_1 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:00:50] INFO  Processing audio with duration 01:26.030
+[2026-05-20 14:00:50] INFO  VAD filter removed 00:01.008 of audio
+[2026-05-20 14:00:50] ERROR FAILED tv_com_1950_2 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:00:50] INFO  RETRY tv_com_1950_2 attempt=2/2
+[2026-05-20 14:00:55] INFO  Processing audio with duration 01:26.030
+[2026-05-20 14:00:55] INFO  VAD filter removed 00:01.008 of audio
+[2026-05-20 14:00:55] ERROR FAILED tv_com_1950_2 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:00:55] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:00:55] INFO  VAD filter removed 00:02.741 of audio
+[2026-05-20 14:00:55] ERROR FAILED tv_com_1950_3 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:00:55] INFO  RETRY tv_com_1950_3 attempt=2/2
+[2026-05-20 14:01:01] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:01:01] INFO  VAD filter removed 00:02.741 of audio
+[2026-05-20 14:01:01] ERROR FAILED tv_com_1950_3 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:01:01] INFO  Processing audio with duration 01:31.045
+[2026-05-20 14:01:01] INFO  VAD filter removed 00:05.296 of audio
+[2026-05-20 14:01:01] ERROR FAILED tv_com_1950_4 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:01:01] INFO  RETRY tv_com_1950_4 attempt=2/2
+[2026-05-20 14:01:06] INFO  Processing audio with duration 01:31.045
+[2026-05-20 14:01:06] INFO  VAD filter removed 00:05.296 of audio
+[2026-05-20 14:01:06] ERROR FAILED tv_com_1950_4 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:01:06] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:01:06] INFO  VAD filter removed 00:01.744 of audio
+[2026-05-20 14:01:06] ERROR FAILED tv_com_1950_5 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:01:06] INFO  RETRY tv_com_1950_5 attempt=2/2
+[2026-05-20 14:01:11] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:01:12] INFO  VAD filter removed 00:01.744 of audio
+[2026-05-20 14:01:12] ERROR FAILED tv_com_1950_5 error=Library libcublas.so.12 is not found or cannot be loaded
+[2026-05-20 14:01:12] INFO  Wrote latest manifest: corpus/04_transcripts/transcribe_commercials_whisper_manifest.json
+[2026-05-20 14:01:12] INFO  Wrote per-run manifest: corpus/04_transcripts/transcribe_commercials_whisper_manifest_20260520T140008Z.json
+[2026-05-20 14:01:12] INFO  Finished run: succeeded=0 failed=5 skipped_existing=0 missing_input=0 invalid_metadata=0
+[2026-05-20 14:17:04] INFO  Starting transcribe_commercials_whisper.py run_id=20260520T141704Z
+[2026-05-20 14:17:04] INFO  Metadata path: corpus/00_sources/tv_commercials.ndjson
+[2026-05-20 14:17:04] INFO  Input directory: corpus/03_audio
+[2026-05-20 14:17:04] INFO  Output directory: corpus/04_transcripts
+[2026-05-20 14:17:04] INFO  Model: backend=faster-whisper model=large-v3 device=cuda compute_type=float16
+[2026-05-20 14:17:04] INFO  Transcription: language=en task=transcribe beam_size=5 vad_filter=true
+[2026-05-20 14:17:04] INFO  Test mode: true; test_limit=5
+[2026-05-20 14:17:04] INFO  Reprocess: false
+[2026-05-20 14:17:04] INFO  Start commercial ID: None
+[2026-05-20 14:17:04] INFO  Dependency available: faster_whisper
+[2026-05-20 14:17:04] INFO  Found 960 metadata records; 958 eligible for transcription; 2 ignored; 0 invalid
+[2026-05-20 14:17:04] INFO  Planned transcriptions: 5
+[2026-05-20 14:17:04] INFO  Loading Whisper model large-v3 device=cuda compute_type=float16
+[2026-05-20 14:17:04] INFO  HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-large-v3/revision/main "HTTP/1.1 200 OK"
+[2026-05-20 14:17:29] INFO  Whisper model loaded successfully
+[2026-05-20 14:17:29] INFO  Processing audio with duration 00:59.025
+[2026-05-20 14:17:29] INFO  VAD filter removed 00:00.880 of audio
+[2026-05-20 14:17:32] INFO  SUCCESS tv_com_1950_1 -> corpus/04_transcripts/tv_com_1950_1.txt
+[2026-05-20 14:17:32] INFO  Processing audio with duration 01:26.030
+[2026-05-20 14:17:32] INFO  VAD filter removed 00:01.008 of audio
+[2026-05-20 14:17:37] INFO  SUCCESS tv_com_1950_2 -> corpus/04_transcripts/tv_com_1950_2.txt
+[2026-05-20 14:17:37] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:17:38] INFO  VAD filter removed 00:02.741 of audio
+[2026-05-20 14:17:41] INFO  SUCCESS tv_com_1950_3 -> corpus/04_transcripts/tv_com_1950_3.txt
+[2026-05-20 14:17:41] INFO  Processing audio with duration 01:31.045
+[2026-05-20 14:17:41] INFO  VAD filter removed 00:05.296 of audio
+[2026-05-20 14:18:02] INFO  SUCCESS tv_com_1950_4 -> corpus/04_transcripts/tv_com_1950_4.txt
+[2026-05-20 14:18:02] INFO  Processing audio with duration 01:01.045
+[2026-05-20 14:18:02] INFO  VAD filter removed 00:01.744 of audio
+[2026-05-20 14:18:05] INFO  SUCCESS tv_com_1950_5 -> corpus/04_transcripts/tv_com_1950_5.txt
+[2026-05-20 14:18:05] INFO  Wrote latest manifest: corpus/04_transcripts/transcribe_commercials_whisper_manifest.json
+[2026-05-20 14:18:05] INFO  Wrote per-run manifest: corpus/04_transcripts/transcribe_commercials_whisper_manifest_20260520T141704Z.json
+[2026-05-20 14:18:05] INFO  Finished run: succeeded=5 failed=0 skipped_existing=0 missing_input=0 invalid_metadata=0

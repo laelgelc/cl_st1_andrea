@@ -232,3 +232,87 @@ corpus/02_commercials/extract_commercials_manifest.json
 ```
 
 A timestamped per-run manifest is also created for each execution.
+
+### Extract commercial audio
+
+The `extract_commercials_audio.py` programme extracts Whisper-ready audio from the individual commercial video files listed in:
+
+```text
+corpus/00_sources/tv_commercials.ndjson
+```
+
+Only rows where `Download Success` is `True` are processed.
+
+Source commercial videos are read from:
+
+```text
+corpus/02_commercials/
+```
+
+Each source commercial video is identified by the `Commercial ID` field and expected to exist as:
+
+```text
+corpus/02_commercials/<Commercial ID>.mp4
+```
+
+Audio files are written to:
+
+```text
+corpus/03_audio/
+```
+
+Each audio file is named after its `Commercial ID`:
+
+```text
+corpus/03_audio/<Commercial ID>.wav
+```
+
+The audio extraction command generated for each eligible row is equivalent to:
+
+```bash
+ffmpeg -y -i "corpus/02_commercials/<Commercial ID>.mp4" -vn -ac 1 -ar 16000 -sample_fmt s16 "corpus/03_audio/<Commercial ID>.wav"
+```
+
+The resulting audio is suitable for Whisper transcription:
+
+- WAV format;
+- mono;
+- 16 kHz;
+- signed 16-bit PCM.
+
+Default test run:
+
+```bash
+python extract_commercials_audio.py
+```
+
+This processes up to 5 eligible commercials.
+
+Full run:
+
+```bash
+python extract_commercials_audio.py --no-test-mode
+```
+
+To resume planning from a specific commercial ID onward, use:
+
+```bash
+python extract_commercials_audio.py \
+  --no-test-mode \
+  --start-commercial-id tv_com_1950_25
+```
+
+The programme is safe to re-run: existing audio files are skipped by default. To force re-extraction, use:
+
+```bash
+python extract_commercials_audio.py --no-test-mode --reprocess
+```
+
+The programme writes:
+
+```text
+corpus/03_audio/extract_commercials_audio.log
+corpus/03_audio/extract_commercials_audio_manifest.json
+```
+
+A timestamped per-run manifest is also created for each execution.

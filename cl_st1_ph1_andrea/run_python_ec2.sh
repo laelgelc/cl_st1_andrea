@@ -28,7 +28,7 @@ set -euo pipefail
 # Configuration
 # ---------------------------------------------------------------------------
 
-CONDA_ENV_NAME="my_env"  # Change to your environment name
+CONDA_ENV_NAME="whisper_lg_v3"  # Change to your environment name
 CONDA_SH="${HOME}/miniconda3/etc/profile.d/conda.sh"  # Adjust if Miniconda/conda is elsewhere
 
 # SNS topic to notify when the instance is about to be stopped.

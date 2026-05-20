@@ -316,3 +316,94 @@ corpus/03_audio/extract_commercials_audio_manifest.json
 ```
 
 A timestamped per-run manifest is also created for each execution.
+
+### Transcribe commercial audio with Whisper
+
+The `transcribe_commercials_whisper.py` programme transcribes Whisper-ready audio files listed in:
+
+```text
+corpus/00_sources/tv_commercials.ndjson
+```
+
+Only rows where `Download Success` is `True` are processed.
+
+Source audio files are read from:
+
+```text
+corpus/03_audio/
+```
+
+Each source audio file is identified by the `Commercial ID` field and expected to exist as:
+
+```text
+corpus/03_audio/<Commercial ID>.wav
+```
+
+Transcripts are written to:
+
+```text
+corpus/04_transcripts/
+```
+
+Each successful transcription writes both:
+
+```text
+corpus/04_transcripts/<Commercial ID>.txt
+corpus/04_transcripts/<Commercial ID>.json
+```
+
+The `.txt` file contains clean transcript text for corpus analysis. The `.json` file preserves segment timestamps, model configuration, and source metadata.
+
+The default transcription model is:
+
+```text
+Whisper Large v3
+```
+
+through the `faster-whisper` backend.
+
+Recommended EC2 environment:
+
+```text
+x86_64 GPU instance
+Python 3.11
+faster-whisper
+CUDA-capable NVIDIA GPU
+```
+
+Default test run:
+
+```bash
+python transcribe_commercials_whisper.py
+```
+
+This processes up to 5 eligible commercials.
+
+Full run:
+
+```bash
+python transcribe_commercials_whisper.py --no-test-mode
+```
+
+To resume planning from a specific commercial ID onward, use:
+
+```bash
+python transcribe_commercials_whisper.py \
+  --no-test-mode \
+  --start-commercial-id tv_com_1950_25
+```
+
+The programme is safe to re-run: existing complete transcript outputs are skipped by default. To force re-transcription, use:
+
+```bash
+python transcribe_commercials_whisper.py --no-test-mode --reprocess
+```
+
+The programme writes:
+
+```text
+corpus/04_transcripts/transcribe_commercials_whisper.log
+corpus/04_transcripts/transcribe_commercials_whisper_manifest.json
+```
+
+A timestamped per-run manifest is also created for each execution.

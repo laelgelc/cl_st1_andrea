@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_18",
+  "input_path": "corpus/03_audio/tv_com_2010_18.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_18.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_18.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "when you smiling you smiling yes when you laughing when you laughing yes the sun shining through",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.3,
+        "end": 31.16,
+        "text": "when you smiling you smiling yes when you laughing"
+      },
+      {
+        "id": 2,
+        "start": 31.16,
+        "end": 37.48,
+        "text": "when you laughing"
+      },
+      {
+        "id": 3,
+        "start": 37.48,
+        "end": 47.98,
+        "text": "yes the sun shining through"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 IPhone4 Apple FaceTime",
+    "decade": 2010,
+    "sequence": 18,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0580",
+    "url": "https://youtu.be/TmE6jrqqsQQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:59"
+  }
+}

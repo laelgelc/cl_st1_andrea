@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_42",
+  "input_path": "corpus/03_audio/tv_com_1980_42.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_42.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_42.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Chevy Top is taking charge.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 3.0418125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 2.78,
+        "text": "Chevy Top is taking charge."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 Chevrolet S10 Blazer Chevy tough and taking charge",
+    "decade": 1980,
+    "sequence": 42,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0264",
+    "url": "https://youtu.be/RooOSEv7ovI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:3"
+  }
+}

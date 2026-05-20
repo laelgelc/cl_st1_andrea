@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_47",
+  "input_path": "corpus/03_audio/tv_com_1990_47.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_47.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_47.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Because it's not just how a child builds a toy. It's how a toy can build a child. Wow! That's great! You've got to show your mother. Lego System, an oversized duplo from Lego.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 10.99,
+        "end": 13.69,
+        "text": "Because it's not just how a child builds a toy."
+      },
+      {
+        "id": 2,
+        "start": 14.61,
+        "end": 18.07,
+        "text": "It's how a toy can build a child."
+      },
+      {
+        "id": 3,
+        "start": 18.79,
+        "end": 20.89,
+        "text": "Wow! That's great!"
+      },
+      {
+        "id": 4,
+        "start": 21.37,
+        "end": 23.05,
+        "text": "You've got to show your mother."
+      },
+      {
+        "id": 5,
+        "start": 26.46,
+        "end": 29.02,
+        "text": "Lego System, an oversized duplo from Lego."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Lego System",
+    "decade": 1990,
+    "sequence": 47,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0370",
+    "url": "https://youtu.be/AVcoadsrtk8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

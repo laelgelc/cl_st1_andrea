@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1970_25",
+  "input_path": "corpus/03_audio/tv_com_1970_25.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_25.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_25.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "ketchup tomatoes onions mustard ketchup and mayonnaise cheese lettuce and onions onions mustard and pickles tomatoes relish and cheese at wendy's you get lots and lots of your favorite toppings anyone who offers less is giving you less of a hamburger",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 10.45,
+        "text": "ketchup tomatoes onions mustard ketchup and mayonnaise cheese lettuce and onions"
+      },
+      {
+        "id": 2,
+        "start": 10.45,
+        "end": 18.93,
+        "text": "onions mustard and pickles tomatoes relish and cheese at wendy's you get lots and lots"
+      },
+      {
+        "id": 3,
+        "start": 18.93,
+        "end": 24.17,
+        "text": "of your favorite toppings anyone who offers less is giving you less of a hamburger"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Wendy's fast food restaurant",
+    "decade": 1970,
+    "sequence": 25,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:19:05",
+    "source_end": "0:19:34"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_106",
+  "input_path": "corpus/03_audio/tv_com_2010_106.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_106.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_106.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "oh you take me i feel better again oh i feel better now",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.34,
+        "end": 14.4,
+        "text": "oh you take me i feel better again oh i feel better now"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Dawn Ultra SAving Wildlife",
+    "decade": 2010,
+    "sequence": 106,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0605",
+    "url": "https://youtu.be/OgRjhrPUEvA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

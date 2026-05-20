@@ -1,0 +1,106 @@
+{
+  "commercial_id": "tv_com_1980_82",
+  "input_path": "corpus/03_audio/tv_com_1980_82.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_82.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_82.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Introducing Razzle, the race for the word game. The moving carriage shuffles the letters. When they stop, it's a race to find a word. And they're off! Kiss! Where? K-I-S-S She made a word, so she pushes the carriage forward. And they're off again! Cage. For the word game. New from Parker Brothers.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Introducing Razzle, the race for the word game."
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 5.0,
+        "text": "The moving carriage shuffles the letters."
+      },
+      {
+        "id": 3,
+        "start": 5.0,
+        "end": 8.0,
+        "text": "When they stop, it's a race to find a word."
+      },
+      {
+        "id": 4,
+        "start": 8.0,
+        "end": 9.0,
+        "text": "And they're off!"
+      },
+      {
+        "id": 5,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "Kiss!"
+      },
+      {
+        "id": 6,
+        "start": 10.0,
+        "end": 11.0,
+        "text": "Where?"
+      },
+      {
+        "id": 7,
+        "start": 11.0,
+        "end": 12.0,
+        "text": "K-I-S-S"
+      },
+      {
+        "id": 8,
+        "start": 12.0,
+        "end": 14.0,
+        "text": "She made a word, so she pushes the carriage forward."
+      },
+      {
+        "id": 9,
+        "start": 14.0,
+        "end": 16.0,
+        "text": "And they're off again!"
+      },
+      {
+        "id": 10,
+        "start": 16.0,
+        "end": 17.0,
+        "text": "Cage."
+      },
+      {
+        "id": 11,
+        "start": 17.0,
+        "end": 27.12,
+        "text": "For the word game."
+      },
+      {
+        "id": 12,
+        "start": 27.12,
+        "end": 29.12,
+        "text": "New from Parker Brothers."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 Razzle Board Game",
+    "decade": 1980,
+    "sequence": 82,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0296",
+    "url": "https://youtu.be/4VboYHykoV8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

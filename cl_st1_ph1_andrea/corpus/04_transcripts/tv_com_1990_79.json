@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1990_79",
+  "input_path": "corpus/03_audio/tv_com_1990_79.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_79.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_79.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "he's back this time we get it stp gas treatment cleans intake valves and fuel injectors to help engines run better stp",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 13.026375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.33,
+        "end": 8.69,
+        "text": "he's back this time we get it stp gas treatment cleans intake valves"
+      },
+      {
+        "id": 2,
+        "start": 8.69,
+        "end": 12.85,
+        "text": "and fuel injectors to help engines run better stp"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 STP Gas Treament The Edge",
+    "decade": 1990,
+    "sequence": 79,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0402",
+    "url": "https://youtu.be/8d75BKqtdok",
+    "source_start": "0:00:00",
+    "source_end": "0:00:13"
+  }
+}

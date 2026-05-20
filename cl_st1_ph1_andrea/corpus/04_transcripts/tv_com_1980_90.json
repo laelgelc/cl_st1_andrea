@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1980_90",
+  "input_path": "corpus/03_audio/tv_com_1980_90.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_90.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_90.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Last year, six million people bought a refrigerator. One year too soon. Introducing the new refrigerator from Maytag. Buy one now, and if it stops working before the year 2000, we'll buy it back. See your Maytag dealer for details. See a Maytag repairman in our commercials. The new refrigerator from Maytag. The dependability...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.78,
+        "end": 4.18,
+        "text": "Last year, six million people bought a refrigerator."
+      },
+      {
+        "id": 2,
+        "start": 4.8,
+        "end": 6.12,
+        "text": "One year too soon."
+      },
+      {
+        "id": 3,
+        "start": 7.04,
+        "end": 9.9,
+        "text": "Introducing the new refrigerator from Maytag."
+      },
+      {
+        "id": 4,
+        "start": 10.44,
+        "end": 15.88,
+        "text": "Buy one now, and if it stops working before the year 2000, we'll buy it back."
+      },
+      {
+        "id": 5,
+        "start": 18.06,
+        "end": 19.8,
+        "text": "See your Maytag dealer for details."
+      },
+      {
+        "id": 6,
+        "start": 21.22,
+        "end": 24.46,
+        "text": "See a Maytag repairman in our commercials."
+      },
+      {
+        "id": 7,
+        "start": 24.46,
+        "end": 27.24,
+        "text": "The new refrigerator from Maytag."
+      },
+      {
+        "id": 8,
+        "start": 28.26,
+        "end": 29.46,
+        "text": "The dependability..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Maytag Refrigerator",
+    "decade": 1980,
+    "sequence": 90,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0302",
+    "url": "https://youtu.be/pNpICBhFDcE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

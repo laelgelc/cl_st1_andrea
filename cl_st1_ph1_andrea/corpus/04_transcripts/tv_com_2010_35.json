@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_35",
+  "input_path": "corpus/03_audio/tv_com_2010_35.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_35.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_35.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I never stop, when I swing, I don't miss You ain't never seen nothing like this, yeah Yeah, you ain't seen nothing like this You ain't seen nothing like this Nothing like this",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 9.97,
+        "end": 15.6,
+        "text": "I never stop, when I swing, I don't miss"
+      },
+      {
+        "id": 2,
+        "start": 15.6,
+        "end": 19.22,
+        "text": "You ain't never seen nothing like this, yeah"
+      },
+      {
+        "id": 3,
+        "start": 19.22,
+        "end": 25.35,
+        "text": "Yeah, you ain't seen nothing like this"
+      },
+      {
+        "id": 4,
+        "start": 25.35,
+        "end": 28.37,
+        "text": "You ain't seen nothing like this"
+      },
+      {
+        "id": 5,
+        "start": 28.37,
+        "end": 59.89,
+        "text": "Nothing like this"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Levi's Sea of blue",
+    "decade": 2010,
+    "sequence": 35,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0597",
+    "url": "https://youtu.be/TMbWljl4Qx4?si=0b2VWBGaZ-5LPsMO",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

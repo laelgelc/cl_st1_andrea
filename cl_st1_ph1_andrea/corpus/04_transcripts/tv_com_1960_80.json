@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_80",
+  "input_path": "corpus/03_audio/tv_com_1960_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "are turning. No matter what the load, the name that's known is Firestone. Where the rubber meets the road. If you're carrying steel or tilling the soil, gonna visit grandma or looking for oil. For the youngest driver and the real old pro. For a jet to land or a lawn to mow. For moving mountains or for stalking geese. Following a golf ball or keeping the peace. Wheels are turning. No matter what the load, the name that's known is Firestone. Where the rubber meets Firestone. Your symbol of quality and service.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.42,
+        "end": 16.7,
+        "text": "are turning. No matter what the load, the name that's known is Firestone. Where the rubber meets"
+      },
+      {
+        "id": 2,
+        "start": 16.7,
+        "end": 24.54,
+        "text": "the road. If you're carrying steel or tilling the soil, gonna visit grandma or looking for oil."
+      },
+      {
+        "id": 3,
+        "start": 24.94,
+        "end": 31.9,
+        "text": "For the youngest driver and the real old pro. For a jet to land or a lawn to mow. For moving"
+      },
+      {
+        "id": 4,
+        "start": 31.9,
+        "end": 41.62,
+        "text": "mountains or for stalking geese. Following a golf ball or keeping the peace. Wheels are turning."
+      },
+      {
+        "id": 5,
+        "start": 42.46,
+        "end": 54.89,
+        "text": "No matter what the load, the name that's known is Firestone. Where the rubber meets Firestone."
+      },
+      {
+        "id": 6,
+        "start": 54.89,
+        "end": 57.33,
+        "text": "Your symbol of quality and service."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Firestone Tires Where the rubber meets the road",
+    "decade": 1960,
+    "sequence": 80,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0145",
+    "url": "https://youtu.be/8HDGrrF92Qo",
+    "source_start": "0:00:01",
+    "source_end": "0:00:59"
+  }
+}

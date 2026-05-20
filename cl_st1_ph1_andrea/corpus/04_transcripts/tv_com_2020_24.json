@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_24",
+  "input_path": "corpus/03_audio/tv_com_2020_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I love your nervous smile, your giant heart, and knowing what melts you. The irresistibly smooth chocolate of Lindor, made to melt the one you love this Valentine's.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.49,
+        "end": 8.67,
+        "text": "I love your nervous smile, your giant heart, and knowing what melts you."
+      },
+      {
+        "id": 2,
+        "start": 9.43,
+        "end": 14.99,
+        "text": "The irresistibly smooth chocolate of Lindor, made to melt the one you love this Valentine's."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2024 Lindt Lindor Milk Chocolate Truffles Valentine's Day: Love Notes",
+    "decade": 2020,
+    "sequence": 24,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0643",
+    "url": "https://youtu.be/sQFLXDPQUFg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

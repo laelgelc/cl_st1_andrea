@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_43",
+  "input_path": "corpus/03_audio/tv_com_1970_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "belongs to sailing in the sun having fun and hellman's this summer when you're making potato salad try adding cubes of ham and cheese then blend in creamy hellman's real mayonnaise for a summer treat that's different and delicious hey my favorite me too summer belongs to hellman's always so creamy always so fresh so bring out the hellman's and bring out the",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.62,
+        "end": 9.5,
+        "text": "belongs to sailing in the sun having fun and hellman's this summer when you're making potato"
+      },
+      {
+        "id": 2,
+        "start": 9.5,
+        "end": 15.1,
+        "text": "salad try adding cubes of ham and cheese then blend in creamy hellman's real mayonnaise for"
+      },
+      {
+        "id": 3,
+        "start": 15.1,
+        "end": 21.82,
+        "text": "a summer treat that's different and delicious hey my favorite me too summer belongs to hellman's"
+      },
+      {
+        "id": 4,
+        "start": 21.82,
+        "end": 28.98,
+        "text": "always so creamy always so fresh so bring out the hellman's and bring out the"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Hellmann's mayonnaise",
+    "decade": 1970,
+    "sequence": 43,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:32:23",
+    "source_end": "0:32:52"
+  }
+}

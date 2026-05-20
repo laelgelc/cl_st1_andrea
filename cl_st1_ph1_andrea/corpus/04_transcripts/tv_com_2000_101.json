@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_101",
+  "input_path": "corpus/03_audio/tv_com_2000_101.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_101.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_101.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Imagine cruising in your brand new Kia Spectra. You got the tunes cranked, the controls at your fingertips, and cash in your pocket. And with a 10-year, 100,000 mile warranty, you're not worried about a thing. Just driving and taking in that new car smell. You know, the real kind. Not that stuff that comes in a bottle. The Kia Spectra. Loaded with features for thousands less than a Civic. Imagine that. Now get the Kia Spectra starting at $8,235 after $4,000 cash back.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.69,
+        "end": 3.69,
+        "text": "Imagine cruising in your brand new Kia Spectra."
+      },
+      {
+        "id": 2,
+        "start": 3.69,
+        "end": 8.69,
+        "text": "You got the tunes cranked, the controls at your fingertips, and cash in your pocket."
+      },
+      {
+        "id": 3,
+        "start": 8.69,
+        "end": 12.69,
+        "text": "And with a 10-year, 100,000 mile warranty, you're not worried about a thing."
+      },
+      {
+        "id": 4,
+        "start": 12.69,
+        "end": 15.69,
+        "text": "Just driving and taking in that new car smell."
+      },
+      {
+        "id": 5,
+        "start": 15.69,
+        "end": 19.69,
+        "text": "You know, the real kind. Not that stuff that comes in a bottle."
+      },
+      {
+        "id": 6,
+        "start": 20.69,
+        "end": 24.69,
+        "text": "The Kia Spectra. Loaded with features for thousands less than a Civic."
+      },
+      {
+        "id": 7,
+        "start": 24.69,
+        "end": 25.69,
+        "text": "Imagine that."
+      },
+      {
+        "id": 8,
+        "start": 25.69,
+        "end": 29.69,
+        "text": "Now get the Kia Spectra starting at $8,235 after $4,000 cash back."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Kia Spectra",
+    "decade": 2000,
+    "sequence": 101,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0543",
+    "url": "https://youtu.be/np-Sjbpbxas",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

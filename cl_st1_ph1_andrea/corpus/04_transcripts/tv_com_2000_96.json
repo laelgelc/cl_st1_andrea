@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_96",
+  "input_path": "corpus/03_audio/tv_com_2000_96.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_96.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_96.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Discover a dermatologist's way to transform your skin. Refinish Microdermabrasion Kit from L'Oréal with the same crystals dermatologists use to polish and resurface skin in just two steps, two minutes, two times a week. Refinish Microdermabrasion Kit from L'Oréal Paris.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.08,
+        "end": 3.08,
+        "text": "Discover a dermatologist's way to transform your skin."
+      },
+      {
+        "id": 2,
+        "start": 3.08,
+        "end": 6.08,
+        "text": "Refinish Microdermabrasion Kit from L'Oréal"
+      },
+      {
+        "id": 3,
+        "start": 6.08,
+        "end": 8.08,
+        "text": "with the same crystals dermatologists use"
+      },
+      {
+        "id": 4,
+        "start": 8.08,
+        "end": 12.08,
+        "text": "to polish and resurface skin in just two steps, two minutes, two times a week."
+      },
+      {
+        "id": 5,
+        "start": 12.08,
+        "end": 15.08,
+        "text": "Refinish Microdermabrasion Kit from L'Oréal Paris."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 L'Oreal ReFinish Micro Dermabrasion featuring Natalie Imbruglia",
+    "decade": 2000,
+    "sequence": 96,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0538",
+    "url": "https://youtu.be/wJI0XNos9c0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

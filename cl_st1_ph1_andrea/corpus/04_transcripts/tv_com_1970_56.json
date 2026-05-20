@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_56",
+  "input_path": "corpus/03_audio/tv_com_1970_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The Quintrix 2 color picture tube from Panasonic brings you a very lifelike picture. Because Quintrix 2 is our inline picture tube with an extra pre-focus lens that concentrates and focuses the electron beam to bring you Panasonic's sharpest picture ever. So lifelike, you may even feel you're part of a picture. Quintrix 2. One more reason Panasonic is just slightly...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.52,
+        "end": 6.42,
+        "text": "The Quintrix 2 color picture tube from Panasonic brings you a very lifelike picture."
+      },
+      {
+        "id": 2,
+        "start": 7.08,
+        "end": 18.84,
+        "text": "Because Quintrix 2 is our inline picture tube with an extra pre-focus lens that concentrates and focuses the electron beam to bring you Panasonic's sharpest picture ever."
+      },
+      {
+        "id": 3,
+        "start": 19.78,
+        "end": 23.36,
+        "text": "So lifelike, you may even feel you're part of a picture."
+      },
+      {
+        "id": 4,
+        "start": 24.56,
+        "end": 27.52,
+        "text": "Quintrix 2. One more reason Panasonic is just slightly..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Panasonic tv",
+    "decade": 1970,
+    "sequence": 56,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:39:41",
+    "source_end": "0:40:09"
+  }
+}

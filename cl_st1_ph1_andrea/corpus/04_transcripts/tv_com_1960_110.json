@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1960_110",
+  "input_path": "corpus/03_audio/tv_com_1960_110.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_110.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_110.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This flat tire needs a man, but When there's no man around When there's no man around Goodyear should be Why? Watch this New Goodyear double-eagle Carries its own spare inside lifeguard safety spare attire in attire Keeps on going next time give her a second chance you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.66,
+        "end": 7.8,
+        "text": "This flat tire needs a man, but"
+      },
+      {
+        "id": 2,
+        "start": 9.1,
+        "end": 11.1,
+        "text": "When there's no man around"
+      },
+      {
+        "id": 3,
+        "start": 11.38,
+        "end": 25.66,
+        "text": "When there's no man around"
+      },
+      {
+        "id": 4,
+        "start": 28.23,
+        "end": 29.91,
+        "text": "Goodyear should be"
+      },
+      {
+        "id": 5,
+        "start": 29.91,
+        "end": 31.91,
+        "text": "Why? Watch this"
+      },
+      {
+        "id": 6,
+        "start": 33.15,
+        "end": 35.15,
+        "text": "New Goodyear double-eagle"
+      },
+      {
+        "id": 7,
+        "start": 36.09,
+        "end": 38.09,
+        "text": "Carries its own spare inside"
+      },
+      {
+        "id": 8,
+        "start": 38.91,
+        "end": 40.91,
+        "text": "lifeguard safety spare"
+      },
+      {
+        "id": 9,
+        "start": 41.29,
+        "end": 43.29,
+        "text": "attire in attire"
+      },
+      {
+        "id": 10,
+        "start": 44.01,
+        "end": 48.59,
+        "text": "Keeps on going next time give her a second chance"
+      },
+      {
+        "id": 11,
+        "start": 48.93,
+        "end": 50.93,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Goodyear Double Eagle Tires",
+    "decade": 1960,
+    "sequence": 110,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0172",
+    "url": "https://youtu.be/xg4XMcax63o",
+    "source_start": "0:06:21",
+    "source_end": "0:07:21"
+  }
+}

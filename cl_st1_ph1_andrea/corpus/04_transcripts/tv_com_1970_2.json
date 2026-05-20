@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1970_2",
+  "input_path": "corpus/03_audio/tv_com_1970_2.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_2.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_2.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "more sausage more cheese our new super style people more pepperoni more mushrooms more of your favorite toppings than ever before more everything let yourself go to pizza hut go for new super style new super style from now on",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.22,
+        "end": 14.72,
+        "text": "more sausage more cheese our new super style people more pepperoni more mushrooms"
+      },
+      {
+        "id": 2,
+        "start": 14.72,
+        "end": 19.3,
+        "text": "more of your favorite toppings than ever before more everything"
+      },
+      {
+        "id": 3,
+        "start": 19.3,
+        "end": 28.42,
+        "text": "let yourself go to pizza hut go for new super style new super style from now on"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Pizza Hut ",
+    "decade": 1970,
+    "sequence": 2,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:02:02",
+    "source_end": "0:02:31"
+  }
+}

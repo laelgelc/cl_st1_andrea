@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_118",
+  "input_path": "corpus/03_audio/tv_com_1970_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "men who cut wood for a living use two chainsaws one for little jobs one for big jobs now you can own one chainsaw that works the same way home lights xl2 with two triggers its back trigger gives you power on big jobs its lightweight and front trigger give you control over little jobs the home light xl2 with two triggers for two kinds of jobs now available with free carry case",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.75,
+        "end": 6.77,
+        "text": "men who cut wood for a living use two chainsaws one for little jobs one for big jobs"
+      },
+      {
+        "id": 2,
+        "start": 6.77,
+        "end": 14.49,
+        "text": "now you can own one chainsaw that works the same way home lights xl2 with two triggers its back"
+      },
+      {
+        "id": 3,
+        "start": 14.49,
+        "end": 19.17,
+        "text": "trigger gives you power on big jobs its lightweight and front trigger give you control over little"
+      },
+      {
+        "id": 4,
+        "start": 19.17,
+        "end": 25.57,
+        "text": "jobs the home light xl2 with two triggers for two kinds of jobs now available with free carry case"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1973 Homelite Chainsaw Timber",
+    "decade": 1970,
+    "sequence": 118,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0226",
+    "url": "https://youtu.be/rm44EQ92ef4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

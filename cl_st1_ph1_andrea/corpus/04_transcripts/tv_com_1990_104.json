@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_104",
+  "input_path": "corpus/03_audio/tv_com_1990_104.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_104.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_104.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When you run out of Ultra Liquid Tide, don't throw it away. Fill her up with a new Ultra Liquid Tide refill. You're using less plastic. Less plastic is good for everyone, and saving money is good for you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.185875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.47,
+        "end": 4.11,
+        "text": "When you run out of Ultra Liquid Tide, don't throw it away."
+      },
+      {
+        "id": 2,
+        "start": 4.89,
+        "end": 7.61,
+        "text": "Fill her up with a new Ultra Liquid Tide refill."
+      },
+      {
+        "id": 3,
+        "start": 8.63,
+        "end": 10.07,
+        "text": "You're using less plastic."
+      },
+      {
+        "id": 4,
+        "start": 10.65,
+        "end": 14.29,
+        "text": "Less plastic is good for everyone, and saving money is good for you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Tide Refil",
+    "decade": 1990,
+    "sequence": 104,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0426",
+    "url": "https://youtu.be/MIMjGezZr0g",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

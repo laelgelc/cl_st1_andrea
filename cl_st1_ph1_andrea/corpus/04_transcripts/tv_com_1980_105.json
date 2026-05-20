@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_105",
+  "input_path": "corpus/03_audio/tv_com_1980_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Could I please have the attention of anybody who still hasn't switched to Burger King? We didn't want to resort to this, but you leave us no choice. Presenting the ultimate weapon. Hope it won't be necessary to do this again.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.14,
+        "end": 4.34,
+        "text": "Could I please have the attention of anybody who still hasn't switched to Burger King?"
+      },
+      {
+        "id": 2,
+        "start": 4.74,
+        "end": 8.14,
+        "text": "We didn't want to resort to this, but you leave us no choice."
+      },
+      {
+        "id": 3,
+        "start": 8.56,
+        "end": 10.48,
+        "text": "Presenting the ultimate weapon."
+      },
+      {
+        "id": 4,
+        "start": 11.1,
+        "end": 28.79,
+        "text": "Hope it won't be necessary to do this again."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Burger King restaurant Classic '80s Burger King",
+    "decade": 1980,
+    "sequence": 105,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0316",
+    "url": "https://youtu.be/_JZ_EdFu4R4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

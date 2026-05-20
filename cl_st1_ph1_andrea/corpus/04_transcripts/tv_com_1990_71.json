@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1990_71",
+  "input_path": "corpus/03_audio/tv_com_1990_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Looking good. Get into Bud Light. The clean, fresh taste won't fill you up, never let you down.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 12.69,
+        "end": 14.23,
+        "text": "Looking good. Get into Bud Light."
+      },
+      {
+        "id": 2,
+        "start": 14.51,
+        "end": 17.25,
+        "text": "The clean, fresh taste won't fill you up, never let you down."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Bud light Basebal",
+    "decade": 1990,
+    "sequence": 71,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0394",
+    "url": "https://youtu.be/jASpehDOpe8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

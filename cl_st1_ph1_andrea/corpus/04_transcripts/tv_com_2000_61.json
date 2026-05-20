@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_61",
+  "input_path": "corpus/03_audio/tv_com_2000_61.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_61.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_61.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "with just one wish if i could change my whole world around i'd bring an autumn day inside or summer all year long if i could speak in color what magic is this what peaceful where to go whatever you want to know",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.01,
+        "end": 5.49,
+        "text": "with just one wish if i could change my whole world around"
+      },
+      {
+        "id": 2,
+        "start": 5.49,
+        "end": 10.05,
+        "text": "i'd bring an autumn day inside or summer all year long"
+      },
+      {
+        "id": 3,
+        "start": 10.05,
+        "end": 20.34,
+        "text": "if i could speak in color what magic is this what peaceful"
+      },
+      {
+        "id": 4,
+        "start": 20.34,
+        "end": 25.7,
+        "text": "where to go whatever you want to know"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Sherwin Williams Paints",
+    "decade": 2000,
+    "sequence": 61,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0503",
+    "url": "https://youtu.be/BgpT0rHa35o",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

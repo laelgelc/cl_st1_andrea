@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_70",
+  "input_path": "corpus/03_audio/tv_com_1970_70.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_70.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_70.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "pardon me what kind of dog food does your dog eat young fellow there's two things i know checkers and dogs dogs like canned dog food especially herman here do you think he'd like gainsburgers well my dear leave this to me dogs like food that's moist and meaty but gainsburgers are moist and meaty see go ahead but and they taste terrific and you don't know nothing about checkers neither gainsburgers dog food the canned dog food without the",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.85,
+        "end": 5.03,
+        "text": "pardon me what kind of dog food does your dog eat young fellow there's two things i know"
+      },
+      {
+        "id": 2,
+        "start": 5.03,
+        "end": 9.59,
+        "text": "checkers and dogs dogs like canned dog food especially herman here do you think he'd like"
+      },
+      {
+        "id": 3,
+        "start": 9.59,
+        "end": 16.93,
+        "text": "gainsburgers well my dear leave this to me dogs like food that's moist and meaty but gainsburgers"
+      },
+      {
+        "id": 4,
+        "start": 16.93,
+        "end": 23.99,
+        "text": "are moist and meaty see go ahead but and they taste terrific and you don't know nothing about"
+      },
+      {
+        "id": 5,
+        "start": 23.99,
+        "end": 29.01,
+        "text": "checkers neither gainsburgers dog food the canned dog food without the"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Gaines burguers Dog food",
+    "decade": 1970,
+    "sequence": 70,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:52:27",
+    "source_end": "0:52:56"
+  }
+}

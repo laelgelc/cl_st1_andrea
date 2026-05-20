@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2010_46",
+  "input_path": "corpus/03_audio/tv_com_2010_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "If you're Salt-N-Pepa, you tell people to push it. Push it real good. It's what you do. Push it. If you want to save 15% or more on car insurance, you switch to GEICO. It's what you do. Push it. I'm pushing. I'm pushing.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 16.85,
+        "end": 19.33,
+        "text": "If you're Salt-N-Pepa, you tell people to push it."
+      },
+      {
+        "id": 2,
+        "start": 19.35,
+        "end": 20.67,
+        "text": "Push it real good."
+      },
+      {
+        "id": 3,
+        "start": 20.73,
+        "end": 21.37,
+        "text": "It's what you do."
+      },
+      {
+        "id": 4,
+        "start": 21.61,
+        "end": 22.09,
+        "text": "Push it."
+      },
+      {
+        "id": 5,
+        "start": 22.17,
+        "end": 25.67,
+        "text": "If you want to save 15% or more on car insurance, you switch to GEICO."
+      },
+      {
+        "id": 6,
+        "start": 26.21,
+        "end": 27.17,
+        "text": "It's what you do."
+      },
+      {
+        "id": 7,
+        "start": 27.31,
+        "end": 27.79,
+        "text": "Push it."
+      },
+      {
+        "id": 8,
+        "start": 27.83,
+        "end": 28.31,
+        "text": "I'm pushing."
+      },
+      {
+        "id": 9,
+        "start": 28.59,
+        "end": 29.01,
+        "text": "I'm pushing."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 GEICO Insurance featuring Salt 'n Pepper It's What You Do Push it",
+    "decade": 2010,
+    "sequence": 46,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:05:07",
+    "source_end": "0:05:36"
+  }
+}

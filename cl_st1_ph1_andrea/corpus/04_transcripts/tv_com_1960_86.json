@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_86",
+  "input_path": "corpus/03_audio/tv_com_1960_86.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_86.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_86.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We're going to drive home a point about new anti-leak Xe-Rex antifreeze. It stops most common radiator leaks just like that. We guarantee it will stop and prevent leaks in your car radiator for a full year. Or just write DuPont and get your money back. Only Xe-Rex antifreeze is guaranteed not to run out on you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.01,
+        "end": 7.07,
+        "text": "We're going to drive home a point about new anti-leak Xe-Rex antifreeze."
+      },
+      {
+        "id": 2,
+        "start": 7.69,
+        "end": 12.01,
+        "text": "It stops most common radiator leaks just like that."
+      },
+      {
+        "id": 3,
+        "start": 13.01,
+        "end": 20.35,
+        "text": "We guarantee it will stop and prevent leaks in your car radiator for a full year."
+      },
+      {
+        "id": 4,
+        "start": 20.69,
+        "end": 22.99,
+        "text": "Or just write DuPont and get your money back."
+      },
+      {
+        "id": 5,
+        "start": 23.89,
+        "end": 27.53,
+        "text": "Only Xe-Rex antifreeze is guaranteed not to run out on you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Zerex Anti-leak Anti-freeze Polymer Sealants Car care",
+    "decade": 1960,
+    "sequence": 86,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0149",
+    "url": "https://youtu.be/i5NTdHOAElM",
+    "source_start": "0:04:01",
+    "source_end": "0:04:29"
+  }
+}

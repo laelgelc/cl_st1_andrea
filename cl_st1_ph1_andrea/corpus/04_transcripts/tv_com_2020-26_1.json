@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020-26_1",
+  "input_path": "corpus/03_audio/tv_com_2020-26_1.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020-26_1.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020-26_1.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "we the people will take our vacation days all of them we will wear sarongs and look so right we will honeymoon like rabbits we will detox and then retox we will turn the poor boy into a poor man from guaranteed low prices to cutting-edge mobile tools the perfect trip begins on orbits and we will book our next trip before this one ends orbits take the",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.04,
+        "end": 9.06,
+        "text": "we the people will take our vacation days all of them we will wear sarongs and look so right"
+      },
+      {
+        "id": 2,
+        "start": 9.06,
+        "end": 18.32,
+        "text": "we will honeymoon like rabbits we will detox and then retox we will turn the poor boy"
+      },
+      {
+        "id": 3,
+        "start": 18.32,
+        "end": 23.52,
+        "text": "into a poor man from guaranteed low prices to cutting-edge mobile tools the perfect trip"
+      },
+      {
+        "id": 4,
+        "start": 23.52,
+        "end": 29.02,
+        "text": "begins on orbits and we will book our next trip before this one ends orbits take the"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Orbitz Take Vacation Back Online Travel Agency (OTA)",
+    "decade": "2020-26",
+    "sequence": 1,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0620",
+    "url": "https://youtu.be/ZojS9e5w674",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

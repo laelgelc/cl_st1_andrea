@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_34",
+  "input_path": "corpus/03_audio/tv_com_1960_34.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_34.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_34.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is the magic land of sky-blue waters, a land where glaciers work, leaving waters of almost unbelievable purity. Fresh, restless, exciting waters, playful waters, bubbling with good spirits, tossing themselves under blue skies in the crisp, clean northern air. From this land of sky-blue waters comes the water best for brewing. From this land, bringing with it the sparkling, splashing bounty of the North Country, comes Hamm's beer. Brisk and clean cut, a beer that never stops refreshing you, glass after glass, round after round. Give yourself the pleasure of Hamm's frosty refreshment from the land of sky-blue waters.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.8,
+        "end": 16.05,
+        "text": "This is the magic land of sky-blue waters, a land where glaciers work, leaving waters of almost unbelievable purity."
+      },
+      {
+        "id": 2,
+        "start": 16.61,
+        "end": 27.39,
+        "text": "Fresh, restless, exciting waters, playful waters, bubbling with good spirits, tossing themselves under blue skies in the crisp, clean northern air."
+      },
+      {
+        "id": 3,
+        "start": 28.01,
+        "end": 32.91,
+        "text": "From this land of sky-blue waters comes the water best for brewing."
+      },
+      {
+        "id": 4,
+        "start": 32.91,
+        "end": 40.15,
+        "text": "From this land, bringing with it the sparkling, splashing bounty of the North Country, comes Hamm's beer."
+      },
+      {
+        "id": 5,
+        "start": 40.83,
+        "end": 48.87,
+        "text": "Brisk and clean cut, a beer that never stops refreshing you, glass after glass, round after round."
+      },
+      {
+        "id": 6,
+        "start": 50.21,
+        "end": 56.39,
+        "text": "Give yourself the pleasure of Hamm's frosty refreshment from the land of sky-blue waters."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Hamm's beer",
+    "decade": 1960,
+    "sequence": 34,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:11:39",
+    "source_end": "1:12:37"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_93",
+  "input_path": "corpus/03_audio/tv_com_2010_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "If there's one thing the human foot has always been good at, it's unleashing great power. The IS Performance Line just got a power boost. Introducing the Lexus IS 200 Turbo and IS 300 All-Wheel Drive V6. The IS Line has never been more powerful. Lease the 2016 IS 200 Turbo or the 2016 IS 300 All-Wheel Drive for these terms. See the Lexus.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.61,
+        "end": 10.13,
+        "text": "If there's one thing the human foot has always been good at, it's unleashing great power."
+      },
+      {
+        "id": 2,
+        "start": 10.83,
+        "end": 13.21,
+        "text": "The IS Performance Line just got a power boost."
+      },
+      {
+        "id": 3,
+        "start": 13.53,
+        "end": 18.59,
+        "text": "Introducing the Lexus IS 200 Turbo and IS 300 All-Wheel Drive V6."
+      },
+      {
+        "id": 4,
+        "start": 19.31,
+        "end": 22.01,
+        "text": "The IS Line has never been more powerful."
+      },
+      {
+        "id": 5,
+        "start": 22.01,
+        "end": 28.07,
+        "text": "Lease the 2016 IS 200 Turbo or the 2016 IS 300 All-Wheel Drive for these terms."
+      },
+      {
+        "id": 6,
+        "start": 28.49,
+        "end": 29.03,
+        "text": "See the Lexus."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2015 Lexus IS The Pursuit of Perfection The Human Foot ",
+    "decade": 2010,
+    "sequence": 93,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "1:05:16",
+    "source_end": "1:05:45"
+  }
+}

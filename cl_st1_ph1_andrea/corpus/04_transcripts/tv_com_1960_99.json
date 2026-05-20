@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_99",
+  "input_path": "corpus/03_audio/tv_com_1960_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hold it. Isn't that wild? I just took four flash pictures without changing bulbs with Sylvania's fantastic new invention, the Blue Dot Flash Cube. Just pop one on any new flash cube model camera and shoot. With the Sylvania Blue Dot Flash Cube, you're always ready for the great shots. But you used to get away. Lots of them. Maybe I'll stuff Christmas stockings with them. Oops. What about regular flash cameras? Sylvania Blue Dot Flash Bulbs. When the dot is blue, the bulb is good. Blue dots for sure shots. So for regular flash cameras, Blue Dot Flash Bulbs. And for new flash cube model cameras, Blue Dot Flash Cubes. Sylvania Blue Dot Flash Bulbs or Flash Cubes. Isn't that wild?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.66,
+        "end": 24.68,
+        "text": "Hold it. Isn't that wild? I just took four flash pictures without changing bulbs with Sylvania's fantastic new invention, the Blue Dot Flash Cube. Just pop one on any new flash cube model camera and shoot. With the Sylvania Blue Dot Flash Cube, you're always ready for the great shots."
+      },
+      {
+        "id": 2,
+        "start": 24.68,
+        "end": 45.3,
+        "text": "But you used to get away. Lots of them. Maybe I'll stuff Christmas stockings with them. Oops. What about regular flash cameras? Sylvania Blue Dot Flash Bulbs. When the dot is blue, the bulb is good. Blue dots for sure shots."
+      },
+      {
+        "id": 3,
+        "start": 45.46,
+        "end": 58.64,
+        "text": "So for regular flash cameras, Blue Dot Flash Bulbs. And for new flash cube model cameras, Blue Dot Flash Cubes. Sylvania Blue Dot Flash Bulbs or Flash Cubes. Isn't that wild?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sylvania Blue dot Flashcubes",
+    "decade": 1960,
+    "sequence": 99,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0162",
+    "url": "https://youtu.be/Zv3RsrW_KsM",
+    "source_start": "0:00:04",
+    "source_end": "0:01:03"
+  }
+}

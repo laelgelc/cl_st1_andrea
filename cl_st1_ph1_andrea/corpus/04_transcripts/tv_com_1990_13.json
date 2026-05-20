@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_13",
+  "input_path": "corpus/03_audio/tv_com_1990_13.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_13.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_13.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is the best way not to get your license on the first try. And this is the best way to get video games. Sega Channel, over 70 hot games a month for your Genesis machine. No lines, no limits, no late fees, just unlimited play on your TV. Sega Channel, less than $15 a month. Call your cable company now. Sega Channel, the only way to get it is to get it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 6.62,
+        "text": "This is the best way not to get your license on the first try."
+      },
+      {
+        "id": 2,
+        "start": 6.62,
+        "end": 9.62,
+        "text": "And this is the best way to get video games."
+      },
+      {
+        "id": 3,
+        "start": 9.62,
+        "end": 12.62,
+        "text": "Sega Channel, over 70 hot games a month for your Genesis machine."
+      },
+      {
+        "id": 4,
+        "start": 12.62,
+        "end": 16.62,
+        "text": "No lines, no limits, no late fees, just unlimited play on your TV."
+      },
+      {
+        "id": 5,
+        "start": 16.62,
+        "end": 19.62,
+        "text": "Sega Channel, less than $15 a month. Call your cable company now."
+      },
+      {
+        "id": 6,
+        "start": 19.62,
+        "end": 22.62,
+        "text": "Sega Channel, the only way to get it is to get it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 Sega Channel",
+    "decade": 1990,
+    "sequence": 13,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0336",
+    "url": "https://youtu.be/TBCtj39oxJw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

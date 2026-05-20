@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1960_64",
+  "input_path": "corpus/03_audio/tv_com_1960_64.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_64.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_64.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Listen to the sounds of freshness. Stored in baggies, plastic bags always have the sound of freshness, and they always taste as fresh as they sound. You see, baggies are made stronger to keep food fresh. Watch how equal weights of silver dollars pool. Baggies hold up better to hold freshness in. Baggies in jumbo, food wrap, and sandwich sizes. The only leading wrap with three sizes to keep food tasting as fresh as it sounds.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.61,
+        "end": 5.37,
+        "text": "Listen to the sounds of freshness."
+      },
+      {
+        "id": 2,
+        "start": 21.34,
+        "end": 24.8,
+        "text": "Stored in baggies, plastic bags always have the sound of freshness,"
+      },
+      {
+        "id": 3,
+        "start": 24.94,
+        "end": 27.62,
+        "text": "and they always taste as fresh as they sound."
+      },
+      {
+        "id": 4,
+        "start": 28.46,
+        "end": 31.74,
+        "text": "You see, baggies are made stronger to keep food fresh."
+      },
+      {
+        "id": 5,
+        "start": 31.74,
+        "end": 34.66,
+        "text": "Watch how equal weights of silver dollars pool."
+      },
+      {
+        "id": 6,
+        "start": 36.98,
+        "end": 40.52,
+        "text": "Baggies hold up better to hold freshness in."
+      },
+      {
+        "id": 7,
+        "start": 48.91,
+        "end": 53.73,
+        "text": "Baggies in jumbo, food wrap, and sandwich sizes."
+      },
+      {
+        "id": 8,
+        "start": 53.73,
+        "end": 59.51,
+        "text": "The only leading wrap with three sizes to keep food tasting as fresh as it sounds."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Baggies food wrap bags",
+    "decade": 1960,
+    "sequence": 64,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0138",
+    "url": "https://youtu.be/utYZLiqcYKs",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_26",
+  "input_path": "corpus/03_audio/tv_com_1990_26.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_26.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_26.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Purification session 1242.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 6.22,
+        "end": 8.96,
+        "text": "Purification session 1242."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Oakley Sunglasses",
+    "decade": 1990,
+    "sequence": 26,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0349",
+    "url": "https://youtu.be/xM0kpplHPP8",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_32",
+  "input_path": "corpus/03_audio/tv_com_1980_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Thank you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.05,
+        "end": 4.77,
+        "text": "Thank you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Lime-A-Way Cleaner",
+    "decade": 1980,
+    "sequence": 32,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0254",
+    "url": "https://youtu.be/0yV3rC-mZj8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

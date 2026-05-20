@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_112",
+  "input_path": "corpus/03_audio/tv_com_1990_112.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_112.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_112.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "They invade by the thousands, leaving an invisible chemical trail. But ants can be stopped by the exterminator, the Orkin Man. He wipes out ants and makes sure they never return. Guaranteed. Call him day or night at 1-800-800-ORKIN.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.21,
+        "end": 3.83,
+        "text": "They invade by the thousands, leaving an invisible chemical trail."
+      },
+      {
+        "id": 2,
+        "start": 4.07,
+        "end": 7.31,
+        "text": "But ants can be stopped by the exterminator, the Orkin Man."
+      },
+      {
+        "id": 3,
+        "start": 7.51,
+        "end": 9.97,
+        "text": "He wipes out ants and makes sure they never return."
+      },
+      {
+        "id": 4,
+        "start": 10.61,
+        "end": 11.09,
+        "text": "Guaranteed."
+      },
+      {
+        "id": 5,
+        "start": 11.39,
+        "end": 14.19,
+        "text": "Call him day or night at 1-800-800-ORKIN."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1995 Orkin Robot",
+    "decade": 1990,
+    "sequence": 112,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0434",
+    "url": "https://youtu.be/ThPDw6-1YhI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

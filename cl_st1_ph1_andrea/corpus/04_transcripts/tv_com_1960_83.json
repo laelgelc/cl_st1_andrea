@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1960_83",
+  "input_path": "corpus/03_audio/tv_com_1960_83.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_83.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_83.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "the big swing great new camera gives you big big black and white pictures in seconds get the big picture from the big swinger it's the little swinger grown up",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 9.84,
+        "end": 25.68,
+        "text": "the big swing great new camera gives you big big black and white pictures in seconds"
+      },
+      {
+        "id": 2,
+        "start": 44.08,
+        "end": 55.07,
+        "text": "get the big picture from the big swinger it's the little swinger grown up"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Polaroid Camera",
+    "decade": 1960,
+    "sequence": 83,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0147",
+    "url": "https://youtu.be/wybY56OI3qU",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_118",
+  "input_path": "corpus/03_audio/tv_com_2010_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Bargain trash bag users go through 60 more bags a year than GLAAD users. Ever wonder why? GLAAD holds more tough trash than the leading bargain brand. Strength that saves.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.26,
+        "end": 6.44,
+        "text": "Bargain trash bag users go through 60 more bags a year than GLAAD users."
+      },
+      {
+        "id": 2,
+        "start": 7.22,
+        "end": 8.02,
+        "text": "Ever wonder why?"
+      },
+      {
+        "id": 3,
+        "start": 9.24,
+        "end": 12.62,
+        "text": "GLAAD holds more tough trash than the leading bargain brand."
+      },
+      {
+        "id": 4,
+        "start": 13.52,
+        "end": 14.7,
+        "text": "Strength that saves."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Glad Garbage Bags Strenght that Saves 60 more bags",
+    "decade": 2010,
+    "sequence": 118,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0617",
+    "url": "https://youtu.be/WOtAfSFsK0c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

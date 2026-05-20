@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_50",
+  "input_path": "corpus/03_audio/tv_com_2000_50.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_50.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_50.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "How precise can changing a hearing aid battery get? Oh, this precise. Introducing the Energizer Easy Change, the world's first hearing aid battery dispenser. Simply turn the dial, then slide the battery out to activate. The magnetic arm holds the battery securely for precise placement every time. No matter what hearing aid style or battery size you use, the Energizer Easy Change, it changes batteries precisely.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.69,
+        "end": 4.07,
+        "text": "How precise can changing a hearing aid battery get?"
+      },
+      {
+        "id": 2,
+        "start": 5.41,
+        "end": 7.55,
+        "text": "Oh, this precise."
+      },
+      {
+        "id": 3,
+        "start": 7.91,
+        "end": 13.49,
+        "text": "Introducing the Energizer Easy Change, the world's first hearing aid battery dispenser."
+      },
+      {
+        "id": 4,
+        "start": 13.93,
+        "end": 16.99,
+        "text": "Simply turn the dial, then slide the battery out to activate."
+      },
+      {
+        "id": 5,
+        "start": 17.31,
+        "end": 21.89,
+        "text": "The magnetic arm holds the battery securely for precise placement every time."
+      },
+      {
+        "id": 6,
+        "start": 21.89,
+        "end": 29.69,
+        "text": "No matter what hearing aid style or battery size you use, the Energizer Easy Change, it changes batteries precisely."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Energizer EZchange Hearing Aid Batteries",
+    "decade": 2000,
+    "sequence": 50,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0492",
+    "url": "https://youtu.be/VgIX1Wfebag",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

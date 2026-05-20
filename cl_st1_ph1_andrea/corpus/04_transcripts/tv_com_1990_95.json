@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1990_95",
+  "input_path": "corpus/03_audio/tv_com_1990_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "At BASF, we don't make the plain. We make it lighter. We don't make the lotion. We make it smoother. We don't make the dress. We make it brighter. We don't make the carpet. We make it tougher. At BASF, we don't make a lot of the products you buy. We make a lot of the products you buy better. BASF, the spirit of innovation.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 3.02,
+        "text": "At BASF, we don't make the plain."
+      },
+      {
+        "id": 2,
+        "start": 3.02,
+        "end": 5.02,
+        "text": "We make it lighter."
+      },
+      {
+        "id": 3,
+        "start": 5.02,
+        "end": 8.39,
+        "text": "We don't make the lotion."
+      },
+      {
+        "id": 4,
+        "start": 8.39,
+        "end": 11.96,
+        "text": "We make it smoother."
+      },
+      {
+        "id": 5,
+        "start": 12.96,
+        "end": 14.96,
+        "text": "We don't make the dress."
+      },
+      {
+        "id": 6,
+        "start": 14.96,
+        "end": 16.96,
+        "text": "We make it brighter."
+      },
+      {
+        "id": 7,
+        "start": 16.96,
+        "end": 18.96,
+        "text": "We don't make the carpet."
+      },
+      {
+        "id": 8,
+        "start": 18.96,
+        "end": 20.96,
+        "text": "We make it tougher."
+      },
+      {
+        "id": 9,
+        "start": 20.96,
+        "end": 23.96,
+        "text": "At BASF, we don't make a lot of the products you buy."
+      },
+      {
+        "id": 10,
+        "start": 23.96,
+        "end": 26.96,
+        "text": "We make a lot of the products you buy better."
+      },
+      {
+        "id": 11,
+        "start": 26.96,
+        "end": 29.96,
+        "text": "BASF, the spirit of innovation."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 BASF The spirit of the innovation",
+    "decade": 1990,
+    "sequence": 95,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0418",
+    "url": "https://youtu.be/5NQuMr45xd4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

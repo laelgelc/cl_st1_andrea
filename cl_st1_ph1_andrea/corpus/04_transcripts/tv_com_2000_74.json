@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_74",
+  "input_path": "corpus/03_audio/tv_com_2000_74.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_74.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_74.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When it comes to cleaning your carpet, choose your weapon wisely. Introducing Woolite OxyDeep 2X, the only double-barreled aerosol cleaner that permanently removes stains all the way through. New from Woolite.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 4.21,
+        "text": "When it comes to cleaning your carpet, choose your weapon wisely."
+      },
+      {
+        "id": 2,
+        "start": 4.67,
+        "end": 6.99,
+        "text": "Introducing Woolite OxyDeep 2X,"
+      },
+      {
+        "id": 3,
+        "start": 7.21,
+        "end": 12.19,
+        "text": "the only double-barreled aerosol cleaner that permanently removes stains all the way through."
+      },
+      {
+        "id": 4,
+        "start": 12.57,
+        "end": 13.55,
+        "text": "New from Woolite."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Woolite Oxy Deep",
+    "decade": 2000,
+    "sequence": 74,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0516",
+    "url": "https://youtu.be/7yi6MRV-BVs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

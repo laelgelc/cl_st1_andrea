@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_54",
+  "input_path": "corpus/03_audio/tv_com_1970_54.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_54.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_54.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Ford introduces Futura, a dramatic combination of styling and technology for 1978 and beyond. Futura, designed by computer modeling and aerodynamic testing. It can provide excellent fuel economy and room for five passengers as well. Futura, designed for 1978 and beyond. Realistically priced for today. See your Ford dealer for a personal test drive.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.94,
+        "end": 8.2,
+        "text": "Ford introduces Futura, a dramatic combination of styling and technology for 1978 and beyond."
+      },
+      {
+        "id": 2,
+        "start": 8.9,
+        "end": 12.98,
+        "text": "Futura, designed by computer modeling and aerodynamic testing."
+      },
+      {
+        "id": 3,
+        "start": 13.68,
+        "end": 18.82,
+        "text": "It can provide excellent fuel economy and room for five passengers as well."
+      },
+      {
+        "id": 4,
+        "start": 19.46,
+        "end": 23.3,
+        "text": "Futura, designed for 1978 and beyond."
+      },
+      {
+        "id": 5,
+        "start": 23.82,
+        "end": 25.4,
+        "text": "Realistically priced for today."
+      },
+      {
+        "id": 6,
+        "start": 26.62,
+        "end": 29.0,
+        "text": "See your Ford dealer for a personal test drive."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1978 Futura Ford ",
+    "decade": 1970,
+    "sequence": 54,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:38:11",
+    "source_end": "0:38:41"
+  }
+}

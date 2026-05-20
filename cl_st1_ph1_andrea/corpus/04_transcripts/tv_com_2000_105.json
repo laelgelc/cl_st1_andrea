@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2000_105",
+  "input_path": "corpus/03_audio/tv_com_2000_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "345 horses. That's more power than Ford or Chevy. It's got great looks. I got bonus cash. Three words. Gellman's Turbo Diesel. Heavy-duty power with 0% financing? Done deal. Hurry in now and join over a million proud new owners during the Dodge Spring Sales event to get the most award-winning lineup in our history. Qualified Daimler Chrysler lessees can lease a Ram 1500 quad-cab 4x4 with a V8 for $249 a month. Yeah, I got a Hemi. And a deal? Sweet.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.01,
+        "end": 5.01,
+        "text": "345 horses. That's more power than Ford or Chevy."
+      },
+      {
+        "id": 2,
+        "start": 5.01,
+        "end": 8.01,
+        "text": "It's got great looks. I got bonus cash."
+      },
+      {
+        "id": 3,
+        "start": 8.01,
+        "end": 10.01,
+        "text": "Three words. Gellman's Turbo Diesel."
+      },
+      {
+        "id": 4,
+        "start": 10.01,
+        "end": 12.01,
+        "text": "Heavy-duty power with 0% financing?"
+      },
+      {
+        "id": 5,
+        "start": 12.01,
+        "end": 13.01,
+        "text": "Done deal."
+      },
+      {
+        "id": 6,
+        "start": 13.01,
+        "end": 17.01,
+        "text": "Hurry in now and join over a million proud new owners during the Dodge Spring Sales event"
+      },
+      {
+        "id": 7,
+        "start": 17.01,
+        "end": 20.01,
+        "text": "to get the most award-winning lineup in our history."
+      },
+      {
+        "id": 8,
+        "start": 20.01,
+        "end": 26.01,
+        "text": "Qualified Daimler Chrysler lessees can lease a Ram 1500 quad-cab 4x4 with a V8 for $249 a month."
+      },
+      {
+        "id": 9,
+        "start": 26.01,
+        "end": 30.01,
+        "text": "Yeah, I got a Hemi. And a deal? Sweet."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Dodge Ram 1500 Truck",
+    "decade": 2000,
+    "sequence": 105,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0547",
+    "url": "https://youtu.be/hsAQPwja4iQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

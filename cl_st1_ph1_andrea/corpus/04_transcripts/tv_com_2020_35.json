@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_35",
+  "input_path": "corpus/03_audio/tv_com_2020_35.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_35.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_35.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Sweet headgear. Nice goggles. Yeah, get a drink in there. Hey, Daddy, watch this. Where did you go? Help support their immune system with new Super Danimals.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.77,
+        "end": 4.01,
+        "text": "Sweet headgear."
+      },
+      {
+        "id": 2,
+        "start": 4.35,
+        "end": 5.21,
+        "text": "Nice goggles."
+      },
+      {
+        "id": 3,
+        "start": 5.45,
+        "end": 6.35,
+        "text": "Yeah, get a drink in there."
+      },
+      {
+        "id": 4,
+        "start": 6.99,
+        "end": 8.03,
+        "text": "Hey, Daddy, watch this."
+      },
+      {
+        "id": 5,
+        "start": 11.1,
+        "end": 11.8,
+        "text": "Where did you go?"
+      },
+      {
+        "id": 6,
+        "start": 12.06,
+        "end": 14.88,
+        "text": "Help support their immune system with new Super Danimals."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Danimals Organic Strawberry Smoothies Adventurous by Nature: Puddle Jump",
+    "decade": 2020,
+    "sequence": 35,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0654",
+    "url": "https://youtu.be/ExsSpdJYZv0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

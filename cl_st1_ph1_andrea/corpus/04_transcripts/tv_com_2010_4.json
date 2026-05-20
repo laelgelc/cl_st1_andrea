@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_4",
+  "input_path": "corpus/03_audio/tv_com_2010_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "cut what's that doing on my set product placement sir whenever we feature a product in a scene we get tons of free stuff here we go really my lady you saved me it's the sure sign of a good time just right taste of bud light here we go i don't know more bud light just to be safe",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.21,
+        "end": 7.61,
+        "text": "cut what's that doing on my set product placement sir whenever we feature a product in a scene we"
+      },
+      {
+        "id": 2,
+        "start": 7.61,
+        "end": 55.36,
+        "text": "get tons of free stuff here we go really my lady you saved me it's the sure sign of a good time"
+      },
+      {
+        "id": 3,
+        "start": 55.36,
+        "end": 59.72,
+        "text": "just right taste of bud light here we go i don't know more bud light just to be safe"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2011 Bud Light Product Placement",
+    "decade": 2010,
+    "sequence": 4,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0566",
+    "url": "https://youtu.be/aBEcvu0nSII",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_56",
+  "input_path": "corpus/03_audio/tv_com_1960_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "It's boys that are beautiful, energetic, joyous, eager, made of fun. That's why Don Moore makes band-line shirts of colorful Cabraland nylon. They're beautiful, too. Moving, playing, jumping. Don Moore shirts. Made for fun. Just made for boys.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.13,
+        "end": 10.73,
+        "text": "It's boys that are beautiful, energetic, joyous, eager, made of fun."
+      },
+      {
+        "id": 2,
+        "start": 11.85,
+        "end": 15.57,
+        "text": "That's why Don Moore makes band-line shirts of colorful Cabraland nylon."
+      },
+      {
+        "id": 3,
+        "start": 16.29,
+        "end": 17.43,
+        "text": "They're beautiful, too."
+      },
+      {
+        "id": 4,
+        "start": 18.09,
+        "end": 20.25,
+        "text": "Moving, playing, jumping."
+      },
+      {
+        "id": 5,
+        "start": 23.74,
+        "end": 24.66,
+        "text": "Don Moore shirts."
+      },
+      {
+        "id": 6,
+        "start": 25.78,
+        "end": 26.58,
+        "text": "Made for fun."
+      },
+      {
+        "id": 7,
+        "start": 27.26,
+        "end": 29.24,
+        "text": "Just made for boys."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Donmoor Shirts of Caprolan nylon by Allied Chemical",
+    "decade": 1960,
+    "sequence": 56,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0130",
+    "url": "https://youtu.be/sPzg0n2LycI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

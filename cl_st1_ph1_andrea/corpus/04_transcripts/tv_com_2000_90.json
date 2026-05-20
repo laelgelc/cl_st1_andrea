@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_90",
+  "input_path": "corpus/03_audio/tv_com_2000_90.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_90.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_90.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Now, you don't have to steal his razor. Introducing Chic Quattro for Women. As advanced as a man's razor, but designed for you. With four thin blades and a sleek metal handle. The new Chic Quattro for Women.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.47,
+        "end": 2.77,
+        "text": "Now, you don't have to steal his razor."
+      },
+      {
+        "id": 2,
+        "start": 3.47,
+        "end": 5.23,
+        "text": "Introducing Chic Quattro for Women."
+      },
+      {
+        "id": 3,
+        "start": 5.63,
+        "end": 8.35,
+        "text": "As advanced as a man's razor, but designed for you."
+      },
+      {
+        "id": 4,
+        "start": 8.57,
+        "end": 10.81,
+        "text": "With four thin blades and a sleek metal handle."
+      },
+      {
+        "id": 5,
+        "start": 13.1,
+        "end": 14.6,
+        "text": "The new Chic Quattro for Women."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Schick Quattro for Women ",
+    "decade": 2000,
+    "sequence": 90,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0532",
+    "url": "https://youtu.be/K3Mlb58SKus",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

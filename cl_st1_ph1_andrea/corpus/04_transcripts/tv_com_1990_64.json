@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_64",
+  "input_path": "corpus/03_audio/tv_com_1990_64.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_64.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_64.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hey, it's your choice. For 96 cents, you can have juicy meatballs on fresh-baked bread with marinara sauce and loads of fresh-cut fixins in a sandwich made right before your eyes or a pre-made burger. Good decision. Subway's Meatball Sub is just 96 cents for a limited time.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.2,
+        "end": 1.36,
+        "text": "Hey, it's your choice."
+      },
+      {
+        "id": 2,
+        "start": 1.36,
+        "end": 5.36,
+        "text": "For 96 cents, you can have juicy meatballs on fresh-baked bread with marinara sauce and"
+      },
+      {
+        "id": 3,
+        "start": 5.36,
+        "end": 10.04,
+        "text": "loads of fresh-cut fixins in a sandwich made right before your eyes or a pre-made burger."
+      },
+      {
+        "id": 4,
+        "start": 10.04,
+        "end": 11.04,
+        "text": "Good decision."
+      },
+      {
+        "id": 5,
+        "start": 11.04,
+        "end": 13.88,
+        "text": "Subway's Meatball Sub is just 96 cents for a limited time."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Subway Meatball",
+    "decade": 1990,
+    "sequence": 64,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0387",
+    "url": "https://youtu.be/D7hDVJ7b2C0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

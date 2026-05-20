@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_37",
+  "input_path": "corpus/03_audio/tv_com_1980_37.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_37.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_37.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "By Jordache.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.94,
+        "end": 29.67,
+        "text": "By Jordache."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 Jordache Jeans",
+    "decade": 1980,
+    "sequence": 37,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0259",
+    "url": "https://youtu.be/PdZ6q8lrHpo?si=1FrCb4tkdHotpfCB",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

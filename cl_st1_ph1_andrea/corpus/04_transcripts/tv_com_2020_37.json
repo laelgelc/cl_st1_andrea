@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_37",
+  "input_path": "corpus/03_audio/tv_com_2020_37.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_37.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_37.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Real G's moving silence like sourdough. So if you didn't know, the Sourdough King is back at Burger King. With flame-grilled beef, sizzling bacon, and ooey-gooey cheese. Stuffed between two toasted sourdough buns. The Sourdough King and Sourdough Breakfast King. Your way, way better.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.4,
+        "text": "Real G's moving silence like sourdough."
+      },
+      {
+        "id": 2,
+        "start": 2.62,
+        "end": 5.76,
+        "text": "So if you didn't know, the Sourdough King is back at Burger King."
+      },
+      {
+        "id": 3,
+        "start": 5.9,
+        "end": 9.08,
+        "text": "With flame-grilled beef, sizzling bacon, and ooey-gooey cheese."
+      },
+      {
+        "id": 4,
+        "start": 9.22,
+        "end": 11.34,
+        "text": "Stuffed between two toasted sourdough buns."
+      },
+      {
+        "id": 5,
+        "start": 11.52,
+        "end": 13.62,
+        "text": "The Sourdough King and Sourdough Breakfast King."
+      },
+      {
+        "id": 6,
+        "start": 13.78,
+        "end": 14.96,
+        "text": "Your way, way better."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Burger King Sourdough King Sourdough King Platform",
+    "decade": 2020,
+    "sequence": 37,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0656",
+    "url": "https://youtu.be/rE0Q6nmrrVI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

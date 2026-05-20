@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_107",
+  "input_path": "corpus/03_audio/tv_com_1980_107.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_107.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_107.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "If you want to know a difference between Wesson oil and reformulated Crisco, look right here. See, reformulated Crisco adds polysorbate 80, an additive that makes fried food absorb more oil. And Wesson? Wesson doesn't. Wesson just gives you crispy, juicy chicken without polysorbate 80. So come and get it, just as crispy as you like it, cause Wesson gets it juicy inside. Juicy and real crispy with Wesson.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 6.39,
+        "text": "If you want to know a difference between Wesson oil and reformulated Crisco, look right here."
+      },
+      {
+        "id": 2,
+        "start": 7.19,
+        "end": 12.43,
+        "text": "See, reformulated Crisco adds polysorbate 80, an additive that makes fried food absorb more oil."
+      },
+      {
+        "id": 3,
+        "start": 12.65,
+        "end": 14.79,
+        "text": "And Wesson? Wesson doesn't."
+      },
+      {
+        "id": 4,
+        "start": 15.43,
+        "end": 19.11,
+        "text": "Wesson just gives you crispy, juicy chicken without polysorbate 80."
+      },
+      {
+        "id": 5,
+        "start": 19.11,
+        "end": 25.61,
+        "text": "So come and get it, just as crispy as you like it, cause Wesson gets it juicy inside."
+      },
+      {
+        "id": 6,
+        "start": 26.41,
+        "end": 28.65,
+        "text": "Juicy and real crispy with Wesson."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Wesson Oil gives you crispy juicy chicken",
+    "decade": 1980,
+    "sequence": 107,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0318",
+    "url": "https://youtu.be/zpT63Co3NZ4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

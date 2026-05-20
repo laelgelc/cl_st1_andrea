@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1990_29",
+  "input_path": "corpus/03_audio/tv_com_1990_29.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_29.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_29.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "delivery the sorority house what's the matter you don't like pretty girls order any sausage with our pizza sausage it's 11 p.m do you know what you're wearing tomorrow",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 4.45,
+        "text": "delivery the sorority house what's the matter you don't like pretty girls"
+      },
+      {
+        "id": 2,
+        "start": 6.69,
+        "end": 29.92,
+        "text": "order any sausage with our pizza sausage it's 11 p.m do you know what you're wearing tomorrow"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Merry-Go-Round Clothing Pizza Delivery",
+    "decade": 1990,
+    "sequence": 29,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0352",
+    "url": "https://youtu.be/uIP5DYCae_k",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

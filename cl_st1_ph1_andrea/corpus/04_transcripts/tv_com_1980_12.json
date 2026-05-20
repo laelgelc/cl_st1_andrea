@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1980_12",
+  "input_path": "corpus/03_audio/tv_com_1980_12.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_12.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_12.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Get under the spell of Colgate gel. Now that's wintery fresh. Get under the spell of Colgate gel. Awesome taste. That's the spell of Colgate Winterfresh gel, a creamy blue gel packed with proven MFP fluoride, the maximum fluoride protection a toothpaste can give. Get under the spell of blue Colgate gel. Colgate regular Colgate Winterfresh gel, the cavity-fighting gel with a winterfresh taste. It's real.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.56,
+        "end": 4.02,
+        "text": "Get under the spell of Colgate gel."
+      },
+      {
+        "id": 2,
+        "start": 4.32,
+        "end": 6.14,
+        "text": "Now that's wintery fresh."
+      },
+      {
+        "id": 3,
+        "start": 6.52,
+        "end": 9.94,
+        "text": "Get under the spell of Colgate gel."
+      },
+      {
+        "id": 4,
+        "start": 10.18,
+        "end": 11.48,
+        "text": "Awesome taste."
+      },
+      {
+        "id": 5,
+        "start": 11.7,
+        "end": 14.28,
+        "text": "That's the spell of Colgate Winterfresh gel,"
+      },
+      {
+        "id": 6,
+        "start": 14.42,
+        "end": 17.12,
+        "text": "a creamy blue gel packed with proven MFP fluoride,"
+      },
+      {
+        "id": 7,
+        "start": 17.34,
+        "end": 19.78,
+        "text": "the maximum fluoride protection a toothpaste can give."
+      },
+      {
+        "id": 8,
+        "start": 20.12,
+        "end": 23.56,
+        "text": "Get under the spell of blue Colgate gel."
+      },
+      {
+        "id": 9,
+        "start": 23.74,
+        "end": 25.88,
+        "text": "Colgate regular Colgate Winterfresh gel,"
+      },
+      {
+        "id": 10,
+        "start": 25.88,
+        "end": 28.42,
+        "text": "the cavity-fighting gel with a winterfresh taste."
+      },
+      {
+        "id": 11,
+        "start": 28.52,
+        "end": 29.0,
+        "text": "It's real."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Colgate Toothpaste",
+    "decade": 1980,
+    "sequence": 12,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0234",
+    "url": "https://youtu.be/rmYgeTVGb9Y",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_118",
+  "input_path": "corpus/03_audio/tv_com_1980_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "It's Kenner's Betty Crocker Easy-Bake Mini-Wave Oven. Preheat 15 minutes, light bulb not included. You can mix up a yellow and a chocolate cake. You can have lots done just right. The Betty Crocker Easy-Bake Mini-Wave Oven with Betty Crocker Mixes from Kenner.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.33,
+        "end": 4.33,
+        "text": "It's Kenner's Betty Crocker Easy-Bake Mini-Wave Oven."
+      },
+      {
+        "id": 2,
+        "start": 4.63,
+        "end": 6.77,
+        "text": "Preheat 15 minutes, light bulb not included."
+      },
+      {
+        "id": 3,
+        "start": 7.67,
+        "end": 10.93,
+        "text": "You can mix up a yellow and a chocolate cake."
+      },
+      {
+        "id": 4,
+        "start": 10.93,
+        "end": 16.9,
+        "text": "You can have lots done just right."
+      },
+      {
+        "id": 5,
+        "start": 23.88,
+        "end": 28.3,
+        "text": "The Betty Crocker Easy-Bake Mini-Wave Oven with Betty Crocker Mixes from Kenner."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1982 Kenner's Betty Crocker Easy Bake Mini Wave Oven",
+    "decade": 1980,
+    "sequence": 118,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services, Fashion & Consumer Goods",
+    "video_id": "video_0321",
+    "url": "https://youtu.be/8BRhlxB_wRQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

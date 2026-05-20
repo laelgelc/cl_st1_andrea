@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_38",
+  "input_path": "corpus/03_audio/tv_com_1960_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Here's a man out to win. It's a race for top acceleration on a quarter mile run. 90, 100, 130 miles an hour in 11 seconds. Engines take a beating. Spark plugs misfire. Jack Thomas, champion driver, used a lot of gasolines before trying a special Sinclair gasoline with nickel. Now engine parts last longer. Spark plugs fire smoothly. Nickel makes the difference. The same nickel compound in Sinclair dyno gasolines for your car. Nickel cuts engine wear, saves repairs, so you get more miles per dollar at the sign of the Sinclair dinosaur.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 39.03275,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.65,
+        "end": 14.31,
+        "text": "Here's a man out to win. It's a race for top acceleration on a quarter mile run. 90, 100, 130 miles an hour in 11 seconds. Engines take a beating. Spark plugs misfire."
+      },
+      {
+        "id": 2,
+        "start": 14.43,
+        "end": 31.59,
+        "text": "Jack Thomas, champion driver, used a lot of gasolines before trying a special Sinclair gasoline with nickel. Now engine parts last longer. Spark plugs fire smoothly. Nickel makes the difference. The same nickel compound in Sinclair dyno gasolines for your car."
+      },
+      {
+        "id": 3,
+        "start": 31.65,
+        "end": 39.01,
+        "text": "Nickel cuts engine wear, saves repairs, so you get more miles per dollar at the sign of the Sinclair dinosaur."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sinclair gasoline with nickel at Sinclair Service Station",
+    "decade": 1960,
+    "sequence": 38,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:19:18",
+    "source_end": "1:19:57"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_57",
+  "input_path": "corpus/03_audio/tv_com_2010_57.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_57.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_57.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hey parents, it's a big year. I'm not just teaching music. I'm teaching performance. Here's what they'll need. School takes a lot.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.66,
+        "end": 9.29,
+        "text": "Hey parents, it's a big year. I'm not just teaching music. I'm teaching performance. Here's what they'll need."
+      },
+      {
+        "id": 2,
+        "start": 28.03,
+        "end": 29.01,
+        "text": "School takes a lot."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Target Music Teacher featuring Ben Falcone Back to School Expect More Pay less",
+    "decade": 2010,
+    "sequence": 57,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:13:51",
+    "source_end": "0:14:20"
+  }
+}

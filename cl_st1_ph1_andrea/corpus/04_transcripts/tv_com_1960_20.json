@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_20",
+  "input_path": "corpus/03_audio/tv_com_1960_20.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_20.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_20.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "my mommy put a cure ad on cure ad it's ouchless mommy put a cure ad bandage on it's ouchless it's ouchless cure ad is ouchless mommy put a cure ad bandage on only cure ad has telpha the pad that won't stick to a wound it's ouchless the other bandage with a plain gauze pad can stick to a wound has an ouch so look closely if it doesn't say ouchless it isn't use cure ad it's ouchless cure ad it's ouchless mommy put a cure ad bandage on here's another fine product from kendall",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 39.03275,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.97,
+        "end": 11.37,
+        "text": "my mommy put a cure ad on cure ad it's ouchless mommy put a cure ad bandage on it's ouchless it's"
+      },
+      {
+        "id": 2,
+        "start": 11.37,
+        "end": 19.79,
+        "text": "ouchless cure ad is ouchless mommy put a cure ad bandage on only cure ad has telpha the pad that"
+      },
+      {
+        "id": 3,
+        "start": 19.79,
+        "end": 25.01,
+        "text": "won't stick to a wound it's ouchless the other bandage with a plain gauze pad can stick to a"
+      },
+      {
+        "id": 4,
+        "start": 25.01,
+        "end": 31.81,
+        "text": "wound has an ouch so look closely if it doesn't say ouchless it isn't use cure ad it's ouchless"
+      },
+      {
+        "id": 5,
+        "start": 31.81,
+        "end": 39.03,
+        "text": "cure ad it's ouchless mommy put a cure ad bandage on here's another fine product from kendall"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Curad Outchless TELFA pad Kendall",
+    "decade": 1960,
+    "sequence": 20,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:36:50",
+    "source_end": "0:37:29"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_67",
+  "input_path": "corpus/03_audio/tv_com_2020_67.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_67.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_67.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Now more than ever, we need to look after our mental health. Meditation can help with that. It only takes a few minutes a day and helps you stress less, sleep soundly, and feel less anxious. Be kind to your mind with Headspace. Try it for free.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.185875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.65,
+        "end": 3.77,
+        "text": "Now more than ever, we need to look after our mental health."
+      },
+      {
+        "id": 2,
+        "start": 4.19,
+        "end": 5.49,
+        "text": "Meditation can help with that."
+      },
+      {
+        "id": 3,
+        "start": 5.77,
+        "end": 11.49,
+        "text": "It only takes a few minutes a day and helps you stress less, sleep soundly, and feel less anxious."
+      },
+      {
+        "id": 4,
+        "start": 11.87,
+        "end": 13.65,
+        "text": "Be kind to your mind with Headspace."
+      },
+      {
+        "id": 5,
+        "start": 14.15,
+        "end": 14.99,
+        "text": "Try it for free."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Headspace App Now More Than Ever",
+    "decade": 2020,
+    "sequence": 67,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0686",
+    "url": "https://youtu.be/-zWLgbxUtSU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

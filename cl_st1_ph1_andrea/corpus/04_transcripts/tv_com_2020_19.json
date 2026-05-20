@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_19",
+  "input_path": "corpus/03_audio/tv_com_2020_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "your pantry deserves better and so do you we believe every day is a chance for an upgrade clean delicious snacks made without compromise designed to fuel your joy finally a taste good feel good do good snack is just within reach lesser evil feed the feeling",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 13.07,
+        "text": "your pantry deserves better and so do you we believe every day is a chance for an upgrade"
+      },
+      {
+        "id": 2,
+        "start": 13.07,
+        "end": 19.31,
+        "text": "clean delicious snacks made without compromise designed to fuel your joy"
+      },
+      {
+        "id": 3,
+        "start": 19.31,
+        "end": 29.47,
+        "text": "finally a taste good feel good do good snack is just within reach lesser evil feed the feeling"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Lesser Evil Better-for-you snack brand Renovate your Pantry",
+    "decade": 2020,
+    "sequence": 19,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0638",
+    "url": "https://youtu.be/dWT8wb8S2vw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_16",
+  "input_path": "corpus/03_audio/tv_com_2000_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "From the very beginning, Smart Balance Buttery Spreads have contained no trans fatty acids and no hydrogenated oil. Trans fat can raise LDL bad cholesterol and lower HDL good cholesterol. Just the opposite of Smart Balance, which has the right balance of fats to help improve cholesterol. Smart Balance Buttery Spreads taste great without the cholesterol in butter or trans fat that's in margarine. It's that simple. Smart Balance Buttery Spreads. We have the right balance and the great taste.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 6.64,
+        "text": "From the very beginning, Smart Balance Buttery Spreads have contained no trans fatty acids and no hydrogenated oil."
+      },
+      {
+        "id": 2,
+        "start": 7.38,
+        "end": 11.98,
+        "text": "Trans fat can raise LDL bad cholesterol and lower HDL good cholesterol."
+      },
+      {
+        "id": 3,
+        "start": 12.44,
+        "end": 17.28,
+        "text": "Just the opposite of Smart Balance, which has the right balance of fats to help improve cholesterol."
+      },
+      {
+        "id": 4,
+        "start": 18.02,
+        "end": 23.4,
+        "text": "Smart Balance Buttery Spreads taste great without the cholesterol in butter or trans fat that's in margarine."
+      },
+      {
+        "id": 5,
+        "start": 23.7,
+        "end": 24.58,
+        "text": "It's that simple."
+      },
+      {
+        "id": 6,
+        "start": 25.44,
+        "end": 27.02,
+        "text": "Smart Balance Buttery Spreads."
+      },
+      {
+        "id": 7,
+        "start": 27.3,
+        "end": 29.72,
+        "text": "We have the right balance and the great taste."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2004 Smart Balance Buttery spread",
+    "decade": 2000,
+    "sequence": 16,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0458",
+    "url": "https://youtu.be/ln2qiubRSBI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

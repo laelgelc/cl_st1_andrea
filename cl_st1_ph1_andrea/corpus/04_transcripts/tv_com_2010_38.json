@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_38",
+  "input_path": "corpus/03_audio/tv_com_2010_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "welcome to the mega diner what can i get for you gentlemen i want something with style i want to shake it up until it pops i'll take the biggest baddest freshest thing you got one mega special i got the magic like adidas blowing sticky like adhesive be cautious",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.47,
+        "end": 10.49,
+        "text": "welcome to the mega diner what can i get for you gentlemen i want something with style i want to"
+      },
+      {
+        "id": 2,
+        "start": 10.49,
+        "end": 16.39,
+        "text": "shake it up until it pops i'll take the biggest baddest freshest thing you got one mega special"
+      },
+      {
+        "id": 3,
+        "start": 16.39,
+        "end": 18.09,
+        "text": "i got the magic"
+      },
+      {
+        "id": 4,
+        "start": 18.09,
+        "end": 26.62,
+        "text": "like adidas blowing sticky like adhesive be cautious"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Adidas Mega Diner",
+    "decade": 2010,
+    "sequence": 38,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

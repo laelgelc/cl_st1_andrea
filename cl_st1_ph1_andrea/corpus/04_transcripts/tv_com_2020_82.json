@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_82",
+  "input_path": "corpus/03_audio/tv_com_2020_82.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_82.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_82.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "So I got this friend who said T-Mobile's network used to suck. His words. But things change. It turns out that now T-Mobile has the best network by, like, a lot. Hey, dude, you won't believe where I am.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 3.88,
+        "text": "So I got this friend who said T-Mobile's network used to suck."
+      },
+      {
+        "id": 2,
+        "start": 4.16,
+        "end": 4.84,
+        "text": "His words."
+      },
+      {
+        "id": 3,
+        "start": 5.56,
+        "end": 6.52,
+        "text": "But things change."
+      },
+      {
+        "id": 4,
+        "start": 6.92,
+        "end": 10.94,
+        "text": "It turns out that now T-Mobile has the best network by, like, a lot."
+      },
+      {
+        "id": 5,
+        "start": 11.28,
+        "end": 13.4,
+        "text": "Hey, dude, you won't believe where I am."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 T-Mobile Network Hero featuring Billy Bob Thornton",
+    "decade": 2020,
+    "sequence": 82,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0701",
+    "url": "https://youtu.be/gWquCr46T8I",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

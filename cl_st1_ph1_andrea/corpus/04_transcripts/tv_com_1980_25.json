@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_25",
+  "input_path": "corpus/03_audio/tv_com_1980_25.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_25.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_25.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Three guys, discount plumbing. Any pipe, any place, any price. For clogs at their worst. Oh, it's for you. Liquid Plumber is the plumber to call first. No other drain opener cuts through standing water to clear out tough hair clogs better than Liquid Plumber. For hair clogs at their worst. Who? Liquid Plumber? Liquid Plumber is the plumber to call first.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.12,
+        "end": 5.68,
+        "text": "Three guys, discount plumbing."
+      },
+      {
+        "id": 2,
+        "start": 5.76,
+        "end": 7.32,
+        "text": "Any pipe, any place, any price."
+      },
+      {
+        "id": 3,
+        "start": 7.6,
+        "end": 8.92,
+        "text": "For clogs at their worst."
+      },
+      {
+        "id": 4,
+        "start": 9.04,
+        "end": 10.94,
+        "text": "Oh, it's for you."
+      },
+      {
+        "id": 5,
+        "start": 11.24,
+        "end": 13.74,
+        "text": "Liquid Plumber is the plumber to call first."
+      },
+      {
+        "id": 6,
+        "start": 14.34,
+        "end": 20.62,
+        "text": "No other drain opener cuts through standing water to clear out tough hair clogs better than Liquid Plumber."
+      },
+      {
+        "id": 7,
+        "start": 21.36,
+        "end": 23.38,
+        "text": "For hair clogs at their worst."
+      },
+      {
+        "id": 8,
+        "start": 23.58,
+        "end": 25.12,
+        "text": "Who? Liquid Plumber?"
+      },
+      {
+        "id": 9,
+        "start": 26.38,
+        "end": 29.04,
+        "text": "Liquid Plumber is the plumber to call first."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1987 Liquid Plumr",
+    "decade": 1980,
+    "sequence": 25,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0247",
+    "url": "https://youtu.be/uJI4RfVqI_I",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

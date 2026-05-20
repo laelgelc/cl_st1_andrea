@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1970_80",
+  "input_path": "corpus/03_audio/tv_com_1970_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Deck the halls with boughs of holly, fa-la-la-la-la-la-la-la. Tis the season to be jolly, fa-la-la-la-la-la-la-la-la. Don we now our gay apparel, fa-la-la-la-la-la-la-la. This Christmas music is brought to you by a 12-piece set of Revere Ware Cookery, famous for its copper or stainless steel even heating bottoms at only $89.99. And the housewares department at the Broadway. Fa-la-la-la-la-la, follow me and marry me. Fa-la-la-la-la-la, follow me and marry me.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.6,
+        "text": "Deck the halls with boughs of holly, fa-la-la-la-la-la-la-la."
+      },
+      {
+        "id": 2,
+        "start": 4.88,
+        "end": 9.16,
+        "text": "Tis the season to be jolly, fa-la-la-la-la-la-la-la-la."
+      },
+      {
+        "id": 3,
+        "start": 9.48,
+        "end": 13.72,
+        "text": "Don we now our gay apparel, fa-la-la-la-la-la-la-la."
+      },
+      {
+        "id": 4,
+        "start": 13.84,
+        "end": 18.36,
+        "text": "This Christmas music is brought to you by a 12-piece set of Revere Ware Cookery,"
+      },
+      {
+        "id": 5,
+        "start": 18.8,
+        "end": 23.48,
+        "text": "famous for its copper or stainless steel even heating bottoms at only $89.99."
+      },
+      {
+        "id": 6,
+        "start": 23.96,
+        "end": 26.12,
+        "text": "And the housewares department at the Broadway."
+      },
+      {
+        "id": 7,
+        "start": 26.12,
+        "end": 29.74,
+        "text": "Fa-la-la-la-la-la, follow me and marry me."
+      },
+      {
+        "id": 8,
+        "start": 30.0,
+        "end": 59.98,
+        "text": "Fa-la-la-la-la-la, follow me and marry me."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Christmas At The Broadway Dept. Store Commercial 1976",
+    "decade": 1970,
+    "sequence": 80,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0188",
+    "url": "https://youtu.be/0BcfpQiN0PA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

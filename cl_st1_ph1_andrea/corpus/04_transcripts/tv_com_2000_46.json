@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_46",
+  "input_path": "corpus/03_audio/tv_com_2000_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "let's try this again now concentrate think pichu luia pikachu chikorita the new collector's edition gold and silver pokemon game boy color a true pokemon master may do anything to get it well how about five more for my friends",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.14,
+        "end": 14.11,
+        "text": "let's try this again now concentrate think pichu luia pikachu chikorita"
+      },
+      {
+        "id": 2,
+        "start": 20.05,
+        "end": 23.57,
+        "text": "the new collector's edition gold and silver pokemon game boy color"
+      },
+      {
+        "id": 3,
+        "start": 23.57,
+        "end": 39.41,
+        "text": "a true pokemon master may do anything to get it well how about five more for my friends"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000? Nintendo Pokemon GameBoy Color",
+    "decade": 2000,
+    "sequence": 46,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0488",
+    "url": "https://youtu.be/Pw8rQy8SFcM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

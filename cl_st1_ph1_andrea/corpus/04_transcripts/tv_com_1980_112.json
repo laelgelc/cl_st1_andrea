@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_112",
+  "input_path": "corpus/03_audio/tv_com_1980_112.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_112.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_112.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Why just have a beer, when you can have THE beer? Heineken, America's number one imported beer. Come to think of it...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 8.034125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.78,
+        "text": "Why just have a beer, when you can have THE beer?"
+      },
+      {
+        "id": 2,
+        "start": 4.08,
+        "end": 7.06,
+        "text": "Heineken, America's number one imported beer."
+      },
+      {
+        "id": 3,
+        "start": 7.26,
+        "end": 8.0,
+        "text": "Come to think of it..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Heineken American's number 1 imported beer",
+    "decade": 1980,
+    "sequence": 112,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:12:01",
+    "source_end": "0:12:09"
+  }
+}

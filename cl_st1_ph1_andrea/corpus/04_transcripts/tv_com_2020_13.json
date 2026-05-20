@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_13",
+  "input_path": "corpus/03_audio/tv_com_2020_13.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_13.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_13.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "How can I just let you walk away when all I can do is watch you leave so take a look at me now Hydrate with liquid IV don't let me down",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.36,
+        "end": 8.66,
+        "text": "How can I just let you walk away when all I can do is watch you leave so take a look at me now"
+      },
+      {
+        "id": 2,
+        "start": 26.65,
+        "end": 29.35,
+        "text": "Hydrate with liquid IV don't let me down"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Liquid I.V. Take a Look at your pee",
+    "decade": 2020,
+    "sequence": 13,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0632",
+    "url": "https://youtu.be/ZjDfVdrtl48",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

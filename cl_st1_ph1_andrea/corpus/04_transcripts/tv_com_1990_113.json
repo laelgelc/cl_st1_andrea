@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_113",
+  "input_path": "corpus/03_audio/tv_com_1990_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Introducing Ultras Colors Day.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 25.65,
+        "end": 29.32,
+        "text": "Introducing Ultras Colors Day."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Cheer Signal Flags",
+    "decade": 1990,
+    "sequence": 113,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0435",
+    "url": "https://youtu.be/tecEaASGLKk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

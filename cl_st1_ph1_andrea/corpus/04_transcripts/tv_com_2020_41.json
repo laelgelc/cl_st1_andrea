@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_41",
+  "input_path": "corpus/03_audio/tv_com_2020_41.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_41.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_41.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Get ready, our most popular battery is even more powerful. The stronger, lasts longer Energizer Max.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 4.28,
+        "text": "Get ready, our most popular battery is even more powerful."
+      },
+      {
+        "id": 2,
+        "start": 11.28,
+        "end": 14.18,
+        "text": "The stronger, lasts longer Energizer Max."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Energizer Max AAA Breakthrough",
+    "decade": 2020,
+    "sequence": 41,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0660",
+    "url": "https://youtu.be/wih3QBrnNiI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

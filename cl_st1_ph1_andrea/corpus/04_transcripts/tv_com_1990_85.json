@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_85",
+  "input_path": "corpus/03_audio/tv_com_1990_85.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_85.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_85.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The race is on to make batteries that last longer. And today's Duracell batteries can even outrun the ones we made just a few years ago. Today's Duracell. You can't top ... the Copper Top.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 3.67,
+        "text": "The race is on to make batteries that last longer."
+      },
+      {
+        "id": 2,
+        "start": 4.43,
+        "end": 9.43,
+        "text": "And today's Duracell batteries can even outrun the ones we made just a few years ago."
+      },
+      {
+        "id": 3,
+        "start": 9.81,
+        "end": 10.87,
+        "text": "Today's Duracell."
+      },
+      {
+        "id": 4,
+        "start": 11.11,
+        "end": 13.17,
+        "text": "You can't top ..."
+      },
+      {
+        "id": 5,
+        "start": 13.17,
+        "end": 14.29,
+        "text": "the Copper Top."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Duracell Race ",
+    "decade": 1990,
+    "sequence": 85,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0408",
+    "url": "https://youtu.be/PI9vsH5kio0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

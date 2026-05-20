@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_92",
+  "input_path": "corpus/03_audio/tv_com_1980_92.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_92.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_92.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We've loosened our collar.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 8.66,
+        "end": 29.44,
+        "text": "We've loosened our collar."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Arrow Shirts We ve loosened our collar",
+    "decade": 1980,
+    "sequence": 92,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0304",
+    "url": "https://youtu.be/0dKLjwVCtdM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

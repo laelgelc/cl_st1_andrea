@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_32",
+  "input_path": "corpus/03_audio/tv_com_2000_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's only one word for the world's most advanced bra. IPEX. Victoria's Secret's revolutionary IPEX. And now, patent-pending IPEX is available in an all-new sexy demi. The Victoria's Secret IPEX Demi. Do you IPEX?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.55,
+        "end": 4.99,
+        "text": "There's only one word for the world's most advanced bra."
+      },
+      {
+        "id": 2,
+        "start": 6.49,
+        "end": 7.21,
+        "text": "IPEX."
+      },
+      {
+        "id": 3,
+        "start": 7.93,
+        "end": 11.07,
+        "text": "Victoria's Secret's revolutionary IPEX."
+      },
+      {
+        "id": 4,
+        "start": 11.07,
+        "end": 18.31,
+        "text": "And now, patent-pending IPEX is available in an all-new sexy demi."
+      },
+      {
+        "id": 5,
+        "start": 24.93,
+        "end": 27.21,
+        "text": "The Victoria's Secret IPEX Demi."
+      },
+      {
+        "id": 6,
+        "start": 27.95,
+        "end": 29.13,
+        "text": "Do you IPEX?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Victoria's Secret IPEX Bra",
+    "decade": 2000,
+    "sequence": 32,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0474",
+    "url": "https://youtu.be/sInT6AaHLmM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

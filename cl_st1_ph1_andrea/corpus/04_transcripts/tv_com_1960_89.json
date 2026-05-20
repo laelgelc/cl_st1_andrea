@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1960_89",
+  "input_path": "corpus/03_audio/tv_com_1960_89.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_89.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_89.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Marvin Potts, what's this chiffon doing in your briefcase? Did you get this for that secretary of yours? Henrietta. That is the dishwashing liquid for blondes, and your secretary is a blonde. Now, if... That's not fair. It's called a dishwashing liquid for blondes because it's mild enough for the most delicate kind of skin, blonde skin. So it's easy on anybody's hands, even yours, sweetheart. Yours too, Romeo. Wash. New chiffon, gentle to all...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.88,
+        "end": 5.92,
+        "text": "Marvin Potts, what's this chiffon doing in your briefcase?"
+      },
+      {
+        "id": 2,
+        "start": 6.16,
+        "end": 8.1,
+        "text": "Did you get this for that secretary of yours?"
+      },
+      {
+        "id": 3,
+        "start": 8.6,
+        "end": 9.04,
+        "text": "Henrietta."
+      },
+      {
+        "id": 4,
+        "start": 9.22,
+        "end": 12.18,
+        "text": "That is the dishwashing liquid for blondes, and your secretary is a blonde."
+      },
+      {
+        "id": 5,
+        "start": 12.34,
+        "end": 12.48,
+        "text": "Now, if..."
+      },
+      {
+        "id": 6,
+        "start": 12.48,
+        "end": 13.88,
+        "text": "That's not fair."
+      },
+      {
+        "id": 7,
+        "start": 14.04,
+        "end": 19.66,
+        "text": "It's called a dishwashing liquid for blondes because it's mild enough for the most delicate kind of skin, blonde skin."
+      },
+      {
+        "id": 8,
+        "start": 19.84,
+        "end": 22.86,
+        "text": "So it's easy on anybody's hands, even yours, sweetheart."
+      },
+      {
+        "id": 9,
+        "start": 23.24,
+        "end": 24.6,
+        "text": "Yours too, Romeo."
+      },
+      {
+        "id": 10,
+        "start": 25.5,
+        "end": 25.94,
+        "text": "Wash."
+      },
+      {
+        "id": 11,
+        "start": 25.94,
+        "end": 28.94,
+        "text": "New chiffon, gentle to all..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chiffon Dishwashing Liquid ",
+    "decade": 1960,
+    "sequence": 89,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0152",
+    "url": "https://youtu.be/3JiBl9eW9bs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

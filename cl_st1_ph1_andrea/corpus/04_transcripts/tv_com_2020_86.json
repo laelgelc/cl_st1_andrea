@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_86",
+  "input_path": "corpus/03_audio/tv_com_2020_86.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_86.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_86.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We're done. What about these? Looks right. The Quicker Picker Upper. Bounty absorbs spills like a sponge and is two times more absorbent so you can use less. Bounty, the Quicker Picker Upper.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.05,
+        "end": 2.05,
+        "text": "We're done. What about these?"
+      },
+      {
+        "id": 2,
+        "start": 2.55,
+        "end": 3.73,
+        "text": "Looks right."
+      },
+      {
+        "id": 3,
+        "start": 3.73,
+        "end": 13.24,
+        "text": "The Quicker Picker Upper. Bounty absorbs spills like a sponge and is two times more absorbent so you can use less."
+      },
+      {
+        "id": 4,
+        "start": 13.54,
+        "end": 15.54,
+        "text": "Bounty, the Quicker Picker Upper."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2023 Bounty Paper Towels Coffee Table Assembly",
+    "decade": 2020,
+    "sequence": 86,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0705",
+    "url": "https://youtu.be/luobscKBgc4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_36",
+  "input_path": "corpus/03_audio/tv_com_2000_36.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_36.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_36.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When you want a battery that keeps going, and going, and going, and going, Energizer Max. Do you have the bunny inside? Got the bunny inside.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 16.045,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.22,
+        "end": 11.78,
+        "text": "When you want a battery that keeps going, and going, and going, and going, Energizer Max."
+      },
+      {
+        "id": 2,
+        "start": 12.04,
+        "end": 13.38,
+        "text": "Do you have the bunny inside?"
+      },
+      {
+        "id": 3,
+        "start": 13.62,
+        "end": 14.88,
+        "text": "Got the bunny inside."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Energize Max Battery",
+    "decade": 2000,
+    "sequence": 36,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0478",
+    "url": "https://youtu.be/7UzHYfeW0Bg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

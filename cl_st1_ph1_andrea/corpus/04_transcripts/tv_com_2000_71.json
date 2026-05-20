@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_71",
+  "input_path": "corpus/03_audio/tv_com_2000_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The 20th century was one of widespread progress and invention, except when it came to cleaning the floors. But all that changed with Swiffer WetJet. Push the button. WetJet helps dissolve and absorb dirt, cleaning places you never imagined you could before. And when the job's done, so's the dirt. Swiffer WetJet. Changing the way America cleans floors.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.22,
+        "end": 6.76,
+        "text": "The 20th century was one of widespread progress and invention,"
+      },
+      {
+        "id": 2,
+        "start": 7.1,
+        "end": 9.12,
+        "text": "except when it came to cleaning the floors."
+      },
+      {
+        "id": 3,
+        "start": 10.78,
+        "end": 13.12,
+        "text": "But all that changed with Swiffer WetJet."
+      },
+      {
+        "id": 4,
+        "start": 16.14,
+        "end": 16.96,
+        "text": "Push the button."
+      },
+      {
+        "id": 5,
+        "start": 17.22,
+        "end": 19.0,
+        "text": "WetJet helps dissolve and absorb dirt,"
+      },
+      {
+        "id": 6,
+        "start": 19.18,
+        "end": 21.48,
+        "text": "cleaning places you never imagined you could before."
+      },
+      {
+        "id": 7,
+        "start": 22.2,
+        "end": 24.52,
+        "text": "And when the job's done, so's the dirt."
+      },
+      {
+        "id": 8,
+        "start": 25.94,
+        "end": 28.94,
+        "text": "Swiffer WetJet. Changing the way America cleans floors."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Swiffer Wet Jet",
+    "decade": 2000,
+    "sequence": 71,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0513",
+    "url": "https://youtu.be/rrldVABU_G8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

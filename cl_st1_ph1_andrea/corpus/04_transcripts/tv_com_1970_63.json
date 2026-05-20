@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1970_63",
+  "input_path": "corpus/03_audio/tv_com_1970_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Here's the Huffy with a tubular fork, double-gusseted frame, and motocross mag-type wheels. Pro Thunder! Long cranks for more power, and BMX pads so you can take the bumps and run. Pro Thunder! This Huffy's built tough, built to go the distance. Pro Thunder! Pro Thunder 4, assembly required. From Huffy, building the bikes America likes.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.52,
+        "end": 7.92,
+        "text": "Here's the Huffy with a tubular fork, double-gusseted frame, and motocross mag-type wheels."
+      },
+      {
+        "id": 2,
+        "start": 8.4,
+        "end": 9.28,
+        "text": "Pro Thunder!"
+      },
+      {
+        "id": 3,
+        "start": 9.98,
+        "end": 15.04,
+        "text": "Long cranks for more power, and BMX pads so you can take the bumps and run."
+      },
+      {
+        "id": 4,
+        "start": 15.1,
+        "end": 15.96,
+        "text": "Pro Thunder!"
+      },
+      {
+        "id": 5,
+        "start": 16.94,
+        "end": 20.16,
+        "text": "This Huffy's built tough, built to go the distance."
+      },
+      {
+        "id": 6,
+        "start": 20.42,
+        "end": 21.32,
+        "text": "Pro Thunder!"
+      },
+      {
+        "id": 7,
+        "start": 22.8,
+        "end": 25.48,
+        "text": "Pro Thunder 4, assembly required."
+      },
+      {
+        "id": 8,
+        "start": 26.18,
+        "end": 29.98,
+        "text": "From Huffy, building the bikes America likes."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Pro Thunder 4 Bike by Huffy",
+    "decade": 1970,
+    "sequence": 63,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:46:05",
+    "source_end": "0:46:35"
+  }
+}

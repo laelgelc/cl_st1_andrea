@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_74",
+  "input_path": "corpus/03_audio/tv_com_1990_74.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_74.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_74.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Introducing Pitfall, the jungle adventure video game. Just a reminder, not everyone wins. Pitfall, the mind adventure for Sega Genesis and Super Nintendo Entertainment Systems from Activision.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.162625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Introducing Pitfall, the jungle adventure video game."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "Just a reminder, not everyone wins."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 14.0,
+        "text": "Pitfall, the mind adventure for Sega Genesis and Super Nintendo Entertainment Systems from Activision."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Pitfall The Mayan Adventure",
+    "decade": 1990,
+    "sequence": 74,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0397",
+    "url": "https://youtu.be/CXKHIYgzkSs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

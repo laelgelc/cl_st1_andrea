@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_111",
+  "input_path": "corpus/03_audio/tv_com_1980_111.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_111.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_111.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Down at McDonald's where the arches glow, they've got Chicken McNuggets and they're hot to go! Chicken, chicken, chicken, how you doing? Chicken, chicken, chicken, McNuggets! Take a light-tender chicken, chicken, chicken McNugget then, double dutch it, dip it right, right through it. Take the number one nugget and jump to it. Six pack, nine pack, twenty pack to go. Don't be a liar if you don't get high, it's a good time for the great taste of McDonald's.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.66,
+        "end": 7.32,
+        "text": "Down at McDonald's where the arches glow, they've got Chicken McNuggets and they're hot to go!"
+      },
+      {
+        "id": 2,
+        "start": 8.04,
+        "end": 11.78,
+        "text": "Chicken, chicken, chicken, how you doing? Chicken, chicken, chicken, McNuggets!"
+      },
+      {
+        "id": 3,
+        "start": 11.88,
+        "end": 17.76,
+        "text": "Take a light-tender chicken, chicken, chicken McNugget then, double dutch it, dip it right, right through it."
+      },
+      {
+        "id": 4,
+        "start": 18.34,
+        "end": 22.64,
+        "text": "Take the number one nugget and jump to it. Six pack, nine pack, twenty pack to go."
+      },
+      {
+        "id": 5,
+        "start": 22.64,
+        "end": 28.04,
+        "text": "Don't be a liar if you don't get high, it's a good time for the great taste of McDonald's."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Mc Donald's Jump to it",
+    "decade": 1980,
+    "sequence": 111,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:07:38",
+    "source_end": "0:08:08"
+  }
+}

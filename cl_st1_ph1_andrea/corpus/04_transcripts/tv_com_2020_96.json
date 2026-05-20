@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2020_96",
+  "input_path": "corpus/03_audio/tv_com_2020_96.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_96.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_96.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "That was fun. Alexa, play our dance playlist. Your playlist, dance. Alexa, turn on the living room lights. Turning on lights. Alexa, can you pause time? Let's just enjoy the moment. Hurry in for exceptional offers on the new BMW X3 with Alexa built in.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.33,
+        "end": 2.47,
+        "text": "That was fun."
+      },
+      {
+        "id": 2,
+        "start": 4.23,
+        "end": 5.67,
+        "text": "Alexa, play our dance playlist."
+      },
+      {
+        "id": 3,
+        "start": 6.05,
+        "end": 7.35,
+        "text": "Your playlist, dance."
+      },
+      {
+        "id": 4,
+        "start": 14.95,
+        "end": 16.89,
+        "text": "Alexa, turn on the living room lights."
+      },
+      {
+        "id": 5,
+        "start": 17.15,
+        "end": 18.01,
+        "text": "Turning on lights."
+      },
+      {
+        "id": 6,
+        "start": 20.39,
+        "end": 22.29,
+        "text": "Alexa, can you pause time?"
+      },
+      {
+        "id": 7,
+        "start": 23.03,
+        "end": 24.69,
+        "text": "Let's just enjoy the moment."
+      },
+      {
+        "id": 8,
+        "start": 25.03,
+        "end": 30.01,
+        "text": "Hurry in for exceptional offers on the new BMW X3 with Alexa built in."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 BMW 2022 X3 Unparalleled Connection [T2]",
+    "decade": 2020,
+    "sequence": 96,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0715",
+    "url": "https://youtu.be/ToEnnYxOCpY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

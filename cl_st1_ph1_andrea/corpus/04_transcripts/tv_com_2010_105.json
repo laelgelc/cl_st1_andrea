@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2010_105",
+  "input_path": "corpus/03_audio/tv_com_2010_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "If there's one thing we all need, it's a hand to hold. That's why we make Purell Advanced Hand Sanitizer. 80% of germs can be transmitted by hand. And when used daily, Purell Advanced helps reduce your chance of getting sick. It's no wonder Purell is the number one brand trusted by hospitals and moms. Because we all know it's about more than health. It's about showing you care. Pick up Purell Advanced Hand Sanitizer at a retailer near you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.94,
+        "end": 7.72,
+        "text": "If there's one thing we all need, it's a hand to hold."
+      },
+      {
+        "id": 2,
+        "start": 8.16,
+        "end": 10.7,
+        "text": "That's why we make Purell Advanced Hand Sanitizer."
+      },
+      {
+        "id": 3,
+        "start": 11.08,
+        "end": 13.48,
+        "text": "80% of germs can be transmitted by hand."
+      },
+      {
+        "id": 4,
+        "start": 13.68,
+        "end": 17.38,
+        "text": "And when used daily, Purell Advanced helps reduce your chance of getting sick."
+      },
+      {
+        "id": 5,
+        "start": 17.72,
+        "end": 21.86,
+        "text": "It's no wonder Purell is the number one brand trusted by hospitals and moms."
+      },
+      {
+        "id": 6,
+        "start": 22.04,
+        "end": 24.6,
+        "text": "Because we all know it's about more than health."
+      },
+      {
+        "id": 7,
+        "start": 24.82,
+        "end": 26.16,
+        "text": "It's about showing you care."
+      },
+      {
+        "id": 8,
+        "start": 26.8,
+        "end": 29.88,
+        "text": "Pick up Purell Advanced Hand Sanitizer at a retailer near you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Purell Hand Sanitizer Holding Hands",
+    "decade": 2010,
+    "sequence": 105,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0604",
+    "url": "https://youtu.be/oQOX1M0OthA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

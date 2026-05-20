@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_6",
+  "input_path": "corpus/03_audio/tv_com_1980_6.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_6.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_6.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Polydent presents Martha Ray, TV star, denture wearer. You know, when I clown in front of that camera, this big smile needs something extra. Extra Strength Polydent Green. It gets my dentures sparkling clean. Watch. Tough lab stains. Now, Extra Strength Polydent. It's fantastic. Gets tough stains clean, even in between. So take it from a big mouth. Extra Strength Polydent Green gets tough stains clean.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.22,
+        "end": 3.94,
+        "text": "Polydent presents Martha Ray, TV star, denture wearer."
+      },
+      {
+        "id": 2,
+        "start": 3.98,
+        "end": 9.4,
+        "text": "You know, when I clown in front of that camera, this big smile needs something extra."
+      },
+      {
+        "id": 3,
+        "start": 10.24,
+        "end": 13.94,
+        "text": "Extra Strength Polydent Green. It gets my dentures sparkling clean."
+      },
+      {
+        "id": 4,
+        "start": 14.32,
+        "end": 17.78,
+        "text": "Watch. Tough lab stains. Now, Extra Strength Polydent."
+      },
+      {
+        "id": 5,
+        "start": 17.98,
+        "end": 22.66,
+        "text": "It's fantastic. Gets tough stains clean, even in between."
+      },
+      {
+        "id": 6,
+        "start": 23.24,
+        "end": 27.98,
+        "text": "So take it from a big mouth. Extra Strength Polydent Green gets tough stains clean."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 Extra Strength Polident Green Denture Cleanser 1981",
+    "decade": 1980,
+    "sequence": 6,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0230",
+    "url": "https://youtu.be/SVlY6_q7Nho",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

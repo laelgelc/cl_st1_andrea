@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2020_47",
+  "input_path": "corpus/03_audio/tv_com_2020_47.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_47.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_47.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Maybelline New York's new express brow duo. Fuller looking brows in just two steps. Step one, define. Step two, build. So easy. New express brow duo, Maybelline New York.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 14.96,
+        "text": "Maybelline New York's new express brow duo. Fuller looking brows in just two steps. Step one, define. Step two, build. So easy. New express brow duo, Maybelline New York."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Maybelline New York Express Brow Duo Eyebrown Pencil and Powder So Easy",
+    "decade": 2020,
+    "sequence": 47,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0666",
+    "url": "https://youtu.be/cISsxtRWwMQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

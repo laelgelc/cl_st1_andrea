@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_102",
+  "input_path": "corpus/03_audio/tv_com_1980_102.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_102.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_102.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "For a moist, super-moist cake, Creamy Deluxe is the only frosting that's good enough. Because it's water-cream creamy. Cream digger! You beg someone happy. The cream creaminess of Creamy Deluxe. It's the only way to frost the incredible moistness of a super-moist cake. Make someone happy.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.11,
+        "end": 5.83,
+        "text": "For a moist, super-moist cake, Creamy Deluxe is the only frosting that's good enough."
+      },
+      {
+        "id": 2,
+        "start": 5.83,
+        "end": 7.81,
+        "text": "Because it's water-cream creamy."
+      },
+      {
+        "id": 3,
+        "start": 7.89,
+        "end": 9.05,
+        "text": "Cream digger!"
+      },
+      {
+        "id": 4,
+        "start": 9.23,
+        "end": 11.47,
+        "text": "You beg someone happy."
+      },
+      {
+        "id": 5,
+        "start": 11.73,
+        "end": 16.7,
+        "text": "The cream creaminess of Creamy Deluxe."
+      },
+      {
+        "id": 6,
+        "start": 16.92,
+        "end": 21.38,
+        "text": "It's the only way to frost the incredible moistness of a super-moist cake."
+      },
+      {
+        "id": 7,
+        "start": 22.04,
+        "end": 27.88,
+        "text": "Make someone happy."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 Betty Crocker Supermoist Cake Mix Bake Someone Happy",
+    "decade": 1980,
+    "sequence": 102,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0313",
+    "url": "https://youtu.be/MIwweIzXMZo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

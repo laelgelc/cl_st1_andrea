@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2010_50",
+  "input_path": "corpus/03_audio/tv_com_2010_50.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_50.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_50.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "A bull rider is bold. Now, a bull rider on a plane is bolder than bold. And if he jumps from that plane, that's bolder than bolder than bold. And if he jumps while eating a Butterfinger bar and all its crispity, crunchity, peanut buttery glory, that's bolder than bolder than bolder than bold. And if he eats it, even when his mother tells him not to, you'll spoil your dinner. That's bolder than bolder than bolder than bolder than bold. Bolder than bold. Crispity. Crunchity. Peanut buttery.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.1,
+        "end": 3.26,
+        "text": "A bull rider is bold."
+      },
+      {
+        "id": 2,
+        "start": 3.52,
+        "end": 6.5,
+        "text": "Now, a bull rider on a plane is bolder than bold."
+      },
+      {
+        "id": 3,
+        "start": 6.72,
+        "end": 10.46,
+        "text": "And if he jumps from that plane, that's bolder than bolder than bold."
+      },
+      {
+        "id": 4,
+        "start": 10.7,
+        "end": 14.96,
+        "text": "And if he jumps while eating a Butterfinger bar and all its crispity, crunchity, peanut buttery glory,"
+      },
+      {
+        "id": 5,
+        "start": 15.2,
+        "end": 17.4,
+        "text": "that's bolder than bolder than bolder than bold."
+      },
+      {
+        "id": 6,
+        "start": 17.66,
+        "end": 20.44,
+        "text": "And if he eats it, even when his mother tells him not to,"
+      },
+      {
+        "id": 7,
+        "start": 20.54,
+        "end": 21.84,
+        "text": "you'll spoil your dinner."
+      },
+      {
+        "id": 8,
+        "start": 22.22,
+        "end": 25.4,
+        "text": "That's bolder than bolder than bolder than bolder than bold."
+      },
+      {
+        "id": 9,
+        "start": 25.56,
+        "end": 28.26,
+        "text": "Bolder than bold. Crispity. Crunchity. Peanut buttery."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 Butterfinger Bolder than Bold",
+    "decade": 2010,
+    "sequence": 50,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:08:21",
+    "source_end": "0:08:50"
+  }
+}

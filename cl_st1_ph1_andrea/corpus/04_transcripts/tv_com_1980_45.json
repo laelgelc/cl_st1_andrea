@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_45",
+  "input_path": "corpus/03_audio/tv_com_1980_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You can feel the anticipation in the pit of your stomach because you're about to take the first real drive in your new Firebird Trans Am. Your pulse quickens as the exhilarating 5-liter V8 comes to life. Now the road beckons, and freedom is just a few miles away. The moment you've been waiting for is here. Pontiac. Now the excitement really begins.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0001875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 3.22,
+        "text": "You can feel the anticipation in the pit of your stomach"
+      },
+      {
+        "id": 2,
+        "start": 3.22,
+        "end": 7.54,
+        "text": "because you're about to take the first real drive in your new Firebird Trans Am."
+      },
+      {
+        "id": 3,
+        "start": 8.1,
+        "end": 12.16,
+        "text": "Your pulse quickens as the exhilarating 5-liter V8 comes to life."
+      },
+      {
+        "id": 4,
+        "start": 17.58,
+        "end": 21.98,
+        "text": "Now the road beckons, and freedom is just a few miles away."
+      },
+      {
+        "id": 5,
+        "start": 22.56,
+        "end": 25.32,
+        "text": "The moment you've been waiting for is here."
+      },
+      {
+        "id": 6,
+        "start": 26.2,
+        "end": 26.66,
+        "text": "Pontiac."
+      },
+      {
+        "id": 7,
+        "start": 27.1,
+        "end": 29.44,
+        "text": "Now the excitement really begins."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1982 Pontiac Firebird",
+    "decade": 1980,
+    "sequence": 45,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0265",
+    "url": "https://youtu.be/9INwD6bxB0k",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

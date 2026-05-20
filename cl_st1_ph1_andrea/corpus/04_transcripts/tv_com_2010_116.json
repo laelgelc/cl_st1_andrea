@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_116",
+  "input_path": "corpus/03_audio/tv_com_2010_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Well, I usually get the rough and bumpy skin on the backs of my arms. New Gold Bond Rough and Bumpy Skin Therapy. Used daily, it exfoliates, smooths, softens. 90% saw smoother, softer skin in one week. Just nice and smooth. Gold Bond Ultimate Lotion, Ultimate Skin.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.72,
+        "text": "Well, I usually get the rough and bumpy skin on the backs of my arms."
+      },
+      {
+        "id": 2,
+        "start": 3.92,
+        "end": 6.02,
+        "text": "New Gold Bond Rough and Bumpy Skin Therapy."
+      },
+      {
+        "id": 3,
+        "start": 6.18,
+        "end": 8.54,
+        "text": "Used daily, it exfoliates, smooths, softens."
+      },
+      {
+        "id": 4,
+        "start": 8.76,
+        "end": 11.38,
+        "text": "90% saw smoother, softer skin in one week."
+      },
+      {
+        "id": 5,
+        "start": 11.46,
+        "end": 12.34,
+        "text": "Just nice and smooth."
+      },
+      {
+        "id": 6,
+        "start": 12.92,
+        "end": 14.88,
+        "text": "Gold Bond Ultimate Lotion, Ultimate Skin."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Gold Bond Rough & Bumpy Skin Therapy Cream Ultimate Skin",
+    "decade": 2010,
+    "sequence": 116,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0615",
+    "url": "https://youtu.be/xxOCwgytx8U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

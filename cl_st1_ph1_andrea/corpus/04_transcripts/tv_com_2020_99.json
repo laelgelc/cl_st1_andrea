@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_99",
+  "input_path": "corpus/03_audio/tv_com_2020_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's something in the air There's something coming out It's just beginning all starts",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.25,
+        "end": 5.25,
+        "text": "There's something in the air"
+      },
+      {
+        "id": 2,
+        "start": 7.93,
+        "end": 12.72,
+        "text": "There's something coming out"
+      },
+      {
+        "id": 3,
+        "start": 16.28,
+        "end": 26.96,
+        "text": "It's just beginning all starts"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Microsoft Windows 11 Brings You Closer to What You Love",
+    "decade": 2020,
+    "sequence": 99,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0718",
+    "url": "https://youtu.be/KmBMljfxgow",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

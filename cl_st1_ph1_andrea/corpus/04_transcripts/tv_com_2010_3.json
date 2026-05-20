@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_3",
+  "input_path": "corpus/03_audio/tv_com_2010_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Like most actors, my real job is saving the world. Start with plain water, add buckets, mix in the perfect flavor. Look, soda that's better for you and all of us. Less sugar, less bottles. If only I could make this message go viral. I just love helping people. Oh yeah, she done it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 3.02,
+        "text": "Like most actors, my real job is saving the world."
+      },
+      {
+        "id": 2,
+        "start": 3.42,
+        "end": 7.46,
+        "text": "Start with plain water, add buckets, mix in the perfect flavor."
+      },
+      {
+        "id": 3,
+        "start": 7.96,
+        "end": 10.6,
+        "text": "Look, soda that's better for you and all of us."
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 12.68,
+        "text": "Less sugar, less bottles."
+      },
+      {
+        "id": 5,
+        "start": 13.22,
+        "end": 15.44,
+        "text": "If only I could make this message go viral."
+      },
+      {
+        "id": 6,
+        "start": 25.48,
+        "end": 27.36,
+        "text": "I just love helping people."
+      },
+      {
+        "id": 7,
+        "start": 27.68,
+        "end": 28.64,
+        "text": "Oh yeah, she done it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Sodastream Soda Maker featuring Scarlett Johansson",
+    "decade": 2010,
+    "sequence": 3,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0565",
+    "url": "https://youtu.be/ynnS0TdqFeI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

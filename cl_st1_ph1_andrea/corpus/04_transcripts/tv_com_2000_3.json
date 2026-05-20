@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_3",
+  "input_path": "corpus/03_audio/tv_com_2000_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Families love Prego. Families like yours.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.55,
+        "end": 3.57,
+        "text": "Families love Prego."
+      },
+      {
+        "id": 2,
+        "start": 5.83,
+        "end": 7.27,
+        "text": "Families like yours."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Prego Slurp Everyone goes for Prego",
+    "decade": 2000,
+    "sequence": 3,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0445",
+    "url": "https://youtu.be/3MHqk118LPg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

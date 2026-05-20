@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1970_53",
+  "input_path": "corpus/03_audio/tv_com_1970_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is Farrah Fawcett Shampoo without the label because what's in the bottle is more important to you than what's on it. Fabergé created this shampoo and put in things that I believe in like vitamins, minerals, protein, and herbs. It's an extra-rich shampoo, and it really does leave your hair clean, fresh-smelling, lots of body and shine. I hope you try it for what's in the bottle. Farrah Fawcett Shampoo and Cream Rinse Conditioner by Fabergé.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 3.75,
+        "text": "This is Farrah Fawcett Shampoo without the label"
+      },
+      {
+        "id": 2,
+        "start": 3.75,
+        "end": 7.47,
+        "text": "because what's in the bottle is more important to you than what's on it."
+      },
+      {
+        "id": 3,
+        "start": 8.09,
+        "end": 11.21,
+        "text": "Fabergé created this shampoo and put in things that I believe in"
+      },
+      {
+        "id": 4,
+        "start": 11.21,
+        "end": 14.33,
+        "text": "like vitamins, minerals, protein, and herbs."
+      },
+      {
+        "id": 5,
+        "start": 14.75,
+        "end": 17.81,
+        "text": "It's an extra-rich shampoo, and it really does leave your hair clean,"
+      },
+      {
+        "id": 6,
+        "start": 18.15,
+        "end": 20.37,
+        "text": "fresh-smelling, lots of body and shine."
+      },
+      {
+        "id": 7,
+        "start": 21.43,
+        "end": 24.21,
+        "text": "I hope you try it for what's in the bottle."
+      },
+      {
+        "id": 8,
+        "start": 24.77,
+        "end": 28.63,
+        "text": "Farrah Fawcett Shampoo and Cream Rinse Conditioner by Fabergé."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Farrah Faucet Shampoo",
+    "decade": 1970,
+    "sequence": 53,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:37:41",
+    "source_end": "0:38:10"
+  }
+}

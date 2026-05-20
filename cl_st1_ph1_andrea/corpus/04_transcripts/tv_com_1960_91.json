@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_91",
+  "input_path": "corpus/03_audio/tv_com_1960_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Just as a pool of water reflects the beauty of this home, now a new kind of floor wax reflects the beauty of your room. It's new formula clear from Johnson Wax with the shimmering new deep look shine. Yes, clear, the floor wax that dries clear as glass, never yellows, now brings you the shimmering new deep look shine. New formula clear. Try it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.14,
+        "end": 4.7,
+        "text": "Just as a pool of water reflects the beauty of this home,"
+      },
+      {
+        "id": 2,
+        "start": 5.68,
+        "end": 9.42,
+        "text": "now a new kind of floor wax reflects the beauty of your room."
+      },
+      {
+        "id": 3,
+        "start": 10.0,
+        "end": 12.98,
+        "text": "It's new formula clear from Johnson Wax"
+      },
+      {
+        "id": 4,
+        "start": 12.98,
+        "end": 16.64,
+        "text": "with the shimmering new deep look shine."
+      },
+      {
+        "id": 5,
+        "start": 17.64,
+        "end": 22.22,
+        "text": "Yes, clear, the floor wax that dries clear as glass, never yellows,"
+      },
+      {
+        "id": 6,
+        "start": 22.34,
+        "end": 26.28,
+        "text": "now brings you the shimmering new deep look shine."
+      },
+      {
+        "id": 7,
+        "start": 27.38,
+        "end": 29.56,
+        "text": "New formula clear. Try it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Klear Floor Wax Never Yellows",
+    "decade": 1960,
+    "sequence": 91,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0154",
+    "url": "https://youtu.be/5fBiZvsYY6w",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

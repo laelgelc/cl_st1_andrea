@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_77",
+  "input_path": "corpus/03_audio/tv_com_2020_77.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_77.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_77.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Folks, I've seen a thing or two, but these prescription prices, pricey, higher than a rooster on stilts. Ain't that right, Dusty Pete? Reckon it's time we rope them in. Good Rx makes saving time and money easier than splitting a biscuit. Paper's looking mighty big for its britches there, partner. Save time and money on prescriptions. Check Good Rx.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.78,
+        "text": "Folks, I've seen a thing or two, but these prescription prices, pricey, higher than a rooster on stilts."
+      },
+      {
+        "id": 2,
+        "start": 7.34,
+        "end": 8.5,
+        "text": "Ain't that right, Dusty Pete?"
+      },
+      {
+        "id": 3,
+        "start": 11.33,
+        "end": 13.21,
+        "text": "Reckon it's time we rope them in."
+      },
+      {
+        "id": 4,
+        "start": 13.61,
+        "end": 17.27,
+        "text": "Good Rx makes saving time and money easier than splitting a biscuit."
+      },
+      {
+        "id": 5,
+        "start": 19.07,
+        "end": 21.95,
+        "text": "Paper's looking mighty big for its britches there, partner."
+      },
+      {
+        "id": 6,
+        "start": 25.88,
+        "end": 29.02,
+        "text": "Save time and money on prescriptions. Check Good Rx."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 GoodRx Medical Service App The Savings Wrangler",
+    "decade": 2020,
+    "sequence": 77,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0696",
+    "url": "https://youtu.be/XoTOmLy7oz4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

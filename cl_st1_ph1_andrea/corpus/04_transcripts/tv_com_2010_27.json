@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_27",
+  "input_path": "corpus/03_audio/tv_com_2010_27.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_27.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_27.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "With every era comes two things Change and a Honda Accord that defines a generation Introducing the all-new Accord the most impressive Honda",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.21,
+        "end": 6.21,
+        "text": "With every era comes two things"
+      },
+      {
+        "id": 2,
+        "start": 9.08,
+        "end": 20.37,
+        "text": "Change and a Honda Accord that defines a generation"
+      },
+      {
+        "id": 3,
+        "start": 23.41,
+        "end": 25.41,
+        "text": "Introducing the all-new Accord"
+      },
+      {
+        "id": 4,
+        "start": 25.67,
+        "end": 27.67,
+        "text": "the most impressive Honda"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Honda Accord Evolution 2018 Accord Touring 2.0T",
+    "decade": 2010,
+    "sequence": 27,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0589",
+    "url": "https://youtu.be/iQuNypW9t2M",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

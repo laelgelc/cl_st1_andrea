@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_4",
+  "input_path": "corpus/03_audio/tv_com_1970_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You are looking at a very special place, the Bell Systems Network Operations Center in Bedminster, New Jersey. Here's where we watch the flow of nearly 40 million long-distance calls a day. If a bottleneck does develop, computer technology helps us reroute the traffic and get your call through. Take your St. Louis traffic via Sacramento. The Network Operations Center, helping to get your long-distance calls through quickly and easily. The Bell System, keeping your communication system the best in the world.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.34,
+        "end": 6.18,
+        "text": "You are looking at a very special place, the Bell Systems Network Operations Center in Bedminster, New Jersey."
+      },
+      {
+        "id": 2,
+        "start": 6.62,
+        "end": 10.86,
+        "text": "Here's where we watch the flow of nearly 40 million long-distance calls a day."
+      },
+      {
+        "id": 3,
+        "start": 11.54,
+        "end": 17.44,
+        "text": "If a bottleneck does develop, computer technology helps us reroute the traffic and get your call through."
+      },
+      {
+        "id": 4,
+        "start": 17.5,
+        "end": 19.44,
+        "text": "Take your St. Louis traffic via Sacramento."
+      },
+      {
+        "id": 5,
+        "start": 19.68,
+        "end": 25.14,
+        "text": "The Network Operations Center, helping to get your long-distance calls through quickly and easily."
+      },
+      {
+        "id": 6,
+        "start": 25.52,
+        "end": 29.12,
+        "text": "The Bell System, keeping your communication system the best in the world."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Bell System Communication",
+    "decade": 1970,
+    "sequence": 4,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:03:44",
+    "source_end": "0:04:14"
+  }
+}

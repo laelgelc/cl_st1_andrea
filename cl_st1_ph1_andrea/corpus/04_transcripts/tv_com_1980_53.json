@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_53",
+  "input_path": "corpus/03_audio/tv_com_1980_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Some people will buy any old gasoline. Others expect more. So they go the extra mile to Texaco for the clean gasoline and competitively priced products. As well, we give you special bonuses year-round that stretch your dollar even further. Expect more from Texaco.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.58,
+        "end": 4.32,
+        "text": "Some people will buy any old gasoline."
+      },
+      {
+        "id": 2,
+        "start": 5.7,
+        "end": 7.44,
+        "text": "Others expect more."
+      },
+      {
+        "id": 3,
+        "start": 9.85,
+        "end": 14.13,
+        "text": "So they go the extra mile to Texaco for the clean gasoline"
+      },
+      {
+        "id": 4,
+        "start": 14.13,
+        "end": 17.11,
+        "text": "and competitively priced products."
+      },
+      {
+        "id": 5,
+        "start": 18.49,
+        "end": 21.03,
+        "text": "As well, we give you special bonuses year-round"
+      },
+      {
+        "id": 6,
+        "start": 21.03,
+        "end": 23.07,
+        "text": "that stretch your dollar even further."
+      },
+      {
+        "id": 7,
+        "start": 23.97,
+        "end": 25.43,
+        "text": "Expect more from Texaco."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Texaco Gas",
+    "decade": 1980,
+    "sequence": 53,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0273",
+    "url": "https://youtu.be/Ey5G9VICQtw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

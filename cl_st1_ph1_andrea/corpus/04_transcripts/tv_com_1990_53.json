@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_53",
+  "input_path": "corpus/03_audio/tv_com_1990_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Everybody wants a battery that goes the distance. But you never know when they're about to run out of gas. Only Duracell has the Copper Top Battery Tester. Be sure your batteries will keep going down the road. For batteries you know will last, you can't top the Copper Top.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.39,
+        "end": 4.61,
+        "text": "Everybody wants a battery that goes the distance."
+      },
+      {
+        "id": 2,
+        "start": 5.41,
+        "end": 8.95,
+        "text": "But you never know when they're about to run out of gas."
+      },
+      {
+        "id": 3,
+        "start": 10.53,
+        "end": 14.01,
+        "text": "Only Duracell has the Copper Top Battery Tester."
+      },
+      {
+        "id": 4,
+        "start": 15.23,
+        "end": 21.42,
+        "text": "Be sure your batteries will keep going down the road."
+      },
+      {
+        "id": 5,
+        "start": 22.2,
+        "end": 26.2,
+        "text": "For batteries you know will last, you can't top the Copper Top."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Duracell Copper alkaline batteries",
+    "decade": 1990,
+    "sequence": 53,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0376",
+    "url": "https://youtu.be/g4OzqwdQfg0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

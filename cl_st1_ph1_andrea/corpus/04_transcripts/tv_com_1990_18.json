@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_18",
+  "input_path": "corpus/03_audio/tv_com_1990_18.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_18.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_18.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We are better than we could ever be.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.14,
+        "end": 7.5,
+        "text": "We are better than we could ever be."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1995 Dr.Pepper Soda",
+    "decade": 1990,
+    "sequence": 18,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0341",
+    "url": "https://youtu.be/39IrcB-vnaE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

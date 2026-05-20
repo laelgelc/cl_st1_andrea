@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_90",
+  "input_path": "corpus/03_audio/tv_com_1990_90.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_90.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_90.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Who guarantees overnight air delivery on Saturday to more people coast-to-coast? Good morning. UPS on Saturday? Who did you think? Thank you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.78,
+        "end": 6.12,
+        "text": "Who guarantees overnight air delivery on Saturday to more people coast-to-coast?"
+      },
+      {
+        "id": 2,
+        "start": 6.42,
+        "end": 6.82,
+        "text": "Good morning."
+      },
+      {
+        "id": 3,
+        "start": 7.92,
+        "end": 9.3,
+        "text": "UPS on Saturday?"
+      },
+      {
+        "id": 4,
+        "start": 9.86,
+        "end": 10.56,
+        "text": "Who did you think?"
+      },
+      {
+        "id": 5,
+        "start": 10.84,
+        "end": 11.24,
+        "text": "Thank you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 UPS Saturday Delivery",
+    "decade": 1990,
+    "sequence": 90,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0413",
+    "url": "https://youtu.be/vQzsAMHrmVY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

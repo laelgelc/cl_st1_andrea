@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_33",
+  "input_path": "corpus/03_audio/tv_com_1980_33.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_33.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_33.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is one drop of Fantastic Spray Cleaner. One drop, one drop. Now, if one drop of Fantastic cleans this well, imagine what happens when a few thousand of them get together. It's so easy. It's so easy. And now try new Fantastic Bathroom Cleaner. It makes cleaning your bathroom so easy.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.24,
+        "end": 4.04,
+        "text": "This is one drop of Fantastic Spray Cleaner."
+      },
+      {
+        "id": 2,
+        "start": 4.22,
+        "end": 5.6,
+        "text": "One drop, one drop."
+      },
+      {
+        "id": 3,
+        "start": 6.3,
+        "end": 9.44,
+        "text": "Now, if one drop of Fantastic cleans this well,"
+      },
+      {
+        "id": 4,
+        "start": 9.78,
+        "end": 13.5,
+        "text": "imagine what happens when a few thousand of them get together."
+      },
+      {
+        "id": 5,
+        "start": 14.44,
+        "end": 18.34,
+        "text": "It's so easy. It's so easy."
+      },
+      {
+        "id": 6,
+        "start": 23.91,
+        "end": 26.29,
+        "text": "And now try new Fantastic Bathroom Cleaner."
+      },
+      {
+        "id": 7,
+        "start": 26.43,
+        "end": 28.61,
+        "text": "It makes cleaning your bathroom so easy."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 DOW Fantastik All purpose cleaner",
+    "decade": 1980,
+    "sequence": 33,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0255",
+    "url": "https://youtu.be/OVmZiCT9NvM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

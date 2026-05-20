@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2020_54",
+  "input_path": "corpus/03_audio/tv_com_2020_54.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_54.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_54.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Push pop, gummy roll, ready, go.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.66,
+        "end": 2.58,
+        "text": "Push pop, gummy roll, ready, go."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Push Pop Gummy Roll Pull, Press and Push",
+    "decade": 2020,
+    "sequence": 54,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0673",
+    "url": "https://youtu.be/sqUiUeoKNJ8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

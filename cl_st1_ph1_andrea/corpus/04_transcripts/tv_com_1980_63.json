@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_63",
+  "input_path": "corpus/03_audio/tv_com_1980_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Clap on, clap off, clap on, clap off, the clapper. Let you turn things on or off from anywhere in the room. Just plug in the clapper and the television, lamp, stereo, almost anything you want to clap on and off. Clap on, clap off, clap on, clap off, the clapper. Available at Walgreens, Woolworth, Perry, Snyder, Redall, and Elliott's Ace Hardware.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.11,
+        "end": 6.49,
+        "text": "Clap on, clap off, clap on, clap off, the clapper."
+      },
+      {
+        "id": 2,
+        "start": 6.75,
+        "end": 9.65,
+        "text": "Let you turn things on or off from anywhere in the room."
+      },
+      {
+        "id": 3,
+        "start": 10.15,
+        "end": 16.67,
+        "text": "Just plug in the clapper and the television, lamp, stereo, almost anything you want to clap on and off."
+      },
+      {
+        "id": 4,
+        "start": 17.03,
+        "end": 23.01,
+        "text": "Clap on, clap off, clap on, clap off, the clapper."
+      },
+      {
+        "id": 5,
+        "start": 24.55,
+        "end": 28.25,
+        "text": "Available at Walgreens, Woolworth, Perry, Snyder, Redall, and Elliott's Ace Hardware."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 The Clapper Sound-activated electrical switch",
+    "decade": 1980,
+    "sequence": 63,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:00:30",
+    "source_end": "0:00:59"
+  }
+}

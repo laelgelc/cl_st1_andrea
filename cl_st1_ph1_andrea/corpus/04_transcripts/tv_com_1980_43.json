@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_43",
+  "input_path": "corpus/03_audio/tv_com_1980_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Dan Gurney and his Toyota Celica GTS take on the all-American racer's pit crew. The pit crew looks over the Celica's ventilated disc brakes, the independent suspension. They check out the Celica's single overhead cam engine and electronic fuel injection. Inside, they check the Celica's luxurious comfort. What does all this mean to you? This is the right stuff. Oh, what a feeling. Celica. Toyota.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.17,
+        "end": 6.11,
+        "text": "Dan Gurney and his Toyota Celica GTS take on the all-American racer's pit crew."
+      },
+      {
+        "id": 2,
+        "start": 6.51,
+        "end": 10.67,
+        "text": "The pit crew looks over the Celica's ventilated disc brakes, the independent suspension."
+      },
+      {
+        "id": 3,
+        "start": 11.65,
+        "end": 15.51,
+        "text": "They check out the Celica's single overhead cam engine and electronic fuel injection."
+      },
+      {
+        "id": 4,
+        "start": 18.54,
+        "end": 20.92,
+        "text": "Inside, they check the Celica's luxurious comfort."
+      },
+      {
+        "id": 5,
+        "start": 21.7,
+        "end": 23.64,
+        "text": "What does all this mean to you?"
+      },
+      {
+        "id": 6,
+        "start": 23.86,
+        "end": 25.12,
+        "text": "This is the right stuff."
+      },
+      {
+        "id": 7,
+        "start": 25.12,
+        "end": 27.08,
+        "text": "Oh, what a feeling."
+      },
+      {
+        "id": 8,
+        "start": 27.24,
+        "end": 27.76,
+        "text": "Celica."
+      },
+      {
+        "id": 9,
+        "start": 27.94,
+        "end": 28.42,
+        "text": "Toyota."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Toyota Celica All american racers",
+    "decade": 1980,
+    "sequence": 43,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:16:11",
+    "source_end": "0:16:40"
+  }
+}

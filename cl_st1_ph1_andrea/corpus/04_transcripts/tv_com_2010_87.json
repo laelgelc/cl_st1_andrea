@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_87",
+  "input_path": "corpus/03_audio/tv_com_2010_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "New Hershey's Spreads. Bring the delicious taste of Hershey's chocolate to anything. Everything you can imagine. Explore the endless possibilities of the delicious chocolate taste that only Hershey's can deliver. With new Hershey's Spreads, the possibilities are delicious.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.93,
+        "end": 8.93,
+        "text": "New Hershey's Spreads. Bring the delicious taste of Hershey's chocolate to anything."
+      },
+      {
+        "id": 2,
+        "start": 11.93,
+        "end": 13.93,
+        "text": "Everything you can imagine."
+      },
+      {
+        "id": 3,
+        "start": 16.27,
+        "end": 22.71,
+        "text": "Explore the endless possibilities of the delicious chocolate taste that only Hershey's can deliver."
+      },
+      {
+        "id": 4,
+        "start": 23.35,
+        "end": 28.21,
+        "text": "With new Hershey's Spreads, the possibilities are delicious."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Hershey's Spreads",
+    "decade": 2010,
+    "sequence": 87,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:42:38",
+    "source_end": "0:43:08"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_25",
+  "input_path": "corpus/03_audio/tv_com_2000_25.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_25.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_25.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "by Fisher-Price with a full-year bumper-to-bumper warranty. Don't you wish you had one when you were a kid?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 22.7,
+        "end": 25.64,
+        "text": "by Fisher-Price with a full-year bumper-to-bumper warranty."
+      },
+      {
+        "id": 2,
+        "start": 25.9,
+        "end": 27.82,
+        "text": "Don't you wish you had one when you were a kid?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Power Wheels",
+    "decade": 2000,
+    "sequence": 25,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0467",
+    "url": "https://youtu.be/BVE838NSJME",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

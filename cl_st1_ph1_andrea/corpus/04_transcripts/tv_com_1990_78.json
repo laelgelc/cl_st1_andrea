@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1990_78",
+  "input_path": "corpus/03_audio/tv_com_1990_78.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_78.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_78.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Its handling will astound you, its power will amaze you, and it runs on your imagination. Macintosh Quadra, the most powerful Macintosh ever.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.82,
+        "end": 9.82,
+        "text": "Its handling will astound you, its power will amaze you, and it runs on your imagination."
+      },
+      {
+        "id": 2,
+        "start": 10.82,
+        "end": 14.82,
+        "text": "Macintosh Quadra, the most powerful Macintosh ever."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Macintosh Quadra",
+    "decade": 1990,
+    "sequence": 78,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0401",
+    "url": "https://youtu.be/xJnS5sbj6po",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

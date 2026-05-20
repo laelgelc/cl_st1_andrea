@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_45",
+  "input_path": "corpus/03_audio/tv_com_1990_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "A year ago, the editors of Popular Mechanics took home a special car. They drove it all over, in all conditions, and reported every problem they had. Here are all the problems they had to report. It's your choice.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.88,
+        "end": 5.38,
+        "text": "A year ago, the editors of Popular Mechanics took home a special car."
+      },
+      {
+        "id": 2,
+        "start": 6.1,
+        "end": 12.86,
+        "text": "They drove it all over, in all conditions, and reported every problem they had."
+      },
+      {
+        "id": 3,
+        "start": 14.16,
+        "end": 16.7,
+        "text": "Here are all the problems they had to report."
+      },
+      {
+        "id": 4,
+        "start": 18.26,
+        "end": 24.26,
+        "text": "It's your choice."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Oldsmobile Eighty Eight LSS Luxury Sports Sedan by General Motors",
+    "decade": 1990,
+    "sequence": 45,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0368",
+    "url": "https://youtu.be/2AmQRy5oVWg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

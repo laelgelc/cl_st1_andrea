@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_24",
+  "input_path": "corpus/03_audio/tv_com_1960_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You're young, married, and you're both late for work. So you tear into Carnation Instant Breakfast. Mixed with milk, as much protein, vitamins, minerals, energy as this nourishing breakfast. When you're late, it gets you where you have to be, feeling beautiful. Carnation Instant Breakfast. Tear into it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.62,
+        "end": 9.0,
+        "text": "You're young, married, and you're both late for work."
+      },
+      {
+        "id": 2,
+        "start": 9.5,
+        "end": 11.62,
+        "text": "So you tear into Carnation Instant Breakfast."
+      },
+      {
+        "id": 3,
+        "start": 12.32,
+        "end": 17.62,
+        "text": "Mixed with milk, as much protein, vitamins, minerals, energy as this nourishing breakfast."
+      },
+      {
+        "id": 4,
+        "start": 21.05,
+        "end": 24.45,
+        "text": "When you're late, it gets you where you have to be, feeling beautiful."
+      },
+      {
+        "id": 5,
+        "start": 25.81,
+        "end": 28.53,
+        "text": "Carnation Instant Breakfast. Tear into it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Carnation Instant Breakfast",
+    "decade": 1960,
+    "sequence": 24,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:40:34",
+    "source_end": "0:41:03"
+  }
+}

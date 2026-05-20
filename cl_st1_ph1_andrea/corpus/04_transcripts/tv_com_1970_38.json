@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_38",
+  "input_path": "corpus/03_audio/tv_com_1970_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The hardest bones in the world can't clean your dog's teeth like Milk Bone Dog Biscuits can. Because the healthier chew food safely gives you the right teeth cleaning size for small, medium, and large dogs. Each size has the right hardness to help scrape away stains and tartar, and to help clean and whiten teeth. Give your dog a better teeth cleaner than bones. Milk Bone Dog Biscuits. In beef flavor, too.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.0,
+        "end": 7.64,
+        "text": "The hardest bones in the world can't clean your dog's teeth like Milk Bone Dog Biscuits can."
+      },
+      {
+        "id": 2,
+        "start": 7.96,
+        "end": 14.32,
+        "text": "Because the healthier chew food safely gives you the right teeth cleaning size for small, medium, and large dogs."
+      },
+      {
+        "id": 3,
+        "start": 14.52,
+        "end": 20.96,
+        "text": "Each size has the right hardness to help scrape away stains and tartar, and to help clean and whiten teeth."
+      },
+      {
+        "id": 4,
+        "start": 21.86,
+        "end": 24.92,
+        "text": "Give your dog a better teeth cleaner than bones."
+      },
+      {
+        "id": 5,
+        "start": 25.58,
+        "end": 28.48,
+        "text": "Milk Bone Dog Biscuits. In beef flavor, too."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Milk-bone Brand Dog biscuits",
+    "decade": 1970,
+    "sequence": 38,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:29:11",
+    "source_end": "0:29:40"
+  }
+}

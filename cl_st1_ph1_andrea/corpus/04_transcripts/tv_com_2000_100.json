@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_100",
+  "input_path": "corpus/03_audio/tv_com_2000_100.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_100.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_100.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Headache? Get the speed of Advil Liquid Gels, the only leading brand with real liquid inside. Faster and stronger than extra-strength Tylenol and tough headache pain. Advil Liquid Gels rush relief right where you need it. Advil Liquid Gels. Liquid fast. Advil strong.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.54,
+        "text": "Headache? Get the speed of Advil Liquid Gels, the only leading brand with real liquid inside."
+      },
+      {
+        "id": 2,
+        "start": 4.86,
+        "end": 8.16,
+        "text": "Faster and stronger than extra-strength Tylenol and tough headache pain."
+      },
+      {
+        "id": 3,
+        "start": 8.48,
+        "end": 10.88,
+        "text": "Advil Liquid Gels rush relief right where you need it."
+      },
+      {
+        "id": 4,
+        "start": 11.16,
+        "end": 14.18,
+        "text": "Advil Liquid Gels. Liquid fast. Advil strong."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Advil Liquid Gels",
+    "decade": 2000,
+    "sequence": 100,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0542",
+    "url": "https://youtu.be/aVPY8xmBIzk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_57",
+  "input_path": "corpus/03_audio/tv_com_2020_57.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_57.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_57.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "doing what we love can be painful aspir cream works fast and lasts so you can keep doing what you love aspir cream now has a new look same pain fighting power",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.09,
+        "end": 8.69,
+        "text": "doing what we love can be painful aspir cream works fast and lasts so you can"
+      },
+      {
+        "id": 2,
+        "start": 8.69,
+        "end": 14.93,
+        "text": "keep doing what you love aspir cream now has a new look same pain fighting power"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Aspercreme Love Hurts: New Look song by Nazareth",
+    "decade": 2020,
+    "sequence": 57,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0676",
+    "url": "https://youtu.be/9Tq5LDCjYTo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_19",
+  "input_path": "corpus/03_audio/tv_com_1990_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Fresh, fresh under my",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.22,
+        "end": 8.97,
+        "text": "Fresh, fresh under my"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Wrigley's Doublemint Chewing Gum",
+    "decade": 1990,
+    "sequence": 19,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0342",
+    "url": "https://youtu.be/q_FeERSshug",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

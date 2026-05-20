@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2020_76",
+  "input_path": "corpus/03_audio/tv_com_2020_76.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_76.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_76.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "that can help you color, videos that get to the point and keep your projects on point, and a store that rings your doorbell anytime you need it. This is doing like never before. This is today's Home Depot, how doers get more done.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 8.14,
+        "end": 9.52,
+        "text": "that can help you color,"
+      },
+      {
+        "id": 2,
+        "start": 11.58,
+        "end": 13.36,
+        "text": "videos that get to the point"
+      },
+      {
+        "id": 3,
+        "start": 14.26,
+        "end": 16.98,
+        "text": "and keep your projects on point,"
+      },
+      {
+        "id": 4,
+        "start": 16.98,
+        "end": 21.4,
+        "text": "and a store that rings your doorbell anytime you need it."
+      },
+      {
+        "id": 5,
+        "start": 21.4,
+        "end": 24.1,
+        "text": "This is doing like never before."
+      },
+      {
+        "id": 6,
+        "start": 25.32,
+        "end": 27.96,
+        "text": "This is today's Home Depot,"
+      },
+      {
+        "id": 7,
+        "start": 27.96,
+        "end": 30.0,
+        "text": "how doers get more done."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 The Home Depot Bring on Spring: Calculators, Videos and Delivery",
+    "decade": 2020,
+    "sequence": 76,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0695",
+    "url": "https://youtu.be/mP2n378IQic",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

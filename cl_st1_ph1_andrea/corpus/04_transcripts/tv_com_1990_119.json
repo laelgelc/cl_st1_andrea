@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_119",
+  "input_path": "corpus/03_audio/tv_com_1990_119.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_119.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_119.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Introducing a new idea in air freshening, Glade Country Pottery. Put out the pottery, put it here, put it there. Simple handmade pieces of glazed pottery. Put it everywhere, put out the pottery. The porous clay releases the light, fresh scent for 30 days. Just put out the pottery, put the fresh country air everywhere. Put out the pottery, new Glade Country Pottery.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 5.26,
+        "text": "Introducing a new idea in air freshening, Glade Country Pottery."
+      },
+      {
+        "id": 2,
+        "start": 5.44,
+        "end": 9.12,
+        "text": "Put out the pottery, put it here, put it there."
+      },
+      {
+        "id": 3,
+        "start": 9.28,
+        "end": 12.18,
+        "text": "Simple handmade pieces of glazed pottery."
+      },
+      {
+        "id": 4,
+        "start": 12.54,
+        "end": 18.73,
+        "text": "Put it everywhere, put out the pottery."
+      },
+      {
+        "id": 5,
+        "start": 18.73,
+        "end": 22.53,
+        "text": "The porous clay releases the light, fresh scent for 30 days."
+      },
+      {
+        "id": 6,
+        "start": 22.73,
+        "end": 27.23,
+        "text": "Just put out the pottery, put the fresh country air everywhere."
+      },
+      {
+        "id": 7,
+        "start": 27.45,
+        "end": 29.87,
+        "text": "Put out the pottery, new Glade Country Pottery."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1990 Johnson Wax Glade Country Pottery",
+    "decade": 1990,
+    "sequence": 119,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0441",
+    "url": "https://youtu.be/8dX72anIDsQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

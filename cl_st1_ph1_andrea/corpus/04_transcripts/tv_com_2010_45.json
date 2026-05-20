@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_45",
+  "input_path": "corpus/03_audio/tv_com_2010_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "so many things can go wrong with your car that's why pep boys invented one place that can make them all right right now at pep boys buy any three definity handcook or cooper tires and get the fourth tire free by three get the fourth tire free when the light comes on just come in pep boys does",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 26.0295625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 6.35,
+        "end": 12.33,
+        "text": "so many things can go wrong with your car that's why pep boys invented one place that can make"
+      },
+      {
+        "id": 2,
+        "start": 12.33,
+        "end": 17.97,
+        "text": "them all right right now at pep boys buy any three definity handcook or cooper tires and get the"
+      },
+      {
+        "id": 3,
+        "start": 17.97,
+        "end": 25.05,
+        "text": "fourth tire free by three get the fourth tire free when the light comes on just come in pep boys does"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 circa PepBoys Buy 3 Select Tires Get the 4th Free",
+    "decade": 2010,
+    "sequence": 45,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:04:40",
+    "source_end": "0:05:06"
+  }
+}

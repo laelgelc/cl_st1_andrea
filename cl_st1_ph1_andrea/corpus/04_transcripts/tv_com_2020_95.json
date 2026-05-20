@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_95",
+  "input_path": "corpus/03_audio/tv_com_2020_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "With DirecTV Stream, I can get live TV and on-demand together. Watch Serena Williams, Wonder Woman, Serena, Wonder Woman, Serena, Wonder Woman. You cannot be serious! Get your TV together with the best of live and on-demand. Introducing DirecTV Stream with no annual contract.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.94,
+        "text": "With DirecTV Stream, I can get live TV and on-demand together."
+      },
+      {
+        "id": 2,
+        "start": 4.46,
+        "end": 10.2,
+        "text": "Watch Serena Williams, Wonder Woman, Serena, Wonder Woman, Serena, Wonder Woman."
+      },
+      {
+        "id": 3,
+        "start": 10.88,
+        "end": 18.52,
+        "text": "You cannot be serious!"
+      },
+      {
+        "id": 4,
+        "start": 23.43,
+        "end": 26.67,
+        "text": "Get your TV together with the best of live and on-demand."
+      },
+      {
+        "id": 5,
+        "start": 26.89,
+        "end": 29.93,
+        "text": "Introducing DirecTV Stream with no annual contract."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 DIRECTV Stream Get Your TV Together: Wonder featuring Serena Williams, John McEnroe",
+    "decade": 2020,
+    "sequence": 95,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0714",
+    "url": "https://youtu.be/eocu5lJHbD0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

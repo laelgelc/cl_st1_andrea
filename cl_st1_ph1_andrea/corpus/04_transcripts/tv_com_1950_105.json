@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1950_105",
+  "input_path": "corpus/03_audio/tv_com_1950_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Picture yourself glorying in a wonderful vacation in the sun, but suppose in the midst of this heaven on earth you run short of cash. It can happen. What to do? It's wise to wire by Western Union. For example, having wonderful vacation, weather great, but cash running low. Please wire $100. Yes, whenever there's an urgent need for cash, there's only one fast and safe way to send money. By wire. Money by wire can be sent in any amount, anywhere, any time of the day or night. Western Union will deliver a check or pay the receiver in cash, whichever you prefer. And of course, you can include a personal message with the cash. For instance, enjoy yourself, all well at home, see you in a few days. Fast, efficient, money by wire. Still another one of the many reasons it's wise to wire.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 63.0421875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.05,
+        "end": 25.79,
+        "text": "Picture yourself glorying in a wonderful vacation in the sun, but suppose in the midst of this heaven on earth you run short of cash. It can happen. What to do? It's wise to wire by Western Union. For example, having wonderful vacation, weather great, but cash running low. Please wire $100."
+      },
+      {
+        "id": 2,
+        "start": 25.79,
+        "end": 40.25,
+        "text": "Yes, whenever there's an urgent need for cash, there's only one fast and safe way to send money. By wire. Money by wire can be sent in any amount, anywhere, any time of the day or night."
+      },
+      {
+        "id": 3,
+        "start": 40.95,
+        "end": 54.33,
+        "text": "Western Union will deliver a check or pay the receiver in cash, whichever you prefer. And of course, you can include a personal message with the cash. For instance, enjoy yourself, all well at home, see you in a few days."
+      },
+      {
+        "id": 4,
+        "start": 55.79,
+        "end": 62.67,
+        "text": "Fast, efficient, money by wire. Still another one of the many reasons it's wise to wire."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Western Union Telegram Money by Wire",
+    "decade": 1950,
+    "sequence": 105,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0102",
+    "url": "https://youtu.be/dNyHji7rJBg",
+    "source_start": "0:00:00",
+    "source_end": "0:01:03"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_80",
+  "input_path": "corpus/03_audio/tv_com_1990_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's a new automotive standard emerging in this country, with a reputation for quality second to none, and a desire to make it even better. Introducing the men and women of Toyota Motor Manufacturing in Georgetown, Kentucky. They just couldn't leave well enough alone.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.54,
+        "end": 20.26,
+        "text": "There's a new automotive standard emerging in this country, with a reputation for quality second to none, and a desire to make it even better."
+      },
+      {
+        "id": 2,
+        "start": 21.9,
+        "end": 27.3,
+        "text": "Introducing the men and women of Toyota Motor Manufacturing in Georgetown, Kentucky."
+      },
+      {
+        "id": 3,
+        "start": 27.8,
+        "end": 29.38,
+        "text": "They just couldn't leave well enough alone."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Toyota Georgetown, KY",
+    "decade": 1990,
+    "sequence": 80,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0403",
+    "url": "https://youtu.be/qZmJnhPbKwM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

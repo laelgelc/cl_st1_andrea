@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_109",
+  "input_path": "corpus/03_audio/tv_com_2010_109.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_109.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_109.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We are the Saunders, and we're new to the Pacific Northwest. The rain, the mud, ba-bam! It's there. The outside comes in. It's kind of nasty, so you start the towel mop shuffle. Where are you, son? Oh wow, it's a Swiffer wet jet. This puts my towel mopping to shame. Sunshine is overrated. Now we can get messy.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.16,
+        "text": "We are the Saunders, and we're new to the Pacific Northwest. The rain, the mud, ba-bam!"
+      },
+      {
+        "id": 2,
+        "start": 8.16,
+        "end": 13.56,
+        "text": "It's there. The outside comes in. It's kind of nasty, so you start the towel mop"
+      },
+      {
+        "id": 3,
+        "start": 13.56,
+        "end": 22.64,
+        "text": "shuffle. Where are you, son? Oh wow, it's a Swiffer wet jet. This puts my towel mopping to shame."
+      },
+      {
+        "id": 4,
+        "start": 22.64,
+        "end": 30.27,
+        "text": "Sunshine is overrated. Now we can get messy."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Swiffer WetJet Give Cleaning a Whole New Meaning Mopping up Muddy Messes with the Saunders",
+    "decade": 2010,
+    "sequence": 109,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0608",
+    "url": "https://youtu.be/PVIwI1OiY9U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

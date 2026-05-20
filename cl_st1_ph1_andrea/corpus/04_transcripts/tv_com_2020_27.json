@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_27",
+  "input_path": "corpus/03_audio/tv_com_2020_27.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_27.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_27.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Let's talk about how to repair sensitivity with new Sensodyne Clinical Repair. It activates on contact with saliva, creating a protective layer that regenerates with every use, protecting sensitivity from returning. Try new Sensodyne Clinical Repair.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 3.92,
+        "text": "Let's talk about how to repair sensitivity with new Sensodyne Clinical Repair."
+      },
+      {
+        "id": 2,
+        "start": 3.92,
+        "end": 9.72,
+        "text": "It activates on contact with saliva, creating a protective layer that regenerates with every use,"
+      },
+      {
+        "id": 3,
+        "start": 9.98,
+        "end": 11.5,
+        "text": "protecting sensitivity from returning."
+      },
+      {
+        "id": 4,
+        "start": 12.02,
+        "end": 13.52,
+        "text": "Try new Sensodyne Clinical Repair."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Sensodyne Clinical Repair ",
+    "decade": 2020,
+    "sequence": 27,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0646",
+    "url": "https://youtu.be/gN4M8WR2iuw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1970_26",
+  "input_path": "corpus/03_audio/tv_com_1970_26.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_26.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_26.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Feelings happen easily to a woman. Mom, I'm so happy. Her emotions are strong. They're quick. I'm ruining my makeup now. And that's the reason for antiperspirant secret. It's uniquely formulated to help keep her dry and delicate. Extra ingredients for her extra feelings. No, it looks beautiful. Secret. Made for a woman's extra feelings.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.68,
+        "end": 4.04,
+        "text": "Feelings happen easily to a woman."
+      },
+      {
+        "id": 2,
+        "start": 4.56,
+        "end": 5.88,
+        "text": "Mom, I'm so happy."
+      },
+      {
+        "id": 3,
+        "start": 6.58,
+        "end": 8.6,
+        "text": "Her emotions are strong."
+      },
+      {
+        "id": 4,
+        "start": 9.2,
+        "end": 9.68,
+        "text": "They're quick."
+      },
+      {
+        "id": 5,
+        "start": 9.8,
+        "end": 11.4,
+        "text": "I'm ruining my makeup now."
+      },
+      {
+        "id": 6,
+        "start": 11.82,
+        "end": 14.08,
+        "text": "And that's the reason for antiperspirant secret."
+      },
+      {
+        "id": 7,
+        "start": 14.88,
+        "end": 19.02,
+        "text": "It's uniquely formulated to help keep her dry and delicate."
+      },
+      {
+        "id": 8,
+        "start": 19.8,
+        "end": 22.36,
+        "text": "Extra ingredients for her extra feelings."
+      },
+      {
+        "id": 9,
+        "start": 22.78,
+        "end": 24.18,
+        "text": "No, it looks beautiful."
+      },
+      {
+        "id": 10,
+        "start": 25.14,
+        "end": 25.54,
+        "text": "Secret."
+      },
+      {
+        "id": 11,
+        "start": 26.02,
+        "end": 27.94,
+        "text": "Made for a woman's extra feelings."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Secret deodorant",
+    "decade": 1970,
+    "sequence": 26,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:20:05",
+    "source_end": "0:20:33"
+  }
+}

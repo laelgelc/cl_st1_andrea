@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_40",
+  "input_path": "corpus/03_audio/tv_com_2000_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "when all the ingredients come together work in perfect harmony and everything is just right the debit is easier than cash and checks",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 8.88,
+        "text": "when all the ingredients come together work in perfect harmony"
+      },
+      {
+        "id": 2,
+        "start": 8.88,
+        "end": 26.54,
+        "text": "and everything is just right the debit is easier than cash and checks"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2009 Visa Debit",
+    "decade": 2000,
+    "sequence": 40,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0482",
+    "url": "https://youtu.be/GdPBeVwaCOA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

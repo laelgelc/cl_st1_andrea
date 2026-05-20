@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_1",
+  "input_path": "corpus/03_audio/tv_com_1960_1.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_1.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_1.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "A juicier apple is a better-tasting apple, and a juicier, better-tasting pop-up is a toast-and-pop-up, because toast-and-pop-ups are the ones with a juicier fruit filling. So whether you're having a little breakfast or a big breakfast, improved toast-and-pop-ups go over big with the whole family. Get toast-and-pop-ups, the ones with a juicier fruit filling, now improved and juicier than ever. From Jennifer.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.46,
+        "end": 9.36,
+        "text": "A juicier apple is a better-tasting apple, and a juicier, better-tasting pop-up is a toast-and-pop-up,"
+      },
+      {
+        "id": 2,
+        "start": 9.52,
+        "end": 13.4,
+        "text": "because toast-and-pop-ups are the ones with a juicier fruit filling."
+      },
+      {
+        "id": 3,
+        "start": 13.82,
+        "end": 17.3,
+        "text": "So whether you're having a little breakfast or a big breakfast,"
+      },
+      {
+        "id": 4,
+        "start": 18.56,
+        "end": 21.76,
+        "text": "improved toast-and-pop-ups go over big with the whole family."
+      },
+      {
+        "id": 5,
+        "start": 22.4,
+        "end": 28.14,
+        "text": "Get toast-and-pop-ups, the ones with a juicier fruit filling, now improved and juicier than ever."
+      },
+      {
+        "id": 6,
+        "start": 28.14,
+        "end": 29.04,
+        "text": "From Jennifer."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Toastem ",
+    "decade": 1960,
+    "sequence": 1,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:00:03",
+    "source_end": "0:00:32"
+  }
+}

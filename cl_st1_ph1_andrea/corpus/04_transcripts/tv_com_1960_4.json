@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_4",
+  "input_path": "corpus/03_audio/tv_com_1960_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "they say it's a small world a small world but is it really so small maybe it's just that you are getting a little bigger if you want more room in your world sweeten away with sucral a sweet little nothing that tastes like sugar starts out fat ends up thin get the point what's that already used sucral small world",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 10.31,
+        "text": "they say it's a small world a small world but is it really so small"
+      },
+      {
+        "id": 2,
+        "start": 10.31,
+        "end": 13.33,
+        "text": "maybe it's just that you are getting a little bigger"
+      },
+      {
+        "id": 3,
+        "start": 13.33,
+        "end": 46.29,
+        "text": "if you want more room in your world sweeten away with sucral a sweet little nothing that"
+      },
+      {
+        "id": 4,
+        "start": 46.29,
+        "end": 55.35,
+        "text": "tastes like sugar starts out fat ends up thin get the point what's that already used sucral"
+      },
+      {
+        "id": 5,
+        "start": 55.35,
+        "end": 57.55,
+        "text": "small world"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sucaryl Sweeteners",
+    "decade": 1960,
+    "sequence": 4,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:02:32",
+    "source_end": "0:03:31"
+  }
+}

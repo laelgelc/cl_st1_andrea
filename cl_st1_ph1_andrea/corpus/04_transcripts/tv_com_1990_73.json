@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_73",
+  "input_path": "corpus/03_audio/tv_com_1990_73.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_73.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_73.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Look at that face. It's not a happy face. What, are you waiting for your computer company to pick up the phone? Don't they realize the reason you're here tonight is because you have to be finished in the morning? You know what your mistake is? You're a person. See, if you were a big fancy corporation, 16 guys would be all over you apologizing by now. Or maybe your mistake is you're holding for the wrong company.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.22,
+        "end": 5.86,
+        "text": "Look at that face. It's not a happy face."
+      },
+      {
+        "id": 2,
+        "start": 6.22,
+        "end": 8.36,
+        "text": "What, are you waiting for your computer company to pick up the phone?"
+      },
+      {
+        "id": 3,
+        "start": 10.18,
+        "end": 13.94,
+        "text": "Don't they realize the reason you're here tonight is because you have to be finished in the morning?"
+      },
+      {
+        "id": 4,
+        "start": 16.79,
+        "end": 18.13,
+        "text": "You know what your mistake is? You're a person."
+      },
+      {
+        "id": 5,
+        "start": 18.83,
+        "end": 23.17,
+        "text": "See, if you were a big fancy corporation, 16 guys would be all over you apologizing by now."
+      },
+      {
+        "id": 6,
+        "start": 23.61,
+        "end": 26.31,
+        "text": "Or maybe your mistake is you're holding for the wrong company."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 IBM featuring Paul Reiser",
+    "decade": 1990,
+    "sequence": 73,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0396",
+    "url": "https://youtu.be/DCiRwZd1NQc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

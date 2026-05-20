@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_16",
+  "input_path": "corpus/03_audio/tv_com_2010_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is John he's working on a wheel balancer. Yep checking for radial or lateral run out Yeah, I don't know what that means then again I don't have to because when it comes to your tires Ford Lincoln Mercury dealerships have everything you need name brands great value Whatever this thing is Buy four tires get $100 cash rebate and the low price tire guarantee That's Ford Lincoln Mercury service and this is a tcx-5",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 27.0280625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 5.76,
+        "text": "This is John he's working on a wheel balancer. Yep checking for radial or lateral run out"
+      },
+      {
+        "id": 2,
+        "start": 5.9,
+        "end": 8.8,
+        "text": "Yeah, I don't know what that means then again"
+      },
+      {
+        "id": 3,
+        "start": 8.8,
+        "end": 15.84,
+        "text": "I don't have to because when it comes to your tires Ford Lincoln Mercury dealerships have everything you need name brands great value"
+      },
+      {
+        "id": 4,
+        "start": 15.84,
+        "end": 17.84,
+        "text": "Whatever this thing is"
+      },
+      {
+        "id": 5,
+        "start": 18.78,
+        "end": 23.1,
+        "text": "Buy four tires get $100 cash rebate and the low price tire guarantee"
+      },
+      {
+        "id": 6,
+        "start": 23.34,
+        "end": 27.0,
+        "text": "That's Ford Lincoln Mercury service and this is a tcx-5"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Ford Wheel Balancer",
+    "decade": 2010,
+    "sequence": 16,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0578",
+    "url": "https://youtu.be/SQHaGrsWTDw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:27"
+  }
+}

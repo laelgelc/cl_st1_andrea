@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_23",
+  "input_path": "corpus/03_audio/tv_com_2020_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Wouldn't it be great if all Valentine's Day gifts were filled with peanut butter? Maybe it's just Reese's that are better.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 5.5,
+        "text": "Wouldn't it be great if all Valentine's Day gifts were filled with peanut butter?"
+      },
+      {
+        "id": 2,
+        "start": 9.07,
+        "end": 13.61,
+        "text": "Maybe it's just Reese's that are better."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2022 Reese's Peanut Butter Hearts Valentine's Day Filled With Peanut Butter",
+    "decade": 2020,
+    "sequence": 23,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0642",
+    "url": "https://youtu.be/WREtPstEGOw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

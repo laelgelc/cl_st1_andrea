@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_2000_99",
+  "input_path": "corpus/03_audio/tv_com_2000_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Is your dandruff on full blast? Turning people off? Garnier Fructis Fortifying Anti-Dandruff Shampoo. Created with pyrethione zinc, it blows dandruff flakes away. It's proven. The Garnier Fructis system makes hair up to five times stronger and so much shinier. So effective, no flakes guaranteed. Kiss those flakes goodbye. For hair that shines with all its strength, Garnier Fructis Fortifying Anti-Dandruff Shampoo. Garnier.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 2.42,
+        "text": "Is your dandruff on full blast?"
+      },
+      {
+        "id": 2,
+        "start": 2.98,
+        "end": 4.28,
+        "text": "Turning people off?"
+      },
+      {
+        "id": 3,
+        "start": 7.62,
+        "end": 10.0,
+        "text": "Garnier Fructis Fortifying Anti-Dandruff Shampoo."
+      },
+      {
+        "id": 4,
+        "start": 10.64,
+        "end": 13.74,
+        "text": "Created with pyrethione zinc, it blows dandruff flakes away."
+      },
+      {
+        "id": 5,
+        "start": 14.52,
+        "end": 15.04,
+        "text": "It's proven."
+      },
+      {
+        "id": 6,
+        "start": 15.5,
+        "end": 19.82,
+        "text": "The Garnier Fructis system makes hair up to five times stronger and so much shinier."
+      },
+      {
+        "id": 7,
+        "start": 20.14,
+        "end": 22.36,
+        "text": "So effective, no flakes guaranteed."
+      },
+      {
+        "id": 8,
+        "start": 22.92,
+        "end": 23.92,
+        "text": "Kiss those flakes goodbye."
+      },
+      {
+        "id": 9,
+        "start": 24.48,
+        "end": 28.9,
+        "text": "For hair that shines with all its strength, Garnier Fructis Fortifying Anti-Dandruff Shampoo."
+      },
+      {
+        "id": 10,
+        "start": 29.44,
+        "end": 29.96,
+        "text": "Garnier."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Garnier Fructis Anti-dandruff shampoo",
+    "decade": 2000,
+    "sequence": 99,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0541",
+    "url": "https://youtu.be/ivo4wo7Cgvs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

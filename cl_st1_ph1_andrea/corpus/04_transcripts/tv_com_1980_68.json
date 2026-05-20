@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_68",
+  "input_path": "corpus/03_audio/tv_com_1980_68.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_68.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_68.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "And now, on with the opera. From the people who brought you big-screen television, comes the sound to go with it. Frankly, my dear, I don't give a... Mitsubishi Home Theater Systems. Now playing at a dealer near you. Rosebud.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0001875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "And now, on with the opera."
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 17.26,
+        "text": "From the people who brought you big-screen television,"
+      },
+      {
+        "id": 3,
+        "start": 17.26,
+        "end": 19.26,
+        "text": "comes the sound to go with it."
+      },
+      {
+        "id": 4,
+        "start": 20.26,
+        "end": 22.26,
+        "text": "Frankly, my dear, I don't give a..."
+      },
+      {
+        "id": 5,
+        "start": 22.26,
+        "end": 25.26,
+        "text": "Mitsubishi Home Theater Systems."
+      },
+      {
+        "id": 6,
+        "start": 25.26,
+        "end": 28.26,
+        "text": "Now playing at a dealer near you."
+      },
+      {
+        "id": 7,
+        "start": 28.26,
+        "end": 30.26,
+        "text": "Rosebud."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Mitsubishi Home Theater Systems",
+    "decade": 1980,
+    "sequence": 68,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0285",
+    "url": "https://youtu.be/4g7IXK6KPsc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

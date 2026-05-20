@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_44",
+  "input_path": "corpus/03_audio/tv_com_2020_44.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_44.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_44.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I can. We will. Together, we become. Idole Aura. The new fragrance. Now come.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.05,
+        "end": 8.37,
+        "text": "I can. We will. Together, we become."
+      },
+      {
+        "id": 2,
+        "start": 11.39,
+        "end": 13.57,
+        "text": "Idole Aura. The new fragrance."
+      },
+      {
+        "id": 3,
+        "start": 13.97,
+        "end": 14.43,
+        "text": "Now come."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Lancôme Fragrance Idôle Aura I Can, We Will featuring Zendaya",
+    "decade": 2020,
+    "sequence": 44,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0663",
+    "url": "https://youtu.be/rHCz5bDV4bI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

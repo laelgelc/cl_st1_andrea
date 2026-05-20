@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_41",
+  "input_path": "corpus/03_audio/tv_com_1980_41.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_41.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_41.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We're building this giant mountain of logs to demonstrate why Ford designs its 4x4s to log high mileage without sacrificing toughness. Now, this log mountain is a rugged challenge for any 4x4, but this tough Ford does it. It's the only American-built 4x4 pickup with independent front suspension to step over bumps independently. When you combine toughness with great gas mileage, you're bound to end up at the top of the heap. America's truck. It's built Ford tough.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 7.5,
+        "text": "We're building this giant mountain of logs to demonstrate why Ford designs its 4x4s to log high mileage without sacrificing toughness."
+      },
+      {
+        "id": 2,
+        "start": 7.84,
+        "end": 12.64,
+        "text": "Now, this log mountain is a rugged challenge for any 4x4, but this tough Ford does it."
+      },
+      {
+        "id": 3,
+        "start": 13.08,
+        "end": 19.18,
+        "text": "It's the only American-built 4x4 pickup with independent front suspension to step over bumps independently."
+      },
+      {
+        "id": 4,
+        "start": 20.14,
+        "end": 25.76,
+        "text": "When you combine toughness with great gas mileage, you're bound to end up at the top of the heap."
+      },
+      {
+        "id": 5,
+        "start": 26.88,
+        "end": 29.22,
+        "text": "America's truck. It's built Ford tough."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 82 Ford Tough Pickup",
+    "decade": 1980,
+    "sequence": 41,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0263",
+    "url": "https://youtu.be/XTz9duRJUk4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

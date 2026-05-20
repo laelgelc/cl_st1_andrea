@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_99",
+  "input_path": "corpus/03_audio/tv_com_1970_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Help keep this part of your bathroom clean and fresh with improved automatic Tidy Bowl. Only Tidy Bowl has the freshness of lemon and the power of borax to clean and deodorize. So Tidy Bowl is even tougher on stains, tougher on odors. Tidy Bowl with lemon fresh borax works hard between scrubbings to leave your bathroom lemon fresh and sparkling clean. Get Tidy Bowl in original blue or new economy size. www.tidybois.com",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.32,
+        "end": 5.56,
+        "text": "Help keep this part of your bathroom clean and fresh with improved automatic Tidy Bowl."
+      },
+      {
+        "id": 2,
+        "start": 5.56,
+        "end": 12.96,
+        "text": "Only Tidy Bowl has the freshness of lemon and the power of borax to clean and deodorize."
+      },
+      {
+        "id": 3,
+        "start": 12.96,
+        "end": 17.2,
+        "text": "So Tidy Bowl is even tougher on stains, tougher on odors."
+      },
+      {
+        "id": 4,
+        "start": 17.2,
+        "end": 22.44,
+        "text": "Tidy Bowl with lemon fresh borax works hard between scrubbings to leave your bathroom"
+      },
+      {
+        "id": 5,
+        "start": 22.44,
+        "end": 25.08,
+        "text": "lemon fresh and sparkling clean."
+      },
+      {
+        "id": 6,
+        "start": 25.08,
+        "end": 28.56,
+        "text": "Get Tidy Bowl in original blue or new economy size."
+      },
+      {
+        "id": 7,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "www.tidybois.com"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Ty-D-Bol Man mascot toilet cleaner 1977",
+    "decade": 1970,
+    "sequence": 99,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0207",
+    "url": "https://youtu.be/PPBfN138pj8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

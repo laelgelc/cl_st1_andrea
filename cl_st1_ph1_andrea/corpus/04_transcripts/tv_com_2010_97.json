@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_97",
+  "input_path": "corpus/03_audio/tv_com_2010_97.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_97.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_97.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "you know we were playing around today it's christmas morning let's go riders around the world let's create some magic we rise in three our kind of joy feels different this holiday give the gift of peloton",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.34,
+        "end": 10.06,
+        "text": "you know we were playing around today it's christmas morning let's go"
+      },
+      {
+        "id": 2,
+        "start": 10.06,
+        "end": 15.9,
+        "text": "riders around the world let's create some magic we rise in three"
+      },
+      {
+        "id": 3,
+        "start": 15.9,
+        "end": 23.36,
+        "text": "our kind of joy feels different"
+      },
+      {
+        "id": 4,
+        "start": 23.36,
+        "end": 28.72,
+        "text": "this holiday give the gift of peloton"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2019 Peloton Bike Our Kind of Joy feels different",
+    "decade": 2010,
+    "sequence": 97,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "1:13:49",
+    "source_end": "1:14:18"
+  }
+}

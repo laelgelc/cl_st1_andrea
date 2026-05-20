@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_16",
+  "input_path": "corpus/03_audio/tv_com_1970_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Good morning. Yesterday, you wake up and time has slipped away. Hard to find the one left behind. After the yesterday, back again. Remember the times of your life. Kodak Film. For the times of your life.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.98,
+        "end": 11.8,
+        "text": "Good morning. Yesterday, you wake up and time has slipped away."
+      },
+      {
+        "id": 2,
+        "start": 12.2,
+        "end": 43.02,
+        "text": "Hard to find the one left behind. After the yesterday, back again."
+      },
+      {
+        "id": 3,
+        "start": 43.46,
+        "end": 50.52,
+        "text": "Remember the times of your life."
+      },
+      {
+        "id": 4,
+        "start": 56.59,
+        "end": 59.11,
+        "text": "Kodak Film. For the times of your life."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Kodak Film For the times of your life",
+    "decade": 1970,
+    "sequence": 16,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:12:28",
+    "source_end": "0:13:28"
+  }
+}

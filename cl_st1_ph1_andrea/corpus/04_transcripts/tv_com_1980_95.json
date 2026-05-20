@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_95",
+  "input_path": "corpus/03_audio/tv_com_1980_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "according to legend little folk know hills is where the me afraid of ghosts not with my proton duck wham wham i capture pesky ghosts with this ghost trap for blasphemy the ecto popper and goggles for a little help i call these heroes all from kenner hills is my kind of place because",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.04,
+        "end": 9.54,
+        "text": "according to legend little folk know hills is where the me afraid of ghosts not with my proton"
+      },
+      {
+        "id": 2,
+        "start": 9.54,
+        "end": 16.8,
+        "text": "duck wham wham i capture pesky ghosts with this ghost trap for blasphemy the ecto popper and"
+      },
+      {
+        "id": 3,
+        "start": 16.8,
+        "end": 24.52,
+        "text": "goggles for a little help i call these heroes all from kenner hills is my kind of place because"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Hills Department Store Hills is where the toys are",
+    "decade": 1980,
+    "sequence": 95,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0307",
+    "url": "https://youtu.be/CXqhtZ8mUy8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

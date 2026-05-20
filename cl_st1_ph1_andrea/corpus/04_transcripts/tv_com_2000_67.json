@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_67",
+  "input_path": "corpus/03_audio/tv_com_2000_67.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_67.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_67.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Toilet's fixed. Of all the things that happen on your wooden surfaces, disinfecting has to be one of them. Clorox disinfecting wipes.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.18,
+        "end": 4.18,
+        "text": "Toilet's fixed."
+      },
+      {
+        "id": 2,
+        "start": 4.18,
+        "end": 9.1,
+        "text": "Of all the things that happen on your wooden surfaces,"
+      },
+      {
+        "id": 3,
+        "start": 9.1,
+        "end": 11.1,
+        "text": "disinfecting has to be one of them."
+      },
+      {
+        "id": 4,
+        "start": 11.1,
+        "end": 14.1,
+        "text": "Clorox disinfecting wipes."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Clorox Disinfecting Wipes Plunger on Table",
+    "decade": 2000,
+    "sequence": 67,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0509",
+    "url": "https://youtu.be/QTYSIjVpFls",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_115",
+  "input_path": "corpus/03_audio/tv_com_1970_115.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_115.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_115.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Now in the Zenith tradition of dependability and picture excellence comes a whole new television system. New Zenith Solid State ChromaColor II with a more powerful solid state chassis, a unique voltage regulator to protect components, and an advanced ChromaColor picture tube. You get Zenith dependability and Zenith's best color picture yet. New Zenith Solid State ChromaColor II. At Zenith, the quality goes in before the name goes on.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.5,
+        "end": 6.6,
+        "text": "Now in the Zenith tradition of dependability and picture excellence comes a whole new television system."
+      },
+      {
+        "id": 2,
+        "start": 7.06,
+        "end": 11.68,
+        "text": "New Zenith Solid State ChromaColor II with a more powerful solid state chassis,"
+      },
+      {
+        "id": 3,
+        "start": 12.08,
+        "end": 16.84,
+        "text": "a unique voltage regulator to protect components, and an advanced ChromaColor picture tube."
+      },
+      {
+        "id": 4,
+        "start": 17.6,
+        "end": 21.48,
+        "text": "You get Zenith dependability and Zenith's best color picture yet."
+      },
+      {
+        "id": 5,
+        "start": 22.2,
+        "end": 24.58,
+        "text": "New Zenith Solid State ChromaColor II."
+      },
+      {
+        "id": 6,
+        "start": 25.18,
+        "end": 29.0,
+        "text": "At Zenith, the quality goes in before the name goes on."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1973 Zenith Chromacolor II TV Set",
+    "decade": 1970,
+    "sequence": 115,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0223",
+    "url": "https://youtu.be/jA8Ljzm3PME",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

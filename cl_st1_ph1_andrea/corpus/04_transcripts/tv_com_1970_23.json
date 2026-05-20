@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_23",
+  "input_path": "corpus/03_audio/tv_com_1970_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Marilyn McAuliffe switched from Duncan Hines Deluxe 2 Yellow Cake to Pillsbury Plus Yellow Cake. Jane Trahan switched. Bite after bite, millions found out that Pillsbury Plus Yellow Cake with pudding in the mix tastes deliciously moister than Duncan Hines Deluxe 2 Yellow Cake. It's more like scratch. With Pillsbury Plus Yellow Cake, you're just a bite away from a better tasting, moister cake.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.59,
+        "end": 6.29,
+        "text": "Marilyn McAuliffe switched from Duncan Hines Deluxe 2 Yellow Cake to Pillsbury Plus Yellow Cake."
+      },
+      {
+        "id": 2,
+        "start": 7.61,
+        "end": 9.37,
+        "text": "Jane Trahan switched."
+      },
+      {
+        "id": 3,
+        "start": 10.05,
+        "end": 14.89,
+        "text": "Bite after bite, millions found out that Pillsbury Plus Yellow Cake with pudding in the mix"
+      },
+      {
+        "id": 4,
+        "start": 14.89,
+        "end": 18.95,
+        "text": "tastes deliciously moister than Duncan Hines Deluxe 2 Yellow Cake."
+      },
+      {
+        "id": 5,
+        "start": 20.77,
+        "end": 21.93,
+        "text": "It's more like scratch."
+      },
+      {
+        "id": 6,
+        "start": 22.85,
+        "end": 28.29,
+        "text": "With Pillsbury Plus Yellow Cake, you're just a bite away from a better tasting, moister cake."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Pillsbury Plus Yellow cake mix",
+    "decade": 1970,
+    "sequence": 23,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:17:00",
+    "source_end": "0:17:30"
+  }
+}

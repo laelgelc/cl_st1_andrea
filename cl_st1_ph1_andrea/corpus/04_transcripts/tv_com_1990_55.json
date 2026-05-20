@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_55",
+  "input_path": "corpus/03_audio/tv_com_1990_55.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_55.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_55.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When Jeffrey catches a cold, we see the pediatrician. I love my pediatrician. He's my dad. We have a live-in doctor. He recommends Dimetap Elixir. For colds, doctors recommend Dimetap. For their families and yours.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.82,
+        "text": "When Jeffrey catches a cold, we see the pediatrician."
+      },
+      {
+        "id": 2,
+        "start": 3.2,
+        "end": 5.88,
+        "text": "I love my pediatrician. He's my dad."
+      },
+      {
+        "id": 3,
+        "start": 6.18,
+        "end": 9.38,
+        "text": "We have a live-in doctor. He recommends Dimetap Elixir."
+      },
+      {
+        "id": 4,
+        "start": 9.72,
+        "end": 14.08,
+        "text": "For colds, doctors recommend Dimetap. For their families and yours."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Dimetapp Elixir",
+    "decade": 1990,
+    "sequence": 55,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0378",
+    "url": "https://youtu.be/VcR5VesXYW0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

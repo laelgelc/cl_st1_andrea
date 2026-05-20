@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_109",
+  "input_path": "corpus/03_audio/tv_com_1960_109.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_109.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_109.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "It's quite worthwhile to go just a little bit out of their way to get certified lead-free Amaco gasoline. You expect more from American and you get it. The American Oil Company.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.98,
+        "end": 50.26,
+        "text": "It's quite worthwhile to go just a little bit out of their way to get certified lead-free"
+      },
+      {
+        "id": 2,
+        "start": 50.26,
+        "end": 53.02,
+        "text": "Amaco gasoline."
+      },
+      {
+        "id": 3,
+        "start": 53.02,
+        "end": 57.02,
+        "text": "You expect more from American and you get it."
+      },
+      {
+        "id": 4,
+        "start": 57.02,
+        "end": 58.4,
+        "text": "The American Oil Company."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "American Oil Company Amoco Gasoline",
+    "decade": 1960,
+    "sequence": 109,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0172",
+    "url": "https://youtu.be/xg4XMcax63o",
+    "source_start": "0:03:10",
+    "source_end": "0:04:09"
+  }
+}

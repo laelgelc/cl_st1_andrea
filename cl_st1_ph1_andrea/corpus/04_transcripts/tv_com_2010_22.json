@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_22",
+  "input_path": "corpus/03_audio/tv_com_2010_22.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_22.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_22.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We'll begin, with a spin, traveling, in the world of my creation, what we'll see will defy, explanation. Remember when you were five, and anything was possible? Happy fifth birthday again. Come with me, and you'll be, in a world of pure imagination.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.908875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 13.46,
+        "text": "We'll begin, with a spin, traveling, in the world of my creation, what we'll see will defy, explanation."
+      },
+      {
+        "id": 2,
+        "start": 15.2,
+        "end": 22.32,
+        "text": "Remember when you were five, and anything was possible? Happy fifth birthday again."
+      },
+      {
+        "id": 3,
+        "start": 22.4,
+        "end": 28.76,
+        "text": "Come with me, and you'll be, in a world of pure imagination."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 AT&T Pure Imagination",
+    "decade": 2010,
+    "sequence": 22,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0584",
+    "url": "https://youtu.be/6jIWNbexyhU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_113",
+  "input_path": "corpus/03_audio/tv_com_2010_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Forget about fingers and toes. I'm here to talk about thumbs. How do you look after your bum? I Use wipes and toilet paper on a normal basis These are wipes you can't have one without the other Bonnie and Clyde. Yeah, they go together Would you use these I would absolutely if you don't have a clean Um, what do you have feel it means so fresh they can only be",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.21,
+        "end": 6.65,
+        "text": "Forget about fingers and toes. I'm here to talk about thumbs. How do you look after your bum? I"
+      },
+      {
+        "id": 2,
+        "start": 7.81,
+        "end": 11.45,
+        "text": "Use wipes and toilet paper on a normal basis"
+      },
+      {
+        "id": 3,
+        "start": 15.57,
+        "end": 20.93,
+        "text": "These are wipes you can't have one without the other Bonnie and Clyde. Yeah, they go together"
+      },
+      {
+        "id": 4,
+        "start": 21.39,
+        "end": 24.91,
+        "text": "Would you use these I would absolutely if you don't have a clean"
+      },
+      {
+        "id": 5,
+        "start": 24.91,
+        "end": 29.03,
+        "text": "Um, what do you have feel it means so fresh they can only be"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Cottonelle CleanCare Let's Talk about your Bum Salon quality Care for your Bum",
+    "decade": 2010,
+    "sequence": 113,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0612",
+    "url": "https://youtu.be/a6_mP6sPctI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

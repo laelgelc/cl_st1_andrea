@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_20",
+  "input_path": "corpus/03_audio/tv_com_1970_20.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_20.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_20.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There is no jewel on earth more precious than the emerald. Emerald perfume, like the jewel for which it is named, is a precious liquid emerald. Compelling, provocative, and slightly dangerous. After all, if you're going to play it safe, why play it all? Emerald perfume by Coke.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.26,
+        "end": 8.86,
+        "text": "There is no jewel on earth more precious than the emerald."
+      },
+      {
+        "id": 2,
+        "start": 9.94,
+        "end": 13.02,
+        "text": "Emerald perfume, like the jewel for which it is named,"
+      },
+      {
+        "id": 3,
+        "start": 13.4,
+        "end": 15.72,
+        "text": "is a precious liquid emerald."
+      },
+      {
+        "id": 4,
+        "start": 16.86,
+        "end": 21.14,
+        "text": "Compelling, provocative, and slightly dangerous."
+      },
+      {
+        "id": 5,
+        "start": 22.2,
+        "end": 26.5,
+        "text": "After all, if you're going to play it safe, why play it all?"
+      },
+      {
+        "id": 6,
+        "start": 27.4,
+        "end": 29.04,
+        "text": "Emerald perfume by Coke."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Emeraude Perfum by Coty",
+    "decade": 1970,
+    "sequence": 20,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:14:59",
+    "source_end": "0:15:28"
+  }
+}

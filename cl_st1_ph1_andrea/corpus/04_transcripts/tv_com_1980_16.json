@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_16",
+  "input_path": "corpus/03_audio/tv_com_1980_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Pert Shampoo, it'll help bring back the bounce. There's a sassy bounce, a classy bounce, a happy bounce, and a snappy bounce. Pert Shampoo, it'll bring back the bounce. Pert Shampoo, pearly green, smells terrific, with a whisper of conditioning. Pert will help bring back the bounce. There's a party bounce, a smarty bounce, a shorty bounce, and a sporty bounce. Pert Shampoo, it'll bring back the bounce.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.7,
+        "text": "Pert Shampoo, it'll help bring back the bounce."
+      },
+      {
+        "id": 2,
+        "start": 2.88,
+        "end": 8.04,
+        "text": "There's a sassy bounce, a classy bounce, a happy bounce, and a snappy bounce."
+      },
+      {
+        "id": 3,
+        "start": 8.32,
+        "end": 12.5,
+        "text": "Pert Shampoo, it'll bring back the bounce."
+      },
+      {
+        "id": 4,
+        "start": 12.62,
+        "end": 16.84,
+        "text": "Pert Shampoo, pearly green, smells terrific, with a whisper of conditioning."
+      },
+      {
+        "id": 5,
+        "start": 17.44,
+        "end": 19.08,
+        "text": "Pert will help bring back the bounce."
+      },
+      {
+        "id": 6,
+        "start": 19.22,
+        "end": 24.46,
+        "text": "There's a party bounce, a smarty bounce, a shorty bounce, and a sporty bounce."
+      },
+      {
+        "id": 7,
+        "start": 24.76,
+        "end": 28.96,
+        "text": "Pert Shampoo, it'll bring back the bounce."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Pert Shampoo Bounce",
+    "decade": 1980,
+    "sequence": 16,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0238",
+    "url": "https://youtu.be/wcxYpEUZBWc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

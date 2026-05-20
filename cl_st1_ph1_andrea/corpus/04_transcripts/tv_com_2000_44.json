@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_44",
+  "input_path": "corpus/03_audio/tv_com_2000_44.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_44.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_44.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Just press that red button, keep it right on us, okay? Everyone, we have a really big surprise for you. I love this part. Julie, what ever happened to Leslie? Shoot, edit, burn, with iDVD from Apple, it's that easy.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.24,
+        "end": 3.28,
+        "text": "Just press that red button, keep it right on us, okay?"
+      },
+      {
+        "id": 2,
+        "start": 3.28,
+        "end": 6.92,
+        "text": "Everyone, we have a really big surprise for you."
+      },
+      {
+        "id": 3,
+        "start": 25.58,
+        "end": 27.16,
+        "text": "I love this part."
+      },
+      {
+        "id": 4,
+        "start": 33.6,
+        "end": 51.02,
+        "text": "Julie, what ever happened to Leslie?"
+      },
+      {
+        "id": 5,
+        "start": 51.02,
+        "end": 59.78,
+        "text": "Shoot, edit, burn, with iDVD from Apple, it's that easy."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Apple iDVD",
+    "decade": 2000,
+    "sequence": 44,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0486",
+    "url": "https://youtu.be/aC_FItrgo6M",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

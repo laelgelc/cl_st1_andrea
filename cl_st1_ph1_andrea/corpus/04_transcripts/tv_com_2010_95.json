@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_95",
+  "input_path": "corpus/03_audio/tv_com_2010_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Dear Predictable, there's no other way to say this. It's over. I found a permanent escape from monotony. Together we are perfectly balanced. Our senses awake. Our hearts racing as one. I know this is sudden, but they say if you love something, set it. Julia.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.5,
+        "end": 9.38,
+        "text": "Dear Predictable, there's no other way to say this. It's over. I found a permanent escape from monotony."
+      },
+      {
+        "id": 2,
+        "start": 10.3,
+        "end": 17.52,
+        "text": "Together we are perfectly balanced. Our senses awake. Our hearts racing as one."
+      },
+      {
+        "id": 3,
+        "start": 18.78,
+        "end": 28.3,
+        "text": "I know this is sudden, but they say if you love something, set it. Julia."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Alfa Romeo Giulia Dear Predictable",
+    "decade": 2010,
+    "sequence": 95,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "1:10:49",
+    "source_end": "1:11:18"
+  }
+}

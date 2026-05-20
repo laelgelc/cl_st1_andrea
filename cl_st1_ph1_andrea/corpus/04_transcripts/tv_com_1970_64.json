@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_64",
+  "input_path": "corpus/03_audio/tv_com_1970_64.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_64.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_64.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "If you buy an athletic shoe by name, there's one more name you should know, Kenny NBA. If you're particular about art support, construction, durability, and comfort, remember the name, Kenny NBA. And if you're particular about getting your money's worth, remember, Kenny NBA. So before you invest in one of those high-priced labels, step into a pair of shoes that'll give you a great run for your money. Kenny NBA. Remember the name.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.39,
+        "end": 6.97,
+        "text": "If you buy an athletic shoe by name, there's one more name you should know, Kenny NBA."
+      },
+      {
+        "id": 2,
+        "start": 7.57,
+        "end": 13.91,
+        "text": "If you're particular about art support, construction, durability, and comfort, remember the name, Kenny NBA."
+      },
+      {
+        "id": 3,
+        "start": 14.55,
+        "end": 19.25,
+        "text": "And if you're particular about getting your money's worth, remember, Kenny NBA."
+      },
+      {
+        "id": 4,
+        "start": 20.01,
+        "end": 26.81,
+        "text": "So before you invest in one of those high-priced labels, step into a pair of shoes that'll give you a great run for your money."
+      },
+      {
+        "id": 5,
+        "start": 26.81,
+        "end": 29.31,
+        "text": "Kenny NBA. Remember the name."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Kinney NBA's by Kinney Shoes",
+    "decade": 1970,
+    "sequence": 64,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:46:36",
+    "source_end": "0:47:06"
+  }
+}

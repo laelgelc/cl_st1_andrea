@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1960_45",
+  "input_path": "corpus/03_audio/tv_com_1960_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "A new season for soft drinks is here. Open a bottle of Sprite and springtime breaks. Sprite is light and not too sweet. It's a natural. Open, springtime breaks. Sprite has a clean, pure, natural taste. There are no artificial flavorings in Sprite. It's a natural. Next time, make it springtime. Open a bottle of Sprite and springtime breaks. Open a bottle of Sprite and springtime breaks.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 56.02975,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.15,
+        "end": 5.45,
+        "text": "A new season for soft drinks is here."
+      },
+      {
+        "id": 2,
+        "start": 8.84,
+        "end": 12.84,
+        "text": "Open a bottle of Sprite and springtime breaks."
+      },
+      {
+        "id": 3,
+        "start": 13.56,
+        "end": 24.52,
+        "text": "Sprite is light and not too sweet."
+      },
+      {
+        "id": 4,
+        "start": 25.4,
+        "end": 26.54,
+        "text": "It's a natural."
+      },
+      {
+        "id": 5,
+        "start": 27.92,
+        "end": 32.2,
+        "text": "Open, springtime breaks."
+      },
+      {
+        "id": 6,
+        "start": 32.8,
+        "end": 39.22,
+        "text": "Sprite has a clean, pure, natural taste."
+      },
+      {
+        "id": 7,
+        "start": 39.22,
+        "end": 41.74,
+        "text": "There are no artificial flavorings in Sprite."
+      },
+      {
+        "id": 8,
+        "start": 42.06,
+        "end": 42.84,
+        "text": "It's a natural."
+      },
+      {
+        "id": 9,
+        "start": 43.32,
+        "end": 45.28,
+        "text": "Next time, make it springtime."
+      },
+      {
+        "id": 10,
+        "start": 45.28,
+        "end": 50.12,
+        "text": "Open a bottle of Sprite and springtime breaks."
+      },
+      {
+        "id": 11,
+        "start": 51.3,
+        "end": 56.0,
+        "text": "Open a bottle of Sprite and springtime breaks."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sprite",
+    "decade": 1960,
+    "sequence": 45,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0119",
+    "url": "https://youtu.be/-4xP-d619TU",
+    "source_start": "0:00:44",
+    "source_end": "0:01:40"
+  }
+}

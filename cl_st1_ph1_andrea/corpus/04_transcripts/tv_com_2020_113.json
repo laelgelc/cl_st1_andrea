@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2020_113",
+  "input_path": "corpus/03_audio/tv_com_2020_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Okay, there's the signal. Wait, what? Hurry, he's coming. Have a good round. See you later. All right. What's that? A toolbox. Okay, sneaker.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.26,
+        "end": 3.88,
+        "text": "Okay, there's the signal."
+      },
+      {
+        "id": 2,
+        "start": 4.8,
+        "end": 5.24,
+        "text": "Wait, what?"
+      },
+      {
+        "id": 3,
+        "start": 5.82,
+        "end": 6.82,
+        "text": "Hurry, he's coming."
+      },
+      {
+        "id": 4,
+        "start": 10.23,
+        "end": 10.75,
+        "text": "Have a good round."
+      },
+      {
+        "id": 5,
+        "start": 10.79,
+        "end": 11.19,
+        "text": "See you later."
+      },
+      {
+        "id": 6,
+        "start": 16.01,
+        "end": 16.47,
+        "text": "All right."
+      },
+      {
+        "id": 7,
+        "start": 16.79,
+        "end": 17.37,
+        "text": "What's that?"
+      },
+      {
+        "id": 8,
+        "start": 18.19,
+        "end": 18.89,
+        "text": "A toolbox."
+      },
+      {
+        "id": 9,
+        "start": 19.75,
+        "end": 25.07,
+        "text": "Okay, sneaker."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Toyota The Holiday Job",
+    "decade": 2020,
+    "sequence": 113,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0732",
+    "url": "https://youtu.be/pssKvyL1KA0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

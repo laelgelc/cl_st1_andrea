@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_87",
+  "input_path": "corpus/03_audio/tv_com_1980_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The Shower Massage by Teledyne Waterpaint.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.32,
+        "end": 25.89,
+        "text": "The Shower Massage by Teledyne Waterpaint."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Shower Massage by Teledyne",
+    "decade": 1980,
+    "sequence": 87,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0299",
+    "url": "https://youtu.be/vH9TcC_fLIo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

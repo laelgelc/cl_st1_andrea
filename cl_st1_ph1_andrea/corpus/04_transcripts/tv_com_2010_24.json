@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2010_24",
+  "input_path": "corpus/03_audio/tv_com_2010_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Good to know we have that on our Prius. Lane departure alert. See what I mean? With so many safety features like pedestrian detection and lane departure alert, Toyota doesn't need us test dummies as much. Oh, I get it, man. Hey, I got to get my thrill somehow. The 2017 Prius with Toyota Safety Sense Standard. Toyota, let's go places.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.86,
+        "end": 9.66,
+        "text": "Good to know we have that on our Prius."
+      },
+      {
+        "id": 2,
+        "start": 15.19,
+        "end": 16.09,
+        "text": "Lane departure alert."
+      },
+      {
+        "id": 3,
+        "start": 16.43,
+        "end": 17.09,
+        "text": "See what I mean?"
+      },
+      {
+        "id": 4,
+        "start": 17.21,
+        "end": 20.43,
+        "text": "With so many safety features like pedestrian detection and lane departure alert,"
+      },
+      {
+        "id": 5,
+        "start": 20.65,
+        "end": 22.65,
+        "text": "Toyota doesn't need us test dummies as much."
+      },
+      {
+        "id": 6,
+        "start": 22.73,
+        "end": 23.73,
+        "text": "Oh, I get it, man."
+      },
+      {
+        "id": 7,
+        "start": 23.81,
+        "end": 25.29,
+        "text": "Hey, I got to get my thrill somehow."
+      },
+      {
+        "id": 8,
+        "start": 25.49,
+        "end": 28.19,
+        "text": "The 2017 Prius with Toyota Safety Sense Standard."
+      },
+      {
+        "id": 9,
+        "start": 28.55,
+        "end": 29.89,
+        "text": "Toyota, let's go places."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Toyota Prius Skydiver: Crash Test Dummies",
+    "decade": 2010,
+    "sequence": 24,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0586",
+    "url": "https://youtu.be/3HSLA2IMPNc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

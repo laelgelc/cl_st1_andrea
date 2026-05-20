@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1990_86",
+  "input_path": "corpus/03_audio/tv_com_1990_86.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_86.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_86.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "What's up? The talking elephants our sales force left with yesterday? Yeah, there's been a little problem. Do we have any that speak elephant? Who's going to get them to all of our salesmen? One company offers 1030 delivery to more places than anyone and treats them all with mammoth importance. Presenting Hugo, the talking elephant. Federal Express, our most important package.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.14,
+        "end": 0.9,
+        "text": "What's up?"
+      },
+      {
+        "id": 2,
+        "start": 1.08,
+        "end": 4.22,
+        "text": "The talking elephants our sales force left with yesterday?"
+      },
+      {
+        "id": 3,
+        "start": 4.38,
+        "end": 6.48,
+        "text": "Yeah, there's been a little problem."
+      },
+      {
+        "id": 4,
+        "start": 7.04,
+        "end": 11.45,
+        "text": "Do we have any that speak elephant?"
+      },
+      {
+        "id": 5,
+        "start": 12.15,
+        "end": 14.37,
+        "text": "Who's going to get them to all of our salesmen?"
+      },
+      {
+        "id": 6,
+        "start": 14.57,
+        "end": 17.73,
+        "text": "One company offers 1030 delivery to more places than anyone"
+      },
+      {
+        "id": 7,
+        "start": 17.73,
+        "end": 20.07,
+        "text": "and treats them all with mammoth importance."
+      },
+      {
+        "id": 8,
+        "start": 20.87,
+        "end": 23.21,
+        "text": "Presenting Hugo, the talking elephant."
+      },
+      {
+        "id": 9,
+        "start": 26.55,
+        "end": 28.93,
+        "text": "Federal Express, our most important package."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Federal Express Delivery Service Talking Elephant",
+    "decade": 1990,
+    "sequence": 86,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0409",
+    "url": "https://youtu.be/Y3L8DxZjxok",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_49",
+  "input_path": "corpus/03_audio/tv_com_1980_49.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_49.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_49.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "TWA presents the difference between getting you where you're going and leading the way. Taking that extra step to make flying the best it can be. That's what makes TWA one tough act to follow.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.79,
+        "end": 8.23,
+        "text": "TWA presents the difference between getting you where you're going"
+      },
+      {
+        "id": 2,
+        "start": 8.23,
+        "end": 10.51,
+        "text": "and leading the way."
+      },
+      {
+        "id": 3,
+        "start": 11.21,
+        "end": 43.13,
+        "text": "Taking that extra step to make flying the best it can be."
+      },
+      {
+        "id": 4,
+        "start": 43.39,
+        "end": 46.79,
+        "text": "That's what makes TWA one tough act to follow."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1985 TWA Leading the way",
+    "decade": 1980,
+    "sequence": 49,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0269",
+    "url": "https://youtu.be/xyjnWJJB1N8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:59"
+  }
+}

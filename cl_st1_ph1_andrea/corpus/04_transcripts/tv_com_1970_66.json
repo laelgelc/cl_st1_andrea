@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_66",
+  "input_path": "corpus/03_audio/tv_com_1970_66.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_66.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_66.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "how come you drive a volkswagen rabbit well i drove volkswagens for years and frankly i wasn't too sure about the rabbit really really so i checked it out real good and now they've done it again best volkswagen i've ever owned would you buy another rabbit why should i i owned my last volkswagen for seven years",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 8.59,
+        "end": 12.91,
+        "text": "how come you drive a volkswagen rabbit well i drove volkswagens for years and frankly i"
+      },
+      {
+        "id": 2,
+        "start": 12.91,
+        "end": 18.51,
+        "text": "wasn't too sure about the rabbit really really so i checked it out real good and now they've"
+      },
+      {
+        "id": 3,
+        "start": 18.51,
+        "end": 22.91,
+        "text": "done it again best volkswagen i've ever owned would you buy another rabbit why should i"
+      },
+      {
+        "id": 4,
+        "start": 22.91,
+        "end": 27.87,
+        "text": "i owned my last volkswagen for seven years"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1979 Volkswagen Does it again Institutional  ",
+    "decade": 1970,
+    "sequence": 66,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:48:17",
+    "source_end": "0:48:45"
+  }
+}

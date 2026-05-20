@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_103",
+  "input_path": "corpus/03_audio/tv_com_2000_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Santa baby, just slip a sable under the tree, for me, for me, for me, for me, for me, for me, for me, for me.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.97,
+        "end": 27.89,
+        "text": "Santa baby, just slip a sable under the tree, for me, for me, for me, for me, for me, for"
+      },
+      {
+        "id": 2,
+        "start": 27.89,
+        "end": 30.01,
+        "text": "me, for me, for me."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Jaguar X-type Christmas",
+    "decade": 2000,
+    "sequence": 103,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0545",
+    "url": "https://youtu.be/_buE0Xn-0sU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

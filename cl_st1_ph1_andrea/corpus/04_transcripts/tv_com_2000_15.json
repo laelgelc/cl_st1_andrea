@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_15",
+  "input_path": "corpus/03_audio/tv_com_2000_15.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_15.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_15.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's something new inside Hershey's Kisses. Smooth, creamy peanut butter. New Hershey's Kisses filled with peanut butter. It's the taste you'll go nuts for.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.5,
+        "end": 3.52,
+        "text": "There's something new inside Hershey's Kisses."
+      },
+      {
+        "id": 2,
+        "start": 5.44,
+        "end": 7.46,
+        "text": "Smooth, creamy peanut butter."
+      },
+      {
+        "id": 3,
+        "start": 8.26,
+        "end": 10.62,
+        "text": "New Hershey's Kisses filled with peanut butter."
+      },
+      {
+        "id": 4,
+        "start": 12.12,
+        "end": 14.38,
+        "text": "It's the taste you'll go nuts for."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2006 Hersey's Kisses Peanut butter",
+    "decade": 2000,
+    "sequence": 15,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0457",
+    "url": "https://youtu.be/KOk2Q3g9wlU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

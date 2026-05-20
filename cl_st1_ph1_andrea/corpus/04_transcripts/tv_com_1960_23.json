@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_23",
+  "input_path": "corpus/03_audio/tv_com_1960_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Now inject new comfort into shaving. Now PAL captures the miracle of stainless steel comfort in the new PAL Stainless Steel Injector Blade. Because of PAL's exclusive thermal process, just one blade shaves you day after day after day. Out shaves four, five, or more ordinary blades. Let PAL, creators of the world's first stainless steel injector razor, inject new comfort into your shaving. Get new PAL Stainless Steel Blades.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.26,
+        "end": 4.04,
+        "text": "Now inject new comfort into shaving."
+      },
+      {
+        "id": 2,
+        "start": 4.78,
+        "end": 10.24,
+        "text": "Now PAL captures the miracle of stainless steel comfort in the new PAL Stainless Steel Injector Blade."
+      },
+      {
+        "id": 3,
+        "start": 10.56,
+        "end": 16.24,
+        "text": "Because of PAL's exclusive thermal process, just one blade shaves you day after day after day."
+      },
+      {
+        "id": 4,
+        "start": 16.6,
+        "end": 19.48,
+        "text": "Out shaves four, five, or more ordinary blades."
+      },
+      {
+        "id": 5,
+        "start": 20.02,
+        "end": 25.74,
+        "text": "Let PAL, creators of the world's first stainless steel injector razor, inject new comfort into your shaving."
+      },
+      {
+        "id": 6,
+        "start": 26.38,
+        "end": 28.72,
+        "text": "Get new PAL Stainless Steel Blades."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "PAL Stainless Steel injector blades",
+    "decade": 1960,
+    "sequence": 23,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:40:01",
+    "source_end": "0:40:32"
+  }
+}

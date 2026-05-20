@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_55",
+  "input_path": "corpus/03_audio/tv_com_1970_55.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_55.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_55.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "In 1901, women first began trusting their hands to Juergens lotion and soft hands have been our business ever since. Over the years, we've kept improving Juergens. Everything we've ever learned has gone into today's Juergens. Soothing moisturizers, emollients, a humectant. Today's Juergens works harder than ever to keep your hands looking soft, feeling soft. Trust Juergens. Soft hands.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.55,
+        "end": 9.35,
+        "text": "In 1901, women first began trusting their hands to Juergens lotion and soft hands have been our"
+      },
+      {
+        "id": 2,
+        "start": 9.35,
+        "end": 15.23,
+        "text": "business ever since. Over the years, we've kept improving Juergens. Everything we've ever learned"
+      },
+      {
+        "id": 3,
+        "start": 15.23,
+        "end": 21.11,
+        "text": "has gone into today's Juergens. Soothing moisturizers, emollients, a humectant. Today's"
+      },
+      {
+        "id": 4,
+        "start": 21.11,
+        "end": 28.69,
+        "text": "Juergens works harder than ever to keep your hands looking soft, feeling soft. Trust Juergens. Soft hands."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Jergens hand lotion",
+    "decade": 1970,
+    "sequence": 55,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:38:42",
+    "source_end": "0:39:11"
+  }
+}

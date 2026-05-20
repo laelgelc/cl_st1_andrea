@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2020_87",
+  "input_path": "corpus/03_audio/tv_com_2020_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "super fast one gig internet for only 50 bucks a month at huawei.com",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 13.24,
+        "text": "super fast one gig internet for only 50 bucks a month at huawei.com"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2024 WOW! Pug: Peace and Quiet: Internet Plus YouTube TV",
+    "decade": 2020,
+    "sequence": 87,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0706",
+    "url": "https://youtu.be/RUs6_HrEmtI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

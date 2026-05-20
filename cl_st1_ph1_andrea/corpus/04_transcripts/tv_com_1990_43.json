@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_43",
+  "input_path": "corpus/03_audio/tv_com_1990_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The things we do to control what we eat. Now you can give in to your craving for snacks the smart way. Introducing Orville Redenbacher's Smart Pop. Compared to potato chips, new Smart Pop has 80% less fat and a third fewer calories. So you can eat and eat and eat and not feel the least bit guilty. New Smart Pop. Orville Redenbacher, of course.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.53,
+        "end": 3.43,
+        "text": "The things we do to control what we eat."
+      },
+      {
+        "id": 2,
+        "start": 6.43,
+        "end": 13.55,
+        "text": "Now you can give in to your craving for snacks the smart way."
+      },
+      {
+        "id": 3,
+        "start": 14.11,
+        "end": 16.11,
+        "text": "Introducing Orville Redenbacher's Smart Pop."
+      },
+      {
+        "id": 4,
+        "start": 16.49,
+        "end": 22.57,
+        "text": "Compared to potato chips, new Smart Pop has 80% less fat and a third fewer calories."
+      },
+      {
+        "id": 5,
+        "start": 22.87,
+        "end": 25.47,
+        "text": "So you can eat and eat and eat and not feel the least bit guilty."
+      },
+      {
+        "id": 6,
+        "start": 25.97,
+        "end": 26.63,
+        "text": "New Smart Pop."
+      },
+      {
+        "id": 7,
+        "start": 27.27,
+        "end": 28.53,
+        "text": "Orville Redenbacher, of course."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Orville Redenbacher Smart-Pop popcorn",
+    "decade": 1990,
+    "sequence": 43,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0366",
+    "url": "https://youtu.be/2q_liqKXQtc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

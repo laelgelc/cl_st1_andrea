@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1970_91",
+  "input_path": "corpus/03_audio/tv_com_1970_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Zoom Monza by Chevrolet. For a car so sporty and so well-equipped, it's priced surprisingly low. Zoom Monza by Chevrolet.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.5,
+        "end": 21.88,
+        "text": "Zoom Monza by Chevrolet. For a car so sporty and so well-equipped, it's priced surprisingly low."
+      },
+      {
+        "id": 2,
+        "start": 21.88,
+        "end": 25.72,
+        "text": "Zoom Monza by Chevrolet."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chevy Monza See what's new 1978",
+    "decade": 1970,
+    "sequence": 91,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0199",
+    "url": "https://youtu.be/ffmzuZQh_8c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

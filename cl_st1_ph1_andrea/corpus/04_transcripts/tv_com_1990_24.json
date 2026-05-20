@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_24",
+  "input_path": "corpus/03_audio/tv_com_1990_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Right now, it costs up to $10 more to play certain games on Super Nintendo than to play the same games on Sega Genesis. Games like Mortal Kombat and NBA Jam. Which is fine, if you don't mind being sucked dry.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Right now, it costs up to $10 more to play certain games on Super Nintendo"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "than to play the same games on Sega Genesis."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 9.0,
+        "text": "Games like Mortal Kombat and NBA Jam."
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "Which is fine, if you don't mind being sucked dry."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Sega Genesis Mosquito",
+    "decade": 1990,
+    "sequence": 24,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0347",
+    "url": "https://youtu.be/69rV_pEVkDM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

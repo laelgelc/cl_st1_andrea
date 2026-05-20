@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_15",
+  "input_path": "corpus/03_audio/tv_com_2010_15.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_15.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_15.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "A fan. Nothing much wrong there. Well, actually there is. Leaving aside blades, safety grills and limited settings, the design's hardly changed since 1890. Spinning blades chop the air, causing annoying buffeting. Turn it off and you realise how unsettling it's been. Our solution uses airfoil technology. With no blades, it can release a steady stream of smooth air.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 4.22,
+        "text": "A fan. Nothing much wrong there. Well, actually there is."
+      },
+      {
+        "id": 2,
+        "start": 4.76,
+        "end": 10.22,
+        "text": "Leaving aside blades, safety grills and limited settings, the design's hardly changed since 1890."
+      },
+      {
+        "id": 3,
+        "start": 10.84,
+        "end": 14.12,
+        "text": "Spinning blades chop the air, causing annoying buffeting."
+      },
+      {
+        "id": 4,
+        "start": 14.98,
+        "end": 18.42,
+        "text": "Turn it off and you realise how unsettling it's been."
+      },
+      {
+        "id": 5,
+        "start": 18.98,
+        "end": 24.98,
+        "text": "Our solution uses airfoil technology. With no blades, it can release a steady stream of smooth air."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Dyson Air Multiplier No Buffering",
+    "decade": 2010,
+    "sequence": 15,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0577",
+    "url": "https://youtu.be/KHbXhD2hcFQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

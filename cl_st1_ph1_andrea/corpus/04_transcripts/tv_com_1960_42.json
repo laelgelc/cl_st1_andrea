@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_42",
+  "input_path": "corpus/03_audio/tv_com_1960_42.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_42.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_42.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Misty, new portable hair dryer from Proctor Silex. Light, goes anywhere, dries quick like a hard top, fits comfortably even over curlers. No strings, so there's no tightness, no marks. Four heat selections, beauty mist for better sets and quick touch-ups. Misty Happening by Proctor Silex.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 27.0280625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.87,
+        "end": 5.69,
+        "text": "Misty, new portable hair dryer from Proctor Silex."
+      },
+      {
+        "id": 2,
+        "start": 6.11,
+        "end": 11.81,
+        "text": "Light, goes anywhere, dries quick like a hard top, fits comfortably even over curlers."
+      },
+      {
+        "id": 3,
+        "start": 12.33,
+        "end": 15.15,
+        "text": "No strings, so there's no tightness, no marks."
+      },
+      {
+        "id": 4,
+        "start": 15.65,
+        "end": 19.37,
+        "text": "Four heat selections, beauty mist for better sets and quick touch-ups."
+      },
+      {
+        "id": 5,
+        "start": 19.37,
+        "end": 25.37,
+        "text": "Misty Happening by Proctor Silex."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Misty Portable Hair Dryer Proctor Silex",
+    "decade": 1960,
+    "sequence": 42,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:33:18",
+    "source_end": "1:33:45"
+  }
+}

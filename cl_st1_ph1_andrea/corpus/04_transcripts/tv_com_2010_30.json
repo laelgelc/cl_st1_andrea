@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_2010_30",
+  "input_path": "corpus/03_audio/tv_com_2010_30.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_30.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_30.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Before we hit the beach, I gotta hit the loo. We can't stay here! Why? Flat toilet paper! I'll never get clean! Way ahead of you. Compared to Charmin Ultra Strong, other toilet paper falls flat. Its washcloth-like texture helps clean better. It's four times stronger, and you can use less. Beautiful view. Thanks to Charmin. And you, honey bear. We all go. Why not enjoy the go with Charmin?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.12,
+        "end": 3.18,
+        "text": "Before we hit the beach, I gotta hit the loo."
+      },
+      {
+        "id": 2,
+        "start": 5.42,
+        "end": 6.92,
+        "text": "We can't stay here!"
+      },
+      {
+        "id": 3,
+        "start": 7.04,
+        "end": 7.34,
+        "text": "Why?"
+      },
+      {
+        "id": 4,
+        "start": 7.62,
+        "end": 10.6,
+        "text": "Flat toilet paper! I'll never get clean!"
+      },
+      {
+        "id": 5,
+        "start": 10.72,
+        "end": 11.84,
+        "text": "Way ahead of you."
+      },
+      {
+        "id": 6,
+        "start": 12.86,
+        "end": 16.22,
+        "text": "Compared to Charmin Ultra Strong, other toilet paper falls flat."
+      },
+      {
+        "id": 7,
+        "start": 16.54,
+        "end": 19.06,
+        "text": "Its washcloth-like texture helps clean better."
+      },
+      {
+        "id": 8,
+        "start": 19.36,
+        "end": 21.92,
+        "text": "It's four times stronger, and you can use less."
+      },
+      {
+        "id": 9,
+        "start": 22.8,
+        "end": 23.74,
+        "text": "Beautiful view."
+      },
+      {
+        "id": 10,
+        "start": 23.96,
+        "end": 26.04,
+        "text": "Thanks to Charmin. And you, honey bear."
+      },
+      {
+        "id": 11,
+        "start": 26.22,
+        "end": 29.12,
+        "text": "We all go. Why not enjoy the go with Charmin?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Charmin Ultra Strong Toilet Paper Bears Experience Hotel Terror",
+    "decade": 2010,
+    "sequence": 30,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0592",
+    "url": "https://youtu.be/JUR4n4OqGjw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

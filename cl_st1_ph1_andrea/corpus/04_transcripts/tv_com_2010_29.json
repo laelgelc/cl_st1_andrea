@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_29",
+  "input_path": "corpus/03_audio/tv_com_2010_29.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_29.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_29.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "commode potty john lou lavatory latrine head bog thunderbox netty dunny can pot the oval office the porcelain throne the toilet no matter what you call it clorox has been trusted to keep it clean and disinfected for nearly 100 years that's because only clorox toilet bowl cleaners are powered by clorox bleach you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.72,
+        "end": 12.24,
+        "text": "commode potty john lou lavatory latrine head bog thunderbox netty dunny can pot the oval office"
+      },
+      {
+        "id": 2,
+        "start": 12.24,
+        "end": 20.58,
+        "text": "the porcelain throne the toilet no matter what you call it clorox has been trusted to keep it"
+      },
+      {
+        "id": 3,
+        "start": 20.58,
+        "end": 26.9,
+        "text": "clean and disinfected for nearly 100 years that's because only clorox toilet bowl cleaners"
+      },
+      {
+        "id": 4,
+        "start": 26.9,
+        "end": 28.94,
+        "text": "are powered by clorox bleach"
+      },
+      {
+        "id": 5,
+        "start": 30.72,
+        "end": 31.34,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 Clorox 100 Years Of Clean",
+    "decade": 2010,
+    "sequence": 29,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0591",
+    "url": "https://youtu.be/n0Fig7UOhGQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

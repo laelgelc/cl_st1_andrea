@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_74",
+  "input_path": "corpus/03_audio/tv_com_1970_74.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_74.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_74.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Ah, some music would be nice. Oh, thank you. Some Hawaiian music. Perhaps something more contemporary. On second thought, I'd like the 1812 Overture. With cannon. With cannon? Western Airlines. The only way to fly.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 2.95,
+        "text": "Ah, some music would be nice."
+      },
+      {
+        "id": 2,
+        "start": 3.71,
+        "end": 4.83,
+        "text": "Oh, thank you."
+      },
+      {
+        "id": 3,
+        "start": 5.25,
+        "end": 6.83,
+        "text": "Some Hawaiian music."
+      },
+      {
+        "id": 4,
+        "start": 7.81,
+        "end": 11.89,
+        "text": "Perhaps something more contemporary."
+      },
+      {
+        "id": 5,
+        "start": 14.41,
+        "end": 17.93,
+        "text": "On second thought, I'd like the 1812 Overture."
+      },
+      {
+        "id": 6,
+        "start": 18.09,
+        "end": 19.01,
+        "text": "With cannon."
+      },
+      {
+        "id": 7,
+        "start": 19.55,
+        "end": 20.87,
+        "text": "With cannon?"
+      },
+      {
+        "id": 8,
+        "start": 22.55,
+        "end": 23.99,
+        "text": "Western Airlines."
+      },
+      {
+        "id": 9,
+        "start": 24.21,
+        "end": 25.81,
+        "text": "The only way to fly."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Western Airlines Only way to fly",
+    "decade": 1970,
+    "sequence": 74,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0182",
+    "url": "https://youtu.be/eqdw4UbwHZA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

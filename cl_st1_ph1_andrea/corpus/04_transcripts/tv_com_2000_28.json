@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_28",
+  "input_path": "corpus/03_audio/tv_com_2000_28.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_28.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_28.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is it, Tri-City area. Announcing the grand opening of Best Buy. It's a better way to buy electronics, appliances, computers, and music. Lower prices. Hassle-free shopping. Best Buy. Grand opening now on West Canal Drive off Columbia Center Boulevard in the Tri-City area.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.66,
+        "end": 2.68,
+        "text": "This is it, Tri-City area."
+      },
+      {
+        "id": 2,
+        "start": 3.26,
+        "end": 5.7,
+        "text": "Announcing the grand opening of Best Buy."
+      },
+      {
+        "id": 3,
+        "start": 7.34,
+        "end": 12.96,
+        "text": "It's a better way to buy electronics, appliances, computers, and music."
+      },
+      {
+        "id": 4,
+        "start": 17.71,
+        "end": 18.61,
+        "text": "Lower prices."
+      },
+      {
+        "id": 5,
+        "start": 19.67,
+        "end": 20.61,
+        "text": "Hassle-free shopping."
+      },
+      {
+        "id": 6,
+        "start": 22.67,
+        "end": 23.33,
+        "text": "Best Buy."
+      },
+      {
+        "id": 7,
+        "start": 24.07,
+        "end": 29.35,
+        "text": "Grand opening now on West Canal Drive off Columbia Center Boulevard in the Tri-City area."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Best Buy Grand Opening",
+    "decade": 2000,
+    "sequence": 28,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0470",
+    "url": "https://youtu.be/-LMM1rdkT2c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

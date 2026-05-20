@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_70",
+  "input_path": "corpus/03_audio/tv_com_1960_70.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_70.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_70.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When you set your sights on satisfaction, satisfy yourself with the top tobacco taste, the air-softened mildness of Chesterfield King. When you come to King for mildness, length alone is not enough. Get the king that air-softens every satisfying puff, Chesterfield King. Chesterfield King, for a cooler, smoother smoke that's mild. Yes, satisfy yourself. Get Chesterfield King.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.93,
+        "end": 12.99,
+        "text": "When you set your sights on satisfaction, satisfy yourself with the top tobacco taste, the air-softened mildness of Chesterfield King."
+      },
+      {
+        "id": 2,
+        "start": 13.55,
+        "end": 17.39,
+        "text": "When you come to King for mildness, length alone is not enough."
+      },
+      {
+        "id": 3,
+        "start": 17.79,
+        "end": 23.81,
+        "text": "Get the king that air-softens every satisfying puff, Chesterfield King."
+      },
+      {
+        "id": 4,
+        "start": 23.81,
+        "end": 54.22,
+        "text": "Chesterfield King, for a cooler, smoother smoke that's mild."
+      },
+      {
+        "id": 5,
+        "start": 54.74,
+        "end": 56.8,
+        "text": "Yes, satisfy yourself."
+      },
+      {
+        "id": 6,
+        "start": 57.06,
+        "end": 58.72,
+        "text": "Get Chesterfield King."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chesterfield King",
+    "decade": 1960,
+    "sequence": 70,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0142",
+    "url": "https://youtu.be/UIpuVbsqXbs",
+    "source_start": "0:09:45",
+    "source_end": "0:10:44"
+  }
+}

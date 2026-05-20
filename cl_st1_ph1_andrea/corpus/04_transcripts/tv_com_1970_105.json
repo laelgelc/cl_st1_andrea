@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_105",
+  "input_path": "corpus/03_audio/tv_com_1970_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I wish there were an easier way to get these walls clean. Now there is Big Wally, the new Foaming Action Wall Washer. Big Wally gets down under the dirt and lifts it right off the wall. Big Wally cleans without all that mixing and scrubbing. And no rinsing. One can does all four walls fast. Big Wally lifts the dirt right off the wall.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 3.43,
+        "text": "I wish there were an easier way to get these walls clean."
+      },
+      {
+        "id": 2,
+        "start": 5.01,
+        "end": 9.41,
+        "text": "Now there is Big Wally, the new Foaming Action Wall Washer."
+      },
+      {
+        "id": 3,
+        "start": 10.59,
+        "end": 15.67,
+        "text": "Big Wally gets down under the dirt and lifts it right off the wall."
+      },
+      {
+        "id": 4,
+        "start": 16.71,
+        "end": 20.03,
+        "text": "Big Wally cleans without all that mixing and scrubbing."
+      },
+      {
+        "id": 5,
+        "start": 21.05,
+        "end": 22.21,
+        "text": "And no rinsing."
+      },
+      {
+        "id": 6,
+        "start": 22.21,
+        "end": 24.85,
+        "text": "One can does all four walls fast."
+      },
+      {
+        "id": 7,
+        "start": 25.41,
+        "end": 29.09,
+        "text": "Big Wally lifts the dirt right off the wall."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Big Wally wall cleaning foaming-spray ",
+    "decade": 1970,
+    "sequence": 105,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0213",
+    "url": "https://youtu.be/Jd1UuEJXgyg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

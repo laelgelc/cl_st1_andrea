@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_5",
+  "input_path": "corpus/03_audio/tv_com_2010_5.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_5.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_5.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Your everywhere can be your wildest dream or rise from the battle within, a challenge to push yourself further. Your everywhere can be anywhere. It's not a place on any map. It's a place you reach in life. Visa. Everywhere you want to be.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.23,
+        "end": 29.96,
+        "text": "Your everywhere can be your wildest dream or rise from the battle within, a challenge to push yourself further. Your everywhere can be anywhere. It's not a place on any map. It's a place you reach in life. Visa. Everywhere you want to be."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Visa Sochi Olympics Games",
+    "decade": 2010,
+    "sequence": 5,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0567",
+    "url": "https://youtu.be/4ZJ2P668QjU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

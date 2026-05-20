@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_94",
+  "input_path": "corpus/03_audio/tv_com_1970_94.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_94.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_94.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "GTE, to over 23 million people, we're the telephone company. We're also GTE Sylvania, innovators in color television and stereo. GTE Sylvania, lining for home, photography, and industry. GTE telecommunication equipment, bringing your telephone into the electronic age. GTE microwave communication systems, general telephone and electronics, a growing concern for your growing needs.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.42,
+        "end": 6.24,
+        "text": "GTE, to over 23 million people, we're the telephone company."
+      },
+      {
+        "id": 2,
+        "start": 6.82,
+        "end": 10.5,
+        "text": "We're also GTE Sylvania, innovators in color television and stereo."
+      },
+      {
+        "id": 3,
+        "start": 11.36,
+        "end": 14.96,
+        "text": "GTE Sylvania, lining for home, photography, and industry."
+      },
+      {
+        "id": 4,
+        "start": 15.72,
+        "end": 20.24,
+        "text": "GTE telecommunication equipment, bringing your telephone into the electronic age."
+      },
+      {
+        "id": 5,
+        "start": 20.82,
+        "end": 25.18,
+        "text": "GTE microwave communication systems, general telephone and electronics,"
+      },
+      {
+        "id": 6,
+        "start": 25.64,
+        "end": 28.2,
+        "text": "a growing concern for your growing needs."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "GTE General Telephone & Eletronics Corporation 1974",
+    "decade": 1970,
+    "sequence": 94,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0202",
+    "url": "https://youtu.be/V6wd3Iv2fHg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

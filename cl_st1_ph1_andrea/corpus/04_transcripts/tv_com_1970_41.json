@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_41",
+  "input_path": "corpus/03_audio/tv_com_1970_41.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_41.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_41.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "doesn't anybody make a sporty car that looks like a million but doesn't cost like a million toyota what have you got the toyota celica gt sport coupe your money's worth and more in a beautiful package a roomy four passenger cockpit five speeds full instrumentation the toyota celica gt sport coupe a beautiful value toyota you got it",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 5.2,
+        "text": "doesn't anybody make a sporty car that looks like a million but doesn't cost like a million"
+      },
+      {
+        "id": 2,
+        "start": 5.2,
+        "end": 11.16,
+        "text": "toyota what have you got the toyota celica gt sport coupe your money's worth and more"
+      },
+      {
+        "id": 3,
+        "start": 11.16,
+        "end": 17.26,
+        "text": "in a beautiful package a roomy four passenger cockpit five speeds full instrumentation"
+      },
+      {
+        "id": 4,
+        "start": 17.26,
+        "end": 23.84,
+        "text": "the toyota celica gt sport coupe a beautiful value toyota you got it"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Toyota",
+    "decade": 1970,
+    "sequence": 41,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:31:22",
+    "source_end": "0:31:50"
+  }
+}

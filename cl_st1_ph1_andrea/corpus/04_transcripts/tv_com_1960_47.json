@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_1960_47",
+  "input_path": "corpus/03_audio/tv_com_1960_47.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_47.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_47.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Fresh is all outdoors. I'm Angie Dickinson. This is my Sun Country. And this is Sun Country air freshener. It's really special with crisp, fresh outdoor scents. We use it in the kitchen, the den. It even makes the bathroom seem as fresh as the air outside. Sun Country. Sun Country makes your bathroom seem as fresh as the great outdoors.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.31,
+        "end": 5.81,
+        "text": "Fresh is all outdoors."
+      },
+      {
+        "id": 2,
+        "start": 5.81,
+        "end": 7.63,
+        "text": "I'm Angie Dickinson."
+      },
+      {
+        "id": 3,
+        "start": 7.63,
+        "end": 10.19,
+        "text": "This is my Sun Country."
+      },
+      {
+        "id": 4,
+        "start": 10.19,
+        "end": 12.87,
+        "text": "And this is Sun Country air freshener."
+      },
+      {
+        "id": 5,
+        "start": 12.87,
+        "end": 16.83,
+        "text": "It's really special with crisp, fresh outdoor scents."
+      },
+      {
+        "id": 6,
+        "start": 16.83,
+        "end": 19.01,
+        "text": "We use it in the kitchen, the den."
+      },
+      {
+        "id": 7,
+        "start": 19.01,
+        "end": 22.55,
+        "text": "It even makes the bathroom seem as fresh as the air outside."
+      },
+      {
+        "id": 8,
+        "start": 22.55,
+        "end": 24.59,
+        "text": "Sun Country."
+      },
+      {
+        "id": 9,
+        "start": 24.59,
+        "end": 27.53,
+        "text": "Sun Country makes your bathroom seem as fresh"
+      },
+      {
+        "id": 10,
+        "start": 27.53,
+        "end": 29.83,
+        "text": "as the great outdoors."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sun Country Air Freshener",
+    "decade": 1960,
+    "sequence": 47,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0121",
+    "url": "https://youtu.be/FiqutN8JbYI",
+    "source_start": "0:00:01",
+    "source_end": "0:00:30"
+  }
+}

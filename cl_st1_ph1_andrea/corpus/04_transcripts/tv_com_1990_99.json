@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1990_99",
+  "input_path": "corpus/03_audio/tv_com_1990_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You're free to get out of the house. You're free to get out of town. You're free to pick your pace up without being tied down. You're free to leave any time, go in any direction. And still stay in touch, cause you've got connection. For the phones, pagers, and directories that put you in the right place anytime, call Southwestern Bell. With Southwestern Bell, you've got great connection.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.46,
+        "end": 3.8,
+        "text": "You're free to get out of the house."
+      },
+      {
+        "id": 2,
+        "start": 3.94,
+        "end": 5.72,
+        "text": "You're free to get out of town."
+      },
+      {
+        "id": 3,
+        "start": 6.24,
+        "end": 10.1,
+        "text": "You're free to pick your pace up without being tied down."
+      },
+      {
+        "id": 4,
+        "start": 10.56,
+        "end": 14.02,
+        "text": "You're free to leave any time, go in any direction."
+      },
+      {
+        "id": 5,
+        "start": 14.68,
+        "end": 18.2,
+        "text": "And still stay in touch, cause you've got connection."
+      },
+      {
+        "id": 6,
+        "start": 19.14,
+        "end": 23.22,
+        "text": "For the phones, pagers, and directories that put you in the right place anytime,"
+      },
+      {
+        "id": 7,
+        "start": 23.54,
+        "end": 24.88,
+        "text": "call Southwestern Bell."
+      },
+      {
+        "id": 8,
+        "start": 24.88,
+        "end": 28.54,
+        "text": "With Southwestern Bell, you've got great connection."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Southwestern Bell",
+    "decade": 1990,
+    "sequence": 99,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0422",
+    "url": "https://youtu.be/YiBX-6LL0Vs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

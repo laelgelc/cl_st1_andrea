@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_103",
+  "input_path": "corpus/03_audio/tv_com_1980_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Presenting the sweet things in life that don't promote cavities. Sweet kids, sweet smiles, sweet shots, and naturally sweet Orbit sugar-free gum. Naturally sweet Orbit doesn't promote cavities because it has the natural sugar-free sweeteners recommended by America's leading dental organization. Sweet talk, sweet hearts, they sweet Orbit sugar-free gum.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.6,
+        "text": "Presenting the sweet things in life that don't promote cavities."
+      },
+      {
+        "id": 2,
+        "start": 3.88,
+        "end": 13.18,
+        "text": "Sweet kids, sweet smiles, sweet shots, and naturally sweet Orbit sugar-free gum."
+      },
+      {
+        "id": 3,
+        "start": 13.52,
+        "end": 20.92,
+        "text": "Naturally sweet Orbit doesn't promote cavities because it has the natural sugar-free sweeteners recommended by America's leading dental organization."
+      },
+      {
+        "id": 4,
+        "start": 21.2,
+        "end": 29.0,
+        "text": "Sweet talk, sweet hearts, they sweet Orbit sugar-free gum."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 Orville Redenbacher's Gourmet Popping Corn",
+    "decade": 1980,
+    "sequence": 103,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0314",
+    "url": "https://youtu.be/zf7yLTJs_Lk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

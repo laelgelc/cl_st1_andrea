@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1960_54",
+  "input_path": "corpus/03_audio/tv_com_1960_54.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_54.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_54.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The now cars, Rebel, the first excitement machines in the intermediate class, with engines for now, 343 Typhoon V8, with innovations in styling for now, Rebel, with sizes for now, 114-inch wheelbase, seats for six, with quality and safety for now, deep dish wheel, energy-absorbing steering column, Rebel. Rebel, first excitement machines in the intermediate class, Rebel, from the 1967 American Motors, and your American Motors Rambler dealer, now.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 8.43,
+        "end": 44.59,
+        "text": "The now cars, Rebel, the first excitement machines in the intermediate class, with engines for now, 343 Typhoon V8, with innovations in styling for now, Rebel, with sizes for now, 114-inch wheelbase, seats for six, with quality and safety for now, deep dish wheel, energy-absorbing steering column, Rebel."
+      },
+      {
+        "id": 2,
+        "start": 44.61,
+        "end": 57.53,
+        "text": "Rebel, first excitement machines in the intermediate class, Rebel, from the 1967 American Motors, and your American Motors Rambler dealer, now."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Rebel Car 1967 by American Motors ",
+    "decade": 1960,
+    "sequence": 54,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0128",
+    "url": "https://youtu.be/UnMKeUYRK3k",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

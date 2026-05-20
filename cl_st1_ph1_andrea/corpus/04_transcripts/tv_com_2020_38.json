@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_38",
+  "input_path": "corpus/03_audio/tv_com_2020_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Happy Hour just got hoppier at IHOP, with a $5 menu featuring pancakes, burgers, and more yum-yums. So while you can't buy happiness, you can buy hoppiness. Get free delivery at IHOP.com.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.48,
+        "text": "Happy Hour just got hoppier at IHOP, with a $5 menu featuring pancakes, burgers, and more yum-yums."
+      },
+      {
+        "id": 2,
+        "start": 6.72,
+        "end": 10.0,
+        "text": "So while you can't buy happiness, you can buy hoppiness."
+      },
+      {
+        "id": 3,
+        "start": 11.7,
+        "end": 13.9,
+        "text": "Get free delivery at IHOP.com."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 IHOPPY Hour Happy Hour: $5",
+    "decade": 2020,
+    "sequence": 38,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0657",
+    "url": "https://youtu.be/Ks6k9vkVXKo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

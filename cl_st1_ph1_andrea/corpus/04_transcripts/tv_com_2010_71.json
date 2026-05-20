@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_71",
+  "input_path": "corpus/03_audio/tv_com_2010_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Trying to do too many things at the same time just doesn't work very well. That's why Trivago focuses on comparing hotels and works very hard at finding your ideal hotel for the best price.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.88,
+        "text": "Trying to do too many things at the same time just doesn't work very well."
+      },
+      {
+        "id": 2,
+        "start": 7.3,
+        "end": 13.58,
+        "text": "That's why Trivago focuses on comparing hotels and works very hard at finding your ideal hotel for the best price."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 Hotel Trigavo Too Many Things at the Same Time",
+    "decade": 2010,
+    "sequence": 71,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:21:19",
+    "source_end": "0:21:33"
+  }
+}

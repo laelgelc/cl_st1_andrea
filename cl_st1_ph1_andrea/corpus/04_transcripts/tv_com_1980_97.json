@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_97",
+  "input_path": "corpus/03_audio/tv_com_1980_97.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_97.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_97.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's a spirit that lives on in this bottle. The spirit that was born in the original Pabst Blue Ribbon beer. The beer that was selected America's Best. That's the spirit that goes into brewing every glass of Pabst Blue Ribbon today. That's what makes us proud to say to you, Give that man a Blue Ribbon.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.98,
+        "end": 4.08,
+        "text": "There's a spirit that lives on in this bottle."
+      },
+      {
+        "id": 2,
+        "start": 6.6,
+        "end": 10.7,
+        "text": "The spirit that was born in the original Pabst Blue Ribbon beer."
+      },
+      {
+        "id": 3,
+        "start": 11.98,
+        "end": 15.38,
+        "text": "The beer that was selected America's Best."
+      },
+      {
+        "id": 4,
+        "start": 16.92,
+        "end": 21.4,
+        "text": "That's the spirit that goes into brewing every glass of Pabst Blue Ribbon today."
+      },
+      {
+        "id": 5,
+        "start": 22.14,
+        "end": 24.16,
+        "text": "That's what makes us proud to say to you,"
+      },
+      {
+        "id": 6,
+        "start": 25.3,
+        "end": 27.7,
+        "text": "Give that man a Blue Ribbon."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1980 Pabst Blue Ribbon Beer",
+    "decade": 1980,
+    "sequence": 97,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0309",
+    "url": "https://youtu.be/z2qM5MAGu7A",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

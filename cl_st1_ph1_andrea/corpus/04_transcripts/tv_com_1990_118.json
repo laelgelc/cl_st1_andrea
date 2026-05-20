@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_118",
+  "input_path": "corpus/03_audio/tv_com_1990_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Five times the active ingredients of the number two pine. To power through the toughest grime and kill staph germs that imitator can't. Pine salt. You've got the power to get it pine salt.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.03,
+        "end": 5.17,
+        "text": "Five times the active ingredients of the number two pine."
+      },
+      {
+        "id": 2,
+        "start": 5.49,
+        "end": 9.15,
+        "text": "To power through the toughest grime and kill staph germs that imitator can't."
+      },
+      {
+        "id": 3,
+        "start": 9.15,
+        "end": 9.67,
+        "text": "Pine salt."
+      },
+      {
+        "id": 4,
+        "start": 9.73,
+        "end": 14.07,
+        "text": "You've got the power to get it pine salt."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Pine Sol Scrubbing Pine trees",
+    "decade": 1990,
+    "sequence": 118,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0440",
+    "url": "https://youtu.be/aYS36VWfUHw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

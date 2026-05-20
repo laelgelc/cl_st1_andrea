@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_109",
+  "input_path": "corpus/03_audio/tv_com_2020_109.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_109.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_109.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Get your motor running Head out on the hot Lint truck Whatever comes your way, there's WeatherTech",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.1,
+        "end": 6.1,
+        "text": "Get your motor running"
+      },
+      {
+        "id": 2,
+        "start": 7.1,
+        "end": 8.1,
+        "text": "Head out on the hot"
+      },
+      {
+        "id": 3,
+        "start": 8.1,
+        "end": 12.08,
+        "text": "Lint truck"
+      },
+      {
+        "id": 4,
+        "start": 12.08,
+        "end": 29.96,
+        "text": "Whatever comes your way, there's WeatherTech"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 WeatherTech Floor Mats Whatever Comes Your Way  ",
+    "decade": 2020,
+    "sequence": 109,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0728",
+    "url": "https://youtu.be/sL1eK1muh9g",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

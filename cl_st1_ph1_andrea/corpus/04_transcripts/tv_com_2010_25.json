@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_25",
+  "input_path": "corpus/03_audio/tv_com_2010_25.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_25.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_25.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Unlimited is only as good as the network it's on. And only one network can be the best. Verizon. Just named number one in the nation by RootMetrics, the largest independent study in call, data, speed, and reliability. And awarded number one overall network for the eighth time in a row. Because only Verizon has the best network and the best Unlimited.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.72,
+        "end": 4.72,
+        "text": "Unlimited is only as good as the network it's on."
+      },
+      {
+        "id": 2,
+        "start": 4.72,
+        "end": 8.72,
+        "text": "And only one network can be the best."
+      },
+      {
+        "id": 3,
+        "start": 8.72,
+        "end": 14.72,
+        "text": "Verizon. Just named number one in the nation by RootMetrics, the largest independent study"
+      },
+      {
+        "id": 4,
+        "start": 14.72,
+        "end": 19.72,
+        "text": "in call, data, speed, and reliability."
+      },
+      {
+        "id": 5,
+        "start": 19.72,
+        "end": 23.72,
+        "text": "And awarded number one overall network for the eighth time in a row."
+      },
+      {
+        "id": 6,
+        "start": 23.72,
+        "end": 29.72,
+        "text": "Because only Verizon has the best network and the best Unlimited."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Verizon Unlimited Wireless Game On",
+    "decade": 2010,
+    "sequence": 25,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0587",
+    "url": "https://youtu.be/eWGiB8plY-g",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

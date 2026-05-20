@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_100",
+  "input_path": "corpus/03_audio/tv_com_1990_100.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_100.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_100.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This royal throne of kings, this happy breed of men, this earth of majesty, this little world. The airline that's uniting the world, United, brings you nonstop service from six U.S. cities to London's Heathrow and the land of poets. This blessed plot, this earth, this realm, this England. Come fly the friendly skies.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.3,
+        "end": 11.08,
+        "text": "This royal throne of kings, this happy breed of men, this earth of majesty, this little world."
+      },
+      {
+        "id": 2,
+        "start": 11.08,
+        "end": 20.0,
+        "text": "The airline that's uniting the world, United, brings you nonstop service from six U.S. cities to London's Heathrow and the land of poets."
+      },
+      {
+        "id": 3,
+        "start": 20.9,
+        "end": 27.18,
+        "text": "This blessed plot, this earth, this realm, this England."
+      },
+      {
+        "id": 4,
+        "start": 27.8,
+        "end": 29.08,
+        "text": "Come fly the friendly skies."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 United Airlines",
+    "decade": 1990,
+    "sequence": 100,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0382",
+    "url": "https://youtu.be/3QNptxFxKXo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

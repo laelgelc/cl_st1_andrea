@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_76",
+  "input_path": "corpus/03_audio/tv_com_1990_76.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_76.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_76.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Once again, Buick is raising the banner for quality in America. Introducing the 1992 LeSabre. With a higher level of power, safety, security, and convenience, this new LeSabre is going to be one tough act to follow. LeSabre for 1992, from Buick.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.21,
+        "end": 4.87,
+        "text": "Once again, Buick is raising the banner for quality in America."
+      },
+      {
+        "id": 2,
+        "start": 5.65,
+        "end": 8.75,
+        "text": "Introducing the 1992 LeSabre."
+      },
+      {
+        "id": 3,
+        "start": 9.49,
+        "end": 16.41,
+        "text": "With a higher level of power, safety, security, and convenience,"
+      },
+      {
+        "id": 4,
+        "start": 19.0,
+        "end": 22.54,
+        "text": "this new LeSabre is going to be one tough act to follow."
+      },
+      {
+        "id": 5,
+        "start": 25.93,
+        "end": 29.39,
+        "text": "LeSabre for 1992, from Buick."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Buick LeSabre",
+    "decade": 1990,
+    "sequence": 76,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0399",
+    "url": "https://youtu.be/hz8pvwRAnb4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

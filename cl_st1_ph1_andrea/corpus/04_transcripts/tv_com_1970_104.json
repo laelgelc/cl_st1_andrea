@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_104",
+  "input_path": "corpus/03_audio/tv_com_1970_104.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_104.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_104.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "To Rip Caldwell, whose flight took off with the score tied. United Airlines dedicates friendship service. On many of our cross-country flights, Rip can hear top college and pro football games and the latest news. Another reason more people choose the friendly skies than any other airline in the land. The friendly skies of your land, United Airlines.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.82,
+        "end": 4.44,
+        "text": "To Rip Caldwell, whose flight took off with the score tied."
+      },
+      {
+        "id": 2,
+        "start": 7.42,
+        "end": 10.34,
+        "text": "United Airlines dedicates friendship service."
+      },
+      {
+        "id": 3,
+        "start": 10.76,
+        "end": 16.66,
+        "text": "On many of our cross-country flights, Rip can hear top college and pro football games and the latest news."
+      },
+      {
+        "id": 4,
+        "start": 17.12,
+        "end": 23.76,
+        "text": "Another reason more people choose the friendly skies than any other airline in the land."
+      },
+      {
+        "id": 5,
+        "start": 23.76,
+        "end": 28.9,
+        "text": "The friendly skies of your land, United Airlines."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "United Airlines Friendship Service 1973",
+    "decade": 1970,
+    "sequence": 104,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0212",
+    "url": "https://youtu.be/R8RIiHLTKhM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_79",
+  "input_path": "corpus/03_audio/tv_com_2020_79.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_79.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_79.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Sometimes I lose myself in the thrill of the deal. Goosebumps. Goosebumps must be Kohl's end of season event. Save up to 50% on must-haves. Plus get up to 85% off clearance at Kohl's.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.92,
+        "text": "Sometimes I lose myself in the thrill of the deal."
+      },
+      {
+        "id": 2,
+        "start": 5.23,
+        "end": 5.53,
+        "text": "Goosebumps."
+      },
+      {
+        "id": 3,
+        "start": 6.41,
+        "end": 8.81,
+        "text": "Goosebumps must be Kohl's end of season event."
+      },
+      {
+        "id": 4,
+        "start": 9.05,
+        "end": 10.83,
+        "text": "Save up to 50% on must-haves."
+      },
+      {
+        "id": 5,
+        "start": 11.05,
+        "end": 14.01,
+        "text": "Plus get up to 85% off clearance at Kohl's."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Kohl's Department Store End of Season Event Kohl's Mom: Goldstar ",
+    "decade": 2020,
+    "sequence": 79,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0698",
+    "url": "https://youtu.be/JBXBCOyX0hI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

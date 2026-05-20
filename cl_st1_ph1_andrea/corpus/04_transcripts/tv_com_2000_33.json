@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_33",
+  "input_path": "corpus/03_audio/tv_com_2000_33.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_33.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_33.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When it comes to skirts, make mine a mini. A little less skirt, a lot more leg. More leg, less money. You gotta get this look. Only, I don't think.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 2.8,
+        "text": "When it comes to skirts, make mine a mini."
+      },
+      {
+        "id": 2,
+        "start": 10.74,
+        "end": 13.52,
+        "text": "A little less skirt, a lot more leg."
+      },
+      {
+        "id": 3,
+        "start": 13.9,
+        "end": 19.31,
+        "text": "More leg, less money."
+      },
+      {
+        "id": 4,
+        "start": 21.09,
+        "end": 24.7,
+        "text": "You gotta get this look."
+      },
+      {
+        "id": 5,
+        "start": 25.2,
+        "end": 26.94,
+        "text": "Only, I don't think."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Old Navy Minis Skirt",
+    "decade": 2000,
+    "sequence": 33,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0475",
+    "url": "https://youtu.be/d0XYt09C8KE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

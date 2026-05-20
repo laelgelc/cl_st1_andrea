@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_68",
+  "input_path": "corpus/03_audio/tv_com_2010_68.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_68.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_68.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Dear Candidate, Thank you for your application to our Ballet Academy. Unfortunately, you have not been accepted. You lack the right feet, Achilles tendons, turnout, torso length, and bust. You have the wrong body for ballet, and at 13, you are too old to be considered.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.54,
+        "text": "Dear Candidate,"
+      },
+      {
+        "id": 2,
+        "start": 3.54,
+        "end": 7.54,
+        "text": "Thank you for your application to our Ballet Academy."
+      },
+      {
+        "id": 3,
+        "start": 7.54,
+        "end": 11.54,
+        "text": "Unfortunately, you have not been accepted."
+      },
+      {
+        "id": 4,
+        "start": 11.54,
+        "end": 19.54,
+        "text": "You lack the right feet, Achilles tendons, turnout, torso length, and bust."
+      },
+      {
+        "id": 5,
+        "start": 19.54,
+        "end": 26.54,
+        "text": "You have the wrong body for ballet, and at 13, you are too old to be considered."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Under Armour Misty Copeland I Will What I Want",
+    "decade": 2010,
+    "sequence": 68,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services ",
+    "video_id": "video_0600",
+    "url": "https://youtu.be/zP2U_GL2yuk",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

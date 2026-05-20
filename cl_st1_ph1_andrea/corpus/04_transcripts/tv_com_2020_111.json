@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_111",
+  "input_path": "corpus/03_audio/tv_com_2020_111.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_111.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_111.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "this place is absolutely exquisite i know we're departing soon but i feel like i've arrived to true tea speaking of arrivals two-time u.s paralympian danny aravich enters the delta one lounge look at that effortless drive truly a recipe for success the performance here today has just been next level you know i can see you right first scotland now milan you know i'm bringing my kilt",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.2788125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.72,
+        "text": "this place is absolutely exquisite i know we're departing soon but i feel like i've arrived"
+      },
+      {
+        "id": 2,
+        "start": 5.72,
+        "end": 13.54,
+        "text": "to true tea speaking of arrivals two-time u.s paralympian danny aravich enters the delta one"
+      },
+      {
+        "id": 3,
+        "start": 13.54,
+        "end": 20.88,
+        "text": "lounge look at that effortless drive truly a recipe for success the performance here today"
+      },
+      {
+        "id": 4,
+        "start": 20.88,
+        "end": 29.03,
+        "text": "has just been next level you know i can see you right first scotland now milan you know i'm"
+      },
+      {
+        "id": 5,
+        "start": 29.03,
+        "end": 29.65,
+        "text": "bringing my kilt"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Delta Air Lines Olympics: Arrivals featuring Dani Aravich",
+    "decade": 2020,
+    "sequence": 111,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0730",
+    "url": "https://youtu.be/Tp_fcTutPNE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1980_76",
+  "input_path": "corpus/03_audio/tv_com_1980_76.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_76.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_76.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Sonny! Sonny. More than a brand. A standard that others try to reach. A tradition of excellence with exacting values in design and engineering. By Sonny. It's a Sonny.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 1.2,
+        "text": "Sonny!"
+      },
+      {
+        "id": 2,
+        "start": 3.65,
+        "end": 4.29,
+        "text": "Sonny."
+      },
+      {
+        "id": 3,
+        "start": 5.01,
+        "end": 6.59,
+        "text": "More than a brand."
+      },
+      {
+        "id": 4,
+        "start": 7.27,
+        "end": 9.75,
+        "text": "A standard that others try to reach."
+      },
+      {
+        "id": 5,
+        "start": 13.37,
+        "end": 14.75,
+        "text": "A tradition of excellence"
+      },
+      {
+        "id": 6,
+        "start": 14.75,
+        "end": 17.73,
+        "text": "with exacting values in design and engineering."
+      },
+      {
+        "id": 7,
+        "start": 18.27,
+        "end": 26.95,
+        "text": "By Sonny."
+      },
+      {
+        "id": 8,
+        "start": 28.05,
+        "end": 29.01,
+        "text": "It's a Sonny."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1985 Trinitron TV It's a  Sony",
+    "decade": 1980,
+    "sequence": 76,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0293",
+    "url": "https://youtu.be/c6LAyQrNQlw",
+    "source_start": "0:06:19",
+    "source_end": "0:06:48"
+  }
+}

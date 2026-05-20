@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_110",
+  "input_path": "corpus/03_audio/tv_com_2010_110.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_110.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_110.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "This is the time of year when the flu starts to spread. Before the first sneeze, help protect with a spray. Before the first tissue, help defend with a wipe. And help prevent with Lysol to get 10 times more protection and kill 99.9% of germs around the house. This season, help protect your family with Lysol. Start healthy.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.82,
+        "end": 4.14,
+        "text": "This is the time of year when the flu starts to spread."
+      },
+      {
+        "id": 2,
+        "start": 5.32,
+        "end": 7.9,
+        "text": "Before the first sneeze, help protect with a spray."
+      },
+      {
+        "id": 3,
+        "start": 9.06,
+        "end": 11.88,
+        "text": "Before the first tissue, help defend with a wipe."
+      },
+      {
+        "id": 4,
+        "start": 12.68,
+        "end": 20.46,
+        "text": "And help prevent with Lysol to get 10 times more protection and kill 99.9% of germs around the house."
+      },
+      {
+        "id": 5,
+        "start": 23.14,
+        "end": 25.98,
+        "text": "This season, help protect your family with Lysol."
+      },
+      {
+        "id": 6,
+        "start": 26.88,
+        "end": 27.44,
+        "text": "Start healthy."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Lysol Disinfectant Spray Wipes Hand Soap Biggest Flu Outbreak Mission for Health",
+    "decade": 2010,
+    "sequence": 110,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0609",
+    "url": "https://youtu.be/K1xTQo_cgu8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_2000_115",
+  "input_path": "corpus/03_audio/tv_com_2000_115.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_115.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_115.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Do you trust your co-workers? Yes, you do. So just let go. Okay, what did we learn there? Is there such a thing as personal space? No, there isn't. Because we are all molecules in the same organism. Yeah, I need an earlier flight out of Chicago. I feel like some of you don't respect me. But because? Because of the hat. Just get me on the next flight out. We know why you fly. We're American Airlines.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.05,
+        "end": 3.05,
+        "text": "Do you trust your co-workers? Yes, you do. So just let go."
+      },
+      {
+        "id": 2,
+        "start": 5.05,
+        "end": 8.05,
+        "text": "Okay, what did we learn there? Is there such a thing as personal space? No, there isn't."
+      },
+      {
+        "id": 3,
+        "start": 8.05,
+        "end": 10.05,
+        "text": "Because we are all molecules in the same organism."
+      },
+      {
+        "id": 4,
+        "start": 11.05,
+        "end": 12.05,
+        "text": "Yeah, I need an earlier flight out of Chicago."
+      },
+      {
+        "id": 5,
+        "start": 13.05,
+        "end": 14.05,
+        "text": "I feel like some of you don't respect me."
+      },
+      {
+        "id": 6,
+        "start": 15.05,
+        "end": 16.05,
+        "text": "But because?"
+      },
+      {
+        "id": 7,
+        "start": 17.05,
+        "end": 18.05,
+        "text": "Because of the hat."
+      },
+      {
+        "id": 8,
+        "start": 20.05,
+        "end": 22.05,
+        "text": "Just get me on the next flight out."
+      },
+      {
+        "id": 9,
+        "start": 25.05,
+        "end": 26.05,
+        "text": "We know why you fly."
+      },
+      {
+        "id": 10,
+        "start": 28.05,
+        "end": 29.05,
+        "text": "We're American Airlines."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2007 American Airlines",
+    "decade": 2000,
+    "sequence": 115,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0557",
+    "url": "https://youtu.be/SmN0iP7Z7-8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

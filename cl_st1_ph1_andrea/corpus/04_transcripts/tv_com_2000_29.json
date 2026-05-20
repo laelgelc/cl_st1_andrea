@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2000_29",
+  "input_path": "corpus/03_audio/tv_com_2000_29.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_29.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_29.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The choice is yours!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.46,
+        "end": 2.46,
+        "text": "The choice is yours!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "JC Penney The choice is yours",
+    "decade": 2000,
+    "sequence": 29,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0471",
+    "url": "https://youtu.be/qzXQUajaxEk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

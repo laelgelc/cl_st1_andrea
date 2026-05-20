@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_102",
+  "input_path": "corpus/03_audio/tv_com_2020_102.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_102.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_102.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "your home is your happy place until you come back to bad odors use Febreze plug-in it has a microchip that alternates between two scents to fight odors and provide freshness for up to 50 days try Febreze plug",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.53,
+        "end": 7.89,
+        "text": "your home is your happy place until you come back to bad odors use Febreze plug-in it has a microchip"
+      },
+      {
+        "id": 2,
+        "start": 7.89,
+        "end": 12.51,
+        "text": "that alternates between two scents to fight odors and provide freshness for up to 50 days"
+      },
+      {
+        "id": 3,
+        "start": 12.51,
+        "end": 14.05,
+        "text": "try Febreze plug"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Febreze  Freshener Plug Happy Home",
+    "decade": 2020,
+    "sequence": 102,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0721",
+    "url": "https://youtu.be/KjE5eA-qzqc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

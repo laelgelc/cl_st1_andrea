@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_96",
+  "input_path": "corpus/03_audio/tv_com_1990_96.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_96.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_96.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Inside your smooth-running engine is a torture chamber. And under these grueling conditions, only one leading motor oil meets the world's toughest requirements for viscosity breakdown. Castrol. The only leading motor oil that provides maximum protection against viscosity and thermal breakdown. So use Castrol. Why make things tougher on your engine? Castrol. Engineered for today's smaller cars.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 25.031125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 3.84,
+        "text": "Inside your smooth-running engine is a torture chamber."
+      },
+      {
+        "id": 2,
+        "start": 3.84,
+        "end": 11.14,
+        "text": "And under these grueling conditions, only one leading motor oil meets the world's toughest requirements for viscosity breakdown."
+      },
+      {
+        "id": 3,
+        "start": 11.7,
+        "end": 17.68,
+        "text": "Castrol. The only leading motor oil that provides maximum protection against viscosity and thermal breakdown."
+      },
+      {
+        "id": 4,
+        "start": 18.14,
+        "end": 21.6,
+        "text": "So use Castrol. Why make things tougher on your engine?"
+      },
+      {
+        "id": 5,
+        "start": 21.98,
+        "end": 24.66,
+        "text": "Castrol. Engineered for today's smaller cars."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Castrol Oil",
+    "decade": 1990,
+    "sequence": 96,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0419",
+    "url": "https://youtu.be/DdkynCaPqBk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:25"
+  }
+}

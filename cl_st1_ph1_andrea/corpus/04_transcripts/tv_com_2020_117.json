@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2020_117",
+  "input_path": "corpus/03_audio/tv_com_2020_117.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_117.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_117.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "C-O-S-A in your Chevrolet.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.1396875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 4.08,
+        "end": 9.25,
+        "text": "C-O-S-A in your Chevrolet."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Chevrolet See the USA featuring Brooke Lee",
+    "decade": 2020,
+    "sequence": 117,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0736",
+    "url": "https://youtu.be/g-6nRs4BqXQ",
+    "source_start": "0:00:00",
+    "source_end": "0:01:01"
+  }
+}

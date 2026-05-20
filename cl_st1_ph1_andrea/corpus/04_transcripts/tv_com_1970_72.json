@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_72",
+  "input_path": "corpus/03_audio/tv_com_1970_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The best commercial I've ever seen for tuna was written by the United States government. It's their seal on Chicken of the Sea. A few simple words that assure me I'm getting wholesome, fresh-tasting tuna. For them. The only leading tuna that assures you consistent good taste and constant federal inspection for wholesomeness is Chicken of the Sea. You've got the U.S. government's word on it. I've got their word on it, too. What's the best tuna? Chicken of the Sea.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.82,
+        "end": 5.66,
+        "text": "The best commercial I've ever seen for tuna was written by the United States government."
+      },
+      {
+        "id": 2,
+        "start": 6.34,
+        "end": 8.16,
+        "text": "It's their seal on Chicken of the Sea."
+      },
+      {
+        "id": 3,
+        "start": 8.7,
+        "end": 12.62,
+        "text": "A few simple words that assure me I'm getting wholesome, fresh-tasting tuna."
+      },
+      {
+        "id": 4,
+        "start": 13.28,
+        "end": 14.02,
+        "text": "For them."
+      },
+      {
+        "id": 5,
+        "start": 14.2,
+        "end": 21.52,
+        "text": "The only leading tuna that assures you consistent good taste and constant federal inspection for wholesomeness is Chicken of the Sea."
+      },
+      {
+        "id": 6,
+        "start": 21.72,
+        "end": 23.7,
+        "text": "You've got the U.S. government's word on it."
+      },
+      {
+        "id": 7,
+        "start": 24.06,
+        "end": 25.5,
+        "text": "I've got their word on it, too."
+      },
+      {
+        "id": 8,
+        "start": 26.06,
+        "end": 27.62,
+        "text": "What's the best tuna?"
+      },
+      {
+        "id": 9,
+        "start": 28.02,
+        "end": 29.04,
+        "text": "Chicken of the Sea."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Tuna Chicken of the Sea",
+    "decade": 1970,
+    "sequence": 72,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:53:39",
+    "source_end": "0:54:08"
+  }
+}

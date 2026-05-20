@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_40",
+  "input_path": "corpus/03_audio/tv_com_1980_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "being there together it's still the best our job is helping you get there western airlines can take you to all the places you've always dreamed about hawaii mexico the bahamas and now we're going to london non-stop from anchorage and direct from honolulu let your travel agent in western save you money on airfares hotels just about everything we can help you have that vacation you never thought you could afford this year that's the western way",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 8.28,
+        "text": "being there together it's still the best our job is helping you get there western airlines can take"
+      },
+      {
+        "id": 2,
+        "start": 8.28,
+        "end": 14.62,
+        "text": "you to all the places you've always dreamed about hawaii mexico the bahamas and now we're going to"
+      },
+      {
+        "id": 3,
+        "start": 14.62,
+        "end": 20.12,
+        "text": "london non-stop from anchorage and direct from honolulu let your travel agent in western save"
+      },
+      {
+        "id": 4,
+        "start": 20.12,
+        "end": 24.74,
+        "text": "you money on airfares hotels just about everything we can help you have that vacation you never"
+      },
+      {
+        "id": 5,
+        "start": 24.74,
+        "end": 28.28,
+        "text": "thought you could afford this year that's the western way"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1980 Western Airlines",
+    "decade": 1980,
+    "sequence": 40,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0262",
+    "url": "https://youtu.be/D0we2O1UcbE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

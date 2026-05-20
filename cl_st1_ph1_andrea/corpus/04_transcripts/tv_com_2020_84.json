@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_84",
+  "input_path": "corpus/03_audio/tv_com_2020_84.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_84.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_84.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I have something for you. I have something for you too. Michigan residents get 1,000 lease cash during the GMC holiday event. GM employees with a current eligible GMC lease use it to get this low mileage lease on the Sierra for $169 per month.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.05,
+        "end": 1.29,
+        "text": "I have something for you."
+      },
+      {
+        "id": 2,
+        "start": 6.61,
+        "end": 7.87,
+        "text": "I have something for you too."
+      },
+      {
+        "id": 3,
+        "start": 10.09,
+        "end": 21.26,
+        "text": "Michigan residents get 1,000 lease cash during the GMC holiday event."
+      },
+      {
+        "id": 4,
+        "start": 21.46,
+        "end": 28.1,
+        "text": "GM employees with a current eligible GMC lease use it to get this low mileage lease on the Sierra for $169 per month."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 GMC Sierra Puppy [T2]",
+    "decade": 2020,
+    "sequence": 84,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0703",
+    "url": "https://youtu.be/6S218egA5is",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

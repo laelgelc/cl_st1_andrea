@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_93",
+  "input_path": "corpus/03_audio/tv_com_2020_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "At Target, shopping has never been easier. Use same-day delivery, free order pickup, or free drive-up, and leave with your holidays in the bag. Order today, get it today at Target.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.75,
+        "end": 3.15,
+        "text": "At Target, shopping has never been easier."
+      },
+      {
+        "id": 2,
+        "start": 4.01,
+        "end": 5.03,
+        "text": "Use same-day delivery,"
+      },
+      {
+        "id": 3,
+        "start": 6.53,
+        "end": 7.49,
+        "text": "free order pickup,"
+      },
+      {
+        "id": 4,
+        "start": 8.13,
+        "end": 10.17,
+        "text": "or free drive-up,"
+      },
+      {
+        "id": 5,
+        "start": 10.37,
+        "end": 12.89,
+        "text": "and leave with your holidays in the bag."
+      },
+      {
+        "id": 6,
+        "start": 13.17,
+        "end": 15.01,
+        "text": "Order today, get it today at Target."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Target Department Store Same Day Delivery, Free Order Pickup, Free Drive Up",
+    "decade": 2020,
+    "sequence": 93,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0712",
+    "url": "https://youtu.be/2ZfL3mrW3dk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

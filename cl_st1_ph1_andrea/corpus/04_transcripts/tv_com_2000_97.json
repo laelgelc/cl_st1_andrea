@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_97",
+  "input_path": "corpus/03_audio/tv_com_2000_97.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_97.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_97.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The makers of Tag Body Spray accept no responsibility for any injuries resulting from the wearing of this product. Any getting down and or funky, however, you can totally blame on us. We're good like that. Hey. Introducing Tag Body Spray for guys. Consider yourself warned.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 18.93,
+        "end": 20.93,
+        "text": "The makers of Tag Body Spray accept no responsibility for any injuries"
+      },
+      {
+        "id": 2,
+        "start": 20.93,
+        "end": 21.97,
+        "text": "resulting from the wearing of this product."
+      },
+      {
+        "id": 3,
+        "start": 22.11,
+        "end": 24.21,
+        "text": "Any getting down and or funky, however, you can totally blame on us."
+      },
+      {
+        "id": 4,
+        "start": 24.29,
+        "end": 24.73,
+        "text": "We're good like that."
+      },
+      {
+        "id": 5,
+        "start": 25.07,
+        "end": 25.39,
+        "text": "Hey."
+      },
+      {
+        "id": 6,
+        "start": 25.97,
+        "end": 27.69,
+        "text": "Introducing Tag Body Spray for guys."
+      },
+      {
+        "id": 7,
+        "start": 28.37,
+        "end": 29.49,
+        "text": "Consider yourself warned."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 TAG Body Spray Deodorant at Supermarket",
+    "decade": 2000,
+    "sequence": 97,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0539",
+    "url": "https://youtu.be/M6Tih3NVKvc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

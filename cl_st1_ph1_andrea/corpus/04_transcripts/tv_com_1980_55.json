@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_55",
+  "input_path": "corpus/03_audio/tv_com_1980_55.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_55.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_55.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "American Airlines has such a beautiful price to the Caribbean. Well, I just got carried away. Now, leave winter behind for American's Caribbean for only $399. And this great $399 package includes hotel and airfare to any one of 12 sun-drenched Caribbean islands. So, what are you waiting for?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 3.99,
+        "text": "American Airlines has such a beautiful price to the Caribbean."
+      },
+      {
+        "id": 2,
+        "start": 4.39,
+        "end": 6.71,
+        "text": "Well, I just got carried away."
+      },
+      {
+        "id": 3,
+        "start": 7.41,
+        "end": 11.89,
+        "text": "Now, leave winter behind for American's Caribbean for only $399."
+      },
+      {
+        "id": 4,
+        "start": 12.59,
+        "end": 20.07,
+        "text": "And this great $399 package includes hotel and airfare to any one of 12 sun-drenched Caribbean islands."
+      },
+      {
+        "id": 5,
+        "start": 20.07,
+        "end": 22.15,
+        "text": "So, what are you waiting for?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 American Airlines Caribbean",
+    "decade": 1980,
+    "sequence": 55,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0275",
+    "url": "https://youtu.be/iYfxfBYmxRs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

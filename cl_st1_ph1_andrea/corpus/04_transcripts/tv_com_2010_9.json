@@ -1,0 +1,106 @@
+{
+  "commercial_id": "tv_com_2010_9",
+  "input_path": "corpus/03_audio/tv_com_2010_9.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_9.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_9.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hey, it's Sandra from accounting. Peter. I can see that you're busy, but you were going to help us crunch the numbers for accounts receivable today? I mean, I know that this is important. Both are important. They are. But this is important too. The receivables. Michelin knows it's better for Xerox to help manage their finance processing so they can focus on keeping the world moving. With Xerox, you're ready for real business.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.78,
+        "end": 7.58,
+        "text": "Hey, it's Sandra from accounting."
+      },
+      {
+        "id": 2,
+        "start": 7.78,
+        "end": 7.94,
+        "text": "Peter."
+      },
+      {
+        "id": 3,
+        "start": 8.28,
+        "end": 9.52,
+        "text": "I can see that you're busy,"
+      },
+      {
+        "id": 4,
+        "start": 10.44,
+        "end": 13.62,
+        "text": "but you were going to help us crunch the numbers for accounts receivable today?"
+      },
+      {
+        "id": 5,
+        "start": 15.81,
+        "end": 16.87,
+        "text": "I mean, I know that this is important."
+      },
+      {
+        "id": 6,
+        "start": 17.37,
+        "end": 18.33,
+        "text": "Both are important."
+      },
+      {
+        "id": 7,
+        "start": 18.41,
+        "end": 18.77,
+        "text": "They are."
+      },
+      {
+        "id": 8,
+        "start": 19.87,
+        "end": 22.09,
+        "text": "But this is important too."
+      },
+      {
+        "id": 9,
+        "start": 22.49,
+        "end": 22.77,
+        "text": "The receivables."
+      },
+      {
+        "id": 10,
+        "start": 23.81,
+        "end": 26.79,
+        "text": "Michelin knows it's better for Xerox to help manage their finance processing"
+      },
+      {
+        "id": 11,
+        "start": 26.79,
+        "end": 28.85,
+        "text": "so they can focus on keeping the world moving."
+      },
+      {
+        "id": 12,
+        "start": 29.11,
+        "end": 30.87,
+        "text": "With Xerox, you're ready for real business."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Xerox Michelin vs Gas Bump Ready for Real Business",
+    "decade": 2010,
+    "sequence": 9,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0571",
+    "url": "https://youtu.be/6-GCOY5-AZw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

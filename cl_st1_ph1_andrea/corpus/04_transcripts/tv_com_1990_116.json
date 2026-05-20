@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1990_116",
+  "input_path": "corpus/03_audio/tv_com_1990_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I think men and women should share household chores, don't you? I cook, and my husband Bill does the dishes. He's terrific at it. He always scrapes plates, and he never, ever overloads. No matter who does the dishes, Cascade does the dirty work. Other leading brands can leave spots so your dishes look dirty. Cascade with shooting action gets them so clean, they're virtually spotless. Perfect! Mmm, just like you, my little love.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.32,
+        "text": "I think men and women should share household chores, don't you?"
+      },
+      {
+        "id": 2,
+        "start": 3.68,
+        "end": 6.1,
+        "text": "I cook, and my husband Bill does the dishes."
+      },
+      {
+        "id": 3,
+        "start": 6.86,
+        "end": 8.28,
+        "text": "He's terrific at it."
+      },
+      {
+        "id": 4,
+        "start": 8.42,
+        "end": 12.0,
+        "text": "He always scrapes plates, and he never, ever overloads."
+      },
+      {
+        "id": 5,
+        "start": 13.94,
+        "end": 17.22,
+        "text": "No matter who does the dishes, Cascade does the dirty work."
+      },
+      {
+        "id": 6,
+        "start": 17.48,
+        "end": 20.18,
+        "text": "Other leading brands can leave spots so your dishes look dirty."
+      },
+      {
+        "id": 7,
+        "start": 20.48,
+        "end": 24.02,
+        "text": "Cascade with shooting action gets them so clean, they're virtually spotless."
+      },
+      {
+        "id": 8,
+        "start": 24.28,
+        "end": 26.5,
+        "text": "Perfect! Mmm, just like you, my little love."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Cascade Dishwasher soap",
+    "decade": 1990,
+    "sequence": 116,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0438",
+    "url": "https://youtu.be/7pbFQJsR9P8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

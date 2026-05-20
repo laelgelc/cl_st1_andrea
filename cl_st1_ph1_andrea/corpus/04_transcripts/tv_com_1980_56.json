@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1980_56",
+  "input_path": "corpus/03_audio/tv_com_1980_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You really have to be careful out there. The road's full of surprises. Since I got Michelin's, I feel in control. Sure of myself and my car. Look, no tire can stop surprises. I know. But with Michelin's, you can be ready for them. Michelin. Because so much is riding on your tires.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.32,
+        "end": 4.64,
+        "text": "You really have to be careful out there."
+      },
+      {
+        "id": 2,
+        "start": 5.36,
+        "end": 7.16,
+        "text": "The road's full of surprises."
+      },
+      {
+        "id": 3,
+        "start": 8.34,
+        "end": 10.9,
+        "text": "Since I got Michelin's, I feel in control."
+      },
+      {
+        "id": 4,
+        "start": 11.5,
+        "end": 13.5,
+        "text": "Sure of myself and my car."
+      },
+      {
+        "id": 5,
+        "start": 14.52,
+        "end": 17.26,
+        "text": "Look, no tire can stop surprises."
+      },
+      {
+        "id": 6,
+        "start": 17.78,
+        "end": 18.26,
+        "text": "I know."
+      },
+      {
+        "id": 7,
+        "start": 18.82,
+        "end": 21.26,
+        "text": "But with Michelin's, you can be ready for them."
+      },
+      {
+        "id": 8,
+        "start": 26.04,
+        "end": 29.24,
+        "text": "Michelin. Because so much is riding on your tires."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Michelin Tires",
+    "decade": 1980,
+    "sequence": 56,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0276",
+    "url": "https://youtu.be/qrlVtfT5p-w",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

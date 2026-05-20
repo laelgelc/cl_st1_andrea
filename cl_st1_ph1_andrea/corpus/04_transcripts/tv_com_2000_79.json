@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_79",
+  "input_path": "corpus/03_audio/tv_com_2000_79.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_79.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_79.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You've got plenty of good reasons to clean and disinfect your home. But if you're cleaning with this other leading lemon cleaner, there are even more reasons to switch to Mr. Clean. He not only gives you the muscle to outclean the other leading lemon cleaner on tough jobs, but he also guarantees to kill household germs. They don't. Just check the label. For a better cleaner, reach for Mr. Monutin. No other leading liquid outcleans Mr. Clean. Why try anything else?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.1395,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 3.58,
+        "text": "You've got plenty of good reasons to clean and disinfect your home."
+      },
+      {
+        "id": 2,
+        "start": 3.58,
+        "end": 8.48,
+        "text": "But if you're cleaning with this other leading lemon cleaner, there are even more reasons to switch to Mr. Clean."
+      },
+      {
+        "id": 3,
+        "start": 8.8,
+        "end": 12.72,
+        "text": "He not only gives you the muscle to outclean the other leading lemon cleaner on tough jobs,"
+      },
+      {
+        "id": 4,
+        "start": 12.84,
+        "end": 15.38,
+        "text": "but he also guarantees to kill household germs."
+      },
+      {
+        "id": 5,
+        "start": 15.56,
+        "end": 17.42,
+        "text": "They don't. Just check the label."
+      },
+      {
+        "id": 6,
+        "start": 17.72,
+        "end": 24.04,
+        "text": "For a better cleaner, reach for Mr. Monutin."
+      },
+      {
+        "id": 7,
+        "start": 24.16,
+        "end": 26.52,
+        "text": "No other leading liquid outcleans Mr. Clean."
+      },
+      {
+        "id": 8,
+        "start": 26.88,
+        "end": 28.44,
+        "text": "Why try anything else?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Mr. Clean Lemon Fresh",
+    "decade": 2000,
+    "sequence": 79,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0521",
+    "url": "https://youtu.be/KoevDOLm_7Y",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

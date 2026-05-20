@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_36",
+  "input_path": "corpus/03_audio/tv_com_1960_36.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_36.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_36.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "hey fella ready for a wild new experience look what's happening in san francisco it could happen to you groom and clean is just like me water active see mixes with water no greasy buildup here or on your hair just wet combing cleans away dirt and dandruff join the swing to groom and clean",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.75,
+        "end": 13.9,
+        "text": "hey fella ready for a wild new experience look what's happening in san francisco"
+      },
+      {
+        "id": 2,
+        "start": 13.9,
+        "end": 15.76,
+        "text": "it could happen to you"
+      },
+      {
+        "id": 3,
+        "start": 15.76,
+        "end": 34.96,
+        "text": "groom and clean is just like me"
+      },
+      {
+        "id": 4,
+        "start": 34.96,
+        "end": 41.78,
+        "text": "water active see mixes with water no greasy buildup here or on your hair"
+      },
+      {
+        "id": 5,
+        "start": 41.78,
+        "end": 44.8,
+        "text": "just wet combing cleans away dirt and dandruff"
+      },
+      {
+        "id": 6,
+        "start": 44.8,
+        "end": 57.04,
+        "text": "join the swing to groom and clean"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Groom & Clean Hair dressing water active",
+    "decade": 1960,
+    "sequence": 36,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:14:55",
+    "source_end": "1:15:54"
+  }
+}

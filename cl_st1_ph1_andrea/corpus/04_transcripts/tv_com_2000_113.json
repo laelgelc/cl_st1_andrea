@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_113",
+  "input_path": "corpus/03_audio/tv_com_2000_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "ultimate driving machine. Lease a brand new, nicely equipped BMW X3. Now for $459 a month. Only through March 1st.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 23.47,
+        "end": 24.49,
+        "text": "ultimate driving machine."
+      },
+      {
+        "id": 2,
+        "start": 24.85,
+        "end": 27.19,
+        "text": "Lease a brand new, nicely equipped BMW X3."
+      },
+      {
+        "id": 3,
+        "start": 27.31,
+        "end": 28.61,
+        "text": "Now for $459 a month."
+      },
+      {
+        "id": 4,
+        "start": 28.75,
+        "end": 29.71,
+        "text": "Only through March 1st."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2004 BMW X3",
+    "decade": 2000,
+    "sequence": 113,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0555",
+    "url": "https://youtu.be/mg95pkZbgiE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

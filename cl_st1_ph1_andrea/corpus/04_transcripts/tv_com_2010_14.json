@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_14",
+  "input_path": "corpus/03_audio/tv_com_2010_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "What are you kidding? These new Intel Core processors are the most amazing technological achievement in the history of the company. No, I'm serious. I think they're the greatest thing that we have ever made. Absolutely nothing surpasses it. You know what I mean? Jeffrey, come back. Meet the 2010 Intel Core Processor Family.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.7911875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.54,
+        "text": "What are you kidding? These new Intel Core processors are the most amazing technological achievement in the history of the company."
+      },
+      {
+        "id": 2,
+        "start": 6.94,
+        "end": 10.18,
+        "text": "No, I'm serious. I think they're the greatest thing that we have ever made."
+      },
+      {
+        "id": 3,
+        "start": 10.44,
+        "end": 12.16,
+        "text": "Absolutely nothing surpasses it."
+      },
+      {
+        "id": 4,
+        "start": 12.64,
+        "end": 13.2,
+        "text": "You know what I mean?"
+      },
+      {
+        "id": 5,
+        "start": 14.12,
+        "end": 24.33,
+        "text": "Jeffrey, come back."
+      },
+      {
+        "id": 6,
+        "start": 24.43,
+        "end": 26.63,
+        "text": "Meet the 2010 Intel Core Processor Family."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Intel Best Invention Ever",
+    "decade": 2010,
+    "sequence": 14,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0576",
+    "url": "https://youtu.be/CLQ9bJA-ZRY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_19",
+  "input_path": "corpus/03_audio/tv_com_2010_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "People do some crazy things to stay healthy, like sleeping in hyperbaric chambers, doing that hot yoga till they pass out, or wrapping their bodies in cheese to heal wounds. Me? I like to keep it real simple by drinking Vitamin Water Triple X. The vitamins and antioxidants help support a healthy body, so I don't have to do nothing too crazy, like extreme aromatherapy. What? See ya.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.46,
+        "end": 10.5,
+        "text": "People do some crazy things to stay healthy, like sleeping in hyperbaric chambers, doing that hot yoga till they pass out, or wrapping their bodies in cheese to heal wounds."
+      },
+      {
+        "id": 2,
+        "start": 11.6,
+        "end": 15.86,
+        "text": "Me? I like to keep it real simple by drinking Vitamin Water Triple X."
+      },
+      {
+        "id": 3,
+        "start": 16.38,
+        "end": 23.2,
+        "text": "The vitamins and antioxidants help support a healthy body, so I don't have to do nothing too crazy, like extreme aromatherapy."
+      },
+      {
+        "id": 4,
+        "start": 23.52,
+        "end": 23.92,
+        "text": "What?"
+      },
+      {
+        "id": 5,
+        "start": 24.5,
+        "end": 25.08,
+        "text": "See ya."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Vitamin Water Crazy Things to Stay Healthy",
+    "decade": 2010,
+    "sequence": 19,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0581",
+    "url": "https://youtu.be/QlqFplfTojA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_17",
+  "input_path": "corpus/03_audio/tv_com_1990_17.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_17.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_17.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "all set you bet i am thanks to you a few weeks ago with jesse i noticed something dandruff so i told him about head and shoulders regular shampoos just rinse flakes away head and shoulders helps prevent flakes from even forming because great hair can't have flakes",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.3,
+        "end": 6.72,
+        "text": "all set you bet i am thanks to you a few weeks ago with jesse i noticed something dandruff so"
+      },
+      {
+        "id": 2,
+        "start": 6.72,
+        "end": 10.52,
+        "text": "i told him about head and shoulders regular shampoos just rinse flakes away head and"
+      },
+      {
+        "id": 3,
+        "start": 10.52,
+        "end": 14.56,
+        "text": "shoulders helps prevent flakes from even forming because great hair can't have flakes"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1995 Head & Shoulders Shampoo",
+    "decade": 1990,
+    "sequence": 17,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0340",
+    "url": "https://youtu.be/rmhglzgR2k4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

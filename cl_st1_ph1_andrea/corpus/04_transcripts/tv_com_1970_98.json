@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_98",
+  "input_path": "corpus/03_audio/tv_com_1970_98.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_98.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_98.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Shake a lickin we're closed lady. My cousin's dropped in. Lady I'm mopping up. What are you mopping with? What am I mopping with? What kind of cleaner? A liquid. Mix some spick and span. Spick and span? Want to get home? It'll put power in the water go over where you're just clean, but it's clean Look spick and span wouldn't leave all that greasy dirt Hey, thanks lady. If there's anything I could ever do for you I have these cousins who dropped in. Spick and span gets the dirt liquid cleaners leave behind",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.32,
+        "end": 8.76,
+        "text": "Shake a lickin we're closed lady. My cousin's dropped in. Lady I'm mopping up. What are you mopping with? What am I mopping with?"
+      },
+      {
+        "id": 2,
+        "start": 8.76,
+        "end": 13.64,
+        "text": "What kind of cleaner? A liquid. Mix some spick and span. Spick and span? Want to get home?"
+      },
+      {
+        "id": 3,
+        "start": 13.9,
+        "end": 18.02,
+        "text": "It'll put power in the water go over where you're just clean, but it's clean"
+      },
+      {
+        "id": 4,
+        "start": 18.5,
+        "end": 21.78,
+        "text": "Look spick and span wouldn't leave all that greasy dirt"
+      },
+      {
+        "id": 5,
+        "start": 22.28,
+        "end": 25.32,
+        "text": "Hey, thanks lady. If there's anything I could ever do for you"
+      },
+      {
+        "id": 6,
+        "start": 25.32,
+        "end": 29.76,
+        "text": "I have these cousins who dropped in. Spick and span gets the dirt liquid cleaners leave behind"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Spic and Span floor cleaner early 70s",
+    "decade": 1970,
+    "sequence": 98,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0206",
+    "url": "https://youtu.be/wd8dPdXASI4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

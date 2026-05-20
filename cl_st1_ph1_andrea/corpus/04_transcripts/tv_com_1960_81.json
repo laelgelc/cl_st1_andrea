@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_81",
+  "input_path": "corpus/03_audio/tv_com_1960_81.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_81.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_81.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "We've asked you to put on a short sock, the length most men wear, and Burlington's new mid-length sock. The mid-length uses lycra in a very special way so it covers your shins, yet can't slip. Can't get that sloppy look. You can't make it fall down. Oh, you can't make Burlington's new mid-length sock fall down. Your shiny shins will never show.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 49.0405625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.63,
+        "end": 5.53,
+        "text": "We've asked you to put on a short sock, the length most men wear, and Burlington's new mid-length sock."
+      },
+      {
+        "id": 2,
+        "start": 5.77,
+        "end": 10.35,
+        "text": "The mid-length uses lycra in a very special way so it covers your shins, yet can't slip."
+      },
+      {
+        "id": 3,
+        "start": 11.03,
+        "end": 12.57,
+        "text": "Can't get that sloppy look."
+      },
+      {
+        "id": 4,
+        "start": 13.65,
+        "end": 15.41,
+        "text": "You can't make it fall down."
+      },
+      {
+        "id": 5,
+        "start": 16.07,
+        "end": 47.12,
+        "text": "Oh, you can't make Burlington's new mid-length sock fall down."
+      },
+      {
+        "id": 6,
+        "start": 47.32,
+        "end": 49.02,
+        "text": "Your shiny shins will never show."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Burlington Mid-lenght Socks",
+    "decade": 1960,
+    "sequence": 81,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0146",
+    "url": "https://youtu.be/riZjWYZVutI",
+    "source_start": "0:00:01",
+    "source_end": "0:00:50"
+  }
+}

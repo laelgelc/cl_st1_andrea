@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_78",
+  "input_path": "corpus/03_audio/tv_com_1970_78.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_78.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_78.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Chevy Value for 1976 includes two steel walls in vital areas for strength and durability. We'd like to show you where. Two steel walls in the hood. In the fender. Two steel walls in the tailgate. In the body. Even in the roof. Chevy Value. Two steel walls for strength and durability. Your money's worth mile after mile.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.65,
+        "end": 8.25,
+        "text": "Chevy Value for 1976 includes two steel walls in vital areas for strength and durability."
+      },
+      {
+        "id": 2,
+        "start": 8.85,
+        "end": 9.99,
+        "text": "We'd like to show you where."
+      },
+      {
+        "id": 3,
+        "start": 10.53,
+        "end": 13.95,
+        "text": "Two steel walls in the hood."
+      },
+      {
+        "id": 4,
+        "start": 15.23,
+        "end": 15.87,
+        "text": "In the fender."
+      },
+      {
+        "id": 5,
+        "start": 16.79,
+        "end": 19.25,
+        "text": "Two steel walls in the tailgate."
+      },
+      {
+        "id": 6,
+        "start": 19.69,
+        "end": 20.41,
+        "text": "In the body."
+      },
+      {
+        "id": 7,
+        "start": 20.89,
+        "end": 21.91,
+        "text": "Even in the roof."
+      },
+      {
+        "id": 8,
+        "start": 22.71,
+        "end": 26.31,
+        "text": "Chevy Value. Two steel walls for strength and durability."
+      },
+      {
+        "id": 9,
+        "start": 26.99,
+        "end": 29.39,
+        "text": "Your money's worth mile after mile."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chevy Fleetside Pickup 1976",
+    "decade": 1970,
+    "sequence": 78,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0186",
+    "url": "https://youtu.be/Ugh8W6l4vxk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1980_64",
+  "input_path": "corpus/03_audio/tv_com_1980_64.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_64.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_64.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "...highly ahead of our time. Panasonic and Ramza are proud to participate with the Hard Rock Cafe at Live Aid.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.72,
+        "end": 24.3,
+        "text": "...highly ahead of our time."
+      },
+      {
+        "id": 2,
+        "start": 25.34,
+        "end": 29.74,
+        "text": "Panasonic and Ramza are proud to participate with the Hard Rock Cafe at Live Aid."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Panasonic Portable consumer audio Cassette players Personal stereos",
+    "decade": 1980,
+    "sequence": 64,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:05:44",
+    "source_end": "0:06:14"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1950_14",
+  "input_path": "corpus/03_audio/tv_com_1950_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Well, here's our friend, the busy boss. Wow, just look at him go. People waiting to see him, big deal pending, lots of work to do. No time to go through the mail now, but wait. Here's something he always makes time for, a telegram. B.B. likes to get telegrams and likes to send them because telegrams are fast, efficient, and economical. And when you answer by wire, you have a record of the complete transaction. Remember, when it means business, it's wise to wire.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 34.0404375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.3,
+        "end": 4.14,
+        "text": "Well, here's our friend, the busy boss."
+      },
+      {
+        "id": 2,
+        "start": 4.4,
+        "end": 5.74,
+        "text": "Wow, just look at him go."
+      },
+      {
+        "id": 3,
+        "start": 6.06,
+        "end": 9.32,
+        "text": "People waiting to see him, big deal pending, lots of work to do."
+      },
+      {
+        "id": 4,
+        "start": 9.66,
+        "end": 11.98,
+        "text": "No time to go through the mail now, but wait."
+      },
+      {
+        "id": 5,
+        "start": 12.48,
+        "end": 15.36,
+        "text": "Here's something he always makes time for, a telegram."
+      },
+      {
+        "id": 6,
+        "start": 16.08,
+        "end": 18.72,
+        "text": "B.B. likes to get telegrams and likes to send them"
+      },
+      {
+        "id": 7,
+        "start": 18.72,
+        "end": 23.6,
+        "text": "because telegrams are fast, efficient, and economical."
+      },
+      {
+        "id": 8,
+        "start": 24.18,
+        "end": 27.94,
+        "text": "And when you answer by wire, you have a record of the complete transaction."
+      },
+      {
+        "id": 9,
+        "start": 27.94,
+        "end": 31.9,
+        "text": "Remember, when it means business, it's wise to wire."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Western Union Telegram",
+    "decade": 1950,
+    "sequence": 14,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0014",
+    "url": "https://youtu.be/jS76s2I40yU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:34"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_88",
+  "input_path": "corpus/03_audio/tv_com_2020_88.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_88.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_88.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "GM employees and eligible family members with a current eligible GM lease. Get this low mileage lease on this 2023 Cadillac CT5 for $499 per month.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 20.3,
+        "end": 23.78,
+        "text": "GM employees and eligible family members with a current eligible GM lease."
+      },
+      {
+        "id": 2,
+        "start": 23.98,
+        "end": 28.96,
+        "text": "Get this low mileage lease on this 2023 Cadillac CT5 for $499 per month."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2023 Cadillac Move Up Sales Event Enter Ordinary. Exit Extraordinary [T2]",
+    "decade": 2020,
+    "sequence": 88,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0707",
+    "url": "https://youtu.be/mrW92AfzCLM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

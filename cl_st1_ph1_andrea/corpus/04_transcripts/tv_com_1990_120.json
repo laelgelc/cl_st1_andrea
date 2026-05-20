@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1990_120",
+  "input_path": "corpus/03_audio/tv_com_1990_120.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_120.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_120.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "On the surface, it's a perfect neighborhood. People care. They maintain their homes, their cars. But beneath the surface, there could be trouble brewing in the septic system. Ask anyone who's had a backup. Better to maintain your system. That includes Rit-X once a month. Rit-X is a scientific blend of superior digesters that help keep your system free-flowing. And regular maintenance, including Rit-X, helps prevent backup. Look beneath the surface. Use Rit-X once a month. For more information, visit www.fema.gov",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.75,
+        "end": 3.37,
+        "text": "On the surface, it's a perfect neighborhood."
+      },
+      {
+        "id": 2,
+        "start": 3.81,
+        "end": 7.17,
+        "text": "People care. They maintain their homes, their cars."
+      },
+      {
+        "id": 3,
+        "start": 7.69,
+        "end": 11.27,
+        "text": "But beneath the surface, there could be trouble brewing in the septic system."
+      },
+      {
+        "id": 4,
+        "start": 11.73,
+        "end": 13.17,
+        "text": "Ask anyone who's had a backup."
+      },
+      {
+        "id": 5,
+        "start": 14.05,
+        "end": 17.53,
+        "text": "Better to maintain your system. That includes Rit-X once a month."
+      },
+      {
+        "id": 6,
+        "start": 17.87,
+        "end": 22.79,
+        "text": "Rit-X is a scientific blend of superior digesters that help keep your system free-flowing."
+      },
+      {
+        "id": 7,
+        "start": 22.79,
+        "end": 26.53,
+        "text": "And regular maintenance, including Rit-X, helps prevent backup."
+      },
+      {
+        "id": 8,
+        "start": 26.95,
+        "end": 29.75,
+        "text": "Look beneath the surface. Use Rit-X once a month."
+      },
+      {
+        "id": 9,
+        "start": 30.75,
+        "end": 60.73,
+        "text": "For more information, visit www.fema.gov"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1990 Rid-x Septic System treatment Under Lawns",
+    "decade": 1990,
+    "sequence": 120,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0442",
+    "url": "https://youtu.be/ZnNjuKrN-A0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

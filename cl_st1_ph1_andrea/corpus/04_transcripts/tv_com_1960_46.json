@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_46",
+  "input_path": "corpus/03_audio/tv_com_1960_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Cigarette odors, food odors, odors add up, create a heavy, stuffy atmosphere that seem to close in until stuffiness doesn't leave much breathing room. But with Glade Mist, stuffiness seems to vanish and leave more breathing room. Glade Mist clears and refreshes the air. So to keep any room fresh, use Glade Mist. Make stuffiness vanish into fresh smelling air.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.39,
+        "end": 12.07,
+        "text": "Cigarette odors, food odors, odors add up, create a heavy, stuffy atmosphere that seem to close in until stuffiness doesn't leave much breathing room."
+      },
+      {
+        "id": 2,
+        "start": 12.85,
+        "end": 18.09,
+        "text": "But with Glade Mist, stuffiness seems to vanish and leave more breathing room."
+      },
+      {
+        "id": 3,
+        "start": 18.91,
+        "end": 21.51,
+        "text": "Glade Mist clears and refreshes the air."
+      },
+      {
+        "id": 4,
+        "start": 22.17,
+        "end": 25.67,
+        "text": "So to keep any room fresh, use Glade Mist."
+      },
+      {
+        "id": 5,
+        "start": 26.19,
+        "end": 28.77,
+        "text": "Make stuffiness vanish into fresh smelling air."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Johnson Glade Air Freshener",
+    "decade": 1960,
+    "sequence": 46,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0120",
+    "url": "https://youtu.be/HWXRafWf9VQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

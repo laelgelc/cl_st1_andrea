@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2000_52",
+  "input_path": "corpus/03_audio/tv_com_2000_52.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_52.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_52.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "keep in touch on america's number one direct internet",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.35,
+        "end": 29.86,
+        "text": "keep in touch on america's number one direct internet"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "AT & T Chatting on the computer",
+    "decade": 2000,
+    "sequence": 52,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0494",
+    "url": "https://youtu.be/ywNh40vWfjE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

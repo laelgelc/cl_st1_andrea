@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_23",
+  "input_path": "corpus/03_audio/tv_com_2010_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You are 16, going on 17, baby, it's time to think. Better beware, be canny. Thankfully, most of us don't have to share a room with 16-year-olds. But we do have to share the road with them. Better get yourself a safe car. The all-new Sonata from Hyundai. Eager young lads and ruleways and cats.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.14,
+        "end": 7.4,
+        "text": "You are 16, going on 17, baby, it's time to think."
+      },
+      {
+        "id": 2,
+        "start": 7.88,
+        "end": 10.7,
+        "text": "Better beware, be canny."
+      },
+      {
+        "id": 3,
+        "start": 10.92,
+        "end": 14.28,
+        "text": "Thankfully, most of us don't have to share a room with 16-year-olds."
+      },
+      {
+        "id": 4,
+        "start": 14.82,
+        "end": 16.72,
+        "text": "But we do have to share the road with them."
+      },
+      {
+        "id": 5,
+        "start": 17.58,
+        "end": 19.52,
+        "text": "Better get yourself a safe car."
+      },
+      {
+        "id": 6,
+        "start": 20.3,
+        "end": 22.42,
+        "text": "The all-new Sonata from Hyundai."
+      },
+      {
+        "id": 7,
+        "start": 24.42,
+        "end": 27.94,
+        "text": "Eager young lads and ruleways and cats."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Hyundai Car You are 16 going on 17",
+    "decade": 2010,
+    "sequence": 23,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0585",
+    "url": "https://youtu.be/Y524O_jQsPo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:28"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_86",
+  "input_path": "corpus/03_audio/tv_com_2000_86.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_86.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_86.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Concerned about bad breath? Listerine Pocket Packs dissolve in seconds, killing bad breath germs to freshen your breath... ...instantly. Listerine Pocket Pack Strips. Now try less intense fresh citrus.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.1394375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.43,
+        "end": 7.43,
+        "text": "Concerned about bad breath? Listerine Pocket Packs dissolve in seconds, killing bad breath germs to freshen your breath..."
+      },
+      {
+        "id": 2,
+        "start": 8.43,
+        "end": 9.43,
+        "text": "...instantly."
+      },
+      {
+        "id": 3,
+        "start": 10.43,
+        "end": 14.43,
+        "text": "Listerine Pocket Pack Strips. Now try less intense fresh citrus."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Listerine Pocket Packs Dissolvable Breath Strips",
+    "decade": 2000,
+    "sequence": 86,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0528",
+    "url": "https://youtu.be/tgjJwRyjSQg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

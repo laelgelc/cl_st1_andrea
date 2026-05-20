@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_19",
+  "input_path": "corpus/03_audio/tv_com_1970_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You don't have to lose sleep worrying about that drive to work tomorrow. Not when you've got Firestone Snowbikers going with you. To dig you out and pull you through, they've got two sets of deep-biting teeth. And in between, traction bars for quiet running and long mileage. In radials, bias, or retrans, they'll put teeth in your winter driving. Firestone Town & Country Snowbikers. Pleasant dreams.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.42,
+        "end": 5.3,
+        "text": "You don't have to lose sleep worrying about that drive to work tomorrow."
+      },
+      {
+        "id": 2,
+        "start": 5.8,
+        "end": 8.52,
+        "text": "Not when you've got Firestone Snowbikers going with you."
+      },
+      {
+        "id": 3,
+        "start": 8.82,
+        "end": 12.62,
+        "text": "To dig you out and pull you through, they've got two sets of deep-biting teeth."
+      },
+      {
+        "id": 4,
+        "start": 13.74,
+        "end": 18.34,
+        "text": "And in between, traction bars for quiet running and long mileage."
+      },
+      {
+        "id": 5,
+        "start": 19.02,
+        "end": 23.8,
+        "text": "In radials, bias, or retrans, they'll put teeth in your winter driving."
+      },
+      {
+        "id": 6,
+        "start": 25.32,
+        "end": 27.42,
+        "text": "Firestone Town & Country Snowbikers."
+      },
+      {
+        "id": 7,
+        "start": 27.42,
+        "end": 29.02,
+        "text": "Pleasant dreams."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Firestones Snow bites tire",
+    "decade": 1970,
+    "sequence": 19,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:14:29",
+    "source_end": "0:14:58"
+  }
+}

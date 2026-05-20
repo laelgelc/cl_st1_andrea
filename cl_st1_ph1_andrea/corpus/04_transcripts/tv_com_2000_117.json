@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_117",
+  "input_path": "corpus/03_audio/tv_com_2000_117.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_117.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_117.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Invented Camry. Trust us, you're going to want one.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 23.89,
+        "end": 24.81,
+        "text": "Invented Camry."
+      },
+      {
+        "id": 2,
+        "start": 26.11,
+        "end": 27.65,
+        "text": "Trust us, you're going to want one."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Toyota Camry Futuristic",
+    "decade": 2000,
+    "sequence": 117,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0559",
+    "url": "https://youtu.be/xY_0sdIcr1c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

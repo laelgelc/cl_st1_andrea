@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_2",
+  "input_path": "corpus/03_audio/tv_com_1980_2.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_2.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_2.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "With double-layer design for dependable protection, a comfortable plastic applicator, a deodorant for freshness, a special plastic wrap so they won't open in your purse, Playtex tampons give you what you want and more.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.19,
+        "end": 26.15,
+        "text": "With double-layer design for dependable protection, a comfortable plastic applicator, a deodorant for freshness, a special plastic wrap so they won't open in your purse, Playtex tampons give you what you want and more."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Playtex deodorant tampons",
+    "decade": 1980,
+    "sequence": 2,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:02:34",
+    "source_end": "0:03:04"
+  }
+}

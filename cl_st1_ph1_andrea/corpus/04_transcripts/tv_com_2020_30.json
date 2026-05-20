@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_30",
+  "input_path": "corpus/03_audio/tv_com_2020_30.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_30.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_30.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Real strength isn't pushing through pain. It's treating it. When there's no pain, there's more gain. Advil targets pain caused by inflammation for fast, strong relief. Advil, that's real strength.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.093,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.87,
+        "end": 4.11,
+        "text": "Real strength isn't pushing through pain."
+      },
+      {
+        "id": 2,
+        "start": 4.41,
+        "end": 5.45,
+        "text": "It's treating it."
+      },
+      {
+        "id": 3,
+        "start": 5.45,
+        "end": 8.07,
+        "text": "When there's no pain, there's more gain."
+      },
+      {
+        "id": 4,
+        "start": 9.37,
+        "end": 12.93,
+        "text": "Advil targets pain caused by inflammation for fast, strong relief."
+      },
+      {
+        "id": 5,
+        "start": 13.17,
+        "end": 14.63,
+        "text": "Advil, that's real strength."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Advil Pain Relief Real Strength: Mixed Martial Arts",
+    "decade": 2020,
+    "sequence": 30,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0649",
+    "url": "https://youtu.be/vkdie4opkfM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

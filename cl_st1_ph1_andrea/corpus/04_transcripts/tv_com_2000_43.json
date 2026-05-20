@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_43",
+  "input_path": "corpus/03_audio/tv_com_2000_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Wake into the true power of e-business. Do you have the software to manage it? If not, consider this your wake-up call. Our software manages more e-businesses than anyone else on Earth. Hello, tomorrow. We are Computer Associates. The software that manages e-business.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 10.38,
+        "text": "Wake into the true power of e-business."
+      },
+      {
+        "id": 2,
+        "start": 10.38,
+        "end": 13.38,
+        "text": "Do you have the software to manage it?"
+      },
+      {
+        "id": 3,
+        "start": 13.38,
+        "end": 16.38,
+        "text": "If not, consider this your wake-up call."
+      },
+      {
+        "id": 4,
+        "start": 16.38,
+        "end": 24.02,
+        "text": "Our software manages more e-businesses than anyone else on Earth."
+      },
+      {
+        "id": 5,
+        "start": 24.02,
+        "end": 25.02,
+        "text": "Hello, tomorrow."
+      },
+      {
+        "id": 6,
+        "start": 25.02,
+        "end": 27.02,
+        "text": "We are Computer Associates."
+      },
+      {
+        "id": 7,
+        "start": 27.02,
+        "end": 30.02,
+        "text": "The software that manages e-business."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Computer Associates CA The software that Manages eBusiness Roosters",
+    "decade": 2000,
+    "sequence": 43,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0485",
+    "url": "https://youtu.be/XBglhjhi4rE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

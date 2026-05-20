@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_93",
+  "input_path": "corpus/03_audio/tv_com_2000_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Dear gentle-minded consumer, Ooh! I've taken up the natural life. I'm new Cottonelle toilet paper with Aloe and E. I've got a silky gentle touch you can actually feel. So the next time nature calls, Try new gentle me. I'll make you cheerier with a gentle touch on your posterior. Sincerely, new Cottonelle with Aloe and E.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.18,
+        "end": 5.18,
+        "text": "Dear gentle-minded consumer,"
+      },
+      {
+        "id": 2,
+        "start": 5.18,
+        "end": 8.18,
+        "text": "Ooh! I've taken up the natural life."
+      },
+      {
+        "id": 3,
+        "start": 8.18,
+        "end": 12.18,
+        "text": "I'm new Cottonelle toilet paper with Aloe and E."
+      },
+      {
+        "id": 4,
+        "start": 12.18,
+        "end": 16.18,
+        "text": "I've got a silky gentle touch you can actually feel."
+      },
+      {
+        "id": 5,
+        "start": 16.18,
+        "end": 19.18,
+        "text": "So the next time nature calls,"
+      },
+      {
+        "id": 6,
+        "start": 19.18,
+        "end": 21.18,
+        "text": "Try new gentle me."
+      },
+      {
+        "id": 7,
+        "start": 21.18,
+        "end": 25.18,
+        "text": "I'll make you cheerier with a gentle touch on your posterior."
+      },
+      {
+        "id": 8,
+        "start": 25.18,
+        "end": 29.18,
+        "text": "Sincerely, new Cottonelle with Aloe and E."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Cottonelle Toilet Paper Aloe & E",
+    "decade": 2000,
+    "sequence": 93,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0535",
+    "url": "https://youtu.be/H1A_pWar-P0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

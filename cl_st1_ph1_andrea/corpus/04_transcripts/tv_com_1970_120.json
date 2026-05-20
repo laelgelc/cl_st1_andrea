@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_120",
+  "input_path": "corpus/03_audio/tv_com_1970_120.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_120.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_120.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "In every city, people just like you are doing business. And many of these businesses are discovering the Bell Systems family of customized PBXs. Our PBXs can be tailored to handle your business calls quickly and efficiently. And they save valuable space. Ask a communications consultant at your Bell company about our family of PBXs and other Bell Systems services. We know you want better business communications. We hear you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.53,
+        "end": 3.95,
+        "text": "In every city, people just like you are doing business."
+      },
+      {
+        "id": 2,
+        "start": 3.95,
+        "end": 9.33,
+        "text": "And many of these businesses are discovering the Bell Systems family of customized PBXs."
+      },
+      {
+        "id": 3,
+        "start": 10.23,
+        "end": 14.21,
+        "text": "Our PBXs can be tailored to handle your business calls quickly and efficiently."
+      },
+      {
+        "id": 4,
+        "start": 14.67,
+        "end": 16.29,
+        "text": "And they save valuable space."
+      },
+      {
+        "id": 5,
+        "start": 17.21,
+        "end": 23.79,
+        "text": "Ask a communications consultant at your Bell company about our family of PBXs and other Bell Systems services."
+      },
+      {
+        "id": 6,
+        "start": 24.53,
+        "end": 26.55,
+        "text": "We know you want better business communications."
+      },
+      {
+        "id": 7,
+        "start": 27.37,
+        "end": 28.13,
+        "text": "We hear you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1974 Bell Telephone PBX systems",
+    "decade": 1970,
+    "sequence": 120,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0228",
+    "url": "https://youtu.be/F73lKXTydEU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

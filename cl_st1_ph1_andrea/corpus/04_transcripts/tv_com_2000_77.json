@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_77",
+  "input_path": "corpus/03_audio/tv_com_2000_77.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_77.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_77.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "New Crystal Air Air Freshener from Wizard is the only one with a concentrated fragrance gel in a beautiful glass disc. To refresh your home for up to four weeks. Wizard. Fragrances that change your life.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 7.42,
+        "text": "New Crystal Air Air Freshener from Wizard is the only one with a concentrated fragrance gel in a beautiful glass disc."
+      },
+      {
+        "id": 2,
+        "start": 7.94,
+        "end": 10.18,
+        "text": "To refresh your home for up to four weeks."
+      },
+      {
+        "id": 3,
+        "start": 11.82,
+        "end": 14.18,
+        "text": "Wizard. Fragrances that change your life."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Wizard Crystal Air Freshener",
+    "decade": 2000,
+    "sequence": 77,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0519",
+    "url": "https://youtu.be/JpG4tZb8QM8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

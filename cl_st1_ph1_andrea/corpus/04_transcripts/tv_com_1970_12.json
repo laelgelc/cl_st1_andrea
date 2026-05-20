@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_1970_12",
+  "input_path": "corpus/03_audio/tv_com_1970_12.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_12.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_12.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "All over the world, the word for great coffee flavor is Nescafé. We're the world's favorite brand of instant coffees. In America, Nescafé's great flavor comes two ways. We're the world's best-selling tool. Nescafé Regular and the Red Label. If Nescafé can please the whole wide world. And now Nescafé Decaffeinated and the Green Label. We can sure please you. Same kind of flavor. Nescafé Regular, Nescafé Decaffeinated. What's your pleasure?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.78,
+        "end": 5.88,
+        "text": "All over the world, the word for great coffee flavor is Nescafé."
+      },
+      {
+        "id": 2,
+        "start": 5.98,
+        "end": 8.48,
+        "text": "We're the world's favorite brand of instant coffees."
+      },
+      {
+        "id": 3,
+        "start": 8.9,
+        "end": 12.04,
+        "text": "In America, Nescafé's great flavor comes two ways."
+      },
+      {
+        "id": 4,
+        "start": 12.24,
+        "end": 14.46,
+        "text": "We're the world's best-selling tool."
+      },
+      {
+        "id": 5,
+        "start": 14.76,
+        "end": 16.74,
+        "text": "Nescafé Regular and the Red Label."
+      },
+      {
+        "id": 6,
+        "start": 16.94,
+        "end": 20.12,
+        "text": "If Nescafé can please the whole wide world."
+      },
+      {
+        "id": 7,
+        "start": 20.24,
+        "end": 22.48,
+        "text": "And now Nescafé Decaffeinated and the Green Label."
+      },
+      {
+        "id": 8,
+        "start": 22.52,
+        "end": 24.12,
+        "text": "We can sure please you."
+      },
+      {
+        "id": 9,
+        "start": 24.5,
+        "end": 28.16,
+        "text": "Same kind of flavor. Nescafé Regular, Nescafé Decaffeinated."
+      },
+      {
+        "id": 10,
+        "start": 28.56,
+        "end": 29.22,
+        "text": "What's your pleasure?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Nescafé",
+    "decade": 1970,
+    "sequence": 12,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:09:05",
+    "source_end": "0:09:35"
+  }
+}

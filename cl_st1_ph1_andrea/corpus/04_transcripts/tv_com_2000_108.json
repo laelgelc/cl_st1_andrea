@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_108",
+  "input_path": "corpus/03_audio/tv_com_2000_108.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_108.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_108.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Introducing the all-new Pontiac Vibe. It's getting around fast.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 18.9,
+        "end": 20.98,
+        "text": "Introducing the all-new Pontiac Vibe."
+      },
+      {
+        "id": 2,
+        "start": 25.89,
+        "end": 27.75,
+        "text": "It's getting around fast."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Pontiac Vibe",
+    "decade": 2000,
+    "sequence": 108,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0550",
+    "url": "https://youtu.be/_ARTblvJo8s",
+    "source_start": "0:00:00",
+    "source_end": "0:00:28"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_65",
+  "input_path": "corpus/03_audio/tv_com_2000_65.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_65.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_65.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "What some people will do for the freshness of laundry dried in the cleanest breeze. Introducing a new scent from Tide, Tide Clean Breeze. Perhaps the cleanest scent you can get without the commute. New Tide Clean Breeze, also available in...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.58,
+        "end": 18.64,
+        "text": "What some people will do for the freshness of laundry dried in the cleanest breeze."
+      },
+      {
+        "id": 2,
+        "start": 19.78,
+        "end": 23.0,
+        "text": "Introducing a new scent from Tide, Tide Clean Breeze."
+      },
+      {
+        "id": 3,
+        "start": 23.38,
+        "end": 26.26,
+        "text": "Perhaps the cleanest scent you can get without the commute."
+      },
+      {
+        "id": 4,
+        "start": 26.7,
+        "end": 29.18,
+        "text": "New Tide Clean Breeze, also available in..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Tide Clean Breeze",
+    "decade": 2000,
+    "sequence": 65,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0507",
+    "url": "https://youtu.be/gZt7HvmnkCE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

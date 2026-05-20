@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_116",
+  "input_path": "corpus/03_audio/tv_com_2000_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I'm not quite sure how to tell you this. What is it? You've only got 40 years left to live. Maybe 45, 50 times. Woo-hoo!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 2.64,
+        "text": "I'm not quite sure how to tell you this."
+      },
+      {
+        "id": 2,
+        "start": 3.4,
+        "end": 4.18,
+        "text": "What is it?"
+      },
+      {
+        "id": 3,
+        "start": 4.72,
+        "end": 6.78,
+        "text": "You've only got 40 years left to live."
+      },
+      {
+        "id": 4,
+        "start": 7.64,
+        "end": 9.98,
+        "text": "Maybe 45, 50 times."
+      },
+      {
+        "id": 5,
+        "start": 9.98,
+        "end": 10.66,
+        "text": "Woo-hoo!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Mercedes C Class Mid-life Crisis",
+    "decade": 2000,
+    "sequence": 116,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0558",
+    "url": "https://youtu.be/CfdltAI5NcA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

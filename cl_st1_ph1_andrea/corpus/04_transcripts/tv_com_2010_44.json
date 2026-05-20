@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_44",
+  "input_path": "corpus/03_audio/tv_com_2010_44.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_44.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_44.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Furniture, computers, electronics, and mortgages, accessories, too.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.18,
+        "end": 13.33,
+        "text": "Furniture, computers, electronics, and mortgages, accessories, too."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2011 circa Aaron's featuring Brittini Black Nobody beats Aaron's",
+    "decade": 2010,
+    "sequence": 44,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:04:10",
+    "source_end": "0:04:39"
+  }
+}

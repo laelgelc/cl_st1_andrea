@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1970_30",
+  "input_path": "corpus/03_audio/tv_com_1970_30.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_30.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_30.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Amy McVeigh keeps her brown bottle of Lysol brand disinfectant in the linen closet behind an old hot water bottle and a box of Epsom salt. Too bad, because every day Lysol could be disinfecting and deodorizing the bathroom bowl. Could be cutting down on germs in her wash, even in cold water. And killing household germs, including germs that cause odors. Where's your brown bottle of Lysol? The baby's room is where I always used it. Find it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.04,
+        "end": 6.24,
+        "text": "Amy McVeigh keeps her brown bottle of Lysol brand disinfectant in the linen closet"
+      },
+      {
+        "id": 2,
+        "start": 6.24,
+        "end": 9.8,
+        "text": "behind an old hot water bottle and a box of Epsom salt."
+      },
+      {
+        "id": 3,
+        "start": 10.2,
+        "end": 15.76,
+        "text": "Too bad, because every day Lysol could be disinfecting and deodorizing the bathroom bowl."
+      },
+      {
+        "id": 4,
+        "start": 16.52,
+        "end": 20.02,
+        "text": "Could be cutting down on germs in her wash, even in cold water."
+      },
+      {
+        "id": 5,
+        "start": 20.4,
+        "end": 23.98,
+        "text": "And killing household germs, including germs that cause odors."
+      },
+      {
+        "id": 6,
+        "start": 24.7,
+        "end": 26.56,
+        "text": "Where's your brown bottle of Lysol?"
+      },
+      {
+        "id": 7,
+        "start": 26.68,
+        "end": 28.9,
+        "text": "The baby's room is where I always used it."
+      },
+      {
+        "id": 8,
+        "start": 28.9,
+        "end": 29.5,
+        "text": "Find it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Lysol spray disinfectant",
+    "decade": 1970,
+    "sequence": 30,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:22:36",
+    "source_end": "0:23:06"
+  }
+}

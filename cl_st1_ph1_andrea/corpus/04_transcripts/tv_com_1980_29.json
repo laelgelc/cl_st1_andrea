@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_29",
+  "input_path": "corpus/03_audio/tv_com_1980_29.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_29.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_29.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "For getting Monday's spaghetti sauce out of Wednesday's laundry, Janet Fox, you've earned your stripes. For taking that ink spot and writing it off, Barbara Ford, you've earned your stripes. And so has Clorox Pre-Wash. No pre-wash works harder to break a stain's grip on fabric and pull it out in the wash than the one that's earned the name Clorox, a name that means clean. In the fight against stains, earn your stripes with Clorox Pre-Wash.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.27,
+        "end": 6.55,
+        "text": "For getting Monday's spaghetti sauce out of Wednesday's laundry, Janet Fox, you've earned your stripes."
+      },
+      {
+        "id": 2,
+        "start": 7.01,
+        "end": 12.03,
+        "text": "For taking that ink spot and writing it off, Barbara Ford, you've earned your stripes."
+      },
+      {
+        "id": 3,
+        "start": 12.03,
+        "end": 14.27,
+        "text": "And so has Clorox Pre-Wash."
+      },
+      {
+        "id": 4,
+        "start": 14.75,
+        "end": 20.01,
+        "text": "No pre-wash works harder to break a stain's grip on fabric and pull it out in the wash"
+      },
+      {
+        "id": 5,
+        "start": 20.01,
+        "end": 24.59,
+        "text": "than the one that's earned the name Clorox, a name that means clean."
+      },
+      {
+        "id": 6,
+        "start": 25.01,
+        "end": 29.23,
+        "text": "In the fight against stains, earn your stripes with Clorox Pre-Wash."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 Clorox Pre-wash spray ",
+    "decade": 1980,
+    "sequence": 29,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0251",
+    "url": "https://youtu.be/QkuaUu6fLeY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

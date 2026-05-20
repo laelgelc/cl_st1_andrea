@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2010_48",
+  "input_path": "corpus/03_audio/tv_com_2010_48.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_48.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_48.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "So, how exactly does Simply Orange always taste so fresh and delicious? Well, we're prepared to share our secret recipe. Grab a pen. You ready? We start with oranges, and then we add nothing. Shocking, I know. Simply Orange. Honestly simple.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 5.72,
+        "text": "So, how exactly does Simply Orange always taste so fresh and delicious?"
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 9.96,
+        "text": "Well, we're prepared to share our secret recipe."
+      },
+      {
+        "id": 3,
+        "start": 11.1,
+        "end": 11.8,
+        "text": "Grab a pen."
+      },
+      {
+        "id": 4,
+        "start": 12.72,
+        "end": 13.06,
+        "text": "You ready?"
+      },
+      {
+        "id": 5,
+        "start": 13.92,
+        "end": 19.08,
+        "text": "We start with oranges, and then we add nothing."
+      },
+      {
+        "id": 6,
+        "start": 20.34,
+        "end": 21.52,
+        "text": "Shocking, I know."
+      },
+      {
+        "id": 7,
+        "start": 22.98,
+        "end": 24.18,
+        "text": "Simply Orange."
+      },
+      {
+        "id": 8,
+        "start": 25.3,
+        "end": 26.38,
+        "text": "Honestly simple."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Simply Orange Honestly Simple",
+    "decade": 2010,
+    "sequence": 48,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:07:23",
+    "source_end": "0:07:51"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_58",
+  "input_path": "corpus/03_audio/tv_com_1990_58.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_58.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_58.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The experience of buying a $60,000 car is, to say the least, different. You get to walk around a showroom without looking over your shoulder. Nobody makes you have a conversation you really don't want to have. And you're given all the time you need to make your decision. It's a pretty nice way to shop for an automobile. And it feels even better when the car you're looking at costs around $13,000.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.54,
+        "end": 6.98,
+        "text": "The experience of buying a $60,000 car is, to say the least, different."
+      },
+      {
+        "id": 2,
+        "start": 7.6,
+        "end": 10.84,
+        "text": "You get to walk around a showroom without looking over your shoulder."
+      },
+      {
+        "id": 3,
+        "start": 11.74,
+        "end": 14.7,
+        "text": "Nobody makes you have a conversation you really don't want to have."
+      },
+      {
+        "id": 4,
+        "start": 15.26,
+        "end": 17.74,
+        "text": "And you're given all the time you need to make your decision."
+      },
+      {
+        "id": 5,
+        "start": 18.48,
+        "end": 20.82,
+        "text": "It's a pretty nice way to shop for an automobile."
+      },
+      {
+        "id": 6,
+        "start": 21.66,
+        "end": 26.2,
+        "text": "And it feels even better when the car you're looking at costs around $13,000."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Saturn SL2 from Saturn automaker by GM",
+    "decade": 1990,
+    "sequence": 58,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0381",
+    "url": "https://youtu.be/TOxzmYPJA7Q",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

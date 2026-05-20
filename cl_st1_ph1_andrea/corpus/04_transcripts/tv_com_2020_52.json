@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_52",
+  "input_path": "corpus/03_audio/tv_com_2020_52.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_52.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_52.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Protect your pet this flea and tick season with Chewy. Find everything from flea collars and sprays to prescriptions that keep pests away. Chewy has what you need to keep tails wagging and pets itch-free all season long. Shop pet prescriptions and more at Chewy.com today.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.27,
+        "end": 2.85,
+        "text": "Protect your pet this flea and tick season with Chewy."
+      },
+      {
+        "id": 2,
+        "start": 3.23,
+        "end": 7.27,
+        "text": "Find everything from flea collars and sprays to prescriptions that keep pests away."
+      },
+      {
+        "id": 3,
+        "start": 7.87,
+        "end": 11.63,
+        "text": "Chewy has what you need to keep tails wagging and pets itch-free all season long."
+      },
+      {
+        "id": 4,
+        "start": 12.33,
+        "end": 14.89,
+        "text": "Shop pet prescriptions and more at Chewy.com today."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Chewy.com Flea and Tick Season",
+    "decade": 2020,
+    "sequence": 52,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0671",
+    "url": "https://youtu.be/97ahxCaEzrQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_108",
+  "input_path": "corpus/03_audio/tv_com_1990_108.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_108.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_108.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "nobody but nobody needs a breath mint like you know who here's just a thing clorox automatic toilet cleaner it's concentrated clorox bleach in a tablet drop it in the tank every flush not only leaches away stains it also deodorizes for extra freshness so it's ball breath bye-bye clorox automatic toilet cleaner it's like a breath mint for you know who",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 12.62,
+        "text": "nobody but nobody needs a breath mint like you know who here's just a thing clorox automatic"
+      },
+      {
+        "id": 2,
+        "start": 12.62,
+        "end": 18.12,
+        "text": "toilet cleaner it's concentrated clorox bleach in a tablet drop it in the tank every flush not"
+      },
+      {
+        "id": 3,
+        "start": 18.12,
+        "end": 24.28,
+        "text": "only leaches away stains it also deodorizes for extra freshness so it's ball breath bye-bye"
+      },
+      {
+        "id": 4,
+        "start": 24.28,
+        "end": 28.32,
+        "text": "clorox automatic toilet cleaner it's like a breath mint for you know who"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Clorox Bleach Breath Mints for Toilets",
+    "decade": 1990,
+    "sequence": 108,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0430",
+    "url": "https://youtu.be/Pja72Hy72EI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

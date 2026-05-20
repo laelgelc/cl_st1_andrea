@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1970_69",
+  "input_path": "corpus/03_audio/tv_com_1970_69.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_69.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_69.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hi, I'm Juliet Prowse, and as a dancer, my legs are my fortune, so I'd be crazy to be caught with wrinkles around my ankles. That's why I wear legs. Legs regular pantyhose give me a beautiful fit, because legs has memory yarn, stretches out and back. No bagging, no sagging. Believe me, nothing beats a great pair of legs. Nothing beats a great pair of legs.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 9.58,
+        "text": "Hi, I'm Juliet Prowse, and as a dancer, my legs are my fortune, so I'd be crazy to be"
+      },
+      {
+        "id": 2,
+        "start": 9.58,
+        "end": 11.36,
+        "text": "caught with wrinkles around my ankles."
+      },
+      {
+        "id": 3,
+        "start": 12.04,
+        "end": 13.34,
+        "text": "That's why I wear legs."
+      },
+      {
+        "id": 4,
+        "start": 13.64,
+        "end": 19.52,
+        "text": "Legs regular pantyhose give me a beautiful fit, because legs has memory yarn, stretches"
+      },
+      {
+        "id": 5,
+        "start": 19.52,
+        "end": 20.58,
+        "text": "out and back."
+      },
+      {
+        "id": 6,
+        "start": 20.84,
+        "end": 22.5,
+        "text": "No bagging, no sagging."
+      },
+      {
+        "id": 7,
+        "start": 22.82,
+        "end": 25.8,
+        "text": "Believe me, nothing beats a great pair of legs."
+      },
+      {
+        "id": 8,
+        "start": 25.8,
+        "end": 28.94,
+        "text": "Nothing beats a great pair of legs."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Legg's Pantihose by Juliet Prowse",
+    "decade": 1970,
+    "sequence": 69,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:50:57",
+    "source_end": "0:51:26"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_84",
+  "input_path": "corpus/03_audio/tv_com_1980_84.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_84.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_84.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Take a cassette out of its case, and most people just see an empty box. But Sony saw something quite different. Sony introduces the only cassette player as small as a cassette case. The incredible-sounding Super Walkman. Enter Sony's $25,000 sweepstakes. Look for this display at your Sony dealer.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.3020625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 5.08,
+        "text": "Take a cassette out of its case, and most people just see an empty box."
+      },
+      {
+        "id": 2,
+        "start": 5.62,
+        "end": 8.18,
+        "text": "But Sony saw something quite different."
+      },
+      {
+        "id": 3,
+        "start": 14.95,
+        "end": 20.07,
+        "text": "Sony introduces the only cassette player as small as a cassette case."
+      },
+      {
+        "id": 4,
+        "start": 20.75,
+        "end": 23.21,
+        "text": "The incredible-sounding Super Walkman."
+      },
+      {
+        "id": 5,
+        "start": 25.07,
+        "end": 27.37,
+        "text": "Enter Sony's $25,000 sweepstakes."
+      },
+      {
+        "id": 6,
+        "start": 27.57,
+        "end": 29.13,
+        "text": "Look for this display at your Sony dealer."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Sony Walkman",
+    "decade": 1980,
+    "sequence": 84,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0298",
+    "url": "https://youtu.be/7lipckhgG5g",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

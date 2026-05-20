@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1950_116",
+  "input_path": "corpus/03_audio/tv_com_1950_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Ladies and gentlemen, if you're considering television, buying or trading, think a moment. What's set in all America costs so little, works so well. Thank you. Don't say all of nothing about a monkey.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.41,
+        "end": 40.29,
+        "text": "Ladies and gentlemen, if you're considering television, buying or trading, think a moment."
+      },
+      {
+        "id": 2,
+        "start": 40.95,
+        "end": 45.27,
+        "text": "What's set in all America costs so little, works so well."
+      },
+      {
+        "id": 3,
+        "start": 47.47,
+        "end": 47.93,
+        "text": "Thank you."
+      },
+      {
+        "id": 4,
+        "start": 47.93,
+        "end": 57.22,
+        "text": "Don't say all of nothing about a monkey."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Muntz TV",
+    "decade": 1950,
+    "sequence": 116,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0113",
+    "url": "https://youtu.be/MCy2Xj9qFAs",
+    "source_start": "0:00:00",
+    "source_end": "0:01:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_93",
+  "input_path": "corpus/03_audio/tv_com_1980_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "In the pizza delivery game, the Noid can zap ordinary pizzas. But Domino's Pizza delivers more than all the others combined. So when you call Domino's Pizza, you get the best delivered pizza. The Noid just can't beat the best. Domino's Pizza. Nobody delivers bad.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.94,
+        "end": 5.66,
+        "text": "In the pizza delivery game, the Noid can zap ordinary pizzas."
+      },
+      {
+        "id": 2,
+        "start": 6.42,
+        "end": 9.68,
+        "text": "But Domino's Pizza delivers more than all the others combined."
+      },
+      {
+        "id": 3,
+        "start": 9.98,
+        "end": 13.72,
+        "text": "So when you call Domino's Pizza, you get the best delivered pizza."
+      },
+      {
+        "id": 4,
+        "start": 20.91,
+        "end": 26.06,
+        "text": "The Noid just can't beat the best."
+      },
+      {
+        "id": 5,
+        "start": 26.48,
+        "end": 29.04,
+        "text": "Domino's Pizza. Nobody delivers bad."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Domino s Pizza Noid Delivery Game",
+    "decade": 1980,
+    "sequence": 93,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0305",
+    "url": "https://youtu.be/GIuxFX64vpw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

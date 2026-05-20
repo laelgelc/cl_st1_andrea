@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_31",
+  "input_path": "corpus/03_audio/tv_com_1990_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Actual size of a Jolly Rancher candy is 3-4-7 inch by 3-4-7 inch square.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.54,
+        "end": 13.2,
+        "text": "Actual size of a Jolly Rancher candy is 3-4-7 inch by 3-4-7 inch square."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Jolly Rancher Candy Mountain Bike",
+    "decade": 1990,
+    "sequence": 31,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0354",
+    "url": "https://youtu.be/U2-RbjEx4D4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

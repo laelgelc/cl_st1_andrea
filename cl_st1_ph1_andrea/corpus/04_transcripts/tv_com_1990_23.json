@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_23",
+  "input_path": "corpus/03_audio/tv_com_1990_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Say goodbye to waxy, greasy lips. Introducing Soft Lips. Natural-looking lip protection. Soft and healthy. Soft Lips glides on easily, smoothly. It's about time. New Soft Lips. Lip protection for soft, healthy lips.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 2.62,
+        "text": "Say goodbye to waxy, greasy lips."
+      },
+      {
+        "id": 2,
+        "start": 3.52,
+        "end": 4.8,
+        "text": "Introducing Soft Lips."
+      },
+      {
+        "id": 3,
+        "start": 5.12,
+        "end": 7.32,
+        "text": "Natural-looking lip protection. Soft and healthy."
+      },
+      {
+        "id": 4,
+        "start": 7.72,
+        "end": 9.84,
+        "text": "Soft Lips glides on easily, smoothly."
+      },
+      {
+        "id": 5,
+        "start": 10.32,
+        "end": 11.2,
+        "text": "It's about time."
+      },
+      {
+        "id": 6,
+        "start": 11.32,
+        "end": 14.66,
+        "text": "New Soft Lips. Lip protection for soft, healthy lips."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Softlips Lip Proctant",
+    "decade": 1990,
+    "sequence": 23,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0346",
+    "url": "https://youtu.be/9tl7p4n78Kk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_94",
+  "input_path": "corpus/03_audio/tv_com_2000_94.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_94.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_94.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "All that nasty stuff deep down in your pores doesn't stand a chance. Bure Pore Strips instantly remove blackheads. In fact, in just one use, they're twice as effective as other cleansers out there.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.89,
+        "end": 7.9,
+        "text": "All that nasty stuff deep down in your pores doesn't stand a chance."
+      },
+      {
+        "id": 2,
+        "start": 7.9,
+        "end": 10.82,
+        "text": "Bure Pore Strips instantly remove blackheads."
+      },
+      {
+        "id": 3,
+        "start": 10.82,
+        "end": 14.34,
+        "text": "In fact, in just one use, they're twice as effective as other cleansers out there."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2004 Biore Pore Strips",
+    "decade": 2000,
+    "sequence": 94,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0536",
+    "url": "https://youtu.be/Ac62YEcJ8ZU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

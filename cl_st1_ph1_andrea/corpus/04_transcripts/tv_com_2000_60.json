@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_2000_60",
+  "input_path": "corpus/03_audio/tv_com_2000_60.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_60.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_60.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "I'm all looks, no brains. Police? Changez mon discours au musée, s'il vous plaît. Oui. But for really smart, check out this Palm Handheld from CompUSA. It manages your calendar, gets email... Ooh, here's one. The Fed needs me to lecture on our monetary system. Again? CompUSA, where America buys technology. Buy select Palm Handhelds at CompUSA and get a 16-meg expansion card free.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.08,
+        "text": "I'm all looks, no brains."
+      },
+      {
+        "id": 2,
+        "start": 4.08,
+        "end": 6.08,
+        "text": "Police?"
+      },
+      {
+        "id": 3,
+        "start": 6.08,
+        "end": 9.08,
+        "text": "Changez mon discours au musée, s'il vous plaît."
+      },
+      {
+        "id": 4,
+        "start": 9.08,
+        "end": 10.08,
+        "text": "Oui."
+      },
+      {
+        "id": 5,
+        "start": 10.08,
+        "end": 14.08,
+        "text": "But for really smart, check out this Palm Handheld from CompUSA."
+      },
+      {
+        "id": 6,
+        "start": 14.08,
+        "end": 17.08,
+        "text": "It manages your calendar, gets email..."
+      },
+      {
+        "id": 7,
+        "start": 17.08,
+        "end": 18.08,
+        "text": "Ooh, here's one."
+      },
+      {
+        "id": 8,
+        "start": 18.08,
+        "end": 21.08,
+        "text": "The Fed needs me to lecture on our monetary system."
+      },
+      {
+        "id": 9,
+        "start": 21.08,
+        "end": 22.08,
+        "text": "Again?"
+      },
+      {
+        "id": 10,
+        "start": 22.08,
+        "end": 25.08,
+        "text": "CompUSA, where America buys technology."
+      },
+      {
+        "id": 11,
+        "start": 25.08,
+        "end": 30.08,
+        "text": "Buy select Palm Handhelds at CompUSA and get a 16-meg expansion card free."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Palm Hand Held PDA by Comp USA",
+    "decade": 2000,
+    "sequence": 60,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0502",
+    "url": "https://youtu.be/RQpO4Qe7mFA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

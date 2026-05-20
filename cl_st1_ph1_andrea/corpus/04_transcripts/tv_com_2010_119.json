@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2010_119",
+  "input_path": "corpus/03_audio/tv_com_2010_119.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_119.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_119.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Something happens when you give your hair air. You get a natural look without the gray. Only Just For Men has AirActive, the only technology that uses oxygen in the air to get rid of gray while leaving the natural variations in your hair. No ammonia, no peroxide, no overcoloring. Just air. Just you and the look you want. Just For Men.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.04,
+        "end": 4.92,
+        "text": "Something happens when you give your hair air."
+      },
+      {
+        "id": 2,
+        "start": 5.4,
+        "end": 7.88,
+        "text": "You get a natural look without the gray."
+      },
+      {
+        "id": 3,
+        "start": 9.76,
+        "end": 11.68,
+        "text": "Only Just For Men has AirActive,"
+      },
+      {
+        "id": 4,
+        "start": 12.1,
+        "end": 16.18,
+        "text": "the only technology that uses oxygen in the air to get rid of gray"
+      },
+      {
+        "id": 5,
+        "start": 16.18,
+        "end": 18.72,
+        "text": "while leaving the natural variations in your hair."
+      },
+      {
+        "id": 6,
+        "start": 19.82,
+        "end": 23.44,
+        "text": "No ammonia, no peroxide, no overcoloring."
+      },
+      {
+        "id": 7,
+        "start": 24.1,
+        "end": 24.76,
+        "text": "Just air."
+      },
+      {
+        "id": 8,
+        "start": 25.5,
+        "end": 27.86,
+        "text": "Just you and the look you want."
+      },
+      {
+        "id": 9,
+        "start": 28.2,
+        "end": 28.78,
+        "text": "Just For Men."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2015 Just For Men Auto Stop Hair Restoration Just You Shawn Lee ",
+    "decade": 2010,
+    "sequence": 119,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0618",
+    "url": "https://youtu.be/n_M23cW07wc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

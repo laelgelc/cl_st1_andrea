@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_22",
+  "input_path": "corpus/03_audio/tv_com_2000_22.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_22.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_22.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "You know, GEICO opened its doors back in 1936, and now we're insuring over 18 million drivers. Quite impressive, yeah. Come a long way, that's for sure. So have you since you started working here way back when. I still have nightmares. GEICO. 15 minutes could save you 15% or more on car insurance.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.62,
+        "end": 6.66,
+        "text": "You know, GEICO opened its doors back in 1936, and now we're insuring over 18 million drivers."
+      },
+      {
+        "id": 2,
+        "start": 6.9,
+        "end": 7.82,
+        "text": "Quite impressive, yeah."
+      },
+      {
+        "id": 3,
+        "start": 8.12,
+        "end": 9.46,
+        "text": "Come a long way, that's for sure."
+      },
+      {
+        "id": 4,
+        "start": 10.12,
+        "end": 12.72,
+        "text": "So have you since you started working here way back when."
+      },
+      {
+        "id": 5,
+        "start": 24.26,
+        "end": 25.2,
+        "text": "I still have nightmares."
+      },
+      {
+        "id": 6,
+        "start": 26.0,
+        "end": 29.7,
+        "text": "GEICO. 15 minutes could save you 15% or more on car insurance."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2009 GEICO Insurance  Mailroom",
+    "decade": 2000,
+    "sequence": 22,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0464",
+    "url": "https://youtu.be/nEiJasTKgKI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

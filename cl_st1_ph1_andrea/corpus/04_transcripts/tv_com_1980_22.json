@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_22",
+  "input_path": "corpus/03_audio/tv_com_1980_22.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_22.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_22.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Use sandpaper to clean your stovetop? Ridiculous. Yet if you're cleaning with scouring powder, you're probably using the same harsh, scratchy abrasives found in this sandpaper. And that can be rough on your stovetop. That's why Soft Scrub is better. It's a liquid cleanser that cleans like a scouring powder, but because it has milder abrasives, it doesn't scratch like one. Soft Scrub cleans even tough spills like this, but leaves no sandy grit. Try Soft Scrub. Cleans like a scouring powder, but doesn't scratch like one.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.34,
+        "end": 3.5,
+        "text": "Use sandpaper to clean your stovetop? Ridiculous."
+      },
+      {
+        "id": 2,
+        "start": 3.5,
+        "end": 9.5,
+        "text": "Yet if you're cleaning with scouring powder, you're probably using the same harsh, scratchy abrasives found in this sandpaper."
+      },
+      {
+        "id": 3,
+        "start": 9.64,
+        "end": 11.9,
+        "text": "And that can be rough on your stovetop."
+      },
+      {
+        "id": 4,
+        "start": 12.32,
+        "end": 14.18,
+        "text": "That's why Soft Scrub is better."
+      },
+      {
+        "id": 5,
+        "start": 14.62,
+        "end": 20.32,
+        "text": "It's a liquid cleanser that cleans like a scouring powder, but because it has milder abrasives, it doesn't scratch like one."
+      },
+      {
+        "id": 6,
+        "start": 20.52,
+        "end": 24.4,
+        "text": "Soft Scrub cleans even tough spills like this, but leaves no sandy grit."
+      },
+      {
+        "id": 7,
+        "start": 24.86,
+        "end": 29.3,
+        "text": "Try Soft Scrub. Cleans like a scouring powder, but doesn't scratch like one."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Soft Scrub Use sandpaper to clean your stove top",
+    "decade": 1980,
+    "sequence": 22,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0244",
+    "url": "https://youtu.be/FsgIsvOmT6o",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

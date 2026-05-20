@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_35",
+  "input_path": "corpus/03_audio/tv_com_1990_35.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_35.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_35.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "For some people, the best thing about the morning is that it's over by the afternoon. So the Braun shaver is quiet to soothe the soul. It's curved to comfortably fit the face. With three shaving positions to cut, groom, and trim with superb results. Braun, a state-of-the-art shaver that could improve your state of mind. The world's number one selling point.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.37,
+        "end": 7.37,
+        "text": "For some people, the best thing about the morning is that it's over by the afternoon."
+      },
+      {
+        "id": 2,
+        "start": 7.97,
+        "end": 11.75,
+        "text": "So the Braun shaver is quiet to soothe the soul."
+      },
+      {
+        "id": 3,
+        "start": 12.45,
+        "end": 15.09,
+        "text": "It's curved to comfortably fit the face."
+      },
+      {
+        "id": 4,
+        "start": 15.09,
+        "end": 21.49,
+        "text": "With three shaving positions to cut, groom, and trim with superb results."
+      },
+      {
+        "id": 5,
+        "start": 21.93,
+        "end": 26.63,
+        "text": "Braun, a state-of-the-art shaver that could improve your state of mind."
+      },
+      {
+        "id": 6,
+        "start": 27.17,
+        "end": 29.07,
+        "text": "The world's number one selling point."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Braun Shaver",
+    "decade": 1990,
+    "sequence": 35,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0358",
+    "url": "https://youtu.be/XTWJl6dS7iA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

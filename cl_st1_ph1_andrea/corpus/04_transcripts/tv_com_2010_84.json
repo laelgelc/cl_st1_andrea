@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_84",
+  "input_path": "corpus/03_audio/tv_com_2010_84.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_84.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_84.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "How do they make Starburst taste so juicy? They use Wicked Small Fighter just to shoot the juiciness in there for Starburst. It's about to get juicy. Woo! I feel so alive! Starburst.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.56,
+        "end": 2.7,
+        "text": "How do they make Starburst taste so juicy?"
+      },
+      {
+        "id": 2,
+        "start": 2.96,
+        "end": 6.24,
+        "text": "They use Wicked Small Fighter just to shoot the juiciness in there for Starburst."
+      },
+      {
+        "id": 3,
+        "start": 6.66,
+        "end": 8.28,
+        "text": "It's about to get juicy."
+      },
+      {
+        "id": 4,
+        "start": 8.94,
+        "end": 10.52,
+        "text": "Woo! I feel so alive!"
+      },
+      {
+        "id": 5,
+        "start": 13.09,
+        "end": 13.57,
+        "text": "Starburst."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Starburst Original Unexplainably Juicy Tiny Jet",
+    "decade": 2010,
+    "sequence": 84,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:40:07",
+    "source_end": "0:40:21"
+  }
+}

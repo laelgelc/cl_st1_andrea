@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1980_8",
+  "input_path": "corpus/03_audio/tv_com_1980_8.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_8.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_8.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Well, do I like it? Your daddy loves Old Spice. Wow. That's what makes daddy smell so special. I love the smell of my daddy. You put the ribbon on. This Christmas, people all over America are giving the men in their lives the classic scent of Old Spice. The clean, fresh, masculine scent so many women love. I love the smell of daddy. And same as mommy. For a Christmas gift he'll really love, give him the classic scent of Old Spice.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 1.78,
+        "text": "Well, do I like it?"
+      },
+      {
+        "id": 2,
+        "start": 2.44,
+        "end": 4.08,
+        "text": "Your daddy loves Old Spice."
+      },
+      {
+        "id": 3,
+        "start": 4.46,
+        "end": 5.02,
+        "text": "Wow."
+      },
+      {
+        "id": 4,
+        "start": 5.5,
+        "end": 7.64,
+        "text": "That's what makes daddy smell so special."
+      },
+      {
+        "id": 5,
+        "start": 8.28,
+        "end": 10.34,
+        "text": "I love the smell of my daddy."
+      },
+      {
+        "id": 6,
+        "start": 10.66,
+        "end": 11.94,
+        "text": "You put the ribbon on."
+      },
+      {
+        "id": 7,
+        "start": 12.04,
+        "end": 17.32,
+        "text": "This Christmas, people all over America are giving the men in their lives the classic scent of Old Spice."
+      },
+      {
+        "id": 8,
+        "start": 17.58,
+        "end": 20.66,
+        "text": "The clean, fresh, masculine scent so many women love."
+      },
+      {
+        "id": 9,
+        "start": 21.56,
+        "end": 23.3,
+        "text": "I love the smell of daddy."
+      },
+      {
+        "id": 10,
+        "start": 24.24,
+        "end": 25.26,
+        "text": "And same as mommy."
+      },
+      {
+        "id": 11,
+        "start": 25.26,
+        "end": 29.16,
+        "text": "For a Christmas gift he'll really love, give him the classic scent of Old Spice."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Old Spice fresh masculine scent",
+    "decade": 1980,
+    "sequence": 8,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:10:21",
+    "source_end": "0:10:50"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_116",
+  "input_path": "corpus/03_audio/tv_com_2020_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The holidays can be a lot, but with your new Dell PC with Intel inside, you can handle a lot. From taking care of holiday to-dos, to taking care of Aunt Jean, even if she can be the lot.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.56,
+        "end": 7.42,
+        "text": "The holidays can be a lot, but with your new Dell PC with Intel inside, you can handle a lot."
+      },
+      {
+        "id": 2,
+        "start": 7.7,
+        "end": 13.46,
+        "text": "From taking care of holiday to-dos, to taking care of Aunt Jean, even if she can be the lot."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Dell Technologies Holiday Help",
+    "decade": 2020,
+    "sequence": 116,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0735",
+    "url": "https://youtu.be/ijGcSPZ4T8s",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

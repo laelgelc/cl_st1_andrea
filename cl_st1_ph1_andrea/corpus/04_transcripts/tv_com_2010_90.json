@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_90",
+  "input_path": "corpus/03_audio/tv_com_2010_90.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_90.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_90.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "a beer. What's better, doing two things at once or just one? Two. You're sure? I think two times is awesome. The thing I can do is wave my head and wave. That's amazing. I've never seen anything like that. Look, I can do it. Hold on, I'm watching this. It's not complicated. Doing two things at once is better and only AT&T's network lets you talk and surf on your iPhone 5.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.66,
+        "text": "a beer. What's better, doing two things at once or just one? Two. You're sure? I think two times is"
+      },
+      {
+        "id": 2,
+        "start": 9.66,
+        "end": 18.12,
+        "text": "awesome. The thing I can do is wave my head and wave. That's amazing. I've never seen anything"
+      },
+      {
+        "id": 3,
+        "start": 18.12,
+        "end": 24.8,
+        "text": "like that. Look, I can do it. Hold on, I'm watching this. It's not complicated. Doing two things at"
+      },
+      {
+        "id": 4,
+        "start": 24.8,
+        "end": 28.94,
+        "text": "once is better and only AT&T's network lets you talk and surf on your iPhone 5."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 AT&T Wireless 2 Things at Once is Better",
+    "decade": 2010,
+    "sequence": 90,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:53:58",
+    "source_end": "0:54:28"
+  }
+}

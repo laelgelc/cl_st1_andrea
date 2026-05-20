@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_46",
+  "input_path": "corpus/03_audio/tv_com_1980_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "With over 400,000 cars in 132 countries throughout the world, Hertz makes it easy to rent a car. Whether your trip starts in Kitchener or Korea, there's a Hertz Rent-A-Car office to serve you. With fantastic rates on weekend and weekly rentals, our free customer pickup and delivery service, handy one-way rentals, and a host of other outstanding service benefits. When you want to rent a car, remember the name. Hertz. Can you really afford to rent from anyone else?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.18,
+        "end": 7.04,
+        "text": "With over 400,000 cars in 132 countries throughout the world, Hertz makes it easy to rent a car."
+      },
+      {
+        "id": 2,
+        "start": 7.5,
+        "end": 12.48,
+        "text": "Whether your trip starts in Kitchener or Korea, there's a Hertz Rent-A-Car office to serve you."
+      },
+      {
+        "id": 3,
+        "start": 12.48,
+        "end": 18.22,
+        "text": "With fantastic rates on weekend and weekly rentals, our free customer pickup and delivery service,"
+      },
+      {
+        "id": 4,
+        "start": 18.56,
+        "end": 22.4,
+        "text": "handy one-way rentals, and a host of other outstanding service benefits."
+      },
+      {
+        "id": 5,
+        "start": 22.96,
+        "end": 25.34,
+        "text": "When you want to rent a car, remember the name."
+      },
+      {
+        "id": 6,
+        "start": 25.7,
+        "end": 28.54,
+        "text": "Hertz. Can you really afford to rent from anyone else?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Hertz Rent a Car",
+    "decade": 1980,
+    "sequence": 46,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0266",
+    "url": "https://youtu.be/-ZfQwptT8wA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

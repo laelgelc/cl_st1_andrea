@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_1",
+  "input_path": "corpus/03_audio/tv_com_2000_1.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_1.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_1.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "There's a great tasting baby bottle pop that you can drink. So it's just like a real baby bottle. Excuse me. Baby bottle pop. Candy juice baby bottle pops. Bring out the...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 3.14,
+        "text": "There's a great tasting baby bottle pop that you can drink."
+      },
+      {
+        "id": 2,
+        "start": 3.76,
+        "end": 5.76,
+        "text": "So it's just like a real baby bottle."
+      },
+      {
+        "id": 3,
+        "start": 9.35,
+        "end": 10.17,
+        "text": "Excuse me."
+      },
+      {
+        "id": 4,
+        "start": 10.43,
+        "end": 11.49,
+        "text": "Baby bottle pop."
+      },
+      {
+        "id": 5,
+        "start": 11.51,
+        "end": 13.17,
+        "text": "Candy juice baby bottle pops."
+      },
+      {
+        "id": 6,
+        "start": 13.61,
+        "end": 14.17,
+        "text": "Bring out the..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2004 Candy Juice Baby Botlle Pop",
+    "decade": 2000,
+    "sequence": 1,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0443",
+    "url": "https://youtu.be/EE1sGXwt4u0?si=N1W-QimNaZ8MTN-C",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

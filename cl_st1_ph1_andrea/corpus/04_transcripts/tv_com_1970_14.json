@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_14",
+  "input_path": "corpus/03_audio/tv_com_1970_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Did you know there's a very special dog food with so much protein that high protein is its middle name? It's from Purina, and it's terrific for normally active dogs, like yours. It's the dog meal with the blue and white checkerboard. But most important, it has more protein for active dogs than any other leading dog food. Purina High Protein Dog Meal. So rich in protein that high protein is its middle name.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.59,
+        "end": 6.67,
+        "text": "Did you know there's a very special dog food with so much protein that high protein is its middle name?"
+      },
+      {
+        "id": 2,
+        "start": 7.07,
+        "end": 12.15,
+        "text": "It's from Purina, and it's terrific for normally active dogs, like yours."
+      },
+      {
+        "id": 3,
+        "start": 12.73,
+        "end": 16.25,
+        "text": "It's the dog meal with the blue and white checkerboard."
+      },
+      {
+        "id": 4,
+        "start": 16.91,
+        "end": 22.05,
+        "text": "But most important, it has more protein for active dogs than any other leading dog food."
+      },
+      {
+        "id": 5,
+        "start": 22.31,
+        "end": 24.01,
+        "text": "Purina High Protein Dog Meal."
+      },
+      {
+        "id": 6,
+        "start": 24.45,
+        "end": 27.93,
+        "text": "So rich in protein that high protein is its middle name."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Purina High Protein Dog meal",
+    "decade": 1970,
+    "sequence": 14,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:10:36",
+    "source_end": "0:11:05"
+  }
+}

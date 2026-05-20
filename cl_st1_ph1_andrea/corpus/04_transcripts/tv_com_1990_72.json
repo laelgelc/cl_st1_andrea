@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_72",
+  "input_path": "corpus/03_audio/tv_com_1990_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "what's the most important thing you put on is it red no is it green i'll bet it's green it's clear introducing soft and dry clear gel antiperspirant odor and wetness protection with no white no messy no chalky residue clear enough hey wait a minute so the most important thing you put on leaves no messy white stuff behind new soft and dry clear gel",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.17,
+        "end": 9.11,
+        "text": "what's the most important thing you put on is it red no is it green i'll bet it's green"
+      },
+      {
+        "id": 2,
+        "start": 9.11,
+        "end": 15.39,
+        "text": "it's clear introducing soft and dry clear gel antiperspirant odor and wetness protection with"
+      },
+      {
+        "id": 3,
+        "start": 15.39,
+        "end": 22.07,
+        "text": "no white no messy no chalky residue clear enough hey wait a minute so the most important thing you"
+      },
+      {
+        "id": 4,
+        "start": 22.07,
+        "end": 28.89,
+        "text": "put on leaves no messy white stuff behind new soft and dry clear gel"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Soft & Dri Deodorant",
+    "decade": 1990,
+    "sequence": 72,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0395",
+    "url": "https://youtu.be/wF7S7SeqGGQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

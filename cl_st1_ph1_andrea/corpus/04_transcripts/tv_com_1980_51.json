@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_51",
+  "input_path": "corpus/03_audio/tv_com_1980_51.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_51.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_51.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "In a world where less is too often tolerated, Cadillac offers you more. The 1985 Cadillac DeVille with V8 power. Exclusive V8 power not even available on Buick and Olds. The 1985 front-wheel drive Cadillac DeVille with the only transverse-mounted V8 engine in the world. Now at your Chicagoland Cadillac dealer. In luxury and performance, Cadillac stands alone.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.67,
+        "end": 7.67,
+        "text": "In a world where less is too often tolerated, Cadillac offers you more."
+      },
+      {
+        "id": 2,
+        "start": 8.29,
+        "end": 11.81,
+        "text": "The 1985 Cadillac DeVille with V8 power."
+      },
+      {
+        "id": 3,
+        "start": 12.23,
+        "end": 15.85,
+        "text": "Exclusive V8 power not even available on Buick and Olds."
+      },
+      {
+        "id": 4,
+        "start": 15.85,
+        "end": 22.67,
+        "text": "The 1985 front-wheel drive Cadillac DeVille with the only transverse-mounted V8 engine in the world."
+      },
+      {
+        "id": 5,
+        "start": 23.11,
+        "end": 25.29,
+        "text": "Now at your Chicagoland Cadillac dealer."
+      },
+      {
+        "id": 6,
+        "start": 25.91,
+        "end": 29.53,
+        "text": "In luxury and performance, Cadillac stands alone."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1985 Cadillac Deville",
+    "decade": 1980,
+    "sequence": 51,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0271",
+    "url": "https://youtu.be/IR2hV-CsFoI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

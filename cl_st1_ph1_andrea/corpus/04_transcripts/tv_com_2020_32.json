@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2020_32",
+  "input_path": "corpus/03_audio/tv_com_2020_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The Frame Pro. With Wireless One Connect Box. Even smarter with smart things.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.71,
+        "end": 14.76,
+        "text": "The Frame Pro. With Wireless One Connect Box. Even smarter with smart things."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Samsung The Frame Pro with Wireless One Connect Box",
+    "decade": 2020,
+    "sequence": 32,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0651",
+    "url": "https://youtu.be/ezeigY05gdM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_116",
+  "input_path": "corpus/03_audio/tv_com_1980_116.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_116.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_116.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "made Cheerios. Toasty oat goodness is what it's got. I love the low sugar. But we all love Cheerios new improved flavor. Toasted longer for an even toastier taste. Moms love Cheerios low, low sugar. Improved toasted oat taste. But kids made Cheerios numb.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 5.68,
+        "end": 16.94,
+        "text": "made Cheerios. Toasty oat goodness is what it's got. I love the low sugar. But we all love Cheerios"
+      },
+      {
+        "id": 2,
+        "start": 16.94,
+        "end": 23.92,
+        "text": "new improved flavor. Toasted longer for an even toastier taste. Moms love Cheerios low, low sugar."
+      },
+      {
+        "id": 3,
+        "start": 24.32,
+        "end": 27.96,
+        "text": "Improved toasted oat taste. But kids made Cheerios numb."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Cheerio Cereal low in sugar",
+    "decade": 1980,
+    "sequence": 116,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:16:41",
+    "source_end": "0:17:09"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_103",
+  "input_path": "corpus/03_audio/tv_com_2010_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "to see",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 15.92,
+        "end": 16.8,
+        "text": "to see"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Mr. Clean Cleaner of your Dreams You gotta Love a Man Who Cleans",
+    "decade": 2010,
+    "sequence": 103,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0602",
+    "url": "https://youtu.be/ozuWoZITX3Y",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_98",
+  "input_path": "corpus/03_audio/tv_com_2020_98.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_98.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_98.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "See yourself and know you're not alone because this is not just a mirror. It's an unstoppable community It's every workout for everyone So join in now and see your best self in the mirror",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.72,
+        "end": 10.16,
+        "text": "See yourself and know you're not alone because this is not just a mirror. It's an unstoppable community"
+      },
+      {
+        "id": 2,
+        "start": 10.16,
+        "end": 19.4,
+        "text": "It's every workout for everyone"
+      },
+      {
+        "id": 3,
+        "start": 19.4,
+        "end": 29.44,
+        "text": "So join in now and see your best self in the mirror"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Mirror See Your Best Self: Join",
+    "decade": 2020,
+    "sequence": 98,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0717",
+    "url": "https://youtu.be/rmCN1pNgP7U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

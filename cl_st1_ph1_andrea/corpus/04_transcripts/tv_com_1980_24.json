@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_24",
+  "input_path": "corpus/03_audio/tv_com_1980_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "don't be a stranger. She's gonna shine the floor with bright. Oh well, guess I'll watch the soap so it dries. Surprise, baby. That's fast dry bright. You'll be back on your no-wax floor before you know it. What's this? But it's too soon. Oh, pretty. That's me. Look how shiny. And already dry. Wish I was. Turn on a bright shine with fast dry bright.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.07,
+        "end": 7.79,
+        "text": "don't be a stranger. She's gonna shine the floor with bright. Oh well, guess I'll watch the soap"
+      },
+      {
+        "id": 2,
+        "start": 7.79,
+        "end": 13.63,
+        "text": "so it dries. Surprise, baby. That's fast dry bright. You'll be back on your no-wax floor"
+      },
+      {
+        "id": 3,
+        "start": 13.63,
+        "end": 21.73,
+        "text": "before you know it. What's this? But it's too soon. Oh, pretty. That's me. Look how shiny."
+      },
+      {
+        "id": 4,
+        "start": 22.25,
+        "end": 28.47,
+        "text": "And already dry. Wish I was. Turn on a bright shine with fast dry bright."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Brite Floor Cleaner",
+    "decade": 1980,
+    "sequence": 24,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0246",
+    "url": "https://youtu.be/0sIv8pLQsPo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1990_4",
+  "input_path": "corpus/03_audio/tv_com_1990_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hi, Mom. My princess. That fashion-forward wild child. She says this new Splash juice drink is all the rage. That everyone loves that light taste of tropical fruit juices. So would I tell her only Splash has 100% of both vitamins A and C? That it's good for her because it's from V8? Nah. Why shatter her living-on-the-edge image? Especially since she's finally color-coordinated. New V8 Splash. Keep the peace.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 0.5,
+        "text": "Hi, Mom."
+      },
+      {
+        "id": 2,
+        "start": 0.5,
+        "end": 1.5,
+        "text": "My princess."
+      },
+      {
+        "id": 3,
+        "start": 1.5,
+        "end": 4.0,
+        "text": "That fashion-forward wild child."
+      },
+      {
+        "id": 4,
+        "start": 5.0,
+        "end": 8.0,
+        "text": "She says this new Splash juice drink is all the rage."
+      },
+      {
+        "id": 5,
+        "start": 9.0,
+        "end": 12.0,
+        "text": "That everyone loves that light taste of tropical fruit juices."
+      },
+      {
+        "id": 6,
+        "start": 12.5,
+        "end": 17.0,
+        "text": "So would I tell her only Splash has 100% of both vitamins A and C?"
+      },
+      {
+        "id": 7,
+        "start": 17.0,
+        "end": 19.5,
+        "text": "That it's good for her because it's from V8?"
+      },
+      {
+        "id": 8,
+        "start": 19.5,
+        "end": 20.5,
+        "text": "Nah."
+      },
+      {
+        "id": 9,
+        "start": 20.5,
+        "end": 23.5,
+        "text": "Why shatter her living-on-the-edge image?"
+      },
+      {
+        "id": 10,
+        "start": 23.5,
+        "end": 26.0,
+        "text": "Especially since she's finally color-coordinated."
+      },
+      {
+        "id": 11,
+        "start": 26.5,
+        "end": 29.0,
+        "text": "New V8 Splash. Keep the peace."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 V8 Splash Tropical Blend juice",
+    "decade": 1990,
+    "sequence": 4,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0327",
+    "url": "https://youtu.be/4l6FvT1Glv4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_75",
+  "input_path": "corpus/03_audio/tv_com_2020_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Hear that? That's a mountain laughing at you. So come prepared in a Kia Sportage. With available all-wheel drive, 237 horsepower, and 260 pound-feet of torque. And not in the less torque and horsepower-equipped Honda CR-V Touring. So you can turn that mountain's laugh into a whimper. Get 0% APR for 75 months on the 2021 Sportage, or lease an LX for $159 a month.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.55,
+        "end": 5.33,
+        "text": "Hear that? That's a mountain laughing at you."
+      },
+      {
+        "id": 2,
+        "start": 5.87,
+        "end": 7.77,
+        "text": "So come prepared in a Kia Sportage."
+      },
+      {
+        "id": 3,
+        "start": 8.49,
+        "end": 14.81,
+        "text": "With available all-wheel drive, 237 horsepower, and 260 pound-feet of torque."
+      },
+      {
+        "id": 4,
+        "start": 15.05,
+        "end": 18.47,
+        "text": "And not in the less torque and horsepower-equipped Honda CR-V Touring."
+      },
+      {
+        "id": 5,
+        "start": 19.13,
+        "end": 22.51,
+        "text": "So you can turn that mountain's laugh into a whimper."
+      },
+      {
+        "id": 6,
+        "start": 24.15,
+        "end": 28.95,
+        "text": "Get 0% APR for 75 months on the 2021 Sportage, or lease an LX for $159 a month."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Kia Sportage Presidents Day Sales Event Mountain [T1]",
+    "decade": 2020,
+    "sequence": 75,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0694",
+    "url": "https://youtu.be/d7bnXuXZ2j0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

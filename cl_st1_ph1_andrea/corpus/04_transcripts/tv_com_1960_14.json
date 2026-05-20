@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_14",
+  "input_path": "corpus/03_audio/tv_com_1960_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Why do so many single men use Old Spice after-shave lotion? Let's ask one. Dave, what are your reasons? Well, let's see. There's Julie, and Karen, and Peggy, Joelle, mmm, and Sandy, Beth, and Bridget. Yes, Dave, thanks. That's the way it is with Old Spice. If you're single, or even if you're not, try Old Spice after-shave lotion.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.46,
+        "end": 7.56,
+        "text": "Why do so many single men use Old Spice after-shave lotion? Let's ask one. Dave, what are your reasons?"
+      },
+      {
+        "id": 2,
+        "start": 8.56,
+        "end": 14.04,
+        "text": "Well, let's see. There's Julie, and Karen, and Peggy,"
+      },
+      {
+        "id": 3,
+        "start": 14.98,
+        "end": 17.6,
+        "text": "Joelle, mmm, and Sandy,"
+      },
+      {
+        "id": 4,
+        "start": 18.6,
+        "end": 20.56,
+        "text": "Beth, and"
+      },
+      {
+        "id": 5,
+        "start": 20.56,
+        "end": 22.56,
+        "text": "Bridget. Yes, Dave, thanks."
+      },
+      {
+        "id": 6,
+        "start": 22.74,
+        "end": 28.82,
+        "text": "That's the way it is with Old Spice. If you're single, or even if you're not, try Old Spice after-shave lotion."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Old Spice after shave lotion",
+    "decade": 1960,
+    "sequence": 14,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:25:10",
+    "source_end": "0:25:39"
+  }
+}

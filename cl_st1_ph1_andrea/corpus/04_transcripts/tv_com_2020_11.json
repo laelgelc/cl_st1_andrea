@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_11",
+  "input_path": "corpus/03_audio/tv_com_2020_11.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_11.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_11.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Recovery after a big night comes in many forms. McDonald's breakfast is one of them.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.093,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.17,
+        "end": 4.37,
+        "text": "Recovery after a big night comes in many forms."
+      },
+      {
+        "id": 2,
+        "start": 7.29,
+        "end": 10.77,
+        "text": "McDonald's breakfast is one of them."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 McDonald's The Horizontal Breakfast",
+    "decade": 2020,
+    "sequence": 11,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0630",
+    "url": "https://youtu.be/mMWRGRXKsYk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

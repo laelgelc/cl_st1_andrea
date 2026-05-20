@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_33",
+  "input_path": "corpus/03_audio/tv_com_2020_33.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_33.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_33.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "When it comes to parenting, you're a pro. You know your kid doesn't step around puddles. And you know cheap leaky diapers are an amateur move. You need Love's pro-level leak protection. Love's. Parent like a pro.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.02,
+        "text": "When it comes to parenting, you're a pro."
+      },
+      {
+        "id": 2,
+        "start": 3.44,
+        "end": 5.82,
+        "text": "You know your kid doesn't step around puddles."
+      },
+      {
+        "id": 3,
+        "start": 6.18,
+        "end": 9.46,
+        "text": "And you know cheap leaky diapers are an amateur move."
+      },
+      {
+        "id": 4,
+        "start": 9.98,
+        "end": 12.2,
+        "text": "You need Love's pro-level leak protection."
+      },
+      {
+        "id": 5,
+        "start": 12.8,
+        "end": 14.6,
+        "text": "Love's. Parent like a pro."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Luvs Triple Leakguards Diaper Parenting Pro",
+    "decade": 2020,
+    "sequence": 33,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0652",
+    "url": "https://youtu.be/r6FNFk2E3dE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

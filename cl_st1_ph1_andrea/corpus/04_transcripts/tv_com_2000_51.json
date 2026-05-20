@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_51",
+  "input_path": "corpus/03_audio/tv_com_2000_51.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_51.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_51.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Ready to do, or not do, anything you want. Introducing the Nokia 3300 Series Wireless Phone. Nokia. Connecting people.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.98,
+        "end": 24.76,
+        "text": "Ready to do, or not do, anything you want."
+      },
+      {
+        "id": 2,
+        "start": 25.14,
+        "end": 28.02,
+        "text": "Introducing the Nokia 3300 Series Wireless Phone."
+      },
+      {
+        "id": 3,
+        "start": 28.36,
+        "end": 29.54,
+        "text": "Nokia. Connecting people."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Nokia 3300 Series Phone",
+    "decade": 2000,
+    "sequence": 51,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0493",
+    "url": "https://youtu.be/wOm94T1ocCU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

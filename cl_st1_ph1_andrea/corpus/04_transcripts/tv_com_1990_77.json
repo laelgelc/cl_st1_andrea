@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_77",
+  "input_path": "corpus/03_audio/tv_com_1990_77.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_77.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_77.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "The Black & Decker Dustbuster Cordless Vac. The easiest way to zip up little pickups. The Dustbuster Vac from Black & Decker. Put us to work for you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 2.9,
+        "end": 5.5,
+        "text": "The Black & Decker Dustbuster Cordless Vac."
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 10.06,
+        "text": "The easiest way to zip up little pickups."
+      },
+      {
+        "id": 3,
+        "start": 11.52,
+        "end": 13.38,
+        "text": "The Dustbuster Vac from Black & Decker."
+      },
+      {
+        "id": 4,
+        "start": 13.68,
+        "end": 14.7,
+        "text": "Put us to work for you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Black & Decker DustBuster Cordless Vacuum",
+    "decade": 1990,
+    "sequence": 77,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0400",
+    "url": "https://youtu.be/fPZ8MX4qAxo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

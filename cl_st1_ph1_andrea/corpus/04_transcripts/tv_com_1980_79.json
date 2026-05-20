@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1980_79",
+  "input_path": "corpus/03_audio/tv_com_1980_79.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_79.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_79.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "No matter how long your shopping list, Timex is ready, with over 200 fabulous styles, like our Marathon Runner's Quartz. Merry Christmas, one and all, from Timex.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 16.045,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.44,
+        "text": "No matter how long your shopping list, Timex is ready, with over 200 fabulous styles, like our Marathon Runner's Quartz."
+      },
+      {
+        "id": 2,
+        "start": 10.14,
+        "end": 13.56,
+        "text": "Merry Christmas, one and all, from Timex."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Timex Institutional at Christmas",
+    "decade": 1980,
+    "sequence": 79,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:13:14",
+    "source_end": "0:13:30"
+  }
+}

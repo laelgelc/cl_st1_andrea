@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_115",
+  "input_path": "corpus/03_audio/tv_com_1990_115.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_115.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_115.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Need a better all-purpose bleach cleaner? Get new Comet Cleaner with Bleach. Cleans tough, greasy dirt better than the leading bleach cleaner. Comet Cleaner with Bleach. When others can't cut it, Comet can.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Need a better all-purpose bleach cleaner?"
+      },
+      {
+        "id": 2,
+        "start": 5.38,
+        "end": 7.38,
+        "text": "Get new Comet Cleaner with Bleach."
+      },
+      {
+        "id": 3,
+        "start": 7.38,
+        "end": 10.38,
+        "text": "Cleans tough, greasy dirt better than the leading bleach cleaner."
+      },
+      {
+        "id": 4,
+        "start": 10.38,
+        "end": 12.38,
+        "text": "Comet Cleaner with Bleach."
+      },
+      {
+        "id": 5,
+        "start": 12.38,
+        "end": 14.38,
+        "text": "When others can't cut it, Comet can."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Comet Cleaner with bleach",
+    "decade": 1990,
+    "sequence": 115,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0437",
+    "url": "https://youtu.be/_bHPXmOX4uI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

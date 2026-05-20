@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_48",
+  "input_path": "corpus/03_audio/tv_com_2000_48.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_48.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_48.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Now your phone can ring to over 150 songs. I'm the one that's calling. We're the one that's calling. The lyrics are up to you. I wonder who tried to call. Customizable ringers from Sprint PCS. Proud sponsor of things fast, new, and really quite amazing.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 7.5,
+        "end": 16.94,
+        "text": "Now your phone can ring to over 150 songs."
+      },
+      {
+        "id": 2,
+        "start": 16.94,
+        "end": 18.3,
+        "text": "I'm the one that's calling."
+      },
+      {
+        "id": 3,
+        "start": 18.66,
+        "end": 20.0,
+        "text": "We're the one that's calling."
+      },
+      {
+        "id": 4,
+        "start": 20.9,
+        "end": 22.74,
+        "text": "The lyrics are up to you."
+      },
+      {
+        "id": 5,
+        "start": 23.38,
+        "end": 25.18,
+        "text": "I wonder who tried to call."
+      },
+      {
+        "id": 6,
+        "start": 25.54,
+        "end": 26.94,
+        "text": "Customizable ringers from Sprint PCS."
+      },
+      {
+        "id": 7,
+        "start": 27.64,
+        "end": 30.04,
+        "text": "Proud sponsor of things fast, new, and really quite amazing."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Sprint Cellular Customizable Ringtones",
+    "decade": 2000,
+    "sequence": 48,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0490",
+    "url": "https://youtu.be/LShEAXRprKk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

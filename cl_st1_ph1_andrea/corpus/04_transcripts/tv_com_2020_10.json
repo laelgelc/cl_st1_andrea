@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_2020_10",
+  "input_path": "corpus/03_audio/tv_com_2020_10.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_10.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_10.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Charlie! Here! Come here! Aww. I'll be right back. Good, Charlie. Come, sit. Let's go home. Charlie, stop. Charlie, what are you doing? Charlie, will you stop that? Charlie, are you crazy? Silly dog. No more treats for you. Sorry, where were we? You crazy dog. Red Bull gives you wings.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.1,
+        "end": 5.6,
+        "text": "Charlie! Here! Come here!"
+      },
+      {
+        "id": 2,
+        "start": 6.72,
+        "end": 7.36,
+        "text": "Aww."
+      },
+      {
+        "id": 3,
+        "start": 9.34,
+        "end": 10.92,
+        "text": "I'll be right back."
+      },
+      {
+        "id": 4,
+        "start": 11.28,
+        "end": 14.92,
+        "text": "Good, Charlie. Come, sit. Let's go home."
+      },
+      {
+        "id": 5,
+        "start": 15.36,
+        "end": 17.92,
+        "text": "Charlie, stop. Charlie, what are you doing?"
+      },
+      {
+        "id": 6,
+        "start": 18.12,
+        "end": 19.68,
+        "text": "Charlie, will you stop that?"
+      },
+      {
+        "id": 7,
+        "start": 19.9,
+        "end": 23.48,
+        "text": "Charlie, are you crazy? Silly dog. No more treats for you."
+      },
+      {
+        "id": 8,
+        "start": 23.48,
+        "end": 25.58,
+        "text": "Sorry, where were we?"
+      },
+      {
+        "id": 9,
+        "start": 25.8,
+        "end": 27.74,
+        "text": "You crazy dog."
+      },
+      {
+        "id": 10,
+        "start": 27.86,
+        "end": 29.46,
+        "text": "Red Bull gives you wings."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Red Bull Dog Date",
+    "decade": 2020,
+    "sequence": 10,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0629",
+    "url": "https://youtu.be/Ws2V-UA92A4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

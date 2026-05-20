@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1970_61",
+  "input_path": "corpus/03_audio/tv_com_1970_61.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_61.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_61.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "It's like, it's got the taste and the feeling you like Coca-Cola, Coca-Cola Everybody wants a little like",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 3.12,
+        "end": 6.42,
+        "text": "It's like, it's got the taste and the feeling you like"
+      },
+      {
+        "id": 2,
+        "start": 6.42,
+        "end": 8.86,
+        "text": "Coca-Cola, Coca-Cola"
+      },
+      {
+        "id": 3,
+        "start": 8.86,
+        "end": 26.67,
+        "text": "Everybody wants a little like"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Coca-Cola plenty of coke on hand",
+    "decade": 1970,
+    "sequence": 61,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:43:44",
+    "source_end": "0:44:13"
+  }
+}

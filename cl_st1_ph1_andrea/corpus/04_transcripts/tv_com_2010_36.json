@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_36",
+  "input_path": "corpus/03_audio/tv_com_2010_36.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_36.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_36.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "mom's gonna need some help at care.com we can help you find the perfect babysitter or nanny who can help you with all the after-school stuff too like rides meals homework and more search from lots of local profiles plus request background checks and driving records you can even pay your sitter online get started today care.com",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 6.45,
+        "end": 12.23,
+        "text": "mom's gonna need some help at care.com we can help you find the perfect babysitter or nanny"
+      },
+      {
+        "id": 2,
+        "start": 12.23,
+        "end": 18.17,
+        "text": "who can help you with all the after-school stuff too like rides meals homework and more"
+      },
+      {
+        "id": 3,
+        "start": 18.17,
+        "end": 23.39,
+        "text": "search from lots of local profiles plus request background checks and driving records"
+      },
+      {
+        "id": 4,
+        "start": 23.39,
+        "end": 29.03,
+        "text": "you can even pay your sitter online get started today care.com"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 Care.com Lots Going On",
+    "decade": 2010,
+    "sequence": 36,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0598",
+    "url": "https://youtu.be/iToxsEBml58",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_61",
+  "input_path": "corpus/03_audio/tv_com_2010_61.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_61.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_61.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "in 10 feet imagine yourself as the boss recalculating in no time at all realize you don't have to be the ceo to enjoy the amenities of the vip suite your all-new compass well-qualified current lessees of competitive vehicles get a low mileage lease on the 2018 jeep compass pro",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 27.0280625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.24,
+        "end": 12.82,
+        "text": "in 10 feet imagine yourself as the boss recalculating in no time at all realize you"
+      },
+      {
+        "id": 2,
+        "start": 12.82,
+        "end": 22.46,
+        "text": "don't have to be the ceo to enjoy the amenities of the vip suite your all-new compass well-qualified"
+      },
+      {
+        "id": 3,
+        "start": 22.46,
+        "end": 26.86,
+        "text": "current lessees of competitive vehicles get a low mileage lease on the 2018 jeep compass"
+      },
+      {
+        "id": 4,
+        "start": 26.86,
+        "end": 27.02,
+        "text": "pro"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Compass Your All New Compass Vip Suite",
+    "decade": 2010,
+    "sequence": 61,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:15:21",
+    "source_end": "0:15:48"
+  }
+}

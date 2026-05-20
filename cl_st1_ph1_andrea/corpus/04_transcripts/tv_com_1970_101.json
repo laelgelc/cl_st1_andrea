@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_101",
+  "input_path": "corpus/03_audio/tv_com_1970_101.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_101.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_101.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "My family loves my pork chops. I hate the grease they make. But New Dawn dishwashing liquid really works on grease. Watch. Half a cup of grease added to dishwater. Dawn surrounds the grease, takes it out of your way, helps keep it from settling back on dishes. Dawn helps keep grease away from dishes, glasses, even my hands don't feel greasy. Switch to New Dawn for dishes. Dawn takes grease out of your way.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.78,
+        "end": 5.2,
+        "text": "My family loves my pork chops. I hate the grease they make."
+      },
+      {
+        "id": 2,
+        "start": 6.18,
+        "end": 9.4,
+        "text": "But New Dawn dishwashing liquid really works on grease."
+      },
+      {
+        "id": 3,
+        "start": 10.14,
+        "end": 12.68,
+        "text": "Watch. Half a cup of grease added to dishwater."
+      },
+      {
+        "id": 4,
+        "start": 13.16,
+        "end": 17.52,
+        "text": "Dawn surrounds the grease, takes it out of your way, helps keep it from settling back on dishes."
+      },
+      {
+        "id": 5,
+        "start": 18.3,
+        "end": 23.52,
+        "text": "Dawn helps keep grease away from dishes, glasses, even my hands don't feel greasy."
+      },
+      {
+        "id": 6,
+        "start": 24.26,
+        "end": 28.0,
+        "text": "Switch to New Dawn for dishes. Dawn takes grease out of your way."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Dawn Dishwashing Liquid Detergent early '70s",
+    "decade": 1970,
+    "sequence": 101,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0209",
+    "url": "https://youtu.be/vCPoXDKUgVc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

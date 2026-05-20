@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_85",
+  "input_path": "corpus/03_audio/tv_com_1970_85.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_85.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_85.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "Simplicity's new 8-horsepower lawn tractors make picture book lawns easy as baby see. Free-floating mower action follows ground contours for anti-skull blowing, regardless of dips or ridges. Now get Simplicity quality at a surprisingly low price. And remember, when it comes to lawn and garden care, Simplicity wrote the book. Look for your Simplicity dealer in the yellow pages, or call toll-free.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.71,
+        "end": 6.67,
+        "text": "Simplicity's new 8-horsepower lawn tractors make picture book lawns easy as baby see."
+      },
+      {
+        "id": 2,
+        "start": 7.19,
+        "end": 13.81,
+        "text": "Free-floating mower action follows ground contours for anti-skull blowing, regardless of dips or ridges."
+      },
+      {
+        "id": 3,
+        "start": 14.43,
+        "end": 17.67,
+        "text": "Now get Simplicity quality at a surprisingly low price."
+      },
+      {
+        "id": 4,
+        "start": 18.15,
+        "end": 22.93,
+        "text": "And remember, when it comes to lawn and garden care, Simplicity wrote the book."
+      },
+      {
+        "id": 5,
+        "start": 23.91,
+        "end": 27.51,
+        "text": "Look for your Simplicity dealer in the yellow pages, or call toll-free."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Simplicity lawn tractor domestic-use machine 1976",
+    "decade": 1970,
+    "sequence": 85,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0193",
+    "url": "https://youtu.be/wRH8CVQvLn8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

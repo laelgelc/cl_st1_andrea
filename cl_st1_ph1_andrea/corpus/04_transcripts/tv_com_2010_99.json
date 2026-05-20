@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2010_99",
+  "input_path": "corpus/03_audio/tv_com_2010_99.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_99.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_99.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "America, you told us what would be yummy as a Lay's potato chip. And the finalists are here. Try Lay's cheddar bacon mac and cheese. Lay's cappuccino. Lay's wavy mango salsa. And kettle cooked wasabi ginger. So, what's the yummiest? Try all four before they're gone. And vote for your fave at do a...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.02,
+        "end": 3.62,
+        "text": "America, you told us what would be yummy as a Lay's potato chip."
+      },
+      {
+        "id": 2,
+        "start": 4.14,
+        "end": 5.72,
+        "text": "And the finalists are here."
+      },
+      {
+        "id": 3,
+        "start": 6.2,
+        "end": 8.28,
+        "text": "Try Lay's cheddar bacon mac and cheese."
+      },
+      {
+        "id": 4,
+        "start": 9.94,
+        "end": 11.34,
+        "text": "Lay's cappuccino."
+      },
+      {
+        "id": 5,
+        "start": 12.36,
+        "end": 18.32,
+        "text": "Lay's wavy mango salsa."
+      },
+      {
+        "id": 6,
+        "start": 19.94,
+        "end": 22.0,
+        "text": "And kettle cooked wasabi ginger."
+      },
+      {
+        "id": 7,
+        "start": 22.9,
+        "end": 24.18,
+        "text": "So, what's the yummiest?"
+      },
+      {
+        "id": 8,
+        "start": 25.14,
+        "end": 27.14,
+        "text": "Try all four before they're gone."
+      },
+      {
+        "id": 9,
+        "start": 27.3,
+        "end": 29.04,
+        "text": "And vote for your fave at do a..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Lay's Do us a Flavor Finalists",
+    "decade": 2010,
+    "sequence": 99,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "1:16:19",
+    "source_end": "1:16:48"
+  }
+}

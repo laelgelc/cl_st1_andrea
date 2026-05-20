@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_72",
+  "input_path": "corpus/03_audio/tv_com_1960_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": true
+  },
+  "transcription": {
+    "text": "here they come down the wall wall walkers are here tumbling head over toe they go wall walkers are here wall walkers they're money walk them down walls doors windows they're lots of fun and now you can get a donald duck wall walker too wall walkers by kenner sold separately",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.3,
+        "end": 8.82,
+        "text": "here they come down the wall wall walkers are here tumbling head over toe they go"
+      },
+      {
+        "id": 2,
+        "start": 8.82,
+        "end": 16.36,
+        "text": "wall walkers are here wall walkers they're money walk them down walls doors windows they're lots"
+      },
+      {
+        "id": 3,
+        "start": 16.36,
+        "end": 27.02,
+        "text": "of fun and now you can get a donald duck wall walker too wall walkers by kenner sold separately"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "The Wall Walker by Kenner",
+    "decade": 1960,
+    "sequence": 72,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services, Consumer Goods & Services",
+    "video_id": "video_0142",
+    "url": "https://youtu.be/UIpuVbsqXbs",
+    "source_start": "0:12:27",
+    "source_end": "0:12:55"
+  }
+}

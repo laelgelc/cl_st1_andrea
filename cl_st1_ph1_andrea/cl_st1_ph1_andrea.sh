@@ -1,9 +1,10 @@
+# Download source YouTube videos for a television commercials corpus
 # By default, the script runs in test mode and attempts only the first 5 planned videos
 python download_videos.py
 
 python download_videos.py --cookies env/cookies.txt
 
-#Note: is needed when YouTube blocks automated downloads with authentication or bot-confirmation checks;
+# Note: is needed when YouTube blocks automated downloads with authentication or bot-confirmation checks;
 # it can be obtained by signing in to YouTube in Firefox and exporting browser cookies in Netscape format
 # using a cookies export extension.
 
@@ -35,10 +36,19 @@ python extract_commercials.py
 python extract_commercials.py --no-test-mode
 
 # Extract Whisper-ready audio from television commercial video files
-
 python extract_commercials_audio.py
 
 # Full run
 
 python extract_commercials_audio.py --no-test-mode
 
+# Transcribe Whisper-ready audio files extracted from individual television commercial video clips
+# By default, the script runs in test mode and attempts only the first 5 commercial audio files
+
+python transcribe_commercials_whisper.py
+
+# Full run on an EC2 instance
+nohup bash run_python_ec2.sh \
+   transcribe_commercials_whisper.py \
+       --no-test-mode \
+> process_output.log 2>&1 &

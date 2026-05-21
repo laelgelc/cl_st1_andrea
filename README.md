@@ -407,3 +407,17 @@ corpus/04_transcripts/transcribe_commercials_whisper_manifest.json
 ```
 
 A timestamped per-run manifest is also created for each execution.
+
+#### Reprocessing without VAD filtering
+
+After inspecting the initial transcripts, the final transcription run was performed **without VAD filtering**. This produced better results for the commercial audio, likely because short slogans, jingles, brief voice-over segments, or speech over music can be affected by automatic voice activity detection.
+
+Recommended EC2 full run:
+
+```bash
+nohup bash run_python_ec2.sh \
+   transcribe_commercials_whisper.py \
+       --no-test-mode \
+       --no-vad-filter \
+> whisper_transcription_output.log 2>&1 &
+```

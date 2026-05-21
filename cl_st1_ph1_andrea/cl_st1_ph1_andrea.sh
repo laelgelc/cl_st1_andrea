@@ -49,4 +49,12 @@ python transcribe_commercials_whisper.py
 nohup bash run_python_ec2.sh \
    transcribe_commercials_whisper.py \
        --no-test-mode \
-> process_output.log 2>&1 &
+> whisper_transcription_output.log 2>&1 &
+
+# Run without VAD filtering
+
+nohup bash run_python_ec2.sh \
+   transcribe_commercials_whisper.py \
+       --no-test-mode \
+       --no-vad-filter \
+> whisper_transcription_output.log 2>&1 &

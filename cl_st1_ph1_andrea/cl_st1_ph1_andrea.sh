@@ -58,3 +58,9 @@ nohup bash run_python_ec2.sh \
        --no-test-mode \
        --no-vad-filter \
 > whisper_transcription_output.log 2>&1 &
+
+# Sample representative still frames from individual TV commercial video clips
+# By default, the script runs in test mode and attempts only the first 5 commercials
+
+python sample_commercials_frames.py
+

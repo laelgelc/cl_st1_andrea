@@ -421,3 +421,48 @@ nohup bash run_python_ec2.sh \
        --no-vad-filter \
 > whisper_transcription_output.log 2>&1 &
 ```
+### Sample commercial frames
+
+The `sample_commercials_frames.py` programme samples representative frames from
+commercial clips in `corpus/02_commercials/` and writes ordered frame sequences to
+`corpus/05_frames/`.
+
+The sampler uses a scene-change strategy with safeguards:
+
+- first frame;
+- scene-change frames;
+- final frame near the end;
+- maximum frame cap with chronological even downsampling.
+
+Default test run:
+
+```bash
+python sample_commercials_frames.py
+```
+
+Full run:
+
+```bash
+python sample_commercials_frames.py --no-test-mode
+```
+
+Use a lower frame cap to reduce later LLM image-token cost:
+
+```bash
+python sample_commercials_frames.py --no-test-mode --max-frames 20
+```
+
+Use a more conservative scene-change threshold:
+
+```bash
+python sample_commercials_frames.py --no-test-mode --scene-threshold 0.30
+```
+
+Outputs are written to:
+
+```text
+corpus/05_frames/<Commercial ID>/
+```
+
+Each commercial directory contains selected JPEG frames and a `frames_manifest.json`
+file recording timestamps, selection reasons, frame counts, and sampling parameters.

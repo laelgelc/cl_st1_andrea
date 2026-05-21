@@ -1,0 +1,41 @@
+{
+  "commercial_id": "tv_com_1980_39",
+  "status": "success",
+  "source_video": "corpus/02_commercials/tv_com_1980_39.mp4",
+  "output_dir": "corpus/05_frames/tv_com_1980_39",
+  "duration_seconds": 29.023,
+  "timestamp_precision": "approximate",
+  "sampling_config": {
+    "strategy": "scene_change_with_first_last",
+    "scene_threshold": 0.25,
+    "include_first_frame": true,
+    "include_last_frame": true,
+    "last_frame_offset_seconds": 1.0,
+    "image_width": 768,
+    "max_frames": 30,
+    "cap_policy": "chronological_even",
+    "timestamp_tolerance_seconds": 0.1,
+    "min_scene_gap_seconds": 0.0
+  },
+  "candidate_frame_count": 2,
+  "selected_frame_count": 2,
+  "cap_applied": false,
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_39/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_39/frame_0002.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "created_at": "2026-05-21T20:02:15Z",
+  "error": null
+}

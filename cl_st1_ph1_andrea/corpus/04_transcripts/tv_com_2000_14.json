@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2000_14",
+  "input_path": "corpus/03_audio/tv_com_2000_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "now famous candy bars are bite-sized new poppables have a ball",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 16.045,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 15.36,
+        "text": "now famous candy bars are bite-sized new poppables have a ball"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Pop'ables  Yikes Have a ball",
+    "decade": 2000,
+    "sequence": 14,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0456",
+    "url": "https://youtu.be/8m5e12ZTyUs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1960_3",
+  "input_path": "corpus/03_audio/tv_com_1960_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Oh no, Fluff, not in there! Oh dear, here we go again! Help! Now where am I? In Rexall Land, the wonderful kingdom where just a penny more buys two. You're playing a game. Of course I am. The famous Rexall one cent sale game. Look, the regular price of Rexall's hundred tablet bottle of buffered aspirin is 98 cents, but during Rexall's one cent sale, all you do is pay. All you do is add a penny and you get two bottles for only 99 cents. Fantastic! Mm-hmm, same thing with the hundred tablet bottle of Rexall panavite vitamins. Regular price, 298, now two for just 2.99. And the regular 98 cent bottle of carinome hand lotion, now two for only 99 cents. It's a wonderful game. It's the economy game. Better start playing it yourself. Save, save, save at the Rexall one cent sale. It starts tomorrow, but only at the store with this sign.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 29.98,
+        "text": "Oh no, Fluff, not in there! Oh dear, here we go again! Help! Now where am I? In Rexall Land, the wonderful kingdom where just a penny more buys two. You're playing a game. Of course I am. The famous Rexall one cent sale game. Look, the regular price of Rexall's hundred tablet bottle of buffered aspirin is 98 cents, but during Rexall's one cent sale, all you do is pay."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 58.82,
+        "text": "All you do is add a penny and you get two bottles for only 99 cents. Fantastic! Mm-hmm, same thing with the hundred tablet bottle of Rexall panavite vitamins. Regular price, 298, now two for just 2.99. And the regular 98 cent bottle of carinome hand lotion, now two for only 99 cents. It's a wonderful game. It's the economy game. Better start playing it yourself. Save, save, save at the Rexall one cent sale. It starts tomorrow, but only at the store with this sign."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Rexall Sale Products",
+    "decade": 1960,
+    "sequence": 3,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:01:32",
+    "source_end": "0:02:31"
+  }
+}

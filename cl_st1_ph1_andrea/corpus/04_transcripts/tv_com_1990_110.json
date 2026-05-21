@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_110",
+  "input_path": "corpus/03_audio/tv_com_1990_110.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_110.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_110.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "409 Blue Glass and Surface Cleaner. Streak-free cleaning that doesn't stop at glass.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 15.0,
+        "text": "409 Blue Glass and Surface Cleaner. Streak-free cleaning that doesn't stop at glass."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Formula 409 Glass & Surface Cleaner",
+    "decade": 1990,
+    "sequence": 110,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0432",
+    "url": "https://youtu.be/OPI4ZAvVAU4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

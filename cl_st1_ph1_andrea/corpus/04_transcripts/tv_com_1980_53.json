@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_53",
+  "input_path": "corpus/03_audio/tv_com_1980_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "some people will buy any old gasoline others expect more so they go the extra mile to Texaco for the clean gasoline and competitively priced products as well we give you special bonuses year-round that stretch your dollar even further expect more from Texaco",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.200000000000001,
+        "text": "some people will buy any old gasoline others expect more so they go the extra mile to"
+      },
+      {
+        "id": 2,
+        "start": 12.200000000000001,
+        "end": 19.92,
+        "text": "Texaco for the clean gasoline and competitively priced products as well we give you special"
+      },
+      {
+        "id": 3,
+        "start": 19.92,
+        "end": 25.400000000000002,
+        "text": "bonuses year-round that stretch your dollar even further expect more from Texaco"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Texaco Gas",
+    "decade": 1980,
+    "sequence": 53,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0273",
+    "url": "https://youtu.be/Ey5G9VICQtw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

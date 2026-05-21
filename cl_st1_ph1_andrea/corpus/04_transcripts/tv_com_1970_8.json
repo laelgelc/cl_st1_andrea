@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_8",
+  "input_path": "corpus/03_audio/tv_com_1970_8.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_8.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_8.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "look at you beautiful from your hair to your favor leather boots specially priced at thirty dollars favor leather boots reflect your sense of fashion your smart way with money favor leather boots just thirty dollars why pay fifty dollars or more when good leather boots are just thirty dollars at favor you and your favor boots beautiful from every angle you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.74,
+        "text": "look at you beautiful from your hair to your favor leather boots specially priced at thirty"
+      },
+      {
+        "id": 2,
+        "start": 7.74,
+        "end": 14.72,
+        "text": "dollars favor leather boots reflect your sense of fashion your smart way with money favor leather"
+      },
+      {
+        "id": 3,
+        "start": 14.72,
+        "end": 20.6,
+        "text": "boots just thirty dollars why pay fifty dollars or more when good leather boots are just thirty"
+      },
+      {
+        "id": 4,
+        "start": 20.6,
+        "end": 25.78,
+        "text": "dollars at favor you and your favor boots beautiful from every angle"
+      },
+      {
+        "id": 5,
+        "start": 25.78,
+        "end": 26.28,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Fayva Leather Boots",
+    "decade": 1970,
+    "sequence": 8,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:06:36",
+    "source_end": "0:07:05"
+  }
+}

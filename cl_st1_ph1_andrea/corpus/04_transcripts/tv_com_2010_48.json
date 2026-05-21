@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_48",
+  "input_path": "corpus/03_audio/tv_com_2010_48.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_48.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_48.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "So how exactly does Simply Orange always taste so fresh and delicious? Well, we're prepared to share our secret recipe. Grab a pen. You ready? We start with oranges and then we add nothing. Shocking, I know. Simply Orange. Honestly simple.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.64,
+        "end": 5.84,
+        "text": "So how exactly does Simply Orange always taste so fresh and delicious?"
+      },
+      {
+        "id": 2,
+        "start": 7.28,
+        "end": 15.68,
+        "text": "Well, we're prepared to share our secret recipe. Grab a pen. You ready? We start with oranges"
+      },
+      {
+        "id": 3,
+        "start": 16.48,
+        "end": 29.84,
+        "text": "and then we add nothing. Shocking, I know. Simply Orange. Honestly simple."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Simply Orange Honestly Simple",
+    "decade": 2010,
+    "sequence": 48,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:07:23",
+    "source_end": "0:07:51"
+  }
+}

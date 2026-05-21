@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_120",
+  "input_path": "corpus/03_audio/tv_com_2000_120.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_120.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_120.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Performance and protection that goes and goes for 5,000, 7,500, or 15,000 miles. Introducing new high-endurance oils for mobile. Three new formulations that provide powerful, long-lasting protection of critical engine parts for 5,000, 7,500, or 15,000 miles. Guaranteed new high-endurance oils for mobile. The oil that's changing all.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.94,
+        "text": "Performance and protection that goes and goes for 5,000, 7,500, or 15,000 miles."
+      },
+      {
+        "id": 2,
+        "start": 13.26,
+        "end": 15.52,
+        "text": "Introducing new high-endurance oils for mobile."
+      },
+      {
+        "id": 3,
+        "start": 15.92,
+        "end": 20.66,
+        "text": "Three new formulations that provide powerful, long-lasting protection of critical engine parts"
+      },
+      {
+        "id": 4,
+        "start": 20.66,
+        "end": 24.18,
+        "text": "for 5,000, 7,500, or 15,000 miles."
+      },
+      {
+        "id": 5,
+        "start": 24.52,
+        "end": 27.28,
+        "text": "Guaranteed new high-endurance oils for mobile."
+      },
+      {
+        "id": 6,
+        "start": 27.28,
+        "end": 29.04,
+        "text": "The oil that's changing all."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Mobil High Endurance Oil",
+    "decade": 2000,
+    "sequence": 120,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0562",
+    "url": "https://youtu.be/SuLPtoemCQU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

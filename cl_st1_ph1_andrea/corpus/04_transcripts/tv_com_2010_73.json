@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_73",
+  "input_path": "corpus/03_audio/tv_com_2010_73.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_73.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_73.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Microsoft, you spray, you awkward, you're gold, smell fresh all day with Nuax gold body spray.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 15.0,
+        "text": "Microsoft, you spray, you awkward, you're gold, smell fresh all day with Nuax gold body spray."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2018 Axe Gold Body Spray You Awkward",
+    "decade": 2010,
+    "sequence": 73,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:24:33",
+    "source_end": "0:24:48"
+  }
+}

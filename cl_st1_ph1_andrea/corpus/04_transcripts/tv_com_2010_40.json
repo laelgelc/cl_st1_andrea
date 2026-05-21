@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_40",
+  "input_path": "corpus/03_audio/tv_com_2010_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "your contact lenses that i ordered just arrived 1-800 contacts they can't possibly have my brand it's a special brand i have special eyes oh they have so many brands in a giant warehouse in utah that's insanity look with your special eyes my brand i'm such a fool quality contact lenses 1-800 contacts we're that passionate",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.68,
+        "text": "your contact lenses that i ordered just arrived 1-800 contacts they can't possibly have my brand"
+      },
+      {
+        "id": 2,
+        "start": 6.68,
+        "end": 13.120000000000001,
+        "text": "it's a special brand i have special eyes oh they have so many brands in a giant"
+      },
+      {
+        "id": 3,
+        "start": 13.120000000000001,
+        "end": 17.740000000000002,
+        "text": "warehouse in utah that's insanity look with your special eyes"
+      },
+      {
+        "id": 4,
+        "start": 17.740000000000002,
+        "end": 28.92,
+        "text": "my brand i'm such a fool quality contact lenses 1-800 contacts we're that passionate"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 1-800 Contacts Look with your special eyes",
+    "decade": 2010,
+    "sequence": 40,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:01:13",
+    "source_end": "0:01:42"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_40",
+  "input_path": "corpus/03_audio/tv_com_2020_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I brought in InsureMax Protein with 30 grams of protein. Those who tried me felt more energy in just two weeks. Here, I'll take that. InsureMax Protein with 30 grams of protein, 1 gram of sugar, and nutrients to support immune health.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "I brought in InsureMax Protein with 30 grams of protein."
+      },
+      {
+        "id": 2,
+        "start": 3.2600000000000002,
+        "end": 5.96,
+        "text": "Those who tried me felt more energy in just two weeks."
+      },
+      {
+        "id": 3,
+        "start": 6.34,
+        "end": 7.74,
+        "text": "Here, I'll take that."
+      },
+      {
+        "id": 4,
+        "start": 8.52,
+        "end": 13.56,
+        "text": "InsureMax Protein with 30 grams of protein, 1 gram of sugar, and nutrients to support immune health."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Ensure Max Protein More Protein, Less Sugar: Immune Health",
+    "decade": 2020,
+    "sequence": 40,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0659",
+    "url": "https://youtu.be/g15bQCK_Db4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_119",
+  "input_path": "corpus/03_audio/tv_com_1980_119.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_119.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_119.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Thank you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thank you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Benetton Clothing",
+    "decade": 1980,
+    "sequence": 119,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0322",
+    "url": "https://youtu.be/Y5gcTerc1io",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

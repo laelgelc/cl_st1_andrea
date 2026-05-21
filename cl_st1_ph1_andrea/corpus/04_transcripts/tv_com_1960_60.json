@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1960_60",
+  "input_path": "corpus/03_audio/tv_com_1960_60.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_60.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_60.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "A day begins. For Eastern Airlines, another busy day. This day, 200,000 Americans will fly. One out of every six on Eastern. Eastern will service over 80% of America's industrial area and the capital cities of Canada, the United States, Mexico, Bermuda, and Puerto Rico. On this day, on any day, we will carry more people than all but one of the world's airlines. Eastern. An airline with a big day's work to do.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 22.44,
+        "text": "A day begins. For Eastern Airlines, another busy day. This day, 200,000 Americans will"
+      },
+      {
+        "id": 2,
+        "start": 22.44,
+        "end": 30.660000000000004,
+        "text": "fly. One out of every six on Eastern. Eastern will service over 80% of America's industrial"
+      },
+      {
+        "id": 3,
+        "start": 30.660000000000004,
+        "end": 36.72,
+        "text": "area and the capital cities of Canada, the United States, Mexico, Bermuda, and Puerto Rico."
+      },
+      {
+        "id": 4,
+        "start": 44.16,
+        "end": 50.36,
+        "text": "On this day, on any day, we will carry more people than all but one of the world's airlines."
+      },
+      {
+        "id": 5,
+        "start": 51.56,
+        "end": 52.2,
+        "text": "Eastern."
+      },
+      {
+        "id": 6,
+        "start": 52.44,
+        "end": 55.46,
+        "text": "An airline with a big day's work to do."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1965 Eastern Airlines",
+    "decade": 1960,
+    "sequence": 60,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0134",
+    "url": "https://youtu.be/tfIa00NEDkU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:58"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1950_14",
+  "input_path": "corpus/03_audio/tv_com_1950_14.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_14.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_14.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Well, here's our friend the busy boss. Wow, just look at him go. People waiting to see him, big deal pending, lots of work to do, no time to go through the mail now. But wait, here's something he always makes time for, a telegram. BB likes to get telegrams and likes to send them because telegrams are fast, efficient, and economical. And when you answer by wire, you have a record of the complete transaction. Remember, when it means business, it's wise to wire.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 34.0404375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.44,
+        "text": "Well, here's our friend the busy boss. Wow, just look at him go. People waiting to see him, big"
+      },
+      {
+        "id": 2,
+        "start": 7.44,
+        "end": 13.0,
+        "text": "deal pending, lots of work to do, no time to go through the mail now. But wait, here's something"
+      },
+      {
+        "id": 3,
+        "start": 13.0,
+        "end": 18.84,
+        "text": "he always makes time for, a telegram. BB likes to get telegrams and likes to send them because"
+      },
+      {
+        "id": 4,
+        "start": 18.84,
+        "end": 26.88,
+        "text": "telegrams are fast, efficient, and economical. And when you answer by wire, you have a record of the"
+      },
+      {
+        "id": 5,
+        "start": 26.88,
+        "end": 31.9,
+        "text": "complete transaction. Remember, when it means business, it's wise to wire."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Western Union Telegram",
+    "decade": 1950,
+    "sequence": 14,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0014",
+    "url": "https://youtu.be/jS76s2I40yU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:34"
+  }
+}

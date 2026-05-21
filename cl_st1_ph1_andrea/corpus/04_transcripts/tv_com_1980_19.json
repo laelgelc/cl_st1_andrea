@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_19",
+  "input_path": "corpus/03_audio/tv_com_1980_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Paris, it's timeless elegance, it's inimitable style. Paris is there in every bottle of Arpège. Arpège, the perfume of the eternal woman. Promise her anything, but give her Arpège by L'Ovent.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.36,
+        "text": "Paris, it's timeless elegance, it's inimitable style."
+      },
+      {
+        "id": 2,
+        "start": 10.620000000000001,
+        "end": 13.48,
+        "text": "Paris is there in every bottle of Arpège."
+      },
+      {
+        "id": 3,
+        "start": 17.1,
+        "end": 20.2,
+        "text": "Arpège, the perfume of the eternal woman."
+      },
+      {
+        "id": 4,
+        "start": 24.34,
+        "end": 28.86,
+        "text": "Promise her anything, but give her Arpège by L'Ovent."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1987 Arpege Perfume",
+    "decade": 1980,
+    "sequence": 19,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0241",
+    "url": "https://youtu.be/gcIom6UobtA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

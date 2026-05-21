@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_1960_72",
+  "input_path": "corpus/03_audio/tv_com_1960_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Here they come, down the wall Wall walkers are here Tumbling head over toe they go Wall walkers are here Wall walkers, they're money Walk them down walls, doors, windows They're lots of fun And now, you can get a Donald Duck wall walker too Wall walkers by Kenner, sold separately Thanks for watching!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.76,
+        "text": "Here they come, down the wall"
+      },
+      {
+        "id": 2,
+        "start": 4.76,
+        "end": 6.26,
+        "text": "Wall walkers are here"
+      },
+      {
+        "id": 3,
+        "start": 6.26,
+        "end": 8.78,
+        "text": "Tumbling head over toe they go"
+      },
+      {
+        "id": 4,
+        "start": 8.78,
+        "end": 10.26,
+        "text": "Wall walkers are here"
+      },
+      {
+        "id": 5,
+        "start": 10.26,
+        "end": 13.32,
+        "text": "Wall walkers, they're money"
+      },
+      {
+        "id": 6,
+        "start": 13.32,
+        "end": 15.620000000000001,
+        "text": "Walk them down walls, doors, windows"
+      },
+      {
+        "id": 7,
+        "start": 15.620000000000001,
+        "end": 16.9,
+        "text": "They're lots of fun"
+      },
+      {
+        "id": 8,
+        "start": 16.9,
+        "end": 20.94,
+        "text": "And now, you can get a Donald Duck wall walker too"
+      },
+      {
+        "id": 9,
+        "start": 20.94,
+        "end": 27.04,
+        "text": "Wall walkers by Kenner, sold separately"
+      },
+      {
+        "id": 10,
+        "start": 27.04,
+        "end": 57.019999999999996,
+        "text": "Thanks for watching!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "The Wall Walker by Kenner",
+    "decade": 1960,
+    "sequence": 72,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services, Consumer Goods & Services",
+    "video_id": "video_0142",
+    "url": "https://youtu.be/UIpuVbsqXbs",
+    "source_start": "0:12:27",
+    "source_end": "0:12:55"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_102",
+  "input_path": "corpus/03_audio/tv_com_2000_102.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_102.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_102.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Of all the things that are changing lately, Hyundai Assurance has remained rock solid and gotten even better because now it gives you even more than before, including gas for just $1.49. Buy a new Santa Fe while supplies last, you'll get a year's worth of gas for just $1.49 a gallon, $2,000 cash back, and the Hyundai trade-in bonus. Plus, in the new Santa Fe, you'll get up to 24 miles per gallon. Can you say road trip? Can you say road trip?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.6,
+        "end": 12.24,
+        "text": "Of all the things that are changing lately, Hyundai Assurance has remained rock solid and gotten even better because now it gives you even more than before, including gas for just $1.49."
+      },
+      {
+        "id": 2,
+        "start": 12.8,
+        "end": 22.82,
+        "text": "Buy a new Santa Fe while supplies last, you'll get a year's worth of gas for just $1.49 a gallon, $2,000 cash back, and the Hyundai trade-in bonus."
+      },
+      {
+        "id": 3,
+        "start": 23.34,
+        "end": 26.76,
+        "text": "Plus, in the new Santa Fe, you'll get up to 24 miles per gallon."
+      },
+      {
+        "id": 4,
+        "start": 27.76,
+        "end": 29.240000000000002,
+        "text": "Can you say road trip?"
+      },
+      {
+        "id": 5,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Can you say road trip?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2009 Hyundai Santa Fe",
+    "decade": 2000,
+    "sequence": 102,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0544",
+    "url": "https://youtu.be/-I33e2-ZL1Q",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

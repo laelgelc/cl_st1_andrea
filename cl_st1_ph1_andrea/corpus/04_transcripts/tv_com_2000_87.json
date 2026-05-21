@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_87",
+  "input_path": "corpus/03_audio/tv_com_2000_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Where did I get this glow? In Bermuda? Or from a wild fling? With a moisturizer. New Juergens Natural Glow. Moisturize daily to keep your healthy summer glow all year long. Juergens Glowing Skin is in.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 1.6,
+        "text": "Where did I get this glow?"
+      },
+      {
+        "id": 2,
+        "start": 2.1,
+        "end": 2.7800000000000002,
+        "text": "In Bermuda?"
+      },
+      {
+        "id": 3,
+        "start": 3.3200000000000003,
+        "end": 4.76,
+        "text": "Or from a wild fling?"
+      },
+      {
+        "id": 4,
+        "start": 5.24,
+        "end": 6.2,
+        "text": "With a moisturizer."
+      },
+      {
+        "id": 5,
+        "start": 6.86,
+        "end": 8.38,
+        "text": "New Juergens Natural Glow."
+      },
+      {
+        "id": 6,
+        "start": 8.64,
+        "end": 12.18,
+        "text": "Moisturize daily to keep your healthy summer glow all year long."
+      },
+      {
+        "id": 7,
+        "start": 12.540000000000001,
+        "end": 14.64,
+        "text": "Juergens Glowing Skin is in."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Jergens Natural Glow Daily Moisturizer",
+    "decade": 2000,
+    "sequence": 87,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0529",
+    "url": "https://youtu.be/ymqeuN5a6tI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

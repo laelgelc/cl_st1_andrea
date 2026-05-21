@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_98",
+  "input_path": "corpus/03_audio/tv_com_1990_98.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_98.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_98.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Recently, DuPont announced that its energy unit, Conoco, would pioneer the use of new double-hold oil tankers in order to safeguard the environment. The response has been overwhelmingly positive. DuPont. Better things for better living. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Recently, DuPont announced that its energy unit, Conoco,"
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 6.0,
+        "text": "would pioneer the use of new double-hold oil tankers"
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "in order to safeguard the environment."
+      },
+      {
+        "id": 4,
+        "start": 15.0,
+        "end": 19.0,
+        "text": "The response has been overwhelmingly positive."
+      },
+      {
+        "id": 5,
+        "start": 26.0,
+        "end": 29.0,
+        "text": "DuPont. Better things for better living."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 DuPont Conoco Double-Hulled Oil Tankers",
+    "decade": 1990,
+    "sequence": 98,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0421",
+    "url": "https://youtu.be/zJZFfeLRCJs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

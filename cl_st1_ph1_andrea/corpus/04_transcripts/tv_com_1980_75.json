@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_75",
+  "input_path": "corpus/03_audio/tv_com_1980_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The real genius of Macintosh, Apple's newest personal computer, isn't its 32-bit microprocessor, or that it captures the power of a mainframe on a board 10 by 10 inches, or even that it costs half as much as computers half as powerful. The real genius of Macintosh is that you don't have to be a genius to use it. Macintosh, the computer for the rest of us. Macintosh, the computer for the rest of us.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.54,
+        "end": 8.4,
+        "text": "The real genius of Macintosh, Apple's newest personal computer, isn't its 32-bit microprocessor,"
+      },
+      {
+        "id": 2,
+        "start": 9.3,
+        "end": 15.32,
+        "text": "or that it captures the power of a mainframe on a board 10 by 10 inches, or even that it"
+      },
+      {
+        "id": 3,
+        "start": 15.32,
+        "end": 18.240000000000002,
+        "text": "costs half as much as computers half as powerful."
+      },
+      {
+        "id": 4,
+        "start": 19.16,
+        "end": 25.060000000000002,
+        "text": "The real genius of Macintosh is that you don't have to be a genius to use it."
+      },
+      {
+        "id": 5,
+        "start": 26.2,
+        "end": 28.86,
+        "text": "Macintosh, the computer for the rest of us."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Macintosh, the computer for the rest of us."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 The Real Genius of Macintosh",
+    "decade": 1980,
+    "sequence": 75,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0292",
+    "url": "https://youtu.be/I1TwpxTvfZk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

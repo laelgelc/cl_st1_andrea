@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2020_81",
+  "input_path": "corpus/03_audio/tv_com_2020_81.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_81.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_81.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Taxis was chasing updates and getting nowhere. Now Taxis is a TurboTax expert, doing it all for you. While keeping you in the loop. So you can keep chasing this feeling. Now this is Taxis. Intuit TurboTax. Now this is Taxis.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 5.0,
+        "text": "Taxis was chasing updates and getting nowhere."
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 12.0,
+        "text": "Now Taxis is a TurboTax expert, doing it all for you."
+      },
+      {
+        "id": 3,
+        "start": 16.0,
+        "end": 18.0,
+        "text": "While keeping you in the loop."
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 25.0,
+        "text": "So you can keep chasing this feeling."
+      },
+      {
+        "id": 5,
+        "start": 25.0,
+        "end": 27.0,
+        "text": "Now this is Taxis."
+      },
+      {
+        "id": 6,
+        "start": 28.0,
+        "end": 29.0,
+        "text": "Intuit TurboTax."
+      },
+      {
+        "id": 7,
+        "start": 30.0,
+        "end": 31.0,
+        "text": "Now this is Taxis."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 TurboTax Bicycle: Chasing Updates Tax Filing Service",
+    "decade": 2020,
+    "sequence": 81,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0700",
+    "url": "https://youtu.be/sTXfBf7Lj-w",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

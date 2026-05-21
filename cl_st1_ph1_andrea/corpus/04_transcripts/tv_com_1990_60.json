@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1990_60",
+  "input_path": "corpus/03_audio/tv_com_1990_60.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_60.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_60.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is what advertisers refer to as prime time. It's generally considered the best viewing on TV. So we thought we'd view something that's very good indeed. The results of an independent 100,000-mile test in which the Oldsmobile Achieva incurred lower total costs than either Honda Accord or Toyota Camry. Beautiful, isn't it? It's your choice.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.2800000000000002,
+        "text": "This is what advertisers refer to as prime time."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.5200000000000005,
+        "text": "It's generally considered the best viewing on TV."
+      },
+      {
+        "id": 3,
+        "start": 7.6000000000000005,
+        "end": 10.200000000000001,
+        "text": "So we thought we'd view something that's very good indeed."
+      },
+      {
+        "id": 4,
+        "start": 11.14,
+        "end": 14.040000000000001,
+        "text": "The results of an independent 100,000-mile test"
+      },
+      {
+        "id": 5,
+        "start": 14.040000000000001,
+        "end": 15.84,
+        "text": "in which the Oldsmobile Achieva"
+      },
+      {
+        "id": 6,
+        "start": 15.84,
+        "end": 19.94,
+        "text": "incurred lower total costs than either Honda Accord or Toyota Camry."
+      },
+      {
+        "id": 7,
+        "start": 20.7,
+        "end": 21.72,
+        "text": "Beautiful, isn't it?"
+      },
+      {
+        "id": 8,
+        "start": 22.56,
+        "end": 23.84,
+        "text": "It's your choice."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Oldsmobile Achieva Prime Time Oldsmobile automaker by General Motors",
+    "decade": 1990,
+    "sequence": 60,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0383",
+    "url": "https://youtu.be/T0crd-0qvGo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

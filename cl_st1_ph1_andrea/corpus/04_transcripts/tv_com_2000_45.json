@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_45",
+  "input_path": "corpus/03_audio/tv_com_2000_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Rockstar Games presents... Midnight Club 2 Out now for PlayStation 2, Xbox and PC Midnight Club 2, Ready T for Teen",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Rockstar Games presents..."
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 5.0,
+        "text": "Midnight Club 2"
+      },
+      {
+        "id": 3,
+        "start": 24.0,
+        "end": 27.0,
+        "text": "Out now for PlayStation 2, Xbox and PC"
+      },
+      {
+        "id": 4,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Midnight Club 2, Ready T for Teen"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Midnight Club II Rockstar Games PS2 XboxPC",
+    "decade": 2000,
+    "sequence": 45,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0487",
+    "url": "https://youtu.be/KUWl_NrWTUE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

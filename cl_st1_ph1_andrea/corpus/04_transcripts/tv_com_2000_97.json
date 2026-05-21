@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_97",
+  "input_path": "corpus/03_audio/tv_com_2000_97.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_97.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_97.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Warning. The makers of Tag Body Spray accept no responsibility for any injuries resulting from the wearing of this product. Any getting down and or funky, however, you can totally blame on us. We're good like that. Hey. Introducing Tag Body Spray for guys. Consider yourself warned.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 22.0,
+        "text": "Warning. The makers of Tag Body Spray accept no responsibility for any injuries resulting from the wearing of this product."
+      },
+      {
+        "id": 2,
+        "start": 22.0,
+        "end": 25.0,
+        "text": "Any getting down and or funky, however, you can totally blame on us. We're good like that."
+      },
+      {
+        "id": 3,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Hey."
+      },
+      {
+        "id": 4,
+        "start": 26.0,
+        "end": 28.0,
+        "text": "Introducing Tag Body Spray for guys."
+      },
+      {
+        "id": 5,
+        "start": 28.0,
+        "end": 30.0,
+        "text": "Consider yourself warned."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 TAG Body Spray Deodorant at Supermarket",
+    "decade": 2000,
+    "sequence": 97,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0539",
+    "url": "https://youtu.be/M6Tih3NVKvc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_30",
+  "input_path": "corpus/03_audio/tv_com_1990_30.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_30.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_30.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Yeah, they were dancing and singing and moving to the grooving and just then it hit me. Somebody turned around and shouted, play that funky music, white boy. Play that funky music, right. Play that funky music, white boy. Lay down the boogie and play that funky music till you die. Oh, till you die. Oh, till you die.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.4,
+        "text": "Yeah, they were dancing and singing and moving to the grooving and just then it hit me."
+      },
+      {
+        "id": 2,
+        "start": 9.64,
+        "end": 14.38,
+        "text": "Somebody turned around and shouted, play that funky music, white boy."
+      },
+      {
+        "id": 3,
+        "start": 14.88,
+        "end": 17.56,
+        "text": "Play that funky music, right."
+      },
+      {
+        "id": 4,
+        "start": 18.080000000000002,
+        "end": 20.44,
+        "text": "Play that funky music, white boy."
+      },
+      {
+        "id": 5,
+        "start": 21.28,
+        "end": 25.42,
+        "text": "Lay down the boogie and play that funky music till you die."
+      },
+      {
+        "id": 6,
+        "start": 26.52,
+        "end": 28.72,
+        "text": "Oh, till you die."
+      },
+      {
+        "id": 7,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Oh, till you die."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Kenwood Do the music justice",
+    "decade": 1990,
+    "sequence": 30,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0353",
+    "url": "https://youtu.be/S9M_cfK1BXY",
+    "source_start": "0:00:02",
+    "source_end": "0:00:32"
+  }
+}

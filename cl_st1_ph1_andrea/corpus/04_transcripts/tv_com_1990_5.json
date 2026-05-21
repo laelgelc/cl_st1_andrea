@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_5",
+  "input_path": "corpus/03_audio/tv_com_1990_5.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_5.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_5.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Chew on this. Every day, millions of restaurants serve desserts and coffee. Too bad they don't serve toothbrushes. Now, chew on this. Trident can actually help you fight cavities when you chew it after meals. So when you can't brush, chew on this. Trident.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Chew on this. Every day, millions of restaurants serve desserts and coffee."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "Too bad they don't serve toothbrushes. Now, chew on this."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 11.0,
+        "text": "Trident can actually help you fight cavities when you chew it after meals."
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 14.0,
+        "text": "So when you can't brush, chew on this. Trident."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 Trident Chew on",
+    "decade": 1990,
+    "sequence": 5,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0328",
+    "url": "https://youtu.be/m-luyfBBYV8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_9",
+  "input_path": "corpus/03_audio/tv_com_1980_9.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_9.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_9.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "We asked the whole town of Winter Harbor, Maine to sample Alka-Seltzer Plus cold medicine. Here's what people said. I've switched to Alka-Seltzer Plus and I'll never go back to anything else. Alka-Seltzer Plus relieves my runny nose, my watering eyes, it just clears my head right out beautiful. That's why in Winter Harbor, over half the people who tried it are switching to Alka-Seltzer Plus cold medicine. It worked on this one to have a cold Alka-Seltzer Plus did. Alka-Seltzer Plus cold medicine for tough winter colds.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.0,
+        "text": "We asked the whole town of Winter Harbor, Maine to sample Alka-Seltzer Plus cold medicine."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 7.0,
+        "text": "Here's what people said."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 11.0,
+        "text": "I've switched to Alka-Seltzer Plus and I'll never go back to anything else."
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 16.0,
+        "text": "Alka-Seltzer Plus relieves my runny nose, my watering eyes, it just clears my head right out beautiful."
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 22.0,
+        "text": "That's why in Winter Harbor, over half the people who tried it are switching to Alka-Seltzer Plus cold medicine."
+      },
+      {
+        "id": 6,
+        "start": 22.0,
+        "end": 25.0,
+        "text": "It worked on this one to have a cold Alka-Seltzer Plus did."
+      },
+      {
+        "id": 7,
+        "start": 25.0,
+        "end": 29.0,
+        "text": "Alka-Seltzer Plus cold medicine for tough winter colds."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Alka Seltzer Plus Cold Medicine Winter Harbor Maine",
+    "decade": 1980,
+    "sequence": 9,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0232",
+    "url": "https://youtu.be/UN8WzBP68Ao",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

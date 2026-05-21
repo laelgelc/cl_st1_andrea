@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1950_109",
+  "input_path": "corpus/03_audio/tv_com_1950_109.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_109.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_109.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Did you ever wonder what a millionaire thinks about? I'm no millionaire, but with my new Plymouth I can drive like a millionaire. Before I traded, I didn't see any other car at any price that has what Plymouth has. And the price? Plymouth is still down in the low price field. I'm no millionaire, but it's all mine. For the most exciting drive of your life, come on, drive the 1960 new Plymouth. 1960 is as near as your Plymouth dealer.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 41.0296875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Did you ever wonder what a millionaire thinks about?"
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 13.0,
+        "text": "I'm no millionaire, but with my new Plymouth I can drive like a millionaire."
+      },
+      {
+        "id": 3,
+        "start": 13.0,
+        "end": 18.0,
+        "text": "Before I traded, I didn't see any other car at any price that has what Plymouth has."
+      },
+      {
+        "id": 4,
+        "start": 18.0,
+        "end": 22.0,
+        "text": "And the price? Plymouth is still down in the low price field."
+      },
+      {
+        "id": 5,
+        "start": 22.0,
+        "end": 26.0,
+        "text": "I'm no millionaire, but it's all mine."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 36.0,
+        "text": "For the most exciting drive of your life, come on, drive the 1960 new Plymouth."
+      },
+      {
+        "id": 7,
+        "start": 36.0,
+        "end": 40.0,
+        "text": "1960 is as near as your Plymouth dealer."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Plymouth What a millionnaire thinks about",
+    "decade": 1950,
+    "sequence": 109,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0106",
+    "url": "https://youtu.be/J-5ymNmjLkE",
+    "source_start": "0:00:01",
+    "source_end": "0:00:42"
+  }
+}

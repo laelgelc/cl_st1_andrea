@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_57",
+  "input_path": "corpus/03_audio/tv_com_1990_57.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_57.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_57.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Congratulations! What do you say? ChapStick Medicated, please. Introducing ChapStick Medicated, triple medicated. You can feel it working immediately. New ChapStick Medicated, triple medicated relief.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Congratulations! What do you say?"
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 7.0,
+        "text": "ChapStick Medicated, please."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 10.0,
+        "text": "Introducing ChapStick Medicated, triple medicated."
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "You can feel it working immediately."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "New ChapStick Medicated, triple medicated relief."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 ChapStick Medicated Skiing",
+    "decade": 1990,
+    "sequence": 57,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0380",
+    "url": "https://youtu.be/Z0K2YzlcGBo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

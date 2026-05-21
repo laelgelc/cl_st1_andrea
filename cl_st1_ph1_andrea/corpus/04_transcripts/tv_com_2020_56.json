@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_56",
+  "input_path": "corpus/03_audio/tv_com_2020_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "wow that's a low price oh wow that's a low price what oh that's a low price you're so good at low prices yeah that's a low price no no low price low price that's a low price with everyday low prices at amazon anytime is a good time to save you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.88,
+        "text": "wow that's a low price oh wow that's a low price what oh that's a low price you're so good at low"
+      },
+      {
+        "id": 2,
+        "start": 10.88,
+        "end": 22.080000000000002,
+        "text": "prices yeah that's a low price no no low price low price that's a low price"
+      },
+      {
+        "id": 3,
+        "start": 22.080000000000002,
+        "end": 28.400000000000002,
+        "text": "with everyday low prices at amazon anytime is a good time to save"
+      },
+      {
+        "id": 4,
+        "start": 28.400000000000002,
+        "end": 30.400000000000002,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Amazon A Low Price for Everybody",
+    "decade": 2020,
+    "sequence": 56,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0675",
+    "url": "https://youtu.be/w7A5Jzfs4nE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

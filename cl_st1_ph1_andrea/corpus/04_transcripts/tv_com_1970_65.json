@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_65",
+  "input_path": "corpus/03_audio/tv_com_1970_65.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_65.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_65.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "i detect alien muffin form i won't eat it i just wanted you to finish that one before we start the thomas's english muffins can only accept thomas's they have nooks and crannies to make them crisp and crunchy he's right light and airy too they hold all the melted butter i love them okay maybe your sister will eat this one i detect the original english muffin thomas's english muffins doesn't your family deserve the best",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.02,
+        "text": "i detect alien muffin form i won't eat it i just wanted you to finish that one before we start the"
+      },
+      {
+        "id": 2,
+        "start": 8.02,
+        "end": 14.56,
+        "text": "thomas's english muffins can only accept thomas's they have nooks and crannies to make them crisp"
+      },
+      {
+        "id": 3,
+        "start": 14.56,
+        "end": 22.5,
+        "text": "and crunchy he's right light and airy too they hold all the melted butter i love them okay maybe"
+      },
+      {
+        "id": 4,
+        "start": 22.5,
+        "end": 28.240000000000002,
+        "text": "your sister will eat this one i detect the original english muffin thomas's english muffins"
+      },
+      {
+        "id": 5,
+        "start": 28.240000000000002,
+        "end": 30.28,
+        "text": "doesn't your family deserve the best"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Thomas English Muffins",
+    "decade": 1970,
+    "sequence": 65,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:47:45",
+    "source_end": "0:48:16"
+  }
+}

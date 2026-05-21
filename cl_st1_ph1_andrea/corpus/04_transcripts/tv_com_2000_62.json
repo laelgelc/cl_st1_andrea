@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_62",
+  "input_path": "corpus/03_audio/tv_com_2000_62.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_62.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_62.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Don't forget to rinse those dishes first. That'll take forever. There's no need to rinse with Electrosol 3-in-1. It's 3-in-1 formula lifts, stains, cleans, and shines for 100% clean dishes. Ooh, sparkling. Electrosol 3-in-1 tabs.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.162625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Don't forget to rinse those dishes first."
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 3.5,
+        "text": "That'll take forever."
+      },
+      {
+        "id": 3,
+        "start": 3.5,
+        "end": 6.0,
+        "text": "There's no need to rinse with Electrosol 3-in-1."
+      },
+      {
+        "id": 4,
+        "start": 6.0,
+        "end": 9.5,
+        "text": "It's 3-in-1 formula lifts, stains, cleans, and shines"
+      },
+      {
+        "id": 5,
+        "start": 9.5,
+        "end": 11.5,
+        "text": "for 100% clean dishes."
+      },
+      {
+        "id": 6,
+        "start": 11.5,
+        "end": 13.0,
+        "text": "Ooh, sparkling."
+      },
+      {
+        "id": 7,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "Electrosol 3-in-1 tabs."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Electrasol 3 in 1 Tabs Dishwasher detergent tablets ",
+    "decade": 2000,
+    "sequence": 62,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0504",
+    "url": "https://youtu.be/RCy_sXiVXWs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

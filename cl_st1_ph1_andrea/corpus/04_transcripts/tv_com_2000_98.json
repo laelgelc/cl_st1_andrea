@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_98",
+  "input_path": "corpus/03_audio/tv_com_2000_98.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_98.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_98.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Inside every woman, there's adventure and allure. Introducing Venus Disposable Razors. The one-piece simplicity of the best disposable. With three blades that give you the smoothest and sleekest skin. And a rounded, pivoting head that hugs your every curve. Because inside every woman, there is a goddess waiting to be discovered. New Venus Disposables. Reveal the goddess.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.0,
+        "text": "Inside every woman, there's adventure and allure."
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 11.0,
+        "text": "Introducing Venus Disposable Razors."
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 14.0,
+        "text": "The one-piece simplicity of the best disposable."
+      },
+      {
+        "id": 4,
+        "start": 14.0,
+        "end": 18.0,
+        "text": "With three blades that give you the smoothest and sleekest skin."
+      },
+      {
+        "id": 5,
+        "start": 18.0,
+        "end": 22.0,
+        "text": "And a rounded, pivoting head that hugs your every curve."
+      },
+      {
+        "id": 6,
+        "start": 22.0,
+        "end": 26.0,
+        "text": "Because inside every woman, there is a goddess waiting to be discovered."
+      },
+      {
+        "id": 7,
+        "start": 26.0,
+        "end": 28.0,
+        "text": "New Venus Disposables."
+      },
+      {
+        "id": 8,
+        "start": 28.0,
+        "end": 30.0,
+        "text": "Reveal the goddess."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Gillette Venus Disposable Razor",
+    "decade": 2000,
+    "sequence": 98,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0540",
+    "url": "https://youtu.be/2YfxOpEu0NI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

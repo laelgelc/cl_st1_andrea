@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_80",
+  "input_path": "corpus/03_audio/tv_com_2020_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Get 2.9% APR financing or a $3,000 customer bonus on a new 2026 Atlas. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 28.72,
+        "text": "Get 2.9% APR financing or a $3,000 customer bonus on a new 2026 Atlas."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Volkswagen Atlas Best Day [T2]",
+    "decade": 2020,
+    "sequence": 80,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0699",
+    "url": "https://youtu.be/0-xaVvwuMKc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_24",
+  "input_path": "corpus/03_audio/tv_com_1970_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "i need this fast i need a breather a breather a vix inhaler it's a breather for your nose cold i'm taking a breather a breather the vix inhaler it's a breather for your stuffed up nose whenever you need relief thousands of molecules of vix decongestant vapors are inhaled to help clear your nose fast it's time for a breather a breather the vix inhaler it's a breather for your stuffed up nose",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.8,
+        "text": "i need this fast i need a breather a breather a vix inhaler it's a breather for your nose cold"
+      },
+      {
+        "id": 2,
+        "start": 8.8,
+        "end": 16.34,
+        "text": "i'm taking a breather a breather the vix inhaler it's a breather for your stuffed up nose"
+      },
+      {
+        "id": 3,
+        "start": 16.34,
+        "end": 21.8,
+        "text": "whenever you need relief thousands of molecules of vix decongestant vapors are inhaled to help"
+      },
+      {
+        "id": 4,
+        "start": 21.8,
+        "end": 28.6,
+        "text": "clear your nose fast it's time for a breather a breather the vix inhaler it's a breather for"
+      },
+      {
+        "id": 5,
+        "start": 28.6,
+        "end": 29.8,
+        "text": "your stuffed up nose"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Vicks Inhaler Breather for your nose",
+    "decade": 1970,
+    "sequence": 24,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:18:33",
+    "source_end": "0:19:03"
+  }
+}

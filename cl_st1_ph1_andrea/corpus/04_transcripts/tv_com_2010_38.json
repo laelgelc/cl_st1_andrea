@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_38",
+  "input_path": "corpus/03_audio/tv_com_2010_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "welcome to the mega diner what can i get for you gentlemen i want something with style i want to shake it up until it pops i'll take the biggest baddest freshest thing you got one mega special i got the magic i kick it like adidas blowing sticky like adhesive be cautious what i be gonna leave you with amnesia",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.5,
+        "text": "welcome to the mega diner what can i get for you gentlemen i want something with style i want to"
+      },
+      {
+        "id": 2,
+        "start": 10.5,
+        "end": 16.28,
+        "text": "shake it up until it pops i'll take the biggest baddest freshest thing you got one mega special"
+      },
+      {
+        "id": 3,
+        "start": 16.28,
+        "end": 18.080000000000002,
+        "text": "i got the magic"
+      },
+      {
+        "id": 4,
+        "start": 18.080000000000002,
+        "end": 28.840000000000003,
+        "text": "i kick it like adidas blowing sticky like adhesive be cautious what i be gonna leave you with amnesia"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Adidas Mega Diner",
+    "decade": 2010,
+    "sequence": 38,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

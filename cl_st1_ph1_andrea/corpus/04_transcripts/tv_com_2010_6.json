@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_6",
+  "input_path": "corpus/03_audio/tv_com_2010_6.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_6.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_6.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "She's doing it again. No cover-up spray here. Cheaper aerosols can cover up odors, burying them in a flowery fog. Switch to Febreze Air Effects. Febreze eliminates even the toughest odors from the air. Freshen up, don't cover up.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "She's doing it again."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "No cover-up spray here."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "Cheaper aerosols can cover up odors, burying them in a flowery fog."
+      },
+      {
+        "id": 4,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "Switch to Febreze Air Effects."
+      },
+      {
+        "id": 5,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "Febreze eliminates even the toughest odors from the air."
+      },
+      {
+        "id": 6,
+        "start": 12.0,
+        "end": 14.0,
+        "text": "Freshen up, don't cover up."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2019 Febreze air",
+    "decade": 2010,
+    "sequence": 6,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0568",
+    "url": "https://youtu.be/0qruYdoo76s",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

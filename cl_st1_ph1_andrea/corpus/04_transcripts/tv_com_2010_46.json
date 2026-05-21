@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_46",
+  "input_path": "corpus/03_audio/tv_com_2010_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Ah, pushing.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.24,
+        "text": "Ah, pushing."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 GEICO Insurance featuring Salt 'n Pepper It's What You Do Push it",
+    "decade": 2010,
+    "sequence": 46,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:05:07",
+    "source_end": "0:05:36"
+  }
+}

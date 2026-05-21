@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_74",
+  "input_path": "corpus/03_audio/tv_com_1970_74.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_74.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_74.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Some music would be nice. Oh, thank you. Some Hawaiian music. Perhaps something more contemporary. On second thought, I'd like the 1812 Overture, with cannon. With cannon? Western Airlines, the only way to fly. The only way to fly.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Some music would be nice. Oh, thank you. Some Hawaiian music."
+      },
+      {
+        "id": 2,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "Perhaps something more contemporary."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 21.0,
+        "text": "On second thought, I'd like the 1812 Overture, with cannon. With cannon?"
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 26.0,
+        "text": "Western Airlines, the only way to fly."
+      },
+      {
+        "id": 5,
+        "start": 30.0,
+        "end": 33.0,
+        "text": "The only way to fly."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Western Airlines Only way to fly",
+    "decade": 1970,
+    "sequence": 74,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0182",
+    "url": "https://youtu.be/eqdw4UbwHZA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

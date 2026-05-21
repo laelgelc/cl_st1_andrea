@@ -1,0 +1,106 @@
+{
+  "commercial_id": "tv_com_1970_50",
+  "input_path": "corpus/03_audio/tv_com_1970_50.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_50.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_50.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "He's checking the course. Can he make it in 15? Now it's me against the clock. Introducing Big Wheel Rally Cycle. Big Wheel with built-in rally timer. Fat racing wheels. Spin-out braking lever. Orange racing pylons. He made it! I can do it in 10. Big Wheel Rally Cycle with rally timer and pylons. Assembly required. From Marks.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.92,
+        "end": 3.12,
+        "text": "He's checking the course. Can he make it in 15?"
+      },
+      {
+        "id": 2,
+        "start": 3.44,
+        "end": 5.14,
+        "text": "Now it's me against the clock."
+      },
+      {
+        "id": 3,
+        "start": 6.3,
+        "end": 8.18,
+        "text": "Introducing Big Wheel Rally Cycle."
+      },
+      {
+        "id": 4,
+        "start": 8.58,
+        "end": 10.64,
+        "text": "Big Wheel with built-in rally timer."
+      },
+      {
+        "id": 5,
+        "start": 11.1,
+        "end": 12.200000000000001,
+        "text": "Fat racing wheels."
+      },
+      {
+        "id": 6,
+        "start": 12.620000000000001,
+        "end": 13.72,
+        "text": "Spin-out braking lever."
+      },
+      {
+        "id": 7,
+        "start": 14.040000000000001,
+        "end": 15.36,
+        "text": "Orange racing pylons."
+      },
+      {
+        "id": 8,
+        "start": 17.36,
+        "end": 18.66,
+        "text": "He made it!"
+      },
+      {
+        "id": 9,
+        "start": 19.12,
+        "end": 20.48,
+        "text": "I can do it in 10."
+      },
+      {
+        "id": 10,
+        "start": 22.76,
+        "end": 26.26,
+        "text": "Big Wheel Rally Cycle with rally timer and pylons."
+      },
+      {
+        "id": 11,
+        "start": 26.92,
+        "end": 27.82,
+        "text": "Assembly required."
+      },
+      {
+        "id": 12,
+        "start": 27.82,
+        "end": 28.86,
+        "text": "From Marks."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Big wheel rally cycle",
+    "decade": 1970,
+    "sequence": 50,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:36:12",
+    "source_end": "0:36:41"
+  }
+}

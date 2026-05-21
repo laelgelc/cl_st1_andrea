@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_75",
+  "input_path": "corpus/03_audio/tv_com_2020_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "hear that that's a mountain laughing at you so come prepared in a kia sportage with available all-wheel drive 237 horsepower and 260 pound feet of torque and not in the less torque and horsepower equipped honda cr-v touring so you can turn that mountain's laugh into a whimper get zero percent apr for 75 months on the 2021 sportage or lease an lx for 159 a month",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.8,
+        "text": "hear that that's a mountain laughing at you so come prepared in a kia sportage"
+      },
+      {
+        "id": 2,
+        "start": 7.8,
+        "end": 15.620000000000001,
+        "text": "with available all-wheel drive 237 horsepower and 260 pound feet of torque and not in the"
+      },
+      {
+        "id": 3,
+        "start": 15.620000000000001,
+        "end": 21.2,
+        "text": "less torque and horsepower equipped honda cr-v touring so you can turn that mountain's laugh"
+      },
+      {
+        "id": 4,
+        "start": 21.2,
+        "end": 28.96,
+        "text": "into a whimper get zero percent apr for 75 months on the 2021 sportage or lease an lx for 159 a month"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Kia Sportage Presidents Day Sales Event Mountain [T1]",
+    "decade": 2020,
+    "sequence": 75,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0694",
+    "url": "https://youtu.be/d7bnXuXZ2j0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

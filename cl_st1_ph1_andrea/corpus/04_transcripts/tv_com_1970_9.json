@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_9",
+  "input_path": "corpus/03_audio/tv_com_1970_9.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_9.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_9.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Okay, which one? The alligator or the brand new fox from J.C. Penney? Gee, the alligator has that terrific color, but so does the fox. And fit, comfort, looks, easy care fabric, they're all the same. And colors, there's even a fox in raspberry. So, what's the difference? About five dollars less. See you later, alligator.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.88,
+        "end": 6.92,
+        "text": "Okay, which one? The alligator or the brand new fox from J.C. Penney?"
+      },
+      {
+        "id": 2,
+        "start": 7.54,
+        "end": 12.18,
+        "text": "Gee, the alligator has that terrific color, but so does the fox."
+      },
+      {
+        "id": 3,
+        "start": 12.8,
+        "end": 18.26,
+        "text": "And fit, comfort, looks, easy care fabric, they're all the same."
+      },
+      {
+        "id": 4,
+        "start": 18.52,
+        "end": 21.48,
+        "text": "And colors, there's even a fox in raspberry."
+      },
+      {
+        "id": 5,
+        "start": 22.36,
+        "end": 24.3,
+        "text": "So, what's the difference?"
+      },
+      {
+        "id": 6,
+        "start": 24.92,
+        "end": 28.1,
+        "text": "About five dollars less. See you later, alligator."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Fox from JC Penney Polo shirt",
+    "decade": 1970,
+    "sequence": 9,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:07:06",
+    "source_end": "0:07:35"
+  }
+}

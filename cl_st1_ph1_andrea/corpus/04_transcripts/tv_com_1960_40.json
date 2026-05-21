@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_40",
+  "input_path": "corpus/03_audio/tv_com_1960_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Proctor Silex, Proctor Silex, see-through coffee maker, great features and value, it does it all. Glass bowl snaps out, cleans easy. It's see-through clean. Entire basket lifts out. No more burning fingers. Flavor selector dial. Brews up to 11 cups of delicious coffee in its clean glass bowl. For great features and value, Proctor Silex does it all. Proctor Silex.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.76,
+        "text": "Proctor Silex, Proctor Silex, see-through coffee maker, great features and value, it does it all."
+      },
+      {
+        "id": 2,
+        "start": 9.94,
+        "end": 16.78,
+        "text": "Glass bowl snaps out, cleans easy. It's see-through clean. Entire basket lifts out. No more burning fingers."
+      },
+      {
+        "id": 3,
+        "start": 16.94,
+        "end": 22.66,
+        "text": "Flavor selector dial. Brews up to 11 cups of delicious coffee in its clean glass bowl."
+      },
+      {
+        "id": 4,
+        "start": 22.82,
+        "end": 27.6,
+        "text": "For great features and value, Proctor Silex does it all. Proctor Silex."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Glass coffee pot Proctor Silex",
+    "decade": 1960,
+    "sequence": 40,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:31:47",
+    "source_end": "1:32:16"
+  }
+}

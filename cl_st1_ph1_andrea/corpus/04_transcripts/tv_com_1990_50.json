@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_50",
+  "input_path": "corpus/03_audio/tv_com_1990_50.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_50.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_50.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "To clean between your teeth, you could steam clean them. Or get the new Reach Between Toothbrush. With clever new ripples that reach between teeth that are as big as clean. The new Reach Between Toothbrush. For all the very hard to reach places.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "To clean between your teeth, you could steam clean them."
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 6.0,
+        "text": "Or get the new Reach Between Toothbrush."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 9.0,
+        "text": "With clever new ripples that reach between teeth that are as big as clean."
+      },
+      {
+        "id": 4,
+        "start": 9.0,
+        "end": 12.0,
+        "text": "The new Reach Between Toothbrush."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "For all the very hard to reach places."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Johnson & Johnson Reach between toothbrush",
+    "decade": 1990,
+    "sequence": 50,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0373",
+    "url": "https://youtu.be/YZC6Uo2qe0I",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

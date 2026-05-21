@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_117",
+  "input_path": "corpus/03_audio/tv_com_1990_117.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_117.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_117.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I hate to clean. That's why I love this new fantastic. Did you see it? It cuts through grease without leaving a film. So when I have company coming I have time to do the really important things like wipe the lipstick off the milk container. No grease, no film, new fantastic.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.76,
+        "text": "I hate to clean. That's why I love this new fantastic. Did you see it? It cuts"
+      },
+      {
+        "id": 2,
+        "start": 4.76,
+        "end": 8.76,
+        "text": "through grease without leaving a film. So when I have company coming I have time"
+      },
+      {
+        "id": 3,
+        "start": 8.76,
+        "end": 12.42,
+        "text": "to do the really important things like wipe the lipstick off the milk container."
+      },
+      {
+        "id": 4,
+        "start": 12.42,
+        "end": 16.76,
+        "text": "No grease, no film, new fantastic."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Fantastic Cleaner featuring Elayne Boosler",
+    "decade": 1990,
+    "sequence": 117,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0439",
+    "url": "https://youtu.be/rPpymn3E-dU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

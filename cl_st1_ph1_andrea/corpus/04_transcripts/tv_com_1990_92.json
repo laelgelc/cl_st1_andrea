@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_92",
+  "input_path": "corpus/03_audio/tv_com_1990_92.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_92.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_92.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "It's difficult to say who has the smoothest drive, Jack Nicklaus or Lincoln, but we do know that a fuel-efficient overhead cam V8 helps make today's Lincoln Town Car the smoothest driving ever and the quietest luxury car you can own. Your Lincoln luxury dealers congratulate the USA Rider Cup team. you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.16275,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.68,
+        "text": "It's difficult to say who has the smoothest drive, Jack Nicklaus or Lincoln, but we do know that a"
+      },
+      {
+        "id": 2,
+        "start": 11.68,
+        "end": 18.72,
+        "text": "fuel-efficient overhead cam V8 helps make today's Lincoln Town Car the smoothest driving ever and"
+      },
+      {
+        "id": 3,
+        "start": 18.72,
+        "end": 29.12,
+        "text": "the quietest luxury car you can own. Your Lincoln luxury dealers congratulate the USA Rider Cup team."
+      },
+      {
+        "id": 4,
+        "start": 29.12,
+        "end": 31.18,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Lincoln by Ford",
+    "decade": 1990,
+    "sequence": 92,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0415",
+    "url": "https://youtu.be/S8BPPypfDA0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

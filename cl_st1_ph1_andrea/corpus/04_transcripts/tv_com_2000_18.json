@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_18",
+  "input_path": "corpus/03_audio/tv_com_2000_18.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_18.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_18.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "How do you decide between crunchy and soft tacos? ¿Por qué no los dos? The Hard and Soft Taco Kit from Old El Paso. True Genius.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 13.026375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.48,
+        "text": "How do you decide between crunchy and soft tacos?"
+      },
+      {
+        "id": 2,
+        "start": 5.36,
+        "end": 7.0600000000000005,
+        "text": "¿Por qué no los dos?"
+      },
+      {
+        "id": 3,
+        "start": 8.32,
+        "end": 11.72,
+        "text": "The Hard and Soft Taco Kit from Old El Paso."
+      },
+      {
+        "id": 4,
+        "start": 12.08,
+        "end": 12.8,
+        "text": "True Genius."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2009 Old El Paso Hard & Soft Taco Kit",
+    "decade": 2000,
+    "sequence": 18,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:00:30",
+    "source_end": "0:00:43"
+  }
+}

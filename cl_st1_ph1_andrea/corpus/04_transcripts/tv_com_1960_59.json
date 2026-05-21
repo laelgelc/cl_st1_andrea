@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_59",
+  "input_path": "corpus/03_audio/tv_com_1960_59.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_59.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_59.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "United Airlines says come fly with me on your vacation we fly to all the great vacation spots in this land and our 6,000 travel agents have special fares and plans for every single one of them they can even get you a free United credit card so you can charge it see one of our travel agents first then come on come fly our friendly skies you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 21.1,
+        "text": "United Airlines says come fly with me on your vacation we fly to all the great vacation spots"
+      },
+      {
+        "id": 2,
+        "start": 21.1,
+        "end": 25.86,
+        "text": "in this land and our 6,000 travel agents have special fares and plans for every single one of"
+      },
+      {
+        "id": 3,
+        "start": 25.86,
+        "end": 30.96,
+        "text": "them they can even get you a free United credit card so you can charge it see one of our travel"
+      },
+      {
+        "id": 4,
+        "start": 30.96,
+        "end": 35.480000000000004,
+        "text": "agents first then come on come fly our friendly skies"
+      },
+      {
+        "id": 5,
+        "start": 55.86,
+        "end": 57.92,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1968 United Airlines Come Fly with Me",
+    "decade": 1960,
+    "sequence": 59,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0133",
+    "url": "https://youtu.be/90Ps2rC-IXs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:58"
+  }
+}

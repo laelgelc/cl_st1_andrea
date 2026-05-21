@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_97",
+  "input_path": "corpus/03_audio/tv_com_1990_97.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_97.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_97.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The Easy Spirit Color Playoffs! Purple vs. Metallic! The one and only Easy Spirit Shock Blocker Pumps! There really is a sneaker inside these little pumps. Spirit. Spirit. Easy Spirit. At Dillard's.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "The Easy Spirit Color Playoffs! Purple vs. Metallic!"
+      },
+      {
+        "id": 2,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "The one and only Easy Spirit Shock Blocker Pumps!"
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 18.0,
+        "text": "There really is a sneaker inside these little pumps."
+      },
+      {
+        "id": 4,
+        "start": 25.0,
+        "end": 29.0,
+        "text": "Spirit. Spirit. Easy Spirit. At Dillard's."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Easy Spirit Color Shoes",
+    "decade": 1990,
+    "sequence": 97,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0420",
+    "url": "https://youtu.be/Mp8gmtPljqw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

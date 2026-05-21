@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_16",
+  "input_path": "corpus/03_audio/tv_com_2020_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Your dog is bored, trapped inside because of your weed killer. But now, there's Spruce, the pet-friendly weed and grass killer. Spruce works differently by dehydrating to the roots for dead weeds in just one day. So go ahead, let the dogs out with Spruce, pet-friendly, weed deadly. Thanks for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.68,
+        "text": "Your dog is bored, trapped inside because of your weed killer."
+      },
+      {
+        "id": 2,
+        "start": 6.08,
+        "end": 10.28,
+        "text": "But now, there's Spruce, the pet-friendly weed and grass killer."
+      },
+      {
+        "id": 3,
+        "start": 17.42,
+        "end": 22.400000000000002,
+        "text": "Spruce works differently by dehydrating to the roots for dead weeds in just one day."
+      },
+      {
+        "id": 4,
+        "start": 23.580000000000002,
+        "end": 28.88,
+        "text": "So go ahead, let the dogs out with Spruce, pet-friendly, weed deadly."
+      },
+      {
+        "id": 5,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thanks for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Spruce Pet-friendly Weed Deadly If Dogs Could Choose",
+    "decade": 2020,
+    "sequence": 16,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0635",
+    "url": "https://youtu.be/IS7p8yL1xYA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

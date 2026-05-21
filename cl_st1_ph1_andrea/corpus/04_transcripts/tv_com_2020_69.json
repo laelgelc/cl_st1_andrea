@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_69",
+  "input_path": "corpus/03_audio/tv_com_2020_69.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_69.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_69.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Na na na na na na na eh Light it up like dynamite It's inside Light it up like dynamite Oh, oh.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.18,
+        "text": "Na na na na na na na eh"
+      },
+      {
+        "id": 2,
+        "start": 4.18,
+        "end": 18.06,
+        "text": "Light it up like dynamite"
+      },
+      {
+        "id": 3,
+        "start": 18.06,
+        "end": 19.44,
+        "text": "It's inside"
+      },
+      {
+        "id": 4,
+        "start": 19.44,
+        "end": 29.060000000000002,
+        "text": "Light it up like dynamite"
+      },
+      {
+        "id": 5,
+        "start": 29.060000000000002,
+        "end": 30.000000000000004,
+        "text": "Oh, oh."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Samsung Mobile S20 FE 5G For the Fans",
+    "decade": 2020,
+    "sequence": 69,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0688",
+    "url": "https://youtu.be/fFdMpYIMvjI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

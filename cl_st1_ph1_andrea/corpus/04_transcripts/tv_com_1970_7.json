@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_7",
+  "input_path": "corpus/03_audio/tv_com_1970_7.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_7.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_7.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "People everywhere are asking for Fonzie Battaglia Verdicchio. We'll have the Fonzie Battaglia in Vertigo. Oh, Fonzie Berti. The Fonzie Attaccio. Why has Fonzie Battaglia become one of the world's most asked for white wines? It's hard to say. Fonzie Battaglia.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.22,
+        "end": 3.68,
+        "text": "People everywhere are asking for Fonzie Battaglia Verdicchio."
+      },
+      {
+        "id": 2,
+        "start": 3.86,
+        "end": 5.76,
+        "text": "We'll have the Fonzie Battaglia in Vertigo."
+      },
+      {
+        "id": 3,
+        "start": 9.74,
+        "end": 11.120000000000001,
+        "text": "Oh, Fonzie Berti."
+      },
+      {
+        "id": 4,
+        "start": 13.86,
+        "end": 15.620000000000001,
+        "text": "The Fonzie Attaccio."
+      },
+      {
+        "id": 5,
+        "start": 18.54,
+        "end": 23.18,
+        "text": "Why has Fonzie Battaglia become one of the world's most asked for white wines?"
+      },
+      {
+        "id": 6,
+        "start": 23.3,
+        "end": 24.34,
+        "text": "It's hard to say."
+      },
+      {
+        "id": 7,
+        "start": 27.580000000000002,
+        "end": 29.0,
+        "text": "Fonzie Battaglia."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Fazi-Battagllia WhiteWine ",
+    "decade": 1970,
+    "sequence": 7,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:06:06",
+    "source_end": "0:06:35"
+  }
+}

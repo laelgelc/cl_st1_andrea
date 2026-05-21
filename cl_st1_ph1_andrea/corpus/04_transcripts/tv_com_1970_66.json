@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_66",
+  "input_path": "corpus/03_audio/tv_com_1970_66.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_66.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_66.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Sir, how come you drive a Volkswagen Rabbit? Well, I drove Volkswagens for years, and frankly, I wasn't too sure about the Rabbit. Really? Really. So I checked it out real good. And now? They've done it again. Best Volkswagen I've ever owned. Would you buy another Rabbit? Why should I? I owned my last Volkswagen for seven years. Volkswagen does it!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.22,
+        "text": "Sir, how come you drive a Volkswagen Rabbit?"
+      },
+      {
+        "id": 2,
+        "start": 10.44,
+        "end": 14.32,
+        "text": "Well, I drove Volkswagens for years, and frankly, I wasn't too sure about the Rabbit."
+      },
+      {
+        "id": 3,
+        "start": 14.56,
+        "end": 14.86,
+        "text": "Really?"
+      },
+      {
+        "id": 4,
+        "start": 15.32,
+        "end": 17.28,
+        "text": "Really. So I checked it out real good."
+      },
+      {
+        "id": 5,
+        "start": 17.46,
+        "end": 17.94,
+        "text": "And now?"
+      },
+      {
+        "id": 6,
+        "start": 18.44,
+        "end": 20.88,
+        "text": "They've done it again. Best Volkswagen I've ever owned."
+      },
+      {
+        "id": 7,
+        "start": 21.0,
+        "end": 22.04,
+        "text": "Would you buy another Rabbit?"
+      },
+      {
+        "id": 8,
+        "start": 22.18,
+        "end": 24.98,
+        "text": "Why should I? I owned my last Volkswagen for seven years."
+      },
+      {
+        "id": 9,
+        "start": 25.740000000000002,
+        "end": 26.7,
+        "text": "Volkswagen does it!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1979 Volkswagen Does it again Institutional  ",
+    "decade": 1970,
+    "sequence": 66,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:48:17",
+    "source_end": "0:48:45"
+  }
+}

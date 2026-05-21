@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_10",
+  "input_path": "corpus/03_audio/tv_com_1960_10.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_10.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_10.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "this big sprawling America is a nation of coffee lovers sipping coffee gulping coffee drinking it by the gallon well America we've got a new coffee you're going to like its name brim and it's strong strong because we drench our brim coffee beans in a rich coffee extract for six hours before roasting but coffee this strong tastes just as good without caffeine so we made our new coffee 97% caffeine free General Foods wants this big sprawling worried nation of coffee lovers to relax America you've got the first strong coffee without caffeine brim decaffeinated coffee freeze-dried brim decaffeinated coffee",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.88,
+        "text": "this big sprawling America is a nation of coffee lovers sipping coffee gulping coffee drinking it"
+      },
+      {
+        "id": 2,
+        "start": 12.88,
+        "end": 21.240000000000002,
+        "text": "by the gallon well America we've got a new coffee you're going to like its name brim and it's strong"
+      },
+      {
+        "id": 3,
+        "start": 21.240000000000002,
+        "end": 28.2,
+        "text": "strong because we drench our brim coffee beans in a rich coffee extract for six hours before"
+      },
+      {
+        "id": 4,
+        "start": 28.2,
+        "end": 35.22,
+        "text": "roasting but coffee this strong tastes just as good without caffeine so we made our new coffee"
+      },
+      {
+        "id": 5,
+        "start": 35.22,
+        "end": 45.019999999999996,
+        "text": "97% caffeine free General Foods wants this big sprawling worried nation of coffee lovers to relax"
+      },
+      {
+        "id": 6,
+        "start": 45.019999999999996,
+        "end": 54.36,
+        "text": "America you've got the first strong coffee without caffeine brim decaffeinated coffee freeze-dried"
+      },
+      {
+        "id": 7,
+        "start": 58.2,
+        "end": 59.2,
+        "text": "brim decaffeinated coffee"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Brim decaffeinated coffee",
+    "decade": 1960,
+    "sequence": 10,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:15:47",
+    "source_end": "0:16:46"
+  }
+}

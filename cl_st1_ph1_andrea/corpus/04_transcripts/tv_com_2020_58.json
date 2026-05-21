@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_58",
+  "input_path": "corpus/03_audio/tv_com_2020_58.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_58.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_58.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Did you know that Dove Bar washes away germs? Here, Pepper represents germs. With Dove, the germs wash away. With 1-Quarter Moisturizing Cream, Dove cleans effectively, cares beautifully.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.6,
+        "text": "Did you know that Dove Bar washes away germs?"
+      },
+      {
+        "id": 2,
+        "start": 3.08,
+        "end": 4.62,
+        "text": "Here, Pepper represents germs."
+      },
+      {
+        "id": 3,
+        "start": 5.62,
+        "end": 7.44,
+        "text": "With Dove, the germs wash away."
+      },
+      {
+        "id": 4,
+        "start": 8.42,
+        "end": 13.120000000000001,
+        "text": "With 1-Quarter Moisturizing Cream, Dove cleans effectively, cares beautifully."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Dove Beauty Bar Washes Away Germs",
+    "decade": 2020,
+    "sequence": 58,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0677",
+    "url": "https://youtu.be/qcnD81zPRvs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

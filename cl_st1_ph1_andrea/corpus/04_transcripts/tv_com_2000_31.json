@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_31",
+  "input_path": "corpus/03_audio/tv_com_2000_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "LensCrafters gives you an unconditional happiness guarantee. 30 days to wear your new glasses. Decide if you love them or exchange them till you do. Or your money back. LensCrafters. You'll see. Wear better. And get $100 off any glasses.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "LensCrafters gives you an unconditional happiness guarantee."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "30 days to wear your new glasses."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 9.0,
+        "text": "Decide if you love them or exchange them till you do."
+      },
+      {
+        "id": 4,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "Or your money back."
+      },
+      {
+        "id": 5,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "LensCrafters. You'll see."
+      },
+      {
+        "id": 6,
+        "start": 12.0,
+        "end": 13.0,
+        "text": "Wear better."
+      },
+      {
+        "id": 7,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "And get $100 off any glasses."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 LensCrafters Glasses 30 day Guarantee",
+    "decade": 2000,
+    "sequence": 31,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0473",
+    "url": "https://youtu.be/m4qJ0Asg4TU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

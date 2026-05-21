@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_89",
+  "input_path": "corpus/03_audio/tv_com_2020_89.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_89.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_89.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "How does Popeyes Chicken Sandwich get so crunchy, juicy, and tasty? We make everything with love. Make your taste buds dance for $4.99. Love that chicken from Popeyes!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.2,
+        "text": "How does Popeyes Chicken Sandwich get so crunchy, juicy, and tasty?"
+      },
+      {
+        "id": 2,
+        "start": 4.04,
+        "end": 6.66,
+        "text": "We make everything with love."
+      },
+      {
+        "id": 3,
+        "start": 9.28,
+        "end": 11.92,
+        "text": "Make your taste buds dance for $4.99."
+      },
+      {
+        "id": 4,
+        "start": 12.44,
+        "end": 14.540000000000001,
+        "text": "Love that chicken from Popeyes!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2022 Popeyes Chicken Sandwich Made With Love",
+    "decade": 2020,
+    "sequence": 89,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0708",
+    "url": "https://youtu.be/E_l-73MRMWY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

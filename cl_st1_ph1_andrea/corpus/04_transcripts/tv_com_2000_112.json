@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_112",
+  "input_path": "corpus/03_audio/tv_com_2000_112.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_112.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_112.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "To your body is a luxury car. To the elements, it's an SUV. To your peace of mind, it's a Volvo. The new all-wheel drive cross-country.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 20.44,
+        "text": "To your body is a luxury car. To the elements, it's an SUV. To your peace of mind, it's a Volvo."
+      },
+      {
+        "id": 2,
+        "start": 20.44,
+        "end": 28.12,
+        "text": "The new all-wheel drive cross-country."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Volvo Cross Country Turtle",
+    "decade": 2000,
+    "sequence": 112,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0554",
+    "url": "https://youtu.be/u-EBlePrOwI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

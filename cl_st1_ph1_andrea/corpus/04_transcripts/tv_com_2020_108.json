@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2020_108",
+  "input_path": "corpus/03_audio/tv_com_2020_108.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_108.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_108.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Let there be pursuit. Not for perfection, but for precision. Let there be curves that sharpen your edge. And millimeters that make the moment. Because greatness is designed and made. Let there be anything. Autodesk. Proud supporter of Team USA.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Let there be pursuit."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 10.0,
+        "text": "Not for perfection, but for precision."
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 15.0,
+        "text": "Let there be curves that sharpen your edge."
+      },
+      {
+        "id": 4,
+        "start": 17.0,
+        "end": 20.0,
+        "text": "And millimeters that make the moment."
+      },
+      {
+        "id": 5,
+        "start": 21.0,
+        "end": 24.0,
+        "text": "Because greatness is designed and made."
+      },
+      {
+        "id": 6,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Let there be anything."
+      },
+      {
+        "id": 7,
+        "start": 26.0,
+        "end": 30.0,
+        "text": "Autodesk. Proud supporter of Team USA."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Autodesk Autodesk X Team USA: Greatness Is Designed and Made",
+    "decade": 2020,
+    "sequence": 108,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0727",
+    "url": "https://youtu.be/hF_TAszXuq0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

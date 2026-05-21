@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_3",
+  "input_path": "corpus/03_audio/tv_com_1980_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Now, another way to spell relief, sodium-free Rolaids. Sodium-free Rolaids gives millions 100% relief for acid indigestion, plus it's rich in calcium. Sodium-free Rolaids, for extra calcium and 100%.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.72,
+        "end": 5.24,
+        "text": "Now, another way to spell relief, sodium-free Rolaids."
+      },
+      {
+        "id": 2,
+        "start": 5.24,
+        "end": 10.88,
+        "text": "Sodium-free Rolaids gives millions 100% relief for acid indigestion, plus it's rich in calcium."
+      },
+      {
+        "id": 3,
+        "start": 10.88,
+        "end": 14.0,
+        "text": "Sodium-free Rolaids, for extra calcium and 100%."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Rolaids Antacid tablets",
+    "decade": 1980,
+    "sequence": 3,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:03:05",
+    "source_end": "0:03:19"
+  }
+}

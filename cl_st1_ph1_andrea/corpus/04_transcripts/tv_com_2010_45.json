@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2010_45",
+  "input_path": "corpus/03_audio/tv_com_2010_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "When the light comes on, just come in. Pep Boys. So many things can go wrong with your car. That's why Pep Boys invented one place that can make them all right. Right now at Pep Boys, buy any three DFINITY Hankook or Cooper tires and get the fourth tire free. Buy three, get the fourth tire free. When the light comes on, just come in. Pep Boys does everything.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 26.0295625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.66,
+        "text": "When the light comes on, just come in."
+      },
+      {
+        "id": 2,
+        "start": 5.5,
+        "end": 6.5,
+        "text": "Pep Boys."
+      },
+      {
+        "id": 3,
+        "start": 6.72,
+        "end": 9.040000000000001,
+        "text": "So many things can go wrong with your car."
+      },
+      {
+        "id": 4,
+        "start": 9.26,
+        "end": 13.18,
+        "text": "That's why Pep Boys invented one place that can make them all right."
+      },
+      {
+        "id": 5,
+        "start": 13.18,
+        "end": 18.98,
+        "text": "Right now at Pep Boys, buy any three DFINITY Hankook or Cooper tires and get the fourth tire free."
+      },
+      {
+        "id": 6,
+        "start": 19.36,
+        "end": 21.48,
+        "text": "Buy three, get the fourth tire free."
+      },
+      {
+        "id": 7,
+        "start": 21.86,
+        "end": 23.8,
+        "text": "When the light comes on, just come in."
+      },
+      {
+        "id": 8,
+        "start": 23.86,
+        "end": 25.78,
+        "text": "Pep Boys does everything."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 circa PepBoys Buy 3 Select Tires Get the 4th Free",
+    "decade": 2010,
+    "sequence": 45,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:04:40",
+    "source_end": "0:05:06"
+  }
+}

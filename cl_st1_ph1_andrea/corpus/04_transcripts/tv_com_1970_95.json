@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_95",
+  "input_path": "corpus/03_audio/tv_com_1970_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I'd like to introduce you to Glade's new air freshener, Sunny Lemon. Newest of the natural scents from Glade. Sunny Lemon gives your home a scent like fresh lemons have on a sunny day. A scent clean and alive, the way lemons smell inside. Now your home can smell lemon fresh, naturally clean. Sunny Lemon inside is like a sunny day outside. Sunny Lemon, newest of the natural scents from Glade.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.0,
+        "text": "I'd like to introduce you to Glade's new air freshener, Sunny Lemon."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 8.5,
+        "text": "Newest of the natural scents from Glade."
+      },
+      {
+        "id": 3,
+        "start": 8.5,
+        "end": 13.0,
+        "text": "Sunny Lemon gives your home a scent like fresh lemons have on a sunny day."
+      },
+      {
+        "id": 4,
+        "start": 13.0,
+        "end": 17.0,
+        "text": "A scent clean and alive, the way lemons smell inside."
+      },
+      {
+        "id": 5,
+        "start": 17.0,
+        "end": 21.0,
+        "text": "Now your home can smell lemon fresh, naturally clean."
+      },
+      {
+        "id": 6,
+        "start": 21.0,
+        "end": 25.0,
+        "text": "Sunny Lemon inside is like a sunny day outside."
+      },
+      {
+        "id": 7,
+        "start": 25.0,
+        "end": 29.0,
+        "text": "Sunny Lemon, newest of the natural scents from Glade."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Glade Sunny Lemon Air Freshener early 70s",
+    "decade": 1970,
+    "sequence": 95,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0203",
+    "url": "https://youtu.be/cPIG6kC_2rs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

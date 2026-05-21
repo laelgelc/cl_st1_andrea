@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_44",
+  "input_path": "corpus/03_audio/tv_com_1970_44.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_44.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_44.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "we're hfc and people use our money to get the most out of life jack used our money to start his own catering service now it's the best one in town harold's orchestra used our money for a new sound system and now harold sound is the best sound in town and wesley used our money so his daughter sharon's wedding would be the best just like the ones he gave his four other daughters hfc people use our money to get the most",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.86,
+        "text": "we're hfc and people use our money to get the most out of life jack used our money to start"
+      },
+      {
+        "id": 2,
+        "start": 7.86,
+        "end": 13.14,
+        "text": "his own catering service now it's the best one in town harold's orchestra used our money for"
+      },
+      {
+        "id": 3,
+        "start": 13.14,
+        "end": 19.84,
+        "text": "a new sound system and now harold sound is the best sound in town and wesley used our money so"
+      },
+      {
+        "id": 4,
+        "start": 19.84,
+        "end": 25.46,
+        "text": "his daughter sharon's wedding would be the best just like the ones he gave his four other daughters"
+      },
+      {
+        "id": 5,
+        "start": 25.46,
+        "end": 28.98,
+        "text": "hfc people use our money to get the most"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "HFC Household Finance Company",
+    "decade": 1970,
+    "sequence": 44,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:32:53",
+    "source_end": "0:33:22"
+  }
+}

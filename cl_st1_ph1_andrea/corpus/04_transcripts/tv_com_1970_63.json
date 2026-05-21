@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_63",
+  "input_path": "corpus/03_audio/tv_com_1970_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "here's the huffy with a tubular fork double gusseted frame and motocross mag type wheels long cranks for more power and bmx pads so you can take the bumps and run this huffy's built tough built to go the distance pro thunder four assembly required from huffy building the bikes america likes",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.94,
+        "text": "here's the huffy with a tubular fork double gusseted frame and motocross mag type wheels"
+      },
+      {
+        "id": 2,
+        "start": 7.94,
+        "end": 15.06,
+        "text": "long cranks for more power and bmx pads so you can take the bumps and run"
+      },
+      {
+        "id": 3,
+        "start": 15.06,
+        "end": 20.240000000000002,
+        "text": "this huffy's built tough built to go the distance"
+      },
+      {
+        "id": 4,
+        "start": 20.240000000000002,
+        "end": 29.980000000000004,
+        "text": "pro thunder four assembly required from huffy building the bikes america likes"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Pro Thunder 4 Bike by Huffy",
+    "decade": 1970,
+    "sequence": 63,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:46:05",
+    "source_end": "0:46:35"
+  }
+}

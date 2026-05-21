@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2020_101",
+  "input_path": "corpus/03_audio/tv_com_2020_101.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_101.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_101.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Ah! Freaks up! We're trapped by dishes! Don't worry! They've got New Dawn Power Suds! It traps, locks, and removes 99% of grease. So it doesn't get passed from dish to dish. Clean and stacked. Like ducks in a row? New Dawn Power Suds.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 1.2,
+        "text": "Ah! Freaks up!"
+      },
+      {
+        "id": 2,
+        "start": 1.2,
+        "end": 2.5,
+        "text": "We're trapped by dishes!"
+      },
+      {
+        "id": 3,
+        "start": 2.5,
+        "end": 5.3,
+        "text": "Don't worry! They've got New Dawn Power Suds!"
+      },
+      {
+        "id": 4,
+        "start": 5.3,
+        "end": 8.2,
+        "text": "It traps, locks, and removes 99% of grease."
+      },
+      {
+        "id": 5,
+        "start": 8.2,
+        "end": 11.0,
+        "text": "So it doesn't get passed from dish to dish."
+      },
+      {
+        "id": 6,
+        "start": 11.0,
+        "end": 12.3,
+        "text": "Clean and stacked."
+      },
+      {
+        "id": 7,
+        "start": 12.3,
+        "end": 13.700000000000001,
+        "text": "Like ducks in a row?"
+      },
+      {
+        "id": 8,
+        "start": 13.700000000000001,
+        "end": 15.0,
+        "text": "New Dawn Power Suds."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Dawn Platinum Plus PowerSuds Trapped by Dishes",
+    "decade": 2020,
+    "sequence": 101,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0720",
+    "url": "https://youtu.be/2zye7WdOalU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

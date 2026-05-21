@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_87",
+  "input_path": "corpus/03_audio/tv_com_2010_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "new hershey's spreads bring the delicious taste of hershey's chocolate to anything everything you can imagine explore the endless possibilities of the delicious chocolate taste that only hershey's can deliver with new hershey's spreads the possibilities are delicious www.hershey's.co.uk",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.040000000000001,
+        "text": "new hershey's spreads bring the delicious taste of hershey's chocolate to anything"
+      },
+      {
+        "id": 2,
+        "start": 9.040000000000001,
+        "end": 14.02,
+        "text": "everything you can imagine"
+      },
+      {
+        "id": 3,
+        "start": 14.02,
+        "end": 22.8,
+        "text": "explore the endless possibilities of the delicious chocolate taste that only hershey's can deliver"
+      },
+      {
+        "id": 4,
+        "start": 22.8,
+        "end": 28.32,
+        "text": "with new hershey's spreads the possibilities are delicious"
+      },
+      {
+        "id": 5,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "www.hershey's.co.uk"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Hershey's Spreads",
+    "decade": 2010,
+    "sequence": 87,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:42:38",
+    "source_end": "0:43:08"
+  }
+}

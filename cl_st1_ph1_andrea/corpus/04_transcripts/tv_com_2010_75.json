@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_75",
+  "input_path": "corpus/03_audio/tv_com_2010_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Here we go. Nappa know-how? Helps you do the job right. Try it. Make sure factory timing marks line up correctly. Okay. And inspect the cam and crank seals. But what if I have a really big project? Frank, need to know it all. Auto axles, radiators, brake systems, starters, come on! Compressors, electrical systems, bring it! You know we have keychains too.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.96,
+        "text": "Here we go. Nappa know-how? Helps you do the job right. Try it. Make sure factory"
+      },
+      {
+        "id": 2,
+        "start": 7.96,
+        "end": 13.040000000000001,
+        "text": "timing marks line up correctly. Okay. And inspect the cam and crank seals. But what"
+      },
+      {
+        "id": 3,
+        "start": 13.040000000000001,
+        "end": 23.0,
+        "text": "if I have a really big project? Frank, need to know it all. Auto axles, radiators, brake systems, starters, come on! Compressors, electrical systems, bring it!"
+      },
+      {
+        "id": 4,
+        "start": 23.0,
+        "end": 30.12,
+        "text": "You know we have keychains too."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 Napa Auto Parts How know feat. Patrick Warburton",
+    "decade": 2010,
+    "sequence": 75,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:25:19",
+    "source_end": "0:25:48"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_39",
+  "input_path": "corpus/03_audio/tv_com_2010_39.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_39.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_39.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "he is the life of parties he has never attended if he were to punch you in the face he would have to fight off the strong urge to thank him sharks have a week dedicated to him he is the most interesting man in the world i don't always drink beer but when i do i prefer those sackies stay certain",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.86,
+        "text": "he is the life of parties he has never attended"
+      },
+      {
+        "id": 2,
+        "start": 4.86,
+        "end": 11.58,
+        "text": "if he were to punch you in the face he would have to fight off the strong urge to thank him"
+      },
+      {
+        "id": 3,
+        "start": 11.58,
+        "end": 20.12,
+        "text": "sharks have a week dedicated to him he is the most interesting man in the world"
+      },
+      {
+        "id": 4,
+        "start": 20.12,
+        "end": 25.400000000000002,
+        "text": "i don't always drink beer but when i do i prefer those sackies"
+      },
+      {
+        "id": 5,
+        "start": 25.400000000000002,
+        "end": 28.020000000000003,
+        "text": "stay certain"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2006 Cerveza Dos Equis The Most Interesting Man in the World",
+    "decade": 2010,
+    "sequence": 39,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:00:44",
+    "source_end": "0:01:12"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1980_113",
+  "input_path": "corpus/03_audio/tv_com_1980_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "will all those into the water raise your hand burger king the best food for fast",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 13.92,
+        "text": "will all those into the water raise your hand burger king the best food for fast"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Burger King Whopper",
+    "decade": 1980,
+    "sequence": 113,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:07:15",
+    "source_end": "0:07:29"
+  }
+}

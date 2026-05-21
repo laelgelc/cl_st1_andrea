@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_105",
+  "input_path": "corpus/03_audio/tv_com_1990_105.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_105.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_105.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Rub-a-dub-dub, pretend you're a tub. Now, would you rather be cleaned by soft scrub cleanser with Clorox bleach, which safely cleans soap scum without scratching, or the kind of powder that's harsh? Nice shot! Soft scrub with bleach, preferred by tubs everywhere.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Rub-a-dub-dub, pretend you're a tub."
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 6.0,
+        "text": "Now, would you rather be cleaned by soft scrub cleanser with Clorox bleach,"
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 9.0,
+        "text": "which safely cleans soap scum without scratching,"
+      },
+      {
+        "id": 4,
+        "start": 9.0,
+        "end": 11.0,
+        "text": "or the kind of powder that's harsh?"
+      },
+      {
+        "id": 5,
+        "start": 11.0,
+        "end": 12.0,
+        "text": "Nice shot!"
+      },
+      {
+        "id": 6,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "Soft scrub with bleach, preferred by tubs everywhere."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Soft Scrub Animated Tub",
+    "decade": 1990,
+    "sequence": 105,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0427",
+    "url": "https://youtu.be/6SPZNbXdS_k",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

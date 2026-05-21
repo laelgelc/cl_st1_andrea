@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_40",
+  "input_path": "corpus/03_audio/tv_com_1980_40.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_40.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_40.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Being there, together, it's still the best. Our job is helping you get there. Western Airlines can take you to all the places you've always dreamed about. Hawaii, Mexico, the Bahamas. And now we're going to London non-stop from Anchorage and direct from Honolulu. Let your travel agent in Western save you money on airfares, hotels, just about everything. We can help you have that vacation you never thought you could afford this year. That's the Western way. So, miss you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Being there, together, it's still the best."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Our job is helping you get there."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 11.0,
+        "text": "Western Airlines can take you to all the places you've always dreamed about."
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 13.0,
+        "text": "Hawaii, Mexico, the Bahamas."
+      },
+      {
+        "id": 5,
+        "start": 13.0,
+        "end": 18.0,
+        "text": "And now we're going to London non-stop from Anchorage and direct from Honolulu."
+      },
+      {
+        "id": 6,
+        "start": 18.0,
+        "end": 23.0,
+        "text": "Let your travel agent in Western save you money on airfares, hotels, just about everything."
+      },
+      {
+        "id": 7,
+        "start": 23.0,
+        "end": 26.0,
+        "text": "We can help you have that vacation you never thought you could afford this year."
+      },
+      {
+        "id": 8,
+        "start": 26.0,
+        "end": 29.0,
+        "text": "That's the Western way."
+      },
+      {
+        "id": 9,
+        "start": 30.0,
+        "end": 34.0,
+        "text": "So, miss you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1980 Western Airlines",
+    "decade": 1980,
+    "sequence": 40,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0262",
+    "url": "https://youtu.be/D0we2O1UcbE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

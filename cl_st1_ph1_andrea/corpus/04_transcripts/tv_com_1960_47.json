@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_47",
+  "input_path": "corpus/03_audio/tv_com_1960_47.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_47.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_47.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I'm Angie Dickinson. This is my Sun Country and this is Sun Country air freshener. It's really special with crisp fresh outdoor scents. We use it in the kitchen, the den, it even makes the bathroom seem as fresh as the air outside. Sun Country makes your bathroom seem as fresh as the great outdoors.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 13.44,
+        "text": "I'm Angie Dickinson. This is my Sun Country and this is Sun Country air freshener. It's really"
+      },
+      {
+        "id": 2,
+        "start": 13.44,
+        "end": 19.76,
+        "text": "special with crisp fresh outdoor scents. We use it in the kitchen, the den, it even makes the"
+      },
+      {
+        "id": 3,
+        "start": 19.76,
+        "end": 27.8,
+        "text": "bathroom seem as fresh as the air outside. Sun Country makes your bathroom seem as fresh as the"
+      },
+      {
+        "id": 4,
+        "start": 27.8,
+        "end": 28.54,
+        "text": "great outdoors."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sun Country Air Freshener",
+    "decade": 1960,
+    "sequence": 47,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0121",
+    "url": "https://youtu.be/FiqutN8JbYI",
+    "source_start": "0:00:01",
+    "source_end": "0:00:30"
+  }
+}

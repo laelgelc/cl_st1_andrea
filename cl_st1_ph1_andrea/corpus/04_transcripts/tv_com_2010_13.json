@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_13",
+  "input_path": "corpus/03_audio/tv_com_2010_13.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_13.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_13.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "now in session let me get this straight you change flights in order to get home to your buddies for new year's and i paid the difference in airfare plus i paid 150 change fee oh man southwest would never do that how did it cost you 150 to change my ticket they're honored will we be here very long 150 bucks for a five minute transaction kid put it on your credit card and stop complaining guilty don't pay a change fee on top of a fair difference fly southwest the only airline",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.32,
+        "text": "now in session let me get this straight you change flights in order to get home to your"
+      },
+      {
+        "id": 2,
+        "start": 5.32,
+        "end": 11.0,
+        "text": "buddies for new year's and i paid the difference in airfare plus i paid 150 change fee oh man"
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 16.02,
+        "text": "southwest would never do that how did it cost you 150 to change my ticket they're honored"
+      },
+      {
+        "id": 4,
+        "start": 16.02,
+        "end": 21.5,
+        "text": "will we be here very long 150 bucks for a five minute transaction kid put it on your credit"
+      },
+      {
+        "id": 5,
+        "start": 21.5,
+        "end": 26.6,
+        "text": "card and stop complaining guilty don't pay a change fee on top of a fair difference fly"
+      },
+      {
+        "id": 6,
+        "start": 26.6,
+        "end": 27.98,
+        "text": "southwest the only airline"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Southwest Airlines Jury/ Fee Court",
+    "decade": 2010,
+    "sequence": 13,
+    "category": "Personal, Public Transport & Travel & Energy",
+    "video_id": "video_0575",
+    "url": "https://youtu.be/XZfWAROpURY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:28"
+  }
+}

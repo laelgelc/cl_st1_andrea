@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_84",
+  "input_path": "corpus/03_audio/tv_com_2000_84.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_84.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_84.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Worried about germs? Help protect your family with Dial Complete. Its unique foaming formula is 10 times more effective at killing germs than ordinary liquid hand soap. Aren't you glad you used Dial?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.56,
+        "text": "Worried about germs? Help protect your family with Dial Complete. Its unique"
+      },
+      {
+        "id": 2,
+        "start": 8.56,
+        "end": 12.76,
+        "text": "foaming formula is 10 times more effective at killing germs than ordinary liquid hand soap."
+      },
+      {
+        "id": 3,
+        "start": 12.76,
+        "end": 14.68,
+        "text": "Aren't you glad you used Dial?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Dial Complete Antibacterial liquid hand soap",
+    "decade": 2000,
+    "sequence": 84,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0526",
+    "url": "https://youtu.be/Byj1GDX5vJ0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

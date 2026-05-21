@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_80",
+  "input_path": "corpus/03_audio/tv_com_1980_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "My friends here, both wear the popular priced pantyhose. I'm wearing Today's Girl pantyhose. Can you tell the difference? Today's Girl is beautifully sheer. So are ours. My Today's Girl feels so comfy. So do ours. My Today's Girl fits so well. So do ours. My Today's Girl all sheer only costs $1.19. Right, $1.19. Today's Girl pantyhose. Choose it for the quality. Buy it for the price.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.8,
+        "end": 8.1,
+        "text": "My friends here, both wear the popular priced pantyhose. I'm wearing Today's Girl pantyhose. Can you tell the difference?"
+      },
+      {
+        "id": 2,
+        "start": 8.700000000000001,
+        "end": 17.92,
+        "text": "Today's Girl is beautifully sheer. So are ours. My Today's Girl feels so comfy. So do ours. My Today's Girl fits so well. So do ours."
+      },
+      {
+        "id": 3,
+        "start": 17.96,
+        "end": 28.080000000000002,
+        "text": "My Today's Girl all sheer only costs $1.19. Right, $1.19. Today's Girl pantyhose. Choose it for the quality. Buy it for the price."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1980 Today's Girl Pantyhose by Hanes Hosiery",
+    "decade": 1980,
+    "sequence": 80,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0294",
+    "url": "https://youtu.be/hOaMwp3oiJA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

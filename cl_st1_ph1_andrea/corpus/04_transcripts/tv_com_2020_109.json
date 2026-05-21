@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2020_109",
+  "input_path": "corpus/03_audio/tv_com_2020_109.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_109.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_109.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Catch a motor running Head out on the highway Come on! Looking for adventure And whatever comes our way Don't worry girls, I've got WeatherTech For whatever comes your way, there's WeatherTech For whatever comes your way",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Catch a motor running"
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 9.0,
+        "text": "Head out on the highway"
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "Come on!"
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "Looking for adventure"
+      },
+      {
+        "id": 5,
+        "start": 13.0,
+        "end": 16.0,
+        "text": "And whatever comes our way"
+      },
+      {
+        "id": 6,
+        "start": 21.0,
+        "end": 24.0,
+        "text": "Don't worry girls, I've got WeatherTech"
+      },
+      {
+        "id": 7,
+        "start": 27.0,
+        "end": 29.0,
+        "text": "For whatever comes your way, there's WeatherTech"
+      },
+      {
+        "id": 8,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "For whatever comes your way"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 WeatherTech Floor Mats Whatever Comes Your Way  ",
+    "decade": 2020,
+    "sequence": 109,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0728",
+    "url": "https://youtu.be/sL1eK1muh9g",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_85",
+  "input_path": "corpus/03_audio/tv_com_1980_85.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_85.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_85.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "There's a cold wind blowin' downtown tonight Though you've left me hangin' tough I got to keep my courage up Nobody gonna see what I'm goin' through I'm gonna look good in blue 501 News 501 News",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.54,
+        "text": "There's a cold wind blowin' downtown tonight"
+      },
+      {
+        "id": 2,
+        "start": 6.54,
+        "end": 12.14,
+        "text": "Though you've left me hangin' tough"
+      },
+      {
+        "id": 3,
+        "start": 12.14,
+        "end": 17.900000000000002,
+        "text": "I got to keep my courage up"
+      },
+      {
+        "id": 4,
+        "start": 17.900000000000002,
+        "end": 23.14,
+        "text": "Nobody gonna see what I'm goin' through"
+      },
+      {
+        "id": 5,
+        "start": 23.14,
+        "end": 26.38,
+        "text": "I'm gonna look good in blue"
+      },
+      {
+        "id": 6,
+        "start": 26.38,
+        "end": 29.2,
+        "text": "501 News"
+      },
+      {
+        "id": 7,
+        "start": 29.2,
+        "end": 30.02,
+        "text": "501 News"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Levi's 501",
+    "decade": 1980,
+    "sequence": 85,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:06:38",
+    "source_end": "0:07:08"
+  }
+}

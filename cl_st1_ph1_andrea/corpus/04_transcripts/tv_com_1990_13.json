@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_13",
+  "input_path": "corpus/03_audio/tv_com_1990_13.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_13.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_13.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is the best way not to get your license on the first try. And this is the best way to get video games. We found it! Sega Channel, over 70 hot games a month for your Genesis machine. No lines, no limits, no late fees, just unlimited play on your TV. Sega Channel, less than $15 a month. Call your cable company now. Sega Channel, the only way to get it is to get it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 7.0,
+        "text": "This is the best way not to get your license on the first try."
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 9.0,
+        "text": "And this is the best way to get video games."
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "We found it!"
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "Sega Channel, over 70 hot games a month for your Genesis machine."
+      },
+      {
+        "id": 5,
+        "start": 13.0,
+        "end": 17.0,
+        "text": "No lines, no limits, no late fees, just unlimited play on your TV."
+      },
+      {
+        "id": 6,
+        "start": 17.0,
+        "end": 20.0,
+        "text": "Sega Channel, less than $15 a month. Call your cable company now."
+      },
+      {
+        "id": 7,
+        "start": 20.0,
+        "end": 23.0,
+        "text": "Sega Channel, the only way to get it is to get it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 Sega Channel",
+    "decade": 1990,
+    "sequence": 13,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0336",
+    "url": "https://youtu.be/TBCtj39oxJw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_117",
+  "input_path": "corpus/03_audio/tv_com_1970_117.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_117.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_117.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You've heard it before. When you mix something so thick, the mixer bogs down helplessly. And resetting faster might be too fast and the mixer sprays all over and you're in trouble. Now listen to the Sunbeam Burst of Power Mixer exclusive. Just a touch gives a little extra power to all five speeds, just when you need it. The Sunbeam Burst of Power Hand Mixer. Hearing is believing. Subtitles by the Amara.org community",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.5,
+        "text": "You've heard it before. When you mix something so thick, the mixer bogs down helplessly."
+      },
+      {
+        "id": 2,
+        "start": 6.5,
+        "end": 11.5,
+        "text": "And resetting faster might be too fast and the mixer sprays all over and you're in trouble."
+      },
+      {
+        "id": 3,
+        "start": 11.5,
+        "end": 15.5,
+        "text": "Now listen to the Sunbeam Burst of Power Mixer exclusive."
+      },
+      {
+        "id": 4,
+        "start": 15.5,
+        "end": 19.5,
+        "text": "Just a touch gives a little extra power to all five speeds, just when you need it."
+      },
+      {
+        "id": 5,
+        "start": 19.5,
+        "end": 24.5,
+        "text": "The Sunbeam Burst of Power Hand Mixer. Hearing is believing."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 33.0,
+        "text": "Subtitles by the Amara.org community"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1975 Sunbea Burst of Power Mixer ",
+    "decade": 1970,
+    "sequence": 117,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0225",
+    "url": "https://youtu.be/RRTP_mrLdAU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

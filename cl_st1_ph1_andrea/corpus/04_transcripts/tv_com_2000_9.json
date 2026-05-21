@@ -1,0 +1,106 @@
+{
+  "commercial_id": "tv_com_2000_9",
+  "input_path": "corpus/03_audio/tv_com_2000_9.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_9.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_9.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Cheryl, what happened to you? Brian, I let them into my life. They were in my home. Let's bring them out. Gentlemen, what do you have to say for yourselves? We're just a couple of corn-fed Foster Farms chickens. Really? Let's roll the tape. Idiot! Oh, no, you won't! Incoming! Foster Farms fresh chicken. Always natural, always fresh, nothing artificial added.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.441375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Cheryl, what happened to you?"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Brian, I let them into my life."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "They were in my home."
+      },
+      {
+        "id": 4,
+        "start": 8.0,
+        "end": 9.0,
+        "text": "Let's bring them out."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 13.0,
+        "text": "Gentlemen, what do you have to say for yourselves?"
+      },
+      {
+        "id": 6,
+        "start": 13.0,
+        "end": 16.0,
+        "text": "We're just a couple of corn-fed Foster Farms chickens."
+      },
+      {
+        "id": 7,
+        "start": 16.0,
+        "end": 18.0,
+        "text": "Really? Let's roll the tape."
+      },
+      {
+        "id": 8,
+        "start": 22.0,
+        "end": 23.0,
+        "text": "Idiot!"
+      },
+      {
+        "id": 9,
+        "start": 23.0,
+        "end": 25.0,
+        "text": "Oh, no, you won't!"
+      },
+      {
+        "id": 10,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Incoming!"
+      },
+      {
+        "id": 11,
+        "start": 26.0,
+        "end": 27.0,
+        "text": "Foster Farms fresh chicken."
+      },
+      {
+        "id": 12,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Always natural, always fresh, nothing artificial added."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Foster Farms Duped Moms featuring Foster Imposters",
+    "decade": 2000,
+    "sequence": 9,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0451",
+    "url": "https://youtu.be/xG-5MUuD6IE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

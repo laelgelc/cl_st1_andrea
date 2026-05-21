@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_28",
+  "input_path": "corpus/03_audio/tv_com_1990_28.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_28.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_28.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Thank you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thank you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Mortal Kombat II Super NES Genesis",
+    "decade": 1990,
+    "sequence": 28,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0351",
+    "url": "https://youtu.be/S125jjKoX1E",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

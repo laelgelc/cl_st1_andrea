@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_89",
+  "input_path": "corpus/03_audio/tv_com_1960_89.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_89.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_89.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Marvin Potts! What's this chiffon doing in your briefcase? Did you get this for that secretary of yours? Henrietta! That is the dishwashing liquid for blondes, and your secretary is a blonde, now if... That's not fair! It's called a dishwashing liquid for blondes because it's mild enough for the most delicate kind of skin, blonde skin. So it's easy on anybody's hands. Even yours, sweetheart. Yours too, Romeo. Wash! New Chiffon. Gentle to all faces.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 8.0,
+        "text": "Marvin Potts! What's this chiffon doing in your briefcase? Did you get this for that secretary of yours?"
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 9.0,
+        "text": "Henrietta!"
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 12.0,
+        "text": "That is the dishwashing liquid for blondes, and your secretary is a blonde, now if..."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 19.0,
+        "text": "That's not fair! It's called a dishwashing liquid for blondes because it's mild enough for the most delicate kind of skin, blonde skin."
+      },
+      {
+        "id": 5,
+        "start": 19.0,
+        "end": 23.0,
+        "text": "So it's easy on anybody's hands. Even yours, sweetheart."
+      },
+      {
+        "id": 6,
+        "start": 23.0,
+        "end": 26.0,
+        "text": "Yours too, Romeo. Wash!"
+      },
+      {
+        "id": 7,
+        "start": 26.0,
+        "end": 29.0,
+        "text": "New Chiffon. Gentle to all faces."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chiffon Dishwashing Liquid ",
+    "decade": 1960,
+    "sequence": 89,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0152",
+    "url": "https://youtu.be/3JiBl9eW9bs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

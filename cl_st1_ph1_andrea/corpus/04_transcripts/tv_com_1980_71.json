@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_71",
+  "input_path": "corpus/03_audio/tv_com_1980_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "They said it wasn't humanly possible, but now you can have all the power and excitement of Nintendo right in the palm of your hand. Introducing Game Boy. It's portable, it's in stereo, and its games are interchangeable. Plus, Game Boy comes with the outrageous new game, Tetris. And for head-to-head competition, use the revolutionary video link and blow your opponent away. Game Boy, only from Nintendo. Now you're playing with power. Portable.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 8.22,
+        "text": "They said it wasn't humanly possible, but now you can have all the power and excitement of Nintendo right in the palm of your hand."
+      },
+      {
+        "id": 2,
+        "start": 8.82,
+        "end": 13.96,
+        "text": "Introducing Game Boy. It's portable, it's in stereo, and its games are interchangeable."
+      },
+      {
+        "id": 3,
+        "start": 14.22,
+        "end": 17.56,
+        "text": "Plus, Game Boy comes with the outrageous new game, Tetris."
+      },
+      {
+        "id": 4,
+        "start": 17.82,
+        "end": 23.04,
+        "text": "And for head-to-head competition, use the revolutionary video link and blow your opponent away."
+      },
+      {
+        "id": 5,
+        "start": 23.64,
+        "end": 28.0,
+        "text": "Game Boy, only from Nintendo. Now you're playing with power. Portable."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 The first Game Boy from Nintendo",
+    "decade": 1980,
+    "sequence": 71,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0288",
+    "url": "https://youtu.be/xz_Nji3tdqM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:28"
+  }
+}

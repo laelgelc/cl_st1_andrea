@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_17",
+  "input_path": "corpus/03_audio/tv_com_1990_17.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_17.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_17.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "All set? You bet I am. Thanks to you. A few weeks ago with Jesse, I noticed something. Dandruff. So I told him about Head & Shoulders. Regular shampoos just rinse flakes away. Head & Shoulders helps prevent flakes from even forming. Because great hair can't have flakes.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 2.0,
+        "text": "All set?"
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 3.0,
+        "text": "You bet I am. Thanks to you."
+      },
+      {
+        "id": 3,
+        "start": 3.0,
+        "end": 6.0,
+        "text": "A few weeks ago with Jesse, I noticed something. Dandruff."
+      },
+      {
+        "id": 4,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "So I told him about Head & Shoulders."
+      },
+      {
+        "id": 5,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "Regular shampoos just rinse flakes away."
+      },
+      {
+        "id": 6,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "Head & Shoulders helps prevent flakes from even forming."
+      },
+      {
+        "id": 7,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "Because great hair can't have flakes."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1995 Head & Shoulders Shampoo",
+    "decade": 1990,
+    "sequence": 17,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0340",
+    "url": "https://youtu.be/rmhglzgR2k4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

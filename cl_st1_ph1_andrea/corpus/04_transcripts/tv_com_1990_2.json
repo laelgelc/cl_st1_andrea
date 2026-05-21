@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_2",
+  "input_path": "corpus/03_audio/tv_com_1990_2.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_2.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_2.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Hey, lady! Come on, hit the gas! You're killing me out here! Jet Moto 2. More tracks, more control, more speed. Take advantage of it. And turn off the blinker!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 20.56,
+        "text": "Hey, lady! Come on, hit the gas! You're killing me out here!"
+      },
+      {
+        "id": 2,
+        "start": 20.88,
+        "end": 24.2,
+        "text": "Jet Moto 2. More tracks, more control, more speed."
+      },
+      {
+        "id": 3,
+        "start": 24.5,
+        "end": 25.6,
+        "text": "Take advantage of it."
+      },
+      {
+        "id": 4,
+        "start": 25.82,
+        "end": 27.900000000000002,
+        "text": "And turn off the blinker!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 Playstation Jet Moto 2",
+    "decade": 1990,
+    "sequence": 2,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0325",
+    "url": "https://youtu.be/Mzo0n528yhE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2020_13",
+  "input_path": "corpus/03_audio/tv_com_2020_13.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_13.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_13.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "How can I just let you walk away When all I can do is watch you leave So take a look at me now There's just nothing to hate And there's nothing left here to remind me Just a memory of the days Hydrate with Liquid IV Can someone let me down, please?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "How can I just let you walk away"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "When all I can do is watch you leave"
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 11.0,
+        "text": "So take a look at me now"
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 14.0,
+        "text": "There's just nothing to hate"
+      },
+      {
+        "id": 5,
+        "start": 14.0,
+        "end": 19.0,
+        "text": "And there's nothing left here to remind me"
+      },
+      {
+        "id": 6,
+        "start": 19.0,
+        "end": 22.0,
+        "text": "Just a memory of the days"
+      },
+      {
+        "id": 7,
+        "start": 26.0,
+        "end": 28.0,
+        "text": "Hydrate with Liquid IV"
+      },
+      {
+        "id": 8,
+        "start": 28.0,
+        "end": 30.0,
+        "text": "Can someone let me down, please?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Liquid I.V. Take a Look at your pee",
+    "decade": 2020,
+    "sequence": 13,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0632",
+    "url": "https://youtu.be/ZjDfVdrtl48",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

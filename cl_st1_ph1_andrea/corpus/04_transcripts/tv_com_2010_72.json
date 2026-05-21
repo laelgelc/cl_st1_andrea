@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_72",
+  "input_path": "corpus/03_audio/tv_com_2010_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "What the home is this? Halo Top Ice Cream. We just creationed it. What do you think? It's delicious. For 280 calories per pint, 20 grams of protein. Right? Now you can eat a whole pint and feel great. No! You're supposed to feel ashamed. Stay out of my territory, Featherface. We're gonna take these for analysis.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "What the home is this?"
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 9.0,
+        "text": "Halo Top Ice Cream. We just creationed it. What do you think?"
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 13.0,
+        "text": "It's delicious. For 280 calories per pint, 20 grams of protein."
+      },
+      {
+        "id": 4,
+        "start": 13.0,
+        "end": 16.0,
+        "text": "Right? Now you can eat a whole pint and feel great."
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 22.0,
+        "text": "No! You're supposed to feel ashamed."
+      },
+      {
+        "id": 6,
+        "start": 22.0,
+        "end": 24.0,
+        "text": "Stay out of my territory, Featherface."
+      },
+      {
+        "id": 7,
+        "start": 24.0,
+        "end": 29.0,
+        "text": "We're gonna take these for analysis."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Halo Top Ice Cream Sin-free ice cream",
+    "decade": 2010,
+    "sequence": 72,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:23:34",
+    "source_end": "0:24:03"
+  }
+}

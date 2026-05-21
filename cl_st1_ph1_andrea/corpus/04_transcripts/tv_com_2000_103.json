@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_103",
+  "input_path": "corpus/03_audio/tv_com_2000_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "okay open just slip a sable under the tree for me it's great right honey sometimes the best part of giving is the thank you you'll be receiving Lisa next time 3.0 for $3.99 a month at Lee Peterson Motors",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 20.92,
+        "text": "okay open just slip a sable under the tree for me it's great right honey sometimes the"
+      },
+      {
+        "id": 2,
+        "start": 20.92,
+        "end": 26.04,
+        "text": "best part of giving is the thank you you'll be receiving Lisa next time 3.0 for $3.99 a"
+      },
+      {
+        "id": 3,
+        "start": 26.04,
+        "end": 27.599999999999998,
+        "text": "month at Lee Peterson Motors"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Jaguar X-type Christmas",
+    "decade": 2000,
+    "sequence": 103,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0545",
+    "url": "https://youtu.be/_buE0Xn-0sU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

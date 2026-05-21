@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_118",
+  "input_path": "corpus/03_audio/tv_com_1990_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Pine salt power! Five times the active ingredients of the number two pine. To power through the toughest grime and kill staff germs that imitator can't. Pine salt power! You've got the power to get at pine salt.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Pine salt power!"
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 5.0,
+        "text": "Five times the active ingredients of the number two pine."
+      },
+      {
+        "id": 3,
+        "start": 5.0,
+        "end": 9.0,
+        "text": "To power through the toughest grime and kill staff germs that imitator can't."
+      },
+      {
+        "id": 4,
+        "start": 9.0,
+        "end": 11.0,
+        "text": "Pine salt power!"
+      },
+      {
+        "id": 5,
+        "start": 11.0,
+        "end": 15.0,
+        "text": "You've got the power to get at pine salt."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Pine Sol Scrubbing Pine trees",
+    "decade": 1990,
+    "sequence": 118,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0440",
+    "url": "https://youtu.be/aYS36VWfUHw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

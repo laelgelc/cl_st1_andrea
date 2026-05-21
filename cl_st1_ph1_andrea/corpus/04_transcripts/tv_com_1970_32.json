@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_32",
+  "input_path": "corpus/03_audio/tv_com_1970_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Think of yourself in a special way In the new Monte Carlo from Chevrolet Think of yourself behind the wheel Enjoying that special Monte Carlo feel Standing tall, feeling proud Put a little distance Between yourself and the crowd",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 8.5,
+        "text": "Think of yourself in a special way In the new Monte Carlo from Chevrolet"
+      },
+      {
+        "id": 2,
+        "start": 8.5,
+        "end": 16.12,
+        "text": "Think of yourself behind the wheel Enjoying that special Monte Carlo feel"
+      },
+      {
+        "id": 3,
+        "start": 16.12,
+        "end": 20.26,
+        "text": "Standing tall, feeling proud"
+      },
+      {
+        "id": 4,
+        "start": 20.26,
+        "end": 28.26,
+        "text": "Put a little distance Between yourself and the crowd"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Monte Carlo Chevolet",
+    "decade": 1970,
+    "sequence": 32,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:25:41",
+    "source_end": "0:26:10"
+  }
+}

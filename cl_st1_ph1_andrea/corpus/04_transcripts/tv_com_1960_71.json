@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_71",
+  "input_path": "corpus/03_audio/tv_com_1960_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "ssp 17 great machines ready for action and here we are at the elm street 500 i see greg and larry with our ssp blackjack and jet star they're off both cars topping 12 000 rpms uh-oh here's going the wrong way a crash blackjack's clear it jumps and wins ssp 17 great machines ssp by kenner each ssp racer sold separately ssp",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.02,
+        "text": "ssp 17 great machines ready for action and here we are at the elm street 500 i see greg and larry"
+      },
+      {
+        "id": 2,
+        "start": 8.02,
+        "end": 14.46,
+        "text": "with our ssp blackjack and jet star they're off both cars topping 12 000 rpms uh-oh here's"
+      },
+      {
+        "id": 3,
+        "start": 14.46,
+        "end": 24.12,
+        "text": "going the wrong way a crash blackjack's clear it jumps and wins ssp 17 great machines"
+      },
+      {
+        "id": 4,
+        "start": 24.12,
+        "end": 28.72,
+        "text": "ssp by kenner each ssp racer sold separately"
+      },
+      {
+        "id": 5,
+        "start": 28.72,
+        "end": 30.72,
+        "text": "ssp"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "SSP Super Sonic Power 17 Quick machines Zip-strip cars by Kenner",
+    "decade": 1960,
+    "sequence": 71,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services, Consumer Goods & Services",
+    "video_id": "video_0142",
+    "url": "https://youtu.be/UIpuVbsqXbs",
+    "source_start": "0:11:56",
+    "source_end": "0:12:25"
+  }
+}

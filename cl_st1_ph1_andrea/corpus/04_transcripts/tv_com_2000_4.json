@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_4",
+  "input_path": "corpus/03_audio/tv_com_2000_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "A female has lured a male into foreign territory. The dance floor. Dance poorly and she'll find him inadequate. Dance too well and he'll raise suspicions amongst the pack. Instinctively he tries to escape or maybe not. It's from your friends. Nice. Rolling Rock beer. Grab a rock.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.1,
+        "text": "A female has lured a male into foreign territory. The dance floor. Dance poorly"
+      },
+      {
+        "id": 2,
+        "start": 11.1,
+        "end": 15.6,
+        "text": "and she'll find him inadequate. Dance too well and he'll raise suspicions amongst"
+      },
+      {
+        "id": 3,
+        "start": 15.6,
+        "end": 24.240000000000002,
+        "text": "the pack. Instinctively he tries to escape or maybe not. It's from your"
+      },
+      {
+        "id": 4,
+        "start": 24.240000000000002,
+        "end": 31.580000000000002,
+        "text": "friends. Nice. Rolling Rock beer. Grab a rock."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Rolling Rock Beer",
+    "decade": 2000,
+    "sequence": 4,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0446",
+    "url": "https://youtu.be/gIkPkCgQvWg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

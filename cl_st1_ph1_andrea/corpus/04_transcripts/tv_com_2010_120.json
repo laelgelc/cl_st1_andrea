@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_120",
+  "input_path": "corpus/03_audio/tv_com_2010_120.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_120.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_120.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "They say as a boy, Mr. Clean really looked up to his grandmother, who was stronger than people twice her size. And that strength inspired his incredibly powerful liquid muscle. It's got two and a half times more power in every drop, to lift tough dirt with less scrubbing, no matter where you use it. And with its auto-stop nozzle, almost nothing's wasted. Yep, sure made Grandma proud. Mr. Clean Liquid Muscle. Proving when it comes to clean, there's only one mister. Thanks for watching!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.16,
+        "end": 6.6000000000000005,
+        "text": "They say as a boy, Mr. Clean really looked up to his grandmother, who was stronger than people twice her size."
+      },
+      {
+        "id": 2,
+        "start": 7.12,
+        "end": 10.8,
+        "text": "And that strength inspired his incredibly powerful liquid muscle."
+      },
+      {
+        "id": 3,
+        "start": 11.38,
+        "end": 18.32,
+        "text": "It's got two and a half times more power in every drop, to lift tough dirt with less scrubbing, no matter where you use it."
+      },
+      {
+        "id": 4,
+        "start": 18.96,
+        "end": 21.94,
+        "text": "And with its auto-stop nozzle, almost nothing's wasted."
+      },
+      {
+        "id": 5,
+        "start": 22.94,
+        "end": 24.98,
+        "text": "Yep, sure made Grandma proud."
+      },
+      {
+        "id": 6,
+        "start": 25.44,
+        "end": 29.8,
+        "text": "Mr. Clean Liquid Muscle. Proving when it comes to clean, there's only one mister."
+      },
+      {
+        "id": 7,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thanks for watching!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Mr. Clean Liquid Muscle Grandma",
+    "decade": 2010,
+    "sequence": 120,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0619",
+    "url": "https://youtu.be/9NUFdvseXLk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

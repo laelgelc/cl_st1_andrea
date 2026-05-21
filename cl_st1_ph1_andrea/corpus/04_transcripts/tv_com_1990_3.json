@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_1990_3",
+  "input_path": "corpus/03_audio/tv_com_1990_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I want more volume. The Fidel Sassoon Academy with news you can use. Fidel Sassoon spray on gel adds body to your style and puts you right in the thick of it. Sassoon hair, style that's perfect for you.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 14.32,
+        "text": "I want more volume. The Fidel Sassoon Academy with news you can use. Fidel Sassoon spray on gel adds body to your style and puts you right in the thick of it. Sassoon hair, style that's perfect for you."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1997 Vidal Sassoon Spray on Gel",
+    "decade": 1990,
+    "sequence": 3,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0326",
+    "url": "https://youtu.be/aQVp67QR7c8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

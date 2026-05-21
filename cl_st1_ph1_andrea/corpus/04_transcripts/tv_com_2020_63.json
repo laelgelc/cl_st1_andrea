@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_63",
+  "input_path": "corpus/03_audio/tv_com_2020_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "it's a guinness world records title jerry pierce grew this giant carrot and stretched it into a regular glad flex and seal bag unbelievable that's because it's made of the world's scratchiest resealable plastic bag material glad flex and seal",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.2090625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.92,
+        "text": "it's a guinness world records title jerry pierce grew this giant carrot and stretched it into a"
+      },
+      {
+        "id": 2,
+        "start": 5.92,
+        "end": 10.88,
+        "text": "regular glad flex and seal bag unbelievable that's because it's made of the world's"
+      },
+      {
+        "id": 3,
+        "start": 10.88,
+        "end": 15.0,
+        "text": "scratchiest resealable plastic bag material glad flex and seal"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Glad Flex'n Seal Food Storage Bags Giant Carrot",
+    "decade": 2020,
+    "sequence": 63,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0682",
+    "url": "https://youtu.be/9iHY6LNz8Bo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

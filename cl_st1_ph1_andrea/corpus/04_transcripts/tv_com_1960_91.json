@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_91",
+  "input_path": "corpus/03_audio/tv_com_1960_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Just as a pool of water reflects the beauty of this home, now a new kind of floor wax reflects the beauty of your room. It's new formula clear from Johnson Wax with the shimmering new deep look shine. Yes, clear the floor wax that dries clear as glass, never yellows. Now brings you the shimmering new deep look shine. New formula clear, try it.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.4,
+        "text": "Just as a pool of water reflects the beauty of this home, now a new kind of floor wax reflects"
+      },
+      {
+        "id": 2,
+        "start": 8.4,
+        "end": 15.6,
+        "text": "the beauty of your room. It's new formula clear from Johnson Wax with the shimmering new deep"
+      },
+      {
+        "id": 3,
+        "start": 15.6,
+        "end": 24.0,
+        "text": "look shine. Yes, clear the floor wax that dries clear as glass, never yellows. Now brings you the"
+      },
+      {
+        "id": 4,
+        "start": 24.0,
+        "end": 31.44,
+        "text": "shimmering new deep look shine. New formula clear, try it."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Klear Floor Wax Never Yellows",
+    "decade": 1960,
+    "sequence": 91,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0154",
+    "url": "https://youtu.be/5fBiZvsYY6w",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_104",
+  "input_path": "corpus/03_audio/tv_com_2010_104.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_104.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_104.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Here to clean the toilet? No, that's nasty. Not anymore. Scrubbing Bubbles Toilet Cleaning Gel prevents limescale buildup in rings with every flush. Nice work. Now if you'd only put the seat down. Toilet Cleaning Gel.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 13.026375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 0.9400000000000001,
+        "text": "Here to clean the toilet?"
+      },
+      {
+        "id": 2,
+        "start": 1.28,
+        "end": 3.1,
+        "text": "No, that's nasty."
+      },
+      {
+        "id": 3,
+        "start": 3.34,
+        "end": 4.12,
+        "text": "Not anymore."
+      },
+      {
+        "id": 4,
+        "start": 4.4,
+        "end": 8.28,
+        "text": "Scrubbing Bubbles Toilet Cleaning Gel prevents limescale buildup in rings with every flush."
+      },
+      {
+        "id": 5,
+        "start": 8.48,
+        "end": 9.22,
+        "text": "Nice work."
+      },
+      {
+        "id": 6,
+        "start": 9.46,
+        "end": 11.08,
+        "text": "Now if you'd only put the seat down."
+      },
+      {
+        "id": 7,
+        "start": 11.68,
+        "end": 12.700000000000001,
+        "text": "Toilet Cleaning Gel."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Scrubbing Bubbles Toilet Cleaning Gel Nasty",
+    "decade": 2010,
+    "sequence": 104,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0603",
+    "url": "https://youtu.be/V4Y6m3-cjf4?si=OD0JNlpbUsHwwHgI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:13"
+  }
+}

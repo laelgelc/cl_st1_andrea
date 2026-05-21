@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_52",
+  "input_path": "corpus/03_audio/tv_com_1960_52.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_52.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_52.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The New York woman, when her needs are financial, her reaction is chemical. Chemical New York, the bank that works hardest for you. The bank for the New York woman, whoever she is.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 20.0388125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.0,
+        "text": "The New York woman, when her needs are financial, her reaction is chemical."
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 12.0,
+        "text": "Chemical New York, the bank that works hardest for you."
+      },
+      {
+        "id": 3,
+        "start": 12.0,
+        "end": 17.0,
+        "text": "The bank for the New York woman, whoever she is."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chemical Bank New York for women",
+    "decade": 1960,
+    "sequence": 52,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0126",
+    "url": "https://youtu.be/CnUVcPzZjrA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:20"
+  }
+}

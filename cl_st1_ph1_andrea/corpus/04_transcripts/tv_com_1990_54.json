@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_54",
+  "input_path": "corpus/03_audio/tv_com_1990_54.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_54.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_54.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Here it comes! Domino's $25 million Nintendo Instant Win Game Card! With a chance to win thousands of free Nintendo prizes! Plus, savings on pizza and Coke Classic! And try Domino's new Twisty brand, free with our unlimited topping medium, just $9.99!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.06975,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 1.0,
+        "text": "Here it comes!"
+      },
+      {
+        "id": 2,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Domino's $25 million Nintendo Instant Win Game Card!"
+      },
+      {
+        "id": 3,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "With a chance to win thousands of free Nintendo prizes!"
+      },
+      {
+        "id": 4,
+        "start": 7.0,
+        "end": 9.0,
+        "text": "Plus, savings on pizza and Coke Classic!"
+      },
+      {
+        "id": 5,
+        "start": 9.0,
+        "end": 14.0,
+        "text": "And try Domino's new Twisty brand, free with our unlimited topping medium, just $9.99!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Domino's 25 Million Nintendo Instant Win Game Card",
+    "decade": 1990,
+    "sequence": 54,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0377",
+    "url": "https://youtu.be/jXwDjoxFV9s",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

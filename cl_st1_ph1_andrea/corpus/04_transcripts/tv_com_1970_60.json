@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_1970_60",
+  "input_path": "corpus/03_audio/tv_com_1970_60.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_60.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_60.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Hey everybody, it's the M&M's Candies Gang! Who takes peanuts and chocolate? Who takes peanuts and chocolate? And mixes them just right? And mixes them just right? Gives them rainbow colors so they're always nice and bright! The M&M's Gang! The M&M's Gang! The M&M's Gang! And we add a lot of love to make it all taste good! M&M's! The milk chocolate melts in your mouth, not in your head!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.8,
+        "end": 4.0200000000000005,
+        "text": "Hey everybody, it's the M&M's Candies Gang!"
+      },
+      {
+        "id": 2,
+        "start": 4.6000000000000005,
+        "end": 6.24,
+        "text": "Who takes peanuts and chocolate?"
+      },
+      {
+        "id": 3,
+        "start": 6.44,
+        "end": 8.040000000000001,
+        "text": "Who takes peanuts and chocolate?"
+      },
+      {
+        "id": 4,
+        "start": 8.24,
+        "end": 9.700000000000001,
+        "text": "And mixes them just right?"
+      },
+      {
+        "id": 5,
+        "start": 10.02,
+        "end": 11.48,
+        "text": "And mixes them just right?"
+      },
+      {
+        "id": 6,
+        "start": 11.88,
+        "end": 15.16,
+        "text": "Gives them rainbow colors so they're always nice and bright!"
+      },
+      {
+        "id": 7,
+        "start": 15.44,
+        "end": 16.84,
+        "text": "The M&M's Gang!"
+      },
+      {
+        "id": 8,
+        "start": 17.240000000000002,
+        "end": 18.82,
+        "text": "The M&M's Gang!"
+      },
+      {
+        "id": 9,
+        "start": 19.02,
+        "end": 20.6,
+        "text": "The M&M's Gang!"
+      },
+      {
+        "id": 10,
+        "start": 20.68,
+        "end": 24.72,
+        "text": "And we add a lot of love to make it all taste good!"
+      },
+      {
+        "id": 11,
+        "start": 24.98,
+        "end": 28.04,
+        "text": "M&M's! The milk chocolate melts in your mouth, not in your head!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "M & M's",
+    "decade": 1970,
+    "sequence": 60,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:42:44",
+    "source_end": "0:43:12"
+  }
+}

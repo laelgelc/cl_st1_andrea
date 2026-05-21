@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_111",
+  "input_path": "corpus/03_audio/tv_com_2010_111.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_111.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_111.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "What's a powerful way to cut through everyday greasy messes? Sponges, take your mark. One drop of Ultra Dawn has twice the everyday grease cleaning ingredients of one drop of the leading non-concentrated brand. To clean two times more greasy dishes. Dawn does more, so it's not a chore.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "What's a powerful way to cut through everyday greasy messes?"
+      },
+      {
+        "id": 2,
+        "start": 3.84,
+        "end": 5.5,
+        "text": "Sponges, take your mark."
+      },
+      {
+        "id": 3,
+        "start": 8.02,
+        "end": 12.4,
+        "text": "One drop of Ultra Dawn has twice the everyday grease cleaning ingredients"
+      },
+      {
+        "id": 4,
+        "start": 12.4,
+        "end": 15.06,
+        "text": "of one drop of the leading non-concentrated brand."
+      },
+      {
+        "id": 5,
+        "start": 22.080000000000002,
+        "end": 24.6,
+        "text": "To clean two times more greasy dishes."
+      },
+      {
+        "id": 6,
+        "start": 25.72,
+        "end": 28.46,
+        "text": "Dawn does more, so it's not a chore."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Dawn Does More so It's not a Chore Sponge Race",
+    "decade": 2010,
+    "sequence": 111,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0610",
+    "url": "https://youtu.be/3u7qeYh8YeY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

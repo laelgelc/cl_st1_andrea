@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_43",
+  "input_path": "corpus/03_audio/tv_com_2020_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Hershey's Milk Chocolate with Whole Almonds. It's mostly a smooth ride, with a few delightful bumps along the way. Hershey's Milk Chocolate with Whole Almonds.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 3.42,
+        "text": "Hershey's Milk Chocolate with Whole Almonds."
+      },
+      {
+        "id": 2,
+        "start": 3.7800000000000002,
+        "end": 8.22,
+        "text": "It's mostly a smooth ride, with a few delightful bumps along the way."
+      },
+      {
+        "id": 3,
+        "start": 10.72,
+        "end": 13.42,
+        "text": "Hershey's Milk Chocolate with Whole Almonds."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Hershey's Milk Chocolate With Whole Almonds Delightful Bumps",
+    "decade": 2020,
+    "sequence": 43,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0662",
+    "url": "https://youtu.be/8VkWptAYN0U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

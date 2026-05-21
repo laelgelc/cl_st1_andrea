@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_57",
+  "input_path": "corpus/03_audio/tv_com_1970_57.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_57.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_57.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is a tough steel scouring pad. This is Scrunge, a unique new scouring pad with 252 cutting edges. How tough is Scrunge? Watch. Side by side, both pads scoured pan after greasy pan. Scrunge is made tougher than the tough steel pad. See? Yet Scrunge scours without scratching. Scours stainless steel, scours from mica countertops, even scours Teflon surfaces without scratching. Tougher than a steel pad, scours without scratching. Scrunge, new from Johnson.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.58,
+        "text": "This is a tough steel scouring pad. This is Scrunge, a unique new scouring pad with 252 cutting edges."
+      },
+      {
+        "id": 2,
+        "start": 9.28,
+        "end": 14.38,
+        "text": "How tough is Scrunge? Watch. Side by side, both pads scoured pan after greasy pan."
+      },
+      {
+        "id": 3,
+        "start": 14.86,
+        "end": 17.580000000000002,
+        "text": "Scrunge is made tougher than the tough steel pad. See?"
+      },
+      {
+        "id": 4,
+        "start": 18.16,
+        "end": 23.12,
+        "text": "Yet Scrunge scours without scratching. Scours stainless steel, scours from mica countertops,"
+      },
+      {
+        "id": 5,
+        "start": 23.42,
+        "end": 25.72,
+        "text": "even scours Teflon surfaces without scratching."
+      },
+      {
+        "id": 6,
+        "start": 26.18,
+        "end": 28.76,
+        "text": "Tougher than a steel pad, scours without scratching."
+      },
+      {
+        "id": 7,
+        "start": 28.76,
+        "end": 31.020000000000003,
+        "text": "Scrunge, new from Johnson."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Scrunge scrubber sponge Johnson & Johnson",
+    "decade": 1970,
+    "sequence": 57,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:40:40",
+    "source_end": "0:41:11"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_115",
+  "input_path": "corpus/03_audio/tv_com_2020_115.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_115.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_115.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I get it. It's hard to change me. I'm pretty loyal. I've been on the same team for 17 years. Same coach for 11. Never switched my number once. I start every warm up with a pass from the same guy. What's up Curtis? And I shoot from the same spot every time. So you can imagine how good something has to be for me to change. What's up Curtis?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 19.88,
+        "text": "I get it. It's hard to change me. I'm pretty loyal. I've been on the same team for 17 years. Same coach for 11. Never switched my number once. I start every warm up with a pass from the same guy. What's up Curtis? And I shoot from the same spot every time. So you can imagine how good something has to be for me to change."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "What's up Curtis?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Google Pixel 10 Pro Change: Can't Beat It featuring Stephen Curry",
+    "decade": 2020,
+    "sequence": 115,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0734",
+    "url": "https://youtu.be/F-AIpamLp54",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

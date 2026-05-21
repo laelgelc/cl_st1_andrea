@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_77",
+  "input_path": "corpus/03_audio/tv_com_2010_77.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_77.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_77.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "deal talk my new three dollar sauce and loaded fries with curly fries and all beef chili or triple cheese and bacon are perfect for a late night video game binge i would destroy the entire sarganian armada for those fries or you could just pay three bucks or that try my new three dollars",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.6000000000000005,
+        "text": "deal talk my new three dollar sauce and loaded fries with curly fries and all beef chili or"
+      },
+      {
+        "id": 2,
+        "start": 5.6000000000000005,
+        "end": 9.700000000000001,
+        "text": "triple cheese and bacon are perfect for a late night video game binge i would destroy the entire"
+      },
+      {
+        "id": 3,
+        "start": 9.700000000000001,
+        "end": 14.0,
+        "text": "sarganian armada for those fries or you could just pay three bucks or that try my new three dollars"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2018 Jack in Box Sauced and Loaded Fries This Close",
+    "decade": 2010,
+    "sequence": 77,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:27:36",
+    "source_end": "0:27:50"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_91",
+  "input_path": "corpus/03_audio/tv_com_1980_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "shower with music splash sing and swing with Apollinex shower radio splash dance water resistant AM and FM safe battery operated splash dance tune in to your favorite music don't skip a beat wake up to the morning news weather sports take a relaxing bath splash dance shower radio from Apollinex now music to shower by fun gift available at Kmart, Jusco and Phelan",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.6,
+        "text": "shower with music splash sing and swing with Apollinex shower radio splash dance water"
+      },
+      {
+        "id": 2,
+        "start": 8.6,
+        "end": 14.92,
+        "text": "resistant AM and FM safe battery operated splash dance tune in to your favorite music"
+      },
+      {
+        "id": 3,
+        "start": 14.92,
+        "end": 23.66,
+        "text": "don't skip a beat wake up to the morning news weather sports take a relaxing bath splash dance"
+      },
+      {
+        "id": 4,
+        "start": 23.66,
+        "end": 29.1,
+        "text": "shower radio from Apollinex now music to shower by fun gift available at Kmart,"
+      },
+      {
+        "id": 5,
+        "start": 29.1,
+        "end": 30.020000000000003,
+        "text": "Jusco and Phelan"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1985 Splash Dance Shower with music by Pollenex",
+    "decade": 1980,
+    "sequence": 91,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0303",
+    "url": "https://youtu.be/pBwgwZEa8gA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_52",
+  "input_path": "corpus/03_audio/tv_com_2000_52.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_52.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_52.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I go out walking after midnight, out in the moonlight, just like we used to do. I'm always walking after midnight, searching for you. Keep in touch on America's number one direct internet service.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 18.080000000000002,
+        "text": "I go out walking after midnight, out in the moonlight, just like we used to do."
+      },
+      {
+        "id": 2,
+        "start": 18.080000000000002,
+        "end": 24.72,
+        "text": "I'm always walking after midnight, searching for you."
+      },
+      {
+        "id": 3,
+        "start": 24.72,
+        "end": 30.04,
+        "text": "Keep in touch on America's number one direct internet service."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "AT & T Chatting on the computer",
+    "decade": 2000,
+    "sequence": 52,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0494",
+    "url": "https://youtu.be/ywNh40vWfjE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

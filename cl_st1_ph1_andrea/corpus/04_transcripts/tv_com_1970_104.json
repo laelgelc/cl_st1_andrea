@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_104",
+  "input_path": "corpus/03_audio/tv_com_1970_104.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_104.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_104.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "To Rip Caldwell, whose flight took off with the score tied. United Airlines dedicates friendship service. On many of our cross-country flights, Rip can hear top college and pro football games and the latest news. Another reason more people choose the friendly skies than any other airline in the land. The friendly skies of your land, United Airlines. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 5.0,
+        "text": "To Rip Caldwell, whose flight took off with the score tied."
+      },
+      {
+        "id": 2,
+        "start": 7.5,
+        "end": 10.5,
+        "text": "United Airlines dedicates friendship service."
+      },
+      {
+        "id": 3,
+        "start": 10.5,
+        "end": 17.0,
+        "text": "On many of our cross-country flights, Rip can hear top college and pro football games and the latest news."
+      },
+      {
+        "id": 4,
+        "start": 17.0,
+        "end": 24.0,
+        "text": "Another reason more people choose the friendly skies than any other airline in the land."
+      },
+      {
+        "id": 5,
+        "start": 24.0,
+        "end": 29.0,
+        "text": "The friendly skies of your land, United Airlines."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 35.0,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "United Airlines Friendship Service 1973",
+    "decade": 1970,
+    "sequence": 104,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0212",
+    "url": "https://youtu.be/R8RIiHLTKhM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

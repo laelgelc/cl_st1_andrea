@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_90",
+  "input_path": "corpus/03_audio/tv_com_2010_90.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_90.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_90.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "a beer. What's better doing two things at once or just one? Two! You sure? I am absolutely positive. Two times is awesome. The thing I can do is wave my hand and wave my hand. That's amazing. I've never seen anything like that. Hold on I'm watching this. It's not complicated. Doing two things at once is better and only AT&T's network lets you talk and surf on your iPhone 5. Subtitles by the Amara.org community",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 29.0,
+        "text": "a beer. What's better doing two things at once or just one? Two! You sure? I am absolutely positive. Two times is awesome. The thing I can do is wave my hand and wave my hand. That's amazing. I've never seen anything like that. Hold on I'm watching this. It's not complicated. Doing two things at once is better and only AT&T's network lets you talk and surf on your iPhone 5."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 31.0,
+        "text": "Subtitles by the Amara.org community"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 AT&T Wireless 2 Things at Once is Better",
+    "decade": 2010,
+    "sequence": 90,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:53:58",
+    "source_end": "0:54:28"
+  }
+}

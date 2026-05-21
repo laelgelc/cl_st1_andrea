@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_20",
+  "input_path": "corpus/03_audio/tv_com_1970_20.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_20.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_20.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "there is no jewel on earth more precious than the emerald emerald perfume like the jewels for which it is named is a precious liquid emerald compelling provocative and slightly dangerous after all if you're going to play it safe why play at all emerald perfume by",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.68,
+        "text": "there is no jewel on earth more precious than the emerald emerald perfume like the"
+      },
+      {
+        "id": 2,
+        "start": 11.68,
+        "end": 19.900000000000002,
+        "text": "jewels for which it is named is a precious liquid emerald compelling provocative and"
+      },
+      {
+        "id": 3,
+        "start": 19.900000000000002,
+        "end": 28.34,
+        "text": "slightly dangerous after all if you're going to play it safe why play at all emerald perfume"
+      },
+      {
+        "id": 4,
+        "start": 28.34,
+        "end": 28.84,
+        "text": "by"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Emeraude Perfum by Coty",
+    "decade": 1970,
+    "sequence": 20,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:14:59",
+    "source_end": "0:15:28"
+  }
+}

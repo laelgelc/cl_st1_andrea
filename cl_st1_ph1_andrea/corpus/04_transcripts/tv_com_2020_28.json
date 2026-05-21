@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_28",
+  "input_path": "corpus/03_audio/tv_com_2020_28.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_28.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_28.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Want a sleek that stays up to five washes? It's possible. Garnier presents Ferti Sleek and Stay Serum. Patented water resistant technology to block out frizz. For ultra glassy sleek that stays up to five washes. Ferti Sleek and Stay System by Garnier.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.54,
+        "text": "Want a sleek that stays up to five washes? It's possible. Garnier presents Ferti Sleek and Stay"
+      },
+      {
+        "id": 2,
+        "start": 5.54,
+        "end": 10.4,
+        "text": "Serum. Patented water resistant technology to block out frizz. For ultra glassy sleek"
+      },
+      {
+        "id": 3,
+        "start": 10.4,
+        "end": 14.98,
+        "text": "that stays up to five washes. Ferti Sleek and Stay System by Garnier."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Garnier Hair Care Fructis Sleek & Spray Ultra Glassy Sleek",
+    "decade": 2020,
+    "sequence": 28,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0647",
+    "url": "https://youtu.be/ZU4EsUZ90M4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

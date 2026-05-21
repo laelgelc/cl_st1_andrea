@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1960_70",
+  "input_path": "corpus/03_audio/tv_com_1960_70.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_70.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_70.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "when you set your sights on satisfaction satisfy yourself with the top tobacco taste the air softened mildness of chesterfield king when you come to king for mildness length alone is not enough get the king that air softens every satisfying puff chesterfield king the farther smoke travels the smoother it tastes chesterfield king for a cooler smoother smoke that's milder it tastes yes satisfy yourself get chesterfield king",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.26,
+        "text": "when you set your sights on satisfaction satisfy yourself with the top tobacco taste"
+      },
+      {
+        "id": 2,
+        "start": 9.26,
+        "end": 16.54,
+        "text": "the air softened mildness of chesterfield king when you come to king for mildness length alone"
+      },
+      {
+        "id": 3,
+        "start": 16.54,
+        "end": 23.900000000000002,
+        "text": "is not enough get the king that air softens every satisfying puff chesterfield king"
+      },
+      {
+        "id": 4,
+        "start": 23.900000000000002,
+        "end": 25.900000000000002,
+        "text": "the farther smoke travels"
+      },
+      {
+        "id": 5,
+        "start": 25.900000000000002,
+        "end": 49.38,
+        "text": "the smoother it tastes"
+      },
+      {
+        "id": 6,
+        "start": 49.38,
+        "end": 53.300000000000004,
+        "text": "chesterfield king for a cooler smoother smoke"
+      },
+      {
+        "id": 7,
+        "start": 53.300000000000004,
+        "end": 53.88,
+        "text": "that's milder it tastes"
+      },
+      {
+        "id": 8,
+        "start": 53.9,
+        "end": 58.739999999999995,
+        "text": "yes satisfy yourself get chesterfield king"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Chesterfield King",
+    "decade": 1960,
+    "sequence": 70,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0142",
+    "url": "https://youtu.be/UIpuVbsqXbs",
+    "source_start": "0:09:45",
+    "source_end": "0:10:44"
+  }
+}

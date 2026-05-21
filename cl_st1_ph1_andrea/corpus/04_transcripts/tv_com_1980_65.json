@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1980_65",
+  "input_path": "corpus/03_audio/tv_com_1980_65.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_65.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_65.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "When you are just a pup, I never thought that you'd grow up, but we'll always be together, forever side by side, my best friend, as time goes by. Kodacolor VR200 film, so versatile it captures life's little changes in shifting light or with sudden movement. Kodak film, because time goes by.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 20.26,
+        "text": "When you are just a pup, I never thought that you'd grow up, but we'll always be together, forever side by side, my best friend, as time goes by."
+      },
+      {
+        "id": 2,
+        "start": 20.26,
+        "end": 29.060000000000002,
+        "text": "Kodacolor VR200 film, so versatile it captures life's little changes in shifting light or with sudden movement. Kodak film, because time goes by."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Kodak Kodacolor vr200 film",
+    "decade": 1980,
+    "sequence": 65,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:06:45",
+    "source_end": "0:07:14"
+  }
+}

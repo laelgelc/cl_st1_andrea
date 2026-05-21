@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_89",
+  "input_path": "corpus/03_audio/tv_com_1990_89.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_89.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_89.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is fun day, yours and my day. This is fun day, you, we. This is fun day, on a fine day. Something happens between the weddings and birthday parties. It's called the rest of your life. That's why we created America's most popular camcorder, the Handycam, from Sony. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0930625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.120000000000001,
+        "text": "This is fun day, yours and my day. This is fun day, you, we."
+      },
+      {
+        "id": 2,
+        "start": 11.620000000000001,
+        "end": 16.42,
+        "text": "This is fun day, on a fine day."
+      },
+      {
+        "id": 3,
+        "start": 16.8,
+        "end": 19.34,
+        "text": "Something happens between the weddings and birthday parties."
+      },
+      {
+        "id": 4,
+        "start": 19.92,
+        "end": 21.52,
+        "text": "It's called the rest of your life."
+      },
+      {
+        "id": 5,
+        "start": 22.32,
+        "end": 27.54,
+        "text": "That's why we created America's most popular camcorder, the Handycam, from Sony."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Sony Handycam",
+    "decade": 1990,
+    "sequence": 89,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0412",
+    "url": "https://youtu.be/g1wL-bbPBIU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_53",
+  "input_path": "corpus/03_audio/tv_com_1970_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is Farrah Fawcett Shampoo, without the label, because what's in the bottle is more important to you than what's on it. Fabergé created this shampoo and put in things that I believe in, like vitamins, minerals, protein, and herbs. It's an extra-rich shampoo, and it really does leave your hair clean, fresh-smelling, lots of body and shine. I hope you try it, for what's in the bottle. Farrah Fawcett Shampoo and Cream Rinse Conditioner, by Fabergé.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.4,
+        "end": 7.48,
+        "text": "This is Farrah Fawcett Shampoo, without the label, because what's in the bottle is more important to you than what's on it."
+      },
+      {
+        "id": 2,
+        "start": 8.120000000000001,
+        "end": 14.34,
+        "text": "Fabergé created this shampoo and put in things that I believe in, like vitamins, minerals, protein, and herbs."
+      },
+      {
+        "id": 3,
+        "start": 14.76,
+        "end": 20.36,
+        "text": "It's an extra-rich shampoo, and it really does leave your hair clean, fresh-smelling, lots of body and shine."
+      },
+      {
+        "id": 4,
+        "start": 21.42,
+        "end": 24.22,
+        "text": "I hope you try it, for what's in the bottle."
+      },
+      {
+        "id": 5,
+        "start": 25.12,
+        "end": 28.6,
+        "text": "Farrah Fawcett Shampoo and Cream Rinse Conditioner, by Fabergé."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Farrah Faucet Shampoo",
+    "decade": 1970,
+    "sequence": 53,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:37:41",
+    "source_end": "0:38:10"
+  }
+}

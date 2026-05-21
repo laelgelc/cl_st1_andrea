@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_92",
+  "input_path": "corpus/03_audio/tv_com_2000_92.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_92.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_92.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "A regular manual brush can leave more plaque on your teeth. Now, new Oral-B Vitality is here. A rechargeable brush under $20. Vitality moves almost 8,000 times a minute and reduces up to two times more plaque than a manual. New Oral-B Vitality.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.8000000000000003,
+        "text": "A regular manual brush can leave more plaque on your teeth."
+      },
+      {
+        "id": 2,
+        "start": 3.1,
+        "end": 5.12,
+        "text": "Now, new Oral-B Vitality is here."
+      },
+      {
+        "id": 3,
+        "start": 5.34,
+        "end": 6.84,
+        "text": "A rechargeable brush under $20."
+      },
+      {
+        "id": 4,
+        "start": 7.5600000000000005,
+        "end": 9.86,
+        "text": "Vitality moves almost 8,000 times a minute"
+      },
+      {
+        "id": 5,
+        "start": 9.86,
+        "end": 12.58,
+        "text": "and reduces up to two times more plaque than a manual."
+      },
+      {
+        "id": 6,
+        "start": 12.98,
+        "end": 14.26,
+        "text": "New Oral-B Vitality."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2007 Oral B Vitality Electric Toothbrush",
+    "decade": 2000,
+    "sequence": 92,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0534",
+    "url": "https://youtu.be/wCJvUNwHq4I",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

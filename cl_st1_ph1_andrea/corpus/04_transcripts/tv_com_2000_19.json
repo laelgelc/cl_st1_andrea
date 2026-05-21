@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_19",
+  "input_path": "corpus/03_audio/tv_com_2000_19.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_19.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_19.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Look at our son. College boy. I'm so proud of him. I'm just glad to be home. You know what I miss most? Golden Grahams. I think I'm gonna have a bowl when I get home. Maybe two. Heck, I might eat them all. The irresistible taste of Golden Grahams is something everyone in the family wants for themselves. Golden Grahams. Go get your own.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.0,
+        "text": "Look at our son. College boy. I'm so proud of him."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 11.0,
+        "text": "I'm just glad to be home. You know what I miss most? Golden Grahams."
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 16.0,
+        "text": "I think I'm gonna have a bowl when I get home. Maybe two. Heck, I might eat them all."
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 27.0,
+        "text": "The irresistible taste of Golden Grahams is something everyone in the family wants for themselves."
+      },
+      {
+        "id": 5,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Golden Grahams. Go get your own."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Golden Grahams Go get your own ",
+    "decade": 2000,
+    "sequence": 19,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0461",
+    "url": "https://youtu.be/YcQCMg8vBQ4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_51",
+  "input_path": "corpus/03_audio/tv_com_1970_51.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_51.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_51.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Hershey is real milk chocolate, I love that Hershey bar. Hershey is that something special no matter where you are. Anytime you want delicious chocolate, there's no need to go looking very far. Hershey's great. Cause Hershey is the great American, great American chocolate bar.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.7,
+        "text": "Hershey is real milk chocolate, I love that Hershey bar."
+      },
+      {
+        "id": 2,
+        "start": 6.8,
+        "end": 12.700000000000001,
+        "text": "Hershey is that something special no matter where you are."
+      },
+      {
+        "id": 3,
+        "start": 13.02,
+        "end": 19.32,
+        "text": "Anytime you want delicious chocolate, there's no need to go looking very far."
+      },
+      {
+        "id": 4,
+        "start": 19.36,
+        "end": 20.22,
+        "text": "Hershey's great."
+      },
+      {
+        "id": 5,
+        "start": 20.36,
+        "end": 26.92,
+        "text": "Cause Hershey is the great American, great American chocolate bar."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Hershey's ",
+    "decade": 1970,
+    "sequence": 51,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:36:42",
+    "source_end": "0:37:10"
+  }
+}

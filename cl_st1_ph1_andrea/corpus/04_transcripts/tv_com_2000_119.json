@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2000_119",
+  "input_path": "corpus/03_audio/tv_com_2000_119.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_119.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_119.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Nothing in the world excites your senses like touring on a motorcycle. And there's no touring motorcycle in the world like the Honda Goldwing 1800, the motorcycle of the year. Experience for yourself the ultimate in luxury and how easy it is to ride with a Goldwing test ride. To find a dealer, go on Honda.com. And with 2.9% financing, one ride could lead to the journey of a lifetime.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.62,
+        "text": "Nothing in the world excites your senses like touring on a motorcycle."
+      },
+      {
+        "id": 2,
+        "start": 4.58,
+        "end": 11.68,
+        "text": "And there's no touring motorcycle in the world like the Honda Goldwing 1800, the motorcycle of the year."
+      },
+      {
+        "id": 3,
+        "start": 12.4,
+        "end": 18.54,
+        "text": "Experience for yourself the ultimate in luxury and how easy it is to ride with a Goldwing test ride."
+      },
+      {
+        "id": 4,
+        "start": 19.5,
+        "end": 22.02,
+        "text": "To find a dealer, go on Honda.com."
+      },
+      {
+        "id": 5,
+        "start": 22.44,
+        "end": 27.92,
+        "text": "And with 2.9% financing, one ride could lead to the journey of a lifetime."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Honda Gold Wing 1800 Motorcycle",
+    "decade": 2000,
+    "sequence": 119,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0561",
+    "url": "https://youtu.be/GWgy5ktRVKk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

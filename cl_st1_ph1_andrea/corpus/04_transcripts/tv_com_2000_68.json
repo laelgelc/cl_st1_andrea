@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_68",
+  "input_path": "corpus/03_audio/tv_com_2000_68.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_68.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_68.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Swiffer Test 33. Thick wet cloth, prepped for cleaning challenge. Introduction of live mud stimulus. Subject responsive. Initial trial leads to satisfaction with thorough clean. Note subject's commitment to hygiene. And dirt disposal glory. Swiffer Wet. Changing cleaning behavior.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Swiffer Test 33."
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 6.0,
+        "text": "Thick wet cloth, prepped for cleaning challenge."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 10.0,
+        "text": "Introduction of live mud stimulus."
+      },
+      {
+        "id": 4,
+        "start": 11.0,
+        "end": 13.0,
+        "text": "Subject responsive."
+      },
+      {
+        "id": 5,
+        "start": 14.0,
+        "end": 17.0,
+        "text": "Initial trial leads to satisfaction with thorough clean."
+      },
+      {
+        "id": 6,
+        "start": 19.0,
+        "end": 22.0,
+        "text": "Note subject's commitment to hygiene."
+      },
+      {
+        "id": 7,
+        "start": 23.0,
+        "end": 26.0,
+        "text": "And dirt disposal glory."
+      },
+      {
+        "id": 8,
+        "start": 26.0,
+        "end": 29.0,
+        "text": "Swiffer Wet. Changing cleaning behavior."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Swiffer Wet Daycare",
+    "decade": 2000,
+    "sequence": 68,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0510",
+    "url": "https://youtu.be/CMTAmgRtDPc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

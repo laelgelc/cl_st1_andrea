@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_88",
+  "input_path": "corpus/03_audio/tv_com_2000_88.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_88.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_88.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This is no place for bumps or dimpled skin. New Nivea Reshaping Treatment helps boost collagen production to bring problem areas back into shape in three weeks. New Reshaping Treatment from Nivea.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.84,
+        "text": "This is no place for bumps or dimpled skin."
+      },
+      {
+        "id": 2,
+        "start": 5.4,
+        "end": 8.66,
+        "text": "New Nivea Reshaping Treatment helps boost collagen production"
+      },
+      {
+        "id": 3,
+        "start": 8.66,
+        "end": 11.96,
+        "text": "to bring problem areas back into shape in three weeks."
+      },
+      {
+        "id": 4,
+        "start": 12.46,
+        "end": 14.780000000000001,
+        "text": "New Reshaping Treatment from Nivea."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Nivea Reshaping Treatment",
+    "decade": 2000,
+    "sequence": 88,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0530",
+    "url": "https://youtu.be/5ebDDPDT6do",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_7",
+  "input_path": "corpus/03_audio/tv_com_2000_7.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_7.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_7.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You make it fun. You make it good. You make it one big neighborhood. You make it all just go together. Dr. Pepper, you make the world taste better. Dr. Pepper makes the world taste better. You make the world taste better. Dr. Pepper, you make the world taste better. Dr. Pepper makes the world taste better.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 17.76,
+        "text": "You make it fun. You make it good. You make it one big neighborhood. You make it all just go together. Dr. Pepper, you make the world taste better."
+      },
+      {
+        "id": 2,
+        "start": 17.76,
+        "end": 26.84,
+        "text": "Dr. Pepper makes the world taste better. You make the world taste better. Dr. Pepper, you make the world taste better."
+      },
+      {
+        "id": 3,
+        "start": 26.84,
+        "end": 30.84,
+        "text": "Dr. Pepper makes the world taste better."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Dr. Pepper You make the world taste better",
+    "decade": 2000,
+    "sequence": 7,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0449",
+    "url": "https://youtu.be/z2GMKBQt9Uc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

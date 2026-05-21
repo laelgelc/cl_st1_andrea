@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_31",
+  "input_path": "corpus/03_audio/tv_com_1980_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Dow bathroom cleaner with scrubbing bubbles cleans bathroom soils right down to the shine. What power? What power? Watch us put the muscle on dirt and scum. Oh, we scrub it away fast. Oh, we do. We really do. We disinfect and deodorize too. Okay, Charms, you're all washed up. Look at the shine we leave behind. We work extra hard so you don't have to. To leave your bathroom sparkling clean, get Dow bathroom cleaner with scrubbing bubbles.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.6000000000000005,
+        "text": "Dow bathroom cleaner with scrubbing bubbles cleans bathroom soils right down to the shine."
+      },
+      {
+        "id": 2,
+        "start": 7.6000000000000005,
+        "end": 14.22,
+        "text": "What power? What power? Watch us put the muscle on dirt and scum. Oh, we scrub it away fast. Oh,"
+      },
+      {
+        "id": 3,
+        "start": 14.22,
+        "end": 19.56,
+        "text": "we do. We really do. We disinfect and deodorize too. Okay, Charms, you're all washed up. Look"
+      },
+      {
+        "id": 4,
+        "start": 19.56,
+        "end": 25.400000000000002,
+        "text": "at the shine we leave behind. We work extra hard so you don't have to. To leave your bathroom"
+      },
+      {
+        "id": 5,
+        "start": 25.400000000000002,
+        "end": 28.880000000000003,
+        "text": "sparkling clean, get Dow bathroom cleaner with scrubbing bubbles."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1981 Dow Bathroom Cleaner with Scrubbing Bubbles",
+    "decade": 1980,
+    "sequence": 31,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0253",
+    "url": "https://youtu.be/l4LQtKGEaCw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

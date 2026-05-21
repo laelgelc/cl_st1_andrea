@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1960_16",
+  "input_path": "corpus/03_audio/tv_com_1960_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Come on shorty, your hair like chewing gum. Big ox! Darling, wonder the witch. Your bargain spray's the problem. Watch this cotton test. It sticks. Away with that problem. Try Hidden Magic, the perfect solution. Holds without being sticky. See? Hardly any sticks. How'd you get rid of the chewing gum? A little witchery. New Hidden Magic, the problem solving hairspray.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Come on shorty, your hair like chewing gum."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 8.0,
+        "text": "Big ox! Darling, wonder the witch."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 12.0,
+        "text": "Your bargain spray's the problem. Watch this cotton test."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 16.0,
+        "text": "It sticks. Away with that problem. Try"
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 20.0,
+        "text": "Hidden Magic, the perfect solution. Holds without being sticky."
+      },
+      {
+        "id": 6,
+        "start": 20.0,
+        "end": 24.0,
+        "text": "See? Hardly any sticks. How'd you get rid of the chewing gum?"
+      },
+      {
+        "id": 7,
+        "start": 24.0,
+        "end": 28.0,
+        "text": "A little witchery. New Hidden Magic, the problem solving"
+      },
+      {
+        "id": 8,
+        "start": 28.0,
+        "end": 32.0,
+        "text": "hairspray."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Hidden Magic hair spray  ",
+    "decade": 1960,
+    "sequence": 16,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:30:09",
+    "source_end": "0:30:38"
+  }
+}

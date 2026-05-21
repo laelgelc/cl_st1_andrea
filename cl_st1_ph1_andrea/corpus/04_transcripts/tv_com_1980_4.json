@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1980_4",
+  "input_path": "corpus/03_audio/tv_com_1980_4.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_4.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_4.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "if you're allergy sensitive your world is ever threatening for relief discover Benadryl the most prescribed allergy medication ever available without prescription Benadryl and Benadryl",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.4,
+        "text": "if you're allergy sensitive your world is ever threatening for relief discover Benadryl the most"
+      },
+      {
+        "id": 2,
+        "start": 8.4,
+        "end": 14.0,
+        "text": "prescribed allergy medication ever available without prescription Benadryl and Benadryl"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Benadryl Allergy antihistamine",
+    "decade": 1980,
+    "sequence": 4,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:03:20",
+    "source_end": "0:03:34"
+  }
+}

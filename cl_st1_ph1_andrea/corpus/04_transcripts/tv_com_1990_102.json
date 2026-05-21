@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_102",
+  "input_path": "corpus/03_audio/tv_com_1990_102.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_102.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_102.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "It seems like some portable CD players react to even the slightest bumps. Now, Magnavox offers a portable CD player with electronic skip protection. So, even with a significant jolt, the music doesn't miss a beat. Smart. Very smart. Get a CD carrying case free when you buy select Magnavox portable CD players with ESP. See store for details.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 5.0,
+        "text": "It seems like some portable CD players react to even the slightest bumps."
+      },
+      {
+        "id": 2,
+        "start": 10.0,
+        "end": 15.0,
+        "text": "Now, Magnavox offers a portable CD player with electronic skip protection."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 18.0,
+        "text": "So, even with a significant jolt,"
+      },
+      {
+        "id": 4,
+        "start": 19.0,
+        "end": 21.0,
+        "text": "the music doesn't miss a beat."
+      },
+      {
+        "id": 5,
+        "start": 23.0,
+        "end": 25.0,
+        "text": "Smart. Very smart."
+      },
+      {
+        "id": 6,
+        "start": 25.0,
+        "end": 29.0,
+        "text": "Get a CD carrying case free when you buy select Magnavox portable CD players with ESP."
+      },
+      {
+        "id": 7,
+        "start": 29.0,
+        "end": 30.0,
+        "text": "See store for details."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Magnavox Portable CD Player Eletronic Skip Protection",
+    "decade": 1990,
+    "sequence": 102,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0424",
+    "url": "https://youtu.be/oJl8hWMpzl4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_71",
+  "input_path": "corpus/03_audio/tv_com_1970_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "when your street turns into a fever street be ready with dristan tablets compare leading allergy products only dristan combines medicine for sneezing and congestion with extra medicine 650 milligrams per dose for allergy headache and sinus pain extra relief the others don't give in minutes sneezing dripping pains relieved hey get dristan with extra relief medicine the others don't have",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.620000000000001,
+        "text": "when your street turns into a fever street be ready with dristan tablets compare leading"
+      },
+      {
+        "id": 2,
+        "start": 9.620000000000001,
+        "end": 15.120000000000001,
+        "text": "allergy products only dristan combines medicine for sneezing and congestion with extra medicine"
+      },
+      {
+        "id": 3,
+        "start": 15.120000000000001,
+        "end": 22.0,
+        "text": "650 milligrams per dose for allergy headache and sinus pain extra relief the others don't give"
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 29.16,
+        "text": "in minutes sneezing dripping pains relieved hey get dristan with extra relief medicine the others"
+      },
+      {
+        "id": 5,
+        "start": 29.16,
+        "end": 29.82,
+        "text": "don't have"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Dristan descongestant tablets",
+    "decade": 1970,
+    "sequence": 71,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:52:57",
+    "source_end": "0:53:27"
+  }
+}

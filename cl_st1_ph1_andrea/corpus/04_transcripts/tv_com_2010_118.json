@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_118",
+  "input_path": "corpus/03_audio/tv_com_2010_118.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_118.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_118.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "bargain trash bag users go through 60 more bags a year than glad users ever wonder why glad holds more tough trash than the leading bargain brand strength that saves",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.1,
+        "text": "bargain trash bag users go through 60 more bags a year than glad users ever wonder why"
+      },
+      {
+        "id": 2,
+        "start": 8.1,
+        "end": 14.72,
+        "text": "glad holds more tough trash than the leading bargain brand strength that saves"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Glad Garbage Bags Strenght that Saves 60 more bags",
+    "decade": 2010,
+    "sequence": 118,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0617",
+    "url": "https://youtu.be/WOtAfSFsK0c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

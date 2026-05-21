@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1960_42",
+  "input_path": "corpus/03_audio/tv_com_1960_42.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_42.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_42.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Misty, new portable hair dryer from Proctor Silex. Light, goes anywhere. Dries quick like a hard top. Fits comfortably even over curlers. No strings, so there's no tightness, no marks. Four heat selections. Beauty mist for better sets and quick touch-ups. Misty Happening by Proctor Silex.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 27.0280625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Misty, new portable hair dryer from Proctor Silex."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "Light, goes anywhere."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "Dries quick like a hard top."
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "Fits comfortably even over curlers."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "No strings, so there's no tightness, no marks."
+      },
+      {
+        "id": 6,
+        "start": 15.0,
+        "end": 17.0,
+        "text": "Four heat selections."
+      },
+      {
+        "id": 7,
+        "start": 17.0,
+        "end": 20.0,
+        "text": "Beauty mist for better sets and quick touch-ups."
+      },
+      {
+        "id": 8,
+        "start": 20.0,
+        "end": 26.0,
+        "text": "Misty Happening by Proctor Silex."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Misty Portable Hair Dryer Proctor Silex",
+    "decade": 1960,
+    "sequence": 42,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:33:18",
+    "source_end": "1:33:45"
+  }
+}

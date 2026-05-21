@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2020_72",
+  "input_path": "corpus/03_audio/tv_com_2020_72.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_72.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_72.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Let's talk about floors. Floors for toddlers. Floors for toys. Floors for stories. Floors for screams. Book now and have yours installed by the holidays.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.24,
+        "end": 1.7,
+        "text": "Let's talk about floors."
+      },
+      {
+        "id": 2,
+        "start": 2.42,
+        "end": 3.42,
+        "text": "Floors for toddlers."
+      },
+      {
+        "id": 3,
+        "start": 3.84,
+        "end": 4.7,
+        "text": "Floors for toys."
+      },
+      {
+        "id": 4,
+        "start": 6.0600000000000005,
+        "end": 7.04,
+        "text": "Floors for stories."
+      },
+      {
+        "id": 5,
+        "start": 7.66,
+        "end": 9.08,
+        "text": "Floors for screams."
+      },
+      {
+        "id": 6,
+        "start": 10.34,
+        "end": 12.58,
+        "text": "Book now and have yours installed by the holidays."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2020 Lowe's Let's Talk About Floors: Free Carpet Installation",
+    "decade": 2020,
+    "sequence": 72,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0691",
+    "url": "https://youtu.be/eeiyj0bYDjk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

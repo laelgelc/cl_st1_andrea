@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_5",
+  "input_path": "corpus/03_audio/tv_com_1980_5.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_5.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_5.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Feel it in the air, elation A brand new fragrance from Impulse Excitement everywhere, elation, elation If a man you've never met before suddenly gives you flowers, that's elation The exciting new fragrance from Impulse Elation",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.74,
+        "text": "Feel it in the air, elation"
+      },
+      {
+        "id": 2,
+        "start": 8.74,
+        "end": 11.1,
+        "text": "A brand new fragrance from Impulse"
+      },
+      {
+        "id": 3,
+        "start": 11.1,
+        "end": 18.5,
+        "text": "Excitement everywhere, elation, elation"
+      },
+      {
+        "id": 4,
+        "start": 18.5,
+        "end": 25.38,
+        "text": "If a man you've never met before suddenly gives you flowers, that's elation"
+      },
+      {
+        "id": 5,
+        "start": 25.38,
+        "end": 27.96,
+        "text": "The exciting new fragrance from Impulse"
+      },
+      {
+        "id": 6,
+        "start": 27.96,
+        "end": 29.0,
+        "text": "Elation"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Impulse Elation perfume body spray scent ",
+    "decade": 1980,
+    "sequence": 5,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:03:35",
+    "source_end": "0:04:04"
+  }
+}

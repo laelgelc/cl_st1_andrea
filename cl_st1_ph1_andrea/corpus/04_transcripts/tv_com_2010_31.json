@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_31",
+  "input_path": "corpus/03_audio/tv_com_2010_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Growing up, my mom let me use her home as an ice rink. She just grabbed the Bounty Select-A-Size. One Select-A-Size sheet of Bounty is 50% more absorbent than a full-size sheet of the leading ordinary brand. Use less with Bounty Select-A-Size.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 16.045,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Growing up, my mom let me use her home as an ice rink."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "She just grabbed the Bounty Select-A-Size."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 12.0,
+        "text": "One Select-A-Size sheet of Bounty is 50% more absorbent than a full-size sheet of the leading ordinary brand."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "Use less with Bounty Select-A-Size."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 Bounty Paper Towels Select-a-Size featuring Julie Chu an american olympian",
+    "decade": 2010,
+    "sequence": 31,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0593",
+    "url": "https://youtu.be/lLCoShlKpCg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_49",
+  "input_path": "corpus/03_audio/tv_com_2010_49.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_49.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_49.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Imagine enough plastic to cover Mount Rainier. What if we could keep that much plastic waste out of landfills each year? By using just one less trash bag each month, we can. And Glad Force Flex bags stretch until they're full, so you can take them out less often. It's a small change that can make a big difference.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.72,
+        "text": "Imagine enough plastic to cover Mount Rainier."
+      },
+      {
+        "id": 2,
+        "start": 9.72,
+        "end": 16.080000000000002,
+        "text": "What if we could keep that much plastic waste out of landfills each year? By using just one"
+      },
+      {
+        "id": 3,
+        "start": 16.080000000000002,
+        "end": 21.72,
+        "text": "less trash bag each month, we can. And Glad Force Flex bags stretch until they're full,"
+      },
+      {
+        "id": 4,
+        "start": 21.72,
+        "end": 27.560000000000002,
+        "text": "so you can take them out less often. It's a small change that can make a big difference."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2012 Glad ForceFlex Bags Mount Rainier Small change Big difference",
+    "decade": 2010,
+    "sequence": 49,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:07:52",
+    "source_end": "0:08:20"
+  }
+}

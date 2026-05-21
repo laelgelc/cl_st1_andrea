@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2020_3",
+  "input_path": "corpus/03_audio/tv_com_2020_3.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_3.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_3.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "What is that musty smell? Oh, damp! Damp! Oh, damp! Hey, language! Damper traps excess moisture to eliminate musty smells. Get rid of the damp!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "What is that musty smell?"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Oh, damp!"
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 7.0,
+        "text": "Damp!"
+      },
+      {
+        "id": 4,
+        "start": 7.0,
+        "end": 9.0,
+        "text": "Oh, damp!"
+      },
+      {
+        "id": 5,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "Hey, language!"
+      },
+      {
+        "id": 6,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "Damper traps excess moisture to eliminate musty smells."
+      },
+      {
+        "id": 7,
+        "start": 13.0,
+        "end": 14.0,
+        "text": "Get rid of the damp!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 DampRid Hanging Moisture Absorber Get Rid of DAAAMP",
+    "decade": 2020,
+    "sequence": 3,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0622",
+    "url": "https://youtu.be/lsgEnukTKuE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

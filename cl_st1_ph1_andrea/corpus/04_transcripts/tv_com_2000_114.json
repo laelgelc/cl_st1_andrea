@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2000_114",
+  "input_path": "corpus/03_audio/tv_com_2000_114.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_114.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_114.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The unexpected can be planned for. Tires with proven stopping power on the wings of Goodyear. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 27.66,
+        "text": "The unexpected can be planned for. Tires with proven stopping power on the wings of Goodyear."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 Goodyear Tires Stopping Power ",
+    "decade": 2000,
+    "sequence": 114,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0556",
+    "url": "https://youtu.be/ADTXKopdumA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

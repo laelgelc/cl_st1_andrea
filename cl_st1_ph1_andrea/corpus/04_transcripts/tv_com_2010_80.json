@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_80",
+  "input_path": "corpus/03_audio/tv_com_2010_80.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_80.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_80.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "these matters they say a lot of things about rain like how hard it's gonna fall the things it does to your parade we've got a saying about rain too when it rains it roars the all-wheel drive charger domestic not domesticated now get 20 off msrp cash allowance on select 2016 dodge charger",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.88,
+        "text": "these matters they say a lot of things about rain like how hard it's gonna fall"
+      },
+      {
+        "id": 2,
+        "start": 5.88,
+        "end": 15.68,
+        "text": "the things it does to your parade we've got a saying about rain too when it rains it roars"
+      },
+      {
+        "id": 3,
+        "start": 15.68,
+        "end": 22.36,
+        "text": "the all-wheel drive charger domestic not domesticated"
+      },
+      {
+        "id": 4,
+        "start": 22.36,
+        "end": 28.96,
+        "text": "now get 20 off msrp cash allowance on select 2016 dodge charger"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 Dodge Charger When It Rains It roars",
+    "decade": 2010,
+    "sequence": 80,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:32:06",
+    "source_end": "0:32:35"
+  }
+}

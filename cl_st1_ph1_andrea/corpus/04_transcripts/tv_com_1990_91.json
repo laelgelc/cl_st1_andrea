@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_91",
+  "input_path": "corpus/03_audio/tv_com_1990_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "We didn't look at it like everyone else. That was too confining. Instead, we opened up the Infiniti G20. With a luxurious cabin-forward design. And the exhilaration of a 140 horsepower engine. It's designed to give you breathing room and take your breath away, all at the same time.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "We didn't look at it like everyone else."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "That was too confining."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 11.0,
+        "text": "Instead, we opened up the Infiniti G20."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 14.0,
+        "text": "With a luxurious cabin-forward design."
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 19.0,
+        "text": "And the exhilaration of a 140 horsepower engine."
+      },
+      {
+        "id": 6,
+        "start": 20.0,
+        "end": 22.0,
+        "text": "It's designed to give you breathing room"
+      },
+      {
+        "id": 7,
+        "start": 23.0,
+        "end": 26.0,
+        "text": "and take your breath away, all at the same time."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Infiniti G20 by Nissan",
+    "decade": 1990,
+    "sequence": 91,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0414",
+    "url": "https://youtu.be/KrjcJeCkBz0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

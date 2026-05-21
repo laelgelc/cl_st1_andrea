@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_48",
+  "input_path": "corpus/03_audio/tv_com_1970_48.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_48.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_48.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Put quality into just about every type of sportswear you can think of. Wrangler for men, women, even children. Wrangler. It doesn't just mean cowboy anymore. We've been spending too much time with cattle.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 13.026375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.44,
+        "end": 4.2,
+        "text": "Put quality into just about every type of sportswear you can think of."
+      },
+      {
+        "id": 2,
+        "start": 4.6000000000000005,
+        "end": 6.84,
+        "text": "Wrangler for men, women, even children."
+      },
+      {
+        "id": 3,
+        "start": 7.5,
+        "end": 10.16,
+        "text": "Wrangler. It doesn't just mean cowboy anymore."
+      },
+      {
+        "id": 4,
+        "start": 10.700000000000001,
+        "end": 12.86,
+        "text": "We've been spending too much time with cattle."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Wrangler",
+    "decade": 1970,
+    "sequence": 48,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:35:23",
+    "source_end": "0:35:36"
+  }
+}

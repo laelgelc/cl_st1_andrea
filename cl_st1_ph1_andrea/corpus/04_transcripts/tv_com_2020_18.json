@@ -1,0 +1,100 @@
+{
+  "commercial_id": "tv_com_2020_18",
+  "input_path": "corpus/03_audio/tv_com_2020_18.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_18.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_18.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Sorry folks, we're stuck. Tour is over. It's over? Here, hold my Oikos. Let's move! Oh, hey there big fella. My Oikos! Your Oikos! Let's move! Oikos is packed with complete protein to help build strong muscles.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Sorry folks, we're stuck."
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 6.0,
+        "text": "Tour is over."
+      },
+      {
+        "id": 3,
+        "start": 6.0,
+        "end": 7.0,
+        "text": "It's over?"
+      },
+      {
+        "id": 4,
+        "start": 7.0,
+        "end": 9.0,
+        "text": "Here, hold my Oikos."
+      },
+      {
+        "id": 5,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "Let's move!"
+      },
+      {
+        "id": 6,
+        "start": 14.0,
+        "end": 16.0,
+        "text": "Oh, hey there big fella."
+      },
+      {
+        "id": 7,
+        "start": 20.0,
+        "end": 21.0,
+        "text": "My Oikos!"
+      },
+      {
+        "id": 8,
+        "start": 22.0,
+        "end": 23.0,
+        "text": "Your Oikos!"
+      },
+      {
+        "id": 9,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Let's move!"
+      },
+      {
+        "id": 10,
+        "start": 26.0,
+        "end": 28.0,
+        "text": "Oikos is packed with complete protein"
+      },
+      {
+        "id": 11,
+        "start": 28.0,
+        "end": 30.0,
+        "text": "to help build strong muscles."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 OIKOS High Protein Yogurt The Big Hill",
+    "decade": 2020,
+    "sequence": 18,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0637",
+    "url": "https://youtu.be/3c3cX2AmCME",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

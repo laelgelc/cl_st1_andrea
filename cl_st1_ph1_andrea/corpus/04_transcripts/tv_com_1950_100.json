@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1950_100",
+  "input_path": "corpus/03_audio/tv_com_1950_100.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_100.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_100.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "if you owned an eight-year-old Volkswagen and had it washed every now and then who would know it's an eight-year-old Volkswagen except you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 57.02825,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.32,
+        "text": "if you owned an eight-year-old Volkswagen and had it washed every now and then"
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 47.980000000000004,
+        "text": "who would know it's an eight-year-old Volkswagen except you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Volkswagen Beetle ",
+    "decade": 1950,
+    "sequence": 100,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0097",
+    "url": "https://youtu.be/q-xh4Webf0A",
+    "source_start": "0:00:00",
+    "source_end": "0:00:57"
+  }
+}

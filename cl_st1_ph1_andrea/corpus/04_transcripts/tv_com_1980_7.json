@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_7",
+  "input_path": "corpus/03_audio/tv_com_1980_7.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_7.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_7.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Meet Mr. Jones, our stockbroker. Mr. Jones is in a depression, because he's wearing one of those diapers that leak. Well, sir, take stock in Huggies. Huggies diapers are form-fitting, and they're thick and absorbent, with soft, gentle elastic at the leg. So Huggies hug, to help stop leaking, and help keep babies happy. Now our stockbroker's wearing Huggies, and happy days are here again. Right, Mr. Jones?",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 3.58,
+        "text": "Meet Mr. Jones, our stockbroker."
+      },
+      {
+        "id": 2,
+        "start": 4.3,
+        "end": 8.98,
+        "text": "Mr. Jones is in a depression, because he's wearing one of those diapers that leak."
+      },
+      {
+        "id": 3,
+        "start": 9.78,
+        "end": 11.74,
+        "text": "Well, sir, take stock in Huggies."
+      },
+      {
+        "id": 4,
+        "start": 12.16,
+        "end": 17.740000000000002,
+        "text": "Huggies diapers are form-fitting, and they're thick and absorbent, with soft, gentle elastic at the leg."
+      },
+      {
+        "id": 5,
+        "start": 17.900000000000002,
+        "end": 21.68,
+        "text": "So Huggies hug, to help stop leaking, and help keep babies happy."
+      },
+      {
+        "id": 6,
+        "start": 22.22,
+        "end": 26.400000000000002,
+        "text": "Now our stockbroker's wearing Huggies, and happy days are here again."
+      },
+      {
+        "id": 7,
+        "start": 26.7,
+        "end": 27.54,
+        "text": "Right, Mr. Jones?"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Huggies disposable diapers with elastic by Kleenex",
+    "decade": 1980,
+    "sequence": 7,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0231",
+    "url": "https://youtu.be/l9kPJrpMsIk",
+    "source_start": "0:09:17",
+    "source_end": "0:09:45"
+  }
+}

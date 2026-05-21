@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1990_52",
+  "input_path": "corpus/03_audio/tv_com_1990_52.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_52.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_52.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You'd never think that kids' tools could be so realistic. But with the Fisher-Price Action Workshop, well, sawing is believing.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.0,
+        "text": "You'd never think that kids' tools could be so realistic."
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 13.0,
+        "text": "But with the Fisher-Price Action Workshop, well, sawing is believing."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Fisher Price Action Workshop",
+    "decade": 1990,
+    "sequence": 52,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0375",
+    "url": "https://youtu.be/bIyfpfvaSus",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

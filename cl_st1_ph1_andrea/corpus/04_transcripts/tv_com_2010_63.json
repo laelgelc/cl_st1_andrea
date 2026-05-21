@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_63",
+  "input_path": "corpus/03_audio/tv_com_2010_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "getting married never guaranteed you picked a beautiful ring thank you we're never having kids come over here we are never moving to the suburbs we are never getting one of those we're never having another kid i'm pregnant i'm never letting go for all the nevers in life state farm is there",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.6000000000000005,
+        "text": "getting married never guaranteed you picked a beautiful ring thank you"
+      },
+      {
+        "id": 2,
+        "start": 6.34,
+        "end": 8.540000000000001,
+        "text": "we're never having kids"
+      },
+      {
+        "id": 3,
+        "start": 8.540000000000001,
+        "end": 16.740000000000002,
+        "text": "come over here we are never moving to the suburbs we are never getting one of those"
+      },
+      {
+        "id": 4,
+        "start": 16.740000000000002,
+        "end": 23.46,
+        "text": "we're never having another kid i'm pregnant i'm never letting go"
+      },
+      {
+        "id": 5,
+        "start": 23.46,
+        "end": 27.560000000000002,
+        "text": "for all the nevers in life state farm is there"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 State Farm Insurance For all the Nevers in Life Never",
+    "decade": 2010,
+    "sequence": 63,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:16:20",
+    "source_end": "0:16:48"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1990_103",
+  "input_path": "corpus/03_audio/tv_com_1990_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "People always ask us plumbers why their drains run slow. Greasy, gunky buildup is why. Now you can treat this and prevent it from coming back with Liquid Plumber Buildup Remover. It releases millions of hungry enzymes that actually eat the gunk so your pipes can flow free. Over time it cleans your whole drain system. Liquid Plumber Buildup Remover gets the gunk that slows your drains. Thanks for watching!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.6000000000000005,
+        "text": "People always ask us plumbers why their drains run slow. Greasy, gunky buildup is"
+      },
+      {
+        "id": 2,
+        "start": 6.6000000000000005,
+        "end": 12.040000000000001,
+        "text": "why. Now you can treat this and prevent it from coming back with Liquid Plumber"
+      },
+      {
+        "id": 3,
+        "start": 12.040000000000001,
+        "end": 18.240000000000002,
+        "text": "Buildup Remover. It releases millions of hungry enzymes that actually eat the"
+      },
+      {
+        "id": 4,
+        "start": 18.240000000000002,
+        "end": 24.560000000000002,
+        "text": "gunk so your pipes can flow free. Over time it cleans your whole drain system."
+      },
+      {
+        "id": 5,
+        "start": 24.560000000000002,
+        "end": 29.52,
+        "text": "Liquid Plumber Buildup Remover gets the gunk that slows your drains."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "Thanks for watching!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Liquid Plumr Buildup Remover",
+    "decade": 1990,
+    "sequence": 103,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0425",
+    "url": "https://youtu.be/FxE6CtqvYRU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

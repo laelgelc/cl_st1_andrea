@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_49",
+  "input_path": "corpus/03_audio/tv_com_1970_49.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_49.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_49.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "guess who garlic garlic that's strong loud and clear you ought to get this signal get the signal signal mouthwash it fights strong mouth odors even onions and garlic new signal a mouthwash so effective it fights strong mouth odors even onions even garlic clinical tests prove it your cleaner fresher breath will prove it guess who uh you got the signal new signal fights strong mouth",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.48,
+        "text": "guess who garlic garlic that's strong loud and clear you ought to get this signal get the signal"
+      },
+      {
+        "id": 2,
+        "start": 9.48,
+        "end": 16.7,
+        "text": "signal mouthwash it fights strong mouth odors even onions and garlic new signal a mouthwash"
+      },
+      {
+        "id": 3,
+        "start": 16.7,
+        "end": 21.98,
+        "text": "so effective it fights strong mouth odors even onions even garlic clinical tests prove it your"
+      },
+      {
+        "id": 4,
+        "start": 21.98,
+        "end": 28.88,
+        "text": "cleaner fresher breath will prove it guess who uh you got the signal new signal fights strong"
+      },
+      {
+        "id": 5,
+        "start": 28.88,
+        "end": 29.04,
+        "text": "mouth"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Signal mouthwash",
+    "decade": 1970,
+    "sequence": 49,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:35:42",
+    "source_end": "0:36:11"
+  }
+}

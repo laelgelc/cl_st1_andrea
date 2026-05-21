@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_46",
+  "input_path": "corpus/03_audio/tv_com_1970_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "fiat presents strada front wheel drive italian flair strada with a remarkable new engine that delivers better mileage better than the gas engine rabbit plus a gas saving engine saving fifth gear standard it's a car with style and class and no expensive habits beginning with the price strada another italian",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.040000000000001,
+        "text": "fiat presents strada front wheel drive italian flair strada with a remarkable new engine that"
+      },
+      {
+        "id": 2,
+        "start": 11.040000000000001,
+        "end": 17.64,
+        "text": "delivers better mileage better than the gas engine rabbit plus a gas saving engine saving"
+      },
+      {
+        "id": 3,
+        "start": 17.64,
+        "end": 25.44,
+        "text": "fifth gear standard it's a car with style and class and no expensive habits beginning with"
+      },
+      {
+        "id": 4,
+        "start": 25.44,
+        "end": 28.68,
+        "text": "the price strada another italian"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Fiat Strada",
+    "decade": 1970,
+    "sequence": 46,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:33:53",
+    "source_end": "0:34:22"
+  }
+}

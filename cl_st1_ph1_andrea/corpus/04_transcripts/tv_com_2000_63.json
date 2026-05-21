@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2000_63",
+  "input_path": "corpus/03_audio/tv_com_2000_63.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_63.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_63.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Getting ready to clean the bathroom, Mom? Yep. Introducing the Mr. Clean Magic Reach, a new extendable cleaning tool that makes cleaning the bathroom less of a workout. It comes with a flexible head and two different cleaning pads. The scrubbing pad tackles showers and cleans tubs with ease. The mopping pad cleans counters, floors, and hard-to-reach areas. Why reach? Get Mr. Clean Magic Reach.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Getting ready to clean the bathroom, Mom?"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 5.0,
+        "text": "Yep."
+      },
+      {
+        "id": 3,
+        "start": 5.0,
+        "end": 8.0,
+        "text": "Introducing the Mr. Clean Magic Reach,"
+      },
+      {
+        "id": 4,
+        "start": 8.0,
+        "end": 12.0,
+        "text": "a new extendable cleaning tool that makes cleaning the bathroom less of a workout."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 16.0,
+        "text": "It comes with a flexible head and two different cleaning pads."
+      },
+      {
+        "id": 6,
+        "start": 16.0,
+        "end": 20.0,
+        "text": "The scrubbing pad tackles showers and cleans tubs with ease."
+      },
+      {
+        "id": 7,
+        "start": 20.0,
+        "end": 25.0,
+        "text": "The mopping pad cleans counters, floors, and hard-to-reach areas."
+      },
+      {
+        "id": 8,
+        "start": 25.0,
+        "end": 27.0,
+        "text": "Why reach?"
+      },
+      {
+        "id": 9,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Get Mr. Clean Magic Reach."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Mr.Clean Magic Reach",
+    "decade": 2000,
+    "sequence": 63,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0505",
+    "url": "https://youtu.be/2zztkoCbReI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

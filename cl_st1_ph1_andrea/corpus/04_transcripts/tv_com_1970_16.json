@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_16",
+  "input_path": "corpus/03_audio/tv_com_1970_16.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_16.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_16.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Good morning, yesterday, you wake up and time has slipped away, and suddenly it's hard to find the memories you left behind. Remember, do you remember the laughter and the tears, the shadows of misty yesterday? You get the yearning now and then to bring the moment back again. Remember, will you remember the times? Of your life. Kodak Film. For the times of your life.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 18.96,
+        "text": "Good morning, yesterday, you wake up and time has slipped away, and suddenly it's hard to find the memories you left behind."
+      },
+      {
+        "id": 2,
+        "start": 18.96,
+        "end": 43.120000000000005,
+        "text": "Remember, do you remember the laughter and the tears, the shadows of misty yesterday? You get the yearning now and then to bring the moment back again."
+      },
+      {
+        "id": 3,
+        "start": 43.120000000000005,
+        "end": 48.92,
+        "text": "Remember, will you remember the times?"
+      },
+      {
+        "id": 4,
+        "start": 48.96,
+        "end": 51.96,
+        "text": "Of your life."
+      },
+      {
+        "id": 5,
+        "start": 55.96,
+        "end": 58.96,
+        "text": "Kodak Film. For the times of your life."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Kodak Film For the times of your life",
+    "decade": 1970,
+    "sequence": 16,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:12:28",
+    "source_end": "0:13:28"
+  }
+}

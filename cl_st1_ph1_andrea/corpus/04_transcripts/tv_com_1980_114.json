@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_114",
+  "input_path": "corpus/03_audio/tv_com_1980_114.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_114.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_114.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "VELVETA! It's those lively jalapenos blended into VELVETA Mexican that makes your nachos or any Mexican cooking a fiesta of taste. VELVETA!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "VELVETA!"
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 13.0,
+        "text": "It's those lively jalapenos blended into VELVETA Mexican that makes your nachos or any Mexican cooking a fiesta of taste."
+      },
+      {
+        "id": 3,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "VELVETA!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Velveeta Mexican snacks",
+    "decade": 1980,
+    "sequence": 114,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:13:33",
+    "source_end": "0:13:48"
+  }
+}

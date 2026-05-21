@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2000_81",
+  "input_path": "corpus/03_audio/tv_com_2000_81.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_81.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_81.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Morning, Joe. New haircut? No. New shoes? No. Hey, Joe. You been working out? Uh, no. Hey, Joe. Shave your mustache? Nope. You sure that's not a new haircut? Yes. Did you just get back from vacation? No. Did you get a promotion? No. Did I? No. No. What's different? He finally asked his doctor about Viagra. Ready to ask your doctor about Viagra for the first time? Find out if a free sample is right for you. To learn more, visit Viagra.com. Ask your doctor. Yeah. And see the difference.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 28.240000000000002,
+        "text": "Morning, Joe. New haircut? No. New shoes? No. Hey, Joe. You been working out? Uh, no. Hey, Joe. Shave your mustache? Nope. You sure that's not a new haircut? Yes. Did you just get back from vacation? No. Did you get a promotion? No. Did I? No. No. What's different? He finally asked his doctor about Viagra. Ready to ask your doctor about Viagra for the first time? Find out if a free sample is right for you. To learn more, visit Viagra.com. Ask your doctor. Yeah. And see the difference."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 Viagra Confidence Man",
+    "decade": 2000,
+    "sequence": 81,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0523",
+    "url": "https://youtu.be/OzI8At86MOg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

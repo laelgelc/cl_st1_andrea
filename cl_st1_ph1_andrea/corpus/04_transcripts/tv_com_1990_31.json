@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_31",
+  "input_path": "corpus/03_audio/tv_com_1990_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The actual size of a Jolly Rancher candy is three-fourths of an inch by three-fourths of an inch, squared. But the actual taste of a Jolly Rancher candy is immeasurable. Jolly Rancher candy, the great taste of fruit, squared. Subtitles by the Amara.org community",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 14.0,
+        "text": "The actual size of a Jolly Rancher candy is three-fourths of an inch by three-fourths of an inch, squared."
+      },
+      {
+        "id": 2,
+        "start": 19.0,
+        "end": 24.0,
+        "text": "But the actual taste of a Jolly Rancher candy is immeasurable."
+      },
+      {
+        "id": 3,
+        "start": 24.0,
+        "end": 29.0,
+        "text": "Jolly Rancher candy, the great taste of fruit, squared."
+      },
+      {
+        "id": 4,
+        "start": 30.0,
+        "end": 33.0,
+        "text": "Subtitles by the Amara.org community"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1993 Jolly Rancher Candy Mountain Bike",
+    "decade": 1990,
+    "sequence": 31,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0354",
+    "url": "https://youtu.be/U2-RbjEx4D4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

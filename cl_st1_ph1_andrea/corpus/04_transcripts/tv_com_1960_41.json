@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_41",
+  "input_path": "corpus/03_audio/tv_com_1960_41.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_41.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_41.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Hi Peg. Hi, honey. How was your day? Another day, another million. Hey, I've got a game for you to play. Okay. Close your eyes. Oh, it's a prize. Touch your hair. What do you think of? Mmm, straw? You win the prize. New pro. The girls at the office use it. And I'm gonna shampoo that head of straw for you. But dinner! Dinner can wait. Did you say new pro? Yeah, it's new and improved. It's got something called soft strand that works in all this lather to soften every strand of hair. Let's go soft strand. Now close your eyes and touch your hair. What do you think of? Oh, something soft and silky. Like a kitten. That's you, baby. That's you. Close your eyes. Touch your hair. Think of new pro for soft.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.120000000000001,
+        "text": "Hi Peg. Hi, honey. How was your day? Another day, another million. Hey, I've got a game for you to play."
+      },
+      {
+        "id": 2,
+        "start": 8.120000000000001,
+        "end": 17.7,
+        "text": "Okay. Close your eyes. Oh, it's a prize. Touch your hair. What do you think of? Mmm, straw? You win the"
+      },
+      {
+        "id": 3,
+        "start": 17.7,
+        "end": 23.580000000000002,
+        "text": "prize. New pro. The girls at the office use it. And I'm gonna shampoo that head of straw for you. But dinner!"
+      },
+      {
+        "id": 4,
+        "start": 23.580000000000002,
+        "end": 31.800000000000004,
+        "text": "Dinner can wait. Did you say new pro? Yeah, it's new and improved. It's got something called soft strand that"
+      },
+      {
+        "id": 5,
+        "start": 31.800000000000004,
+        "end": 40.620000000000005,
+        "text": "works in all this lather to soften every strand of hair. Let's go soft strand. Now close your eyes and touch your"
+      },
+      {
+        "id": 6,
+        "start": 40.620000000000005,
+        "end": 51.34,
+        "text": "hair. What do you think of? Oh, something soft and silky. Like a kitten. That's you, baby. That's you."
+      },
+      {
+        "id": 7,
+        "start": 53.58,
+        "end": 58.019999999999996,
+        "text": "Close your eyes. Touch your hair. Think of new pro for soft."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "New Prell Shampoo",
+    "decade": 1960,
+    "sequence": 41,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:32:19",
+    "source_end": "1:33:17"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1960_87",
+  "input_path": "corpus/03_audio/tv_com_1960_87.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_87.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_87.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "These are your targets. On the neck, behind the ear, inside the elbow. Now good luck on your first solo bite. Mission accomplished. Excellent. Ah, look, a commemoration. Mmm, it smells sweet and good, like RAIN! Raid Flying Insect Killer. The patented clean-smelling formula kills bugs dead with no unpleasant odor. Get Raid from Johnson Wax.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 39.03275,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.0,
+        "text": "These are your targets. On the neck, behind the ear, inside the elbow."
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 11.0,
+        "text": "Now good luck on your first solo bite."
+      },
+      {
+        "id": 3,
+        "start": 17.0,
+        "end": 19.0,
+        "text": "Mission accomplished."
+      },
+      {
+        "id": 4,
+        "start": 19.0,
+        "end": 23.0,
+        "text": "Excellent. Ah, look, a commemoration."
+      },
+      {
+        "id": 5,
+        "start": 23.0,
+        "end": 29.0,
+        "text": "Mmm, it smells sweet and good, like RAIN!"
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 37.0,
+        "text": "Raid Flying Insect Killer. The patented clean-smelling formula kills bugs dead with no unpleasant odor."
+      },
+      {
+        "id": 7,
+        "start": 37.0,
+        "end": 39.0,
+        "text": "Get Raid from Johnson Wax."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1969 Raid Flying Insect Killer Mixed Media (Live-action and Cel Animation)",
+    "decade": 1960,
+    "sequence": 87,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0150",
+    "url": "https://youtu.be/ogTojPhG5w8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:39"
+  }
+}

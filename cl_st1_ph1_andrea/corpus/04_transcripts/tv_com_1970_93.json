@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_93",
+  "input_path": "corpus/03_audio/tv_com_1970_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You may have seen a TV remote control before, but Zenith's got one that does something really different. Of course it changes channels and adjusts the volume, but now an exclusive feature zooms you into the action. Just press a button on the remote control, the zoom picture is 50% larger. Get a Zenith color TV with the zoom remote control. Just press and zoom. you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.36,
+        "end": 6.3,
+        "text": "You may have seen a TV remote control before, but Zenith's got one that does"
+      },
+      {
+        "id": 2,
+        "start": 6.3,
+        "end": 11.56,
+        "text": "something really different. Of course it changes channels and adjusts the volume,"
+      },
+      {
+        "id": 3,
+        "start": 11.56,
+        "end": 16.68,
+        "text": "but now an exclusive feature zooms you into the action. Just press a button on"
+      },
+      {
+        "id": 4,
+        "start": 16.68,
+        "end": 22.92,
+        "text": "the remote control, the zoom picture is 50% larger. Get a Zenith color TV with"
+      },
+      {
+        "id": 5,
+        "start": 22.92,
+        "end": 29.52,
+        "text": "the zoom remote control. Just press and zoom."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 32.06,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Zenith TV Set with zoom remote control",
+    "decade": 1970,
+    "sequence": 93,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0201",
+    "url": "https://youtu.be/Zznhp2CmPNU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

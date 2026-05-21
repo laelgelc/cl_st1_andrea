@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_71",
+  "input_path": "corpus/03_audio/tv_com_2000_71.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_71.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_71.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The 20th century was one of widespread progress and invention, except when it came to cleaning the floors. But all that changed with Swiffer WetJet. Push the button. WetJet helps dissolve and absorb dirt, cleaning places you never imagined you could before. And when the job's done, so's the dirt. Swiffer WetJet, changing the way America cleans floors.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.6,
+        "text": "The 20th century was one of widespread progress and invention, except when it came to cleaning"
+      },
+      {
+        "id": 2,
+        "start": 8.6,
+        "end": 18.12,
+        "text": "the floors. But all that changed with Swiffer WetJet. Push the button. WetJet helps dissolve"
+      },
+      {
+        "id": 3,
+        "start": 18.12,
+        "end": 23.2,
+        "text": "and absorb dirt, cleaning places you never imagined you could before. And when the job's"
+      },
+      {
+        "id": 4,
+        "start": 23.2,
+        "end": 29.02,
+        "text": "done, so's the dirt. Swiffer WetJet, changing the way America cleans floors."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2001 Swiffer Wet Jet",
+    "decade": 2000,
+    "sequence": 71,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0513",
+    "url": "https://youtu.be/rrldVABU_G8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

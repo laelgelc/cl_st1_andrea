@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2010_91",
+  "input_path": "corpus/03_audio/tv_com_2010_91.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_91.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_91.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "We wrote the book on car pricing. For 90 years, we earned your trust as car value experts. Now, we're making you the expert with the Kelley Blue Book Price Advisor. A tool that analyzes what people actually paid for the car you want. So, you can make sure you get into it for a fair price. Why pay more for your next car? Use Price Advisor, only from Kelley Blue Book.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.92,
+        "end": 3.1,
+        "text": "We wrote the book on car pricing."
+      },
+      {
+        "id": 2,
+        "start": 3.96,
+        "end": 8.24,
+        "text": "For 90 years, we earned your trust as car value experts."
+      },
+      {
+        "id": 3,
+        "start": 9.120000000000001,
+        "end": 13.16,
+        "text": "Now, we're making you the expert with the Kelley Blue Book Price Advisor."
+      },
+      {
+        "id": 4,
+        "start": 14.06,
+        "end": 18.1,
+        "text": "A tool that analyzes what people actually paid for the car you want."
+      },
+      {
+        "id": 5,
+        "start": 18.900000000000002,
+        "end": 21.68,
+        "text": "So, you can make sure you get into it for a fair price."
+      },
+      {
+        "id": 6,
+        "start": 22.62,
+        "end": 24.5,
+        "text": "Why pay more for your next car?"
+      },
+      {
+        "id": 7,
+        "start": 25.080000000000002,
+        "end": 27.900000000000002,
+        "text": "Use Price Advisor, only from Kelley Blue Book."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Kelley Blue Book Price Advisor We Wrote the Book on car pricing",
+    "decade": 2010,
+    "sequence": 91,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:59:13",
+    "source_end": "0:59:42"
+  }
+}

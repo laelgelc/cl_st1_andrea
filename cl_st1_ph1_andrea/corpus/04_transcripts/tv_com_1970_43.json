@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1970_43",
+  "input_path": "corpus/03_audio/tv_com_1970_43.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_43.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_43.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Summer belongs to sailing in the sun, having fun, and Hellman's. This summer, when you're making potato salad, try adding cubes of ham and cheese. Then blend in creamy Hellman's real mayonnaise for a summer treat that's different and delicious. Hey, my favorite! Me too! Summer belongs to Hellman's, always so creamy, always so fresh. So bring out the Hellman's and bring out the...",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.96,
+        "end": 7.12,
+        "text": "Summer belongs to sailing in the sun, having fun, and Hellman's."
+      },
+      {
+        "id": 2,
+        "start": 7.5,
+        "end": 11.82,
+        "text": "This summer, when you're making potato salad, try adding cubes of ham and cheese."
+      },
+      {
+        "id": 3,
+        "start": 12.08,
+        "end": 17.2,
+        "text": "Then blend in creamy Hellman's real mayonnaise for a summer treat that's different and delicious."
+      },
+      {
+        "id": 4,
+        "start": 17.6,
+        "end": 18.7,
+        "text": "Hey, my favorite!"
+      },
+      {
+        "id": 5,
+        "start": 18.98,
+        "end": 19.66,
+        "text": "Me too!"
+      },
+      {
+        "id": 6,
+        "start": 19.78,
+        "end": 25.060000000000002,
+        "text": "Summer belongs to Hellman's, always so creamy, always so fresh."
+      },
+      {
+        "id": 7,
+        "start": 25.060000000000002,
+        "end": 29.060000000000002,
+        "text": "So bring out the Hellman's and bring out the..."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Hellmann's mayonnaise",
+    "decade": 1970,
+    "sequence": 43,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:32:23",
+    "source_end": "0:32:52"
+  }
+}

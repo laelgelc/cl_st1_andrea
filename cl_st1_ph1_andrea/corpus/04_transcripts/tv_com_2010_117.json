@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2010_117",
+  "input_path": "corpus/03_audio/tv_com_2010_117.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_117.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_117.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "if you're just cleaning but not sanitizing your pet stains you might be living in a petri dish of bacteria new will light advanced pet stain and odor remover plus sanitize is a revolutionary carpet and upholstery cleaner that permanently removes tough pet stains and kills 99.9% of bacteria for carpet and upholstery that are actually as clean as they look don't just clean sanitize with new wool light sanitizing head stain cleaner",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.8,
+        "text": "if you're just cleaning but not sanitizing your pet stains you might be living in a petri dish"
+      },
+      {
+        "id": 2,
+        "start": 7.8,
+        "end": 14.88,
+        "text": "of bacteria new will light advanced pet stain and odor remover plus sanitize is a revolutionary"
+      },
+      {
+        "id": 3,
+        "start": 14.88,
+        "end": 20.84,
+        "text": "carpet and upholstery cleaner that permanently removes tough pet stains and kills 99.9% of"
+      },
+      {
+        "id": 4,
+        "start": 20.84,
+        "end": 26.46,
+        "text": "bacteria for carpet and upholstery that are actually as clean as they look don't just clean"
+      },
+      {
+        "id": 5,
+        "start": 26.46,
+        "end": 31.8,
+        "text": "sanitize with new wool light sanitizing head stain cleaner"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Woolite Advanced + Sanitize As clean as They Look",
+    "decade": 2010,
+    "sequence": 117,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0616",
+    "url": "https://youtu.be/VFRwki1YWuk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

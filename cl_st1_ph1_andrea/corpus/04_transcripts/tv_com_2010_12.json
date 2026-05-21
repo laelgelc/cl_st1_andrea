@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_12",
+  "input_path": "corpus/03_audio/tv_com_2010_12.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_12.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_12.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Watch this It's a pretty big deal",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.76,
+        "end": 2.7600000000000002,
+        "text": "Watch this"
+      },
+      {
+        "id": 2,
+        "start": 26.240000000000002,
+        "end": 28.240000000000002,
+        "text": "It's a pretty big deal"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 Ford Fiesta Musical ",
+    "decade": 2010,
+    "sequence": 12,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0574",
+    "url": "https://youtu.be/YlqEb2Ydnd0",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

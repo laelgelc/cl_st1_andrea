@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_59",
+  "input_path": "corpus/03_audio/tv_com_2010_59.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_59.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_59.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "need a change of scenery kayak searches hundreds of travel and hotel sites so you can be confident you're getting the perfect hotel at the best price soak it in",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.14,
+        "text": "need a change of scenery kayak searches hundreds of travel and hotel sites so you can be confident"
+      },
+      {
+        "id": 2,
+        "start": 9.14,
+        "end": 13.3,
+        "text": "you're getting the perfect hotel at the best price soak it in"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2018 Kayak Search One and Done Plumber ",
+    "decade": 2010,
+    "sequence": 59,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:14:51",
+    "source_end": "0:15:05"
+  }
+}

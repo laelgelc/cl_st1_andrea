@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_76",
+  "input_path": "corpus/03_audio/tv_com_2020_76.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_76.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_76.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "bring on spring with calculators that can help you color videos that get to the point and keep your projects on point and a store that brings your doorbell anytime you need it this is doing like never before this is today's home depot how doers get more done",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 14.64,
+        "text": "bring on spring with calculators that can help you color videos that get to the point and keep"
+      },
+      {
+        "id": 2,
+        "start": 14.64,
+        "end": 22.56,
+        "text": "your projects on point and a store that brings your doorbell anytime you need it this is doing"
+      },
+      {
+        "id": 3,
+        "start": 22.56,
+        "end": 29.84,
+        "text": "like never before this is today's home depot how doers get more done"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 The Home Depot Bring on Spring: Calculators, Videos and Delivery",
+    "decade": 2020,
+    "sequence": 76,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0695",
+    "url": "https://youtu.be/mP2n378IQic",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

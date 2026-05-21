@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_10",
+  "input_path": "corpus/03_audio/tv_com_1980_10.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_10.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_10.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Fresh and clean as a whistle. That's Irish Spring. Fresh and clean as a whistle. Irish Spring's green and white stripes have two truly effective deodorants. Two deodorants. And a fine fresh scent. So you're fresh and clean as a whistle. That's Irish Spring deodorant soap. Gets you fresh and clean as a whistle.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.120000000000001,
+        "text": "Fresh and clean as a whistle. That's Irish Spring. Fresh and clean as a whistle."
+      },
+      {
+        "id": 2,
+        "start": 12.700000000000001,
+        "end": 17.98,
+        "text": "Irish Spring's green and white stripes have two truly effective deodorants. Two deodorants."
+      },
+      {
+        "id": 3,
+        "start": 18.3,
+        "end": 23.62,
+        "text": "And a fine fresh scent. So you're fresh and clean as a whistle."
+      },
+      {
+        "id": 4,
+        "start": 24.0,
+        "end": 28.78,
+        "text": "That's Irish Spring deodorant soap. Gets you fresh and clean as a whistle."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Irish Spring The double deodorant soap Clean as a whistle",
+    "decade": 1980,
+    "sequence": 10,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:07:09",
+    "source_end": "0:07:38"
+  }
+}

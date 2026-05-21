@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_34",
+  "input_path": "corpus/03_audio/tv_com_1970_34.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_34.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_34.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I use dial very dry helps keep me dry you know I don't use antiperspirant yeah I know oh hey I use this dial very dry it helps protect me against odor never use antiperspirant myself yeah I know well I use dial very dry antiperspirant it helps protect against stains I never bother with those yes I know what an antiperspirant ought to do dial antiperspirant does in spray or",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.42,
+        "text": "I use dial very dry helps keep me dry you know I don't use antiperspirant yeah I know"
+      },
+      {
+        "id": 2,
+        "start": 7.42,
+        "end": 14.72,
+        "text": "oh hey I use this dial very dry it helps protect me against odor never use antiperspirant myself"
+      },
+      {
+        "id": 3,
+        "start": 14.72,
+        "end": 22.96,
+        "text": "yeah I know well I use dial very dry antiperspirant it helps protect against stains I never bother"
+      },
+      {
+        "id": 4,
+        "start": 22.96,
+        "end": 29.7,
+        "text": "with those yes I know what an antiperspirant ought to do dial antiperspirant does in spray"
+      },
+      {
+        "id": 5,
+        "start": 29.7,
+        "end": 29.919999999999998,
+        "text": "or"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Dial deodorant antiperspirant",
+    "decade": 1970,
+    "sequence": 34,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:26:41",
+    "source_end": "0:27:11"
+  }
+}

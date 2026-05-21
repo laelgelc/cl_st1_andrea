@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_82",
+  "input_path": "corpus/03_audio/tv_com_1990_82.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_82.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_82.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "With a 2,510-pound payload, a 5,000-pound towing capacity, and a powerful V6 engine, the 1992 Toyota one-ton pickup might just surprise you. Thanks for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 16.2,
+        "text": "With a 2,510-pound payload, a 5,000-pound towing capacity, and a powerful V6 engine,"
+      },
+      {
+        "id": 2,
+        "start": 16.2,
+        "end": 21.04,
+        "text": "the 1992 Toyota one-ton pickup might just surprise you."
+      },
+      {
+        "id": 3,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "Thanks for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Toyota 1 Ton Pickup",
+    "decade": 1990,
+    "sequence": 82,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0405",
+    "url": "https://youtu.be/UwhJlbjgi9I",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

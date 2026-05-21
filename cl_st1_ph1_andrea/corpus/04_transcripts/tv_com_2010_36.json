@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2010_36",
+  "input_path": "corpus/03_audio/tv_com_2010_36.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_36.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_36.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This fall, I got lots of stuff going on. Mom's gonna need some help. At Care.com, we can help you find the perfect babysitter or nanny who can help you with all the after-school stuff, too. Like rides, meals, homework, and more. Search from lots of local profiles, plus request background checks and driving records. You can even pay your sitter online. Get started today. Care.com.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.94,
+        "text": "This fall, I got lots of stuff going on."
+      },
+      {
+        "id": 2,
+        "start": 6.44,
+        "end": 8.22,
+        "text": "Mom's gonna need some help."
+      },
+      {
+        "id": 3,
+        "start": 8.6,
+        "end": 12.22,
+        "text": "At Care.com, we can help you find the perfect babysitter or nanny"
+      },
+      {
+        "id": 4,
+        "start": 12.22,
+        "end": 14.98,
+        "text": "who can help you with all the after-school stuff, too."
+      },
+      {
+        "id": 5,
+        "start": 15.24,
+        "end": 18.12,
+        "text": "Like rides, meals, homework, and more."
+      },
+      {
+        "id": 6,
+        "start": 18.78,
+        "end": 23.32,
+        "text": "Search from lots of local profiles, plus request background checks and driving records."
+      },
+      {
+        "id": 7,
+        "start": 23.7,
+        "end": 25.72,
+        "text": "You can even pay your sitter online."
+      },
+      {
+        "id": 8,
+        "start": 26.64,
+        "end": 29.04,
+        "text": "Get started today. Care.com."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 Care.com Lots Going On",
+    "decade": 2010,
+    "sequence": 36,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0598",
+    "url": "https://youtu.be/iToxsEBml58",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1970_98",
+  "input_path": "corpus/03_audio/tv_com_1970_98.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_98.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_98.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Check a lickin. I'd like. We're closed, lady. My cousin's dropped in. Lady, I'm mopping up. What are you mopping with? What am I mopping with? What kind of cleaner? A liquid. Mix some spick and span. Spick and span? Want to get home? It'll put power in the water. Go over where you're just clean. But it's clean. Look, spick and span wouldn't leave all that greasy dirt. Hey, thanks, lady. If there's anything I could ever do for you. I have these cousins who dropped in. Spick and span. Gets the dirt liquid cleaners leave behind. Spick and span.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 29.8,
+        "text": "Check a lickin. I'd like. We're closed, lady. My cousin's dropped in. Lady, I'm mopping up. What are you mopping with? What am I mopping with? What kind of cleaner? A liquid. Mix some spick and span. Spick and span? Want to get home? It'll put power in the water. Go over where you're just clean. But it's clean. Look, spick and span wouldn't leave all that greasy dirt. Hey, thanks, lady. If there's anything I could ever do for you. I have these cousins who dropped in. Spick and span. Gets the dirt liquid cleaners leave behind."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "Spick and span."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Spic and Span floor cleaner early 70s",
+    "decade": 1970,
+    "sequence": 98,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0206",
+    "url": "https://youtu.be/wd8dPdXASI4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

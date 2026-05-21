@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_93",
+  "input_path": "corpus/03_audio/tv_com_2010_93.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_93.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_93.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "if there's one thing the human foot has always been good at it's unleashing great power the is performance line just got a power boost introducing the lexus is 200 turbo and is 300 all-wheel drive v6 the is line has never been more powerful at least the 2016 is 200 turbo or the 2016 is 300 all-wheel drive for these terms see you next",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.200000000000001,
+        "text": "if there's one thing the human foot has always been good at it's unleashing great power the is"
+      },
+      {
+        "id": 2,
+        "start": 11.200000000000001,
+        "end": 17.98,
+        "text": "performance line just got a power boost introducing the lexus is 200 turbo and is 300 all-wheel drive"
+      },
+      {
+        "id": 3,
+        "start": 17.98,
+        "end": 26.400000000000002,
+        "text": "v6 the is line has never been more powerful at least the 2016 is 200 turbo or the 2016 is 300"
+      },
+      {
+        "id": 4,
+        "start": 26.400000000000002,
+        "end": 28.94,
+        "text": "all-wheel drive for these terms see you next"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2015 Lexus IS The Pursuit of Perfection The Human Foot ",
+    "decade": 2010,
+    "sequence": 93,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "1:05:16",
+    "source_end": "1:05:45"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_2000_89",
+  "input_path": "corpus/03_audio/tv_com_2000_89.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_89.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_89.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Wow, what a day. Driver, to the playground at once. The scenic route, please. Huggy Supreme Baby Wipes. The best combination of softness and thickness for gentle and thorough cleaning. Only the best.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.093,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Wow, what a day."
+      },
+      {
+        "id": 2,
+        "start": 2.0,
+        "end": 4.0,
+        "text": "Driver, to the playground at once."
+      },
+      {
+        "id": 3,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "The scenic route, please."
+      },
+      {
+        "id": 4,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "Huggy Supreme Baby Wipes."
+      },
+      {
+        "id": 5,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "The best combination of softness and thickness"
+      },
+      {
+        "id": 6,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "for gentle and thorough cleaning."
+      },
+      {
+        "id": 7,
+        "start": 12.0,
+        "end": 14.0,
+        "text": "Only the best."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Huggies Supreme Baby Wipes",
+    "decade": 2000,
+    "sequence": 89,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0531",
+    "url": "https://youtu.be/8-B0er4SRQ8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

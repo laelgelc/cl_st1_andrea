@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1990_36",
+  "input_path": "corpus/03_audio/tv_com_1990_36.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_36.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_36.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Triples taste good. You'll be surprised. Nothing surprises me. Crisp rice like Rice Krispies, plus crisp wheat and crisp corn, give triples a taste so surprisingly good, people do a... ...triple take. He liked it. I'm not surprised.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.5,
+        "text": "Triples taste good. You'll be surprised."
+      },
+      {
+        "id": 2,
+        "start": 2.5,
+        "end": 4.0,
+        "text": "Nothing surprises me."
+      },
+      {
+        "id": 3,
+        "start": 4.0,
+        "end": 7.5,
+        "text": "Crisp rice like Rice Krispies, plus crisp wheat and crisp corn,"
+      },
+      {
+        "id": 4,
+        "start": 7.5,
+        "end": 11.0,
+        "text": "give triples a taste so surprisingly good, people do a..."
+      },
+      {
+        "id": 5,
+        "start": 11.5,
+        "end": 12.5,
+        "text": "...triple take."
+      },
+      {
+        "id": 6,
+        "start": 12.5,
+        "end": 13.5,
+        "text": "He liked it."
+      },
+      {
+        "id": 7,
+        "start": 13.5,
+        "end": 15.0,
+        "text": "I'm not surprised."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Triples Cereal",
+    "decade": 1990,
+    "sequence": 36,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0359",
+    "url": "https://youtu.be/W8MSK5OVnws",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

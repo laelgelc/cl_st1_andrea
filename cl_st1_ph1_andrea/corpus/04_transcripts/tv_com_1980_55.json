@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_55",
+  "input_path": "corpus/03_audio/tv_com_1980_55.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_55.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_55.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "American Airlines has such a beautiful prize to the Caribbean. Well, I just got carried away. Now, leave winter behind for American's Caribbean for only $399. And this great $399 package includes hotel and airfare to any one of 12 sun-drenched Caribbean islands. So, what are you waiting for? We're American Airlines, doing what we do best.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "American Airlines has such a beautiful prize to the Caribbean."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 7.0,
+        "text": "Well, I just got carried away."
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 12.0,
+        "text": "Now, leave winter behind for American's Caribbean for only $399."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 20.0,
+        "text": "And this great $399 package includes hotel and airfare to any one of 12 sun-drenched Caribbean islands."
+      },
+      {
+        "id": 5,
+        "start": 20.0,
+        "end": 23.0,
+        "text": "So, what are you waiting for?"
+      },
+      {
+        "id": 6,
+        "start": 23.0,
+        "end": 29.0,
+        "text": "We're American Airlines, doing what we do best."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1984 American Airlines Caribbean",
+    "decade": 1980,
+    "sequence": 55,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0275",
+    "url": "https://youtu.be/iYfxfBYmxRs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

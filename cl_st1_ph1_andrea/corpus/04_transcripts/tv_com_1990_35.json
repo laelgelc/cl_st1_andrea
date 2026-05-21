@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_35",
+  "input_path": "corpus/03_audio/tv_com_1990_35.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_35.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_35.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "for some people the best thing about the morning is that it's over by the afternoon so the brawn shaver is quiet to soothe the soul it's curved to comfortably fit the face with three shaving positions to cut groom and trim with superb results brawn a state-of-the-art shaver that could improve your state of mind the world's number one selling",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.52,
+        "text": "for some people the best thing about the morning is that it's over by the afternoon so the brawn"
+      },
+      {
+        "id": 2,
+        "start": 8.52,
+        "end": 16.5,
+        "text": "shaver is quiet to soothe the soul it's curved to comfortably fit the face with three shaving"
+      },
+      {
+        "id": 3,
+        "start": 16.5,
+        "end": 24.48,
+        "text": "positions to cut groom and trim with superb results brawn a state-of-the-art shaver that"
+      },
+      {
+        "id": 4,
+        "start": 24.48,
+        "end": 28.880000000000003,
+        "text": "could improve your state of mind the world's number one selling"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Braun Shaver",
+    "decade": 1990,
+    "sequence": 35,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0358",
+    "url": "https://youtu.be/XTWJl6dS7iA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

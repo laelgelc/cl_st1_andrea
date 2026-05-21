@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2010_112",
+  "input_path": "corpus/03_audio/tv_com_2010_112.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_112.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_112.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I'm the proud dad of three messy kids. They get stains like you wouldn't believe. This Tide Ultra Stain Release and Zap Cap helps me get out pretty much any stain. Can I help? Try our newest Ultra Stain Release. Helps remove 99% of everyday stains.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.093,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.2800000000000002,
+        "text": "I'm the proud dad of three messy kids."
+      },
+      {
+        "id": 2,
+        "start": 2.6,
+        "end": 3.86,
+        "text": "They get stains like you wouldn't believe."
+      },
+      {
+        "id": 3,
+        "start": 4.28,
+        "end": 7.4,
+        "text": "This Tide Ultra Stain Release and Zap Cap helps me get out pretty much any stain."
+      },
+      {
+        "id": 4,
+        "start": 7.48,
+        "end": 8.14,
+        "text": "Can I help?"
+      },
+      {
+        "id": 5,
+        "start": 10.08,
+        "end": 12.24,
+        "text": "Try our newest Ultra Stain Release."
+      },
+      {
+        "id": 6,
+        "start": 12.5,
+        "end": 14.76,
+        "text": "Helps remove 99% of everyday stains."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Tide+ Ultra Stain Release Daughters",
+    "decade": 2010,
+    "sequence": 112,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0611",
+    "url": "https://youtu.be/zbJhO-D72eU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:16"
+  }
+}

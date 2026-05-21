@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1950_101",
+  "input_path": "corpus/03_audio/tv_com_1950_101.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_101.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_101.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "America's first commercial jet transport takes another step towards service on the airways of the world. A giant Boeing Stratoliner is wheeled out for its maiden flight. Fitted with noise suppressors on the mighty jets, it begins 12 months of rigorous flight testing to qualify for a Civil Aeronautics Administration certificate. Then a fleet of 150 already in production will go into service. Crowds and rain fail to mar the maiden flight of America's newest queen of the airways.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 40.0311875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 5.16,
+        "text": "America's first commercial jet transport takes another step towards service on"
+      },
+      {
+        "id": 2,
+        "start": 5.16,
+        "end": 9.88,
+        "text": "the airways of the world. A giant Boeing Stratoliner is wheeled out for its maiden"
+      },
+      {
+        "id": 3,
+        "start": 9.88,
+        "end": 14.44,
+        "text": "flight. Fitted with noise suppressors on the mighty jets, it begins 12 months of"
+      },
+      {
+        "id": 4,
+        "start": 14.44,
+        "end": 18.12,
+        "text": "rigorous flight testing to qualify for a Civil Aeronautics Administration"
+      },
+      {
+        "id": 5,
+        "start": 18.12,
+        "end": 25.240000000000002,
+        "text": "certificate. Then a fleet of 150 already in production will go into service."
+      },
+      {
+        "id": 6,
+        "start": 30.0,
+        "end": 36.18,
+        "text": "Crowds and rain fail to mar the maiden flight of America's newest queen of the"
+      },
+      {
+        "id": 7,
+        "start": 36.18,
+        "end": 38.480000000000004,
+        "text": "airways."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "The Boeing Model 307 Stratoliner",
+    "decade": 1950,
+    "sequence": 101,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0098",
+    "url": "https://youtu.be/Hw-oHfhj728",
+    "source_start": "0:00:00",
+    "source_end": "0:00:40"
+  }
+}

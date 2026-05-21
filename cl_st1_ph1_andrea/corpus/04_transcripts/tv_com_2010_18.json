@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2010_18",
+  "input_path": "corpus/03_audio/tv_com_2010_18.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_18.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_18.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Oh, when you're smiling, when you're smiling, the whole world smiles with you, baby, baby. Yes, when you're laughing, when you're laughing, yes, the sun comes shining through. Yes, when you're laughing, when you're laughing, the whole world smiles with you, baby, baby.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 25.76,
+        "text": "Oh, when you're smiling, when you're smiling, the whole world smiles with you, baby, baby."
+      },
+      {
+        "id": 2,
+        "start": 25.76,
+        "end": 47.96,
+        "text": "Yes, when you're laughing, when you're laughing, yes, the sun comes shining through."
+      },
+      {
+        "id": 3,
+        "start": 55.76,
+        "end": 59.0,
+        "text": "Yes, when you're laughing, when you're laughing, the whole world smiles with you, baby, baby."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2010 IPhone4 Apple FaceTime",
+    "decade": 2010,
+    "sequence": 18,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0580",
+    "url": "https://youtu.be/TmE6jrqqsQQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:59"
+  }
+}

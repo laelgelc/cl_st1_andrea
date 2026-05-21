@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_110",
+  "input_path": "corpus/03_audio/tv_com_1980_110.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_110.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_110.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You are about to experience something new. A new wave of taste that will stretch your imagination. A taste so smooth, so refreshing, so irresistible. Your only choice will be to catch it. Catch the wave. Coke.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.0,
+        "text": "You are about to experience something new."
+      },
+      {
+        "id": 2,
+        "start": 10.0,
+        "end": 15.0,
+        "text": "A new wave of taste that will stretch your imagination."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 21.0,
+        "text": "A taste so smooth, so refreshing, so irresistible."
+      },
+      {
+        "id": 4,
+        "start": 21.0,
+        "end": 26.0,
+        "text": "Your only choice will be to catch it."
+      },
+      {
+        "id": 5,
+        "start": 26.0,
+        "end": 30.0,
+        "text": "Catch the wave. Coke."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Coke Catch the wave",
+    "decade": 1980,
+    "sequence": 110,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0233",
+    "url": "https://youtu.be/HiP1E-eIaMA",
+    "source_start": "0:03:19",
+    "source_end": "0:03:48"
+  }
+}

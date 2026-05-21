@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_42",
+  "input_path": "corpus/03_audio/tv_com_1990_42.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_42.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_42.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Pizza Hut wants you to share in the magic of Walt Disney's newest video classic, Beauty and the Beast. Now your kids can collect Beasts, Bells, Chip and Cogsworth. Each puppet's $1.49 with any pizza purchase. And when you buy the video at your local video store, you get the Pizza Hut value card for great pizza value. So experience the fantasy of Beauty and the Beast, now with Pizza Hut.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Pizza Hut wants you to share in the magic of Walt Disney's newest video classic, Beauty and the Beast."
+      },
+      {
+        "id": 2,
+        "start": 8.28,
+        "end": 13.120000000000001,
+        "text": "Now your kids can collect Beasts, Bells, Chip and Cogsworth."
+      },
+      {
+        "id": 3,
+        "start": 13.38,
+        "end": 16.04,
+        "text": "Each puppet's $1.49 with any pizza purchase."
+      },
+      {
+        "id": 4,
+        "start": 16.44,
+        "end": 22.1,
+        "text": "And when you buy the video at your local video store, you get the Pizza Hut value card for great pizza value."
+      },
+      {
+        "id": 5,
+        "start": 23.66,
+        "end": 28.04,
+        "text": "So experience the fantasy of Beauty and the Beast, now with Pizza Hut."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Pizza Hut Beauty and the Beast",
+    "decade": 1990,
+    "sequence": 42,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0365",
+    "url": "https://youtu.be/ra1GVuKp83M",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

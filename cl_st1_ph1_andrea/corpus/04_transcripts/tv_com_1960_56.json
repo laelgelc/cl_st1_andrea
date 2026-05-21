@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_56",
+  "input_path": "corpus/03_audio/tv_com_1960_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "It's boys that are beautiful, energetic, joyous, eager, made of fun. That's why Don Moore makes Banlon shirts of colorful Cabriolet nylon. They're beautiful too, moving, playing, jumping. Don Moore shirts, made for fun, just made for boys.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 13.200000000000001,
+        "text": "It's boys that are beautiful, energetic, joyous, eager, made of fun. That's why Don Moore makes"
+      },
+      {
+        "id": 2,
+        "start": 13.200000000000001,
+        "end": 20.28,
+        "text": "Banlon shirts of colorful Cabriolet nylon. They're beautiful too, moving, playing, jumping."
+      },
+      {
+        "id": 3,
+        "start": 20.28,
+        "end": 29.04,
+        "text": "Don Moore shirts, made for fun, just made for boys."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Donmoor Shirts of Caprolan nylon by Allied Chemical",
+    "decade": 1960,
+    "sequence": 56,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0130",
+    "url": "https://youtu.be/sPzg0n2LycI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

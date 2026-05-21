@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1960_45",
+  "input_path": "corpus/03_audio/tv_com_1960_45.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_45.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_45.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "A new season for soft drinks is here. Open a bottle of Sprite and springtime breaks loose. Sprite, it's a natural. Sprite is light and not too sweet. It's a natural. Open a bottle of Sprite and springtime breaks loose. Sprite has a clean, pure, natural taste. There are no artificial flavorings in Sprite. It's a natural. Next time, make it springtime. Open a bottle of Sprite and springtime breaks loose. Open a bottle of Sprite and springtime breaks loose.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 56.02975,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.0,
+        "text": "A new season for soft drinks is here."
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 14.0,
+        "text": "Open a bottle of Sprite and springtime breaks loose."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 21.0,
+        "text": "Sprite, it's a natural."
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 27.0,
+        "text": "Sprite is light and not too sweet. It's a natural."
+      },
+      {
+        "id": 5,
+        "start": 27.0,
+        "end": 35.0,
+        "text": "Open a bottle of Sprite and springtime breaks loose."
+      },
+      {
+        "id": 6,
+        "start": 36.0,
+        "end": 45.0,
+        "text": "Sprite has a clean, pure, natural taste. There are no artificial flavorings in Sprite. It's a natural. Next time, make it springtime."
+      },
+      {
+        "id": 7,
+        "start": 46.0,
+        "end": 51.0,
+        "text": "Open a bottle of Sprite and springtime breaks loose."
+      },
+      {
+        "id": 8,
+        "start": 52.0,
+        "end": 56.0,
+        "text": "Open a bottle of Sprite and springtime breaks loose."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Sprite",
+    "decade": 1960,
+    "sequence": 45,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0119",
+    "url": "https://youtu.be/-4xP-d619TU",
+    "source_start": "0:00:44",
+    "source_end": "0:01:40"
+  }
+}

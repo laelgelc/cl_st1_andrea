@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_103",
+  "input_path": "corpus/03_audio/tv_com_2020_103.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_103.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_103.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "every parent knows when it's time to go into protect mode kill 99.9% of bacteria when you add Lysol laundry sanitizer to your laundry routine",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.08,
+        "text": "every parent knows when it's time to go into protect mode kill 99.9% of bacteria"
+      },
+      {
+        "id": 2,
+        "start": 10.08,
+        "end": 13.200000000000001,
+        "text": "when you add Lysol laundry sanitizer to your laundry routine"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2024 Lysol Laundry Sanitizer Protect Mode",
+    "decade": 2020,
+    "sequence": 103,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0722",
+    "url": "https://youtu.be/pab_WbRAmtk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1980_2",
+  "input_path": "corpus/03_audio/tv_com_1980_2.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_2.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_2.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "with double-layer design for dependable protection a comfortable plastic applicator a deodorant for freshness a special plastic wrap so they won't open in your purse do more latex tampons give you what you want and more you seem to do more yes",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 12.08,
+        "text": "with double-layer design for dependable protection a comfortable plastic applicator"
+      },
+      {
+        "id": 2,
+        "start": 12.08,
+        "end": 22.64,
+        "text": "a deodorant for freshness a special plastic wrap so they won't open in your purse"
+      },
+      {
+        "id": 3,
+        "start": 22.64,
+        "end": 28.64,
+        "text": "do more latex tampons give you what you want and more you seem to do more"
+      },
+      {
+        "id": 4,
+        "start": 28.64,
+        "end": 31.92,
+        "text": "yes"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Playtex deodorant tampons",
+    "decade": 1980,
+    "sequence": 2,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:02:34",
+    "source_end": "0:03:04"
+  }
+}

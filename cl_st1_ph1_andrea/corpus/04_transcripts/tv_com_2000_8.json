@@ -1,0 +1,124 @@
+{
+  "commercial_id": "tv_com_2000_8",
+  "input_path": "corpus/03_audio/tv_com_2000_8.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_8.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_8.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Welcome to the Gamgort. Checking in? Yes. First time with us? Yeah. Would you like a free newspaper in the morning? Sure. Shoeshine? Okay. Wake-up call? Seven a.m. How about our turn-down service with a complimentary chocolate on your pillow? Uh, great. Can I watch TV? No. Sorry.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.7664375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 3.0,
+        "text": "Welcome to the Gamgort. Checking in?"
+      },
+      {
+        "id": 2,
+        "start": 3.0,
+        "end": 4.0,
+        "text": "Yes."
+      },
+      {
+        "id": 3,
+        "start": 4.0,
+        "end": 5.0,
+        "text": "First time with us?"
+      },
+      {
+        "id": 4,
+        "start": 5.0,
+        "end": 6.0,
+        "text": "Yeah."
+      },
+      {
+        "id": 5,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "Would you like a free newspaper in the morning?"
+      },
+      {
+        "id": 6,
+        "start": 8.0,
+        "end": 9.0,
+        "text": "Sure."
+      },
+      {
+        "id": 7,
+        "start": 9.0,
+        "end": 11.0,
+        "text": "Shoeshine?"
+      },
+      {
+        "id": 8,
+        "start": 11.0,
+        "end": 12.0,
+        "text": "Okay."
+      },
+      {
+        "id": 9,
+        "start": 12.0,
+        "end": 13.0,
+        "text": "Wake-up call?"
+      },
+      {
+        "id": 10,
+        "start": 13.0,
+        "end": 14.0,
+        "text": "Seven a.m."
+      },
+      {
+        "id": 11,
+        "start": 14.0,
+        "end": 18.0,
+        "text": "How about our turn-down service with a complimentary chocolate on your pillow?"
+      },
+      {
+        "id": 12,
+        "start": 18.0,
+        "end": 20.0,
+        "text": "Uh, great."
+      },
+      {
+        "id": 13,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Can I watch TV?"
+      },
+      {
+        "id": 14,
+        "start": 26.0,
+        "end": 27.0,
+        "text": "No."
+      },
+      {
+        "id": 15,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Sorry."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2002 M & M's Hotel",
+    "decade": 2000,
+    "sequence": 8,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0450",
+    "url": "https://youtu.be/xTD6U4Vculk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

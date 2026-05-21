@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_2000_6",
+  "input_path": "corpus/03_audio/tv_com_2000_6.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_6.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_6.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "We're the breakfast crew and we've got our own style of breakfast. From now on, mornings will be powered by food that's four-sided. Toasters will become a fashion statement. And our tongues will vibrate with a sweet taste of callous pot tarts. The wild style frosted pastry pumped up with real fruit filling. Part of this complete breakfast. Because the breakfast crew believes breakfast should be loud. Real loud. And that's why we say pot tarts.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "We're the breakfast crew and we've got our own style of breakfast."
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 10.0,
+        "text": "From now on, mornings will be powered by food that's four-sided."
+      },
+      {
+        "id": 3,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "Toasters will become a fashion statement."
+      },
+      {
+        "id": 4,
+        "start": 13.0,
+        "end": 17.0,
+        "text": "And our tongues will vibrate with a sweet taste of callous pot tarts."
+      },
+      {
+        "id": 5,
+        "start": 17.0,
+        "end": 20.0,
+        "text": "The wild style frosted pastry pumped up with real fruit filling."
+      },
+      {
+        "id": 6,
+        "start": 20.0,
+        "end": 22.0,
+        "text": "Part of this complete breakfast."
+      },
+      {
+        "id": 7,
+        "start": 22.0,
+        "end": 25.0,
+        "text": "Because the breakfast crew believes breakfast should be loud."
+      },
+      {
+        "id": 8,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "Real loud."
+      },
+      {
+        "id": 9,
+        "start": 26.0,
+        "end": 29.0,
+        "text": "And that's why we say pot tarts."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Pop-Tarts Toaster pastries by Kellogg's",
+    "decade": 2000,
+    "sequence": 6,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0448",
+    "url": "https://youtu.be/k-tjMqDoEpM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_5",
+  "input_path": "corpus/03_audio/tv_com_2000_5.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_5.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_5.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Get a free CD from GetMusic.com featuring top artists like Sting and Brian McKnight. Details on specially marked packages. Ability to dance not included.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.441375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 26.14,
+        "text": "Get a free CD from GetMusic.com featuring top artists like Sting and Brian McKnight."
+      },
+      {
+        "id": 2,
+        "start": 26.14,
+        "end": 28.1,
+        "text": "Details on specially marked packages."
+      },
+      {
+        "id": 3,
+        "start": 28.560000000000002,
+        "end": 30.16,
+        "text": "Ability to dance not included."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Cheerios General Mills",
+    "decade": 2000,
+    "sequence": 5,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0447",
+    "url": "https://youtu.be/oko9kE31J-c",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

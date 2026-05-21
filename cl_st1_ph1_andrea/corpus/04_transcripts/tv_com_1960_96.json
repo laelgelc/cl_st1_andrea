@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1960_96",
+  "input_path": "corpus/03_audio/tv_com_1960_96.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_96.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_96.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Are you children using Dad's Hi-Fi again? No, Mom. Dad got us the Swingster. Sounds terrific, doesn't it? You bet. It's Kenner's transistorized Swingster. The small phonograph with the big sound. Take it any place. Swingster plays albums and 45s. The lift guide sets the tone arm. Swingster by Kenner.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Are you children using Dad's Hi-Fi again?"
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 8.0,
+        "text": "No, Mom. Dad got us the Swingster."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "Sounds terrific, doesn't it?"
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 14.0,
+        "text": "You bet. It's Kenner's transistorized Swingster."
+      },
+      {
+        "id": 5,
+        "start": 14.0,
+        "end": 16.0,
+        "text": "The small phonograph with the big sound."
+      },
+      {
+        "id": 6,
+        "start": 17.0,
+        "end": 18.0,
+        "text": "Take it any place."
+      },
+      {
+        "id": 7,
+        "start": 18.0,
+        "end": 21.0,
+        "text": "Swingster plays albums and 45s."
+      },
+      {
+        "id": 8,
+        "start": 21.0,
+        "end": 23.0,
+        "text": "The lift guide sets the tone arm."
+      },
+      {
+        "id": 9,
+        "start": 26.0,
+        "end": 28.0,
+        "text": "Swingster by Kenner."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Swingster The small phonograph by Kenner",
+    "decade": 1960,
+    "sequence": 96,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0159",
+    "url": "https://youtu.be/wyVJgbzM9SE",
+    "source_start": "0:00:06",
+    "source_end": "0:00:34"
+  }
+}

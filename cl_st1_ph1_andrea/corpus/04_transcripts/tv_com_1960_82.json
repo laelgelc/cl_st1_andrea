@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_82",
+  "input_path": "corpus/03_audio/tv_com_1960_82.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_82.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_82.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "ah romance somebody's trying to sell you a carpet wouldn't it be nice to buy a carpet like this just on glamour alone nice but that's why Lee's believes in glamour plus a back that can take a beating glamour plus good strong fibers and no skimping a pile that won't fall flat on its face Lee's gives you the glamour you want all right but we give you a lot more behind it a lot of good down-to-earth reasons for buying those heavenly carpets by Lee's",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 49.0405625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.28,
+        "text": "ah romance somebody's trying to sell you a carpet wouldn't it be nice to buy a carpet"
+      },
+      {
+        "id": 2,
+        "start": 11.28,
+        "end": 22.44,
+        "text": "like this just on glamour alone nice but that's why Lee's believes in glamour plus a back that"
+      },
+      {
+        "id": 3,
+        "start": 22.44,
+        "end": 32.82,
+        "text": "can take a beating glamour plus good strong fibers and no skimping a pile that won't fall"
+      },
+      {
+        "id": 4,
+        "start": 32.82,
+        "end": 39.06,
+        "text": "flat on its face Lee's gives you the glamour you want all right but we give you a lot more"
+      },
+      {
+        "id": 5,
+        "start": 39.06,
+        "end": 45.24,
+        "text": "behind it a lot of good down-to-earth reasons for buying those heavenly carpets by Lee's"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Lee's Carpets",
+    "decade": 1960,
+    "sequence": 82,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0146",
+    "url": "https://youtu.be/riZjWYZVutI",
+    "source_start": "0:01:33",
+    "source_end": "0:02:22"
+  }
+}

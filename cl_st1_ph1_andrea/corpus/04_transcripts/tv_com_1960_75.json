@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_75",
+  "input_path": "corpus/03_audio/tv_com_1960_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You're entering the leisure time world of Bob Sharp, member of the Sports Car Club of America. Bob's qualifying on a challenging course, a grueling test of machines and men. Bob Sharp's a camel smoker. He enjoys the clean-cut taste of rich tobaccos. The best tobacco makes the best smoke. Get with Camel. Every inch a real smoke. Camel is a real cigarette. Comfortably smooth, too.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 28.0,
+        "text": "You're entering the leisure time world of Bob Sharp, member of the Sports Car Club of America."
+      },
+      {
+        "id": 2,
+        "start": 30.0,
+        "end": 41.0,
+        "text": "Bob's qualifying on a challenging course, a grueling test of machines and men."
+      },
+      {
+        "id": 3,
+        "start": 41.0,
+        "end": 50.0,
+        "text": "Bob Sharp's a camel smoker. He enjoys the clean-cut taste of rich tobaccos. The best tobacco makes the best smoke. Get with Camel."
+      },
+      {
+        "id": 4,
+        "start": 50.0,
+        "end": 57.0,
+        "text": "Every inch a real smoke. Camel is a real cigarette."
+      },
+      {
+        "id": 5,
+        "start": 57.0,
+        "end": 59.0,
+        "text": "Comfortably smooth, too."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Camel The real cigarette Car Race",
+    "decade": 1960,
+    "sequence": 75,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0143",
+    "url": "https://youtu.be/jehim79W1_0",
+    "source_start": "0:12:22",
+    "source_end": "0:13:21"
+  }
+}

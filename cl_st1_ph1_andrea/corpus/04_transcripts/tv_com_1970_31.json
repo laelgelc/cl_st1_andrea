@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_31",
+  "input_path": "corpus/03_audio/tv_com_1970_31.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_31.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_31.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "The sweet-handling Mustang II Cobras. No other domestic car in its class gives you all this standard. Spoilers, stabilizer bars, staggered shocks, rack and pinion steering, steel-belted radials, and four on the floor. That's why Cobra takes the curves like a snake. The sweet-handling car, Mustang II, put one between the road and you. When America needs a better idea, Ford puts it on wheels.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.98,
+        "text": "The sweet-handling Mustang II Cobras."
+      },
+      {
+        "id": 2,
+        "start": 4.54,
+        "end": 7.5600000000000005,
+        "text": "No other domestic car in its class gives you all this standard."
+      },
+      {
+        "id": 3,
+        "start": 8.02,
+        "end": 14.9,
+        "text": "Spoilers, stabilizer bars, staggered shocks, rack and pinion steering, steel-belted radials, and four on the floor."
+      },
+      {
+        "id": 4,
+        "start": 15.24,
+        "end": 17.86,
+        "text": "That's why Cobra takes the curves like a snake."
+      },
+      {
+        "id": 5,
+        "start": 17.86,
+        "end": 23.580000000000002,
+        "text": "The sweet-handling car, Mustang II, put one between the road and you."
+      },
+      {
+        "id": 6,
+        "start": 24.96,
+        "end": 28.64,
+        "text": "When America needs a better idea, Ford puts it on wheels."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Mustang II Cobras Ford 1977",
+    "decade": 1970,
+    "sequence": 31,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:25:11",
+    "source_end": "0:25:40"
+  }
+}

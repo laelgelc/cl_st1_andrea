@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_82",
+  "input_path": "corpus/03_audio/tv_com_2000_82.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_82.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_82.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Introducing Kleenex Moist Cloths. Big, strong, cloth-like sheets that can handle the stickiest of situations. Thank goodness for male bonding. Thank goodness for Kleenex.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Introducing Kleenex Moist Cloths."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 9.0,
+        "text": "Big, strong, cloth-like sheets that can handle the stickiest of situations."
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 13.0,
+        "text": "Thank goodness for male bonding."
+      },
+      {
+        "id": 4,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "Thank goodness for Kleenex."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Kleenex Mist Cloths",
+    "decade": 2000,
+    "sequence": 82,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0524",
+    "url": "https://youtu.be/RAtVcrx_R4U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1960_61",
+  "input_path": "corpus/03_audio/tv_com_1960_61.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_61.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_61.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "If you've ever gone to bed with a cold, the Vicks company has very big news for you. A new nighttime colds medicine called NyQuil. NyQuil relieves major cold symptoms like sniffles, sneezes, nasal congestion, scratchy throat, and coughing for hours to help you get a good night's sleep. NyQuil, the most unique nighttime colds medication ever developed by Vicks.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.14,
+        "text": "If you've ever gone to bed with a cold, the Vicks company has very big news for you."
+      },
+      {
+        "id": 2,
+        "start": 9.14,
+        "end": 15.16,
+        "text": "A new nighttime colds medicine called NyQuil. NyQuil relieves major cold"
+      },
+      {
+        "id": 3,
+        "start": 15.16,
+        "end": 19.92,
+        "text": "symptoms like sniffles, sneezes, nasal congestion, scratchy throat, and coughing"
+      },
+      {
+        "id": 4,
+        "start": 19.92,
+        "end": 26.240000000000002,
+        "text": "for hours to help you get a good night's sleep. NyQuil, the most unique nighttime"
+      },
+      {
+        "id": 5,
+        "start": 26.240000000000002,
+        "end": 31.060000000000002,
+        "text": "colds medication ever developed by Vicks."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Vicks NyQuil cold medicine",
+    "decade": 1960,
+    "sequence": 61,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0135",
+    "url": "https://youtu.be/z9LpTLQ9BtE?si=tCIRTCJ4HS9iRngJ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

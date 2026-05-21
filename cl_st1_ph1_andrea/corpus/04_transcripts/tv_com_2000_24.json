@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_24",
+  "input_path": "corpus/03_audio/tv_com_2000_24.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_24.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_24.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Jim and John were competing for the same promotion. Then Jim got the amazingly quiet Genie Accelerator, which opens twice as fast. Jim got to work quicker. Jim got the big promotion. John works for Jim now. The Accelerator. Only from Jim.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Jim and John were competing for the same promotion."
+      },
+      {
+        "id": 2,
+        "start": 4.5,
+        "end": 8.5,
+        "text": "Then Jim got the amazingly quiet Genie Accelerator, which opens twice as fast."
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 11.5,
+        "text": "Jim got to work quicker. Jim got the big promotion."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "John works for Jim now. The Accelerator. Only from Jim."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Genie Garage Door Opener",
+    "decade": 2000,
+    "sequence": 24,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0466",
+    "url": "https://youtu.be/bAXS5Pee7TE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

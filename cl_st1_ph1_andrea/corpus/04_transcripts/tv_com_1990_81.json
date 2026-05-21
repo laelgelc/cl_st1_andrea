@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_81",
+  "input_path": "corpus/03_audio/tv_com_1990_81.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_81.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_81.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Three years ago, we set out to create a sports sedan. But first and foremost, we set out to create a Lexus. Introducing the new Lexus ES 300 sports sedan.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 5.0,
+        "text": "Three years ago, we set out to create a sports sedan."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 8.0,
+        "text": "But first and foremost,"
+      },
+      {
+        "id": 3,
+        "start": 11.0,
+        "end": 14.0,
+        "text": "we set out to create a Lexus."
+      },
+      {
+        "id": 4,
+        "start": 21.0,
+        "end": 25.0,
+        "text": "Introducing the new Lexus ES 300 sports sedan."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1992 Lexus ES300",
+    "decade": 1990,
+    "sequence": 81,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0404",
+    "url": "https://youtu.be/gSXo1yT7QKo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_53",
+  "input_path": "corpus/03_audio/tv_com_2020_53.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_53.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_53.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "itch scratch itch itch scratch must not itch scratch itch scratch stop the itch sanity cortisone 10 maximum strength itch relief without a prescription goodbye itch cortisone 10",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.4,
+        "text": "itch scratch itch itch scratch must not itch scratch itch scratch stop the itch sanity"
+      },
+      {
+        "id": 2,
+        "start": 7.4,
+        "end": 13.96,
+        "text": "cortisone 10 maximum strength itch relief without a prescription goodbye itch cortisone 10"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Cortizone 10 Maximum Strength Creme With Aloe Stop the Itchsanity",
+    "decade": 2020,
+    "sequence": 53,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0672",
+    "url": "https://youtu.be/Vv8HL4XeTz8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

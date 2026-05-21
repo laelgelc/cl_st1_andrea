@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_75",
+  "input_path": "corpus/03_audio/tv_com_2000_75.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_75.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_75.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Honey, this is simple. He cleans, we clean. Better, better, because on Tough Bathroom Scum, the power of Pine Sol delivers a knockout. Now, who are you gonna trust? Me or Mr. You-Know-Who over there? The power of Pine Sol, the smell of clean.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.2600000000000002,
+        "text": "Honey, this is simple. He cleans, we clean."
+      },
+      {
+        "id": 2,
+        "start": 3.5,
+        "end": 7.94,
+        "text": "Better, better, because on Tough Bathroom Scum, the power of Pine Sol delivers a knockout."
+      },
+      {
+        "id": 3,
+        "start": 8.16,
+        "end": 11.86,
+        "text": "Now, who are you gonna trust? Me or Mr. You-Know-Who over there?"
+      },
+      {
+        "id": 4,
+        "start": 12.1,
+        "end": 14.74,
+        "text": "The power of Pine Sol, the smell of clean."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2000 Pine Sol Cleaner vs. Mr. Clean",
+    "decade": 2000,
+    "sequence": 75,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0517",
+    "url": "https://youtu.be/inbhZgLjrK4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1950_30",
+  "input_path": "corpus/03_audio/tv_com_1950_30.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_30.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_30.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Thank you, Bud. Here's the new laxative advance for fast relief of temporary irregularity. It's new Serotan Plus in capsule form. And here's the big news about Serotan Plus. In a recent study, 94% of the people who tried Serotan Plus reported beneficial results with this new laxative advance. Serotan Plus works so much more effectively, yet is so kind to your system. So the next time you suffer from temporary irregularity, take Serotan Plus as directed. This new laxative advance must give you fast overnight relief, plus more gentle, dependable relief from temporary irregularity or your money back.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 46.0451875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.640000000000001,
+        "text": "Thank you, Bud. Here's the new laxative advance for fast relief of temporary irregularity."
+      },
+      {
+        "id": 2,
+        "start": 7.26,
+        "end": 10.56,
+        "text": "It's new Serotan Plus in capsule form."
+      },
+      {
+        "id": 3,
+        "start": 11.34,
+        "end": 14.36,
+        "text": "And here's the big news about Serotan Plus."
+      },
+      {
+        "id": 4,
+        "start": 14.96,
+        "end": 23.7,
+        "text": "In a recent study, 94% of the people who tried Serotan Plus reported beneficial results with this new laxative advance."
+      },
+      {
+        "id": 5,
+        "start": 24.560000000000002,
+        "end": 28.54,
+        "text": "Serotan Plus works so much more effectively, yet is so kind to your system."
+      },
+      {
+        "id": 6,
+        "start": 28.54,
+        "end": 34.8,
+        "text": "So the next time you suffer from temporary irregularity, take Serotan Plus as directed."
+      },
+      {
+        "id": 7,
+        "start": 35.4,
+        "end": 45.14,
+        "text": "This new laxative advance must give you fast overnight relief, plus more gentle, dependable relief from temporary irregularity or your money back."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Serutan Plus Laxative",
+    "decade": 1950,
+    "sequence": 30,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0030",
+    "url": "https://youtu.be/3ei7-S0cmnk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:46"
+  }
+}

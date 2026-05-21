@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2020_20",
+  "input_path": "corpus/03_audio/tv_com_2020_20.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_20.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_20.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Dandruff-causing microbes are on everyone's scalp. Hey, where do you think you're going? When you use Head & Shoulders Every Wash, its active ingredient keeps them at bay. It's goats. Watch out! This is it, microbe. There's nowhere left for you to go. Except down the drain. Tackle dandruff every wash.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Dandruff-causing microbes are on everyone's scalp."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Hey, where do you think you're going?"
+      },
+      {
+        "id": 3,
+        "start": 7.0,
+        "end": 11.0,
+        "text": "When you use Head & Shoulders Every Wash, its active ingredient keeps them at bay."
+      },
+      {
+        "id": 4,
+        "start": 14.0,
+        "end": 15.0,
+        "text": "It's goats."
+      },
+      {
+        "id": 5,
+        "start": 17.0,
+        "end": 18.0,
+        "text": "Watch out!"
+      },
+      {
+        "id": 6,
+        "start": 21.0,
+        "end": 23.0,
+        "text": "This is it, microbe. There's nowhere left for you to go."
+      },
+      {
+        "id": 7,
+        "start": 23.0,
+        "end": 25.0,
+        "text": "Except down the drain."
+      },
+      {
+        "id": 8,
+        "start": 25.0,
+        "end": 30.0,
+        "text": "Tackle dandruff every wash."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Head & Shoulders The Chase featuring Troy Polamalu, Aidan Hutchinson",
+    "decade": 2020,
+    "sequence": 20,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0639",
+    "url": "https://youtu.be/KJ6ru2cGcms",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_1960_8",
+  "input_path": "corpus/03_audio/tv_com_1960_8.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_8.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_8.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Sergeant, you've been deceived. This new cool and creamy pudding is not pudding. Not pudding, Inspector. Pudding doesn't come frozen or keep in your refrigerator for two weeks. See that richer, creamier texture? I say. Now the clincher. Hmm. It's a whole new dessert disguised as pudding. Precisely. Bird's Eye's new cool and creamy is too good to be pudding. Never judge a dessert by its cover, Sergeant.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.64,
+        "end": 2.48,
+        "text": "Sergeant, you've been deceived."
+      },
+      {
+        "id": 2,
+        "start": 2.48,
+        "end": 5.36,
+        "text": "This new cool and creamy pudding is not pudding."
+      },
+      {
+        "id": 3,
+        "start": 5.36,
+        "end": 6.88,
+        "text": "Not pudding, Inspector."
+      },
+      {
+        "id": 4,
+        "start": 6.88,
+        "end": 10.4,
+        "text": "Pudding doesn't come frozen or keep in your refrigerator for two weeks."
+      },
+      {
+        "id": 5,
+        "start": 10.4,
+        "end": 13.040000000000001,
+        "text": "See that richer, creamier texture?"
+      },
+      {
+        "id": 6,
+        "start": 13.040000000000001,
+        "end": 14.32,
+        "text": "I say."
+      },
+      {
+        "id": 7,
+        "start": 14.32,
+        "end": 15.92,
+        "text": "Now the clincher."
+      },
+      {
+        "id": 8,
+        "start": 17.12,
+        "end": 21.52,
+        "text": "Hmm. It's a whole new dessert disguised as pudding."
+      },
+      {
+        "id": 9,
+        "start": 21.52,
+        "end": 25.76,
+        "text": "Precisely. Bird's Eye's new cool and creamy is too good to be pudding."
+      },
+      {
+        "id": 10,
+        "start": 25.76,
+        "end": 28.0,
+        "text": "Never judge a dessert by its cover, Sergeant."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Cool 'n Creamy Pudding",
+    "decade": 1960,
+    "sequence": 8,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "0:10:47",
+    "source_end": "0:11:15"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1950_113",
+  "input_path": "corpus/03_audio/tv_com_1950_113.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_113.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_113.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Look what you can do with a kitchen phone in color, an extension phone in color for your kitchen. Call the grocer, call the cleaner, call your friends and you never even have to step a foot from your kitchen. A kitchen phone's a time saver, step saver, yes it is. So see about a kitchen phone in color right away. An extension phone in color for your kitchen right away at your Bell Telephone Business Office.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 22.03575,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Look what you can do with a kitchen phone in color, an extension phone in color for your kitchen."
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 10.0,
+        "text": "Call the grocer, call the cleaner, call your friends and you never even have to step a foot from your kitchen."
+      },
+      {
+        "id": 3,
+        "start": 10.0,
+        "end": 13.0,
+        "text": "A kitchen phone's a time saver, step saver, yes it is."
+      },
+      {
+        "id": 4,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "So see about a kitchen phone in color right away."
+      },
+      {
+        "id": 5,
+        "start": 15.0,
+        "end": 20.0,
+        "text": "An extension phone in color for your kitchen right away at your Bell Telephone Business Office."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Kitchen Phone Color Extension from Bell Telephone Business Office",
+    "decade": 1950,
+    "sequence": 113,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0110",
+    "url": "https://youtu.be/sp81cbdODq4",
+    "source_start": "0:00:00",
+    "source_end": "0:00:22"
+  }
+}

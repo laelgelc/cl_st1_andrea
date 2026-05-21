@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_39",
+  "input_path": "corpus/03_audio/tv_com_2020_39.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_39.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_39.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Why stay inside the lines when you could add some flavor to everything around you? A little cheesy here, crunch of color there. Discover the possibilities of just $1. Taco Bell's $1 Loaded Nacho Taco. It's value beyond belief.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.04,
+        "text": "Why stay inside the lines when you could add some flavor to everything around you?"
+      },
+      {
+        "id": 2,
+        "start": 4.34,
+        "end": 6.58,
+        "text": "A little cheesy here, crunch of color there."
+      },
+      {
+        "id": 3,
+        "start": 7.34,
+        "end": 9.3,
+        "text": "Discover the possibilities of just $1."
+      },
+      {
+        "id": 4,
+        "start": 10.32,
+        "end": 12.56,
+        "text": "Taco Bell's $1 Loaded Nacho Taco."
+      },
+      {
+        "id": 5,
+        "start": 12.88,
+        "end": 14.200000000000001,
+        "text": "It's value beyond belief."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Taco Bell Loaded Nacho Add Some Flavor",
+    "decade": 2020,
+    "sequence": 39,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0658",
+    "url": "https://youtu.be/kKqNtyizlJA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

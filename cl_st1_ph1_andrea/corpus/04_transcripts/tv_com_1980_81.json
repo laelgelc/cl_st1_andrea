@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_81",
+  "input_path": "corpus/03_audio/tv_com_1980_81.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_81.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_81.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Barbara! You've got a great pair of legs! Need a little magic to make your tummy disappear? Try my magic! Legs Control Top Pantyhose with Feel Free Control. Legs Control Top holds you in in all the right places, but you feel free as a breeze! Stretching, bending, standing There's one pantyhose that's always fitting The fitting keeps a great pair of legs",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Barbara! You've got a great pair of legs!"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.5,
+        "text": "Need a little magic to make your tummy disappear?"
+      },
+      {
+        "id": 3,
+        "start": 6.5,
+        "end": 7.5,
+        "text": "Try my magic!"
+      },
+      {
+        "id": 4,
+        "start": 7.5,
+        "end": 10.5,
+        "text": "Legs Control Top Pantyhose with Feel Free Control."
+      },
+      {
+        "id": 5,
+        "start": 10.5,
+        "end": 13.5,
+        "text": "Legs Control Top holds you in in all the right places,"
+      },
+      {
+        "id": 6,
+        "start": 13.5,
+        "end": 15.5,
+        "text": "but you feel free as a breeze!"
+      },
+      {
+        "id": 7,
+        "start": 16.5,
+        "end": 21.5,
+        "text": "Stretching, bending, standing"
+      },
+      {
+        "id": 8,
+        "start": 21.5,
+        "end": 25.0,
+        "text": "There's one pantyhose that's always fitting"
+      },
+      {
+        "id": 9,
+        "start": 25.0,
+        "end": 29.0,
+        "text": "The fitting keeps a great pair of legs"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1980 Legg's Control Top Pantyhose",
+    "decade": 1980,
+    "sequence": 81,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0295",
+    "url": "https://youtu.be/dDVx_LUoUfg",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

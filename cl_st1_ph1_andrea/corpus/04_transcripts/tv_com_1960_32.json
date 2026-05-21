@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_32",
+  "input_path": "corpus/03_audio/tv_com_1960_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "New Ultra-Bright Toothpaste. A taste you can really feel. New Ultra-Bright gives your mouth sex appeal. New Ultra-Bright Toothpaste. The kickiest taste, the brightest teeth, the freshest breath. That spells sex appeal. New Ultra-Bright gives your mouth sex appeal. After Ultra-Bright, everything else is just toothpaste.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.0,
+        "text": "New Ultra-Bright Toothpaste. A taste you can really feel. New Ultra-Bright gives your mouth sex appeal."
+      },
+      {
+        "id": 2,
+        "start": 11.0,
+        "end": 19.0,
+        "text": "New Ultra-Bright Toothpaste. The kickiest taste, the brightest teeth, the freshest breath. That spells sex appeal."
+      },
+      {
+        "id": 3,
+        "start": 19.0,
+        "end": 24.0,
+        "text": "New Ultra-Bright gives your mouth sex appeal."
+      },
+      {
+        "id": 4,
+        "start": 24.0,
+        "end": 29.0,
+        "text": "After Ultra-Bright, everything else is just toothpaste."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Ultra Brite toothpaste",
+    "decade": 1960,
+    "sequence": 32,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:05:03",
+    "source_end": "1:05:32"
+  }
+}

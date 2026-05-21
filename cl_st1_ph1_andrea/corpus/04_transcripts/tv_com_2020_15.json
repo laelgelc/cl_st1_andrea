@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_15",
+  "input_path": "corpus/03_audio/tv_com_2020_15.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_15.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_15.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "When allergies throw a sucker punch, the power of Claritin-D punches back harder. Get fast, powerful relief of your worst symptoms, like nasal congestion. Claritin clears.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.7000000000000001,
+        "end": 6.5,
+        "text": "When allergies throw a sucker punch, the power of Claritin-D punches back harder."
+      },
+      {
+        "id": 2,
+        "start": 9.02,
+        "end": 13.24,
+        "text": "Get fast, powerful relief of your worst symptoms, like nasal congestion."
+      },
+      {
+        "id": 3,
+        "start": 13.52,
+        "end": 14.42,
+        "text": "Claritin clears."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Claritin-D 12-hour Dog Lover",
+    "decade": 2020,
+    "sequence": 15,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0634",
+    "url": "https://youtu.be/1JasEEeB0ls",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

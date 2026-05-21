@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1970_38",
+  "input_path": "corpus/03_audio/tv_com_1970_38.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_38.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_38.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "the hardest bones in the world can't clean your dog's teeth like milk bone dog biscuits can because the healthier chew food safely gives you the right teeth cleaning size for small medium and large dogs each size has the right hardness to help scrape away stains and tartar and to help clean and whiten teeth give your dog a better teeth cleaner than bones milk bone dog biscuits in beef flavor too you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.68,
+        "text": "the hardest bones in the world can't clean your dog's teeth like milk bone dog biscuits can"
+      },
+      {
+        "id": 2,
+        "start": 7.68,
+        "end": 12.620000000000001,
+        "text": "because the healthier chew food safely gives you the right teeth cleaning size for small"
+      },
+      {
+        "id": 3,
+        "start": 12.620000000000001,
+        "end": 18.68,
+        "text": "medium and large dogs each size has the right hardness to help scrape away stains and tartar"
+      },
+      {
+        "id": 4,
+        "start": 18.68,
+        "end": 24.96,
+        "text": "and to help clean and whiten teeth give your dog a better teeth cleaner than bones"
+      },
+      {
+        "id": 5,
+        "start": 24.96,
+        "end": 28.64,
+        "text": "milk bone dog biscuits in beef flavor too"
+      },
+      {
+        "id": 6,
+        "start": 28.64,
+        "end": 29.14,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Milk-bone Brand Dog biscuits",
+    "decade": 1970,
+    "sequence": 38,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:29:11",
+    "source_end": "0:29:40"
+  }
+}

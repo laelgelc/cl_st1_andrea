@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_95",
+  "input_path": "corpus/03_audio/tv_com_1980_95.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_95.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_95.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "According to legend, little folk know, Hills is where the toys are. Me afraid of ghosts, not with my proton gut, wham, wham. I capture pesky ghosts with this ghost trap, from Blastin' Em, the Ecto Popper and Goggles. For a little help, I call these heroes, all from Kenner. Hills is my kind of place, because, Hills is where the toys are. At low prices, every day.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.62,
+        "text": "According to legend, little folk know, Hills is where the toys are."
+      },
+      {
+        "id": 2,
+        "start": 7.08,
+        "end": 11.42,
+        "text": "Me afraid of ghosts, not with my proton gut, wham, wham."
+      },
+      {
+        "id": 3,
+        "start": 11.8,
+        "end": 17.240000000000002,
+        "text": "I capture pesky ghosts with this ghost trap, from Blastin' Em, the Ecto Popper and Goggles."
+      },
+      {
+        "id": 4,
+        "start": 17.88,
+        "end": 21.76,
+        "text": "For a little help, I call these heroes, all from Kenner."
+      },
+      {
+        "id": 5,
+        "start": 22.06,
+        "end": 27.32,
+        "text": "Hills is my kind of place, because, Hills is where the toys are."
+      },
+      {
+        "id": 6,
+        "start": 27.32,
+        "end": 29.04,
+        "text": "At low prices, every day."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Hills Department Store Hills is where the toys are",
+    "decade": 1980,
+    "sequence": 95,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0307",
+    "url": "https://youtu.be/CXqhtZ8mUy8",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1980_15",
+  "input_path": "corpus/03_audio/tv_com_1980_15.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_15.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_15.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I just got rid of everything I don't need, including the gunk in my hair, because I just started using oil and silicone-free green. Oil and silicone-free green. Beats build-up for clean beauty.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.48,
+        "text": "I just got rid of everything I don't need, including the gunk in my hair,"
+      },
+      {
+        "id": 2,
+        "start": 5.82,
+        "end": 8.78,
+        "text": "because I just started using oil and silicone-free green."
+      },
+      {
+        "id": 3,
+        "start": 9.8,
+        "end": 14.02,
+        "text": "Oil and silicone-free green. Beats build-up for clean beauty."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1989 Agree Shampoo Oil and Silicone Free ",
+    "decade": 1980,
+    "sequence": 15,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0237",
+    "url": "https://youtu.be/d99M3i84BzY",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

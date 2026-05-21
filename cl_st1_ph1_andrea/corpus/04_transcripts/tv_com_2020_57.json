@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_57",
+  "input_path": "corpus/03_audio/tv_com_2020_57.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_57.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_57.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Doing what we love can be painful. AspirCream works fast and lasts. So you can keep doing what you love. AspirCream now has a new look. Same pain fighting power.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Doing what we love can be painful."
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 8.0,
+        "text": "AspirCream works fast and lasts."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 10.0,
+        "text": "So you can keep doing what you love."
+      },
+      {
+        "id": 4,
+        "start": 10.0,
+        "end": 12.0,
+        "text": "AspirCream now has a new look."
+      },
+      {
+        "id": 5,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "Same pain fighting power."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2021 Aspercreme Love Hurts: New Look song by Nazareth",
+    "decade": 2020,
+    "sequence": 57,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0676",
+    "url": "https://youtu.be/9Tq5LDCjYTo",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_49",
+  "input_path": "corpus/03_audio/tv_com_2020_49.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_49.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_49.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "New Juicy Drop Gummy Dippin' Sticks. Packed with sweet gummy sticks and sour gel so you can dip and dip and dip anywhere. A study break, dip and dip and dip. A skate park, dip and dip and dip. It's your dip, your way. New Juicy Drop Gummy Dippin' Sticks.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.28,
+        "end": 6.78,
+        "text": "New Juicy Drop Gummy Dippin' Sticks. Packed with sweet gummy sticks and sour gel so you can dip and dip and dip anywhere."
+      },
+      {
+        "id": 2,
+        "start": 7.44,
+        "end": 12.96,
+        "text": "A study break, dip and dip and dip. A skate park, dip and dip and dip. It's your dip, your way."
+      },
+      {
+        "id": 3,
+        "start": 13.3,
+        "end": 15.02,
+        "text": "New Juicy Drop Gummy Dippin' Sticks."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2023 Juicy Drop Gummy Dip 'N Stix Dip Your Way",
+    "decade": 2020,
+    "sequence": 49,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0668",
+    "url": "https://youtu.be/dAq8I1EdcVc",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

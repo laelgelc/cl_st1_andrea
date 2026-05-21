@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_60",
+  "input_path": "corpus/03_audio/tv_com_2010_60.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_60.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_60.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You wouldn't do only half of your daily routine, so why treat your mouth any differently? Complete the job with Listerine. Help prevent plaque, early gum disease, bad breath, and kill up to 99.9% of germs. Listerine.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.8,
+        "text": "You wouldn't do only half of your daily routine, so why treat your mouth any differently?"
+      },
+      {
+        "id": 2,
+        "start": 5.3,
+        "end": 6.88,
+        "text": "Complete the job with Listerine."
+      },
+      {
+        "id": 3,
+        "start": 7.16,
+        "end": 12.36,
+        "text": "Help prevent plaque, early gum disease, bad breath, and kill up to 99.9% of germs."
+      },
+      {
+        "id": 4,
+        "start": 13.32,
+        "end": 13.8,
+        "text": "Listerine."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Listerine Cool Mouthwash Bring out the Bold Half of your daily routine",
+    "decade": 2010,
+    "sequence": 60,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:15:06",
+    "source_end": "0:15:20"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1980_100",
+  "input_path": "corpus/03_audio/tv_com_1980_100.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_100.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_100.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I love the rich, holy goodness, Kellogg's Mini-Wheats. But the delicious frosted side makes the rich kid in me open wide. The nutritious shredded wheat helps keep me on my toes. But the little ballerina in me thinks the taste steals the show. Kellogg's Mini-Wheats. Wholesome shredded wheat for the adult in you. Great taste for the kid in you. So they're delicious and nutritious. The whole grain wheat really packs a crunch. But the delicious taste gives it just the right punch.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.92,
+        "text": "I love the rich, holy goodness, Kellogg's Mini-Wheats."
+      },
+      {
+        "id": 2,
+        "start": 4.34,
+        "end": 8.02,
+        "text": "But the delicious frosted side makes the rich kid in me open wide."
+      },
+      {
+        "id": 3,
+        "start": 8.700000000000001,
+        "end": 11.48,
+        "text": "The nutritious shredded wheat helps keep me on my toes."
+      },
+      {
+        "id": 4,
+        "start": 11.92,
+        "end": 15.540000000000001,
+        "text": "But the little ballerina in me thinks the taste steals the show."
+      },
+      {
+        "id": 5,
+        "start": 16.14,
+        "end": 18.88,
+        "text": "Kellogg's Mini-Wheats. Wholesome shredded wheat for the adult in you."
+      },
+      {
+        "id": 6,
+        "start": 18.98,
+        "end": 21.72,
+        "text": "Great taste for the kid in you. So they're delicious and nutritious."
+      },
+      {
+        "id": 7,
+        "start": 22.0,
+        "end": 24.7,
+        "text": "The whole grain wheat really packs a crunch."
+      },
+      {
+        "id": 8,
+        "start": 24.7,
+        "end": 28.28,
+        "text": "But the delicious taste gives it just the right punch."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Frosted Mini-Wheats Kellogg's",
+    "decade": 1980,
+    "sequence": 100,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0229",
+    "url": "https://youtu.be/tgoUa2wWvAQ",
+    "source_start": "0:01:00",
+    "source_end": "0:01:29"
+  }
+}

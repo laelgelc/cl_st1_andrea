@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_32",
+  "input_path": "corpus/03_audio/tv_com_1990_32.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_32.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_32.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "I fell in love with you the first time I looked into them there eyes, and you have a certain little cute way of flirting with them there eyes. Sparkle, bubble, get you in a whole lot of trouble, I'm looking for the boy with the whispered eyes. I fell in love with them there eyes. I'm looking for the boy with the whispered eyes.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 11.36,
+        "text": "I fell in love with you the first time I looked into them there eyes, and you have a certain little cute way of flirting with them there eyes."
+      },
+      {
+        "id": 2,
+        "start": 12.88,
+        "end": 21.740000000000002,
+        "text": "Sparkle, bubble, get you in a whole lot of trouble, I'm looking for the boy with the whispered eyes."
+      },
+      {
+        "id": 3,
+        "start": 23.48,
+        "end": 28.88,
+        "text": "I fell in love with them there eyes."
+      },
+      {
+        "id": 4,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "I'm looking for the boy with the whispered eyes."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Durasoft Freshlook Color and Clear Disposable Contacts",
+    "decade": 1990,
+    "sequence": 32,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0355",
+    "url": "https://youtu.be/schGw6M0jBs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

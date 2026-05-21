@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1950_22",
+  "input_path": "corpus/03_audio/tv_com_1950_22.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1950_22.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1950_22.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "One, two, three, four in one. Walter Baker's Four in One. Four delicious chocolate treats out of one package and now, now, now is the time to buy a box of Baker's Four in One. The new instant sweet cocoa mix. Because you can't lose. That's right. You can't lose. For you get double your money back if you don't agree that Baker's Four in One makes instant cocoa that's doubly delicious. Just look for this display at your favorite grocers. Buy a box of Four in One and get this valuable double your money back coupon. Then if you and your family don't think that Four in One makes instant cocoa that's doubly delicious, just follow the simple directions on the Four in One coupon and you'll get back twice what you paid. This offer is good for a short time only. So right now, get Baker's Four in One. And if you don't agree that Four in One makes instant cocoa that's doubly delicious, you get double your money back. We'll be right back.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 61.04525,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 29.2,
+        "text": "One, two, three, four in one. Walter Baker's Four in One. Four delicious chocolate treats out of one package and now, now, now is the time to buy a box of Baker's Four in One. The new instant sweet cocoa mix. Because you can't lose. That's right. You can't lose. For you get double your money back if you don't agree that Baker's Four in One makes instant cocoa that's doubly delicious."
+      },
+      {
+        "id": 2,
+        "start": 29.2,
+        "end": 59.18,
+        "text": "Just look for this display at your favorite grocers. Buy a box of Four in One and get this valuable double your money back coupon. Then if you and your family don't think that Four in One makes instant cocoa that's doubly delicious, just follow the simple directions on the Four in One coupon and you'll get back twice what you paid. This offer is good for a short time only. So right now, get Baker's Four in One. And if you don't agree that Four in One makes instant cocoa that's doubly delicious, you get double your money back."
+      },
+      {
+        "id": 3,
+        "start": 59.2,
+        "end": 59.620000000000005,
+        "text": "We'll be right back."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Animated Baker's 4-in-1 Cocoa Mix",
+    "decade": 1950,
+    "sequence": 22,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0022",
+    "url": "https://youtu.be/Z0oQ8h1dhns",
+    "source_start": "0:00:00",
+    "source_end": "0:01:01"
+  }
+}

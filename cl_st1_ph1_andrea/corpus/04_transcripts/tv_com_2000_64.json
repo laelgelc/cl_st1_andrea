@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2000_64",
+  "input_path": "corpus/03_audio/tv_com_2000_64.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_64.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_64.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "New Resolve Dual Power gets out more stains better than the other leading brands. It's stain fighters and OxyAction combine to remove tough stains like red wine, soda, and coffee. New Resolve Dual Power, better than the other leading brands.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.42,
+        "text": "New Resolve Dual Power gets out more stains better than the other leading brands."
+      },
+      {
+        "id": 2,
+        "start": 4.68,
+        "end": 10.6,
+        "text": "It's stain fighters and OxyAction combine to remove tough stains like red wine, soda, and coffee."
+      },
+      {
+        "id": 3,
+        "start": 11.84,
+        "end": 14.96,
+        "text": "New Resolve Dual Power, better than the other leading brands."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 Resolve Dual Power Carpet and upholstery stain remover",
+    "decade": 2000,
+    "sequence": 64,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0506",
+    "url": "https://youtu.be/fz3i7CxUEtA",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

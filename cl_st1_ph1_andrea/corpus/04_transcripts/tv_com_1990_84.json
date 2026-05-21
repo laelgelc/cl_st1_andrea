@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_84",
+  "input_path": "corpus/03_audio/tv_com_1990_84.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_84.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_84.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Put the power of an upright in the palm of your hand with the Royal Dirt Devil. It has a revolving brush and it can handle all kinds of dirt. Pick up the handheld vac that really picks up. Dirt Devil by Royal.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.2,
+        "text": "Put the power of an upright in the palm of your hand with the Royal Dirt Devil."
+      },
+      {
+        "id": 2,
+        "start": 5.2,
+        "end": 9.92,
+        "text": "It has a revolving brush and it can handle all kinds of dirt. Pick up the"
+      },
+      {
+        "id": 3,
+        "start": 9.92,
+        "end": 15.92,
+        "text": "handheld vac that really picks up. Dirt Devil by Royal."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1991 Dirt Devil Hand Vacuum",
+    "decade": 1990,
+    "sequence": 84,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0407",
+    "url": "https://youtu.be/6rdF8sxyiQk",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

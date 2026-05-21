@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2020_51",
+  "input_path": "corpus/03_audio/tv_com_2020_51.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_51.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_51.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "age before beauty why not both visibly diminish wrinkled skin in just two days new crepe corrector lotion only from gold bond championing your skin",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.08,
+        "text": "age before beauty why not both visibly diminish wrinkled skin in just two days"
+      },
+      {
+        "id": 2,
+        "start": 9.08,
+        "end": 14.26,
+        "text": "new crepe corrector lotion only from gold bond championing your skin"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2022 Gold Bond Age Renew Crepe Corrector Age Defense Diminish Wrinkled Skin",
+    "decade": 2020,
+    "sequence": 51,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0670",
+    "url": "https://youtu.be/_mUbJO5RD1Q",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_79",
+  "input_path": "corpus/03_audio/tv_com_2010_79.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_79.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_79.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "it's time time to have new experiences with a familiar keyboard to update our status without opening an app to have all our messages in one place to browse and share faster than ever it's time to do everything better than before the new blackberry q10 it's time",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.54,
+        "text": "it's time time to have new experiences with a familiar keyboard"
+      },
+      {
+        "id": 2,
+        "start": 6.54,
+        "end": 12.34,
+        "text": "to update our status without opening an app to have all our messages in one place"
+      },
+      {
+        "id": 3,
+        "start": 12.34,
+        "end": 23.84,
+        "text": "to browse and share faster than ever it's time to do everything better than before"
+      },
+      {
+        "id": 4,
+        "start": 23.84,
+        "end": 28.98,
+        "text": "the new blackberry q10 it's time"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 BlackBerry Q10 It's Time Keep Moving",
+    "decade": 2010,
+    "sequence": 79,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:28:21",
+    "source_end": "0:28:50"
+  }
+}

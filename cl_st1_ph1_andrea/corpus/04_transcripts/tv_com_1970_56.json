@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1970_56",
+  "input_path": "corpus/03_audio/tv_com_1970_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "the quintrix two color picture tube from panasonic brings you a very lifelike picture because quintrix two is our inline picture tube with an extra pre-focus lens that concentrates and focuses the electron beam to bring you panasonic's sharpest picture ever so lifelike you may even feel you're part of the picture quintrix two one more reason panasonic is just slightly",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 6.44,
+        "text": "the quintrix two color picture tube from panasonic brings you a very lifelike picture"
+      },
+      {
+        "id": 2,
+        "start": 6.44,
+        "end": 13.68,
+        "text": "because quintrix two is our inline picture tube with an extra pre-focus lens that concentrates"
+      },
+      {
+        "id": 3,
+        "start": 13.68,
+        "end": 20.52,
+        "text": "and focuses the electron beam to bring you panasonic's sharpest picture ever so lifelike"
+      },
+      {
+        "id": 4,
+        "start": 20.52,
+        "end": 27.46,
+        "text": "you may even feel you're part of the picture quintrix two one more reason panasonic is just"
+      },
+      {
+        "id": 5,
+        "start": 27.46,
+        "end": 27.900000000000002,
+        "text": "slightly"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Panasonic tv",
+    "decade": 1970,
+    "sequence": 56,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0180",
+    "url": "https://youtu.be/0_D66hSlNKs",
+    "source_start": "0:39:41",
+    "source_end": "0:40:09"
+  }
+}

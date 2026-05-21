@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1990_48",
+  "input_path": "corpus/03_audio/tv_com_1990_48.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_48.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_48.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "They don't play kick the can like you used to. They don't dress the same way. So why are you taking their pictures with the same old film? Try Fuji Color Super G. Because pictures should be nostalgic.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 3.38,
+        "text": "They don't play kick the can like you used to."
+      },
+      {
+        "id": 2,
+        "start": 4.38,
+        "end": 6.0200000000000005,
+        "text": "They don't dress the same way."
+      },
+      {
+        "id": 3,
+        "start": 6.88,
+        "end": 9.36,
+        "text": "So why are you taking their pictures with the same old film?"
+      },
+      {
+        "id": 4,
+        "start": 9.78,
+        "end": 11.18,
+        "text": "Try Fuji Color Super G."
+      },
+      {
+        "id": 5,
+        "start": 11.58,
+        "end": 13.22,
+        "text": "Because pictures should be nostalgic."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1994 Fugi Fugicolor Super G film",
+    "decade": 1990,
+    "sequence": 48,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0371",
+    "url": "https://youtu.be/N5R58QOMJ9U",
+    "source_start": "0:00:00",
+    "source_end": "0:00:14"
+  }
+}

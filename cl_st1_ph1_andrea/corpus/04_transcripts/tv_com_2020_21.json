@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2020_21",
+  "input_path": "corpus/03_audio/tv_com_2020_21.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_21.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_21.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Your resume says you're a professional floor cleaner, Mr. Clean. Mr. Clean Professional lifts away grease and grime in half the time. Did you know these floors were white? You're hired.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.76,
+        "text": "Your resume says you're a professional floor cleaner, Mr. Clean."
+      },
+      {
+        "id": 2,
+        "start": 5.76,
+        "end": 9.3,
+        "text": "Mr. Clean Professional lifts away grease and grime in half the time."
+      },
+      {
+        "id": 3,
+        "start": 9.4,
+        "end": 10.92,
+        "text": "Did you know these floors were white?"
+      },
+      {
+        "id": 4,
+        "start": 11.64,
+        "end": 12.280000000000001,
+        "text": "You're hired."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Mr. Clean Professional Hire ",
+    "decade": 2020,
+    "sequence": 21,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0640",
+    "url": "https://youtu.be/yrIW8sjsIoM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

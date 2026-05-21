@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1960_44",
+  "input_path": "corpus/03_audio/tv_com_1960_44.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_44.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_44.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Jolly Lolly please. Jolly Lolly. Me too. Hey, Jolly Lolly all around. I'll have a... I know a Jolly Lolly. By golly, what's with this Jolly Lolly? You mean you sell Jolly Lollies and you don't know about them? No. Well, Jolly Lollies have a chocolate covered ice milk outside. And inside there's a lollipop too. Inside a lollipop? Mmm, that's that. A Jolly Lolly. By golly, a Jolly Lolly. Well, well, what do you know? A nice milk bar with a lolly up inside. I wonder how they get that lollipop in there. Jolly Lolly. Chocolate covered ice milk with a lollipop inside. Fairmont Jolly Lolly.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 58.0266875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 29.38,
+        "text": "Jolly Lolly please. Jolly Lolly. Me too. Hey, Jolly Lolly all around. I'll have a... I know a Jolly Lolly. By golly, what's with this Jolly Lolly? You mean you sell Jolly Lollies and you don't know about them? No. Well, Jolly Lollies have a chocolate covered ice milk outside. And inside there's a lollipop too."
+      },
+      {
+        "id": 2,
+        "start": 29.38,
+        "end": 50.18,
+        "text": "Inside a lollipop? Mmm, that's that. A Jolly Lolly. By golly, a Jolly Lolly. Well, well, what do you know? A nice milk bar with a lolly up inside. I wonder how they get that lollipop in there."
+      },
+      {
+        "id": 3,
+        "start": 51.18,
+        "end": 56.8,
+        "text": "Jolly Lolly. Chocolate covered ice milk with a lollipop inside. Fairmont Jolly Lolly."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Jolli-lolli Lollipop",
+    "decade": 1960,
+    "sequence": 44,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0118",
+    "url": "https://youtu.be/pXjcM-F4ACc",
+    "source_start": "1:42:41",
+    "source_end": "1:43:39"
+  }
+}

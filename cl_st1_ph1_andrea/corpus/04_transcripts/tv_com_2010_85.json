@@ -1,0 +1,40 @@
+{
+  "commercial_id": "tv_com_2010_85",
+  "input_path": "corpus/03_audio/tv_com_2010_85.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_85.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_85.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Chili's took the burger you love, made it bigger, now $6.99, this thing's half a pound, $6.99 for an old-timer with cheese, also did we mention it's $6.99, Chili's is back, baby, back, baby, back, oh baby, Chili's is back.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 14.024875,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 13.98,
+        "text": "Chili's took the burger you love, made it bigger, now $6.99, this thing's half a pound, $6.99 for an old-timer with cheese, also did we mention it's $6.99, Chili's is back, baby, back, baby, back, oh baby, Chili's is back."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2017 Chili's Oldtimer With Cheese Bigger Big Mouth Burgers",
+    "decade": 2010,
+    "sequence": 85,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:40:52",
+    "source_end": "0:41:06"
+  }
+}

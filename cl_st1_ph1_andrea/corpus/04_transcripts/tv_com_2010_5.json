@@ -1,0 +1,94 @@
+{
+  "commercial_id": "tv_com_2010_5",
+  "input_path": "corpus/03_audio/tv_com_2010_5.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_5.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_5.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You're everywhere Can be your wildest dream Or rise from the battle within A challenge to push yourself further You're everywhere Can be anywhere It's not a place on any map It's a place you reach in life MISA Everywhere you want to be",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 3.0,
+        "text": "You're everywhere"
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Can be your wildest dream"
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 11.0,
+        "text": "Or rise from the battle within"
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 14.0,
+        "text": "A challenge to push yourself further"
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 17.0,
+        "text": "You're everywhere"
+      },
+      {
+        "id": 6,
+        "start": 19.0,
+        "end": 20.0,
+        "text": "Can be anywhere"
+      },
+      {
+        "id": 7,
+        "start": 21.0,
+        "end": 23.0,
+        "text": "It's not a place on any map"
+      },
+      {
+        "id": 8,
+        "start": 23.0,
+        "end": 25.0,
+        "text": "It's a place you reach in life"
+      },
+      {
+        "id": 9,
+        "start": 26.0,
+        "end": 27.0,
+        "text": "MISA"
+      },
+      {
+        "id": 10,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Everywhere you want to be"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2014 Visa Sochi Olympics Games",
+    "decade": 2010,
+    "sequence": 5,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0567",
+    "url": "https://youtu.be/4ZJ2P668QjU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

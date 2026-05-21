@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1990_70",
+  "input_path": "corpus/03_audio/tv_com_1990_70.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_70.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_70.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "You don't want an acne medication that dries up your skin while clearing your zits. Discover Propa PH, a proven acne fighter that moisturizes with alpha hydroxy and aloe. No zits, great skin. Propa PH, the Propa way to clear up your skin.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.64,
+        "end": 4.6000000000000005,
+        "text": "You don't want an acne medication that dries up your skin while clearing your zits."
+      },
+      {
+        "id": 2,
+        "start": 4.6000000000000005,
+        "end": 9.52,
+        "text": "Discover Propa PH, a proven acne fighter that moisturizes with alpha hydroxy and aloe."
+      },
+      {
+        "id": 3,
+        "start": 9.52,
+        "end": 11.76,
+        "text": "No zits, great skin."
+      },
+      {
+        "id": 4,
+        "start": 11.76,
+        "end": 14.68,
+        "text": "Propa PH, the Propa way to clear up your skin."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Propa ph Acne Medication",
+    "decade": 1990,
+    "sequence": 70,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0393",
+    "url": "https://youtu.be/uIZ8eDi2riE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

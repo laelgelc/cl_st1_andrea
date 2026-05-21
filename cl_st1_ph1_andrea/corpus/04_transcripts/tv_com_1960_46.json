@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_46",
+  "input_path": "corpus/03_audio/tv_com_1960_46.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_46.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_46.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Cigarette odors, food odors. Odors add up, create a heavy, stuffy atmosphere that seem to close in until stuffiness doesn't leave much breathing room. But with Glade Mist, stuffiness seems to vanish and leave more breathing room. Glade Mist clears and refreshes the air. So to keep any room fresh, use Glade Mist. Make stuffiness vanish into fresh smelling air.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 8.96,
+        "text": "Cigarette odors, food odors. Odors add up, create a heavy, stuffy atmosphere that seem to close in"
+      },
+      {
+        "id": 2,
+        "start": 8.96,
+        "end": 15.6,
+        "text": "until stuffiness doesn't leave much breathing room. But with Glade Mist, stuffiness seems to"
+      },
+      {
+        "id": 3,
+        "start": 15.6,
+        "end": 23.32,
+        "text": "vanish and leave more breathing room. Glade Mist clears and refreshes the air. So to keep any room"
+      },
+      {
+        "id": 4,
+        "start": 23.32,
+        "end": 30.66,
+        "text": "fresh, use Glade Mist. Make stuffiness vanish into fresh smelling air."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Johnson Glade Air Freshener",
+    "decade": 1960,
+    "sequence": 46,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0120",
+    "url": "https://youtu.be/HWXRafWf9VQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

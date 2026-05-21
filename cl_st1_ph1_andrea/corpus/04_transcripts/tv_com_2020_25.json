@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_2020_25",
+  "input_path": "corpus/03_audio/tv_com_2020_25.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_25.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_25.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Where most see frail, Huggies sees a fighter. And through every round, we provide them with gentle protection for the most delicate skin. Huggies, designed with NICU nurses.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.0,
+        "text": "Where most see frail, Huggies sees a fighter."
+      },
+      {
+        "id": 2,
+        "start": 6.0,
+        "end": 12.0,
+        "text": "And through every round, we provide them with gentle protection for the most delicate skin."
+      },
+      {
+        "id": 3,
+        "start": 12.0,
+        "end": 15.0,
+        "text": "Huggies, designed with NICU nurses."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2025 Huggies Designed with NICU Nurses Little Fighter",
+    "decade": 2020,
+    "sequence": 25,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0644",
+    "url": "https://youtu.be/b7JOLzrGPDw",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_1980_54",
+  "input_path": "corpus/03_audio/tv_com_1980_54.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_54.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_54.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Shell would like you to help judge the quality of our service. Our attendants have been trained in the fine art of customer service to provide satisfaction at every turn. We've been working with them closely and rewarding their efforts. Quality service by any score. That's why the move is on to Shell. The move is on.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Shell would like you to help judge the quality of our service."
+      },
+      {
+        "id": 2,
+        "start": 7.0,
+        "end": 15.0,
+        "text": "Our attendants have been trained in the fine art of customer service to provide satisfaction at every turn."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 21.0,
+        "text": "We've been working with them closely and rewarding their efforts."
+      },
+      {
+        "id": 4,
+        "start": 21.0,
+        "end": 24.0,
+        "text": "Quality service by any score."
+      },
+      {
+        "id": 5,
+        "start": 24.0,
+        "end": 27.0,
+        "text": "That's why the move is on to Shell."
+      },
+      {
+        "id": 6,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "The move is on."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1988 Shell Gas",
+    "decade": 1980,
+    "sequence": 54,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0274",
+    "url": "https://youtu.be/duWqAT0g04o",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

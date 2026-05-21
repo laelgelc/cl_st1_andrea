@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_51",
+  "input_path": "corpus/03_audio/tv_com_1980_51.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_51.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_51.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "In a world where less is too often tolerated, Cadillac offers you more. The 1985 Cadillac DeVille with V8 power. Exclusive V8 power not even available on Buick and Olds. The 1985 front-wheel drive Cadillac DeVille with the only transverse-mounted V8 engine in the world. Now at your Chicagoland Cadillac dealer. In luxury and performance, Cadillac stands alone. For more information, visit www.cadillac.com.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.68,
+        "text": "In a world where less is too often tolerated, Cadillac offers you more."
+      },
+      {
+        "id": 2,
+        "start": 7.68,
+        "end": 11.82,
+        "text": "The 1985 Cadillac DeVille with V8 power."
+      },
+      {
+        "id": 3,
+        "start": 12.24,
+        "end": 15.860000000000001,
+        "text": "Exclusive V8 power not even available on Buick and Olds."
+      },
+      {
+        "id": 4,
+        "start": 16.34,
+        "end": 22.66,
+        "text": "The 1985 front-wheel drive Cadillac DeVille with the only transverse-mounted V8 engine in the world."
+      },
+      {
+        "id": 5,
+        "start": 23.12,
+        "end": 25.3,
+        "text": "Now at your Chicagoland Cadillac dealer."
+      },
+      {
+        "id": 6,
+        "start": 25.92,
+        "end": 29.52,
+        "text": "In luxury and performance, Cadillac stands alone."
+      },
+      {
+        "id": 7,
+        "start": 30.0,
+        "end": 59.980000000000004,
+        "text": "For more information, visit www.cadillac.com."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1985 Cadillac Deville",
+    "decade": 1980,
+    "sequence": 51,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0271",
+    "url": "https://youtu.be/IR2hV-CsFoI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

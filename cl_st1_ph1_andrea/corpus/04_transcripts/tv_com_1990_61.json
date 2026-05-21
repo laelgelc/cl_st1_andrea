@@ -1,0 +1,52 @@
+{
+  "commercial_id": "tv_com_1990_61",
+  "input_path": "corpus/03_audio/tv_com_1990_61.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_61.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_61.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Oh, I'm sorry. Are you, are you picking me up? You shouldn't do that. You're gonna get in trouble.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.58,
+        "text": "Oh, I'm sorry. Are you, are you picking me up?"
+      },
+      {
+        "id": 2,
+        "start": 6.28,
+        "end": 8.0,
+        "text": "You shouldn't do that."
+      },
+      {
+        "id": 3,
+        "start": 9.22,
+        "end": 10.6,
+        "text": "You're gonna get in trouble."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1996 Guess Jeans feauring Juliette Lewis",
+    "decade": 1990,
+    "sequence": 61,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0384",
+    "url": "https://youtu.be/jJ4FduIwABI",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2010_62",
+  "input_path": "corpus/03_audio/tv_com_2010_62.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_62.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_62.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "hey there folks it's me the extra crispy colonel now i love original recipe but in this sizzling summer heat i'm feeling a little extra crispy my extra crispy 20 philip is freshly double breaded and fried to a luxurious mouth-watering bronze extra crispy isn't just the product it's a lifestyle kfc it's extra crispy",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 9.16,
+        "text": "hey there folks it's me the extra crispy colonel now i love original recipe but in this sizzling"
+      },
+      {
+        "id": 2,
+        "start": 9.16,
+        "end": 17.72,
+        "text": "summer heat i'm feeling a little extra crispy my extra crispy 20 philip is freshly double"
+      },
+      {
+        "id": 3,
+        "start": 17.72,
+        "end": 24.12,
+        "text": "breaded and fried to a luxurious mouth-watering bronze extra crispy isn't just the product it's"
+      },
+      {
+        "id": 4,
+        "start": 24.12,
+        "end": 29.580000000000002,
+        "text": "a lifestyle kfc it's extra crispy"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2016 KFC It's Extra Crispy Good Lifestyle featuring George Hamilton",
+    "decade": 2010,
+    "sequence": 62,
+    "category": "Food, Beverage & Nutrition",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:15:49",
+    "source_end": "0:16:19"
+  }
+}

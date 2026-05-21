@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_2020_29",
+  "input_path": "corpus/03_audio/tv_com_2020_29.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2020_29.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2020_29.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Go pro with me and Clairol Pro Fixer. My pro tip for fixing any color mishap. Just apply, develop, and wash. It resets color like a pro. Clairol, it's so me.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 2.96,
+        "text": "Go pro with me and Clairol Pro Fixer."
+      },
+      {
+        "id": 2,
+        "start": 3.46,
+        "end": 6.16,
+        "text": "My pro tip for fixing any color mishap."
+      },
+      {
+        "id": 3,
+        "start": 6.92,
+        "end": 9.120000000000001,
+        "text": "Just apply, develop, and wash."
+      },
+      {
+        "id": 4,
+        "start": 9.700000000000001,
+        "end": 11.540000000000001,
+        "text": "It resets color like a pro."
+      },
+      {
+        "id": 5,
+        "start": 13.18,
+        "end": 14.780000000000001,
+        "text": "Clairol, it's so me."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2026 Clairol ProFixer Hair Color Remover",
+    "decade": 2020,
+    "sequence": 29,
+    "category": "Health, Beauty & Personal Care",
+    "video_id": "video_0648",
+    "url": "https://youtu.be/bGzn8i0tNEQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:15"
+  }
+}

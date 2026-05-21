@@ -1,0 +1,70 @@
+{
+  "commercial_id": "tv_com_2000_56",
+  "input_path": "corpus/03_audio/tv_com_2000_56.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_56.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_56.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "No time out! Two seconds left and he's got to put it up! More bars in more places. That's the goal of Singular's all-over network. With the largest digital voice and data coverage in America, thanks to Singular and AT&T Wireless joining forces. The new Singular.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "No time out! Two seconds left and he's got to put it up!"
+      },
+      {
+        "id": 2,
+        "start": 13.0,
+        "end": 15.0,
+        "text": "More bars in more places."
+      },
+      {
+        "id": 3,
+        "start": 15.0,
+        "end": 18.0,
+        "text": "That's the goal of Singular's all-over network."
+      },
+      {
+        "id": 4,
+        "start": 22.0,
+        "end": 25.0,
+        "text": "With the largest digital voice and data coverage in America,"
+      },
+      {
+        "id": 5,
+        "start": 25.0,
+        "end": 28.0,
+        "text": "thanks to Singular and AT&T Wireless joining forces."
+      },
+      {
+        "id": 6,
+        "start": 28.0,
+        "end": 30.0,
+        "text": "The new Singular."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2005 AT & T and Cingular Allover Network",
+    "decade": 2000,
+    "sequence": 56,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0498",
+    "url": "https://youtu.be/sLCwnEd_ygs",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

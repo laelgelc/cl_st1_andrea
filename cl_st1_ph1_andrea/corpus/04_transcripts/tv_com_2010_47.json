@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_2010_47",
+  "input_path": "corpus/03_audio/tv_com_2010_47.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2010_47.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2010_47.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Tom Edison Nikola Tesla this is Serena and Sean you can feel the electricity in the room welcome to the club",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 15.0233125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 10.0,
+        "text": "Tom Edison Nikola Tesla this is Serena and Sean you can feel the electricity in the room"
+      },
+      {
+        "id": 2,
+        "start": 10.0,
+        "end": 13.700000000000001,
+        "text": "welcome to the club"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2013 Arrow Eletronics Welcome to the Club Tesla and Edson",
+    "decade": 2010,
+    "sequence": 47,
+    "category": "Technology, Communication & Eletronics",
+    "video_id": "video_0460",
+    "url": "https://youtu.be/a8384qGe8nk",
+    "source_start": "0:06:06",
+    "source_end": "0:06:21"
+  }
+}

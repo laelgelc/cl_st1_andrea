@@ -1,0 +1,46 @@
+{
+  "commercial_id": "tv_com_1960_112",
+  "input_path": "corpus/03_audio/tv_com_1960_112.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_112.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_112.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "you never know when you'll need a big wagon and the 1967 american motors builds big wagons see them at your american motors rambler dealer now",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 59.025125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 30.0,
+        "end": 53.620000000000005,
+        "text": "you never know when you'll need a big wagon and the 1967 american motors builds big wagons"
+      },
+      {
+        "id": 2,
+        "start": 53.620000000000005,
+        "end": 58.44,
+        "text": "see them at your american motors rambler dealer now"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1967 AMC Station Wagon Noah's Arch",
+    "decade": 1960,
+    "sequence": 112,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0172",
+    "url": "https://youtu.be/xg4XMcax63o",
+    "source_start": "0:21:07",
+    "source_end": "0:22:06"
+  }
+}

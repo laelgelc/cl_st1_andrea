@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_1990_1",
+  "input_path": "corpus/03_audio/tv_com_1990_1.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1990_1.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1990_1.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "In the 80s, Honda became known for its reliable, feature-filled cars. You ready, Dad? I love this car. But today, the 90s begin with the new Geo Prism. The quality sedan with 16-valve performance, Prism is designed for years of carefree driving. With more of the features and little extras that make life easier, so you know you'll be friends for a long time. Get to know the new Geo Prism at your Chevrolet Geo dealers.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 28.0265,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.24,
+        "text": "In the 80s, Honda became known for its reliable, feature-filled cars."
+      },
+      {
+        "id": 2,
+        "start": 5.4,
+        "end": 5.88,
+        "text": "You ready, Dad?"
+      },
+      {
+        "id": 3,
+        "start": 5.92,
+        "end": 7.04,
+        "text": "I love this car."
+      },
+      {
+        "id": 4,
+        "start": 7.140000000000001,
+        "end": 10.48,
+        "text": "But today, the 90s begin with the new Geo Prism."
+      },
+      {
+        "id": 5,
+        "start": 10.68,
+        "end": 15.9,
+        "text": "The quality sedan with 16-valve performance, Prism is designed for years of carefree driving."
+      },
+      {
+        "id": 6,
+        "start": 16.2,
+        "end": 19.740000000000002,
+        "text": "With more of the features and little extras that make life easier,"
+      },
+      {
+        "id": 7,
+        "start": 19.96,
+        "end": 22.64,
+        "text": "so you know you'll be friends for a long time."
+      },
+      {
+        "id": 8,
+        "start": 22.92,
+        "end": 26.38,
+        "text": "Get to know the new Geo Prism at your Chevrolet Geo dealers."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1990 Chevrolet Geo Prism",
+    "decade": 1990,
+    "sequence": 1,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0324",
+    "url": "https://youtu.be/3Fkn-wyFKfQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:28"
+  }
+}

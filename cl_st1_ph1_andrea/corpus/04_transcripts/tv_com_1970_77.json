@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1970_77",
+  "input_path": "corpus/03_audio/tv_com_1970_77.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1970_77.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1970_77.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "This week in TV Guide, Newton Minow takes another look at television. Fifteen years ago, as FCC chairman, he called TV a vast wasteland. Today, he thinks it's our most important educational institution. Find out what changed his mind and why in TV Guide.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 20.0388125,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.76,
+        "end": 4.8,
+        "text": "This week in TV Guide, Newton Minow takes another look at television."
+      },
+      {
+        "id": 2,
+        "start": 5.46,
+        "end": 10.120000000000001,
+        "text": "Fifteen years ago, as FCC chairman, he called TV a vast wasteland."
+      },
+      {
+        "id": 3,
+        "start": 10.74,
+        "end": 14.16,
+        "text": "Today, he thinks it's our most important educational institution."
+      },
+      {
+        "id": 4,
+        "start": 14.94,
+        "end": 17.88,
+        "text": "Find out what changed his mind and why in TV Guide."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "TV Guide Magazine 1976",
+    "decade": 1970,
+    "sequence": 77,
+    "category": "Technology, Communication & Electronics",
+    "video_id": "video_0185",
+    "url": "https://youtu.be/XZiyOwfW5nQ",
+    "source_start": "0:00:00",
+    "source_end": "0:00:20"
+  }
+}

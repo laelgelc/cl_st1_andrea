@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_1960_110",
+  "input_path": "corpus/03_audio/tv_com_1960_110.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1960_110.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1960_110.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "this flat tire needs a man but when there's no man around when there's no man around Goodyear should be why watch this new Goodyear double-eagle carries its own spare inside lifeguard safety spare the tire in the tire keeps on going next time give her a second chance you",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 60.0235625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 24.6,
+        "text": "this flat tire needs a man but when there's no man around when there's no"
+      },
+      {
+        "id": 2,
+        "start": 24.6,
+        "end": 37.92,
+        "text": "man around Goodyear should be why watch this new Goodyear double-eagle carries its own spare inside"
+      },
+      {
+        "id": 3,
+        "start": 37.92,
+        "end": 48.78,
+        "text": "lifeguard safety spare the tire in the tire keeps on going next time give her a second chance"
+      },
+      {
+        "id": 4,
+        "start": 54.6,
+        "end": 56.660000000000004,
+        "text": "you"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Goodyear Double Eagle Tires",
+    "decade": 1960,
+    "sequence": 110,
+    "category": "Personal, Public Transport & Travel",
+    "video_id": "video_0172",
+    "url": "https://youtu.be/xg4XMcax63o",
+    "source_start": "0:06:21",
+    "source_end": "0:07:21"
+  }
+}

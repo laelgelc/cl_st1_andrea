@@ -1,0 +1,82 @@
+{
+  "commercial_id": "tv_com_2000_27",
+  "input_path": "corpus/03_audio/tv_com_2000_27.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_27.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_27.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Why are there so many songs about rainbows? And what's on the other side? Rainbows are visions, but only illusions And rainbows have nothing to hide Someday we'll find it The Rainbow Connection The lovers, the dreamers, and me Yahoo!",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Why are there so many songs about rainbows?"
+      },
+      {
+        "id": 2,
+        "start": 5.0,
+        "end": 9.0,
+        "text": "And what's on the other side?"
+      },
+      {
+        "id": 3,
+        "start": 9.0,
+        "end": 14.0,
+        "text": "Rainbows are visions, but only illusions"
+      },
+      {
+        "id": 4,
+        "start": 14.0,
+        "end": 18.0,
+        "text": "And rainbows have nothing to hide"
+      },
+      {
+        "id": 5,
+        "start": 18.0,
+        "end": 20.0,
+        "text": "Someday we'll find it"
+      },
+      {
+        "id": 6,
+        "start": 20.0,
+        "end": 23.0,
+        "text": "The Rainbow Connection"
+      },
+      {
+        "id": 7,
+        "start": 23.0,
+        "end": 27.0,
+        "text": "The lovers, the dreamers, and me"
+      },
+      {
+        "id": 8,
+        "start": 27.0,
+        "end": 30.0,
+        "text": "Yahoo!"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2003 HotJobs Job-Matching Platform",
+    "decade": 2000,
+    "sequence": 27,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0469",
+    "url": "https://youtu.be/IdpnELtIUtE",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

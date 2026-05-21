@@ -1,0 +1,76 @@
+{
+  "commercial_id": "tv_com_1980_104",
+  "input_path": "corpus/03_audio/tv_com_1980_104.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_104.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_104.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Introducing new Zestier Hamburger Helper Lasagna. First a savory sausage seasoning that's a more Italian touch. Now we add some more spice so it's zesty and nice with a taste you love so much. Our rich tomato sauce makes a hearty meal for you. Served on noodles so curly you'll know that it's surely lasagna through and through. Our new lasagna turns your plain hamburger into a real Italian meal that's more delicious than ever. Hamburger Helper, Helper, Hamburger Helper, make a great meal.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 30.0234375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 4.0,
+        "text": "Introducing new Zestier Hamburger Helper Lasagna."
+      },
+      {
+        "id": 2,
+        "start": 4.0,
+        "end": 8.0,
+        "text": "First a savory sausage seasoning that's a more Italian touch."
+      },
+      {
+        "id": 3,
+        "start": 8.0,
+        "end": 12.0,
+        "text": "Now we add some more spice so it's zesty and nice with a taste you love so much."
+      },
+      {
+        "id": 4,
+        "start": 12.0,
+        "end": 16.0,
+        "text": "Our rich tomato sauce makes a hearty meal for you."
+      },
+      {
+        "id": 5,
+        "start": 16.0,
+        "end": 20.0,
+        "text": "Served on noodles so curly you'll know that it's surely lasagna through and through."
+      },
+      {
+        "id": 6,
+        "start": 20.0,
+        "end": 26.0,
+        "text": "Our new lasagna turns your plain hamburger into a real Italian meal that's more delicious than ever."
+      },
+      {
+        "id": 7,
+        "start": 26.0,
+        "end": 30.0,
+        "text": "Hamburger Helper, Helper, Hamburger Helper, make a great meal."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1983 Hamburger Helper Lasagna Zestier and More delicious then ever",
+    "decade": 1980,
+    "sequence": 104,
+    "category": "Food, Beverages & Nutrition",
+    "video_id": "video_0315",
+    "url": "https://youtu.be/4kSEY7iPRNU",
+    "source_start": "0:00:00",
+    "source_end": "0:00:30"
+  }
+}

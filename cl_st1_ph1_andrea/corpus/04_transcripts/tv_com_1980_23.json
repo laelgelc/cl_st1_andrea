@@ -1,0 +1,64 @@
+{
+  "commercial_id": "tv_com_1980_23",
+  "input_path": "corpus/03_audio/tv_com_1980_23.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_1980_23.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_1980_23.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Just when you thought your wash was clean, now your wash can be really clean. Introducing Lysol Laundry Sanitizer. So powerful it does what hot water can't. Work with your detergent to reduce household germs, even odor-causing germs. 99.9% Lysol Laundry Sanitizer leaves your wash so white, bright, fresh-smelling, it's clean. New Lysol Laundry Sanitizer reduces germs 99.9%.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 29.0249375,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.34,
+        "end": 7.38,
+        "text": "Just when you thought your wash was clean, now your wash can be really clean."
+      },
+      {
+        "id": 2,
+        "start": 7.78,
+        "end": 12.1,
+        "text": "Introducing Lysol Laundry Sanitizer. So powerful it does what hot water can't."
+      },
+      {
+        "id": 3,
+        "start": 12.32,
+        "end": 16.3,
+        "text": "Work with your detergent to reduce household germs, even odor-causing germs."
+      },
+      {
+        "id": 4,
+        "start": 16.82,
+        "end": 24.8,
+        "text": "99.9% Lysol Laundry Sanitizer leaves your wash so white, bright, fresh-smelling, it's clean."
+      },
+      {
+        "id": 5,
+        "start": 24.8,
+        "end": 29.8,
+        "text": "New Lysol Laundry Sanitizer reduces germs 99.9%."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "1986 Lyson Laundry Sanitizer",
+    "decade": 1980,
+    "sequence": 23,
+    "category": "Household, Cleaning & Home Care",
+    "video_id": "video_0245",
+    "url": "https://youtu.be/lZbmrqjdmiM",
+    "source_start": "0:00:00",
+    "source_end": "0:00:29"
+  }
+}

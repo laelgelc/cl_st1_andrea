@@ -1,0 +1,58 @@
+{
+  "commercial_id": "tv_com_2000_26",
+  "input_path": "corpus/03_audio/tv_com_2000_26.wav",
+  "text_output_path": "corpus/04_transcripts/tv_com_2000_26.txt",
+  "json_output_path": "corpus/04_transcripts/tv_com_2000_26.json",
+  "model": {
+    "backend": "faster-whisper",
+    "model_name": "large-v3",
+    "device": "cuda",
+    "compute_type": "float16",
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 5,
+    "vad_filter": false
+  },
+  "transcription": {
+    "text": "Despite these obstacles, we've had a strong year with tobacco revenues surpassing expectations. Our volume was more than 560 billion cigarettes. A strong year of tobacco revenues as we expand into foreign markets. Thank you for watching.",
+    "detected_language": "en",
+    "language_probability": 1,
+    "duration_seconds": 31.0450625,
+    "segments": [
+      {
+        "id": 1,
+        "start": 1.0,
+        "end": 6.0,
+        "text": "Despite these obstacles, we've had a strong year with tobacco revenues surpassing expectations."
+      },
+      {
+        "id": 2,
+        "start": 8.0,
+        "end": 12.0,
+        "text": "Our volume was more than 560 billion cigarettes."
+      },
+      {
+        "id": 3,
+        "start": 13.0,
+        "end": 18.0,
+        "text": "A strong year of tobacco revenues as we expand into foreign markets."
+      },
+      {
+        "id": 4,
+        "start": 30.0,
+        "end": 32.0,
+        "text": "Thank you for watching."
+      }
+    ]
+  },
+  "metadata": {
+    "title": "2004 Undo Tobacco Growth",
+    "decade": 2000,
+    "sequence": 26,
+    "category": "Retail (Fashion/ Consumer Goods) &  Services",
+    "video_id": "video_0468",
+    "url": "https://youtu.be/lOjJdTlFu3E",
+    "source_start": "0:00:00",
+    "source_end": "0:00:31"
+  }
+}

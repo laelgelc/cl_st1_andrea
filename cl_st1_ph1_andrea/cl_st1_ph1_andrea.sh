@@ -64,3 +64,6 @@ nohup bash run_python_ec2.sh \
 
 python sample_commercials_frames.py
 
+# Full run
+
+python sample_commercials_frames.py --no-test-mode

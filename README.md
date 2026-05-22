@@ -466,3 +466,79 @@ corpus/05_frames/<Commercial ID>/
 
 Each commercial directory contains selected JPEG frames and a `frames_manifest.json`
 file recording timestamps, selection reasons, frame counts, and sampling parameters.
+
+### Describe commercial visuals
+
+The `describe_commercials_visual.py` programme describes the visual content of
+sampled commercial frames using a multimodal OpenAI model.
+
+It is Stage 2 of the visual analysis pipeline:
+
+1. `sample_commercials_frames.py` samples representative frames from each commercial.
+2. `describe_commercials_visual.py` submits those frames to a multimodal model and
+   writes a visual description.
+
+Default input:
+
+```text
+corpus/05_frames/
+```
+
+Default output:
+
+```text
+corpus/06_visual_descriptions/
+```
+
+Default prompt:
+
+```text
+describe_commercials_visual_prompts/visual_commercial_description_v1.txt
+```
+
+Default test run:
+
+```bash
+python describe_commercials_visual.py
+```
+
+Test run from a specific commercial ID:
+
+```bash
+python describe_commercials_visual.py \
+  --test-limit 10 \
+  --start-commercial-id tv_com_1960_54
+```
+
+Full run:
+
+```bash
+python describe_commercials_visual.py --no-test-mode
+```
+
+Use a different prompt:
+
+```bash
+python describe_commercials_visual.py \
+  --prompt-file describe_commercials_visual_prompts/visual_commercial_description_v2_lightly_structured.txt
+```
+
+Use a lower frame cap for cost control:
+
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --max-frames-per-request 20
+```
+
+The programme writes one `.txt` and one `.json` output per commercial:
+
+```text
+corpus/06_visual_descriptions/<Commercial ID>.txt
+corpus/06_visual_descriptions/<Commercial ID>.json
+```
+
+The `.txt` file contains the visual description. The `.json` file records model,
+prompt, frame, response, and reproducibility metadata.
+
+Requires `OPENAI_API_KEY` in `env/.env` or the system environment.

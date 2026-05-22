@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1960_54",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_54",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_54/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_54.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0002.jpg",
+      "timestamp_seconds": 0.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0003.jpg",
+      "timestamp_seconds": 4.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0004.jpg",
+      "timestamp_seconds": 4.861,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0005.jpg",
+      "timestamp_seconds": 5.595,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0006.jpg",
+      "timestamp_seconds": 5.962,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0007.jpg",
+      "timestamp_seconds": 6.596,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0008.jpg",
+      "timestamp_seconds": 8.465,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0009.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0010.jpg",
+      "timestamp_seconds": 9.366,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0011.jpg",
+      "timestamp_seconds": 10.367,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0012.jpg",
+      "timestamp_seconds": 12.602,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0013.jpg",
+      "timestamp_seconds": 15.772,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0014.jpg",
+      "timestamp_seconds": 17.274,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0015.jpg",
+      "timestamp_seconds": 22.279,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0016.jpg",
+      "timestamp_seconds": 25.682,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0017.jpg",
+      "timestamp_seconds": 26.449,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0018.jpg",
+      "timestamp_seconds": 27.284,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0019.jpg",
+      "timestamp_seconds": 29.853,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0020.jpg",
+      "timestamp_seconds": 33.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0021.jpg",
+      "timestamp_seconds": 33.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0022.jpg",
+      "timestamp_seconds": 37.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0023.jpg",
+      "timestamp_seconds": 43.633,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0024.jpg",
+      "timestamp_seconds": 44.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0025.jpg",
+      "timestamp_seconds": 46.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0026.jpg",
+      "timestamp_seconds": 47.404,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0027.jpg",
+      "timestamp_seconds": 47.804,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0028.jpg",
+      "timestamp_seconds": 52.375,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0029.jpg",
+      "timestamp_seconds": 56.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1960_54/frame_0030.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_54.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_54.json",
+    "response_text": "The commercial is presented in high-contrast black-and-white and uses rapid cuts, motion blur, stark silhouettes, and large bold typography.\n\nIt begins on a black frame, then cuts to an extreme close-up of a shiny circular car detail or mechanical feature. The exact part is difficult to identify from the sampled frame, but it appears metallic and reflective. This is followed by a rear/front road shot of a light-colored car moving along a roadway, then a very blurred close pass of a dark car surface or wheel area, suggesting speed.\n\nA title card appears with large block capital letters reading “THE NOW CARS.” The words are stacked vertically in white against a dark, smoky or cloudy background. A white outline shape appears to the left, though its precise meaning is unclear. The title is repeated in a cleaner form: first faintly over a bright background, then in solid black letters on a plain light background.\n\nThe commercial then shows a convertible in profile as a dark silhouette against a bright sky. A driver or passenger is visible in silhouette, seated low inside the open car. The image emphasizes the roofless body line and windshield frame. A large block word “REBEL” appears across the lower part of the frame while the convertible passes behind it, identifying the car model visually. Wider exterior shots follow: a light-colored convertible drives along a tree-lined road, seen from the side and then from a front three-quarter angle. The car has a long, rectangular front grille and rectangular headlamp area, and the convertible top is down.\n\nThe middle section becomes more abstract and kinetic. There are blurred close-ups of car surfaces or road textures, a dark near-black shot that may be a wheel or shadowed body detail, and several bright white flash-like transitions. A small car is then shown far in the distance on a flat horizon under a cloudy sky. This is followed by a dramatic shot of a windmill or rotating radial structure, seen as alternating black and white blades around a circular center.\n\nA close-up shows a woman inside the car in profile, looking forward. She has dark hair and a long light-colored earring; her face is strongly lit from the front/side while the car interior remains dark. The next shots return to the convertible driving on the road: first a front three-quarter view with the driver visible behind the windshield, then a rear three-quarter view as the car moves away along a road bordered by trees.\n\nMore bright white transitions appear. The convertible is then shown in side silhouette again, moving past a bright background with trees behind it. Later, the car appears in a darker setting with structural beams or bridge-like supports passing across the frame, creating a pattern of vertical and diagonal lines over the vehicle.\n\nThe commercial ends with very large bold white capital letters reading “NOW” over the moving background of the car/structural setting. The word fills most of the frame and remains dominant through the final sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_04cc491842b7cf7c006a105a5fa0888196ad21025fa980db2e",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 728,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 8271
+    }
+  },
+  "duration_seconds": 18.743,
+  "created_at": "2026-05-22T13:30:25Z",
+  "error": null
+}

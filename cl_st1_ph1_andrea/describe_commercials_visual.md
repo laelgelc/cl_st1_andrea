@@ -8,7 +8,7 @@ It reads sampled frame sequences produced by `sample_commercials_frames.py`, sub
 
 The programme is designed to describe the **visual content** of commercials, not their audio content. It should not infer dialogue, music, voice-over, or slogans unless those are visually present as on-screen text in the sampled frames.
 
-The two-stage pipeline is:
+The two-stage visual pipeline is:
 
 ```text
 Stage 1: sample_commercials_frames.py
@@ -44,6 +44,16 @@ For each commercial frame directory, the programme should:
    - error information, if any.
 10. Write a run-level log and JSON manifests.
 11. Skip already processed commercials unless `--reprocess` is used.
+
+The programme should use **natural sorting** for commercial IDs so that IDs such as:
+
+```text
+tv_com_1960_6
+tv_com_1960_54
+tv_com_1960_60
+```
+
+are ordered numerically by the digit portions, rather than lexicographically.
 
 ---
 
@@ -219,6 +229,8 @@ corpus/06_visual_descriptions/tv_com_1950_001.json
 
 The `.txt` file contains only the clean visual description text returned by the model.
 
+It should be UTF-8 encoded, stripped of leading/trailing whitespace, and end with a newline.
+
 ### `.json` output
 
 The `.json` file contains a full reproducibility record, including:
@@ -229,12 +241,15 @@ The `.json` file contains a full reproducibility record, including:
 - output JSON path;
 - model;
 - image detail level;
+- configured temperature;
+- whether the temperature parameter was actually sent to the API;
 - prompt file;
 - prompt SHA-256;
 - prompt text;
 - frames submitted;
 - response text;
-- status;
+- API metadata;
+- processing status;
 - error;
 - timing;
 - creation timestamp.
@@ -399,7 +414,7 @@ This provides an additional budget safeguard without changing Stage 1 outputs.
 
 ## 4.6 Temperature and generation settings
 
-Default:
+Default configured temperature:
 
 ```text
 temperature = 0
@@ -416,7 +431,29 @@ Rationale:
 - visual descriptions should be stable and reproducible;
 - lower temperature reduces unnecessary variation.
 
-If a specific model does not support `temperature`, the implementation should either omit the parameter or fail clearly, depending on the API behavior.
+However, not all models support the `temperature` parameter in the Responses API.
+
+For `gpt-5.5`, the programme should **omit** the `temperature` parameter from the API request, because that model rejects it.
+
+The programme should record both:
+
+```json
+"temperature": 0.0
+```
+
+and:
+
+```json
+"temperature_sent_to_api": false
+```
+
+for models where the parameter is configured but omitted.
+
+For models that support temperature, the programme may send:
+
+```json
+"temperature_sent_to_api": true
+```
 
 Optional future arguments:
 
@@ -425,13 +462,85 @@ Optional future arguments:
 --top-p
 ```
 
-For the first implementation, only `--temperature` is required.
+For the first implementation, only `--temperature` is required, and model-specific omission is acceptable.
 
 ---
 
-# 5. Command-Line Interface
+# 5. Natural Sorting and Resume Semantics
 
-## 5.1 Default test run
+## 5.1 Natural sorting
+
+Commercial IDs should be sorted using a natural-sort key that treats runs of digits as integers.
+
+This avoids lexicographic ordering such as:
+
+```text
+tv_com_1960_1
+tv_com_1960_10
+tv_com_1960_100
+tv_com_1960_11
+tv_com_1960_2
+```
+
+and instead produces:
+
+```text
+tv_com_1960_1
+tv_com_1960_2
+tv_com_1960_3
+...
+tv_com_1960_10
+tv_com_1960_11
+...
+tv_com_1960_100
+```
+
+Example natural-sort key behavior:
+
+```text
+tv_com_1960_6  <  tv_com_1960_54  <  tv_com_1960_60
+```
+
+## 5.2 Resume from commercial ID
+
+The argument:
+
+```bash
+--start-commercial-id ID
+```
+
+should use natural-sort comparison.
+
+For example:
+
+```bash
+python describe_commercials_visual.py \
+  --test-limit 10 \
+  --start-commercial-id tv_com_1960_54
+```
+
+should plan, assuming no successful existing outputs are skipped:
+
+```text
+tv_com_1960_54
+tv_com_1960_55
+tv_com_1960_56
+tv_com_1960_57
+tv_com_1960_58
+tv_com_1960_59
+tv_com_1960_60
+tv_com_1960_61
+tv_com_1960_62
+tv_com_1960_63
+```
+
+rather than including `tv_com_1960_6` between `tv_com_1960_59` and `tv_com_1960_60`.
+
+---
+
+# 6. Command-Line Interface
+
+## 6.1 Default test run
 
 ```bash
 python describe_commercials_visual.py
@@ -446,6 +555,7 @@ prompt_file = describe_commercials_visual_prompts/visual_commercial_description_
 model = gpt-5.5
 image_detail = low
 temperature = 0
+temperature_sent_to_api = false for gpt-5.5
 test_mode = true
 test_limit = 5
 reprocess = false
@@ -454,7 +564,19 @@ workers = 1
 
 ---
 
-## 5.2 Full run
+## 6.2 Test run from a specific commercial ID
+
+```bash
+python describe_commercials_visual.py \
+  --test-limit 10 \
+  --start-commercial-id tv_com_1960_54
+```
+
+This uses default test mode, but increases the number of attempted items to 10 and starts from the given commercial ID using natural-sort comparison.
+
+---
+
+## 6.3 Full run
 
 ```bash
 python describe_commercials_visual.py --no-test-mode
@@ -462,7 +584,7 @@ python describe_commercials_visual.py --no-test-mode
 
 ---
 
-## 5.3 Use a different prompt
+## 6.4 Use a different prompt
 
 ```bash
 python describe_commercials_visual.py \
@@ -471,7 +593,7 @@ python describe_commercials_visual.py \
 
 ---
 
-## 5.4 Use a structured JSON prompt
+## 6.5 Use a structured JSON prompt
 
 ```bash
 python describe_commercials_visual.py \
@@ -485,11 +607,13 @@ If the prompt asks for JSON, the programme should still save:
 <Commercial ID>.json
 ```
 
-The `.txt` file contains the raw model output. The `.json` file wraps that output in the programme’s metadata structure. The first implementation does not need to validate the model-generated JSON.
+The `.txt` file contains the raw model output. The `.json` file wraps that output in the programme’s metadata structure.
+
+The first implementation does not need to validate the model-generated JSON.
 
 ---
 
-## 5.5 Reprocess existing descriptions
+## 6.6 Reprocess existing descriptions
 
 ```bash
 python describe_commercials_visual.py --no-test-mode --reprocess
@@ -497,7 +621,7 @@ python describe_commercials_visual.py --no-test-mode --reprocess
 
 ---
 
-## 5.6 Change model
+## 6.7 Change model
 
 ```bash
 python describe_commercials_visual.py \
@@ -507,7 +631,7 @@ python describe_commercials_visual.py \
 
 ---
 
-## 5.7 Use higher image detail
+## 6.8 Use higher image detail
 
 ```bash
 python describe_commercials_visual.py \
@@ -517,7 +641,7 @@ python describe_commercials_visual.py \
 
 ---
 
-## 5.8 Add a Stage 2 safety frame cap
+## 6.9 Add a Stage 2 safety frame cap
 
 ```bash
 python describe_commercials_visual.py \
@@ -527,21 +651,21 @@ python describe_commercials_visual.py \
 
 ---
 
-## 5.9 Resume from a specific commercial ID
+## 6.10 Resume from a specific commercial ID
 
 ```bash
 python describe_commercials_visual.py \
   --no-test-mode \
-  --start-commercial-id tv_com_1950_025
+  --start-commercial-id tv_com_1950_25
 ```
 
-This should process only commercials whose inferred commercial ID is greater than or equal to the provided ID in sorted order.
+This should process only commercials whose inferred commercial ID is greater than or equal to the provided ID using natural-sort comparison.
 
 ---
 
-# 6. CLI Arguments
+# 7. CLI Arguments
 
-## 6.1 Required arguments
+## 7.1 Required arguments
 
 No CLI arguments are required for the default test run, provided that:
 
@@ -551,7 +675,7 @@ No CLI arguments are required for the default test run, provided that:
 
 ---
 
-## 6.2 Standard arguments
+## 7.2 Standard arguments
 
 | Argument | Default | Description |
 |---|---:|---|
@@ -560,38 +684,37 @@ No CLI arguments are required for the default test run, provided that:
 | `--prompt-file PATH` | `describe_commercials_visual_prompts/visual_commercial_description_v1.txt` | Prompt text file |
 | `--model MODEL` | `gpt-5.5` | OpenAI multimodal model |
 | `--image-detail {low,high,auto}` | `low` | Image detail level |
-| `--temperature FLOAT` | `0` | Generation temperature |
+| `--temperature FLOAT` | `0` | Generation temperature, omitted for models that do not support it |
 | `--test-mode` | enabled | Limit processing to `--test-limit` items |
 | `--no-test-mode` | disabled | Process all eligible items |
 | `--test-limit N` | `5` | Maximum items to attempt in test mode |
 | `--reprocess` | `False` | Regenerate outputs even if they already exist |
-| `--workers N` | `1` | Number of worker processes or threads |
+| `--workers N` | `1` | Number of worker threads |
 | `--log-file PATH` | `<output-dir>/describe_commercials_visual.log` | Log file path |
 | `--manifest-file PATH` | `<output-dir>/describe_commercials_visual_manifest.json` | Latest run manifest |
-| `--start-commercial-id ID` | `None` | Resume from this commercial ID onward |
+| `--start-commercial-id ID` | `None` | Resume from this commercial ID onward using natural-sort comparison |
 | `--max-frames-per-request N` | `0` | Optional extra cap on frames sent to the model; `0` means no cap |
+| `--max-retries N` | `2` | Maximum retry attempts for transient API failures |
+| `--retry-backoff-seconds FLOAT` | `5.0` | Initial retry backoff in seconds |
 
 ---
 
-## 6.3 Optional future arguments
+## 7.3 Optional future arguments
 
 | Argument | Purpose |
 |---|---|
 | `--max-output-tokens N` | Limit response length |
 | `--timeout SECONDS` | Per-request timeout |
-| `--max-retries N` | Retry transient API failures |
-| `--retry-backoff-seconds FLOAT` | Initial backoff for retries |
 | `--metadata-file PATH` | Enrich descriptions with commercial metadata |
 | `--response-format text/json` | Request or validate a particular output shape |
 | `--dry-run` | Plan processing without API calls |
 | `--save-request-json` | Save sanitized request payloads for debugging |
 | `--no-prompt-text-in-json` | Do not store full prompt text in per-commercial JSON |
-
-For the first implementation, retry support is recommended but not strictly required.
+| `--force-temperature` | Force sending temperature even for models normally configured to omit it |
 
 ---
 
-# 7. Argument Validation
+# 8. Argument Validation
 
 The programme should fail early with clear messages if:
 
@@ -605,6 +728,8 @@ The programme should fail early with clear messages if:
 - `--image-detail` is not one of `low`, `high`, or `auto`;
 - `--temperature < 0`;
 - `--max-frames-per-request < 0`;
+- `--max-retries < 0`;
+- `--retry-backoff-seconds < 0`;
 - `OPENAI_API_KEY` is missing;
 - the OpenAI Python package is unavailable.
 
@@ -612,9 +737,9 @@ The programme should not begin API processing unless these configuration checks 
 
 ---
 
-# 8. Environment and Configuration
+# 9. Environment and Configuration
 
-## 8.1 API key
+## 9.1 API key
 
 The programme requires:
 
@@ -647,7 +772,7 @@ The programme must not log the API key.
 
 ---
 
-## 8.2 Prompt configuration
+## 9.2 Prompt configuration
 
 The prompt file path is provided through:
 
@@ -665,7 +790,7 @@ This ensures prompt reproducibility.
 
 ---
 
-# 9. External Dependencies
+# 10. External Dependencies
 
 The programme requires the OpenAI Python SDK.
 
@@ -683,9 +808,9 @@ It reads existing image files.
 
 ---
 
-# 10. Processing Architecture
+# 11. Processing Architecture
 
-## 10.1 Startup
+## 11.1 Startup
 
 At startup, the programme should:
 
@@ -710,14 +835,17 @@ Example startup log:
 [2026-05-22 14:15:33] INFO   Prompt file: describe_commercials_visual_prompts/visual_commercial_description_v1.txt
 [2026-05-22 14:15:33] INFO   Prompt SHA-256: 5f...
 [2026-05-22 14:15:33] INFO   Image detail: low
+[2026-05-22 14:15:33] INFO   Temperature: 0.0
+[2026-05-22 14:15:33] INFO   Temperature parameter will be omitted because model gpt-5.5 does not support it
 [2026-05-22 14:15:33] INFO   Test mode: True (limit=5)
 [2026-05-22 14:15:33] INFO   Reprocess existing: False
 [2026-05-22 14:15:33] INFO   Workers: 1
+[2026-05-22 14:15:33] INFO   OPENAI_API_KEY is configured
 ```
 
 ---
 
-## 10.2 Discovery
+## 11.2 Discovery
 
 The programme should:
 
@@ -725,8 +853,8 @@ The programme should:
 2. Keep only those containing `frames_manifest.json`.
 3. Read commercial ID from the manifest when possible.
 4. Fall back to directory name if needed.
-5. Sort deterministically by commercial ID.
-6. Apply `--start-commercial-id`, if provided.
+5. Sort deterministically by commercial ID using natural sorting.
+6. Apply `--start-commercial-id`, if provided, using natural-sort comparison.
 
 Discovery summary:
 
@@ -736,7 +864,7 @@ Discovery summary:
 
 ---
 
-## 10.3 Planning
+## 11.3 Planning
 
 For each discovered commercial, determine:
 
@@ -760,9 +888,11 @@ If outputs are incomplete or JSON is missing/corrupt, the item should be reproce
 
 Test mode should apply to items that would be attempted, not to already-skipped items.
 
+Planning should respect natural-sort ordering and `--start-commercial-id`.
+
 ---
 
-## 10.4 Execution model
+## 11.4 Execution model
 
 ### Recommended initial implementation
 
@@ -774,7 +904,7 @@ workers = 1
 
 as the safest default.
 
-If `--workers > 1` is implemented, use a `ThreadPoolExecutor`, not `ProcessPoolExecutor`, because the workload is primarily network-bound.
+If `--workers > 1` is used, the programme should use a `ThreadPoolExecutor`, not `ProcessPoolExecutor`, because the workload is primarily network-bound.
 
 Workers should:
 
@@ -787,15 +917,17 @@ The main process should:
 
 - plan work;
 - log results;
-- write outputs and manifests when practical.
+- write run-level manifests.
 
 It is acceptable for workers to write per-commercial `.txt` and `.json` outputs if each worker writes to distinct paths.
 
+The programme should be careful with API rate limits when `workers > 1`.
+
 ---
 
-# 11. Per-Commercial Processing Details
+# 12. Per-Commercial Processing Details
 
-## 11.1 Read frame manifest
+## 12.1 Read frame manifest
 
 The programme should read:
 
@@ -825,7 +957,7 @@ If `frame_index` is missing, use manifest order.
 
 ---
 
-## 11.2 Resolve frame paths
+## 12.2 Resolve frame paths
 
 Each frame entry may contain:
 
@@ -845,6 +977,8 @@ Resolution rules:
 2. Else, if `filename` exists, resolve relative to the frame directory.
 3. Else, mark the item as failed.
 
+If a listed `path` does not exist but the file exists in the frame directory with the same basename, the programme may use the local frame-directory fallback.
+
 If any listed frame file is missing, mark the item as failed.
 
 Supported frame extensions:
@@ -857,7 +991,7 @@ Supported frame extensions:
 
 ---
 
-## 11.3 Optional Stage 2 frame cap
+## 12.3 Optional Stage 2 frame cap
 
 If:
 
@@ -891,7 +1025,7 @@ and:
 
 ---
 
-## 11.4 Build request content
+## 12.4 Build request content
 
 The programme should build a multimodal request containing:
 
@@ -927,7 +1061,7 @@ The frame label should be sent as text immediately before the corresponding imag
 
 ---
 
-## 11.5 API call
+## 12.5 API call
 
 The first implementation should use the OpenAI Responses API.
 
@@ -959,9 +1093,11 @@ response.output_text
 
 If `response.output_text` is unavailable, the programme should fail clearly for that item and record the error.
 
+For `gpt-5.5`, the request should omit the `temperature` parameter.
+
 ---
 
-## 11.6 Save outputs
+## 12.6 Save outputs
 
 For each successful commercial, write:
 
@@ -974,11 +1110,13 @@ The `.txt` file should contain exactly the model’s visual description text, st
 
 The `.json` file should contain the full programme metadata and response text.
 
+For failed commercials, a per-commercial failure `.json` is recommended. A failed `.txt` file should not be required.
+
 ---
 
-# 12. Per-Commercial JSON Output
+# 13. Per-Commercial JSON Output
 
-Example:
+Example success output:
 
 ```json
 {
@@ -986,7 +1124,8 @@ Example:
   "status": "success",
   "model": "gpt-5.5",
   "image_detail": "low",
-  "temperature": 0,
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
   "prompt": {
     "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
     "prompt_sha256": "abc123...",
@@ -1036,22 +1175,29 @@ Example:
 }
 ```
 
-If failed:
+Example failure output:
 
 ```json
 {
   "commercial_id": "tv_com_1950_001",
   "status": "failed",
-  "error": "Missing frame file: corpus/05_frames/tv_com_1950_001/frame_0003.jpg",
-  "created_at": "2026-05-22T14:17:02Z"
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_001",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_001/frames_manifest.json"
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_001.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_001.json"
+  },
+  "duration_seconds": 1.23,
+  "created_at": "2026-05-22T14:17:02Z",
+  "error": "Missing frame file: corpus/05_frames/tv_com_1950_001/frame_0003.jpg"
 }
 ```
 
-Failed per-commercial JSON files are optional but recommended.
-
 ---
 
-# 13. Run-Level Manifest
+# 14. Run-Level Manifest
 
 The latest manifest should be written to:
 
@@ -1084,10 +1230,13 @@ Example structure:
     "config": {
       "model": "gpt-5.5",
       "image_detail": "low",
-      "temperature": 0,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
       "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
       "prompt_sha256": "abc123...",
-      "max_frames_per_request": 0
+      "max_frames_per_request": 0,
+      "max_retries": 2,
+      "retry_backoff_seconds": 5.0
     }
   },
   "files": [
@@ -1127,7 +1276,7 @@ Example structure:
 
 ---
 
-# 14. Logging Specification
+# 15. Logging Specification
 
 The programme should write logs to:
 
@@ -1146,6 +1295,9 @@ Minimum log events:
 - startup;
 - configuration summary;
 - prompt file and prompt hash;
+- model and image detail;
+- configured temperature;
+- whether temperature will be omitted for the selected model;
 - API key presence check, without printing the key;
 - discovery summary;
 - planning summary;
@@ -1167,6 +1319,8 @@ Example:
 [2026-05-22 14:15:33] INFO   Prompt file: describe_commercials_visual_prompts/visual_commercial_description_v1.txt
 [2026-05-22 14:15:33] INFO   Prompt SHA-256: abc123...
 [2026-05-22 14:15:33] INFO   Image detail: low
+[2026-05-22 14:15:33] INFO   Temperature: 0.0
+[2026-05-22 14:15:33] INFO   Temperature parameter will be omitted because model gpt-5.5 does not support it
 [2026-05-22 14:15:34] INFO   Discovered 742 commercial frame directories
 [2026-05-22 14:15:34] INFO   Planned 5 commercials for processing
 [2026-05-22 14:17:02] INFO   SUCCESS tv_com_1950_001 frames=8 response_id=resp_...
@@ -1189,9 +1343,9 @@ Skip example:
 
 ---
 
-# 15. Error Handling
+# 16. Error Handling
 
-## 15.1 Configuration errors
+## 16.1 Configuration errors
 
 Configuration errors should stop the programme before processing begins.
 
@@ -1213,7 +1367,7 @@ Exit code:
 
 ---
 
-## 15.2 Per-item errors
+## 16.2 Per-item errors
 
 Per-commercial errors should not abort the whole run.
 
@@ -1248,22 +1402,24 @@ Recommended exit codes:
 
 ---
 
-## 15.3 Retry behavior
+## 16.3 Retry behavior
 
-The first implementation may include basic retry support.
+The first implementation includes basic retry support.
 
-Recommended arguments:
+Arguments:
 
 ```text
 --max-retries 2
---retry-backoff-seconds 5
+--retry-backoff-seconds 5.0
 ```
 
-If implemented, retry only likely transient API failures, such as:
+Retry only likely transient API failures, such as:
 
 - rate limits;
 - temporary service errors;
-- network timeouts.
+- network timeouts;
+- 429 errors;
+- 5xx server errors.
 
 Do not retry permanent local failures, such as:
 
@@ -1272,23 +1428,25 @@ Do not retry permanent local failures, such as:
 - empty prompt;
 - unsupported image extension.
 
+Do not retry permanent API request failures, such as unsupported parameters, unless future logic can safely modify the request.
+
 Retry attempts should be logged at `WARNING` level.
 
 ---
 
-## 15.4 Keyboard interrupt
+## 16.4 Keyboard interrupt
 
 On `KeyboardInterrupt`, the programme should:
 
 1. Stop submitting new work.
 2. Allow current item to finish if practical.
-3. Write a partial run manifest.
+3. Write a partial run manifest where feasible.
 4. Log interruption.
 5. Exit with code `130`.
 
 ---
 
-# 16. Resumability and Safe Re-runs
+# 17. Resumability and Safe Re-runs
 
 By default, the programme must be safe to re-run.
 
@@ -1318,9 +1476,11 @@ python describe_commercials_visual.py --no-test-mode --reprocess
 
 When reprocessing, the programme should overwrite both the `.txt` and `.json` outputs for that commercial.
 
+Failed prior outputs should not be skipped, because their JSON status is not `success`.
+
 ---
 
-# 17. Test Mode
+# 18. Test Mode
 
 Test mode is enabled by default.
 
@@ -1355,7 +1515,7 @@ Test mode should apply to items that would be attempted, not to already-skipped 
 
 ---
 
-# 18. Parallel Processing
+# 19. Parallel Processing
 
 The default worker count should be:
 
@@ -1383,7 +1543,7 @@ If retry support is implemented, it should work safely in parallel mode.
 
 ---
 
-# 19. Docstring Requirements
+# 20. Docstring Requirements
 
 The implementation must include a module-level docstring explaining:
 
@@ -1435,6 +1595,7 @@ Core functions should include docstrings, especially:
 - environment loading;
 - prompt loading;
 - prompt hashing;
+- natural sorting;
 - discovery;
 - planning;
 - frame manifest reading;
@@ -1442,13 +1603,14 @@ Core functions should include docstrings, especially:
 - image encoding;
 - request construction;
 - API submission;
+- model-specific parameter handling;
 - per-commercial output writing;
 - run manifest writing;
 - main orchestration.
 
 ---
 
-# 20. Recommended Internal Functions
+# 21. Recommended Internal Functions
 
 The implementation should be organized around small, testable functions.
 
@@ -1475,11 +1637,19 @@ def sha256_text(text: str) -> str:
     """Return the SHA-256 hash of prompt text."""
 
 
+def natural_sort_key(text: str) -> list[int | str]:
+    """Return a natural-sort key that treats digit runs as integers."""
+
+
 def discover_frame_dirs(input_dir: Path) -> list[FrameItem]:
     """Discover commercial frame directories containing frames_manifest.json."""
 
 
-def plan_work(items: list[FrameItem], args: argparse.Namespace) -> list[WorkItem]:
+def should_start_from(commercial_id: str, start_commercial_id: str | None) -> bool:
+    """Return True if a commercial ID is at or after the optional start ID."""
+
+
+def plan_work(...) -> tuple[list[WorkItem], list[ProcessingResult]]:
     """Determine which commercials should be processed or skipped."""
 
 
@@ -1508,12 +1678,11 @@ def build_request_content(
     """Build multimodal request content with prompt, frame labels, and images."""
 
 
-def call_openai_visual_description(
-    client: OpenAI,
-    model: str,
-    content: list[dict],
-    temperature: float,
-) -> tuple[str, dict]:
+def model_supports_temperature(model: str) -> bool:
+    """Return whether the selected model should receive a temperature parameter."""
+
+
+def call_openai_visual_description(...) -> tuple[str, dict]:
     """Call the OpenAI Responses API and return response text and metadata."""
 
 
@@ -1524,8 +1693,12 @@ def process_commercial_visual(
     """Process one commercial frame sequence and return a structured result."""
 
 
-def write_per_commercial_outputs(...) -> None:
-    """Write .txt and .json outputs for one commercial."""
+def write_per_commercial_success_outputs(...) -> None:
+    """Write .txt and .json success outputs for one commercial."""
+
+
+def write_per_commercial_failure_output(...) -> None:
+    """Write a per-commercial failure JSON record."""
 
 
 def write_run_manifest(...) -> None:
@@ -1596,7 +1769,7 @@ class ProcessingResult:
 
 ---
 
-# 21. Prompt Files
+# 22. Prompt Files
 
 The initial prompt directory should contain:
 
@@ -1607,7 +1780,7 @@ describe_commercials_visual_prompts/
   visual_commercial_description_v3_json.txt
 ```
 
-## 21.1 Default prompt: v1
+## 22.1 Default prompt: v1
 
 Path:
 
@@ -1622,7 +1795,7 @@ Purpose:
 - focuses on visual evidence only;
 - avoids audio hallucination.
 
-## 21.2 Lightly structured prompt: v2
+## 22.2 Lightly structured prompt: v2
 
 Path:
 
@@ -1636,7 +1809,7 @@ Purpose:
 - still avoids imposing detailed theory;
 - useful for later corpus inspection.
 
-## 21.3 JSON prompt: v3
+## 22.3 JSON prompt: v3
 
 Path:
 
@@ -1652,7 +1825,7 @@ Purpose:
 
 ---
 
-# 22. README Section
+# 23. README Section
 
 A short README section should be added when the programme is implemented.
 
@@ -1694,6 +1867,14 @@ Default test run:
 python describe_commercials_visual.py
 ```
 
+Test run from a specific commercial ID:
+
+```bash
+python describe_commercials_visual.py \
+  --test-limit 10 \
+  --start-commercial-id tv_com_1960_54
+```
+
 Full run:
 
 ```bash
@@ -1730,7 +1911,7 @@ Requires `OPENAI_API_KEY` in `env/.env` or the system environment.
 
 ---
 
-# 23. Acceptance Criteria
+# 24. Acceptance Criteria
 
 The implementation is acceptable when:
 
@@ -1746,27 +1927,32 @@ The implementation is acceptable when:
 7. The programme labels frames with timestamp and selection-reason metadata when available.
 8. The programme uses `gpt-5.5` by default.
 9. The programme uses `image_detail = low` by default.
-10. The programme saves:
+10. The programme omits the `temperature` API parameter for `gpt-5.5`.
+11. The programme records whether `temperature` was sent to the API.
+12. The programme uses natural sorting for commercial IDs.
+13. The programme uses natural-sort comparison for `--start-commercial-id`.
+14. The programme saves:
     ```text
     corpus/06_visual_descriptions/<Commercial ID>.txt
     corpus/06_visual_descriptions/<Commercial ID>.json
     ```
-11. Existing successful outputs are skipped unless `--reprocess` is used.
-12. The programme writes an append-style log file.
-13. The programme writes latest and timestamped run manifests.
-14. Per-item failures do not stop the full run.
-15. The programme exits non-zero if any attempted item fails.
-16. The programme supports test mode and full-run mode.
-17. The programme supports changing prompt file through `--prompt-file`.
-18. The programme supports optional Stage 2 frame capping through `--max-frames-per-request`.
-19. The programme does not resample video frames.
-20. The programme does not require FFmpeg.
-21. The programme does not log `OPENAI_API_KEY`.
-22. The code includes clear module-level and function docstrings.
+15. Existing successful outputs are skipped unless `--reprocess` is used.
+16. Failed existing outputs are not treated as successful and can be retried.
+17. The programme writes an append-style log file.
+18. The programme writes latest and timestamped run manifests.
+19. Per-item failures do not stop the full run.
+20. The programme exits non-zero if any attempted item fails.
+21. The programme supports test mode and full-run mode.
+22. The programme supports changing prompt file through `--prompt-file`.
+23. The programme supports optional Stage 2 frame capping through `--max-frames-per-request`.
+24. The programme does not resample video frames.
+25. The programme does not require FFmpeg.
+26. The programme does not log `OPENAI_API_KEY`.
+27. The code includes clear module-level and function docstrings.
 
 ---
 
-# 24. Design Rationale
+# 25. Design Rationale
 
 This programme deliberately separates **visual input preparation** from **LLM interpretation**.
 
@@ -1781,6 +1967,10 @@ Using prompt files rather than hard-coded prompts is important because:
 
 The default prompt is intentionally minimally directive. It asks the model to describe the commercial visually, as a temporal sequence, while avoiding unsupported audio inference. This is appropriate for the first implementation because the aim is to establish a reliable baseline before introducing more structured or theory-driven prompts.
 
+Natural sorting is important because the corpus uses commercial IDs with numeric components that may not be zero-padded. Lexicographic sorting would place values such as `tv_com_1960_6` after `tv_com_1960_59`, which is not the intended corpus order. Natural sorting preserves the expected numeric sequence.
+
+The programme omits `temperature` for `gpt-5.5` because that model rejects the parameter in the Responses API. The configured value is still recorded for reproducibility, along with whether it was actually sent.
+
 The per-commercial JSON output and run-level manifest ensure that each generated description can be traced back to:
 
 - the exact frame manifest;
@@ -1789,4 +1979,6 @@ The per-commercial JSON output and run-level manifest ensure that each generated
 - the prompt hash;
 - the model;
 - the image detail setting;
+- the configured temperature;
+- whether temperature was sent to the API;
 - the API response metadata.

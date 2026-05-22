@@ -36,6 +36,7 @@ import json
 import logging
 import mimetypes
 import os
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -349,6 +350,12 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def natural_sort_key(text: str) -> list[int | str]:
+    """Return a natural-sort key that treats digit runs as integers."""
+    parts = re.split(r"(\d+)", text)
+    return [int(part) if part.isdigit() else part.lower() for part in parts]
+
+
 def discover_frame_dirs(input_dir: Path) -> list[FrameItem]:
     """Discover commercial frame directories containing frames_manifest.json."""
     items: list[FrameItem] = []
@@ -379,7 +386,7 @@ def discover_frame_dirs(input_dir: Path) -> list[FrameItem]:
             )
         )
 
-    return sorted(items, key=lambda item: item.commercial_id)
+    return sorted(items, key=lambda item: natural_sort_key(item.commercial_id))
 
 
 def is_successful_existing_output(output_text_path: Path, output_json_path: Path) -> bool:
@@ -395,6 +402,14 @@ def is_successful_existing_output(output_text_path: Path, output_json_path: Path
     return data.get("status") == "success"
 
 
+def should_start_from(commercial_id: str, start_commercial_id: str | None) -> bool:
+    """Return True if a commercial ID is at or after the optional start ID."""
+    if not start_commercial_id:
+        return True
+
+    return natural_sort_key(commercial_id) >= natural_sort_key(start_commercial_id)
+
+
 def plan_work(
         items: list[FrameItem],
         output_dir: Path,
@@ -408,7 +423,7 @@ def plan_work(
     skipped: list[ProcessingResult] = []
 
     for item in items:
-        if start_commercial_id and item.commercial_id < start_commercial_id:
+        if not should_start_from(item.commercial_id, start_commercial_id):
             continue
 
         output_text_path = output_dir / f"{item.commercial_id}.txt"
@@ -706,6 +721,21 @@ def is_transient_api_error(exc: Exception) -> bool:
     return any(marker in name or marker in message for marker in transient_markers)
 
 
+def model_supports_temperature(model: str) -> bool:
+    """Return whether the selected model should receive a temperature parameter.
+
+    Some newer multimodal/reasoning models, including gpt-5.5 in this project,
+    reject the Responses API `temperature` parameter. For those models, the
+    programme omits the parameter rather than failing the request.
+    """
+    normalized_model = model.strip().lower()
+    models_without_temperature = {
+        "gpt-5.5",
+    }
+
+    return normalized_model not in models_without_temperature
+
+
 def call_openai_visual_description(
         client: Any,
         model: str,
@@ -729,7 +759,7 @@ def call_openai_visual_description(
                 ],
             }
 
-            if temperature is not None:
+            if temperature is not None and model_supports_temperature(model):
                 kwargs["temperature"] = temperature
 
             response = client.responses.create(**kwargs)
@@ -795,6 +825,7 @@ def write_per_commercial_success_outputs(
         "model": config.model,
         "image_detail": config.image_detail,
         "temperature": config.temperature,
+        "temperature_sent_to_api": model_supports_temperature(config.model),
         "prompt": {
             "prompt_file": str(config.prompt_file),
             "prompt_sha256": config.prompt_sha256,
@@ -946,7 +977,7 @@ def process_commercial_visual(
         )
 
 
-def result_to_manifest_entry(result: ProcessingResult) -> dict[str, Any]:
+def result_to_manifest_entry(result: ProcessingResult, config: RuntimeConfig) -> dict[str, Any]:
     """Convert a processing result to a run-manifest file entry."""
     return {
         "commercial_id": result.commercial_id,
@@ -958,7 +989,7 @@ def result_to_manifest_entry(result: ProcessingResult) -> dict[str, Any]:
         "duration_seconds": result.duration_seconds,
         "timestamp": result.timestamp,
         "metadata": {
-            "model": None if result.status == "skipped_existing" else DEFAULT_MODEL,
+            "model": config.model if result.status != "skipped_existing" else None,
             "manifest_frame_count": result.manifest_frame_count,
             "submitted_frame_count": result.submitted_frame_count,
             "stage2_frame_cap_applied": result.stage2_frame_cap_applied,
@@ -1007,6 +1038,7 @@ def write_run_manifest(
                 "model": config.model,
                 "image_detail": config.image_detail,
                 "temperature": config.temperature,
+                "temperature_sent_to_api": model_supports_temperature(config.model),
                 "prompt_file": str(config.prompt_file),
                 "prompt_sha256": config.prompt_sha256,
                 "max_frames_per_request": config.max_frames_per_request,
@@ -1014,7 +1046,7 @@ def write_run_manifest(
                 "retry_backoff_seconds": config.retry_backoff_seconds,
             },
         },
-        "files": [result_to_manifest_entry(result) for result in results],
+        "files": [result_to_manifest_entry(result, config) for result in results],
         "summary": {
             "discovered": discovered_count,
             "planned": planned_count,
@@ -1061,6 +1093,13 @@ def log_startup(
     logging.info("Prompt SHA-256: %s", config.prompt_sha256)
     logging.info("Image detail: %s", config.image_detail)
     logging.info("Temperature: %s", config.temperature)
+
+    if not model_supports_temperature(config.model):
+        logging.info(
+            "Temperature parameter will be omitted because model %s does not support it",
+            config.model,
+        )
+
     logging.info("Max frames per request: %s", config.max_frames_per_request)
     logging.info("Test mode: %s (limit=%s)", args.test_mode, args.test_limit)
     logging.info("Reprocess existing: %s", args.reprocess)
@@ -1113,7 +1152,7 @@ def run_processing(
             results.append(result)
             log_result(result)
 
-    return sorted(results, key=lambda result: result.commercial_id)
+    return sorted(results, key=lambda result: natural_sort_key(result.commercial_id))
 
 
 def main() -> int:
@@ -1169,7 +1208,7 @@ def main() -> int:
 
         all_results = sorted(
             [*skipped, *processed],
-            key=lambda result: result.commercial_id,
+            key=lambda result: natural_sort_key(result.commercial_id),
         )
 
         end_time = utc_timestamp()

@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1960_58",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_58",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_58/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_58.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0002.jpg",
+      "timestamp_seconds": 23.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0003.jpg",
+      "timestamp_seconds": 32.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0004.jpg",
+      "timestamp_seconds": 34.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0005.jpg",
+      "timestamp_seconds": 35.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0006.jpg",
+      "timestamp_seconds": 36.92,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0007.jpg",
+      "timestamp_seconds": 55.537,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_58/frame_0008.jpg",
+      "timestamp_seconds": 58.039,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_58.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_58.json",
+    "response_text": "The commercial unfolds as a soft-focus, family-oriented visual sequence centered on Kodak and a small handheld camera.\n\n1. **Opening image / brand identification**  \n   The first frame shows a dark silhouette of a larger figure holding or embracing a smaller child-like figure against a bright curtain or window background. The red word **“Kodak”** appears on the right side of the image. The figures are backlit, so facial details are not visible.\n\n2. **Hands and product handling**  \n   The next sampled frame cuts to a close-up of hands near a tabletop or counter. A person in light-colored clothing appears to be holding or handling a small yellow/orange rectangular item. Another small dark-and-yellow object sits lower in the frame. The image is blurred, so the exact objects are not fully clear.\n\n3. **Close-up of a child**  \n   A close side-profile shot shows a young child with light skin and short hair, wearing a light-colored top. The child is looking toward something off-screen to the right. The lighting remains bright and diffuse.\n\n4. **Child holding a camera**  \n   A smiling child with medium-length brown hair faces the camera while holding a small rectangular camera up in front of one eye, as if taking a picture or filming. The background is pale and uncluttered.\n\n5. **Another child reacting**  \n   The sequence cuts to a close-up of a younger child with light skin and curly hair, wearing a light-colored shirt. The child looks slightly upward or to the side with an open, pleased expression. A small shiny object or surface is visible near the lower right edge, but it is not identifiable from the frame.\n\n6. **Camera near domestic setting / product package visible**  \n   A wider shot shows a light-colored room with a striped upholstered chair on the left and a curtain or light wall in the center. A hand holds a small boxy camera near the curtain. On the right side, a yellow/orange Kodak-branded package or box is visible.\n\n7. **Using the camera on a decorative subject**  \n   A person, likely a child or young person, is shown in profile from behind, looking through a small rectangular camera. The camera is aimed toward a pale surface with a blue decorative bow attached to it. The user’s face is mostly obscured by hair and the camera.\n\n8. **Final product-and-price shot**  \n   The final frame shows the camera placed or lowered onto a soft white surface near the same blue bow. Overlaid text reads **“Less than $30”** in dark lettering. The camera remains the central object, with the price text positioned to the lower right of it."
+  },
+  "api_metadata": {
+    "response_id": "resp_0bb35d216af4b242006a105a9c896c81a2aeca4e6834288d7e",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 832,
+      "output_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "total_tokens": 2477
+    }
+  },
+  "duration_seconds": 20.369,
+  "created_at": "2026-05-22T13:31:28Z",
+  "error": null
+}

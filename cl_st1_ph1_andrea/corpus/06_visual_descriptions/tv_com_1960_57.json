@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1960_57",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_57",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_57/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_57.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0002.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0003.jpg",
+      "timestamp_seconds": 25.749,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0004.jpg",
+      "timestamp_seconds": 28.952,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0005.jpg",
+      "timestamp_seconds": 30.72,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0006.jpg",
+      "timestamp_seconds": 34.057,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0007.jpg",
+      "timestamp_seconds": 39.095,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0008.jpg",
+      "timestamp_seconds": 41.731,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0009.jpg",
+      "timestamp_seconds": 48.805,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_57/frame_0010.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_57.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_57.json",
+    "response_text": "The commercial opens with a very dark or black frame; no visual content is discernible.\n\nIt then cuts to a tight close-up of three adult men in suits leaning in toward one another. The man in the center wears a tan/brown jacket and looks forward with a serious expression, while the two men on either side face inward toward him. The framing is close and crowded, emphasizing their faces.\n\nThe next shots focus on a foot wearing a dark, likely black, sock. The socked foot is extended horizontally, and another person’s hands and trousered leg are visible nearby. The setting appears to be a bright white studio space with a reflective glass surface or table.\n\nA close-up follows of one man in a dark suit, white shirt, and tie. He rests his fingers against his mouth or chin, appearing to study something off-screen with a thoughtful or concerned expression.\n\nThe camera returns to the socked foot. A man in a tan suit reaches toward or holds the lower leg/ankle area near the sock. The foot rests on or just above a glass tabletop, which reflects the foot and hands. The tan-suited man’s red tie is visible.\n\nAnother close-up shows a different man in a dark suit wearing dark-rimmed glasses. He faces left, appearing to speak or react, though no audio is available. His expression is attentive and somewhat animated.\n\nThe camera briefly moves very close past the man with glasses, with part of his face and eyeglasses filling the foreground while another man bends or leans behind him. The image is partially obscured by the extreme proximity.\n\nA low-angle shot then shows the black-socked foot looming large across the upper part of the frame, with the tan-suited man seen below looking upward. The white studio background remains plain and minimal.\n\nA wide overhead or high-angle shot reveals the full arrangement: a glass table in the center, black modern chairs on both sides, and several men gathered around it. One man in a tan suit stands on or at the center of the glass table, while two men in dark suits sit on either side. A dark object, possibly a shoe, lies on the floor to the right. The space is stark white with a rectangular rug or platform beneath the table and chairs.\n\nIn the final frame, the tan-suited man stands with his arms spread outward above the seated men, facing the camera. Large white text appears over the scene. The visible text reads: “Stand-Up Socks! By Hanes Plus 4” and below it “Of Ban-Lon Caprolan nylon by Allied Chemical,” though some wording is slightly blurred. The visual emphasis throughout is on the dark socked foot and the men examining or reacting to it in a minimalist studio setting."
+  },
+  "api_metadata": {
+    "response_id": "resp_06e0d6b4b75bf505006a105a82b7c8819f885fa58056526999",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 990,
+      "output_tokens_details": {
+        "reasoning_tokens": 428
+      },
+      "total_tokens": 3593
+    }
+  },
+  "duration_seconds": 26.116,
+  "created_at": "2026-05-22T13:31:08Z",
+  "error": null
+}

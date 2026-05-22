@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1960_59",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_59",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_59/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_59.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0002.jpg",
+      "timestamp_seconds": 2.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0003.jpg",
+      "timestamp_seconds": 5.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0004.jpg",
+      "timestamp_seconds": 6.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0005.jpg",
+      "timestamp_seconds": 13.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0006.jpg",
+      "timestamp_seconds": 16.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0007.jpg",
+      "timestamp_seconds": 20.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0008.jpg",
+      "timestamp_seconds": 22.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0009.jpg",
+      "timestamp_seconds": 23.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0010.jpg",
+      "timestamp_seconds": 25.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0011.jpg",
+      "timestamp_seconds": 26.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0012.jpg",
+      "timestamp_seconds": 29.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0013.jpg",
+      "timestamp_seconds": 29.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0014.jpg",
+      "timestamp_seconds": 30.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0015.jpg",
+      "timestamp_seconds": 33.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0016.jpg",
+      "timestamp_seconds": 34.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0017.jpg",
+      "timestamp_seconds": 36.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0018.jpg",
+      "timestamp_seconds": 37.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0019.jpg",
+      "timestamp_seconds": 40.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0020.jpg",
+      "timestamp_seconds": 42.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0021.jpg",
+      "timestamp_seconds": 43.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0022.jpg",
+      "timestamp_seconds": 44.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0023.jpg",
+      "timestamp_seconds": 45.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0024.jpg",
+      "timestamp_seconds": 49.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0025.jpg",
+      "timestamp_seconds": 50.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0026.jpg",
+      "timestamp_seconds": 50.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0027.jpg",
+      "timestamp_seconds": 51.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0028.jpg",
+      "timestamp_seconds": 51.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0029.jpg",
+      "timestamp_seconds": 51.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1960_59/frame_0030.jpg",
+      "timestamp_seconds": 57.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_59.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_59.json",
+    "response_text": "The commercial opens on a black frame, then cuts to a close-up of a white circular badge pinned to orange fabric. The badge reads, in decorative script, “Come fly with me...”.\n\nIt then moves into a fast montage of travel- and leisure-related images:\n\n- A hand points with a pen or pointer at large maps or charts spread across a desk.\n- A low-angle shot shows a uniformed man in a light-blue shirt and cap, raising his hands near what appears to be an aircraft.\n- The Statue of Liberty is shown from above or at an elevated angle, with water and city structures in the background.\n- A close-up shows a smiling blonde woman wearing an orange cap or hat.\n- A man in a dark suit appears indoors, partially blurred by motion or soft focus.\n- A tennis player in white is seen mid-action on a court near tall buildings.\n- A blurred outdoor scene follows, with figures and movement, but the activity is not clearly visible.\n- Two men in suits sit indoors; an orange balloon or round object with “Come fly with me” is visible in front of them.\n- A group of people appear seated together outdoors or in an open vehicle; the image is soft and fast-moving.\n- Silhouetted people stand or sit near tall windows, one holding or standing beside a pale round object.\n- A brief abstract or transitional shot shows vertical architectural forms and an orange circular object near the bottom.\n\nThe montage then shows service and recreation scenes:\n\n- A woman in a colorful uniform serves drinks from a tray, holding a metal coffee pot and cups toward a seated person.\n- Two people sit in a small blue rowboat; one holds an oar.\n- A person navigates rough white water, possibly in a kayak or small craft.\n- The white “Come fly with me...” badge reappears in close-up.\n- The badge image dissolves over a close-up of the smiling woman in the orange cap.\n\nThe commercial then features uniformed personnel and more travel imagery:\n\n- A uniformed man in a cap stands in a covered area with strong horizontal ceiling lines behind him.\n- Large text appears across plain backgrounds in separate shots: “Come,” a stylized “fly,” and “me...”.\n- The circular “Come fly with me...” badge appears again, now with warmer brown/gold lettering.\n- The smiling woman in the orange cap is shown wearing a round badge on her chest.\n- A smiling uniformed man in a blue shirt and tie is shown with a similar round badge.\n- Another low-angle shot shows the light-blue-uniformed man with a headset and patches on his shirt.\n- A fast, dark outdoor shot shows several people moving together; the exact activity is unclear.\n- Two people ride horses against a bright blue sky and distant landscape.\n- The word “with” appears in large blue lettering on a pale background.\n\nThe final frame shows an airplane flying above clouds or a blue aerial landscape. Large white text over the image reads: “fly the friendly skies of United.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0959309df4d9804f006a105ab0b19c819db995f367e4a35e11",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1396,
+      "output_tokens_details": {
+        "reasoning_tokens": 777
+      },
+      "total_tokens": 7199
+    }
+  },
+  "duration_seconds": 33.173,
+  "created_at": "2026-05-22T13:32:01Z",
+  "error": null
+}

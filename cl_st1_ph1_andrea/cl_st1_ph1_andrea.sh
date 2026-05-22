@@ -230,7 +230,6 @@ nohup bash run_python_ec2.sh \
        --workers 4 \
 > describe_commercials_visual_output.log 2>&1 &
 
-
 # Full run with the lightly structured prompt.
 python describe_commercials_visual.py \
   --no-test-mode \

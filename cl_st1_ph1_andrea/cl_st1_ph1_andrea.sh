@@ -133,7 +133,7 @@ python extract_commercials_audio.py --no-test-mode
 #   - Default run is test mode.
 #   - Full transcription is intended to run on an EC2 instance with the appropriate
 #     Whisper/CUDA environment.
-#   - Before running on EC2, check that run_python_ec2.sh points to the intended
+#   - Before running on EC2, check that run_python_ec2_transcription.sh points to the intended
 #     Python environment, for example whisper_lg_v3 rather than my_env.
 # ==============================================================================
 
@@ -142,7 +142,7 @@ python transcribe_commercials_whisper.py
 
 # Full EC2 run in the background.
 # stdout and stderr are redirected to whisper_transcription_output.log.
-nohup bash run_python_ec2.sh \
+nohup bash run_python_ec2_transcription.sh \
    transcribe_commercials_whisper.py \
        --no-test-mode \
 > whisper_transcription_output.log 2>&1 &
@@ -150,7 +150,7 @@ nohup bash run_python_ec2.sh \
 # Full EC2 run without VAD filtering.
 # This may preserve short slogans, jingles, brief voice-over segments, or speech
 # over music that automatic voice activity detection could otherwise suppress.
-nohup bash run_python_ec2.sh \
+nohup bash run_python_ec2_transcription.sh \
    transcribe_commercials_whisper.py \
        --no-test-mode \
        --no-vad-filter \
@@ -222,6 +222,14 @@ python describe_commercials_visual.py \
 python describe_commercials_visual.py \
   --no-test-mode \
   --workers 4
+
+# Full run with workers on an EC2 instance.
+nohup bash run_python_ec2.sh \
+   describe_commercials_visual.py \
+       --no-test-mode \
+       --workers 4 \
+> describe_commercials_visual_output.log 2>&1 &
+
 
 # Full run with the lightly structured prompt.
 python describe_commercials_visual.py \

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1970_2",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_2",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_2/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_2.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0002.jpg",
+      "timestamp_seconds": 3.059,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0003.jpg",
+      "timestamp_seconds": 4.094,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0004.jpg",
+      "timestamp_seconds": 5.529,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0005.jpg",
+      "timestamp_seconds": 8.331,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0006.jpg",
+      "timestamp_seconds": 9.199,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0007.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0008.jpg",
+      "timestamp_seconds": 14.537,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0009.jpg",
+      "timestamp_seconds": 16.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0010.jpg",
+      "timestamp_seconds": 18.241,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0011.jpg",
+      "timestamp_seconds": 19.175,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0012.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_2/frame_0013.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_2.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_2.json",
+    "response_text": "The commercial begins on a nearly black screen, with archive watermarks visible.\n\nIt then cuts to close-up shots of pizza. The camera shows the surface of a pizza in warm, saturated color: browned crust, melted cheese, red sauce, and mixed toppings. One close-up shows rounded reddish slices and crumbled meat-like toppings; another shows melted cheese stretching around green pepper strips and other toppings.\n\nThe scene shifts to people eating pizza in what appears to be a crowded, warmly lit restaurant or social dining setting. A young woman with long reddish-brown hair is shown in close-up biting into a slice of pizza. Another young woman, holding a slice, turns her head to the side while seated among others. A close-up of hands follows: several people reach toward a pizza on a plate or tray, pulling or taking slices.\n\nMore individual reaction and eating shots follow. A young man with curly hair looks forward with a pleased or amused expression. Two people are then shown side by side, each holding a slice and biting into it; the pizza toppings and crust are visible. Another young woman in a light top lifts a slice to her mouth and bites into it. A young man with curly hair smiles while holding food near the bottom edge of the frame.\n\nThe next shots continue the eating sequence. A young man in a light-colored sweater holds a slice close to his mouth and takes a bite. In the following shot, he appears to react positively, smiling with his hand raised; a strand of melted cheese or topping appears near his fingers.\n\nThe commercial ends on a white title card. At the top is a small trapezoid-shaped image containing a smiling woman and food imagery. Large centered text reads: “New SuperStyle.” Beneath it, small text reads: “© Pizza Hut Inc., 1978.” Archive watermarks remain visible on the image."
+  },
+  "api_metadata": {
+    "response_id": "resp_01046d4ee9db37aa006a106ea9606081a2939e35e7582de7c8",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 3880
+    }
+  },
+  "duration_seconds": 13.337,
+  "created_at": "2026-05-22T14:56:54Z",
+  "error": null
+}

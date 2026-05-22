@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2010_8",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_8",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_8/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_8.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0002.jpg",
+      "timestamp_seconds": 1.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0003.jpg",
+      "timestamp_seconds": 2.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0004.jpg",
+      "timestamp_seconds": 3.706,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0005.jpg",
+      "timestamp_seconds": 4.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0006.jpg",
+      "timestamp_seconds": 5.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0007.jpg",
+      "timestamp_seconds": 6.473,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0008.jpg",
+      "timestamp_seconds": 7.306,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0009.jpg",
+      "timestamp_seconds": 9.073,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0010.jpg",
+      "timestamp_seconds": 11.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0011.jpg",
+      "timestamp_seconds": 14.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0012.jpg",
+      "timestamp_seconds": 16.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0013.jpg",
+      "timestamp_seconds": 18.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0014.jpg",
+      "timestamp_seconds": 20.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0015.jpg",
+      "timestamp_seconds": 24.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0016.jpg",
+      "timestamp_seconds": 25.973,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_8/frame_0017.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_8.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_8.json",
+    "response_text": "The commercial unfolds as a montage centered on bare feet, outdoor leisure, home activities, and then a prescription toenail product.\n\n1. **Beach opening**: The first frame shows an overhead view of a sandy beach with waves at the top edge. Several colorful beach umbrellas and towels are arranged on the sand, and a person walks near the waterline.\n\n2. **Feet in sand**: The view cuts to a low close-up of bare feet beside a pink towel on the beach. The feet press into the sand while other beachgoers’ legs are visible in the background near the shoreline.\n\n3. **Home couch scene**: The setting shifts indoors to a bright living room. A man sits barefoot on a brown leather sofa, reading or looking at something in his hands. A white bulldog lies on the couch beside him. A coffee table and open kitchen/dining area are visible.\n\n4. **Close-up with dog**: A closer shot shows the dog resting on the sofa next to the man’s bare foot and rolled-up jeans.\n\n5. **Poolside lounging**: The scene changes to a point-of-view-like shot of bare feet resting on a white lounge chair near a swimming pool. Brick paving and pool water are visible.\n\n6. **Garden/lawn scene**: A green garden hose lies coiled on grass. A rake or garden tool and part of a person’s foot/leg appear nearby, suggesting outdoor yard activity.\n\n7. **Yoga mats / exercise setting**: A close-up shows bare feet stepping or standing on colored exercise mats. Other feet and mats are blurred in the background.\n\n8. **White transition**: The screen becomes very bright and mostly white, acting as a visual transition.\n\n9. **Feet on white background with product text**: Bare feet appear against a clean white background. Small on-screen text near the bottom reads that prescription KERYDIN / tavaborole is FDA-approved, with a Kerydin logo at the lower right.\n\n10. **Toenail close-up**: A close-up of toes shows one large toenail with the words “TOENAIL FUNGUS” written on it. Fine print appears along the bottom, including directions about KERYDIN drops and duration of use, with the Kerydin logo at lower right.\n\n11. **Overhead beach towels**: The commercial returns to a beach-like overhead composition. Several people lie on striped towels arranged in a circular/radial pattern on sand, with their feet pointing toward the center. Fine-print safety text and the Kerydin logo remain along the bottom.\n\n12. **Yoga class upper-body view**: A man and woman in a yoga/exercise class raise their arms overhead. The orange studio wall and other participants are partially visible. Bottom fine print lists possible side effects such as skin peeling, ingrown toenail, redness, itching, and swelling.\n\n13. **Yoga class feet**: A low shot shows a row of bare feet on green and blue mats during the class. The same style of bottom white band with safety text and Kerydin branding is visible.\n\n14. **Barefoot walking outdoors**: People walk barefoot across a lawn or garden path near a house and flowerbed. Bottom text includes “Individual results may vary,” with the Kerydin logo on the right.\n\n15. **Seated yoga pose**: In the exercise studio, a man and woman sit cross-legged on mats. The man lifts one hand toward the side of his head while the woman sits upright. Bottom text includes “See our ad in People,” and the Kerydin logo remains at lower right.\n\n16. **Feet in bed**: A close-up shows bare feet under or between white sheets on a bed, with soft white fabric surrounding them.\n\n17. **Final product shot**: The final frame shows a small bottle and applicator/dropper cap beside large text reading “Kerydin (TAVABOROLE) TOPICAL SOLUTION, 5%.” Additional text at the bottom gives a website and phone number: “Visit www.TOETUCKER.com or call 1-844-KERYDIN for product information.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_046308255d648968006a1077138ff881949615a104956922dd",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1157,
+      "output_tokens_details": {
+        "reasoning_tokens": 309
+      },
+      "total_tokens": 4503
+    }
+  },
+  "duration_seconds": 22.591,
+  "created_at": "2026-05-22T15:32:58Z",
+  "error": null
+}

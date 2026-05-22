@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2010_75",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_75",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_75/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_75.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0002.jpg",
+      "timestamp_seconds": 1.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0003.jpg",
+      "timestamp_seconds": 2.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0004.jpg",
+      "timestamp_seconds": 3.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0005.jpg",
+      "timestamp_seconds": 5.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0006.jpg",
+      "timestamp_seconds": 6.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0007.jpg",
+      "timestamp_seconds": 9.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0008.jpg",
+      "timestamp_seconds": 11.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0009.jpg",
+      "timestamp_seconds": 12.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0010.jpg",
+      "timestamp_seconds": 14.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0011.jpg",
+      "timestamp_seconds": 16.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0012.jpg",
+      "timestamp_seconds": 18.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0013.jpg",
+      "timestamp_seconds": 20.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0014.jpg",
+      "timestamp_seconds": 21.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0015.jpg",
+      "timestamp_seconds": 23.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0016.jpg",
+      "timestamp_seconds": 26.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0017.jpg",
+      "timestamp_seconds": 27.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0018.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_75/frame_0019.jpg",
+      "timestamp_seconds": 28.456,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_75.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_75.json",
+    "response_text": "The commercial begins on a black frame.\n\nIt then cuts to the interior of an automotive parts store, identifiable by repeated blue-and-yellow NAPA branding. A male customer in a gray long-sleeve pullover stands at a counter. Across from him is a male employee in a blue polo shirt with a name badge. The customer is holding a blue cylindrical container.\n\nA close-up shows the container clearly: it is blue with yellow trim and a NAPA logo, with large yellow text reading “KNOW HOW.” The customer holds it in one hand and examines it. The scene alternates between medium shots of the customer and employee at the counter and close-ups of the container.\n\nThe employee stands behind the counter near a computer monitor and racks of small products. The store background includes shelves, product displays, and a windowed storefront with a NAPA sign visible through or on the glass. The customer continues looking at the can.\n\nThe customer removes the lid from the “NAPA KNOW HOW” container. A close-up shows him lifting the top off. The open can appears empty or dark inside; no contents are clearly visible. He holds the lid separately in one hand and the can in the other while looking down at them.\n\nThe employee appears to speak or respond visually, facing the customer, while the customer continues to hold the opened container. The employee then turns or gestures toward another area of the store. The camera angle shifts, showing the employee and the customer from behind as they move or look toward shelves and displays. The customer briefly moves out of frame to the right in one shot, leaving the entrance area and store displays visible.\n\nThe customer reappears at the counter holding the blue can and lid. He looks ahead, as if reacting to something in the store. A cut then shows a much larger blue cylindrical container on the floor, also labeled with the NAPA logo and “KNOW HOW” in large yellow letters. It resembles an oversized version of the small can.\n\nA wider shot shows the large “NAPA KNOW HOW” container positioned near the counter. The customer stands facing two employees in blue polo shirts. One employee stands behind the counter; another stands near the large container with his hand resting on it or near it. Shelves of products line the background.\n\nThere is a brief blurred/dark transitional shot, with no clear visual details.\n\nThe commercial returns to the counter area. The employee in the blue polo stands behind the counter facing the customer, while another employee is visible farther back near the entrance. The customer is then shown with the blue can placed on the counter in front of him. He rests his hands on or near the counter and looks toward the employee or display area.\n\nThe final frame cuts to a close-up of a rack of small keychain-like items shaped like miniature blue cans. Several of them carry the same NAPA branding and “KNOW HOW” text. A hand reaches toward the rack from the left, but it is not clear whether an item is removed."
+  },
+  "api_metadata": {
+    "response_id": "resp_0261c2235033b8ad006a1078791c1c81938a0ca8c5e99b6e32",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 720,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 4444
+    }
+  },
+  "duration_seconds": 21.728,
+  "created_at": "2026-05-22T15:38:54Z",
+  "error": null
+}

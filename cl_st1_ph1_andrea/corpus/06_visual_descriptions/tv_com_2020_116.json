@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2020_116",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_116",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_116/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_116.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0002.jpg",
+      "timestamp_seconds": 0.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0003.jpg",
+      "timestamp_seconds": 1.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0004.jpg",
+      "timestamp_seconds": 1.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0005.jpg",
+      "timestamp_seconds": 2.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0006.jpg",
+      "timestamp_seconds": 2.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0007.jpg",
+      "timestamp_seconds": 3.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0008.jpg",
+      "timestamp_seconds": 3.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0009.jpg",
+      "timestamp_seconds": 4.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0010.jpg",
+      "timestamp_seconds": 5.473,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0011.jpg",
+      "timestamp_seconds": 6.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0012.jpg",
+      "timestamp_seconds": 6.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0013.jpg",
+      "timestamp_seconds": 8.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0014.jpg",
+      "timestamp_seconds": 9.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0015.jpg",
+      "timestamp_seconds": 11.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0016.jpg",
+      "timestamp_seconds": 12.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_116/frame_0017.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_116.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_116.json",
+    "response_text": "The commercial opens in a warmly lit living-room setting with a decorated Christmas tree. A small child is partly hidden among the branches and ornaments, with white string lights and red/white baubles visible. The next shot shows the lower part of the tree from floor level; a grey-and-white cat moves near the base, slightly out of focus.\n\nThe scene then cuts outdoors to a snowy road or track bordered by forest. Several people ride together on a yellow sled, moving across the snow. This image is then paired in a split-screen layout with a family holiday scene: an older man wearing glasses and a novelty turkey hat sits with two smiling children behind him. The split-screen changes again: on the left is a large indoor shopping or dining arcade decorated with oversized red hanging ornaments, while the right still shows the older man and children.\n\nAnother split-screen follows. On the left remains the decorated indoor arcade; on the right, a young boy sits in front of a gingerbread house decorated with white icing and red candies. The right image then continues while the left changes to a kitchen scene where a light-colored Labrador retriever stands at a counter or table eating from a plate.\n\nThe commercial then shifts to a close-up of a silver laptop on a countertop, being opened by someone’s hand. People wearing aprons are visible blurred in the background, suggesting a café, bakery, or kitchen workspace. A close-up montage shows the laptop keyboard with blue backlighting on one side and the laptop corner on the other, displaying an “Intel Core Ultra 7” sticker.\n\nA wider shot shows a bakery or café counter with trays of pastries, glass display cases, shelves, and a silver laptop on the counter. Staff move quickly in the background. On-screen text appears near the laptop reading “All-day battery life.”\n\nThe next sequence uses a split layout: on the left, hands work on the laptop from above, with baked goods nearby; on the right, a clean interface appears for a business called “THE CRUMB SHED.” Visible interface elements include “New Orders” and “Total Orders 98.” The interface then changes to a prompt area with the word “Create” being typed and a dropdown labeled “Quick response.”\n\nA young woman sits at a desk in a bright room with a laptop nearby; she appears to be working with the interface shown on the right side of the screen. In a closer shot, she faces the camera area, and the interface shows a typed prompt that appears to begin “Create a holiday sweater design,” though the smaller text is not fully legible.\n\nThe commercial then returns to a family holiday gathering. An older woman with glasses reacts excitedly while opening or holding a blue sweater decorated with a printed face and white snowflake-like graphics. Other family members around her also appear excited. In the next wider shot, she stands in a living room in front of a Christmas tree wearing the blue novelty sweater and a red skirt. Children sit facing her, and adults sit or stand nearby. The setting includes large windows, a sofa, and festive decorations.\n\nIn the final shot, the older woman raises both arms triumphantly while wearing the sweater. Overlaid branding appears: “DELL Technologies” and “intel.” Additional text reads “Price Match Guarantee” and “Dell.com/holiday,” with small fine print along the bottom that is too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_04430f2ff5456fa8006a107bc41b6081978f76b7e3933d30f7",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 740,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 4086
+    }
+  },
+  "duration_seconds": 17.004,
+  "created_at": "2026-05-22T15:52:52Z",
+  "error": null
+}

@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1960_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0002.jpg",
+      "timestamp_seconds": 10.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0003.jpg",
+      "timestamp_seconds": 31.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0004.jpg",
+      "timestamp_seconds": 33.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0005.jpg",
+      "timestamp_seconds": 35.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0006.jpg",
+      "timestamp_seconds": 47.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0007.jpg",
+      "timestamp_seconds": 50.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_5/frame_0008.jpg",
+      "timestamp_seconds": 61.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_5.json",
+    "response_text": "The commercial is presented in black and white and appears to show a home-movie projector and its use.\n\n1. **Opening frame:** The clip begins on an almost entirely dark screen. A small “Nostalgic X’er” watermark is visible at the lower right.\n\n2. **Projector close-up:** The next visible scene shows a film projector in close-up. Large film reels are mounted on the left side, and the projector body, controls, and lens area are visible. The image emphasizes the mechanical parts of the projector.\n\n3. **Projector mechanism detail:** The camera cuts to a tighter view of the projector’s lower section, showing part of a reel, the film path, and the internal/operating area of the machine.\n\n4. **Projected home-movie image:** The view changes to a projected image on a screen. The projected scene shows a horse-drawn carriage with people around it. The screen is framed by the surrounding room or projection setup.\n\n5. **Family watching:** A group of people, likely a family, are shown seated together indoors, looking toward something off-screen, presumably the projected movie. Several children and an adult woman are visible, with attentive or smiling expressions.\n\n6. **Another projected scene:** The commercial cuts back to a projection screen showing a scenic landscape with a large waterfall or falls-like cliffside view. The screen is surrounded by shelves or a room setting.\n\n7. **Product shot:** A studio-style product image appears, showing a projector with reels. Large text reads “Brownie PROJECTOR,” identifying the product.\n\n8. **Brand ending:** The final frame shows a close-up graphic with the word “Kodak” in large lettering. Part of a curved shape and a dark object at the left edge are visible, likely part of the product or graphic layout. The “Nostalgic X’er” watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_073e7e9f05d8c220006a106ce883b4819ea139b657fdb8dea9",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 2140
+    }
+  },
+  "duration_seconds": 12.132,
+  "created_at": "2026-05-22T14:49:24Z",
+  "error": null
+}

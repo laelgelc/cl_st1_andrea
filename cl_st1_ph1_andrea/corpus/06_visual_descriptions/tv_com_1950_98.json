@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_98",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_98",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_98/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_98.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_98/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_98/frame_0002.jpg",
+      "timestamp_seconds": 1.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_98/frame_0003.jpg",
+      "timestamp_seconds": 24.648,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_98/frame_0004.jpg",
+      "timestamp_seconds": 54.648,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_98/frame_0005.jpg",
+      "timestamp_seconds": 88.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_98.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_98.json",
+    "response_text": "The commercial is in black and white, with a visible “OsbornTramain” watermark in the lower-right corner throughout the sampled frames.\n\n1. **Opening frame:** The image is very dark, almost black, with little visible detail besides the watermark.\n\n2. **Company logo:** A circular emblem appears on a plain background. It contains the stylized letters “Am” and the words “American Motors Corporation” around the circle.\n\n3. **Car demonstration scene:** The commercial cuts to an outdoor roadside setting. A light-colored station wagon is shown from the rear-left side. It has a roof rack and rounded mid-century styling. A man in a light suit stands beside the car near the rear passenger-side area, gesturing toward the vehicle. Trees and a road are visible in the background.\n\n4. **Street/storefront scene:** The station wagon appears again on a city or town street, seen from the side/front-left. It is near a storefront with a sign reading “Jacobsons.” The car is positioned along the curb or street, with buildings, windows, and trees in the background.\n\n5. **Closing title card:** The final frame is a graphic title card with horizontal lines and large script text reading “More for America.” The watermark remains at the bottom right."
+  },
+  "api_metadata": {
+    "response_id": "resp_00b4a686acb19cdc006a106c757c0881a0b13ccadada4d6c0c",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 460,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1538
+    }
+  },
+  "duration_seconds": 12.38,
+  "created_at": "2026-05-22T14:47:29Z",
+  "error": null
+}

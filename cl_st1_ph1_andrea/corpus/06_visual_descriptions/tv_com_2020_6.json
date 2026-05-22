@@ -1,0 +1,249 @@
+{
+  "commercial_id": "tv_com_2020_6",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_6",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_6/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_6.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0002.jpg",
+      "timestamp_seconds": 2.726,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0003.jpg",
+      "timestamp_seconds": 4.861,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0004.jpg",
+      "timestamp_seconds": 5.862,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0005.jpg",
+      "timestamp_seconds": 6.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0006.jpg",
+      "timestamp_seconds": 7.631,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0007.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0008.jpg",
+      "timestamp_seconds": 8.999,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0009.jpg",
+      "timestamp_seconds": 11.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0010.jpg",
+      "timestamp_seconds": 12.602,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0011.jpg",
+      "timestamp_seconds": 13.97,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0012.jpg",
+      "timestamp_seconds": 18.475,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0013.jpg",
+      "timestamp_seconds": 19.91,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0014.jpg",
+      "timestamp_seconds": 20.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0015.jpg",
+      "timestamp_seconds": 21.978,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0016.jpg",
+      "timestamp_seconds": 23.68,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0017.jpg",
+      "timestamp_seconds": 24.848,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0018.jpg",
+      "timestamp_seconds": 26.183,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0019.jpg",
+      "timestamp_seconds": 27.15,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0020.jpg",
+      "timestamp_seconds": 28.752,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0021.jpg",
+      "timestamp_seconds": 30.553,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0022.jpg",
+      "timestamp_seconds": 32.455,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0023.jpg",
+      "timestamp_seconds": 33.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0024.jpg",
+      "timestamp_seconds": 35.392,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0025.jpg",
+      "timestamp_seconds": 36.76,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0026.jpg",
+      "timestamp_seconds": 38.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2020_6/frame_0027.jpg",
+      "timestamp_seconds": 41.032,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 27,
+    "submitted_frame_count": 27,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_6.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_6.json",
+    "response_text": "The commercial unfolds as a sequence of scenes centered on a gray-haired man in a black suit and Kellogg’s Raisin Bran.\n\nAt the beginning, the setting is a dark, futuristic control-room environment with glowing floor lines, vertical light panels, and several people seated at computer stations. Large wall screens display cereal imagery and data-style graphics. The gray-haired man sits on a central raised platform in a chair. A lower-third graphic identifies him as “WILL SHAT” and “BRAN AMBASSADOR.” He faces forward and holds a bowl.\n\nThe camera moves closer to him. Behind him, digital displays show a Kellogg’s Raisin Bran box and interface graphics. A close-up shows a white bowl filled with bran flakes, raisins, and milk, with a spoon inserted. The bowl is branded “Kellogg’s Raisin Bran.” The man gestures while holding the bowl. A large screen behind him displays the message “LOW ON FIBER.” Other control-room screens then show “AMERICA: LOW ON FIBER” in large white text on a purple background, with warning-style icons.\n\nThe scene shifts to a bar or pub with dim lighting, wooden interiors, TV screens on the walls, and people seated at tables and the bar. A bright flash appears near a table. The gray-haired man then appears standing in the bar holding a Kellogg’s Raisin Bran cereal box. A woman and a man seated at a table look toward him. In the next moment, the woman at the table is holding or being presented with the cereal box while the gray-haired man walks away through the bar.\n\nThe commercial then cuts to a living room. Several young adults sit closely on a teal sofa, holding phones or game controllers. Snacks and drinks are spread across a coffee table. The gray-haired man appears in the doorway behind them with his arms raised outward. The seated people turn their heads toward him. He then moves closer to the sofa, holding a bowl, and stands behind or beside them. A close-up shows a small long-haired white dog on the sofa; its collar tag visibly reads “Will.” The living-room scene ends with the group seated on the couch, the dog resting beside them, and the gray-haired man standing nearby.\n\nThe next scene is outdoors in a parking-lot gathering with colorful tents, folding chairs, coolers, and people in yellow-and-blue sports clothing. A man in a light jacket and yellow jersey points upward. A wide shot reveals the gray-haired man standing on top of a white SUV. He wears several Kellogg’s Raisin Bran cereal boxes strapped across his chest in an X-shaped arrangement. People around the vehicle look up at him. A closer shot shows him standing against a pale sky with the cereal boxes across his torso. Another shot shows a large yellow sun-shaped Raisin Bran mascot and a man in a black sports jersey raising both arms. The gray-haired man then looks downward and adjusts his stance on the vehicle roof.\n\nThe commercial returns to the futuristic control-room setting for the final product display. A large Kellogg’s Raisin Bran cereal box and a bowl of cereal sit prominently in the foreground on a glossy surface. Behind them, the control-room screens and operators remain visible. Large text appears behind the product reading “HIGH FIBER,” and then expands to “HIGH FIBER HAPPY GUT.” The Kellogg’s logo is visible above the product. Small legal or product text appears along the bottom, but it is too small to read clearly in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_06f31b7c89fb1b99006a10798e7e98819f80e150961c9f5280",
+    "usage": {
+      "input_tokens": 5776,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1235,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 7011
+    }
+  },
+  "duration_seconds": 33.256,
+  "created_at": "2026-05-22T15:43:43Z",
+  "error": null
+}

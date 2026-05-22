@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_118",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_118",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_118/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_118.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0003.jpg",
+      "timestamp_seconds": 0.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0004.jpg",
+      "timestamp_seconds": 1.658,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0005.jpg",
+      "timestamp_seconds": 2.392,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0006.jpg",
+      "timestamp_seconds": 3.46,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0007.jpg",
+      "timestamp_seconds": 4.628,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0008.jpg",
+      "timestamp_seconds": 5.862,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0009.jpg",
+      "timestamp_seconds": 6.796,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0010.jpg",
+      "timestamp_seconds": 7.43,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0011.jpg",
+      "timestamp_seconds": 7.898,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0012.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0013.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0014.jpg",
+      "timestamp_seconds": 11.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0015.jpg",
+      "timestamp_seconds": 12.702,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0016.jpg",
+      "timestamp_seconds": 15.038,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0017.jpg",
+      "timestamp_seconds": 15.772,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0018.jpg",
+      "timestamp_seconds": 17.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0019.jpg",
+      "timestamp_seconds": 18.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0020.jpg",
+      "timestamp_seconds": 19.576,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0021.jpg",
+      "timestamp_seconds": 20.11,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0022.jpg",
+      "timestamp_seconds": 21.177,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0023.jpg",
+      "timestamp_seconds": 21.745,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0024.jpg",
+      "timestamp_seconds": 23.313,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0025.jpg",
+      "timestamp_seconds": 24.748,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0026.jpg",
+      "timestamp_seconds": 25.782,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0027.jpg",
+      "timestamp_seconds": 26.583,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0028.jpg",
+      "timestamp_seconds": 27.35,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0029.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_118/frame_0030.jpg",
+      "timestamp_seconds": 29.252,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_118.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_118.json",
+    "response_text": "The commercial begins with a brief, unrelated-looking shot of a group of performers indoors. Several people in blue jackets and black outfits surround a woman standing behind a sign that reads “DASANI.” This appears only in the first sampled frame and is not visually connected to the later car sequence.\n\nThe scene then cuts to a nighttime driving sequence. A silver sedan is shown in close-up from the front with bright headlights, moving through a dark, modern roadway or tunnel. The camera angle is low and dynamic, emphasizing the car’s grille, headlights, and motion. A wider shot follows, showing the silver car traveling along a curved elevated ramp or enclosed roadway with white barriers and large structural columns.\n\nInside another car, two young women are shown in the front seats. The woman nearer the camera is slightly out of focus in the foreground, while the other woman is more visible; both appear animated, with smiling or open-mouthed expressions. The lighting is cool and dim, consistent with nighttime driving.\n\nThe silver car continues to be shown from the front in a tunnel-like environment, with blue-toned lighting. Another interior shot shows three young men in a car: one at the wheel, one in the front passenger seat, and one in the back. They are seat-belted, facing forward, and gesturing with their hands. Their mouths are open in several frames, suggesting expressive interaction, though no audio content is visible.\n\nA dark-colored car is then shown from a low front-side angle, its headlight bright against a city or parking-structure background. Interior close-ups alternate between the male occupants and the two female occupants. The male driver is shown in profile, focused forward, and the women are shown smiling or with open mouths while driving. A direct front interior shot of one woman at the wheel shows her hand on the steering wheel and her face lit by passing lights.\n\nA close-up of the rear of the silver car shows the Mitsubishi three-diamond emblem and the model name “LANCER” across the trunk. The car is then shown in a tunnel from a low angle, moving forward with its headlights on. Another interior shot of the male passengers shows the front passenger gesturing with his hand while looking ahead.\n\nThe silver Lancer is repeatedly shown driving through a bright, blue-lit tunnel or ramp system. The camera cuts between exterior tracking shots, front-facing views through the windshield, and side views of the car passing structural columns. In one wide nighttime shot, the roadway forms a large illuminated spiral or circular ramp against a dark city background. Small white legal/disclaimer text appears along the bottom of this frame, but most of it is too small and blurred to read clearly.\n\nSeveral transitional shots are abstract and blurred: bright overexposed shapes, indistinct light forms, and later red and beige vertical streaks. These frames do not show clear people, cars, or readable text.\n\nThe driving sequence resumes with the three men inside the car, then a dark car traveling through a covered area with columns. The men are again shown from the side/front, and the silver car is shown head-on in the tunnel with its occupants visible through the windshield. The two women are shown again in the front seats, smiling or laughing visually, with the driver’s arm extended toward the steering wheel.\n\nNear the end, the silver car is shown from a low side angle, emphasizing the front wheel, headlight, and lane markings as it moves through the tunnel.\n\nThe final frames form the end card. A roadway or tunnel recedes into the distance at night, and the Mitsubishi red three-diamond logo appears centered above white text reading:\n\n“MITSUBISHI”  \n“WAKE UP AND DRIVE”\n\nA website appears below: “2002LANCER.COM.” The last frame keeps the same branding while the background angle shifts along the tunnel wall."
+  },
+  "api_metadata": {
+    "response_id": "resp_0701c90a44e5d100006a1076ce40648192bdd401fbb62a6f16",
+    "usage": {
+      "input_tokens": 8113,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1167,
+      "output_tokens_details": {
+        "reasoning_tokens": 387
+      },
+      "total_tokens": 9280
+    }
+  },
+  "duration_seconds": 31.03,
+  "created_at": "2026-05-22T15:31:57Z",
+  "error": null
+}

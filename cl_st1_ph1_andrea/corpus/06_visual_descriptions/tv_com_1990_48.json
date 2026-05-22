@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1990_48",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_48",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_48/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_48.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_48/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_48/frame_0002.jpg",
+      "timestamp_seconds": 1.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_48/frame_0003.jpg",
+      "timestamp_seconds": 10.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_48/frame_0004.jpg",
+      "timestamp_seconds": 12.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_48/frame_0005.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_48.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_48.json",
+    "response_text": "The commercial begins with a dark close-up shot of a photographic film item being handled. A hand or fingers are visible near a small cylindrical or boxed object labeled “200,” with green, white, and red Fuji-style coloring. The object appears to be associated with film or a camera, though the surrounding details are dim and partly obscured.\n\nThe next sampled frame cuts to an outdoor scene with several people. The image is soft and somewhat overexposed. A woman wearing sunglasses and a patterned dress stands on the left. In the center, a child or young person is seen from behind wearing a blue jacket. On the right, another person wears a bright yellow jacket and a cap. Other figures are partially visible in the background. The scene suggests a casual public or group setting, but the exact activity is unclear from the frame.\n\nLater, the commercial shows two children smiling and standing close together. Both wear matching bright blue T-shirts with large white text reading “CLEAN PLANET CLUB.” Each child raises an arm upward, holding or lifting a blue object or bag above their heads. The background is light and indistinct, with partial figures or posters at the sides.\n\nThe final portion shifts to a clean product shot on a plain white background. A box of film is displayed prominently. The packaging is green, white, and red and reads “200 FUJICOLOR,” with “SUPER G” visible on the top/front area. Beneath the product, black text reads: “FUJI. A new way of seeing things.” The last frame holds this product-and-tagline layout more clearly, with the film box centered above the slogan."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d62301d123dba8b006a107336204c81908da9cbbb8175c085",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 458,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1826
+    }
+  },
+  "duration_seconds": 12.429,
+  "created_at": "2026-05-22T15:16:18Z",
+  "error": null
+}

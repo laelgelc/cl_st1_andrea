@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2010_26",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_26",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_26/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_26.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0002.jpg",
+      "timestamp_seconds": 0.991,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0003.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0004.jpg",
+      "timestamp_seconds": 3.243,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0005.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0006.jpg",
+      "timestamp_seconds": 5.378,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0007.jpg",
+      "timestamp_seconds": 6.162,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0008.jpg",
+      "timestamp_seconds": 7.13,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0009.jpg",
+      "timestamp_seconds": 8.632,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0010.jpg",
+      "timestamp_seconds": 9.916,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0011.jpg",
+      "timestamp_seconds": 10.717,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0012.jpg",
+      "timestamp_seconds": 12.469,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0013.jpg",
+      "timestamp_seconds": 13.086,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0014.jpg",
+      "timestamp_seconds": 13.803,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0015.jpg",
+      "timestamp_seconds": 14.254,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0016.jpg",
+      "timestamp_seconds": 14.671,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0017.jpg",
+      "timestamp_seconds": 15.222,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0018.jpg",
+      "timestamp_seconds": 15.922,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0019.jpg",
+      "timestamp_seconds": 17.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0020.jpg",
+      "timestamp_seconds": 18.091,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0021.jpg",
+      "timestamp_seconds": 19.059,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0022.jpg",
+      "timestamp_seconds": 20.01,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0023.jpg",
+      "timestamp_seconds": 27.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_26/frame_0024.jpg",
+      "timestamp_seconds": 28.035,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_26.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_26.json",
+    "response_text": "The commercial opens in a large industrial indoor space resembling a hangar or vehicle display hall, with high arched ceiling beams, bright overhead lights, and multiple Chevrolet vehicles arranged on the floor and on elevated platforms. A blue Chevrolet Camaro is foregrounded from the rear/side, with a red pickup and another car visible nearby. Several adults stand around the vehicles as if examining or discussing them.\n\nThe scene cuts to a white sedan parked side-on in the same large space. A red pickup and a dark vehicle sit behind it. Several adults stand around the sedan, looking at it.\n\nA white title card appears with centered black text: “Real people. Not actors.”\n\nThe commercial then shows a rapid sequence of people interacting with different Chevrolet vehicles:\n\n- Inside a car, two women sit in the front seats. One blonde woman in a gray top smiles while looking toward the other person.\n- A man in a light blue shirt sits in the driver’s seat of a vehicle, smiling with one hand on the steering wheel. The vehicle interior is dark with leather-looking seats.\n- A group of young adults stands beside a red pickup truck marked “4x4” on the rear side panel.\n- The same group looks into the open bed of the red pickup, leaning or standing near the tailgate area.\n- A woman in a red sleeveless top sits inside a red vehicle, with a man in a dark hat in the driver’s area and another person standing outside the open door.\n- From the back seat of another vehicle, two people are visible in the front seats. The dashboard screen shows colorful app-like icons, and a person in the front passenger seat points toward the screen.\n- A close-up through a window shows a man seated inside a vehicle, smiling.\n- Inside a larger vehicle, a woman in a red sleeveless top, a woman in a blue top, and a man in a dark hat sit in different seats, appearing to talk and look around the cabin.\n- A blue Chevrolet SUV is shown from the front with multiple doors open. People stand around it, including an older man near the driver-side door.\n- Two women sit or climb into a vehicle interior; one wears a blue top and looks downward while the woman in red moves toward the front seat.\n- A white Chevrolet sedan is shown with doors open and several people standing around it.\n- More people gather near a vehicle under the structure’s staircase or upper platform area, leaning in to inspect something.\n- A red pickup is shown from the rear with several people standing behind it as the tailgate area is open or being examined.\n- A woman in a green top gestures while speaking with two men beside the front of a blue Camaro.\n- A man in a white shirt and glasses walks in the same industrial space, with a woman behind him.\n\nThe commercial then presents individual vehicle shots with model names in white text near the lower part of the frame:\n\n- A white sedan is shown at a front three-quarter angle with the label “MALIBU.”\n- A blue coupe is shown at a front three-quarter angle with the label “CAMARO.”\n- A red pickup truck is shown at a front three-quarter angle with the label “SILVERADO.”\n\nThe setting then changes to a more graphic sales-offer layout. A black Chevrolet Cruze is displayed on a stylized brown/bronze background. Large yellow pricing text reads “$179” with “PER MONTH” beneath it. Other visible text includes “ULTRA-LOW MILEAGE LEASE EXAMPLE,” “24 MONTHS,” “$2,609,” and “2017 CHEVY CRUZE LT,” along with smaller fine print and Chevrolet branding.\n\nNear the end, a close-up graphic of the Chevrolet bowtie logo appears, followed by a final white end card. The final card shows the gold Chevrolet bowtie logo above the text “CHEVY DRIVES THE MOTOR CITY,” with “DRIVES” emphasized in red. Below it reads “METRO DETROIT CHEVY DEALERS,” and at the bottom: “ChevyDealer.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0e40cecad3b0f2b5006a1077666b3c81939e18cd65e973b408",
+    "usage": {
+      "input_tokens": 4669,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 881,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 5550
+    }
+  },
+  "duration_seconds": 19.759,
+  "created_at": "2026-05-22T15:34:18Z",
+  "error": null
+}

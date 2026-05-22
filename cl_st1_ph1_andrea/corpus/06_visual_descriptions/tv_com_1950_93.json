@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_93",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_93",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_93/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_93.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_93/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_93/frame_0002.jpg",
+      "timestamp_seconds": 18.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_93/frame_0003.jpg",
+      "timestamp_seconds": 23.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_93/frame_0004.jpg",
+      "timestamp_seconds": 46.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_93/frame_0005.jpg",
+      "timestamp_seconds": 61.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_93.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_93.json",
+    "response_text": "The commercial begins with a completely black frame.\n\nIt then cuts to a black-and-white close-up of a large appliance, apparently a room air conditioner or its control area. A person’s hand is visible at the left, adjusting or touching a row of small controls or sliders on a horizontal panel. The appliance surface is metallic, with a rectangular control section and small raised knobs or switches.\n\nNext, the view widens to show the front of the unit. The appliance has a broad rectangular face with multiple vent sections across the front. Several narrow strips or ribbons hang from the vents, visually indicating airflow coming out of the machine. A person stands partly off-frame at the left, with one arm extended toward the top or control area of the appliance. The setting appears to be an indoor demonstration space, though details of the room are limited.\n\nThe commercial then shows a full-screen graphic title card. It contains decorative scrollwork and layered sign-like panels. The readable text says: “Certified Dealer for Westinghouse ROOM AIR CONDITIONERS.” The typography mixes cursive script for “Certified Dealer” and “for,” a serif-style “Westinghouse,” and bold block capitals for “ROOM AIR CONDITIONERS.”\n\nThe final sampled frame returns to the front of the air-conditioner unit, again showing the vent grille and hanging strips. Over the appliance image, a large slogan-style text overlay appears: “You can be SURE… if it’s Westinghouse.” The word “SURE” is emphasized in all caps, and “Westinghouse” appears very large across the lower half of the frame. A small circular watermark or station/archive mark is visible in the lower-right corner in several frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_08e49beb9195ff8b006a106c6581f881a0ad81f2b42dc0e4e0",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 462,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1540
+    }
+  },
+  "duration_seconds": 12.736,
+  "created_at": "2026-05-22T14:47:14Z",
+  "error": null
+}

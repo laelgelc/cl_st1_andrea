@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1980_103",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_103",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_103/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_103.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0002.jpg",
+      "timestamp_seconds": 1.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0003.jpg",
+      "timestamp_seconds": 5.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0004.jpg",
+      "timestamp_seconds": 8.471,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0005.jpg",
+      "timestamp_seconds": 8.608,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0006.jpg",
+      "timestamp_seconds": 9.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0007.jpg",
+      "timestamp_seconds": 10.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0008.jpg",
+      "timestamp_seconds": 11.687,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0009.jpg",
+      "timestamp_seconds": 13.089,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0010.jpg",
+      "timestamp_seconds": 13.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0011.jpg",
+      "timestamp_seconds": 14.868,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0012.jpg",
+      "timestamp_seconds": 15.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0013.jpg",
+      "timestamp_seconds": 21.195,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0014.jpg",
+      "timestamp_seconds": 22.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0015.jpg",
+      "timestamp_seconds": 26.121,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0016.jpg",
+      "timestamp_seconds": 29.054,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_103/frame_0017.jpg",
+      "timestamp_seconds": 29.268,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_103.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_103.json",
+    "response_text": "The commercial opens with a soft, abstract green-blue background. White on-screen text reads: “Sweet things that don’t promote cavities.”\n\nThe same text remains over a hazy, pastel-colored scene that appears to show people indoors, but the image is very blurred and details are unclear.\n\nThe visuals then move into a warm, brightly lit social setting. Several smiling people are shown in close-up, including women in dressy clothing. The scene has strong color flares and a soft-focus look.\n\nA brief overexposed transition leads into what appears to be a formal family or wedding-style group portrait. Adults and children are dressed in formal clothing, including a woman in a long white dress and men/boys in dark suits. They are arranged together indoors, smiling or posing.\n\nThe commercial cuts through more soft-focus shots of the gathering. A young girl in a pink dress with pigtails and a young boy in a suit are shown sitting close together. They appear to be interacting playfully. The boy holds a small white stick-like object, likely a piece of gum, and the girl looks at something in her hands.\n\nA close-up shows a hand holding a wrapped product labeled “Orbit.” The package is white with blue lettering and dark blue/teal accents.\n\nMore smiling people are shown, including a woman in a large light-colored hat. Then a close-up shows a young child smiling while a wrapped Orbit package is held near the child’s mouth/hand area. The child appears happy, but the exact action is partially obscured by motion blur.\n\nThe product is then shown alone against a clean, pale background: a rectangular Orbit package floating or angled diagonally, with the “Orbit” name clearly visible.\n\nThe commercial returns briefly to a child in a bright pink outfit and pink hat, shown in a colorful outdoor or public setting. The child looks to the side while standing among other people or objects, though the background is blurred.\n\nAnother shot shows a man and a child near the side of a large vehicle, likely a bus or similar transit vehicle, with horizontal stripes and a window visible. The man appears to be assisting or guiding the child near the vehicle entrance.\n\nThe final product shot shows the Orbit package again on a pale background. Large black text beneath it reads: “Naturally sweet,” with smaller text below: “Without sugar…or saccharin.” The product remains on screen for several seconds, then the image cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ebb66b4ca9fc5ec006a1071f6f86081a2b9d853a1f0d97daa",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 589,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 3935
+    }
+  },
+  "duration_seconds": 15.087,
+  "created_at": "2026-05-22T15:11:01Z",
+  "error": null
+}

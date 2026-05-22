@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2020_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0002.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0003.jpg",
+      "timestamp_seconds": 3.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0004.jpg",
+      "timestamp_seconds": 3.76,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0005.jpg",
+      "timestamp_seconds": 5.028,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0006.jpg",
+      "timestamp_seconds": 5.262,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0007.jpg",
+      "timestamp_seconds": 5.428,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0008.jpg",
+      "timestamp_seconds": 5.762,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0009.jpg",
+      "timestamp_seconds": 6.463,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0010.jpg",
+      "timestamp_seconds": 6.997,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0011.jpg",
+      "timestamp_seconds": 7.33,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0012.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0013.jpg",
+      "timestamp_seconds": 8.798,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0014.jpg",
+      "timestamp_seconds": 9.399,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0015.jpg",
+      "timestamp_seconds": 10.0,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0016.jpg",
+      "timestamp_seconds": 11.635,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0017.jpg",
+      "timestamp_seconds": 12.302,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0018.jpg",
+      "timestamp_seconds": 13.036,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0019.jpg",
+      "timestamp_seconds": 13.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0020.jpg",
+      "timestamp_seconds": 16.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0021.jpg",
+      "timestamp_seconds": 18.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0022.jpg",
+      "timestamp_seconds": 18.975,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0023.jpg",
+      "timestamp_seconds": 19.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0024.jpg",
+      "timestamp_seconds": 20.577,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0025.jpg",
+      "timestamp_seconds": 21.578,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0026.jpg",
+      "timestamp_seconds": 22.546,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0027.jpg",
+      "timestamp_seconds": 22.879,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0028.jpg",
+      "timestamp_seconds": 24.381,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0029.jpg",
+      "timestamp_seconds": 27.083,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2020_36/frame_0030.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_36.json",
+    "response_text": "The commercial shows a LEGO Super Mario play scene being built and played with on a white tabletop against a bright blue-and-white studio background.\n\nAt the start, there is an extreme close-up of a blocky LEGO Mario figure. A hand adjusts or places his red cap with a white “M” emblem. The view then cuts to the figure being held above a bright green pipe element, suggesting it is being placed or “jumped” onto it.\n\nThe scene widens to show two children at the table. One child wears a bright yellow sweater and has long braids; the other wears a green sweatshirt and has curly hair. They are assembling and arranging LEGO Super Mario course pieces: green base plates, brown platforms, blue path pieces, small trees, flags, clouds, enemies, and interactive blocks.\n\nSeveral close-ups focus on the LEGO Mario figure. He has a square face, blue digital-looking eyes, a black moustache, red shirt, blue overalls, yellow buttons, and a red cap. His chest area includes a small screen or display, which changes in different shots; numbers such as “5” and later “32” are visible. Hands move him over different parts of the course.\n\nThe yellow-sweatered child holds Mario near a brown-and-yellow question block suspended between brown brick sections. Other shots show Mario being moved around a course with a grey rotating or platform-like element, a brown tower, and a Bowser Jr.-like character on a raised platform. A small black flag with a skull-like symbol appears in the background in several frames.\n\nThe commercial alternates between close-up product shots and wider shots of the children playing. The green-sweatered child places Mario on a green platform near the black flag. Mario’s face and body are shown in close-up, including his changing digital eyes and chest display. In one stylized close-up, Mario appears against a solid yellow background with spiral eyes and a mushroom-like symbol on his chest display, visually implying a game effect.\n\nMore course elements are introduced: a small structure with a skull symbol tile, a grey volcanic-looking mound with a red button on top, brown platforms, red and blue path pieces, a yellow character, a black cube-like enemy, and additional green base plates. The children continue moving Mario by hand across platforms and obstacles. In a split-screen-style frame, the left side shows a close-up of Mario’s chest display, while the right side shows Mario standing on a question block structure.\n\nNear the end, a wide tabletop shot displays many LEGO Super Mario course sections arranged across the surface. Small on-screen text at the bottom reads “Multiple sets shown.” The background remains minimal, with a large blue panel or window-like shape and white shelving or wall features.\n\nThe final product shot shows two LEGO Super Mario boxes on the table with the LEGO and “SUPER MARIO” logos above them. The left box appears to be a larger expansion set, while the right box is the “Starter Course” box featuring LEGO Mario. Fine-print disclaimer text is visible along the bottom, including “Multiple sets shown” and additional small text that is too small to read fully in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_04e8a39c77699f68006a107a32b2788196b1b7ff5e84be5ac4",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 874,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 6677
+    }
+  },
+  "duration_seconds": 23.101,
+  "created_at": "2026-05-22T15:46:17Z",
+  "error": null
+}

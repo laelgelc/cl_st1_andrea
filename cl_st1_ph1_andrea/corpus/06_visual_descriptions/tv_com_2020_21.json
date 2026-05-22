@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_2020_21",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_21",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_21/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_21.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0002.jpg",
+      "timestamp_seconds": 3.777,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0003.jpg",
+      "timestamp_seconds": 6.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0004.jpg",
+      "timestamp_seconds": 9.324,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0005.jpg",
+      "timestamp_seconds": 10.992,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0006.jpg",
+      "timestamp_seconds": 12.619,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0007.jpg",
+      "timestamp_seconds": 13.411,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_21/frame_0008.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_21.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_21.json",
+    "response_text": "The commercial begins in a commercial kitchen or food-service workspace. A woman wearing a white chef coat and a blue patterned head covering is shown in close-up. She appears tense or concerned, with her eyes partly closed and her mouth slightly open. Behind her are metal shelves with stacked containers and kitchen supplies.\n\nThe scene then cuts to the Mr. Clean character: a bald, muscular man with white eyebrows, a white shirt, and yellow cleaning gloves. He stands with his arms crossed, smiling, facing the woman. The background remains a kitchen/storage area with shelves of plastic food containers and supplies.\n\nNext, the commercial shows a side-by-side product comparison. Two mop heads are shown on a dirty-looking floor surface, separated by a vertical blue line. The left side is labeled “Leading Competitor.” The right side includes the “Mr. Clean Professional” logo and the large text “REMOVES GRIME IN HALF THE TIME.” A small disclaimer line appears at the bottom but is too small to read clearly in the frame.\n\nThe commercial then returns to a wide shot of the commercial kitchen. The Mr. Clean character stands on the left holding a mop beside a yellow mop bucket. The woman in the chef coat stands next to him. Two other kitchen/service workers stand to the right: one person in an apron and cap holding a metal bowl filled with red tomatoes, and another person in a white shirt with a black tie. Stainless-steel ovens, racks, pans, and shelving fill the background.\n\nA closer shot shows the three workers without the Mr. Clean character. The chef stands with her hands on her hips, looking toward the left side of the frame. The person in the apron holds the bowl of tomatoes and looks downward or ahead. The person in the white shirt and black tie also looks toward the left, appearing attentive or surprised.\n\nThe next shot returns to a close-up of the Mr. Clean character in the kitchen. He smiles slightly, with hanging pans and stainless-steel kitchen equipment visible behind him.\n\nThe final frames shift to a blue gradient graphic background. Large text reads: “IT’S NOT JUST CLEAN, IT’S Mr. Clean PROFESSIONAL.” The “Mr. Clean” brand name is in large red lettering with a white outline, and “PROFESSIONAL” appears below it in bold white letters.\n\nIn the last frame, a large green jug of cleaning product appears on the right. The label shows the Mr. Clean Professional branding and the Mr. Clean character. The product label reads “DEGREASING FLOOR CLEANER” and “COMMERCIAL GRADE.” The slogan and brand text remain on the left against the blue background."
+  },
+  "api_metadata": {
+    "response_id": "resp_09603838ef70ee8c006a1079de7d6c819199b77da52fc773d4",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 871,
+      "output_tokens_details": {
+        "reasoning_tokens": 331
+      },
+      "total_tokens": 2516
+    }
+  },
+  "duration_seconds": 20.917,
+  "created_at": "2026-05-22T15:44:51Z",
+  "error": null
+}

@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_2020_31",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_31",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_31/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_31.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0002.jpg",
+      "timestamp_seconds": 3.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0003.jpg",
+      "timestamp_seconds": 6.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0004.jpg",
+      "timestamp_seconds": 7.781,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0005.jpg",
+      "timestamp_seconds": 8.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0006.jpg",
+      "timestamp_seconds": 10.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0007.jpg",
+      "timestamp_seconds": 11.66,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0008.jpg",
+      "timestamp_seconds": 13.286,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0009.jpg",
+      "timestamp_seconds": 15.163,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0010.jpg",
+      "timestamp_seconds": 16.331,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0011.jpg",
+      "timestamp_seconds": 17.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0012.jpg",
+      "timestamp_seconds": 17.874,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0013.jpg",
+      "timestamp_seconds": 19.334,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0014.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0015.jpg",
+      "timestamp_seconds": 22.629,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0016.jpg",
+      "timestamp_seconds": 23.547,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0017.jpg",
+      "timestamp_seconds": 24.089,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0018.jpg",
+      "timestamp_seconds": 25.048,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0019.jpg",
+      "timestamp_seconds": 25.882,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0020.jpg",
+      "timestamp_seconds": 26.716,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_31/frame_0021.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_31.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_31.json",
+    "response_text": "The commercial begins from inside or behind a car windshield looking outward. Two men stand outside in daylight, slightly out of focus, seen through a cracked windshield. One man wears a light beige sweater and has a short beard; the other wears a brown jacket over a dark shirt. Small on-screen text near the bottom reads “Simulated.”\n\nThe shot moves closer to the two men as they lean toward the windshield, now more clearly visible. The crack across the glass remains prominent in the foreground. Tiny disclaimer text appears at the bottom, including “Conditions may apply.” The brown-jacketed man is then shown alone outdoors in a suburban setting, with a house and lawn blurred behind him, looking downward as if focused on something in front of him.\n\nA close-up follows of a smartphone held in a hand. The phone displays the Safelite website or app interface. Readable text includes “Safelite” and the large message: “Get it fixed any way you want,” with a blue button below that appears to say “Let’s get started.” A small line of text along the bottom of the frame includes “Simulated. Conditions may apply.”\n\nThe scene changes to a red Safelite van driving through an urban street. The rear of the van carries the message “Get it fixed any way you want,” and “safelite.com” is visible near the bottom. Another moving shot shows the side of the red van with large white “Safelite” branding and smaller text reading “Mobile Glass Shop.” The driver is then shown through the open side window, smiling while driving and wearing a black-and-red uniform shirt.\n\nThe commercial then shifts to what appears to be a barber shop. The two men are seated in barber chairs indoors while a barber stands behind one of them. Through the large front window, the Safelite van and a technician working outside are visible. A technician in a black-and-red uniform and blue gloves works on a dark vehicle’s windshield in front of the shop. The hood or windshield area shows large “Safelite” branding. A small disclaimer at the bottom reads that mobile service may not be available in all locations.\n\nNext, the technician is shown working outdoors near water or a scenic area, using windshield repair or replacement equipment on a vehicle. He wears safety glasses and blue gloves and smiles while handling tools. The two men are then shown nearby with fishing rods, suggesting they are waiting or spending time outdoors while the service is performed. A red Safelite van is parked in the background behind them, and the technician continues working on the vehicle.\n\nThe commercial then cuts to a residential driveway. A dark SUV is positioned in front of a house, surrounded by calibration or service equipment mounted on tripods and stands. A Safelite technician in the black-and-red uniform moves around the vehicle. A man in a navy jacket walks past the scene carrying a cup, while the vehicle’s front-facing equipment and targets are visible. Small text at the bottom again indicates that mobile service may not be available in all locations.\n\nA humorous-looking neighbor or second man in a light shirt is shown peering over a wooden fence, watching. The shot then centers on him behind the fence, looking forward. After this, the technician is seen from behind holding a red tablet or diagnostic device with a circular graphic on its screen. Calibration equipment and a target board are positioned near the vehicle’s windshield. Small text reads “Simulated.”\n\nThe technician later stands in front of a red Safelite van and waves, smiling. The large white “Safelite” logo fills much of the van’s side behind him. The two men are then shown on a golf course in bright daylight, holding or standing near golf clubs. One wears a dark top and light pants; the other wears a blue sweater and light pants. A red flag and golf balls are visible on the green.\n\nThe final moving shot shows the red Safelite van driving away down a residential street at dusk or early evening. The rear text reads “Get it fixed any way you want,” with “safelite.com” below. The last frame is an aerial or elevated view of a suburban road surrounded by trees and houses. The red Safelite van is visible on the road below. Large white text appears over the scene: “Safelite.” Beneath it, the tagline reads: “Your glass. Your way.” A smaller line below says: “Schedule at safelite.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0c844afd469287d6006a107a173880819cbcf3db98b1c93963",
+    "usage": {
+      "input_tokens": 4102,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 985,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 5087
+    }
+  },
+  "duration_seconds": 27.911,
+  "created_at": "2026-05-22T15:45:55Z",
+  "error": null
+}

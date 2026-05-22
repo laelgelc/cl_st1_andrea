@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2000_103",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_103",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_103/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_103.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0002.jpg",
+      "timestamp_seconds": 0.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0003.jpg",
+      "timestamp_seconds": 3.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0004.jpg",
+      "timestamp_seconds": 4.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0005.jpg",
+      "timestamp_seconds": 6.162,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0006.jpg",
+      "timestamp_seconds": 9.499,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0007.jpg",
+      "timestamp_seconds": 11.668,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0008.jpg",
+      "timestamp_seconds": 13.236,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0009.jpg",
+      "timestamp_seconds": 15.005,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0010.jpg",
+      "timestamp_seconds": 16.239,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0011.jpg",
+      "timestamp_seconds": 17.207,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0012.jpg",
+      "timestamp_seconds": 19.743,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0013.jpg",
+      "timestamp_seconds": 22.245,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_103/frame_0014.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_103.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_103.json",
+    "response_text": "The commercial begins with a static logo screen showing the text “U.S. Cellular” with a star-like graphic mark on a pale, cloudy background. Smaller text appears underneath, but it is difficult to read clearly.\n\nIt then cuts to the exterior of a modern, white-and-wood house. A black sedan is parked at the curb/driveway area. A man in dark clothing and a woman in a light top stand together on the front steps near the entrance. The image has a cool, slightly desaturated look.\n\nA close-up follows of a shiny chrome jaguar hood ornament on the car. A small red ribbon or bow is tied around it, and the red color stands out against the otherwise muted palette.\n\nThe viewpoint then shifts to inside the car, looking outward through the windshield. The steering wheel, dashboard, and rear-view mirror are visible in the foreground. Outside, the same man and woman approach or stand near the car, framed against trees and the house.\n\nA close-up shows the couple from the side. The man’s face is partly turned away, while the woman smiles closely beside him. Their bodies are close together, suggesting intimacy or affection, though the exact action is not fully visible.\n\nThe scene returns to a wider exterior view of the modern house and black car. The man stands near the front of the vehicle, while the woman is less clearly visible or partly out of frame. Another wide shot shows the car parked in the driveway in front of a white modern house, with the man and woman standing beside it.\n\nThe camera again shows the interior windshield perspective. The man is seen through the glass looking toward the car. In a later interior view, both the man and woman are visible outside the windshield, standing near the front of the vehicle.\n\nA low-angle exterior shot shows the side of the black car and the lower half of the woman standing nearby. A person in dark clothing appears to be on the ground beside the car, with legs and shoes visible; the reason for this position is not clear from the sampled frames.\n\nNext, a wide shot shows the woman standing alone beside the car in the driveway, near the front passenger side. She appears to have one hand near her face, but it is unclear whether she is holding anything.\n\nA close-up then shows a man lying on grass in bright sunlight, seen from the side with his head resting low. His eyes appear closed or partly closed, but his condition is not clear from the image alone.\n\nThe car is then shown alone in the driveway in a clean product-style shot, angled toward the camera. Its glossy black exterior and front grille are emphasized.\n\nThe final frame is a promotional end card. It shows the jaguar hood ornament again with the red bow, alongside large white text reading “2005 JAGUAR X-TYPE 3.0” and “$399 PER MONTH.” Smaller text states “30 month lease. $2,999 due at signing” and mentions that the security deposit is waived, with exclusions for tax, title, and license fees. Additional fine print appears at the bottom but is too small to read fully."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f06975c0e46531e006a10767bcd7081a2943b3054e55eb180",
+    "usage": {
+      "input_tokens": 3857,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1150,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5007
+    }
+  },
+  "duration_seconds": 31.418,
+  "created_at": "2026-05-22T15:30:35Z",
+  "error": null
+}

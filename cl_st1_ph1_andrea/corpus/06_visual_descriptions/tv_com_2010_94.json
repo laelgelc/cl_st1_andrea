@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2010_94",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_94",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_94/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_94.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0002.jpg",
+      "timestamp_seconds": 0.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0003.jpg",
+      "timestamp_seconds": 4.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0004.jpg",
+      "timestamp_seconds": 6.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0005.jpg",
+      "timestamp_seconds": 7.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0006.jpg",
+      "timestamp_seconds": 8.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0007.jpg",
+      "timestamp_seconds": 13.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0008.jpg",
+      "timestamp_seconds": 14.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0009.jpg",
+      "timestamp_seconds": 15.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0010.jpg",
+      "timestamp_seconds": 16.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0011.jpg",
+      "timestamp_seconds": 20.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0012.jpg",
+      "timestamp_seconds": 20.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0013.jpg",
+      "timestamp_seconds": 21.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0014.jpg",
+      "timestamp_seconds": 21.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0015.jpg",
+      "timestamp_seconds": 21.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0016.jpg",
+      "timestamp_seconds": 21.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0017.jpg",
+      "timestamp_seconds": 22.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0018.jpg",
+      "timestamp_seconds": 26.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_94/frame_0019.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_94.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_94.json",
+    "response_text": "The commercial begins with a static blue title card. In the center is the AT&T globe logo with the text “AT&T,” and below it the URL “att.com/unlimited.”\n\nIt then cuts to a dimly lit interior where a young woman is putting on or adjusting a large white-and-black virtual-reality headset. The shot is close on her face and hands, with the background mostly dark and out of focus.\n\nThe scene shifts into a stylized virtual environment. A glowing circular object or controller-like form appears in warm pink and orange light, blurred by motion. The environment becomes a neon, game-like arena with floating panels, illuminated geometric lines, and multiple human figures suspended or moving as if in zero gravity. A large central structure includes a triangular symbol, circular targets or devices, and score-like displays. Small text near the bottom of one frame appears to say “Not actual gameplay,” though it is very small and not fully clear.\n\nThe action continues inside the virtual space. The camera moves rapidly through bright orange, pink, purple, and blue light trails. A person is shown flying or gliding horizontally toward neon-outlined platforms and geometric structures. In close-up, the same young woman’s face is visible without the headset in the virtual representation, leaning forward as if moving through the space. Other figures appear nearby, also floating or maneuvering.\n\nThe arena includes multiple glowing interface elements and scoreboard-like panels. Visible numbers include “02,” “00,” and “100.” Players or avatars reach toward illuminated objects, and a bright circular or spiral energy effect appears near one side of the arena. The camera shows a central diamond-shaped surface with a triangle icon. Several figures extend their arms toward it as a small object moves across or toward the surface.\n\nA bright flash occurs around the central diamond surface, followed by a wider view of the arena. On the left, a large display reads “GOAL,” with a small number “03” visible nearby. The environment remains dark but filled with neon outlines, floating geometric shapes, and glowing blue and pink accents.\n\nNear the end, a person in a yellow outfit is shown reclining or floating on a pink neon-outlined platform, reaching upward. Around them are more geometric light structures, including triangular and crescent-like shapes.\n\nThe commercial then cuts to a black screen with centered white text reading “DEFY REALITY.” An ESRB rating icon marked “T” for Teen appears in the lower right.\n\nThe final frame shows a product shot on a black background: a white VR headset and two handheld controllers. Below, the text reads “oculus quest,” with smaller text “from facebook.” The ESRB Teen rating icon remains visible in the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0519a8a81dc2ad35006a1078decd5081a3a1efd52e259a7c40",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 763,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 4487
+    }
+  },
+  "duration_seconds": 20.327,
+  "created_at": "2026-05-22T15:40:34Z",
+  "error": null
+}

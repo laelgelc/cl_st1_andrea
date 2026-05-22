@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1950_66",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_66",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_66/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_66.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_66/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_66/frame_0002.jpg",
+      "timestamp_seconds": 36.626,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_66/frame_0003.jpg",
+      "timestamp_seconds": 65.455,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_66/frame_0004.jpg",
+      "timestamp_seconds": 73.03,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_66.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_66.json",
+    "response_text": "The commercial is shown in black and white and appears to unfold as a presenter-led product demonstration.\n\n1. **Opening shot:** A man in a suit and tie faces the camera directly. He is indoors, standing or sitting in front of patterned curtains, with a domestic-looking background. His hands are held together in front of him, suggesting he is addressing the viewer.\n\n2. **Product demonstration shot:** The scene cuts to a close-up of hands handling a packaged food item on a flat surface. A foil compartment tray is visible, partly removed from or placed beside printed packaging. The packaging shows a picture of a prepared meal and large “TV” lettering. The setting appears to include a counter or tabletop; nearby objects are partially visible but not clearly identifiable.\n\n3. **Return to presenter with superimposition:** The man reappears smiling in the same curtained interior. A transparent overlay or dissolve effect places the outline/image of the product packaging across the frame, partially over his body and the background. This creates a visual link between the presenter and the product.\n\n4. **Final product pack shot:** The commercial ends on a centered close-up of the product package. The box prominently displays “TV” and an image of a prepared meal. The words “TURKEY DINNER” are visible on the front. The package is framed against a background that resembles curtains or a display setting. The final frame functions as a product-identification shot.\n\nNo dialogue, music, or voice-over content is visible in the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_07e6e9365df09c11006a106befd07c819eb02b93ffddf0573b",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 654,
+      "output_tokens_details": {
+        "reasoning_tokens": 343
+      },
+      "total_tokens": 1775
+    }
+  },
+  "duration_seconds": 73.044,
+  "created_at": "2026-05-22T14:46:15Z",
+  "error": null
+}

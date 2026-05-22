@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1970_114",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_114",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_114/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_114.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0002.jpg",
+      "timestamp_seconds": 1.228,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0003.jpg",
+      "timestamp_seconds": 3.465,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0004.jpg",
+      "timestamp_seconds": 9.591,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0005.jpg",
+      "timestamp_seconds": 14.581,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0006.jpg",
+      "timestamp_seconds": 20.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0007.jpg",
+      "timestamp_seconds": 22.634,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_114/frame_0008.jpg",
+      "timestamp_seconds": 24.044,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_114.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_114.json",
+    "response_text": "The commercial opens on a dark shot of an office-style nameplate or sign reading “SALES DIRECTOR” in bold black capital letters on a light rectangular background.\n\nIt then cuts to a middle-aged man in a dark business suit seated behind a desk. He is wearing a white shirt and a striped tie. His elbows are on the desk and his hands are pressed against his forehead, suggesting stress or concentration. The desk contains office objects including papers, a telephone-like object, a pencil cup, and stacked documents.\n\nThe next scene shows a showroom-like setup. A large hanging sign reads “FACTORY AUTHORIZED SALE,” with “PHILCO” and the Ford oval logo beneath it. Two console-style television sets sit below the sign. A suited man stands to the right side of the display, partly turned toward the televisions and sign.\n\nThe camera then shows a closer view of one wooden console television. The TV has a large rounded screen on the left and control knobs on the right. A price tag is attached near the lower right of the set; the visible price appears to include “$480,” though the full tag details are not completely clear. The lower legs and shoes of a person standing beside the television are partly visible.\n\nA close-up follows of the suited man in front of an orange-and-white graphic backdrop with a Ford oval logo partly visible behind him. He faces the camera directly, leaning slightly forward as if addressing viewers. He wears a dark suit, light shirt, striped tie, and pocket square.\n\nThe commercial returns to the close view of the console television. The same price tag is visible on the right side of the TV, again appearing to show “$480.” White text appears along the bottom of the frame reading “Manufacturer’s suggested sale price,” though the text is slightly blurred.\n\nA dissolve or superimposed transition overlays the television image with the man’s face and upper body. During this overlap, the TV and the man are both visible at once, with the bottom text still faintly present.\n\nThe final frame shows the suited man more clearly again against the orange-and-white backdrop. He faces forward with a serious, assertive expression. The background includes large geometric shapes and partial branding elements, but no additional fully legible text is visible in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e4c98470ba0a363006a107064a5d481a192d553e91c0b01ed",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 2181
+    }
+  },
+  "duration_seconds": 14.174,
+  "created_at": "2026-05-22T15:04:18Z",
+  "error": null
+}

@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_2020_118",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_118",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_118/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_118.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_118/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_118/frame_0002.jpg",
+      "timestamp_seconds": 59.14,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_118.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_118.json",
+    "response_text": "The commercial begins with an elevated, slightly angled view of a paved roadway running through a landscaped institutional or campus-like area. On the left side of the road there is a fenced green space with trees and open grass. On the right side there is a large brick building with lawns, sidewalks, steps, and lampposts. The camera perspective suggests forward movement along the street, though only a sampled still frame is provided.\n\nBy the final frame, the scene has shifted to a closer exterior view of a red-brick campus-style building with large windows and a walkway. Several people are visible walking on the sidewalk and across the lawn area; two figures are prominent on the right side of the frame, walking toward the camera. The sky is bright with scattered clouds. Over the center of the image, a graphic logo and text appear: a multicolored triangular mark above the words “Southern Company.” Beneath that, smaller text reads: “Building the future of energy.” The visual emphasis at the end is on the company branding placed over the outdoor campus scene."
+  },
+  "api_metadata": {
+    "response_id": "resp_07d646ac463fad4c006a107bcb04548197a87d484817ad6a6c",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 774
+    }
+  },
+  "duration_seconds": 9.337,
+  "created_at": "2026-05-22T15:52:52Z",
+  "error": null
+}

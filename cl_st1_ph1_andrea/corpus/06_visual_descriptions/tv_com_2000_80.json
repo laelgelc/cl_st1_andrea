@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2000_80",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_80",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_80/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_80.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0002.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0003.jpg",
+      "timestamp_seconds": 4.069,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0004.jpg",
+      "timestamp_seconds": 4.694,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0005.jpg",
+      "timestamp_seconds": 6.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0006.jpg",
+      "timestamp_seconds": 10.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0007.jpg",
+      "timestamp_seconds": 14.245,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0008.jpg",
+      "timestamp_seconds": 16.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0009.jpg",
+      "timestamp_seconds": 19.709,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0010.jpg",
+      "timestamp_seconds": 23.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_80/frame_0012.jpg",
+      "timestamp_seconds": 29.97,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_80.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_80.json",
+    "response_text": "The commercial opens with a dark, somewhat shadowed shot of a bird perched on a tree branch, with evergreen trees in the background.\n\nIt then cuts to an exterior view of a suburban house. Two dark birds are perched on a branch in the foreground, looking toward the house. Through a large front window, people can be seen inside. The house exterior is sunlit, with shrubs and leafy trees around it.\n\nThe next shot moves closer to the window. A woman inside the house stands near the large glass pane, holding a blue spray bottle and wiping the window with a white cloth. The room behind her has plants, framed wall decor, and furniture.\n\nA close-up shows the woman’s hand holding a blue Windex spray bottle with a yellow trigger. The red “Windex” logo is clearly visible on the label. The outdoor background is blurred and bright.\n\nThis is followed by a close-up of a dark bird’s head and upper body. The bird looks wet, dirty, or mottled in appearance, with its feathers appearing clumped or streaked.\n\nAnother close-up shows a hand holding the blue spray bottle from the side. The label reads “Glass Cleaner,” though the full label is partially turned away.\n\nThe commercial then shows a view through or against the cleaned window: the woman and a man are visible inside the room. Reflections or translucent overlays of a bird and outdoor foliage appear across the glass, emphasizing the window surface. The woman appears to be speaking or gesturing while holding the bottle; the man stands beside her.\n\nA close-up returns to the bird’s face, showing its beak and textured feathers. Small white text appears near the bottom, but it is too small and blurred to read clearly in the sampled frame.\n\nThe woman and man are shown again inside by the large window, with reflections of the bird and outdoors superimposed across the glass. The woman holds the spray bottle and gestures toward the window area.\n\nNear the end, the product is displayed alone: a blue Windex spray bottle sits on a white window ledge or sill with a bright outdoor background of trees and sky.\n\nThe final product shot shows the Windex bottle larger in the frame. Large white text to the left reads “BEST ON GLASS.” The bottle label reads “Windex” and “Glass Cleaner.” In the lower right, text reads “SC Johnson” and “A Family Company.” The commercial then cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_099651a3951c6528006a107619288c819e8bb6d166cd36c7df",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 683,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 3084
+    }
+  },
+  "duration_seconds": 17.465,
+  "created_at": "2026-05-22T15:28:42Z",
+  "error": null
+}

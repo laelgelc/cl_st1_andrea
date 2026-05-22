@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2000_89",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_89",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_89/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_89.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0002.jpg",
+      "timestamp_seconds": 1.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0003.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0004.jpg",
+      "timestamp_seconds": 4.461,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0005.jpg",
+      "timestamp_seconds": 5.428,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0006.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0007.jpg",
+      "timestamp_seconds": 9.966,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0008.jpg",
+      "timestamp_seconds": 11.368,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0009.jpg",
+      "timestamp_seconds": 12.836,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_89/frame_0010.jpg",
+      "timestamp_seconds": 14.093,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_89.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_89.json",
+    "response_text": "The commercial begins with a nearly black frame, with only a small red heart-shaped channel/logo watermark visible at the lower right.\n\nIt then cuts to the inside of a vehicle. A blond toddler sits facing forward in a large yellow-and-brown child safety seat. The child is strapped in with padded harness straps and wears a striped shirt. The background through the car windows is bright and blurred, suggesting the vehicle is moving or parked in daylight.\n\nNext, the view shifts to the front area of the vehicle from the back seat. An adult driver, seen from behind and in profile, sits at the steering wheel. The person has short blond hair and wears a peach/orange top. The car interior includes gray seats and side windows, with houses or suburban buildings visible outside.\n\nA rear-view mirror is shown against a bright outdoor background of blue sky and greenery. In the mirror reflection, the toddler’s face appears, looking forward from the child seat.\n\nThe camera returns to a wider view of the car interior. The adult driver is still in front, while the toddler’s legs and shoes are visible in the rear child seat. The child appears reclined or seated comfortably, with legs extended.\n\nA close-up follows of a white disposable diaper or diaper-like material being held against a yellow background. The white surface has small printed designs, including simple cartoon-like shapes. A hand is visible holding or touching the material.\n\nThe scene then shows the toddler through the side window of a red vehicle. The child is still seated in the yellow car seat and smiles while holding up a small white item, likely the same diaper or wipe-like object. The car window and red exterior frame are visible.\n\nA close-up of the toddler in the car seat follows. The child looks directly toward the camera with both hands near the sides of the head or neck, resting against the harness area. The yellow padding of the seat fills much of the background.\n\nThe commercial then transitions to a product shot on a red-to-pink gradient background. A red plastic tub of Huggies wipes is displayed, with the label reading “Huggies Supreme.” The product sits slightly left of center.\n\nIn the final frame, the product remains on the red/pink background, and large white handwritten-style text appears to the right: “Hurray for HUGGIES!” The red heart-shaped watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0164a8db2bb2bafb006a107641d7288190ad84f66cc8badcf0",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 532,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 2555
+    }
+  },
+  "duration_seconds": 13.836,
+  "created_at": "2026-05-22T15:29:19Z",
+  "error": null
+}

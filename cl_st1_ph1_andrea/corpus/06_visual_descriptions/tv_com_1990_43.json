@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1990_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0002.jpg",
+      "timestamp_seconds": 5.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0003.jpg",
+      "timestamp_seconds": 7.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0004.jpg",
+      "timestamp_seconds": 9.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0005.jpg",
+      "timestamp_seconds": 11.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0006.jpg",
+      "timestamp_seconds": 16.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0007.jpg",
+      "timestamp_seconds": 21.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0008.jpg",
+      "timestamp_seconds": 22.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0009.jpg",
+      "timestamp_seconds": 26.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_43/frame_0010.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_43.json",
+    "response_text": "The commercial begins with a very dark, low-visibility product shot. A large package with the word “CHIPS” is faintly visible in the center, but most surrounding details are unclear.\n\nIt then cuts to an older man with white hair, black-framed glasses, a bow tie, and suspenders, shown from the chest up against a studio-like background. He holds a box close to the camera labeled “Orville Redenbacher’s” and “SMART-POP,” with a bright “NEW!” burst on the package.\n\nNext, the setting changes to a bright kitchen. A woman stands behind a counter, opening or handling a very large bag labeled “CHIPS.” The kitchen has light-colored cabinets, a refrigerator at the right, and daylight coming from a window behind her.\n\nThe woman is then shown struggling with or pulling at the large chips bag. Oversized white capital letters appear over the image, partially obscuring the scene; only fragments of the text are visible in the sampled frame, including “UMB ID…,” so the full message cannot be confirmed from the frame.\n\nA product display follows: an “Orville Redenbacher’s SMART-POP” box is placed in front of a tall blue cylindrical container filled with popped popcorn. Loose popcorn pieces are scattered around both packages on the surface.\n\nThe commercial then cuts to a living-room-like setting. Two men sit beside a small table: a younger man on the left wearing glasses and a dark striped shirt, and the older white-haired man from earlier on the right, wearing a bow tie and suspenders. On the table are a blue popcorn container, a glass bowl filled with popcorn, and the Smart-Pop box. A caption at the bottom reads: “COMPARISON BASED ON WEIGHT.”\n\nA close-up shot shows a blue container filled to the top with popcorn. The popcorn is brightly lit, filling most of the frame.\n\nThe woman from the kitchen appears again, now holding a blue “Orville Redenbacher’s” popcorn container. She brings popcorn to her mouth and eats it, with the container visible in the foreground.\n\nThe final shots return to the product display. The “Orville Redenbacher’s SMART-POP” box is shown in front of the tall blue popcorn container, with loose popcorn arranged around them. Large text appears along the bottom: “DO ONE THING AND DO IT BETTER THAN ANYONE.” A handwritten-style signature appears to the right, reading “Orville Redenbacher.” The last frame holds on this same product-and-quote arrangement."
+  },
+  "api_metadata": {
+    "response_id": "resp_045d1066bfa7822a006a107324888081a1bc678968fb8c9486",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 814,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "total_tokens": 3417
+    }
+  },
+  "duration_seconds": 19.869,
+  "created_at": "2026-05-22T15:16:08Z",
+  "error": null
+}

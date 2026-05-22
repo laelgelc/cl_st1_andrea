@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2010_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0002.jpg",
+      "timestamp_seconds": 3.226,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0003.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0004.jpg",
+      "timestamp_seconds": 5.662,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0005.jpg",
+      "timestamp_seconds": 6.463,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0006.jpg",
+      "timestamp_seconds": 8.531,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0007.jpg",
+      "timestamp_seconds": 12.302,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0008.jpg",
+      "timestamp_seconds": 18.174,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0009.jpg",
+      "timestamp_seconds": 20.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0010.jpg",
+      "timestamp_seconds": 23.813,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0011.jpg",
+      "timestamp_seconds": 25.949,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0012.jpg",
+      "timestamp_seconds": 26.983,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_36/frame_0013.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_36.json",
+    "response_text": "The sequence begins with a static product-style shot of two Tide PODS containers against a light blue background. One white-and-blue container is labeled “Tide PODS free & gentle,” with a small “NEW” tag, and an orange/purple Tide PODS container sits behind it. Small safety icons and a fine-print safety warning are visible near the bottom, including wording about keeping detergent away from children.\n\nThe scene then cuts to a bright home interior, likely a kitchen or living area. A young girl with light brown hair, wearing a pink cardigan, smiles toward the camera while holding up a light-colored shoe. A Care.com watermark appears at the lower right.\n\nNext, the same girl is shown holding and blowing into a brass trumpet or cornet. She looks toward the camera while seated or standing in the same bright domestic setting, with a window and small objects in the background. The Care.com watermark remains.\n\nA close-up follows of the girl smiling directly at the camera. She now wears a purple top and a colorful bead necklace. The background is softly lit and child-oriented, with plush toys or soft furnishings visible but out of focus.\n\nThe next close-up returns to the girl in the pink cardigan. Her head is tilted upward and she looks down toward the camera, giving a playful expression. The home background remains softly blurred, and the Care.com watermark is still present.\n\nThe commercial then introduces an adult woman speaking directly to camera. She stands in front of a cool-toned, softly blurred background with an image-like panel behind her. On-screen text identifies her as “Sheila Marcelo,” “Founder & CEO,” and “Mother of two.” She wears a purple cardigan and smiles. The Care.com watermark appears at the lower left.\n\nThe visual focus shifts to a computer interface for Care.com. The Care.com logo appears at the top with the tagline “There for you.” Large rectangular buttons or category selections are visible, including “Full-time nanny,” “Part-time sitter,” and “Post a job now.” The screen is shown at an angle, emphasizing the website interface.\n\nA subsequent website screen shows a list of caregiver profiles. The Care.com logo appears at the top, along with a line indicating a large number of babysitters near the user. Profile names are visible, including “Madison L.,” “Sarah R.,” and “Chloe S.,” each with a photo thumbnail, star ratings, and brief caregiving details.\n\nAnother website profile page is shown for “Brianna P.,” labeled “Part-time sitter.” Her portrait appears on the left. Green check-mark bullet points list tasks or services such as “Transportation,” “After school activities,” “Groceries,” and “Appointments.” Green rating or verification-style boxes appear to the right, including “Background Check” and “Driving Record.”\n\nThe sequence then shows a hand holding a smartphone. On the phone screen is a Care.com-branded payment interface with the caregiver’s photo and a large green button labeled “Pay Now.” Papers and a pink item lie blurred on a table in the background.\n\nThe commercial returns to the young girl in the bright home setting, again playing the brass instrument. She holds it up to her mouth, with the bell of the instrument prominent in the foreground. The Care.com watermark appears at the lower right.\n\nThe final frames use a clean blue-white gradient background with the Care.com logo centered. The tagline “There for you” appears beneath the logo. One frame reads “Join Today.” The last frame changes the text to “Find the perfect,” followed by a blank line, and small category labels along the bottom: “Babysitters,” “Nannies,” “Senior Care,” “Pet Care,” and “and More!”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0835ff7710088cbf006a10779713608192928cb162f1c307d6",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 887,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 3477
+    }
+  },
+  "duration_seconds": 20.037,
+  "created_at": "2026-05-22T15:35:06Z",
+  "error": null
+}

@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2010_27",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_27",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_27/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_27.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0002.jpg",
+      "timestamp_seconds": 0.557,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0003.jpg",
+      "timestamp_seconds": 1.691,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0004.jpg",
+      "timestamp_seconds": 3.426,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0005.jpg",
+      "timestamp_seconds": 4.461,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0006.jpg",
+      "timestamp_seconds": 7.063,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0007.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0008.jpg",
+      "timestamp_seconds": 9.266,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0009.jpg",
+      "timestamp_seconds": 9.799,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0010.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0011.jpg",
+      "timestamp_seconds": 11.768,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0012.jpg",
+      "timestamp_seconds": 12.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0013.jpg",
+      "timestamp_seconds": 13.603,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0014.jpg",
+      "timestamp_seconds": 16.306,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0015.jpg",
+      "timestamp_seconds": 17.541,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0016.jpg",
+      "timestamp_seconds": 20.777,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0017.jpg",
+      "timestamp_seconds": 21.278,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0018.jpg",
+      "timestamp_seconds": 21.978,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0019.jpg",
+      "timestamp_seconds": 22.312,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0020.jpg",
+      "timestamp_seconds": 22.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0021.jpg",
+      "timestamp_seconds": 23.547,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0022.jpg",
+      "timestamp_seconds": 24.281,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0023.jpg",
+      "timestamp_seconds": 24.981,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_27/frame_0024.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_27.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_27.json",
+    "response_text": "The commercial begins on a black screen.\n\nA large mirrored disco ball fills the frame, with a white Honda “H” emblem centered over it. The scene then opens into a warm, gold-lit studio with multiple hanging disco balls, a glossy reflective floor, and two dancers posing in front of an older red Honda sedan. The dancers wear retro-styled outfits, and the car’s headlights are on.\n\nA close-up shows the rear of the red car with the chrome “ACCORD” badge visible beside the tail light. The view returns to the full studio: the red sedan is shown in profile while the two dancers move on either side of it under the disco balls.\n\nThe setting shifts to a cooler blue-toned studio. A beige/gold Honda Accord is shown in profile against a backdrop made of stacked stereo/boombox units. Two dancers stand on either side, wearing more 1980s-styled clothing. A close-up follows of the car’s front corner/headlight, then a front view shows the car facing the camera with headlights on while the dancers move beside it. Another close-up shows the rear corner with an “ACCORD” badge.\n\nThe commercial then cuts to close-up shots of a red later-generation Accord: first the rear with “ACCORD” and trim badging, then the front headlight and red hood under purple neon-like reflections. A wider shot shows the red car centered in a dark studio with horizontal light bars on the back wall. Two dancers walk or dance on either side, and the glossy floor reflects the car and lights.\n\nThe visual style changes again to a modern, darker, high-tech space. A red newer Honda sedan appears front-on with bright headlights shining through haze and overhead light strips. The car is then shown in a side/front three-quarter view on a reflective black floor. Small white text appears near the bottom; it appears to identify the vehicle, though it is very small in the sampled frame. A brief blue transitional blur follows.\n\nThe red modern sedan is shown clearly in profile/three-quarter view, emphasizing its sculpted body and large two-tone wheels. Close-ups highlight the front wheel with the Honda emblem in the center and the LED-style headlight. A dancer in an all-white outfit appears in front of the red car, moving across the frame in the same sleek studio with vertical and overhead light strips.\n\nA close-up of the rear shows the illuminated tail light and “ACCORD” badge. The camera returns to a wider side view: the red car is centered while two dancers in light-colored outfits move on either side. Another front view shows the car with headlights shining through haze.\n\nThe final frame shows the red Honda sedan in side profile on the reflective floor. A large white Honda “H” logo and the word “HONDA” appear centered over the car."
+  },
+  "api_metadata": {
+    "response_id": "resp_091bc47f7a74374f006a107767da8c819c86153e189c66f1c2",
+    "usage": {
+      "input_tokens": 4669,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 844,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 5513
+    }
+  },
+  "duration_seconds": 24.287,
+  "created_at": "2026-05-22T15:34:23Z",
+  "error": null
+}

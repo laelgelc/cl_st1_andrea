@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2010_15",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_15",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_15/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_15.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0002.jpg",
+      "timestamp_seconds": 4.227,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0003.jpg",
+      "timestamp_seconds": 5.428,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0004.jpg",
+      "timestamp_seconds": 6.73,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0005.jpg",
+      "timestamp_seconds": 7.898,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0006.jpg",
+      "timestamp_seconds": 9.065,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0007.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0008.jpg",
+      "timestamp_seconds": 13.903,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0009.jpg",
+      "timestamp_seconds": 15.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0010.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0011.jpg",
+      "timestamp_seconds": 18.575,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0012.jpg",
+      "timestamp_seconds": 24.981,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_15/frame_0013.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_15.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_15.json",
+    "response_text": "The commercial begins with a close-up in a modern office-like setting: a person in a light purple shirt adjusts or holds a small white desk fan on a desk. Nearby are a computer mouse, keyboard or laptop, and papers, suggesting a work surface.\n\nIt then cuts to a series of older-looking scenes showing electric fans from different periods. One black-and-white shot shows a man in profile working beside an old metal-caged desk fan. Another aged, sepia-toned or early color shot shows a large fan in the foreground and a young woman seated at a desk in the background. The commercial then moves to a retro domestic kitchen, where a red-bladed fan sits on a countertop while a woman stands in the background. A closer view focuses on the red fan’s circular guard and spinning blades.\n\nNext, another vintage-style domestic scene shows a man handling a suitcase or case on a bed while a blue-bladed desk fan runs prominently in the foreground. These shots visually present a sequence of conventional bladed fans across time and settings.\n\nThe commercial then shifts to a stark black background with a modern white desk fan centered in the frame. A following abstract shot shows a translucent, stylized view of spinning fan blades or airflow, with pale blue-white shapes moving against a dark background.\n\nA close-up shows a finger pressing one of several grey control buttons on the base of a white fan. This is followed by a head-and-shoulders shot of an older grey-haired man speaking directly toward the camera in a modern, softly lit interior; no audio content is visible from the frames.\n\nThe visuals then move into close-up product imagery: a curved, glossy ring-like surface appears against a black background, suggesting the form of a bladeless fan. The final product shots reveal a Dyson Air Multiplier fan: a cylindrical base supporting a circular open ring, lit with blue accents, on a black reflective surface.\n\nReadable on-screen text appears beside the product:\n\n- “dyson air multiplier”\n- “No blades. No buffeting.”\n- “Learn more at dyson.com”\n- “Available at” followed by retailer logos, including Bed Bath & Beyond, Best Buy, Sears, and Target\n- “and other retail locations.”\n\nThe last frame holds on the product and the same text, with the circular fan ring facing forward against the black background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f66a419dfeb9d10006a10772fc70c8193a25632475f202b7c",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 524,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 3114
+    }
+  },
+  "duration_seconds": 13.107,
+  "created_at": "2026-05-22T15:33:16Z",
+  "error": null
+}

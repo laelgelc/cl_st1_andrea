@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_113",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_113",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_113/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_113.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_113/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_113/frame_0002.jpg",
+      "timestamp_seconds": 3.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_113/frame_0003.jpg",
+      "timestamp_seconds": 26.503,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_113/frame_0004.jpg",
+      "timestamp_seconds": 28.035,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_113.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_113.json",
+    "response_text": "The commercial begins with a close-up of a video game display. The image is dark and reddish, with a vertical dotted line down the center, horizontal bars near the top and bottom edges, and small bright rectangular marks on either side. It resembles a simple paddle-and-ball game screen, though the exact gameplay details are not fully clear from the sampled frame.\n\nThe next sampled scene cuts to an electronics or television showroom. Several television sets are visible on shelves and counters. In the foreground, an adult man leans over or stands close behind a child seated at a display. The child appears to be interacting with controls in front of a television screen, and the man is watching attentively. The television screen in front of them shows a bright, mostly blue-green display. Other people and additional TV sets are visible in the background, suggesting a retail or demonstration environment.\n\nNear the end, the commercial cuts to a product shot. A television set is centered on a plain surface, with a video game console placed directly in front of it. The console has two large round controls, one on each side, and a central panel. A cable runs from the setup toward the right. On the TV screen, the same simple game-like display appears: a central dotted line, small paddles or rectangular marks on either side, and curved or horizontal boundary lines.\n\nAbove the television, large white uppercase text reads: “IT’S A REAL ATARI.” This text remains visible in the final frame. The final shot holds on the Atari-branded product setup, emphasizing the console, television screen, and the on-screen game display."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e253389144ad60d006a10705ba17c81a29463d429b0c92ca4",
+    "usage": {
+      "input_tokens": 889,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 410,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1299
+    }
+  },
+  "duration_seconds": 14.27,
+  "created_at": "2026-05-22T15:04:09Z",
+  "error": null
+}

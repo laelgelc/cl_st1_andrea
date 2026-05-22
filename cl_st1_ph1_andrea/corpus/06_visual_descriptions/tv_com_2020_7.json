@@ -1,0 +1,256 @@
+{
+  "commercial_id": "tv_com_2020_7",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_7",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_7/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_7.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0002.jpg",
+      "timestamp_seconds": 1.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0003.jpg",
+      "timestamp_seconds": 2.901,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0004.jpg",
+      "timestamp_seconds": 4.069,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0005.jpg",
+      "timestamp_seconds": 5.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0006.jpg",
+      "timestamp_seconds": 6.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0007.jpg",
+      "timestamp_seconds": 6.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0008.jpg",
+      "timestamp_seconds": 7.28,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0009.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0010.jpg",
+      "timestamp_seconds": 7.739,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0011.jpg",
+      "timestamp_seconds": 7.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0012.jpg",
+      "timestamp_seconds": 8.031,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0013.jpg",
+      "timestamp_seconds": 8.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0014.jpg",
+      "timestamp_seconds": 9.241,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0015.jpg",
+      "timestamp_seconds": 9.658,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0016.jpg",
+      "timestamp_seconds": 11.159,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0017.jpg",
+      "timestamp_seconds": 12.327,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0018.jpg",
+      "timestamp_seconds": 13.245,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0019.jpg",
+      "timestamp_seconds": 13.995,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0020.jpg",
+      "timestamp_seconds": 14.955,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0021.jpg",
+      "timestamp_seconds": 16.081,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0022.jpg",
+      "timestamp_seconds": 17.791,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0023.jpg",
+      "timestamp_seconds": 18.75,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0024.jpg",
+      "timestamp_seconds": 20.585,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0025.jpg",
+      "timestamp_seconds": 22.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0026.jpg",
+      "timestamp_seconds": 24.214,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0027.jpg",
+      "timestamp_seconds": 27.801,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2020_7/frame_0028.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 28,
+    "submitted_frame_count": 28,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_7.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_7.json",
+    "response_text": "The commercial opens in a vertical-phone-video style, with blurred side borders and a small “ring” watermark at the lower left. Inside a home, a man sits beside a young girl who is covering her face, while a light-colored puppy is held between them. The room appears domestic, with a desk and window in the background. The next close-up shows the same or similar light-colored puppy pressed against the girl’s chest; the girl is smiling or emotional as she holds it.\n\nThe tone then shifts. A close-up shows a young girl outdoors wearing a lavender knit hat and a floral fleece jacket. She looks serious or worried. The scene cuts to a residential street where an adult man and the girl are putting up or carrying printed missing-dog flyers on a utility pole. Houses, parked cars, and bare trees are visible, suggesting a neighborhood setting.\n\nA montage follows of people posting missing-dog flyers in different places and conditions. One man attaches a flyer to a pole on a city street with storefronts behind him. An older woman posts a flyer in a snowy neighborhood. Several close-ups show different “lost dog” or “missing” posters taped to poles: some are in rainy nighttime streets, some in sunny suburbs, some in autumn settings, and some in snowy streets. The posters show various dog photos and readable headings such as “LOST DOG,” “MISSING,” and “I’M MISSING,” with partial details like dog names, contact information, and rewards. One close-up shows a “LOST DOG” flyer for a white dog with the line “PLEASE HELP FIND OUR MILO.” The rapid sequence emphasizes many separate lost-dog notices in different neighborhoods.\n\nAfter a brief black frame, a man appears outdoors in a tree-lined residential area, facing the camera and holding up a smartphone. The phone screen shows a dog-related page with a photo of a white dog. The small “ring” watermark remains at the lower left.\n\nThe commercial then cuts to a close-up of hands using a smartphone. The screen shows a form with a large photo of a white dog at the top and text-entry fields below. A person types information into the form. The next view is a clean, white app interface showing fields labeled “Pet Name” and “Description.” The pet name field reads “Milo,” and the description field begins with “Milo our ye…” before the frame changes. A small blue label at the bottom right reads “Introducing Search Party.” Another app screen shows “Sharing Options” and a large blue button labeled “START SEARCH PARTY.”\n\nThe visuals then illustrate the feature spatially. A suburban house is shown from above, and a blue cone or beam-like graphic projects from the driveway or front area. This is followed by a wider aerial view of a neighborhood with multiple blue glowing circles or pulses appearing over many houses, suggesting a network of nearby homes being notified or connected. The “Introducing Search Party” label remains at the bottom right.\n\nThe scene returns to a residential walkway leading toward a street. The view is from a front entry or porch area, with hedges and low walls on either side. Then a man and a young girl appear inside or at the doorway of a house, looking outward as if responding to something outside. The girl wears a cardigan over a striped shirt, and the man smiles.\n\nA blurred low-angle shot shows the front steps of a house as movement passes in the foreground; the details are not fully clear, but it appears to show someone or an animal moving toward the entrance. The next shot shows a light-colored dog being embraced or petted by the girl and an adult man on a porch. Their faces suggest happiness. Another adult man, shown in close-up under the porch roof, smiles while looking downward, possibly toward the dog or the family, though the exact relationship is not visible from the frames.\n\nNear the end, the earlier man from the phone demonstration walks down a quiet, tree-lined street with a dog on a leash. Fallen leaves are scattered on the road. The commercial then cuts to an exterior shot of a house roof and upper windows at dusk or late afternoon.\n\nThe final frame shows the Ring end card over the house exterior. Large white text reads “ring,” with smaller text underneath: “Find your dog with Search Party.” The background remains the roofline of the house with trees and sky above."
+  },
+  "api_metadata": {
+    "response_id": "resp_00bc6ccc27cd1f7c006a107997019081a19766e3018e1eca66",
+    "usage": {
+      "input_tokens": 5425,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1174,
+      "output_tokens_details": {
+        "reasoning_tokens": 288
+      },
+      "total_tokens": 6599
+    }
+  },
+  "duration_seconds": 30.006,
+  "created_at": "2026-05-22T15:43:48Z",
+  "error": null
+}

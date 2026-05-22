@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2010_64",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_64",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_64/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_64.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0002.jpg",
+      "timestamp_seconds": 0.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0003.jpg",
+      "timestamp_seconds": 1.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0004.jpg",
+      "timestamp_seconds": 3.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0005.jpg",
+      "timestamp_seconds": 6.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0006.jpg",
+      "timestamp_seconds": 7.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0007.jpg",
+      "timestamp_seconds": 9.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0008.jpg",
+      "timestamp_seconds": 11.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0009.jpg",
+      "timestamp_seconds": 14.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0010.jpg",
+      "timestamp_seconds": 17.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0011.jpg",
+      "timestamp_seconds": 19.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0012.jpg",
+      "timestamp_seconds": 21.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0013.jpg",
+      "timestamp_seconds": 22.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0014.jpg",
+      "timestamp_seconds": 24.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0015.jpg",
+      "timestamp_seconds": 26.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0016.jpg",
+      "timestamp_seconds": 27.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_64/frame_0017.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_64.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_64.json",
+    "response_text": "The commercial begins on a black screen.\n\nIt then cuts to a bright daytime exterior of a large white suburban house with a front porch, manicured lawn, shrubs, a driveway, and parked cars nearby. A man is standing at or near the front door.\n\nThe scene moves to the doorway. Inside the house, a Black man wearing a gray “SAINTS” T-shirt stands just inside the open door. Behind him are interior stairs, framed pictures, and a glass door. Facing him from outside is a white man seen mostly from behind, wearing a dark gray zip-up top with a New Orleans Saints fleur-de-lis logo. The two appear to be having a conversation at the threshold.\n\nThe camera alternates between the two men. From the porch side, the white man is shown gesturing with his hands while speaking visually; the neighborhood street and parked cars are visible behind him. The homeowner’s expressions shift from attentive to surprised or uncertain. The visitor remains upbeat and expressive, at one point raising a finger as if making a point.\n\nThe visitor then holds up a smartphone toward the homeowner. The phone screen shows a delivery-related app interface with a simple map or route graphic and colored elements, though the small text is not clearly readable. Very small white disclaimer-style text appears near the bottom of the frame, but it is too small to read clearly.\n\nA wider exterior shot shows the two men still at the front door from outside the house. The visitor stands on the porch near decorative railings, while the homeowner remains partly inside. The camera then cuts to the street: a bald man wearing a brown, padded-looking vest over a gray shirt walks near a gray car parked by the curb or driveway area. The two men at the door turn their attention outward, looking toward him.\n\nThe bald man is shown more clearly standing near the car, looking toward the house. He appears to be the focus of the two men’s attention, though his role is not explicitly explained visually in the sampled frames.\n\nThe scene cuts back to the porch. The visitor glances sideways toward the street, then back toward the homeowner. The homeowner’s face appears serious or skeptical as he looks at the visitor.\n\nThe commercial ends on a clean white background with the FedEx logo centered in purple and orange. Beneath it is the URL “fedex.com/delivery.” The final frame holds the same FedEx end card."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d1cea4e6216b490006a10783d94c481a1a36312585eac0491",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 641,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 3987
+    }
+  },
+  "duration_seconds": 18.416,
+  "created_at": "2026-05-22T15:37:51Z",
+  "error": null
+}

@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1970_24",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_24",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_24/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_24.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0002.jpg",
+      "timestamp_seconds": 0.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0003.jpg",
+      "timestamp_seconds": 5.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0004.jpg",
+      "timestamp_seconds": 8.765,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0005.jpg",
+      "timestamp_seconds": 16.439,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0006.jpg",
+      "timestamp_seconds": 23.18,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0007.jpg",
+      "timestamp_seconds": 25.015,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0008.jpg",
+      "timestamp_seconds": 26.449,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0009.jpg",
+      "timestamp_seconds": 27.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_24/frame_0010.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_24.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_24.json",
+    "response_text": "The commercial opens with a close-up of a white rectangular label reading “Gabriel” in black letters, with a horizontal rainbow stripe underneath. The label is positioned over a purple, glossy-looking surface, with an orange circular object or shape visible behind it. Archive watermarks are visible on the image.\n\nIt then cuts to an office setting. A woman sits at a desk behind what appears to be a typewriter or dark office machine. Behind her are shelves with books or binders, filing trays, windows, a wall calendar, and a coat or garment hanging on a rack. She faces forward, apparently working.\n\nA soft dissolve follows into a closer view of a woman in a patterned blouse with a white collar, still against an office-like background. The image is partly double-exposed, suggesting a transition rather than a fully separate static shot.\n\nThe scene changes outdoors to a group of young men gathered closely together, looking toward the center and upward. In the middle is a fuzzy orange-and-white object or figure being held up; its exact nature is unclear from the frame. The background is green and leafy, suggesting a park or outdoor area.\n\nNext, the imagery becomes more graphic and superimposed. A line drawing resembling a side profile of a nose or nasal passage appears over a faded background of the previous scene. A Vicks-branded inhaler product is also visible on the right, suggesting the commercial is shifting from narrative scenes to product explanation.\n\nThe next scene shows two men moving or carrying an upright piano outside near a house and a truck. A large, semi-transparent Vicks inhaler graphic remains superimposed over the scene. One man is at the left side of the piano, while another stands near the right side or by the truck.\n\nA closer shot shows a mustached man beside the piano, looking upward with a strained or concerned expression. The piano’s keys are visible behind him.\n\nThe commercial then cuts to a man indoors, possibly in a workshop or garage-like space, holding a small object to his nose with both hands. A bare hanging light bulb is visible in the background. The object appears to be an inhaler, though the exact handling is only partially visible.\n\nNear the end, the product is shown prominently: a Vicks Inhaler tube appears across the frame with the label “Vicks Inhaler” and “with decongestant action.” Large white text overlays the lower part of the frame: “IT’S A BREATHER FOR YOUR NOSE.” The product image is initially superimposed over the man’s face.\n\nThe final frame presents a clearer product shot on a plain background: the Vicks Inhaler lies horizontally, with the same large white text beneath it reading “IT’S A BREATHER FOR YOUR NOSE.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_00507a46555b9b2f006a106ef7d3e4819c89f579940714b509",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1016,
+      "output_tokens_details": {
+        "reasoning_tokens": 452
+      },
+      "total_tokens": 3619
+    }
+  },
+  "duration_seconds": 25.894,
+  "created_at": "2026-05-22T14:58:25Z",
+  "error": null
+}

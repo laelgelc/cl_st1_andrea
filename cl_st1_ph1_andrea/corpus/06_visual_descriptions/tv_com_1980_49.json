@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1980_49",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_49",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_49/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_49.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0002.jpg",
+      "timestamp_seconds": 3.96,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0003.jpg",
+      "timestamp_seconds": 7.33,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0004.jpg",
+      "timestamp_seconds": 8.765,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0005.jpg",
+      "timestamp_seconds": 12.002,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0006.jpg",
+      "timestamp_seconds": 13.303,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0007.jpg",
+      "timestamp_seconds": 14.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0008.jpg",
+      "timestamp_seconds": 16.139,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0009.jpg",
+      "timestamp_seconds": 16.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0010.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0011.jpg",
+      "timestamp_seconds": 19.976,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0012.jpg",
+      "timestamp_seconds": 20.81,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0013.jpg",
+      "timestamp_seconds": 25.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0014.jpg",
+      "timestamp_seconds": 26.783,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0015.jpg",
+      "timestamp_seconds": 27.617,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0016.jpg",
+      "timestamp_seconds": 32.188,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0017.jpg",
+      "timestamp_seconds": 35.158,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0018.jpg",
+      "timestamp_seconds": 36.86,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0019.jpg",
+      "timestamp_seconds": 39.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0020.jpg",
+      "timestamp_seconds": 41.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0021.jpg",
+      "timestamp_seconds": 46.703,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0022.jpg",
+      "timestamp_seconds": 47.037,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0023.jpg",
+      "timestamp_seconds": 47.571,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0024.jpg",
+      "timestamp_seconds": 47.971,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0025.jpg",
+      "timestamp_seconds": 48.805,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0026.jpg",
+      "timestamp_seconds": 49.239,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0027.jpg",
+      "timestamp_seconds": 50.407,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0028.jpg",
+      "timestamp_seconds": 52.209,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0029.jpg",
+      "timestamp_seconds": 53.376,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1980_49/frame_0030.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_49.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_49.json",
+    "response_text": "The commercial opens from darkness.\n\nA large passenger aircraft is then shown at night or dusk on a wet airport apron. The plane has a red stripe and TWA markings. The ground reflects lights, and a silhouetted ground crew member stands in the foreground, creating a dramatic backlit airport scene.\n\nThe sequence cuts to three women in airline-style uniforms walking toward the camera through a bright, curved interior passage. They are mostly in silhouette at first. A closer shot follows, showing two uniformed women, one blonde and one brunette, in dark jackets, white shirts, and neckties or scarves. They appear poised and smiling.\n\nA hand presses keys on a computer or ticketing keyboard. This is followed by a ticket-counter or operations setting: a middle-aged man in a suit hands over papers or tickets to someone off-camera, while airline staff are visible behind him and electronic display boards hang above.\n\nA close-up shows a smiling young woman in airline uniform, looking toward someone nearby. The next shot shifts to a large hangar-like opening: the landing gear of an aircraft is visible in silhouette, with a small human figure standing near a wheel against a bright exterior background.\n\nAnother close-up shows a Black woman in uniform, looking attentive and composed. The scene then cuts to the tail section of an aircraft with a visible red TWA tail marking. A worker or figure walks along the horizontal stabilizer/tailplane. Another silhouetted figure appears crouched on the aircraft surface with a cable or hose extending upward; a plane is faintly visible in the distant sky behind.\n\nA more abstract aerial or graphic-looking shot follows, showing a dark triangular shape over a reddish city- or map-like background. The image is brief and not fully clear. The commercial then fades or cuts through darkness.\n\nThe next section shows headset-wearing operators seated at a row of computer terminals or monitors, suggesting communications or reservation operations. A man in a pilot’s cap is then seen in soft focus or through glass, partly obscured by reflections.\n\nA blonde woman in a coat walks forward in a dim interior space, with other people behind her. The following shot shows a hand holding or passing a small object near a grid-like screen or window, with warm red-orange light behind it. A close-up of a red surface with partial white “TW” lettering appears, likely part of the TWA visual branding.\n\nInside an aircraft cabin, a seated passenger is shown in profile in a wide seat, with another passenger behind her. A dark foreground silhouette frames the shot. A close-up then shows a passenger reclining with eyes closed, wearing visible headset or earphone wires.\n\nTwo very brief, blurred transition shots follow; the visual content is indistinct. A man wearing a cap with a red TWA logo appears in close-up, smiling. This is followed by close-ups of two uniformed women smiling warmly: first the Black woman seen earlier, then the blonde woman.\n\nA pilot is shown in profile or three-quarter view in a cockpit-like setting, wearing a headset and cap, lit from a bright window. The next shot is a wide airport-terminal view through large glass windows: a TWA aircraft is parked outside, and silhouettes of people, including a child-sized figure, stand inside the terminal.\n\nA close-up shows an older male pilot in uniform, partly framed by a doorway or partition. Then a child appears near metal bars or structural elements, with a large wheel-like aircraft component behind; the child’s mouth is open, suggesting excitement, though no audio is available.\n\nThe final frame shows a stylized image of an airplane flying above clouds against a colorful twilight sky. Centered on screen is the text: “LEADING THE WAY. TWA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_03a3829736a3e04d006a1071215c508191baf613ab8e616059",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1066,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 6869
+    }
+  },
+  "duration_seconds": 32.326,
+  "created_at": "2026-05-22T15:07:45Z",
+  "error": null
+}

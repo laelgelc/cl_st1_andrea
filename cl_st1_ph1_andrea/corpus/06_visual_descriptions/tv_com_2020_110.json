@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2020_110",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_110",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_110/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_110.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0002.jpg",
+      "timestamp_seconds": 4.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0003.jpg",
+      "timestamp_seconds": 4.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0004.jpg",
+      "timestamp_seconds": 5.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0005.jpg",
+      "timestamp_seconds": 7.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0006.jpg",
+      "timestamp_seconds": 8.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0007.jpg",
+      "timestamp_seconds": 9.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0008.jpg",
+      "timestamp_seconds": 9.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0009.jpg",
+      "timestamp_seconds": 9.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0010.jpg",
+      "timestamp_seconds": 10.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0011.jpg",
+      "timestamp_seconds": 11.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0012.jpg",
+      "timestamp_seconds": 13.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0013.jpg",
+      "timestamp_seconds": 13.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0014.jpg",
+      "timestamp_seconds": 13.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0015.jpg",
+      "timestamp_seconds": 13.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0016.jpg",
+      "timestamp_seconds": 17.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0017.jpg",
+      "timestamp_seconds": 18.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0018.jpg",
+      "timestamp_seconds": 20.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0019.jpg",
+      "timestamp_seconds": 21.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0020.jpg",
+      "timestamp_seconds": 22.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0021.jpg",
+      "timestamp_seconds": 25.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0022.jpg",
+      "timestamp_seconds": 26.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0023.jpg",
+      "timestamp_seconds": 27.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_110/frame_0024.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_110.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_110.json",
+    "response_text": "The commercial opens in a busy airport terminal. Crowds of travelers move through a large glass-walled space with signs and information boards visible in the background.\n\nThe visual style then shifts into a split-screen/multi-panel layout. In the airport, a young woman wearing a black cap, sunglasses, and headphones around her neck walks beside a curly-haired bearded man wearing sunglasses and a backpack. Other panels show typical airport waiting scenes: people seated with luggage, travelers resting or sleeping across seats, and groups waiting near departure areas.\n\nA wide shot shows a large modern check-in or departures hall with high ceilings, glass walls, structural beams, counters, and queues. The split-screen continues, showing several simultaneous airport moments: seated passengers, people walking through the terminal, travelers at counters, and passengers waiting with bags. The same couple continues moving through the airport.\n\nThe scene moves toward boarding. Multiple panels show passengers by a bus or gate area, people on an escalator, and silhouettes of travelers waiting near large windows with aircraft visible outside.\n\nThe couple reaches a bright gate area with large windows and red carpeting. An Emirates flight attendant in a beige uniform and red hat is shown close-up and then interacting with passengers at the boarding area. The woman with the cap and the bearded man stand nearby with their bags. The attendant smiles and appears to handle a document or device. The couple then walks past her toward boarding.\n\nThe commercial cuts to exterior airplane imagery. One panel shows a plane flying overhead in a blue sky; another shows an Emirates aircraft on the runway or taxiway, with the large “Emirates” name clearly visible on the fuselage.\n\nInside the aircraft cabin, warm sunset-colored lighting fills the space. Passengers sit in rows, and a flight attendant is visible in the aisle. A closer cabin shot shows the same bearded man now seated by the window wearing glasses, with the woman seated beside him under a blanket. He holds an open book or booklet. A close-up follows of him smiling gently in his seat.\n\nThe final images show a sunset above clouds. Large white text appears over the clouds: “HOME BEFORE YOU’RE HOME.” In the last frame, the Emirates logo appears in the upper right, and “FLY BETTER” appears in the lower left."
+  },
+  "api_metadata": {
+    "response_id": "resp_084027c7eca98b03006a107ba11ee081a399ca0fa967ce1374",
+    "usage": {
+      "input_tokens": 4669,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 603,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 5272
+    }
+  },
+  "duration_seconds": 18.838,
+  "created_at": "2026-05-22T15:52:19Z",
+  "error": null
+}

@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2020_76",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_76",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_76/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_76.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0002.jpg",
+      "timestamp_seconds": 1.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0003.jpg",
+      "timestamp_seconds": 5.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0004.jpg",
+      "timestamp_seconds": 6.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0005.jpg",
+      "timestamp_seconds": 7.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0006.jpg",
+      "timestamp_seconds": 8.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0007.jpg",
+      "timestamp_seconds": 10.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0008.jpg",
+      "timestamp_seconds": 13.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0009.jpg",
+      "timestamp_seconds": 13.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0010.jpg",
+      "timestamp_seconds": 15.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0011.jpg",
+      "timestamp_seconds": 16.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0012.jpg",
+      "timestamp_seconds": 17.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0013.jpg",
+      "timestamp_seconds": 19.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0014.jpg",
+      "timestamp_seconds": 20.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0015.jpg",
+      "timestamp_seconds": 20.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0016.jpg",
+      "timestamp_seconds": 22.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0017.jpg",
+      "timestamp_seconds": 23.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0018.jpg",
+      "timestamp_seconds": 25.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0019.jpg",
+      "timestamp_seconds": 26.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_76/frame_0020.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_76.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_76.json",
+    "response_text": "The commercial unfolds as a home-improvement sequence centered on ordering supplies and completing household projects.\n\n1. **Opening in a bright room:**  \n   A woman stands beside a window and pulls or adjusts a white curtain/blind. Warm sunlight enters the room. She appears to be inspecting or preparing the space.\n\n2. **Moving through the room:**  \n   The woman walks across an empty or sparsely furnished room with white walls and shuttered windows. She carries a set of keys or a small object in one hand, with her arms slightly out as she moves.\n\n3. **Using a smartphone:**  \n   She holds a turquoise-cased smartphone and taps the screen. The camera angle is low, looking up toward her face and phone.\n\n4. **Digital/app interface overlay:**  \n   A semi-transparent phone/app screen appears over her image. Readable text includes “DON’T GUESSTIMATE CALCULATE.” Other smaller text is partially visible but not fully legible. This suggests she is using an app or online tool related to calculating materials.\n\n5. **Close-up of an orange app screen:**  \n   A close view of a phone interface shows an orange header, icons, a search bar, and The Home Depot logo. Some text appears to begin with “Laminate…” but the full wording is unclear.\n\n6. **In-store or work area with a ladder:**  \n   The woman stands beside a ladder in the same bright room. A yellow item or container rests near the top of the ladder. The room has multiple tall shuttered windows and appears to be undergoing home improvement work.\n\n7. **Shopping/cart imagery:**  \n   There is a layered transition showing a shopping cart-like interface or product imagery over the room scene. The exact screen text is unclear, but it visually continues the online shopping/app theme.\n\n8. **Phone near flooring materials:**  \n   A smartphone lies or is held horizontally near stacked or rolled flooring/flooring-related materials. The screen appears to show an orange Home Depot-style page, but the details are mostly obscured by reflection and motion blur.\n\n9. **A man installing flooring:**  \n   The scene changes to a man kneeling on the floor near a front door. He is working with dark flooring material or underlayment beside light-colored planks. A long box or packaging is nearby.\n\n10. **Close-up of flooring installation:**  \n   The man uses a small hand tool, possibly a roller or cutter, along the edge of the flooring material while steadying it with his other hand.\n\n11. **App scheduling screen:**  \n   A close-up of a phone or tablet screen shows an orange-and-white interface. Readable text includes “How to Get It” and “Scheduled,” accompanied by a truck icon.\n\n12. **Delivery interface overlay:**  \n   A semi-transparent screen shows an orange panel with the word “Delivery.” Behind or reflected in the screen is an exterior view with a person and a tree, suggesting an order being arranged for delivery.\n\n13. **Package placed at front door:**  \n   Outside a house, a person bends down to place a cardboard box on the doorstep. The box displays The Home Depot logo and the slogan “How doers get more done.” The house has a front porch, blue shutters, a wooden door, and potted plants.\n\n14. **Woman carrying the box:**  \n   A woman stands on the porch holding the same Home Depot-branded cardboard box. She faces forward, centered in front of the door.\n\n15. **Unboxing view:**  \n   From inside or near the box, the camera looks upward as hands open or lift the cardboard flaps. A person’s face is visible above the box. The contents are not clearly visible yet.\n\n16. **Bathroom fixture installation:**  \n   A woman works in a bathroom, reaching toward a white toilet or bathroom fixture. A black product box beside her reads “Rubicon” and “THE BOLD LOOK OF KOHLER,” indicating a Kohler bathroom product.\n\n17. **Brief unclear dark/water-like shot:**  \n   A short close-up shows a dark, blurred surface with highlights, possibly water or a reflective surface. The exact object or action is unclear from the frame.\n\n18. **Finished bathroom use:**  \n   A woman and a young girl stand at a bathroom sink. The girl is brushing or using something at the sink while looking toward the mirror. The woman leans close beside her, smiling or interacting. Toiletry containers sit on the counter, and the bathroom appears clean and bright.\n\n19. **End card begins:**  \n   The screen turns white with a small orange square Home Depot logo centered.\n\n20. **Final brand card:**  \n   The orange Home Depot logo remains centered on a white background. Below it, black text reads: “How doers get more done.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_030b8ac1a0993365006a107ae7620c8191b576bb7d387ab9a4",
+    "usage": {
+      "input_tokens": 3913,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1096,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 5009
+    }
+  },
+  "duration_seconds": 22.864,
+  "created_at": "2026-05-22T15:49:18Z",
+  "error": null
+}

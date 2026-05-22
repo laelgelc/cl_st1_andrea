@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2010_77",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_77",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_77/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_77.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0002.jpg",
+      "timestamp_seconds": 0.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0003.jpg",
+      "timestamp_seconds": 1.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0004.jpg",
+      "timestamp_seconds": 3.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0005.jpg",
+      "timestamp_seconds": 5.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0006.jpg",
+      "timestamp_seconds": 6.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0007.jpg",
+      "timestamp_seconds": 8.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0008.jpg",
+      "timestamp_seconds": 11.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_77/frame_0009.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_77.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_77.json",
+    "response_text": "The commercial begins in an open-plan office. Cubicles fill the frame, with desks, computer monitors, lamps, pinned papers, and overhead fluorescent lighting. A seated office worker in the foreground appears to have a bright green cloth or garment around the head/neck area and is holding something near the face. Another office worker stands behind a cubicle wall. The setting is muted and grey-green, with a corporate office atmosphere.\n\nThe image then cuts to a black screen.\n\nAfter the black transition, the setting changes completely to a stylized product display. Two open, black-and-purple takeout-style cartons sit on a dark wooden tabletop under purple lighting. The cartons have the “Jack” logo on the front. Both contain loaded fries or similar food topped with sauce and small ingredients. In the upper right, large white on-screen text reads: “NEW $3 EACH SAUCED & LOADED FRIES.” The background is black with out-of-focus purple circular lights, creating a nightclub-like or promotional studio look.\n\nThe camera then shows a closer view of the tabletop surface, lit with a purple reflection. Part of one product carton is visible at the left edge, partially cropped.\n\nNext, there is a close-up of one open carton. The food is shown prominently: fries or potato pieces covered with a light-colored sauce and small orange and red toppings. The carton’s white folded flaps frame the food, and the purple “Jack” branding is visible on the carton front. A hand or dark shape appears near the right edge, but its action is not clearly visible.\n\nThe commercial then cuts to a black studio-like space with a purple-lit floor. Two figures stand side by side. On the left is the Jack in the Box mascot: a human body in a suit with a large white spherical head, a painted smiling face, and a small pointed yellow/orange hat. On the right is a large armored humanoid figure resembling a robot or sci-fi warrior. It is white and dark purple, with spikes on the shoulders and a red glowing visor or eye area. It holds a large axe-like weapon or staff in one hand.\n\nA closer shot focuses on the armored figure from the waist up. The red visor and angular helmet are emphasized, along with the bulky armor, shoulder spikes, and weapon. The background remains black with purple floor lighting.\n\nThe shot widens again to show both the mascot and the armored figure. The armored figure raises one arm in a gesture while holding the weapon upright with the other. The Jack mascot stands beside it, looking small in comparison. The exact interaction or dialogue is not visible from the frames alone.\n\nThe final frame returns to the product display: two open cartons of loaded fries on the dark tabletop, with purple bokeh lights in the background. The white promotional text again appears in the upper right: “NEW $3 EACH SAUCED & LOADED FRIES.” The “Jack” logos are visible on both cartons. Very small legal or disclaimer text appears near the bottom, but it is too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_027226cf4290f436006a10788375dc81a288765f138caf2592",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 708,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 2542
+    }
+  },
+  "duration_seconds": 18.885,
+  "created_at": "2026-05-22T15:39:02Z",
+  "error": null
+}

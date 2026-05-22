@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_1960_72",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_72",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_72/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_72.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0002.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0003.jpg",
+      "timestamp_seconds": 2.484,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0004.jpg",
+      "timestamp_seconds": 3.068,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0005.jpg",
+      "timestamp_seconds": 3.985,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0006.jpg",
+      "timestamp_seconds": 10.992,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0007.jpg",
+      "timestamp_seconds": 12.828,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0008.jpg",
+      "timestamp_seconds": 15.163,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0009.jpg",
+      "timestamp_seconds": 15.997,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0010.jpg",
+      "timestamp_seconds": 16.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0011.jpg",
+      "timestamp_seconds": 20.21,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0012.jpg",
+      "timestamp_seconds": 21.086,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0013.jpg",
+      "timestamp_seconds": 23.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_72/frame_0014.jpg",
+      "timestamp_seconds": 27.093,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_72.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_72.json",
+    "response_text": "The commercial is shown in a reddish/pink monochrome tint with visible film grain and darkened frame edges.\n\n1. **Opening interior/entryway view:**  \n   The first shot is tilted and close to the floor, showing part of a doorway or stair/railing structure. A person’s lower legs and dark shoes are visible near a threshold. The framing is disorienting and low-angle.\n\n2. **Child near stairs/porch area:**  \n   The view widens to a low-angle shot of an interior or porch-like area with steps, railings, and a decorative plant stand. A child’s lower legs in light socks and dark shoes appear in the foreground. In the background, another child stands near the railing.\n\n3. **Small toy seen from above:**  \n   A small toy figure or vehicle-like object is shown against a plain light background. It has a cartoon-like face or head at one end and side structures that resemble tracks, wheels, or arms.\n\n4. **Toy moving in front of child:**  \n   The toy appears large in the foreground due to the low camera angle, as if moving or being moved close to the lens. A boy stands in the background watching, near the railing and steps.\n\n5. **Toy on a plain surface:**  \n   The toy is shown again from above on a light, blank surface. Motion blur suggests it is moving or vibrating, though the exact movement is not fully clear from the sampled frame.\n\n6. **Child handling toy:**  \n   A close-up shows a child lying or leaning sideways, holding the toy near their face. One hand appears to adjust or place something on the toy. The child’s face is partly visible, looking closely at the object.\n\n7. **Multiple toys on patterned surface:**  \n   Three similar small toys are shown on a surface patterned with repeated circles. They are arranged separately, each casting shadows. The toys appear to have rounded cartoon faces and side mechanisms.\n\n8. **Close-up of toy on circular pattern:**  \n   A very close, blurred shot shows part of one toy on the circular patterned surface. The camera emphasizes the toy’s underside or moving parts, but the exact mechanism is not clear.\n\n9. **Girl smiling:**  \n   A close-up shows a young girl smiling and looking downward or toward something off-frame, apparently reacting to the toy.\n\n10. **Toy placed on vertical wood surface:**  \n   A hand places or holds the toy against a vertical wooden surface, likely a wall or paneling. The toy has a cartoon face and a small white front panel. The hand steadies it as if attaching it to the wall.\n\n11. **Boy smiling:**  \n   A close-up shows a young boy smiling broadly and looking upward, suggesting he is watching the toy on the wall.\n\n12. **Two toys on wall:**  \n   Two of the toys are visible on a vertical wood-paneled surface. They are positioned at different heights or angles, suggesting they can stay attached to or move along the wall.\n\n13. **Packaged product display:**  \n   The scene cuts to two packages standing side by side, each containing a toy. Large readable text on both packages says **“THE WALL WALKER.”** One package shows cartoon graphics and the toy in a blister-like compartment. Additional smaller text is partly visible but not fully readable.\n\n14. **Final product shot:**  \n   The final frame holds on the two packages more clearly. The right package includes large text: **“WALKS DOWN WALLS, DOORS AND WINDOWS.”** Both packages prominently display **“THE WALL WALKER”** and show the toy attached to the front of the packaging."
+  },
+  "api_metadata": {
+    "response_id": "resp_0879414bb40a8613006a106dddc9d0819e8a0e56ded865db4f",
+    "usage": {
+      "input_tokens": 3591,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 806,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 4397
+    }
+  },
+  "duration_seconds": 21.49,
+  "created_at": "2026-05-22T14:53:39Z",
+  "error": null
+}

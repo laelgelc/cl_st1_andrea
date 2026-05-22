@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2010_14",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_14",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_14/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_14.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0002.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0003.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0004.jpg",
+      "timestamp_seconds": 8.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0005.jpg",
+      "timestamp_seconds": 10.1,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0006.jpg",
+      "timestamp_seconds": 12.536,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0007.jpg",
+      "timestamp_seconds": 14.237,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0008.jpg",
+      "timestamp_seconds": 15.605,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0009.jpg",
+      "timestamp_seconds": 17.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0010.jpg",
+      "timestamp_seconds": 19.175,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0011.jpg",
+      "timestamp_seconds": 21.011,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0012.jpg",
+      "timestamp_seconds": 23.38,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_14/frame_0013.jpg",
+      "timestamp_seconds": 28.791,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_14.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_14.json",
+    "response_text": "The commercial takes place in a very bright, futuristic cafeteria or office dining area with white furniture, glass or translucent blue wall panels, and a luminous grid-like ceiling. Many people wear office-style clothing and ID badges; several badges and the background show Intel branding.\n\nAt the beginning, three men sit at a white cafeteria table eating and drinking from translucent blue cups. One man in a lavender shirt and tie, wearing glasses, sits between a man in a gray shirt and a man in a light blue lab coat. Plates with sandwiches, chips, fruit, and cups are visible on the table. Other workers sit and move in the background.\n\nThe camera then focuses on the man in the lavender shirt. He holds a blue cup and raises his other hand slightly, looking off to the side with a startled or uncertain expression. Behind him, people continue eating at tables.\n\nNext, the man in the gray shirt is shown in closer view holding a sandwich. A woman standing behind him carries a white tray with a white cup. She wears an Intel ID badge. The man looks upward or to the side, as if reacting to someone nearby.\n\nThe scene widens again to show the gray-shirted man and the lavender-shirted man at the table. A small white robot with a rounded body, black face screen, and glowing blue circular “eyes” is visible behind or beside them. The robot’s face is glossy and reflective. The men appear to be looking around and reacting to the robot’s presence.\n\nA cut shows the man in the light blue lab coat seated at the same table. He also wears an Intel badge. A vending machine or illuminated cabinet is visible in the background, along with people at another table. He looks toward the others, with a neutral or slightly concerned expression.\n\nThe camera returns to the gray-shirted man and lavender-shirted man. The lavender-shirted man smiles broadly while holding his cup; the robot remains behind them, its blue eyes visible. The woman with the tray stands nearby.\n\nA close-up then centers on the robot’s face. Its black, reflective face panel shows bright blue eye-like lights and reflections of the cafeteria scene, including people at the table. The robot’s design is rounded, white, and glossy, with a compact body.\n\nThe next shot shows the robot more fully. It appears to have small arms and a tray or platform in front of it holding food, including what looks like strips of bacon or similar items, and a blue cup on the table in front. People around it continue eating. The robot faces forward between diners.\n\nThe robot is then shown lower between the seated people while the man in the lavender shirt turns away laughing or speaking with an open-mouthed smile. The gray-shirted man looks down at his food. The woman with the tray remains behind them.\n\nA later shot shows the robot from behind or side as it moves away across the white floor. Its body has rounded white panels and a glowing blue element on its torso. Nearby, people sit in white chairs and walk through the cafeteria.\n\nThe scene returns to the table with the three men and the woman holding the tray. The lavender-shirted man holds his cup, the gray-shirted man looks down at his sandwich, and the man in the blue lab coat looks forward. The table remains covered with plates, cups, and food.\n\nThe final portion shifts to a blue screen or blue-tinted transition. The last frame shows the Intel logo centered over a faint, blue-tinted background of people in a cafeteria or office setting. Beneath the logo, readable text says: “Sponsors of Tomorrow.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_046cd7890f5d6e75006a10772f576081a1979db49eef6598cf",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 867,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 3457
+    }
+  },
+  "duration_seconds": 21.454,
+  "created_at": "2026-05-22T15:33:24Z",
+  "error": null
+}

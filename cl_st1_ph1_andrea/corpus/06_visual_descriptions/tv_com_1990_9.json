@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_9",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_9",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_9/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_9.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0002.jpg",
+      "timestamp_seconds": 3.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0003.jpg",
+      "timestamp_seconds": 7.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0004.jpg",
+      "timestamp_seconds": 8.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0005.jpg",
+      "timestamp_seconds": 10.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0006.jpg",
+      "timestamp_seconds": 11.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0007.jpg",
+      "timestamp_seconds": 12.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0008.jpg",
+      "timestamp_seconds": 12.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0009.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0010.jpg",
+      "timestamp_seconds": 13.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0011.jpg",
+      "timestamp_seconds": 14.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0012.jpg",
+      "timestamp_seconds": 15.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0013.jpg",
+      "timestamp_seconds": 16.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0014.jpg",
+      "timestamp_seconds": 16.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0015.jpg",
+      "timestamp_seconds": 17.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0016.jpg",
+      "timestamp_seconds": 17.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0017.jpg",
+      "timestamp_seconds": 18.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0018.jpg",
+      "timestamp_seconds": 18.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0019.jpg",
+      "timestamp_seconds": 19.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0020.jpg",
+      "timestamp_seconds": 20.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0021.jpg",
+      "timestamp_seconds": 21.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0022.jpg",
+      "timestamp_seconds": 21.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0023.jpg",
+      "timestamp_seconds": 22.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0024.jpg",
+      "timestamp_seconds": 23.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0025.jpg",
+      "timestamp_seconds": 26.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0026.jpg",
+      "timestamp_seconds": 26.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0027.jpg",
+      "timestamp_seconds": 27.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0028.jpg",
+      "timestamp_seconds": 28.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0029.jpg",
+      "timestamp_seconds": 28.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_9/frame_0030.jpg",
+      "timestamp_seconds": 28.956,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_9.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_9.json",
+    "response_text": "The commercial opens with abstract, highly blurred black-and-white light shapes, with no clear object identifiable. It then cuts to an extreme close-up of a person’s lips in cool blue lighting, followed by a soft-focus close-up of a mouth or face near what may be a reflective surface, still very abstract and blue-toned.\n\nA title card appears on a dark background reading “Freedom of the Press.” This is followed by a vivid magenta-blue image of a person with an open mouth, overlaid with the text “Freedom of Music.” A small “SONY” mark is visible in the upper right.\n\nThe sequence shifts into a fast-moving montage. A young woman is shown in profile, hair blowing, lit in blue-white tones. There are rapid flashes of urban or transit-like spaces, including a tunnel or track view with bright blue and orange lights. The same or a similar woman appears again in motion, hair streaming.\n\nA brightly lit train or subway interior follows. A young person in an orange top and shiny blue pants is posed dynamically between seats and handrails, with other seated passengers visible behind. The commercial then cuts to a shirtless man wearing sunglasses, running or moving on a bright yellow landscape under a deep blue sky.\n\nClose-up product imagery begins: a yellow/orange Sony portable audio device fills the frame at an angle. The device has a small display and buttons; later close-ups show partially readable markings including “SONY” and “MD,” with other text blurred or only partly legible. Another shot shows a person holding or wearing the yellow device, with earphone wires visible.\n\nThe montage alternates between bodies in motion and portable listening. A silhouetted figure appears against a bright background. A high-angle shot shows a person walking along a yellow-orange bridge or elevated path surrounded by dark green foliage. Another shot from above shows a woman in warm yellow lighting holding a yellow portable device and a small rectangular item, possibly a disc or cartridge.\n\nThe tone then changes to calmer train-passenger scenes. In black and white, a woman wearing headphones sits by a window holding a rectangular object. Another woman in a white sweater leans against a window or seat back, looking contemplative. A close-up shows a white Sony device with “SONY” and “MD” visible.\n\nSeveral close-ups show hands moving expressively in dark surroundings, followed by the face of an older man with a gray beard, wearing an earpiece or headphones, lit in cool tones. A young woman with red hair and large headphones appears in close-up, eyes lowered, then in a wider shot reclining in a train or transit seat with a portable device resting beside her.\n\nAnother product close-up shows a white device with a rectangular display and the partially readable word “Discman” near the bottom. A final human figure appears in silhouette with earphone cords visible.\n\nThe commercial ends with graphic title cards: first a pink background with the word “DIGITAL” centered in large letters, then a colorful blue-green abstract burst with large text “DREAM.” Smaller text above reads “DIGITAL DREAM KIDS” or similar, though parts are small and slightly unclear."
+  },
+  "api_metadata": {
+    "response_id": "resp_05a00c77d3f4d73e006a10726627088196badf6d50f8ac6bc0",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 832,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 8375
+    }
+  },
+  "duration_seconds": 22.8,
+  "created_at": "2026-05-22T15:13:00Z",
+  "error": null
+}

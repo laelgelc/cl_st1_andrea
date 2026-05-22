@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2000_38",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_38",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_38/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_38.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0002.jpg",
+      "timestamp_seconds": 21.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0003.jpg",
+      "timestamp_seconds": 23.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0004.jpg",
+      "timestamp_seconds": 25.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0005.jpg",
+      "timestamp_seconds": 25.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0006.jpg",
+      "timestamp_seconds": 29.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0007.jpg",
+      "timestamp_seconds": 32.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0008.jpg",
+      "timestamp_seconds": 35.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0009.jpg",
+      "timestamp_seconds": 39.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_38/frame_0010.jpg",
+      "timestamp_seconds": 58.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_38.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_38.json",
+    "response_text": "The commercial begins with a very dark, low-visibility frame. Little visual detail can be distinguished, though a small red-and-white logo or watermark appears in the lower-right corner.\n\nAfter a long gap in the sampled frames, the scene cuts to a bright gym or studio setting. A blonde woman faces the camera in a medium close-up, standing in front of large window panes and exercise equipment. She appears to be addressing the viewer, with her mouth open and an animated expression. A large phone number, “1(800)516-8780,” is overlaid across the lower part of the image in white serif text. The small red-and-white logo remains in the lower-right corner.\n\nThe next frame shows a visual transition or overlay effect: the same woman remains visible, but horizontal scanline-like bands and a partially superimposed image of exercise equipment appear over her. The phone number remains prominent at the bottom.\n\nThe commercial then cuts to a person exercising indoors near a window. The person is lying or reclining on exercise equipment, wearing a black outfit with a wide red-and-white band around the midsection. Their arms are raised above their head, suggesting a stretching or pulling motion. The phone number continues across the lower third.\n\nA closer view follows of the same exercising person, now more clearly seen as a blonde woman reclining with both arms extended upward. The background includes a bright window and some indistinct indoor objects or décor. The phone number remains overlaid.\n\nNext, the scene changes to a shirtless blond man using a piece of exercise equipment in a gym-like setting. He is reclined and appears to be holding a handle or bar with one hand while the other arm is bent near his face. A black vertical structure and cables are visible behind him. Another person’s arm is partly visible at the right edge. The phone number remains at the bottom.\n\nThe following shot shows two people standing or seated beside a tall black exercise machine in a gym. On the left is a man wearing a dark red polo shirt; on the right is the blonde woman from earlier, wearing a blue cardigan over a white top. Both face forward toward the camera or the equipment, with their hands positioned as if explaining or demonstrating. Weights and gym fixtures are visible in the background. The phone number continues across the bottom.\n\nAnother transition-style frame appears, with scanline effects and layered images. The blonde woman is visible in front of gym equipment, while another person and parts of a machine are superimposed. The phone number remains visible.\n\nNear the end, the visuals become a promotional graphic. A collage shows exercise equipment and a product/video box image on the left. Large text reads “Free TOTAL GYM Video,” with “TOTAL GYM” in large gold letters and the surrounding words in white. The phone number is still present, and additional large “FREE Video” text appears in the center area, partially layered during the transition.\n\nThe final frame is a clean end card on a blue textured background. On the left is a small image of a video box labeled with “Body” at the top and “Total Gym” near the bottom. Large text reads “Free TOTAL GYM Video.” Beneath it, the phone number “1(800)516-8780” appears in large white text inside a rectangular blue panel. Below that, white text reads “CALL NOW!” followed by “Total Gym Fitness, Ltd” and an address: “1230 American Blvd West Chester, PA 19380.” A small red-and-white logo remains in the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e7f4d73611c7c79006a10752d808c8193a5385712045a59e9",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 961,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 3564
+    }
+  },
+  "duration_seconds": 27.493,
+  "created_at": "2026-05-22T15:24:56Z",
+  "error": null
+}

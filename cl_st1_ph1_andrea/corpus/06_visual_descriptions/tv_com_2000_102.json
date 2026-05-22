@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_2000_102",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_102",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_102/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_102.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0002.jpg",
+      "timestamp_seconds": 3.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0003.jpg",
+      "timestamp_seconds": 14.671,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0004.jpg",
+      "timestamp_seconds": 22.345,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0005.jpg",
+      "timestamp_seconds": 26.082,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_102/frame_0006.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_102.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_102.json",
+    "response_text": "The commercial begins with a nearly black frame, with only a small red-and-white on-screen badge or watermark visible in the lower-right corner.\n\nIt then cuts to a silver Hyundai SUV driving along a paved road through dry, golden-brown hills. The vehicle is shown in side/front three-quarter view, moving on a curving rural road. Small white fine print appears along the bottom of the frame, but most of it is too small to read clearly in the sampled image.\n\nNext, the screen changes to a black promotional graphic. Large text at the top reads “2009 SANTA FE.” In the center is a price-style display reading “$3.99,” with surrounding text indicating “A year’s worth of” and “a gallon gas.” There is additional fine print across the bottom, largely unreadable at this resolution.\n\nThe commercial then returns to driving imagery. The silver Hyundai SUV is shown from the front, coming toward the camera on a hilly road bordered by dry grass and trees. A large dark truck, possibly a tanker-like vehicle, appears farther back on the same road.\n\nA high-angle shot follows, showing the silver SUV traveling along a winding mountain road. The landscape is dry and golden, with rolling hills and a guardrail along the curve.\n\nIn the final frame, the road scene continues with the SUV and the large tanker-like truck on the winding road. Overlaid in large white text is the Hyundai logo and “HYUNDAI,” followed by “See your local Hyundai dealer.” At the bottom, “Hyundai.com” is displayed. The small red-and-white lower-right badge remains visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0afe4cff88a068f2006a10767aa6d8819299a387a65bae7bd6",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 528,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 2143
+    }
+  },
+  "duration_seconds": 13.41,
+  "created_at": "2026-05-22T15:30:15Z",
+  "error": null
+}

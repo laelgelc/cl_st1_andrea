@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_2000_88",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_88",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_88/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_88.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0002.jpg",
+      "timestamp_seconds": 1.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0003.jpg",
+      "timestamp_seconds": 2.959,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0004.jpg",
+      "timestamp_seconds": 5.595,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0005.jpg",
+      "timestamp_seconds": 7.731,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0006.jpg",
+      "timestamp_seconds": 12.068,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_88/frame_0007.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_88.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_88.json",
+    "response_text": "The commercial begins with a nearly black frame, with only a small red heart-shaped channel/logo watermark visible in the lower-right corner.\n\nIt then cuts to a soft-focus close-up of a person’s bare lower leg. A hand is holding or moving a small blue toy car along the skin near the ankle/calf area. The image has a pale, bluish-white tone.\n\nNext, the blue toy car is shown more clearly on a flat surface, being guided by a hand from above. The car appears small and glossy, like a toy model.\n\nThe commercial then shows a close-up product shot: a white round cosmetic jar held in a hand. The label reads “NIVEA Body” and “Reshaping Treatment.” Smaller label text is present but not fully legible in the frame. The jar has a dark blue lid and a yellow-accented label area.\n\nAfter that, there is a close-up of a woman’s hip, thigh, and buttock area. She is wearing white underwear, and her hands are placed on or smoothing over the side of her thigh/hip. A small line of white text appears near the bottom, but it is too blurred to read clearly.\n\nThe final frames present a clean packshot: the white NIVEA Body “Reshaping Treatment” jar with a dark blue lid floating or centered against a bright, reflective, tiled-looking background. Large white text in the upper-right reads “NEW!” A website address appears along the bottom, partially legible as “www.niveausa.com.” The red heart-shaped watermark remains in the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_041dce404714e604006a1076415a308197b0b661793149d4e7",
+    "usage": {
+      "input_tokens": 1456,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1883
+    }
+  },
+  "duration_seconds": 11.535,
+  "created_at": "2026-05-22T15:29:16Z",
+  "error": null
+}

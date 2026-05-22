@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2020_88",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_88",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_88/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_88.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0002.jpg",
+      "timestamp_seconds": 1.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0003.jpg",
+      "timestamp_seconds": 2.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0004.jpg",
+      "timestamp_seconds": 2.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0005.jpg",
+      "timestamp_seconds": 6.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0006.jpg",
+      "timestamp_seconds": 7.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0007.jpg",
+      "timestamp_seconds": 8.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0008.jpg",
+      "timestamp_seconds": 9.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0009.jpg",
+      "timestamp_seconds": 9.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0010.jpg",
+      "timestamp_seconds": 11.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0011.jpg",
+      "timestamp_seconds": 11.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0012.jpg",
+      "timestamp_seconds": 13.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0013.jpg",
+      "timestamp_seconds": 14.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0014.jpg",
+      "timestamp_seconds": 14.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0015.jpg",
+      "timestamp_seconds": 16.84,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0016.jpg",
+      "timestamp_seconds": 17.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0017.jpg",
+      "timestamp_seconds": 18.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0018.jpg",
+      "timestamp_seconds": 20.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0019.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_88/frame_0020.jpg",
+      "timestamp_seconds": 29.99,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_88.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_88.json",
+    "response_text": "The commercial opens on a nearly black frame, with only a small faint shape visible at the left edge.\n\nA blue Cadillac SUV is then shown in a wide, open desert landscape under a bright blue sky. A person in a light-colored suit walks toward the vehicle from the left foreground. The next shot pulls far back to an aerial view: the SUV and small human figures appear isolated in the vast sandy terrain. Large white uppercase text stretches across the frame: “ENTER ORDINARY.”\n\nA closer shot shows the blue SUV from the front. A person stands by the open driver-side door, partly inside or leaning against the vehicle. The setting remains the empty desert.\n\nThe commercial then widens again to show the car and several figures in the distance. One person in a bright red outfit stands out against the sand. In the following closer shot, a person in a pale blue outfit runs or moves energetically near the blue SUV, while the red-clad figure performs a dramatic movement or dance gesture nearby.\n\nThe imagery shifts abruptly to a rotated or tilted shot: a red Cadillac appears at an unusual angle, with a person in a light beige outfit beside it. The horizon and vehicle orientation make the shot look visually disorienting. The setting appears to have changed from desert to a coastal or waterside environment.\n\nA close shot from inside or near a car window shows a woman standing outside, with ocean water behind her. She has short curly hair and wears a light cream outfit. She reaches toward the car or window area. A brief reflective/glare-filled shot follows, showing bright light and part of a vehicle surface or window, but the details are unclear.\n\nThe next wide shot reveals a red Cadillac positioned on a floating or platform-like surface surrounded by ocean. A dancer in red is also on the platform. The sea fills the background. The dancer performs expressive arm movements beside the red car. A closer shot shows a woman in a pink, textured or feather-like dress dancing in front of the red SUV, with the ocean and sky behind her.\n\nThe commercial then cuts to an urban rooftop or elevated concrete setting. A woman in a cream outfit stands in front of an orange/red Cadillac, with a city skyline and mountains in the background. She poses with one hand near her face. Another shot is upside down: two people in light outfits stand beside the orange car, with the city skyline also inverted. This continues the commercial’s stylized, gravity-defying visual motif.\n\nThe scene then shows two women dancing beside the orange Cadillac on the rooftop. One wears a pink outfit and the other a teal/green outfit. Large white uppercase text overlays the image: “BE VIBRANT.” The following shot features the orange car’s front grille and a person in a flowing green garment posing or dancing beside it. Large white uppercase text reads: “BE CONFIDENT.”\n\nA black screen follows with centered white uppercase text: “BE ICONIC.”\n\nThe commercial then transitions to a product-and-offer end card. A white Cadillac sedan is parked in a rooftop or elevated urban setting at sunset, with mountains and a city skyline in the background. The Cadillac logo appears at upper left, with the words “MOVE UP” below it. At upper right, small white promotional text identifies the vehicle as a “2023 CT5 PREMIUM LUXURY AWD.” Large pricing text reads “$499 PER MONTH” and “39,” indicating a 39-month offer. Smaller fine print appears across the bottom but is too small to fully read in the sampled frames. The final sampled frame fades to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_001cb1bcc3c9ced9006a107b21e20c81a3a5a9d06727df3ff1",
+    "usage": {
+      "input_tokens": 3913,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 771,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 4684
+    }
+  },
+  "duration_seconds": 19.132,
+  "created_at": "2026-05-22T15:50:12Z",
+  "error": null
+}

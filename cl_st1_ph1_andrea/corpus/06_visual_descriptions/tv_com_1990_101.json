@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_1990_101",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_101",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_101/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_101.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0002.jpg",
+      "timestamp_seconds": 2.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0003.jpg",
+      "timestamp_seconds": 3.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0004.jpg",
+      "timestamp_seconds": 4.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0005.jpg",
+      "timestamp_seconds": 7.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0006.jpg",
+      "timestamp_seconds": 7.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0007.jpg",
+      "timestamp_seconds": 8.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0008.jpg",
+      "timestamp_seconds": 8.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0009.jpg",
+      "timestamp_seconds": 9.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0010.jpg",
+      "timestamp_seconds": 10.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0011.jpg",
+      "timestamp_seconds": 11.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0012.jpg",
+      "timestamp_seconds": 11.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0013.jpg",
+      "timestamp_seconds": 12.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0014.jpg",
+      "timestamp_seconds": 16.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0015.jpg",
+      "timestamp_seconds": 18.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0016.jpg",
+      "timestamp_seconds": 19.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0017.jpg",
+      "timestamp_seconds": 26.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_101/frame_0018.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_101.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_101.json",
+    "response_text": "The commercial opens with a very blurred, dark, monochrome-looking view of what appears to be an interior space or display area, with horizontal bands and indistinct shapes.\n\nIt then cuts to a dim, hazy room or office-like setting. A person is seated at a desk or table, while a ladder and other equipment or shelving are visible in the background. The image has a soft, ghosted quality, with overlapping motion or dissolve effects.\n\nThe visual focus shifts to printed material: an open brochure, newspaper, or catalog page. One page shows a boxed advertisement layout, though much of the small text is not legible. The paper is handled or turned, creating motion blur.\n\nA close-up follows of a computer monitor and keyboard. On the monitor is a black-and-white image of a young man’s face, as if his face is being displayed on the screen. The computer has an older desktop design with a large monitor and separate keyboard.\n\nThe commercial continues with close-ups of printed advertisements featuring drawings or photos of desktop computers. Some ads include the word “ZERO” and references to a “Home Computer.” Another image shows a computer with a face visible on the monitor, suggesting the same face is being used within the printed ad imagery. To the side, a red-and-black ad panel is partly visible, but most text is unclear.\n\nThere is a sudden close-up of the side of a person’s head, centered on the ear, suggesting someone listening or reacting. This is followed by a grid of repeated newspaper-style ads. Several boxes show a computer product and the price “$1499.” The words “ZERO HomeComputer” and “ZERO PS/8 Home Computer” are visible in some panels.\n\nA bold, graphic starburst fills the screen with large text reading “BARGAIN BASEMENT PRICES.” The typography is heavy and black on a light background.\n\nThe computer monitor with the young man’s face returns, partially obscured by blurred foreground movement. The visual style continues to layer paper textures, reflections, and dissolves.\n\nAnother printed page appears with the large headline “The New Mighty Monitor.” Below it, “COMPUTER WAREHOUSE” is visible in large serif letters. Other smaller text is present but not readable.\n\nA brief blurred shot shows vertical architectural or shelving elements, then an upside-down spread of a newspaper or catalog appears. Large text at the bottom reads “HUGE SAVINGS,” with rows of product listings and small images. Dark objects or hands partly obscure the top of the page.\n\nThe commercial then overlays a close-up of the young man’s face with semi-transparent images of computer products and papers. His face is lit dramatically, with one eye and cheek more visible than the rest, while the printed/office imagery floats across him.\n\nThe dim room returns: the seated figure is at a desk, and a ladder remains visible in the background. A large shadowed silhouette of a person wearing a hat or cap is projected or overlaid on the left side, adding to the layered montage effect.\n\nA wall or large display of repeated printed ads fills the frame, arranged in a grid behind vertical window-like divisions. The repeated panels again appear to show computer offers and prices, though most text is too small or blurred to read.\n\nNear the end, the screen turns black with centered white serif text reading “There.” The final sampled frame shows a black background with the word “difference” in lowercase white letters, followed by a small superscript mark. The intervening words, if any, are not visible in the provided frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_040b72b66c5e98c7006a1074149fb0819dbbdbcd4da8d92bf0",
+    "usage": {
+      "input_tokens": 4579,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 834,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 5413
+    }
+  },
+  "duration_seconds": 21.835,
+  "created_at": "2026-05-22T15:20:10Z",
+  "error": null
+}

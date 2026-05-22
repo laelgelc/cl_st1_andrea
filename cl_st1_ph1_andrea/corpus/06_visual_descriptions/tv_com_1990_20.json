@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_1990_20",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_20",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_20/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_20.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0002.jpg",
+      "timestamp_seconds": 1.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0003.jpg",
+      "timestamp_seconds": 3.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0004.jpg",
+      "timestamp_seconds": 3.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0005.jpg",
+      "timestamp_seconds": 3.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0006.jpg",
+      "timestamp_seconds": 4.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0007.jpg",
+      "timestamp_seconds": 5.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0008.jpg",
+      "timestamp_seconds": 5.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0009.jpg",
+      "timestamp_seconds": 6.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0010.jpg",
+      "timestamp_seconds": 8.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0011.jpg",
+      "timestamp_seconds": 10.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0012.jpg",
+      "timestamp_seconds": 10.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0013.jpg",
+      "timestamp_seconds": 11.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0014.jpg",
+      "timestamp_seconds": 13.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0015.jpg",
+      "timestamp_seconds": 15.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0016.jpg",
+      "timestamp_seconds": 17.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0017.jpg",
+      "timestamp_seconds": 19.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0018.jpg",
+      "timestamp_seconds": 20.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0019.jpg",
+      "timestamp_seconds": 21.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0020.jpg",
+      "timestamp_seconds": 22.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0021.jpg",
+      "timestamp_seconds": 23.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0022.jpg",
+      "timestamp_seconds": 24.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0023.jpg",
+      "timestamp_seconds": 26.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0024.jpg",
+      "timestamp_seconds": 28.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_20/frame_0025.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_20.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_20.json",
+    "response_text": "The commercial opens on a very dark, nearly black frame. It then cuts to a close-up of a middle-aged man in a light shirt, tie, and suspenders, lit with strong colored motel-room lighting. He looks tense or concerned and is looking off to the side.\n\nThe next shot reveals him seated alone at a small table in a motel room. Takeout food containers, cups, and papers are spread on the table. The room is warmly lit by table and hanging lamps, with a bed to the side and a television mounted high in the corner. The TV screen shows a black-and-white image, though the content is not fully clear.\n\nA close-up shows a ceiling or wall-mounted pull-chain light fixture, with its chain hanging down. The following shots return to the television and nearby lamps; a hanging lamp appears in the foreground, and the television remains visible in the background. The lighting blooms and flares, making the scene look hazy.\n\nThe setting shifts outside at night to a motel sign. The sign has bright neon lettering reading “MOTEL,” with a red neon shape above it and a vertical sign below that appears to read “TV ROOMS.” The neon sign flares brightly. A wider exterior shot shows a two-story motel building, parked cars, and the glowing sign near the driveway.\n\nThe commercial then cuts to a close-up of a beige push-button telephone on a bedside or table surface. Next to it is a small digital clock reading “11:48,” and framed photographs are visible behind the phone.\n\nIn another interior scene, two men stand close together in a dimly lit room. One man, wearing a shirt and tie, holds a telephone receiver to his ear. The other man, in darker clothing, leans in with a flashlight-like object or reflective item near the phone, as if listening or assisting. Venetian blinds and bookshelves are visible in the background.\n\nThe next shot shows a woman in another location speaking on a telephone. She is wearing a pink top, has hair curlers in her hair, and has a green facial mask on her face. She appears to be in a bedroom or dressing area, with a bedpost visible behind her. The commercial alternates between the two men on the phone and the woman on the phone, emphasizing the call.\n\nA close-up returns to the beige telephone. A hand presses or reaches toward the phone buttons. Over the image, large white text appears: “1-800-CALL-CASH.” Below it are the Visa and MasterCard logos.\n\nThe commercial then shows a storefront or service counter sign reading “WESTERN UNION | MONEY TRANSFER.” Beneath it, a yellow band reads: “The fastest way to send money.” Through the window below, the word “MARKET” is partially visible in the background.\n\nA close-up at a counter shows a stack of U.S. cash being placed on a black surface or folder with yellow lettering, likely related to Western Union. A calculator is visible at the edge of the frame.\n\nThe setting returns to the motel exterior in daylight or brighter light. Cars are parked outside motel rooms. A man carrying a rectangular orange case or bag walks toward a motel room door. A close-up from inside or through a car window shows the concerned middle-aged man again, now wearing a dark suit jacket; he appears to be seated in a car. A shot of a car wheel shows the vehicle moving or stopping on wet pavement, with reflections on the ground. Another shot shows the man in the driver’s seat gripping the steering wheel.\n\nThe commercial cuts back inside the motel room, now empty-looking and lit by warm lamps and a beam of bluish light from the window or door area. The bed, table, hanging lamp, and takeout containers are visible. Another brief shot shows a man viewed through a car windshield or window, partly obscured by reflections and motion blur.\n\nThe final frames are a black background with large yellow text reading “WESTERN UNION.” The last frame adds a white line beneath it: “The fastest way to send money.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0c6200fb5cf0266b006a1072ab839881a2868b807a0400dc48",
+    "usage": {
+      "input_tokens": 6308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 850,
+      "output_tokens_details": {
+        "reasoning_tokens": 24
+      },
+      "total_tokens": 7158
+    }
+  },
+  "duration_seconds": 30.847,
+  "created_at": "2026-05-22T15:14:17Z",
+  "error": null
+}

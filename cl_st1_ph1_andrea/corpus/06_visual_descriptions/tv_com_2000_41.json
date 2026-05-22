@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2000_41",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_41",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_41/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_41.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0002.jpg",
+      "timestamp_seconds": 1.157,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0003.jpg",
+      "timestamp_seconds": 1.291,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0004.jpg",
+      "timestamp_seconds": 4.761,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0005.jpg",
+      "timestamp_seconds": 9.766,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0006.jpg",
+      "timestamp_seconds": 13.737,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0007.jpg",
+      "timestamp_seconds": 17.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0008.jpg",
+      "timestamp_seconds": 19.976,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0009.jpg",
+      "timestamp_seconds": 21.611,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0010.jpg",
+      "timestamp_seconds": 27.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_41/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_41.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_41.json",
+    "response_text": "The commercial begins with two very dark/black frames in which no clear visual content is visible.\n\nA scene then appears at night on a brightly lit urban street. In the foreground, a man wearing glasses, a yellow hard hat, and dark work clothes is positioned low in the frame, apparently at street level or emerging from an opening. He is holding a phone to his ear. Behind him are illuminated storefronts, pedestrians, signs, and wet-looking pavement, suggesting a busy city environment.\n\nThe next scene cuts to a swamp or wooded wetland. A man in dark overalls and glasses stands knee-deep or shin-deep in shallow water among tree trunks and roots. He is also holding a phone to his ear while stepping through the water.\n\nThe commercial then cuts to a bright office corridor lined with cubicles. A woman in a tan business suit walks toward the camera carrying a briefcase in one hand and reading or holding several folders or documents in the other. Other office workers and computer monitors are visible in the background. Small white text appears along the bottom edge, but it is too small and blurred to read clearly.\n\nThe next shot shows tall golden grass or reeds in warm sunlight. Part of a person’s face with glasses is visible low in the left foreground, while a dark vehicle or machinery is partly visible on the right. The scene suggests the person is moving through or crouched among the grass, but the exact action is unclear from the frame.\n\nA desert or rocky landscape follows. A man in dark clothing and glasses is in the foreground, again holding a phone to his ear. Behind him is a van or small bus parked near rock formations, with bright blue sky overhead. Some colorful objects are visible near the vehicle, but their purpose is unclear.\n\nThe next scene shows the same or similar bespectacled man wearing a heavy dark parka with a fur-lined hood. He is outdoors in a cold, dimly lit environment. He looks downward or to the side, with the fur hood framing his face.\n\nThe commercial then cuts to a long shot of a person walking or running along a straight path beside a row of tall, evenly spaced metal structures or poles. The sky is dramatic, with orange light near the horizon, suggesting sunset or sunrise. The figure is small and moving away from the camera.\n\nNear the end, the scene changes to a city sidewalk or storefront entrance. Several young adults stand outside a building. One man in a dark jacket and light pants holds a phone to his ear. A woman in a red top stands facing him, smiling; she has a snowboard or similar board-shaped object at her side. Another person sits or crouches to the right, also holding a phone to his ear, and another woman stands in the background. Stickers or small signs are posted on the doorway or window.\n\nIn the final frame, the man in the dark jacket has turned slightly away from the camera while still holding the phone. The group remains gathered near the storefront, with the snowboard and posted signs still visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_08c34d649c67c0d4006a107542381081a28d1ef146453db2b7",
+    "usage": {
+      "input_tokens": 3059,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 745,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 3804
+    }
+  },
+  "duration_seconds": 19.621,
+  "created_at": "2026-05-22T15:25:09Z",
+  "error": null
+}

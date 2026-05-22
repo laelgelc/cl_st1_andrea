@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2010_11",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_11",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_11/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_11.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0002.jpg",
+      "timestamp_seconds": 2.559,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0003.jpg",
+      "timestamp_seconds": 4.127,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0004.jpg",
+      "timestamp_seconds": 6.162,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0005.jpg",
+      "timestamp_seconds": 7.23,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0006.jpg",
+      "timestamp_seconds": 8.732,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0007.jpg",
+      "timestamp_seconds": 10.367,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0008.jpg",
+      "timestamp_seconds": 13.203,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0009.jpg",
+      "timestamp_seconds": 14.371,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0010.jpg",
+      "timestamp_seconds": 17.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0011.jpg",
+      "timestamp_seconds": 19.042,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0012.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0013.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0014.jpg",
+      "timestamp_seconds": 27.15,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_11/frame_0015.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_11.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_11.json",
+    "response_text": "The commercial opens in a large open-plan office. A young adult man in a white shirt sits at a desk behind a black Toshiba laptop, concentrating on the screen. Other workers and rows of overhead lights are visible in the background.\n\nThe scene then shifts to a dimly lit apartment or living room at night. The same man enters or stands near the doorway, still wearing his office shirt and tie. A coat hangs by the door, lamps are on, and a kitchen area is visible in the background. In a wider view, another young adult man sits on a couch at the left, while the first man moves farther into the room.\n\nThe camera cuts to a wall covered with pinned and framed photographs. The images appear to be humorous or personalized photo composites: one shows a football player with a giraffe in the background, another shows a person in an action scene, and another shows a person in a dynamic sports-like pose. The wall is lit by a nearby table lamp.\n\nA Toshiba laptop is then shown open on a table. On its screen is a basketball scene, with a ball near the hoop. A mug sits beside the laptop.\n\nBack in the living room, the first man sits in front of the Toshiba laptop and smiles broadly. Behind him, the second man stands holding a bowl, looking toward the laptop. The room has exposed brick, lamps, a couch, and a casual apartment setting.\n\nThe first man is then shown wearing large headphones, positioned close to a microphone mounted on a stand. He is seated behind the Toshiba laptop and appears to be intensely focused on the screen. A black electric guitar or guitar-like instrument rests across him or nearby. The setup suggests he is recording or commentating, but no audio content is visible.\n\nA television screen in the room displays an American football game. Players in purple and white uniforms are on a green field. The man with headphones is seen from behind watching the television, with the laptop open in front of him.\n\nA closer view of the laptop shows a video-editing or media interface with football footage on the screen. The laptop sits on a coffee table with magazines or papers nearby. The television and media equipment are visible in the background.\n\nThe man with headphones reacts with an open-mouthed expression while looking at the laptop. The second man, seated on the couch, watches him with a neutral or slightly skeptical expression. In a wider shot, the first man leans forward from the couch area, still wearing headphones, with the microphone stand extending across the scene and the Toshiba laptop on the table in front of him.\n\nThe screen then goes black briefly. The final frame is a black end card with red and white text: “TOSHIBA” in large red letters, “Leading Innovation” beneath it in white, and the website “laptops.toshiba.com” below."
+  },
+  "api_metadata": {
+    "response_id": "resp_0354a5c1dda40480006a107719d96081918acd07821b698ae1",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 621,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 3589
+    }
+  },
+  "duration_seconds": 21.473,
+  "created_at": "2026-05-22T15:33:03Z",
+  "error": null
+}

@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1980_92",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_92",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_92/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_92.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0002.jpg",
+      "timestamp_seconds": 5.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0003.jpg",
+      "timestamp_seconds": 6.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0004.jpg",
+      "timestamp_seconds": 14.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0005.jpg",
+      "timestamp_seconds": 15.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0006.jpg",
+      "timestamp_seconds": 16.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0007.jpg",
+      "timestamp_seconds": 17.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0008.jpg",
+      "timestamp_seconds": 19.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0009.jpg",
+      "timestamp_seconds": 21.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0010.jpg",
+      "timestamp_seconds": 23.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_92/frame_0011.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_92.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_92.json",
+    "response_text": "The commercial begins with a very dark, indistinct frame in which no clear figures or setting can be identified.\n\nIt then cuts to the interior of what appears to be a passenger train or coach. A middle-aged man in business attire—a white shirt, tie, glasses, and moustache—reclines asleep or resting in a seat by a window. Beside him, a woman with glasses sits upright reading a newspaper or magazine. Sunlight comes through the window, and scenery is visible outside.\n\nA soft dissolve overlays the same train-seat scene, creating a dreamy or transitional effect. The man remains reclined while the woman continues to look at her reading material.\n\nThe scene shifts to another part of the train. A man in a white shirt and tie sits at a small table or workstation near a window. There are layered images during the transition, including glimpses of other passengers and a keyboard or portable device.\n\nA close-up follows of hands typing rapidly on a compact computer keyboard or electronic typewriter. The device has light-colored square keys and is shown from above at an angle.\n\nThe next shot shows more passengers seated in the train. On the left, a person with glasses and a patterned jacket works at a portable keyboard or computer on a table by the window. In the center foreground, a Black man in a light plaid shirt smiles or reacts while seated. In the background, another man in a white shirt and tie sits alone.\n\nAnother dissolve introduces a seated man in a striped shirt and glasses with his mouth open as if laughing or speaking. A woman sits beside or behind him near the window. The image remains soft and layered, suggesting motion or transition.\n\nA wider overhead view shows the train car filled with passengers. People sit in pairs on both sides of a central aisle. Several appear to be talking, reading, or working at small tables. Sunlight streams through large windows along both sides, and the interior has rows of cushioned seats.\n\nA brief shot shows a low view of doors or panels, possibly inside the train, with rectangular sections and colored light reflections on the floor. No people are visible in this frame.\n\nThe commercial then returns to the crowded train interior with another layered dissolve. Several passengers stand in the aisle, including a woman in a purple outfit and others in business or casual clothing. Seated passengers remain visible at tables or seats on either side.\n\nThe final frame is a black title card with white text. It reads: “Arrow” and below it, “We’ve loosened our collar.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0cbe88aac851c909006a1071cca6e88195bc56292846f7b83c",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 560,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 3410
+    }
+  },
+  "duration_seconds": 18.538,
+  "created_at": "2026-05-22T15:10:22Z",
+  "error": null
+}

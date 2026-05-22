@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1960_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0002.jpg",
+      "timestamp_seconds": 4.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0003.jpg",
+      "timestamp_seconds": 4.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0004.jpg",
+      "timestamp_seconds": 5.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0005.jpg",
+      "timestamp_seconds": 6.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0006.jpg",
+      "timestamp_seconds": 16.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0007.jpg",
+      "timestamp_seconds": 18.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0008.jpg",
+      "timestamp_seconds": 18.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0009.jpg",
+      "timestamp_seconds": 18.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0010.jpg",
+      "timestamp_seconds": 19.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0011.jpg",
+      "timestamp_seconds": 20.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0012.jpg",
+      "timestamp_seconds": 20.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0013.jpg",
+      "timestamp_seconds": 24.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0014.jpg",
+      "timestamp_seconds": 25.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0015.jpg",
+      "timestamp_seconds": 27.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0016.jpg",
+      "timestamp_seconds": 27.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0017.jpg",
+      "timestamp_seconds": 28.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0018.jpg",
+      "timestamp_seconds": 29.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0019.jpg",
+      "timestamp_seconds": 32.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0020.jpg",
+      "timestamp_seconds": 32.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0021.jpg",
+      "timestamp_seconds": 38.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0022.jpg",
+      "timestamp_seconds": 40.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0023.jpg",
+      "timestamp_seconds": 43.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0024.jpg",
+      "timestamp_seconds": 44.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0025.jpg",
+      "timestamp_seconds": 47.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0026.jpg",
+      "timestamp_seconds": 49.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0027.jpg",
+      "timestamp_seconds": 55.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0028.jpg",
+      "timestamp_seconds": 56.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0029.jpg",
+      "timestamp_seconds": 56.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1960_36/frame_0030.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_36.json",
+    "response_text": "The commercial is presented in a grainy black-and-white/sepia style with rapid cuts, motion blur, and occasional double exposure. A small “Nostalgic X’er” watermark appears at the lower right throughout the sampled frames.\n\nIt opens on an exterior sign with large rooftop letters, partially visible as “…ANCIS…,” suggesting an urban location. The next few shots are blurred transitions through city streets. A streetcar or cable-car-like vehicle appears briefly, followed by a low-angle view of a tall tower or monument rising above trees.\n\nThe sequence then moves through more fast urban imagery: a low-angle shot of a person moving near a large building or vehicle, a street scene with a vehicle or sign showing “PEPSI,” and then a group of young adults smiling while walking together in front of a large building entrance. These shots are intercut with blurred motion frames.\n\nA storefront sign then appears prominently: “GROOM & CLEAN.” In a closer view, the sign reads “GROOM & CLEAN,” with smaller text underneath including “FOR CLEAN… HAIR GROOMING — WITHOUT GREASE,” though parts of the smaller line are hard to read. The word “SAN FRANCISCO” is visible below the sign, tying the setting to San Francisco.\n\nThe middle portion shows a man in profile with neatly styled dark hair. This is followed by close-up grooming imagery: hands working through or combing a person’s hair, and a person seated while hair is being handled. A convertible car appears with several young adults inside; the car is shown from the side as it moves or is parked in an urban street setting.\n\nThe commercial then shifts to waterfront and leisure imagery. A person sits on rocks near the Golden Gate Bridge, with water and hills in the background. A close-up of a foot or lower leg in water appears with bold on-screen text reading “water active.” Another close-up shows wet hair being rubbed or washed by hands. A further hair close-up includes the on-screen text “cleans away dirt dandruff,” with the last word partially obscured but mostly legible.\n\nThe next shots show a smiling man and woman close together near water, then a sailboat with a large striped sail passing in front of the Golden Gate Bridge. A man in a light top is shown in profile against a bright sky. Near the end, a smiling blonde woman poses playfully while holding onto rigging or netting on or near a boat, with city buildings and bridge structures visible in the background.\n\nThe final frame is a product shot: a tube labeled “GROOM & CLEAN,” with smaller text below that appears to include “HAIR GROOMING — WITHOUT GREASE.” The tube is placed against a textured background with strands of hair visible nearby."
+  },
+  "api_metadata": {
+    "response_id": "resp_06cf3d6cd3e76589006a106d667a5081a2b10084d5284b9e19",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1022,
+      "output_tokens_details": {
+        "reasoning_tokens": 460
+      },
+      "total_tokens": 6825
+    }
+  },
+  "duration_seconds": 29.287,
+  "created_at": "2026-05-22T14:51:47Z",
+  "error": null
+}

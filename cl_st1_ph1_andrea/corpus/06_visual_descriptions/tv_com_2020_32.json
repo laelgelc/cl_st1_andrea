@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2020_32",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_32",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_32/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_32.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0002.jpg",
+      "timestamp_seconds": 1.858,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0003.jpg",
+      "timestamp_seconds": 3.235,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0004.jpg",
+      "timestamp_seconds": 5.487,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0005.jpg",
+      "timestamp_seconds": 6.363,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0006.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0007.jpg",
+      "timestamp_seconds": 9.699,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0008.jpg",
+      "timestamp_seconds": 10.492,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0009.jpg",
+      "timestamp_seconds": 12.828,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_32/frame_0010.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_32.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_32.json",
+    "response_text": "The commercial unfolds in a warm, stylized living-room interior.\n\n1. **Opening overhead view:** The first frame shows a top-down view of a room with a green oval rug, wooden floor, sofa, side furniture, and a person near the rug. Large centered text reads **“SAMSUNG presents”**, with small legal/disclaimer text along the bottom.\n\n2. **Wall display and shelving:** The view shifts to a front-facing shot of a mint-green wall unit with shelves full of framed pictures, ornaments, books, and small decorative objects. In the center is a framed screen or television displaying colorful artwork. Overlaid text reads **“The Frame Pro™”**.\n\n3. **Wide room shot:** A wider angle reveals the same living room: tall shelving, a wall-mounted framed display, green rug, sofa, curtains, and a person standing near the display. Overlaid text reads **“Wireless One Connect Box”** with a small rectangular icon. A small white box-like device is visible on the floor near the wall.\n\n4. **Person looking upward:** A close overhead/angled shot shows a woman with a striped headband and checkered shirt or dress looking upward, her hand near her chin. The room’s green rug, wooden floor, rolling cart, and plants are visible around her.\n\n5. **Smartphone photo selection:** A hand holds a smartphone showing a gallery grid of images. The visible photos show people in bright red costumes, likely the same subject repeated across multiple thumbnails. The background is softly blurred, with the green rug and a white box-like object behind the phone.\n\n6. **Phone/camera interface view:** The next shot appears to show the woman’s face through a phone or screen interface, slightly blurred and close-up. Interface text is visible but appears reversed/mirrored; it includes **“Add your photos”** near the top and a blue button reading **“Set on The Frame”**.\n\n7. **Woman smiling:** A close-up shows the woman smiling and looking slightly upward/off-screen, still wearing the striped headband and checkered outfit. The background remains softly lit and domestic.\n\n8. **Photo displayed on the framed screen:** The woman stands close to the wall-mounted framed display. The screen now shows a beach photo of two people dressed in bright red lobster-like costumes, with ocean and sand in the background. A slim shelf or soundbar-like object sits beneath the display.\n\n9. **SmartThings branding:** The scene cuts to a blurred view of the sofa area and curtains. Centered on-screen is the **SmartThings** logo and text.\n\n10. **Second person on sofa:** The final frame shows another woman seated on a sofa, smiling and holding a smartphone. She wears a green-and-white striped top. The **SmartThings** logo and text remain centered over the image. Curtains, cushions, and a leafy plant are visible in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f483b378da0d3bb006a107a1a8fac8197a39d3a74cacbbc21",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1041,
+      "output_tokens_details": {
+        "reasoning_tokens": 445
+      },
+      "total_tokens": 3064
+    }
+  },
+  "duration_seconds": 26.363,
+  "created_at": "2026-05-22T15:45:56Z",
+  "error": null
+}

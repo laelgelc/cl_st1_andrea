@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_67",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_67",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_67/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_67.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0002.jpg",
+      "timestamp_seconds": 1.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0003.jpg",
+      "timestamp_seconds": 5.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0004.jpg",
+      "timestamp_seconds": 6.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0005.jpg",
+      "timestamp_seconds": 8.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0006.jpg",
+      "timestamp_seconds": 9.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0007.jpg",
+      "timestamp_seconds": 11.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0008.jpg",
+      "timestamp_seconds": 12.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0009.jpg",
+      "timestamp_seconds": 13.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0010.jpg",
+      "timestamp_seconds": 14.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0011.jpg",
+      "timestamp_seconds": 15.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0012.jpg",
+      "timestamp_seconds": 15.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0013.jpg",
+      "timestamp_seconds": 16.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0014.jpg",
+      "timestamp_seconds": 16.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0015.jpg",
+      "timestamp_seconds": 17.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0016.jpg",
+      "timestamp_seconds": 17.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0017.jpg",
+      "timestamp_seconds": 18.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0018.jpg",
+      "timestamp_seconds": 18.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0019.jpg",
+      "timestamp_seconds": 20.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0020.jpg",
+      "timestamp_seconds": 20.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0021.jpg",
+      "timestamp_seconds": 22.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0022.jpg",
+      "timestamp_seconds": 22.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0023.jpg",
+      "timestamp_seconds": 23.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0024.jpg",
+      "timestamp_seconds": 23.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0025.jpg",
+      "timestamp_seconds": 23.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0026.jpg",
+      "timestamp_seconds": 23.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0027.jpg",
+      "timestamp_seconds": 24.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0028.jpg",
+      "timestamp_seconds": 25.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0029.jpg",
+      "timestamp_seconds": 27.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_67/frame_0030.jpg",
+      "timestamp_seconds": 29.116,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_67.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_67.json",
+    "response_text": "The commercial appears to take place in a brightly lit lighting or lamp showroom, with many table lamps, chandeliers, vanity bulbs, and ceiling fixtures visible throughout.\n\nAt the start, the scene is dark and seen in a wide shot. The showroom is crowded with lamps and hanging lights. As the image brightens, two young men are shown near a wall of round vanity bulbs. One is a young Black man in a red shirt and patterned overshirt; the other, seen shortly after, is a young white man with reddish hair wearing a red shirt under a dark/plaid jacket. They look closely at the illuminated display. An older woman is seated in the background near the window, and a neon sign is visible behind her, though the lettering is not fully clear.\n\nThe two young men stand together beside a mirror or illuminated display. Their attention seems directed upward or toward something off-screen. A cut shows a ceiling panel or opening with exposed material and wiring, lit with blue-white light, suggesting some kind of electrical or fixture problem. Another shot shows a bearded man in a flamboyant outfit: he wears a patterned jacket, a large colorful hat, and yellow slatted sunglasses. He appears among the lighting displays and handles long white tube-like lights.\n\nThe scene then shifts to a man in a light-colored shop coat or work coat standing on a ladder beneath a hanging chandelier/ceiling fixture. He appears to be working on or near the fixture. Close-up shots show a tool or cable near the fixture area. Suddenly there are bright flashes and sparks around him. The man’s body jerks and twists near a ceiling fan or chandelier, and the lighting becomes very intense and overexposed. The ceiling fan blades are visible, and the man appears to be caught up in the movement or electrical disturbance. Sparks continue to spray outward.\n\nThe bearded costumed man is shown again, now close to camera, holding white tube-like lights and gesturing toward the viewer. The commercial cuts rapidly between him, the worker, the spinning ceiling fan, and sprays of sparks. The older woman seated near the neon-lit window reacts with her mouth open and a startled expression. The ceiling fan continues to spin amid flashes; one shot shows the worker hanging or being pulled downward from the fan area while sparks scatter around him. Several frames become almost completely washed out by white light.\n\nThe young men and the costumed man appear together in a reaction shot, all looking toward the bright disturbance. Their faces are strongly overexposed by the flashes, and the young Black man appears to be smiling or laughing in one frame, while the reddish-haired young man looks open-mouthed. The bearded man stands behind them in the same bright, chaotic lighting.\n\nNear the end, the worker is shown on the floor, apparently fallen from the ladder or fixture area. He is surrounded by blue glowing cables or tubing and scattered objects. The lighting is still very bright. In another shot, he sits or reclines on the floor holding something, with tools or fixture parts around him.\n\nThe final shots return to the bearded costumed man. He faces the camera directly, wearing the colorful hat and yellow slatted sunglasses, and holds up two red-and-yellow packaged items or bottles, one in each hand. The product labels are partially visible but not clearly readable in the sampled frames. He presents the items prominently in front of the lighting displays as the commercial ends."
+  },
+  "api_metadata": {
+    "response_id": "resp_02c1fe9281812a70006a1073801778819eb9890d1fa88e0db0",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1006,
+      "output_tokens_details": {
+        "reasoning_tokens": 310
+      },
+      "total_tokens": 8549
+    }
+  },
+  "duration_seconds": 27.663,
+  "created_at": "2026-05-22T15:17:47Z",
+  "error": null
+}

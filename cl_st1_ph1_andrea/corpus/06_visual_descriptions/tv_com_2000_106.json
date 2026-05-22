@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_2000_106",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_106",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_106/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_106.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0002.jpg",
+      "timestamp_seconds": 0.957,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0003.jpg",
+      "timestamp_seconds": 1.791,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0004.jpg",
+      "timestamp_seconds": 2.859,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0005.jpg",
+      "timestamp_seconds": 3.76,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0006.jpg",
+      "timestamp_seconds": 4.027,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0007.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0008.jpg",
+      "timestamp_seconds": 4.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0009.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0010.jpg",
+      "timestamp_seconds": 6.963,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0011.jpg",
+      "timestamp_seconds": 7.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0012.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0013.jpg",
+      "timestamp_seconds": 8.398,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0014.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0015.jpg",
+      "timestamp_seconds": 10.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0016.jpg",
+      "timestamp_seconds": 11.401,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0017.jpg",
+      "timestamp_seconds": 12.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0018.jpg",
+      "timestamp_seconds": 13.97,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0019.jpg",
+      "timestamp_seconds": 15.372,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0020.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0021.jpg",
+      "timestamp_seconds": 18.174,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0022.jpg",
+      "timestamp_seconds": 18.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0023.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0024.jpg",
+      "timestamp_seconds": 22.145,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0025.jpg",
+      "timestamp_seconds": 22.979,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0026.jpg",
+      "timestamp_seconds": 25.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0027.jpg",
+      "timestamp_seconds": 26.716,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0028.jpg",
+      "timestamp_seconds": 27.918,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_106/frame_0029.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_106.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_106.json",
+    "response_text": "The commercial opens with a long shot of a dark blue car driving along a winding mountain road. The road curves sharply through green hillsides and rocky slopes.\n\nThe scene cuts to the car interior. A man is driving, wearing an orange shirt and a seatbelt. A woman sits in the front passenger seat, also belted, wearing a light pink top. The car has a sunroof, and both occupants appear serious or attentive. The driver looks forward, focused on the road.\n\nExterior shots show the blue car moving along a narrow, curving road bordered by rocky hills and open sky. The car is filmed from low angles and side angles, emphasizing its motion through bends. The sky is bright with scattered clouds.\n\nThe woman in the passenger seat is shown in close-up. She looks toward the driver and then toward the side or rear, with a concerned or questioning expression. The commercial alternates between close-ups of the passengers and dynamic shots of the car on the road.\n\nSeveral close-ups highlight parts of the vehicle: a front wheel spinning, the road surface and lane markings rushing past, and the rear of the car. The model badge “focus” is visible on the back of the blue car. Another frontal driving shot shows the Ford emblem centered on the grille.\n\nThe car continues along the rural mountain road. The woman is shown again, now smiling slightly. The driver then turns his head, looking back or toward the passenger side. Shortly afterward, the car is seen stopped on the roadside with the driver’s door open. The blue car is parked near a bend in the road, with hills and a cloudy sky behind it.\n\nA view through the side window shows the woman seated in the driver’s seat. White text appears at the bottom of the frame reading: “the best small car to drive” and beneath it “Automobile Magazine, Feb. 02.” A darker interior shot follows with the same text still visible.\n\nThere is a close-up of an exterior door handle on the blue car. The woman is then shown inside the car, seated at the wheel and looking outward. A wider shot shows the man standing beside the open driver’s-side area of the parked car, facing the vehicle, while the mountain road continues behind him.\n\nThe next sequence returns to moving road shots. White promotional text appears over the road and landscape, including “100,000-Mile Powertrain Coverage.” Additional smaller warranty-related text is visible but not fully legible in the sampled frames. A wide landscape shot shows the road stretching across green hills with the same large “100,000-Mile Powertrain Coverage” text overlaid.\n\nThe woman is then shown in profile driving, looking ahead. Exterior shots show the blue car driving again along the open road under a blue sky. The final frames show the car driving away on a winding road. A large Ford oval logo appears near the top center of the screen, and a website appears near the bottom: “www.fordvehicles.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_013638f322a0e125006a1076882534819698d2ef25b856de1e",
+    "usage": {
+      "input_tokens": 7847,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 639,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 8486
+    }
+  },
+  "duration_seconds": 16.189,
+  "created_at": "2026-05-22T15:30:32Z",
+  "error": null
+}

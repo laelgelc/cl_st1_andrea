@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1980_84",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_84",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_84/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_84.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_84/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_84/frame_0002.jpg",
+      "timestamp_seconds": 24.848,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_84/frame_0003.jpg",
+      "timestamp_seconds": 29.302,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_84.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_84.json",
+    "response_text": "The commercial begins with a nearly black frame. No objects, people, or setting details are visually discernible at this point.\n\nBy around 24.8 seconds, the image cuts to a studio-style product/promotion shot. A printed display card or poster is shown standing on a surface against a plain grey background. The card has dark side supports and features large headline text at the top:\n\n“Listen to the new  \nSony Super  \nWalkman. You might  \nwin to the  \ntune of $25,000.”\n\nBelow the headline is an image of a cassette-style portable music player, likely representing the Walkman. There is also small text on the right side of the card, but it is too small/blurry to read clearly. A white corded accessory, possibly headphones or earphones, lies on the surface to the lower left of the display.\n\nBy the final frame, the camera view appears slightly wider or the display is shown more fully centered. The same promotional card remains the main visual focus, with the Walkman image and the $25,000 contest message still visible. Additional small white legal/disclaimer text appears along the bottom of the screen. It is partially legible and reads approximately: “No Purchase Necessary. Entry Cards Available at Participating Retailers. Offer expires November 21, 1983. Offer void wherever prohibited by law.” The overall scene remains a static product/promotion shot with no people visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_08c67aae42b3c306006a1071a6e8bc81939329f2ee364106c1",
+    "usage": {
+      "input_tokens": 874,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 546,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 1420
+    }
+  },
+  "duration_seconds": 12.972,
+  "created_at": "2026-05-22T15:09:39Z",
+  "error": null
+}

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2010_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0002.jpg",
+      "timestamp_seconds": 0.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0003.jpg",
+      "timestamp_seconds": 0.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0004.jpg",
+      "timestamp_seconds": 6.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0005.jpg",
+      "timestamp_seconds": 10.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0006.jpg",
+      "timestamp_seconds": 13.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0007.jpg",
+      "timestamp_seconds": 15.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0008.jpg",
+      "timestamp_seconds": 16.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0009.jpg",
+      "timestamp_seconds": 20.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0010.jpg",
+      "timestamp_seconds": 22.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0011.jpg",
+      "timestamp_seconds": 24.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0012.jpg",
+      "timestamp_seconds": 27.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_69/frame_0013.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_69.json",
+    "response_text": "The sequence begins with a bright yellow product-style graphic: several chocolate-covered Twix bars are shown broken open, with caramel stretching between pieces. The red “Twix” logo is centered, with small text beneath it that appears to include “facebook.com/twix.” The screen then briefly cuts to black.\n\nThe main setting shifts to a bowling alley. A woman in a light green polo shirt stands in the seating area near the lanes with her arms crossed, facing forward. Behind her are bowling lanes, overhead score monitors, orange-and-black seats, ball returns, and other bowlers in the background. Small legal text appears along the bottom of the frame.\n\nA man in a blue blazer and maroon shirt is then shown seated beside a large pink pig in the same bowling alley. He is holding a smartphone in one hand. The pig stands close to him, near the chairs and scoring console. More small disclaimer text is visible at the bottom, including a line indicating that the pig was not harmed during filming.\n\nThe camera cuts to a close-up of the smartphone held in a hand. The screen shows the FanDuel Sportsbook logo, with a blue shield icon and the word “FANDUEL” above “SPORTSBOOK.” A football player graphic appears at the bottom of the phone screen. The background is blurred but still appears to be the bowling alley, with colorful bowling balls visible.\n\nNext, the woman in the green polo stands beside a man wearing glasses, a mustache, a white short-sleeved bowling shirt, and a black wrist support. They are both in the bowling alley, looking toward something off-frame. The woman turns her gaze toward him in one frame.\n\nThe view returns to the seated man in the blue blazer and the pig. A woman in a red bowling shirt stands behind them holding an orange bowling ball. The man continues holding the phone while interacting physically with the pig, touching or gesturing near its head. In a closer shot, the pig’s head is raised toward the man as he looks down at it, while the woman in red remains behind them with the ball.\n\nThe man with the mustache and the woman in green are shown again, now standing together and looking in the direction of the man and pig. The woman’s arms are crossed; a blue bowling bag or ball bag sits near the seating area.\n\nAnother phone close-up shows a betting-style interface. The screen displays a matchup labeled “PIT vs MIL,” a “Straight Wager” section, dollar amounts including “$25” and “$50,” and a green button near the bottom. The hand holding the phone wears a blue sleeve, matching the seated man’s blazer.\n\nThe pig is then shown in a wider shot, standing broadside in front of the seated man. A thin white horizontal graphic line overlays the pig’s body. Dense legal/disclaimer text appears across the bottom, including a prominent line reading “REFUNDS ISSUED IN SITE CREDIT.” The woman in red remains behind them holding the bowling ball.\n\nThe commercial ends on a blurred view of the bowling lanes, with bowlers faintly visible in the background. A blue FanDuel shield logo is centered on screen. Small legal/disclaimer text remains along the bottom, again including the “REFUNDS ISSUED IN SITE CREDIT” line."
+  },
+  "api_metadata": {
+    "response_id": "resp_013883148d5f4175006a1078556b60819194bfb198207942be",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1155,
+      "output_tokens_details": {
+        "reasoning_tokens": 481
+      },
+      "total_tokens": 3745
+    }
+  },
+  "duration_seconds": 26.851,
+  "created_at": "2026-05-22T15:38:24Z",
+  "error": null
+}

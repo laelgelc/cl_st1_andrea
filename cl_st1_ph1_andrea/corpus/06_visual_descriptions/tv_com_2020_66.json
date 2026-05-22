@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2020_66",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_66",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_66/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_66.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0002.jpg",
+      "timestamp_seconds": 0.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0003.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0004.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0005.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0006.jpg",
+      "timestamp_seconds": 6.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0007.jpg",
+      "timestamp_seconds": 7.23,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0008.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0009.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0010.jpg",
+      "timestamp_seconds": 12.135,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0011.jpg",
+      "timestamp_seconds": 13.503,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0012.jpg",
+      "timestamp_seconds": 14.938,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0013.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0014.jpg",
+      "timestamp_seconds": 17.374,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0015.jpg",
+      "timestamp_seconds": 18.675,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0016.jpg",
+      "timestamp_seconds": 19.91,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0017.jpg",
+      "timestamp_seconds": 21.945,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0018.jpg",
+      "timestamp_seconds": 23.346,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0019.jpg",
+      "timestamp_seconds": 24.281,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0020.jpg",
+      "timestamp_seconds": 25.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0021.jpg",
+      "timestamp_seconds": 26.416,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0022.jpg",
+      "timestamp_seconds": 28.151,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_66/frame_0023.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_66.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_66.json",
+    "response_text": "The commercial opens on a clean white background with multiple pairs of eyeglasses and sunglasses arranged in a grid-like layout. The frames vary in color and shape, including clear, dark, blue, and tinted styles. A hand enters and reaches toward a dark green/black rectangular pair, selecting it from the display.\n\nThe sequence then cuts to close-up product shots of individual eyeglass frames. One pair has a tortoiseshell pattern and rounded lenses, shown at an angle against a white background. The emphasis is on the material, frame shape, and translucent details.\n\nA blonde woman appears facing the camera, wearing blue-framed glasses. She adjusts the glasses with both hands near her temples and looks directly forward. The background remains bright and minimal. Another close-up shows a person in amber/yellow translucent glasses, seen from the side with eyes closed; the focus is on the glasses and face detail. A man in clear-framed glasses then appears in a medium close-up, smiling slightly toward the camera.\n\nMore product close-ups follow: a clear or pale translucent pair of round glasses, then a young man wearing light green or clear-framed glasses, looking upward toward the camera. Another frame-focused shot shows a partially clear pair with a patterned rim detail.\n\nThe commercial then introduces a “Home Try-On” setup. A dark box is shown from above on a white tabletop, with hands holding it. The box text reads “WARBY PARKER Home Try-On.” Around it are small objects, including what appears to be a notebook or card with paper clips, a cup with a drink, and scattered puzzle pieces. A woman in a red top is later seated at a table with a Home Try-On box open beside her. She holds a handheld mirror and smiles while wearing glasses; another pair rests on top of her head, and a pair hangs from her shirt. Papers, a cup, and a plant are visible in the scene.\n\nThe setting then shifts to a retail store. A woman stands in front of shelves filled with eyeglass frames, smiling at the camera. She wears a blue shirt with small white text and badges or pins on it; the store background is bright, with wooden display cases and rows of eyewear. A wider shot shows the store interior symmetrically: display shelves line both walls, a rounded central table sits in the middle, and a colorful mural decorates the back wall.\n\nA brief abstract shot follows: a small black object or graphic-like form appears centered against a pale background. Its exact identity is unclear from the sampled frame.\n\nThe next section shows a tabletop with a smartphone, notebooks, keys, a mug, and several pairs of glasses. A hand uses the phone, whose screen displays rows of eyeglass frame options. The following close-up shows the phone displaying a person’s face with virtual glasses overlaid; interface buttons are visible at the bottom, though the smaller text is not fully legible in the frame. A woman in a light gray sweater then appears holding a phone, smiling as if viewing herself or interacting with the phone. Glasses and bright tabletop objects are visible around her.\n\nThe commercial returns to close-ups of people and frames: the young man in light-framed glasses smiles with his head resting on his hand; a dark pair of sunglasses is shown in close-up; then the blonde woman appears again in an extreme close-up without glasses, looking directly at the camera with a slight smile.\n\nThe final frames transition to a white and turquoise graphic end card. A turquoise “W” appears first, followed by a large turquoise circle with white text. The final full-screen turquoise card reads:\n\n“WARBY PARKER”  \n“PRESCRIPTION GLASSES STARTING AT $95”  \n“WARBYPRKER.COM” / “WARBY PARKER.COM” appears at the bottom, though the small website text is slightly hard to read in the sampled frame.\n\nOverall, the visuals emphasize eyeglass styles, close-ups of people trying on frames, a Home Try-On box, a retail store environment, and a smartphone-based virtual try-on interface."
+  },
+  "api_metadata": {
+    "response_id": "resp_091b6ec66f95719c006a107abb946081a2b5ad51007d5a0f5a",
+    "usage": {
+      "input_tokens": 4480,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1029,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 5509
+    }
+  },
+  "duration_seconds": 21.018,
+  "created_at": "2026-05-22T15:48:32Z",
+  "error": null
+}

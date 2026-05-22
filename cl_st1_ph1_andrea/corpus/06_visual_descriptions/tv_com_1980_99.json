@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1980_99",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_99",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_99/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_99.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0002.jpg",
+      "timestamp_seconds": 2.715,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0003.jpg",
+      "timestamp_seconds": 17.15,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0004.jpg",
+      "timestamp_seconds": 19.27,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0005.jpg",
+      "timestamp_seconds": 20.515,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0006.jpg",
+      "timestamp_seconds": 21.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0007.jpg",
+      "timestamp_seconds": 23.678,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0008.jpg",
+      "timestamp_seconds": 25.36,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0009.jpg",
+      "timestamp_seconds": 27.581,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0010.jpg",
+      "timestamp_seconds": 29.533,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_99/frame_0011.jpg",
+      "timestamp_seconds": 34.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_99.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_99.json",
+    "response_text": "The commercial appears in a low-resolution, warm-toned, 4:3 video frame with black borders at the sides. It unfolds around a family meal and a canned pasta product.\n\n- **Opening kitchen scene:** A young boy sits at a kitchen counter or table, holding a red cup near his face. He wears a striped polo shirt in yellow/orange, dark blue/black, and white. In front of him are a small red-and-white container or can and a yellow/orange cooking pot. An adult hand at the right lifts or serves food with an orange ladle from the pot. The kitchen background is softly lit and slightly out of focus.\n\n- **Wider kitchen serving moment:** The view widens to show the boy seated at the counter while an adult woman stands behind or beside the pot, serving food. Another adult figure appears to the right, seated or leaning nearby. The image includes some motion blur or dissolve-like overlap, making the figures partially ghosted.\n\n- **Close-up of the boy eating:** The scene shifts to the boy at a table with a plate of food in front of him and a glass of milk or a pale drink to the side. He looks down toward the plate, holding a fork. The food on the plate appears orange/red, consistent with pasta in sauce.\n\n- **Family dining table:** A wider dining-room shot shows several people seated around a round wooden table. The boy sits on the left, eating. An adult man sits near the back, an adult woman sits on the right, and at least two children are seated at the far side of the table. Plates, cups, and serving items are arranged on the table. The setting is bright, domestic, and family-oriented, with curtains and houseplants visible in the background.\n\n- **Child close-up at the table:** A close-up shows a young child facing the camera and smiling or reacting while eating. The image is briefly overlaid with the previous dining-room scene, suggesting a dissolve transition. Food and a cup are visible in the foreground.\n\n- **Boy eating from fork:** The boy in the striped shirt is shown again in close-up, holding a forkful of orange/red-sauced food near his mouth. His expression suggests he is speaking or reacting while eating, but no dialogue can be determined from the frames.\n\n- **Food close-up:** A large close-up of pasta covered in orange/red sauce appears on a spoon or serving utensil. The boy’s face is faintly visible behind it due to a transition or shallow overlay, but the food is the visual focus.\n\n- **Product can close-up:** The commercial cuts to a close-up of a can label. Readable text on the label includes:  \n  **“Cannelloni”**  \n  **“Beef Filled Macaroni Product”**  \n  **“IN MEAT SAUCE”**  \n  The label shows an image of pasta in red sauce near the bottom.\n\n- **Return to boy eating:** The boy is shown again in the same close-up position, fork raised with sauced food, appearing to continue eating or reacting.\n\n- **Fade to black:** The screen turns black.\n\n- **End card / source mark:** A black screen appears with centered yellow/orange text reading **“BionicDisco.com”**. No other visual elements are present."
+  },
+  "api_metadata": {
+    "response_id": "resp_039307000706a815006a1071e3f6408194b4b37b63ac9d3918",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 773,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 2985
+    }
+  },
+  "duration_seconds": 20.113,
+  "created_at": "2026-05-22T15:10:47Z",
+  "error": null
+}

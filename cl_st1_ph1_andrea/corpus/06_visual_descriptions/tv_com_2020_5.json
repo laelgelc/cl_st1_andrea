@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2020_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0002.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0003.jpg",
+      "timestamp_seconds": 2.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0004.jpg",
+      "timestamp_seconds": 6.571,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0005.jpg",
+      "timestamp_seconds": 7.948,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0006.jpg",
+      "timestamp_seconds": 8.949,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0007.jpg",
+      "timestamp_seconds": 10.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0008.jpg",
+      "timestamp_seconds": 11.743,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0009.jpg",
+      "timestamp_seconds": 13.036,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0010.jpg",
+      "timestamp_seconds": 13.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0011.jpg",
+      "timestamp_seconds": 14.996,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0012.jpg",
+      "timestamp_seconds": 16.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0013.jpg",
+      "timestamp_seconds": 18.708,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0014.jpg",
+      "timestamp_seconds": 20.502,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0015.jpg",
+      "timestamp_seconds": 23.296,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0016.jpg",
+      "timestamp_seconds": 25.549,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0017.jpg",
+      "timestamp_seconds": 27.676,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_5/frame_0018.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_5.json",
+    "response_text": "The commercial opens in a home/interview setting. A middle-aged woman sits in an armchair in a living room, looking down at a phone. On-screen text identifies her as “ANITA JORDAN” and describes her as the mother of Cam Jordan of the New Orleans Saints. A Downy logo/product mark appears in the upper left. The room includes plants, curtains, cushions, and framed photographs on a side table.\n\nThe scene cuts to a blurred display of a black New Orleans Saints football jersey with the number 94. It then shifts to Saints players on a football sideline wearing gold helmets and black uniforms. One player in a number 94 jersey is prominent. On-screen text identifies “Cam Jordan,” and a subtitle-style line appears at the bottom, though no audio can be inferred from the frames alone.\n\nThe commercial returns to the woman in the living room. She smiles and holds her phone outward, then a closer shot shows her speaking or reacting with an amused expression. The setting remains the same domestic interview space.\n\nThe next sequence moves to a stadium or locker-room area. A Downy-branded graphic or sign is seen through a doorway, with large white text including “Downy” and partial words related to odor. A close-up of a wall sign reads “SAINTS LOCKER ROOM” with the number “1011.” The woman appears entering through a doorway into the locker-room area, holding a dark object in her hand.\n\nInside the Saints locker room, a man in a cream-colored Saints shirt and black shorts sits on a wooden bench in front of black lockers. The woman approaches him smiling. They sit together on the bench; she holds up her phone near her face while he looks toward her. The locker room contains illuminated locker compartments, Saints branding, and a visible number 94 jersey in the background.\n\nThe action then moves to a laundry area. The woman and the man stand by a washing machine with stacks of folded towels nearby. A bottle of Downy product is shown in the woman’s hand. A close-up shows the bottle being poured into a washing-machine dispenser drawer. The label visible on the bottle includes the Downy brand and “Rinse” wording.\n\nA stylized product-action animation follows: turquoise liquid flows across a surface made of many small round bead-like shapes. This appears to visually represent the product spreading or working, though the exact mechanism is not explained in the frames.\n\nThe locker-room scene resumes with the woman and the Saints player seated together again. She holds the phone up toward him, and both appear to react to it. In a wider shot, they sit on the bench with a dark bag on the floor nearby, surrounded by lockers.\n\nThe final product shot shows a bottle of Downy “Rinse Out Odor” standing on a counter beside a stack of white folded towels. Large text on the left reads “RINSE IT OUT.” The Downy logo, NFL shield, and small text reading “Official Locker Room Product of the NFL” appear near the bottom left, while a P&G logo appears in the upper right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0891afe752d2ce1d006a107987a780819d9a01f1c3d89f1023",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1146,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 4681
+    }
+  },
+  "duration_seconds": 27.746,
+  "created_at": "2026-05-22T15:43:31Z",
+  "error": null
+}

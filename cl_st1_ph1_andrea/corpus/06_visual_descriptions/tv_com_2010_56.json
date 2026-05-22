@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_2010_56",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_56",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_56/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_56.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0002.jpg",
+      "timestamp_seconds": 0.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0003.jpg",
+      "timestamp_seconds": 1.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0004.jpg",
+      "timestamp_seconds": 3.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0005.jpg",
+      "timestamp_seconds": 5.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0006.jpg",
+      "timestamp_seconds": 9.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0007.jpg",
+      "timestamp_seconds": 12.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0008.jpg",
+      "timestamp_seconds": 15.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0009.jpg",
+      "timestamp_seconds": 18.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0010.jpg",
+      "timestamp_seconds": 22.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0011.jpg",
+      "timestamp_seconds": 27.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0012.jpg",
+      "timestamp_seconds": 31.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0013.jpg",
+      "timestamp_seconds": 34.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0014.jpg",
+      "timestamp_seconds": 37.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0015.jpg",
+      "timestamp_seconds": 40.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_56/frame_0016.jpg",
+      "timestamp_seconds": 43.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_56.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_56.json",
+    "response_text": "The commercial begins with a blurred indoor scene covered by a large promotional graphic. Bright green text in the center reads “PLAY FREE!” with DraftKings branding and “DRAFTKINGS.COM” near the bottom, plus an App Store badge. The background appears to show people or mascots in a room, but it is too blurred to identify clearly.\n\nThe screen then cuts to black.\n\nThe next scene shifts to an outdoor forest campsite. An anthropomorphic turkey, wearing a red knit cap and a blue-and-orange padded vest, stands beside a bright yellow tent. The turkey is in a wooded area with tall trees, logs, ferns, and dirt ground. In the following shot, the tent remains on the right side of the frame while the turkey is no longer visible.\n\nThe turkey is then shown seated or crouched near a small campfire surrounded by stones. It appears to be tending the fire or looking at it. A small CHANTIX logo appears at the bottom right, and fine-print text runs along the bottom, including “Prescription CHANTIX can help you quit smoking with support.”\n\nA closer shot shows the turkey beside the campfire. Large white on-screen text appears on the left: “Keep smoking at first and ease into quitting.” Fine print remains along the bottom, mentioning support such as educational materials and counseling. The CHANTIX logo is visible at the bottom right.\n\nThe turkey is then shown standing near the campfire with the yellow tent in the background and a log behind it. A cooking setup appears around the fire: a small pot sits on a low black stand or table over/near the flames. The turkey holds or manipulates something near the fire. In close-up, it leans toward the pot, looking down at it.\n\nAfterward, the turkey stands upright in the campsite, facing forward, still wearing the red cap and padded vest. The background remains a forest setting with logs and greenery.\n\nThe scene changes to the turkey walking through the forest. It carries camping gear, including what looks like a small round canteen or drum-like item hanging at its front. Fine-print warning text appears at the bottom, including language about “Life-threatening allergic and skin reactions” and symptoms such as swelling, rash, peeling skin, or blisters. A wider shot shows the turkey moving along or over a fallen log among tall trees, with sunlight filtering through the forest. Another shot shows it continuing down a wooded path between large tree trunks.\n\nThe final outdoor sequence shows the turkey walking down a dock or pier toward a calm lake. It carries a blue item in one wing/hand. The lake reflects the surrounding forested hills and sky.\n\nThe commercial ends on a scenic lake and forest background with large CHANTIX branding centered on the screen. Additional small text appears at the bottom, including “Can’t afford your medication? Pfizer may be able to help. Visit CHANTIX.com,” with a Pfizer logo at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_052ae7478657ec07006a1078083b7081a191827cd7808ca29e",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 758,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 3915
+    }
+  },
+  "duration_seconds": 17.852,
+  "created_at": "2026-05-22T15:36:57Z",
+  "error": null
+}

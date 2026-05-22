@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1950_106",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_106",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_106/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_106.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0002.jpg",
+      "timestamp_seconds": 1.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0003.jpg",
+      "timestamp_seconds": 22.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0004.jpg",
+      "timestamp_seconds": 27.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0005.jpg",
+      "timestamp_seconds": 33.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0006.jpg",
+      "timestamp_seconds": 34.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0007.jpg",
+      "timestamp_seconds": 37.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0008.jpg",
+      "timestamp_seconds": 40.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0009.jpg",
+      "timestamp_seconds": 43.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0010.jpg",
+      "timestamp_seconds": 43.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0011.jpg",
+      "timestamp_seconds": 46.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0012.jpg",
+      "timestamp_seconds": 46.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0013.jpg",
+      "timestamp_seconds": 47.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0014.jpg",
+      "timestamp_seconds": 48.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0015.jpg",
+      "timestamp_seconds": 49.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0016.jpg",
+      "timestamp_seconds": 50.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1950_106/frame_0017.jpg",
+      "timestamp_seconds": 60.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_106.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_106.json",
+    "response_text": "The commercial is in black and white, with a “tvdays.com” watermark visible at the lower right throughout the sampled frames.\n\nIt begins on a dark/black screen, then cuts to a very bright, washed-out outdoor scene that appears to show a road or open area with distant structures and vehicles, though details are hard to make out because of the exposure. A later shot shows large clouds in the sky.\n\nThe commercial then moves into a miniature battlefield-style scene. A toy helicopter or aircraft and small model vehicles are arranged among rough terrain, rocks, and foliage. A large toy helicopter is shown suspended or positioned over a crater-like area, with miniature soldiers and equipment below.\n\nAfter a white flash transition, two children appear lying or crouching behind a low edge or platform. One child holds or operates a toy helicopter with a dangling hook or cable beneath it. The other child, wearing a light-colored helmet or cap, watches closely with hands near the face. The helicopter is shown in profile and has printed markings, including a triangular emblem.\n\nThe next shots focus on the side of the toy helicopter. A close-up shows a rectangular hatch or panel on the fuselage, with partial lettering visible to the right reading “WHIR…” or similar. The panel opens downward like a small door or platform. Inside, several small toy soldier figures are revealed standing in the compartment. Another close-up shows a mechanical-looking arm or gun-like apparatus inside the opened compartment, mounted on a base and angled outward.\n\nThe commercial returns to the miniature battlefield. The scene includes a toy helicopter at the upper left, a tank-like or armored vehicle to the right, another toy vehicle with a mounted weapon at lower left, and small toy soldier figures positioned around the terrain. Bright flashes and smoke-like effects appear, suggesting staged explosions in the miniature scene. The explosions intensify, filling much of the frame with white smoke or overexposed light.\n\nThe large toy helicopter is again shown positioned above the terrain, apparently being moved or suspended over the miniature battlefield. Another bright white transition follows.\n\nThe children reappear outdoors behind the low platform. One child smiles while holding or presenting the toy helicopter; the other child remains beside it, still wearing the light-colored headgear and looking toward the toy. A crowd-like background or distant figures may be visible behind them, but the details are indistinct.\n\nThe final frame is a product-style shot of the toy helicopter against a cloudy sky background. Large text above it reads “PLAY INDOORS.” Beneath the helicopter, the price “9.98” is displayed. At the bottom, partially obscured by the watermark, text reads “Not a Flying …” with the final word partly covered or unclear. The helicopter is shown side-on, with its rotors visible and various decals on the fuselage."
+  },
+  "api_metadata": {
+    "response_id": "resp_0baf5b243b634325006a106c98690c8196a12032953849d444",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 698,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 5030
+    }
+  },
+  "duration_seconds": 20.613,
+  "created_at": "2026-05-22T14:48:12Z",
+  "error": null
+}

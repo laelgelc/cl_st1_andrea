@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2010_61",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_61",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_61/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_61.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0002.jpg",
+      "timestamp_seconds": 0.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0003.jpg",
+      "timestamp_seconds": 2.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0004.jpg",
+      "timestamp_seconds": 3.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0005.jpg",
+      "timestamp_seconds": 4.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0006.jpg",
+      "timestamp_seconds": 6.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0007.jpg",
+      "timestamp_seconds": 7.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0008.jpg",
+      "timestamp_seconds": 8.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0009.jpg",
+      "timestamp_seconds": 9.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0010.jpg",
+      "timestamp_seconds": 12.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0011.jpg",
+      "timestamp_seconds": 14.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0012.jpg",
+      "timestamp_seconds": 16.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0013.jpg",
+      "timestamp_seconds": 18.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0014.jpg",
+      "timestamp_seconds": 21.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_61/frame_0015.jpg",
+      "timestamp_seconds": 26.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_61.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_61.json",
+    "response_text": "The sampled sequence begins with a bright, product-centered shot that appears visually different from the rest of the clip. A blue bottle of **Listerine Cool Mint** stands in the center against a light blue background. Large white text behind it reads **“BRING OUT THE BOLD”**. Around the bottle are small animated-looking mouth/teeth figures in red and white. The scene is clean, colorful, and graphic.\n\nThe next frame is completely black, suggesting a transition or cut.\n\nAfter the black frame, the visual style changes to a cinematic, letterboxed car commercial. A dimly lit interior scene shows a man in silhouette near large windows, with warm evening light coming through. The setting appears urban or high-rise, but details are partly obscured by the low lighting. The next shot shows a man in profile walking or standing near a building with a city skyline and sunset-colored sky in the background.\n\nThe commercial then cuts to a nighttime city street. White centered text reads **“INTRODUCING THE ALL-NEW COMPASS”** while a vehicle with headlights approaches or passes through the urban environment. The same text continues over a daytime shot of a silver SUV driving along a winding road through dry, rocky hills. The vehicle is shown from the front, moving toward the camera on a two-lane road.\n\nA close-up interior shot follows, showing a male driver in profile inside the vehicle. He faces forward with a serious or focused expression. The lighting is warm and soft, suggesting sunset or early evening.\n\nThe next shot focuses on the vehicle’s center console or touchscreen area. A hand reaches toward the screen. White text over the image reads **“AWARD-WINNING UCONNECT® SYSTEM”**. The screen itself is visible but not fully legible.\n\nThe SUV is then shown in an exterior side/front three-quarter view driving on a road through open landscape with mountains or hills in the background. It is a silver Jeep Compass-style SUV, with the Jeep grille visible. Small fine-print text appears at the bottom but is too small to read clearly in the frame.\n\nThe commercial cuts to a close-up of the interior seating. White centered text reads **“REFINED LEATHER-TRIMMED INTERIOR”**. The image shows light-colored upholstery and stitching details, though the shot is partially abstract and close-cropped.\n\nA front close-up of the SUV follows, with the left headlight and grille visible. Strong sunlight flares from the right side of the frame, creating a golden glow and partially washing out the image.\n\nAnother interior technology shot appears, showing a hand interacting with the touchscreen. White text reads **“MOST TECHNOLOGY IN ITS CLASS”**. The dashboard and screen are visible, but some details are blurred or obscured by foreground elements and reflections.\n\nThe vehicle is then shown again from the front, driving on a road at dusk. The headlights are on, and the background includes open terrain, utility poles, low mountains, and a cloudy sky with warm sunset tones. Small fine print appears at the bottom but is not clearly readable.\n\nThe final frames switch to a black background with white promotional lease information. The main text reads:\n\n- **“2018 JEEP COMPASS LATITUDE 4x4”**\n- **“$169/MO.”**\n- **“24 MOS. WITH $3279 DUE AT SIGNING”**\n- **“LOW MILEAGE LEASE FOR CURRENT LESSEES OF COMPETITIVE VEHICLES”**\n- **“TAX, TITLE AND LICENSE EXTRA”**\n- **“CALL 1-888-925-JEEP FOR LEASE DETAILS”**\n\nBelow this is the **Jeep** logo and the phrase **“CELEBRATION EVENT”**. Very small legal/disclaimer text appears at the bottom, but it is not legible in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ef47c146ea349e1006a10782745b4819fa1f3971b302156e4",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1102,
+      "output_tokens_details": {
+        "reasoning_tokens": 317
+      },
+      "total_tokens": 4070
+    }
+  },
+  "duration_seconds": 24.277,
+  "created_at": "2026-05-22T15:37:35Z",
+  "error": null
+}

@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1970_45",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_45",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_45/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_45.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0002.jpg",
+      "timestamp_seconds": 16.206,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0003.jpg",
+      "timestamp_seconds": 19.476,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0004.jpg",
+      "timestamp_seconds": 21.378,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0005.jpg",
+      "timestamp_seconds": 24.381,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0006.jpg",
+      "timestamp_seconds": 25.482,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_45/frame_0007.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_45.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_45.json",
+    "response_text": "The commercial is presented in a hand-drawn animated style.\n\n- **Opening frame:** The first frame is very dark and blurry, showing what appears to be a printed or projected message on a plain background. The text is mostly unreadable in the sampled frame, though a circular logo-like mark is faintly visible near the center. Archive watermarks are visible.\n\n- **Later scene:** The image shifts to a close-up of a yellow/orange form being handled by cartoon hands. The form is headed **“FOTOMAT’S PICTURE PICKUP PROMISE”** and includes several small checkbox-like squares. A pen or pencil points at or writes on the form. Behind it, a large yellow sign or shape with partially visible lettering suggests a Fotomat setting.\n\n- **Drive-up booth scene:** A red convertible is parked beside a blue Fotomat-style booth window. An older male driver with white hair sits in the car, looking up toward a smiling female employee with large white hair. She leans from the booth window and holds a yellow envelope or packet, apparently interacting with the customer.\n\n- **Customer reaction:** The older man is then shown alone in the red car from a closer angle. He appears surprised or startled, with wide eyes and an open mouth, one hand near the car’s interior.\n\n- **Employee close-up:** The female Fotomat employee is shown smiling and holding up a small transparent, triangular/prism-like object or display item. She wears a yellow shirt with a dark vest or apron.\n\n- **End card:** The final frames show a black background with a white inset cartoon panel. Inside the panel, the older male character holds a purple-and-pink packet or envelope, while a small cartoon figure in a large hat stands beside him. Large text at the bottom reads: **“The Fotomat Picture Pickup Promise.”** Smaller text beneath reads: **“OFFER GOOD ONLY FOR FOTOMAT AND KODAK FILM DETAILS AT PARTICIPATING STORES.”** The same archive watermark remains visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_03be9df099689e9f006a106f53b11c81a085967887b24dbffd",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 694,
+      "output_tokens_details": {
+        "reasoning_tokens": 278
+      },
+      "total_tokens": 2556
+    }
+  },
+  "duration_seconds": 17.112,
+  "created_at": "2026-05-22T14:59:48Z",
+  "error": null
+}

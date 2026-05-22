@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1950_101",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_101",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_101/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_101.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0002.jpg",
+      "timestamp_seconds": 2.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0003.jpg",
+      "timestamp_seconds": 12.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0004.jpg",
+      "timestamp_seconds": 15.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0005.jpg",
+      "timestamp_seconds": 17.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0006.jpg",
+      "timestamp_seconds": 33.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0007.jpg",
+      "timestamp_seconds": 36.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_101/frame_0008.jpg",
+      "timestamp_seconds": 39.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_101.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_101.json",
+    "response_text": "The commercial is in black and white and appears to use aviation/travel imagery. A “www.PublicDomainFootage.com” watermark is visible across the lower part of most frames.\n\n1. **Opening title/location card**: The first frame shows a dark background with the word **“Seattle”** centered in light lettering. The image is somewhat soft and grainy.\n\n2. **Aircraft on the ground**: The scene cuts to an airport or airfield. A large passenger aircraft is shown from the side/front area on the tarmac. The shot is bright and slightly washed out, making details indistinct. Ground equipment or structures are visible around the plane.\n\n3. **Close-up of aircraft engines**: The next shots show a close-up of multiple cylindrical jet engine nacelles mounted under or near the wing. The camera angle is tight and dramatic, emphasizing the clustered engines and the curved surface of the aircraft.\n\n4. **Aircraft fuselage and engines**: The view widens slightly to show part of the aircraft body with a stripe along the fuselage and several engines above or beside it. People and ground activity are faintly visible below, but details are unclear.\n\n5. **Passengers/people near the aircraft**: The scene shifts to people standing on the tarmac beside the aircraft. Several adults are gathered with luggage or bags. Some appear to be wearing coats and hats. One person in the center bends over a suitcase or bag, while others stand nearby. Cars or airport vehicles are visible in the background, along with a low hillside or distant landscape.\n\n6. **Plane in flight, dark background**: The commercial then cuts to an exterior shot of the passenger aircraft flying against a dark sky or shaded background. The plane is seen in profile, moving across the frame with its tail and wing clearly visible.\n\n7. **Plane above landscape and clouds**: The aircraft is shown from a greater distance, flying over a broad landscape with large clouds in the background. The plane appears small against the sky and terrain.\n\n8. **Final aerial view**: The last frame continues the aerial sequence, with the plane flying across a cloudy sky over land or water below. The aircraft remains the central visual subject, shown in steady flight."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d6c4decdea8262f006a106c8533508193baa5fafb513d4cb8",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 517,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2626
+    }
+  },
+  "duration_seconds": 14.725,
+  "created_at": "2026-05-22T14:47:47Z",
+  "error": null
+}

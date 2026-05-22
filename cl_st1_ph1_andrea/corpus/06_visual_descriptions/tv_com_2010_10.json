@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2010_10",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_10",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_10/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_10.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0002.jpg",
+      "timestamp_seconds": 1.524,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0003.jpg",
+      "timestamp_seconds": 3.36,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0004.jpg",
+      "timestamp_seconds": 5.662,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0005.jpg",
+      "timestamp_seconds": 7.197,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0006.jpg",
+      "timestamp_seconds": 8.732,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0007.jpg",
+      "timestamp_seconds": 10.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0008.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0009.jpg",
+      "timestamp_seconds": 14.604,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0010.jpg",
+      "timestamp_seconds": 15.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0011.jpg",
+      "timestamp_seconds": 19.075,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0012.jpg",
+      "timestamp_seconds": 25.248,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0013.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_10/frame_0014.jpg",
+      "timestamp_seconds": 28.218,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_10.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_10.json",
+    "response_text": "The commercial opens in a living room. A middle-aged man wearing glasses and a light plaid shirt sits on a couch with a compact keyboard resting on his lap. The room is dimly lit and domestic, with cushions, framed pictures, and furniture in the background.\n\nThe sequence then cuts to a brighter dining area. The same man sits at a table and smiles while holding up a large decorative plate or circular object showing a simple portrait-style drawing of a person in a red jacket. Other decorative plates hang on the wall behind him, and a bowl of green/yellow fruit sits on the table.\n\nNext, the setting changes to a darker office or den. The man sits in a chair facing a desk and a small screen that shows another person. He holds a magazine or booklet. The room contains framed portraits, trophies, a helmet or astronaut-style suit on the right, and other memorabilia, suggesting a hobby or fan-themed space.\n\nThe commercial returns to the living-room couch. The man again has the keyboard on his lap. He appears attentive, looking forward toward something off-screen.\n\nA rear/side view shows what he is watching: a wall-mounted television displaying an ice hockey game. The man sits on the couch with his hands raised as if reacting to the game. A small caption at the lower left reads “Screen imagery simulated.” The room includes framed pictures, a tuxedo-like red jacket on display, speakers beside the TV, and a fireplace below it.\n\nThe camera cuts back to the man on the couch. He looks down and gestures toward the keyboard. A close-up follows of his hands typing on a black keyboard with low-profile keys.\n\nThe TV screen is then shown more closely, still displaying the hockey game. Later, the man appears again on the couch, looking forward. Another shot of the TV shows an on-screen interface/menu over the video image, with multiple list items and a highlighted row. The top right includes “Google TV,” though most menu text is too small or blurred to read clearly.\n\nA close-up of the man’s face follows. He looks pleased or amused, with a slight smile.\n\nThe final frames shift to a product display on a solid green background. White text reads “Logitech Revue,” shown beside a black keyboard and a small black set-top box. In the next product frame, the text reads “Logitech Revue with Google TV,” with the Google TV mark next to it. Small fine print along the bottom states that it requires an HDTV with HDMI in, a cable or satellite set-top box with HDMI out, and high-speed internet access.\n\nThe last frame is a white end card with the Logitech logo and the word “Logitech.” Below are “logitech.com,” a Best Buy logo, and “amazon.com,” with the same small requirement text along the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0bbd6df4f795bc83006a10771896b881a1b82dafe5a69db6d2",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 817,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 3596
+    }
+  },
+  "duration_seconds": 23.0,
+  "created_at": "2026-05-22T15:33:03Z",
+  "error": null
+}

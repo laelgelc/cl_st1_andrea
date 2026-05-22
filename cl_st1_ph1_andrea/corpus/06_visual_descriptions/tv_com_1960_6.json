@@ -1,15 +1,144 @@
 {
   "commercial_id": "tv_com_1960_6",
-  "status": "failed",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
   "input": {
     "frame_dir": "corpus/05_frames/tv_com_1960_6",
-    "frame_manifest_path": "corpus/05_frames/tv_com_1960_6/frames_manifest.json"
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_6/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_6.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0002.jpg",
+      "timestamp_seconds": 4.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0003.jpg",
+      "timestamp_seconds": 7.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0004.jpg",
+      "timestamp_seconds": 8.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0005.jpg",
+      "timestamp_seconds": 11.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0006.jpg",
+      "timestamp_seconds": 13.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0007.jpg",
+      "timestamp_seconds": 15.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0008.jpg",
+      "timestamp_seconds": 16.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0009.jpg",
+      "timestamp_seconds": 19.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0010.jpg",
+      "timestamp_seconds": 24.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0011.jpg",
+      "timestamp_seconds": 26.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_6/frame_0012.jpg",
+      "timestamp_seconds": 28.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
   },
   "output": {
     "text_path": "corpus/06_visual_descriptions/tv_com_1960_6.txt",
-    "json_path": "corpus/06_visual_descriptions/tv_com_1960_6.json"
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_6.json",
+    "response_text": "The commercial is presented in a warm, reddish-orange, soft-focus visual style, with a recurring “Nostalgic X’er” watermark at the lower right.\n\n1. **Opening close-up**: A blurry, red-tinted close-up shows a person’s face in a dim setting. The background is indistinct, suggesting low light or a party-like environment.\n\n2. **Social/dancing scene**: The scene opens up to several young people in a hazy room. Two people in the foreground are laughing and leaning toward each other as if dancing or joking. Others move in the background.\n\n3. **Brand lettering transition**: A close-up fills the frame with large red script lettering, showing only part of a word, including “ibb…”.\n\n4. **Libby’s name and large red letters**: The image pulls or cuts to show the small red script word “Libby’s” above very large red block letters. Only part of the large word is visible, including “PPY,” suggesting a product name being revealed.\n\n5. **Food on a plate**: A paper plate holds a bun or sandwich base topped with a dark, chunky meat-and-sauce mixture. A hand or utensil appears near the top, as if placing or serving the food.\n\n6. **Smiling young man**: A close-up shows a young man smiling broadly in the same warm party lighting. He appears to be looking toward someone nearby.\n\n7. **Smiling young woman**: A young woman in a red top laughs or smiles widely while facing another person whose long blond hair is seen from behind in the foreground.\n\n8. **Red shirt with product-related text**: The camera cuts closer to a red shirt with large white lettering. The visible text includes “SLOPPY JO…” though the full phrase is partially cut off. A hand or arm moves near the shirt.\n\n9. **Another view of the shirt**: The red shirt is shown again more centrally, with white lettering reading “SLOPPY J…” or similar; the complete text remains partly obscured by framing and motion.\n\n10. **Product can shot**: A can is shown prominently against the blurred reddish party background. The label reads “Libby’s” and “Barbecue Sauce and Beef Sloppy Joe.” The label also includes an image of a sandwich or bun with filling.\n\n11. **End card begins**: The background becomes plain and muted. A small shopping cart icon appears, and a cursive white line of text begins across the lower middle area. The visible text reads: “Something good is always cooking at Libby’s.”\n\n12. **Final end card**: The end card remains on screen with the shopping cart icon and the same cursive white text: “Something good is always cooking at Libby’s.” The reddish-brown background and the “Nostalgic X’er” watermark remain visible."
   },
-  "duration_seconds": 0.37,
-  "created_at": "2026-05-22T13:17:45Z",
-  "error": "OpenAI visual description request failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'temperature' is not supported with this model.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': None}}"
+  "api_metadata": {
+    "response_id": "resp_0992a654e2f7c14c006a106ceda5a881a29b6677b12418e006",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 901,
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "total_tokens": 3302
+    }
+  },
+  "duration_seconds": 20.696,
+  "created_at": "2026-05-22T14:49:38Z",
+  "error": null
 }

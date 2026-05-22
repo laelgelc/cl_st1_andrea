@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1990_112",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_112",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_112/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_112.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0002.jpg",
+      "timestamp_seconds": 3.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0003.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0004.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0005.jpg",
+      "timestamp_seconds": 8.098,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0006.jpg",
+      "timestamp_seconds": 9.432,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0007.jpg",
+      "timestamp_seconds": 10.166,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0008.jpg",
+      "timestamp_seconds": 10.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0009.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0010.jpg",
+      "timestamp_seconds": 10.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0011.jpg",
+      "timestamp_seconds": 11.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0012.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_112/frame_0013.jpg",
+      "timestamp_seconds": 14.938,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_112.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_112.json",
+    "response_text": "The commercial begins on a nearly black screen with only a small “90’s commercials” watermark visible at the lower right.\n\nA dimly lit pair of doors then opens inward, letting a narrow vertical beam of bright light into a dark interior. The setting shifts to a blue-lit, smoky, industrial-looking space with strong backlighting and spotlights. A large mechanical or armored figure appears centered in the frame, moving or being revealed in the haze.\n\nThe next shot shows a close-up of a metallic tube or nozzle-like device aimed toward the camera, attached to a larger orange-and-gray apparatus. The lighting remains dramatic and futuristic. This is followed by a dim kitchen or countertop scene: cabinets, a counter surface, and a small appliance are visible, with a thin orange light entering from the left side of the frame.\n\nThe commercial then cuts to a stylized targeting display over an insect-like form. The image appears colorized or x-ray-like, with a glowing rectangular targeting frame and crosshair lines. Text along the bottom reads: “REFUND LIMITED CALL ORKIN FOR DETAILS.” The targeting display alternates between dark and bright/negative color versions. The words “TARGET TERMINATED” appear across the upper part of the targeting frame, and then “GUARANTEED” appears in large letters below it. These overlays repeat across several quick cuts while the insect-like body remains behind the graphic.\n\nA later shot returns to the futuristic setting. A person or armored figure faces the camera, wearing a bulky suit or protective equipment with a red diamond-shaped “ORKIN” logo visible on the chest area. The figure holds or points a device toward the viewer; a bright circular light or lens is visible on it.\n\nThe final product/service frame shows a smiling man in an Orkin-style uniform: white cap, white shirt, black tie, and a red diamond Orkin logo on the shirt and cap. He stands against a smoky blue background. Large white text across the bottom reads: “1 800 800 ORKIN,” and a red diamond “ORKIN” logo appears to the right of him. The commercial then fades back to a very dark screen with the small lower-right watermark still present."
+  },
+  "api_metadata": {
+    "response_id": "resp_067313a193b8130a006a10744c6d0c81a089d16cc22364fae5",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 791,
+      "output_tokens_details": {
+        "reasoning_tokens": 345
+      },
+      "total_tokens": 4135
+    }
+  },
+  "duration_seconds": 20.666,
+  "created_at": "2026-05-22T15:21:04Z",
+  "error": null
+}

@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_1980_119",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_119",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_119/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_119.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0002.jpg",
+      "timestamp_seconds": 4.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0003.jpg",
+      "timestamp_seconds": 5.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0004.jpg",
+      "timestamp_seconds": 6.312,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0005.jpg",
+      "timestamp_seconds": 8.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0006.jpg",
+      "timestamp_seconds": 10.314,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0007.jpg",
+      "timestamp_seconds": 12.332,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0008.jpg",
+      "timestamp_seconds": 14.282,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0009.jpg",
+      "timestamp_seconds": 15.493,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0010.jpg",
+      "timestamp_seconds": 16.165,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0011.jpg",
+      "timestamp_seconds": 17.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0012.jpg",
+      "timestamp_seconds": 17.881,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0013.jpg",
+      "timestamp_seconds": 18.486,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0014.jpg",
+      "timestamp_seconds": 19.058,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0015.jpg",
+      "timestamp_seconds": 20.268,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0016.jpg",
+      "timestamp_seconds": 21.513,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0017.jpg",
+      "timestamp_seconds": 22.387,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0018.jpg",
+      "timestamp_seconds": 23.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0019.jpg",
+      "timestamp_seconds": 25.716,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0020.jpg",
+      "timestamp_seconds": 27.297,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_119/frame_0021.jpg",
+      "timestamp_seconds": 29.055,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_119.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_119.json",
+    "response_text": "The commercial begins with a nearly black/dark blue frame, with no visible product or people.\n\nIt then cuts into a rapid sequence of studio portrait-style images on a plain white background. The shots feature pairs of models and children wearing bright, eclectic clothing and accessories. A green Benetton logo tag appears near the lower right, and a green information bar runs along the bottom of the screen.\n\nAs the montage unfolds:\n\n- Two young adults pose side by side; one has voluminous hair and a light outfit, the other wears a wide-brimmed hat and a patterned blue shirt. A green “benetton” logo tag is overlaid at lower right.\n- A man and woman pose with globes; the man wears a shirt with large text across the chest, and the woman wears a colorful outfit and hat. The lower green bar now shows: “CATALOG $4.00” and “1-800-228-8000.”\n- Two young women stand arm-in-arm in bold accessories and graphic clothing. The bottom text expands to include “CREDIT CARDS ONLY.”\n- Another pair poses with globes, chains, hats, and layered clothing; the green Benetton logo and catalog/order information remain fixed along the bottom.\n- The montage continues through many similarly composed pair portraits: models wearing colorful, highly styled outfits, beads, pins, hats, scarves, and oversized accessories. Globes recur frequently as props, held in hands, tucked under arms, or placed beside the subjects.\n- Several shots include international or flag imagery: Union Jack motifs on clothing or flags, a U.S. flag, a red flag, and map/globe imagery. These visual motifs appear alongside the Benetton branding.\n- Some frames feature adults; others feature children. The children are also posed in fashion outfits with hats, patterned tops, beads, and globes.\n- One shot shows two children in coordinated outfits; another shows two small children standing close together with a large globe between them.\n- A darker, more dramatic portrait appears with two people in black hats and dark clothing, still against the white background and with the same green lower-third ordering information.\n- Near the end, one person reclines across a large blue globe-like sphere while wearing bright blue clothing; the Benetton logo and ordering bar remain visible.\n- The final shots show two children holding a large globe between them. Behind them are small flags, including a U.S. flag and a red flag. The last frame is a closer crop of the two children’s faces and the globe, with the green “benetton” logo and bottom text still present.\n\nThroughout the visible portion, the commercial is built as a fast-moving fashion/catalog montage: posed people, bright clothing, globe and flag props, and persistent ordering information on a green banner. The visible text includes “benetton,” “CATALOG $4.00,” “1-800-228-8000,” and “CREDIT CARDS ONLY.” No dialogue or audio information is visible in the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f1a7ba13989878e006a10723719ec81959cf2773b17d73916",
+    "usage": {
+      "input_tokens": 5320,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1139,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 6459
+    }
+  },
+  "duration_seconds": 28.395,
+  "created_at": "2026-05-22T15:12:19Z",
+  "error": null
+}

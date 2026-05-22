@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1960_47",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_47",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_47/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_47.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_47/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_47/frame_0002.jpg",
+      "timestamp_seconds": 5.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_47/frame_0003.jpg",
+      "timestamp_seconds": 18.408,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_47/frame_0004.jpg",
+      "timestamp_seconds": 26.416,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_47/frame_0005.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_47.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_47.json",
+    "response_text": "The commercial opens with a wide coastal landscape. The camera/view shows a beach and ocean from an elevated cliffside position. Waves are visible along the shore, with dark vegetation and large spiky plants in the foreground on the left. A small human figure or figures may be present near the lower center, but the image is too distant and grainy to identify clearly.\n\nThe next shot moves to a medium close-up of a blonde woman standing outdoors near the same coastal setting. She is positioned in front of large pointed succulent or agave-like plants, with the ocean and surf behind her. She wears a light yellow-green long-sleeved top. Her hair is styled in a voluminous, short-to-medium blonde hairstyle. She faces the camera directly with a composed expression.\n\nThe scene then changes to an indoor bathroom or dressing-room setting. The same woman stands beside a sink or counter, with a window behind her showing tropical-looking plants outside. The room contains light-colored curtains, a mirror or window frame, and bathroom items on the counter. She holds up a dark cylindrical spray can in one hand, presenting it toward the camera. Her outfit now appears fully visible: the same light top, a patterned skirt or dress bottom, and a wide belt at the waist.\n\nThe final shots return to the coastal cliff setting. A large black aerosol can is shown prominently in the foreground, composited or positioned against the seaside background. The can has gold or light-colored design elements, including a circular swirl-like logo. The text on the can is partially legible and appears to read “SUN COUNTRY.” The ocean, cliffs, vegetation, and surf remain visible behind it. The last frame holds on this product shot, with the can centered slightly to the right against the beach landscape."
+  },
+  "api_metadata": {
+    "response_id": "resp_038f2949fbdc06df006a106d9e0040819699e674735de51c3b",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 439,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1807
+    }
+  },
+  "duration_seconds": 14.795,
+  "created_at": "2026-05-22T14:52:28Z",
+  "error": null
+}

@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1990_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0002.jpg",
+      "timestamp_seconds": 1.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0003.jpg",
+      "timestamp_seconds": 11.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0004.jpg",
+      "timestamp_seconds": 13.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0005.jpg",
+      "timestamp_seconds": 13.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0006.jpg",
+      "timestamp_seconds": 14.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0007.jpg",
+      "timestamp_seconds": 16.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0008.jpg",
+      "timestamp_seconds": 27.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_69/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_69.json",
+    "response_text": "The commercial opens with an extreme close-up in warm amber and red tones, apparently showing liquid or glass with highlights and reflections. Small white on-screen text is visible near the lower right, including “AVAILABLE IN MOST AREAS” and a copyright line referencing “PLANK ROAD BREWERY, MILWAUKEE, WI.”\n\nIt then cuts to a close view of a beer bottle standing against a brick wall. The bottle is covered with frost or crushed ice. Its front label is visible: it reads “RED DOG” around a diamond-shaped design with a red bulldog face in the center. The word “Beer” appears near the top of the label, and there is additional smaller label text that is partly obscured by ice and glare.\n\nA later close-up shows part of the label at an angle. A red band with cursive lettering reads “Uncommonly Smooth,” and below it larger script text includes “Plank Road Bre...” with the rest cut off by the frame. The image emphasizes the printed packaging details and frosty surface.\n\nThe camera returns to macro shots of the bottle neck and label area. The top edge of the label and the word “RED” are seen through heavy frost and condensation. The red bulldog face becomes more centered and clearer as the sequence progresses, with the “RED DOG” lettering wrapping around it. The brick background remains warm and softly lit.\n\nAnother close-up shows the mouth or neck of a brown glass bottle, lit from behind in orange-gold tones. Frost or ice clings to the upper edge, and the glass appears wet or cold.\n\nNear the end, the product is shown more fully: a Red Dog beer bottle stands beside a tall glass of golden beer with a thick foamy head. The background is still a brick wall. At the bottom of the frame, a black band contains large white text: “You are your own dog.”\n\nThe final frame widens slightly. The frosty Red Dog bottle remains on the left, the foamy beer glass is in the center-right, and a red-white-blue striped object, possibly a hat or prop, sits to the right. The same bottom text remains visible: “You are your own dog.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_02ca8ce75bce1bf2006a107386c11c81958f3099e13e59d4dd",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 538,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 2894
+    }
+  },
+  "duration_seconds": 12.914,
+  "created_at": "2026-05-22T15:17:39Z",
+  "error": null
+}

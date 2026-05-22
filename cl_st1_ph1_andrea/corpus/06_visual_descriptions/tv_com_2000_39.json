@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2000_39",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_39",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_39/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_39.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0002.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0003.jpg",
+      "timestamp_seconds": 4.16,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0004.jpg",
+      "timestamp_seconds": 6.396,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0005.jpg",
+      "timestamp_seconds": 8.198,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0006.jpg",
+      "timestamp_seconds": 9.699,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0007.jpg",
+      "timestamp_seconds": 15.539,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0008.jpg",
+      "timestamp_seconds": 17.841,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0009.jpg",
+      "timestamp_seconds": 19.709,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0010.jpg",
+      "timestamp_seconds": 22.546,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_39/frame_0012.jpg",
+      "timestamp_seconds": 29.953,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_39.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_39.json",
+    "response_text": "The commercial begins on a nearly black frame, with only faint texture visible and a small red-and-white watermark/logo in the lower-right corner.\n\nIt then cuts to a brightly lit Sears retail showroom focused on laundry appliances. The space is white and clean, with rows of front-loading washers and dryers on both sides. Blue-and-white signage reads “Sears Research Center.” A male customer, wearing a gray hoodie over a striped shirt and jeans, walks toward a male Sears employee in a blue polo shirt with a lanyard. The employee stands near a blue kiosk with a computer monitor.\n\nA closer shot shows the customer’s face and upper body inside the store. Behind him are store counters and blurred figures, with Sears signage visible in the background. He appears to be looking ahead, likely toward the employee or display area.\n\nThe scene returns to a wider view of the Sears Research Center area. The customer and employee stand facing each other in conversation posture. Other shoppers are visible in the background, including a woman pushing a cart near dark blue appliances. Multiple washer/dryer units line the showroom.\n\nA product-focused shot shows two dark blue LG front-loading laundry machines side by side, each with a round front door and “LG” logo visible. White appliances are visible to the right, reinforcing the laundry-appliance setting.\n\nThe customer and employee are shown again near the Sears Research Center kiosk. The employee faces the customer, while the customer stands with his back or side to the camera. A second shopper is visible in the background near red appliances. The kiosk includes a monitor and a mouse.\n\nThe employee then turns toward the kiosk and reaches for or uses the mouse, suggesting he is demonstrating or searching for information on the computer. The customer stands beside him watching. The Sears Research Center sign remains prominently visible above or beside them.\n\nThe commercial briefly cuts to another part of the store. A large “Sears” sign is visible on the back wall. The area appears staged like a showroom or demonstration space, with furniture, appliances, and several people standing around a long rectangular object or display. Blue stanchion ropes mark off the area. The exact activity is unclear from the sampled frame.\n\nThe scene returns to the employee and customer at the kiosk. The computer screen is visible, showing a web-like product or information page, though most text is too small to read. The employee looks toward the camera or off to the side, while the customer stands beside him, looking in a similar direction.\n\nA bright white transition follows, filling the screen.\n\nThe closing card appears on a white background with a pale horizontal band. Centered text reads “Sears” in blue, with “Life.” below it. In the lower-right area, the website “SEARS.COM” is displayed. The commercial then fades back to a dark/black frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_080f05ce75673bae006a107532f65081a0bb0aa32efcb39a03",
+    "usage": {
+      "input_tokens": 3097,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 715,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 3812
+    }
+  },
+  "duration_seconds": 15.01,
+  "created_at": "2026-05-22T15:24:49Z",
+  "error": null
+}

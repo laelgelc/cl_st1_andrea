@@ -1,0 +1,242 @@
+{
+  "commercial_id": "tv_com_1960_85",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_85",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_85/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_85.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0002.jpg",
+      "timestamp_seconds": 0.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0003.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0004.jpg",
+      "timestamp_seconds": 1.591,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0005.jpg",
+      "timestamp_seconds": 3.393,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0006.jpg",
+      "timestamp_seconds": 3.727,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0007.jpg",
+      "timestamp_seconds": 4.06,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0008.jpg",
+      "timestamp_seconds": 4.394,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0009.jpg",
+      "timestamp_seconds": 4.594,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0010.jpg",
+      "timestamp_seconds": 4.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0011.jpg",
+      "timestamp_seconds": 5.262,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0012.jpg",
+      "timestamp_seconds": 6.73,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0013.jpg",
+      "timestamp_seconds": 7.731,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0014.jpg",
+      "timestamp_seconds": 9.399,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0015.jpg",
+      "timestamp_seconds": 13.069,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0016.jpg",
+      "timestamp_seconds": 24.748,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0017.jpg",
+      "timestamp_seconds": 24.948,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0018.jpg",
+      "timestamp_seconds": 31.755,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0019.jpg",
+      "timestamp_seconds": 32.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0020.jpg",
+      "timestamp_seconds": 33.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0021.jpg",
+      "timestamp_seconds": 34.491,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0022.jpg",
+      "timestamp_seconds": 36.226,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0023.jpg",
+      "timestamp_seconds": 41.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0024.jpg",
+      "timestamp_seconds": 43.166,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0025.jpg",
+      "timestamp_seconds": 58.838,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_85/frame_0026.jpg",
+      "timestamp_seconds": 59.316,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 26,
+    "submitted_frame_count": 26,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_85.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_85.json",
+    "response_text": "The commercial begins with a black screen, then cuts to a brightly lit kitchen or food-preparation surface.\n\nA black frying pan sits on a stovetop or hot plate. Around it are cooking ingredients and utensils: eggs on a round board, mushrooms or mushroom pieces on a cutting board, and other pale containers or bowls in the background. A pale liquid batter or egg mixture is poured into the pan, spreading across the bottom. The mixture cooks into a thin round layer. A hand uses a utensil to lift or loosen it, and the cooked round piece is tipped or slid out of the pan onto a white plate. Another thin cooked piece is placed on or near it, forming a stack or layered preparation.\n\nThe camera remains in close-up on the food. A spoon or small utensil moves a pale filling from the pan toward the plated crepe/pancake-like layer. The filling is spread or deposited along the surface. In the background, blurred kitchen objects and a jar-like container are visible. The sequence then shows close-ups of mushrooms being handled and sliced, followed by ingredients being stirred or cooked in a pan. A white spoon stirs a darker, chopped mixture in a pan. A hand then works with a small ingredient on a cutting board, but the exact item is not fully clear because of the soft focus.\n\nAfter a time gap in the sampled frames, the imagery shifts away from cooking. A person with dark hair is shown bent over a sink or basin. A faucet and sink fixture are visible. The person’s arms and head are seen from the side, but the action is not fully clear from the frames; it appears to involve leaning over the sink.\n\nThe next sequence moves into close-up mechanical or product-demonstration imagery. A hand holds or manipulates a narrow metallic object against a dark background. A small shiny metal component with a circular front and pointed top is shown in close-up, and a hand passes over or adjusts it. The exact mechanism is unclear, but it is presented like a technical demonstration.\n\nThe commercial then reveals the advertised product: a metal can labeled “DU PONT” and “guaranteed anti-leak ZEREX anti-freeze & summer coolant.” The can is shown frontally against a blue-toned background. The large word “ZEREX” dominates the label. Close-up shots focus tightly on the printed label, including the words “anti-leak,” “ZEREX,” and “anti-freeze.” A thin object or stream appears near the label in one close-up, but its exact role is unclear from the sampled frames.\n\nAnother close-up shows fingers in front of the large “ZEREX” lettering, holding or pinching a small indistinct object. The following frame overlays or displays additional text beside the product imagery. The readable text includes: “50% ZEREX SOLUTION CIRCULATING UNDER PRESSURE.” The product can remains visible to the left, with the enlarged “ZEREX” lettering in the background.\n\nThe final product shot shows two containers on a white surface against a blue gradient background: a white plastic jug with a handle and a metal can, both labeled “Du Pont anti-leak ZEREX anti-freeze.” At the bottom of the frame, a printed caption reads: “Guaranteed not to run out on you.” The last frame darkens, fading with the same product arrangement still faintly visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_02dc51874effeffb006a106e0f04e88195953c04a524a4cff5",
+    "usage": {
+      "input_tokens": 6555,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1049,
+      "output_tokens_details": {
+        "reasoning_tokens": 360
+      },
+      "total_tokens": 7604
+    }
+  },
+  "duration_seconds": 25.588,
+  "created_at": "2026-05-22T14:54:32Z",
+  "error": null
+}

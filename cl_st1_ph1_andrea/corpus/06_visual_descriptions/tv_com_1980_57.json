@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_1980_57",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_57",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_57/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_57.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0002.jpg",
+      "timestamp_seconds": 0.257,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0003.jpg",
+      "timestamp_seconds": 4.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0004.jpg",
+      "timestamp_seconds": 6.463,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0005.jpg",
+      "timestamp_seconds": 7.097,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0006.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0007.jpg",
+      "timestamp_seconds": 11.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0008.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0009.jpg",
+      "timestamp_seconds": 13.47,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0010.jpg",
+      "timestamp_seconds": 14.604,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0011.jpg",
+      "timestamp_seconds": 19.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0012.jpg",
+      "timestamp_seconds": 20.143,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0013.jpg",
+      "timestamp_seconds": 20.277,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0014.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0015.jpg",
+      "timestamp_seconds": 22.312,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0016.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0017.jpg",
+      "timestamp_seconds": 23.146,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0018.jpg",
+      "timestamp_seconds": 23.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0019.jpg",
+      "timestamp_seconds": 23.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0020.jpg",
+      "timestamp_seconds": 24.447,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0021.jpg",
+      "timestamp_seconds": 25.215,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0022.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_57/frame_0023.jpg",
+      "timestamp_seconds": 29.886,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_57.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_57.json",
+    "response_text": "The commercial opens from a black frame into a wide, static outdoor scene with a flat paved foreground, a strip of grass or low horizon, and a small chair-like structure or sign at the far left.\n\nIt then cuts to a close view of a car front with large graphic text over it: “NEXT WAVE” in large pink brush-style letters, and “COROLLA” in bold yellow block letters below. The image has a strong purple-blue tint.\n\nThe next section uses layered dissolves and superimpositions. The “NEXT WAVE COROLLA” text remains briefly while a windsurfing or sailboarding figure appears over it, standing with arms extended in front of a large sail. The montage then blends this figure with a marina or waterfront setting: a white vehicle is shown near a dock, and a person with a sail or sailboard is visible on a wooden surface. Several sailboat sails and masts appear in the background, with numbers visible on some sails.\n\nThe montage continues with a white building façade and cars passing or parked in front. A man in athletic clothing appears in the doorway area, and in close-up he is shown gripping a horizontal bar with both hands. His face and hands are superimposed over the building and vehicle imagery. A woman in a white outfit is visible at the left in one wide shot. The layering creates a repeated visual association between athletic movement, waterfront recreation, and the car.\n\nThe “NEXT WAVE COROLLA” title reappears over the building scene, again in pink and yellow lettering. After that, a white car is shown near large beach umbrellas on a paved or waterfront surface, with the same title graphic still partly visible over the scene.\n\nThe commercial then shifts to driving imagery: a white hatchback-style car travels along a road bordered by green foliage. A translucent close-up of a man’s face is layered over the moving car. This is followed by more superimposed athletic imagery: a person in light swimwear or athletic clothing appears jumping or diving from a platform, with the car continuing underneath or behind the dissolves. The car is shown on a sloped road or driveway in several overlapping shots. Large colorful umbrella shapes also pass through the layered composition.\n\nNear the end, the montage briefly shows a pool or aquatic setting with a swimmer or diver-like figure, again blended with reflections and car imagery.\n\nThe final shot presents two cars parked on grass near a waterfront or open horizon. One car is light-colored on the left; the other is a bronze or gold-colored car on the right. Three airborne athletes or dancers are suspended above and behind the cars in jumping poses. Large white block text reading “TOYOTA” appears centered at the bottom of the frame. The final frame darkens slightly while the same composition and “TOYOTA” text remain visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0004eb7df7535eeb006a10714339a4819e8efb1333eb3f6348",
+    "usage": {
+      "input_tokens": 5814,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 905,
+      "output_tokens_details": {
+        "reasoning_tokens": 327
+      },
+      "total_tokens": 6719
+    }
+  },
+  "duration_seconds": 24.993,
+  "created_at": "2026-05-22T15:08:12Z",
+  "error": null
+}

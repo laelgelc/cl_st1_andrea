@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2010_35",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_35",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_35/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_35.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0002.jpg",
+      "timestamp_seconds": 22.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0003.jpg",
+      "timestamp_seconds": 27.884,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0004.jpg",
+      "timestamp_seconds": 29.719,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0005.jpg",
+      "timestamp_seconds": 39.437,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0006.jpg",
+      "timestamp_seconds": 40.73,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0007.jpg",
+      "timestamp_seconds": 45.443,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0008.jpg",
+      "timestamp_seconds": 46.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0009.jpg",
+      "timestamp_seconds": 47.737,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0010.jpg",
+      "timestamp_seconds": 50.365,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0011.jpg",
+      "timestamp_seconds": 52.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0012.jpg",
+      "timestamp_seconds": 56.079,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0013.jpg",
+      "timestamp_seconds": 58.164,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_35/frame_0014.jpg",
+      "timestamp_seconds": 59.041,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_35.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_35.json",
+    "response_text": "The sampled frames show a nighttime urban/social setting, presented with warm blurred lights and shallow-focus close-ups.\n\nAt the start, a young man wearing glasses and a grey sweater looks down at a smartphone. Beside him stands a young woman with straight dark hair and bangs, wearing a denim jacket over a light top and a black choker. She looks off to the side rather than at the phone.\n\nThe scene then shifts to another young man in a light grey button-up shirt. He is holding a phone to his ear and smiling slightly. He stands with one arm folded, with a softly lit building or city background behind him. A dark-haired woman appears blurred in the foreground, also looking down at something in her hands. The camera moves closer to the man’s face, emphasizing his expression, then shows him in side profile against out-of-focus circular lights.\n\nThe man and the dark-haired woman are then shown very close together, facing each other. Their faces occupy most of the frame, and the lighting remains warm and intimate. A brief close-up follows of blue denim fabric: first a denim jacket pocket with a small red Levi’s tab, then a close-up of dark denim jeans from behind, showing the back pocket stitching and another small red tab. A hand rests at the waistband/hip area, suggesting physical closeness between the two people.\n\nThe woman’s face is shown in close-up as she looks directly at the man with a slight smile. The next shot shows the man facing her with his eyes closed or lowered, still very close. A wider shot then reveals them standing together at an outdoor gathering or party-like space, with string lights overhead and other people blurred in the foreground and background. The woman leans into the man, and they appear to be about to kiss or already kissing.\n\nThe imagery then changes abruptly to a blue-toned overhead view of the couple in water. They are holding each other amid splashing and rippling water, with reflected lights visible on the surface. Subsequent frames show a close-up of their lower bodies and legs moving through the water, including dark jeans and a shoe with a white sole. The water is turbulent, making the exact setting unclear.\n\nIn the final frames, the couple is underwater or partly submerged, facing each other closely and kissing. Over this image, a red-and-white Levi’s graphic appears with the text “Live in Levi’s.” In the last frame, “LEVI.COM” appears below the logo. The commercial ends with the couple still in the blue water background beneath the brand text."
+  },
+  "api_metadata": {
+    "response_id": "resp_042ce4bb49797cfe006a107790a40481a293c6a3fbe789f02a",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 823,
+      "output_tokens_details": {
+        "reasoning_tokens": 304
+      },
+      "total_tokens": 3602
+    }
+  },
+  "duration_seconds": 24.709,
+  "created_at": "2026-05-22T15:35:05Z",
+  "error": null
+}

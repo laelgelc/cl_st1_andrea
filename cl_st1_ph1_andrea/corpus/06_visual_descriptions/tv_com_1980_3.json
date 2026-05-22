@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_3",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_3",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_3/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_3.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_3/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_3/frame_0002.jpg",
+      "timestamp_seconds": 4.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_3/frame_0003.jpg",
+      "timestamp_seconds": 10.5,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_3/frame_0004.jpg",
+      "timestamp_seconds": 13.07,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_3.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_3.json",
+    "response_text": "The sampled frames show a short sequence with abrupt product and scene changes.\n\nAt the start, the frame is a static product graphic on a purple background. Two rectangular Playtex packages are shown, both labeled “playtex,” with smaller text indicating deodorant tampons. A pink horizontal band runs near the bottom with the handwritten-style phrase “Do more!” in light lettering.\n\nThe next shot cuts to a medium close-up of a woman against a dark, softly lit background. She faces the camera directly and appears to be speaking. She has short curly hair and wears a pale collared shirt under a pink cardigan, with pearl-like earrings and necklace. In one hand she holds up a small white-and-purple object, possibly a product item or package, though its exact nature is not fully clear from the frame.\n\nThe sequence then cuts to a different product graphic. A large Rolaids package appears across the upper part of the frame, labeled “SODIUM FREE” and “Rolaids ANTACID TABLETS.” The background is a white tiled surface receding in perspective. Large black text near the bottom reads “RICH IN CALCIUM.”\n\nThe final frame shows a more centered product shot of the Rolaids antacid tablets package resting on or hovering above the same white tiled surface. The “SODIUM FREE” badge and “Rolaids ANTACID TABLETS” text remain clearly visible. The earlier “RICH IN CALCIUM” wording is still faintly visible near the bottom but is partially faded or obscured.\n\nOverall, the visible sequence moves from a Playtex product display, to a woman presenting an item to camera, and then to a Rolaids antacid product display emphasizing “sodium free” and “rich in calcium.” No audio, dialogue, or slogan beyond visible on-screen text can be determined from the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b755a666ae06264006a107083ed848190b07afbba0cf08593",
+    "usage": {
+      "input_tokens": 889,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 644,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 1533
+    }
+  },
+  "duration_seconds": 16.406,
+  "created_at": "2026-05-22T15:04:52Z",
+  "error": null
+}

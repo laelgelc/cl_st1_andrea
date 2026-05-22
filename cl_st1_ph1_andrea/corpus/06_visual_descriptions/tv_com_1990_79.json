@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1990_79",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_79",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_79/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_79.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0002.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0003.jpg",
+      "timestamp_seconds": 4.427,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0004.jpg",
+      "timestamp_seconds": 5.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0005.jpg",
+      "timestamp_seconds": 8.031,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0006.jpg",
+      "timestamp_seconds": 9.299,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0007.jpg",
+      "timestamp_seconds": 12.036,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_79/frame_0008.jpg",
+      "timestamp_seconds": 12.969,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_79.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_79.json",
+    "response_text": "The commercial begins with a very dark, nearly black frame, with no clearly discernible objects or setting.\n\nIt then cuts to a close-up of a man inside or beside a vehicle, seen through glass. He is wearing reflective aviator-style sunglasses and appears to be smiling or speaking. Another person’s hat or head is partially visible at the right edge, but details are unclear. The reflections in the sunglasses suggest an outdoor road or desert-like landscape.\n\nA layered dissolve follows: the man’s face remains large in the frame while a roadway scene appears over it. Headlights of a vehicle are visible in the background, and the reflection in the sunglasses shows a uniformed person standing near a car, suggesting a traffic-stop setting.\n\nThe next layered image shows a uniformed police officer standing beside a white police car with a red-and-blue light bar. The man’s sunglassed face is still faintly superimposed over the scene. Small white text appears along the bottom: “Performance based on regular use.”\n\nAnother dissolve introduces a close-up of a red STP product bottle, partially superimposed over a roadway and vehicle imagery. The visible label reads “LAMINATED STP GAS,” though the full label is partly obscured by the dissolve. The bottom text “Performance based on regular use” remains faintly visible.\n\nThe sequence then shows two uniformed police officers beside a white police car with a blue stripe. One officer appears to be standing near the open side of the car or interacting with the other officer. The background includes desert vegetation and vertical posts or cacti. The image still has a layered, semi-transparent look from overlapping shots.\n\nA clearer road scene follows: a white police car with a red-and-blue light bar drives away on a paved road through a desert landscape. Dust rises behind and around the vehicle as it turns or accelerates. Mountains and tall cacti are visible in the background.\n\nThe final frame combines the desert police-car scene with a large product image on the left: a red bottle labeled “STP GAS TREATMENT.” On the right, large white text reads “THE EDGE.” The police car remains visible in the background, partly obscured by dust and the product/text overlay."
+  },
+  "api_metadata": {
+    "response_id": "resp_02fdb1f0307a24f6006a1073b8b1c08190a1259ee5b1ccf6b8",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 528,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 2637
+    }
+  },
+  "duration_seconds": 15.587,
+  "created_at": "2026-05-22T15:18:32Z",
+  "error": null
+}

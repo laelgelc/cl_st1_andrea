@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2020_62",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_62",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_62/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_62.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0002.jpg",
+      "timestamp_seconds": 1.458,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0003.jpg",
+      "timestamp_seconds": 4.761,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0004.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0005.jpg",
+      "timestamp_seconds": 9.499,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0006.jpg",
+      "timestamp_seconds": 11.268,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0007.jpg",
+      "timestamp_seconds": 14.437,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0008.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0009.jpg",
+      "timestamp_seconds": 25.549,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0010.jpg",
+      "timestamp_seconds": 27.284,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_62/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_62.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_62.json",
+    "response_text": "The commercial begins with a clean title card on a pale background. A stylized human silhouette appears behind the logo “medifacts,” with the subtitle “HEALTHCARE INFORMATION” underneath.\n\nIt then cuts to a retail shelf setting. A woman in a dark blazer and white shirt stands in front of shelves filled with Microban-branded products. To her left are rows of yellow and green spray bottles, and a display panel shows Microban “24 Hour” branding and product images. She faces the camera with her hands slightly raised, as if presenting information. A small “medifacts” watermark appears in the lower right.\n\nNext, the scene changes to a close-up of a hand gripping a stair railing. The setting appears to be indoors, with white railings in the background. The camera focuses tightly on the hand and metal rail. In the following frame, red animated germ-like shapes appear on the railing near the hand, visually suggesting contamination on a frequently touched surface. A small disclaimer line is visible but too small to read clearly in full.\n\nThe commercial then shows a single yellow-orange aerosol can standing upright on a white surface, with blurred shelves of similar products behind it. The can label reads “Microban 24 Hour” and “Sanitizing Spray.” The product is centered and isolated, making it the focal point.\n\nThe next scene moves into a domestic living-room environment. A woman in a purple top sprays a surface in the foreground, while a young child sits at a small table in the background near a gray sofa. Toys and household items are visible around the room. Animated red germ-like shapes are shown across the surface being sprayed. A wide turquoise information bar overlays part of the lower image, and the “medifacts” watermark remains at lower right.\n\nA closer view of the sprayed surface follows. The spray can is partly visible at the left edge, emitting a fine mist toward the surface. Numerous red germ-like shapes cover the foreground surface. A turquoise text box states: “Kills 99.9% of viruses and bacteria initially.” Fine-print disclaimer text runs along the bottom but is mostly too small to read clearly.\n\nThe commercial then presents a split-screen demonstration graphic. The left panel is labeled “UNTREATED HARD SURFACE” and shows a dark handprint-like mark against a blue surface. The right panel has a Microban “24 Hour” shield icon and a cleaner-looking blue surface. A circular marker at the bottom center reads “0 HOURS.” Additional small text appears along the bottom and right side; some of it is visible but too small or blurred to fully verify.\n\nThe woman presenter returns in the retail aisle. She now holds a yellow Microban spray can in front of her while standing beside the product display. Shelves of Microban products fill the background, and the display again emphasizes “24 HOURS.” She faces the camera, holding the product in a demonstrative pose.\n\nThe final frames return to the home setting, but the background is intentionally blurred. A child is visible out of focus at a table. Over this blurred background, the “medifacts” logo appears centered. In the last frame, the text changes to the website “mymedifacts.com,” with “medi” in turquoise and the rest in dark blue."
+  },
+  "api_metadata": {
+    "response_id": "resp_06869f179ad2bd38006a107aa92bc4819d92e442968d2588d6",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 732,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 2944
+    }
+  },
+  "duration_seconds": 14.223,
+  "created_at": "2026-05-22T15:48:07Z",
+  "error": null
+}

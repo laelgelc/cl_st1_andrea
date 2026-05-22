@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_1960_100",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_100",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_100/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_100.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0002.jpg",
+      "timestamp_seconds": 0.257,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0003.jpg",
+      "timestamp_seconds": 4.828,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0004.jpg",
+      "timestamp_seconds": 10.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0005.jpg",
+      "timestamp_seconds": 19.576,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0006.jpg",
+      "timestamp_seconds": 21.044,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0007.jpg",
+      "timestamp_seconds": 22.546,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0008.jpg",
+      "timestamp_seconds": 29.552,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0009.jpg",
+      "timestamp_seconds": 33.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0010.jpg",
+      "timestamp_seconds": 42.699,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0011.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_100/frame_0012.jpg",
+      "timestamp_seconds": 59.95,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_100.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_100.json",
+    "response_text": "The commercial is in black and white and has visible film wear, scratches, and flicker. It unfolds mainly through an office-phone exchange between two men, intercut with shots of a desk machine.\n\n1. **Opening:** The clip begins on a nearly black frame, with no discernible objects or people.\n\n2. **First office setting:** A middle-aged man in a dark suit and tie sits at a desk, holding a black telephone receiver to his ear. He faces slightly toward the camera. Behind him are vertical curtains or wall panels, and a framed picture is partly visible on the wall. A telephone base sits on the desk at the lower left.\n\n3. **Second office setting:** The scene cuts to a younger man in a dark suit and tie seated at another desk, also holding a telephone receiver. To his left is a large office machine with a rounded light-colored base, a darker top section, a visible keyboard, and a paper roll or paper feed at the top. Papers and small desk items are spread in front of him.\n\n4. **Return to first man:** The older man remains on the telephone. His posture shifts slightly; he looks downward toward the desk as if concentrating or listening.\n\n5. **Return to second man:** The younger man continues holding the phone. He sits beside the office machine and looks down toward the papers or the machine.\n\n6. **Close-up of machine operation:** A hand presses keys on the machine’s keyboard. The keys are arranged in clusters, with light and dark keys. The hand moves quickly, suggesting calculation or data entry. The exact function of the device is not labeled in the visible frames.\n\n7. **Second man using the machine:** The younger man remains on the phone while reaching toward the machine with his other hand. The machine is positioned prominently on the left side of the desk.\n\n8. **First man again:** The older man continues the phone conversation, holding the receiver close to his ear and looking forward with a composed expression.\n\n9. **Second man again:** The younger man remains seated at the desk with the machine to his left. He looks down, holding the phone, with papers and a pen or similar writing instrument on the desk.\n\n10. **Close-up of second man:** The camera moves closer to the younger man’s face. He holds the telephone receiver and looks toward the camera or slightly off-camera, appearing to speak or listen.\n\n11. **Product-style shot:** The scene cuts to the office machine alone on a plain surface against a simple background. It is centered and clearly displayed: a light-colored base, dark upper housing, a keyboard panel, and a paper roll or paper feed at the top. Any branding or text is not legible in the sampled frame.\n\n12. **Ending:** The commercial cuts back to a dark/black frame, with no visible subject."
+  },
+  "api_metadata": {
+    "response_id": "resp_002307ac4e623c09006a106e4f26048195b8cd7c140ff575d6",
+    "usage": {
+      "input_tokens": 3097,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 728,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 3825
+    }
+  },
+  "duration_seconds": 22.465,
+  "created_at": "2026-05-22T14:55:33Z",
+  "error": null
+}

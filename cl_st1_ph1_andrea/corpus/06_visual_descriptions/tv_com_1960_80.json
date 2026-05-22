@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1960_80",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_80",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_80/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_80.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0002.jpg",
+      "timestamp_seconds": 0.724,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0003.jpg",
+      "timestamp_seconds": 3.727,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0004.jpg",
+      "timestamp_seconds": 21.244,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0005.jpg",
+      "timestamp_seconds": 27.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0006.jpg",
+      "timestamp_seconds": 31.087,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0007.jpg",
+      "timestamp_seconds": 32.422,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_80/frame_0008.jpg",
+      "timestamp_seconds": 57.048,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_80.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_80.json",
+    "response_text": "The commercial is in black and white and appears to use a sequence of industrial, transportation, and outdoor images before ending on a brand graphic.\n\n1. **Opening frame:** A large rectangular sign fills most of the frame. In bold block letters it reads: **“KEEP BACK 500 FEET.”** The sign appears mounted on the rear of a vehicle or piece of equipment, though the surrounding object is mostly dark and indistinct.\n\n2. **Cut to footwear/equipment close-up:** The view changes to a close shot of heavy boots or boot-like gear on the ground. The text **“KEEP BACK 50 FEET”** is visible across the center area, either printed on a sign/object in the scene or carried over visually from the previous shot. Legs are partially visible at the sides, but the person is not clearly shown.\n\n3. **Return to warning sign imagery:** The **“KEEP BACK 500 FEET”** text appears again, now larger and partially cropped. A small human figure or worker silhouette is visible near the lower part of the frame, standing beside or beneath the large sign/equipment. The scale makes the sign or vehicle appear very large.\n\n4. **Automobile scene:** The commercial cuts to a car, likely a station wagon, driving or positioned on a dirt or gravel road. Trees line the road, and a bright open area behind them may be water or sky. The car is viewed from the front/side as it turns or moves along the road.\n\n5. **Airplane scene:** The next shot shows the underside of a large aircraft, including a jet engine, wing, and landing gear area. The aircraft appears to be on the ground at an airport or runway area. Small vehicles or equipment are visible near the plane, but details are indistinct.\n\n6. **Earthmoving or excavation scene:** A large mass of soil or rock dominates the frame, possibly part of an excavation, construction site, or earthmoving operation. The terrain is rough and uneven. A small machine or structure is visible at the right edge, but it is not clear.\n\n7. **Off-road vehicle scene:** A large-wheeled vehicle, possibly a tractor or industrial/farm vehicle, is shown from the rear or front moving through a wet, muddy, or marshy area. Water or mud appears beneath it, with trees and brush in the background.\n\n8. **Final brand graphic:** The commercial ends with a graphic display. A white silhouette map of the United States appears above a large stylized wordmark reading **“Firestone.”** The logo sits across a textured surface, likely representing a product or roadway-like background."
+  },
+  "api_metadata": {
+    "response_id": "resp_058ff873d5bcb8b4006a106df7a5f881a19517ed96d48ac13b",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 893,
+      "output_tokens_details": {
+        "reasoning_tokens": 352
+      },
+      "total_tokens": 2538
+    }
+  },
+  "duration_seconds": 22.517,
+  "created_at": "2026-05-22T14:54:06Z",
+  "error": null
+}

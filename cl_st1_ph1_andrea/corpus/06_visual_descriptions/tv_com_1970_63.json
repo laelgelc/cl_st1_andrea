@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_1970_63",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_63",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_63/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_63.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0002.jpg",
+      "timestamp_seconds": 3.46,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0003.jpg",
+      "timestamp_seconds": 5.128,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0004.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0005.jpg",
+      "timestamp_seconds": 9.766,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0006.jpg",
+      "timestamp_seconds": 10.967,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0007.jpg",
+      "timestamp_seconds": 12.235,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0008.jpg",
+      "timestamp_seconds": 14.004,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0009.jpg",
+      "timestamp_seconds": 15.005,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0010.jpg",
+      "timestamp_seconds": 19.209,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0011.jpg",
+      "timestamp_seconds": 20.043,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0012.jpg",
+      "timestamp_seconds": 22.012,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0013.jpg",
+      "timestamp_seconds": 27.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_63/frame_0014.jpg",
+      "timestamp_seconds": 29.086,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_63.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_63.json",
+    "response_text": "The clip begins with a television program title card reading “GOOD MORNING AMERICA,” with the ABC logo and the text “7am Weekdays” visible beneath it. The background is dark, and the title uses large white letters with colored circular graphics.\n\nThe scene then cuts to a close, somewhat blurry view of part of a bicycle and a person nearby, showing yellow and black bike components. The image is tight and indistinct, but it suggests preparation or display of a bicycle.\n\nNext, the commercial moves outdoors to a desert or canyon landscape. A brown/orange van is parked on a dirt area. Two bicycles with yellow wheels are visible near the van, and people appear to be handling or standing near the bikes. The background includes rocky formations and scrub vegetation.\n\nTwo riders are then shown cycling along a wide dirt road in the same desert setting. They ride side by side or close together, wearing casual clothing. The road is open, with low vegetation and distant hills.\n\nA close-up follows of a rider’s foot in a white sneaker pedaling a black-and-yellow bicycle. The camera emphasizes the crank, pedal, chain area, and yellow wheel rim as the bike moves.\n\nThe next shot shows a rider traveling left to right across the frame, with a rocky wall or cliff face behind him. The bicycle again has yellow wheels, and the rider wears a red-and-white top and jeans.\n\nA frontal shot then shows a young male rider cycling toward the camera on a dirt road. He wears a white shirt with red sleeves, blue jeans, and white shoes. The handlebars and front of the bike are visible, with desert mesas and blue sky behind him.\n\nThe commercial cuts to an adult man sitting on top of the van. He wears a plaid shirt, jeans, and a dark cap or hair, and appears to be gesturing with his hands. The sky and desert hills are visible behind him.\n\nA wide scenic landscape shot follows, showing a broad desert valley with scattered shrubs and distant mountains or mesas. No people or bicycles are clearly visible in this shot.\n\nThe riders then reappear on a dirt road, seen from behind. One cyclist rides in the foreground, while the van drives ahead on the road. The canyon landscape continues in the background.\n\nAnother action shot shows two cyclists riding through a shaded or darker area, possibly near trees or rock formations. The image is somewhat blurred, but the riders and yellow-wheeled bikes are visible.\n\nThe commercial then cuts to a product display on a plain studio background. A black-and-yellow bicycle is shown in profile, standing on a kickstand. Large yellow block text at the top reads “PRO THUNDER 4.”\n\nNear the end, there is a graphic transition with a blue gradient background and a dark reflective lower area. A partial bicycle or wheel briefly appears at the right edge before moving out of view or being cropped.\n\nThe final frame shows a brand end card. The text reads “Building the bikes America likes.” above a large “HUFFY” logo. Along the bottom, smaller text reads “WHEEL STYLE MAY VARY.” The background remains a blue gradient with a reflective dark lower portion. A “Classic Commercial Archives” watermark is visible in the lower-left corner throughout much of the clip, with an additional faint archive watermark across the lower center."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b4b40ce9e9dac23006a106fa5f1f4819297bd543ceea86551",
+    "usage": {
+      "input_tokens": 3591,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 721,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 4312
+    }
+  },
+  "duration_seconds": 17.556,
+  "created_at": "2026-05-22T15:01:11Z",
+  "error": null
+}

@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1990_113",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_113",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_113/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_113.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0002.jpg",
+      "timestamp_seconds": 22.178,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0003.jpg",
+      "timestamp_seconds": 24.948,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0004.jpg",
+      "timestamp_seconds": 26.683,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0005.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_113/frame_0006.jpg",
+      "timestamp_seconds": 29.319,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_113.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_113.json",
+    "response_text": "The commercial begins with a nearly black frame. A small “90’s commercials” style watermark appears in the lower-right corner.\n\nThe next visible scene shows a man facing the camera against a plain light background. He appears to be wearing glasses and a dark suit or uniform jacket with a white shirt and dark bow tie. He holds up two pieces of fabric or pennant-shaped cloth side by side. Both have bright color blocks, including pink/red and yellow; the left piece also shows a large pale/white lower section. Bottles or containers are partly visible at the lower left and lower right edges.\n\nThe camera then cuts closer to the two fabric pieces. The man’s hands grip the top edges. The comparison is emphasized: the left fabric looks faded or washed-out in the lower area, while the right fabric remains more brightly colored, especially yellow and pink/red. Both pieces have a V-shaped notch at the bottom.\n\nThe next scene cuts to a product shot: a blue plastic bottle of Cheer detergent with a white cap sits on a shelf or ledge. The label shows the brand name “Cheer” in large black letters on a white panel, with vertical rainbow-colored stripes and triangular color graphics. A folded or draped piece of brightly colored fabric lies in front of the bottle.\n\nThe final product frame shows the same Cheer bottle, now with large white text on the left reading: “Dirt goes. Color stays.” The bottle label also appears to include “With Advanced Formula” above the Cheer logo. The colored fabric remains lying across the surface in front of the product.\n\nThe commercial ends by cutting back to a black frame with the same lower-right watermark."
+  },
+  "api_metadata": {
+    "response_id": "resp_03e84de29ecfc83d006a107451deec8193948e199a910c5339",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 33
+      },
+      "total_tokens": 1988
+    }
+  },
+  "duration_seconds": 10.397,
+  "created_at": "2026-05-22T15:21:00Z",
+  "error": null
+}

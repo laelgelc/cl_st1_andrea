@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2010_31",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_31",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_31/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_31.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0002.jpg",
+      "timestamp_seconds": 0.232,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0003.jpg",
+      "timestamp_seconds": 1.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0004.jpg",
+      "timestamp_seconds": 2.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0005.jpg",
+      "timestamp_seconds": 3.151,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0006.jpg",
+      "timestamp_seconds": 3.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0007.jpg",
+      "timestamp_seconds": 4.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0008.jpg",
+      "timestamp_seconds": 6.071,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0009.jpg",
+      "timestamp_seconds": 7.155,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0010.jpg",
+      "timestamp_seconds": 12.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0011.jpg",
+      "timestamp_seconds": 15.039,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_31/frame_0012.jpg",
+      "timestamp_seconds": 15.246,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_31.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_31.json",
+    "response_text": "The commercial begins on a black frame, then cuts to a very low-angle close-up of an ice hockey stick moving a puck across a shiny wooden floor inside a home. The setting appears domestic, with blurred kitchen or hallway elements in the background.\n\nThe next shot widens to show a woman in a dark USA hockey jersey holding a hockey stick in a bright hallway near a staircase. She appears to be practicing or playing indoors. The scene then moves into a living room with a pale blue sofa and coffee table. On-screen text identifies her as:\n\n“Julie Chu  \nOlympic medalist  \nUSA Hockey”\n\nShe is still holding the hockey stick, positioned as if moving or controlling something on the floor.\n\nA close-up then shows a small bottle or container of amber-colored liquid standing on a countertop or table. A red object or cap is visible at the top, and the liquid appears to be spilling or being knocked over. The following close-up shows the amber liquid spread across a white surface, forming several streaks and puddles near a green rectangular object.\n\nA middle-aged woman in a gray top appears in a kitchen or dining area, holding a white paper towel sheet or towel-like material. She looks toward the mess and gestures as if preparing to clean it. The next shot shows Julie Chu again in the USA jersey, smiling, while a roll of Bounty paper towels is prominently displayed in the foreground on the right. The Bounty packaging is green and white with the brand logo clearly visible.\n\nThe commercial then shifts to a product-comparison style visual. Against a plain light background divided vertically, two small amber liquid spills appear side by side. At the bottom, small brand labels are visible: the left side refers to a “leading ordinary brand,” while the right side shows a Bounty logo. Fine-print text appears along the bottom but is too small to read clearly in the sampled frame.\n\nNext, the ad moves into a clean product display: a white roll of paper towels on a holder against a bright green background. The paper towel sheet is extended outward. Small fine print is visible at the bottom but is not legible.\n\nThe final product shot shows the Bounty roll on the left against the same green background. Large white text reads:\n\n“The small but  \nPOWERFUL  \nPICKER-UPPER”\n\nA P&G logo and Olympic rings mark appear at the lower right, connected by a curved gold line. The clip ends on a black frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0bb87119de39d5fb006a1077800cc4819daf7f2587350d2c65",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 550,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 2951
+    }
+  },
+  "duration_seconds": 14.902,
+  "created_at": "2026-05-22T15:34:38Z",
+  "error": null
+}

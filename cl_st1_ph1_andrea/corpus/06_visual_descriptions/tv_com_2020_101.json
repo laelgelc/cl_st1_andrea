@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2020_101",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_101",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_101/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_101.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0002.jpg",
+      "timestamp_seconds": 0.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0003.jpg",
+      "timestamp_seconds": 2.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0004.jpg",
+      "timestamp_seconds": 3.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0005.jpg",
+      "timestamp_seconds": 3.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0006.jpg",
+      "timestamp_seconds": 5.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0007.jpg",
+      "timestamp_seconds": 6.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0008.jpg",
+      "timestamp_seconds": 7.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0009.jpg",
+      "timestamp_seconds": 9.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0010.jpg",
+      "timestamp_seconds": 10.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0011.jpg",
+      "timestamp_seconds": 11.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0012.jpg",
+      "timestamp_seconds": 13.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_101/frame_0013.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_101.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_101.json",
+    "response_text": "The commercial opens in a kitchen setting with a white countertop and blue subway-tile backsplash. Stacks of dirty dishes and bowls are piled on both sides of the counter. Two small ducklings stand between the dish stacks, facing forward.\n\nThe view shifts to a slightly higher angle, showing more dirty plates, bowls, utensils, and containers around the ducklings. The dishes have visible food residue and grease stains.\n\nNext, there is a close-up of the two ducklings facing each other on the counter. In the blurred background, two adults are visible near the sink area. A blue dishwashing product bottle stands further back on the counter.\n\nThe ducklings move quickly out of the foreground, creating motion blur on both sides of the frame. The product bottle becomes centered and prominent between stacks of dishes. Behind it, the two adults remain near the sink, one holding or handling dishes. The bottle label is visible as “DAWN” and “POWER SUDS,” with a blue-and-white design.\n\nThe commercial then cuts to a demonstration-style shot. A hand presses a blue sponge onto a dirty plate with white foam. On the right side of the screen is a solid blue panel with large turquoise text reading “TRAP LOCK” and smaller text beneath reading “REMOVE UP TO,” though the rest of the phrase is not visible in the sampled frame.\n\nAnother demonstration shot shows a plate with yellow grease or sauce being lifted or wiped away with a mass of white foam. The same blue text panel remains on the right: “TRAP LOCK” and “REMOVE UP TO.”\n\nThe ad then uses a split-screen comparison. On the left, labeled “ORDINARY DISH SOAP,” a hand scrubs a greasy pan with a blue sponge. On the right, labeled “DAWN POWER SUDS,” a hand scrubs a similar pan with more visible foam. Both sides show the sink area and metal cookware.\n\nA second split-screen comparison shows a clear plastic container being washed. The left side is again labeled “ORDINARY DISH SOAP,” and the right side “DAWN POWER SUDS.” The right side shows more foam during scrubbing. The next frame shows both containers held up after washing; the right container appears clearer, while the left still looks more cloudy or coated.\n\nThe scene returns to the kitchen counter. The two ducklings stand near a metal dish rack filled with clean plates and a clear plastic container. The blue Dawn bottle is visible in the background on the counter, slightly out of focus.\n\nThe final product card appears on a blue background. Large text on the left reads “THE BETTER GREASE GETTER,” with “BETTER” in light blue and “GREASE GETTER” in yellow. In the center is a bottle labeled “DAWN PLATINUM PLUS POWER SUDS,” with a small “NEW” badge near the top. Two ducklings stand beside the bottle, one near a blue sponge. A P&G logo appears in the upper-right corner. Small fine print appears near the bottom but is too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_04b4bde6735182f1006a107b67b83881a29f693cdbe3ac5ac8",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 894,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 3484
+    }
+  },
+  "duration_seconds": 18.574,
+  "created_at": "2026-05-22T15:51:22Z",
+  "error": null
+}

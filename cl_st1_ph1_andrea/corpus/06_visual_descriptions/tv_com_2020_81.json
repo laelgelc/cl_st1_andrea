@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_2020_81",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_81",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_81/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_81.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0002.jpg",
+      "timestamp_seconds": 1.258,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0003.jpg",
+      "timestamp_seconds": 2.125,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0004.jpg",
+      "timestamp_seconds": 2.959,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0005.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0006.jpg",
+      "timestamp_seconds": 11.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0007.jpg",
+      "timestamp_seconds": 13.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0008.jpg",
+      "timestamp_seconds": 14.771,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0009.jpg",
+      "timestamp_seconds": 15.872,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0010.jpg",
+      "timestamp_seconds": 18.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0011.jpg",
+      "timestamp_seconds": 20.043,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0012.jpg",
+      "timestamp_seconds": 21.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0013.jpg",
+      "timestamp_seconds": 23.213,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0014.jpg",
+      "timestamp_seconds": 25.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0015.jpg",
+      "timestamp_seconds": 27.083,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_81/frame_0016.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_81.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_81.json",
+    "response_text": "The commercial opens in a teal-walled apartment room. A young man sits on a stationary exercise bike positioned on a rug between two windows. The room contains shelves, plants, a fish tank on the right, and a laptop on a small stand beside the bike. He appears to be exercising while looking toward the laptop.\n\nThe next frames use layered, semi-transparent crossfades: the room, the exercise bike, the laptop, and digital interfaces overlap. A laptop screen becomes prominent, showing an email interface. The visible email page is labeled “Sent,” with repeated entries from or to “Tax Store, me” and subject lines such as “Re: Following up.” A small message/composition window is also visible, though much of the text is blurred or partially obscured.\n\nThe perspective then shifts to a view through an aquarium: fish and green aquatic plants are in the foreground, with the young man visible behind the glass, looking forward with a focused expression. The fish tank visually frames him and softens the scene.\n\nA transition moves from the indoor setting to an urban cycling sequence. A helmeted cyclist is shown from the front, riding between tall city buildings. Some frames still show faint overlapping imagery from the earlier room/fish-tank scene, creating a double-exposure effect. A low-angle shot then shows a bicycle and rider above the camera against a cloudy sky and high-rise buildings, emphasizing motion and city scale.\n\nA close-up shows a smartphone mounted on bicycle handlebars while the rider travels along city streets. The phone lock screen shows the time “2:07” and a notification that reads, “Zen is working on your return.” The rider’s hands grip the handlebars on either side of the phone.\n\nThe cycling continues through the city: an overhead shot shows cyclists moving along a bridge or elevated path, casting long shadows. A close-up of the helmeted rider’s face follows, then a frontal shot of him riding between tall buildings, wearing a helmet, jacket, T-shirt, and shorts.\n\nThe phone appears again in close-up with a white app screen associated with TurboTax. The text is partly blurred, but the top area shows TurboTax branding, and a later close-up displays a large refund amount: “$3,453,” with smaller text beneath that is not fully legible.\n\nNear the end, the cyclist continues down a broad, mostly empty city street. The final frames show a centered brand mark over the roadway: a red circle with a white check mark and the text “intuit turbotax” in white. The cyclist is small in the distance beneath the logo, with downtown buildings lining both sides of the street."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c89b2da07f1b205006a107afe7c5081a0bf48e01de7d66c36",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 995,
+      "output_tokens_details": {
+        "reasoning_tokens": 456
+      },
+      "total_tokens": 4152
+    }
+  },
+  "duration_seconds": 26.594,
+  "created_at": "2026-05-22T15:49:44Z",
+  "error": null
+}

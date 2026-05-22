@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1950_10",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_10",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_10/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_10.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0002.jpg",
+      "timestamp_seconds": 12.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0003.jpg",
+      "timestamp_seconds": 15.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0004.jpg",
+      "timestamp_seconds": 20.143,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0005.jpg",
+      "timestamp_seconds": 55.178,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_10/frame_0006.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_10.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_10.json",
+    "response_text": "The commercial begins with a black screen.\n\nIt then cuts to a black-and-white scene inside what appears to be a pharmacy or shop. Shelves in the background hold boxed and bottled products. A woman with dark, styled hair stands in the foreground wearing a light cardigan over a collared top. Behind her, a man in glasses and a bow tie works near the shelves or counter. The woman looks downward with a serious or concerned expression.\n\nThe next shot is a close-up of an open palm holding two small, round tablets. The background is a speckled countertop or surface.\n\nThe commercial then returns to the shop counter. The man in glasses and bow tie stands beside the woman, looking down toward the counter or her hand. The woman also looks down and appears to handle or examine something in her palm. On the counter are small product containers or bottles.\n\nLater, a close-up product shot shows a hand holding or surrounding several tablets and a medicine package labeled “VANQUISH.” The image includes both round and oblong tablets, and a packet or wrapper-like item is visible near the hand.\n\nThe final frame is a staged product display on a dark background. A box labeled “VANQUISH” sits next to a small pouch or bottle-like object and two oblong tablets. Large on-screen text reads: “Relief so long lasting, most headaches don’t come back.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0d15ff7b76b4a227006a106b1ccae8819f8c33b2dd097d0f70",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1956
+    }
+  },
+  "duration_seconds": 9.217,
+  "created_at": "2026-05-22T14:41:41Z",
+  "error": null
+}

@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_1990_25",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_25",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_25/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_25.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0002.jpg",
+      "timestamp_seconds": 1.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0003.jpg",
+      "timestamp_seconds": 3.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0004.jpg",
+      "timestamp_seconds": 3.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0005.jpg",
+      "timestamp_seconds": 5.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0006.jpg",
+      "timestamp_seconds": 12.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0007.jpg",
+      "timestamp_seconds": 13.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0008.jpg",
+      "timestamp_seconds": 15.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0009.jpg",
+      "timestamp_seconds": 16.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0010.jpg",
+      "timestamp_seconds": 17.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0011.jpg",
+      "timestamp_seconds": 20.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0012.jpg",
+      "timestamp_seconds": 23.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0013.jpg",
+      "timestamp_seconds": 24.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0014.jpg",
+      "timestamp_seconds": 26.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0015.jpg",
+      "timestamp_seconds": 27.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_25/frame_0016.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_25.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_25.json",
+    "response_text": "The commercial opens very dark, with only vague shapes visible.\n\nIt then shifts into a high-contrast black-and-white montage of human faces and graphic overlays. Two overlapping faces fill the frame, with several red question marks placed around their eyes and cheeks. The style is layered and collage-like, with faces partially transparent and superimposed.\n\nA circular magnifying-glass-like graphic appears over a face. Inside it is a smiling bald cartoonish/miniature head with glasses, and handwritten text such as “Hi” appears nearby. The imagery then cuts to a young man’s face in close-up, eyes wide open, with a round spot or lens centered on his nose and small red acne/bacteria-like icons on the face.\n\nThe same male face remains as a background while large handwritten text reading “Acne Bacteria” appears across his forehead area, underlined with a green stroke. Small red circular symbols are scattered over the image. At the lower left, small text appears to read “SIMULATED BLACKLIGHT DEMO,” though it is partly blurred.\n\nThe commercial then introduces product-related typography. A large pink “OXY” logo and blue “sensitive” text dominate the frame, layered over a grayscale male face on the left. Handwritten phrases include “Virtually,” “No Drying,” and “New.” Small human silhouettes stand in front of the large text, including a figure with raised arms.\n\nNext, a woman’s face fills the right side of the frame in black and white, with pink marks on her cheek. Curved handwritten text reads “Virtually No Irritation” and “No Drying.” On the left, a smaller figure or image of a man appears in an exaggerated pose. Small text at the bottom says “SEE PACKAGE FOR DETAILS.” The word “GUARANTEED” then appears large across the top, while the woman’s face remains on the right and small walking figures appear near the center.\n\nAnother shot shows a male face in close-up with large hands framing his eyes and cheek. Blue and green glowing spots appear over the face, and the word “GUARANTEED” is written above. A small couple-like silhouette stands in front of the face.\n\nThe montage returns to the wide-eyed male face. Around him are handwritten day labels or partial words such as “Wed,” “Sun,” “Mon,” and “Fri,” along with small acne-like icons arranged across the face area, suggesting a time sequence visually.\n\nA product package then appears large in the center: a teal-and-black “OXY sensitive” package with “VANISHING” visible near the bottom. It is superimposed over the black-and-white face montage and other graphic elements.\n\nThe next frames show the male face again with two small smiling bald heads wearing glasses and sunglasses layered over it, surrounded by red heart graphics. Text in the upper left reads “USE ONLY AS DIRECTED.” The background then turns pink, isolating the two floating cartoon heads and hearts.\n\nA red prohibition symbol appears over the two heads, with handwritten text above that appears to say “Product Shot,” and white text inside or near the circle reading “In Advance.” The meaning is stylized and partially unclear, but the visual resembles a “no” symbol over the heads.\n\nA final product shot shows the “OXY sensitive” package again on a plain light background. Handwritten text reads “Product Shot,” “Invisible Gel,” and “NEW” on both sides. The package is tilted slightly, with the teal-and-black design and pink “OXY” branding prominent.\n\nThe commercial ends with a black-and-white image of a smiling young woman with her arm around a young man. Large blue stylized lettering arches above them, appearing to read “OXYCUTE ’em” or similar, though the exact wording is stylized and not fully clear. At the bottom right is the “SB SmithKline Beecham” logo."
+  },
+  "api_metadata": {
+    "response_id": "resp_01be86ca49a2114e006a1072cb79448195adb1144f152097de",
+    "usage": {
+      "input_tokens": 4085,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1155,
+      "output_tokens_details": {
+        "reasoning_tokens": 356
+      },
+      "total_tokens": 5240
+    }
+  },
+  "duration_seconds": 28.749,
+  "created_at": "2026-05-22T15:14:48Z",
+  "error": null
+}

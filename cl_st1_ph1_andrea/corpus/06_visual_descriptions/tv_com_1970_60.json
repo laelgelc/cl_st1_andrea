@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1970_60",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_60",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_60/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_60.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0002.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0003.jpg",
+      "timestamp_seconds": 7.964,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0004.jpg",
+      "timestamp_seconds": 11.434,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0005.jpg",
+      "timestamp_seconds": 15.038,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0006.jpg",
+      "timestamp_seconds": 17.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0007.jpg",
+      "timestamp_seconds": 18.808,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0008.jpg",
+      "timestamp_seconds": 24.714,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_60/frame_0009.jpg",
+      "timestamp_seconds": 27.084,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_60.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_60.json",
+    "response_text": "The commercial begins with a dark, indistinct image. Shapes of a product display or machinery and large lettering may be present, but the frame is too dim and blurred to identify clearly. A “Classic Commercial Archives” watermark is visible.\n\nThe scene then shifts outdoors to a sunny park-like setting. A group of children and young people stand together on grass, dressed largely in yellow, brown, white, and orange clothing. Several outfits have large “m” or M&M-style markings on the chest. A striped or patterned structure and trees appear in the background. The image has a soft, slightly overlaid transition effect.\n\nNext, there is a close-up of candy-like pieces being poured from containers into metal bowls or hoppers. On the left, small white pieces are poured; on the right, green pieces are poured. A polished metal spout or pipe stands between the containers. Hands and yellow clothing are partly visible behind the apparatus.\n\nThe following close-up shows a metallic machine or display panel with rectangular windows near the top. Large text reads “m&m’s,” and smaller text below reads “PLAIN AND PEANUT CHOCOLATE CANDIES.”\n\nThe commercial returns to the outdoor setting. A line of children stands near a fountain or pool, with water spraying up at the left side of the frame. Behind them is a building façade and greenery. The group appears to be watching something off-camera or facing forward.\n\nA closer group shot follows. The children and young people stand shoulder to shoulder, smiling or looking animated. Their clothing continues the yellow, brown, orange, and white color scheme, with visible “m” or M&M markings. One child on the right wears a yellow cap and white overalls with a large circular “m” badge.\n\nThe next shot moves closer to a few children in front. One child in a yellow shirt with a large “m” stands at left; another in a yellow/orange outfit holds up a small M&M’s package near the center; the child in the yellow cap and white overalls is at right. A fountain spray remains visible behind them.\n\nThe group then appears clustered more tightly together. Several children hold small M&M’s packages or candy pieces. Some are raising candy toward their mouths, while others look toward the camera. Clothing includes yellow jackets, brown shirts with yellow suspenders, orange accents, and hats or caps.\n\nIn the final frame, the group continues eating or holding the candy. A white text caption appears along the bottom reading: “The milk chocolate melts in your mouth— not in your hand.” The fountain spray is still visible at the right, and the group remains outdoors in bright daylight."
+  },
+  "api_metadata": {
+    "response_id": "resp_0636d9e7d0539670006a106f8fedc48195a46fdb9406cfce6d",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 849,
+      "output_tokens_details": {
+        "reasoning_tokens": 306
+      },
+      "total_tokens": 3205
+    }
+  },
+  "duration_seconds": 23.055,
+  "created_at": "2026-05-22T15:00:54Z",
+  "error": null
+}

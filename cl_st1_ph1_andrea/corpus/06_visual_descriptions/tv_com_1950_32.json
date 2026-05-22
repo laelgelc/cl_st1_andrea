@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1950_32",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_32",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_32/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_32.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0002.jpg",
+      "timestamp_seconds": 8.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0003.jpg",
+      "timestamp_seconds": 22.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0004.jpg",
+      "timestamp_seconds": 27.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0005.jpg",
+      "timestamp_seconds": 33.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0006.jpg",
+      "timestamp_seconds": 34.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0007.jpg",
+      "timestamp_seconds": 35.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0008.jpg",
+      "timestamp_seconds": 36.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0009.jpg",
+      "timestamp_seconds": 39.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_32/frame_0010.jpg",
+      "timestamp_seconds": 59.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_32.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_32.json",
+    "response_text": "The commercial is in black and white and appears to take place largely outdoors in a wooded picnic or park setting.\n\n1. **Opening wide outdoor shot:**  \n   The first frame shows a broad clearing bordered by dense trees and bushes. Small human figures are visible in the distance near the center-right, but their actions are not clear at this distance.\n\n2. **Group activity on the ground:**  \n   The scene cuts closer to several people gathered outdoors. A woman in a short-sleeved blouse and patterned skirt bends slightly forward with her hands extended, facing a crouching man wearing a brimmed hat. Another person is partly visible at the right edge. They appear to be handling or arranging objects on the ground, though the exact items are unclear.\n\n3. **Couple walking through shaded trees:**  \n   A man and woman walk together under trees in dappled shade. The man wears a light shirt and trousers; the woman wears a light dress. They move side by side through the park-like setting.\n\n4. **Smiling couple close-up:**  \n   The same or similar couple is shown in a closer shot. The man, in a light zip-collared shirt, and the woman, in a checkered halter-style top or dress, smile and look off to the left of the frame, as if reacting to something outside the shot.\n\n5. **Boy with an object at his mouth:**  \n   A boy stands outdoors in a light short-sleeved shirt and high-waisted trousers. He holds a long thin object angled upward, with a dark part near his mouth. The exact object is unclear from the frame; it may be a toy, tool, or instrument-like item, but this is not visually certain.\n\n6. **Man crouching near picnic equipment:**  \n   A man wearing a striped-brim hat crouches near the ground beside dark objects or equipment. He reaches forward with one hand, apparently handling something near a pile or container. The precise activity is not fully visible.\n\n7. **Smiling man close-up:**  \n   A close-up shows a smiling man in a light, short-sleeved striped shirt standing outdoors against a background of trees and foliage.\n\n8. **Two women with a metal container:**  \n   Two women stand together outdoors, smiling and looking toward the right. One holds or supports a shiny metal pail or pot while the other gestures near it. Both wear light blouses; one has a patterned or striped skirt.\n\n9. **Product package appears:**  \n   The setting changes to a studio-like product shot. A dark rectangular box with large white lettering reading **“Rinso”** appears against a soft, abstract, water-like or bubbly background. The package is tilted slightly.\n\n10. **Close-up of the Rinso box:**  \n   The final frame shows a closer view of the same **Rinso** package, still tilted against the abstract background. The word **“Rinso”** is clearly visible in large letters, and **“New!”** appears near the top left of the package. Other smaller text is present on the box, but much of it is too small or blurred to read confidently from the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_08da77b5003b2145006a106b7de22081a3adce681a4d0baa65",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1170,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3773
+    }
+  },
+  "duration_seconds": 29.563,
+  "created_at": "2026-05-22T14:43:39Z",
+  "error": null
+}

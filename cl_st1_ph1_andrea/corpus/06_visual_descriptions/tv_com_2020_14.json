@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2020_14",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_14",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_14/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_14.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0002.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0003.jpg",
+      "timestamp_seconds": 4.486,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0004.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0005.jpg",
+      "timestamp_seconds": 10.45,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0006.jpg",
+      "timestamp_seconds": 11.618,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0007.jpg",
+      "timestamp_seconds": 12.661,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0008.jpg",
+      "timestamp_seconds": 13.662,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0009.jpg",
+      "timestamp_seconds": 15.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0010.jpg",
+      "timestamp_seconds": 21.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0011.jpg",
+      "timestamp_seconds": 23.088,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0012.jpg",
+      "timestamp_seconds": 25.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0013.jpg",
+      "timestamp_seconds": 27.05,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_14/frame_0014.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_14.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_14.json",
+    "response_text": "The commercial opens with two men standing behind the lowered tailgate or rear area of a vehicle. In the foreground are two large blue Walmart reusable shopping bags with the yellow spark logo. The bags contain grocery items, including red coffee bags and other packaged products. One man is bald and wears an olive-green shirt; the other wears a black cap and black shirt.\n\nThe scene then cuts to the exterior of a fire station. A black SUV is parked near the open bay, and a red-and-white fire truck is visible inside. Several people carry the blue Walmart bags from the vehicle toward the station entrance, suggesting a delivery or unloading of groceries.\n\nInside the fire station bay, the group walks past fire trucks. The people wear casual clothing and fire-department-related shirts. The blue Walmart bags remain visually prominent, and the setting includes large fire engines, red bay doors, and industrial interior lighting.\n\nThe next scene moves into a kitchen or break-room area. Several people stand around a countertop. Multiple red bags of “FDC Coffee” are visible, both on the counter and inside the Walmart bags. A bald man in an olive-green “Fire Dept Coffee” shirt stands near the foreground beside a full Walmart bag. Other people in black shirts with fire-department-style insignia work or stand nearby.\n\nA wider kitchen shot shows several people unpacking or handling the red coffee bags. There are dish racks, a sink, cabinets, and kitchen supplies on the counter. Small white disclaimer text appears along the bottom of the frame. It states that more than two-thirds of Walmart U.S. total product spend in FY2025 was on items suppliers reported were made, grown, or assembled in the United States.\n\nClose-up shots then focus on individuals holding red “FDC Coffee” bags. One young man in a gray hoodie smiles while holding a bag. Another person in a dark shirt with a fire-department-style patch presents or holds the same red coffee package. The product branding “FDC Coffee” is clearly visible.\n\nThe scene returns to the wider kitchen. The group continues interacting around the counter, with red coffee bags and blue Walmart bags placed prominently in front of them. One person appears to gesture or toss a red coffee bag across the space, while others look toward each other.\n\nA man in a black cap and black “FDC” shirt is shown opening or reaching into a dark cabinet above the counter. Coffee mugs and kitchen utensils are visible nearby. The commercial then shows a small group facing each other in the kitchen area; the bald man in the olive shirt gestures while speaking, though no audio content is provided in the frames. A man in a black shirt faces him from the foreground.\n\nAnother shot shows a man in a black collared shirt with a fire-department-style patch drinking from a dark mug. A blue Walmart bag sits on the counter behind him. Sunglasses hang from his shirt, and he stands near a coffee maker and cabinets.\n\nThe final live-action scene returns to the fire station bay. Two men are seen from behind walking toward the bright open garage doors, with fire trucks parked on both sides. The shot is backlit, making the figures mostly silhouettes.\n\nThe commercial ends on a solid blue screen with small white legal text near the bottom. The final frame displays the white “Walmart” wordmark centered on the blue background, with small copyright and trademark text along the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_032f4fafb80cb7cf006a1079b6e05c8194b58e94ece60e47b8",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 865,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 3644
+    }
+  },
+  "duration_seconds": 21.291,
+  "created_at": "2026-05-22T15:44:12Z",
+  "error": null
+}

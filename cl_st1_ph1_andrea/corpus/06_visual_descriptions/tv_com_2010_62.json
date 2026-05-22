@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2010_62",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_62",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_62/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_62.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0002.jpg",
+      "timestamp_seconds": 0.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0003.jpg",
+      "timestamp_seconds": 6.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0004.jpg",
+      "timestamp_seconds": 13.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0005.jpg",
+      "timestamp_seconds": 16.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0006.jpg",
+      "timestamp_seconds": 17.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0007.jpg",
+      "timestamp_seconds": 21.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0008.jpg",
+      "timestamp_seconds": 26.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_62/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_62.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_62.json",
+    "response_text": "The sampled frames show an abrupt progression from a vehicle-offer information screen into a beach-themed KFC food presentation.\n\n1. **Opening information screen (0.000s)**  \n   The commercial begins on a black background with white promotional text for a **2018 Jeep Compass Latitude 4x4**. Large central text advertises **“$169/MO.”** with additional lease terms, a phone number, and the **Jeep Celebration Event** logo. Fine-print legal text appears along the bottom. No people or scenery are visible.\n\n2. **Cut to tropical beach setting (0.590s)**  \n   The scene changes sharply to a bright seaside location. A white-haired, older man with a white mustache is shown partially in frame, wearing a white suit jacket with a dark pocket square. Behind him are palm fronds, a pale staircase/railing, blue sky, and ocean water.\n\n3. **Wide view of the man by stairs (6.156s)**  \n   The man is now shown full-body or nearly full-body, standing on sand beside a decorative staircase and railing. Palm trees lean into the frame, and the ocean and beach are visible in the background. He faces toward the camera and raises one hand slightly, as if presenting or addressing the viewer.\n\n4. **Close-up of fried chicken (13.823s)**  \n   The commercial cuts to a close-up of a container filled with golden-brown, heavily textured fried chicken pieces. The focus is on the crispy coating.\n\n5. **Frying/preparation shot (16.090s)**  \n   A metal fryer basket is shown being handled over or near a white container or fryer area. Hands are visible holding the basket. The person appears to be wearing white clothing, consistent with the man’s suit, though the face is not shown.\n\n6. **Serving with tongs (17.756s)**  \n   A close-up shows a hand using metal tongs to pick up or place a piece of fried chicken among other chicken pieces. Small side dishes or containers are partially visible nearby, but their contents are not fully clear.\n\n7. **Tray presentation in beach setting (21.890s)**  \n   The man in the white suit appears again outdoors by the beach, now behind or near a tray of food. A large red-and-white KFC bucket is centered on the tray, showing a large **“20”** on the front. Smaller red-and-white containers and side items are arranged around it.\n\n8. **Closer product-and-sign display (26.056s)**  \n   The tray is positioned in front of a red chair-like display or sign. The central bucket reads **“KFC 20 FILL UP”**. Above it, a white sign with stylized black lettering reads **“it’s Extra crispy good”** or similar wording. Food items on the tray include fried chicken, side containers, and light-colored bread rolls/biscuits.\n\n9. **Final product hero shot (29.023s)**  \n   The final frame centers the KFC promotional setup: a large bucket of fried chicken labeled **“KFC 20 FILL UP”**, with the **“it’s Extra crispy good”** sign above it. The tray holds additional sides and biscuits/rolls in red-and-white branded containers. Palm trees, sand, and tropical greenery remain in the background, reinforcing the beach setting. The man’s hands are visible near the sign, but his face is out of frame in this final shot."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a0bda479cf66c2f006a10782e7b4c81a1a2f842b6c5a17599",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1073,
+      "output_tokens_details": {
+        "reasoning_tokens": 352
+      },
+      "total_tokens": 2907
+    }
+  },
+  "duration_seconds": 26.713,
+  "created_at": "2026-05-22T15:37:45Z",
+  "error": null
+}

@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1950_20",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_20",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_20/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_20.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0002.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0003.jpg",
+      "timestamp_seconds": 38.295,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0004.jpg",
+      "timestamp_seconds": 38.395,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0005.jpg",
+      "timestamp_seconds": 46.903,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0006.jpg",
+      "timestamp_seconds": 55.145,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0007.jpg",
+      "timestamp_seconds": 56.246,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_20/frame_0008.jpg",
+      "timestamp_seconds": 61.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_20.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_20.json",
+    "response_text": "The commercial begins with an almost completely black frame, with only a tiny light speck visible.\n\nAround 11 seconds, the image changes to a very dark, backlit scene. Several tall vertical objects appear in silhouette, resembling posts or stands, with a brighter haze behind them. The setting is difficult to identify because the objects are mostly in shadow.\n\nLater, the commercial cuts to a dim close-up of a young woman dressed in white, wearing a veil and a formal gown-like garment. She appears bride-like, facing forward with her head slightly lowered against a dark background.\n\nImmediately after, the visual style shifts to a brighter black-and-white image of a smiling young woman. She wears a sleeveless light-colored top or dress and rests one hand against her cheek while looking upward and to the side. Her other hand is held slightly forward, palm up, as if presenting or feeling something.\n\nThe next scene shows a close-up of a woman’s face tilted upward while two hands touch or rub her cheeks. The image suggests washing, cleansing, or facial care, but the exact action is not fully clear from the sampled frame.\n\nThe following shot appears inside a circular vignette or iris frame. A smiling young woman sits beside a man. She looks toward him while he looks back at her. Their hands are near an object in the foreground, but it is not clear what it is.\n\nThe commercial then cuts to a product close-up: a wrapped bar labeled “CAMAY,” with a small profile image in a circular emblem above the name. Below the brand name, the package reads: “THE SOAP OF BEAUTIFUL WOMEN.” The product is arranged among soft draped fabric and flowers or clustered decorative berries.\n\nThe final frame shows the product display more fully. A wrapped Camay bar lies beside an unwrapped pale soap bar on shiny fabric. Flowers or berries remain in the background. The packaging again prominently shows the brand name “CAMAY” and the line “THE SOAP OF BEAUTIFUL WOMEN.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_006aece1af0cf7ba006a106b471ca08191aa9ca8b7ecbe242f",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 547,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 2656
+    }
+  },
+  "duration_seconds": 11.955,
+  "created_at": "2026-05-22T14:42:26Z",
+  "error": null
+}

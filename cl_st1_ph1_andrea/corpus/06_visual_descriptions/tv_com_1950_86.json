@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1950_86",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_86",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_86/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_86.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0002.jpg",
+      "timestamp_seconds": 1.424,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0003.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0004.jpg",
+      "timestamp_seconds": 11.568,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0005.jpg",
+      "timestamp_seconds": 46.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0006.jpg",
+      "timestamp_seconds": 49.472,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_86/frame_0007.jpg",
+      "timestamp_seconds": 71.028,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_86.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_86.json",
+    "response_text": "The commercial is in black and white and appears to move from problem/action scenes into a product demonstration or endorsement setting.\n\n1. **Opening dark scene (0.000s)**  \n   The first frame is very dark and low-contrast. Several shadowy figures appear gathered around a table or work surface, but the details are indistinct. Objects are clustered in the center, though it is unclear exactly what they are.\n\n2. **Overlaid close-up / transition image (1.424s)**  \n   The next frame is visually busy and seems to contain overlapping imagery, possibly from a dissolve or montage. There are shapes resembling hands, fabric, and possibly water or suds, but the exact action is unclear because of the superimposition and motion blur.\n\n3. **Child at a table outdoors (7.931s)**  \n   A young child wearing a light-colored cap or bonnet sits at a small table or tray outdoors. The child appears to be handling food or an object near the chest area. Light-colored items, possibly food or cloth, are visible on the table. The child’s clothing looks light in color.\n\n4. **Outdoor play/ground scene (11.568s)**  \n   The scene changes to an outdoor grassy area. A child or person in light clothing lies on the ground, stretched out. Two standing children or young people are at the upper body area, apparently holding or pulling the person by the arms. This visually suggests rough outdoor play or contact with the ground.\n\n5. **Product display with Oxydol (46.670s)**  \n   After a large time gap in the sampled frames, the commercial shows a product display. A large box labeled **“Oxydol”** dominates the center, with a smaller Oxydol box in front. At the top of the large package, the text **“BLEACHES AS IT WASHES”** is visible. White garments or laundry hang in the background and lie on the surface in front.\n\n6. **Woman presenter with product and white garments (49.472s)**  \n   A smiling woman sits or stands behind a table in a laundry-like setting. An Oxydol box is placed prominently in front of her on the left side of the table. Behind her are hanging white garments, including a dress-like garment and a shirt or blouse. Folded cloths or linens are on the table.\n\n7. **Final product-and-presenter shot (71.028s)**  \n   The final frame remains in the same setting. The woman smiles toward the camera and gestures near or toward the Oxydol box. The product remains clearly visible in the foreground, with white clothing hanging behind her and folded laundry on the table. The composition presents the woman, the box, and clean white garments together as the closing visual emphasis."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e76142263299fb3006a106c42fcf881a1a8485e1b8b610b4e",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 924,
+      "output_tokens_details": {
+        "reasoning_tokens": 349
+      },
+      "total_tokens": 2786
+    }
+  },
+  "duration_seconds": 26.735,
+  "created_at": "2026-05-22T14:46:53Z",
+  "error": null
+}

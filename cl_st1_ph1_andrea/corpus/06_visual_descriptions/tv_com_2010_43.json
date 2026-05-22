@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2010_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0002.jpg",
+      "timestamp_seconds": 2.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0003.jpg",
+      "timestamp_seconds": 3.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0004.jpg",
+      "timestamp_seconds": 4.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0005.jpg",
+      "timestamp_seconds": 6.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0006.jpg",
+      "timestamp_seconds": 8.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0007.jpg",
+      "timestamp_seconds": 9.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0008.jpg",
+      "timestamp_seconds": 10.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0009.jpg",
+      "timestamp_seconds": 11.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0010.jpg",
+      "timestamp_seconds": 12.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0011.jpg",
+      "timestamp_seconds": 13.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0012.jpg",
+      "timestamp_seconds": 14.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0013.jpg",
+      "timestamp_seconds": 16.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0014.jpg",
+      "timestamp_seconds": 16.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0015.jpg",
+      "timestamp_seconds": 17.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0016.jpg",
+      "timestamp_seconds": 18.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0017.jpg",
+      "timestamp_seconds": 18.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0018.jpg",
+      "timestamp_seconds": 19.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0019.jpg",
+      "timestamp_seconds": 20.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0020.jpg",
+      "timestamp_seconds": 20.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0021.jpg",
+      "timestamp_seconds": 24.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_43/frame_0022.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_43.json",
+    "response_text": "The commercial opens in a bright suburban driveway outside a beige house. A small mint-green Fiat 500 is parked on the driveway. A man stands to the left near the car, while a young woman in a pink cardigan, light blue shirt, and light pants comes from the house toward the car. The lawn, porch, windows, and plants make the setting look residential and well kept.\n\nThe next shots focus on the man in the driveway area, standing near hedges and smiling broadly, and then on the young woman approaching the mint-green car. She looks pleased and animated as she reaches the front passenger-side area of the car. A closer shot shows her smiling at the vehicle, with the house porch behind her.\n\nThe scene then cuts sharply to a different location: an urban/industrial street or parking area under or near an overpass. A black sedan is shown in a parking space, but it is badly stripped: the wheels are missing, the car rests on blocks, and the front bumper/grille area is removed or incomplete. A man in a gray suit stands nearby, looking toward the damaged car. The background includes brick and industrial buildings, a stop sign, traffic, and stacked pallets.\n\nAnother brief shot shows an older man wearing glasses and a green apron standing in a red-brick doorway, holding a cloth or towel. He appears to be watching from the doorway near trash bags and dumpsters. The commercial then returns to the stripped black car and the suited man, who gestures with his hands in apparent frustration or disbelief.\n\nThe ad intercuts between the two situations: the suburban driveway with the intact mint-green Fiat and the young woman’s delighted reaction, and the urban scene with the stripped black sedan and the suited man’s agitated gestures. The driveway man is also shown smiling near the mint-green car. The older apron-wearing man is shown again in the brick doorway, appearing to speak or react, though no audio is available.\n\nAs the intercutting continues, the young woman near the Fiat becomes more visibly excited, smiling and then laughing with her mouth open. The suited man by the stripped car gestures emphatically, raising and moving his hands as he faces the vehicle. The black sedan remains stationary on blocks throughout these shots, with visible missing wheels and front parts.\n\nNear the end, the setting changes to the entrance of a State Farm office. A man in the plaid shirt enters or approaches a glass doorway with a red “StateFarm” sign visible inside. In the next exterior shot, the plaid-shirted man and the young woman are outside the glass-fronted office near a ramp and railing. The red State Farm signage is visible through the windows.\n\nThe final frame is a solid red screen with centered white text reading: “Here to help life go right.” A small line of fine print appears near the bottom, but it is too small to read clearly in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a2ee428c2bccef8006a1077bca14c819d879ae5bf5a52c8d1",
+    "usage": {
+      "input_tokens": 4291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 823,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 5114
+    }
+  },
+  "duration_seconds": 21.81,
+  "created_at": "2026-05-22T15:35:46Z",
+  "error": null
+}

@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_1970_76",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_76",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_76/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_76.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0002.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0003.jpg",
+      "timestamp_seconds": 14.204,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0004.jpg",
+      "timestamp_seconds": 37.06,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0005.jpg",
+      "timestamp_seconds": 46.036,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0006.jpg",
+      "timestamp_seconds": 51.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0007.jpg",
+      "timestamp_seconds": 55.979,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0008.jpg",
+      "timestamp_seconds": 58.782,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0009.jpg",
+      "timestamp_seconds": 65.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0010.jpg",
+      "timestamp_seconds": 69.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0011.jpg",
+      "timestamp_seconds": 72.128,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0012.jpg",
+      "timestamp_seconds": 82.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0013.jpg",
+      "timestamp_seconds": 86.91,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_76/frame_0014.jpg",
+      "timestamp_seconds": 88.045,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_76.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_76.json",
+    "response_text": "The commercial begins with a black screen.\n\nIt then cuts into a highly stylized, colorful scene with theatrical lighting in pink, red, blue, and purple tones. The imagery appears to feature dolls, puppets, mannequins, or human-like figures rather than clearly identifiable live actors. One early close-up shows a face-like figure with large round goggles or glasses, curly hair or textured material around the sides of the head, and decorative markings on the face. The lighting is saturated and dreamlike.\n\nA second figure appears with a pale green-blue face, long hair or hanging strands, and a prominent dark star shape over one eye. The background contains glowing bulbs and reflective objects, suggesting a staged display or fantasy shop-window-like environment.\n\nThe next shots show more of this crowded, decorative setting. Figures or mannequins appear posed among hanging lights, shiny metallic surfaces, ribbons, and props. One shot shows a figure raising an arm near round hanging lights, with bright red sparkling reflections to the right. The space is dense with objects and has a theatrical, fashion-display quality.\n\nA product-like display appears: a small open case or box is shown among bright props and reflective materials. The contents are not fully clear from the frame, but the scene suggests watches or jewelry are being displayed. The lighting continues to be vivid and neon-like.\n\nAnother shot shows a curly-haired figure leaning toward or working near a shiny mechanical-looking fixture. The figure is lit in pink and red. Nearby are colorful props and possibly small decorative flowers or watch-display elements. The figure’s activity is not fully clear from the sampled frame.\n\nA later shot shows another human-like figure in profile, holding or interacting with a large object against a dark, red-lit background. The object is not clearly identifiable in the frame.\n\nThe commercial then cuts to a close-up of a wristwatch or pendant-like watch with a round face. It is shown against a blue background, with a decorative top piece and a chain or strap visible below. The watch face is centered and brightly lit.\n\nThis is followed by a clearer close-up of a wristwatch with a round white dial, dark hour markers, and a metallic case. The watch is attached to a dark strap and fills most of the frame.\n\nThe scene returns to the theatrical setting with the curly-haired figure beside the shiny fixture. The figure’s head is tilted upward, and arms appear extended toward nearby props. The lighting remains pink-red.\n\nAnother figure appears in blue and purple light, partially obscured by foreground objects and bright reflections. A watch or circular object may be present near the center, but the image is layered and not fully clear.\n\nA wide shot shows a cluttered, colorful arrangement of fabrics, props, dolls or mannequins, hanging lamps, and display objects. The setting resembles an elaborate fantasy display filled with soft pink fabrics and scattered decorative items. A small watch-like object is visible near the lower center, though details are limited.\n\nThe final shots present a graphic title card on a dark background. The text reads:\n\n“TIMEX  \nFASHION WATCHES  \n9⁹⁵–19⁹⁵”\n\nThe lettering is bright blue and white with a pink ornamental border. The last frame holds this graphic cleanly against black."
+  },
+  "api_metadata": {
+    "response_id": "resp_053c26299fe1ca1f006a106fd0ab808192aee2d11086c98a63",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 834,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 3613
+    }
+  },
+  "duration_seconds": 23.995,
+  "created_at": "2026-05-22T15:02:00Z",
+  "error": null
+}

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2000_70",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_70",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_70/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_70.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0002.jpg",
+      "timestamp_seconds": 2.559,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0003.jpg",
+      "timestamp_seconds": 4.127,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0004.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0005.jpg",
+      "timestamp_seconds": 10.033,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0006.jpg",
+      "timestamp_seconds": 12.536,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0007.jpg",
+      "timestamp_seconds": 15.338,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0008.jpg",
+      "timestamp_seconds": 17.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0009.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0010.jpg",
+      "timestamp_seconds": 20.71,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0011.jpg",
+      "timestamp_seconds": 21.711,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0012.jpg",
+      "timestamp_seconds": 25.649,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_70/frame_0013.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_70.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_70.json",
+    "response_text": "The commercial opens in a bright, minimalist laundry-room setting with white walls, round ceiling lights, and two washing-machine stations positioned side by side. Two adult women stand behind the stations: a long-haired woman in a pale lavender top on the left, and a short-haired woman in a light blue button-up shirt on the right. Product boxes are placed prominently on the counter: a red-and-blue “Wisk” box on the left and a green/orange box on the right with partially visible “Power…” branding.\n\nThe sequence presents a side-by-side laundry comparison. The woman on the right initially holds a white cloth or garment, while the woman on the left stands with one hand on her hip, looking toward her. A close-up then shows the left woman looking to the side, followed by a wider shot in which both women face their respective washing-machine areas.\n\nThe left woman reaches into the laundry area and lifts a white fabric item marked with large visible stains in yellow, orange, and green. A small caption appears at the bottom, but it is only partly legible; it appears to list featured stains. The right woman is then shown in close-up with her hands on her hips, watching.\n\nThe right woman later handles a small green item, likely a tablet or cleaning product, while standing near the green/orange product box. The left woman looks down into her laundry area, then raises her hands while holding or gesturing with a small white item. The right woman continues holding the green item and looks across at the left woman.\n\nThe action becomes more demonstrative: the left woman moves energetically, and a close-up of the right woman shows her holding a translucent blue-green cup or container. The word “Dramatization” appears at the lower left of the screen. In the next wider shot, the left woman holds up a large dark green, grass-like or leafy-looking rectangular object in front of her chest, while the right woman stands with the blue-green item in hand. The “Dramatization” label remains visible.\n\nThe final frames shift to a product pack shot. Folded white towels are stacked on the left, and two red “Wisk” packages are displayed on the right and center. The packaging reads “Wisk” and “Tablets.” A small caption along the bottom reads: “Demonstration on non-bleach tablets only. Bleach tablets coming soon.” The commercial ends on this product display."
+  },
+  "api_metadata": {
+    "response_id": "resp_05de6ff85500e23f006a1075e2ffd48193a9282168d47fd221",
+    "usage": {
+      "input_tokens": 3591,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1017,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 4608
+    }
+  },
+  "duration_seconds": 27.208,
+  "created_at": "2026-05-22T15:27:56Z",
+  "error": null
+}

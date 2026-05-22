@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1970_93",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_93",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_93/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_93.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_93/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_93/frame_0002.jpg",
+      "timestamp_seconds": 29.03,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_93.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_93.json",
+    "response_text": "The commercial opens in a dimly lit interior. An older man with gray hair, seen from behind and in profile, is wearing a light-colored jacket or suit coat. He is turned to his right, appearing to look toward something off-screen. The background is dark and softly focused, with what may be household furnishings or shelves, but the details are unclear.\n\nBy the final sampled frame, the scene shows a television set on a wooden surface. A hand in the foreground holds a rectangular remote-control device with several buttons, aimed toward the TV. On the television screen, a woman is visible, seated and facing forward; she appears to be wearing a green top and holding or resting near a cup or mug. Plants or leafy decor are visible around the television. The TV itself has a large frame and side controls, suggesting an older-style set.\n\nOnly these two moments are visible, so the intervening action between the man looking off-screen and the later shot of the remote control and television is not shown. No dialogue, music, or spoken content can be determined from the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_05db63e5acca101c006a107019ae48819e876d02a1e94557d3",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 782
+    }
+  },
+  "duration_seconds": 7.332,
+  "created_at": "2026-05-22T15:02:56Z",
+  "error": null
+}

@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2000_18",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_18",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_18/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_18.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0002.jpg",
+      "timestamp_seconds": 1.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0003.jpg",
+      "timestamp_seconds": 2.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0004.jpg",
+      "timestamp_seconds": 2.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0005.jpg",
+      "timestamp_seconds": 3.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0006.jpg",
+      "timestamp_seconds": 5.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0007.jpg",
+      "timestamp_seconds": 7.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0008.jpg",
+      "timestamp_seconds": 8.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0009.jpg",
+      "timestamp_seconds": 10.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0010.jpg",
+      "timestamp_seconds": 11.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_18/frame_0011.jpg",
+      "timestamp_seconds": 12.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_18.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_18.json",
+    "response_text": "The commercial opens with close-up shots of a group of people standing outdoors in warm sunlight. Several faces are visible in the foreground: a young man in the center, people on either side, and more people behind them. Their expressions appear serious or intent, as if they are looking toward something off-camera.\n\nThe camera then moves or cuts rapidly through the crowd. The next few frames are heavily blurred, showing indistinct faces and bodies, suggesting quick motion or a fast transition. The background includes greenery and warm-toned architecture, but details are not clear.\n\nThe scene changes to a bright kitchen or dining room. Several people are gathered around a table covered with food and cooking items. A large circular object resembling a game wheel or target stands in the room; it has a red center and a ring of light-colored circular spots around it. A woman and a child are near the wheel, while other people sit or stand around the table. The setting is domestic, colorful, and well lit.\n\nA close-up follows of a young girl in a pink sleeveless top standing near the large circular object. Potted cactus plants are visible behind her on a windowsill or shelf. She looks slightly to the side, with a calm or expectant expression.\n\nThe setting then shifts dramatically to an outdoor desert-like scene with tall green cacti rising against a bright blue sky. A group of smiling people gathers together, and a young girl is lifted or held up among them. The group appears celebratory, with several people looking upward toward the girl.\n\nNext, the product is shown on a table in the foreground. Three yellow Old El Paso packages are visible, including hard and soft taco-related products; the brand name “Old El Paso” can be read on the boxes. Around the packages are taco shells, tomatoes, a lime, and other ingredients. People are visible in the background, out of focus, suggesting a festive or social gathering.\n\nThe commercial then cuts to close-up food shots. One frame shows a filled hard taco shell containing seasoned meat, lettuce, tomato, and other toppings. Another frame shows several soft tacos or folded tortillas stacked together, filled with meat, lettuce, tomato, and green pieces that appear to be vegetables.\n\nIn the final frame, the scene returns to a lively table setting. A man at the table bites into a taco while a young girl beside him holds food and looks toward him. Other people stand and move in the background, with colorful decorations visible. The table includes vegetables, a bowl, and a patterned cloth, reinforcing the meal or party setting."
+  },
+  "api_metadata": {
+    "response_id": "resp_051ce15bbddf8394006a1074ca435c819db379c073802cea44",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 630,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2842
+    }
+  },
+  "duration_seconds": 19.18,
+  "created_at": "2026-05-22T15:23:09Z",
+  "error": null
+}

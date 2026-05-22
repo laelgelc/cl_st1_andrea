@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2010_49",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_49",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_49/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_49.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0002.jpg",
+      "timestamp_seconds": 3.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0003.jpg",
+      "timestamp_seconds": 5.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0004.jpg",
+      "timestamp_seconds": 8.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0005.jpg",
+      "timestamp_seconds": 10.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0006.jpg",
+      "timestamp_seconds": 12.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0007.jpg",
+      "timestamp_seconds": 15.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0008.jpg",
+      "timestamp_seconds": 18.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0009.jpg",
+      "timestamp_seconds": 21.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0010.jpg",
+      "timestamp_seconds": 23.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_49/frame_0011.jpg",
+      "timestamp_seconds": 27.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_49.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_49.json",
+    "response_text": "The commercial begins with expansive outdoor mountain imagery. The opening frame shows a forested landscape under a clear blue sky, with a snow-covered mountain peak in the distance. Small dark shapes near the top edge of the frame appear to be aircraft or objects in the sky, but their exact form is not fully clear.\n\nThe next several frames continue with aerial views of a large snow-covered mountain. The camera perspective appears to move around or above the mountain, showing steep ridges, glaciers, and cloud layers. Large white sheet-like forms are visible across parts of the mountain. They look like stretched fabric or flexible material draped over the terrain, though the exact nature of the material is not explicitly shown.\n\nAround 8 seconds, the viewpoint shifts upward toward the sky. Several helicopters are visible flying near a tall, translucent or white sail-like sheet. Sunlight shines through or around the material, emphasizing its thinness and scale. The following frame shows more of the white material spread across rocky mountain surfaces, forming peaks, folds, and suspended curves. The material resembles enormous fabric or bag-like sheeting stretched across the landscape.\n\nAnother wide mountain view follows, now showing rocky cliffs and patches of snow with additional white sheet-like forms at the sides of the frame. This sequence visually connects the mountain environment with the imagery of large, flexible white material.\n\nAt about 15 seconds, the setting changes to a domestic kitchen. A woman wearing a bright pink long-sleeved top stands near a sink and countertop. Through a large window behind her, a mountain and lake-like landscape are visible. Wooden cabinets, a faucet, a potted plant, and household items appear in the kitchen. She is handling a white trash bag.\n\nA close-up then shows the white trash bag with the red “GLAD” logo printed prominently near the top. The bag surface has a textured or patterned appearance. Small fine print appears at the bottom of the frame; it is partly legible and seems to refer to “ForceFlex technology” preventing rips and tears, though the full text is difficult to read clearly.\n\nThe woman is then shown outdoors carrying the filled white Glad trash bag. She stands near a driveway or curb area with greenery, flowers, a house roof, a lake, and a mountain in the background. A large gray trash bin is positioned nearby. In the next wider shot, she is standing near the gray bin and a smaller blue bin, with the same scenic mountain-and-lake background behind her.\n\nThe final frame changes to a bright yellow product shot. A box of Glad trash bags is shown against a glowing yellow background. The visible packaging includes the “GLAD” brand name and the word “ForceFlex.” Other product text is present but partly blurred or washed out by the bright light, making it difficult to read with certainty. A short line of yellow text appears near the bottom left, but it is not clearly legible in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c5406e10a1f90d2006a1077df82d48190963466cc57de8638",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 730,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2942
+    }
+  },
+  "duration_seconds": 18.071,
+  "created_at": "2026-05-22T15:36:17Z",
+  "error": null
+}

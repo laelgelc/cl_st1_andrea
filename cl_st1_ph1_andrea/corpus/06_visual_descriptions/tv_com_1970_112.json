@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1970_112",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_112",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_112/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_112.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0002.jpg",
+      "timestamp_seconds": 9.885,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0003.jpg",
+      "timestamp_seconds": 11.535,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0004.jpg",
+      "timestamp_seconds": 15.17,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0005.jpg",
+      "timestamp_seconds": 17.829,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0006.jpg",
+      "timestamp_seconds": 24.191,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0007.jpg",
+      "timestamp_seconds": 26.513,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0008.jpg",
+      "timestamp_seconds": 28.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0009.jpg",
+      "timestamp_seconds": 31.933,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0010.jpg",
+      "timestamp_seconds": 34.12,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0011.jpg",
+      "timestamp_seconds": 37.587,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0012.jpg",
+      "timestamp_seconds": 40.718,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_112/frame_0013.jpg",
+      "timestamp_seconds": 88.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_112.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_112.json",
+    "response_text": "The commercial begins with a distant exterior view of a large white house set behind a wide grassy field, with trees around it and a pale sky above.\n\nIt then shifts through soft dissolves and superimposed images into an indoor social gathering. Elderly and formally dressed adults appear in a bright interior, including a man in a dark suit and women nearby. The imagery briefly layers the indoor figures over the exterior house, creating a double-exposure effect.\n\nThe next shots show more of the gathering: people standing and leaning near a table in a sunlit room with shutters; a smiling woman in a green outfit greeting or touching the arm of an older man in a suit; and groups of adults and children clustered closely together.\n\nA large console-style CRT television becomes central. Several people lean over or gather around it. In one shot, the TV screen appears blank or pale, while adults and children crowd around the set. Another shot shows an older man, a woman holding a baby, and a small child standing near the group.\n\nSeveral close shots focus on older adults at a table. An elderly woman with glasses and an elderly man in a suit sit side by side; the man appears to have a white flower on his lapel. In a following shot, both raise their hands to cover their eyes. A blurred white-and-brown shape is visible in the foreground, but it is not clear what it is.\n\nA wider shot shows a larger group gathered around the television, with adults and children seated and standing close together. Some people’s hands are together as if clapping or reacting, though the exact action is not fully clear from the sampled frame. A child in a light dress with a hair bow stands beside the large TV and appears to touch or adjust the controls.\n\nNear the end, there is a close-up of an elderly woman wearing glasses, smiling or laughing, again with layered color and dissolve effects.\n\nThe final frame is a product card on a dark background. It shows a small image of the white house and the visible text: “Color you can count on.” Below that, larger text reads: “THE NEW XL-100 RCA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0bf2064054caa169006a10705b174c81919c6f2aeb7c7e07dd",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 952,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3542
+    }
+  },
+  "duration_seconds": 27.686,
+  "created_at": "2026-05-22T15:04:22Z",
+  "error": null
+}

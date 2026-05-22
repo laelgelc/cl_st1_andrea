@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1970_79",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_79",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_79/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_79.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_79/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_79/frame_0002.jpg",
+      "timestamp_seconds": 24.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_79/frame_0003.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_79.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_79.json",
+    "response_text": "The commercial begins with an almost completely dark frame. No clear objects, people, or setting are visible.\n\nLater, the image cuts to a storefront or retail display. A large sign near the top reads “TOASTMASTER,” with a small logo at the left. In the center of the image there is a prominent price shown as “$15.88” or similar, though the cents are slightly unclear because of the low resolution. Along the bottom of the frame, white on-screen text gives an address: “5075 LONG BEACH BLVD.” and “NORTH LONG BEACH.” The scene appears to show a store window or exterior display, but details of the products inside are indistinct.\n\nThe final frame shows an outdoor street view in daylight. Cars are visible on a road at the left and foreground. A large roadside sign or billboard appears above a low building; the lettering on the sign is partly unclear, though large block letters are visible. Tall decorative structures, including one topped with a red star-like shape, stand near the building. The same white address text remains overlaid at the bottom: “5075 LONG BEACH BLVD.” and “NORTH LONG BEACH.” The footage has a soft, low-resolution broadcast look with black borders at the sides."
+  },
+  "api_metadata": {
+    "response_id": "resp_04dea0a4ae1a0591006a106fe352a081a080de5954efcbe3e2",
+    "usage": {
+      "input_tokens": 700,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1105
+    }
+  },
+  "duration_seconds": 12.392,
+  "created_at": "2026-05-22T15:02:07Z",
+  "error": null
+}

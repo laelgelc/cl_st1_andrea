@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2020_48",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_48",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_48/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_48.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0002.jpg",
+      "timestamp_seconds": 2.192,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0003.jpg",
+      "timestamp_seconds": 4.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0004.jpg",
+      "timestamp_seconds": 5.862,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0005.jpg",
+      "timestamp_seconds": 9.699,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0006.jpg",
+      "timestamp_seconds": 12.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0007.jpg",
+      "timestamp_seconds": 13.411,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0008.jpg",
+      "timestamp_seconds": 15.33,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0009.jpg",
+      "timestamp_seconds": 16.373,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0010.jpg",
+      "timestamp_seconds": 16.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0011.jpg",
+      "timestamp_seconds": 17.999,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0012.jpg",
+      "timestamp_seconds": 19.25,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0013.jpg",
+      "timestamp_seconds": 19.709,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0014.jpg",
+      "timestamp_seconds": 24.631,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0015.jpg",
+      "timestamp_seconds": 29.761,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0016.jpg",
+      "timestamp_seconds": 30.804,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0017.jpg",
+      "timestamp_seconds": 32.389,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0018.jpg",
+      "timestamp_seconds": 34.724,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0019.jpg",
+      "timestamp_seconds": 37.143,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0020.jpg",
+      "timestamp_seconds": 38.103,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0021.jpg",
+      "timestamp_seconds": 40.772,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0022.jpg",
+      "timestamp_seconds": 41.565,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0023.jpg",
+      "timestamp_seconds": 42.649,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0024.jpg",
+      "timestamp_seconds": 43.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0025.jpg",
+      "timestamp_seconds": 49.531,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0026.jpg",
+      "timestamp_seconds": 51.575,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0027.jpg",
+      "timestamp_seconds": 52.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0028.jpg",
+      "timestamp_seconds": 53.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0029.jpg",
+      "timestamp_seconds": 56.955,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2020_48/frame_0030.jpg",
+      "timestamp_seconds": 59.041,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_48.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_48.json",
+    "response_text": "The commercial begins at an outdoor racquet-sport venue in bright daylight. Several people stand near a court-side counter or bar area. A young man in an orange athletic shirt holds dark gear, while a young woman in a burgundy-red tennis-style outfit and sunglasses stands beside him. Other people and umbrellas are visible in the background near fenced courts.\n\nThe next shot is a close-up of beer being poured into a tall, tilted glass. The glass is branded “Michelob ULTRA,” with pale golden beer and foam forming inside.\n\nThe scene returns to the outdoor venue. A middle-aged blonde woman and a middle-aged man in navy athletic jackets lean over a table or counter, looking toward someone off-camera. Two glasses of beer are blurred in the foreground. The pair appear amused and attentive, with the man slightly behind the woman. Subsequent close-ups show them continuing to look off to the side, smiling or reacting.\n\nThe man and woman then appear walking near fenced courts. The man, still in a navy track jacket, smiles broadly while moving forward. The blonde woman stands farther back, holding a paddle and watching.\n\nThe action shifts onto a sunny outdoor court. The young woman in the burgundy-red outfit prepares to play, holding a paddle and a yellow ball. In a wider view, she stands with the young man in the orange athletic shirt, both holding paddles and facing the court. Other players are visible in the background. The young woman then turns and walks near the net, her hair moving as she looks across the court.\n\nThe blonde woman in the white sleeveless sweater over a dark long-sleeve top appears in motion on the court, holding a paddle. She looks upward and swings or moves as if tracking the ball. Her expression is focused and energetic.\n\nA cut returns to the young pair at the bar/counter area. The young woman looks tired or unimpressed, leaning forward slightly, while the young man stands beside her in the orange shirt, holding his hands near his chest.\n\nThe middle-aged man then appears on a court in a white T-shirt, turning his body and extending an arm as if making or following a shot. The setting remains outdoors, with court fencing and distant buildings visible.\n\nThe commercial then moves to a different outdoor location near the coast at sunset or golden hour. From a distance, two people are seen on a grassy rise under a large tree. Another shot, framed as if viewed through binoculars, shows two people seated on sand near a cooler filled with cans or bottles. A wide aerial view shows a curved coastal court or recreation area beside the ocean, with long shadows and the sun low over the water.\n\nA closer shot shows a man and a woman by the ocean holding or carrying a cooler full of colorful cans or bottles. The woman wears a white cap and sleeveless white top; the man wears a white T-shirt. They look toward someone off-frame.\n\nThe action returns to racquet-sport play. The middle-aged man now wears a sleeveless gray athletic top and holds a paddle overhead, preparing to hit. A young woman with long hair in a white top and patterned skirt or shorts also swings a paddle on an outdoor court.\n\nAnother group appears wearing matching light-blue shirts. A Black man in a blue shirt smiles and gestures with arms extended while holding a paddle. The shirt has visible white text including “PRO vs PRO,” though the smaller text is not fully legible. A wide shot shows him and a female teammate positioned on a court, both ready to play. The woman in the blue shirt is then shown running or turning near the net.\n\nThe commercial shifts to a nighttime or indoor-stadium-like court with spectators. The middle-aged man in the gray sleeveless top makes an intense swinging motion. A man in a teal shirt and backward cap looks upward, with a large green wall behind him showing “Michelob ULTRA” branding. Another shot shows the court surface and boundary line, suggesting a ball has landed near the line, though the ball is not clearly visible in that frame. The middle-aged man then raises both arms in celebration while holding his paddle, with a blurred crowd cheering or reacting behind him.\n\nThe final scene takes place indoors in a sleek, dimly lit room resembling a lounge or retail display space. Illuminated refrigerators line the sides, and shelves or product displays appear in the background. A large silver trophy sits on a pedestal behind the two main older players. The man stands holding a glass of beer; the blonde woman sits in front of him, smiling and also holding a beer. Small legal/disclaimer text appears along the bottom but is too small to read fully in the sampled frame.\n\nThe final frame overlays the product branding prominently in the center: “Michelob ULTRA” with the red vertical mark, and below it the text “SUPERIOR LIGHT BEER.” The man raises his glass slightly while the woman smiles below the logo. The trophy and product displays remain visible in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_02f959111482b19f006a107a65078081a29ef894d79dc328a3",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1117,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 6920
+    }
+  },
+  "duration_seconds": 28.577,
+  "created_at": "2026-05-22T15:47:13Z",
+  "error": null
+}

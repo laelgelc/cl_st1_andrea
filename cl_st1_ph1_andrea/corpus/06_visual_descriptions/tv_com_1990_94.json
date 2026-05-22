@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_94",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_94",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_94/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_94.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0002.jpg",
+      "timestamp_seconds": 1.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0003.jpg",
+      "timestamp_seconds": 3.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0004.jpg",
+      "timestamp_seconds": 6.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0005.jpg",
+      "timestamp_seconds": 7.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0006.jpg",
+      "timestamp_seconds": 8.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0007.jpg",
+      "timestamp_seconds": 12.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0008.jpg",
+      "timestamp_seconds": 15.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0009.jpg",
+      "timestamp_seconds": 17.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0010.jpg",
+      "timestamp_seconds": 18.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0011.jpg",
+      "timestamp_seconds": 20.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0012.jpg",
+      "timestamp_seconds": 21.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0013.jpg",
+      "timestamp_seconds": 23.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0014.jpg",
+      "timestamp_seconds": 25.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0015.jpg",
+      "timestamp_seconds": 27.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0016.jpg",
+      "timestamp_seconds": 28.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0017.jpg",
+      "timestamp_seconds": 35.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0018.jpg",
+      "timestamp_seconds": 38.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0019.jpg",
+      "timestamp_seconds": 39.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0020.jpg",
+      "timestamp_seconds": 41.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0021.jpg",
+      "timestamp_seconds": 43.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0022.jpg",
+      "timestamp_seconds": 45.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0023.jpg",
+      "timestamp_seconds": 49.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0024.jpg",
+      "timestamp_seconds": 49.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0025.jpg",
+      "timestamp_seconds": 49.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0026.jpg",
+      "timestamp_seconds": 49.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0027.jpg",
+      "timestamp_seconds": 51.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0028.jpg",
+      "timestamp_seconds": 54.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0029.jpg",
+      "timestamp_seconds": 55.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_94/frame_0030.jpg",
+      "timestamp_seconds": 59.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_94.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_94.json",
+    "response_text": "The commercial begins in near darkness with faint centered text reading “Did you know?” It then fades into a black-and-white/blue-gray industrial interior: a large warehouse or loft-like workspace with beams, windows, pallets or slatted flooring in the foreground, and equipment in the background. The same “Did you know?” text remains large and centered over this setting.\n\nThe visuals then shift into a rapid series of dissolves and superimpositions. Interior office and industrial scenes overlap with close-up silhouettes of people and structural elements. Large windows, metal beams, partitions, desks, and office equipment are repeatedly visible. The style is hazy and layered, making some details indistinct.\n\nThe setting becomes clearer as a large open-plan office or production workspace. There are multiple people at desks and in cubicles, with computers, telephones, chairs, papers, and partitions. The space has tall windows, exposed framing, and an industrial loft atmosphere. Workers are shown from different angles: standing near windows, seated at desks, leaning over work areas, and moving through the space. The imagery continues to use double exposure, so people and office objects overlap with beams, windows, and shadows.\n\nAround 15–16 seconds, a wide interior shot shows people in separate areas of the workspace, with metal supports and glass or open partitions. White text appears at the bottom: “All domestic 800 services, except intrastate basic.” The commercial continues with layered shots of office workers seated at desks, computer monitors, telephones, and cubicle walls. Several people appear to be using phones or working at computers, though specific actions are sometimes obscured by the superimposed imagery.\n\nThe middle section emphasizes movement through the workspace: silhouettes on stairs or catwalks, people seen through railings, and high-angle or low-angle views of the industrial interior. The lighting is high contrast, with bright windows and dark foreground silhouettes. Some frames show a person moving along an upper walkway or stair structure; others show a large open room with hanging lights and metal trusses.\n\nAt about 43–45 seconds, another industrial/warehouse-like view appears with machinery or vehicles silhouetted in the distance. White text along the bottom reads: “Based on basic 800 service comparisons. Average connect time: AT&T - 5.4 secs; nearest competitor - 6.7 secs.” The next shots return to office cubicles, workers, computers, and phones, still presented with layered dissolves.\n\nNear the end, the visuals show closer views of people in the workplace. One close-up shows a man with glasses in shadow, partially overlapped by another person passing in front of him. Other shots show people on or near upper levels of the office, with skylights and beams overhead. The montage continues to combine faces, desks, railings, and architectural details into semi-transparent overlays.\n\nAt around 55 seconds, a large centered text message appears over an office scene: “Better service, better results. Another AT&T advantage.” A seated worker and office equipment are visible behind the text, though darkened by the overlay.\n\nThe final frame cuts to a black background with the AT&T globe logo above white text. The text reads: “AT&T” followed by “The right choice.” Beneath that is the phone number “1 800 222-0400,” then smaller text: “Call for full details. Expires 12/9/91.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0e2386591ae00d19006a1073f6f9c48195acc3d54b702e716f",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 994,
+      "output_tokens_details": {
+        "reasoning_tokens": 294
+      },
+      "total_tokens": 8537
+    }
+  },
+  "duration_seconds": 29.019,
+  "created_at": "2026-05-22T15:19:47Z",
+  "error": null
+}

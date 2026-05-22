@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1970_80",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_80",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_80/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_80.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_80/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_80/frame_0002.jpg",
+      "timestamp_seconds": 29.036,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_80/frame_0003.jpg",
+      "timestamp_seconds": 29.734,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_80.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_80.json",
+    "response_text": "The sampled commercial begins with a soft-focus close-up of a Christmas-themed decorative object. A brown pine cone lies or is attached among green foliage, with a metallic or ceramic object partially visible on the right. The image has a warm, holiday display quality, but the exact setting is unclear from this frame.\n\nNear the end, the scene changes to an indoor Christmas display or retail-like setting. Three adults stand behind a counter or display of household items, possibly cookware or gifts. Christmas wreaths and decorations are visible on both sides, and a decorated Christmas tree appears at the left edge. Large white serif text is overlaid across the center of the image reading: “The Broadway really sings at Christmas.” The three people appear to be posed as if singing or performing, with open mouths and expressive faces, but no audio content can be inferred from the frame alone.\n\nThe final sampled frame is black, indicating the commercial has ended or cut/faded out."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f96577cdd740a97006a106fe8a66081a0b1559044f3c3a90e",
+    "usage": {
+      "input_tokens": 700,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 977
+    }
+  },
+  "duration_seconds": 8.088,
+  "created_at": "2026-05-22T15:02:08Z",
+  "error": null
+}

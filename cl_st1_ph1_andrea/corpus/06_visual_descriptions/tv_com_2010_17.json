@@ -1,0 +1,256 @@
+{
+  "commercial_id": "tv_com_2010_17",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_17",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_17/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_17.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0002.jpg",
+      "timestamp_seconds": 0.891,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0003.jpg",
+      "timestamp_seconds": 1.258,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0004.jpg",
+      "timestamp_seconds": 2.592,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0005.jpg",
+      "timestamp_seconds": 3.727,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0006.jpg",
+      "timestamp_seconds": 4.094,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0007.jpg",
+      "timestamp_seconds": 4.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0008.jpg",
+      "timestamp_seconds": 5.428,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0009.jpg",
+      "timestamp_seconds": 6.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0010.jpg",
+      "timestamp_seconds": 7.764,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0011.jpg",
+      "timestamp_seconds": 9.232,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0012.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0013.jpg",
+      "timestamp_seconds": 11.401,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0014.jpg",
+      "timestamp_seconds": 11.735,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0015.jpg",
+      "timestamp_seconds": 12.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0016.jpg",
+      "timestamp_seconds": 13.97,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0017.jpg",
+      "timestamp_seconds": 15.005,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0018.jpg",
+      "timestamp_seconds": 16.172,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0019.jpg",
+      "timestamp_seconds": 16.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0020.jpg",
+      "timestamp_seconds": 16.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0021.jpg",
+      "timestamp_seconds": 18.408,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0022.jpg",
+      "timestamp_seconds": 19.276,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0023.jpg",
+      "timestamp_seconds": 20.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0024.jpg",
+      "timestamp_seconds": 21.177,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0025.jpg",
+      "timestamp_seconds": 22.178,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0026.jpg",
+      "timestamp_seconds": 23.446,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0027.jpg",
+      "timestamp_seconds": 24.481,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_17/frame_0028.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 28,
+    "submitted_frame_count": 28,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_17.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_17.json",
+    "response_text": "The commercial opens indoors, showing two hooded figures from behind looking out of a window. One wears a red hood and the other a light gray hood. A bright, flared transition follows.\n\nThe figures are then revealed as large anthropomorphic hamster-like characters. Inside a worn-looking room with patterned wallpaper, two of them adjust their hooded sweatshirts; one wears a red hoodie with large white lettering, while another wears a white hood under a black jacket.\n\nThe scene moves outside to an urban residential street. Several hamster characters stand on a stoop and sidewalk in front of an older building. Their clothing includes hip-hop-style hoodies, jackets, caps, headphones, chains, and sneakers. A large portable boombox sits near them. A green Kia Soul is introduced shortly afterward, parked or moving along the city street with the hamster characters gathered around it. Small legal text appears along the bottom in one frame.\n\nThe setting is repeatedly shown as a stylized city environment. One shot shows a skyline and a billboard with “H&H” visible. Another shot looks upward at street signs reading “HAMSTERDAM AVE” and “ONE WAY,” visually linking the city setting to the hamster characters.\n\nSeveral scenes contrast the green Kia Soul with unusual hamster-themed or improvised vehicles. A silver toaster-like vehicle travels down the street with hamster characters riding in it. In another scene, a cardboard-box-like vehicle with red markings moves along a city street. Hamster characters are also seen on sidewalks and near these vehicles.\n\nThe green Kia Soul is shown in multiple exterior angles: front, rear, side, and moving shots. Close-ups show the Kia badge on the front grille and the car driving through city streets. Interior shots show hamster characters inside the vehicle: one in a red hoodie appears at the steering wheel, another in a black jacket and white hoodie sits in front, and another in a green tracksuit is visible behind them. One interior shot focuses on the center console while a paw holds a phone.\n\nThe hamster characters perform or pose in several urban locations. One hamster in a red hoodie stands near a boombox while another in a black jacket and white hoodie dances or gestures near the Kia. A drummer-like hamster in a green uniform appears outside a theater with a marquee sign; the exact marquee text is only partly legible. Another shot shows a hamster near a car wash, leaning against the Kia, with a “CAR WASH” sign visible behind. Two white hamster characters wearing pink tutu-like skirts appear dancing near the car wash area.\n\nLater shots continue to show the Kia Soul driving through the city and passing colorful walls or murals. A side-window view shows the hamster passengers moving or gesturing inside while the red-hooded hamster remains at the front.\n\nThe commercial ends on a white product-information screen. It shows the Kia logo and the text “KIA MOTORS” with “The Power to Surprise.” To the right, large text reads “2010 KIA SOUL,” followed by pricing information: “$149 / Month,” “36 Month Lease,” “$2,299 Due at Signing,” and “SOUL + A/T.” A “TOP SAFETY PICK” reference appears near the bottom with dense fine print underneath."
+  },
+  "api_metadata": {
+    "response_id": "resp_09f79119f5ab4565006a10773ca2a081939b2ce50dc5da7ae8",
+    "usage": {
+      "input_tokens": 5425,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1174,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 6599
+    }
+  },
+  "duration_seconds": 29.905,
+  "created_at": "2026-05-22T15:33:46Z",
+  "error": null
+}

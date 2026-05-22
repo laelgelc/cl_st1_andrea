@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2000_9",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_9",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_9/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_9.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0002.jpg",
+      "timestamp_seconds": 0.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0003.jpg",
+      "timestamp_seconds": 3.66,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0004.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0005.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0006.jpg",
+      "timestamp_seconds": 9.065,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0007.jpg",
+      "timestamp_seconds": 10.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0008.jpg",
+      "timestamp_seconds": 10.767,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0009.jpg",
+      "timestamp_seconds": 11.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0010.jpg",
+      "timestamp_seconds": 11.568,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0011.jpg",
+      "timestamp_seconds": 12.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0012.jpg",
+      "timestamp_seconds": 13.603,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0013.jpg",
+      "timestamp_seconds": 15.939,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0014.jpg",
+      "timestamp_seconds": 16.84,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0015.jpg",
+      "timestamp_seconds": 17.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0016.jpg",
+      "timestamp_seconds": 21.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0017.jpg",
+      "timestamp_seconds": 22.779,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0018.jpg",
+      "timestamp_seconds": 22.913,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0019.jpg",
+      "timestamp_seconds": 23.446,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0020.jpg",
+      "timestamp_seconds": 23.58,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0021.jpg",
+      "timestamp_seconds": 23.713,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0022.jpg",
+      "timestamp_seconds": 25.682,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0023.jpg",
+      "timestamp_seconds": 29.441,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_9/frame_0024.jpg",
+      "timestamp_seconds": 29.919,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_9.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_9.json",
+    "response_text": "The commercial begins on a black screen.\n\nA studio talk-show set appears. There is a small stage with armchairs, a coffee table, potted plants, brick and tan wall panels, studio lights, cameras, and a seated audience. Two wall screens display the name “Ryan Moore.” A middle-aged male host in a light blue shirt holds a handheld microphone. A Black woman in a bright pink top sits in one of the chairs as a guest. The audience is visible to the left, clapping or watching.\n\nThe camera cuts closer to the woman in pink. The host leans in from the side and holds the microphone near her. She gestures with her hand near her chin and appears to be speaking. A close-up then shows the host addressing the camera or audience with the microphone.\n\nThe scene shifts abruptly to a blurry, fast movement on the set. A large white chicken-like character appears near the armchairs and the “Ryan Moore” sign. The motion suggests an entrance or sudden reveal, though the exact action is hard to see in the sampled frames.\n\nThe woman in pink is shown seated with her arms crossed, looking upward and to the side with a skeptical or unimpressed expression. The next wide studio shot reveals two oversized white chicken characters facing the audience and set. The studio equipment, audience, cameras, and overhead lighting are visible, making the set look like an active television production.\n\nThe two chicken characters are then seated in the armchairs on stage. They have long yellow legs, white feathered bodies, and yellow beaks. The host stands beside them with the microphone. The “Ryan Moore” sign remains visible behind them. The host appears to interact with the chickens as if interviewing them.\n\nA close-up shows the host standing with the microphone, smiling slightly. Another shot shows the chickens seated in the chairs, one with its head turned toward the host. The woman in pink is visible in a later wide shot, seated across from the chickens while the host stands between them. The talk-show layout is clear: chickens on the left, coffee table in the middle, woman on the right, host standing.\n\nA large screen on the set then displays a video image: one of the chicken characters appears beside a young child at a table. A cup with red lettering is visible, but the full text is not clear in the frame. The image resembles a recorded clip or evidence being shown on the studio screen.\n\nBack on stage, the chickens sit beneath the “Ryan Moore” sign. The woman in pink reacts strongly: she turns, pushes herself up from the chair, and begins to stand. In a wide shot, she is fully rising and moving forward toward the chickens. The host stands to the side with his arms crossed while the screen behind them shows a close-up image of the child.\n\nThe commercial then cuts away from the talk-show set to a close-up of cooked food. Strips of chicken and sliced vegetables, including green and red peppers, are shown steaming and glistening. The final food shot includes a centered yellow-and-red “Foster Farms” logo with a small chicken icon. Beneath it appears the text: “Always natural. Always fresh.”\n\nThe commercial ends on a black screen."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a8518b8463f7f80006a10749d504081a3afc595127d69785d",
+    "usage": {
+      "input_tokens": 6061,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 799,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 6860
+    }
+  },
+  "duration_seconds": 20.939,
+  "created_at": "2026-05-22T15:22:25Z",
+  "error": null
+}

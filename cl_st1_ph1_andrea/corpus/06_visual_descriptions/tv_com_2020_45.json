@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2020_45",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_45",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_45/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_45.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0002.jpg",
+      "timestamp_seconds": 1.091,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0003.jpg",
+      "timestamp_seconds": 1.391,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0004.jpg",
+      "timestamp_seconds": 2.392,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0005.jpg",
+      "timestamp_seconds": 3.56,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0006.jpg",
+      "timestamp_seconds": 4.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0007.jpg",
+      "timestamp_seconds": 5.428,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0008.jpg",
+      "timestamp_seconds": 7.43,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0009.jpg",
+      "timestamp_seconds": 8.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0010.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0011.jpg",
+      "timestamp_seconds": 9.566,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0012.jpg",
+      "timestamp_seconds": 10.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0013.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0014.jpg",
+      "timestamp_seconds": 13.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_45/frame_0015.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_45.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_45.json",
+    "response_text": "The commercial opens outside a modern glass-fronted building. A person in black riding gear sits on or rides a white motorcycle with green accents. A small black TRESemmé logo appears near the bottom of the frame.\n\nThe next shots move closer to the rider, a blonde woman wearing a black leather jacket. She lifts off a black-and-white motorcycle helmet. Large white text overlays the image: “0% PARABENS.” As she removes the helmet, her hair becomes visible.\n\nThe scene then cuts to a sleek, modern meeting room. The same blonde woman, now wearing a bright green outfit, walks toward or stands at a conference table while seated people are visible at either side. Overlaid white text reads: “0% PARABENS” and “100% FIERCE.”\n\nA new setting follows: a bright dance or studio space with tall windows and a reflective floor. A woman in pale clothing is shown dancing or moving across the room. White text reads: “0% SULFATES.” A closer shot shows her upper body and face as she raises her arms; the overlay expands to “0% SULFATES” and “100% PASSIONATE.”\n\nThe tone then shifts to a dark, stage-like or backstage environment lit in blue and purple. A woman with long dark hair stands between dark curtains, facing forward. No product text is visible in this frame.\n\nThe commercial then shows a close-up of a black handbag. Inside the bag is a TRESemmé dry shampoo product can with a light blue/white label. A hand reaches into or near the bag. The bag is positioned beside the motorcycle. A quick shot of the motorcycle mirror follows, reflecting the blonde woman’s face against a blue sky background.\n\nAnother product-focused scene appears on a vanity or dressing table. A TRESemmé dry shampoo can stands upright among cosmetics, nail polish, small bottles, flowers, and a mirror. The lighting is warm and decorative. A wider shot then shows a dressing-room or backstage vanity with illuminated bulbs around a mirror; a woman with voluminous dark hair is seated or leaning near the table, surrounded by beauty products and flowers.\n\nThe commercial then cuts to a full product lineup on a dark counter against a dark tiled background. Multiple TRESemmé bottles and cans are arranged in a row, including white, grey, green-accented, and purple-accented packaging. A small plant and grooming items are visible at the sides.\n\nThe final frames are black end cards. In the center is the TRESemmé logo with the line “USED BY PROFESSIONALS.” Below it, large white text reads: “0% COMPROMISE.” A small Unilever logo appears in the upper right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_02e3dd65fc031819006a107a5a460c819ca4ca8c3a0a01d606",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 664,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 3632
+    }
+  },
+  "duration_seconds": 17.11,
+  "created_at": "2026-05-22T15:46:51Z",
+  "error": null
+}

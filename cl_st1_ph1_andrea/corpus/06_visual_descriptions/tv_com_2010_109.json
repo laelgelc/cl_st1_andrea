@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2010_109",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_109",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_109/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_109.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0002.jpg",
+      "timestamp_seconds": 2.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0003.jpg",
+      "timestamp_seconds": 3.894,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0004.jpg",
+      "timestamp_seconds": 5.195,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0005.jpg",
+      "timestamp_seconds": 6.229,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0006.jpg",
+      "timestamp_seconds": 7.697,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0007.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0008.jpg",
+      "timestamp_seconds": 10.0,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0009.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0010.jpg",
+      "timestamp_seconds": 14.738,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0011.jpg",
+      "timestamp_seconds": 16.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0012.jpg",
+      "timestamp_seconds": 17.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0013.jpg",
+      "timestamp_seconds": 18.508,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0014.jpg",
+      "timestamp_seconds": 19.876,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0015.jpg",
+      "timestamp_seconds": 22.379,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0016.jpg",
+      "timestamp_seconds": 23.513,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0017.jpg",
+      "timestamp_seconds": 25.181,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_109/frame_0018.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_109.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_109.json",
+    "response_text": "The commercial opens indoors with a young girl wearing a dark hooded rain jacket, smiling while standing near two adults seated nearby. The adults also appear to be smiling, suggesting a family/home setting.\n\nThe scene then cuts to the exterior of a house in wet weather. A child and an adult woman, both wearing rain hoods or coats, step down from the doorway while another adult stands behind them. Small white disclaimer text appears near the bottom of the frame: “Real people aware their comments may appear in advertising.” The ground outside is wet.\n\nThe camera moves to close-up details of outdoor mess: a child’s pink rain boot running or stepping through wet ground, a muddy pink bicycle handlebar, and a bicycle tire with mud around the tread and rim. The focus is on mud and water being picked up outside.\n\nBack inside, the adult woman sits on a couch beside a man. She looks to the side with a slightly exaggerated or amused expression. The next shots show pink rain boots moving indoors, then a boot lying on the floor near other footwear. Mud has transferred onto the floor. A close-up shows muddy footprints and dirt marks on a light-colored floor near a doorway or wall.\n\nA wider living-room shot shows the man and woman sitting on a dark sofa with colorful pillows. The wall behind them has nautical-style decor, including a ship’s wheel. The woman raises her hands or gestures upward while looking toward the room, as if reacting to the mess.\n\nThe scene cuts back to the house entrance, where a bright green box labeled “Swiffer” sits on the porch in front of the door. Indoors, the man and woman open the green box. The woman lifts out a purple Swiffer product box, and the camera shows the packaging more closely. Inside the green box, bottles and other cleaning supplies are visible.\n\nThe next shot shows a purple-and-white floor-cleaning mop being used on a dirty patch on a light floor. The mop head approaches the muddy area. In the kitchen, the woman is seen using the mop while a girl in a pink top watches or sits nearby. The kitchen has light counters, wooden cabinets, and appliances in the background.\n\nA close-up then shows the mop head or cleaning pad being lifted or displayed; the pad appears darkened with dirt from the floor.\n\nNear the end, the commercial returns to an outdoor view of feet and boots on muddy ground, including the child’s pink rain boots and adult boots. The final frame is a purple end card with the “Swiffer WETJET” logo displayed on the left side."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e266bcb323f0966006a107933d3d8819f987c0391a321e854",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 4216
+    }
+  },
+  "duration_seconds": 19.638,
+  "created_at": "2026-05-22T15:41:59Z",
+  "error": null
+}

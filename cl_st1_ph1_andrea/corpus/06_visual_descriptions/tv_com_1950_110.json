@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1950_110",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_110",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_110/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_110.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0002.jpg",
+      "timestamp_seconds": 6.596,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0003.jpg",
+      "timestamp_seconds": 17.507,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0004.jpg",
+      "timestamp_seconds": 22.679,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0005.jpg",
+      "timestamp_seconds": 27.517,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0006.jpg",
+      "timestamp_seconds": 32.455,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0007.jpg",
+      "timestamp_seconds": 39.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0008.jpg",
+      "timestamp_seconds": 47.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0009.jpg",
+      "timestamp_seconds": 51.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_110/frame_0010.jpg",
+      "timestamp_seconds": 60.084,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_110.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_110.json",
+    "response_text": "The commercial is in black and white and follows a middle-aged man outdoors beside a vintage convertible car.\n\nAt the beginning, there is a close-up of the man’s face. He has short hair, wears a plaid shirt, and holds a cigarette near his mouth. The background is partly out of focus, with a building or window structure behind him.\n\nThe shot then widens to show him standing at the front of an older open-top car, apparently in a driveway or yard near a house. The car’s large round headlights, upright grille, and hood are visible. The man leans on or works near the front of the car while keeping the cigarette in his mouth.\n\nA closer angled shot shows him bending over the car with a cigarette between his lips. A round gauge-like object is visible near the car, suggesting he may be checking or working on something, though the exact task is not fully clear from the sampled frames.\n\nThe sequence continues with him leaning over the side/front area of the car, reaching down with his hands near the engine or bodywork. The convertible’s interior and windshield are visible, as are plants or shrubbery in the background.\n\nThe commercial then cuts to a close-up of objects resting on a flat surface on or inside the car: a rectangular metal lighter or cigarette case on the left, and a cigarette pack on the right. The pack is clearly branded “Marlboro,” with the brand name printed prominently on the front.\n\nThe man appears again in close-up, facing slightly off-camera with the cigarette in his mouth. He looks outward with a steady expression. The setting remains outdoors near the house and car.\n\nThe camera returns to the pack and lighter on the car surface. The Marlboro pack remains the central visual focus, with the brand name clearly readable.\n\nAnother close-up of the man shows him bringing his hand to the cigarette at his mouth, as if taking or holding a drag. His expression remains calm and focused.\n\nThe final frames move into tighter close-ups of the Marlboro pack. The package fills most of the frame, with “Marlboro” prominently displayed on the front and side. The word “cigarettes” is also visible near the lower part of the pack. The metal lighter/case remains partly visible to the left in some shots, but the pack becomes the dominant final image."
+  },
+  "api_metadata": {
+    "response_id": "resp_02c2487e89c81ad9006a106cad262c8190b9833567d8a2637a",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 592,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 3195
+    }
+  },
+  "duration_seconds": 15.379,
+  "created_at": "2026-05-22T14:48:28Z",
+  "error": null
+}

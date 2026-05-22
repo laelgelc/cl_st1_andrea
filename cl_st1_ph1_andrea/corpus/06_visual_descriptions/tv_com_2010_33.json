@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2010_33",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_33",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_33/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_33.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0002.jpg",
+      "timestamp_seconds": 4.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0003.jpg",
+      "timestamp_seconds": 11.468,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0004.jpg",
+      "timestamp_seconds": 13.403,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0005.jpg",
+      "timestamp_seconds": 15.805,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0006.jpg",
+      "timestamp_seconds": 19.576,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0007.jpg",
+      "timestamp_seconds": 22.512,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0008.jpg",
+      "timestamp_seconds": 33.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0009.jpg",
+      "timestamp_seconds": 37.327,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0010.jpg",
+      "timestamp_seconds": 41.531,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0011.jpg",
+      "timestamp_seconds": 46.336,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0012.jpg",
+      "timestamp_seconds": 48.838,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0013.jpg",
+      "timestamp_seconds": 56.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_33/frame_0014.jpg",
+      "timestamp_seconds": 58.977,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_33.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_33.json",
+    "response_text": "The commercial begins outdoors at a bright mountain lake. A middle-aged man in casual outdoor clothing—a gray shirt under an open blue-gray button-up shirt—stands near the water, smiling and looking off to the side. Forested hills and a blue sky are visible behind him.\n\nThe next shot cuts to a close view of choppy water at the rocky lakeshore. A dark object or animal is partly visible in the water near rocks, but the exact action is unclear from the frame.\n\nThe man is then shown crouching beside a brown dog on the lakeshore. He rests a hand on the dog while smiling toward the camera. The lake and dense green forest remain in the background. A closer shot follows, showing the man’s face and upper body as he looks directly toward the viewer, with water behind him.\n\nHe is next shown standing in front of a forested hillside under a clear blue sky. His expression is more neutral or serious. The setting continues to emphasize a remote, scenic lake environment.\n\nA wider shot shows the man standing near the water with the dog beside him. A turquoise lower-third graphic appears across the bottom left, displaying the Lipitor logo and the text “LIPITOR” with “atorvastatin calcium” underneath. The lake glitters in the background. The following shot is a scenic lake view with mountains and blue sky, still carrying the turquoise Lipitor lower-third.\n\nThe commercial then shows tall pine trees with sunlight shining through them. The same Lipitor lower-third remains, and additional white text appears near the bottom: “See our ad in Cooking Light magazine.” A subsequent shot looks through tree trunks toward the lake and forested mountains, with the same “See our ad in Cooking Light magazine” text still visible.\n\nAnother forest shot follows, darker and more shaded, with silhouettes of trees and a person or dog shape at the right edge. The lower-third now includes the Lipitor logo and name, along with contact information: “1-888-LIPITOR” and “www.lipitor.com.”\n\nThe scene shifts to a wooden dock extending into the lake. A shirtless man in blue shorts stands on the dock with the brown dog beside him. The lake and forested hills fill the background. In the next shot, the man and dog are seen from behind on the dock. The man appears to be moving forward as if preparing to jump or dive into the water. Small white disclaimer text at the bottom reads: “Lipitor is one of many treatment options to consider.”\n\nThe final sequence shows a person swimming across the sunlit lake, with bright reflections on the water and a line of evergreen trees in the distance. The turquoise Lipitor lower-third returns. In the last frame, large bold white text appears over the water: “DON’T KID YOURSELF.” The Lipitor logo and “atorvastatin calcium” remain at the lower left, and a Pfizer logo appears at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_09da2df6296f4a12006a1077884a2081a3ad72a052efc8397c",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 640,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 3419
+    }
+  },
+  "duration_seconds": 15.812,
+  "created_at": "2026-05-22T15:34:47Z",
+  "error": null
+}

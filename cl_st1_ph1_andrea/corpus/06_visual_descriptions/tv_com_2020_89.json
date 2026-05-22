@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2020_89",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_89",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_89/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_89.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0002.jpg",
+      "timestamp_seconds": 4.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0003.jpg",
+      "timestamp_seconds": 4.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0004.jpg",
+      "timestamp_seconds": 5.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0005.jpg",
+      "timestamp_seconds": 6.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0006.jpg",
+      "timestamp_seconds": 7.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0007.jpg",
+      "timestamp_seconds": 9.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0008.jpg",
+      "timestamp_seconds": 9.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0009.jpg",
+      "timestamp_seconds": 10.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0010.jpg",
+      "timestamp_seconds": 12.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_89/frame_0011.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_89.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_89.json",
+    "response_text": "The commercial opens with a close-up product shot of a fried chicken sandwich against a bright orange background. The sandwich has a glossy bun, a thick piece of craggy fried chicken, visible pickle slices, and a pale sauce on the bottom bun.\n\nThe scene then cuts to the interior of a fast-food kitchen. Stainless-steel equipment, fry stations, counters, trays, and orange-and-white packaging are visible. Employees in orange shirts, black aprons, gloves, and caps are working in the kitchen. One worker moves quickly near metal equipment, partially blurred by motion.\n\nA closer, angled shot shows part of an employee in an orange uniform beside large metal kitchen equipment. The framing is tight and slightly tilted, emphasizing movement and the work environment.\n\nThe next shot focuses on a fryer basket being lifted or drained, with liquid or oil dripping down from above into or near the basket. The background is blurred, but the setting remains the kitchen.\n\nA wider kitchen shot shows an employee holding a golden fryer basket over a white rectangular tub. Another employee stands nearby wearing gloves. The basket appears to contain fried food being transferred or drained.\n\nThe worker then places or handles the contents in the white tub while another gloved employee stands beside the station. The stainless-steel kitchen surfaces and food-preparation area remain visible.\n\nThe commercial cuts back to extreme close-ups of the chicken sandwich. The fried chicken texture fills most of the frame, with the pickle slices and sauce visible underneath. Very small white legal/disclaimer text appears along the bottom edge, but it is too small and blurred to read clearly in the sampled frames.\n\nAnother close-up continues to show the sandwich from the side, emphasizing the rough, crunchy breading, green pickle slices, and sauce.\n\nA wider product shot follows: the sandwich sits on branded wrapping paper with fries placed around it. The bun is glossy, and the fried chicken extends beyond the edges of the bun. A hand and orange-and-white container are blurred in the background. Small white disclaimer text appears at the bottom, but it is not legible in these frames.\n\nThe scene returns to the kitchen. An employee in Popeyes colors stands in the foreground, and large white letters begin appearing across the image, spaced out as part of an on-screen brand graphic. The visible letters form “Popeyes” as the logo animation progresses.\n\nThe final frame shows the kitchen from a wider angle with workers and trays of fried chicken visible. A large white “POPEYES” logo is centered on screen, with “LOUISIANA KITCHEN” underneath. The employee in orange and black stands behind the overlaid logo, and the stainless-steel kitchen continues into the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_02f6de4ac1a91342006a107b2325cc819daf6d1f3f4add178f",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 595,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 2807
+    }
+  },
+  "duration_seconds": 14.254,
+  "created_at": "2026-05-22T15:50:09Z",
+  "error": null
+}

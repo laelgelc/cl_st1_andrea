@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2020_39",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_39",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_39/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_39.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0002.jpg",
+      "timestamp_seconds": 1.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0003.jpg",
+      "timestamp_seconds": 3.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0004.jpg",
+      "timestamp_seconds": 4.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0005.jpg",
+      "timestamp_seconds": 5.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0006.jpg",
+      "timestamp_seconds": 6.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0007.jpg",
+      "timestamp_seconds": 9.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0008.jpg",
+      "timestamp_seconds": 11.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0009.jpg",
+      "timestamp_seconds": 13.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_39/frame_0010.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_39.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_39.json",
+    "response_text": "The commercial unfolds in a bright outdoor park setting, centered on a picnic table where several young adults are eating Taco Bell food.\n\n1. **Opening close-up at the picnic table**: A hand reaches into or opens a white paper food wrapper with purple and orange graphics. On the wooden table are other wrappers, small red sauce packets, pieces of brown paper, and a translucent green drink cup.\n\n2. **Wider group shot**: The camera cuts to three young adults seated around the picnic table in a grassy park. They have Taco Bell-style paper bags, wrapped food items, sauce packets, and plastic cups on the table. Bright, animated purple graphics begin to arc and loop across the scene, visually connecting the people and the food.\n\n3. **Table-level food close-up**: A low close-up shows wrapped food on the table while thick animated stripes in purple, red, yellow, and white sweep horizontally across the foreground, as if flowing over the tabletop.\n\n4. **Blonde woman with food**: A young woman in a cream sweater holds a small wrapped item or taco-like food and smiles. A young man sits beside her. A large drink cup with a straw and a branded paper bag are visible on the table. Animated color bands continue across the lower part of the frame, and small drawn spark effects appear near the food.\n\n5. **Animated transformation around the woman**: The same woman leans her head toward the food she is holding. Bright cartoon-style splashes and strokes appear around her body, including yellow coloring over her sleeves, purple coloring around her hair, and white splash marks radiating outward. The young man beside her remains seated and smiling slightly.\n\n6. **Two-person park-table shot**: The young man in a denim jacket holds a drink cup while the blonde woman holds food. The picnic table remains covered with wrappers, sauce packets, a paper bag, and drinks. Colorful animated ribbons in green, purple, red, and yellow curl across the table and foreground.\n\n7. **Sauce being added to food**: A close-up shows a hand squeezing sauce from a small red packet over an open taco or wrap filled with lettuce, diced tomatoes, cheese, and other ingredients. White animated spark shapes appear around the food. Small legal-style text appears along the bottom of the frame, but most of it is too small to read clearly.\n\n8. **Product beauty shot**: A loaded taco or folded flatbread item sits open on branded paper on the picnic table, with visible lettuce, tomato, cheese/sauce, and a browned filling. Red and orange sauce packets lie nearby. Large animated text appears above the food, reading “$1 LOADED NAC…” with the final part partially unclear in the sampled frame. Fine-print text remains along the bottom, mostly illegible at this resolution.\n\n9. **Wide brand reveal in the park**: The scene pulls back to a wide view of the picnic table in the grassy park. A large animated Taco Bell sign stands prominently at the left, with the purple bell logo and the words “TACO BELL.” The group is small in the center at the table. The frame includes additional playful illustrated elements: cartoon clouds, sweeping colored lines, and a large red circular graphic on the right with repeated words including “FREE” and “HOT,” though the full text is partly cut off.\n\n10. **Final wide frame**: The same park-wide composition remains, with the large Taco Bell sign on the left and the picnic table group in the middle distance. Red animated flame-like shapes appear around the base of the table, while the colorful illustrated landscape elements continue around the edges."
+  },
+  "api_metadata": {
+    "response_id": "resp_003faa2105c633ca006a107a41a1a88194afa442aaff6176d3",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1028,
+      "output_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "total_tokens": 3051
+    }
+  },
+  "duration_seconds": 30.969,
+  "created_at": "2026-05-22T15:46:40Z",
+  "error": null
+}

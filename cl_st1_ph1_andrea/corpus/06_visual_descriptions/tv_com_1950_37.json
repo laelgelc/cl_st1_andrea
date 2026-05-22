@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_37",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_37",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_37/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_37.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_37/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_37/frame_0002.jpg",
+      "timestamp_seconds": 20.21,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_37/frame_0003.jpg",
+      "timestamp_seconds": 65.755,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_37/frame_0004.jpg",
+      "timestamp_seconds": 72.696,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_37/frame_0005.jpg",
+      "timestamp_seconds": 92.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_37.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_37.json",
+    "response_text": "The commercial is in black and white and appears to use studio staging, product close-ups, and a presenter format.\n\nAt the opening, a large scripted “Kellogg’s” logo dominates the foreground. Behind it, two performers stand on a staged set. The figures appear to be dressed in costume, though the details are not fully clear. The background includes theatrical-looking props or set pieces, including a tall illuminated shape near the center and other objects at the sides.\n\nThe scene then changes to a close-up of a man in a suit and tie. He is positioned in front of a dark board or backdrop with chalk-like drawings on it. The drawing behind him resembles a large bird, possibly a turkey, with feather shapes. The man looks downward toward something partly visible at the lower left of the frame, possibly a package or display item, but the object is only partially shown.\n\nLater, the commercial cuts to a product-and-food close-up. A shallow bowl sits on a plate on a tabletop. Behind or above it are Kellogg’s packages; one package clearly shows the Kellogg’s script, while another has large vertical lettering that is partly obscured and not fully readable. A package or carton is tilted over the bowl, suggesting something is being poured or prepared, though the exact contents are not clearly visible in the sampled frame.\n\nThe next frame appears to be a transitional or superimposed shot: the suited presenter is visible at a small round table, while the chalk drawing of the bird and a close-up hand/action image overlap faintly in the background. On the table are a cereal box or package, a bowl or small dish, and a cup or saucer. The man faces the camera, gesturing slightly with one hand.\n\nIn the final frame, the presenter is clearly shown beside the small round table. A Kellogg’s package stands upright on the table; the front includes the Kellogg’s name and a large graphic element, though the full product name is not legible. A cup and saucer and a small dish or bowl sit nearby. Behind him, the chalk drawing of the large bird remains visible on the board. The man faces forward as if addressing the audience, with one hand near the tabletop and the other at his side or hip."
+  },
+  "api_metadata": {
+    "response_id": "resp_0de8a726583bf9de006a106b943364819d87e0b0d9ecb44824",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 685,
+      "output_tokens_details": {
+        "reasoning_tokens": 223
+      },
+      "total_tokens": 2053
+    }
+  },
+  "duration_seconds": 18.855,
+  "created_at": "2026-05-22T14:43:50Z",
+  "error": null
+}

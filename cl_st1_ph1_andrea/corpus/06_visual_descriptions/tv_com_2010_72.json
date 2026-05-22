@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2010_72",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_72",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_72/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_72.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0002.jpg",
+      "timestamp_seconds": 0.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0003.jpg",
+      "timestamp_seconds": 0.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0004.jpg",
+      "timestamp_seconds": 1.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0005.jpg",
+      "timestamp_seconds": 3.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0006.jpg",
+      "timestamp_seconds": 5.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0007.jpg",
+      "timestamp_seconds": 6.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0008.jpg",
+      "timestamp_seconds": 9.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0009.jpg",
+      "timestamp_seconds": 10.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0010.jpg",
+      "timestamp_seconds": 13.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0011.jpg",
+      "timestamp_seconds": 15.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0012.jpg",
+      "timestamp_seconds": 19.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0013.jpg",
+      "timestamp_seconds": 20.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0014.jpg",
+      "timestamp_seconds": 22.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0015.jpg",
+      "timestamp_seconds": 24.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0016.jpg",
+      "timestamp_seconds": 26.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0017.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_72/frame_0018.jpg",
+      "timestamp_seconds": 28.59,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_72.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_72.json",
+    "response_text": "The commercial opens on a solid bright magenta screen with centered white text reading “#KimsDataStash.” It briefly cuts to black.\n\nA dark, dimly lit fantasy-like scene appears: a dark-clad figure is seen against a cloudy sky, moving or positioned on a diagonal cloud-like surface. The image is murky, so details are difficult to make out.\n\nThe setting then changes to a pastel, heaven-like interior. The room is lavender and white, with cloud imagery in arched window panels, white feathered decorative trees or lamps, gold lamp bases, pink seating, and a central pale door. The backs of two seated people are visible in the foreground. The door is then shown closer, and a jagged black hole appears torn through it.\n\nA close-up shows a hand in a black glove holding a pint of ice cream. The container is white with a gold lid and colorful dots; the label reads “HALO TOP” and prominently shows “280” in a purple shape. Some smaller flavor text is visible but not fully legible.\n\nA young man dressed in a white suit, pale tie, and large white feathered angel wings sits at a white desk. Behind him are pastel ice-cream-cone wall decorations. He looks upward with an attentive or surprised expression.\n\nA red-faced, horned man in a black outfit with a large black feathered/fur-like collar enters the pastel room. He holds the Halo Top pint and stands near the seated winged man, who remains behind the desk. The room includes large windows with painted clouds and a pink chair.\n\nThe red-faced horned man gestures with the ice cream container while facing the winged man. In close-up, his face is painted red, with dark horns on his head and a pale mustache. The winged man looks up at him and reacts with an open-mouthed smile or laugh.\n\nThe two are shown together at the desk. The horned man stands to the left, holding the pint; the winged man sits to the right in front of small ice-cream containers on the tabletop. The horned man then suddenly moves behind or around the winged man. A large white harp near the window is shown tipping or being knocked over, with small white particles or debris visible as it falls.\n\nThe winged man turns in alarm or surprise while the horned man leans in behind him, still holding the pint. A wider view shows the desk centered under an arched alcove with pastel ice-cream-cone decorations. The horned man crouches or leans beside the winged man, close to the desk.\n\nThe horned man then moves toward the door area. The door is open, showing a cloud-painted sky beyond. He stands near the exit, holding the pint against his chest or shoulder, while the backs of the seated foreground figures are again visible. He looks back into the room with a mischievous or satisfied expression.\n\nThe final product shot shows multiple Halo Top ice cream pints arranged on pink cloud-like fog. The central pint is largest, white with a gold lid, labeled “HALO TOP” with a large “280.” A gold ribbon below reads “THE PERFECT PINT.” Other pints flank it, including one marked “320” on the left and another marked “280” on the right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0697ebf0aa0d2c9a006a10786cf2288197a77f1a61053f1b96",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 850,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 4385
+    }
+  },
+  "duration_seconds": 22.522,
+  "created_at": "2026-05-22T15:38:43Z",
+  "error": null
+}

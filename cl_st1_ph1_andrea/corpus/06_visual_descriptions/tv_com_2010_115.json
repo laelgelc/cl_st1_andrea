@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2010_115",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_115",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_115/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_115.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0002.jpg",
+      "timestamp_seconds": 0.257,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0003.jpg",
+      "timestamp_seconds": 1.524,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0004.jpg",
+      "timestamp_seconds": 6.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0005.jpg",
+      "timestamp_seconds": 8.365,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0006.jpg",
+      "timestamp_seconds": 11.801,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0007.jpg",
+      "timestamp_seconds": 17.941,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0008.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0009.jpg",
+      "timestamp_seconds": 21.044,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0010.jpg",
+      "timestamp_seconds": 21.912,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0011.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0012.jpg",
+      "timestamp_seconds": 23.046,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0013.jpg",
+      "timestamp_seconds": 25.115,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_115/frame_0014.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_115.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_115.json",
+    "response_text": "The commercial opens with a bright television-style graphic reading “FOX & friends,” with a news-style ticker bar along the bottom of the screen.\n\nIt then cuts to a close-up of a woman facing the camera. She has short brown hair and wears a light blue top. The background is pale and softly lit, with a yellow-green flower-like shape partly visible behind her.\n\nThe scene widens to reveal an unusual outdoor setup: the same woman stands with a bicycle on a white studio backdrop placed on a paved road near dry hills and the ocean. The road curves away to the left, and other cyclists are visible in the distance. The white backdrop has the same yellow-green floral graphic near the top right.\n\nThe commercial returns to the woman’s close-up against the pale studio-like background.\n\nNext, the setting changes to a clean, bright, white interior space resembling a modern studio or laboratory. A woman in a white shirt stands behind a long table. Behind her is a large display panel with a yellow flower graphic and the product name “TENA InstaDRY.” A small turquoise cup or object sits on the table.\n\nA split-screen product comparison follows. On the left is a pad labeled “Poise.” On the right is a pad labeled “TENA InstaDRY,” with the TENA logo above it and a yellow flower graphic in the corner. The two pads are shown vertically on a white background, separated by a thin vertical line.\n\nThe presenter appears again in the white studio. Behind her, the display now shows several women’s faces arranged around a visible product package, suggesting consumer or testimonial imagery. The product package includes the TENA branding and a purple label area.\n\nThe commercial then cuts to outdoor cycling footage. A woman in a light blue cycling jersey, white helmet, and dark sunglasses rides a bicycle along a green, tree-lined path or road. Another cyclist is partially visible beside or behind her. The camera shows her from the front/side and then cuts to close-ups of her torso, arms, handlebars, saddle, and rear part of the bicycle as she pedals. The shots emphasize active movement, cycling gear, and the bike in motion.\n\nThe outdoor coastal-road setup reappears. A cyclist rides past in the foreground from left to right, while the woman with the bicycle remains positioned on the white backdrop in the middle distance. The dry hills, blue sky, and ocean remain visible behind the staged backdrop.\n\nThe final frame is a product packshot on a white background. It shows a package of “TENA InstaDRY” with a large yellow flower design and a purple label area. Visible text includes “TENA InstaDRY,” the phone number “1-877-GET-TENA,” and “TENA.us.” A small “SCA” logo appears in the upper left."
+  },
+  "api_metadata": {
+    "response_id": "resp_032790fd1ab0c15e006a10794d5360819cb727dd430002135c",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 906,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 3685
+    }
+  },
+  "duration_seconds": 23.02,
+  "created_at": "2026-05-22T15:42:28Z",
+  "error": null
+}

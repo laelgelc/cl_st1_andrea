@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2000_63",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_63",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_63/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_63.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0002.jpg",
+      "timestamp_seconds": 6.296,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0003.jpg",
+      "timestamp_seconds": 7.797,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0004.jpg",
+      "timestamp_seconds": 10.2,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0005.jpg",
+      "timestamp_seconds": 12.269,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0006.jpg",
+      "timestamp_seconds": 13.803,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0007.jpg",
+      "timestamp_seconds": 16.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0008.jpg",
+      "timestamp_seconds": 18.541,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0009.jpg",
+      "timestamp_seconds": 20.177,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0010.jpg",
+      "timestamp_seconds": 21.244,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0011.jpg",
+      "timestamp_seconds": 22.612,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_63/frame_0012.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_63.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_63.json",
+    "response_text": "The commercial begins with a nearly black frame, with only a small red heart-shaped watermark/logo visible in the lower-right corner.\n\nAfter several seconds, the scene cuts to a bright domestic interior. A woman is partly visible on the right, seen from behind or side-on, while a glowing white, smoke-like vertical form appears in the room. The room contains household furnishings such as a cabinet, framed picture, vase, and plant.\n\nThe glowing form resolves into a bald, human-like male figure dressed in white. He has an exaggerated, polished, mascot-like appearance and is surrounded by a bright halo or glow. He faces forward and gestures with his hands. In the next shot, the woman stands beside him in the room. She wears a light-colored top over a red shirt and holds a long handle or cleaning tool. The glowing male figure stands confidently with one hand on his hip, also looking toward her.\n\nThe commercial then cuts to a close-up of a hand holding a blue, pointed, triangular cleaning attachment with multiple holes. The background is bright and softly focused, suggesting a bathroom or tiled area.\n\nA split-screen product demonstration follows. Two white, pointed pad shapes are shown side by side. The left side is labeled “Mopping Pad,” and the right side is labeled “Scrubbing Pad.” The scrubbing pad has visible blue horizontal bands.\n\nNext, an overhead view shows the woman using a long-handled cleaning tool on a tiled shower or bathroom wall area. Brown/orange tiles and grout lines are visible, and the tool reaches down into the corner. A second demonstration shows the tool being used inside a white bathtub near a chrome faucet, scrubbing across the tub surface.\n\nThe woman is then shown attaching or adjusting the blue-and-white cleaning head on the end of the handle. She looks down at the tool while holding it close to her body.\n\nThe setting shifts to a bright bathroom counter with a sink. Small colored marks or smudges are visible on the white countertop. In the next shot, the cleaning tool moves across the white surface near a toilet or bathroom fixture, wiping over the area where the marks are located.\n\nThe final frame is a product pack shot. A box labeled “Mr. Clean MagicReach” is displayed next to the assembled cleaning tool and a white pad with blue stripes. A website address appears along the bottom: “www.mrcleanmagicreach.com.” The red heart-shaped watermark/logo remains in the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_019d75e9ec97eca9006a1075c0a9848194a6ed2356f36200b4",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 724,
+      "output_tokens_details": {
+        "reasoning_tokens": 224
+      },
+      "total_tokens": 3125
+    }
+  },
+  "duration_seconds": 19.44,
+  "created_at": "2026-05-22T15:27:15Z",
+  "error": null
+}

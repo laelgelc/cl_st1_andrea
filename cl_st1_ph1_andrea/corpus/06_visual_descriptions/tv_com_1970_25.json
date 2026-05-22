@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1970_25",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_25",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_25/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_25.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_25/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_25/frame_0002.jpg",
+      "timestamp_seconds": 16.306,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_25/frame_0003.jpg",
+      "timestamp_seconds": 24.981,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_25/frame_0004.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_25.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_25.json",
+    "response_text": "The commercial begins with a stylized, cartoon-like restaurant or diner illustration. A real woman’s smiling face appears through a circular cutout in the drawing, making her look like part of a caricatured figure. The illustrated figure is shown holding a large hamburger in one hand and has a napkin or cloth draped over the other arm. Decorative hanging lamps appear on both sides, reinforcing an old-fashioned diner setting. The image has a vintage television look, with visible softness and a “Classic Commercial Archives” watermark.\n\nThe next sampled moment appears to be a dissolve or superimposed transition. The cartoon figure is still faintly visible, but close-up images of food begin to overlay it. The visible food includes hamburger-like buns or sandwiches and what appears to be a round pastry or bun in the foreground. The layering makes the exact items somewhat unclear, but the emphasis shifts visually from the illustrated character to appetizing food close-ups.\n\nThe scene then changes to an exterior daytime shot of a Wendy’s restaurant. The building is shown from across a road, with trees behind it and cars parked around it. A large sign on the building reads “Wendy’s” and “Old Fashioned Hamburgers.” A separate roadside sign with the Wendy’s branding stands to the right of the building. The restaurant has a low, rectangular shape with a drive-up or storefront-style façade.\n\nThe final frame holds on essentially the same exterior view of the Wendy’s location. The camera remains static, showing the building, signage, road in the foreground, parked cars, and surrounding greenery. No additional action is clearly visible in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a57c1e0a9d5e2a5006a106f03c50481a3b0587dba477bd952",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 459,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 1580
+    }
+  },
+  "duration_seconds": 16.182,
+  "created_at": "2026-05-22T14:58:27Z",
+  "error": null
+}

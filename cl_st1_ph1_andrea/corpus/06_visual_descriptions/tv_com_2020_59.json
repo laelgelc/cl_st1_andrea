@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_2020_59",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_59",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_59/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_59.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0002.jpg",
+      "timestamp_seconds": 1.892,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0003.jpg",
+      "timestamp_seconds": 2.659,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0004.jpg",
+      "timestamp_seconds": 3.293,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0005.jpg",
+      "timestamp_seconds": 5.328,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0006.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0007.jpg",
+      "timestamp_seconds": 12.068,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0008.jpg",
+      "timestamp_seconds": 13.169,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0009.jpg",
+      "timestamp_seconds": 14.204,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0010.jpg",
+      "timestamp_seconds": 15.572,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0011.jpg",
+      "timestamp_seconds": 16.84,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0012.jpg",
+      "timestamp_seconds": 18.275,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0013.jpg",
+      "timestamp_seconds": 19.042,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0014.jpg",
+      "timestamp_seconds": 20.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0015.jpg",
+      "timestamp_seconds": 21.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0016.jpg",
+      "timestamp_seconds": 21.978,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0017.jpg",
+      "timestamp_seconds": 23.046,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0018.jpg",
+      "timestamp_seconds": 24.147,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0019.jpg",
+      "timestamp_seconds": 25.248,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0020.jpg",
+      "timestamp_seconds": 28.118,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_59/frame_0021.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_59.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_59.json",
+    "response_text": "The commercial opens with two women in a softly lit, mint-green bathroom-like setting. Both wear white sleeveless tops. A large white “GARNIER” wordmark with a green leaf-like “G” circle overlays the center of the frame. One woman holds a small green cosmetic bottle near her face while the other looks toward her.\n\nThe next shots keep the same two women in close-up. They smile and gesture toward the camera while handling the green bottle. They then apply product to their faces with their fingertips, touching areas around the cheek and under-eye area. A small green circular “G” logo appears in the upper-right corner.\n\nThe ad then cuts to a minimalist product presentation: a small green-and-white pump bottle is centered against a white, soft, fabric-like or fluid background. This transitions to a clearer product display on a pale mint surface: a green bottle and a matching box labeled “Garnier green labs” and “Serum Cream.” A pineapple slice is partly visible at the left edge, suggesting an ingredient association.\n\nA woman with curly hair then holds the green pump bottle close to the camera, making the product the focal point while her face remains behind it. The following close-up shows a hand pressing the white pump and dispensing cream into an open palm.\n\nThe commercial presents three ingredient/product variants in graphic product shots. One shows the green bottle against a yellow pineapple background with readable text: “vitamin c + pineapple extract.” Another shows a red watermelon background with “hyaluronic acid + watermelon extract.” A third shows green leaves with “niacinamide b3 + cannabis sativa seed oil.” The product bottle remains centered in each composition, with the ingredient text placed around it.\n\nThe next shots return to people applying the product. A woman rubs cream onto her cheek while on-screen text at left reads “CLEAN,” followed by “NO mineral oil,” “NO parabens,” and “NO dyes.” Another close-up shows a woman applying product below both eyes; the left-side text reads “VEGAN FORMULA” and “NO animal-derived ingredients.”\n\nThe setting shifts outdoors. Several close-ups show different women near green metal stair railings and an exterior building structure. One woman rests her head near a green rail; another, wearing a yellow top, touches her neck while seated or leaning near stairs. A third woman smiles upward in a bright outdoor shot. The green circular “G” logo remains in the upper-right corner.\n\nThe women then appear together in pairs and as a group on an exterior staircase with green railings and a building façade behind them. They pose, lean on the railing, and move down the stairs. Their clothing includes sleeveless tops, shorts or skirts, and casual summer-like outfits.\n\nNear the end, the ad returns to a clean product lineup: multiple green-and-white boxes and a central green pump bottle arranged on a pale mint surface. The visible product family includes variants such as “Canna-B,” “Hyalu-Melon,” and “Pinea-C,” though some smaller label text is not fully legible.\n\nThe final shots show four women standing together outdoors in front of large green leaves and the metal staircase. A large green circular “G” logo overlays the center in one frame, and the final frame shows the group posing with a white “GARNIER” wordmark across the lower center."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d8b8a9c2a47cfb2006a107a9d37a081948972579c009b2beb",
+    "usage": {
+      "input_tokens": 4102,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1200,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5302
+    }
+  },
+  "duration_seconds": 30.404,
+  "created_at": "2026-05-22T15:48:11Z",
+  "error": null
+}

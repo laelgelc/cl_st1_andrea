@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1960_75",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_75",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_75/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_75.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0002.jpg",
+      "timestamp_seconds": 4.486,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0003.jpg",
+      "timestamp_seconds": 12.243,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0004.jpg",
+      "timestamp_seconds": 20.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0005.jpg",
+      "timestamp_seconds": 24.422,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0006.jpg",
+      "timestamp_seconds": 28.176,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0007.jpg",
+      "timestamp_seconds": 29.302,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0008.jpg",
+      "timestamp_seconds": 31.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0009.jpg",
+      "timestamp_seconds": 33.014,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0010.jpg",
+      "timestamp_seconds": 33.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0011.jpg",
+      "timestamp_seconds": 34.975,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0012.jpg",
+      "timestamp_seconds": 37.477,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0013.jpg",
+      "timestamp_seconds": 38.979,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0014.jpg",
+      "timestamp_seconds": 45.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0015.jpg",
+      "timestamp_seconds": 46.987,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0016.jpg",
+      "timestamp_seconds": 48.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_75/frame_0017.jpg",
+      "timestamp_seconds": 58.082,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_75.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_75.json",
+    "response_text": "The commercial is in black and white and unfolds as a motor-racing themed sequence.\n\n1. **Opening darkness**  \n   The first sampled frame is almost entirely dark, with no clearly visible objects or setting.\n\n2. **Abstract close-up of a car surface**  \n   A bright, curved shape appears on a glossy surface, likely part of a racing car body or hood. The shot is close and partially abstract, with strong highlights and reflections.\n\n3. **Men at a waterside or open outdoor location with text overlay**  \n   Two men appear in a soft, partially superimposed image. One man wears a light-colored jacket and seems to be gesturing or holding something near his mouth or chest. The background looks like open water or a flat outdoor horizon. Large white capitalized text across the bottom reads: **“EVERY INCH A REAL SMOKE.”**\n\n4. **Empty racetrack view**  \n   The scene cuts to a straight stretch of paved racetrack, seen from a central forward-facing angle. There are grassy areas on both sides, posts or fencing, trees in the distance, and a small raised booth or viewing structure on the right.\n\n5. **Driver close-up**  \n   A male driver is shown from the front in an open-top race car. He wears a white helmet and large protective goggles. His expression appears focused. Other racing cars are visible behind him, out of focus.\n\n6. **Low trackside view of cars**  \n   A low-angle shot shows cars moving along a track in the distance. The foreground is rough ground or track edge, with trees behind the road.\n\n7. **Blurred road surface**  \n   The camera shows a close or fast-moving view of the road surface and lane markings. The image is blurred, suggesting speed or motion.\n\n8. **Driver in open-top car with competitors behind**  \n   The helmeted driver is again seen from the front in his open racing car. Several other open-top cars are visible behind him on the track. The car has a low windshield and exposed front wheels.\n\n9. **Dashboard and steering wheel close-up**  \n   A close-up shows the car’s steering wheel, gauges, and dashboard. A gloved hand holds the wheel. The shot emphasizes mechanical controls and driving action.\n\n10. **Foot pedal close-up**  \n   A close-up shows a driver’s shoe pressing or operating a pedal inside the car. The framing focuses on the foot and lower dashboard area.\n\n11. **Cars rounding a curve**  \n   A wide shot shows race cars moving through a bend on the racetrack. The surrounding area is grassy with trees in the background.\n\n12. **Three cars racing closely**  \n   A front-facing shot shows a central open-wheel car leading or centered in the frame, with two other cars close behind or alongside. The cars are rounding a curve or moving on a wet-looking track surface.\n\n13. **Low shot of a wet track/puddle**  \n   The camera is very low near the track surface. A car passes in the background, and the foreground shows a reflective wet patch or puddle, with splashing or road texture visible.\n\n14. **Driver without helmet, seated in car**  \n   The scene cuts to a closer view of a young man seated in or near an open car. He is no longer wearing the helmet; goggles hang around his neck. He looks downward, possibly toward his hands or the car interior. A fence and car bodywork are visible behind him.\n\n15. **Camel cigarette pack in car**  \n   A pack of **Camel** cigarettes is shown lying on a dark surface inside or beside the car. The pack displays the camel illustration and the word **“CAMEL.”** Nearby are parts of the car interior or equipment.\n\n16. **Superimposed pack and driver**  \n   The Camel cigarette pack appears large in the foreground through a dissolve or superimposition over the driver’s head and upper body. The pack’s branding and camel image are prominent.\n\n17. **Final product shot on racetrack background**  \n   The final frame shows a large Camel cigarette pack centered over the racetrack background seen earlier. The pack displays the camel illustration and the word **“CAMEL.”** Large bold white text at the bottom also reads **“CAMEL.”** The track, posts, grassy sides, distant trees, and small elevated booth remain visible behind the product image."
+  },
+  "api_metadata": {
+    "response_id": "resp_053c59dfc3e132c2006a106dea17e88195af29ef22de3c919b",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 966,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 5298
+    }
+  },
+  "duration_seconds": 26.97,
+  "created_at": "2026-05-22T14:53:56Z",
+  "error": null
+}

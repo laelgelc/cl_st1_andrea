@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2020_19",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_19",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_19/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_19.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0002.jpg",
+      "timestamp_seconds": 2.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0003.jpg",
+      "timestamp_seconds": 19.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0004.jpg",
+      "timestamp_seconds": 19.417,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0005.jpg",
+      "timestamp_seconds": 21.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0006.jpg",
+      "timestamp_seconds": 22.212,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0007.jpg",
+      "timestamp_seconds": 24.13,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0008.jpg",
+      "timestamp_seconds": 25.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0009.jpg",
+      "timestamp_seconds": 26.466,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_19/frame_0010.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_19.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_19.json",
+    "response_text": "The commercial begins with a black screen carrying a centered dark teal badge-shaped logo. In white script it reads “Lesser Evil,” with smaller text on either side reading “SIMPLE ACTS” and “CLEAN SNACKS.”\n\nThe scene then cuts to a dim pantry or storage closet. A child, seen from behind, stands facing shelves filled with jars, boxes, and colorful snack bags. The child wears a striped sweater with green, purple, and dark bands. The pantry is dark, with products arranged along the walls.\n\nLater, the view shifts to a pair of narrow double doors with frosted vertical glass panels. The surrounding room has pink tiled walls and shelves holding jars and containers. The doors begin to open, revealing the child partly visible through the gap.\n\nThe next view shows a brightly lit pink snack room or pantry interior. White shelves line the walls and are illuminated by pink accent lighting. Many bags and packages of Lesser Evil snacks are neatly arranged on the shelves, including rows of pale-colored bags with pink circular labels and colorful bags on the right.\n\nA closer moving view emphasizes the product display: multiple Lesser Evil bags are lined up in rows against the pink tiled background. The branding is visible on the bags, and the repeated packaging creates a dense, organized retail-like display.\n\nThe scene then cuts to a warm kitchen. Two children sit at a counter or table. One child, with longer dark hair, smiles while watching the younger child. The younger child, wearing a blue cardigan or jacket over a striped shirt, reaches into a small bowl. A large Lesser Evil snack bag is visible in the foreground on the counter.\n\nA close-up shows the younger child eating a snack from their hand, mouth open, seated in front of dark kitchen cabinets. The child appears to be enjoying the snack visually, though no audio is provided.\n\nThe commercial returns to a pantry shelf view. Various snack bags are arranged on the left, while Lesser Evil popcorn and other products are stacked on the right and upper shelves. A bright rectangular opening or lit panel appears in the center of the shelving, suggesting a doorway or hidden compartment, though the exact mechanism is not fully visible in the sampled frames.\n\nThe final frame is a colorful animated or highly stylized end card. The Lesser Evil logo appears large in the center against a bright sky with clouds. The background includes green flower-covered hills and pink mountains. A small pink cartoon-like character sits on a hill to the right of the logo. The logo again includes the phrases “SIMPLE ACTS” and “CLEAN SNACKS.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_05119f30466a725a006a1079dc12a4819f9862f658d1ab38db",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 722,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 2745
+    }
+  },
+  "duration_seconds": 19.67,
+  "created_at": "2026-05-22T15:44:47Z",
+  "error": null
+}

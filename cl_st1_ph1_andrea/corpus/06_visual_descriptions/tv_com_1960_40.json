@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1960_40",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_40",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_40/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_40.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0002.jpg",
+      "timestamp_seconds": 0.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0003.jpg",
+      "timestamp_seconds": 4.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0004.jpg",
+      "timestamp_seconds": 6.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0005.jpg",
+      "timestamp_seconds": 9.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0006.jpg",
+      "timestamp_seconds": 11.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0007.jpg",
+      "timestamp_seconds": 12.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0008.jpg",
+      "timestamp_seconds": 14.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0009.jpg",
+      "timestamp_seconds": 18.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0010.jpg",
+      "timestamp_seconds": 22.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0011.jpg",
+      "timestamp_seconds": 24.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0012.jpg",
+      "timestamp_seconds": 26.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_40/frame_0013.jpg",
+      "timestamp_seconds": 28.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_40.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_40.json",
+    "response_text": "The commercial opens on a nearly black screen with a small “Nostalgic X’er” watermark at the lower right.\n\nA dining-table scene appears. A man in a suit and a blonde woman in a sleeveless top sit at a round white table. Plates, cups, and a glass coffee pot or carafe are on the table between them. The woman rests her head on her hand and looks toward the man, while the man looks down toward his plate.\n\nLarge superimposed text then fills the center: “PROCTOR SILEX.” The dining scene remains faintly visible behind the bold lettering.\n\nThe screen cuts back to a dark background. Partial gold lettering appears at the right edge, then the text changes to a large centered phrase: “DOES IT ALL!” The letters are large, blocky, and gold-toned. Behind the text, a faint image of hands and a kitchen or appliance scene is visible.\n\nA close-up follows at a sink. Water pours from a faucet while a hand holds or rinses something under the stream. The running water splashes into the basin. The shot is tightly framed, emphasizing the faucet, hand, and water.\n\nThe blonde woman then appears in close-up, facing the camera. She has styled shoulder-length hair and wears earrings. Her expression is engaged, as if presenting or speaking, but no audio content can be determined from the frames.\n\nThe next image is a close-up of a metallic object or appliance part against a dark background. Its exact function is unclear from the sampled frame.\n\nA wider tabletop or kitchen display appears, with several items visible: a container or bowl of food on the left, a central appliance or serving setup, and other kitchen objects on the right. The image has some overlay or dissolve effects, making the details partly indistinct.\n\nThe woman is then shown standing beside a white shelving unit displaying multiple small kitchen appliances. Visible items include a toaster, a coffee maker or percolator-style appliance, a blender or similar tall appliance, and additional boxed or countertop appliances on lower shelves. She gestures toward the top shelf, presenting the products.\n\nThe large gold text “DOES IT” overlays the woman and appliance display, partially obscuring her and the shelving unit.\n\nA close-up of a coffee-making appliance appears next, with a glass pot, white handle, and central metal parts visible. The appliance is shown against a dark background.\n\nThe final frame presents the product and slogan-style visual layout: a coffee appliance on the left, the brand name “PROCTOR-SILEX” across the top, and large gold text on the right reading “DOES IT ALL!” The “Nostalgic X’er” watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c84a9fc6e90338f006a106d7b439881a0a82c552bbe59e001",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 722,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 3312
+    }
+  },
+  "duration_seconds": 16.417,
+  "created_at": "2026-05-22T14:51:55Z",
+  "error": null
+}

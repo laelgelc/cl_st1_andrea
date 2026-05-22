@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1970_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0002.jpg",
+      "timestamp_seconds": 3.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0003.jpg",
+      "timestamp_seconds": 7.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0004.jpg",
+      "timestamp_seconds": 10.033,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0005.jpg",
+      "timestamp_seconds": 13.637,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0006.jpg",
+      "timestamp_seconds": 18.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0007.jpg",
+      "timestamp_seconds": 20.01,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0008.jpg",
+      "timestamp_seconds": 21.811,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0009.jpg",
+      "timestamp_seconds": 23.58,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0010.jpg",
+      "timestamp_seconds": 25.482,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_43/frame_0011.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_43.json",
+    "response_text": "The commercial opens with an indistinct, dark close-up: a glossy reflective object appears near the upper left against a reddish-brown background, but the object is not clearly identifiable from the sampled frame.\n\nIt then cuts to a bright beach or lakeside setting. A young girl in a yellow top stands on sand in the foreground. Behind her are a striped beach umbrella, seated adults, a beach ball, and distant houses or shoreline features. The image has a soft, slightly hazy look.\n\nThe setting shifts to a kitchen. A smiling woman stands behind a counter holding and opening a jar. The counter is filled with food items: tomatoes, leafy vegetables, a large bowl of chopped salad ingredients, eggs or peeled potatoes, and long green vegetables. A refrigerator, cabinets, appliances, and a large plant by a window are visible in the background.\n\nA transition overlays the kitchen woman with a close-up of the food preparation. The large bowl of chopped salad fills the foreground, and the jar appears nearby. The imagery suggests a dissolve from the kitchen scene into a close-up of the ingredients.\n\nNext, a close-up shows the bowl being stirred with a wooden spoon. Cubed pale ingredients and green flecks are visible. To the right is a jar with a readable label: “Hellmann’s Real Mayonnaise.” Tomatoes sit in the background.\n\nThe commercial then moves outdoors to a picnic table by water. A young girl and a man in a black-and-white striped shirt sit at the table with plates and food in front of them. The scene is bright and washed with warm light.\n\nA wider view shows several people seated around the picnic table near the shoreline. A person in a peach or orange top is close to the camera with their back partly blocking the view, while others sit around the table eating or serving food. The water, low wall, and distant shore remain visible.\n\nA close-up focuses on the young girl at the table. She holds a fork and appears to be eating or preparing to take a bite from her plate. The lake or water is visible behind her.\n\nAnother close-up shows a smiling woman leaning toward the table, looking downward at the food or someone seated nearby. The background remains the same outdoor waterfront setting.\n\nA wider shot returns to the picnic group seated around the table. A large, softly superimposed image of the smiling woman’s face overlays the scene, creating a double-exposure effect. The group continues eating or interacting around the picnic table.\n\nThe final frame is a product shot. A jar labeled “Hellmann’s Real Mayonnaise” stands prominently on the picnic table in the right foreground. Large white text on the left reads “The BEST.” In the blurred background, people remain seated at the outdoor table near the water."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e967980864644bf006a106f4626b88194809179e3387f369a",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 878,
+      "output_tokens_details": {
+        "reasoning_tokens": 319
+      },
+      "total_tokens": 3728
+    }
+  },
+  "duration_seconds": 23.376,
+  "created_at": "2026-05-22T14:59:41Z",
+  "error": null
+}

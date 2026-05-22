@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1950_60",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_60",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_60/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_60.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0002.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0003.jpg",
+      "timestamp_seconds": 10.166,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0004.jpg",
+      "timestamp_seconds": 12.602,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0005.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0006.jpg",
+      "timestamp_seconds": 23.146,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0007.jpg",
+      "timestamp_seconds": 29.552,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0008.jpg",
+      "timestamp_seconds": 31.221,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0009.jpg",
+      "timestamp_seconds": 38.328,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0010.jpg",
+      "timestamp_seconds": 49.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_60/frame_0011.jpg",
+      "timestamp_seconds": 77.034,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_60.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_60.json",
+    "response_text": "The commercial is in black and white and unfolds as a sequence combining animated/cartoon imagery with live-action or realistic car footage.\n\n1. **Opening storefront/signage**  \n   The first frame shows a building façade or showroom exterior. A large sign reads **“DE SOTO PLYMOUTH”** in capital letters. To the left is a doorway or glass entrance. The setting appears urban/commercial.\n\n2. **Animated salesman-like figure**  \n   The scene cuts to a cartoon man in a dark suit, white shirt, tie, and dark hat. He has a simple, rounded face and is smiling. He stands in front of a tiled or paneled background, possibly an interior showroom or stylized dealership setting.\n\n3. **Animated figure with “1955 DeSoto” badge**  \n   A different cartoon character appears, dressed formally in a dark tuxedo-like outfit with a bow tie. He has a round face and a prominent upward-curving nose or horn-like facial feature. On his chest is a circular badge or rosette reading **“1955 DeSoto.”** He is shown in profile or three-quarter view, gesturing with one arm.\n\n4. **Animated gesturing and movement**  \n   The same character continues gesturing theatrically. His eyes are closed or nearly closed, and one arm is raised upward as if presenting something. His body posture is exaggerated, consistent with animation. The badge reading **“1955 DeSoto”** remains visible.\n\n5. **Animated character near an approaching car shape**  \n   The character moves across the frame, extending one arm downward and one leg outward. At the far left edge, a small car-like shape appears entering or positioned near the side of the frame, though it is only partially visible and indistinct.\n\n6. **Text on brick wall**  \n   The scene changes to a brick wall with a circular sign or painted emblem in the center. It reads **“1955 DeSoto.”** The composition is simple, with the text centered against the brick background.\n\n7. **Live-action/realistic side view of car**  \n   A full-size automobile is shown in profile on an open road or flat outdoor surface. The car has a long body, prominent rear fins, whitewall tires, and a two-tone or light-toned exterior. The background is open and minimal, suggesting a road or test-track-like setting.\n\n8. **Rear three-quarter view of car in motion**  \n   The car is now seen from behind at an angle. The rear fins, trunk area, bumper, and rear license plate area are visible. The car appears to be driving along a smooth roadway, with the camera positioned behind and slightly to one side.\n\n9. **Stylized suburban houses**  \n   The commercial cuts to an animated or model-like suburban street scene. Several houses with pitched roofs, windows, and simplified trees appear behind a low wall or fence. The style is graphic and simplified rather than fully realistic.\n\n10. **Close-up of mechanical/industrial equipment**  \n   A close-up shows rotating or mechanical components, possibly part of machinery or an automobile-related mechanism. Circular dials or wheels and rods are visible. The exact function is unclear from the sampled frame.\n\n11. **Final side view of the car**  \n   The last frame returns to the automobile in a side profile on an open road. The car is stationary or moving very smoothly; the sampled frame does not make the motion fully clear. The long body, whitewall tires, and rear fins are again visible against a plain outdoor background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e74e676a7390e95006a106bdbdf88819e8291b19986b47766",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 780,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 3630
+    }
+  },
+  "duration_seconds": 19.125,
+  "created_at": "2026-05-22T14:45:02Z",
+  "error": null
+}

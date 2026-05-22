@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1980_116",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_116",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_116/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_116.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0002.jpg",
+      "timestamp_seconds": 2.442,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0003.jpg",
+      "timestamp_seconds": 9.165,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0004.jpg",
+      "timestamp_seconds": 11.501,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0005.jpg",
+      "timestamp_seconds": 14.254,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0006.jpg",
+      "timestamp_seconds": 15.922,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0007.jpg",
+      "timestamp_seconds": 18.241,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0008.jpg",
+      "timestamp_seconds": 21.278,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0009.jpg",
+      "timestamp_seconds": 23.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0010.jpg",
+      "timestamp_seconds": 25.799,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_116/frame_0011.jpg",
+      "timestamp_seconds": 27.034,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_116.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_116.json",
+    "response_text": "The commercial opens outdoors in a rural or suburban yard. A dark pickup truck is parked on grass near piles of lumber or construction materials. In the background are open fields, trees, fencing, and a house or outbuilding.\n\nThe scene shifts to the exterior of a house under renovation or construction. Exposed wooden framing, ladders, boards, and tools are visible. A person stands in a doorway holding a large yellow cereal box. A child moves across the foreground, partially blurred.\n\nNext, a close view shows a man partly hidden behind upright boards or framing, as if working on the structure. He wears a denim jacket and looks through the gap while holding the wood.\n\nA close-up of the cereal box follows. The visible packaging includes the phrase “OAT TASTE” and a circular label reading “ONLY 1 GRAM OF SUGAR PER SERVING.” The shot is tightly cropped, so the whole box is not visible.\n\nThe commercial then cuts to a close-up of a smiling woman with curly blonde hair. She is outdoors, holding a glass bowl of cereal and a spoon. She wears a red plaid shirt over a yellow top. A road or driveway and lawn are visible behind her.\n\nA wider shot reveals a family-like group gathered in the yard in front of the partially framed house. The woman sits at a picnic-style table or sawhorse setup eating cereal. A man stands nearby holding a board or tool, two children sit or stand around the table area, and a large dog is in the foreground. Construction materials and the unfinished house facade fill the background.\n\nThe next shot presents a product display: a large yellow Cheerios cereal box standing on a table with bowls of cereal, a glass of milk, and small baked or fruit-like items nearby. The box front reads “Cheerios,” with a banner across the top reading “IMPROVED TOASTED OAT TASTE.” A bowl of ring-shaped cereal is pictured on the box.\n\nA graphic title card appears on a plain yellow background. Large black text reads “Cheerios,” with smaller text underneath: “low in sugar.”\n\nThe woman reappears in close-up, still holding the bowl and spoon. She is smiling broadly with her mouth open, as if reacting enthusiastically. The unfinished house framing remains visible behind her.\n\nAnother yellow title card follows. Large black text reads “Cheerios,” and smaller text beneath begins to form “number one!” In the final frame, the message is fully visible: “Cheerios number one!” On the right side, two children are shown in or near a red wheelbarrow, adding a playful construction-yard image beside the large product text."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c06ff9daa247695006a107227cf10819f96a1a063c9cae243",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 593,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 3443
+    }
+  },
+  "duration_seconds": 15.251,
+  "created_at": "2026-05-22T15:11:50Z",
+  "error": null
+}

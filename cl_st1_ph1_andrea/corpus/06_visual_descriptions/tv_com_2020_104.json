@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2020_104",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_104",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_104/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_104.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0002.jpg",
+      "timestamp_seconds": 2.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0003.jpg",
+      "timestamp_seconds": 4.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0004.jpg",
+      "timestamp_seconds": 6.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0005.jpg",
+      "timestamp_seconds": 7.373,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0006.jpg",
+      "timestamp_seconds": 9.073,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0007.jpg",
+      "timestamp_seconds": 10.706,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0008.jpg",
+      "timestamp_seconds": 12.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0009.jpg",
+      "timestamp_seconds": 13.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0010.jpg",
+      "timestamp_seconds": 15.373,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0011.jpg",
+      "timestamp_seconds": 17.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0012.jpg",
+      "timestamp_seconds": 19.473,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0013.jpg",
+      "timestamp_seconds": 20.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0014.jpg",
+      "timestamp_seconds": 22.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0015.jpg",
+      "timestamp_seconds": 23.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0016.jpg",
+      "timestamp_seconds": 25.206,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0017.jpg",
+      "timestamp_seconds": 26.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0018.jpg",
+      "timestamp_seconds": 28.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_104/frame_0019.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_104.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_104.json",
+    "response_text": "The commercial opens in a large, dim, symmetrical office space with rows of cubicles and desks. The room has grey-green walls, long fluorescent ceiling lights, rectangular wall lights, desk lamps, and older beige desktop computers. Many workers sit at separate workstations, creating a highly ordered, bureaucratic-looking environment.\n\nA white-haired man wearing glasses and a dark, high-collared, tailored jacket is then shown at a lectern or raised desk near the front of the office. He appears to be addressing the room. Subsequent shots show workers at their desks with vintage computers, keyboards, phones, papers, and glowing dome-shaped lamps. The overall setting remains controlled and austere.\n\nThe white-haired man is shown walking or standing among the cubicles. He faces different directions and appears to be speaking or issuing instructions, though no audio content is visible. The camera alternates between medium shots of him and reaction shots of employees. In one shot, a Black male employee sits at a desk facing a beige computer, looking serious or attentive.\n\nThe tone becomes visually more unusual: one man in a grey suit is shown standing up on top of a desk or cubicle surface. The white-haired man looks upward toward him. Another employee is also shown standing on a desk in the background. A bald, bearded man later appears standing on a desk as well. Several seated workers look on, while others remain at their computers. The white-haired man’s gestures grow more emphatic; in one close shot he raises an arm as if signaling or pointing.\n\nThe setting then abruptly changes to a bright café or coffee shop during the day. People sit at tables, and a person stands near the entrance. Large windows look out onto a city street, with visible signage on the glass, including “COFFEE” and smaller text that is partly unclear. A barista-like woman in an apron stands behind an espresso machine and looks toward the camera or toward someone off-screen.\n\nThe commercial then cuts to a nighttime urban street scene with an ambulance parked with its rear doors open. A paramedic or emergency worker stands at the back of the ambulance near a stretcher. A bald man lies on the stretcher, partially reclined, looking upward. City buildings and lights are visible in the background. On-screen subtitle text appears in two languages across these ambulance shots: first in Spanish, “Uso Zoom para traducir.”, and then in English, “I use Zoom to translate.” The subtitles suggest translation visually, but no spoken content is visible in the frames.\n\nA full-screen blue title card appears with the white “zoom” logo centered.\n\nAfter the logo, the commercial returns to the office scene. The white-haired man is in the foreground, pointing forcefully toward someone or something off-screen. Behind him, another man remains standing on a desk, while other workers sit at their stations. The final frame holds on the white-haired man pointing and appearing intense or commanding, with the office environment still visible behind him."
+  },
+  "api_metadata": {
+    "response_id": "resp_0042f139d31496c9006a107b7a8274819f8d5d1ddc90d79e24",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 737,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 4461
+    }
+  },
+  "duration_seconds": 19.24,
+  "created_at": "2026-05-22T15:51:41Z",
+  "error": null
+}

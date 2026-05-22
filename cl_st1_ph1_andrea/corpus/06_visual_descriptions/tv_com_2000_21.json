@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2000_21",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_21",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_21/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_21.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0002.jpg",
+      "timestamp_seconds": 0.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0003.jpg",
+      "timestamp_seconds": 1.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0004.jpg",
+      "timestamp_seconds": 4.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0005.jpg",
+      "timestamp_seconds": 5.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0006.jpg",
+      "timestamp_seconds": 6.529,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0007.jpg",
+      "timestamp_seconds": 8.331,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0008.jpg",
+      "timestamp_seconds": 9.299,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0009.jpg",
+      "timestamp_seconds": 10.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0010.jpg",
+      "timestamp_seconds": 11.635,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0011.jpg",
+      "timestamp_seconds": 13.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0012.jpg",
+      "timestamp_seconds": 15.438,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0013.jpg",
+      "timestamp_seconds": 16.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0014.jpg",
+      "timestamp_seconds": 18.441,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0015.jpg",
+      "timestamp_seconds": 20.043,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0016.jpg",
+      "timestamp_seconds": 21.378,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0017.jpg",
+      "timestamp_seconds": 28.118,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0018.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_21/frame_0019.jpg",
+      "timestamp_seconds": 30.52,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_21.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_21.json",
+    "response_text": "The commercial opens on a black frame, then cuts into a domestic interior.\n\nA blonde woman in a purple top is seen through a doorway, leaning in and touching her hair. The room behind her looks like part of a house, with a hanging ceiling light and framed wall art.\n\nThe scene then cuts to a large green humanoid creature with exaggerated features and a bulky body. It appears inside a room or home office area, looming over or grappling with a human figure near a desk. The creature has green skin, a broad face, tusk-like teeth or protruding lower teeth, and dark straps or suspenders over brown clothing.\n\nThe creature continues moving through the house. It is shown low to the floor and then from a low angle, filling much of the frame, suggesting it is very large. The setting includes lamps, framed pictures, upholstered furniture, windows with blinds, and household décor. A close-up shows an upside-down bald man’s face, suggesting he is being held or flipped, though the exact action is not fully visible in the sampled frames.\n\nA wider shot of a living room shows the green creature moving rapidly out of frame; the room contains a sofa, side table, lamp, shelving, and carpet. Another shot shows the creature from below with one arm raised. The sequence then cuts to a bed or playroom area crowded with stuffed animals, pillows, and toys. A man’s head appears amid the stuffed animals, wearing or surrounded by playful accessories including a pink feather boa and a silver tiara-like object.\n\nThe creature is then shown standing upright in a room with windows and blinds. It remains very large relative to the furniture and fills the center of the frame.\n\nThe woman reappears by a staircase, shown in profile, facing toward the action. She then holds up a credit card in close-up. The card reads “Capital One Platinum,” with a circular badge that says “Platinum No-Hassle Card.” The card number and name area are visible but not fully legible.\n\nThe next shot shows the woman from behind or partly over the shoulder, facing the large green creature. She holds the card toward it. The creature is now lying back or lowered in front of her. In the following shot, the woman lies or leans on the floor, smiling and gesturing toward a much smaller version of the green creature on the floor near her hand. Small white fine print appears at the bottom; it is partially legible and appears to say “Savings vary by individual.”\n\nThe man in the stuffed-animal-filled bed/playroom is shown again, still surrounded by toys and the pink boa, with the same small fine print visible at the bottom.\n\nThe commercial then cuts to a clean white screen with the “Capital One” logo near the top. Later, a tabletop or desktop scene appears with pencils or small objects in the background. Overlaid text includes “capitalone.com” near the top right, the “Capital One” logo near the lower right, and the line “what’s in your wallet?” underneath.\n\nIn the final visible scene, a hand holds a small green creature figurine or miniature version of the earlier monster, positioning it on or near the top of a yellow pencil. The same “capitalone.com,” “Capital One,” and “what’s in your wallet?” text remains on screen. The commercial ends on a black frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0133bd7c0804dcff006a1074daca288190b3a00e083f537c2c",
+    "usage": {
+      "input_tokens": 4104,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1008,
+      "output_tokens_details": {
+        "reasoning_tokens": 322
+      },
+      "total_tokens": 5112
+    }
+  },
+  "duration_seconds": 26.528,
+  "created_at": "2026-05-22T15:23:33Z",
+  "error": null
+}

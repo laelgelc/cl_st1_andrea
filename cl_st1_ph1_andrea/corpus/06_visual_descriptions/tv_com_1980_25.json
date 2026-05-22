@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1980_25",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_25",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_25/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_25.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_25/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_25/frame_0002.jpg",
+      "timestamp_seconds": 9.366,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_25/frame_0003.jpg",
+      "timestamp_seconds": 27.951,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_25/frame_0004.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_25.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_25.json",
+    "response_text": "The commercial begins with a black frame, with no visible objects or people.\n\nBy around 9.4 seconds, the scene has changed to an indoor counter or workbench setting. In the foreground, a large white plastic jug of drain cleaner is prominently displayed. The label reads “Liquid Plumr” and also includes “Drain Opener”; there is additional smaller text near the top that appears to say “Clears fast,” though the exact wording is somewhat blurred. The bottle has a red cap and red/blue label graphics.\n\nBehind the product are three men seated or leaning at the counter. They are wearing matching plaid shirts or jackets and light-colored caps. Each appears to be holding a black telephone receiver to his ear, suggesting they are taking calls. Their facial expressions appear animated or attentive, but fine details are limited by image quality. The background includes signage with partially readable text, including “DISCOUNT” and “PLUM…,” likely related to plumbing, though the full sign is not clearly visible. The lighting is colorful and somewhat theatrical, with pinkish and bluish tones.\n\nNear 28 seconds, the shot changes or tightens to a clearer product-focused view. The jug of Liquid Plumr dominates the left side of the frame on the counter. The people are no longer visible. The background remains an indoor shop-like setting, out of focus, with the same partially visible signage and a bluish light beam or reflection across the back. Small objects lie on the counter around the bottle, but they are indistinct.\n\nThe final frame is essentially the same product shot: the Liquid Plumr bottle remains centered-left and prominent, with the blurred store/workshop background behind it. No additional visible action occurs in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_03350b9e9f4c18df006a1070d078b081a18c3790e25245dda8",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1567
+    }
+  },
+  "duration_seconds": 14.294,
+  "created_at": "2026-05-22T15:06:03Z",
+  "error": null
+}

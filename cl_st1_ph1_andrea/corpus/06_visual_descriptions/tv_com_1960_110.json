@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1960_110",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_110",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_110/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_110.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_110/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_110/frame_0002.jpg",
+      "timestamp_seconds": 29.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_110/frame_0003.jpg",
+      "timestamp_seconds": 43.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_110/frame_0004.jpg",
+      "timestamp_seconds": 46.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_110/frame_0005.jpg",
+      "timestamp_seconds": 59.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_110.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_110.json",
+    "response_text": "The commercial is in black and white and appears to be set largely at night.\n\n1. **Opening frame:** The image is almost entirely dark, with only faint, indistinct shapes visible. No clear objects or people can be identified.\n\n2. **Road surface with debris:** The scene cuts to a low, close view of a rough road surface. A sharp, jagged object lies on the ground, resembling broken glass or metal fragments. The background is dark, emphasizing the object on the roadway.\n\n3. **Car tire over debris:** A close-up shows a car tire, including a white sidewall detail, pressing down near or onto the sharp debris on the road. The tire tread and sidewall are clearly visible, and the dangerous object remains beneath or immediately beside the tire.\n\n4. **Woman inside a car:** The commercial then cuts to a close-up of a woman seated inside a car at night. Her face is partly lit and partly in shadow. Out-of-focus lights are visible through the window behind her, suggesting a nighttime street or roadway setting. She appears calm and is looking slightly off-camera.\n\n5. **Product shot:** The final frame shows a tire displayed upright against a dark background. Large text on the tire reads “GOODYEAR,” and below it the words “WITH LIFEGUARD SAFETY SPARE.” The Goodyear name is framed within a diamond-shaped outline. The shot functions as a clear product-identification image."
+  },
+  "api_metadata": {
+    "response_id": "resp_0137fabecbaef239006a106e7868b881a1873641300db7d38c",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 419,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1497
+    }
+  },
+  "duration_seconds": 10.393,
+  "created_at": "2026-05-22T14:56:02Z",
+  "error": null
+}

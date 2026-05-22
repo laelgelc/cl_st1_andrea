@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_30",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_30",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_30/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_30.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_30/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_30/frame_0002.jpg",
+      "timestamp_seconds": 14.271,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_30/frame_0003.jpg",
+      "timestamp_seconds": 23.58,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_30/frame_0004.jpg",
+      "timestamp_seconds": 34.925,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_30/frame_0005.jpg",
+      "timestamp_seconds": 45.036,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_30.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_30.json",
+    "response_text": "The commercial is in black and white and appears to promote a product called **Serutan Plus**.\n\nAt the beginning, a male presenter in a suit stands to the right of a large display board. The board resembles an oversized advertisement or package insert. Large text at the top reads **“NEW LAXATIVE ADVANCE”** and **“For Fast Relief of Irregularity.”** The central product name **“NEW SERUTAN PLUS”** is prominently displayed. A product bottle and package appear on the left side of the board, along with a medical-style graphic and blocks of small print that are not fully legible.\n\nThe next frame moves to a closer view of the presenter, with the product advertisement enlarged behind or superimposed around him. He faces the camera and gestures with one raised hand while the words **“NEW SERUTAN PLUS”** remain clearly visible in the background. The composition layers the presenter with the product messaging, making his face and the brand text occupy the same visual space.\n\nThe commercial then returns to a wider shot. The presenter stands again beside the large display board. He appears to be gesturing with both hands, as if emphasizing a point. The same main claims and branding remain visible: **“NEW LAXATIVE ADVANCE,” “For Fast Relief of Irregularity,”** and **“NEW SERUTAN PLUS.”**\n\nA transition follows in which the large advertisement and the presenter are partially overlaid with a new product-display graphic. The image appears to dissolve or crossfade, creating a layered effect. The text **“NEW LAXATIVE ADVANCE”** and **“SERUTAN PLUS”** can still be seen, though parts of the frame are semi-transparent and visually cluttered during the transition.\n\nThe final frame is a clean product pack shot. A box and a jar labeled **“SERUTAN PLUS”** appear on the left. Across the top, large text reads **“NEW LAXATIVE ADVANCE.”** To the right, a boxed phrase reads **“GENTLE RELIEF.”** At the bottom, the product name **“SERUTAN PLUS”** is displayed in large bold lettering. The presenter is no longer visible in the final frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e19238e6341b608006a106b74666c81a39dd0320ea0d57de5",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 604,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1972
+    }
+  },
+  "duration_seconds": 13.406,
+  "created_at": "2026-05-22T14:43:13Z",
+  "error": null
+}

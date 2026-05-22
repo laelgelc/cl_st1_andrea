@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2010_57",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_57",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_57/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_57.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0002.jpg",
+      "timestamp_seconds": 0.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0003.jpg",
+      "timestamp_seconds": 9.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0004.jpg",
+      "timestamp_seconds": 10.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0005.jpg",
+      "timestamp_seconds": 12.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0006.jpg",
+      "timestamp_seconds": 13.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0007.jpg",
+      "timestamp_seconds": 15.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0008.jpg",
+      "timestamp_seconds": 16.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0009.jpg",
+      "timestamp_seconds": 17.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0010.jpg",
+      "timestamp_seconds": 18.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0011.jpg",
+      "timestamp_seconds": 19.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0012.jpg",
+      "timestamp_seconds": 20.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0013.jpg",
+      "timestamp_seconds": 22.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0014.jpg",
+      "timestamp_seconds": 22.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0015.jpg",
+      "timestamp_seconds": 24.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0016.jpg",
+      "timestamp_seconds": 27.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_57/frame_0017.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_57.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_57.json",
+    "response_text": "The sequence begins with a static product-information screen. A pale blue sky and green wooded hills form the background, with large centered text reading “CHANTIX (varenicline) TABLETS.” Smaller text includes “1-888-chantix,” “chantix.com,” and a Pfizer logo at the lower right. A small line of text appears along the bottom, though it is difficult to read fully.\n\nThe next sampled frame is completely black.\n\nAfter the black frame, the commercial shifts to a brightly lit, highly stylized music-classroom-like setting. A close-up shows an electronic keyboard on a wooden surface, with hands playing it. A white mug filled with pencils, pens, and markers sits beside the keyboard.\n\nThe scene widens to reveal an adult man seated at a blue desk with the keyboard in front of him. Around him are children standing at bright green drums. The room is decorated with oversized black-and-white piano-key wall graphics, pink string instruments hanging on the walls, colorful music stands, blue bust sculptures, and other brightly colored instruments and props. Several children hold drumsticks or similar sticks raised in the air.\n\nA closer shot shows the man at the keyboard, wearing a tan jacket over a blue shirt. His mouth is open and his expression is animated. Behind him, pink guitars or cello-like instruments and blue busts remain visible.\n\nThe camera then shows children at green drums. They hold sticks and appear to be performing coordinated movements. One girl in a purple top is shown in close-up smiling while holding long colored sticks or rods, with pink instruments behind her. Another close-up returns to the man playing the keyboard.\n\nA close shot focuses on the green drums with orange drumheads as sticks strike them. A wider rear view then shows multiple children standing with blue backpacks on, facing the wall of oversized piano keys and pink instruments, while the man remains seated at the central blue desk.\n\nThe visual style changes: a top-down close-up shows the keyboard surrounded by denim fabric, as if the keyboard and nearby surfaces are integrated into or resting on jeans. The man is then shown in front of a denim-textured gray-blue background made up of repeated jeans-like shapes. Pink and green props are still present but now the set appears largely denim-themed.\n\nA close-up shows a child’s back with a blue backpack. The front pocket of the backpack contains visible colored pencils or school supplies. In a wide shot, several children stand in the denim-textured set holding or displaying blue backpacks, with the man and keyboard centered behind them. The floor, walls, and furniture all appear covered in gray-blue denim-like material.\n\nThe man is shown again at the keyboard, now seated behind a denim-textured desk. A stack of brightly colored paper or folders lies on the desk, along with a pencil cup, a blue bust, and a green triangular object.\n\nThe commercial ends on a clean white background resembling ruled notebook paper. A large red Target bullseye logo is centered. Below it, cursive text reads “Expect More. Pay L…”; the final part of the phrase is partially cut off or not fully legible in the sampled frames. Small fine print appears beneath, but it is too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_03cf7a9b7601881d006a1078123b148192b6746ef0dede60bc",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1170,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 4516
+    }
+  },
+  "duration_seconds": 31.87,
+  "created_at": "2026-05-22T15:37:21Z",
+  "error": null
+}

@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_2020_3",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_3",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_3/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_3.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0002.jpg",
+      "timestamp_seconds": 1.233,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0003.jpg",
+      "timestamp_seconds": 4.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0004.jpg",
+      "timestamp_seconds": 5.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0005.jpg",
+      "timestamp_seconds": 7.572,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0006.jpg",
+      "timestamp_seconds": 10.158,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_3/frame_0007.jpg",
+      "timestamp_seconds": 13.037,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_3.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_3.json",
+    "response_text": "The commercial opens inside a bright home entryway or mudroom. An exterior door stands open to a sunny garden outside. On the left is a built-in storage area with hanging coats, bags, shoes, and small household items. A woman enters through the open door carrying a large white tote or fabric bag. She appears hurried or strained, holding the bag close to her body.\n\nThe next shot moves into a close-up of the woman. She is indoors in front of the coat area. Her face is contorted as if upset, crying, or reacting strongly to something unpleasant. She clutches the white bag near her chest.\n\nThe scene then cuts to a close-up of a man standing nearby in the same entryway. He has a moustache and wears a short-sleeved polo shirt. His eyes are closed tightly and his facial expression suggests discomfort or distaste. The open door and hanging coats remain visible behind him.\n\nA following close-up shows an elderly woman at the doorway area. She wears a red cardigan and a colorful beaded necklace. She looks to the side with widened eyes and a tense or concerned expression. The open glass-paneled door and greenery outside are visible behind her.\n\nA wider shot then shows the group together in the entryway. The woman stands to the left, covering part of her face with her hand while holding or standing near the bag. The man stands center holding the large white bag in both hands. The elderly woman stands behind him, and a young boy in a turquoise shirt stands to the right, looking toward the adults. The storage area with coats, a scooter, bags, shoes, and the open door remain in view.\n\nThe next shot cuts to a close-up of a closet rod with hanging clothes. A hand places or hangs a white moisture-absorbing product bag on the rod. The product label is clearly visible: “DampRid” in red and blue lettering. The bag has a white upper portion and a transparent lower chamber.\n\nIn the final frame, the DampRid bag hangs among clothing, including a tan knit garment and a denim item. The lower transparent chamber contains blue liquid or gel-like material. On-screen text appears to the right of the product in bold white letters: “Traps excess moisture.” The shot emphasizes the product hanging in the closet and its stated function."
+  },
+  "api_metadata": {
+    "response_id": "resp_0851fec9460d6589006a10797940cc81a090ebb201e52712af",
+    "usage": {
+      "input_tokens": 1456,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 543,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1999
+    }
+  },
+  "duration_seconds": 14.375,
+  "created_at": "2026-05-22T15:43:03Z",
+  "error": null
+}

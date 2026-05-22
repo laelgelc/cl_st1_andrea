@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2000_120",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_120",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_120/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_120.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0002.jpg",
+      "timestamp_seconds": 0.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0003.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0004.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0005.jpg",
+      "timestamp_seconds": 3.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0006.jpg",
+      "timestamp_seconds": 5.729,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0007.jpg",
+      "timestamp_seconds": 7.097,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0008.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0009.jpg",
+      "timestamp_seconds": 9.366,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0010.jpg",
+      "timestamp_seconds": 9.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0011.jpg",
+      "timestamp_seconds": 12.969,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0012.jpg",
+      "timestamp_seconds": 15.539,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0013.jpg",
+      "timestamp_seconds": 16.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0014.jpg",
+      "timestamp_seconds": 18.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0015.jpg",
+      "timestamp_seconds": 20.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0016.jpg",
+      "timestamp_seconds": 24.447,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0017.jpg",
+      "timestamp_seconds": 26.016,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_120/frame_0018.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_120.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_120.json",
+    "response_text": "The commercial opens on a silver sedan driving toward the camera along the center of a clean suburban street. The setting is highly stylized: neat houses line both sides, the trees have vivid red, orange, and pink foliage, and snow-covered mountains are visible in the distance.\n\nThe view then pulls back to a high, centered view down the same road, showing the car as a small vehicle moving through the neighborhood. The road has strong double center markings and the environment looks polished and slightly artificial, with bright colors and symmetrical street layout.\n\nA cut moves inside the car, showing a male driver in profile at the wheel. He appears focused on the road. The dashboard, front passenger seat, and side window are visible; outside, houses and the bright suburban scenery pass by.\n\nThe next shot follows the silver sedan from behind as it continues down the street, still centered on the road. The camera then cuts to a mountainous landscape with steep rocky cliffs and snowy peaks, suggesting the driving environment is expanding beyond the neighborhood.\n\nThe commercial shifts into a more race-like sequence. Multiple cars are shown driving along a road under dense, brightly colored autumn trees. A side mirror shot shows the silver sedan reflected behind another car, indicating it is following or gaining on surrounding traffic. The landscape then changes again to a dramatic cliffside road with mountains, trees, and an elevated roadway.\n\nA close-up shows the front of a red sports car low to the road, with fallen leaves or reflections near the surface. The vehicles approach a tunnel or gateway built into a rocky structure. Above the tunnel entrances are sign-like panels; some details are not fully legible in the frame.\n\nThe next view shows three large Mobil motor-oil containers mounted like giant signs above a roadway and tunnel structure. The labels include visible Mobil branding and product types such as Mobil 5000, Mobil 7500, and Mobil 1. Cars drive beneath these oversized oil containers, making the product part of the driving environment.\n\nThe silver sedan is then shown side-by-side with another vehicle, with a close foreground view of a dark grille on the left and the silver sedan moving alongside on the right. A billboard appears in the following shot, displaying a graphic with bold red, blue, and gray areas and what looks like mechanical or engine-related imagery, though the details are not fully clear. A wider shot places this billboard beside a winding elevated road near cliffs and mountains.\n\nAnother shot shows a huge Mobil 5000 bottle standing as a monumental object in the landscape, surrounded by brightly colored trees. The commercial then cuts to a high aerial view revealing a complex network of winding roads or track-like routes through a miniature-looking landscape with mountains, clouds, trees, and buildings.\n\nThe final product shot appears on a plain white background: three Mobil motor-oil bottles are arranged together, with a larger Mobil 1 container in the center and Mobil-branded bottles on either side. Small text appears below the bottles but is not fully legible at this resolution.\n\nThe last frame shows the Mobil logo centered on a white background, with the website “mobiloil.com” displayed below it."
+  },
+  "api_metadata": {
+    "response_id": "resp_00795da126be631a006a1076e285e4819cba69b99e438190db",
+    "usage": {
+      "input_tokens": 4579,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1002,
+      "output_tokens_details": {
+        "reasoning_tokens": 369
+      },
+      "total_tokens": 5581
+    }
+  },
+  "duration_seconds": 25.426,
+  "created_at": "2026-05-22T15:32:11Z",
+  "error": null
+}

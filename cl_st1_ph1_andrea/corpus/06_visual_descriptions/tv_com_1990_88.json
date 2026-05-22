@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1990_88",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_88",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_88/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_88.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0002.jpg",
+      "timestamp_seconds": 3.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0003.jpg",
+      "timestamp_seconds": 5.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0004.jpg",
+      "timestamp_seconds": 6.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0005.jpg",
+      "timestamp_seconds": 7.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0006.jpg",
+      "timestamp_seconds": 8.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0007.jpg",
+      "timestamp_seconds": 9.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0008.jpg",
+      "timestamp_seconds": 11.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0009.jpg",
+      "timestamp_seconds": 13.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0010.jpg",
+      "timestamp_seconds": 19.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_88/frame_0011.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_88.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_88.json",
+    "response_text": "The commercial begins with a black screen.\n\nA street scene then appears. Several people are gathered beside a car on a city sidewalk. An ATM or wall-mounted payment machine is visible on the right. A man in glasses and a patterned red garment leans toward another person, while an older bald man seated lower in the frame looks upward. The group appears clustered closely together, with trees and storefronts or street fixtures in the background.\n\nThe next shot cuts to a close-up of a balding middle-aged man seated in what appears to be an open-top car. He holds up a small green card between his fingers and looks off to the side. The car seat is visible behind him.\n\nA young woman is then shown in close-up holding a large brown paper grocery bag. A baguette sticks out from the bag. She wears a blue jacket and has a pink hair accessory. Her expression appears worried or uncertain. A blurred figure passes or stands in the foreground, partly obscuring the shot.\n\nThe commercial returns to the balding man in the car. He still holds the green card and adjusts or touches his shirt and tie with his other hand. He looks forward with a composed expression.\n\nThe young woman with the grocery bag appears again. She clutches the bag against her chest, with the baguette visible, and looks anxious or concerned. Her hair is slightly tousled.\n\nA new outdoor scene follows in front of a diner. The balding man sits or leans on the front of a red car while holding paper-wrapped food or packages. Beside him is a helmeted man in cycling gear near a bicycle. Large letters spelling “DINER” are visible on the building behind them. Both men face the camera area, with the cyclist gesturing with his hands.\n\nA wide shot then shows a metal truss bridge over water, surrounded by trees. A red vehicle is visible on the bridge.\n\nThe next scene shows the balding man leaning down beside an elderly woman on a sidewalk. The elderly woman wears a hat, glasses, and patterned clothing. She raises one finger as if making a point or giving direction. The man looks serious and bends toward her, listening or watching.\n\nA close-up shows a card being inserted into the slot of a dark-colored machine. The card has colored markings, but the details are not fully legible in the frame.\n\nThe final frame returns to the elderly woman and the balding man outdoors. Both are close to the camera, with the man bent forward. White on-screen text reads “MASTER THE MOMENT.” A MasterCard logo appears at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0223d8a2a33da8cc006a1073d7cc7c81a1a7eaf244655fad95",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1026,
+      "output_tokens_details": {
+        "reasoning_tokens": 497
+      },
+      "total_tokens": 3876
+    }
+  },
+  "duration_seconds": 26.087,
+  "created_at": "2026-05-22T15:19:13Z",
+  "error": null
+}

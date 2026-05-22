@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2020_13",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_13",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_13/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_13.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0002.jpg",
+      "timestamp_seconds": 4.653,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0003.jpg",
+      "timestamp_seconds": 8.615,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0004.jpg",
+      "timestamp_seconds": 10.575,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0005.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0006.jpg",
+      "timestamp_seconds": 13.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0007.jpg",
+      "timestamp_seconds": 15.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0008.jpg",
+      "timestamp_seconds": 17.707,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0009.jpg",
+      "timestamp_seconds": 19.125,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0010.jpg",
+      "timestamp_seconds": 21.586,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0011.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0012.jpg",
+      "timestamp_seconds": 23.421,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0013.jpg",
+      "timestamp_seconds": 26.716,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0014.jpg",
+      "timestamp_seconds": 28.426,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_13/frame_0015.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_13.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_13.json",
+    "response_text": "The commercial unfolds as a rapid sequence of restroom- and toilet-related scenes, followed by a product shot and a branded end image.\n\n1. **Opening close-up in a domestic bathroom**  \n   The first frame shows a close-up of a closed toilet seat or lid in a dim, warmly lit bathroom. The background is out of focus, with decorative items, plants, and fabric visible, suggesting a cozy home interior.\n\n2. **Wide view of a decorated bathroom**  \n   The scene changes to a full bathroom with a pedestal sink, a toilet with a fuzzy pink seat cover, candles, a window looking onto greenery, patterned rugs, and soft curtains. The lighting is warm and intimate.\n\n3. **Graffiti-covered public restroom**  \n   The next shot shows a darker, green-tinted public restroom with multiple stall doors and walls covered in graffiti. Fluorescent lights are visible in the background. The atmosphere is stark and grimy compared with the earlier domestic bathroom.\n\n4. **Luxurious, bright bathroom**  \n   A large, elegant bathroom appears, with polished stone floors, black marble columns, a white toilet centered in the background, plants, a sofa or bench, a lamp, and framed artwork. The space looks upscale and hotel-like.\n\n5. **Portable toilet at a construction site**  \n   The commercial cuts outdoors to a construction site. A portable toilet is suspended in the air by a crane or lifting cable between unfinished concrete buildings and scaffolding. The sky is grey and misty.\n\n6. **Airplane cabin lavatory area**  \n   A dim airplane cabin appears, with seated passengers in shadow. At the rear or center, an aircraft lavatory door or service area is open, lit with blue light.\n\n7. **Row of urinals**  \n   A tiled public restroom is shown with a row of white wall-mounted urinals. Light enters from high windows, casting shadows across the tiled wall and floor.\n\n8. **Small bathroom next to bedroom**  \n   A toilet with its seat up is shown in a small, warm-lit bathroom. Through an opening, a bed is visible in the adjacent room. The space feels like a bedroom with an en-suite or nearby bathroom.\n\n9. **Foamy liquid on tiled floor**  \n   A close-up shows reddish-brown floor tiles covered with water, foam, and bubbles. A drain is visible at the center, with steam or mist rising. A brush or cleaning object lies nearby. The exact source of the liquid is not shown.\n\n10. **Graffiti restroom with paper flying**  \n   The green-tinted graffiti restroom returns. Pieces of paper or toilet paper appear suspended or flying through the space, creating a chaotic visual effect.\n\n11. **Hand pressing a toilet flush handle**  \n   A close-up shows a hand reaching to press a metal flush handle on a toilet tank. The hand wears rings. The background is blurred.\n\n12. **Text prompt on blurred bathroom background**  \n   White centered text appears over a blurred background: **“TAKE A LOOK AT YOUR PEE”**. No person is clearly visible in this frame.\n\n13. **Product being poured into water**  \n   A hand pours powder from a small packet labeled **LIQUID I.V.** into a clear glass of water. The powder clouds and dissolves in the water. On-screen white text reads **“HYDRATE WITH”** on the left and **“LIQUID I.V.”** with a small droplet-like logo on the right.\n\n14. **Construction site with branding overlay**  \n   The final setting returns to a construction site seen through scaffolding or structural framing. Buildings under construction and cranes are visible. A portable toilet stands in the middle distance. On the right side, white branding reads **“LIQUID I.V.”** with the same small logo.\n\n15. **Final branded construction-site image**  \n   The last frame holds on the construction site view with the **“LIQUID I.V.”** logo still on screen. The portable toilet and unfinished buildings remain visible in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_02f4d1a15189f04e006a1079b55f188195844a57ed3cd9f4e5",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 934,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 3902
+    }
+  },
+  "duration_seconds": 23.624,
+  "created_at": "2026-05-22T15:44:12Z",
+  "error": null
+}

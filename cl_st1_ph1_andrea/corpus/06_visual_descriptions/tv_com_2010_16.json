@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_2010_16",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_16",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_16/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_16.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0002.jpg",
+      "timestamp_seconds": 6.563,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0003.jpg",
+      "timestamp_seconds": 15.772,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0004.jpg",
+      "timestamp_seconds": 18.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0005.jpg",
+      "timestamp_seconds": 22.879,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_16/frame_0006.jpg",
+      "timestamp_seconds": 26.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_16.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_16.json",
+    "response_text": "The commercial takes place in an automotive service/tire shop.\n\n- **Opening frame:** A man in a gray long-sleeve shirt, jeans, and a dark baseball cap stands in the foreground near stacks of tires. Behind him, a service worker in a blue-and-white uniform is bent over a tire near a vehicle with its hood open. The shop interior contains tire racks, equipment, and hanging lights. A sign in the background includes tire brand names such as **Goodyear** and **Continental Tire**.\n\n- **Next shot:** The camera moves closer to the man in the cap. He stands in front of tall stacked tires and service equipment, appearing to address the viewer. A monitor and more workshop machinery are visible behind him.\n\n- **Mid-sequence:** The man stands beside a large horizontal stack of tires, gesturing with one hand. In the background are more tire racks and a service bay with vehicles. A sign above the tires shows the logos/text **Ford**, **Lincoln**, and **Mercury**.\n\n- **Graphic/product shot:** The scene cuts to a clean graphic-like display of rows of tires filling the lower half of the frame. Above them are tire brand logos, including **Goodyear**, **Continental Tire**, **Hankook**, **Yokohama**, and **Pirelli**. At the bottom, large orange text reads **“LOW PRICE TIRE”**.\n\n- **Service equipment shot:** The man leans on or rests his arm near a tire mounted on a red tire-service machine. He appears to be inspecting or thinking while looking at the tire. A black lower-third banner appears with dealership/service branding: **Ford**, **Lincoln**, **Mercury**, and the word **“SERVICE”**. A plate-like marking on the machine reads **“TCX 575”** along with a Ford logo.\n\n- **Final frame:** The man stands beside service machinery and tires, facing the viewer with one hand raised in a pointing or emphatic gesture and the other hand on his hip. The lower-third banner remains visible with **Ford**, **Lincoln**, **Mercury**, and **SERVICE**. The automotive shop setting, tire stacks, and open vehicle hood remain visible in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_05d4640e0b1a8495006a1077315acc81a295e9f63eb9416c43",
+    "usage": {
+      "input_tokens": 1267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1803
+    }
+  },
+  "duration_seconds": 13.455,
+  "created_at": "2026-05-22T15:33:18Z",
+  "error": null
+}

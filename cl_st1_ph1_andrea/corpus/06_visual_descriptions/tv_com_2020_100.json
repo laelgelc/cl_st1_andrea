@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2020_100",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_100",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_100/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_100.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0002.jpg",
+      "timestamp_seconds": 2.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0003.jpg",
+      "timestamp_seconds": 5.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0004.jpg",
+      "timestamp_seconds": 29.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0005.jpg",
+      "timestamp_seconds": 30.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0006.jpg",
+      "timestamp_seconds": 36.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0007.jpg",
+      "timestamp_seconds": 38.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0008.jpg",
+      "timestamp_seconds": 41.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0009.jpg",
+      "timestamp_seconds": 45.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0010.jpg",
+      "timestamp_seconds": 53.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0011.jpg",
+      "timestamp_seconds": 65.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0012.jpg",
+      "timestamp_seconds": 67.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0013.jpg",
+      "timestamp_seconds": 72.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0014.jpg",
+      "timestamp_seconds": 74.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0015.jpg",
+      "timestamp_seconds": 75.373,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0016.jpg",
+      "timestamp_seconds": 77.84,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0017.jpg",
+      "timestamp_seconds": 80.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0018.jpg",
+      "timestamp_seconds": 83.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0019.jpg",
+      "timestamp_seconds": 85.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0020.jpg",
+      "timestamp_seconds": 85.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0021.jpg",
+      "timestamp_seconds": 85.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_100/frame_0022.jpg",
+      "timestamp_seconds": 93.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_100.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_100.json",
+    "response_text": "The commercial unfolds as a before/after-style sequence about cold indoor spaces and a small plug-in heater.\n\n1. **Opening cold-home scenes**  \n   The first images are tinted blue, visually suggesting cold conditions. A woman lies curled on a couch, hugging herself with her eyes partly closed, as if uncomfortable. The room includes a sofa, side table, framed photo, and small plant.\n\n2. **Thermostat close-up**  \n   A close-up shows a blonde woman’s profile as she adjusts or points at a wall thermostat. The display reads **58** with a smaller number beside it. The whole shot remains blue-tinted.\n\n3. **Woman and child on couch**  \n   The dark-haired woman appears again on the couch, now with a child lying across her lap under a blanket. She looks down at the child and adjusts the blanket. The blue tint continues.\n\n4. **Plug-in heater introduced**  \n   A hand plugs or presses a compact gray heater into a wall outlet. The device has a black front grille and a control area on top.\n\n5. **Garage or utility-room setting**  \n   A man in a red-and-black plaid shirt stands near shelving and a wall-mounted heater. A vertical color temperature graphic appears at the left with text reading **55°F**. The space looks like a garage or storage area with shelves, containers, and tools.\n\n6. **Cold bathroom sequence**  \n   A blonde woman appears wrapped in a robe or towel in a bathroom. The shot is blue-tinted. Large on-screen text reads **“COLD SHOWERS.”**  \n   Another shot shows bare feet on a tile floor with text **“FREEZING FLOORS.”**  \n   A wider bathroom shot shows the same woman standing near a sink and mirror, hugging herself. Text reads **“CHILLY COLD.”**\n\n7. **Product mounted in kitchen**  \n   A close-up shows hands placing the compact gray heater into a wall outlet near a kitchen counter. On-screen text reads **“Whisper Quiet.”** Vegetables, including onions, are visible on the counter.\n\n8. **Larger heater and ordering information**  \n   A different box-shaped heater with glowing red heating elements is shown on a floor or low surface. Overlays include a QR code labeled **“SCAN HERE!”**, the website **www.BuyTurboHeat.com**, and the phone number **1-800-453-0359**.\n\n9. **Couple using heater at home**  \n   An older man and woman sit on a blue couch. The man reaches toward a small heater plugged into the wall beside him, while the woman sits smiling and holding an object in her hands. The ordering information and QR code remain on screen.\n\n10. **Feature display: fan**  \n   The compact wall heater is shown plugged in, with a red pinwheel or decorative fan nearby. Text reads **“2 Speed Fan.”** The same website, phone number, and QR code appear at the bottom.\n\n11. **Comparison with older heaters**  \n   A black-and-white shot shows someone carrying or setting down a large, old-style portable heater with a cord.  \n   Another black-and-white shot shows two floor heaters near cords by a wall/window area. A large red “X” is overlaid across the image, visually marking them as undesirable or discouraged.\n\n12. **Bedroom use**  \n   A person in a magenta top presses the small wall heater into an outlet near a bed and a basket. The ordering information remains along the bottom.\n\n13. **Space-saving feature**  \n   The heater is shown plugged into the wall near a seated person and a basket. Orange circular graphics radiate outward from the heater. Text reads **“Space Saver.”**\n\n14. **Office use**  \n   A blonde woman in blue scrubs sits at a desk near a computer and phone, placing or adjusting the wall heater in an outlet. The website, phone number, and QR code are still displayed.\n\n15. **Travel packing**  \n   A suitcase full of folded colorful clothes is shown. A hand places the compact heater inside. Text reads **“Perfect for Travel.”** A brief transition follows, sliding or wiping toward a product/order graphic, though the details of that graphic are not fully clear in the sampled frames.\n\n16. **Final product shot**  \n   The commercial ends with a close-up of the compact heater plugged into a wall outlet. Its front grille glows red, and the top display shows **90**. Text on the left reads **“HANDY HEATER TURBO HEAT $29.99.”** The bottom again shows the QR code, **www.BuyTurboHeat.com**, and **1-800-453-0359**."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b73fb243ee449a2006a107b66fad0819fa2dcd89efce71f08",
+    "usage": {
+      "input_tokens": 4291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1154,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 5445
+    }
+  },
+  "duration_seconds": 28.438,
+  "created_at": "2026-05-22T15:51:31Z",
+  "error": null
+}

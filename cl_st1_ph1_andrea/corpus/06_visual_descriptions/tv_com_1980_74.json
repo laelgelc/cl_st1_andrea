@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1980_74",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_74",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_74/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_74.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0002.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0003.jpg",
+      "timestamp_seconds": 15.071,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0004.jpg",
+      "timestamp_seconds": 17.407,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0005.jpg",
+      "timestamp_seconds": 22.145,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_74/frame_0006.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_74.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_74.json",
+    "response_text": "The commercial begins with a nearly black frame, with no discernible objects or people visible.\n\nAround 10 seconds, the scene changes to a close-up of a mechanical or display-like setup in an office-like environment. A hand in a white sleeve is interacting with a small red control or lever attached to a metal rod. To the right is a transparent compartment containing gray bird-like figures or birds; printed destination labels including “CHICAGO” and “DENVER” are visible on the clear panels. In the background there is a framed photograph and desk or cabinet surfaces. The exact function of the device is unclear from the frame alone.\n\nThe next shot is a tight close-up of a telephone or communications control panel. It has many labeled buttons or directory fields. Some visible labels include “HENDERSON,” “LOUISE,” “INTERCOM,” “BLAIR,” and “ST. LOUIS,” along with number/letter keypad buttons such as “ABC 2,” “DEF 3,” and “MNO 6.” A finger is pressing or pointing to one of the dark rectangular buttons/fields.\n\nThe following scene shows a dark electronic office device or telephone-related unit, partly lit, with cables or curved cords visible on the front. The surroundings are dim, and a plant or foliage appears at the right edge. Details on the device are difficult to read.\n\nThe commercial then cuts to a man seated at an office desk. He is wearing a suit and tie and is holding a corded telephone handset to his ear while looking down at a sheet of paper. Papers are spread on the desk, and a telephone base sits to his right. The office setting includes a green hanging lamp, a cabinet, framed items, a wall picture, and flowers in a vase.\n\nThe final frame is a branded end card on a black background. It shows the blue striped globe AT&T logo above large white text reading “AT&T,” with the phone number “1-800-247-7000” displayed below."
+  },
+  "api_metadata": {
+    "response_id": "resp_07733768a597ef53006a10718b3238819480118c94fd4cc884",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 903,
+      "output_tokens_details": {
+        "reasoning_tokens": 491
+      },
+      "total_tokens": 2518
+    }
+  },
+  "duration_seconds": 27.147,
+  "created_at": "2026-05-22T15:09:26Z",
+  "error": null
+}

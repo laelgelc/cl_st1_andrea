@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_82",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_82",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_82/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_82.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0002.jpg",
+      "timestamp_seconds": 0.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0003.jpg",
+      "timestamp_seconds": 5.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0004.jpg",
+      "timestamp_seconds": 7.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0005.jpg",
+      "timestamp_seconds": 9.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0006.jpg",
+      "timestamp_seconds": 14.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0007.jpg",
+      "timestamp_seconds": 17.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0008.jpg",
+      "timestamp_seconds": 25.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0009.jpg",
+      "timestamp_seconds": 31.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0010.jpg",
+      "timestamp_seconds": 32.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0011.jpg",
+      "timestamp_seconds": 34.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0012.jpg",
+      "timestamp_seconds": 36.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0013.jpg",
+      "timestamp_seconds": 37.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0014.jpg",
+      "timestamp_seconds": 43.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0015.jpg",
+      "timestamp_seconds": 45.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0016.jpg",
+      "timestamp_seconds": 49.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0017.jpg",
+      "timestamp_seconds": 52.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0018.jpg",
+      "timestamp_seconds": 55.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0019.jpg",
+      "timestamp_seconds": 58.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0020.jpg",
+      "timestamp_seconds": 64.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0021.jpg",
+      "timestamp_seconds": 69.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0022.jpg",
+      "timestamp_seconds": 71.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0023.jpg",
+      "timestamp_seconds": 73.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0024.jpg",
+      "timestamp_seconds": 74.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0025.jpg",
+      "timestamp_seconds": 76.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0026.jpg",
+      "timestamp_seconds": 77.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0027.jpg",
+      "timestamp_seconds": 80.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0028.jpg",
+      "timestamp_seconds": 82.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0029.jpg",
+      "timestamp_seconds": 85.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_82/frame_0030.jpg",
+      "timestamp_seconds": 89.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_82.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_82.json",
+    "response_text": "The clip unfolds through a series of hard-cut visual segments with distinct settings and products.\n\nAt the start, a large white “GEICO” logo appears centered over a sunny luxury poolside scene. In the pool, a large red lobster/crab-like creature is visible near people in the water. The background shows lounge chairs, a modern building, palm trees, and a resort-like outdoor setting. The next shot stays with the red crustacean figure in a pool or hot tub, now seen from farther away against a scenic background of water, mountains, flowers, and a palm frond.\n\nThe sequence then cuts to fan imagery. A black-and-white shot shows a man in profile operating an old metal-bladed desk fan. This is followed by color shots of retro electric fans in domestic interiors: a red fan on a kitchen counter while a woman stands in the background, and a blue fan in a bedroom or living room while a man handles a suitcase or case nearby. A stylized close-up then shows translucent rotating fan blades against a dark background, emphasizing circular motion. A close-up of a gray-haired man appears next, facing the camera in a studio-like setting.\n\nA black product end card follows for the “dyson air multiplier.” The product is shown as a bladeless loop fan on the right. On the left, white text reads “dyson air multiplier” and “No blades. No buffeting.” Smaller text includes “Learn more at dyson.com,” plus availability information and retailer logos, though some small details are not fully legible.\n\nThe clip then cuts to a wedding scene. White confetti or flower petals fall in front of a doorway as people stand and smile. A bride and groom appear laughing among guests. A silver convertible is shown parked on a bright outdoor road beside the dressed couple; the bride wears a white gown and the groom wears a dark suit. Several wedding guests react with smiles and open-mouthed expressions. A young woman in a dark dress with a red/pink pattern is shown among other guests. Three men in suits, likely part of the wedding party, stand in front of a building decorated with white flowers. An elderly woman with white hair and glasses appears in close-up, wearing a light-colored outfit and jewelry. Another shot shows two men at the wedding entrance, one in a light gray suit and one in a patterned dark jacket, looking upward or outward. The silver convertible then drives away down the road while guests wave from the side. The three suited men are shown again standing together. A later shot shows the same or similar silver convertible moving through a wooded area, partly obscured by trees and a low stone wall.\n\nThe final portion shifts to a minimalist gray studio setting focused on headphones and a young woman. A close-up shows the woman wearing large black over-ear headphones; she has long dark hair with bright lime-green coloring near the top/front. She looks upward or off to the side. A product shot displays black over-ear headphones floating against a gray background; small white text appears at lower left but is too small to read clearly. The woman is then shown crouching or sitting low in an oversized white outfit, still wearing the headphones. A top-down close-up shows the headphones on her head. A close-up product shot highlights the ear cup with a white “b” Beats-style logo. The woman adjusts or touches the black headphones while looking toward the camera. Another shot shows her wearing white headphones instead, her eyes closed or lowered, with one hand near her shoulder. She is then seen from behind in the white outfit, later turning or gesturing while facing forward. The sequence ends with centered product shots of headphones against the gray background: first black headphones with the “b” logo, then red over-ear headphones shown front-facing."
+  },
+  "api_metadata": {
+    "response_id": "resp_0fca248e48cf7fd9006a10789d9bcc8195ac9fbd7b0136d7b6",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1266,
+      "output_tokens_details": {
+        "reasoning_tokens": 498
+      },
+      "total_tokens": 7069
+    }
+  },
+  "duration_seconds": 32.645,
+  "created_at": "2026-05-22T15:39:41Z",
+  "error": null
+}

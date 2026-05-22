@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1990_66",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_66",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_66/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_66.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0002.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0003.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0004.jpg",
+      "timestamp_seconds": 6.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0005.jpg",
+      "timestamp_seconds": 8.365,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0006.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0007.jpg",
+      "timestamp_seconds": 11.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0008.jpg",
+      "timestamp_seconds": 12.102,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0009.jpg",
+      "timestamp_seconds": 12.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0010.jpg",
+      "timestamp_seconds": 14.471,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0011.jpg",
+      "timestamp_seconds": 16.172,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0012.jpg",
+      "timestamp_seconds": 18.041,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0013.jpg",
+      "timestamp_seconds": 21.411,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0014.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0015.jpg",
+      "timestamp_seconds": 23.813,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0016.jpg",
+      "timestamp_seconds": 25.715,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_66/frame_0017.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_66.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_66.json",
+    "response_text": "The commercial begins with a very dark, indistinct frame. No clear people or objects are visible.\n\nIt then cuts to a brightly backlit diner or café setting. A blonde white woman, dressed in a white collared shirt with a dark vest, sits or stands at a counter smiling while holding a black menu with the word “Menu” visible in yellow script. She faces a female server in a pale yellow uniform with white trim and a white headband.\n\nA wider shot reveals several people seated at the diner counter. The server stands behind the counter on the left. On the counter are condiment bottles, cups, plates, and other diner items. The blonde woman sits with the menu, and nearby are a Black woman with short dark hair, a man in glasses in a suit or dark jacket, and another man farther back. Large windows behind them show reversed lettering, suggesting storefront signage.\n\nThe camera moves to a closer view of the server. She appears to be speaking or reacting animatedly while looking toward the customer. She wears earrings, a name tag, and the pale yellow uniform.\n\nThe next close-up shows the blonde customer facing the server. She looks engaged and slightly surprised or emphatic, with the black menu still visible near her chest.\n\nA close-up profile shot shows the man in glasses, seated at the counter. He faces left, with strong backlighting from the window behind him.\n\nThe blonde woman then looks sideways, her eyes shifted to the right, as if responding to or noticing someone else at the counter. The server remains in the foreground with her back partly to the camera.\n\nA close-up follows of the Black woman at the counter. She faces the camera and appears to be speaking, with a bright window behind her.\n\nThe commercial then cuts to a black title card with large white serif text reading: “10¢ a minute forever.” Smaller text at the bottom reads: “RESIDENTIAL ONLY STATE TO STATE CALLS 7 PM-7 AM & WEEKENDS.”\n\nThe diner scene returns, with the server in close-up again. The same small white disclaimer text appears across the bottom: “RESIDENTIAL ONLY STATE TO STATE CALLS 7 PM-7 AM & WEEKENDS.” The server appears to be leaning forward and addressing the blonde woman, who is partly visible from behind on the right.\n\nA brief blurred transition follows, with indistinct warm-colored shapes and no clear objects.\n\nThe blonde customer reappears in medium close-up, smiling while looking down or toward the menu. The server’s shoulder and profile are partly visible in the foreground.\n\nAnother shot shows the server in side profile behind the counter. She gestures with one raised finger, as if making a point. Condiment bottles, including red and yellow squeeze bottles, are visible on the counter. The blonde woman is partially visible at the right edge.\n\nA wider counter shot shows the group again: the server on the left, the blonde woman and other customers seated along the counter, and the man in glasses at the far right. Cups, plates, and counter items remain visible. The lighting is soft and bright, with the windowed storefront behind them.\n\nThe next frame is a blurred close-up or transition showing part of a circular shape, possibly a clock or sign, but it is too unclear to identify confidently.\n\nThe commercial ends with product/brand title cards on a dark gradient background. The first card shows the Sprint logo with a red geometric emblem and the word “Sprint” in white. Below it reads: “10¢ a minute.” Farther down is the phone number: “1-800-PIN-DROP.”\n\nThe final card keeps the Sprint logo and adds larger white serif text: “10¢ a minute. Even to Canada.” Below is “1-800-PIN-DROP,” with smaller text underneath reading: “WEEKENDS ONLY.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0f57c4ee619fbe0b006a10737b0d18819e90498e6a3cfec99e",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 823,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 5155
+    }
+  },
+  "duration_seconds": 18.331,
+  "created_at": "2026-05-22T15:17:33Z",
+  "error": null
+}

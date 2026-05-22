@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1960_42",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_42",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_42/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_42.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0002.jpg",
+      "timestamp_seconds": 0.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0003.jpg",
+      "timestamp_seconds": 5.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0004.jpg",
+      "timestamp_seconds": 7.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0005.jpg",
+      "timestamp_seconds": 9.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0006.jpg",
+      "timestamp_seconds": 15.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0007.jpg",
+      "timestamp_seconds": 16.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_42/frame_0008.jpg",
+      "timestamp_seconds": 26.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_42.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_42.json",
+    "response_text": "The commercial opens on a very dark frame with only a small white watermark reading “Nostalgic X’er” visible at the lower right.\n\nIt then cuts to a close-up of a pink, floral-patterned fabric object. The image is heavily pink-tinted and low-resolution, but the object appears soft and rounded, possibly part of a hood or carrying case.\n\nNext, the product packaging or display is shown. The visible text reads “MISTY by PROCTOR-SILEX.” A hand is positioned near a circular appliance component on the right, while another circular or rounded item is visible on the left. The scene suggests the product is being introduced or handled, but the exact action is partly unclear from the sampled frame.\n\nThe commercial then shows a young woman facing forward, wearing a large patterned hood or bonnet over her hair. She is dressed in a light-colored top and looks directly ahead with a neutral expression. The background is plain and pale.\n\nA later shot shows the woman from behind or at an angle, seated with the hood/bonnet over her head. The hood appears connected to or associated with a hair-drying setup, though the connection is not clearly visible in the frame.\n\nThe next shot is a close-up of a hand turning a control dial on a small appliance unit. The dial has printed settings, but most of the text is difficult to read clearly. The appliance body is light-colored, with a circular control area.\n\nThe commercial then cuts to the woman again, now with long loose hair visible. She is holding or positioning a cylindrical hair-care attachment near her hair or face while one hand lifts a section of hair. Her eyes are directed downward, and the shot emphasizes grooming or styling.\n\nThe final frame is a product display. Text on the left reads “PROCTOR-SILEX MISTY PORTABLE HAIR DRYER.” Several components are arranged together: a large rounded case or lid on the far left, the patterned hood/bonnet near the center, a small upright control or motor unit, and a large circular appliance component on the right. The “Nostalgic X’er” watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_060f83df20a71df1006a106d83bcc8819180f036bfe4213f62",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 747,
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "total_tokens": 2392
+    }
+  },
+  "duration_seconds": 19.358,
+  "created_at": "2026-05-22T14:52:06Z",
+  "error": null
+}

@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_47",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_47",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_47/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_47.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0002.jpg",
+      "timestamp_seconds": 3.727,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0003.jpg",
+      "timestamp_seconds": 4.261,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0004.jpg",
+      "timestamp_seconds": 4.594,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0005.jpg",
+      "timestamp_seconds": 5.395,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0006.jpg",
+      "timestamp_seconds": 6.229,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0007.jpg",
+      "timestamp_seconds": 7.397,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0008.jpg",
+      "timestamp_seconds": 7.998,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0009.jpg",
+      "timestamp_seconds": 8.999,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0010.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0011.jpg",
+      "timestamp_seconds": 11.434,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0012.jpg",
+      "timestamp_seconds": 12.502,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0013.jpg",
+      "timestamp_seconds": 14.337,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0014.jpg",
+      "timestamp_seconds": 15.038,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0015.jpg",
+      "timestamp_seconds": 16.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0016.jpg",
+      "timestamp_seconds": 17.841,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0017.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0018.jpg",
+      "timestamp_seconds": 19.476,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0019.jpg",
+      "timestamp_seconds": 21.011,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0020.jpg",
+      "timestamp_seconds": 21.645,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0021.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0022.jpg",
+      "timestamp_seconds": 22.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0023.jpg",
+      "timestamp_seconds": 23.18,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0024.jpg",
+      "timestamp_seconds": 23.547,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0025.jpg",
+      "timestamp_seconds": 24.247,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0026.jpg",
+      "timestamp_seconds": 24.447,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0027.jpg",
+      "timestamp_seconds": 24.614,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0028.jpg",
+      "timestamp_seconds": 24.814,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0029.jpg",
+      "timestamp_seconds": 24.948,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_47/frame_0030.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_47.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_47.json",
+    "response_text": "The commercial begins on a black screen.\n\nA smiling woman appears in a bright indoor setting, likely near a desk or home workspace. She is shown in close-up, looking downward or toward someone/something off camera, with colorful objects blurred in the background.\n\nThe screen then cuts to a blue America Online graphic. The AOL triangular logo appears above the words “AMERICA Online” in white. The graphic briefly shifts to a lighter, washed-out blue/green version before transitioning through a bright white, radial blur effect.\n\nA computer-style blue screen appears with a mailbox icon and the text “You’ve Got Mail.” The mailbox has a small red flag and a yellow envelope beside it.\n\nThe ad cuts to two people sitting together on a couch in a bright living room: a younger person and an elderly woman. Both are smiling or laughing. The scene is warmly lit, with sheer curtains behind them. Another white radial blur transition follows.\n\nA woman in a light-blue shirt is shown seated near a computer monitor. The monitor is visible at the left edge of the frame with a blue-toned interface on it. She faces slightly toward the camera and appears to be speaking or reacting, though no audio content is visible.\n\nAfter another bright blur transition, a close-up of a computer screen shows part of a graphic with a stylized icon of two people and text that is partially readable: “Pare…” and “EMPOWER…” with “Custom…” below. The full wording is not visible.\n\nNext, a child sits at a desktop computer in a brightly decorated room with blue walls and colorful wall art. An adult woman stands beside or behind the child, looking at the screen. The child’s hand points toward the monitor, which displays a webpage-like interface.\n\nA middle-aged man with gray hair and a mustache appears in a close-up, seated indoors in front of shelves or office furnishings. He faces the camera.\n\nThe ad cuts to a tilted graphic panel with large red text “24” and smaller text “HOUR Customer Service” on a dark blue background. A small image of a person appears partly visible along the left edge of the graphic.\n\nAnother white, radial transition leads into a close-up of an AOL interface labeled “Online Safety & Security.” The screen shows a menu headed “Double-click on an Article,” with items including “Go To: Parental Controls,” “Go To: Mail Controls,” “Go To: AOL Neighborhood Watch,” “AOL Download Sentry,” “Change Your Password,” and other partially visible safety-related options.\n\nThe elderly woman from the couch scene appears again in close-up, smiling and facing toward the camera or someone nearby. The younger person is partly visible at the left edge. Small disclaimer text appears along the bottom; it is partially legible and includes “Availability may be limited especially during peak usage.”\n\nA sequence of AOL interface screens follows. One shows the AOL logo with “You’ve Got Mail” on the left side and a “Welcome” page on the right, with text partially visible such as “New Music” and “More Feat…” Another screen shows a “Buddy List Window” with “Buddies Online” and a list titled “Friends (12/25),” including names such as “CaseyPeez,” “BillieJoe,” “FaygDoc,” “JohnHansen,” and “ChrisAOL.” Buttons at the bottom include “Locate,” “IM,” “Setup,” and “Buddy Chat.”\n\nA blue “AOL search” page appears with a search box, a yellow “Search” button, and text reading “Enter keyword below and click ‘Search.’” Links such as “Search Options” and “Help” are visible.\n\nThe commercial then rapidly displays category and content screens. A menu shows colorful horizontal category bars such as “international,” “Personal Finance,” “WorkPlace,” “Computing,” “Research & Learn,” and “entertainment.” A sports page appears with the heading “SPORTS” and a “CHOOSE A SPORT” list including “AUTO RACING,” “BASEBALL,” “GOLF,” “HOCKEY,” and “PRO BASKET…” Another screen shows “AOL News,” with a “News Search” section and visible news-provider names/logos including “CBS NEWS,” “Reuters,” and “Time…” or “Time…” partially visible.\n\nAdditional promotional screens flash by: “moviefone.com” above an “America Online” logo; a colorful “AOL KIDS ONLY” graphic; and a children’s/education-themed page with large text “TUTORING ROOM,” a line beginning “Stumped? Maybe we ca…,” and another section labeled “ENGLISH & READ…” The exact full text is cut off by the frame.\n\nThe final frame is a black end card with the America Online logo centered. Beneath it, white text reads: “So easy to use, no wonder it’s #1” and below that “1-800-4-ONLINE.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_08030a9cb9d76048006a10755f9218819ebd56e488c39fb2d1",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1225,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 8768
+    }
+  },
+  "duration_seconds": 30.54,
+  "created_at": "2026-05-22T15:25:49Z",
+  "error": null
+}

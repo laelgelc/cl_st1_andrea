@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_2000_62",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_62",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_62/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_62.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0002.jpg",
+      "timestamp_seconds": 3.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0003.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0004.jpg",
+      "timestamp_seconds": 11.635,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0005.jpg",
+      "timestamp_seconds": 13.303,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_62/frame_0006.jpg",
+      "timestamp_seconds": 14.163,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_62.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_62.json",
+    "response_text": "The commercial is an animated, retro-futuristic scene.\n\n- **Frame 1 (0.000s):** The screen is almost entirely dark/black. A small red heart-shaped watermark/logo appears at the bottom right.\n\n- **Frame 2 (3.627s):** The scene cuts to a cartoon futuristic kitchen or household interior. A white-haired woman in a red-and-yellow outfit holds a clear plate or dish and looks concerned or displeased. Beside her is a blond boy in green overalls, looking upward with a neutral or slightly unhappy expression. Behind them are rounded, space-age appliances, including a blue machine with a dome-like top.\n\n- **Frame 3 (4.928s):** The view shifts to part of the room: a hanging cylindrical light fixture above a counter or ledge. On the left edge, part of a rounded blue appliance or doorway is visible. No people are visible in this sampled frame.\n\n- **Frame 4 (11.635s):** A red-haired cartoon woman in a purple dress appears holding a transparent plate or dish up near her face, as if inspecting it. She is smiling slightly and also has one hand near her hair or ear. The same bright, futuristic home environment continues in the background.\n\n- **Frame 5 (13.303s):** The commercial cuts to a product shot. A box labeled **“electrasol”** with **“3 in 1”** in the upper right is displayed prominently on a white platform. The background shows a pastel futuristic cityscape/interior with beams of light. A caption along the bottom reads: **“Dishwashing made for the 21st century.”** The red heart-shaped watermark remains at bottom right.\n\n- **Frame 6 (14.163s):** The final sampled frame remains on the same product shot: the Electrasol 3-in-1 box centered, with the same bottom text, **“Dishwashing made for the 21st century.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_0df67512c2771f4c006a1075bcfcd4819e9b72d84dfc1d1fec",
+    "usage": {
+      "input_tokens": 1267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 583,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1850
+    }
+  },
+  "duration_seconds": 13.498,
+  "created_at": "2026-05-22T15:27:06Z",
+  "error": null
+}

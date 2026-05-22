@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1990_111",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_111",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_111/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_111.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0002.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0003.jpg",
+      "timestamp_seconds": 3.293,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0004.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0005.jpg",
+      "timestamp_seconds": 5.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0006.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0007.jpg",
+      "timestamp_seconds": 8.198,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0008.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0009.jpg",
+      "timestamp_seconds": 13.837,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_111/frame_0010.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_111.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_111.json",
+    "response_text": "The commercial opens on a very dark, nearly black frame, with only a small channel/watermark graphic visible in the lower right.\n\nIt then cuts to highly magnified, abstract-looking close-ups in yellow-green tones. These images show textured, fibrous or granular surfaces with light glinting across them. The material is not clearly identifiable from the frames, but it resembles a close-up of residue, particles, or a textured surface.\n\nThe next shot shows a woman in a shower, seen in profile. Her long dark hair is wet, and water appears to be running over it. The lighting is dramatic, with strong blue and purple tones in the background and warm highlights on her skin and hair.\n\nThe commercial returns to another extreme close-up of yellowish, bubbly or granular material. The image again looks microscopic or macro-photographic, with clusters of small particles and a soft golden haze.\n\nA brief blue-purple shot follows, showing a blurred close-up of a person’s face or head. The image is soft and indistinct, so details are unclear.\n\nThen a hand is shown holding a small cylindrical object between the fingers against a blue-purple background. The object has a light-colored circular end and a yellow/gold body. Its exact identity is not clear from the sampled frame.\n\nThe next frame shows a close-up of a tiled surface: blue tiles divided by grout lines. The grout or intersecting lines appear brownish and dirty or stained, suggesting buildup or grime. Small droplets or specks are visible on the tile surface.\n\nThe commercial cuts back to another golden macro close-up of clustered particles or residue-like material, similar to the earlier abstract close-ups.\n\nNear the end, the woman is shown outside or at the edge of the shower area, wrapped in a white towel around her body. She is also holding another white towel to her wet hair. The bathroom is lit with blue and purple light, with a wall light visible above and behind her. She wipes or dries her hair with the towel.\n\nThe final frame continues this action: the woman, still wrapped in the towel, presses the towel against her hair while facing slightly toward the camera. The setting remains a softly lit bathroom with cool blue-purple lighting."
+  },
+  "api_metadata": {
+    "response_id": "resp_0cb196edfcc932c5006a107441b15c8196ae92de40bf5464e0",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 566,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 3169
+    }
+  },
+  "duration_seconds": 16.598,
+  "created_at": "2026-05-22T15:20:49Z",
+  "error": null
+}

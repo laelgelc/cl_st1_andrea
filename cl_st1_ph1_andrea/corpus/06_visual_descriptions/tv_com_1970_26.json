@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1970_26",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_26",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_26/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_26.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_26/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_26/frame_0002.jpg",
+      "timestamp_seconds": 18.275,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_26/frame_0003.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_26.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_26.json",
+    "response_text": "The commercial opens with an extreme close-up of a woman’s face, focused on one eye. The eye is heavily made up with dark eyeliner/mascara, and only part of the nose and surrounding skin are visible. The image is soft and slightly blurred, with a vintage broadcast look.\n\nBy the next sampled moment, the scene has changed to a bright, soft-focus domestic or bathroom-like setting. Several women appear together around a central woman. The central figure seems to be seated or positioned lower, while others stand close beside or behind her, suggesting a grooming, bathing, or beauty-care context. The details are washed out and not fully clear, but the scene emphasizes femininity, care, and a light pastel atmosphere. A bottle-shaped product appears near the lower center/left area, though the label is not readable in this frame.\n\nThe final frame is a product display. A tall blue bottle with a white cap is shown prominently on the left. Its front label shows large dark lettering beginning with “Sec…” or similar, but the full product name is not completely clear from the frame. On the right, white script text reads: “Made for a woman’s extra feelings.” The background remains soft and light-toned, with decorative or bathroom-like objects visible but indistinct. A watermark reading “Classic Commercial Archives” is visible in the lower-left area, and another faint archive watermark appears across the lower center."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f645ca301918090006a106f0453a481979012c7d89eebeeb7",
+    "usage": {
+      "input_tokens": 874,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 443,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1317
+    }
+  },
+  "duration_seconds": 11.14,
+  "created_at": "2026-05-22T14:58:23Z",
+  "error": null
+}

@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_1980_47",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_47",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_47/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_47.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0002.jpg",
+      "timestamp_seconds": 0.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0003.jpg",
+      "timestamp_seconds": 6.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0004.jpg",
+      "timestamp_seconds": 9.366,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0005.jpg",
+      "timestamp_seconds": 11.034,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0006.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0007.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0008.jpg",
+      "timestamp_seconds": 25.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0009.jpg",
+      "timestamp_seconds": 27.817,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0010.jpg",
+      "timestamp_seconds": 30.453,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0011.jpg",
+      "timestamp_seconds": 32.122,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0012.jpg",
+      "timestamp_seconds": 34.057,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0013.jpg",
+      "timestamp_seconds": 35.725,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0014.jpg",
+      "timestamp_seconds": 36.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0015.jpg",
+      "timestamp_seconds": 36.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0016.jpg",
+      "timestamp_seconds": 36.693,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0017.jpg",
+      "timestamp_seconds": 37.027,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0018.jpg",
+      "timestamp_seconds": 37.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0019.jpg",
+      "timestamp_seconds": 37.36,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0020.jpg",
+      "timestamp_seconds": 45.402,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0021.jpg",
+      "timestamp_seconds": 46.503,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0022.jpg",
+      "timestamp_seconds": 49.472,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0023.jpg",
+      "timestamp_seconds": 50.507,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0024.jpg",
+      "timestamp_seconds": 53.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1980_47/frame_0025.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_47.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_47.json",
+    "response_text": "The commercial begins on a black screen.\n\nIt then cuts to what appears to be a service counter or ticket counter. A large colored wall graphic is visible behind the counter, with red and blue shapes and a white running-dog-like form. A man stands or leans at the counter facing a uniformed or formally dressed man behind it. The image is soft and slightly blurred, so details of the transaction are not clear.\n\nNext, there is a close-up of a young child holding a telephone handset. The child has small hair bows and is smiling or speaking into the phone. The shot is tight on the child’s face and hands.\n\nThe scene changes to an outdoor setting. A man in an orange shirt stands beside a car with the door open. He appears to be writing or looking down near the car door. Green grass and trees are visible in the background.\n\nThe next shot shows a child and a woman seen through a bus window. The child is seated by the window, and the woman sits beside or behind the child. They look outward through the glass.\n\nA close-up of the side of a bus follows. Large blue letters, apparently part of a brand name or logo, fill the frame, with an orange stripe along the lower part of the vehicle.\n\nThe commercial then moves inside a bus. Several passengers sit in rows of brown seats. The interior is bright, with large windows on both sides. A woman and small child sit near the front left; other passengers sit farther back, some looking out the windows and others looking toward companions.\n\nA uniformed bus driver is shown at the wheel. He wears a dark driver’s cap and jacket. Green foliage is visible through the windshield and side windows, suggesting the bus is traveling through a leafy area.\n\nAn overhead shot shows a bus driving along a narrow road bordered by dense tropical-looking greenery. The bus has a light-colored roof and a colored stripe or paneling along its side.\n\nInside the bus again, a woman sits with the young child by a window. The child looks down at something in their hands while the woman looks at the child. Sunlight and trees pass outside the window.\n\nThe bus is then shown from a distance traveling over a long bridge or causeway across water. The water is light blue-green, and land is visible in the distance.\n\nAnother close-up shows the child and woman leaning toward an open or large bus window, smiling and looking outside. The child grips the window rail.\n\nThe sequence then cuts to a waterfront or lakeside scene. A small sailboat with bright yellow-and-white striped sails moves across the water. Trees in the foreground partially obscure the view. Several quick shots show the sailboat passing behind tree trunks and branches, with the bus or part of a vehicle briefly visible near the water in some frames. The visual effect suggests sightseeing from or near the bus route, though the exact relation between the bus and sailboat is not fully clear from the sampled frames.\n\nLater, the setting changes to an indoor bus terminal or station. An elderly couple stands among other people. The man has gray hair, glasses, and a light short-sleeved shirt. The woman wears glasses and a light cardigan over a white top. They look ahead with attentive or surprised expressions.\n\nA shot from behind the bus driver or a uniformed worker follows, showing the back of his dark cap and jacket near a bus or doorway. The surrounding details are mostly obscured.\n\nThe commercial returns to the elderly couple in the station. Their expressions appear more animated; the woman points or gestures forward while smiling or laughing, and the man stands close beside her.\n\nA small child is then shown walking or running through the terminal with arms raised, moving toward adults whose legs are visible around the child. The child wears light-colored clothing and suspenders or overalls.\n\nThe next close-up shows a woman embracing someone, likely the elderly woman, in a greeting. The woman has short dark hair and wears a light jacket over a blue shirt. The contact is affectionate, with faces close together.\n\nThe final frame shows a group reunion in the bus terminal. The elderly couple and the younger woman stand close together, smiling and touching one another. Other people are visible in the background. Over the image, large white text reads: “GO GREYHOUND,” and below it, smaller white text reads: “And leave the driving to us.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_065b554778036bc9006a107119b28481979ffe3238ca6689cd",
+    "usage": {
+      "input_tokens": 6308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1033,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 7341
+    }
+  },
+  "duration_seconds": 27.955,
+  "created_at": "2026-05-22T15:07:33Z",
+  "error": null
+}

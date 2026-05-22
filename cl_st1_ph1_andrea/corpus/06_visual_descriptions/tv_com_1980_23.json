@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1980_23",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_23",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_23/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_23.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0002.jpg",
+      "timestamp_seconds": 5.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0003.jpg",
+      "timestamp_seconds": 14.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0004.jpg",
+      "timestamp_seconds": 18.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0005.jpg",
+      "timestamp_seconds": 25.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_23/frame_0006.jpg",
+      "timestamp_seconds": 28.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_23.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_23.json",
+    "response_text": "The commercial begins with a black frame.\n\nIt then cuts to a product display: a blue box labeled “Lysol Laundry Sanitizer” is shown upright on a shelf or counter. The package includes a yellow “NEW” burst and large red-and-white “LAUNDRY SANITIZER” text. Other laundry-related items are partly visible around it, including a partially cropped container on the left and folded fabric or towels on the right. A “Defunct Products Commercials” watermark appears at the top left of the image.\n\nNext, the ad shows a simple graphic: a gray oval or circular surface against a light background with the text “Reduces Germs 99.9%” in yellow letters. Faint irregular shapes inside the oval suggest germs or stains, though the details are indistinct.\n\nThe scene then changes to a laundry-room setting. A blonde woman stands near a washer or counter, holding a blue item of clothing or fabric against herself. A box of the laundry sanitizer sits on the counter beside a laundry basket or container with blue fabric draped over it. Shelving and household laundry items are visible in the background.\n\nAfter that, there is a close-up of the product packaging. The frame focuses tightly on the large “LAUNDRY SANITIZER” label, with the yellow “NEW” burst in the upper left. Smaller text at the bottom is partly visible and includes a claim about reducing germs in the wash by 99.9%.\n\nThe final sampled frame returns to a product display. The Lysol Laundry Sanitizer box stands in front of folded towels or linens. Large yellow text over the lower part of the frame reads “Reduces Germs 99.9%.” The product remains centered as the main visual focus."
+  },
+  "api_metadata": {
+    "response_id": "resp_04990753c680f5a6006a1070c1dd80819e8008e9c90a2201a9",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 505,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 2120
+    }
+  },
+  "duration_seconds": 12.588,
+  "created_at": "2026-05-22T15:05:50Z",
+  "error": null
+}

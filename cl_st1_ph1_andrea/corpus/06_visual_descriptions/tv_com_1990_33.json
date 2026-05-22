@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1990_33",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_33",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_33/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_33.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0002.jpg",
+      "timestamp_seconds": 1.157,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0003.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0004.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0005.jpg",
+      "timestamp_seconds": 4.027,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0006.jpg",
+      "timestamp_seconds": 12.802,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0007.jpg",
+      "timestamp_seconds": 15.205,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0008.jpg",
+      "timestamp_seconds": 17.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0009.jpg",
+      "timestamp_seconds": 19.576,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0010.jpg",
+      "timestamp_seconds": 22.078,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0011.jpg",
+      "timestamp_seconds": 24.114,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0012.jpg",
+      "timestamp_seconds": 38.028,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_33/frame_0013.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_33.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_33.json",
+    "response_text": "The commercial begins with a very dark, barely visible image; the subject or setting is not clear.\n\nIt then cuts to a series of close-up faces looking toward the camera:\n\n1. A smiling adult man with short brown hair appears in a head-and-shoulders close-up against a softly blurred background.\n2. A blonde adult woman wearing large black sunglasses smiles in another close-up.\n3. A red-haired adult woman smiles broadly, also facing the camera.\n\nThe scene then moves indoors to a brightly lit room with plants and a window in the background. A blonde woman with voluminous hair faces the camera. On-screen text identifies her as **“MORGAN FAIRCHILD”** in large white capital letters over a blue bar.\n\nLater, Morgan Fairchild appears standing beside a brunette woman in a sleeveless blue shirt. They are framed from the waist or chest up, with greenery and window light behind them.\n\nA very tight close-up of a smiling mouth follows, showing teeth and lips in detail.\n\nThe commercial then presents several testimonial-style shots with name and occupation captions:\n\n- A blonde woman in a blue shirt appears outdoors or near a window with greenery behind her. Text reads **“DONNA SMITH”** and below it **“Make-Up Artist.”**\n- The brown-haired man from earlier appears again in a head-and-shoulders shot. Text reads **“DON MANN”** and below it **“Salesman.”**\n- A blonde woman with a bob haircut appears in front of a floral background. Text reads **“JANET FLAHAVEN”** and below it **“Antique Dealer.”**\n\nThe commercial then cuts to a simplified animated or graphic cross-section of teeth/gums. Three rounded tooth-like shapes are shown above a pink gum-like base on a black background. On-screen text reads **“Patented System.”**\n\nNear the end, the product offer is displayed on a plain studio background. The layout shows:\n- A boxed product labeled **“DENTAL WHITE”** with an **“Instruction Guide”** panel.\n- A bottle labeled **“DENTAL WHITE.”**\n- Two clear plastic mouth-tray-like pieces.\n- Text at the top: **“USE YOUR CREDIT CARD.”**\n- A price graphic: **“Only $19.95.”**\n\nThe final frame is a full-screen blue ordering graphic. It includes credit card logos and the instruction **“Call Toll Free.”** A large phone number is shown: **“1-800-767-4400.”** Additional text reads:\n\n- **“$19.95 Plus $4.50 S&H”**\n- **“DENTAL WHITE”**\n- **“6000 AMERICAN WAY”**\n- **“ROANOKE, VA 24016”**\n- **“ALLOW 3-6 WEEKS FOR DELIVERY”**\n- **“60 DAY MONEY BACK GUARANTEE”**\n\nThe commercial visually combines celebrity/testimonial-style close-ups, dental imagery, product demonstration graphics, and direct-response ordering information."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c9ba1f79893eb53006a1072fa23fc8192817bf81c6e028b1e",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 680,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 4024
+    }
+  },
+  "duration_seconds": 16.74,
+  "created_at": "2026-05-22T15:15:22Z",
+  "error": null
+}

@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1950_92",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_92",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_92/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_92.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_92/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_92/frame_0002.jpg",
+      "timestamp_seconds": 12.269,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_92/frame_0003.jpg",
+      "timestamp_seconds": 57.048,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_92.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_92.json",
+    "response_text": "The commercial appears in black and white and unfolds through a sequence of close-up product-use imagery followed by a final product display.\n\n1. **Opening frame (0.000s):**  \n   A close-up shows a hand holding a small dark object between the fingers. The object is rounded or curved, but its exact identity is unclear from the frame. The background is bright and out of focus, giving the image a soft, high-contrast appearance.\n\n2. **Middle frame (12.269s):**  \n   The scene changes to a close-up of dishwashing or rinsing. A container or spout at the upper left pours a stream of liquid or suds onto dishes or glassware. Several rounded plates or bowls are visible, overlapping in the frame. The action visually emphasizes liquid being applied to dirty or soapy dishes.\n\n3. **Final frame (57.048s):**  \n   The commercial ends with a product-and-text graphic. A bottle labeled **“Joy”** is centered in the foreground. Behind and around it are large, stylized words and shapes. The text **“Joy”** and **“for”** are visible, along with partial words such as **“dishes”** and **“box!”**; some surrounding lettering is obscured or only partly legible. The layout resembles a final advertising card, with the product bottle prominently displayed against a graphic background."
+  },
+  "api_metadata": {
+    "response_id": "resp_08bfc3180236f5c2006a106c62bb7c8191822ef63cedf393e1",
+    "usage": {
+      "input_tokens": 874,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1235
+    }
+  },
+  "duration_seconds": 10.248,
+  "created_at": "2026-05-22T14:47:08Z",
+  "error": null
+}

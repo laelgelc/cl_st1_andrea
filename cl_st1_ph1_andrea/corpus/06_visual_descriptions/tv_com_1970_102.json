@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_1970_102",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_102",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_102/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_102.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0002.jpg",
+      "timestamp_seconds": 12.785,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0003.jpg",
+      "timestamp_seconds": 14.334,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0004.jpg",
+      "timestamp_seconds": 19.149,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0005.jpg",
+      "timestamp_seconds": 20.429,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0006.jpg",
+      "timestamp_seconds": 23.157,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0007.jpg",
+      "timestamp_seconds": 23.561,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0008.jpg",
+      "timestamp_seconds": 25.648,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0009.jpg",
+      "timestamp_seconds": 34.37,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0010.jpg",
+      "timestamp_seconds": 41.307,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0011.jpg",
+      "timestamp_seconds": 45.819,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0012.jpg",
+      "timestamp_seconds": 49.826,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0013.jpg",
+      "timestamp_seconds": 54.305,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0014.jpg",
+      "timestamp_seconds": 59.029,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1970_102/frame_0015.jpg",
+      "timestamp_seconds": 59.457,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_102.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_102.json",
+    "response_text": "The commercial opens in a modern-looking kitchen with a large window, hanging globe lights, cabinets, a sink, and a central counter or island. A person in dark clothing is seen from behind near the counter.\n\nIt cuts to a close-up of a performer styled as an older woman: gray hair or wig, small glasses, a black dress with a white lace collar and cuffs. She faces the camera directly, appearing to speak or demonstrate something, though no audio content can be determined from the frames.\n\nA close-up then shows hands handling a small white roll or cylindrical object over a pale bag or liner placed on a kitchen counter near a sink. Dark waste or crumpled material is visible inside the bag. The person appears to be inserting or arranging the bag/liner in a holder or container.\n\nThe woman is shown again in close-up, looking toward the camera. Then another close-up shows her handling a pale trash bag beside a product box. The box text is partly readable and appears to say “Biffy Scrap Bags & Holder,” with an image of a bag or holder on the packaging.\n\nIn a wider kitchen shot, the same woman stands behind the counter holding or lifting a white bag. The product box remains visible on the counter. The setting remains the same kitchen.\n\nA close-up shows a small trash can or wastebasket with a white liner fitted inside it. The liner is folded over the rim. The woman’s face appears again in close-up, still framed against the window or leafy background.\n\nA dramatic close-up follows of two hands tightly gripping or squeezing the top of a pale bag or material. The hands fill most of the frame, emphasizing strength, pressure, or closure, but the exact action is not fully clear from the sampled frame.\n\nThe scene changes to an outdoor area with a large pile of garbage, discarded items, and trash containers. A man in a red shirt and a white baseball cap with a red “C” stands among or beside the refuse. He is later shown in close-up wearing the same cap and red top, looking toward the camera.\n\nA close-up shows his hand pressing a filled pale trash bag down into a metal trash can. The bag is gathered at the top. Then a wider outdoor shot shows several large pale trash bags standing upright behind him. He holds a product box while crouched or seated beside the bags.\n\nNear the end, the man holds the product box up toward the camera. The box text appears to read “Biffy Trash Can Liners,” with a product image of a lined trash can. On-screen text near him includes “tom” and partially legible letters resembling “McD…”; the full name is unclear due to image quality. The commercial ends with a black frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_09a822f693f3c8ed006a1070363a008195864029b1d38fbe66",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 810,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 3778
+    }
+  },
+  "duration_seconds": 22.209,
+  "created_at": "2026-05-22T15:03:40Z",
+  "error": null
+}

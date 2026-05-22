@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2020_79",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_79",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_79/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_79.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0002.jpg",
+      "timestamp_seconds": 6.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0003.jpg",
+      "timestamp_seconds": 9.783,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0004.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0005.jpg",
+      "timestamp_seconds": 10.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0006.jpg",
+      "timestamp_seconds": 10.65,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0007.jpg",
+      "timestamp_seconds": 11.368,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0008.jpg",
+      "timestamp_seconds": 11.485,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_79/frame_0009.jpg",
+      "timestamp_seconds": 13.037,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_79.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_79.json",
+    "response_text": "The commercial begins inside a clothing or department-store setting. A woman with shoulder-length reddish hair stands in the foreground, facing toward the camera. She wears a green-and-white striped sweater over a white collared shirt, with a crossbody strap visible across her chest. Behind her are racks and shelves of folded or hanging clothing in a softly lit retail environment.\n\nThe scene then cuts abruptly to a bright magenta/pink graphic background. The background contains semi-transparent rectangular shapes and faint repeated “DEALS” text along the right side. Small fine-print text appears near the bottom, but it is too small to read clearly in the sampled frame.\n\nNext, the commercial displays a promotional collage on the same magenta background. Large bold white text in the center reads “SAVE UP TO 50%.” Around the text are product images in white-bordered boxes, including folded clothes, boots, ornaments or holiday decorations, a handbag, knitwear, clothing sets, a scarf or blanket, baskets, and other apparel/accessory items. The layout becomes more densely filled over the next frames, with additional product images appearing or sliding into view around the central “SAVE UP TO 50%” message. Fine-print legal text remains along the bottom but is mostly unreadable at this resolution.\n\nThe graphic then transitions to a new promotion. Large bold white text reading “CLEARANCE” appears across the magenta background. The word is positioned prominently, first toward the lower/right area and then more fully across the left side as the framing changes. The background continues to use abstract rectangles, diagonal dark red shadow shapes, and faint repeated “DEALS” text.\n\nIn the final frame, the clearance message is expanded: large white text reads “CLEARANCE” at the upper left, with “SAVE UP TO 85%” centered below it in very large bold numerals. Smaller text beneath reads “AFTER AN EXTRA 50% OFF.” Additional fine print appears at the bottom but is too small to read clearly. The overall visual style is a bright, high-contrast retail sale graphic emphasizing discount percentages and clearance deals."
+  },
+  "api_metadata": {
+    "response_id": "resp_050ee43df69133da006a107af72dd08195bf10e93654ed7947",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 470,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 2304
+    }
+  },
+  "duration_seconds": 11.914,
+  "created_at": "2026-05-22T15:49:22Z",
+  "error": null
+}

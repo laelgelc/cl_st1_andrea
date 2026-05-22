@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2010_30",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_30",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_30/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_30.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0002.jpg",
+      "timestamp_seconds": 3.293,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0003.jpg",
+      "timestamp_seconds": 6.83,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0004.jpg",
+      "timestamp_seconds": 7.797,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0005.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0006.jpg",
+      "timestamp_seconds": 15.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0007.jpg",
+      "timestamp_seconds": 18.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0008.jpg",
+      "timestamp_seconds": 22.512,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0009.jpg",
+      "timestamp_seconds": 25.015,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0010.jpg",
+      "timestamp_seconds": 26.383,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_30/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_30.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_30.json",
+    "response_text": "The commercial is a computer-animated sequence featuring red bears in a tropical vacation setting and later showing a Charmin product display.\n\n- **Opening scene (0.000s):** A group of red, white-bellied bears appears in a hotel or resort room. One bear in front wears blue swim goggles and holds a snorkel. Another bear in the back wears a blue patterned shirt, and a smaller bear holds or carries a yellow-and-red beach ball. A bathroom is visible through an open door, with a toilet in the background. The setting includes a wooden door, a dresser, and tropical décor.\n\n- **Interior room sequence (3.293s):** A red bear with small white flowers on its head is shown near a suitcase or luggage case. The bear appears to be leaning over or handling the luggage. A framed beach picture hangs on the wall, reinforcing the vacation setting.\n\n- **Room facing balcony/outdoors (6.830s):** The flower-wearing bear is seen from behind, facing toward an open balcony or window with a tropical view: blue sky, palm leaves, and a thatched roof edge. In the background, another bear wearing blue goggles holds a snorkel and appears to be looking toward the first bear.\n\n- **Bear in blue shirt (7.797s):** A larger red bear wearing a blue patterned short-sleeve shirt stands indoors in front of a wooden door. The bear faces forward, with a neutral or attentive expression. A framed beach image and a light switch are visible on the wall.\n\n- **Product package appears (11.234s):** Two bears hold or look at a large package of toilet paper. The packaging is clearly branded **“Charmin”** and includes the visible text **“Ultra Strong.”** The bear with flowers appears on the left, while the bear in the blue shirt is on the right. Both are looking toward the package.\n\n- **Bathroom product display (15.238s):** A close-up shows a stack or roll arrangement of white toilet paper placed on a wooden bench or platform in a bathroom. A toilet is visible blurred in the background, and the floor is tiled.\n\n- **Side-by-side absorbency/strength demonstration (18.942s):** The screen is split into two panels against a blue background. Each side shows a strip of toilet paper with stacked coins and a hand holding a small dropper or tube above it. The left panel is labeled with a small graphic that appears to refer to a **“Leading Bargain Brand,”** while the right panel is labeled **“Charmin Ultra Strong.”** The visual suggests a comparison test, though the exact process is only partially visible in the sampled frame.\n\n- **Beach scene (22.512s):** The bears are now outside on a tropical beach with palm trees, lounge chairs, blue water, and mountains in the distance. One large bear stands with hands on hips. Another bear reclines on a lounge chair wearing white sunglasses and holding a pineapple-shaped drink. Two smaller bears are visible farther to the right near the shoreline.\n\n- **Close-up on lounging bear (25.015s):** The bear on the lounge chair adjusts or touches white sunglasses while holding the pineapple drink with a straw and fruit garnish. The beach and palm trees remain in the background.\n\n- **Brand end card begins (26.383s):** The scene cuts to a pale blue background with the **Charmin** logo in a dark blue cloud-like shape. A white toilet paper roll graphic unfurls beneath or beside the logo.\n\n- **Final frame (29.053s):** The end card shows the **Charmin** logo with the visible slogan **“enjoy the go”** on a ribbon-like strip of toilet paper. A smiling red bear stands to the right, raising one arm as if waving or gesturing toward the logo."
+  },
+  "api_metadata": {
+    "response_id": "resp_085c11a78a238a67006a10777a587481a3962e71a1e58f3f9b",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 934,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 3146
+    }
+  },
+  "duration_seconds": 22.508,
+  "created_at": "2026-05-22T15:34:40Z",
+  "error": null
+}

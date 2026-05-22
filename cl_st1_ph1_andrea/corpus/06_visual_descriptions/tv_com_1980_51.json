@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1980_51",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_51",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_51/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_51.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_51/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_51/frame_0002.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_51/frame_0003.jpg",
+      "timestamp_seconds": 29.753,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_51.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_51.json",
+    "response_text": "The commercial begins on a nearly black frame, with no clearly visible objects or text.\n\nNear the end, the image cuts to a stylized promotional end card. A red/orange Cadillac is shown from the front-left angle against a dark studio-like background. Bright colored light effects appear around and over the car, including starburst flares in green, red, blue, and yellow, with colored reflections on the ground. Large centered text overlays the car:\n\n- “CHICAGOLAND” in uppercase block lettering  \n- “Cadillac” in a large cursive/script style  \n- “DEALERS” in uppercase block lettering  \n\nThe Cadillac grille and front lights are visible, and the car is presented as the main visual focus behind the dealership text.\n\nThe final sampled frame returns to a very dark/black image, suggesting a fade-out or transition to black. No additional visible information is clear in that frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_08b78885d06ed4d3006a107127a03c81a19cde121466fcaf38",
+    "usage": {
+      "input_tokens": 700,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 961
+    }
+  },
+  "duration_seconds": 6.681,
+  "created_at": "2026-05-22T15:07:26Z",
+  "error": null
+}

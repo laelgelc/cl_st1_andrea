@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1970_104",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_104",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_104/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_104.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0002.jpg",
+      "timestamp_seconds": 1.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0003.jpg",
+      "timestamp_seconds": 9.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0004.jpg",
+      "timestamp_seconds": 11.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0005.jpg",
+      "timestamp_seconds": 14.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0006.jpg",
+      "timestamp_seconds": 17.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0007.jpg",
+      "timestamp_seconds": 22.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0008.jpg",
+      "timestamp_seconds": 23.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_104/frame_0010.jpg",
+      "timestamp_seconds": 29.523,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_104.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_104.json",
+    "response_text": "The commercial begins with a very dark, nearly black frame with only faint blue-purple edges visible.\n\nIt then cuts to a softly lit shot inside what appears to be an aircraft cabin or service area. A person wearing a large headset is shown in profile on the left, silhouetted against a bright window. Another person’s face or shoulder is partially visible in soft focus on the right edge. The image has a hazy, backlit quality.\n\nNext, a blue title card appears with large white serif text reading: “United’s Friendship Service.” The background is dark blue with indistinct shapes behind the lettering.\n\nThe scene shifts to an aircraft passenger cabin. A middle-aged male flight attendant or service employee is seated or leaning beside a seat, putting on or adjusting a headset with both hands. He wears a light-colored striped shirt and tie. The seating around him suggests rows of airplane seats.\n\nA wider cabin view follows. The same man is visible near the aisle or beside a seat, wearing the headset with a microphone positioned near his mouth. Several passengers are visible in the background, seated in rows. Reflections or glass-like overlays make the image look layered, as if shot through a partition or window.\n\nThe next shot is a close-up of a different male crew member or employee, also wearing a headset with a microphone. He has a mustache and is smiling slightly. The background again shows aircraft seating and passengers, though it is soft and partially obscured by reflections.\n\nThe commercial then cuts to an older woman passenger with white hair and dark-framed glasses. She is seated in an airplane seat and appears to be smiling or speaking. She wears earrings and a dark outfit with a patterned scarf or collar. The cabin seat back is visible behind her.\n\nAnother shot shows a man seated in the cabin, viewed from behind and in profile as he turns his head back over his shoulder. He appears to be the earlier striped-shirted man or a similarly dressed passenger/employee. The top of a seat back is visible in the foreground, and the cabin interior is softly lit.\n\nNear the end, a blue title card appears with large white serif text reading: “United to 113 cities.” The background is a solid or gradient blue.\n\nThe final frame is black."
+  },
+  "api_metadata": {
+    "response_id": "resp_04d435074dfe1a77006a10704292f4819fa26b269c33bd7cd2",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 497,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 2520
+    }
+  },
+  "duration_seconds": 12.584,
+  "created_at": "2026-05-22T15:03:43Z",
+  "error": null
+}

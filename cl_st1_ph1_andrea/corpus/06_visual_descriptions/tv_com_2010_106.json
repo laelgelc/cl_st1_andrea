@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2010_106",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_106",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_106/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_106.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0002.jpg",
+      "timestamp_seconds": 1.107,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0003.jpg",
+      "timestamp_seconds": 2.108,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0004.jpg",
+      "timestamp_seconds": 3.735,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0005.jpg",
+      "timestamp_seconds": 5.32,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0006.jpg",
+      "timestamp_seconds": 6.738,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0007.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0008.jpg",
+      "timestamp_seconds": 10.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0009.jpg",
+      "timestamp_seconds": 11.576,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_106/frame_0010.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_106.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_106.json",
+    "response_text": "The commercial opens with a dark, close-up, shallow-focus scene of a small bird or duckling-like animal standing in a muddy, oily-looking environment. The image is desaturated and grey-toned, with wet ground, puddles, and debris. The animal appears coated in a dark substance.\n\nThe next shot widens slightly to show the same kind of muddy shoreline. A small, dark-coated bird is near the water’s edge while a human leg or boot appears at the right side of the frame. A small disclaimer appears at the bottom in Spanish: “demostración simulada, no se usó petróleo” (“simulated demonstration, no petroleum was used”).\n\nA close-up then shows a gloved or human hand reaching down toward the small bird. The bird is standing in shallow liquid and appears heavily covered in a black, sticky substance. The overall palette remains dark and grey, emphasizing contamination and distress.\n\nThe scene then cuts sharply to a bright, clean, blue-white setting. A person holds a clear plastic bottle of blue Dawn dishwashing liquid. The label “DAWN” is visible on the bottle. The background is out of focus and clinical or rescue-like in appearance.\n\nThe following frames show a small duckling being washed in white foam. Human hands hold the bird gently while suds cover parts of its body. The duckling’s head and beak are visible above the foam, and the oily residue appears to be coming off during the washing process.\n\nA side view shows the cleaned or partially cleaned duckling lying or resting on a white, foamy surface. A Dawn bottle is visible blurred at the right edge. White on-screen text appears: “LOS RESCATISTAS CONFÍAN EN DAWN.” The composition contrasts the clean white foam and blue product imagery with the earlier dark, contaminated environment.\n\nAnother close-up shows a hand cleaning the bird’s feathers with foam. The duckling’s body is wet, and bubbles cover the feathers. White text across the lower part of the frame reads: “ES FUERTE CONTRA LA GRASA, PERO SUAVE.” The visual emphasis is on washing away dark grease while handling the animal carefully.\n\nThe commercial then moves outdoors to a natural shoreline. A person’s hands release the duckling onto sand near water. The lighting is bright and natural, and the bird now appears clean, with visible yellow and brown coloring rather than black coating.\n\nA wider landscape shot shows the duckling near a lake or calm body of water, with tall green reeds on the left and distant hills or mountains across the water. The bird moves along the shore, suggesting return to a natural habitat.\n\nThe final product shot shows a blue Dawn bottle standing against a bright blue background. A small clean duckling stands beside it. White Spanish text reads: “DAWN AYUDA A SALVAR LA VIDA SILVESTRE.” The final frame visually links the product with wildlife rescue and cleanliness."
+  },
+  "api_metadata": {
+    "response_id": "resp_08667a9e31cedf04006a107923698c81a3905189cdcf69462d",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 646,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 2669
+    }
+  },
+  "duration_seconds": 16.412,
+  "created_at": "2026-05-22T15:41:39Z",
+  "error": null
+}

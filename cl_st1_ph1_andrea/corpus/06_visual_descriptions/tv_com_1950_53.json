@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1950_53",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_53",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_53/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_53.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_53/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_53/frame_0002.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_53/frame_0003.jpg",
+      "timestamp_seconds": 30.62,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_53/frame_0004.jpg",
+      "timestamp_seconds": 88.045,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_53.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_53.json",
+    "response_text": "The commercial is in black and white and begins with a completely black frame.\n\nIt then cuts to an overhead view of a table laid out with many foods and drinks. The table has a cloth and is arranged almost like a diagram of daily eating occasions. Small dark labels identify meal times, including clearly visible labels for “BREAKFAST,” “BEDTIME SNACK,” and “DINNER.” Another label is partly cut off at the left edge and is not fully readable. The table contains cups, saucers, plates, bowls, and several food items, including what appear to be pastries or bread, a larger dinner plate, and small side dishes. The arrangement emphasizes multiple eating moments across the day.\n\nNext, the image transitions to a close-up of a man facing the camera. He is wearing a suit jacket, collared shirt, and tie. During the transition, the previous food-table image appears faintly superimposed over his face and body, suggesting a dissolve between scenes. Once visible, he is centered against a plain background and looks directly forward.\n\nThe final frame shows a product display. On the left is a dark glass bottle with a label that appears to include the name “Calometric.” In the center/front is a large envelope addressed to “THE CALOMETRIC COMPANY, LOS ANGELES, CALIFORNIA,” with “BUSINESS REPLY ENVELOPE” printed near the top. Behind it is a box or package with large text reading “CALOMETRIC WEIGHT CONTROL,” featuring a window-like design with vertical items or markings inside. The shot presents the product materials clearly as the closing visual."
+  },
+  "api_metadata": {
+    "response_id": "resp_084d2d2ab62f3dba006a106bc8964c8191b5a40376102e6aa1",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 529,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1650
+    }
+  },
+  "duration_seconds": 11.743,
+  "created_at": "2026-05-22T14:44:36Z",
+  "error": null
+}

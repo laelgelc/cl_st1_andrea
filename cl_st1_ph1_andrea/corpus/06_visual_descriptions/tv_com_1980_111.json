@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_1980_111",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_111",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_111/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_111.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0002.jpg",
+      "timestamp_seconds": 7.03,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0003.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0004.jpg",
+      "timestamp_seconds": 8.798,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0005.jpg",
+      "timestamp_seconds": 9.149,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0006.jpg",
+      "timestamp_seconds": 11.518,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0007.jpg",
+      "timestamp_seconds": 12.085,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0008.jpg",
+      "timestamp_seconds": 13.97,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0009.jpg",
+      "timestamp_seconds": 15.622,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0010.jpg",
+      "timestamp_seconds": 17.741,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0011.jpg",
+      "timestamp_seconds": 18.425,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0012.jpg",
+      "timestamp_seconds": 19.559,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0013.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0014.jpg",
+      "timestamp_seconds": 21.127,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0015.jpg",
+      "timestamp_seconds": 21.478,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0016.jpg",
+      "timestamp_seconds": 21.645,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0017.jpg",
+      "timestamp_seconds": 21.878,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0018.jpg",
+      "timestamp_seconds": 22.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0019.jpg",
+      "timestamp_seconds": 22.479,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0020.jpg",
+      "timestamp_seconds": 23.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0021.jpg",
+      "timestamp_seconds": 24.581,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0022.jpg",
+      "timestamp_seconds": 26.549,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0023.jpg",
+      "timestamp_seconds": 28.385,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_111/frame_0024.jpg",
+      "timestamp_seconds": 29.036,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_111.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_111.json",
+    "response_text": "The clip begins with a static green advertising layout. In the upper center is a small inset image of a young couple outdoors. Large white text at lower left reads “Fresh and Clean as a Whistle,” and a black product panel at lower right shows “Irish Spring” with a shamrock graphic and the phrase “THE DEODORANT SOAP.” This opening frame is visually distinct from the later McDonald’s material.\n\nAfter the cut, the setting changes to an outdoor public plaza or shopping area in front of glass storefronts. A group of performers in coordinated red, white, and yellow athletic outfits appear to be dancing or doing a street-performance routine. Several costumes display McDonald’s-style golden-arches graphics. A crowd stands and sits around them watching, some holding white bags.\n\nThe dancers move in pairs and small groups. One performer in red and white is lifted or perched high above another person’s shoulders, while others face each other in quick footwork. Several wear red earmuffs, yellow socks or leg warmers, white sneakers, and red track-style jackets or tops. The choreography includes bouncing steps, hand gestures, bending forward, and circling movements. The background repeatedly shows glass doors/windows and a large golden-arches sign, supporting the McDonald’s setting.\n\nThe commercial intercuts the dancing with close-up food shots. Golden-brown breaded pieces are shown against a dark background, falling or tumbling in slow motion. Hands hold and pull apart a breaded piece, revealing a pale interior. Another close-up shows a breaded piece being dipped into a white sauce inside a round white container. Later, stacked McDonald’s “Chicken McNuggets” boxes are shown, with a white clamshell-style container on top. Hands remove the top container/box from the stack.\n\nThe performance continues between these product shots. A male dancer in a red jacket and white pants interacts with the other performers. At moments, one dancer bends low while another points or gestures toward the movement. The crowd remains visible, watching from the edges of the plaza.\n\nNear the end, white on-screen text appears over the dancing scene: “IT’S A GOOD TIME FOR THE GREAT TASTE,” alongside a red McDonald’s logo panel with the golden arches. The final shots move closer to the performers’ faces: a smiling young woman in a red-and-white outfit with a yellow hat or cap is shown seated or leaning back among the group. She smiles toward the camera and makes a small hand gesture, while other performers smile around her."
+  },
+  "api_metadata": {
+    "response_id": "resp_0dd97050fe8aaf6f006a10720ec31081a2af73bead501aaf10",
+    "usage": {
+      "input_tokens": 6061,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 883,
+      "output_tokens_details": {
+        "reasoning_tokens": 366
+      },
+      "total_tokens": 6944
+    }
+  },
+  "duration_seconds": 25.073,
+  "created_at": "2026-05-22T15:11:35Z",
+  "error": null
+}

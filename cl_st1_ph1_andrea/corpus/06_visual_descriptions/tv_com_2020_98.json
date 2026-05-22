@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2020_98",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_98",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_98/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_98.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0002.jpg",
+      "timestamp_seconds": 1.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0003.jpg",
+      "timestamp_seconds": 3.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0004.jpg",
+      "timestamp_seconds": 4.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0005.jpg",
+      "timestamp_seconds": 4.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0006.jpg",
+      "timestamp_seconds": 5.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0007.jpg",
+      "timestamp_seconds": 6.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0008.jpg",
+      "timestamp_seconds": 8.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0009.jpg",
+      "timestamp_seconds": 9.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0010.jpg",
+      "timestamp_seconds": 11.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0011.jpg",
+      "timestamp_seconds": 12.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0012.jpg",
+      "timestamp_seconds": 13.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0013.jpg",
+      "timestamp_seconds": 15.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0014.jpg",
+      "timestamp_seconds": 16.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0015.jpg",
+      "timestamp_seconds": 17.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0016.jpg",
+      "timestamp_seconds": 18.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0017.jpg",
+      "timestamp_seconds": 20.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0018.jpg",
+      "timestamp_seconds": 22.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0019.jpg",
+      "timestamp_seconds": 23.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0020.jpg",
+      "timestamp_seconds": 25.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0021.jpg",
+      "timestamp_seconds": 27.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_98/frame_0022.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_98.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_98.json",
+    "response_text": "The commercial opens on a black frame, then cuts to a woman in a light blue sports bra facing a reflective exercise screen in a softly lit interior. The word “MIRROR” appears over the image, suggesting the product is a wall-mounted mirror-like fitness display.\n\nThe scene shifts to a spacious home workout room with wooden floors, curtains, plants, a bench, and fitness equipment. A man walks across the room toward or near a wall-mounted mirror device. Another room appears: a bright living area with exposed ceiling beams, large plants, and a narrow vertical mirror mounted on the wall. A woman in a pink workout outfit approaches the mirror.\n\nA close view of the mirror interface shows circular profile icons and class/user labels floating across the lower part of the screen. The visible names include items such as “mountainbiker13,” “melissatl,” “candice_30,” “buckminster,” and a large circle with initials “YP.” The woman’s body is reflected behind the semi-transparent interface. She then appears smiling and waving at the mirror, with the interface still visible.\n\nAnother user appears: a woman with very short light hair, wearing a dark sports bra, stands in front of the mirror and smiles while raising one hand in a wave. A small translucent instructor figure is visible on the mirror surface above or beside the interface.\n\nThe commercial then returns to the man in the warm-toned workout room. He is shown in side profile against backlit curtains, then facing a mirror display. The mirror shows an instructor figure in white workout clothing and on-screen workout metrics or controls along the top and bottom. In a closer shot, the instructor appears large on the display while the man lifts a dumbbell, his reflection visible behind the overlay.\n\nThe short-haired woman is shown again exercising with a dumbbell, raising her arm overhead while a translucent instructor figure appears on the mirror in front of her. The first woman in the light blue sports bra also reappears on a mirror display, with a visible interface at the top including a timer and the words “COOL DOWN.”\n\nA wider shot shows the man jumping or doing a dynamic movement in front of his wall-mounted mirror. A red medicine ball and other gym items sit on the floor nearby. Another split-like view shows two adjacent mirror displays or reflections: on the left, the woman in the blue sports bra is visible with workout interface elements; on the right, the man appears in front of his mirror with the words “FACE OFF” and circular profile graphics.\n\nThe setting changes to a different room with patterned wallpaper and skylights. The short-haired woman performs a wide squat while facing a mirror mounted on the far wall. Plants and a chair are visible in the room.\n\nA family scene follows: an adult man holds a small child while two children stand nearby, all looking toward something off-frame, likely the mirror or workout area. They appear to be in a home living space with curtains and soft daylight.\n\nThe woman in pink is shown again in the bright living room, doing a balance or movement exercise in front of the wall mirror. The man in the workout room performs a deep squat or lunge-like move, arms raised, with his mirror visible on the wall. A new bright room appears with blue exterior framing and surfboards leaning against the wall; a person exercises on a mat in front of a mirror in a beach-like or coastal interior.\n\nNear the end, large pricing text overlays the scenes. Over a kitchen/living space, white text reads: “NOW AS LOW AS $42/mo with affirm,” with smaller fine print at the bottom. A person moves in the background. The same pricing overlay appears again over the bright living room with the woman in pink near the mirror.\n\nThe final frame shows the product branding over the living room scene: large white text “MIRROR,” followed by “from lululemon,” and “MIRROR.COM” below. Small financing fine print remains along the bottom. A person in pink passes partly out of frame on the right while the wall-mounted mirror stays centered in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0937f074e6dd339b006a107b5045548195b823f072bc25da9f",
+    "usage": {
+      "input_tokens": 4291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 970,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 5261
+    }
+  },
+  "duration_seconds": 22.724,
+  "created_at": "2026-05-22T15:51:02Z",
+  "error": null
+}

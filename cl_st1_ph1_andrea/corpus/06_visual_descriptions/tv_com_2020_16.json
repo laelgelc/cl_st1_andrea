@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2020_16",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_16",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_16/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_16.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0002.jpg",
+      "timestamp_seconds": 1.983,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0003.jpg",
+      "timestamp_seconds": 6.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0004.jpg",
+      "timestamp_seconds": 7.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0005.jpg",
+      "timestamp_seconds": 10.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0006.jpg",
+      "timestamp_seconds": 10.742,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0007.jpg",
+      "timestamp_seconds": 11.618,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0008.jpg",
+      "timestamp_seconds": 12.327,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0009.jpg",
+      "timestamp_seconds": 13.328,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0010.jpg",
+      "timestamp_seconds": 14.955,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0011.jpg",
+      "timestamp_seconds": 17.165,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0012.jpg",
+      "timestamp_seconds": 19.042,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0013.jpg",
+      "timestamp_seconds": 23.088,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0014.jpg",
+      "timestamp_seconds": 24.381,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_16/frame_0015.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_16.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_16.json",
+    "response_text": "The commercial opens in a bright living room with a beige sofa, pillows, houseplants, shelves, and large windows. A small shaggy black-and-white dog sits upright on the sofa near a TV remote, while a person is visible outside the window handling a garden sprayer or container.\n\nThe next shots focus on the dog lounging on the sofa. A smartphone is propped against a cushion near the dog, showing a dog on a green-screen interface. The dog then appears lying back among pillows, holding or looking at a phone.\n\nThe dog looks toward a television. On the TV screen is an advertisement-like image for a green product labeled “Spruce,” with large visible text: “SAFE FOR USE AROUND PEOPLE, PETS & BEES.” The product image shows a green container with a spray wand.\n\nThe dog becomes active on the sofa, then the scene cuts to a wooden coffee table with a set of keys and a paw-shaped keychain. In the background, the dog jumps or runs off the sofa, suggesting movement toward leaving. A close-up follows of a car ignition area with keys being inserted or handled.\n\nOutside, the rear of a white vintage-style convertible is shown with a license plate reading “1H8WDZ.” The car is then seen in motion with the dog riding in it, wearing goggles. A green Spruce product container is visible in the car near the windshield.\n\nThe setting shifts to a garden-center or home-improvement store aisle. A woman stands in front of a bright green Spruce display stocked with multiple bottles and containers. The dog sits facing the display beside her.\n\nBack outdoors at a house, a man uses a green Spruce container with a spray wand on a patio or garden area while the dog stands nearby on the lawn. A close-up comparison shot shows two small plants growing in soil, with green labels above them; the visible text is partially cut off, showing “UNTREAT…” on the left and “TRE…” on the right.\n\nThe man then crouches beside the dog in the yard and pets it. A Spruce container is placed beside them.\n\nA later shot shows a dark pickup truck driving with several dogs visible through the open windows and a large Spruce product display standing in the truck bed.\n\nThe final frame is a graphic product card on a green and yellow background. Large text reads: “PET FRIENDLY. WEED DEADLY.” A Spruce Weed & Grass Killer container is shown prominently, with a spray wand attached. Additional visible text says: “SAFE FOR USE AROUND PEOPLE, PETS & BEES,” with a small note: “*When used as directed.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0975f2872118ece6006a1079cc2c30819ea9551bb4d8d978d7",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 668,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 3636
+    }
+  },
+  "duration_seconds": 17.202,
+  "created_at": "2026-05-22T15:44:29Z",
+  "error": null
+}

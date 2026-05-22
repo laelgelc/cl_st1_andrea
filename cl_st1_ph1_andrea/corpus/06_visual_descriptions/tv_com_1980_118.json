@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1980_118",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_118",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_118/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_118.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0002.jpg",
+      "timestamp_seconds": 6.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0003.jpg",
+      "timestamp_seconds": 17.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0004.jpg",
+      "timestamp_seconds": 18.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0005.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0006.jpg",
+      "timestamp_seconds": 22.045,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0007.jpg",
+      "timestamp_seconds": 23.446,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0008.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_118/frame_0009.jpg",
+      "timestamp_seconds": 29.786,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_118.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_118.json",
+    "response_text": "The commercial opens on a nearly uniform dark reddish-brown screen with no discernible objects or people visible.\n\nIt then cuts to a warmly lit, orange-tinted domestic interior. A young girl with light brown hair, wearing a light blouse and pinkish garment, smiles while looking down into a small dark bowl. She holds a spoon and appears to be stirring or scooping a yellowish mixture.\n\nNext, there is a close-up of hands working with a small round baked item or pastry on a surface. A knife or spatula spreads a glossy dark topping, likely chocolate-colored, over the top.\n\nThe scene then shows a red-haired girl or young woman with straight bangs holding a small round food item near her mouth and taking a bite. She is indoors, with framed pictures and patterned wallpaper visible behind her.\n\nA close-up returns to the younger girl, who looks downward and smiles, suggesting she is watching or preparing food, though the object she is looking at is not visible in this frame.\n\nAnother child appears: a blond boy wearing large round glasses. He holds a small topped food item with both hands and bites into it. The background remains warm-toned and softly blurred.\n\nThe commercial then cuts to a product display on a plain background. Centered is a small toy-like oven with a front door and control panel. Around it are accessories: an orange stand-like tool on the left, two small round metal pans, several packet-like items, a paper insert or recipe sheet, and a white electrical cord extending to the right. On-screen text at the bottom reads: “Betty Crocker. Easy-Bake MINI-WAVE OVEN.”\n\nThe same product layout remains on screen, now with the “Kenner” logo visible in the upper right corner. The product name text remains at the bottom.\n\nThe final frame shows the same product display fading darker, with the objects and text still faintly visible as the image dims."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d6eaec6dfc7934f006a10722dfe44819f971eed832384a07f",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 696,
+      "output_tokens_details": {
+        "reasoning_tokens": 303
+      },
+      "total_tokens": 3052
+    }
+  },
+  "duration_seconds": 18.568,
+  "created_at": "2026-05-22T15:12:00Z",
+  "error": null
+}

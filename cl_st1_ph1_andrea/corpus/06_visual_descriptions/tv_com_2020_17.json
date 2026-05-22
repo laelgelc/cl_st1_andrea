@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2020_17",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_17",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_17/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_17.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0002.jpg",
+      "timestamp_seconds": 0.857,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0003.jpg",
+      "timestamp_seconds": 2.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0004.jpg",
+      "timestamp_seconds": 4.778,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0005.jpg",
+      "timestamp_seconds": 9.199,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0006.jpg",
+      "timestamp_seconds": 11.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0007.jpg",
+      "timestamp_seconds": 12.702,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0008.jpg",
+      "timestamp_seconds": 13.703,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_17/frame_0009.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_17.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_17.json",
+    "response_text": "The commercial unfolds in a bright home kitchen and then shifts to product-focused shots.\n\n1. **Opening in kitchen**: A woman stands in a kitchen facing a seated child whose back is partly visible in the foreground. A large red “Eggo” logo is superimposed across the center of the frame, partially covering the woman’s torso and face area. The kitchen has light coming in from a window and wooden cabinets.\n\n2. **Child at counter**: The camera cuts closer to the child, a young girl in a pink-and-magenta striped long-sleeve shirt, seated at a kitchen island or counter. She looks upward toward the standing woman, with her hands folded or resting together on the counter. The woman is partly visible at the left edge, out of focus.\n\n3. **Product box introduced**: A wider kitchen shot shows the woman beside the child at the counter. The woman holds a yellow Eggo box near her waist, angled outward so the branding is visible. The child looks toward the woman. In the foreground on the counter there is a plate or tray with bananas and another piece of fruit, slightly out of focus. Wooden cabinetry, a stove, microwave, and kitchen items are visible in the background.\n\n4. **Reaction shot of adult man**: The scene cuts to a man standing indoors, likely in the same home. He has a beard and tousled hair and wears a light striped button-up shirt over a white undershirt. He faces forward with a serious or skeptical expression. The background includes a pale wall, a door, and children’s artwork or framed pictures.\n\n5. **Close-up of waffle with syrup and butter**: The commercial cuts to a close-up of a toasted waffle on a plate. A pat of butter sits on top, and syrup is spread across the waffle’s grid. The image is warm-toned and food-focused, with the background blurred.\n\n6. **Waffle being pulled apart**: A close-up shows hands holding a waffle and pulling it apart at the center. A second waffle is visible underneath. In the upper-left corner, a circular yellow-and-red graphic reads “0% ARTIFICIAL COLORS OR FLAVORS.” The waffle texture is emphasized.\n\n7. **Child eating waffle**: The child is shown seated at the table or counter, holding a waffle with both hands near her mouth. Her eyes are closed or nearly closed, suggesting enjoyment. A white plate with another waffle piece sits in front of her, along with utensils. In the background on the counter, an Eggo box is visible but out of focus.\n\n8. **Product end card**: The scene changes to a bright yellow background. On the left, red text reads “L’Eggo my Eggo.” On the right is a yellow Eggo Homestyle product box showing a waffle image with butter. Small label graphics on the box include “0% artificial” and “no high fructose,” though the smaller text is not fully legible at this distance.\n\n9. **Final product emphasis**: The final frame keeps the yellow background and product box. The red “L’Eggo my Eggo” text remains on the left. Additional red label callouts appear in front of the box, reading “0% ARTIFICIAL COLORS OR FLAVORS” and “NO HIGH FRUCTOSE CORN SYRUP.” The product packaging remains the central visual focus."
+  },
+  "api_metadata": {
+    "response_id": "resp_077600dda95b4c35006a1079cd2bf8819688fdcb5d431dbc97",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 749,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 2583
+    }
+  },
+  "duration_seconds": 17.514,
+  "created_at": "2026-05-22T15:44:30Z",
+  "error": null
+}

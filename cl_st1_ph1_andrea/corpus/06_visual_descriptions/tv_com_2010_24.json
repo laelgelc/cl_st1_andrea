@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2010_24",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_24",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_24/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_24.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0002.jpg",
+      "timestamp_seconds": 1.458,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0003.jpg",
+      "timestamp_seconds": 3.66,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0004.jpg",
+      "timestamp_seconds": 4.628,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0005.jpg",
+      "timestamp_seconds": 5.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0006.jpg",
+      "timestamp_seconds": 6.997,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0007.jpg",
+      "timestamp_seconds": 8.798,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0008.jpg",
+      "timestamp_seconds": 9.866,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0009.jpg",
+      "timestamp_seconds": 10.934,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0010.jpg",
+      "timestamp_seconds": 12.702,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0011.jpg",
+      "timestamp_seconds": 13.637,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0012.jpg",
+      "timestamp_seconds": 14.671,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0013.jpg",
+      "timestamp_seconds": 15.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0014.jpg",
+      "timestamp_seconds": 18.275,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0015.jpg",
+      "timestamp_seconds": 22.646,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0016.jpg",
+      "timestamp_seconds": 23.713,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0017.jpg",
+      "timestamp_seconds": 25.348,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0018.jpg",
+      "timestamp_seconds": 27.45,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0019.jpg",
+      "timestamp_seconds": 27.617,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0020.jpg",
+      "timestamp_seconds": 27.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0021.jpg",
+      "timestamp_seconds": 27.951,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0022.jpg",
+      "timestamp_seconds": 28.118,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_24/frame_0023.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_24.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_24.json",
+    "response_text": "The commercial begins with an upward-looking city view between tall buildings. In the blue sky, white skywriting reads “MARRY ME JENNY.”\n\nIt cuts to a young woman standing outdoors on a city sidewalk. She looks upward and smiles, apparently reacting to what is in the sky. She has long wavy hair and wears a dark jacket over a striped top.\n\nThe next shot shows a car’s digital dashboard display. The speed reads 15 mph, with a graphic of a car and an alert-style icon. Other visible indicators include “READY,” gear indicators, fuel/energy information, and an odometer reading. This suggests the view is from inside a vehicle.\n\nA street scene follows outside a brick building with outdoor seating. The same woman stands near a crosswalk while a red car approaches from the right. Small disclaimer text appears along the bottom, stating that the “TSS Pre-Collision System with Pedestrian Detection” is not a substitute for safe and attentive driving and referring viewers to the owner’s manual. The woman is then shown closer, seen through or over the vehicle interior, standing in front of the car’s path.\n\nA screen-like view appears, showing the street scene with the woman and the red car. Large text on the display reads “Pedestrian Detection.” The red car is visible near the crosswalk, and the same safety disclaimer remains at the bottom.\n\nThe commercial then shifts to a different driving situation. Inside a car, a man drives while a woman in the passenger seat looks down at a phone or device. The landscape outside is open and mountainous, with warm light. The man holds the steering wheel and looks ahead.\n\nAn exterior shot shows a blue Toyota Prius traveling on a two-lane road through a wide, open landscape. Bottom text states that “Lane Departure Alert with Steering Assist” is not a substitute for safe and attentive driving and again refers to the owner’s manual. The digital dashboard is shown again: the speed reads 40 mph, and a lane graphic appears in the center display, indicating lane-position assistance. The driver and passenger are then shown again from inside the car.\n\nClose-up exterior shots show the rear of the blue Prius, including the Toyota emblem, the “Prius” badge, and the distinctive vertical taillights. A wider rear view shows the Prius driving along the road with another vehicle approaching in the opposite lane.\n\nThe scene then changes abruptly to the interior of an aircraft. Several people wearing helmets, goggles, and jumpsuits are gathered near an open door, suggesting skydiving preparation. One person in a black suit with a cream-colored helmet stands near the door, while others in blue gear sit or crouch nearby. The open door reveals a view of land far below. The people appear to be adjusting themselves, holding equipment, or preparing to jump.\n\nA title overlay appears over the aircraft scene: “The 2017 PRIUS” with smaller text underneath reading “Toyota Safety Sense™ Standard.” The aircraft doorway and skydivers remain visible behind the text.\n\nThe image then transitions into a rotating collage or globe of rectangular video panels. The panels show earlier scenes from the commercial, including the skywriting “MARRY ME JENNY,” the driver and passenger in the Prius, road/lane imagery, the skydiving scene, and parts of the car. The collage continues rotating and pulling back against a white background.\n\nThe final frame is a white end card with the Toyota logo on the left, the red word “TOYOTA” beneath it, and the slogan “Let’s Go Places” on the right. A small URL at the bottom reads “toyota.com/prius.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_04645ca09fcf485e006a10775adfc4819caaaca8316452f494",
+    "usage": {
+      "input_tokens": 4480,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 780,
+      "output_tokens_details": {
+        "reasoning_tokens": 38
+      },
+      "total_tokens": 5260
+    }
+  },
+  "duration_seconds": 19.843,
+  "created_at": "2026-05-22T15:34:06Z",
+  "error": null
+}

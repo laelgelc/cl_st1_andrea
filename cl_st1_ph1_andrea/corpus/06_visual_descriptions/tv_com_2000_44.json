@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_44",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_44",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_44/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_44.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0002.jpg",
+      "timestamp_seconds": 4.094,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0003.jpg",
+      "timestamp_seconds": 7.03,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0004.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0005.jpg",
+      "timestamp_seconds": 14.07,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0006.jpg",
+      "timestamp_seconds": 16.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0007.jpg",
+      "timestamp_seconds": 18.608,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0008.jpg",
+      "timestamp_seconds": 20.043,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0009.jpg",
+      "timestamp_seconds": 21.945,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0010.jpg",
+      "timestamp_seconds": 25.282,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0011.jpg",
+      "timestamp_seconds": 26.816,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0012.jpg",
+      "timestamp_seconds": 28.251,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0013.jpg",
+      "timestamp_seconds": 29.386,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0014.jpg",
+      "timestamp_seconds": 30.02,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0015.jpg",
+      "timestamp_seconds": 31.254,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0016.jpg",
+      "timestamp_seconds": 33.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0017.jpg",
+      "timestamp_seconds": 34.591,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0018.jpg",
+      "timestamp_seconds": 35.492,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0019.jpg",
+      "timestamp_seconds": 37.427,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0020.jpg",
+      "timestamp_seconds": 38.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0021.jpg",
+      "timestamp_seconds": 40.297,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0022.jpg",
+      "timestamp_seconds": 42.132,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0023.jpg",
+      "timestamp_seconds": 44.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0024.jpg",
+      "timestamp_seconds": 46.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0025.jpg",
+      "timestamp_seconds": 48.038,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0026.jpg",
+      "timestamp_seconds": 49.572,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0027.jpg",
+      "timestamp_seconds": 50.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0028.jpg",
+      "timestamp_seconds": 51.675,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0029.jpg",
+      "timestamp_seconds": 55.078,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_44/frame_0030.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_44.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_44.json",
+    "response_text": "The commercial begins on a bright tropical beach. A young man in a loose white shirt stands near the shoreline facing a shirtless man whose back is to the camera. The young man appears to be holding a small object or device in front of him. Behind them are pale sand, shallow surf, rocky greenery, and another person standing farther back. A lens flare from the sun partially obscures the foreground figure.\n\nThe view then cuts to a close-up of the young man smiling directly into the camera. The beach and ocean are behind him, and a red “REC” indicator appears on the lower right of the image, visually suggesting that this is footage being recorded. He looks excited and animated.\n\nA wider beach shot follows. Several people stand near the water, including the young man in white and a blonde woman in a white dress with a flower wreath on her head. A shirtless man in a wrapped skirt or sarong stands near a colorful boat with a thatched covering. The setting remains a secluded tropical shoreline with green hills, palm trees, blue sky, and bright sunlight.\n\nThe blonde woman is then shown in close-up against the sky. She wears a white halter-style dress and a wreath of white flowers and green leaves. Her expression is calm and slightly smiling. A close-up of a darker-haired, darker-skinned man with long curly hair and a shell necklace follows; his eyes are lowered and he appears serious or focused. Another close-up returns to the blonde woman, now more contemplative, looking off-camera. A close-up of the young man in white follows, also looking off-camera with a soft smile.\n\nA very wide shot shows the whole beach environment from offshore or near the water. A small boat rests on the sand, turquoise water fills the foreground, and the group stands together on the beach under dense tropical vegetation and a mountain slope.\n\nThe commercial then shifts from the beach footage to a computer screen. The screen shows a video-editing or video-viewing interface with a frame of the beach group: the blonde woman, the long-haired man, and the young man in white are seen from behind or in profile. The computer interface has toolbars and icons along the side and bottom, with an Apple logo visible on the monitor casing.\n\nNext, the young man is shown indoors at a desk, smiling while looking at the computer. The room is dimmer and domestic, with bookshelves and objects in the background. The following shot shows the computer monitor displaying a close-up video of the young man and the blonde woman facing each other closely, as if about to kiss or sharing an intimate moment. Then a wider indoor shot shows the young man seated at the computer with a woman standing beside or behind him, both looking at the screen.\n\nThe screen changes to a turquoise menu page with multiple thumbnail images from the beach footage. The page appears to be a DVD-style menu or video project interface. Some visible text includes a large title beginning “Tour & …” or “Tour & Life” that is partially unclear, and menu labels such as “Start Here” and “The Party.” The thumbnails show the smiling young man, beach group scenes, a person near a boat, a close-up face, and a sunset-like image. A closer view highlights the “Start Here” and “The Party” thumbnail options.\n\nA hand presses or touches a small external drive or disc tray. A close-up shows a small optical disc or disc mechanism near a keyboard. Fine-print text appears at the bottom of one frame, including “SuperDrive models only. DVD licensed for legal use only,” though parts of the text are small and slightly blurred. The young man is then seen at the desk handling the disc or drive. He appears to be preparing or removing a disc.\n\nThe setting shifts to another living room. A bald middle-aged man in a blue polo shirt stands or moves in the foreground, while an older woman with short curly gray hair sits on a couch in the background. The room has a stone wall, a patterned sofa, and warm household lighting. A hand places a disc into a tray or player. A television on a stand shows the turquoise menu page with the beach thumbnails. The bald man stands near the TV holding a remote or small device.\n\nThe older woman sits on the couch looking forward with a reserved or expectant expression. The bald man is then shown in close-up, looking serious and slightly puzzled or concerned. The television displays the beach footage again: the long-haired shirtless man gestures or reaches toward the young man and the blonde woman. The older woman is shown in close-up, looking upward with a faint, uncertain smile.\n\nThe bald man holds a disc case or booklet in his hands; a bright reflection partially obscures its cover, but it appears to show an image related to the beach footage. He looks down at it, then back up. A wider shot shows both the bald man and the older woman seated side by side on the couch, facing the television. He holds the remote or case, while she sits with hands together, both watching attentively.\n\nThe final shots are of the television screen. On the TV, the blonde woman and the young man stand facing each other in a ceremony-like pose, holding hands, while the long-haired man stands behind them. They are outdoors among trees. In the last frame, the TV image shows the blonde woman and the young man standing side by side, smiling slightly. A white Apple logo appears over the video, and large white text on the TV screen reads: “Think different.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_061e039bb2422ea5006a1075503b488193b001797e53a39dea",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1339,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 8882
+    }
+  },
+  "duration_seconds": 32.914,
+  "created_at": "2026-05-22T15:25:36Z",
+  "error": null
+}

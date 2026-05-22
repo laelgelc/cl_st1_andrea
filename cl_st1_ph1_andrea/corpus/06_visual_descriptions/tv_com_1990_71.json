@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_71",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_71",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_71/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_71.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0002.jpg",
+      "timestamp_seconds": 1.391,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0003.jpg",
+      "timestamp_seconds": 2.259,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0004.jpg",
+      "timestamp_seconds": 2.959,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0005.jpg",
+      "timestamp_seconds": 3.793,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0006.jpg",
+      "timestamp_seconds": 4.661,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0007.jpg",
+      "timestamp_seconds": 5.529,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0008.jpg",
+      "timestamp_seconds": 6.463,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0009.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0010.jpg",
+      "timestamp_seconds": 8.465,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0011.jpg",
+      "timestamp_seconds": 8.999,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0012.jpg",
+      "timestamp_seconds": 10.033,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0013.jpg",
+      "timestamp_seconds": 10.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0014.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0015.jpg",
+      "timestamp_seconds": 11.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0016.jpg",
+      "timestamp_seconds": 13.37,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0017.jpg",
+      "timestamp_seconds": 14.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0018.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0019.jpg",
+      "timestamp_seconds": 17.374,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0020.jpg",
+      "timestamp_seconds": 18.642,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0021.jpg",
+      "timestamp_seconds": 19.442,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0022.jpg",
+      "timestamp_seconds": 20.677,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0023.jpg",
+      "timestamp_seconds": 22.712,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0024.jpg",
+      "timestamp_seconds": 23.713,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0025.jpg",
+      "timestamp_seconds": 25.248,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0026.jpg",
+      "timestamp_seconds": 25.882,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0027.jpg",
+      "timestamp_seconds": 26.516,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0028.jpg",
+      "timestamp_seconds": 27.317,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0029.jpg",
+      "timestamp_seconds": 28.318,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_71/frame_0030.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_71.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_71.json",
+    "response_text": "The commercial unfolds as a bright, fast-cut sequence around a recreational baseball/softball game, intercut with close-ups of Bud Light products.\n\nIt opens with a high overhead view of a baseball/softball field or diamond-like playing area. The image is dark and distant, with small figures positioned around the field.\n\nThe scene then cuts to a close-up of two people’s hands gripping a blue bat together. A man in a white-and-red shirt appears on the left, and a blonde woman in a yellow top appears on the right. The framing emphasizes their hands and the bat rather than the full setting. This is followed by a shot of the blonde woman outdoors against a blue sky, holding the bat and moving as if preparing to swing.\n\nThe action shifts to the field. A male batter stands at home plate, seen from above, holding a bat in a batting stance. A fielder dives low across the dirt toward a rolling ball. The close-up of the shared bat grip returns, showing the man and blonde woman facing each other closely while holding the bat.\n\nA dramatic play follows: a male player in a yellow shirt and shorts leaps horizontally through the air with a glove extended, while another player slides on the dirt below him. The commercial cuts to a group of spectators behind a chain-link fence cheering and raising their arms. Another close-up shows spectators reacting excitedly, including a red-haired woman in a green top and a man in a white shirt.\n\nA female batter in a red cap, red-and-white shirt, and white shorts prepares to swing while a catcher crouches behind her. She swings, and a bright blurred object crosses the frame, suggesting the hit. A scoreboard appears in the background with the visible heading “VETERANS PARK,” though the smaller scoring details are not clear. A baseball glove is then shown tumbling through the air against the scoreboard and sky.\n\nA blonde woman in a red swimsuit or red-strapped top sits outdoors, smiling or laughing toward the camera. The commercial then cuts to a close-up of ice and bottles/cans, with water splashing over the containers. Small legal text appears at the bottom, including “ANHEUSER-BUSCH INC. BUD LIGHT BEER, ST. LOUIS, MO.”\n\nThe montage returns to field action: a player in red slides while another player moves nearby, and then several players cluster around a base on the dirt. A woman runner in a red cap is caught between two male players in yellow shirts, one wearing a glove. The scene cuts to a close-up of golden beer liquid with condensation or bubbles on glass, emphasizing coldness and refreshment.\n\nThe blonde woman and the man from the bat-grip scene reappear in a close, softly lit shot outdoors. They face each other closely while holding a beverage container between them. The commercial then briefly returns to a player sliding face-down along the baseline. Spectators again react with surprise and excitement behind the fence.\n\nA large white cooler filled with ice and bottles/cans appears. The cooler has a visible “BUD LIGHT” logo on the front. People stand around it in casual athletic clothing. A man in a yellow shirt reaches into the cooler. A top-down shot shows Bud Light cans and bottles packed in ice, with a person’s face briefly visible among the ice, suggesting someone has plunged into or leaned deeply into the cooler. The man is then shown bent over with his head inside or very close to the cooler while others around him watch and react.\n\nA woman with curly dark hair smiles and laughs while holding a can and a baseball glove. The commercial closes on the man and blonde woman facing each other closely, smiling, with a Bud Light can held between them. In the final frame, the can label “BUD LIGHT” is clearly visible. White text appears along the bottom of the screen: “Everything else is just a light.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_07d4478fb965188b006a107393aeb881a0a0a6c19dbf66da2f",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1171,
+      "output_tokens_details": {
+        "reasoning_tokens": 381
+      },
+      "total_tokens": 8714
+    }
+  },
+  "duration_seconds": 33.198,
+  "created_at": "2026-05-22T15:18:12Z",
+  "error": null
+}

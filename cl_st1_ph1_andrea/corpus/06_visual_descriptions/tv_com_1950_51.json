@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1950_51",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_51",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_51/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_51.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0002.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0003.jpg",
+      "timestamp_seconds": 2.492,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0004.jpg",
+      "timestamp_seconds": 25.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0005.jpg",
+      "timestamp_seconds": 27.117,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0006.jpg",
+      "timestamp_seconds": 41.031,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0007.jpg",
+      "timestamp_seconds": 46.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0008.jpg",
+      "timestamp_seconds": 48.638,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0009.jpg",
+      "timestamp_seconds": 49.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0010.jpg",
+      "timestamp_seconds": 51.741,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0011.jpg",
+      "timestamp_seconds": 56.313,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0012.jpg",
+      "timestamp_seconds": 58.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_51/frame_0013.jpg",
+      "timestamp_seconds": 58.782,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_51.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_51.json",
+    "response_text": "The commercial is in black and white and appears to be shot in a studio with staged product displays and laundry appliances.\n\nAt the start, the image is almost completely dark. It then cuts to a smiling woman facing the camera. She wears a checked, off-the-shoulder style dress and a short necklace, standing against a plain studio backdrop.\n\nThe next shot shows a product box standing alone on a surface. The package is labeled prominently “FAB,” with additional visible text reading “WASHES CLOTHES CLEANER THAN ANY SOAP.” The box is presented front-facing, as a clear product display.\n\nLater, the woman appears near a washing machine. In a closer view, she holds a large FAB box beside the open washing machine tub. The shot emphasizes the package in her hands and the laundry appliance beside her. A wider view follows, showing her standing between a washer on the left and another large appliance or laundry machine on the right, still holding the FAB box upright toward the camera.\n\nThe setting then changes to a fuller display of laundry appliances. The woman stands in front of several large white washing machines or laundry units, with multiple FAB boxes placed on top of or in front of them. She smiles and gestures with her hands while a FAB package is positioned prominently in front of her.\n\nA close-up follows, tightly framing the FAB box held in front of the woman’s torso. The large “FAB” name dominates the frame, and the same claim “WASHES CLOTHES CLEANER THAN ANY SOAP” is visible on the package. During this section there are overlapping images or dissolves, briefly layering the close-up product shot with the wider appliance display.\n\nThe woman is then shown again in a medium shot, holding the FAB box to one side of her body and angling it toward the camera. Behind her are several white laundry appliances with additional FAB boxes displayed on top. Another wider shot shows an even larger arrangement of washing machines or laundry appliances in rows, with many FAB boxes placed across the set. The woman stands near the center, holding one box and gesturing outward with her free hand.\n\nNear the end, she stands centered behind a front appliance, holding a FAB box in one hand and extending her other arm outward, surrounded by multiple washing machines and FAB packages arranged symmetrically around her.\n\nThe final frame changes to a graphic product display. A FAB box appears on the left with sparkling or dotted visual effects around it. Large block text on the right reads “MORE ACTIVE DIRT-REMOVER!” The FAB package remains the central branded object in the final composition."
+  },
+  "api_metadata": {
+    "response_id": "resp_005761e0f39a0215006a106bc2caf081a2a4113dee876cb428",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 603,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 3947
+    }
+  },
+  "duration_seconds": 15.12,
+  "created_at": "2026-05-22T14:44:33Z",
+  "error": null
+}

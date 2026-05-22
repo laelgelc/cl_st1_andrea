@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1980_96",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_96",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_96/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_96.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0002.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0003.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0004.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0005.jpg",
+      "timestamp_seconds": 16.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0006.jpg",
+      "timestamp_seconds": 23.246,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_96/frame_0007.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_96.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_96.json",
+    "response_text": "The commercial begins with a very dark, nearly black frame. A small red heart-shaped watermark/logo is visible in the lower-right corner.\n\nIt then cuts to two young adults, a man and a woman, shown close together against a shiny, glittering backdrop. Large yellow-green text across the lower part of the screen displays the phone number: “1-900-999-9000.” The same small red heart watermark remains in the lower-right corner.\n\nNext, the image shifts to a television-like screen or framed display showing a person looking toward the camera, with bright fireworks or sparkling light effects visible behind or overlaid on the image. The phone number “1-900-999-9000” remains prominently across the bottom.\n\nThe commercial then cuts to a close-up of a smiling blonde woman. She raises one hand near her face, and she appears excited or surprised. The same phone number remains across the bottom of the frame.\n\nLater, the visuals combine a close-up of a telephone keypad on the right with an inset image of the same young man and woman on the left. Large translucent category words appear over the image: “MUSIC,” “SPORTS,” and “TV/MOVIES.” The phone number continues along the bottom.\n\nThe final section becomes a static advertisement-style graphic. At the top, large red text reads “WINNERS!” Beneath it is the phrase “The 24-Hour Telephone Trivia Game.” A telephone keypad is pictured in the center. On the lower left, green text reads “CALL,” followed by the large phone number “1-900-999-9000.” Smaller text at the bottom gives mail-in information: “To Play by mail send a S.A.S.E. to: PO Box 491416 Los Angeles CA 90049,” followed by “95¢ a minute. No Toll.” The final frame holds this same layout."
+  },
+  "api_metadata": {
+    "response_id": "resp_08498d1852941dfe006a1071d96f988190a86b83343edb3f1b",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 619,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 2481
+    }
+  },
+  "duration_seconds": 17.658,
+  "created_at": "2026-05-22T15:10:34Z",
+  "error": null
+}

@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_1990_19",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_19",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_19/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_19.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0002.jpg",
+      "timestamp_seconds": 2.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0003.jpg",
+      "timestamp_seconds": 3.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0004.jpg",
+      "timestamp_seconds": 4.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0005.jpg",
+      "timestamp_seconds": 5.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0006.jpg",
+      "timestamp_seconds": 6.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0007.jpg",
+      "timestamp_seconds": 7.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0008.jpg",
+      "timestamp_seconds": 9.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0009.jpg",
+      "timestamp_seconds": 10.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0010.jpg",
+      "timestamp_seconds": 12.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0011.jpg",
+      "timestamp_seconds": 15.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0012.jpg",
+      "timestamp_seconds": 18.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0013.jpg",
+      "timestamp_seconds": 19.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0014.jpg",
+      "timestamp_seconds": 22.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0015.jpg",
+      "timestamp_seconds": 23.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0016.jpg",
+      "timestamp_seconds": 25.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0017.jpg",
+      "timestamp_seconds": 26.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_19/frame_0018.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_19.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_19.json",
+    "response_text": "The commercial begins with a very dark, indistinct frame in which the setting and objects are not clearly visible.\n\nIt then cuts to a close-up of a green pack of **Wrigley’s Doublemint chewing gum** held between fingers with red-painted nails. The package text is visible: “WRIGLEY’S,” “DOUBLEMINT,” “CHEWING GUM,” and a circular **“25¢”** price mark.\n\nThe scene shifts to a bright indoor room with tall windows and shutters. Two women are moving energetically as if dancing. One wears a blue sleeveless top and white pants; the other wears a colorful loose shirt or dress and a light hat. The images are slightly blurred from motion.\n\nAnother close-up of the Doublemint pack appears, again held between fingers, this time against a warm orange/yellow background. The same green packaging and **25¢** mark are visible.\n\nA graphic screen follows: a blue, water-like background with the large white word **“NO”** centered near the top.\n\nNext is a close-up of a blonde woman wearing a straw hat and colorful clothing. She brings something to her mouth or appears to be chewing; the exact object is not clearly visible.\n\nThe commercial then cuts to two people standing outdoors in front of an arched building and a fountain. They are holding and looking at a large unfolded map. One has a yellow bag or jacket; the other has reddish hair and carries a patterned bag.\n\nA swimmer appears in open water, with only the head and upper body visible above the blue surface.\n\nThe setting changes to a sunny poolside or resort area. Several people lounge in swimsuits. In the foreground, a shirtless man with a rounded belly stands in profile, holding a small white object near his mouth. The ocean or a large body of water is visible in the background.\n\nAnother blue water-textured screen appears, without readable text in the sampled frame.\n\nA couple is then shown at sunset near the ocean. They are close together, possibly dancing or embracing. The man wears a dark red shirt; the woman has light-colored hair and a pale top. The sky is orange and purple.\n\nA row of white lounge chairs is shown in the foreground, angled diagonally. The same sunset-toned background and a partially visible person are behind them.\n\nThe montage continues with a woman in a canoe on a calm lake. She wears a red plaid shirt and smiles while holding a paddle. Trees and water fill the background.\n\nThe final setting is beside a red streetcar or bus. A woman in a yellow coat or jacket reaches toward a man standing in the doorway. On the side of the vehicle is an advertisement panel showing the green Doublemint gum pack.\n\nThe last frame shows the advertisement panel more clearly on the red vehicle. It displays the green Doublemint pack with the **25¢** mark and the printed line: **“There’s no single gum like it.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_0ef993876bf65133006a1072a31c2c8193922394a969717d69",
+    "usage": {
+      "input_tokens": 4579,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1002,
+      "output_tokens_details": {
+        "reasoning_tokens": 403
+      },
+      "total_tokens": 5581
+    }
+  },
+  "duration_seconds": 32.79,
+  "created_at": "2026-05-22T15:14:11Z",
+  "error": null
+}

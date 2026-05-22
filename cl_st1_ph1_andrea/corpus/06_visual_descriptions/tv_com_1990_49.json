@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1990_49",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_49",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_49/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_49.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0002.jpg",
+      "timestamp_seconds": 9.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0003.jpg",
+      "timestamp_seconds": 12.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0004.jpg",
+      "timestamp_seconds": 13.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0005.jpg",
+      "timestamp_seconds": 16.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0006.jpg",
+      "timestamp_seconds": 17.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0007.jpg",
+      "timestamp_seconds": 20.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0008.jpg",
+      "timestamp_seconds": 28.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_49/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_49.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_49.json",
+    "response_text": "The commercial unfolds as a soft-focus breakfast/kitchen product ad for Kellogg’s Nutri-Grain cereal bars.\n\n- **Opening frame:** The image is very dark and hard to read. A dim interior or exterior background is barely visible, with the words **“Nutri-Grain Bars”** faintly appearing near the bottom.\n\n- **Early product emphasis:** The scene dissolves into a large **Kellogg’s Nutri-Grain** box, shown near a bright window with horizontal blinds. The packaging is white with red lettering and strawberry imagery. A man’s face/body appears faintly superimposed during the transition, suggesting a dissolve between the product shot and a people/kitchen scene.\n\n- **Kitchen scene:** A warmly lit kitchen appears. A woman stands on the left holding a bag or purse, and a man in a dark suit stands on the right near a counter. The man appears to be holding or opening/eating a bar. A Nutri-Grain box is visible on the counter in front of him. The kitchen includes a refrigerator, cabinets, and a window.\n\n- **Packaging close-up:** The ad cuts/dissolves to a close-up of a **Kellogg’s Nutri-Grain Cereal Bars** wrapper. The word **“STRAWBERRY”** is visible, and the packaging uses red and white colors. The image is partly overlaid with another product image due to the transition.\n\n- **Food close-up:** A close-up shows the outside of a golden-brown cereal bar held between fingers. The surface looks textured and grainy. Small copyright text appears at the lower right, including **“© 1991 Kellogg Company.”**\n\n- **Bite/filling close-up:** Another close-up shows a broken or bitten cereal bar with red strawberry filling inside. The bar is held in a hand, and the red filling is visually emphasized.\n\n- **Return to kitchen:** The scene dissolves back to the kitchen. The woman remains on the left with her bag, and the man in the suit is on the right holding the bar. The product box is still visible on the counter.\n\n- **Final product shot begins:** A large Nutri-Grain box fills the frame, overlaid on the kitchen scene. The bottom of the frame shows the slogan text **“Start your morning off right.”**\n\n- **Final frame:** The commercial ends with a clean packshot against a dark background. The box reads **“Kellogg’s Nutri-Grain Cereal Bars.”** The flavor shown is **“Strawberry.”** Additional visible text includes **“Made with real fruit”** and **“No preservatives.”** The package image shows strawberries and two cereal bars with red filling. The slogan **“Start your morning off right.”** appears in large white text along the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_07c81d0639e83093006a1073387f6c819395117ca940dfe1b7",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 856,
+      "output_tokens_details": {
+        "reasoning_tokens": 276
+      },
+      "total_tokens": 3212
+    }
+  },
+  "duration_seconds": 21.247,
+  "created_at": "2026-05-22T15:16:29Z",
+  "error": null
+}

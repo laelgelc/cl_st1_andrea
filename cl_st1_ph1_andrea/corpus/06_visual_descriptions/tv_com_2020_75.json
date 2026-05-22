@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2020_75",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_75",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_75/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_75.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0002.jpg",
+      "timestamp_seconds": 1.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0003.jpg",
+      "timestamp_seconds": 2.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0004.jpg",
+      "timestamp_seconds": 4.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0005.jpg",
+      "timestamp_seconds": 6.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0006.jpg",
+      "timestamp_seconds": 8.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0007.jpg",
+      "timestamp_seconds": 9.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0008.jpg",
+      "timestamp_seconds": 9.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0009.jpg",
+      "timestamp_seconds": 10.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0010.jpg",
+      "timestamp_seconds": 12.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0011.jpg",
+      "timestamp_seconds": 12.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0012.jpg",
+      "timestamp_seconds": 16.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0013.jpg",
+      "timestamp_seconds": 17.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0014.jpg",
+      "timestamp_seconds": 18.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0015.jpg",
+      "timestamp_seconds": 19.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0016.jpg",
+      "timestamp_seconds": 21.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0017.jpg",
+      "timestamp_seconds": 23.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_75/frame_0018.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_75.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_75.json",
+    "response_text": "The commercial is presented in a wide, letterboxed format with black bars at the top and bottom. It unfolds as a sequence of mountain-road and off-road driving scenes featuring a red SUV.\n\n1. **Opening mountain road**\n   - The first frame shows a red vehicle driving away on a winding two-lane road through a forested mountain landscape.\n   - The surrounding area is misty or hazy, with layered mountains in the background.\n\n2. **Mountain scenery**\n   - The next shot shows a dramatic mountain view: tall evergreen trees frame a road or valley below, with a snow-dusted peak partly covered by low clouds.\n   - No people are visible.\n\n3. **Close-up of the vehicle in motion**\n   - A close, low-angle shot shows part of the red vehicle near a wheel and lower body panel.\n   - The image suggests motion over a road surface, but details are partly blurred.\n   - Small fine-print text appears along the bottom, but it is too small to read clearly.\n\n4. **Rear/side view in spray or dust**\n   - The red SUV is shown from the rear side, moving through mist, water spray, or dust.\n   - The vehicle’s rear light and body contours are visible.\n   - Fine-print text appears at the bottom but is not legible in the sampled frame.\n\n5. **Aerial mountain valley**\n   - A wide aerial shot shows a green alpine valley with winding roads or trails, rocky slopes, and high mountains partly covered by clouds.\n   - The red vehicle is not clearly visible in this frame.\n\n6. **Front view of the SUV**\n   - The red SUV drives toward the camera on a narrow road bordered by greenery.\n   - Its headlights or daytime running lights are on, and spray or dust trails behind the wheels.\n\n7. **Close-up of an owl**\n   - A close-up shows the head and eye of an owl or similar bird of prey.\n   - The bird’s large yellow eye is prominent.\n   - This is a brief nature insert; the connection to the vehicle is visual rather than explicitly explained in the frames.\n\n8. **Dashboard gauge**\n   - A close-up of a tachometer or engine-speed gauge appears.\n   - The needle is near the higher end of the visible scale, around the 4–5 range on a dial marked “x1000 r/min” or similar.\n\n9. **Driving through water**\n   - The red SUV splashes through shallow water or a muddy stream.\n   - Water is thrown outward from the front and side of the vehicle.\n\n10. **Front close-up through heavy spray**\n   - The vehicle is shown from the front-left area, partially obscured by water spray.\n   - The grille, headlights, and red hood are visible through the splash.\n\n11. **Wide off-road shot**\n   - A distant shot shows the red SUV traveling across a rough, rocky green landscape.\n   - Dust or spray trails behind it as it moves through the uneven terrain.\n\n12. **AWD badge**\n   - A close-up of the red SUV’s side panel shows the text “AWD” near the front wheel area.\n   - Fine-print text is visible at the bottom but is too small to read clearly.\n\n13. **SUV on dirt road**\n   - The red SUV drives on a dusty, unpaved surface under a bright sky.\n   - Mountains are visible in the distance.\n   - Fine-print text appears along the bottom edge but is not readable in detail.\n\n14. **Wheel close-up**\n   - A close-up shows the vehicle’s alloy wheel spinning over a dusty surface.\n   - Dust is kicked up around the tire.\n\n15. **Interior driving view**\n   - The camera looks from the back seat toward the front of the vehicle.\n   - A driver is visible from behind holding the steering wheel.\n   - The dashboard display screen is visible, and the road or landscape ahead appears through the windshield, with mountains or coastline in the distance.\n\n16. **Warranty display with vehicle**\n   - The red SUV is parked or posed on a rocky overlook with evergreen trees and mountains in the background.\n   - Large white text appears at the bottom center: **“10-YEAR / 100,000-MILE WARRANTY”**.\n   - Additional fine print appears below but is too small to read clearly.\n\n17. **Offer screen**\n   - The screen cuts to a black background with large white promotional text.\n   - Readable text includes:\n     - **“2021 SPORTAGE LX”**\n     - **“0% APR up to 75 months for qualified buyers”**\n     - **“OR $159 per month”**\n     - **“24 month lease, $2,255 due at signing”**\n     - **“OFFERS CANNOT BE COMBINED”**\n     - **“KIA.COM”**\n   - Dense fine print appears at the bottom but is too small to read fully.\n\n18. **Final logo**\n   - The final frame is a black screen with the white **KIA** logo centered.\n   - No other visible imagery appears."
+  },
+  "api_metadata": {
+    "response_id": "resp_0312c4a4ff1c0898006a107adfb16c81a186928287ebc495e3",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1335,
+      "output_tokens_details": {
+        "reasoning_tokens": 290
+      },
+      "total_tokens": 4870
+    }
+  },
+  "duration_seconds": 23.457,
+  "created_at": "2026-05-22T15:49:11Z",
+  "error": null
+}

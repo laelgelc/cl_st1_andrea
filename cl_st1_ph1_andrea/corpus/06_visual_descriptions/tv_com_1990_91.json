@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_1990_91",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_91",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_91/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_91.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0002.jpg",
+      "timestamp_seconds": 7.097,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0003.jpg",
+      "timestamp_seconds": 7.964,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0004.jpg",
+      "timestamp_seconds": 11.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0005.jpg",
+      "timestamp_seconds": 13.036,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0006.jpg",
+      "timestamp_seconds": 15.939,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0007.jpg",
+      "timestamp_seconds": 16.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0008.jpg",
+      "timestamp_seconds": 16.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0009.jpg",
+      "timestamp_seconds": 18.608,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0010.jpg",
+      "timestamp_seconds": 22.312,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0011.jpg",
+      "timestamp_seconds": 22.412,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0012.jpg",
+      "timestamp_seconds": 22.646,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0013.jpg",
+      "timestamp_seconds": 22.846,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0014.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_91/frame_0015.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_91.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_91.json",
+    "response_text": "The commercial opens on a black screen.\n\nAt around 7 seconds, the scene cuts to a sunlit, curving two-lane road, bordered by rocky terrain and dark trees. The image has a warm, golden-orange color cast. A dark sedan then appears driving toward the camera with its headlights on, moving along what appears to be a wet or reflective road surface. The background remains strongly backlit and golden.\n\nA very blurred side view follows, showing the dark car passing through a warm-toned landscape; the motion blur emphasizes speed and movement. The commercial then cuts to the vehicle’s interior: tan or beige leather seats are shown from the front area looking toward the rear bench. The front headrests, rear seats, seat belts, and side windows are visible. No passengers are clearly visible in this interior shot.\n\nA brief bright white flash transition appears, followed by more fast-moving exterior imagery. The camera shows blurred roadside or landscape elements, then a side profile of the dark sedan moving from left to right against an orange, sunlit background. The car’s headlight is bright, and the body is largely in silhouette due to the strong backlighting.\n\nA rear view of the car follows. The trunk area and red taillights are visible, along with a central badge that resembles the Infiniti emblem. The license plate area is present but not legible in the frame.\n\nAnother bright white transition occurs. The commercial then shows rapidly moving shots of trees and sunlight, with the camera passing through or alongside a wooded area. The sun flares through the trees, producing strong glare and lens flare effects. Several frames alternate between bright overexposed flashes and blurred views of trees, sky, and golden foliage.\n\nThe final frame returns to a black background with centered white/gray text. Large text reads “G20.” Beneath it, the price is shown as “$21,485.” Smaller text below reads: “M.S.R.P., fully-equipped including destination charges. Title, taxes and license fees not included.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0b12653e3aa8b456006a1073e9c7f8819f90ba94bf2409288a",
+    "usage": {
+      "input_tokens": 3838,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 506,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 4344
+    }
+  },
+  "duration_seconds": 13.17,
+  "created_at": "2026-05-22T15:19:18Z",
+  "error": null
+}

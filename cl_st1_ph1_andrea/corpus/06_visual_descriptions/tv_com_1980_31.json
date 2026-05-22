@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1980_31",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_31",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_31/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_31.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0002.jpg",
+      "timestamp_seconds": 4.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0003.jpg",
+      "timestamp_seconds": 9.666,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0004.jpg",
+      "timestamp_seconds": 15.839,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0005.jpg",
+      "timestamp_seconds": 24.247,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_31/frame_0006.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_31.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_31.json",
+    "response_text": "The commercial begins with a very dark frame, with little visual detail visible. A white “www.FuzzyMemories.TV” watermark appears in the lower-left corner.\n\nThe scene then changes to an animated close-up of a small anthropomorphic cleaning character. It has a pale, rounded “cap” or bubble-like head with drawn eyes and eyebrows, and many brush-like bristles hanging down underneath. It sits amid white foam or suds against a dark bluish background. The character’s facial expression appears worried or alert, with its eyes looking downward.\n\nNext, the view widens to show several similar small animated scrubbing characters lined up together on a foamy surface. They appear in front of a dark bathroom-like background, possibly with a large bathtub or fixture behind them, though the details are dim and indistinct.\n\nThe commercial then cuts to a close-up of one character surrounded by many round bubbles. Its face fills much of the frame. It has large eyes and a curved eyebrow shape, giving it a determined or focused expression. The surrounding bubbles create the impression of active cleaning or foaming action.\n\nThe final part shifts from the animated scene to a product shot. A tall container labeled “Dow Bathroom Cleaner” is shown prominently in the center. The red Dow diamond logo appears near the top. Below the large product name, smaller text reads “with Scrubbing Bubbles,” accompanied by a small illustration of the same animated scrubbing-bubble character in foam. The background is light blue with sparkling highlights.\n\nIn the last frame, the product remains centered and larger in view. The label is still readable: “Dow Bathroom Cleaner” and “with Scrubbing Bubbles.” The illustrated scrubbing character and foam are visible on the lower part of the label. Behind the package, pale circular ripple-like shapes appear on both sides, suggesting water or a shiny bathroom-cleaning visual effect. The watermark remains in the lower-left corner throughout the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0bd339d2d3eca950006a1070de03bc8193b7049ec675b73d24",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 464,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 2079
+    }
+  },
+  "duration_seconds": 11.785,
+  "created_at": "2026-05-22T15:06:17Z",
+  "error": null
+}

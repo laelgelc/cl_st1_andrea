@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2010_12",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_12",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_12/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_12.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0002.jpg",
+      "timestamp_seconds": 0.924,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0003.jpg",
+      "timestamp_seconds": 2.425,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0004.jpg",
+      "timestamp_seconds": 3.26,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0005.jpg",
+      "timestamp_seconds": 5.195,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0006.jpg",
+      "timestamp_seconds": 26.216,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0007.jpg",
+      "timestamp_seconds": 27.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0008.jpg",
+      "timestamp_seconds": 27.617,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0009.jpg",
+      "timestamp_seconds": 27.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_12/frame_0010.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_12.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_12.json",
+    "response_text": "The commercial opens on an urban street scene. A bright lime-green compact car is parked or stopped near the curb in front of storefronts and apartment buildings. Pedestrians are visible on the sidewalk, and a taxi appears farther down the street. The setting looks like a city neighborhood with older multi-story buildings, awnings, shop signs, street signs, and parked bicycles.\n\nThe view then cuts inside the car from the passenger-side window. Two people are seated in the front: a man driving, wearing glasses and a dark jacket over a red shirt, and a woman in the passenger seat with short curly hair. The man has one hand on the steering wheel and appears to be looking toward the passenger while speaking or reacting; the passenger looks toward him.\n\nA close-up follows of a hand pressing a circular dashboard button, likely an ignition or start button. The instrument cluster and air vent are visible in the background. Small on-screen text near the bottom reads “Optional feature.”\n\nThe next shots move outside to a street lined with brick buildings and storefronts. A person is seen partway up or moving across the façade of a building near fire escapes and windows. A storefront sign is visible but not fully clear. Small legal/disclaimer text appears along the bottom of the frame, including fuel-economy-related information.\n\nA large vertical sign or billboard is then being carried or moved through the street by workers wearing hard hats. Large blue lettering on the sign includes “40” and “MPG,” with additional partial text above it. The urban storefronts and bicycles remain in the background. The small fuel-economy disclaimer text continues along the bottom.\n\nAfter a time jump, the view returns to the car interior from outside the driver-side window. The same driver and passenger are visible. The driver faces forward with his hand on the steering wheel, while the passenger looks at him with a serious or attentive expression.\n\nA graphic transition begins over the car window: large white shapes sweep across the frame, partially covering the occupants. This resolves into a close-up of the Ford oval logo, initially overlaid with the car interior still faintly visible behind it.\n\nThe Ford logo then appears centered on a clean light background. In the final frame, the logo remains above the text: “The Fiesta is here,” with “Fiesta” emphasized in darker or bolder type."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f7918c3e44ed562006a1077238f7081929b56a2e88c561607",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 547,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2570
+    }
+  },
+  "duration_seconds": 13.77,
+  "created_at": "2026-05-22T15:33:05Z",
+  "error": null
+}

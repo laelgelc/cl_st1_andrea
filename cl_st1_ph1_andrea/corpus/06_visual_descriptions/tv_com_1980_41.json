@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1980_41",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_41",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_41/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_41.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0002.jpg",
+      "timestamp_seconds": 3.216,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0003.jpg",
+      "timestamp_seconds": 5.186,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0004.jpg",
+      "timestamp_seconds": 10.757,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0005.jpg",
+      "timestamp_seconds": 13.508,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0006.jpg",
+      "timestamp_seconds": 15.852,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0007.jpg",
+      "timestamp_seconds": 17.176,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0008.jpg",
+      "timestamp_seconds": 20.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0009.jpg",
+      "timestamp_seconds": 23.222,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0010.jpg",
+      "timestamp_seconds": 26.551,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0011.jpg",
+      "timestamp_seconds": 28.929,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0012.jpg",
+      "timestamp_seconds": 29.05,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_41/frame_0013.jpg",
+      "timestamp_seconds": 29.404,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_41.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_41.json",
+    "response_text": "The commercial opens outdoors in a bright, open area with a large pile of cut logs under a blue sky. A person is standing or climbing among the logs, holding a long-handled tool, possibly an axe or similar implement.\n\nThe next shot widens to show the same log-filled setting. A dark pickup truck is parked on sandy or dusty ground near the pile, while the person with the tool stands beside it. The truck appears to be a Ford pickup, with a dark body and light trim.\n\nA product demonstration sequence follows. The truck is shown in profile driving or positioned on top of the logs. Overlaid text appears on the screen. Large figures at the upper right read “25 EST HWY” and “18 EPA EST MPG.” Smaller disclaimer text across the bottom includes: “Optional 4-speed trans. For comparison. Your mileage may differ depending on speed, distance and weather. Actual highway mileage lower. MPG required in Calif.” The truck is presented as moving across an uneven bed of logs.\n\nThe camera then cuts to a lower, wide view of the log pile, with the pickup near the top. The truck is small in the frame, emphasizing the rough terrain and the height of the stacked logs.\n\nSeveral closer shots show the truck negotiating the logs. From the front, the pickup’s grille, headlights, and Ford badge are visible as the vehicle rides over uneven logs. The suspension and front wheels appear raised at different levels due to the irregular surface. Another close-up focuses on the front end and lower grille as the vehicle moves over the logs. A side close-up shows a tire rolling over a log; the badge “F-150” is visible near the front side panel.\n\nAnother shot frames a large upright or angled log in the foreground, with the pickup behind it on the log pile. The truck remains positioned among the logs, reinforcing the rugged obstacle-course setting.\n\nNear the end of the demonstration, the truck is shown parked or paused on top of the log pile. The person with the tool stands nearby on the logs, next to the truck.\n\nThe commercial then transitions to a graphic: a dark, rocky or metallic silhouette of the United States against a blue background. Large white block lettering across it reads “AMERICA’S TRUCK.”\n\nThe final brand screen shows the blue Ford oval logo centered on a dark background, with the words “FORD DIVISION” underneath. The screen then cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_01bf060b5cd251e8006a10710375308191b00ec0836e94eae6",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 539,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 3129
+    }
+  },
+  "duration_seconds": 20.148,
+  "created_at": "2026-05-22T15:07:03Z",
+  "error": null
+}

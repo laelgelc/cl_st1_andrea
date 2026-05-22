@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1960_30",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_30",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_30/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_30.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0002.jpg",
+      "timestamp_seconds": 7.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0003.jpg",
+      "timestamp_seconds": 9.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0004.jpg",
+      "timestamp_seconds": 12.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0005.jpg",
+      "timestamp_seconds": 13.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0006.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0007.jpg",
+      "timestamp_seconds": 23.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0008.jpg",
+      "timestamp_seconds": 29.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0009.jpg",
+      "timestamp_seconds": 32.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0010.jpg",
+      "timestamp_seconds": 40.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0011.jpg",
+      "timestamp_seconds": 42.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0012.jpg",
+      "timestamp_seconds": 54.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_30/frame_0013.jpg",
+      "timestamp_seconds": 56.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_30.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_30.json",
+    "response_text": "The commercial is presented in a reddish/pink-tinted, vintage-looking image. A small “Nostalgic X’er” watermark appears at the lower right throughout the sampled frames.\n\nAt the start, the scene is outdoors in what appears to be a backyard or patio laundry area. A clothesline stretches across the frame with towels, socks, and dark trousers hanging on it. Behind the line is a light-colored fence or wall. A blonde woman stands partly obscured by a large towel on the line.\n\nThe camera then cuts to a close-up of the blonde woman, smiling broadly. She is in front of a house window and garden plants. The next shot shows her standing near a second woman with short dark hair, who wears a light dress with a dark belt. They are by the clothesline, with a large towel hanging between them and another person partly visible behind it. The dark-haired woman appears to be addressing someone, then the clip cuts to a close-up of her face as she looks toward the camera or toward the other woman.\n\nThe blonde woman is then shown in close-up behind the clothesline, her eyes wide and mouth open, suggesting surprise or strong reaction. The scene cuts back to the wider laundry-line view, with the blonde woman and the dark-haired woman still near the hanging towel.\n\nA product box is then shown prominently in close-up. The package is labeled “Bold” in large dark letters, with a circular white graphic near the top. Smaller text is visible but not fully legible in the sampled frame. A hand holds the box upright.\n\nThe next shot shows white powder being poured or heaped onto fabric or a surface, creating a mound of granular detergent. After that, the two women appear indoors or in a laundry area. A laundry basket filled with clothes sits to the left. The dark-haired woman holds and pours from the “Bold” box while the blonde woman watches, holding a small item or scoop-like object.\n\nA close-up then shows a person holding a dark garment near their face. The person’s hand is near their nose or mouth, and they appear to be inspecting or smelling the garment. The next wider shot returns to the clothesline: the blonde woman and the dark-haired woman stand with a plaid shirt and other clothing hanging behind them. Both women appear animated and cheerful, with the blonde woman leaning or laughing and the dark-haired woman smiling.\n\nNear the end, the “Bold” box is shown again in a layered or transitional shot, then in a clear final close-up. The box fills most of the frame, held between two people. The large “Bold” brand name and circular white design are the main visual focus, with clothing and the women’s bodies partially visible around it."
+  },
+  "api_metadata": {
+    "response_id": "resp_0fc41f89181ab427006a106d437c3c819c93d75fd8f80aff98",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 683,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 3273
+    }
+  },
+  "duration_seconds": 18.281,
+  "created_at": "2026-05-22T14:51:01Z",
+  "error": null
+}

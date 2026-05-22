@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_99",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_99",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_99/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_99.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0003.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0004.jpg",
+      "timestamp_seconds": 2.559,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0005.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0006.jpg",
+      "timestamp_seconds": 4.16,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0007.jpg",
+      "timestamp_seconds": 4.895,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0008.jpg",
+      "timestamp_seconds": 5.929,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0009.jpg",
+      "timestamp_seconds": 6.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0010.jpg",
+      "timestamp_seconds": 7.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0011.jpg",
+      "timestamp_seconds": 8.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0012.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0013.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0014.jpg",
+      "timestamp_seconds": 11.568,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0015.jpg",
+      "timestamp_seconds": 12.102,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0016.jpg",
+      "timestamp_seconds": 13.27,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0017.jpg",
+      "timestamp_seconds": 13.903,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0018.jpg",
+      "timestamp_seconds": 14.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0019.jpg",
+      "timestamp_seconds": 15.438,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0020.jpg",
+      "timestamp_seconds": 16.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0021.jpg",
+      "timestamp_seconds": 17.274,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0022.jpg",
+      "timestamp_seconds": 18.041,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0023.jpg",
+      "timestamp_seconds": 19.809,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0024.jpg",
+      "timestamp_seconds": 20.577,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0025.jpg",
+      "timestamp_seconds": 21.912,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0026.jpg",
+      "timestamp_seconds": 22.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0027.jpg",
+      "timestamp_seconds": 24.214,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0028.jpg",
+      "timestamp_seconds": 26.383,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0029.jpg",
+      "timestamp_seconds": 27.918,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_99/frame_0030.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_99.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_99.json",
+    "response_text": "The commercial begins with a black screen, then cuts to a monochrome interior scene. Two young adults sit on a simple sofa against a vertical wooden-plank wall. The young man on the left wears large headphones and holds them with both hands. A blonde young woman sits beside him, holding a small object in her hands. The overall tone is grayscale and staged, with the couch centered in a sparse room.\n\nThe camera moves closer to the man with headphones. He smiles slightly with his eyes closed, still pressing the headphones to his ears. A bright white flash-like transition follows, showing a yellow-orange liquid or fruit-like splash against a white background.\n\nThe monochrome sofa scene returns in close-up: the man’s face fills the frame as he continues holding one side of the headphones. The blonde woman is then shown close-up, laughing or smiling while holding a brush-like object or paddle-shaped item with a handle. In a wider couch shot, she reclines playfully across the sofa while the man sits upright, touching his face and looking toward her.\n\nThe commercial then shifts into color and product imagery. A yellow-orange liquid splashes on a white surface. This is followed by a shower scene: a young man is shown under running water, with green product-like liquid or foam visible on his face and body. The camera cuts very close to his mouth and chin as the green substance and water run downward.\n\nA product shot appears: a bright green Garnier Fructis bottle stands in front of large citrus slices. Visible text includes “Garnier Fructis,” “Fortifying,” and surrounding ingredient claims such as “vitamins B3 B6” and “fruit AHA.” Another green screen with blurred product text follows, showing “Garnier Fructis” and “Fortifying Shampoo,” though some wording is indistinct.\n\nThe setting changes to a pool table. A person in an orange top stands near a blue pool table with a rack of white balls. A close-up of white balls rolling or moving on the blue surface appears with the on-screen text “with pyrithione zinc.” A blonde woman is then shown in profile near a pool cue, outdoors or in a bright setting with trees and water visible behind her.\n\nThe next sequence focuses on hair and physical closeness between the blonde woman and a dark-haired young man. She places both hands into his hair, lifting and examining it. She leans close to the top of his head, appearing to smell or inspect his hair. The couple then look directly toward the camera in a close two-shot, their faces side by side.\n\nA product-demonstration segment follows: the back of a head with brown hair is shown against a bright outdoor background. A hand runs through the hair. On-screen text reads “up to 5X stronger,” with “5X” emphasized in large green and white lettering. Small fine print appears along the bottom but is difficult to read fully.\n\nThe couple are then shown reclining together in an indoor room, with a framed image or mirror behind them and patterned furniture visible. Another shot shows the blonde woman leaning over the man as they kiss. On-screen text reads “shinier.” The scene continues outdoors or near trees, showing the back of the man’s head and hair, with a long object such as a pool cue or stick across the frame. Large text reads “no flakes guaranteed,” with additional small fine print along the bottom that is only partly legible.\n\nSeveral close-ups show the blonde woman holding and touching the man’s hair while leaning close to him. The emphasis remains on the texture, movement, and apparent cleanliness of the hair.\n\nThe commercial ends with clean product-pack shots: two green Garnier Fructis containers stand in front of citrus slices on a pale background. A close-up focuses on the “Garnier Fructis” label on a green bottle with orange and lime-colored fruit imagery behind it. The final frame shows a small green circular leaf or fruit-slice graphic on a pale yellow-green background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f379e0a08a664d0006a1076675e10819da1171653a4b4cf0d",
+    "usage": {
+      "input_tokens": 8113,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1286,
+      "output_tokens_details": {
+        "reasoning_tokens": 469
+      },
+      "total_tokens": 9399
+    }
+  },
+  "duration_seconds": 32.638,
+  "created_at": "2026-05-22T15:30:15Z",
+  "error": null
+}

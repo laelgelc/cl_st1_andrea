@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_98",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_98",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_98/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_98.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0002.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0003.jpg",
+      "timestamp_seconds": 1.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0004.jpg",
+      "timestamp_seconds": 3.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0005.jpg",
+      "timestamp_seconds": 6.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0006.jpg",
+      "timestamp_seconds": 7.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0007.jpg",
+      "timestamp_seconds": 9.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0008.jpg",
+      "timestamp_seconds": 13.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0009.jpg",
+      "timestamp_seconds": 15.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0010.jpg",
+      "timestamp_seconds": 16.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0011.jpg",
+      "timestamp_seconds": 17.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0012.jpg",
+      "timestamp_seconds": 18.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0013.jpg",
+      "timestamp_seconds": 19.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0014.jpg",
+      "timestamp_seconds": 21.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0015.jpg",
+      "timestamp_seconds": 22.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0016.jpg",
+      "timestamp_seconds": 30.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0017.jpg",
+      "timestamp_seconds": 30.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0018.jpg",
+      "timestamp_seconds": 33.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0019.jpg",
+      "timestamp_seconds": 34.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0020.jpg",
+      "timestamp_seconds": 35.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0021.jpg",
+      "timestamp_seconds": 37.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0022.jpg",
+      "timestamp_seconds": 39.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0023.jpg",
+      "timestamp_seconds": 42.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0024.jpg",
+      "timestamp_seconds": 43.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0025.jpg",
+      "timestamp_seconds": 44.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0026.jpg",
+      "timestamp_seconds": 46.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0027.jpg",
+      "timestamp_seconds": 50.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0028.jpg",
+      "timestamp_seconds": 53.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0029.jpg",
+      "timestamp_seconds": 55.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_98/frame_0030.jpg",
+      "timestamp_seconds": 58.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_98.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_98.json",
+    "response_text": "The commercial begins in a dry, rural-looking outdoor setting. A close shot shows a weathered vertical metal fixture or tank with a chain hanging from it, against a bright sky and low rocky hills. The next shot widens to a roadside or industrial building at the edge of open land, with utility lines, scrubby vegetation, and layered hills in the background.\n\nThe scene then cuts to the rear of an orange vehicle. A bumper sticker reads “PLANET HUGGER” and includes a cartoon image of hands hugging a globe. The exhaust pipe and rear bumper are visible. Inside the orange car, a light-skinned man with short dark hair, a beard and mustache, wearing a plaid shirt and vest, sits behind the wheel with a seatbelt on. He drives with a neutral, focused expression.\n\nThe car is shown from the side in motion. The man remains at the wheel. The setting shifts to a suburban road with trees, hills, and traffic lights. Two orange cars approach side by side on a multi-lane road. One appears to be the man’s car; the other is another orange vehicle with a similar compact shape.\n\nA different light-skinned male driver with a prominent mustache is shown in profile in the other orange car. A shaggy tan dog wearing a red collar is seated beside him, leaning forward with its mouth open. The bearded driver in the first car looks across toward the other vehicle and then smiles slightly. A close-up of the dog shows it looking outward, panting. The bearded driver then looks toward the side window, appearing curious or attentive.\n\nThere is a very close exterior shot of orange vehicle bodywork, followed by another wide shot of the two orange cars on the road, still positioned near each other. The mustached driver is shown head-on through the windshield, wearing a seatbelt and looking serious or composed.\n\nThe setting then briefly changes to an electric-vehicle charging area. A woman stands near a white car parked beside two charging stations. She appears to be holding or standing near a charging cable. After this, an elevated road shot shows an orange car driving through a green, hilly landscape, with another darker vehicle passing in the opposite direction or nearby. A city skyline is faintly visible in the distance.\n\nAt about the middle of the sequence, the image cuts to a blank white screen. A large white graphic shape then reveals a new scene underneath, functioning like a transition. Through the shape, a restaurant table is visible.\n\nThe second part takes place in a dimly lit restaurant. A group of adults sit around a round table set with plates, glasses, cups, and drinks. The bearded man in a salmon or pink short-sleeved button-up shirt is seated with the group. Other diners include a bald man in a dark shirt, a woman in a striped sweater, and other people partly visible around the table. The group appears to be eating or finishing a meal.\n\nA closer shot shows the bald man smiling and gesturing across the table. The bearded man is shown frontally, looking forward with a serious or slightly uncertain expression. A dark card is then shown close-up; the word “REWARDS” is visible on it. The card is placed or moved near the table. Another shot shows the tabletop with glasses, plates, and a small blue or dark card being handled. A bill folder or receipt holder is shown on the table, with a paper receipt inside.\n\nThere is a close-up of the bearded man’s eyes, suggesting he is watching closely. The group continues interacting around the table; the bald man gestures while another man in glasses looks toward him. The bearded man turns his head to the side, then is shown again facing someone across the table. A hand in the foreground holds up a dark rectangular object, likely a card, though the exact details are not fully clear.\n\nA wider restaurant shot shows the bearded man seated opposite other diners, including the woman in the striped sweater. The table remains covered with plates, glasses, cups, and a bill folder or card holder.\n\nThe final shots shift to a clean graphic product display. A green credit-card-like card appears centered on a pale mint background, then on a white background. The card is green with a chip and abstract leaf-like or geometric patterns. Beneath it, a small green square or app-like icon appears. There is small fine print at the bottom, but it is too small to read clearly in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_05a9c4c75f138b91006a1078f6f3d481969d3fc893621bc7f4",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1219,
+      "output_tokens_details": {
+        "reasoning_tokens": 306
+      },
+      "total_tokens": 7022
+    }
+  },
+  "duration_seconds": 26.046,
+  "created_at": "2026-05-22T15:41:04Z",
+  "error": null
+}

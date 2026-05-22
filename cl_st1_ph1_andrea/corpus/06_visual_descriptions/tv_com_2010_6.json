@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2010_6",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_6",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_6/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_6.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0002.jpg",
+      "timestamp_seconds": 0.957,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0003.jpg",
+      "timestamp_seconds": 1.858,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0004.jpg",
+      "timestamp_seconds": 4.227,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0005.jpg",
+      "timestamp_seconds": 5.829,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0006.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0007.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0008.jpg",
+      "timestamp_seconds": 9.566,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0009.jpg",
+      "timestamp_seconds": 10.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0010.jpg",
+      "timestamp_seconds": 12.702,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_6/frame_0011.jpg",
+      "timestamp_seconds": 13.037,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_6.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_6.json",
+    "response_text": "The commercial opens with a close-up of a Febreze Air spray bottle standing on a kitchen counter. The bottle is white with purple/pink accents and floral imagery. A person in a light blue top is blurred in the background, reaching toward or near the bottle.\n\nThe scene then widens to a bright, modern white kitchen with blue accents. A woman in a light blue long-sleeved top stands by the sink/counter area, turning and moving energetically. Two children are seen from behind in the foreground, watching her. The kitchen has white cabinets, a stainless range hood, a stove, blue bar stools, and a large window.\n\nA closer shot shows the two children: a blonde girl facing forward and a curly-haired boy beside her. The boy appears to raise a hand near the girl’s shoulder or face while looking toward her; the girl looks ahead with a neutral expression.\n\nThe woman in the kitchen is then shown holding the Febreze spray bottle high above her head, arm extended upward, with her long hair swinging as she turns. The product is visible in her hand as she makes a sweeping movement in front of the stove and range hood.\n\nThe commercial briefly cuts to a different, dimmer interior. An older woman with curly hair stands holding a green-and-white aerosol can. The room has muted lighting, framed wall art, a cabinet or shelving unit, and a chair. She looks at the can and appears concerned or skeptical. A closer shot shows her examining the aerosol can in her hand.\n\nThe ad returns to the bright kitchen. The woman in blue stands near the sink and window, holding the Febreze bottle out and upward as if spraying into the air. A bowl of green apples is visible on the counter, and the open, sunlit kitchen remains clean and airy.\n\nAn abstract animated sequence follows: soft colored clouds, translucent blue bubbles, and pastel backgrounds fill the frame. Small on-screen text reads “Dramatization.”\n\nThe woman is then shown smiling in the kitchen, holding the Febreze bottle at her side. The kitchen background is visible again, including the island, blue stools, and white cabinetry.\n\nThe final product shot appears on a light blue background. On the left are two Febreze products: a red/pink spray bottle and a green plug-in or air-freshener device. White text reads “Breathe Happy.” A large white “febreze” logo spans the lower part of the frame, decorated with small colorful hanging shapes or lights. The final frame holds on this branding and product display."
+  },
+  "api_metadata": {
+    "response_id": "resp_0fe124a01e55558e006a1077021b48819183bf43357b7737fa",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 638,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 2850
+    }
+  },
+  "duration_seconds": 17.439,
+  "created_at": "2026-05-22T15:32:35Z",
+  "error": null
+}

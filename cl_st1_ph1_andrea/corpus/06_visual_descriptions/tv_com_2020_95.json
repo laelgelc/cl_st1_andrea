@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2020_95",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_95",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_95/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_95.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0002.jpg",
+      "timestamp_seconds": 3.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0003.jpg",
+      "timestamp_seconds": 4.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0004.jpg",
+      "timestamp_seconds": 6.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0005.jpg",
+      "timestamp_seconds": 7.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0006.jpg",
+      "timestamp_seconds": 8.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0007.jpg",
+      "timestamp_seconds": 8.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0008.jpg",
+      "timestamp_seconds": 9.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0009.jpg",
+      "timestamp_seconds": 9.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0010.jpg",
+      "timestamp_seconds": 9.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0011.jpg",
+      "timestamp_seconds": 10.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0012.jpg",
+      "timestamp_seconds": 10.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0013.jpg",
+      "timestamp_seconds": 10.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0014.jpg",
+      "timestamp_seconds": 12.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0015.jpg",
+      "timestamp_seconds": 13.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0016.jpg",
+      "timestamp_seconds": 14.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0017.jpg",
+      "timestamp_seconds": 15.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0018.jpg",
+      "timestamp_seconds": 16.073,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0019.jpg",
+      "timestamp_seconds": 17.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0020.jpg",
+      "timestamp_seconds": 18.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0021.jpg",
+      "timestamp_seconds": 19.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0022.jpg",
+      "timestamp_seconds": 20.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0023.jpg",
+      "timestamp_seconds": 20.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0024.jpg",
+      "timestamp_seconds": 21.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0025.jpg",
+      "timestamp_seconds": 21.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0026.jpg",
+      "timestamp_seconds": 21.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0027.jpg",
+      "timestamp_seconds": 22.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0028.jpg",
+      "timestamp_seconds": 25.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0029.jpg",
+      "timestamp_seconds": 26.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2020_95/frame_0030.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_95.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_95.json",
+    "response_text": "The commercial opens in a bright, open-plan living room. A man with a beard, wearing a green polo shirt, sits on a light-colored sofa holding a remote control. Beside him, a woman in a dark patterned blouse and jeans sits cross-legged, leaning toward him. A kitchen is visible in the background. On the coffee table are snacks in a bowl and a drink.\n\nThe camera briefly moves closer to the couple from the side, showing them seated together on the couch. The man looks downward toward the remote or television area, while the woman looks toward him and then forward. The next shot returns to the frontal view of both of them on the sofa, facing the television.\n\nThe view then shifts to the television built into a white shelving unit. On the TV screen, an action scene is playing: a woman in a red, gold, and blue superhero-style outfit stands in a bright indoor atrium with skylights. Almost immediately, the TV screen goes dark. Small white text appears at the bottom of the dark screen, but it is too small to read clearly in the sampled frames.\n\nThe TV image returns to the same action scene. The superhero-costumed woman stands in a mall-like interior with columns and railings; a child or shorter person is visible near her. The screen then cuts dark again, again with tiny unreadable text at the bottom. This alternating pattern continues: the screen goes dark, returns to the action, and goes dark again.\n\nWhen the action is visible, the superhero-costumed woman is shown wielding a tennis racket. Bright golden light trails or energy effects appear around the racket and her body. In one close shot, she swings the racket, and an intense flash of light fills the center of the TV image. Another shot shows her holding the racket against a darkened background, still wearing the red-and-gold bodice, blue skirt/shorts, silver arm guards, and gold tiara.\n\nThe commercial then cuts fully into the action scene, no longer framed by the living-room television. The setting is a spacious, glossy-floored shopping-mall or atrium environment with stairs, plants, café seating, warm ceiling lights, and orange/yellow decorative bands. Several spider-like robotic machines with multiple white legs and dark blue bodies move through the space. Their transparent compartments contain yellow tennis balls.\n\nA green, crab-like or spider-like robot is shown moving among other robots, with tennis balls flying through the air. An older woman and an older man are seen descending an escalator; the woman reacts animatedly while the man shields or raises his arms. A close-up shows the superhero-costumed woman’s face as a yellow tennis ball passes close in front of her.\n\nMore action follows in the mall interior. A man in a purple and teal tracksuit runs toward the camera while robots and other people move in the background. An older man in a white tennis outfit with a blue stripe carries a tray through a café area; a blurred figure passes in front of him. The superhero-costumed woman looks serious and focused in close-up.\n\nThe robots continue moving near stairs and plants, carrying or launching yellow tennis balls. The superhero-costumed woman runs or moves quickly through the mall with a tennis racket, then swings at incoming balls. In one shot, a tennis ball approaches a robot near the staircase; the next frame shows a green impact-like burst on the robot’s transparent compartment. The woman then follows through with her racket swing.\n\nNear the end of the action sequence, the camera drops to a low angle close to the floor. A blurred leg or foot passes in the foreground, while tennis balls are scattered across the shiny floor and people are visible in the background.\n\nThe scene cuts back to the living room. The man and woman on the couch now look forward with surprised or concerned expressions. The man still holds the remote; both are focused on the television.\n\nThe final frames shift to an abstract dark blue graphic background with curved light streaks. The last frame displays the white logo text “DIRECTV stream.” Beneath it, readable text says: “no annual contract : directv.com.” A small legal disclaimer appears at the very bottom, but it is too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a1cce7f6c34702d006a107b49531c8196bb3256b5e9a7af86",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1326,
+      "output_tokens_details": {
+        "reasoning_tokens": 469
+      },
+      "total_tokens": 7129
+    }
+  },
+  "duration_seconds": 30.974,
+  "created_at": "2026-05-22T15:51:04Z",
+  "error": null
+}

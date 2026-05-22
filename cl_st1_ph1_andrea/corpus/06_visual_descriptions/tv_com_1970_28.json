@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1970_28",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_28",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_28/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_28.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0002.jpg",
+      "timestamp_seconds": 4.427,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0003.jpg",
+      "timestamp_seconds": 8.865,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0004.jpg",
+      "timestamp_seconds": 11.034,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0005.jpg",
+      "timestamp_seconds": 11.134,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0006.jpg",
+      "timestamp_seconds": 14.371,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0007.jpg",
+      "timestamp_seconds": 15.972,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_28/frame_0008.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_28.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_28.json",
+    "response_text": "The commercial appears to focus on a red four-door sedan, shown through a sequence of exterior and interior detail shots.\n\n1. **Opening shot:** The clip begins with a very dark, greenish exterior view. A car is visible, but the lighting is low and the details are difficult to make out. The vehicle appears parked outdoors.\n\n2. **Exterior door detail:** The scene cuts to a bright close-up of the car’s red side panel, centered on a chrome door handle. The window frame and trim are visible above, suggesting a side-door view.\n\n3. **Interior view through/open door:** The next shot shows the car interior with a door open or viewed from just outside the doorway. Upholstered seats are visible, along with an Audi four-ring emblem visible in the lower center area. The image has some reflection or overlay effects, making parts of the view slightly layered.\n\n4. **Driver/steering area and roof interior:** A semi-transparent shot shows a person inside the car holding the steering wheel, overlaid with the car’s interior roof/headliner area. The person’s face is not clearly visible. The shot appears to be a dissolve or transition.\n\n5. **Headliner/upper interior close-up:** The view settles on the upper interior of the car, including the ceiling/headliner and a sun visor or overhead panel area. A small part of a hand or arm may be visible at the lower edge, but it is not clear.\n\n6. **Gear selector close-up:** The commercial cuts to a close-up of an automatic-style gear selector on the center console. The lever and gear indicator markings are visible, though the exact letters or numbers are not fully readable.\n\n7. **Side-window interior view:** The camera shows the interior through the side window of the red car. Tan or beige upholstered seats are visible, along with the window frame and dark vertical pillar/trim.\n\n8. **Final product shot with text:** The commercial ends on a full exterior side view of the red sedan parked on a driveway or light-colored surface, with greenery and a building in the background. Large white text appears above the car reading:  \n   **“PORSCHE + AUDI”**  \n   **“NOTHING EVEN COMES CLOSE”**\n\nA “Classic Commercial Archives” watermark appears in the lower-left corner, with a faint archival watermark across the lower portion of several frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0229a5d7e617db28006a106f0f70fc8197b556878cd90c778b",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1003,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3112
+    }
+  },
+  "duration_seconds": 26.574,
+  "created_at": "2026-05-22T14:58:49Z",
+  "error": null
+}

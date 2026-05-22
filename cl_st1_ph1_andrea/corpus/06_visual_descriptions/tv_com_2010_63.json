@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2010_63",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_63",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_63/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_63.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0002.jpg",
+      "timestamp_seconds": 0.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0003.jpg",
+      "timestamp_seconds": 2.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0004.jpg",
+      "timestamp_seconds": 3.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0005.jpg",
+      "timestamp_seconds": 4.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0006.jpg",
+      "timestamp_seconds": 6.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0007.jpg",
+      "timestamp_seconds": 8.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0008.jpg",
+      "timestamp_seconds": 10.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0009.jpg",
+      "timestamp_seconds": 17.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0010.jpg",
+      "timestamp_seconds": 18.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0011.jpg",
+      "timestamp_seconds": 20.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_63/frame_0012.jpg",
+      "timestamp_seconds": 27.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_63.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_63.json",
+    "response_text": "The commercial opens at night at an outdoor poolside gathering. A man in a light short-sleeved shirt sits at a patio table, smiling and gesturing with one finger raised. The background is softly lit, with other people moving around and greenery behind him.\n\nThe view widens to show three men seated around a round patio table beside a swimming pool. Bowls of snacks sit on the table. Other people are visible around the pool and near a modern-looking house or patio structure in the background, suggesting a social party or barbecue setting.\n\nThe camera returns to a closer view of the first man. He appears to be speaking or reacting, with a slightly concerned or earnest expression. People continue to move in the blurred background.\n\nA sudden close-up shows hands holding and opening a small dark ring box. The object inside is not clearly visible from the sampled frame, but the box resembles a jewelry or engagement-ring case.\n\nThe scene changes to an indoor office or reception area. An older man behind a counter holds out the small open box toward a younger man in a brown leather jacket. The younger man smiles, and papers or documents lie on the counter between them. The setting has warm lighting, framed wall elements, and another person in the background.\n\nA close-up follows of two hands resting together, one hand gently placed over another. A ring is visible on the ring finger of the lower hand, suggesting a relationship or marriage-related moment.\n\nThe commercial then cuts to a hospital delivery-room scene. A woman in a hospital bed, wearing a patient gown, appears to be in labor or distress. A man sits close beside her, holding her shoulder and looking toward her. Medical equipment and a lamp are visible around the bed.\n\nNext, the scene moves to a warmly lit home office or dining area with brick walls and large windows showing a nighttime city view. A woman sits at a table with papers, and a man sits nearby in a chair. Between them is a baby in a carrier or infant seat on the tabletop, indicating a domestic or family planning setting.\n\nThe montage then shifts to daytime outside a suburban home. A man in a plaid shirt washes a gray minivan parked at the curb or driveway. A blue bucket, hose, sponge, and soapy water are visible around the vehicle.\n\nInside a house, the same or a similar man crouches near a wall covered with children’s crayon drawings. He appears to be cleaning or wiping the wall. A yellow bucket or cleaning container sits nearby, and a staircase railing is visible on the right.\n\nA partially blended or transitional frame shows the man near the drawn-on wall while a child walks along the staircase holding a basket or container. The image appears overlaid or mid-transition, making some details less clear.\n\nThe commercial ends on a solid red end card with the white State Farm logo and text. The card reads “State Farm” with the three-oval logo, and below it: “AUTO  HOME  LIFE  BANK.” At the bottom are “800-STATE-FARM” and “statefarm.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_08f814428c7e707d006a1078321ef88195a56d5f7ef0a8e365",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 669,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 3070
+    }
+  },
+  "duration_seconds": 16.863,
+  "created_at": "2026-05-22T15:37:38Z",
+  "error": null
+}

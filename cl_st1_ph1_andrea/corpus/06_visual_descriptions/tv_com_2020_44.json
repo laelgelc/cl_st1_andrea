@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2020_44",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_44",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_44/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_44.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0002.jpg",
+      "timestamp_seconds": 1.358,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0003.jpg",
+      "timestamp_seconds": 2.425,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0004.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0005.jpg",
+      "timestamp_seconds": 3.693,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0006.jpg",
+      "timestamp_seconds": 4.261,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0007.jpg",
+      "timestamp_seconds": 5.028,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0008.jpg",
+      "timestamp_seconds": 5.729,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0009.jpg",
+      "timestamp_seconds": 6.363,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0010.jpg",
+      "timestamp_seconds": 7.03,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0011.jpg",
+      "timestamp_seconds": 7.564,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0012.jpg",
+      "timestamp_seconds": 8.198,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0013.jpg",
+      "timestamp_seconds": 8.865,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0014.jpg",
+      "timestamp_seconds": 9.466,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0015.jpg",
+      "timestamp_seconds": 10.0,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0016.jpg",
+      "timestamp_seconds": 10.6,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0017.jpg",
+      "timestamp_seconds": 11.701,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0018.jpg",
+      "timestamp_seconds": 13.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_44/frame_0019.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_44.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_44.json",
+    "response_text": "The commercial opens in a wide desert-like landscape at sunrise or sunset, with a pale sky and warm sandy ground. A woman in a flowing pink dress stands beside a white horse. Large centered text reads “LANCÔME PARIS.”\n\nThe scene then cuts to a close-up of the same central woman. She has long curly hair, gold earrings, and wears a sleeveless pale pink dress. Her hair moves in the wind, and a small “LANCÔME PARIS” logo appears in the upper-left corner.\n\nThe commercial shifts to a series of fashion-like walking shots in the same open landscape. Several women, dressed in coordinated pale pink, beige, white, and neutral outfits, move across the rocky terrain. Some are shown from behind or in profile, walking with confident posture. The light remains soft and warm, with a hazy skyline or distant horizon in the background.\n\nA group forms around the central woman in pink. She walks toward the camera, smiling slightly, while other women walk behind and around her. The styling emphasizes flowing dresses, fitted belts, metallic accents, and soft pastel tones. The camera alternates between close-ups of her face and wider shots of the group.\n\nA brief close-up shows two hands exchanging or presenting a slim rectangular perfume bottle. The bottle is translucent pink and catches the sunlight. This is followed by another close-up of the central woman looking directly toward the camera.\n\nThe group scene continues, with the central woman and others walking forward together. In one wider shot, the central woman raises a perfume bottle above her head. Other women around her also raise bottles or hands, creating a celebratory visual moment against the bright sky.\n\nA close-up then shows a hand holding the pink rectangular perfume bottle upright. The bottle has a metallic spray top and a soft pink liquid or tinted glass appearance.\n\nThe commercial transitions to product-focused graphics: large pale pink letters spelling part of “IDÔLE” fill the screen, with a perfume bottle visually aligned within or over the typography. The next product shot shows two pink rectangular perfume bottles on a glossy pink background. Text on screen reads “IDÔLE AURA,” with smaller text below that appears to say “AVAILABLE AT LANCOME.COM.”\n\nThe final shots return to the central woman in close-up. She looks directly at the viewer with a calm, confident expression. Another woman is visible in profile behind her. White centered text overlays the face reading “LANCÔME PARIS.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0863fe6bec1a81da006a107a5528dc8190a8bfb4243f38c4ed",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 587,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 4311
+    }
+  },
+  "duration_seconds": 15.455,
+  "created_at": "2026-05-22T15:46:44Z",
+  "error": null
+}

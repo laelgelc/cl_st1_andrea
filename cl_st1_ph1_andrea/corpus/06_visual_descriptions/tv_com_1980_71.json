@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_1980_71",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_71",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_71/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_71.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0002.jpg",
+      "timestamp_seconds": 3.26,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0003.jpg",
+      "timestamp_seconds": 7.297,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0004.jpg",
+      "timestamp_seconds": 8.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0005.jpg",
+      "timestamp_seconds": 10.367,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0006.jpg",
+      "timestamp_seconds": 11.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0007.jpg",
+      "timestamp_seconds": 12.035,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0008.jpg",
+      "timestamp_seconds": 12.936,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0009.jpg",
+      "timestamp_seconds": 14.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0010.jpg",
+      "timestamp_seconds": 15.205,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0011.jpg",
+      "timestamp_seconds": 16.139,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0012.jpg",
+      "timestamp_seconds": 17.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0013.jpg",
+      "timestamp_seconds": 18.375,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0014.jpg",
+      "timestamp_seconds": 19.209,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0015.jpg",
+      "timestamp_seconds": 20.21,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0016.jpg",
+      "timestamp_seconds": 21.211,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0017.jpg",
+      "timestamp_seconds": 22.679,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0018.jpg",
+      "timestamp_seconds": 23.713,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0019.jpg",
+      "timestamp_seconds": 25.782,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_71/frame_0020.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_71.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_71.json",
+    "response_text": "The commercial opens on a nearly black frame, with no discernible objects visible.\n\nIt then cuts into a brightly colored, stylized environment dominated by pink and red lighting. The early frames are blurred and close-up: pale, angular forms and a jagged, rock-like or sculptural shape appear against a pink background. The setting looks artificial or studio-built rather than natural.\n\nA close-up shows a grey handheld device with the text “Nintendo GAME BOY” printed below the screen. The word “Nintendo” also appears at the top of the screen area. The screen itself is mostly pale and not clearly showing gameplay in this frame. Fingers are visible holding the device.\n\nThe next shot reveals a teenage boy or young man with light hair, wearing a light denim jacket over a bright pink shirt. He is looking intently at the Game Boy held in his hands. The background remains saturated pink, with smoky or misty lighting and abstract shapes.\n\nA series of rapid close-ups follows:  \n- A red surface with a white or grey edge and small protruding elements is shown, but its exact function is unclear.  \n- A helmeted or robotic-looking figure appears in close-up. The figure has a metallic-looking head/helmet, dark visor-like eye slits, and segmented armor.  \n- A cartridge is inserted into the back or top slot of the Game Boy. The cartridge label shows colorful graphics, but the exact title is not clearly readable.\n\nThe boy is then shown again playing the handheld. He holds the Game Boy with both hands and looks down at the screen. Around him are suspended or surrounding props, including a large round metallic object and abstract set pieces, all lit with pink and red tones.\n\nThe armored figure is shown more fully. It appears human-sized, wearing a silver robotic or futuristic suit with a helmet, chest armor, and shoulder pieces. The figure also holds a Game Boy and appears to be playing it. The background includes jagged grey structures and pink haze.\n\nA close-up of a Game Boy screen shows a block-stacking puzzle game resembling Tetris. The screen displays falling and stacked blocks. Readable on the right side are “LEVEL 3,” “HIGH 3,” and “LINES 25.” A small preview box shows the next block shape.\n\nThe boy is shown smiling or concentrating behind the Game Boy, with the device close to his face. The armored figure is then shown again in close-up, also holding the device and looking down toward it.\n\nA wider shot places the boy and the armored figure in the same stylized space. They face each other from opposite sides, both holding handheld devices. Low-lying smoke or fog is visible near the floor, and the pink lighting continues.\n\nAnother close-up shows a cable being plugged into the side of a Game Boy. A hand and fingertip are visible near the connector. The cable suggests a connection between devices, though the exact purpose is not explicitly stated by the image alone.\n\nThe boy is shown again holding the Game Boy with a cable attached. He looks toward the device or possibly toward the other player. The armored figure then appears in a medium shot, still in the pink-lit environment, moving or standing with the Game Boy in hand.\n\nNear the end, the commercial cuts to a product display. A Game Boy retail box stands beside the handheld console. The box has large vertical “GAME BOY” text and an image of the device. A loose game cartridge and earbud-style accessories or cables are arranged in front of the console.\n\nThe final frames shift to graphic branding imagery: a colorful radial burst surrounds a horizontal “Nintendo” logo, though the image is somewhat blurred. The last frame shows a bright, glowing circular graphic with radiating colored light; the central text or emblem is difficult to read clearly from the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ec7086f67bbaf30006a107179fd988196a1ff4d1002566fef",
+    "usage": {
+      "input_tokens": 4693,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 907,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 5600
+    }
+  },
+  "duration_seconds": 25.219,
+  "created_at": "2026-05-22T15:09:07Z",
+  "error": null
+}

@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1960_120",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_120",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_120/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_120.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0002.jpg",
+      "timestamp_seconds": 31.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0003.jpg",
+      "timestamp_seconds": 39.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0004.jpg",
+      "timestamp_seconds": 42.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0005.jpg",
+      "timestamp_seconds": 53.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_120/frame_0006.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_120.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_120.json",
+    "response_text": "The commercial is in black and white and appears to take place in an office or administrative setting with telephones and large office/computing equipment.\n\n1. **Opening frame:**  \n   The clip begins with a close-up of a desk tray or document holder. Papers are stacked inside it, and the front label clearly reads **“WESTERN DIVISION.”** The shot emphasizes office paperwork and filing.\n\n2. **Office with woman on telephone:**  \n   The scene changes to a woman standing at a counter or desk, holding a telephone receiver to her ear. She is in a clean, modern-looking office space. Behind her are large machines or consoles with control panels, suggesting business machines, communications equipment, or computer-related office equipment. A box-like telephone/control device sits on the counter in front of her.\n\n3. **Close-up of machinery and paper/card output:**  \n   A close shot shows part of a large machine. On the left is a panel with many repeated small circular elements or switches. In the center, a sheet, card, or form appears to be positioned in a slot or feed mechanism. The exact function of the equipment is not clear from the frame, but it visually suggests automated office processing.\n\n4. **Telephone/control unit on counter:**  \n   The camera shows a desk unit with a telephone handset lying beside or attached to it by a coiled cord. The unit has several small buttons or indicator lights across its face. Large equipment panels remain visible but out of focus in the background. Any branding or small text on the unit is not legible.\n\n5. **Close-up of rotary-style telephone:**  \n   The scene cuts to a close-up of a desk telephone with a rotary dial and a row of small buttons along the front. A person’s hand is on or near the handset, as if answering, placing, or operating the phone. There is some text in the center of the dial, but it is too small and blurred to read clearly.\n\n6. **Man at desk using telephone and writing:**  \n   The final sampled frame shows a man seated at a desk. He holds a telephone receiver while writing with a pen on paper. A telephone base, loose documents, and a tray or file holder are on the desk. Filing cabinets or office furniture are visible in the background. The scene visually connects telephone communication with paperwork and office administration."
+  },
+  "api_metadata": {
+    "response_id": "resp_07ef388aa1c39ff7006a106e9e054c819387140990ac4dfa73",
+    "usage": {
+      "input_tokens": 1267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 764,
+      "output_tokens_details": {
+        "reasoning_tokens": 282
+      },
+      "total_tokens": 2031
+    }
+  },
+  "duration_seconds": 18.478,
+  "created_at": "2026-05-22T14:56:48Z",
+  "error": null
+}

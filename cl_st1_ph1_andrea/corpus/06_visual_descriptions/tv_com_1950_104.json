@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_1950_104",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_104",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_104/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_104.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0002.jpg",
+      "timestamp_seconds": 8.531,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0003.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0004.jpg",
+      "timestamp_seconds": 17.407,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0005.jpg",
+      "timestamp_seconds": 24.481,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0006.jpg",
+      "timestamp_seconds": 28.919,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0007.jpg",
+      "timestamp_seconds": 31.955,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0008.jpg",
+      "timestamp_seconds": 38.662,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0009.jpg",
+      "timestamp_seconds": 47.938,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0010.jpg",
+      "timestamp_seconds": 51.341,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0011.jpg",
+      "timestamp_seconds": 55.011,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0012.jpg",
+      "timestamp_seconds": 63.82,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0013.jpg",
+      "timestamp_seconds": 68.858,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0014.jpg",
+      "timestamp_seconds": 78.668,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0015.jpg",
+      "timestamp_seconds": 86.643,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1950_104/frame_0016.jpg",
+      "timestamp_seconds": 89.046,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_104.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_104.json",
+    "response_text": "The commercial is in black and white and shows women modeling or handling swimwear/undergarment-like garments in an outdoor resort or poolside setting. A “www.PublicDomainFootage.com” watermark is visible across many frames.\n\nAt the beginning, two women are indoors in what appears to be a changing or dressing area. One woman is partly covered with a towel, while the other wears a strapless fitted swimsuit or corset-like garment and looks down at something she is holding. The camera then cuts closer to the standing woman’s torso as she holds up a pale, brief-like garment in both hands.\n\nThe scene moves outdoors to a sunny patio or pool terrace. Three women in swimsuits are shown: one seated on a chair, one standing, and one seated in a lounge chair. The setting includes walls, doors, and patio furniture. The commercial then shows several women descending an exterior staircase, suggesting they are moving from a building down to the pool or terrace area.\n\nNext, a wide outdoor shot shows the women crossing an open courtyard near a staircase and a building with distinctive rooflines. A closer frontal shot follows, with three women in swimsuits walking or running toward the camera with their arms slightly extended, as if posing or moving in formation.\n\nThe focus shifts to a diving-board area. One woman walks out along a diving board while another stands nearby on the platform. A close-up then emphasizes a woman’s torso and hips in a strapless swimsuit with gathered or ruched fabric around the lower front, her hands placed at her waist.\n\nThe commercial returns to a patio seating area. Two women sit at a table, smiling; objects on the table appear to include cards or small flat items, though the exact activity is not completely clear. A closer overhead angle shows the same or similar women laughing and looking down at the tabletop. Another shot shows a woman smiling at the camera while standing under or beside a large umbrella or parasol; she touches her face or ear with one hand.\n\nLater, a woman stands beside a reclining woman on a deck chair. The standing woman wears a strapless fitted swimsuit and appears to be showing or adjusting the lower portion of the garment, while the reclining woman looks up toward her. A close-up isolates the standing woman’s hip and hem area, with the reclining woman’s hand visible near the garment, suggesting attention to its fit or construction.\n\nNear the end, a close-up shows a smiling woman holding or adjusting a pale cup-like or fabric piece near the top of a dark strapless swimsuit; the exact item is not clear from the sampled frame. The final shots show a line of women in swimsuits walking along a narrow raised edge or wall near a rocky waterfront. They extend their arms outward for balance while moving in single file, with the lead woman smiling as she steps forward."
+  },
+  "api_metadata": {
+    "response_id": "resp_000a83dc9e9cb2d9006a106c93d1ec8196b6171c1a8138698d",
+    "usage": {
+      "input_tokens": 4085,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 972,
+      "output_tokens_details": {
+        "reasoning_tokens": 399
+      },
+      "total_tokens": 5057
+    }
+  },
+  "duration_seconds": 25.316,
+  "created_at": "2026-05-22T14:48:12Z",
+  "error": null
+}

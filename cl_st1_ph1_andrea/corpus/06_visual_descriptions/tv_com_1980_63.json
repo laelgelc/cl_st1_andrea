@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_1980_63",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_63",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_63/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_63.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0002.jpg",
+      "timestamp_seconds": 2.826,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0003.jpg",
+      "timestamp_seconds": 3.793,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0004.jpg",
+      "timestamp_seconds": 4.761,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0005.jpg",
+      "timestamp_seconds": 5.595,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0006.jpg",
+      "timestamp_seconds": 7.764,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0007.jpg",
+      "timestamp_seconds": 9.799,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0008.jpg",
+      "timestamp_seconds": 12.669,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0009.jpg",
+      "timestamp_seconds": 14.037,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0010.jpg",
+      "timestamp_seconds": 16.973,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0011.jpg",
+      "timestamp_seconds": 20.31,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_63/frame_0012.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_63.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_63.json",
+    "response_text": "The commercial is presented in a 4:3 format with black borders at the sides. It unfolds as a product demonstration and retail end-card.\n\n1. **Opening title/graphic**  \n   The first frame is very dark and low-contrast. A large cursive-style word or logo appears near the top, but it is not clearly legible from the sampled frame. A lighter rectangular area sits below it, possibly part of a title card or product graphic, but the details are unclear.\n\n2. **Lamp in a home interior**  \n   The scene cuts to a lit table lamp with a warm beige shade. A leafy houseplant is visible on the left against a pale wall. The lamp is centered and glowing, suggesting a domestic setting and drawing attention to household lighting.\n\n3. **Product box introduced**  \n   A product box is shown standing on a wooden tabletop. The packaging reads **“The Clapper”** in large yellow/orange lettering, with the phrases **“CLAP IT ON!”** and **“CLAP IT OFF!”** around the name. The front of the box includes images of hands clapping and smaller demonstration pictures.\n\n4. **Closer view of the packaging**  \n   The camera moves closer to the box. More text becomes visible: **“SOUND ACTIVATED ON/OFF SWITCH FOR APPLIANCES.”** The product is visually presented as a device that controls appliances through sound. The background remains softly blurred, with chairs or furniture behind the table.\n\n5. **Extreme close-up of product name and claims**  \n   The box fills most of the frame. The large brand name **“The Clapper”** dominates the upper portion. The slogans **“CLAP IT ON!”** and **“CLAP IT OFF!”** are clearly printed near the logo. The text **“SOUND ACTIVATED ON/OFF SWITCH FOR APPLIANCES.”** is also visible on the right side of the package front.\n\n6. **Darkened doorway or hallway**  \n   The commercial cuts to a dim interior space. A doorway with glass panels is visible, with faint outdoor light or reflection through the glass. A human figure may be present in the darkness near the door, but the details are indistinct. The scene visually suggests a nighttime or low-light household situation.\n\n7. **Electrical wall outlet**  \n   A close-up shows a standard two-socket electrical outlet mounted on a wood-paneled wall. The outlet plate appears dark or black. This shot visually connects the product to electrical appliances or household power.\n\n8. **Elderly woman shown close-up**  \n   A close-up shows an elderly woman with short white hair. She is smiling slightly and looking forward. She wears earrings and a patterned cardigan over a blouse with a bow or tie at the neck. The background is bright and plain.\n\n9. **White wall-mounted device**  \n   A white rectangular device is shown mounted on a wood-paneled wall. It has vertical grille-like ridges and small switches or controls near the bottom. This appears to be the product unit or a related sound-activated switch device, though the sampled frame does not show it being handled or installed.\n\n10. **Elderly woman in bed**  \n   The elderly woman is now lying in bed under light-colored bedding. She is smiling, with her head resting on pillows. A decorative wooden headboard is visible behind her. The scene presents her as using the product from bed or in a bedroom setting, though no action is visible in this frame.\n\n11. **Bedroom wide shot with lamp and television**  \n   A wider bedroom shot shows the elderly woman in bed. A lit bedside lamp is on near the head of the bed, and a small television with a blue screen sits to the left. Bedding covers much of the foreground. Curtains and a plant or bedside arrangement are visible in the background. The visual arrangement emphasizes multiple household appliances near the bed.\n\n12. **Final product and retailer end-card**  \n   The final frame is a black background with multiple graphic elements. On the left is an image of the product packaging. To the right is the large logo **“The Clapper”** with the phrases **“CLAP IT ON!”** and **“CLAP IT OFF!”** nearby. Additional retailer or promotional logos appear below, including **“Snyder”**, **“CONCEPTS SUPER BUY”**, **“RED OWL.”**, and partially visible text at the bottom reading **“Elliot’s Ace Hardware”**. The end-card functions as a product identification and retail availability screen."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f5e1219761c299b006a10715c333881909829722549ab9c2a",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1029,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 3430
+    }
+  },
+  "duration_seconds": 23.751,
+  "created_at": "2026-05-22T15:08:35Z",
+  "error": null
+}

@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2020_2",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_2",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_2/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_2.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0002.jpg",
+      "timestamp_seconds": 6.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0003.jpg",
+      "timestamp_seconds": 13.328,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0004.jpg",
+      "timestamp_seconds": 20.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0005.jpg",
+      "timestamp_seconds": 25.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0006.jpg",
+      "timestamp_seconds": 29.761,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0007.jpg",
+      "timestamp_seconds": 31.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0008.jpg",
+      "timestamp_seconds": 36.101,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0009.jpg",
+      "timestamp_seconds": 38.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_2/frame_0010.jpg",
+      "timestamp_seconds": 42.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_2.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_2.json",
+    "response_text": "The commercial opens with a tight close-up of a bald, middle-aged man in a black suit, white shirt, and black tie against a plain white background. His face is expressive, and he appears to be addressing the camera.\n\nThe scene then widens to a bright white bathroom. The same man is kneeling beside an open toilet, wearing bright pink rubber gloves while still dressed in the suit. Around him are cleaning supplies: a blue bucket filled with cloths and bottles, a blue towel hanging on the bathtub, a toilet paper roll, and a small potted plant on the toilet tank. He holds a spray bottle and a cleaning cloth or sponge.\n\nThe bathroom shot continues, with the man positioned beside the toilet. A transparent bottle is visible on the left side of the frame, suggesting a product close-up or a split-screen transition, while the man remains on the right beside the toilet.\n\nA split-screen-style visual follows: on the left is a close-up of a dirty or stained surface with a round dial or gauge-like object; on the right, the man is still in the bathroom near the toilet, wearing the pink gloves and holding cleaning items.\n\nThe setting then changes to a different room with a white brick wall. A globe and a table lamp stand on the left, while a metal safe or cabinet is open on the right and appears filled with many paper items. A spray bottle sits on top of the cabinet. The man, still in his suit, leans in from the right side of the frame, looking toward the camera.\n\nNext, the man appears beside a framed portrait of himself. He holds a spray bottle and a cloth, as if cleaning the glass or frame. The left edge of the frame shows part of another close-up image, including a hand and wristwatch, suggesting another split-screen or transitional montage.\n\nThe commercial returns to the bathroom, where the man is now lying in a bathtub filled with many small paper slips or money-like pieces. He is still wearing the black suit, with a blue patterned shower cap on his head. Towels and bathroom shelving are visible nearby.\n\nA product display then appears on a clean white background. Four cleaning products are lined up: three spray bottles containing blue, pink, and yellow liquids, and a clear pump bottle. Above them is the word “BLUELAND” in large blue lettering, and below it is a dark rectangular button reading “SHOP NOW.” Small tablet-like objects or packaging pieces are placed in front of the bottles. The smaller text on the product labels is not clearly readable.\n\nThe final shots return to the bathroom. The man kneels beside the open toilet again, wearing pink gloves. He sprays or holds a pink liquid spray bottle and uses a blue cloth near the toilet seat. In the last frame, he faces the camera while holding the spray bottle in one hand and the blue cloth in the other, with the bucket of cleaning supplies still visible on the floor nearby."
+  },
+  "api_metadata": {
+    "response_id": "resp_002ccdc6bb657000006a107979046481a199fb8c2f76725a59",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 856,
+      "output_tokens_details": {
+        "reasoning_tokens": 257
+      },
+      "total_tokens": 2879
+    }
+  },
+  "duration_seconds": 21.458,
+  "created_at": "2026-05-22T15:43:10Z",
+  "error": null
+}

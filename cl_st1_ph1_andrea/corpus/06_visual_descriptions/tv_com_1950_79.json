@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1950_79",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_79",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_79/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_79.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_79/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_79/frame_0002.jpg",
+      "timestamp_seconds": 30.096,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_79.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_79.json",
+    "response_text": "The commercial is shown in black and white and the sampled frames provide only the opening and closing moments.\n\nAt the beginning, the image is a dark, high-contrast close-up of a pen lying diagonally across a nearly black background. The pen is lit so that its reflective barrel and tip are faintly visible, while most of the surrounding space remains dark. A timecode appears in the lower-left corner.\n\nBy the final frame, the scene has changed to a close-up of a hand holding a pen over a sheet of paper on a dark tabletop. The hand is in the act of writing. Some cursive writing is already visible on the paper; it appears to begin with “New Parker…” though the full wording is not completely clear from the frame. The pen is prominently displayed in the hand, with a shiny metal clip and pointed writing tip visible.\n\nThe sampled frames visually suggest a transition from a product-focused display of the pen to the pen being used for writing, but the intervening action is not visible in the provided frames. No dialogue, music, or voice-over can be determined from the images alone."
+  },
+  "api_metadata": {
+    "response_id": "resp_09fd4d47da1550f4006a106c2409dc819593e3d0437c8ce5e4",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 876
+    }
+  },
+  "duration_seconds": 10.609,
+  "created_at": "2026-05-22T14:46:06Z",
+  "error": null
+}

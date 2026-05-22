@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_1990_39",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_39",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_39/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_39.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0002.jpg",
+      "timestamp_seconds": 0.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0003.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0004.jpg",
+      "timestamp_seconds": 3.293,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0005.jpg",
+      "timestamp_seconds": 3.827,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0006.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0007.jpg",
+      "timestamp_seconds": 5.362,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0008.jpg",
+      "timestamp_seconds": 6.596,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0009.jpg",
+      "timestamp_seconds": 7.564,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0010.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0011.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0012.jpg",
+      "timestamp_seconds": 9.432,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0013.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0014.jpg",
+      "timestamp_seconds": 11.134,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0015.jpg",
+      "timestamp_seconds": 12.435,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0016.jpg",
+      "timestamp_seconds": 13.27,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0017.jpg",
+      "timestamp_seconds": 15.071,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0018.jpg",
+      "timestamp_seconds": 15.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0019.jpg",
+      "timestamp_seconds": 16.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0020.jpg",
+      "timestamp_seconds": 17.307,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0021.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0022.jpg",
+      "timestamp_seconds": 18.842,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0023.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0024.jpg",
+      "timestamp_seconds": 19.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0025.jpg",
+      "timestamp_seconds": 20.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0026.jpg",
+      "timestamp_seconds": 22.846,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0027.jpg",
+      "timestamp_seconds": 25.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0028.jpg",
+      "timestamp_seconds": 26.716,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_39/frame_0029.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_39.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_39.json",
+    "response_text": "The commercial opens with a white Budweiser delivery truck in motion. Large red “Budweiser” lettering and smaller “KING OF BEERS” text are visible on the side of the truck. The setting shifts to the driver, a young adult man wearing a white-and-red “Bud” cap and a white striped uniform shirt, seated in the truck cab.\n\nThe truck is then shown driving along a narrow dirt road through a wooded area. Tall trees line both sides of the road, and the light filters through the forest. Inside the cab, the driver faces forward, wearing a seatbelt and holding the steering wheel. A low-angle exterior shot shows the truck’s tire near a log lying on the road, suggesting an obstacle. The driver continues along the forest road.\n\nThe rear of the truck is shown with “Bud” and “KING OF BEERS” visible on the back panel. In the woods, a small brown furry animal—beaver-like in appearance—peeks from behind a tree. Inside the cab, the driver looks toward the side window, then turns his attention back and appears alert or concerned. Through the truck window, trees and part of the truck’s side/rear structure are visible.\n\nThe obstacle becomes clearer: logs are lying across the road in front of the truck. A close-up through the windshield shows the driver’s face partially shadowed by the brim of his cap as he looks ahead. Another shot shows his eyes peering between logs or branches, emphasizing that something is blocking the way. The scene then cuts to a forest clearing filled with many cut tree stumps, some with pointed or chewed-looking tops.\n\nA beaver-like animal is shown sitting on or against one of the stumps. The camera then cuts to the truck’s side branding in close-up, with portions of the large red “Budweiser” text and blue “OF BEER” visible. The driver is shown through the windshield leaning or moving inside the cab.\n\nInside or at the back of the truck, stacks of Budweiser beer cases are visible. A cardboard case with the Budweiser label is shown prominently. A beaver-like animal appears among the stacked cases, then a case is shown on the ground outside near the truck. More shots show these animals moving around the delivery area: one is near stacked beer cases at the truck opening, another is on the ground with a case beside it, and another appears near a case in the forest clearing.\n\nA wider shot reveals the delivery truck backed up to or positioned near a small rustic log cabin or structure in the woods. The rear of the truck displays “Bud,” and several cardboard Budweiser cases are scattered around the forest floor. Multiple beaver-like animals are visible among the cases, logs, stumps, and trees, creating the impression that they have interfered with or taken over part of the delivery.\n\nThe main sequence transitions to a black end card with a small red Budweiser logo centered. A website address appears near the bottom, but the exact text is small and not fully clear in the sampled frame.\n\nAfter this, the scene changes to what appears to be an additional tag or follow-up scene. A binder or photo sheet is shown containing repeated images of a beaver-like animal, arranged like mugshots or identification photos. Then the delivery driver stands beside a uniformed law-enforcement officer or park ranger in the forest. The officer wears a gray uniform and a wide-brimmed hat. Both men look down at an open black folder or binder. A white copyright line appears at the bottom mentioning Anheuser-Busch, Budweiser, and St. Louis, Missouri."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a12f96af9d26596006a10731199fc8196b6b58e59891f7f36",
+    "usage": {
+      "input_tokens": 7847,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 869,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 8716
+    }
+  },
+  "duration_seconds": 23.146,
+  "created_at": "2026-05-22T15:15:52Z",
+  "error": null
+}

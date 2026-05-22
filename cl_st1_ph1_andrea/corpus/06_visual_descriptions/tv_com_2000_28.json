@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_2000_28",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_28",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_28/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_28.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0002.jpg",
+      "timestamp_seconds": 0.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0003.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0004.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0005.jpg",
+      "timestamp_seconds": 8.431,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0006.jpg",
+      "timestamp_seconds": 10.033,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0007.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0008.jpg",
+      "timestamp_seconds": 12.269,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0009.jpg",
+      "timestamp_seconds": 13.97,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0010.jpg",
+      "timestamp_seconds": 15.539,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0011.jpg",
+      "timestamp_seconds": 19.476,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0012.jpg",
+      "timestamp_seconds": 23.647,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0013.jpg",
+      "timestamp_seconds": 23.813,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0014.jpg",
+      "timestamp_seconds": 23.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0015.jpg",
+      "timestamp_seconds": 24.147,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0016.jpg",
+      "timestamp_seconds": 28.151,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0017.jpg",
+      "timestamp_seconds": 28.318,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0018.jpg",
+      "timestamp_seconds": 28.485,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0019.jpg",
+      "timestamp_seconds": 28.652,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0020.jpg",
+      "timestamp_seconds": 28.818,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_28/frame_0021.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_28.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_28.json",
+    "response_text": "The commercial opens on a nearly black frame, with no clear visual detail visible.\n\nIt then cuts to an exterior view of a large Best Buy store. The building has a dark blue façade and a prominent yellow price-tag-shaped “BEST BUY” sign. A tall yellow sign or inflatable-style marker with black lettering is also visible near the entrance area, though the text is partially blurred.\n\nThe scene moves inside the store. A person in a large blue-and-yellow Best Buy price-tag costume walks or dances on the glossy black-and-white floor. Nearby shoppers and employees stand around; one person raises an arm as if cheering or signaling. The store interior is brightly lit with rows of merchandise and checkout or display areas in the background.\n\nSeveral quick shots show customers interacting with store staff and products:\n\n- A man in a suit and another man stand near a display or device, looking at a screen or equipment.\n- A close-up of a small screen shows a smiling man’s face, suggesting a video or camera display.\n- A wider store shot shows customers and a Best Buy employee in a blue shirt talking near an appliances area; an “APPLIANCES” sign is visible overhead.\n- Another shot shows a customer speaking with an employee near rows of computer monitors.\n- Aisles of packaged products are shown from above or at an angle, with shoppers browsing.\n- A Best Buy employee in a blue shirt assists a woman at a large computer or monitor display.\n- Another employee and customer interact near a display area marked with large “DVD” signage.\n\nThe commercial continues with more energetic in-store visuals. A child or young person sits in or leans over a large yellow-and-black display structure shaped like a Best Buy tag or themed product station. Other shoppers and employees are visible in the background.\n\nNear the checkout or service area, a yellow shopping basket with the Best Buy logo appears in the foreground. A customer holds or places a red-and-black plaid garment or item near the basket. A smiling Best Buy employee in a blue shirt stands behind the counter area, interacting with the customer. The background includes product displays and signage, though much of the smaller text is unclear.\n\nThe final sequence returns to the exterior of the Best Buy store. There is a close-up and then a wider view of the yellow “BEST BUY” sign mounted high on the blue building. Large white on-screen text appears near the bottom right reading “Now Open.” In the final frame, the entrance with glass doors is visible below the sign, and small text at the lower left reads “© 2000 Best Buy.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0ce485e3ff172c3d006a1074fa77308190ad32815f3d4df04e",
+    "usage": {
+      "input_tokens": 5719,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 641,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 6360
+    }
+  },
+  "duration_seconds": 17.247,
+  "created_at": "2026-05-22T15:23:55Z",
+  "error": null
+}

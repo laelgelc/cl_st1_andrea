@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_1990_107",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_107",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_107/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_107.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0002.jpg",
+      "timestamp_seconds": 3.593,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0003.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0004.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0005.jpg",
+      "timestamp_seconds": 10.967,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0006.jpg",
+      "timestamp_seconds": 13.937,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0007.jpg",
+      "timestamp_seconds": 17.174,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0008.jpg",
+      "timestamp_seconds": 19.175,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0009.jpg",
+      "timestamp_seconds": 20.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0010.jpg",
+      "timestamp_seconds": 21.478,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0011.jpg",
+      "timestamp_seconds": 25.448,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_107/frame_0012.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_107.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_107.json",
+    "response_text": "The commercial opens on a very dark, almost black frame with only faint vertical texture visible. A small “90’s commercials” style watermark appears at the lower right.\n\nThe scene then cuts to an industrial or laboratory-like setting. A large pale-blue/metal machine fills much of the frame, with gauges and vents on its front. A sign on the machine appears to read “FLAVORING.” Steam or vapor is coming from an opening. On the right, a person in white work clothing reaches toward the machine, partly obscured by a large foreground object.\n\nA wider view shows a large factory/lab interior with high windows, hanging lamps, pipes, tanks, and rounded metal equipment. The room looks steamy and somewhat hazy, with shiny floors and bulky machinery.\n\nSeveral workers in white coats or white overalls move through the factory area. In one shot, a worker carries a large blue object or container past a big machine with dials and gauges. Other people in white lab coats stand nearby, partially hidden behind equipment.\n\nThe next shot is a close view of another machine labeled “PERFUMING.” Beneath the label are several circular colored discs or gauges, and in the foreground are glass laboratory flasks and bottles. The setting combines industrial machinery with laboratory glassware.\n\nThe commercial then shows another section of the factory. On the left, a worker in a white coat writes or examines something beside a large gear-like prop and a vertical measuring panel. On the right, behind a dark blue structural frame, several people in white lab coats gather around a column-like apparatus. A sign above or behind them includes the word “CREAM,” though the full wording is not fully clear.\n\nA closer shot shows four lab-coated people grouped around a vertical cylinder containing a red/orange round object between white sections. Two men write on clipboards, while a woman and another man observe, also holding blue folders or clipboards. Their attention is focused on the apparatus.\n\nThe action returns to the machinery. A worker in white overalls and a blue cap moves near large rotating or rounded industrial components, leaning forward as if operating or inspecting them. The factory remains dim, steamy, and filled with metal equipment.\n\nA high-angle shot looks down through haze or translucent plastic-like material at machinery and containers below. The view is partially obscured, making the exact objects difficult to identify.\n\nAnother close shot shows a worker’s face framed by large wheels or circular machine parts in the foreground. The person wears white work clothing and appears to be looking upward or toward the machinery.\n\nNear the end, a product shot appears. A cylindrical container is shown on the right side of the frame, with a bright blue label bordered by pink and white. The visible lettering reads “Ni…” in large white letters, but the full brand or product name is cut off by the frame. Behind it is a metal control-panel-like background with rivets, knobs, and a window showing machinery or a factory interior.\n\nThe commercial ends by cutting back to a black frame with the same small lower-right watermark."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f8e0e0f2ace02b5006a107435f240819595a84666f9da4104",
+    "usage": {
+      "input_tokens": 3097,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 673,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 3770
+    }
+  },
+  "duration_seconds": 34.258,
+  "created_at": "2026-05-22T15:20:55Z",
+  "error": null
+}

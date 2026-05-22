@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2010_120",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_120",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_120/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_120.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0002.jpg",
+      "timestamp_seconds": 1.057,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0003.jpg",
+      "timestamp_seconds": 2.425,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0004.jpg",
+      "timestamp_seconds": 3.96,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0005.jpg",
+      "timestamp_seconds": 6.63,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0006.jpg",
+      "timestamp_seconds": 7.731,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0007.jpg",
+      "timestamp_seconds": 9.065,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0008.jpg",
+      "timestamp_seconds": 9.733,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0009.jpg",
+      "timestamp_seconds": 10.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0010.jpg",
+      "timestamp_seconds": 12.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0011.jpg",
+      "timestamp_seconds": 16.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0012.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0013.jpg",
+      "timestamp_seconds": 21.111,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0014.jpg",
+      "timestamp_seconds": 23.013,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0015.jpg",
+      "timestamp_seconds": 25.582,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0016.jpg",
+      "timestamp_seconds": 27.25,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_120/frame_0017.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_120.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_120.json",
+    "response_text": "The commercial opens on a rural farm landscape with a stone house, fields, hills, fencing, and a cart in the background. The imagery has a stylized, model-like or animated appearance. In the yard, a small boy dressed in white stands near an older woman who is working with wood near a chopping block.\n\nThe view moves closer: the older woman raises an axe over a log while the boy, in a white outfit and cap, stands nearby holding a brick. A close-up then shows the boy smiling and holding a rectangular red brick with both hands, with a cart full of bricks behind him.\n\nNext, the boy is shown pulling or pushing a heavily loaded wheelbarrow piled with bricks near the stone house. The older woman stands behind it holding the handles or frame, suggesting the boy is helping move the load.\n\nThe scene cuts indoors to a framed black-and-white photograph on a mantel or shelf. The photo shows the same boy standing beside an older woman who is smiling. A clock is visible beside the photograph.\n\nA door then opens from inside the house. A bald, muscular man in an all-white outfit is seen at the doorway, holding a yellow-green bottle with a blue cap. He smiles while presenting the bottle. A close-up shows the bottle label clearly: it features the bald man’s face and the “Mr. Clean” branding.\n\nInside a rustic kitchen, the man stands beside the older woman. She holds or examines the product bottle while he stands with one hand on his hip. The room contains a stove, windows, shelves, and household objects.\n\nThe commercial then demonstrates cleaning uses. A white kitchen surface with a dark spill is shown, with large white text over the image: “2.5X MORE POWER PER DROP.” Small fine-print text appears along the bottom but is too small to read clearly in full. Another shot shows the older woman’s hand cleaning a white sink, with the product bottle placed nearby. A close-up follows of the yellow-green liquid being poured from the bottle into a clear bucket of water. Another shot shows a floor with muddy footprints being cleaned with a mop; the mop passes over the marks, and fine-print text remains at the bottom.\n\nThe older woman and the white-clad man are then shown standing together in a hallway or kitchen area, facing each other as if in conversation or instruction. The man’s posture remains confident and upright.\n\nNear the end, the product bottle is again held up in close-up against the rural outdoor background. The final outdoor shots show the bald man standing in the field holding the bottle, with a hay cart and a person working in the background. Large on-screen text appears: “WHEN IT COMES TO CLEAN THERE’S ONLY ONE Mr.” The word “Mr.” is large and red. A small website address appears near the bottom: “MRCLEAN.COM.” The final frame shows the man smiling toward the viewer, holding the product forward in the farm setting."
+  },
+  "api_metadata": {
+    "response_id": "resp_09c862d1eea5f226006a1079695ac4819e960c313e26589468",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 4027
+    }
+  },
+  "duration_seconds": 17.322,
+  "created_at": "2026-05-22T15:42:50Z",
+  "error": null
+}

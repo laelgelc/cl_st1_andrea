@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_67",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_67",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_67/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_67.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0002.jpg",
+      "timestamp_seconds": 0.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0003.jpg",
+      "timestamp_seconds": 9.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0004.jpg",
+      "timestamp_seconds": 11.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0005.jpg",
+      "timestamp_seconds": 13.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0006.jpg",
+      "timestamp_seconds": 13.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0007.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0008.jpg",
+      "timestamp_seconds": 16.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0009.jpg",
+      "timestamp_seconds": 18.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0010.jpg",
+      "timestamp_seconds": 20.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0011.jpg",
+      "timestamp_seconds": 21.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0012.jpg",
+      "timestamp_seconds": 22.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0013.jpg",
+      "timestamp_seconds": 22.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0014.jpg",
+      "timestamp_seconds": 26.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0015.jpg",
+      "timestamp_seconds": 28.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0016.jpg",
+      "timestamp_seconds": 29.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0017.jpg",
+      "timestamp_seconds": 31.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0018.jpg",
+      "timestamp_seconds": 39.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0019.jpg",
+      "timestamp_seconds": 44.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0020.jpg",
+      "timestamp_seconds": 48.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0021.jpg",
+      "timestamp_seconds": 54.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0022.jpg",
+      "timestamp_seconds": 61.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0023.jpg",
+      "timestamp_seconds": 66.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0024.jpg",
+      "timestamp_seconds": 71.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0025.jpg",
+      "timestamp_seconds": 73.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0026.jpg",
+      "timestamp_seconds": 74.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0027.jpg",
+      "timestamp_seconds": 79.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0028.jpg",
+      "timestamp_seconds": 82.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0029.jpg",
+      "timestamp_seconds": 84.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_67/frame_0030.jpg",
+      "timestamp_seconds": 88.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_67.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_67.json",
+    "response_text": "The commercial begins with a brief shot inside what looks like an aircraft cockpit. Two men in suits are seated in the front seats. Overlaid text reads “Capital One” and “what’s in your wallet?” with “capitalone.com” below. The image then cuts to black.\n\nAfter the black interval, the visual style changes completely. A blonde woman stands against a dark background filled with many warm, glowing hanging light bulbs. She wears a white cropped top with a red patterned shoulder panel and a blue skirt. Small white text appears at lower left; “Fancy” is legible, and the artist line appears to reference “Azalea ft. Charli XCX,” though part of it is small/partly unclear. She moves her arms in dance-like gestures among the suspended bulbs.\n\nA second woman with long dark hair appears in a bright pink satin-like dress. The two women perform in the same bulb-lit black space, sometimes separately and sometimes together. They gesture toward the camera and move side by side as the bulbs hang at different depths in the background.\n\nThe focus then cuts to a close-up of a Samsung smartphone held in a hand with red nail polish. A finger swipes across a circular, colorful music interface on the phone screen. The background remains out of focus with warm light orbs. As the finger swipes, the phone display changes from one circular album/track image to another; one later screen clearly shows “3005” and “Childish Gambino” with a portrait in the center of the circular interface.\n\nThe scene shifts to a young man performing in a bold black-and-yellow set resembling stylized arches and columns, with chandeliers visible behind him. He wears a dark top and light shorts. The camera alternates between a wide frontal view of the architectural set and closer shots of him. The Samsung phone reappears in the foreground with the same circular music interface, visually connecting the phone selection to the performer and set.\n\nNext, the commercial moves to a stage with purple and blue lighting. A band performs in front of circular decorative backdrops and triangular lighted shapes. A central performer stands at the front while other musicians are positioned behind keyboards and drums. The glossy black floor reflects the lights and performers.\n\nAnother stage appears with bright blue illuminated stairs. A man in a light-colored suit sits on the steps. White lower-left text reads “You & I (Nobody in The World)” with “John Legend” below. The scene expands to a dark, glossy environment with a glowing curved line on the floor, bare white-blue trees, and the stair structure in the distance.\n\nThe setting changes again to a stylized landscape of glowing blue-white trees and neon-like pathway lines. A small group stands in the distance, and a phone is held in the foreground, blurred, as if selecting or framing the next music choice. Lower-left text in this sequence reads “Long Stretch of Love” with “Lady Antebellum” beneath it.\n\nA green-lit rock performance follows. A silhouetted guitarist stands in front of a large glowing circular light, with drums and other band equipment behind. The camera pulls wide to show a circular rainbow-colored ring on the reflective floor around the performance area. The Samsung phone returns in close-up, and a finger swipes the circular music interface; the visible track text appears to read “All This Could Be Yours,” though the smaller text is not fully clear.\n\nThe next performance is lit in strong magenta and pink. A male musician wearing sunglasses and a dark leather jacket plays guitar and sings into a microphone. A car is positioned behind the performers, with bright pink light bars and haze surrounding the scene. Lower-left text reads “Come Alive.” A wider shot shows the band, the car, and the pink lighting reflected on the glossy floor.\n\nNear the end, the screen shows a large circular portrait of a young man centered on a black background. Around the portrait is a multicolored ring labeled with genre or station-like words, including visible terms such as “HIP-HOP,” “POP,” “SOUL/R&B,” and “MY STATIONS,” among others.\n\nThe final frame presents the product branding on a black background. On the left is a Samsung smartphone displaying the colorful circular “MILK” music interface. On the right is a large music-note icon and the word “MILK,” with smaller text “Powered by SLACKER.” A “Get it on Google play” badge appears below, with small copyright text at the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0950de646a3ecb70006a1078493a6081a2a0e7179e0d30d462",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1428,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 7231
+    }
+  },
+  "duration_seconds": 37.744,
+  "created_at": "2026-05-22T15:38:22Z",
+  "error": null
+}

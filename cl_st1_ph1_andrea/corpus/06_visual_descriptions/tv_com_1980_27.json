@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1980_27",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_27",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_27/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_27.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0002.jpg",
+      "timestamp_seconds": 2.859,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0003.jpg",
+      "timestamp_seconds": 8.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0004.jpg",
+      "timestamp_seconds": 9.766,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0005.jpg",
+      "timestamp_seconds": 11.801,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0006.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0007.jpg",
+      "timestamp_seconds": 18.508,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0008.jpg",
+      "timestamp_seconds": 23.346,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0009.jpg",
+      "timestamp_seconds": 26.416,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_27/frame_0010.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_27.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_27.json",
+    "response_text": "The commercial begins with a nearly black/dark frame, with no clear visual content visible.\n\nThe scene then cuts to a bright, sunlit kitchen dominated by yellow cabinets and pale flooring. A woman in a light blouse and gray trousers stands near the center-left, wearing dark sunglasses. A man in a blue polo shirt and beige pants stands close beside or behind her, holding her by the arms or shoulders as if guiding or steadying her. The kitchen has a stove on the left, a small table and chairs near the center, and large glass doors at the back letting in strong sunlight.\n\nNext, there is a closer shot of the woman in the foreground, now without clearly visible sunglasses. She looks off to the side with a serious or concerned expression. The man stands in the background near the glass doors, one hand on his hip, watching her. The room remains very bright, with yellow kitchen elements and plants visible.\n\nThe commercial then cuts to a close-up of a product container label. The label prominently reads “AJAX” in large red letters. Smaller text on the label includes “ALL PURPOSE CLEANER,” “GOOD FOR NO-WAX FLOORS,” and “LEMON SCENT CLEAN SHINE.” The container is white, with a yellow circular graphic behind the brand name.\n\nA close-up follows of yellow liquid being poured from a white bottle into a yellow container or bucket. The stream of liquid is clearly visible, lit strongly from the side. In the next shot, the pouring continues during a visual transition or dissolve; a faint background image of an Ajax container and cleaning setup appears behind the pouring stream.\n\nThe scene then cuts to a close-up of the man in the blue shirt holding the white bottle near his nose, appearing to smell it. He looks forward with a neutral or slightly focused expression.\n\nAfter this, the man and woman appear together by open glass doors or a patio entrance, with greenery outside. The man holds the Ajax bottle upright in front of him. The woman stands beside him wearing dark sunglasses and smiling, one hand raised to the sunglasses as if adjusting or lifting them. The setting is bright and airy.\n\nThe product is then shown alone on the shiny pale kitchen floor. The white Ajax bottle with an orange cap stands upright on the left side of the frame. The reflective floor surface and yellow kitchen background emphasize brightness and shine.\n\nIn the final frame, the Ajax bottle remains on the floor, and large red text appears diagonally across the image reading: “THE SHINE SHINES THROUGH.” A small inset image at lower right shows the smiling woman wearing sunglasses and touching or lifting them. The overall final composition presents the product, the shiny floor, the slogan text, and the woman’s reaction together."
+  },
+  "api_metadata": {
+    "response_id": "resp_06261911a091922b006a1070d2a32481a291d532998b9225f9",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 754,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 3357
+    }
+  },
+  "duration_seconds": 21.623,
+  "created_at": "2026-05-22T15:06:15Z",
+  "error": null
+}

@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1960_116",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_116",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_116/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_116.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0002.jpg",
+      "timestamp_seconds": 3.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0003.jpg",
+      "timestamp_seconds": 13.111,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0004.jpg",
+      "timestamp_seconds": 14.316,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0005.jpg",
+      "timestamp_seconds": 16.893,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0006.jpg",
+      "timestamp_seconds": 40.726,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0007.jpg",
+      "timestamp_seconds": 43.839,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0008.jpg",
+      "timestamp_seconds": 46.55,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0009.jpg",
+      "timestamp_seconds": 48.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0010.jpg",
+      "timestamp_seconds": 51.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_116/frame_0011.jpg",
+      "timestamp_seconds": 57.031,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_116.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_116.json",
+    "response_text": "The commercial is in black and white and centers on a small girl doll with a large hair bow, short curled hair, a smiling face, and a short dress with a white collar.\n\n1. **Opening close-up**: The first frame shows a close view of the doll’s head and upper body against a plain light background. She has a large bow on top of her hair and appears to be posed as if waving with one hand partly visible.\n\n2. **Outdoor sidewalk setting**: The scene changes to the doll standing full-length in a miniature outdoor setting. She is positioned near a white picket fence and a bare tree, with a sidewalk or curb in front. Her dress flares outward, and one leg is posed across the other, giving a walking or dancing impression.\n\n3. **Classroom setting**: The doll appears seated at a small school desk in a miniature classroom. A chalkboard is visible on the left with large letters or marks, and classroom posters or charts are on the walls. The doll holds or faces an open book or paper on the desk. A small bag or lunchbox-like object sits near the chair.\n\n4. **Dissolve/transition**: A superimposed transition blends the classroom scene with the next scene. The doll and classroom furniture are partially overlaid with a darker shape from the incoming shot, making the details temporarily unclear.\n\n5. **Car/outdoor play scene**: The doll is next shown standing beside a small toy convertible car on a textured ground surface. The car has a windshield and open top, with an object resembling a hat placed on or near the rear area. The doll is dressed in a coat-like outfit and hat, suggesting a travel or outing arrangement. A small dog-like toy figure stands near her feet.\n\n6. **Vanity or dressing area**: The doll appears seated on a stool in a room-like miniature setting. A small table or vanity is on the left with objects placed on it, including a shallow dish or basin shape and a dark cylindrical item. The doll’s arms are raised, and a cord-like curved line runs across the floor or background.\n\n7. **Bedroom display**: The doll is shown in a boxed or stage-like miniature bedroom. A canopy bed with decorative trim occupies the left side, and a small chair, side table, lamp-like object, and bed or cushioned furniture appear on the right. The doll stands or sits near the bed inside the display space.\n\n8. **Stacked dollhouse rooms**: The view widens to show two stacked rectangular room displays, resembling a dollhouse or modular room set. The upper room includes bedroom-style furniture, while the lower level shows a kitchen or dining area with shelves, chairs, and a table. A doll figure stands in the lower room.\n\n9. **Classroom and garage/car display**: Another two-level display is shown. The upper room resembles the classroom again, with a chalkboard, desk, and chair. The lower room contains the toy car and figures, arranged like a garage or outdoor play scene.\n\n10. **Child with doll**: A real young girl appears in close-up, smiling while holding the doll beside her face. The girl has dark hair with bangs and wears a light-collared top. The doll is held upright next to her, wearing the bow and dress seen earlier.\n\n11. **Final product shot**: The final frame shows the doll standing inside a rectangular package or case on the left. On the right, large cursive text reads “Penny Brite.” Beneath it is a dark logo shape with the visible words “TOPPER TOYS.” The background remains plain and light, emphasizing the packaged doll and brand/product text."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ded74967c6f1b6b006a106e8a20e48197ac470739faf8faff",
+    "usage": {
+      "input_tokens": 3059,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 870,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 3929
+    }
+  },
+  "duration_seconds": 19.913,
+  "created_at": "2026-05-22T14:56:29Z",
+  "error": null
+}

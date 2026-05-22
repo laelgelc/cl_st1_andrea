@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2000_71",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_71",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_71/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_71.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0002.jpg",
+      "timestamp_seconds": 3.493,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0003.jpg",
+      "timestamp_seconds": 4.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0004.jpg",
+      "timestamp_seconds": 6.363,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0005.jpg",
+      "timestamp_seconds": 11.468,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0006.jpg",
+      "timestamp_seconds": 14.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0007.jpg",
+      "timestamp_seconds": 17.874,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0008.jpg",
+      "timestamp_seconds": 18.441,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0009.jpg",
+      "timestamp_seconds": 21.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0010.jpg",
+      "timestamp_seconds": 22.746,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0011.jpg",
+      "timestamp_seconds": 24.481,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0012.jpg",
+      "timestamp_seconds": 25.682,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_71/frame_0013.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_71.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_71.json",
+    "response_text": "The commercial begins in an older-looking kitchen. A woman in light clothing is crouched on a dark floor, wiping by hand near a bucket. The room contains shelves with kitchen items, hanging utensils, cabinets, and a stove or fireplace-like dark appliance. The visual emphasis is on floor cleaning as a physically low, hands-and-knees activity.\n\nA brief close-up follows of a child’s face in profile near a window. The child appears to be indoors, looking off to the side. The connection to the cleaning scene is not visually explicit in this sampled frame.\n\nThe next scene shows another woman sitting on the floor in a colorful kitchen with pink lower cabinets and a black-and-white checked floor area. She is also positioned low to the floor with a bucket nearby, again suggesting manual floor cleaning. A closer shot then shows part of a person’s lower body near a yellow bucket or container; the image is cropped and somewhat blurred, but it continues the visual theme of floor-level cleaning.\n\nThe commercial then shifts to a product demonstration style. Against a plain white background, a turquoise-and-purple floor-cleaning tool with a flat rectangular head is shown upright. A close-up shows a hand handling a cloth or pad near the rectangular mop head, indicating assembly or attachment of a cleaning pad, though the exact action is not fully clear from the frame alone.\n\nAnother close-up shows a white surface with several small colored circular fittings or objects; the surrounding context is unclear in the sampled frame. The product demonstration continues with the mop head being pushed under a low piece of furniture or cabinetry on a white tiled floor. A later low-angle shot shows the mop moving around thin chair or stool legs, emphasizing maneuvering through obstacles.\n\nA woman in a bright, modern kitchen is then shown handling the blue cleaning tool and a rectangular white-and-black component or pad. She appears to be preparing or attaching part of the device. The kitchen is clean and minimal, with pale surfaces, counters, and cookware visible.\n\nThe final cleaning shots show a spacious modern kitchen with light-colored cabinets, a white tiled floor, and a tall stool. The turquoise mop is seen moving across the tiled floor, leaving or passing over shinier-looking areas, suggesting wet cleaning.\n\nThe commercial ends with a product pack shot. The package reads “Swiffer WetJet,” and the screen text says “CHANGING THE WAY AMERICA CLEANS FLOORS.” A web address, “www.wetjet.com,” appears at the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_01db3343d3463fa8006a1075e4e40081a1b266033a6a87b53f",
+    "usage": {
+      "input_tokens": 3591,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1018,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 4609
+    }
+  },
+  "duration_seconds": 29.582,
+  "created_at": "2026-05-22T15:28:02Z",
+  "error": null
+}

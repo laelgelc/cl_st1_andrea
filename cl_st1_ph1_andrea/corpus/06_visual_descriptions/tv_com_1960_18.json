@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_1960_18",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_18",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_18/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_18.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0002.jpg",
+      "timestamp_seconds": 1.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0003.jpg",
+      "timestamp_seconds": 3.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0004.jpg",
+      "timestamp_seconds": 4.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0005.jpg",
+      "timestamp_seconds": 5.424,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0006.jpg",
+      "timestamp_seconds": 5.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0007.jpg",
+      "timestamp_seconds": 6.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0008.jpg",
+      "timestamp_seconds": 12.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0009.jpg",
+      "timestamp_seconds": 13.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0010.jpg",
+      "timestamp_seconds": 16.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0011.jpg",
+      "timestamp_seconds": 18.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0012.jpg",
+      "timestamp_seconds": 21.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0013.jpg",
+      "timestamp_seconds": 21.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0014.jpg",
+      "timestamp_seconds": 22.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0015.jpg",
+      "timestamp_seconds": 23.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0016.jpg",
+      "timestamp_seconds": 31.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0017.jpg",
+      "timestamp_seconds": 32.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0018.jpg",
+      "timestamp_seconds": 32.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0019.jpg",
+      "timestamp_seconds": 33.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0020.jpg",
+      "timestamp_seconds": 34.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0021.jpg",
+      "timestamp_seconds": 35.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0022.jpg",
+      "timestamp_seconds": 36.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0023.jpg",
+      "timestamp_seconds": 37.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0024.jpg",
+      "timestamp_seconds": 40.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0025.jpg",
+      "timestamp_seconds": 43.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0026.jpg",
+      "timestamp_seconds": 45.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0027.jpg",
+      "timestamp_seconds": 46.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0028.jpg",
+      "timestamp_seconds": 54.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1960_18/frame_0029.jpg",
+      "timestamp_seconds": 57.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_18.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_18.json",
+    "response_text": "The commercial begins with a nearly black screen. A small white “Nostalgic X’er” watermark appears at the lower right and remains throughout the sampled frames.\n\nA close-up then shows a purple billiard ball on a pool table, lit warmly with a blurred bright shape in the background. The next shots reveal a young man leaning low over the pool table, aiming a cue. Other billiard balls are visible on the felt. A close-up shows his face as he looks forward with a slight smirk or concentrated expression.\n\nThe scene shifts to a young woman standing indoors near venetian blinds. She wears a sleeveless, high-neck top and appears to be smiling or reacting to someone off-screen. The lighting is warm and contrasty. A tabletop or bar-like surface appears with several glass bottles and glassware; patterned wallpaper is visible behind them. A hand moves near the bottles, but the exact action is not fully clear from the sampled frame.\n\nNext, numbered cards or squares are shown on a wall or board, with visible numbers “21,” “22,” “19,” and “20.” A hand points or moves near the numbers. This is followed by a shot of a wall with windows or blinds, then a close side profile of a woman’s face in soft, sepia-toned light. A darker shot shows two people close together in profile or partial silhouette, but their faces and actions are hard to distinguish.\n\nA product close-up follows: the top of a bottle cap is shown clearly, reading “Canada Dry” and “Ginger Ale.” The camera then shows the bottle cap and bottle at an angle among bright, sparkling liquid or ice-like reflections. Another close-up shows the cap and bottle moving or resting inside a container or tray with strong highlights.\n\nThe setting changes to a swimming pool or water scene. A person is visible in the water, with ripples and reflected light around them. The figure is partly backlit and not clearly identifiable.\n\nAfter a blurred transitional shot, the commercial moves into what appears to be a crowded indoor social or bar setting. Bodies and faces are partially obscured by foreground figures. A seated man is visible between people; another person stands behind him. The lighting remains warm and dim, with strong highlights. A man in dark clothing is seen seated or leaning at a table, looking toward the surrounding activity.\n\nSeveral quick, soft-focus shots show people moving in the crowded space. A blonde woman appears backlit, her face overexposed and indistinct. A wider shot shows her standing near tables or a bar area, with other people around her; bottles and glasses are visible on a table in front. Brickwork and framed wall décor appear in the background.\n\nA close-up shows hands holding or touching a glass. Then a medium shot shows a man and a blonde woman sitting or standing close together at a table. A dark glass bottle with a label is in the foreground between them. The man looks toward the woman, and she faces him in profile.\n\nAnother close-up shows a hand holding a bottle at an angle, label partly visible but blurred. The final shots show a container or bucket filled with several dark glass bottles. In the last frame, a Canada Dry Ginger Ale bottle is clearly visible lying among other bottles, its label facing the camera. The scene ends on this product-focused image."
+  },
+  "api_metadata": {
+    "response_id": "resp_0673a1318584c8c3006a106d126cd4819e93dc06ee291ddb77",
+    "usage": {
+      "input_tokens": 5614,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 833,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 6447
+    }
+  },
+  "duration_seconds": 22.18,
+  "created_at": "2026-05-22T14:50:16Z",
+  "error": null
+}

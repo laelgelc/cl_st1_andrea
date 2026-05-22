@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_1980_66",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_66",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_66/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_66.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0002.jpg",
+      "timestamp_seconds": 2.626,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0003.jpg",
+      "timestamp_seconds": 3.793,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0004.jpg",
+      "timestamp_seconds": 5.929,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0005.jpg",
+      "timestamp_seconds": 7.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0006.jpg",
+      "timestamp_seconds": 10.4,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0007.jpg",
+      "timestamp_seconds": 12.035,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0008.jpg",
+      "timestamp_seconds": 12.702,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0009.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0010.jpg",
+      "timestamp_seconds": 15.438,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0011.jpg",
+      "timestamp_seconds": 16.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0012.jpg",
+      "timestamp_seconds": 17.474,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0013.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0014.jpg",
+      "timestamp_seconds": 28.285,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_66/frame_0015.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_66.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_66.json",
+    "response_text": "The commercial begins on a very dark, nearly black frame where no clear objects or people are visible.\n\nIt then cuts to an office-like interior with partition walls and bright rectangular window panels. A low horizontal partition or desk edge fills the lower half of the frame.\n\nA young adult man in a striped dress shirt and tie is shown seated at a desk or cubicle. He raises one arm upward, as if trying to get attention or reach for something above him. Papers, folders, and office materials are on the desk. Behind him are framed pictures or posters on a gray partition wall.\n\nThe scene changes to a young adult woman seated at another office desk. She wears a light-colored top and a patterned scarf. She is holding something in her hand, possibly a small device or paper, and looks to the side. Her workstation includes a computer monitor, a telephone, pencils in a cup, papers, and an open book or binder. A decorative object resembling an animal head or plush figure is visible on a shelf behind her.\n\nA close-up shows a handheld electronic device labeled “Spell-Checker.” Its small screen displays “READY:” while a pencil or stylus points at the display. At the bottom of the frame, small text reads “BATTERIES NOT INCLUDED.” The device has small keyboard-style buttons.\n\nThe next shot shows the whole device being held in a hand over a sheet of paper. The brand name “Texas Instruments” is visible on the right side, along with the “Spell-Checker” label on the left. The device is rectangular, with a display at the top, many small keys, and several larger side buttons.\n\nA close-up shows a thumb pressing a button on the device. The button labels are partly visible but not fully clear.\n\nAnother close-up of the screen shows the word “ACCURABLE” displayed in large letters. Smaller indicators appear beneath or near the word, including “OK” and “Menu,” though the exact interface details are not fully legible.\n\nThe commercial cuts back to the office. The young man leans around a cubicle partition, looking toward someone off-screen, with coworkers blurred in the background. He appears animated or engaged.\n\nThe woman is then shown smiling while holding the small device. She looks pleased or amused and points or gestures with the device in her hand.\n\nThe man is shown again in the office corridor or cubicle area, standing and facing forward. He wears the same striped shirt and tie and appears to be moving toward the woman’s workstation.\n\nA shot from behind or beside the man shows him passing in front of the woman’s desk area. The computer monitor, pencils, papers, and the decorative animal-like object are visible again. His body partly blocks the view as he enters the space.\n\nLater, the man and woman are shown together at her desk. The man leans over the desk beside her, and both look down toward papers or the device on the tabletop. The lighting is warm and slightly hazy, with a soft overlay effect.\n\nAnother layered shot superimposes the handheld spell-checker device over the office scene, visually connecting the product with the two people working at the desk.\n\nThe final frame shows the woman seated and smiling up at the man, while the man leans over the desk with both hands near the papers. They appear to be sharing a light moment while looking at each other and the work surface. The office partition wall and framed pictures remain visible in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d34a37943e2b41c006a10716be8dc819fa419e7086e7c2754",
+    "usage": {
+      "input_tokens": 3838,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 752,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 4590
+    }
+  },
+  "duration_seconds": 17.826,
+  "created_at": "2026-05-22T15:08:45Z",
+  "error": null
+}

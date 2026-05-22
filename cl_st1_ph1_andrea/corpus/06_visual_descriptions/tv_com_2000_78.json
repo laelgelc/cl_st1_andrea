@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2000_78",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_78",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_78/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_78.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0002.jpg",
+      "timestamp_seconds": 9.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0003.jpg",
+      "timestamp_seconds": 12.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0004.jpg",
+      "timestamp_seconds": 18.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0005.jpg",
+      "timestamp_seconds": 28.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0006.jpg",
+      "timestamp_seconds": 34.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0007.jpg",
+      "timestamp_seconds": 37.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0008.jpg",
+      "timestamp_seconds": 50.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0009.jpg",
+      "timestamp_seconds": 52.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0010.jpg",
+      "timestamp_seconds": 55.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_78/frame_0011.jpg",
+      "timestamp_seconds": 69.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_78.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_78.json",
+    "response_text": "The commercial opens on a black frame.\n\nIt then cuts to a close-up of a large, clear, round bowl filled with very dark liquid on a countertop. A person in a blue shirt stands behind it, with only the torso and arms partly visible. An “OXI CLEAN” logo appears at the lower right.\n\nNext, the shot widens to a studio demonstration setup. A middle-aged man with dark hair and a beard, wearing a blue button-down shirt with an Oxi Clean logo and khaki pants, stands behind a counter. Behind him are metal shelving units holding cleaning products, towels, gloves, spray bottles, bowls, and other household items. On the counter are large glass bowls and demonstration trays. One bowl contains cloudy white liquid with reddish material at the bottom. The man points forward toward the camera.\n\nThe commercial then shows a close-up of a carpet or rug sample inside a wooden tray. There are visible stains or colored patches, including a pinkish area and an orange-brown outline. A tipped-over drinking glass lies on the carpet with red liquid inside or nearby. A white bottle is being poured or held over the stained area. The Oxi Clean logo remains in the lower right.\n\nThe view returns to the presenter at the counter. He holds a small bowl and points toward the camera. To his left is a large glass bowl containing pale green liquid; in front of him is a rectangular white surface or tray; to his right is another framed demonstration surface.\n\nA close-up then shows a blue tiled surface in a wooden frame. White cleaning foam or powder is spread across the tiles. A hand presses and moves a white cloth over the surface, wiping through the substance.\n\nThe camera shifts to a higher, closer angle over a large glass bowl filled with white foamy liquid. The presenter’s torso and raised index finger are visible above the bowl, suggesting he is emphasizing something visually, though any speech is not shown.\n\nLater, there is a close-up of a clear rectangular tank filled with dark liquid. A hand holds a small transparent green measuring cup or scoop containing pale green liquid or powder near the top edge of the tank. A metal fixture or container is visible inside the tank.\n\nThe scene then changes to a dark red-toned graphic or comparison shot. Yellow text in the upper right reads “Regular Laundry Detergent.” The background appears murky and reddish, with indistinct objects or material visible behind the tint. The Oxi Clean logo remains at the lower right.\n\nThe presenter is then shown beside the clear tank of dark liquid. He leans forward with one arm extended downward out of frame. The tank is filled with black or very dark liquid, and a reddish section is visible on the right side. Shelves with cleaning supplies and towels remain in the background.\n\nIn the final sampled frame, the presenter stands beside the same clear tank, which now appears filled with white or cloudy foamy liquid. He looks downward toward the counter or demonstration area. The studio shelves and Oxi Clean branding remain visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ea367aaa593a59d006a10760e6868819ca83cbb4eb2d9a58c",
+    "usage": {
+      "input_tokens": 2641,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 695,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 3336
+    }
+  },
+  "duration_seconds": 18.209,
+  "created_at": "2026-05-22T15:28:32Z",
+  "error": null
+}

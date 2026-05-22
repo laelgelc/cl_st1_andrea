@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1990_38",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_38",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_38/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_38.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0002.jpg",
+      "timestamp_seconds": 4.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0003.jpg",
+      "timestamp_seconds": 6.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0004.jpg",
+      "timestamp_seconds": 8.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0005.jpg",
+      "timestamp_seconds": 17.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0006.jpg",
+      "timestamp_seconds": 20.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0007.jpg",
+      "timestamp_seconds": 24.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_38/frame_0008.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_38.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_38.json",
+    "response_text": "The commercial appears to alternate between football/locker-room imagery, laundry handling, and product demonstration.\n\n1. **Opening football scene**: The first frame is very dark and difficult to read clearly. A person in a white football-style uniform is visible in the center, apparently on or near a playing field or stadium setting, but details are obscured by low lighting.\n\n2. **Locker-room view through an opening**: The scene cuts to a brightly lit locker room, seen from inside or through a rectangular opening, as if looking out from a locker or cabinet. A young man with bare shoulders stands in front, smiling or speaking to someone off-frame. Other people in white football jerseys are behind him. Hanging lights, lockers, clothing, and sports gear are visible.\n\n3. **Football action**: The commercial cuts back outdoors to football players in white jerseys. Two players, one with the number 61 and one with a number beginning with 2, raise their hands as if preparing to catch or block a ball. The background is dark with strong sunlight on the players.\n\n4. **Laundry in locker room**: The view returns to the locker-room/opening perspective. A young man holds or stuffs a white jersey or garment with blue stripes toward the camera/opening. Other people and locker-room fixtures are visible behind him. The shot emphasizes used athletic clothing being handled.\n\n5. **Product shot: Tide with Bleach**: A close-up shows a box of **“Tide with BLEACH”** on a shelf or countertop. The package is orange with a yellow burst design and large white “Tide” lettering. The box is positioned on the left side of the frame.\n\n6. **Clean jersey close-up**: A white sports jersey or shirt is shown laid flat. It has two red horizontal stripes on the sleeve. The fabric looks bright white, with the shirt filling most of the frame.\n\n7. **Home/laundry setting with two people**: The scene changes to a domestic interior with large windows and blinds. A woman and a young man stand together holding a light-colored garment or laundry item. The woman looks toward the young man while holding up the fabric; the young man looks down at it. Greenery is visible outside the window.\n\n8. **Final product display and written tagline**: The final frame shows the **Tide with Bleach** box next to a neatly stacked pile of folded towels or laundry in white, pink, and patterned layers. At the bottom of the screen, white text reads:  \n   **“IF IT’S GOT TO BE CLEAN,  \n   IT’S GOT TO BE TIDE.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_09bc07e98ddb517f006a10730aa38081959fd4ea302835540f",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 595,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 2704
+    }
+  },
+  "duration_seconds": 15.467,
+  "created_at": "2026-05-22T15:15:37Z",
+  "error": null
+}

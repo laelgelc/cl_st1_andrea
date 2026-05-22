@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1990_97",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_97",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_97/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_97.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0002.jpg",
+      "timestamp_seconds": 1.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0003.jpg",
+      "timestamp_seconds": 3.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0004.jpg",
+      "timestamp_seconds": 5.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0005.jpg",
+      "timestamp_seconds": 6.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0006.jpg",
+      "timestamp_seconds": 8.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0007.jpg",
+      "timestamp_seconds": 11.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0008.jpg",
+      "timestamp_seconds": 15.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0009.jpg",
+      "timestamp_seconds": 20.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0010.jpg",
+      "timestamp_seconds": 21.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0011.jpg",
+      "timestamp_seconds": 23.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0012.jpg",
+      "timestamp_seconds": 25.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_97/frame_0013.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_97.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_97.json",
+    "response_text": "The commercial begins with a very dark title card. Large text is faintly visible, reading “Easy Spirit Color Playoffs,” though the image is low-contrast.\n\nIt then cuts to a close-up on a basketball court floor. Several women’s legs and feet are shown at a center-court line dividing blue and orange floor areas. Two women in low-heeled pumps face each other toe-to-toe, one in a reddish-brown pump and the other in a purple pump. A basketball marked “SPIRIT” is held or positioned between them, with another pair of black heels visible in the background.\n\nThe next shots move into game action on a polished indoor basketball court. A small “Easy SPIRIT” logo appears at the lower right in some frames. Players in women’s basketball uniforms are shown playing in a gym with blue wall padding and signs that include “SPIRIT.” The athletes appear to be wearing pumps rather than typical basketball sneakers. One player in a light-colored uniform controls the ball while players in purple uniforms defend. The camera alternates between wide shots of the court and close shots of legs, feet, and the basketball during dribbling and defensive movement.\n\nA later close-up shows multiple pairs of legs in purple and dark high-heeled pumps moving around the ball on the blue area of the court. Overlaid white text reads: “Actual game played in EASY SPIRIT PUMPS.”\n\nThe commercial then shifts from the basketball setting to product/fashion imagery on a plain light background. A white lace-up Easy Spirit athletic-style shoe is placed beside a bright pink women’s pump. Subsequent close-ups show feet stepping into or wearing colored pumps, including a purple pump and a tan/orange-toned shoe or clothing combination. One shot shows tan fabric gathered around the lower legs with a white garment lying nearby on the floor, suggesting a wardrobe change, though the exact action is not fully clear from the frame.\n\nNext, three women walk forward through a doorway or corridor framed by blue panels. They wear coordinated fashion outfits in purple and warm tan/orange tones, carrying accessories and wearing heels. A partial word “POWER” is visible on the background wall.\n\nThe product display returns: the white sneaker and bright pink pump appear with large text reading “AAAA TO EE” and the Easy Spirit logo beneath. The final frame presents a retail end card with “Dillard’s” at the top, several shoes arranged across the screen—a white sneaker, a dark pump, and a yellow/orange pump—and the text “AAAA TO EE” above the multicolored “Easy SPIRIT” logo."
+  },
+  "api_metadata": {
+    "response_id": "resp_0070422b689484e3006a1073fe5d4481928c1adc5834570469",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 931,
+      "output_tokens_details": {
+        "reasoning_tokens": 400
+      },
+      "total_tokens": 4275
+    }
+  },
+  "duration_seconds": 22.242,
+  "created_at": "2026-05-22T15:19:48Z",
+  "error": null
+}

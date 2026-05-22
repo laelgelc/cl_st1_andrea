@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2000_119",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_119",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_119/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_119.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0002.jpg",
+      "timestamp_seconds": 1.892,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0003.jpg",
+      "timestamp_seconds": 3.393,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0004.jpg",
+      "timestamp_seconds": 3.894,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0005.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0006.jpg",
+      "timestamp_seconds": 6.062,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0007.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0008.jpg",
+      "timestamp_seconds": 11.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0009.jpg",
+      "timestamp_seconds": 15.739,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0010.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0011.jpg",
+      "timestamp_seconds": 21.011,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_119/frame_0012.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_119.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_119.json",
+    "response_text": "The commercial opens in a very dark tunnel-like space, where a row of rectangular ceiling lights recedes into the distance.\n\nIt then cuts to the outside of a stone-arched road tunnel. The camera is low near the roadway, looking toward the tunnel entrance. A road with a shoulder line leads into the dark tunnel, and small white text appears near the bottom reading, “Professional riders on closed course.”\n\nA close-up follows of double yellow center lines on a road, still with the same “Professional riders on closed course” disclaimer at the bottom.\n\nThe next shot shows a large touring motorcycle leaning through a curving mountain road. The motorcycle’s headlights are on, and hazy mountain silhouettes fill the background. The same disclaimer remains visible near the bottom.\n\nThe sequence continues with multiple riding shots in different landscapes. One shot shows a dark touring motorcycle traveling through a dry, scrubby area with blurred vegetation in the foreground and background. Another shows a motorcycle approaching on a paved mountain road, with bright snow-covered peaks in the distance. The bike is centered in the lane and moving toward the camera.\n\nA side view then shows a motorcycle carrying two riders. Both wear helmets and dark jackets; the driver wears light blue jeans. The motorcycle has a windshield and a large rear seat/backrest. The road runs through a mountainous or forested area.\n\nA distant overhead or high-angle shot shows a single motorcycle riding along a wide, pale road bordered by yellow-green fields or vegetation. The bike casts a shadow behind it.\n\nAnother shot features an orange touring motorcycle on a two-lane road through red rock canyon terrain. The rider wears a dark helmet and clothing. The motorcycle has a windshield, large side cases, and rounded orange storage compartments.\n\nA promotional title card appears over a road scene. A metallic wing-like emblem is centered above large text reading “GOLDWING,” with “Test Ride” below it. Fine-print legal/disclaimer text runs along the bottom, but most of it is too small and blurred to read clearly. The background remains a curving open road with trees and hills in the distance.\n\nThe commercial then returns to action footage: a dark touring motorcycle rides toward the camera on a desert road bordered by red rock formations. White fine-print text remains overlaid at the bottom.\n\nThe final frame shows a wide scenic landscape: a narrow road runs through bright yellow fields toward distant cliffs and mesas. A lone motorcycle rides away from the camera down the center of the road. Over the landscape is a red wing-like logo and large white text reading “PERFORMANCE FIRST.” Smaller dealership/contact text appears along the bottom, but it is partly blurred and not fully legible."
+  },
+  "api_metadata": {
+    "response_id": "resp_027a1f93802624f1006a1076e1ead0819da7628fe70d23eb17",
+    "usage": {
+      "input_tokens": 3325,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 694,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 4019
+    }
+  },
+  "duration_seconds": 19.643,
+  "created_at": "2026-05-22T15:32:05Z",
+  "error": null
+}

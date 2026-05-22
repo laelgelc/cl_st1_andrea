@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_2020_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0002.jpg",
+      "timestamp_seconds": 1.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0003.jpg",
+      "timestamp_seconds": 1.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0004.jpg",
+      "timestamp_seconds": 2.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0005.jpg",
+      "timestamp_seconds": 2.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0006.jpg",
+      "timestamp_seconds": 2.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0007.jpg",
+      "timestamp_seconds": 3.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0008.jpg",
+      "timestamp_seconds": 3.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0009.jpg",
+      "timestamp_seconds": 5.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0010.jpg",
+      "timestamp_seconds": 9.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0011.jpg",
+      "timestamp_seconds": 9.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0012.jpg",
+      "timestamp_seconds": 15.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0013.jpg",
+      "timestamp_seconds": 16.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0014.jpg",
+      "timestamp_seconds": 16.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0015.jpg",
+      "timestamp_seconds": 16.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0016.jpg",
+      "timestamp_seconds": 16.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0017.jpg",
+      "timestamp_seconds": 17.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0018.jpg",
+      "timestamp_seconds": 21.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0019.jpg",
+      "timestamp_seconds": 22.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0020.jpg",
+      "timestamp_seconds": 24.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0021.jpg",
+      "timestamp_seconds": 25.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0022.jpg",
+      "timestamp_seconds": 25.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0023.jpg",
+      "timestamp_seconds": 26.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0024.jpg",
+      "timestamp_seconds": 28.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2020_69/frame_0025.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_69.json",
+    "response_text": "The commercial opens on a clean white background with several Samsung phones arranged around the edges of the frame, forming a loose circular border. The phones are shown mainly from the back in bright colors including red, mint green, lavender, and dark blue, with rectangular rear camera modules visible. In the center, black text reads “Galaxy S20 Fan Edition 5G,” later shortened to “Galaxy S20 FE 5G.” Small fine print appears near the bottom but is too small to read fully in the sampled frames.\n\nThe phones then appear to spin or sweep around the central text, becoming blurred by motion. The arrangement expands into multiple floating phones, some showing backs and others showing screens with portraits or people on them. The devices seem to form curved, synchronized patterns in a white studio-like space.\n\nThe next sequence moves into a corridor-like arrangement of upright phones. A large front-facing phone screen shows a close-up portrait of a person with very short blond hair. Other phones stand in rows behind it, some displaying different people. The camera appears to move forward through or alongside the phones, creating a sense of depth and motion. Several dark blue phones pass close to the camera, showing rear camera units and side profiles.\n\nA camera-feature segment follows. A phone screen shows a camera interface with zoom markings and a subject visible on the display. Then the frame shows a white-fronted phone next to a person on a phone screen, with on-screen text at left reading “30x Space Zoom for close-up.” Fine print appears along the bottom, but it is mostly too small to read.\n\nThe scene shifts to rows of mint-colored phones arranged symmetrically on a white background, receding into the distance like parallel lines. This then transitions to a dark environment. A bright front-facing phone is centered, with many phones lined up behind it. On-screen text reads “Night mode” on the left and “for party all-night fans” on the right. The phone display changes from a bright blank screen to an image of three people posing or sitting together in a dim, stylized setting.\n\nAfter this, the commercial returns to fast-moving product shots on a white background. Lavender and mint phones slide past the camera in close-up, showing backs, sides, and camera modules. A lavender phone moves prominently through the frame, with other devices receding behind it.\n\nAnother feature-like moment shows a phone front displaying a social media-style interface, resembling an Instagram feed. The screen includes image posts and interface icons, though most small text is not legible. A row of phones stands behind it, extending into the distance.\n\nThe visual design then expands into large spiral and circular formations made of many phones. Some are shown from the back in different colors, while others show screens with people’s faces. The spirals are arranged on a white background and viewed from above, emphasizing the repeated devices and color variety.\n\nA close-up of a mint-green phone back appears, focusing on the rectangular camera module with three lenses and a flash. Text beside it reads “With colors for every fan.” The final product lineup shows several phones standing upright in different colors, including mint, red, pale green/white, lavender, and dark blue. Some face backward to show the camera modules, while others face forward showing portraits on their screens.\n\nThe commercial ends on a black screen with the white “SAMSUNG” logo centered. Small copyright text appears near the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_058c2699abad7189006a107ac8922c8190994fbb389f5f7e6e",
+    "usage": {
+      "input_tokens": 4858,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 998,
+      "output_tokens_details": {
+        "reasoning_tokens": 302
+      },
+      "total_tokens": 5856
+    }
+  },
+  "duration_seconds": 23.183,
+  "created_at": "2026-05-22T15:48:47Z",
+  "error": null
+}

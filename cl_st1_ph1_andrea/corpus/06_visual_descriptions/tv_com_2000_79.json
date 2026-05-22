@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_2000_79",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_79",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_79/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_79.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0002.jpg",
+      "timestamp_seconds": 1.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0003.jpg",
+      "timestamp_seconds": 2.528,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0004.jpg",
+      "timestamp_seconds": 3.897,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0005.jpg",
+      "timestamp_seconds": 5.434,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0006.jpg",
+      "timestamp_seconds": 6.469,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0007.jpg",
+      "timestamp_seconds": 7.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0008.jpg",
+      "timestamp_seconds": 9.475,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0009.jpg",
+      "timestamp_seconds": 11.479,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0010.jpg",
+      "timestamp_seconds": 13.349,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0011.jpg",
+      "timestamp_seconds": 15.153,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0012.jpg",
+      "timestamp_seconds": 16.088,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0013.jpg",
+      "timestamp_seconds": 16.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0014.jpg",
+      "timestamp_seconds": 17.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0015.jpg",
+      "timestamp_seconds": 17.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0016.jpg",
+      "timestamp_seconds": 17.524,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0017.jpg",
+      "timestamp_seconds": 18.86,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0018.jpg",
+      "timestamp_seconds": 20.129,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0019.jpg",
+      "timestamp_seconds": 21.833,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0020.jpg",
+      "timestamp_seconds": 23.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0021.jpg",
+      "timestamp_seconds": 24.705,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0022.jpg",
+      "timestamp_seconds": 26.542,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0023.jpg",
+      "timestamp_seconds": 27.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0024.jpg",
+      "timestamp_seconds": 29.14,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_79/frame_0025.jpg",
+      "timestamp_seconds": 29.381,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_79.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_79.json",
+    "response_text": "The commercial begins on a black screen.\n\nA bright domestic kitchen/interior then appears. A very young child/toddler in a beige textured outfit is shown close up, with an older curly-haired child partly visible beside them. The toddler looks downward while an adult or child’s hand moves near the foreground.\n\nThe scene shifts to the toddler sitting near a low surface with household kitchen items: a frying pan, utensils, and other cooking-related objects. The child appears to be handling or reaching toward a long wooden spoon or similar utensil. A separate shot shows a green basket filled with cleaning items, including a yellow-labeled bottle reading “pine,” sponges, a brush, and cloths. Another quick kitchen shot shows food ingredients on a counter, including carrots, leafy herbs/greens, and what appears to be raw poultry on a plate.\n\nThe toddler is then shown seated in a high chair or at a white tray with red food mess smeared across the surface and around the child’s mouth. The child looks down at the mess.\n\nA lime-green spray-style cleaning product bottle is introduced in close-up. Its front label shows a muscular bald cartoon man in a white shirt, with large red text reading “MR. CLEAN M.NET” and additional text including “Antibacterial” and “Multi-purpose / Multi-usages.” The camera moves closer to the illustrated figure and label. The product is shown standing upright against a bright, clean kitchen background.\n\nA cleaning demonstration follows. A grayish dirty patch is visible on a white surface while an arm passes over or wipes nearby. Small on-screen text at the bottom reads: “13 total strokes. Full strength use.” The product bottle reappears with small white text near the bottom of the screen mentioning “E. coli & salmonella” and instructions such as “Use as directed. Full strength use.” The earlier green basket of cleaning supplies is also shown again with similar small text overlaid.\n\nThe camera then pushes in tighter on the product label, emphasizing the brand name “MR. CLEAN M.NET,” “Antibacterial,” and the yellow “Multi-purpose / Multi-usages” area, plus a small lemon graphic near the bottom of the label.\n\nThe next scene returns to the bright home interior. A woman in a light blue shirt stands beside a white high-chair tray with red food mess. Next to her is a life-sized flat/cartoon standee or cutout of the muscular bald Mr. Clean character with crossed arms. The woman wipes the tray. A close-up shows the illustrated Mr. Clean face on or near a white surface while a blue cloth wipes across the frame.\n\nThe toddler is shown on the floor, crawling or sitting near the white tile. A green bucket is in the background, and the lower legs and white shoes of the Mr. Clean cutout/figure are visible beside the child. The toddler looks toward the figure/shoe area. Another shot briefly shows the older curly-haired child from above, moving through the bright room.\n\nThe woman sits with the toddler and the older child near a green bucket. They are gathered closely together, and the woman’s arm is around the children. A website address, “www.mrclean.com,” appears at the bottom right.\n\nA product lineup appears in an overexposed bright shot: three bottles in different colors, likely pink, blue, and yellow/green, all with similar “Mr. Clean” branding. The website “www.mrclean.com” is again visible at the bottom right.\n\nThe toddler is then shown touching or wiping the floor tile with one hand, with the green bucket still in the background. The final family scene shows the woman sitting on the floor with the two children in a clean, sunlit room. The Mr. Clean cutout stands behind them with arms crossed. A blue bucket is nearby, and the older child holds or wears a blue bucket or basin over the head/face area. The group appears relaxed and smiling. The commercial ends by returning to the bright product lineup with the website at the bottom right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0cc8df94cf9bf11b006a1076130c548194816897b39e83c314",
+    "usage": {
+      "input_tokens": 6308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 987,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 7295
+    }
+  },
+  "duration_seconds": 23.94,
+  "created_at": "2026-05-22T15:28:42Z",
+  "error": null
+}

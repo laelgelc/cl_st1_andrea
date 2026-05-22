@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2000_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0002.jpg",
+      "timestamp_seconds": 0.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0003.jpg",
+      "timestamp_seconds": 1.558,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0004.jpg",
+      "timestamp_seconds": 2.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0005.jpg",
+      "timestamp_seconds": 2.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0006.jpg",
+      "timestamp_seconds": 2.692,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0007.jpg",
+      "timestamp_seconds": 2.859,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0008.jpg",
+      "timestamp_seconds": 3.96,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0009.jpg",
+      "timestamp_seconds": 4.661,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0010.jpg",
+      "timestamp_seconds": 6.563,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0011.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0012.jpg",
+      "timestamp_seconds": 8.665,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0013.jpg",
+      "timestamp_seconds": 9.533,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0014.jpg",
+      "timestamp_seconds": 11.268,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0015.jpg",
+      "timestamp_seconds": 12.369,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0016.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0017.jpg",
+      "timestamp_seconds": 14.437,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0018.jpg",
+      "timestamp_seconds": 16.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0019.jpg",
+      "timestamp_seconds": 20.71,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0020.jpg",
+      "timestamp_seconds": 20.81,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0021.jpg",
+      "timestamp_seconds": 28.585,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0022.jpg",
+      "timestamp_seconds": 29.441,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_5/frame_0023.jpg",
+      "timestamp_seconds": 30.353,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_5.json",
+    "response_text": "The commercial begins on a black frame, then cuts to the exterior of a traditional barbershop. A red-white-blue barber pole stands in the foreground, and the shop window has large red lettering reading “BARBER” and “ROSSI.” Through the glass, an older man in a light-colored barber-style shirt is visible inside.\n\nThe next shots move into warm, golden close-ups of the older man’s face. He appears serious or focused at first. There are shallow-focus views where the window lettering and red shapes blur in the background.\n\nA small animated bee character then appears near the window lettering. It has large eyes, antennae, a yellow-and-brown body, white shoes, and small wings. The bee hovers in front of the blurred red letters, then appears more fully in frame, as if flying or gesturing.\n\nInside the barbershop, the older man stands holding a shaving brush or barber tool, looking toward the bee or something off-camera. The setting includes mirrors, bottles, framed items, and warm wooden surfaces. A box of Honey Nut Cheerios appears in another shot, with the bee flying nearby. The cereal box is orange-brown and prominently displays the words “Honey Nut Cheerios.”\n\nThe bee is then shown standing on a pile of cereal pieces, holding up a large nut-like object. The older man is shown smiling in profile, suggesting he is amused or pleased. The bee next appears beside a glass jar filled with amber-colored honey; the word “HONEY” is visible on the jar. The older man looks toward the camera with a small, knowing smile.\n\nA wider exterior shot shows the older man sitting outside the barbershop in sunlight, holding a bowl of cereal and a spoon. A Honey Nut Cheerios box is visible behind him on the ledge. He then brings a spoonful of cereal to his mouth in close-up.\n\nThe commercial cuts to a product end card: a Honey Nut Cheerios box on a blue gradient background. Large white text at the bottom reads, “It’s a honey of an O.” A single cereal “O” appears beside the line.\n\nAfter a bright transition, the visual style changes to a promotional display. Two cereal boxes are shown in a glossy blue, futuristic-looking space: Honey Nut Cheerios and Apple Cinnamon Cheerios. Both boxes have “FREE CD” banners at the top with CD graphics. Large white text on the left reads, “CHOOSE FROM 8 CDs.” A small image of a CD or CD case appears near the bottom.\n\nThe final shots show a man wearing sunglasses and a red-and-dark shirt dancing or striking energetic poses in a bright, metallic corridor lined with illuminated panels. Small white fine print appears at the bottom; it is partly readable and includes references to shipping/handling, registration at “getmusic.com,” and a limit of 2 CDs per household. The commercial ends on a very dark frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0aa3955c447a40b0006a107487feb08191bdbb13080dc1381a",
+    "usage": {
+      "input_tokens": 5814,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 832,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 6646
+    }
+  },
+  "duration_seconds": 21.026,
+  "created_at": "2026-05-22T15:22:04Z",
+  "error": null
+}

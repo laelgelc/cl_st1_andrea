@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_2010_101",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_101",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_101/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_101.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0002.jpg",
+      "timestamp_seconds": 2.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0003.jpg",
+      "timestamp_seconds": 7.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0004.jpg",
+      "timestamp_seconds": 9.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0005.jpg",
+      "timestamp_seconds": 13.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0006.jpg",
+      "timestamp_seconds": 14.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0007.jpg",
+      "timestamp_seconds": 15.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0008.jpg",
+      "timestamp_seconds": 18.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0009.jpg",
+      "timestamp_seconds": 20.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0010.jpg",
+      "timestamp_seconds": 25.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0011.jpg",
+      "timestamp_seconds": 29.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0012.jpg",
+      "timestamp_seconds": 34.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0013.jpg",
+      "timestamp_seconds": 38.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0014.jpg",
+      "timestamp_seconds": 40.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0015.jpg",
+      "timestamp_seconds": 44.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0016.jpg",
+      "timestamp_seconds": 46.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0017.jpg",
+      "timestamp_seconds": 49.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0018.jpg",
+      "timestamp_seconds": 51.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0019.jpg",
+      "timestamp_seconds": 53.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0020.jpg",
+      "timestamp_seconds": 54.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_101/frame_0021.jpg",
+      "timestamp_seconds": 58.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_101.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_101.json",
+    "response_text": "The commercial begins at an outdoor public swimming pool on a sunny day. People are on lounge chairs and around the pool. In the foreground, a woman in a dark one-piece swimsuit helps a young girl with a turquoise towel. Other children and adults are visible nearby, with pool furniture, umbrellas, grass, and trees in the background.\n\nThe next shot moves closer to the same pair. The woman adjusts or holds the towel around the girl, who is wearing a colorful striped swimsuit. Behind them, a woman reclines on a lounge chair reading, and the blue pool fills much of the background.\n\nThe scene then cuts to a wide, centered view across the swimming pool. Large on-screen text appears over the water: “Otezla (apremilast) 30mg tablets by prescription only.” Smaller white medical-use text appears near the bottom of the frame, describing patients for whom treatment may be appropriate.\n\nThe setting changes to a colorful amusement-park or boardwalk game area. A large sign over a booth reads “FUN ’N GAMES.” People are playing games at booths. Text across the game stall reads, “not an injection or a cream.” Small medical/legal text continues along the bottom.\n\nA closer view shows four adults around a tabletop game resembling foosball or a similar arcade-style game. A small Otezla logo/watermark appears in the lower-right corner. The group is smiling and engaged with the game, with stuffed prizes and bright booth colors in the background.\n\nThe shot focuses on two players: a young woman in a striped shirt and a young man in a light gray shirt. They stand side by side at the game table. Other players and colorful game displays are visible behind them.\n\nText appears over the amusement-park scene: “achieve 75% clearer skin after just 4 months,” with small text below stating “Individual results may vary.” The man and woman continue playing and reacting to the game.\n\nA later game shot includes the phrase “little spin” in white script on the left side. The players lean forward as if turning handles or reacting to the table game. A dartboard-style attraction is visible in the background.\n\nDuring a dissolve, the amusement-park imagery overlaps with text reading “little spin big comeback.” The players remain faintly visible as the scene transitions.\n\nThe commercial returns to the pool area. Several children walk near the pool, some wrapped in towels and some in swimsuits. The Otezla logo remains in the lower-right corner. Lounge chairs and the large pool are visible behind them.\n\nThe setting then changes to a boardwalk or pier by the water. Groups of people walk along wooden planks. A colorful umbrella shades a stand, curved streetlamps line the pier, and the ocean or a large body of water is visible to the right. The Otezla logo is still in the lower-right corner.\n\nThe next scene is indoors, in a bright room with large windows. A woman in a dark swimsuit holds a small child near the window. They look outward toward a green yard or garden.\n\nThe scene cuts outside to a driveway beside a house. A man carries a stack of colorful pool floats or bodyboards near the back of a dark vehicle. A boy in a yellow shirt stands nearby. The Otezla logo remains at bottom right.\n\nA dissolve overlaps this driveway scene with the next imagery, briefly showing the man and boy semi-transparently as the transition occurs.\n\nA close, partially overlaid shot shows a woman’s face as she appears to put on or adjust swim goggles. The image is soft and transitional, with previous/next visuals faintly layered.\n\nThe boy in the yellow shirt is then shown walking toward or through a doorway along the side of the house. The vehicle with colorful items on its roof is visible outside in the background. Small text at the bottom reads “See our ad in Country Living.”\n\nAnother dissolve shows overlapping imagery of the doorway scene and the woman near the child, continuing the transition into a home setting.\n\nThe camera cuts to a bright white kitchen or dining area. White shelves, plates, glasses, jars, and a blue drinking glass are visible. A small child’s arm or hand appears on the right side near the counter, but the person is mostly out of frame.\n\nThe next shot is a close-up of the roof of the dark vehicle. Colorful boards or floats are strapped to the roof rack, and part of a black-white-orange ball or helmet-like object is visible beside them. The house exterior appears blurred in the background.\n\nA dissolve begins over the roof-rack image, adding small legal and pricing text along the bottom and a faint view of someone near the vehicle.\n\nThe final frame shows a large white garage door on the side of a house. A large Otezla advertisement is visually composited onto the garage door, reading: “Otezla show more of you” and “Ask your doctor about Otezla.” Along the bottom, additional text reads “Learn about a $0 co-pay at otezla.com or call 1-844-4OTEZLA” and a note about the list price for a 30-day supply and insurance coverage. A small Celgene logo appears on the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0352c0f4b79cfb4d006a107904bd18819da834e2903b2752bf",
+    "usage": {
+      "input_tokens": 4102,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1210,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 5312
+    }
+  },
+  "duration_seconds": 32.321,
+  "created_at": "2026-05-22T15:41:24Z",
+  "error": null
+}

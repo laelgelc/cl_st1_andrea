@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1960_94",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_94",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_94/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_94.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_94/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_94/frame_0002.jpg",
+      "timestamp_seconds": 7.113,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_94/frame_0003.jpg",
+      "timestamp_seconds": 14.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_94/frame_0004.jpg",
+      "timestamp_seconds": 59.041,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_94.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_94.json",
+    "response_text": "The sampled frames show the commercial moving from a technical slate to close-ups of a record player and then to a final product display.\n\n1. **Opening frame (0.000s)**  \n   The screen is black with white overlaid text reading **“Not For Broadcast”** near the upper left/center area. A white timecode appears near the bottom: **“01:00:00:00.”** No product or scene is visible yet.\n\n2. **Record player close-up (7.113s)**  \n   The scene cuts to a close-up of a turntable. A black vinyl record with a red center label is spinning or positioned on the platter. A hand is holding or guiding the tonearm/cartridge assembly toward the record. The tonearm mechanism and spindle are visible. The background appears to be a wood-toned surface. The “Not For Broadcast” watermark and timecode remain overlaid.\n\n3. **Tonearm on/near the record (14.663s)**  \n   A closer side view shows the tonearm and cartridge positioned at the edge of or on the record. The record’s black surface and red label are still visible. The spindle and parts of the turntable mechanism are in view. The hand is no longer visible. The same “Not For Broadcast” watermark and timecode remain on screen.\n\n4. **Final product shot (59.041s)**  \n   The scene changes to a room setting with a wooden console cabinet centered in the frame. The cabinet has speaker panels on the left and right and wooden doors in the middle, suggesting a home audio or stereo console. A vase of flowers sits on top, and a framed landscape picture hangs behind it. Large white stylized text **“ZENITH”** appears above the console. At the bottom, a slogan is visible: **“The quality goes in before the name goes on”** though part of it is overlapped by the timecode. To the right of the console is a chair, with curtains behind it. The “Not For Broadcast” watermark and timecode remain visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0818e9a2bdcd852c006a106e35fe94819fb5459797aaccde79",
+    "usage": {
+      "input_tokens": 889,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 558,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1447
+    }
+  },
+  "duration_seconds": 11.661,
+  "created_at": "2026-05-22T14:54:57Z",
+  "error": null
+}

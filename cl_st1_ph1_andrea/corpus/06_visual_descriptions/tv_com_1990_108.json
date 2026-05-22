@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1990_108",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_108",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_108/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_108.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0002.jpg",
+      "timestamp_seconds": 4.027,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0003.jpg",
+      "timestamp_seconds": 7.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0004.jpg",
+      "timestamp_seconds": 10.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0005.jpg",
+      "timestamp_seconds": 13.637,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0006.jpg",
+      "timestamp_seconds": 16.072,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0007.jpg",
+      "timestamp_seconds": 17.307,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0008.jpg",
+      "timestamp_seconds": 18.341,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0009.jpg",
+      "timestamp_seconds": 23.513,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0010.jpg",
+      "timestamp_seconds": 27.083,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_108/frame_0011.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_108.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_108.json",
+    "response_text": "The commercial opens on a very dark, nearly black screen with faint texture and a small “90’s Commercials” style watermark/logo at the bottom right.\n\nIt then cuts to a close-up of a woman lying in bed among floral pillows. She is wearing a striped top and has her mouth open wide, visually suggesting a loud reaction such as a scream, laugh, or exclamation, though no audio content is available from the frames.\n\nThe scene changes to a bright bathroom. A white toilet is shown frontally against pale tiled walls, with a toilet paper holder visible on the wall and soft light coming from the side. The bathroom setting is clean, bright, and mostly white or cream-colored.\n\nA product package is then shown in close-up. The packaging prominently displays the text “CLOROX BLEACH” in large letters. The box is mainly green with a red/orange and white logo area and an image of a toilet bowl on the lower portion. Smaller text appears on the package, including wording that looks like “Bleach in Every Flush,” though the smaller text is somewhat blurred.\n\nNext, a hand pours a clear liquid from a Clorox-labeled container into a small white measuring cup or cap. The container is tilted diagonally, and the liquid stream is clearly visible.\n\nThe commercial returns to the bathroom. A hand holds a small white Clorox-branded item near the toilet tank area. The item has the same red/orange and white Clorox logo design. The tiled wall remains in the background.\n\nA close-up of the side of the toilet tank follows, focusing on a shiny chrome flush handle. The toilet is white and glossy, with the pale tiled wall behind it.\n\nAnother shot shows the toilet from the front/side with the tank and bowl visible. A dark band or ring-like line is visible around the upper bowl/seat area, though its exact function is unclear from the frame alone.\n\nThe product package is shown again in close-up, repeating the “CLOROX BLEACH” branding and the green box with toilet-bowl imagery.\n\nNear the end, the bathroom toilet is shown with the seat and lid raised. The Clorox product package stands on the floor or low surface to the left of the toilet. The toilet bowl is centered, clean, and brightly lit, with the same tiled wall, toilet paper holder, and light-colored bathroom background.\n\nThe final frame returns to a very dark screen with the same small bottom-right watermark/logo visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0246063e2cd37858006a10743560e4819cab2283fbfe9b527e",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 957,
+      "output_tokens_details": {
+        "reasoning_tokens": 450
+      },
+      "total_tokens": 3807
+    }
+  },
+  "duration_seconds": 23.065,
+  "created_at": "2026-05-22T15:20:44Z",
+  "error": null
+}

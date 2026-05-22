@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1960_8",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_8",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_8/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_8.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0002.jpg",
+      "timestamp_seconds": 3.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0003.jpg",
+      "timestamp_seconds": 5.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0004.jpg",
+      "timestamp_seconds": 6.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0005.jpg",
+      "timestamp_seconds": 9.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0006.jpg",
+      "timestamp_seconds": 12.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0007.jpg",
+      "timestamp_seconds": 16.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0008.jpg",
+      "timestamp_seconds": 21.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_8/frame_0009.jpg",
+      "timestamp_seconds": 27.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_8.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_8.json",
+    "response_text": "The commercial opens in a warmly lit, old-fashioned interior resembling a study or parlor. A uniformed man, possibly a hotel or domestic staff member, stands in the background, while a dark silhouetted figure occupies the foreground. The room contains framed pictures, a mantelpiece, and furniture, giving it a formal, period-style atmosphere. A “Nostalgic X’er” watermark appears at the lower right throughout the frames.\n\nThe scene then cuts to a close-up of packaged dessert products on a tray. Several tubs or cups are visible with labels reading “Cool ’n Creamy,” including a chocolate-flavored container in the foreground. The visible label includes wording such as “Instant Chocolate Flavored Pudding.” A hand moves near the foreground container.\n\nNext, the commercial shows two men standing close together in the same interior. One man wears a dark uniform with light trim and sleeve stripes; he has a neat, formal appearance. The other man wears a tan suit with a vest, white shirt, and tie. The uniformed man looks toward the suited man, while the suited man looks downward or to the side.\n\nA wider shot reveals the men standing at a table or desk covered with serving items. On the table are a metal tray, dessert containers, bowls, spoons, and other decorative objects. The suited man appears to handle or present the dessert items while the uniformed man watches.\n\nThe commercial cuts to a close-up of dessert in small clear cups. A spoon is inserted into a chocolate pudding cup in the foreground. Other cups, including a lighter-colored pudding, sit nearby on the tray. The texture appears creamy and smooth.\n\nThe men are then shown again at the table. The suited man holds or gestures with a spoon over the tray, while the uniformed man looks down toward the desserts. The setting remains the same formal room with mantelpiece and decorative objects in the background.\n\nA closer shot follows as the suited man moves across the frame in front of the uniformed man. The uniformed man remains in dark clothing with visible sleeve stripes, watching the action.\n\nThe suited man is then shown holding a small dessert cup and spoon. He raises the spoon toward his mouth and appears to taste the pudding. The uniformed man is partly visible at the edge of the frame.\n\nThe final frame is a product display shot. A metal tray holds multiple “Cool ’n Creamy” containers and prepared dessert cups, including chocolate and a lighter-colored variety. Large white text over the product display reads: “Too good to be pudding.” The product packaging and prepared puddings are centered as the closing visual emphasis."
+  },
+  "api_metadata": {
+    "response_id": "resp_09cfec81aaccca14006a106cf2275c8190a63f9dada22727bf",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 640,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2474
+    }
+  },
+  "duration_seconds": 16.318,
+  "created_at": "2026-05-22T14:49:38Z",
+  "error": null
+}

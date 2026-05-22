@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1970_120",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_120",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_120/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_120.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_120/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_120/frame_0002.jpg",
+      "timestamp_seconds": 29.029,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_120/frame_0003.jpg",
+      "timestamp_seconds": 29.349,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_120.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_120.json",
+    "response_text": "The sampled commercial sequence is very limited visually.\n\n- **Opening (0.000s):** The screen is completely black, with no visible objects, people, text, or setting.\n\n- **Near the end (29.029s):** The image cuts to a daytime city skyline with several tall office buildings. The shot appears slightly soft and has a vintage television look, with dark borders around the picture. Over the skyline, large bold white text reads: **“We hear you.”** Beneath the text is a circular logo containing a stylized bell shape.\n\n- **Final frame (29.349s):** The screen returns to black.\n\nNo people or product use are visible in the sampled frames. No dialogue, music, or voice-over can be determined from the images alone."
+  },
+  "api_metadata": {
+    "response_id": "resp_09af9bd18b3f3539006a10707b839881a1b1f37420a11c6d51",
+    "usage": {
+      "input_tokens": 700,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 999
+    }
+  },
+  "duration_seconds": 8.402,
+  "created_at": "2026-05-22T15:04:35Z",
+  "error": null
+}

@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2000_46",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_46",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_46/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_46.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0002.jpg",
+      "timestamp_seconds": 3.36,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0003.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0004.jpg",
+      "timestamp_seconds": 6.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0005.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0006.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0007.jpg",
+      "timestamp_seconds": 9.065,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0008.jpg",
+      "timestamp_seconds": 13.236,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0009.jpg",
+      "timestamp_seconds": 14.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0010.jpg",
+      "timestamp_seconds": 15.005,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0011.jpg",
+      "timestamp_seconds": 15.939,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0012.jpg",
+      "timestamp_seconds": 16.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0013.jpg",
+      "timestamp_seconds": 17.374,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0014.jpg",
+      "timestamp_seconds": 20.177,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0015.jpg",
+      "timestamp_seconds": 21.678,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0016.jpg",
+      "timestamp_seconds": 23.913,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0017.jpg",
+      "timestamp_seconds": 26.516,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_46/frame_0018.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_46.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_46.json",
+    "response_text": "The commercial begins with a nearly black frame, with no discernible objects or people visible.\n\nIt then fades into a softly lit domestic interior, apparently seen through glass or with layered reflections. A young boy in a green shirt sits at a table near a window. Around him are household objects, including a chair, plants, and a decorative object that resembles shredded paper or a nest-like arrangement. The imagery has a hazy, double-exposed look, with reflections and overlapping shots.\n\nThe boy is shown closer, seated at the table and looking downward as if focused on something in front of him. A white bird, likely a duck or goose, appears nearby in the same interior setting. The bird is shown in close-up, its long pale neck and beak prominent. The boy and the bird are repeatedly juxtaposed through soft crossfades.\n\nA trading card is shown briefly. It has the “Pokémon” logo at the top and an illustration labeled “Pichu.” The card is held or positioned next to the white bird, creating a visual association between the animal and the Pokémon card. The boy’s face appears in close-up behind or beside the bird during the dissolves, looking calm and attentive.\n\nThe sequence continues with the boy’s face in a bright, soft-focus close-up. He appears to be watching the bird or something on the table. The editing remains dreamlike, with overlapping images of the boy, the white bird, bowls, and tabletop objects.\n\nThe bird is then shown at a blue feeding bowl, appearing to eat. Another blue bowl and small objects are visible on the table or surface nearby. Several shots show the bird opening its beak and moving close to the camera, while the boy’s face remains partially visible through dissolves. At moments, more than one white bird seems to appear, though the layered editing makes it unclear whether there are multiple birds or repeated superimposed shots of the same bird.\n\nThe bird and the boy appear together near a cluttered indoor area. In one shot the boy, still in a green shirt, is seen from behind or side-on, with the bird close to him. The environment includes a window or counter area and soft warm light.\n\nThe product is then introduced visually: a yellow Game Boy Color handheld console appears in front of a game package. The game box shows the “Pokémon” logo and appears to be for a Pokémon game. The product is placed among household or garden-like objects, including flowers and a potted plant. Small white text appears at the bottom; it reads, “Game and Game Boy sold separately.” The box and handheld are shown in a bright, staged product shot, with the “GAME BOY” branding clearly visible vertically on the packaging.\n\nAnother product shot shows the Game Boy box alone at a slight angle, still surrounded by flowers and plants. The same bottom disclaimer text remains visible, though partly softened by the image quality.\n\nNear the end, the boy is shown standing indoors beside the white bird, turning his head back toward the camera. Curtains and a bright window or light source are visible behind him. There is small text near the bottom that appears to be a website address, but it is too blurred to read with certainty.\n\nThe final frame is a close-up of the white bird facing the camera. Its pale head, yellowish beak, and dark eyes are clearly visible, while the background is blurred and greenish. The commercial ends visually with the bird as the central focus."
+  },
+  "api_metadata": {
+    "response_id": "resp_08c4100d3b773f89006a10755b3b308196beb218a58aeb7399",
+    "usage": {
+      "input_tokens": 4579,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 797,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 5376
+    }
+  },
+  "duration_seconds": 26.03,
+  "created_at": "2026-05-22T15:25:41Z",
+  "error": null
+}

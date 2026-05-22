@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1960_48",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_48",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_48/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_48.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0002.jpg",
+      "timestamp_seconds": 2.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0003.jpg",
+      "timestamp_seconds": 17.974,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0004.jpg",
+      "timestamp_seconds": 21.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0005.jpg",
+      "timestamp_seconds": 36.993,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0006.jpg",
+      "timestamp_seconds": 43.633,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0007.jpg",
+      "timestamp_seconds": 52.742,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_48/frame_0008.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_48.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_48.json",
+    "response_text": "The commercial is presented in black and white and unfolds around Texaco branding, a tanker ship, and a gasoline pump.\n\n1. **Opening darkness**: The first frame is almost completely dark, with no clearly discernible objects or people visible.\n\n2. **Texaco tanker on water**: The image cuts to a large tanker ship on a body of water. The ship is shown from above and to the side, with the word **“TEXACO”** visible on the hull. The water surface and the ship’s reflection are visible.\n\n3. **Model ship close-up**: The scene changes to a close-up of a model tanker being held in someone’s hands. Only part of the person is visible: a man in a dark suit, white shirt, and tie. One hand holds the model while the other hand points to or touches an area on the ship’s deck. The model includes small deck structures, railings, and a visible funnel.\n\n4. **Presenter holding the model**: The camera cuts wider to show the man holding the model ship horizontally in front of him. He is seated or standing behind a desk-like surface in an interior setting with shelves and books behind him. He wears a suit and tie and looks down toward the model.\n\n5. **Gasoline pump product shot**: A standalone gasoline pump appears against a plain background. A hose and nozzle hang on the left side. The pump front shows the product label **“Sky Chief Su-preme”**, the word **“GASOLINE”**, and **“PETROX”**. A star-like Texaco emblem is also visible on the label.\n\n6. **Close-up of the man**: The scene returns to the man in the suit. He is shown from the chest up, smiling and looking downward, likely toward something on the desk or in his hands. Bookshelves remain visible behind him.\n\n7. **Man at desk with Texaco logo**: A wider shot shows the man seated behind a desk with the model tanker in front of him. On the wall to his left is a large circular **TEXACO** logo with a star design. The background includes shelves with books and decorative objects.\n\n8. **Final model presentation**: In the final frame, the man holds the model tanker up with both hands, presenting it toward the camera. The tanker’s hull again displays **“TEXACO”**, and the large Texaco star logo remains visible on the wall behind him. The man faces forward as if addressing the viewer, but no dialogue or audio content is visible in the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b89447340cbfb1c006a106da38e3081a28b3930b12f6d9d85",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 786,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 2895
+    }
+  },
+  "duration_seconds": 22.977,
+  "created_at": "2026-05-22T14:52:42Z",
+  "error": null
+}

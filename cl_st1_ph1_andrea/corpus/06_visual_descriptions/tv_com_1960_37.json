@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1960_37",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_37",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_37/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_37.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0002.jpg",
+      "timestamp_seconds": 0.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0003.jpg",
+      "timestamp_seconds": 4.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0004.jpg",
+      "timestamp_seconds": 9.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0005.jpg",
+      "timestamp_seconds": 12.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0006.jpg",
+      "timestamp_seconds": 13.824,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0007.jpg",
+      "timestamp_seconds": 17.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0008.jpg",
+      "timestamp_seconds": 19.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0009.jpg",
+      "timestamp_seconds": 22.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0010.jpg",
+      "timestamp_seconds": 24.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0011.jpg",
+      "timestamp_seconds": 39.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0012.jpg",
+      "timestamp_seconds": 42.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0013.jpg",
+      "timestamp_seconds": 47.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0014.jpg",
+      "timestamp_seconds": 52.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0015.jpg",
+      "timestamp_seconds": 53.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0016.jpg",
+      "timestamp_seconds": 54.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_37/frame_0017.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_37.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_37.json",
+    "response_text": "The commercial begins with a dark red-tinted opening frame. A small white “Nostalgic X’er” watermark appears at the lower right and remains visible throughout the sampled frames.\n\nIt then cuts to a theatrical-looking set with decorative wrought-iron structures. A man wearing a hat, patterned shirt, and light-colored pants stands near a small table or cart, with a tall dark rectangular object behind him. In the next shot, the same or a similar man is shown closer, bending near a large horn- or gramophone-like object, with a hanging decorative element visible at the side. The imagery then dissolves into a pale illustrated background with large, semi-transparent letters across it; the exact word is partly obscured by the transition.\n\nThe first product presentation shows a box labeled “SNACK! Whistles.” The box image features many small ring-shaped snacks piled in a container. A close-up follows: two hands hold a single ring-shaped snack upright, showing its circular hole. Another shot shows a woman in close-up looking at or admiring a small snack held near her face. The sequence then moves through soft dissolves and close-ups of snack pieces on plates or serving surfaces; some details are blurred by the overlay effect. A tight close-up of the “SNACK! Whistles” package fills most of the frame.\n\nA transition returns to the pale illustrated background with large translucent lettering and simple line drawings, including a figure in a hat and outdoor-looking elements. The commercial then introduces a second product: a box labeled “SNACK! BUGLES,” with an image of cone-shaped snacks on the package.\n\nA close-up shows a man holding a small cone-shaped snack near his mouth. Another shot shows a serving tray covered with snacks, with a glass Coca-Cola bottle standing in the middle and dishes or plates around it. A hand is then shown reaching into or opening the top of a “SNACK! BUGLES” box, while another hand holds a cone-shaped snack in the foreground. This is followed by a close-up of the “SNACK! BUGLES” box front.\n\nThe final frame is a product-and-text layout: the Bugles box appears on the left, and large text on the right reads, “suddenly... snacks are in great shape!”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0615332e3066bc7c006a106d6d4130819db78d302cad8683a9",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 963,
+      "output_tokens_details": {
+        "reasoning_tokens": 498
+      },
+      "total_tokens": 4309
+    }
+  },
+  "duration_seconds": 25.336,
+  "created_at": "2026-05-22T14:51:50Z",
+  "error": null
+}

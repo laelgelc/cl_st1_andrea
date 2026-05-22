@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2020_112",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_112",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_112/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_112.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0002.jpg",
+      "timestamp_seconds": 1.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0003.jpg",
+      "timestamp_seconds": 2.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0004.jpg",
+      "timestamp_seconds": 4.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0005.jpg",
+      "timestamp_seconds": 5.373,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0006.jpg",
+      "timestamp_seconds": 7.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0007.jpg",
+      "timestamp_seconds": 8.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0008.jpg",
+      "timestamp_seconds": 10.473,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0009.jpg",
+      "timestamp_seconds": 10.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0010.jpg",
+      "timestamp_seconds": 10.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0011.jpg",
+      "timestamp_seconds": 11.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_112/frame_0012.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_112.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_112.json",
+    "response_text": "The commercial opens on a city sidewalk in daylight. White foam or snow-like slush covers parts of the pavement and street edges. A red upholstered armchair is positioned on the sidewalk and appears to be moving forward through the slush, throwing up sprays on both sides as it travels along the building frontage.\n\nThe scene cuts to a close view of a man running toward the camera. He appears to be an adult male wearing a white hoodie, dark shorts, and later-visible white wireless earbuds. The street behind him is wet and mostly empty, with tall buildings and trees in the background.\n\nThe armchair is shown again moving along the sidewalk, centered in the frame, with slush spraying outward as it passes storefronts and building facades. The lighting is bright, with strong glare and reflections from the wet ground.\n\nThe man is then seen from behind or side-on, turning his head and arm as if checking behind him. Farther down the sidewalk, the red chair is visible in the distance amid scattered foam.\n\nA lower, wider street-level shot shows the red chair continuing along the sidewalk past a glass doorway and a short bollard. Foam is piled along the curb and building edges.\n\nThe man runs through a crosswalk at an intersection. A pedestrian signal shows a green walking figure. Behind him, the red chair or a similar red object moves through the intersection area, again disturbing the white slush and creating spray. Parked cars and modern building fronts are visible around the intersection.\n\nA close-up then shows a smartwatch on the man’s wrist. The display shows workout-style metrics, including a time reading around “21:24.04,” a heart-rate figure “148,” and other numerical statistics, though not all small text is fully legible.\n\nThe man continues running while looking down at his watch. He raises his wrist toward his face, then lowers it and keeps moving. His expression appears strained or focused. The shot becomes tighter and more motion-blurred as he runs past the camera, with the white earbuds visible.\n\nThe final shot is a wide city-street view lined with tall buildings. The sidewalk still has patches of white slush. The red armchair sits near the entrance of a large stone building. Over the scene, a white Apple logo and the word “WATCH” appear centered on screen, indicating the product branding."
+  },
+  "api_metadata": {
+    "response_id": "resp_0233b4d3192f56d7006a107baf6874819f8caa55b396bb0040",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 658,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 3059
+    }
+  },
+  "duration_seconds": 20.694,
+  "created_at": "2026-05-22T15:52:35Z",
+  "error": null
+}

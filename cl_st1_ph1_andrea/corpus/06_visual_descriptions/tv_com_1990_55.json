@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1990_55",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_55",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_55/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_55.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_55/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_55/frame_0002.jpg",
+      "timestamp_seconds": 3.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_55/frame_0003.jpg",
+      "timestamp_seconds": 9.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_55/frame_0004.jpg",
+      "timestamp_seconds": 13.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_55/frame_0005.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_55.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_55.json",
+    "response_text": "The commercial begins with a very dark, indistinct image. Little visual detail is visible in the first sampled frame, apart from faint shapes and low blue-black lighting.\n\nThe next visible scene shows a softly lit interior with a layered or reflective composition. On the left, there is a close side profile of an adult’s face, partly in shadow. In the background, near a bright window, two children or young people appear to be standing or sitting close together. The image has a hazy, warm, slightly overexposed look, making details unclear.\n\nThe commercial then cuts to a product display. Multiple boxes and bottles of Dimetapp-branded products are arranged together in the foreground. The packaging uses prominent purple, white, red, yellow, and blue areas. Several product names are visible, including “Dimetapp,” with different variants shown. Small white text at the bottom right reads “Use As Directed.” The background remains softly blurred, with a bright light flare on the right side.\n\nNext, a large “Dimetapp” logo appears across the center of the screen, overlaid on a close-up image of a young child’s face. A purple rectangular banner beneath the logo contains the text “DOCTORS RECOMMEND DIMETAPP.” The child in the background is softly lit and partially obscured by the text overlay.\n\nThe final frame shows a close-up of a young boy smiling. He is turned slightly to the side and appears warmly lit. He wears a light-colored top with a blue collar and patterned details. The background is out of focus, with indoor colors and shapes suggesting a home or playroom setting, but specific objects are not clearly identifiable."
+  },
+  "api_metadata": {
+    "response_id": "resp_0063bf49db6fd392006a10734d938881a3a46139f1bd84295c",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 437,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 1805
+    }
+  },
+  "duration_seconds": 11.85,
+  "created_at": "2026-05-22T15:16:41Z",
+  "error": null
+}

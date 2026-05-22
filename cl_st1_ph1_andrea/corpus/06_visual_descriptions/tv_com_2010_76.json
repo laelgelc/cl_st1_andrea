@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_76",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_76",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_76/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_76.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0002.jpg",
+      "timestamp_seconds": 14.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0003.jpg",
+      "timestamp_seconds": 17.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0004.jpg",
+      "timestamp_seconds": 21.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0005.jpg",
+      "timestamp_seconds": 25.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0006.jpg",
+      "timestamp_seconds": 27.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0007.jpg",
+      "timestamp_seconds": 31.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0008.jpg",
+      "timestamp_seconds": 34.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0009.jpg",
+      "timestamp_seconds": 36.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0010.jpg",
+      "timestamp_seconds": 39.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0011.jpg",
+      "timestamp_seconds": 39.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0012.jpg",
+      "timestamp_seconds": 40.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0013.jpg",
+      "timestamp_seconds": 43.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0014.jpg",
+      "timestamp_seconds": 48.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0015.jpg",
+      "timestamp_seconds": 51.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0016.jpg",
+      "timestamp_seconds": 54.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0017.jpg",
+      "timestamp_seconds": 60.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0018.jpg",
+      "timestamp_seconds": 61.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0019.jpg",
+      "timestamp_seconds": 63.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0020.jpg",
+      "timestamp_seconds": 64.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0021.jpg",
+      "timestamp_seconds": 65.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0022.jpg",
+      "timestamp_seconds": 67.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0023.jpg",
+      "timestamp_seconds": 68.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0024.jpg",
+      "timestamp_seconds": 72.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0025.jpg",
+      "timestamp_seconds": 77.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0026.jpg",
+      "timestamp_seconds": 89.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0027.jpg",
+      "timestamp_seconds": 93.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0028.jpg",
+      "timestamp_seconds": 100.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0029.jpg",
+      "timestamp_seconds": 105.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_76/frame_0030.jpg",
+      "timestamp_seconds": 105.156,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_76.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_76.json",
+    "response_text": "The sampled frames show a sequence with several abrupt visual shifts and black transitions.\n\n1. **Opening product image**\n   - The clip begins with a close-up of four chocolate wafer bars on a solid bright red background. The bars have the **“Kit Kat”** name embossed on them.\n   - The image then cuts to black.\n\n2. **Dark, theatrical/fashion-like sequence**\n   - A dimly lit close-up shows a young man looking downward over a curved foreground object; the background is very dark.\n   - The scene changes to a dark room with a blonde woman in a red-and-black dress, seen with mirror-like reflections around her.\n   - An older man with long white hair, a white beard, and small glasses is shown in close-up, looking downward in concentration.\n   - Another very dark frame follows, with only faint shapes visible.\n   - A woman in a black strappy dress appears in a mirrored composition, with multiple reflections of her on either side.\n   - Two women in black outfits with white collars and cuffs pour liquid from white pitchers or teapots over a curved white surface.\n   - There is another very dark shot with two barely visible figures.\n   - Close-ups of chandeliers appear: first a warm crystal chandelier, then a blue-tinted chandelier or candelabra-like fixture.\n   - A woman in a dark outfit arches backward dramatically against a black background.\n   - A black screen then displays colorful reversed or mirrored text resembling the word **“WRONG”** in pink and blue.\n\n3. **Bright outdoor/suburban sequence**\n   - The setting changes abruptly to daylight outdoors. Several older adults stand near a long table covered with items, possibly at a garden or outdoor event.\n   - A woman is shown smiling or laughing while seated behind the windshield of a vehicle.\n   - A younger woman and man walk together outside what appears to be a garden or home décor store; statues, plants, and large pots are visible around them.\n   - An older man drives or sits on a yellow forklift in an industrial/storage setting.\n   - A suburban lawn scene shows a man pushing a lawn mower in front of houses and hedges.\n   - A closer shot shows the same or another man standing outdoors near the lawn, with sunlight and greenery behind him.\n\n4. **Home interior sequence**\n   - A woman in business attire enters through a front door carrying a bag.\n   - Inside a living room, a woman in a dark dress and high heels stands near another woman wearing a pink robe. A large dog sits on an ottoman or couch to the left. The business-dressed woman gestures toward the robe-wearing woman.\n   - A close-up follows of the business-dressed woman near the doorway, wearing glasses on top of her head and a chunky necklace.\n\n5. **Website/profile screen**\n   - A computer or web page is shown on a white background. The visible branding reads **“Avvo.”**\n   - The page shows a profile for **“Staycie Renee Sena”** with an **“Avvo Rating” of 10**, a client rating with stars, and a reviews section. Smaller text is present but not fully legible in the frame.\n\n6. **Office and detergent product sequence**\n   - After a black transition, the scene moves to a fluorescent-lit office with cubicles.\n   - A man with glasses is shown behind a cubicle wall holding a cup near his mouth.\n   - A wider office shot shows multiple cubicles and employees. One seated person appears reclined or leaning back while holding a bright green object.\n   - A product shot appears: a bottle of **Gain** detergent with a green cap, over a blurred office background. Large on-screen text reads **“PLANT-BASED DETERGENT*.”**\n   - The product shot expands visually with orange fruit and white/orange blossoms around the bottle. Text still reads **“PLANT-BASED DETERGENT*”** and also **“SERIOUSLY GOOD SCENT.”**\n   - The sequence returns to the office cubicles, showing the reclined seated worker holding the green object while the man with glasses stands behind a cubicle wall nearby."
+  },
+  "api_metadata": {
+    "response_id": "resp_03f78b38347433f4006a107879d2508197819ed8e33f8ec359",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1374,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 7177
+    }
+  },
+  "duration_seconds": 35.672,
+  "created_at": "2026-05-22T15:39:09Z",
+  "error": null
+}

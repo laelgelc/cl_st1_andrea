@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2010_74",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_74",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_74/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_74.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0002.jpg",
+      "timestamp_seconds": 0.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0003.jpg",
+      "timestamp_seconds": 4.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0004.jpg",
+      "timestamp_seconds": 6.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0005.jpg",
+      "timestamp_seconds": 7.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0006.jpg",
+      "timestamp_seconds": 8.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0007.jpg",
+      "timestamp_seconds": 12.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0008.jpg",
+      "timestamp_seconds": 13.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0009.jpg",
+      "timestamp_seconds": 15.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0010.jpg",
+      "timestamp_seconds": 16.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0011.jpg",
+      "timestamp_seconds": 17.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0012.jpg",
+      "timestamp_seconds": 18.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0013.jpg",
+      "timestamp_seconds": 23.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0014.jpg",
+      "timestamp_seconds": 23.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0015.jpg",
+      "timestamp_seconds": 23.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0016.jpg",
+      "timestamp_seconds": 24.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0017.jpg",
+      "timestamp_seconds": 25.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0018.jpg",
+      "timestamp_seconds": 26.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_74/frame_0019.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_74.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_74.json",
+    "response_text": "The commercial begins on a black frame, then cuts to a fast-food restaurant interior with red walls and large windows.\n\nA red-haired woman sits near a red wall and a rectangular fireplace or inset feature. She holds up a large sandwich/burger in one hand while facing the camera. A red drink cup with a straw is on the table beside her. Other customers are visible in the background.\n\nThe scene cuts to two men eating at a table by large windows. One man in a green polo shirt is biting into a sandwich, while another man with glasses sits beside him. Their table has red drink cups, trays, and food.\n\nThe red-haired woman reappears, still holding the sandwich and gesturing as if speaking to the viewer. She remains seated in the same restaurant setting.\n\nNext, a young man and woman sit across from each other at a small table by a window, each holding food. Large white text appears on screen reading “THE MEMER.” The man wears glasses and a light blue shirt; the woman wears a light-colored sweater. Red cups and trays are on the table. A closer shot shows the young man holding a sandwich and looking down or to the side.\n\nThe commercial then cuts to a booth with two young women eating sandwiches. Large white text reads “THE SELFIERS.” One woman wears a wide-brimmed hat, and the other has sunglasses on her head. They sit in a curved booth with trays, red drink cups, and food. A closer shot shows both women holding sandwiches. In a wider shot, one of them appears to raise a phone or small device toward herself and her friend, suggesting they are taking a photo, though the screen is not visible.\n\nThe red-haired woman appears again, holding the sandwich and gesturing with her other hand.\n\nA new restaurant table scene shows three men sitting together with food and red cups. Large white text appears over the scene reading “THE BEHIND THE TIMESER.” The men hold sandwiches or napkins and look around the table. A closer shot shows them pausing with food in hand while a restaurant worker or customer passes in the background.\n\nThe final portion shifts to stylized close-up product shots. A large sandwich is shown in extreme close-up with a golden-brown crispy patty, bun, sauce or cheese, green vegetables, and purple onion. Small white fine print appears near the bottom but is too small and blurred to read clearly. Another close-up shows a fork breaking into or lifting pieces from a crispy golden food item. Then sliced green peppers or jalapeños are shown falling or floating in slow motion around a crispy patty. A final close-up shows the sandwich filling in detail beneath the bun, with green pepper pieces, sauce/cheese, onion, and the crispy patty visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_046992ea2b7b4a75006a1078704804819787678c2b1797b7ef",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 756,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 4480
+    }
+  },
+  "duration_seconds": 19.31,
+  "created_at": "2026-05-22T15:38:43Z",
+  "error": null
+}

@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2000_61",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_61",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_61/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_61.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0002.jpg",
+      "timestamp_seconds": 4.895,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0003.jpg",
+      "timestamp_seconds": 7.697,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0004.jpg",
+      "timestamp_seconds": 10.233,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0005.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0006.jpg",
+      "timestamp_seconds": 12.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0007.jpg",
+      "timestamp_seconds": 14.571,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0008.jpg",
+      "timestamp_seconds": 16.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0009.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0010.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0011.jpg",
+      "timestamp_seconds": 21.244,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0012.jpg",
+      "timestamp_seconds": 21.444,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0013.jpg",
+      "timestamp_seconds": 21.611,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0014.jpg",
+      "timestamp_seconds": 21.945,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0015.jpg",
+      "timestamp_seconds": 23.713,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0016.jpg",
+      "timestamp_seconds": 26.783,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_61/frame_0017.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_61.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_61.json",
+    "response_text": "The commercial unfolds as a sequence of bright domestic and retail scenes connected by color, interiors, and paint-related imagery.\n\n1. **Opening outdoor scene**: Two children are outside in front of a light-colored house. One child at the left holds a blue can-shaped object, while a girl at the right blows soap bubbles with a wand. The house has steps, windows, plants, and a sunny exterior setting.\n\n2. **Interior textile/decor scene**: The shot changes to an indoor room. A large cream-colored quilt, cushion, or fabric item with a red geometric star/flower design fills much of the frame. In the background are framed pictures, a mirror, a window with sheer curtains, and a small table.\n\n3. **Older man and child in a purple room**: An elderly man wearing a dark cap and light shirt stands with a young child. He holds a small bunch of flowers or leafy stems, which the child looks at. The room has purple walls, white furniture, flowers, and bright window light.\n\n4. **Girl dancing in a colorful bedroom**: A young girl in a ballet/princess-style outfit moves around a pastel-colored bedroom. She wears a black top, white tutu, tights, and a decorative crown or floral headpiece. The room includes a bed, small table and chairs, a door, and colorful painted walls with soft gradients.\n\n5. **Close-up of the girl**: The camera cuts closer to the same girl’s face. Her curly hair and pink crown-like headpiece are visible. The warm orange-painted wall behind her creates a glowing backdrop.\n\n6. **Wider view of the bedroom**: The girl continues posing or dancing in the room. The bedroom’s painted walls combine blue, green, and orange tones, with a bed to the right and small furniture to the left.\n\n7. **Meditation-like bedroom scene**: A man sits cross-legged on a low bed or platform between pillows. He wears a sleeveless white shirt and gray pants. The room has a symmetrical arrangement, warm orange/red walls, black side tables, a hanging round light, and a framed red panel behind him.\n\n8. **Green room and doorway**: The scene changes to a green-walled room with a side table holding a flower arrangement, a chair, shoes on the floor, and a doorway leading into another room. Through the doorway, a dining table and chairs are visible. A partial figure appears at the right edge, but details are unclear.\n\n9. **Paint store interior consultation**: A smiling store employee in a gray jacket or uniform speaks with a customer. Behind them are shelves filled with binders or color/material samples. The employee wears a name badge.\n\n10. **Exterior of Sherwin-Williams store**: The commercial cuts to the outside of a Sherwin-Williams Paints store. The large sign reads “Sherwin-Williams Paints.” People walk near the entrance, and cars and landscaping are visible.\n\n11. **In-store table with samples**: Inside the store, a woman, a young child, and a store employee look at open books or color sample materials spread across a table. The table also holds tools or sample items. The view is partly blocked by an out-of-focus person in the foreground.\n\n12–13. **Foreground obstruction**: A person with long blond hair passes close to the camera, temporarily obscuring the consultation scene. Through gaps, shelves and seated people are still visible in the background.\n\n14. **Consultation clearer again**: The woman, child, and employee are again visible at the table. The employee points to or handles an open sample book, while the woman and child look on. Rows of sample books or binders fill the background shelves.\n\n15. **Painted mural/detail**: A close-up shows a hand near a painted wall or mural featuring stylized castle-like shapes with orange roofs against a soft blue-green background. The image suggests a decorative wall-painting or children’s-room mural.\n\n16. **Final exterior with contact text**: The Sherwin-Williams Paints store exterior appears again, now with overlaid white text. The text reads:  \n   “For a store near you:  \n   1-800-4-SHERWIN  \n   www.sherwin-williams.com”\n\n17. **Final frame**: The same store exterior remains on screen with the contact information still displayed. People are visible near the storefront, with a lawn and hedges in front and a colorful sky above."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f2499e1a41c88c6006a1075bc32408193a21b2cb104e76bbc",
+    "usage": {
+      "input_tokens": 4655,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1354,
+      "output_tokens_details": {
+        "reasoning_tokens": 430
+      },
+      "total_tokens": 6009
+    }
+  },
+  "duration_seconds": 36.78,
+  "created_at": "2026-05-22T15:27:28Z",
+  "error": null
+}

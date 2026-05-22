@@ -1,0 +1,242 @@
+{
+  "commercial_id": "tv_com_1980_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0002.jpg",
+      "timestamp_seconds": 1.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0003.jpg",
+      "timestamp_seconds": 2.592,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0004.jpg",
+      "timestamp_seconds": 4.227,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0005.jpg",
+      "timestamp_seconds": 5.512,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0006.jpg",
+      "timestamp_seconds": 5.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0007.jpg",
+      "timestamp_seconds": 6.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0008.jpg",
+      "timestamp_seconds": 8.899,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0009.jpg",
+      "timestamp_seconds": 9.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0010.jpg",
+      "timestamp_seconds": 10.734,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0011.jpg",
+      "timestamp_seconds": 10.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0012.jpg",
+      "timestamp_seconds": 11.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0013.jpg",
+      "timestamp_seconds": 11.151,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0014.jpg",
+      "timestamp_seconds": 11.935,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0015.jpg",
+      "timestamp_seconds": 14.07,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0016.jpg",
+      "timestamp_seconds": 16.022,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0017.jpg",
+      "timestamp_seconds": 16.439,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0018.jpg",
+      "timestamp_seconds": 16.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0019.jpg",
+      "timestamp_seconds": 17.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0020.jpg",
+      "timestamp_seconds": 18.158,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0021.jpg",
+      "timestamp_seconds": 18.558,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0022.jpg",
+      "timestamp_seconds": 21.861,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0023.jpg",
+      "timestamp_seconds": 22.796,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0024.jpg",
+      "timestamp_seconds": 23.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0025.jpg",
+      "timestamp_seconds": 25.265,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1980_43/frame_0026.jpg",
+      "timestamp_seconds": 28.035,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 26,
+    "submitted_frame_count": 26,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_43.json",
+    "response_text": "The commercial opens with a low frontal view of a red Toyota coupe driving on a race track. White on-screen text reads “WILLOW SPRINGS RACE TRACK.” The setting appears open and desert-like, with bright sky and a paved track.\n\nThe next shots establish a pit area beside a black-and-white checkered wall. A large transporter or trailer in the background carries the text “ALL AMERICAN RACERS” and “PIT CREW.” Several crew members in white shirts, some wearing red caps, stand along the pit wall as the red car approaches and stops beside them.\n\nThe car is shown in side profile in front of the trailer. Crew members move around it. One crew member with a red cap leans near the rear of the car, while another stands with equipment. A jack and other tools are visible near the checkered wall. Close, quick shots show a crew member working near the car, a low view under the car with wheels and a jack or rolling tool, and a close-up of a wheel area being handled.\n\nThe commercial then cuts to the red Toyota from the rear as it drives away on the track. The rear badge area clearly shows “TOYOTA.” This driving shot is followed by another close-up underneath the car, where a mechanic’s hands work around mechanical components. The editing alternates between pit-service imagery and track-driving imagery.\n\nA sequence of track shots shows the red car speeding through a curve. Some frames are blurred by motion, emphasizing rapid movement. The car is seen from the rear and then from close low angles near the front wheel and side panel. The landscape remains open, with hills or low mountains in the distance and strong sunlight.\n\nBack in the pit area, a man in a white crew shirt holds a small handheld device near his face; its exact function is unclear from the frames. More close-ups show the front wheel area, the hood being raised or lowered, and the engine bay. Another shot shows the interior: a helmeted driver in a white racing suit sits strapped into the driver’s seat with a seat belt, while a crew member reaches into the car holding a cloth or paper.\n\nThe car is again shown near the pit wall, with crew members pushing or guiding it in the pit lane. A close-up inside the car shows the helmeted driver from the chest up, wearing a white racing suit with visible Toyota-related patches and a dark helmet, looking forward while holding the steering wheel.\n\nNear the end, the red Toyota is parked in front of the “ALL AMERICAN RACERS” trailer. The driver stands beside the car wearing a helmet and racing suit, while several crew members gather around. In the final frame, the crew members raise their arms in a celebratory pose around the car. Large white text at the bottom of the screen reads “TOYOTA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0269338a148a946f006a107108cb508195943b40fcee69fbce",
+    "usage": {
+      "input_tokens": 6555,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 758,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 7313
+    }
+  },
+  "duration_seconds": 16.895,
+  "created_at": "2026-05-22T15:07:05Z",
+  "error": null
+}

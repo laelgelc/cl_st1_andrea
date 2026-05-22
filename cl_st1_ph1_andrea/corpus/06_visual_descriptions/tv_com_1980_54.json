@@ -1,0 +1,249 @@
+{
+  "commercial_id": "tv_com_1980_54",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_54",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_54/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_54.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0002.jpg",
+      "timestamp_seconds": 0.306,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0003.jpg",
+      "timestamp_seconds": 2.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0004.jpg",
+      "timestamp_seconds": 3.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0005.jpg",
+      "timestamp_seconds": 4.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0006.jpg",
+      "timestamp_seconds": 5.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0007.jpg",
+      "timestamp_seconds": 6.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0008.jpg",
+      "timestamp_seconds": 7.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0009.jpg",
+      "timestamp_seconds": 8.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0010.jpg",
+      "timestamp_seconds": 9.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0011.jpg",
+      "timestamp_seconds": 10.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0012.jpg",
+      "timestamp_seconds": 11.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0013.jpg",
+      "timestamp_seconds": 12.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0014.jpg",
+      "timestamp_seconds": 12.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0015.jpg",
+      "timestamp_seconds": 12.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0016.jpg",
+      "timestamp_seconds": 15.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0017.jpg",
+      "timestamp_seconds": 15.673,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0018.jpg",
+      "timestamp_seconds": 17.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0019.jpg",
+      "timestamp_seconds": 19.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0020.jpg",
+      "timestamp_seconds": 20.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0021.jpg",
+      "timestamp_seconds": 20.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0022.jpg",
+      "timestamp_seconds": 22.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0023.jpg",
+      "timestamp_seconds": 22.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0024.jpg",
+      "timestamp_seconds": 23.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0025.jpg",
+      "timestamp_seconds": 24.206,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0026.jpg",
+      "timestamp_seconds": 26.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1980_54/frame_0027.jpg",
+      "timestamp_seconds": 30.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 27,
+    "submitted_frame_count": 27,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_54.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_54.json",
+    "response_text": "The commercial opens from black to an exterior view of a Shell gas station. A large yellow canopy with the word “Shell” is visible above gas pumps. A white or silver car is parked beside the pumps.\n\nThe camera cuts closer to the pump island and the side of the car, showing Shell-branded pumps and fuel hoses. The next shot moves inside a dark car interior, apparently a large vehicle or limousine. Four formally dressed people sit in the back: three men in suits/tuxedos and one woman in a dark outfit with a light blouse. They hold clipboards or pads, suggesting they are observing and evaluating something outside.\n\nOutside, a male gas station attendant in a red shirt and tan pants operates the pump. He is shown reaching to the pump controls, then a close-up shows the car’s fuel filler area. He inserts or handles the fuel nozzle at the side of the car. The attendant moves quickly and theatrically around the car, while the people inside watch and take notes.\n\nA low-angle shot shows the attendant leaning over the front of the car near the hood, with the Shell canopy and lights above him. Inside the car, the formally dressed observers look attentive and continue writing. Another exterior shot from under the raised hood shows the attendant at the engine area, as if checking something. A close-up inside the car shows the woman and one of the men looking toward each other.\n\nA brief product display appears: rows of gray plastic bottles with labels featuring Shell-style colors. The camera moves across the bottles rapidly, making the exact label text unclear.\n\nThe scene returns to the observers inside the car, including a close-up of one older man looking out the window. Outside, the attendant raises one arm in an exaggerated pose beside the car. From inside the vehicle, the woman is seen in profile while the attendant appears through the rear window behind her.\n\nThe observers then become more animated. A close-up shows a blue windshield squeegee or cleaning tool at the car’s fuel door area, followed by a close-up of a fuel nozzle with liquid dripping from its tip. Through the window, the attendant stands outside holding up a large rectangular item or sign, performing toward the people in the car.\n\nThe judges/observers raise score cards with large black numbers. One exterior front shot of the car shows a card above the roof reading “10 6,” suggesting overlapping or partially visible score cards. Back inside, several people lift cards overhead. Another front shot shows three score cards above the roof, each displaying “10.” In the final frame, the car is seen from the front with large score cards behind or above it; visible numbers include “10,” “10,” and “9.” A large Shell logo is centered over the grille, and bold white text across the bottom reads: “The Move Is On.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_09941b703c56a267006a107135a528819d8f3a51e803918d96",
+    "usage": {
+      "input_tokens": 6802,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 636,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 7438
+    }
+  },
+  "duration_seconds": 17.13,
+  "created_at": "2026-05-22T15:07:50Z",
+  "error": null
+}

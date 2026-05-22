@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1960_19",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_19",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_19/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_19.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_19/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_19/frame_0002.jpg",
+      "timestamp_seconds": 1.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_19/frame_0003.jpg",
+      "timestamp_seconds": 6.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_19/frame_0004.jpg",
+      "timestamp_seconds": 42.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_19/frame_0005.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_19.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_19.json",
+    "response_text": "The commercial begins with a very dark, low-contrast shot. Only parts of objects are visible, including what appears to be a small package or container with a light-colored label, but the setting and product details are not clearly discernible. The frame has a vintage, degraded look, with black borders and a “Nostalgic X’er” watermark at the lower right.\n\nIt then cuts to a bright beach setting. A man in a light blue short-sleeved shirt and shorts sits reclining in a folding beach chair. He holds a small object close to his mouth, possibly a drink or container, though it is not fully clear. Behind him, a woman in a light-colored outfit stands on the sand, holding something in her hands. The background is very bright and washed out, suggesting strong sunlight or overexposure.\n\nThe next shot moves closer to the two people. The seated man is shown in profile, while the standing woman, wearing a pale sleeveless dress, looks down toward him. She holds a small object or group of objects near his hands or face area, but the exact item is unclear from the frame. The interaction appears focused on the object she is presenting or handling.\n\nLater, the commercial shows a woman near the shoreline, with the ocean visible behind her. Her hair is dark and styled in a voluminous shape. She appears to be turning or posing, with a light, sheer white fabric or garment around her shoulders. The shot emphasizes her head, hair, and upper body against the sea background.\n\nThe final frame shifts to a product-style display. A woman is seen from behind, showing a dark, high, rounded hairstyle. To the right of her head is a tall rectangular product box with partially legible text that appears to read “Lysine Care” or similar, though the exact wording is not fully clear. An oval label or graphic appears in front of the lower part of her face or neck area, but the text is too blurred to read reliably. The background is darker and more studio-like, with curtains or vertical panels, making the product packaging and hairstyle the visual focus."
+  },
+  "api_metadata": {
+    "response_id": "resp_083b35e4fb812b59006a106d18593881938f726ea33f7a44a8",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 747,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 1825
+    }
+  },
+  "duration_seconds": 19.988,
+  "created_at": "2026-05-22T14:50:20Z",
+  "error": null
+}

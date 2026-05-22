@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_1960_9",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_9",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_9/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_9.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0002.jpg",
+      "timestamp_seconds": 1.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0003.jpg",
+      "timestamp_seconds": 4.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0004.jpg",
+      "timestamp_seconds": 6.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0005.jpg",
+      "timestamp_seconds": 10.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0006.jpg",
+      "timestamp_seconds": 11.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0007.jpg",
+      "timestamp_seconds": 12.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0008.jpg",
+      "timestamp_seconds": 16.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0009.jpg",
+      "timestamp_seconds": 18.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0010.jpg",
+      "timestamp_seconds": 19.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0011.jpg",
+      "timestamp_seconds": 22.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0012.jpg",
+      "timestamp_seconds": 25.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0013.jpg",
+      "timestamp_seconds": 26.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_9/frame_0014.jpg",
+      "timestamp_seconds": 28.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_9.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_9.json",
+    "response_text": "The commercial takes place inside a small grocery or general store, with shelves, product displays, and signs visible throughout. A white “Nostalgic X’er” watermark appears at the lower right of the frames.\n\nAt the beginning, a middle-aged male store employee in a white coat and black bow tie peers around a store shelf or display. He wears glasses low on his nose and looks toward something off-screen. The setting includes stocked shelves and boxed goods.\n\nThe scene then cuts to a tall man dressed in a Western/cowboy style: a wide-brimmed hat, vest, red shirt, neckerchief, and belt. He stands in the store near display cases and product shelves. The store interior has warm lighting and a cluttered retail layout.\n\nNext, two women are shown holding large packages of Charmin toilet tissue. One is a blonde woman in a tan coat with a scarf; the other has dark hair and wears a pink cardigan over a black-and-white striped top. Behind them is a prominent hand-lettered sign reading “PLEASE DON’T SQUEEZE THE CHARMIN.” Stacks of Charmin packages are arranged behind them as a display. Both women appear to be examining or holding the packages closely.\n\nThe cowboy-dressed man is then shown standing beside the store employee in the white coat. The employee looks up at him, while the cowboy faces forward. A pink price or promotional sign is visible above and behind them, though the smaller text is not fully legible.\n\nThe two women reappear with Charmin packages in their arms. Their expressions suggest surprise or concern as they look toward something off-screen. The Charmin display and the “PLEASE DON’T SQUEEZE THE CHARMIN” sign remain visible behind them.\n\nThe cowboy is then shown in front of the store employee, who is partly hidden behind him. The cowboy faces forward with a serious or attentive expression, while the employee peeks from behind his shoulder.\n\nA closer shot of the two women follows. Both look startled, with the dark-haired woman raising her hands slightly in a defensive or surprised gesture. The Charmin display remains in the background.\n\nThe commercial then cuts to a close-up of a Charmin package held in two hands. The package shows a baby’s face and the large brand name “Charmin.” Visible text includes “Discover Squeezably softness” near the upper left. The package is centered prominently, with the holder’s pink cardigan visible behind it.\n\nThe cowboy is shown smiling while holding or standing near a Charmin package. The background is softly focused store shelving and lighting.\n\nHe is then shown beside the store employee again, with the employee looking upward toward him. The cowboy holds a Charmin package at chest level. Store shelves and packaged goods fill the background.\n\nA wider shot shows the cowboy and the store employee standing in front of a large Charmin display. The sign behind them clearly reads “PLEASE DON’T SQUEEZE THE CHARMIN.” The blonde woman walks away or turns away at the right side of the frame.\n\nThe cowboy and the two women are then grouped together in another aisle or section of the store. The cowboy stands in the center foreground, with the blonde woman partly behind him on one side and the dark-haired woman on the other. They face forward, and store shelves are visible behind them.\n\nNear the end, the store employee is shown frontally holding a Charmin package in both hands. He stands in front of a large stacked Charmin display. A sign behind him now reads “DON’T SQUEEZE THE CHARMIN.” He raises or holds the package high enough to cover part of his face, with his eyes and glasses visible above it.\n\nIn the final frame, the employee continues holding the Charmin package in front of him, looking over it through his lowered glasses. The Charmin display and the large “DON’T SQUEEZE THE CHARMIN” sign fill the background. The product branding and baby image on the packages are clearly visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_05ca63622f75a92d006a106cf4aec88195974170a1429adb83",
+    "usage": {
+      "input_tokens": 2779,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 873,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 3652
+    }
+  },
+  "duration_seconds": 20.505,
+  "created_at": "2026-05-22T14:49:45Z",
+  "error": null
+}

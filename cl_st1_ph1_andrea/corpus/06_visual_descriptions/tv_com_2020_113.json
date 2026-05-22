@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2020_113",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_113",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_113/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_113.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0002.jpg",
+      "timestamp_seconds": 3.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0003.jpg",
+      "timestamp_seconds": 3.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0004.jpg",
+      "timestamp_seconds": 4.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0005.jpg",
+      "timestamp_seconds": 6.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0006.jpg",
+      "timestamp_seconds": 7.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0007.jpg",
+      "timestamp_seconds": 8.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0008.jpg",
+      "timestamp_seconds": 9.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0009.jpg",
+      "timestamp_seconds": 10.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0010.jpg",
+      "timestamp_seconds": 11.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0011.jpg",
+      "timestamp_seconds": 12.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0012.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0013.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0014.jpg",
+      "timestamp_seconds": 15.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0015.jpg",
+      "timestamp_seconds": 16.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0016.jpg",
+      "timestamp_seconds": 17.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0017.jpg",
+      "timestamp_seconds": 17.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0018.jpg",
+      "timestamp_seconds": 23.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0019.jpg",
+      "timestamp_seconds": 24.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_113/frame_0020.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_113.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_113.json",
+    "response_text": "The commercial unfolds as a holiday-themed sequence involving Toyota vehicles, homes, families, and gift-like surprises.\n\n1. **Opening night scene:** A large light-colored Toyota pickup truck drives or stands facing the camera on a wet suburban street at night. Houses in the background are decorated with warm holiday lights, and the truck headlights are on.\n\n2. **Driver close-up:** Inside the truck, a man wearing a dark beanie sits behind the wheel. He looks forward with a slight smile and gestures with one hand. Holiday lights remain visible outside through the windshield.\n\n3. **Truck approaching a figure:** The pickup is shown from the side/front in the same nighttime neighborhood. A person or figure in a bulky brown outfit is partly visible at the left edge, but the details are unclear.\n\n4. **Pickup bed with a dollhouse:** In a driveway or garage area at night, a small wooden dollhouse sits in the pickup bed. A man in a beanie and backpack stands beside the open tailgate, appearing to handle or present the item. A woman is partly visible at the right edge.\n\n5. **Daytime vehicle-loading view:** The scene shifts to daytime. From inside the open rear hatch of a vehicle, luggage and soft items are visible in the cargo area. A suburban house and driveway are seen beyond the hatch.\n\n6. **People loading bags:** Close-up of luggage being moved near the rear of a blue SUV. A woman in a light jacket stands in the background, and another person is partly visible near the car.\n\n7. **Obscured close-up:** A light-colored blurred figure or object passes close to the camera, partially blocking the view of the vehicle interior. The exact subject is unclear.\n\n8. **Man with sports/golf bag:** A man wearing a visor and carrying a large shoulder bag stands outside a house with a tiled roof. He looks off to the side.\n\n9. **Greeting in driveway:** A young woman in a cream jacket and red top waves and smiles. A child in a green hoodie stands nearby. The scene is in a residential driveway with parked cars and houses behind them.\n\n10. **Blue SUV with open hatch:** A wider view shows a blue Toyota SUV parked with its rear hatch open. The man with the large bag stands at the back loading or unloading it, while the woman and child stand to the left.\n\n11. **Transition to another person:** A close rear view shows a person in a dark quilted jacket walking or moving past the camera while carrying a red-and-white item. The scene appears to shift location.\n\n12. **Urban holiday street:** A light-colored sedan is parked on a city street decorated for the holidays, with a large Christmas tree covered in ornaments in the background. A man stands at the open passenger-side door, handling the same or similar red-and-white item.\n\n13. **Item placed inside car:** Inside the car, a hand places the red-and-white object near the passenger seat or door area. The white car interior is visible.\n\n14. **Interior driving shot:** From the back seat, a driver is seen in profile at the wheel. The dashboard screen and road ahead are visible, but details outside are blurred.\n\n15. **Garage reveal:** At night, inside a garage, an older man and a child pull back a green cover from a red vehicle or ride-on toy with visible “TRD” lettering. Holiday lights and decorations are visible outside the garage.\n\n16. **Child watching from inside:** A child in pajamas stands inside the house near a stair railing or doorway, looking toward the garage area. The foreground is blurred, suggesting the child is observing the reveal from a distance.\n\n17. **Garage reaction:** The older man and a girl continue pulling the green cover away from the red vehicle/toy. A child is visible in the foreground watching them.\n\n18. **Child in red ride-on truck:** Outside in a snowy driveway, a small child sits in a red toy ride-on vehicle resembling a pickup. Other people stand nearby, partly visible, and a larger red vehicle is at the right edge. Snow and holiday decorations are present.\n\n19. **Final family/holiday tableau:** A snowy house exterior is shown with a red Toyota vehicle parked in the driveway and people gathered near it. The small red ride-on vehicle is also visible. Large white on-screen text reads: “Let’s make joy the holiday mission.”\n\n20. **Brand end card:** The final frame is a white background with the red Toyota logo above the word “TOYOTA” in black text."
+  },
+  "api_metadata": {
+    "response_id": "resp_057a345b4dc13fef006a107bb3ecdc8190aba35ed7352664e0",
+    "usage": {
+      "input_tokens": 3913,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1441,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5354
+    }
+  },
+  "duration_seconds": 33.913,
+  "created_at": "2026-05-22T15:52:53Z",
+  "error": null
+}

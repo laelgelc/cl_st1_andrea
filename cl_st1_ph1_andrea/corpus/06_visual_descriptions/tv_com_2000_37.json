@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2000_37",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_37",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_37/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_37.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0002.jpg",
+      "timestamp_seconds": 1.558,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0003.jpg",
+      "timestamp_seconds": 2.459,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0004.jpg",
+      "timestamp_seconds": 3.326,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0005.jpg",
+      "timestamp_seconds": 4.594,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0006.jpg",
+      "timestamp_seconds": 5.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0007.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0008.jpg",
+      "timestamp_seconds": 10.433,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0009.jpg",
+      "timestamp_seconds": 12.035,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0010.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0011.jpg",
+      "timestamp_seconds": 20.076,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0012.jpg",
+      "timestamp_seconds": 21.378,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0013.jpg",
+      "timestamp_seconds": 22.379,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0014.jpg",
+      "timestamp_seconds": 23.747,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0015.jpg",
+      "timestamp_seconds": 26.65,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0016.jpg",
+      "timestamp_seconds": 27.717,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_37/frame_0017.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_37.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_37.json",
+    "response_text": "The commercial uses a clean white studio background, high-key lighting, and frequent graphic overlays with a horizontal scanline/TV-screen effect. It presents several people facing the camera, intercut with large text and the “1010 987” branding in black and red.\n\n1. **Opening visual / graphic distortion**  \n   The first frame is partially obscured by heavy scanline interference and blocky distortion. A white background is visible, with fragments of black and red text or logo-like graphics, but the content is not clearly readable.\n\n2. **Question text over a person**  \n   A pale, semi-transparent image of a man in a collared shirt appears behind large text reading:  \n   **“When did you first try it?”**  \n   The word **“you”** is emphasized in red, while most other words are black; “try it” includes red emphasis.\n\n3. **Two-person portrait with scanline overlay**  \n   A man with light hair stands behind or beside a woman with curly hair. The woman is closer to the camera and looks upward/right. The image has a washed-out, layered, scanline effect against a white background.\n\n4. **Woman smiling with partial text overlay**  \n   A close-up of the curly-haired woman smiling. Dark text passes across her face, but it is mostly obscured and not fully readable in the sampled frame.\n\n5. **Older man close-up**  \n   Cut to an older man with short gray hair wearing a plaid shirt. He faces the camera against a plain white background. His mouth is slightly open, suggesting he may be speaking, though no audio is described.\n\n6. **Older man wider shot**  \n   The same older man is shown from about mid-thigh upward. He stands upright in the white studio space, wearing a short-sleeved plaid shirt tucked into dark pants with a belt.\n\n7. **Rate graphic**  \n   A centered text-only frame appears on white:  \n   **“3¢ a minute and 39¢ per call”**  \n   The **“3¢”** and **“39¢”** are large and red; the rest is black.\n\n8. **Woman presenter with disclaimer**  \n   A woman with curly hair, wearing a sleeveless brown top and a necklace, faces the camera. At the bottom, small white text with a dark outline reads:  \n   **“Rates exclude Federal Universal Service Fee”**  \n   A partial black graphic or text begins to appear behind her on the right but is not fully readable.\n\n9. **Man with logo**  \n   A heavyset man in a light blue button-up shirt appears from the chest up, leaning slightly and looking toward the camera. To his right is the logo:  \n   **“1010 987”**  \n   “1010” is black; “987” is large, red, and italicized.\n\n10. **Combined offer graphic over woman**  \n   A semi-transparent woman’s face is visible behind multiple layers of text. The visible text reads:  \n   **“1010 987”**  \n   **“3¢ a minute and 39¢ per call”**  \n   **“to Western Europe”**  \n   The red elements emphasize “987,” “3¢,” and “39¢.”\n\n11. **Blond man with small-print text**  \n   A blond man in a dark shirt with white stripes on the sleeves faces the camera, slightly leaning forward. Small text appears along the bottom:  \n   Left: **“Available in most areas”**  \n   Right: **“Telecom*USA”** or similar; the exact punctuation is difficult to confirm.\n\n12. **Layered transition with blond man and background face**  \n   The blond man remains in front while a large grayscale/scanline image of a woman’s face appears behind him. The bottom text remains visible:  \n   **“Available in most areas”** and **“Telecom*USA”** or similar.\n\n13. **Close-up woman with partial phrase**  \n   A close-up of a smiling woman appears with scanline overlay and large black text across the image. The readable part says:  \n   **“Could it be”**  \n   Bottom small text again includes **“Available in most areas”** and the Telecom*USA-style mark.\n\n14. **Heavyset man full-body/mid shot**  \n   The heavyset man in the light blue shirt is shown standing with hands on hips. He wears a dark undershirt, jeans, belt, watch, and a tool pouch or holster at his side. The background remains plain white.\n\n15. **Dialing instruction graphic with man**  \n   The same man stands in front of a large faint background portrait. To his left, text reads:  \n   **“1010 987”**  \n   **“+1”**  \n   **“and the number”**  \n   The logo uses black for “1010” and red for “987.”\n\n16. **Final logo and contact information**  \n   A clean white frame shows the centered logo:  \n   **“1010 987”**  \n   At the bottom left: **“1-800-242-7070”**  \n   At the bottom right: **“www.10-10-987.com”**\n\n17. **Final frame with older man and contact information**  \n   The older man in the plaid shirt reappears on the right side, facing the camera. The **“1010 987”** logo is positioned to his left. Along the bottom, the same contact details are visible:  \n   **“1-800-242-7070”** and **“www.10-10-987.com”**  \n   The commercial ends with the brand logo, phone number, website, and the older man’s direct-to-camera presence."
+  },
+  "api_metadata": {
+    "response_id": "resp_060fad583630b300006a107526d200819cad462c826d1c4e7a",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1366,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 5698
+    }
+  },
+  "duration_seconds": 27.191,
+  "created_at": "2026-05-22T15:24:49Z",
+  "error": null
+}

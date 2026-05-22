@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1960_67",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_67",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_67/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_67.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0002.jpg",
+      "timestamp_seconds": 3.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0003.jpg",
+      "timestamp_seconds": 14.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0004.jpg",
+      "timestamp_seconds": 16.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0005.jpg",
+      "timestamp_seconds": 19.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0006.jpg",
+      "timestamp_seconds": 21.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_67/frame_0007.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_67.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_67.json",
+    "response_text": "The commercial is in black and white and unfolds as a short sequence centered on a young girl and a shoe-care product.\n\n1. **Opening frame**: The first sampled frame is almost entirely dark, with no clearly visible objects or people.\n\n2. **Child’s face**: The scene cuts to a close-up of a young girl facing the camera. She is smiling broadly. The background is bright and indistinct, giving the image a soft, high-key look.\n\n3. **Girl at a table with an object**: The next shot shows the girl in profile, seated beside a chair. She has her hair tied back, possibly in a ponytail. She is looking downward and using both hands to handle a small object near a dark item on the table. The dark item appears shoe-like, but the exact action is not fully clear from the frame.\n\n4. **Close-up of hand and applicator-like object**: A closer shot shows the girl’s face in profile at the left, while her hand holds a dark cylindrical or bottle-shaped object upright. The top of the object is lighter, possibly a cap or applicator. A dark curved surface is visible along the bottom of the frame, likely the shoe or shoe-shaped object seen earlier.\n\n5. **Overlapping/dissolve image**: The image becomes visually layered, as if during a dissolve transition. The girl’s face remains visible in profile, and a semi-transparent hand and bottle/applicator shape overlap the scene. The exact object and action are partially obscured by the transition effect.\n\n6. **Girl smiling again**: The commercial returns to a close-up of the girl’s face. She smiles and looks toward the camera or slightly off-camera. A dark shape appears at the lower right edge, but it is not clearly identifiable in this frame.\n\n7. **Product display with shoes**: The final frame shows a product shot. A bottle or dispenser stands upright in the center, with a visible printed label; the text appears to include “Griffin,” though the full label is not completely clear. It is placed between two shoes: a darker low shoe on the left and a high-heeled shoe on the right. The background is plain and bright, making the product and shoes the main visual focus."
+  },
+  "api_metadata": {
+    "response_id": "resp_07fd12101a744cb5006a106dc46938819eb6ab0f07873ce895",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 735,
+      "output_tokens_details": {
+        "reasoning_tokens": 268
+      },
+      "total_tokens": 2597
+    }
+  },
+  "duration_seconds": 14.388,
+  "created_at": "2026-05-22T14:53:06Z",
+  "error": null
+}

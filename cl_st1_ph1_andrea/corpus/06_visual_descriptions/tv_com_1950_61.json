@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1950_61",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_61",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_61/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_61.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_61/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_61/frame_0002.jpg",
+      "timestamp_seconds": 3.393,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_61/frame_0003.jpg",
+      "timestamp_seconds": 9.633,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_61/frame_0004.jpg",
+      "timestamp_seconds": 64.055,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_61.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_61.json",
+    "response_text": "The commercial is in black and white and appears to move through a sequence involving displayed photographs or framed images before ending on a product shot.\n\n1. **Opening frame:** A large rectangular image or screen fills most of the view. Inside it is a domestic interior scene: a room with furniture and lamps. A woman appears to be standing near a table, and another person, possibly a child, is seated or bending near the table. A hand is visible at the right edge, suggesting someone may be holding or presenting the image or display. The details are blurry.\n\n2. **Early scene change:** The same or a very similar rectangular image is shown at an angle, as if the object has been turned or repositioned. The domestic scene inside the image remains visible: a woman in a room, furniture, a table, and household décor. The object looks like a framed photograph, print, or screen, but the exact medium is unclear from the sampled frame.\n\n3. **Later scene change:** A man in a suit is shown from about chest level, gesturing with one hand while holding or presenting another rectangular image. The image he is displaying contains a scene with multiple people, possibly a group or family setting. Another hand appears at the right edge, also helping hold the image or frame. The man’s face is mostly out of frame or obscured, so his expression is not visible.\n\n4. **Final frame:** The commercial ends with a static product display. Several boxes are stacked in a pyramid-like arrangement. The visible text on the boxes reads **“SYLVANIA”** and **“SUPERFLASH 5.”** The packaging appears to be for photographic flash products, though only the visible box text and product display are clearly supported by the frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_035114377b0b3fc5006a106bdd626c8196a63ab767b06703df",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 517,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 1638
+    }
+  },
+  "duration_seconds": 13.032,
+  "created_at": "2026-05-22T14:44:58Z",
+  "error": null
+}

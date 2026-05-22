@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_1980_62",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_62",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_62/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_62.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0002.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0003.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0004.jpg",
+      "timestamp_seconds": 1.124,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0005.jpg",
+      "timestamp_seconds": 1.625,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0006.jpg",
+      "timestamp_seconds": 1.791,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0007.jpg",
+      "timestamp_seconds": 1.925,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0008.jpg",
+      "timestamp_seconds": 2.325,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0009.jpg",
+      "timestamp_seconds": 2.692,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0010.jpg",
+      "timestamp_seconds": 2.792,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0011.jpg",
+      "timestamp_seconds": 3.96,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0012.jpg",
+      "timestamp_seconds": 5.295,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0013.jpg",
+      "timestamp_seconds": 10.267,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0014.jpg",
+      "timestamp_seconds": 10.667,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0015.jpg",
+      "timestamp_seconds": 10.767,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0016.jpg",
+      "timestamp_seconds": 25.348,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0017.jpg",
+      "timestamp_seconds": 50.407,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0018.jpg",
+      "timestamp_seconds": 51.875,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0019.jpg",
+      "timestamp_seconds": 53.543,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_62/frame_0020.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_62.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_62.json",
+    "response_text": "The commercial opens in a very dark, wide shot. A stage-like space is barely visible, with small lights overhead and shadowy figures or objects on and around an elevated platform. Most details are obscured by low lighting.\n\nIt then cuts to a blue-toned, icy or rocky environment. Large jagged slabs or walls frame the scene, and several people are positioned among them. The lighting is cold and misty. In the distance, an orange glowing shape appears in the sky or background, contrasting with the blue surroundings.\n\nA young light-skinned man with curly blond hair moves into the foreground on the left. He wears a shiny, dark, patterned top and a thick white collar or padded accessory around his neck. Behind him, other people sit or stand among the rock-like structures. The orange glow becomes brighter and more prominent. Several frames are heavily overexposed or washed out, creating flashes of white and pale blue before returning to the darker blue scene.\n\nThe blond man remains in the foreground, facing forward with a serious expression, while figures in the background stand or shift position. The scene alternates between dim, high-contrast lighting and bright, washed-out lighting. At one point he is shown closer and darker, with the white collar especially visible, and he appears to raise his hands near the collar or sides of his neck. A later wide shot shows several people as silhouettes inside the same rocky passage, with bright light and two small red-orange lights visible in the distance.\n\nThe commercial then cuts to a close-up of a Black man in a similar cool, rocky setting. He faces forward, wearing a jacket, and has a round white bubble at his mouth, visually resembling a gum bubble. The background remains bright and icy-looking, with vertical rock forms behind him.\n\nMuch later, a close-up shows a person wearing a bulky futuristic helmet or visor. Across the dark visor is a bright blue waveform-like graphic or reflection. The person’s face is partly visible below the visor, but details are dim.\n\nAnother later shot shows a blonde woman seen through water or heavy mist. Her face and shoulders are visible but blurred by the liquid or vapor effect, and the lighting is warm and hazy compared with the earlier blue scenes.\n\nThe setting then changes to a brighter, control-room-like environment with equipment and people. The curly blond man appears again, now among machines or consoles, still wearing the shiny dark top and white neck accessory. He looks upward or to the side. Behind him are other people and tall vertical light elements.\n\nA group shot follows, showing several people wearing large helmet-and-visor devices. They stand close together, facing forward. One older light-skinned man without a visor stands among them, while others wear dark rectangular visors and bulky headgear. Their clothing includes grey, white, and dark layers, giving the scene a futuristic or technical appearance.\n\nThe final frame is a close-up of a rectangular object hanging at someone’s side, possibly attached to a belt or strap. Inside or on the front are two pale circular shapes stacked vertically, resembling discs or reels. The surrounding area is dark, and only part of the person’s clothing and belt area is visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_055020bfd1a514b7006a10715333c4819c8a16615c78e84a9d",
+    "usage": {
+      "input_tokens": 3913,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 965,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 4878
+    }
+  },
+  "duration_seconds": 25.103,
+  "created_at": "2026-05-22T15:08:28Z",
+  "error": null
+}

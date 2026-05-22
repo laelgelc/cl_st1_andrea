@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_63",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_63",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_63/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_63.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0002.jpg",
+      "timestamp_seconds": 0.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0003.jpg",
+      "timestamp_seconds": 1.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0004.jpg",
+      "timestamp_seconds": 2.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0005.jpg",
+      "timestamp_seconds": 4.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0006.jpg",
+      "timestamp_seconds": 5.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0007.jpg",
+      "timestamp_seconds": 6.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0008.jpg",
+      "timestamp_seconds": 7.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0009.jpg",
+      "timestamp_seconds": 8.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0010.jpg",
+      "timestamp_seconds": 9.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0011.jpg",
+      "timestamp_seconds": 11.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0012.jpg",
+      "timestamp_seconds": 12.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0013.jpg",
+      "timestamp_seconds": 13.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0014.jpg",
+      "timestamp_seconds": 14.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0015.jpg",
+      "timestamp_seconds": 14.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0016.jpg",
+      "timestamp_seconds": 15.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0017.jpg",
+      "timestamp_seconds": 17.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0018.jpg",
+      "timestamp_seconds": 18.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0019.jpg",
+      "timestamp_seconds": 19.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0020.jpg",
+      "timestamp_seconds": 20.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0021.jpg",
+      "timestamp_seconds": 21.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0022.jpg",
+      "timestamp_seconds": 22.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0023.jpg",
+      "timestamp_seconds": 23.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0024.jpg",
+      "timestamp_seconds": 23.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0025.jpg",
+      "timestamp_seconds": 24.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0026.jpg",
+      "timestamp_seconds": 25.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0027.jpg",
+      "timestamp_seconds": 26.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0028.jpg",
+      "timestamp_seconds": 27.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0029.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_63/frame_0030.jpg",
+      "timestamp_seconds": 28.29,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_63.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_63.json",
+    "response_text": "The commercial unfolds as a rapid montage of videogame-related imagery, interface screens, typography, and live-action shots.\n\n1. **Opening abstract/text screens**  \n   The first frames show distorted, layered text over a textured, electronic-looking background. The text is partially blurred and difficult to read, but some game-title-like words appear, including “NHL GameDay,” “Warhawk,” and “Tekken.” The visuals flicker between blue, grey, and black tones, with a glitchy, broadcast-like appearance.\n\n2. **Large kinetic typography**  \n   The commercial cuts to oversized bold letters moving across the screen. A large white word fragment appears against a dark background with sparks or streaks around it. Another frame shows the word **“BEGIN”** in huge white block letters, suggesting a start or launch motif.\n\n3. **Game footage: cockpit/flight combat**  \n   The visuals shift into what appears to be videogame footage from a first-person cockpit perspective. A heads-up display with green and red indicators surrounds the image. Bright projectiles or energy blasts are fired at a flying or robotic enemy. The scene includes explosions and fast movement through a stylized 3D environment.\n\n4. **More abstract overlays and code-like text**  \n   The footage briefly gives way to high-contrast, inverted, and overexposed imagery with layered text and graphic fragments. Another frame shows columns of letters and numbers in black, white, and neon green, resembling code, data, or interface readouts.\n\n5. **Menu/instruction screen**  \n   A grey interface screen appears with readable text: **“ACCESS THE HIDDEN 7th TRACK.”** It includes PlayStation-style button icons and labels such as **L1/L2**, **R1/R2**, **START**, and the triangle, square, circle, and X symbols. The word **“Marathon”** is visible near the bottom.\n\n6. **Game footage: futuristic racing**  \n   The commercial then shows a racing game from a third-person perspective. A small craft or vehicle moves along bright blue and purple tracks. On-screen HUD elements show race information, timers, lap counts, and colored meters. A separate graphic screen displays the word **“FASTER”** in the center, reinforcing speed.\n\n7. **Live-action laboratory/industrial setting**  \n   The montage cuts to a colorful live-action environment with metal structures, cables, railings, and bright lighting. A person appears suspended or moving through a rigged space. The image is heavily stylized with saturated colors and motion blur.\n\n8. **Close-up of a man in goggles**  \n   A bald man wearing round, dark goggles and a bright yellow outfit appears in close-up. His mouth is open, and he appears expressive or excited. In the lower-right corner, a **“TEEN”** rating icon is visible. The scene is very bright and high-contrast, sometimes overexposed.\n\n9. **Television screen with game title**  \n   A monitor or TV is shown displaying a logo that appears to read **“TEKKEN”**, with large red characters above it. The **“TEEN”** rating icon remains visible in the lower-right corner of the frame.\n\n10. **Additional game footage montage**  \n   More gameplay scenes follow:\n   - A racing game on a track with HUD elements and a rating icon in the corner.\n   - A space or aerial combat scene with aircraft and interface elements.\n   - A football game scene showing players on a field, with the name **“Papano”** visible near the bottom.\n\n11. **Rapid flashes of the goggled man and abstract letters**  \n   The goggled man reappears in very dark, high-contrast close-up. The screen then cuts to huge serif letters, including a large **“R”** and then a glowing blue **“e”**, displayed as graphic typography over abstract backgrounds.\n\n12. **Controller close-up**  \n   A white **Sony PlayStation-style controller** appears against a black background. The face buttons with triangle, circle, X, and square symbols are clearly visible, along with the directional pad and central **SELECT** and **START** buttons.\n\n13. **Final explosive/end imagery**  \n   The ending becomes very fast and chaotic, with motion-blurred warm-toned imagery. A large word **“END”** appears in white block letters over a fiery, mechanical, or explosive-looking background. The final frame is dominated by bright yellow-white light and oversized glowing letters or shapes, but the exact text is difficult to read because of the overexposure."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d03114c22c01c4b006a1073687ca481a18c69b122b9a02521",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 997,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 8540
+    }
+  },
+  "duration_seconds": 23.626,
+  "created_at": "2026-05-22T15:17:19Z",
+  "error": null
+}

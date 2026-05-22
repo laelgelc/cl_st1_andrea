@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1990_47",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_47",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_47/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_47.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0002.jpg",
+      "timestamp_seconds": 9.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0003.jpg",
+      "timestamp_seconds": 10.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0004.jpg",
+      "timestamp_seconds": 15.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0005.jpg",
+      "timestamp_seconds": 16.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0006.jpg",
+      "timestamp_seconds": 27.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_47/frame_0007.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_47.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_47.json",
+    "response_text": "The commercial begins with a very dark, low-visibility image. A person or figure may be present, but the details are not clear enough to describe confidently.\n\nAround 9 seconds, the visuals shift into a warm, indoor setting with a layered, double-exposure effect. A young blond child’s face is superimposed over a room interior and a colorful construction made from toy bricks. The room appears softly lit, with furniture and a window or bright rectangular light source in the background. The child faces forward, looking toward the toy structure.\n\nThe following frames continue the same overlapping visual style. The child remains central, while a red, yellow, blue, and black brick-built structure or vehicle-like construction appears in front of him. The camera or editing emphasizes the child’s face and the toy simultaneously, creating a dreamlike montage rather than a clear single scene. The child appears to be observing or interacting with the toy construction, though the exact hand movements are obscured by the superimposed images.\n\nBy about 15–16 seconds, the child’s face becomes larger in the frame. The toy construction remains layered across his face, with bright colored bricks visible. The warm room background continues, including pale curtains or drapery and furniture shapes. The child’s expression is neutral to absorbed, with his gaze directed toward the toy or slightly downward.\n\nAt about 27 seconds, the imagery changes to a product-focused composition. A close-up of a child’s face fills the background, especially one large visible eye on the left. Over the right side of the face appears a red plastic storage box with a lid. Its label reads “LEGO SYSTEM” and shows a brick-built red house.\n\nThe final frame presents two plastic toy storage boxes on a plain light background. On the left is a yellow/orange box labeled “duplo,” with a cartoon-style image of children or figures on the front. On the right is the red “LEGO SYSTEM” box with the house image. Both containers are shown upright, side by side, as the final product display."
+  },
+  "api_metadata": {
+    "response_id": "resp_099045e09e0eded6006a10732d9ba08191ba7d1f40b59200ff",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 547,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2409
+    }
+  },
+  "duration_seconds": 14.705,
+  "created_at": "2026-05-22T15:16:12Z",
+  "error": null
+}

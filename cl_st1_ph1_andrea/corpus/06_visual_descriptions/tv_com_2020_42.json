@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_2020_42",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_42",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_42/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_42.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0002.jpg",
+      "timestamp_seconds": 2.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0003.jpg",
+      "timestamp_seconds": 2.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0004.jpg",
+      "timestamp_seconds": 3.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0005.jpg",
+      "timestamp_seconds": 3.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0006.jpg",
+      "timestamp_seconds": 4.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0007.jpg",
+      "timestamp_seconds": 5.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0008.jpg",
+      "timestamp_seconds": 6.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0009.jpg",
+      "timestamp_seconds": 6.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0010.jpg",
+      "timestamp_seconds": 7.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0011.jpg",
+      "timestamp_seconds": 7.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0012.jpg",
+      "timestamp_seconds": 8.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0013.jpg",
+      "timestamp_seconds": 10.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0014.jpg",
+      "timestamp_seconds": 11.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0015.jpg",
+      "timestamp_seconds": 11.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_42/frame_0016.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_42.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_42.json",
+    "response_text": "The commercial begins on a black screen.\n\nA bright graphic layout then appears: vertical panels in red, yellow, and dark blue show round crackers and topped cracker snacks. On the right side, a live-action shot shows two small children running toward each other on a sidewalk beside parked cars. The children reach one another with arms open and hug. A large circular, scalloped yellow-and-red graphic resembling a cracker edge expands over the sidewalk scene as a transition.\n\nThe scene changes to a school cafeteria. Children in school uniforms sit at long tables. A girl with long dark hair carries a lunch tray between two seated boys. The tray contains lunch items including a green apple and a small drink carton. The camera moves closer to the girl as she sits or stands at the table, with other students and lunch bags visible in the background.\n\nThe commercial then cuts to close-up product imagery on a red background: round golden crackers appear with toppings such as white spread, meat or bean-like filling, and a green jalapeño slice. The shots are highly graphic and symmetrical, emphasizing the circular cracker shapes and bright red/yellow color contrast.\n\nNext, a stylized graphic transition on a dark blue background shows crackers arranged in a ring around a circular image. The circular image reveals an animated scene from SpongeBob SquarePants, with SpongeBob, Squidward, Patrick, and Sandy visible. The animation fills the frame briefly, showing the characters gathered closely together in a celebratory-looking composition.\n\nThe commercial then cuts to a live-action group selfie-style shot outdoors, likely on a rooftop or terrace at sunset. A diverse group of young adults lean toward the camera, smiling. One man in front holds the camera at arm’s length. A large yellow scalloped circle expands over the group, transitioning into a graphic sequence of concentric circles in yellow, dark blue, and red, with a single round cracker centered.\n\nThe final frame is a red end card. It shows the Ritz logo on the left and the visible text “a taste” to the right. The rest of any phrase is not visible in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d8bc6e616054fcc006a107a4a59b4819e8eff2547dc6347c3",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 597,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 3754
+    }
+  },
+  "duration_seconds": 15.91,
+  "created_at": "2026-05-22T15:46:34Z",
+  "error": null
+}

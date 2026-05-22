@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1990_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0002.jpg",
+      "timestamp_seconds": 2.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0003.jpg",
+      "timestamp_seconds": 4.16,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0004.jpg",
+      "timestamp_seconds": 8.865,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0005.jpg",
+      "timestamp_seconds": 9.466,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0006.jpg",
+      "timestamp_seconds": 12.502,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_36/frame_0007.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_36.json",
+    "response_text": "The commercial begins with a very dark, indistinct frame. Shapes are barely visible, and the setting or people cannot be clearly identified.\n\nIt then cuts or dissolves into a bright diner-like breakfast setting. Several people are seated behind a counter or table, with windows and curtains in the background. A blue cereal box labeled “Triples” is prominently visible in the foreground. The image appears layered, as if two shots are cross-fading over each other, making the people and objects semi-transparent.\n\nNext, a large blue “Kellogg’s Rice Krispies” cereal box is superimposed over the same breakfast/diner scene. The box dominates the center of the frame. At the bottom, small legal/trademark text is visible, though not fully legible in detail. Behind the overlay, a boy on the left and a blonde woman or girl on the right appear to be seated with menus.\n\nThe commercial then shows a close-up of a blonde young woman or girl wearing a pink headband or scarf, resting her head on one hand. A bowl full of cereal is superimposed across the upper part of her face, making the shot look like a visual comparison or layered transition. Shelves or a kitchen/diner background are faintly visible behind her.\n\nAnother dissolve follows, combining the blonde girl’s face with the diner table scene. The “Triples” box is again visible on the left side, and a seated man in a blue shirt appears near the center. The layered images make exact positions momentarily unclear.\n\nThe next shot continues the cross-fade effect: the man in the blue shirt is more centered, seated at the counter with a bowl in front of him. The boy on the left and the blonde woman on the right are also visible, each partly hidden by upright menus. The large superimposed face fades out over this scene.\n\nThe final frame is the clearest. Three people sit side by side in a diner booth or at a counter: a boy on the left holding a menu, a man in a blue shirt in the center looking forward, and a blonde woman on the right holding a menu. A blue “Triples” cereal box stands prominently on the counter in front of them, next to a small bowl of cereal. Other table items include a small glass of orange-colored drink, a white mug, a metal coffee pot or pitcher, and condiments. The background shows windows with reddish curtains and wall lights. The three people face forward with fairly serious or attentive expressions."
+  },
+  "api_metadata": {
+    "response_id": "resp_08cda93e311fcf92006a10730341c8819c90fc1282be8fad90",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 893,
+      "output_tokens_details": {
+        "reasoning_tokens": 381
+      },
+      "total_tokens": 2755
+    }
+  },
+  "duration_seconds": 23.538,
+  "created_at": "2026-05-22T15:15:38Z",
+  "error": null
+}

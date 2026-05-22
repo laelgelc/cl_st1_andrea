@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1970_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0002.jpg",
+      "timestamp_seconds": 0.357,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0003.jpg",
+      "timestamp_seconds": 7.23,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0004.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0005.jpg",
+      "timestamp_seconds": 21.912,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0006.jpg",
+      "timestamp_seconds": 23.246,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_36/frame_0007.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_36.json",
+    "response_text": "The commercial begins with a nearly black frame, with only archive watermarks visible.\n\nIt then cuts to a kitchen scene. A woman stands at a sink surrounded by dishes and kitchen items. The counter and sink area look cluttered, with stacked plates on the left and a bottle of drain-cleaning product on the right side of the sink. The woman appears to be working at or looking down into the sink.\n\nThe next shot is a close-up of a white plastic bottle tilted as if being poured. The label reads “Liquid-Plumr,” with a blue burst-style graphic on the front. The bottle cap is off or open, and the neck of the bottle is visible against a plain background.\n\nThe setting changes to a bathroom. A bald man is kneeling or leaning beside a bathtub. He is holding or wiping a metal pot or container over the tub. A bottle of the same product sits on the edge of the tub at the left. The tub contains some cloudy or dirty-looking water or residue.\n\nA close-up of a drain appears next, with the word “LATER” in bold black letters at the bottom of the frame. The drain is surrounded by swirling or cloudy liquid, suggesting time has passed.\n\nThe commercial returns to the bathroom. The man holds the metal pot at the side of the bathtub and appears to be inspecting it or pouring/emptying it near the tub. The bathroom background includes cabinets and hanging towels.\n\nThe final frame shows a product display in a sink. Two white bottles labeled “Liquid-Plumr” stand on the right, and large bold black text on the left reads: “Just pour it in and it works.” The sink drain is visible beneath the text, and a faucet is in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_01184244e8fcbc85006a106f2c71f081a0941efd086825daf0",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 473,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 2335
+    }
+  },
+  "duration_seconds": 12.257,
+  "created_at": "2026-05-22T14:59:04Z",
+  "error": null
+}

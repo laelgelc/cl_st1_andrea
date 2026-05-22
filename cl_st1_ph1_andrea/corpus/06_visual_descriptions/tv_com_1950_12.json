@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1950_12",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_12",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_12/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_12.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0002.jpg",
+      "timestamp_seconds": 19.676,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0003.jpg",
+      "timestamp_seconds": 20.81,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0004.jpg",
+      "timestamp_seconds": 20.977,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0005.jpg",
+      "timestamp_seconds": 21.811,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0006.jpg",
+      "timestamp_seconds": 21.978,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0007.jpg",
+      "timestamp_seconds": 22.145,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0008.jpg",
+      "timestamp_seconds": 23.346,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0009.jpg",
+      "timestamp_seconds": 43.099,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0010.jpg",
+      "timestamp_seconds": 53.91,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_12/frame_0011.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_12.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_12.json",
+    "response_text": "The commercial is in black and white and unfolds as a product-focused sequence for bottled beer/ale.\n\n- **Frame 1:** The opening sampled frame is very dark. No clear objects or people are visible.\n\n- **Frames 2–4:** A close-up shows several glass bottles arranged together in a shallow container or basket. The bottles lie at angles with their necks pointing upward and inward, surrounded by shiny decorative material that may be foil, tinsel, or crushed ice. The labels are partially visible but not fully legible in these frames. The camera/framing shifts slightly across the cluster of bottles.\n\n- **Frames 5–7:** The view continues on a similar bottle display, now seen with a more domestic or party-like background, including patterned curtains. On the left edge, blurred objects suggest table decorations or food items. The bottle-filled bowl or basket remains the visual focus, with multiple labeled bottles stacked together and decorative material around the base.\n\n- **Frame 8:** The scene widens to reveal a formal indoor setting. A man in a dark tuxedo or dinner jacket stands beside a table. On the table is a large bowl or basket filled with bottles, along with glasses and other table items. Behind him is a large window showing a nighttime cityscape with lit building windows. Patterned curtains frame the window, and a multi-armed candelabra stands on the right.\n\n- **Frame 9:** The man turns toward the camera while standing beside the table. A bottle is visible on or near the table in front of him, and the bowl of bottles remains behind it. The formal dining/party setting continues, with the nighttime window and candelabra still visible.\n\n- **Frames 10–11:** The commercial cuts to a final product display. A single bottle labeled **“RED CAP Ale”** stands upright in the center. To its left is a foamy glass mug, and to its right is a cap or hat-like object. Large bold text across the bottom reads: **“IT’S GOT HEFT.”** The final frame holds this product arrangement and slogan-like text visually on screen."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ee231110187ba49006a106b21877c819fa729c1606b5cc244",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 662,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 3512
+    }
+  },
+  "duration_seconds": 18.428,
+  "created_at": "2026-05-22T14:41:55Z",
+  "error": null
+}

@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1970_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0002.jpg",
+      "timestamp_seconds": 11.768,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0003.jpg",
+      "timestamp_seconds": 17.107,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0004.jpg",
+      "timestamp_seconds": 20.644,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0005.jpg",
+      "timestamp_seconds": 25.982,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_69/frame_0006.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_69.json",
+    "response_text": "The commercial opens with a close-up of a blonde woman in a dark, studio-like setting. She is dressed in a reddish-brown top and appears carefully made up, with earrings visible. Bright round lights line the right side of the frame, suggesting a backstage, dressing-room, or performance environment. She lifts one hand toward her hair or ear.\n\nThe next shot shows the same woman from the side, smiling or speaking while looking downward. Her short, styled blonde hair and earrings are visible, and she wears a loose brown/orange garment with a dark beaded necklace. The background remains dark with soft floral shapes behind her.\n\nA title card follows. Against a pale, warm-toned background, large red serif text reads “MEMORY YARN.” Small copyright text appears at the lower left, including “© 1978 Leggs Products.”\n\nThe commercial then cuts to a close shot of a woman’s legs. One leg is extended horizontally, with a hand pointing toward or touching the shin/calf area. The person is wearing open-toed heeled sandals and sheer hosiery. The surrounding background is dark, keeping attention on the leg.\n\nNext, an egg-shaped L’eggs package is shown standing upright. The blue “L’eggs” logo is printed on the upper half. Through a vertical opening or cutout, a pair of legs in sandals is visible inside or behind the package, visually linking the product to legs/hosiery.\n\nThe final frame shows the egg-shaped L’eggs package centered against a dark background with a light floor or surface beneath it. Below the package, black text reads: “Nothing beats a great pair of L’eggs.” A “Classic Commercial Archives” watermark appears in the lower-left corner throughout the frames, with a faint archive watermark across the lower portion of several images."
+  },
+  "api_metadata": {
+    "response_id": "resp_0fc74e5c98e5b039006a106fb4cad8819cb44df4a6e5a68a4a",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 466,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2081
+    }
+  },
+  "duration_seconds": 11.381,
+  "created_at": "2026-05-22T15:01:20Z",
+  "error": null
+}

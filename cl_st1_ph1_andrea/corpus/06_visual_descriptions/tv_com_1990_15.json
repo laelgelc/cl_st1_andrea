@@ -1,0 +1,249 @@
+{
+  "commercial_id": "tv_com_1990_15",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_15",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_15/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_15.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0002.jpg",
+      "timestamp_seconds": 1.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0003.jpg",
+      "timestamp_seconds": 4.16,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0004.jpg",
+      "timestamp_seconds": 4.961,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0005.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0006.jpg",
+      "timestamp_seconds": 8.798,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0007.jpg",
+      "timestamp_seconds": 10.2,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0008.jpg",
+      "timestamp_seconds": 11.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0009.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0010.jpg",
+      "timestamp_seconds": 13.47,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0011.jpg",
+      "timestamp_seconds": 14.604,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0012.jpg",
+      "timestamp_seconds": 15.305,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0013.jpg",
+      "timestamp_seconds": 15.839,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0014.jpg",
+      "timestamp_seconds": 16.506,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0015.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0016.jpg",
+      "timestamp_seconds": 18.408,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0017.jpg",
+      "timestamp_seconds": 20.277,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0018.jpg",
+      "timestamp_seconds": 21.611,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0019.jpg",
+      "timestamp_seconds": 22.679,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0020.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0021.jpg",
+      "timestamp_seconds": 23.213,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0022.jpg",
+      "timestamp_seconds": 23.88,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0023.jpg",
+      "timestamp_seconds": 25.282,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0024.jpg",
+      "timestamp_seconds": 25.949,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0025.jpg",
+      "timestamp_seconds": 26.816,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0026.jpg",
+      "timestamp_seconds": 28.852,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_15/frame_0027.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 27,
+    "submitted_frame_count": 27,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_15.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_15.json",
+    "response_text": "The commercial begins with a nearly black frame, with no clear visible content.\n\nIt then cuts to a warm, orange-lit room that looks like a casual den or attic lounge. Two men are seated facing forward, apparently watching something off-screen. The man on the left wears a blue shirt over a white long-sleeve layer and a dark cap; he is holding a drink container. The man on the right wears an orange shirt and light pants. A golden retriever lies on a green leather chair between them. The room contains sports or poster-like wall decorations, windows, shelves, and scattered items on a low table.\n\nA close-up shows the golden retriever resting its head on the arm of the green chair, looking calm or sleepy. The scene returns to the two men and the dog; both men appear engaged with what they are watching.\n\nThe commercial then cuts to a televised American football game. Players in black uniforms face players in white uniforms with orange helmets at the line of scrimmage. A later shot shows the golden retriever walking on the football field itself. The sequence alternates between the room and the game footage, suggesting the men are watching the dog appear in the game. One shot shows a television screen with a close-up of the man in the blue shirt, framed inside the TV set.\n\nOn the football field, the dog is seen near the line of scrimmage and then running across the grass. A man in a blue shirt appears among the football players, holding or moving with a football while players in uniforms surround him. The dog runs alongside or near the action. Several shots emphasize motion: the dog sprinting in profile, the dog’s paws striking the turf, and the dog weaving low between players’ legs.\n\nThere is a stylized upward shot of the dog’s head against a bright blue sky with clouds, followed by more close-ups of running paws and field-level action. The dog moves rapidly among the players.\n\nA product shot appears: a cold brown beer bottle with a white-and-blue “Lite” label in the foreground, with other blurred bottles behind it. Small copyright text at the bottom reads “©1995 Miller Brewing Co. Milwaukee WI.”\n\nThe football sequence continues. In the stadium background, banners and signs with “Lite” branding are visible. The dog runs downfield while players in black uniforms pursue. A large “Lite” sign is shown behind a helmeted player. Another shot shows the man in the blue shirt among uniformed players, smiling and gesturing with a raised hand/fist as players crowd around him.\n\nThe dog is then shown lying on the grass with a football against its mouth or front paws, as if it has caught or secured the ball. The commercial cuts back to the room, where the two seated men raise their hands and appear to celebrate with a high-five.\n\nThe field action continues with a close-up of the dog’s paws placed on top of an upright football on the turf. In the background, the man in the blue shirt approaches. A later wide shot shows the dog sitting beside the football near the goalpost area, with the man in blue nearby and football players lined up in the foreground.\n\nThe final shots return to the room. The two men sit in their chairs, holding or positioned near long white rods or poles in the foreground; their exact function is unclear from the frames. A blue rectangular graphic appears at the bottom with the visible text “Lite is good.” and a circular Lite logo. The man on the left raises both arms in celebration, while the man on the right looks downward toward his hands or the object in front of him. The “Lite is good.” graphic remains on screen through the final frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_01f27db89912e170006a10728e5f74819da50d36cdd7ae4166",
+    "usage": {
+      "input_tokens": 6802,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1267,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 8069
+    }
+  },
+  "duration_seconds": 35.586,
+  "created_at": "2026-05-22T15:13:51Z",
+  "error": null
+}

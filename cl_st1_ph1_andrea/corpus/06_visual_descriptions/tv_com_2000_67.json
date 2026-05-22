@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2000_67",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_67",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_67/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_67.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0002.jpg",
+      "timestamp_seconds": 2.692,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0003.jpg",
+      "timestamp_seconds": 5.095,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0004.jpg",
+      "timestamp_seconds": 6.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0005.jpg",
+      "timestamp_seconds": 8.531,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0006.jpg",
+      "timestamp_seconds": 9.866,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0007.jpg",
+      "timestamp_seconds": 11.935,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0008.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_67/frame_0009.jpg",
+      "timestamp_seconds": 14.971,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_67.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_67.json",
+    "response_text": "The commercial begins with a black frame.\n\nIt then cuts to a bright domestic kitchen/dining area. An adult man stands behind a large light-wood table, holding a plunger upright. He wears a plaid shirt over a gray T-shirt and jeans. The space looks busy and lived-in: a refrigerator with papers or magnets, cabinets, a high chair, kitchen counters, and assorted household items are visible. A child sits at the table on the right, leaning over the tabletop. Various objects lie on the table, including what appear to be dirty or used items.\n\nThe next shot shows an adult woman standing indoors near a wall with children’s drawings. She wears a gray hoodie and has her hands at her hips. She faces forward with a serious or concerned expression, as if reacting to the situation in the kitchen.\n\nA close-up then focuses on the tabletop in front of the man. The plunger is placed upright on the table. Nearby are other grimy-looking objects, including gloves or cloth on the left and a pipe-like or cup-like object on the right, with small dark spots on the tabletop. The framing emphasizes contamination or mess on the food-preparation/eating surface.\n\nThe commercial then shifts to the product. A close-up shows a yellow canister labeled “CLOROX Disinfecting Wipes.” A hand pulls a white wipe from the top opening. Small white disclaimer text appears at the bottom, reading: “Food contact surfaces require a potable rinse, use as directed.”\n\nNext, the woman’s hands are shown wiping the wooden tabletop with a cloth or wipe. The surface is now largely cleared of the earlier objects. The same small disclaimer text remains at the bottom of the frame.\n\nThe final product shots show the yellow Clorox Disinfecting Wipes canister standing on the table against a softly blurred kitchen background. Large bold text appears to the left of the product: “CLOROX DISINFECTING WIPES KILLS 99.9% OF GERMS.” In the last product frame, a white wipe protrudes from the top of the canister. The commercial then cuts back to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_03077190cb35012f006a1075d41158819d94f8fee69a6f6b69",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 2515
+    }
+  },
+  "duration_seconds": 16.802,
+  "created_at": "2026-05-22T15:27:32Z",
+  "error": null
+}

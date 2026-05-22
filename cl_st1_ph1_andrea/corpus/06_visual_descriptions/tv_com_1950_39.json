@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1950_39",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_39",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_39/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_39.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_39/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_39/frame_0002.jpg",
+      "timestamp_seconds": 5.996,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_39/frame_0003.jpg",
+      "timestamp_seconds": 57.981,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_39/frame_0004.jpg",
+      "timestamp_seconds": 62.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_39.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_39.json",
+    "response_text": "The commercial is in black and white and begins with an abstract visual field. The first frame shows a dark background filled with many bright, overlapping circular outlines, resembling bubbles or rings. The circles vary in size and brightness, creating a sparkling, high-contrast pattern across the screen.\n\nBy around 6 seconds, a large bright rectangular object appears diagonally across the center of the frame, partly obscuring the bubble-like background. It looks like a shiny package or wrapper surface, but the product identity is not yet clearly readable in this sampled frame. The circular outlines remain visible around the edges.\n\nMuch later, near 58 seconds, the commercial cuts to a clear product display. A boxed bar of soap is centered inside a bright circular frame or spotlight ring against a dark background. The package text is visible: “NEW” appears near the top, “golden” appears on the left side, and the large brand name “dial” dominates the front. Smaller text below reads “DEODORANT BATH & BEAUTY SOAP.” The box is angled slightly, giving it a three-dimensional presentation, and there appears to be a reflective surface or shadow beneath it.\n\nIn the final frame, the product remains in the same centered display. The circular frame around the soap is still prominent, with the “golden dial” package clearly visible. The background stays dark and uncluttered, emphasizing the product as the final visual focus. No people are visible in the sampled frames, and no dialogue, music, or voice-over can be inferred from the images alone."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a2f63e6644dd121006a106b9d44bc81a3918dbeb64aee430c",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 401,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1522
+    }
+  },
+  "duration_seconds": 9.77,
+  "created_at": "2026-05-22T14:43:50Z",
+  "error": null
+}

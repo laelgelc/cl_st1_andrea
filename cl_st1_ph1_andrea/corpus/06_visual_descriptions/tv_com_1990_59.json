@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1990_59",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_59",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_59/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_59.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0002.jpg",
+      "timestamp_seconds": 3.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0003.jpg",
+      "timestamp_seconds": 4.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0004.jpg",
+      "timestamp_seconds": 11.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0005.jpg",
+      "timestamp_seconds": 22.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_59/frame_0006.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_59.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_59.json",
+    "response_text": "The commercial appears as a fast montage using fades and superimposed dissolves.\n\n1. **Opening frame:** The clip begins almost entirely black. Only very faint, indistinct shapes are visible near the lower part of the frame, with no clear objects or people identifiable.\n\n2. **Early montage / outdoor and close-up overlap:** The image dissolves into a layered shot. Two people wearing light-colored caps or hats are visible in close-up, looking downward, while an outdoor green background is also superimposed behind or through them. The scene is soft and semi-transparent, making exact identities and actions unclear.\n\n3. **Sports/action scene:** The next sampled shot shows a blurred outdoor action scene. Figures wearing yellow tops or uniforms move quickly across what appears to be a grassy field. A vertical white post or pole passes through the foreground. The heavy motion blur makes the activity unclear, but it visually suggests running or field sports.\n\n4. **Crowd / institutional or street setting:** Another dissolve shows a busier scene with multiple people, possibly in formal clothing, moving through an outdoor architectural setting with steps or a building façade in the background. One figure near the right side appears to have an arm raised. The image is again layered and partially transparent, so details are not fully distinct.\n\n5. **Garden / domestic or community scene:** The montage shifts to a lush garden or yard. An older person with light or gray hair, wearing a light top and darker lower garment, stands at the left and reaches toward plants or toward another partially visible figure. Dense greenery fills most of the frame, with a structure or house-like background faintly visible.\n\n6. **Final close-up with text:** The commercial ends on a close-up of a smiling child wearing a straw boater-style hat with a dark band and a visible letter or emblem on the front. The child is framed against a darker background with other people partly visible at the edges. Large white uppercase text reading **“UNITED”** appears across the lower center of the frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_0646b75fbe787fe4006a10735e34008197801c5dfc04f0fe8c",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 706,
+      "output_tokens_details": {
+        "reasoning_tokens": 292
+      },
+      "total_tokens": 2321
+    }
+  },
+  "duration_seconds": 19.141,
+  "created_at": "2026-05-22T15:17:05Z",
+  "error": null
+}

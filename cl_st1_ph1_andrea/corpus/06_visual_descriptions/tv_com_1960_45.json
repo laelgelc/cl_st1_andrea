@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_1960_45",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_45",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_45/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_45.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0002.jpg",
+      "timestamp_seconds": 9.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0003.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0004.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0005.jpg",
+      "timestamp_seconds": 14.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0006.jpg",
+      "timestamp_seconds": 19.843,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0007.jpg",
+      "timestamp_seconds": 20.01,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0008.jpg",
+      "timestamp_seconds": 20.343,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0009.jpg",
+      "timestamp_seconds": 27.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0010.jpg",
+      "timestamp_seconds": 28.885,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0011.jpg",
+      "timestamp_seconds": 29.686,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0012.jpg",
+      "timestamp_seconds": 36.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0013.jpg",
+      "timestamp_seconds": 36.459,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0014.jpg",
+      "timestamp_seconds": 53.643,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_45/frame_0015.jpg",
+      "timestamp_seconds": 55.046,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_45.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_45.json",
+    "response_text": "The commercial opens with a wintry outdoor scene: leafless trees stand in a snow-covered landscape, with a large bare tree dominating the foreground. A “REFERENCE ONLY - DUPLICATION PROHIBITED” watermark appears along the bottom and remains visible throughout the frames.\n\nThe scene then cuts to close-up product imagery. A hand holds a cold, condensation-covered bottle. The label is partly visible and reads “Sprite,” with additional smaller text including “Pale-Dry” visible in a later close-up. The camera lingers on the wet glass and label, emphasizing the chilled bottle surface.\n\nThe imagery shifts to signs of warmer weather: a close-up of a pink flower among leaves, followed by a soft-focus shot where an orange-brown butterfly-like shape appears near flowers or branches, though the details are blurred.\n\nThe commercial then moves into a bright outdoor garden or orchard setting. A family group appears among dense flowering branches. A woman in a light/yellow dress, a man in a light shirt, and a young girl in a pink top and white skirt interact closely. The woman leans toward or embraces the girl, while the man sits or kneels nearby. The setting is full of blossoms, suggesting spring or summer.\n\nA closer shot shows the woman and the young girl smiling together against a plain sky background. The woman holds a dark glass bottle, while the girl holds what appears to be an ice cream cone. Both face the camera.\n\nThe next shot shows a man at an outdoor barbecue or picnic setup. He is seated or crouched near a grill, handling food with utensils. Around him are picnic items, including bottles, cups, and containers on a table or surface.\n\nThere is then an indistinct close-up with pink and white shapes; the exact object or action is unclear from the sampled frame.\n\nA close-up follows of a cooked round patty or burger-like item on a white plate, with other food items nearby.\n\nThe woman in the striped yellow top appears again outdoors beside tall grass or plants, handling a dark bottle near what looks like a picnic cooler or bucket containing bottles and ice.\n\nNear the end, a close-up shows a young boy looking downward, with yellow flowers blurred in the background. In the final frame, the boy raises a dark bottle or cup-shaped object to his mouth, apparently drinking from it."
+  },
+  "api_metadata": {
+    "response_id": "resp_0de10803f6ce94ff006a106d8bb6548195ba1b612697594099",
+    "usage": {
+      "input_tokens": 3838,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 991,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 4829
+    }
+  },
+  "duration_seconds": 26.22,
+  "created_at": "2026-05-22T14:52:21Z",
+  "error": null
+}

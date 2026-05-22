@@ -1,0 +1,88 @@
+{
+  "commercial_id": "tv_com_1990_114",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_114",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_114/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_114.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_114/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_114/frame_0002.jpg",
+      "timestamp_seconds": 8.365,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_114/frame_0003.jpg",
+      "timestamp_seconds": 29.953,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_114/frame_0004.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 4,
+    "submitted_frame_count": 4,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_114.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_114.json",
+    "response_text": "The sampled frames show a very limited visual sequence:\n\n1. **Opening (0.000s):** The screen is almost entirely black. A small on-screen watermark or channel/logo mark appears in the lower-right corner, but no main visual content is visible.\n\n2. **Interior scene (8.365s):** The commercial cuts to a bright, soft-focus room with warm pastel lighting. The setting appears domestic, possibly a nursery, bedroom, or laundry area. On the right is a wicker laundry basket filled with light-colored pastel fabric or clothing. In the background are tall windows and pale furniture or household objects. On the left edge, a small plush or teddy-bear-like figure with light brown/orange coloring appears partly hidden behind a vertical object such as a curtain, doorway, or hanging fabric. The overall style is gentle, airy, and softly lit.\n\n3. **Near the end (29.953s):** The image becomes very dark again, with little discernible visual detail. The same lower-right watermark/logo is visible.\n\n4. **Final frame (30.054s):** The screen is black, again with the small lower-right watermark/logo. No product, text, or clear closing image is visible in the sampled frame.\n\nNo dialogue, music, slogan, or product identity can be determined from the frames alone."
+  },
+  "api_metadata": {
+    "response_id": "resp_05e731380f7822a6006a1074560c6481a2801281fc6f3762b3",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 468,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1589
+    }
+  },
+  "duration_seconds": 12.401,
+  "created_at": "2026-05-22T15:21:06Z",
+  "error": null
+}

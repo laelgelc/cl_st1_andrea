@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_1980_85",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_85",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_85/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_85.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0002.jpg",
+      "timestamp_seconds": 5.278,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0003.jpg",
+      "timestamp_seconds": 6.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0004.jpg",
+      "timestamp_seconds": 9.082,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0005.jpg",
+      "timestamp_seconds": 9.482,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0006.jpg",
+      "timestamp_seconds": 9.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0007.jpg",
+      "timestamp_seconds": 10.016,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0008.jpg",
+      "timestamp_seconds": 10.15,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0009.jpg",
+      "timestamp_seconds": 12.018,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0010.jpg",
+      "timestamp_seconds": 13.286,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0011.jpg",
+      "timestamp_seconds": 17.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0012.jpg",
+      "timestamp_seconds": 18.058,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0013.jpg",
+      "timestamp_seconds": 19.826,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0014.jpg",
+      "timestamp_seconds": 21.394,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0015.jpg",
+      "timestamp_seconds": 22.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0016.jpg",
+      "timestamp_seconds": 23.863,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0017.jpg",
+      "timestamp_seconds": 26.166,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0018.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_85/frame_0019.jpg",
+      "timestamp_seconds": 29.869,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_85.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_85.json",
+    "response_text": "The commercial opens with a close-up of a young man in a light-colored shirt standing in front of weathered wooden siding. He looks serious or intent, with strong shadows across his face.\n\nIt then cuts to a wider exterior view of an old wooden house on a street, shaded by trees. The building has worn clapboard siding, shutters, and a small storefront-like section or doorway.\n\nThe sequence returns to the young man in close-up. His head is tilted back, his eyes are partly closed or closed, and the image has a soft, pinkish light flare across one side. He appears to be leaning against or near the same weathered wall.\n\nNext, he is shown crouching low beside the house, wearing jeans and a pale shirt, with his hands held near his mouth as if watching or waiting. A brief overexposed, blurred transition follows, making the action unclear.\n\nThe scene then shifts to close-up shots of hands rubbing soap or suds over a glossy surface. Soon after, white liquid or soap streaks are seen dripping down the side of a light blue car.\n\nA wider shot reveals a vintage light blue car parked beside the old house. A young woman in a pink top and denim shorts is bent over near the front of the car, apparently washing it. A clothesline with hanging fabric is visible in the background. The house’s worn siding and shutters remain prominent.\n\nAfter a brief dark transition, there is a close-up of the woman’s denim shorts from behind, showing back pockets, damp-looking spots, and a brown leather patch at the waistband.\n\nThe man is then shown sitting on the ground against the house, legs spread out, in bright light. He appears startled or caught off guard. A close-up of the woman follows: she turns her head and looks back over her shoulder, holding a sponge or wash item near her hand. Her expression appears direct and slightly questioning or knowing.\n\nNear the end, the man stands leaning against the weathered wall with his hands near his pockets, looking off to the side and then smiling. Large red text “501” appears over the image, with a red Levi’s logo at the lower right. The commercial then cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_07c33f67bad5c1ec006a1071aefd30819fb1ba5c7a7f20d159",
+    "usage": {
+      "input_tokens": 4826,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 856,
+      "output_tokens_details": {
+        "reasoning_tokens": 406
+      },
+      "total_tokens": 5682
+    }
+  },
+  "duration_seconds": 21.553,
+  "created_at": "2026-05-22T15:09:56Z",
+  "error": null
+}

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2020_102",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_102",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_102/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_102.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0002.jpg",
+      "timestamp_seconds": 0.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0003.jpg",
+      "timestamp_seconds": 1.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0004.jpg",
+      "timestamp_seconds": 1.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0005.jpg",
+      "timestamp_seconds": 3.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0006.jpg",
+      "timestamp_seconds": 4.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0007.jpg",
+      "timestamp_seconds": 4.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0008.jpg",
+      "timestamp_seconds": 7.74,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0009.jpg",
+      "timestamp_seconds": 10.173,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0010.jpg",
+      "timestamp_seconds": 11.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0011.jpg",
+      "timestamp_seconds": 13.006,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0012.jpg",
+      "timestamp_seconds": 13.873,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_102/frame_0013.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_102.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_102.json",
+    "response_text": "The commercial opens on a bright blue sky with scattered white clouds. A white scripted “febreze” logo appears centered against the sky. The logo then enlarges rapidly, filling the frame so that only oversized parts of the letters are visible.\n\nAs the large white lettering moves across the screen, it transitions to a sunny exterior scene. An adult woman with curly hair is walking through a tidy front garden toward a white front door. The house façade has windows, climbing greenery, potted plants, and flowers. She carries a bag over one shoulder and approaches the entrance.\n\nThe scene cuts inside the home. The woman is now standing just inside the front door, wearing a light blue shirt and holding a dark jacket and a brown bag. Around the room, several pale green, cloudy animated odor-like forms are visible. One appears near a plant or pet area, another near the ceiling with a shoe-like object inside it, and others hover around the entryway. The woman looks upward toward one of these green clouds.\n\nThe commercial then shifts to a product pack shot. A Febreze Plug package is shown on the left, containing a white plug-in device and a small bottle labeled “Linen & Sky.” The Febreze logo appears large on the right. The packaging includes a yellow label at the top reading “FADE DEFY PLUG” and the device itself is labeled “PLUG.”\n\nNext, a clean demonstration graphic appears. A white plug-in air freshener is shown in a wall outlet, with a pale blue scent stream curving away from it. To the right, a circular arrow icon surrounds a large “2,” with the text “COMPLEMENTARY SCENTS.”\n\nThe scene returns to the interior hallway/living area. Multiple green odor clouds are still visible around the room, including near the door, floor, furniture, and hanging items. Blue animated scent ribbons sweep through the space from the plug-in area, visually crossing the room and passing through or around the green clouds.\n\nA close-up of the woman follows. She looks upward with a calm, pleased expression while translucent blue scent bands move across the foreground. Beside her is a blue circular graphic reading “UP TO 2 DAYS,” with arrows forming a loop around the number.\n\nThe next shot shows a wider living room. A child sits on the floor with a large dog in front of a sofa, while the woman sits on the sofa behind them. The room has plants, a window with curtains, cushions, a coffee table, and soft lighting. Blue scent-like bands continue to move horizontally across the room, suggesting freshened air.\n\nThe commercial ends with a product lineup on a blue sky-and-cloud background. Several Febreze Plug packages are displayed, with the main package in front showing the white plug-in unit and “Linen & Sky” refill. Large white text on the right reads “febreze PLUG,” and a small circular P&G logo appears in the upper-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_0aa98f38bc3d9811006a107b6825d88193845e96a13fcba4ea",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 680,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 3270
+    }
+  },
+  "duration_seconds": 15.038,
+  "created_at": "2026-05-22T15:51:19Z",
+  "error": null
+}

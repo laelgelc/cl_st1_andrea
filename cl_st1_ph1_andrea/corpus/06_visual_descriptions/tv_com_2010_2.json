@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2010_2",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_2",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_2/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_2.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0002.jpg",
+      "timestamp_seconds": 0.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0003.jpg",
+      "timestamp_seconds": 1.524,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0004.jpg",
+      "timestamp_seconds": 2.726,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0005.jpg",
+      "timestamp_seconds": 3.827,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0006.jpg",
+      "timestamp_seconds": 3.994,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0007.jpg",
+      "timestamp_seconds": 5.161,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0008.jpg",
+      "timestamp_seconds": 6.229,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0009.jpg",
+      "timestamp_seconds": 7.163,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0010.jpg",
+      "timestamp_seconds": 8.698,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0011.jpg",
+      "timestamp_seconds": 10.367,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_2/frame_0012.jpg",
+      "timestamp_seconds": 13.791,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_2.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_2.json",
+    "response_text": "The commercial opens on a very dark frame where only a faint, indistinct mark or logo-like shape is visible; the details are not clear.\n\nIt then cuts to a close-up of a hand arranging or picking up small shiny pink and red wrapped items on a pale, scalloped plate on a dark tabletop. The setting looks softly lit, with a patterned wall or curtain in the background.\n\nNext there is a very soft, blurred close-up of a person near a bright window or light source. The person’s face or body is not clearly visible, and the image functions more as a warm transitional shot than a clear action.\n\nThe scene moves to a café table. A woman’s hands open a glossy burgundy clutch or handbag beside a cup of coffee with foam art. The tabletop has a decorative patterned surface. In the following close-up, her hand places or retrieves several shiny pink-wrapped pieces into or from a small pouch or compartment near the handbag, with the coffee cup still visible nearby.\n\nThe commercial then shows a café interior. A barista or café worker stands behind an espresso machine. Behind them is a chalkboard menu with handwritten items such as “Café Latte,” “Mocha,” “Ameri…,” and “Tea.” A customer or another woman is visible in the background, partially obscured by the counter area.\n\nThe next scene is outdoors. A pink mailbox with a hand-drawn heart on its side stands in the foreground. A woman in a coat walks toward it in the background, holding a small item. A faint copyright line is visible near the bottom of the frame.\n\nA close-up shows the inside of the pink mailbox. Inside are pink and red items, including what appears to be a small wrapped package with a bow. The heart drawing is visible on the outside of the mailbox.\n\nThe commercial then cuts to a woman indoors, lit by bright light from a window or doorway. She holds up a small silver or light-colored wrapper/package and looks toward it with a slight smile. Her dark hair and face are visible, though the shot is partially softened by glare.\n\nAnother indoor shot shows the same or a similar dark-haired woman reclining comfortably in a cushioned chair near curtains. She is smiling while holding a pink wrapper or card and a red bag or gift bag. Her posture suggests she is relaxed and enjoying the contents, though the exact object in her hand is partly obscured.\n\nThe final frame is a product display: three Dove chocolate bars are arranged on a glossy chocolate-like surface. The front package is pink and labeled “Dove” with “Silk Chocolate” visible; the two packages behind it are darker pink/red tones, also branded “Dove.” A small URL, “facebook.com/dovechocolate,” appears at the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_09fb3c64d6181a1d006a1076efddb4819fa34939617537a6ac",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 624,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 3025
+    }
+  },
+  "duration_seconds": 16.996,
+  "created_at": "2026-05-22T15:32:16Z",
+  "error": null
+}

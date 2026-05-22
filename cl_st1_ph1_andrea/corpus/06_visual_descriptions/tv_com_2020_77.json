@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2020_77",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_77",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_77/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_77.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0002.jpg",
+      "timestamp_seconds": 2.192,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0003.jpg",
+      "timestamp_seconds": 3.46,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0004.jpg",
+      "timestamp_seconds": 4.06,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0005.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0006.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0007.jpg",
+      "timestamp_seconds": 13.136,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0008.jpg",
+      "timestamp_seconds": 14.938,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0009.jpg",
+      "timestamp_seconds": 15.805,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0010.jpg",
+      "timestamp_seconds": 17.407,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0011.jpg",
+      "timestamp_seconds": 18.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0012.jpg",
+      "timestamp_seconds": 19.376,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0013.jpg",
+      "timestamp_seconds": 20.91,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0014.jpg",
+      "timestamp_seconds": 21.811,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0015.jpg",
+      "timestamp_seconds": 23.146,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0016.jpg",
+      "timestamp_seconds": 23.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0017.jpg",
+      "timestamp_seconds": 24.481,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0018.jpg",
+      "timestamp_seconds": 26.116,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_77/frame_0019.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_77.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_77.json",
+    "response_text": "The commercial begins in a stylized desert/western landscape. Wide shots show sandy ground with scrubby bushes, mesas, and a bright blue sky with scattered clouds. A rider on a white horse moves through the scene, dressed in cowboy-style clothing with a wide-brimmed hat.\n\nThe sequence then cuts closer to the rider: a woman in a white western shirt, brown cowboy hat, yellow neck scarf, and leather/fringe accents sits on the white horse. A black bird, resembling a crow or raven, is visible on the ground nearby. The bird is then shown in close-up standing on the sand, looking upward. A subsequent close-up shows a small object partly buried in the sand, like a ring or cap, with the visible text “price” on it; the black bird’s beak or head is near the object.\n\nThe rider is next shown in medium close-up holding an acoustic guitar while seated on the horse. Her western outfit remains prominent: brown hat, yellow scarf, white shirt, and guitar across her body. A small prairie-dog-like animal wearing a yellow bandana appears perched near her shoulder in a close shot, visually matching the yellow scarf worn by the rider.\n\nThe setting then abruptly changes from the desert to the inside of a modern pharmacy or clinic-like retail space. Shelves filled with bottles and boxes line the room. A man in a cap stands browsing products. In the background, the white horse and rider are visible entering or present inside the pharmacy area, creating a contrast between western imagery and the contemporary store environment.\n\nA close shot shows an older man with glasses and a mustache looking toward the rider from behind shelves stocked with medical or health products. Some product labels are visible but not fully central; the pharmacy context is visually clear. The rider appears again indoors, smiling and holding up a bright yellow smartphone. The phone screen displays the word “GoodRx” in dark text.\n\nThe scene then focuses on other pharmacy customers and staff. A woman with a large orange tote bag walks to the counter. Other people wait nearby, including a man with a beard and a sling on one arm and several pharmacy employees in white coats. The rider remains mounted on the white horse inside the pharmacy, waiting behind queue stanchions. Store shelving and a pharmacy counter are visible, with “www.goodrx.com” faintly readable on signage above the counter area.\n\nThe rider is shown seated on the horse at the counter, facing a pharmacy worker or customer off-frame. The prairie-dog-like animal with the yellow bandana reappears in a close-up beside the rider’s shoulder.\n\nThe commercial then cuts to a receipt or label printer on a pharmacy counter. Initially, the device has two red indicator lights and a strip of paper feeding out. After a cut back to the pharmacy counter area, the printer is shown again with two green indicator lights while paper continues to feed out, suggesting a successful or improved transaction visually, though no audio or dialogue is available to confirm this.\n\nNear the end, the rider sits on the white horse beside the woman with the orange tote bag, who appears to be smiling while looking downward, possibly at a phone or receipt. The rider holds the yellow phone and looks pleased.\n\nThe final sequence shifts to a solid bright yellow background. A small figure briefly rises at the bottom edge, then the screen resolves into a clean end card. Large black text reads “GoodRx.” Beneath it, smaller text reads “Save time and money on prescriptions.” A white rounded button appears below with the words “CHECK GOODRX.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0bfb575cce1eb923006a107ae7ef2081a08f246129fbbaeae1",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 811,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 4535
+    }
+  },
+  "duration_seconds": 21.987,
+  "created_at": "2026-05-22T15:49:17Z",
+  "error": null
+}

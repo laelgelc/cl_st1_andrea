@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1950_50",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_50",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_50/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_50.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_50/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_50/frame_0002.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_50.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_50.json",
+    "response_text": "The commercial is in black and white and only two sampled moments are visible.\n\nAt the start, the frame shows a close-up of two adults seated or positioned close together. A man in a dark suit and tie is on the left, turned toward a woman beside him. The woman is on the right, wearing a light-colored jacket, a necklace, and earrings. She faces slightly toward the camera with a composed expression, while the man appears to be looking at or speaking toward her. The background is plain and dim, with the figures softly lit.\n\nBy the final frame, the commercial has shifted to a static promotional end card. Large text reads: “FIRST IN BLACK AND WHITE TELEVISION” near the top and “FIRST IN COMPATIBLE COLOR TELEVISION” across the middle. The brand name “RCA VICTOR” appears prominently in large lettering. Below and to the left is the RCA logo, and at the bottom is the well-known image of a dog listening to a gramophone. Beneath this image is the slogan text: “HIS MASTER’S VOICE.” The layout resembles a formal brand sign-off or closing advertisement card."
+  },
+  "api_metadata": {
+    "response_id": "resp_01b84b3ae117ec6b006a106bc0c4ec81a19b2d270a16b974e0",
+    "usage": {
+      "input_tokens": 627,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 918
+    }
+  },
+  "duration_seconds": 7.722,
+  "created_at": "2026-05-22T14:44:24Z",
+  "error": null
+}

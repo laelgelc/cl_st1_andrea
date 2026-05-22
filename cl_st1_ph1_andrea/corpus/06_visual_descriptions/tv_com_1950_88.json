@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_88",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_88",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_88/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_88.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_88/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_88/frame_0002.jpg",
+      "timestamp_seconds": 7.239,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_88/frame_0003.jpg",
+      "timestamp_seconds": 13.203,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_88/frame_0004.jpg",
+      "timestamp_seconds": 51.199,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_88/frame_0005.jpg",
+      "timestamp_seconds": 77.059,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_88.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_88.json",
+    "response_text": "The commercial appears to follow a vintage light-green Chevrolet pickup truck associated with boating and an outdoor/ranch setting.\n\n- **Opening frame (0.000s):** The scene is outdoors in a rocky, desert-like landscape with shrubs and low hills. A red motorboat is visible on the left, with shiny equipment or containers near it. In the foreground, a person wearing a purple garment is bent over or reaching toward a large white, curved object with dark patches; what the object is cannot be identified clearly from the frame. A paved or patio-like surface and outdoor furniture or equipment are visible. “Not For Broadcast” and a timecode overlay appear on the image.\n\n- **Around 7.239s:** The view cuts wider to a driveway or yard in front of a small house or shelter with a tiled roof. A light-green vintage pickup truck is parked beside or attached to a red boat on a trailer. A white fence runs across the foreground. Several people are present: one person is near the boat/trailer area, another is near or on the truck bed, and a man in a cowboy hat stands near the side of the truck. The setting still appears rural or semi-rural, with trees and rocky hills in the background.\n\n- **Around 13.203s:** A close-up shows a man standing beside the truck. He wears a white cowboy hat, a plaid shirt, and a neckerchief or scarf. The truck window and door frame are behind him. He faces slightly to the side and appears to be addressing someone off-camera or nearby, though no speech can be inferred from the image alone.\n\n- **Around 51.199s:** The setting changes to a shoreline or open sandy area near water. The same light-green Chevrolet pickup is shown from the front-left side. Several people are visible inside the cab through the windshield. The red boat and trailer are partly visible behind the truck. The ground looks sandy or muddy, and water stretches into the background.\n\n- **Final frame (77.059s):** The truck is shown head-on, centered in the frame, parked in front of a white fence. A driver is visible through the windshield. The Chevrolet grille and front emblem are prominent, and the front license plate reads “F58-165.” The outdoor rural landscape continues in the background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0289299d7308f357006a106c4c6cb481a1b54df324a529e089",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 873,
+      "output_tokens_details": {
+        "reasoning_tokens": 397
+      },
+      "total_tokens": 1951
+    }
+  },
+  "duration_seconds": 22.315,
+  "created_at": "2026-05-22T14:46:58Z",
+  "error": null
+}

@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1980_34",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_34",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_34/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_34.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0002.jpg",
+      "timestamp_seconds": 1.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0003.jpg",
+      "timestamp_seconds": 3.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0004.jpg",
+      "timestamp_seconds": 5.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0005.jpg",
+      "timestamp_seconds": 9.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0006.jpg",
+      "timestamp_seconds": 12.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0007.jpg",
+      "timestamp_seconds": 16.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0008.jpg",
+      "timestamp_seconds": 25.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_34/frame_0009.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_34.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_34.json",
+    "response_text": "The commercial begins with a very dark, low-visibility frame; no clear objects or people can be identified.\n\nIt then cuts to a close-up of a blonde woman in profile, wearing a striped shirt. She appears to be indoors near window blinds, with soft daylight. Her expression is pleasant, and she is looking downward or to the side.\n\nThe next shot widens to show the woman standing in a laundry or utility area beside a white laundry basket filled with clothes, including a bright red garment. A young boy stands beside her, looking up at her. He is wearing a yellow sports-style shirt with black trim and the number “7” on the front. Behind them are household details such as blinds, a counter or sink area, and potted plants.\n\nThe commercial then cuts to a product shot against a black background: a green-and-blue cylindrical stick labeled “Spray ’n Wash Stain Stick.” The product is centered vertically and lit so the label is visible.\n\nAfter this, the boy is shown with his arms raised while the yellow jersey is being pulled off over his head. The woman is behind him, smiling or looking on. The scene remains in the same home/laundry setting.\n\nA close-up follows of the yellow shirt laid flat. A large brownish stain is visible on the fabric, with another smaller stained area nearby. Hands are partly visible at the edges of the frame, suggesting the shirt is being inspected or handled.\n\nThe next shot presents a calendar-like graphic frame with the word “Saturday” at the top and the number “1” at the lower left. Inside the calendar image, the woman stands in a bright laundry room holding the yellow shirt and a small green product, appearing to apply or prepare to apply it to the garment. A washing machine or appliance is visible behind her.\n\nNear the end, the commercial shows a product display: the “Spray ’n Wash Stain Stick” in front, with larger green bottles labeled “Spray ’n Wash” behind it. The products are arranged as a pack shot against a clean, softly lit background.\n\nThe final frame shows the yellow jersey again beside the product lineup. A red stamped graphic reading “MISSION ACCOMPLISHED” appears over the image. The “Spray ’n Wash Stain Stick” is centered in front, with “Spray ’n Wash” bottles behind it, presenting the product as the visual focus at the close."
+  },
+  "api_metadata": {
+    "response_id": "resp_0154db05853ec837006a1070e9ce7c81908bd3984eefec8737",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 712,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 3068
+    }
+  },
+  "duration_seconds": 17.729,
+  "created_at": "2026-05-22T15:06:35Z",
+  "error": null
+}

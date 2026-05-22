@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_1960_81",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_81",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_81/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_81.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0002.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0003.jpg",
+      "timestamp_seconds": 16.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0004.jpg",
+      "timestamp_seconds": 26.983,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0005.jpg",
+      "timestamp_seconds": 27.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0006.jpg",
+      "timestamp_seconds": 30.921,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0007.jpg",
+      "timestamp_seconds": 31.655,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0008.jpg",
+      "timestamp_seconds": 32.122,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0009.jpg",
+      "timestamp_seconds": 35.992,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0010.jpg",
+      "timestamp_seconds": 36.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0011.jpg",
+      "timestamp_seconds": 37.46,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0012.jpg",
+      "timestamp_seconds": 37.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0013.jpg",
+      "timestamp_seconds": 37.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0014.jpg",
+      "timestamp_seconds": 38.261,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0015.jpg",
+      "timestamp_seconds": 38.595,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0016.jpg",
+      "timestamp_seconds": 38.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0017.jpg",
+      "timestamp_seconds": 39.262,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_81/frame_0018.jpg",
+      "timestamp_seconds": 48.039,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_81.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_81.json",
+    "response_text": "The commercial opens in a minimalist studio setting with a pale blue-green background and a reflective floor. An adult man with glasses sits in a rounded wicker or woven chair. He wears a white long-sleeved shirt, a dark tie, light-colored shorts, and dark mid-length socks. A tall floor lamp with a round glowing globe shade stands to his left.\n\nThe camera then cuts to a close-up of the man’s face. He has a receding hairline and dark-framed glasses. He looks downward, with a reserved or concentrated expression. The view returns to a wider shot: he is still seated in the chair near the lamp, adjusting his posture and beginning to move as if preparing to stand.\n\nA close, tilted shot shows him smiling or laughing while in motion, followed by a full-body shot of him standing in the same pale studio. He begins dancing or stepping energetically. His white shirt and tie move with the action, and his shorts expose his legs and dark socks prominently.\n\nThe next sequence emphasizes movement through rapid cuts and close-ups. Several frames focus on his socked feet and lower legs against the glossy floor. The socks are mid-calf length and dark, appearing black or very dark, though the lighting and motion blur sometimes give parts of the image a reddish tint. His feet step, lift, cross, and pivot, with reflections visible on the floor. The camera alternates between close-ups of his feet and blurred close-ups of his smiling face, reinforcing the energetic movement.\n\nNear the end, a front-facing medium shot shows him still in motion, wearing the white shirt, loose dark tie, light shorts, and dark socks. The tie swings outward, suggesting continued dancing.\n\nThe final frame returns to a quieter product-oriented composition. The man is seated again on the woven chair, with his lower legs and socked feet shown prominently in the foreground. At the lower left of the frame, visible on-screen text reads: “Burlington Mid-Length Socks.” The product name is visually paired with the close-up of the dark mid-length socks."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ad75591b936f34e006a106dfea9f08195b209c26a52de0b1d",
+    "usage": {
+      "input_tokens": 4579,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 602,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 5181
+    }
+  },
+  "duration_seconds": 16.341,
+  "created_at": "2026-05-22T14:54:06Z",
+  "error": null
+}

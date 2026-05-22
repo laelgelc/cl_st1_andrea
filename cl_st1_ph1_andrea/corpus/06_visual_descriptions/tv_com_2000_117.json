@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_117",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_117",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_117/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_117.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0002.jpg",
+      "timestamp_seconds": 3.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0003.jpg",
+      "timestamp_seconds": 4.327,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0004.jpg",
+      "timestamp_seconds": 4.728,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0005.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0006.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0007.jpg",
+      "timestamp_seconds": 5.629,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0008.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0009.jpg",
+      "timestamp_seconds": 8.431,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0010.jpg",
+      "timestamp_seconds": 9.399,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0011.jpg",
+      "timestamp_seconds": 10.0,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0012.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0013.jpg",
+      "timestamp_seconds": 10.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0014.jpg",
+      "timestamp_seconds": 12.102,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0015.jpg",
+      "timestamp_seconds": 13.069,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0016.jpg",
+      "timestamp_seconds": 16.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0017.jpg",
+      "timestamp_seconds": 16.606,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0018.jpg",
+      "timestamp_seconds": 17.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0019.jpg",
+      "timestamp_seconds": 17.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0020.jpg",
+      "timestamp_seconds": 17.474,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0021.jpg",
+      "timestamp_seconds": 17.741,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0022.jpg",
+      "timestamp_seconds": 17.841,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0023.jpg",
+      "timestamp_seconds": 18.508,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0024.jpg",
+      "timestamp_seconds": 18.842,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0025.jpg",
+      "timestamp_seconds": 19.509,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0026.jpg",
+      "timestamp_seconds": 21.077,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0027.jpg",
+      "timestamp_seconds": 21.745,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0028.jpg",
+      "timestamp_seconds": 22.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0029.jpg",
+      "timestamp_seconds": 23.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_117/frame_0030.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_117.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_117.json",
+    "response_text": "The commercial opens in near darkness, with only faint shapes visible.\n\nA brightly lit screen then appears, framed by a cool blue, metallic-looking setting. On the screen is an image of a silver sedan with large grey text underneath reading “YOU WANT IT.” The image remains centered and becomes slightly closer or more prominent. The same car-and-text image then appears on what looks like a darker television or monitor screen, with a small red light visible to the side.\n\nThe scene cuts to a close-up of a middle-aged man in a suit and tie. He faces the camera in a dark urban setting, with blue light and blurred city lights behind him. A strong white light briefly overexposes his face.\n\nThe commercial then moves through a rapid sequence of city and public-screen imagery. A traditional-looking boat is shown on water in front of a modern skyline under a bright blue sky. A television set appears in the foreground showing a cartoon, while the waterfront city remains visible behind it.\n\nAt night, tall buildings with large illuminated displays are shown. A billboard displays the silver car and the “YOU WANT IT” message on the side of a building. The display alternates with a red-and-blue patterned screen with white flower-like symbols and partial text near the bottom that appears to begin “Times S…”. The car billboard then returns.\n\nA crowd appears in silhouette inside a large blue-lit venue, with some people raising their arms. This is followed by a bright, washed-blue view of a large curved architectural structure, possibly stadium-like, though the exact setting is unclear.\n\nThe ad cuts to a dark interior or street-side location with people and screens around them. Then an outdoor crowd is seen watching a large projection screen. At first the screen shows a black-and-white moving image that is not clearly identifiable; it then changes to the silver car with the text “YOU WANT IT.”\n\nSeveral close-ups show people looking toward a bright light or screen. Two young adults, one woman and one man, stand side by side in a crowded nighttime street decorated with strings of small lights. The lighting alternates between dark, natural exposure and intense overexposure, making their faces briefly very bright. Their expressions appear focused or neutral as they look forward.\n\nA night street scene follows with two people standing behind an open yellow car door, possibly beside a taxi, though the vehicle is only partially visible. The shot is again strongly overexposed. Another urban shot shows colorful vertical signage and dark silhouettes between tall buildings.\n\nA young man stands near a brightly lit shop window or food stand with greenish lighting, holding a small light-colored object close to his mouth. The exact object is unclear.\n\nThe car-and-slogan image returns on a dark television screen: a silver sedan above the words “YOU WANT IT.” The image remains for another moment with reflections or glare across it.\n\nNear the end, the suited man is shown again from the side or back, moving in a dark space beside a bright rectangular light source. The screen then fades toward darkness. The final frame is almost black except for a thin, white, looping line or logo-like mark in the center; the surrounding details are not visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0738b2fe302dc933006a1076cdc1dc81a082dcbcd2d0e18fac",
+    "usage": {
+      "input_tokens": 6973,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1158,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 8131
+    }
+  },
+  "duration_seconds": 34.016,
+  "created_at": "2026-05-22T15:31:59Z",
+  "error": null
+}

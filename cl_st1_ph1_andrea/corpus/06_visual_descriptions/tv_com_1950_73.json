@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1950_73",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_73",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_73/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_73.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0002.jpg",
+      "timestamp_seconds": 0.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0003.jpg",
+      "timestamp_seconds": 41.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0004.jpg",
+      "timestamp_seconds": 58.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0005.jpg",
+      "timestamp_seconds": 67.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0006.jpg",
+      "timestamp_seconds": 67.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0007.jpg",
+      "timestamp_seconds": 68.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_73/frame_0008.jpg",
+      "timestamp_seconds": 89.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_73.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_73.json",
+    "response_text": "The commercial is presented in black and white and appears to be for RCA/RCA Victor products. The sampled frames show a sequence moving from brand identification, to clocks/radio equipment, to a bedroom use scene, and finally to an RCA Victor end card.\n\n1. **Opening brand image**  \n   The first frame shows the circular **RCA** logo centered on a dark, speckled or star-like background. The letters “RCA” are large and bright inside a ring. A small “tvdays.com” watermark appears at the lower right.\n\n2. **Animated alarm clock image**  \n   The next frame cuts to a drawn or animated alarm clock standing on two legs against a plain, textured background. The clock has a face with numbers, two bells at the top, and hands visible on the dial. The image is stylized rather than photographic.\n\n3. **Product display: rectangular device with dials**  \n   Later, a rectangular tabletop device is shown against a light background. It has two prominent circular controls or displays on the front: one on the left with clock-like markings, and one larger dial on the right with numbered markings around it. Small branding text is visible near the lower right of the device, but it is not fully legible in the frame.\n\n4. **Bedroom scene with sleeping woman and bedside device**  \n   The commercial then shows a bedroom setting. A woman is lying asleep in bed with her head on a pillow. Beside the bed is a nightstand holding a lamp and a light-colored rectangular appliance with knobs/dials on its front. The appliance resembles the earlier product in general form, but the exact model or function cannot be confirmed from the frame alone. The woman’s eyes are closed, and the scene suggests nighttime or a dimly lit bedroom.\n\n5. **Bright close-up/transition**  \n   A very bright, almost white image fills most of the next frame, with a dark vertical area at the right edge. This appears to be a close-up or transition, but the object is unclear in the sampled frame.\n\n6. **Blurred close-up of equipment**  \n   The following frame is a blurred close-up of a rectangular front panel or device surface. Dark circular shapes resembling knobs or controls are visible, but the image is too indistinct to identify details confidently.\n\n7. **Clearer close-up of control panel**  \n   A close-up of a light-colored front panel appears. Two large circular controls or dials are visible, one on each side. In the center is a grille-like area with horizontal lines and a bright irregular shape over it, possibly glare or a reflection. Some small text appears on the right side of the panel, but it is not legible. The frame suggests attention to the product’s controls and front design.\n\n8. **Closing RCA Victor end card**  \n   The final frame shows the **RCA Victor** name in large lettering. Beneath it is the well-known image of a dog sitting beside a gramophone horn. At the bottom, the phrase **“HIS MASTER’S VOICE”** is clearly visible in quotation marks. The “tvdays.com” watermark remains at the lower right.\n\nOverall, visually the commercial progresses from RCA branding, to clock imagery, to a tabletop device with clock/radio-like controls, to a domestic bedroom scene showing the device beside a sleeping woman, and finally to an RCA Victor brand end card."
+  },
+  "api_metadata": {
+    "response_id": "resp_0392f9fd42a45cbb006a106c0e4eb88193ac79a932cb56251e",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 873,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 2982
+    }
+  },
+  "duration_seconds": 21.052,
+  "created_at": "2026-05-22T14:45:55Z",
+  "error": null
+}

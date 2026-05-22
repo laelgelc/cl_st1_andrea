@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_2010_65",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_65",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_65/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_65.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0003.jpg",
+      "timestamp_seconds": 1.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0004.jpg",
+      "timestamp_seconds": 2.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0005.jpg",
+      "timestamp_seconds": 3.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0006.jpg",
+      "timestamp_seconds": 4.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0007.jpg",
+      "timestamp_seconds": 5.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0008.jpg",
+      "timestamp_seconds": 6.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0009.jpg",
+      "timestamp_seconds": 9.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0010.jpg",
+      "timestamp_seconds": 9.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0011.jpg",
+      "timestamp_seconds": 11.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0012.jpg",
+      "timestamp_seconds": 11.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0013.jpg",
+      "timestamp_seconds": 12.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0014.jpg",
+      "timestamp_seconds": 13.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0015.jpg",
+      "timestamp_seconds": 14.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0016.jpg",
+      "timestamp_seconds": 15.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0017.jpg",
+      "timestamp_seconds": 16.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0018.jpg",
+      "timestamp_seconds": 18.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0019.jpg",
+      "timestamp_seconds": 20.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0020.jpg",
+      "timestamp_seconds": 21.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0021.jpg",
+      "timestamp_seconds": 22.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0022.jpg",
+      "timestamp_seconds": 23.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0023.jpg",
+      "timestamp_seconds": 24.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0024.jpg",
+      "timestamp_seconds": 26.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_65/frame_0025.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_65.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_65.json",
+    "response_text": "The clip opens on a clean white screen with the FedEx logo centered and a small web address below it (“fedex.com/delivery”).\n\nIt then cuts to a bright, upscale outdoor patio at a large white house. The view looks across a rectangular pool and lounge area toward the house, framed by light curtains in the foreground. The setting is sunny, with manicured landscaping, lounge chairs, and a polished courtyard.\n\nA woman with long light-brown hair, wearing a fitted teal sleeveless dress, sits at an outdoor table. She holds a dark beverage in a clear mug and looks down at papers or a document in front of her. A man wearing glasses, a shirt and tie, and a dark apron appears nearby holding a metal tray or caddy with cups. The setting behind him shows an airy interior room with plants and light-colored furnishings.\n\nThe woman looks up from the papers, appearing attentive or surprised. The man stands facing her with the tray. They are shown in alternating shots from each other’s perspective: she remains near the patio/pool area holding her drink, while he stands at the edge of the indoor-outdoor space. The woman smiles slightly and raises the mug. The man gestures with his hands and later sets or lowers the tray near the table.\n\nThe woman drinks from the clear mug. In later shots, her drink changes to a layered iced beverage with a straw: dark coffee at the top, a pale milk/cream layer below, and ice visible. She sips through the straw while looking toward the man. The man, still in apron and glasses, gestures animatedly, including pointing or making small hand motions, as if explaining something. A wider shot shows them both on the patio: the man stands by a round table with a vase of white flowers, cups, and a tray, while the woman stands in heels beside the table.\n\nThe commercial then shifts to product-focused shots of a Ninja coffee machine. A close-up shows dark coffee dispensing into a glass mug beside the machine. The machine’s digital display and control panel are visible. The lower-left corner displays a small “NINJA COFFEE BAR” graphic.\n\nA close-up of the control dial shows a hand with white nail polish turning or pressing the selector near labeled options including “TRAVEL” and “CUP.” Another product shot shows a glass carafe, a latte-like drink in a mug, and a dark coffee in a clear mug arranged on a countertop. A further close-up shows a finger pressing a button labeled “OVER ICE,” with nearby text reading “SPECIALTY BREW (CONCENTRATED COFFEE).”\n\nThe woman then appears in a bright kitchen behind the Ninja Coffee Bar machine, smiling and gesturing with both hands. Several drinks are arranged on the counter: a carafe, a hot coffee in a mug, a layered iced drink, and a dark iced drink. The “NINJA COFFEE BAR” graphic remains in the lower-left corner.\n\nThe final product shots show the Ninja Coffee Bar machine centered on a kitchen counter, surrounded by the glass carafe and multiple prepared beverages. The last frame adds large on-screen text: “NINJA COFFEE BAR,” with the website “NINJACOFFEEBAR.COM” and availability text showing “Kohl’s” and “Walmart.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0325bbe864af4733006a10783fb500819db078eeac2ce6789b",
+    "usage": {
+      "input_tokens": 4858,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 842,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 5700
+    }
+  },
+  "duration_seconds": 21.876,
+  "created_at": "2026-05-22T15:37:57Z",
+  "error": null
+}

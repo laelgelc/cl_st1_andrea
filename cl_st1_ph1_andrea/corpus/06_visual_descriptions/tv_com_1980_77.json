@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1980_77",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_77",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_77/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_77.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_77/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_77/frame_0002.jpg",
+      "timestamp_seconds": 27.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_77.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_77.json",
+    "response_text": "The commercial opens in a dark, studio-like or control-room setting. Four adults in business attire are seated on rolling office chairs around a workstation area with several CRT-style computer monitors behind them. The background is mostly black, with the monitors providing bright color accents. The screens show indistinct graphics or images, but no readable text is visible.\n\nAt the start, the group appears to be in discussion or interaction with each other rather than addressing the viewer. The person near the center-left gestures with a hand, while the person near the center-right turns toward the man seated on the far right. The far-right man sits at a desk or console area, angled toward the group. The overall arrangement suggests a meeting or demonstration involving computer screens.\n\nBy the final frame, the same four people remain seated in roughly the same positions. Their posture has shifted: most of them now face more toward the camera, as if the group has turned its attention outward. The far-right man also looks toward the camera. The monitors remain visible behind them, still displaying colorful but indistinct images. The setting, lighting, and businesslike composition remain consistent through the clip."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a5aaff335a83b80006a107190a93c8191a168305a8f4ade5b",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 831
+    }
+  },
+  "duration_seconds": 12.729,
+  "created_at": "2026-05-22T15:09:17Z",
+  "error": null
+}

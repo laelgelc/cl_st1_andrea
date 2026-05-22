@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1950_108",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_108",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_108/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_108.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0002.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0003.jpg",
+      "timestamp_seconds": 20.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0004.jpg",
+      "timestamp_seconds": 27.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0005.jpg",
+      "timestamp_seconds": 28.752,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0006.jpg",
+      "timestamp_seconds": 30.754,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0007.jpg",
+      "timestamp_seconds": 31.721,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0008.jpg",
+      "timestamp_seconds": 32.188,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0009.jpg",
+      "timestamp_seconds": 32.789,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0010.jpg",
+      "timestamp_seconds": 37.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0011.jpg",
+      "timestamp_seconds": 39.629,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0012.jpg",
+      "timestamp_seconds": 41.565,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0013.jpg",
+      "timestamp_seconds": 43.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0014.jpg",
+      "timestamp_seconds": 43.867,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0015.jpg",
+      "timestamp_seconds": 45.935,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0016.jpg",
+      "timestamp_seconds": 56.746,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1950_108/frame_0017.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_108.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_108.json",
+    "response_text": "The commercial is in black and white and presents a sequence of laboratory, industrial, and automotive testing scenes, ending with a brand logo.\n\nAt the beginning, a gloved hand holds a glass beaker or measuring vessel containing a cloudy, foaming, or milky liquid. The shot is close-up and laboratory-like, with the vessel dominating the frame.\n\nAfter a dark transitional shot, a man in a suit appears standing near or in front of a door. The image is soft and slightly blurred; a small sign on the door is visible but not legible in the sampled frame.\n\nThe scene then shifts to industrial testing equipment. A mechanical apparatus with two large articulated arms stands in front of what looks like a chamber or heavy framed opening. The camera then moves closer to the equipment, showing cylindrical joints, rods, and a central mechanism. The setting appears like a testing laboratory or engineering facility.\n\nNext, close-up shots show a hand operating a control panel. One shot shows a hand turning or pointing at a labeled “START SWITCH.” Another shot shows a finger pressing a “START” button. Other visible labels include “DYN MOTOR,” “JACKET WATER,” and “LUBE OIL,” with additional “START” and “STOP” buttons arranged in rows. These shots emphasize manual activation of machinery.\n\nThe commercial then cuts back to close-ups of mechanical components: pipes, hoses, metal fittings, and a chamber-like device with bolts around an opening. A gloved or sleeved worker’s arm is partly visible near the machinery.\n\nA wheel or tire is then shown pressing or rolling over a patterned or textured surface. The tire has a bright, high-contrast tread pattern, and the surface beneath it also shows raised or dimpled texture. This suggests a test setup, though the exact purpose is not explicitly shown.\n\nThe next scene shows a row of large machine units behind a barrier or rail. Each unit has circular reels or wheel-like components and control panels. The equipment appears to be part of a testing or monitoring installation.\n\nThe commercial then cuts outdoors to a parking or service area beside a large building. Several mid-century cars are parked in a line, each near posts and hoses or cables, suggesting a controlled fueling, testing, or service arrangement. The exact function is not clear from the frames alone.\n\nInside a control room, a man sits at a large console with multiple dials, gauges, and meters. He faces away from the camera and appears to be operating or monitoring the controls. This is followed by a brief superimposed or transitional shot combining the control-room view with another industrial interior containing large pipes or tanks.\n\nThe tire-on-textured-surface shot appears again, reinforcing the testing motif.\n\nNear the end, a suited male presenter appears in front of a large oval sign. The word “HUMBLE” is visible in large capital letters behind him, and a smaller oval also contains the word “HUMBLE.” A bright starburst or spark-like graphic appears at the upper left of the oval. In the final frame, the screen resolves to a clean, centered oval logo with the word “HUMBLE” in bold capital letters.\n\nA visible “OsbornTramain” watermark appears in the lower-right area of many frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c9a7e00edac69b4006a106ca36e848190a60fb09cbc0b34b3",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 911,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 5243
+    }
+  },
+  "duration_seconds": 25.128,
+  "created_at": "2026-05-22T14:48:28Z",
+  "error": null
+}

@@ -1,0 +1,235 @@
+{
+  "commercial_id": "tv_com_2000_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0002.jpg",
+      "timestamp_seconds": 1.658,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0003.jpg",
+      "timestamp_seconds": 4.127,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0004.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0005.jpg",
+      "timestamp_seconds": 6.563,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0006.jpg",
+      "timestamp_seconds": 7.998,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0007.jpg",
+      "timestamp_seconds": 8.932,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0008.jpg",
+      "timestamp_seconds": 9.833,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0009.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0010.jpg",
+      "timestamp_seconds": 12.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0011.jpg",
+      "timestamp_seconds": 13.136,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0012.jpg",
+      "timestamp_seconds": 13.803,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0013.jpg",
+      "timestamp_seconds": 14.371,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0014.jpg",
+      "timestamp_seconds": 15.372,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0015.jpg",
+      "timestamp_seconds": 16.439,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0016.jpg",
+      "timestamp_seconds": 17.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0017.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0018.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0019.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0020.jpg",
+      "timestamp_seconds": 19.943,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0021.jpg",
+      "timestamp_seconds": 21.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0022.jpg",
+      "timestamp_seconds": 21.845,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0023.jpg",
+      "timestamp_seconds": 22.479,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0024.jpg",
+      "timestamp_seconds": 23.213,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_43/frame_0025.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 25,
+    "submitted_frame_count": 25,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_43.json",
+    "response_text": "The commercial opens in near darkness, with little discernible visual detail. It then cuts to a stylized, blue-toned nighttime city street with wet pavement and tall buildings. The setting resembles a dense urban financial district. A distinctive triangular-topped skyscraper appears in the distance, and the streets look empty except for chickens positioned near the curbs and road.\n\nA close-up shows a rooster or chicken in profile, lit dramatically against a blurred urban background. The next shot places three chickens on the roof of a yellow taxi, near a taxi sign reading “2T84.” The birds stand facing different directions, with city buildings behind them.\n\nThe commercial then shows chickens moving through city streets at night. Two chickens run across a wet, reflective avenue, and then several chickens run along what appears to be a bridge or elevated walkway. Another shot shows chickens clustered near the side of a bus or train-like vehicle in a narrow urban passage. One bird appears blurred in the foreground as if moving quickly past the camera.\n\nThe chickens continue appearing in different city locations. A group is shown near a subway entrance; the sign includes “Wall St Station.” The birds are positioned around street railings and steps. The scale then expands dramatically: a large crowd of chickens fills a broad street or plaza near a neoclassical building with columns and a statue. The camera shows both wide crowd shots and low-angle views of chickens gathered in front of tall buildings.\n\nSeveral shots emphasize the massing of chickens around a financial or civic-looking district. Chickens stand on ledges and barriers, with a statue and columned building visible behind them. The birds are shown from low angles, making them appear prominent against the architecture. One sequence shows chickens facing forward in dense groups, with their combs and feathers clearly visible. Another shot looks upward between tall buildings, briefly shifting focus away from the chickens to the vertical cityscape.\n\nThe commercial returns to the crowd: chickens stand on an elevated ledge overlooking a large gathering below. More close and medium shots show multiple chickens packed together, some perched on metal railings or barriers. One white chicken stands on a dark rounded object in front of the columned building, with a large crowd of chickens spread behind it. A high-angle overhead shot shows many chickens dispersed across a city plaza or street grid.\n\nA wide street view shows chickens running or spreading through a downtown canyon of buildings, with the columned building in the distance. The commercial then cuts to a rapid overhead shot of city blocks, giving a compressed aerial view of tall buildings. After that, the imagery shifts to vehicles and street disruption: a city street appears with vehicles in the distance, then a shot shows a white bus passing across the frame while steam, smoke, or dust rises from the street. A low-angle shot shows the front and side of a white bus driving through the city environment, with haze and buildings around it.\n\nThe final city image is a hazy skyline across water, showing a cluster of skyscrapers in daylight or early light. The commercial then cuts to a clean white end card. Centered near the top is a circular “ca” logo, with “Computer Associates” written beneath it. Along the bottom, blue text reads “The Software That Manages eBusiness,” followed by “ca.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_05bc6f4a4dba6487006a1075490264819e95ee08a4bc3bc5d1",
+    "usage": {
+      "input_tokens": 6308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 780,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 7088
+    }
+  },
+  "duration_seconds": 22.568,
+  "created_at": "2026-05-22T15:25:19Z",
+  "error": null
+}

@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2020_12",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_12",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_12/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_12.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0002.jpg",
+      "timestamp_seconds": 3.693,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0003.jpg",
+      "timestamp_seconds": 4.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0004.jpg",
+      "timestamp_seconds": 12.452,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0005.jpg",
+      "timestamp_seconds": 15.58,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0006.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0007.jpg",
+      "timestamp_seconds": 22.003,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0008.jpg",
+      "timestamp_seconds": 23.505,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0009.jpg",
+      "timestamp_seconds": 24.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0010.jpg",
+      "timestamp_seconds": 26.216,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0011.jpg",
+      "timestamp_seconds": 28.885,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_12/frame_0012.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_12.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_12.json",
+    "response_text": "The commercial opens in an unfinished, concrete interior that looks like a construction or renovation space. A construction worker wearing a hard hat and high-visibility vest stands near a tripod-mounted measuring or laser tool. Another worker is kneeling at the right side of the room. On the left wall, there is a projected or reflected image showing a worker in a vest.\n\nThe next shot moves into a close-up of a Bosch Professional tool mounted on a tripod. Hands adjust the device, which has a red, blue, and black casing and a visible Bosch logo.\n\nThe setting then becomes darker and more dramatic. A bright green laser line forms a horizontal line across the walls and a vertical line near the tripod. A man in blue boxing-style clothing stands in the center of the room, while a construction worker stands to the side. The laser equipment appears to be projecting alignment lines through the space.\n\nThe man in blue is then shown close up wearing large blue boxing gloves. He faces forward in a fighting stance, with the green laser line running behind him. Small white legal/disclaimer text appears at the bottom of some frames, though it is very small and only partly legible.\n\nA later close-up shows a handheld measuring device being placed against the rough edge of a wall or doorway. Its screen is visible but not clearly readable. The man in blue then holds or points this small device near a doorway while a construction worker in a hard hat and safety glasses observes. The green laser line continues across the wall.\n\nThe man in blue then resumes boxing movements. He punches toward a padded object or target held by a worker. The worker is shown in close-up wearing a hard hat, safety glasses, and a high-visibility jacket, holding a light-colored pad or cushion-like object.\n\nNear the end, a wide shot shows several Bosch tools arranged on a table at the left, the tripod-mounted laser device in the center, and the man in blue boxing on the right. Green laser lines cross the room horizontally and vertically, and bright work lights illuminate the scene.\n\nThe final frames cut to a plain white end card with the Bosch logo in red and black. Below it, the website “boschtools.com” is displayed."
+  },
+  "api_metadata": {
+    "response_id": "resp_0cf0cddcd18c912f006a1079b4f35c8192a950fc0332d8a8af",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 961,
+      "output_tokens_details": {
+        "reasoning_tokens": 513
+      },
+      "total_tokens": 3362
+    }
+  },
+  "duration_seconds": 24.786,
+  "created_at": "2026-05-22T15:44:13Z",
+  "error": null
+}

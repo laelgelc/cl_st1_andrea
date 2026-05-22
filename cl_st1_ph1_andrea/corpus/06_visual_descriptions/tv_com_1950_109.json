@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1950_109",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_109",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_109/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_109.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0002.jpg",
+      "timestamp_seconds": 0.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0003.jpg",
+      "timestamp_seconds": 6.981,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0004.jpg",
+      "timestamp_seconds": 13.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0005.jpg",
+      "timestamp_seconds": 18.648,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0006.jpg",
+      "timestamp_seconds": 22.815,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0007.jpg",
+      "timestamp_seconds": 27.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_109/frame_0008.jpg",
+      "timestamp_seconds": 40.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_109.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_109.json",
+    "response_text": "The commercial begins with a very dark, nearly blank frame with a greenish cast. A white “OsbornTramain” watermark appears at the lower right.\n\nIt then cuts to an outdoor setting in daylight. A vintage two-tone sedan is parked in a lot beside a low modern building. A man in a light shirt and dark trousers stands near the front/driver-side area of the car, leaning slightly toward it as if inspecting or presenting it. The car is shown in a full side profile, emphasizing its long body, chrome trim, whitewall tires, and rear fins.\n\nThe next shot moves closer to the front-left side of the car. The man stands beside the hood and front fender, facing the vehicle. The camera angle highlights the front wheel, chrome bumper, grille area, and the windshield/roofline.\n\nA front-facing view follows. The man is positioned at the car’s front-left corner, bending over toward the headlights and grille. The shot emphasizes the car’s wide front grille, paired headlights, chrome bumper, and hood ornament. A curved road or parking-lot marking is visible on the pavement to the right.\n\nThe commercial then shifts to the rear of the car. The sedan is shown from a rear three-quarter angle in front of a building with large windows and a covered area. The man stands near the right rear corner, close to the tailfin and taillight. The rear styling, including the large fins, trunk lid, chrome bumper, and license plate, is clearly featured.\n\nA straight-on rear shot follows. The man now stands near the left rear corner, looking down toward the tailfin or taillight area. The car’s rear end fills the frame, with the centered trunk ornament, license plate, tailfins, and bumper visible.\n\nThe next sampled frame is very dark, showing only a faint side silhouette of the car. The upper part of the frame remains lighter, suggesting a transition or fade, but details are difficult to see.\n\nThe final frame is a dark red title card with large white text reading: “YOUR PLYMOUTH! DEALER.” The “OsbornTramain” watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0452066e315a341f006a106cac70e08197a70de257349ce5ee",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 721,
+      "output_tokens_details": {
+        "reasoning_tokens": 276
+      },
+      "total_tokens": 2366
+    }
+  },
+  "duration_seconds": 19.456,
+  "created_at": "2026-05-22T14:48:31Z",
+  "error": null
+}

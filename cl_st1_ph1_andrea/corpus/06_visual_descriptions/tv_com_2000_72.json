@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_2000_72",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_72",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_72/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_72.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_72/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_72/frame_0002.jpg",
+      "timestamp_seconds": 7.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_72/frame_0003.jpg",
+      "timestamp_seconds": 23.513,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_72/frame_0004.jpg",
+      "timestamp_seconds": 25.982,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_72/frame_0005.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_72.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_72.json",
+    "response_text": "The commercial opens on a stylized city rooftop scene at dusk or night. Tall buildings and lit windows surround a large rooftop billboard. The billboard shows a large white jug labeled “Ultra Clorox,” with large white text on a teal background reading, in part, “Ultra Clorox Bleach Gets Whites Even Whiter.” Small white animated/mascot-like figures are visible at the base of the billboard.\n\nThe view then cuts closer to the billboard. The product jug remains on the left side, while two anthropomorphic white container-like characters stand in front of the sign. Both are labeled “Bargain Bleach.” One is taller and cylindrical; the other is shorter and rounder. The rounder figure holds a paint roller and appears to be applying white paint over part of the billboard lettering. The background text “GETS WHITES WHITER” is visible behind them, though partly obscured by the paint and figures.\n\nNext, the scene changes to an indoor or warehouse-like setting with tall arched windows in the background. The two “Bargain Bleach” characters are shown again. A paint can labeled “Bargain Paint” sits on the left. Paint and tools appear scattered or spilled on the floor. The taller character holds a small green cup or container, while the shorter character stands beside it holding or standing near a roller handle. Both figures have expressive cartoon faces.\n\nThe commercial then returns to the rooftop billboard. A large close-up of the white “Ultra Clorox” jug dominates the left side of the sign. The jug has a blue cap and the label “Ultra Clorox.” On the right, large white advertising text is partially visible, with “NEW” in yellow near the top.\n\nThe final frame shows the full billboard again against the city skyline. The product jug appears on the left, and the full message is clearly visible on the teal background: “NEW Ultra Clorox Bleach Gets Whites Even Whiter.” The billboard is lit from above by several lamps, with the rooftop and surrounding buildings visible behind it."
+  },
+  "api_metadata": {
+    "response_id": "resp_09c091b429561dd3006a1075f007f481a39a8ccfcb8c760d75",
+    "usage": {
+      "input_tokens": 1463,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 759,
+      "output_tokens_details": {
+        "reasoning_tokens": 336
+      },
+      "total_tokens": 2222
+    }
+  },
+  "duration_seconds": 18.479,
+  "created_at": "2026-05-22T15:28:02Z",
+  "error": null
+}

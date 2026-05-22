@@ -1,0 +1,256 @@
+{
+  "commercial_id": "tv_com_1950_100",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_100",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_100/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_100.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0002.jpg",
+      "timestamp_seconds": 0.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0003.jpg",
+      "timestamp_seconds": 9.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0004.jpg",
+      "timestamp_seconds": 11.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0005.jpg",
+      "timestamp_seconds": 15.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0006.jpg",
+      "timestamp_seconds": 17.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0007.jpg",
+      "timestamp_seconds": 20.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0008.jpg",
+      "timestamp_seconds": 24.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0009.jpg",
+      "timestamp_seconds": 26.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0010.jpg",
+      "timestamp_seconds": 29.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0011.jpg",
+      "timestamp_seconds": 33.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0012.jpg",
+      "timestamp_seconds": 36.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0013.jpg",
+      "timestamp_seconds": 36.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0014.jpg",
+      "timestamp_seconds": 36.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0015.jpg",
+      "timestamp_seconds": 37.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0016.jpg",
+      "timestamp_seconds": 37.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0017.jpg",
+      "timestamp_seconds": 37.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0018.jpg",
+      "timestamp_seconds": 37.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0019.jpg",
+      "timestamp_seconds": 37.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0020.jpg",
+      "timestamp_seconds": 38.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0021.jpg",
+      "timestamp_seconds": 39.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0022.jpg",
+      "timestamp_seconds": 40.424,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0023.jpg",
+      "timestamp_seconds": 40.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0024.jpg",
+      "timestamp_seconds": 41.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0025.jpg",
+      "timestamp_seconds": 42.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0026.jpg",
+      "timestamp_seconds": 48.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0027.jpg",
+      "timestamp_seconds": 54.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1950_100/frame_0028.jpg",
+      "timestamp_seconds": 56.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 28,
+    "submitted_frame_count": 28,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_100.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_100.json",
+    "response_text": "The commercial is shown in black and white and appears to document a small rounded car, resembling a Volkswagen Beetle, being washed and polished in a garage or service station setting. A watermark reading “www.paintedesigns.nl” is visible across some early frames.\n\nAt the beginning, the screen is mostly black with the watermark near the lower center. The image then cuts to a close view of part of a rounded car body near a building or garage entrance. The car’s curved exterior fills much of the frame.\n\nThe next shots show mechanical or washing equipment. A chain or cable stretches across a dark interior space, followed by a view of a track-like or conveyor-like structure inside the wash area. Bright light and spray then fill the screen, suggesting the car is being rinsed or passed through a washing stage.\n\nThe rear of the rounded car becomes visible amid heavy mist or water spray. Its rear window and license plate are seen, though the plate text is not fully clear. A frontal view follows, showing the car’s headlights, bumper, and wet, reflective bodywork. The car is covered in water and light glare.\n\nThe perspective then shifts to inside the car, looking out through a windshield where water or foam covers the glass. A wiper is visible against the wet surface. Another exterior close-up shows soap or foam spread across the car’s body panels.\n\nSeveral close shots show cleaning by hand. A hand uses a brush or cloth-like tool over a circular car part, likely near a headlight or emblem area, though the exact part is difficult to identify. Another frame shows thick soapy streaks across glass or paint, with swirling patterns from wiping.\n\nA series of rapid close-ups focuses on a person’s arm and hand cleaning or polishing trim near a window or body seam. The hand moves repeatedly over shiny chrome or painted surfaces. The person’s body is mostly out of frame, and only the arm and hand are clearly visible. The motion suggests wiping, polishing, or drying.\n\nThe view then pulls back slightly to show the rear side of the Beetle-like car with its split or oval rear window area. A person leans in from the left and wipes the rear body panel near the window and engine cover area. The hand moves in repeated strokes over the curved surface.\n\nA wider overhead or rear view shows the car positioned indoors with people on both sides, apparently cleaning or attending to it. The car’s rear is centered, with its oval rear window, curved fenders, bumper, and license plate visible. The workers are partly visible at the edges.\n\nNear the end, the scene cuts to a large garage door or service-bay entrance. The door is open or opening, revealing a dark interior. The cleaned car then appears outside or just in front of the garage, shown from a low front three-quarter angle. Its body is shiny, with clear reflections, visible round headlights, bumper, windshield, and front wheel. The final frame fades or cuts to a very dark image, with no clear objects visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f0972619b9fe2f5006a106c81e68481a0be9f5b94ac11151a",
+    "usage": {
+      "input_tokens": 7049,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 667,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 7716
+    }
+  },
+  "duration_seconds": 21.939,
+  "created_at": "2026-05-22T14:47:51Z",
+  "error": null
+}

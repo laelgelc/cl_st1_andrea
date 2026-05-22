@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_34",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_34",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_34/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_34.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_34/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_34/frame_0002.jpg",
+      "timestamp_seconds": 0.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_34/frame_0003.jpg",
+      "timestamp_seconds": 20.277,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_34/frame_0004.jpg",
+      "timestamp_seconds": 34.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_34/frame_0005.jpg",
+      "timestamp_seconds": 45.036,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_34.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_34.json",
+    "response_text": "The commercial is in black and white and appears to be staged against curtain-like studio backdrops.\n\nAt the beginning, the frame shows only a textured curtain or draped background, with no people or products visible.\n\nThe next scene shows a woman in front of a curtain backdrop. She wears a soft, textured hat and a coat or jacket. She is holding a small hand mirror in one hand and appears to be wiping or applying something to her cheek with a pad, cloth, or tissue in the other hand. Her gaze is directed toward the mirror as she attends to her face.\n\nLater, a different woman is shown facing forward, framed between ornate decorative mirror edges. She holds a white pad, cloth, or tissue to one side of her face, as if cleansing or applying a facial product. The background is again a shimmering or curtained studio backdrop.\n\nThe next scene cuts to a man in a dark suit and tie, positioned in front of a curtain backdrop. Behind him on the left is a large display or oversized product-shaped sign resembling a bottle. Some text is visible on it but not fully legible in the sampled frame. The man faces the camera with a slight smile, suggesting a presenter role visually, though no audio content can be inferred.\n\nThe final frame is a close-up of a retail display package containing two bottle-shaped containers. A sign above them reads “FACIAL CLEANSING LOTION” and prominently “Special 89¢.” At the bottom, the display includes pricing or savings text, including “Save 51¢.” The product labels on the bottles are partially visible but not fully clear in the frame. The overall visual emphasis at the end is on the packaged facial cleansing lotion offer."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ce7b893fc1104f9006a106b8290608190b86d04b28638e46d",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1863
+    }
+  },
+  "duration_seconds": 13.97,
+  "created_at": "2026-05-22T14:43:27Z",
+  "error": null
+}

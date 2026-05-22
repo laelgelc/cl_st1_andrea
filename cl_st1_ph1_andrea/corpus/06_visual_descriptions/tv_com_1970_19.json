@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1970_19",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_19",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_19/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_19.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0002.jpg",
+      "timestamp_seconds": 13.103,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0003.jpg",
+      "timestamp_seconds": 13.336,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0004.jpg",
+      "timestamp_seconds": 13.503,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0005.jpg",
+      "timestamp_seconds": 13.603,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0006.jpg",
+      "timestamp_seconds": 13.837,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0007.jpg",
+      "timestamp_seconds": 14.404,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0008.jpg",
+      "timestamp_seconds": 14.604,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_19/frame_0009.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_19.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_19.json",
+    "response_text": "The commercial begins with an animated snowy scene. A small object, partly yellow and white, appears at a distance against a pale greenish background filled with falling white snow-like dots.\n\nAround 13 seconds, the visuals cut to close-up animation of tire-like forms given animal or monster-like features. Two large gray/black tire fronts or tread faces appear with cartoon eyes and exaggerated white triangular teeth, as if the tires are snarling or biting through snow. Snow continues to fall heavily across the image.\n\nThe sequence then moves through a series of close-ups of the tire structure:\n\n- The camera/view shifts along the side of a tire, showing dark black tread surfaces, white sidewall rings, and jagged tooth-like shapes near the lower edge.\n- Several frames emphasize the tire’s deep tread grooves and zigzag patterns, with snow piling at the bottom and flakes moving across the foreground.\n- The tire tread is shown in extreme close-up, filling the frame with repeating dark, angular channels.\n- A wider animated view shows a large black treaded tire under a yellow vehicle body or fender-like shape, surrounded by snow.\n\nThe final sampled frame changes to a static product display. Two black tires are shown side by side in a blue rectangular panel. Below them is large red text reading “Firestone.” Under that, smaller text reads “Town & Country Snow Biters,” followed by the line “PUT TEETH IN WINTER DRIVING.” The final image presents the tires as the advertised product."
+  },
+  "api_metadata": {
+    "response_id": "resp_0401fca6af22b5b5006a106ee563d88196bb226c3d24842552",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 610,
+      "output_tokens_details": {
+        "reasoning_tokens": 304
+      },
+      "total_tokens": 2966
+    }
+  },
+  "duration_seconds": 17.915,
+  "created_at": "2026-05-22T14:57:59Z",
+  "error": null
+}

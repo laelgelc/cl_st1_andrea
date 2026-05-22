@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_2020_43",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_43",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_43/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_43.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0002.jpg",
+      "timestamp_seconds": 0.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0003.jpg",
+      "timestamp_seconds": 0.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0004.jpg",
+      "timestamp_seconds": 3.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0005.jpg",
+      "timestamp_seconds": 5.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0006.jpg",
+      "timestamp_seconds": 5.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0007.jpg",
+      "timestamp_seconds": 9.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0008.jpg",
+      "timestamp_seconds": 9.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0009.jpg",
+      "timestamp_seconds": 9.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_43/frame_0010.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_43.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_43.json",
+    "response_text": "The commercial opens on a flat, bright cyan-blue background with no objects visible.\n\nA wrapped Hershey’s chocolate bar then appears horizontally across the frame against the same blue background. The wrapper is dark brown with metallic gold foil at the left end. Large white text reads “HERSHEY’S,” with smaller visible text including “SINCE 1894” and “milk chocolate with whole almonds.” Part of an almond image is visible on the right side of the wrapper.\n\nThe packaging is then shown partly opened. The left side of the milk chocolate bar is exposed while the wrapper and silver/gold foil are crumpled around the middle and right side. The exposed chocolate has large embossed letters spelling part of “HERSHEY’S.” The wrapper text “milk chocolate with whole almonds” remains visible on the still-wrapped portion.\n\nThe view shifts to close-up angles of the chocolate bar itself. First, the bar is seen from a very low side angle, emphasizing its thin rectangular profile and the raised lettering along the side. The chocolate casts a strong dark-blue shadow on the cyan surface.\n\nThe camera/view then moves to the top surface of the chocolate, showing smooth milk chocolate with raised rounded bumps, suggesting whole almonds underneath the surface. The bar continues to be shown in close-up as it slides or is reframed across the screen, with the blue background and shadow remaining consistent.\n\nAnother angled close-up shows the top face with the embossed “HERSHEY” lettering clearly visible in the chocolate. The bar is tilted diagonally in the frame, again on the bright blue background.\n\nIn the final frame, the composition pulls back to show the partly unwrapped Hershey’s bar lying diagonally at the lower right. A small almond is visible near the center-left of the product area. Large white serif text appears on the left and upper portion of the blue background reading: “heartwarming the world.” The product wrapper and exposed chocolate remain visible together."
+  },
+  "api_metadata": {
+    "response_id": "resp_0fe1806b98e6695b006a107a5445a08190ab094c40b9b02f35",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 585,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2608
+    }
+  },
+  "duration_seconds": 16.743,
+  "created_at": "2026-05-22T15:46:44Z",
+  "error": null
+}

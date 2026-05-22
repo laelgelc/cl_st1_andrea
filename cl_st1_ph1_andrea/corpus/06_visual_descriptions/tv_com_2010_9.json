@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2010_9",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_9",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_9/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_9.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0002.jpg",
+      "timestamp_seconds": 1.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0003.jpg",
+      "timestamp_seconds": 4.319,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0004.jpg",
+      "timestamp_seconds": 5.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0005.jpg",
+      "timestamp_seconds": 13.745,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0006.jpg",
+      "timestamp_seconds": 15.288,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0007.jpg",
+      "timestamp_seconds": 22.128,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0008.jpg",
+      "timestamp_seconds": 28.802,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_9/frame_0009.jpg",
+      "timestamp_seconds": 30.054,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_9.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_9.json",
+    "response_text": "The commercial opens on a black screen.\n\nIt then cuts to a wide, cinematic view of a multi-lane highway under a cloudy sky with bright sunlight breaking through on the right. In the distance, a large mechanical, spider-like machine stands on or above the roadway. It has multiple long articulated arms or legs extending outward, with small lights or tools at the ends. The road appears partly empty and hazy, with mist or dust around the machine.\n\nNext, the scene shifts closer to the roadside. The Michelin Man, a white, rounded, segmented mascot figure wearing a blue diagonal sash, moves alongside a dark-colored car on the highway shoulder. He appears to be carrying or holding a tire near the front of the car.\n\nA closer shot shows the Michelin Man standing outside the driver’s side window of the car. Inside the vehicle are two adults: a man in the front passenger-side area visible near the window and a woman behind the steering wheel. Both look toward the Michelin Man with surprised or concerned expressions. The car window is partly lowered.\n\nThe commercial then cuts to a close-up from inside or near the car window, looking up at the Michelin Man. His blue sash is clearly visible and reads “MICHELIN.” He faces the occupants calmly, with a slight smile, against a cloudy sky background.\n\nAnother shot returns to the exterior view of the car. The Michelin Man stands with his back partly to the camera, facing the two occupants. The man and woman inside the car continue looking at him; the woman appears to be speaking or reacting, though no audio content is available from the frames.\n\nA wider shot shows the Michelin Man standing on the roadway beside the parked dark car. In the background, the large spider-like machine is still present on the highway, approaching or positioned further down the road, with haze around it. The Michelin Man faces toward the machine while the car remains stopped beside him.\n\nThe image then flashes to a blank white screen.\n\nThe final frame is a clean white end card showing the red “xerox” logo with a red spherical icon to its right. Beneath it appears the tagline in gray text: “Ready For Real Business.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_047add681c32b3f1006a107715e8ac81928ddf91d968221fcd",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 505,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2339
+    }
+  },
+  "duration_seconds": 13.706,
+  "created_at": "2026-05-22T15:32:51Z",
+  "error": null
+}

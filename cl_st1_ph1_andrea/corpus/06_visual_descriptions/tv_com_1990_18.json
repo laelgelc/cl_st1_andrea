@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_18",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_18",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_18/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_18.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0002.jpg",
+      "timestamp_seconds": 1.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0003.jpg",
+      "timestamp_seconds": 1.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0004.jpg",
+      "timestamp_seconds": 1.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0005.jpg",
+      "timestamp_seconds": 2.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0006.jpg",
+      "timestamp_seconds": 3.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0007.jpg",
+      "timestamp_seconds": 3.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0008.jpg",
+      "timestamp_seconds": 3.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0009.jpg",
+      "timestamp_seconds": 4.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0010.jpg",
+      "timestamp_seconds": 5.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0011.jpg",
+      "timestamp_seconds": 5.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0012.jpg",
+      "timestamp_seconds": 6.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0013.jpg",
+      "timestamp_seconds": 7.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0014.jpg",
+      "timestamp_seconds": 9.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0015.jpg",
+      "timestamp_seconds": 10.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0016.jpg",
+      "timestamp_seconds": 13.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0017.jpg",
+      "timestamp_seconds": 13.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0018.jpg",
+      "timestamp_seconds": 13.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0019.jpg",
+      "timestamp_seconds": 13.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0020.jpg",
+      "timestamp_seconds": 14.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0021.jpg",
+      "timestamp_seconds": 16.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0022.jpg",
+      "timestamp_seconds": 18.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0023.jpg",
+      "timestamp_seconds": 19.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0024.jpg",
+      "timestamp_seconds": 21.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0025.jpg",
+      "timestamp_seconds": 23.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0026.jpg",
+      "timestamp_seconds": 24.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0027.jpg",
+      "timestamp_seconds": 26.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0028.jpg",
+      "timestamp_seconds": 26.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0029.jpg",
+      "timestamp_seconds": 27.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_18/frame_0030.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_18.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_18.json",
+    "response_text": "The commercial unfolds as a fast, highly saturated montage with frequent hard cuts, motion blur, and strong contrasts between dark studio scenes and bright outdoor scenes.\n\n1. **Opening dark studio imagery**  \n   The first frame is dim and abstract: dark silhouettes or partially lit figures are visible against a mostly black background. Details are difficult to distinguish.\n\n2. **Dance/performance sequence**  \n   A group of young adult dancers walks forward toward the camera in a studio-like space with a black background. They wear bright, colorful athletic or dance clothing: pink, teal, yellow, gray, and black.  \n   The image then becomes heavily motion-blurred, creating streaks of color.  \n   The dancers are next seen posing or dancing, with arms on hips or raised, still in bright dancewear. The camera cuts between clearer shots and blurred movement.  \n   Several shots show bodies in silhouette against light backgrounds, emphasizing movement rather than facial detail.  \n   A close-up shows a smiling face emerging from darkness, framed by black shapes.\n\n3. **Aviation / helmeted person**  \n   The montage cuts to a close-up of a person wearing a helmet and goggles, possibly in an aircraft or skydiving context. The person’s face is partly visible through the helmet gear.  \n   Another shot shows a gloved hand holding a red can near the helmeted person’s mouth area. The can has white lettering, though the full text is not completely clear in this frame.\n\n4. **Aircraft and skydiving imagery**  \n   A small aircraft is shown from below against a clear blue sky.  \n   The next shot shows two people in freefall or skydiving gear against the sky, one reaching toward or holding onto the other. The scene is bright and open, with a strong blue background.\n\n5. **Birds in warm light**  \n   The commercial cuts to a golden, warm-toned scene of white birds, likely water birds, flapping wings and moving through shallow water or reeds. Several frames show the birds in motion, with wings spread and sunlight reflecting off them.\n\n6. **Interior with people and warm lighting**  \n   A brief shot shows two people indoors or in a structured space with vertical bars or frames in front of them. The lighting is orange and dramatic. Details of the setting are unclear.\n\n7. **Red transition screen**  \n   A full red screen appears briefly, functioning as a visual transition.\n\n8. **Children outdoors near beach/dunes**  \n   The setting changes to a bright outdoor coastal or sandy area under a blue sky. Children are playing with a large, colorful cloth or banner. A metal frame or gate-like structure stands on the dune behind them.  \n   A blonde child in a yellow dress runs or moves toward the camera. Other children behind her hold or carry a multicolored cloth with red, yellow, green, and blue sections.\n\n9. **Children near vending machines**  \n   The scene cuts to children clustered around large red vending machines. The machines display large white “Dr Pepper” branding vertically on the red panels.  \n   One child appears to be lifted or supported near the machine while another child stands close by. The machines dominate the left side of the frame.\n\n10. **Return to skydiving / aerial motion**  \n   Two skydivers are shown again against a blue sky, one above the other, appearing to tumble or fall.  \n   A later shot shows a silhouetted or backlit figure in motion with the sun behind them, creating lens flare and a glowing outline.\n\n11. **Child drinking from can**  \n   A close-up shows a blonde child drinking from a red can with white lettering against a deep blue sky. The can’s end faces the camera, and the child’s cheeks and hand are visible as they drink.\n\n12. **Final close-up**  \n   The final frame shows the same blonde child smiling slightly at the camera against the blue sky. White handwritten-style text appears in the lower left corner. The text is partly legible but not fully clear from the frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_018654423b20c42d006a10729c5cb0819592cfde8a92de2bb8",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 999,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 8542
+    }
+  },
+  "duration_seconds": 26.808,
+  "created_at": "2026-05-22T15:13:58Z",
+  "error": null
+}

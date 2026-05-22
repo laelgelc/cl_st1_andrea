@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1970_37",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_37",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_37/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_37.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0002.jpg",
+      "timestamp_seconds": 2.692,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0003.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0004.jpg",
+      "timestamp_seconds": 11.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0005.jpg",
+      "timestamp_seconds": 18.808,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0006.jpg",
+      "timestamp_seconds": 23.48,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0007.jpg",
+      "timestamp_seconds": 26.216,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_37/frame_0008.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_37.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_37.json",
+    "response_text": "The commercial begins with a black screen. A “Classic Commercial Archives” circular logo appears at the lower left, and a faint “@ClassicCommercialArchives” watermark runs across the lower middle/right.\n\nThe image then cuts to a bright, slightly overexposed shot with pale blue and white surfaces. The angle is unusual and somewhat unclear, but it appears to show part of a vehicle or glossy structure, with a person or object moving near an opening. Details are hard to distinguish because of blur and low resolution.\n\nNext, a woman with long dark hair appears at the open doorway of what looks like a car or vehicle. She wears a dark jacket over a light blouse and has styled, voluminous hair. She is positioned partly inside the opening, with one hand near the frame, looking outward. Some writing is visible on the white surface to the right, but it is not fully legible.\n\nThe commercial then cuts to a close-up product-style composition: several slim pencil-like cosmetic items are arranged diagonally over or around a stylized face/profile image. The items have metallic-looking caps and dark bands. The shot emphasizes the eye area and the pencil shapes.\n\nA close-up of the same woman’s face follows. Her eye makeup is prominent, with dark, defined eyelids and lashes. She looks downward, and the lighting gives her skin a warm, golden tone. The background is indistinct, with a textured or patterned look.\n\nThe next shot shows the woman seated in a convertible or open-top vehicle. She smiles and looks toward the side, one hand resting on the car door or window edge. The car’s open frame and windshield area are visible, and the outdoor background is bright and washed out.\n\nThe commercial then returns to a product display. Several eye pencil products are arranged around a light surface. A hand uses one of the pencils to write in cursive. The visible handwritten text reads “Eye Color Styler-Pencils.”\n\nThe final frame is a static product/title shot. Multiple cosmetic pencils are laid out around the central text. The top line reads “Eye Color Styler-Pencils,” and below it, in large orange script, is the brand name “Maybelline.” Small white text appears near the lower left but is too small and blurred to read clearly. The archival watermark remains visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c7e4678fa09d23d006a106f309634819f97b6d91c8b8a8957",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 754,
+      "output_tokens_details": {
+        "reasoning_tokens": 285
+      },
+      "total_tokens": 2863
+    }
+  },
+  "duration_seconds": 21.949,
+  "created_at": "2026-05-22T14:59:18Z",
+  "error": null
+}

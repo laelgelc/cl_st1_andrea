@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1960_88",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_88",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_88/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_88.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0002.jpg",
+      "timestamp_seconds": 0.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0003.jpg",
+      "timestamp_seconds": 0.565,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0004.jpg",
+      "timestamp_seconds": 6.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0005.jpg",
+      "timestamp_seconds": 9.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0006.jpg",
+      "timestamp_seconds": 11.94,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0007.jpg",
+      "timestamp_seconds": 13.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0008.jpg",
+      "timestamp_seconds": 14.898,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0009.jpg",
+      "timestamp_seconds": 27.815,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_88/frame_0010.jpg",
+      "timestamp_seconds": 45.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_88.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_88.json",
+    "response_text": "The commercial is in black and white and unfolds mainly in a domestic kitchen setting.\n\nAt the start, the first frame shows a dark, nearly blank field with a small bright circular mark near the upper right. It is unclear what this represents from the sampled frame alone.\n\nThe scene then cuts to an empty kitchen or dining-kitchen area. Visible elements include a curtained window, a countertop with a sink or basin area, wall-mounted utensils, a chair, a wall lamp, and light-colored cabinetry. The setting has a tidy, mid-century domestic appearance.\n\nTwo women then appear in the kitchen. One woman wears a patterned/check dress; the other wears a light-colored dress or blouse with an apron-like front. They stand near a counter by the window. The woman in the lighter outfit is positioned closer to the work surface, while the woman in the patterned dress stands beside or slightly behind her, watching. There are kitchen objects on the counter, including cups, plates, a dark coffee pot, and packaged or cylindrical items.\n\nThe commercial then cuts to close-ups of the two women’s faces. The woman in the light outfit is shown first, looking slightly to the side with a composed, attentive expression. The woman in the patterned dress is then shown in close-up, her eyes widened and her face turned toward the other woman or toward something off-frame, suggesting visual attention or surprise, though the reason is not fully visible in the sampled frames.\n\nA wider shot returns to both women at the counter. They stand behind a spread of tableware and kitchen items: a dark glass coffee pot on the left, cups and saucers or small plates, a jar or canister near the center, and a long rectangular package on the right side of the counter. The woman in the light outfit appears to be handling or preparing something on the counter while the other woman watches.\n\nNext, the woman in the light outfit is shown holding up a transparent sheet or strip, likely from the rectangular package she holds in her other hand. The material is thin and clear, catching the light. She smiles while displaying it. In the following wider shot, both women stand at the counter as the woman in the light outfit continues to manipulate the clear sheet over or near the items on the work surface. The woman in the patterned dress looks down toward the action.\n\nLater, there is a close-up from above of a cup or bowl with a transparent plastic sheet stretched or draped around it. A dark pot or pitcher is tilted above it, with liquid visible near the spout. The clear film is crinkled and reflective around the cup opening, and the shot emphasizes the interaction between the liquid, the cup, and the transparent wrap.\n\nThe final frame is a product and company identification shot. A box labeled “Handi-Wrap” is shown prominently, with “100 FEET” visible on the package. Below it appears the Dow diamond logo and the text “THE DOW CHEMICAL COMPANY,” with smaller text reading “ALSO AVAILABLE IN CANADA.” The closing image visually identifies the advertised product as Dow Handi-Wrap."
+  },
+  "api_metadata": {
+    "response_id": "resp_09cdbce804f182ac006a106e241fe0819695a60a2d30fb4934",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 926,
+      "output_tokens_details": {
+        "reasoning_tokens": 296
+      },
+      "total_tokens": 2949
+    }
+  },
+  "duration_seconds": 22.749,
+  "created_at": "2026-05-22T14:54:50Z",
+  "error": null
+}

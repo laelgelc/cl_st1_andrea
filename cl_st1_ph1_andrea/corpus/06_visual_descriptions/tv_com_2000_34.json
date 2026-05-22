@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2000_34",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_34",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_34/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_34.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0003.jpg",
+      "timestamp_seconds": 0.924,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0004.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0005.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0006.jpg",
+      "timestamp_seconds": 3.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0007.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0008.jpg",
+      "timestamp_seconds": 6.329,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0009.jpg",
+      "timestamp_seconds": 7.564,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0010.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0011.jpg",
+      "timestamp_seconds": 9.966,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0012.jpg",
+      "timestamp_seconds": 10.9,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0013.jpg",
+      "timestamp_seconds": 12.402,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0014.jpg",
+      "timestamp_seconds": 14.07,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0015.jpg",
+      "timestamp_seconds": 20.043,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0016.jpg",
+      "timestamp_seconds": 21.878,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0017.jpg",
+      "timestamp_seconds": 23.079,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0018.jpg",
+      "timestamp_seconds": 23.913,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0019.jpg",
+      "timestamp_seconds": 24.848,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0020.jpg",
+      "timestamp_seconds": 26.149,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0021.jpg",
+      "timestamp_seconds": 27.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0022.jpg",
+      "timestamp_seconds": 28.418,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_34/frame_0023.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_34.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_34.json",
+    "response_text": "The sampled frames show a commercial unfolding as a short domestic story connected to a jewelry store.\n\nThe opening frame is nearly black. The next shot establishes a sunny suburban neighborhood: a young adult man in a dark suit stands outside a white picket fence in front of a house. A red car is parked across the street, and trees and low houses are visible in the background. He appears to be approaching the house while carrying a brown shopping bag.\n\nInside the house, a boy looks out through a multi-pane window. A later window shot shows two children, a girl and a boy, peering out from behind curtains, watching with interest. A close-up shows the brown shopping bag in the man’s hand; the visible text on the bag reads “JARED.”\n\nThe scene moves into the home. In a bright kitchen, an older woman with short gray hair and glasses stands near an island with fruit, while a middle-aged woman in a pink top stands nearby. The setting includes wooden cabinets, a sink under a window, and kitchen appliances. Another shot shows a middle-aged man seated and holding a phone, with the woman in pink standing in a doorway behind him.\n\nThe man in the suit is then shown from behind at a blue front door, apparently arriving at or entering the house. The door opens to reveal a group gathered inside: an older woman, a boy, a middle-aged man, a woman in pink, and a young red-haired woman. They are smiling and facing the visitor. The house number “44” is visible beside the doorway in one shot. The red-haired young woman in a light blue shirt moves toward the doorway as the suited man stands outside with the suburban street visible behind him.\n\nThe commercial then cuts to the interior of a jewelry store. The store is spacious and bright, with glass display cases, sales staff, and several customers. People are shown standing or sitting at display counters, suggesting browsing or consultation around jewelry cases.\n\nThe next sequence returns to a home interior. The young man and the red-haired young woman sit together on a sofa in a living room area. A dining table and chairs are visible in the background. The brown “JARED” bag sits nearby. The man reaches into or handles the bag while the woman watches. He then presents a small white jewelry box. A close-up shows the box being opened to reveal a shiny piece of jewelry inside; the exact item is not fully clear from the sampled frames, but it is displayed in a ring/bracelet-style presentation box.\n\nThe woman takes or holds the open white box while seated beside the man. In a closer shot she smiles broadly while leaning close to him, still holding the open box. Another shot shows several family members gathered on a staircase, smiling and looking down toward the scene, as if watching the exchange from above.\n\nThe commercial ends with exterior shots of a storefront. A large black sign reads “JARED” with smaller text below: “The Galleria Of Jewelry.” The website “jared.com” appears in white text at the lower right of the image. Cars are parked outside, and people walk toward the entrance. The final frame shows two people from behind approaching the store entrance beneath the “JARED The Galleria Of Jewelry” sign."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e6e721476973bfd006a107517ff64819c913b66f3e7052397",
+    "usage": {
+      "input_tokens": 5814,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1654,
+      "output_tokens_details": {
+        "reasoning_tokens": 993
+      },
+      "total_tokens": 7468
+    }
+  },
+  "duration_seconds": 42.846,
+  "created_at": "2026-05-22T15:24:50Z",
+  "error": null
+}

@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1960_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0002.jpg",
+      "timestamp_seconds": 11.618,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0003.jpg",
+      "timestamp_seconds": 25.632,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0004.jpg",
+      "timestamp_seconds": 27.3,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0005.jpg",
+      "timestamp_seconds": 39.479,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_69/frame_0006.jpg",
+      "timestamp_seconds": 58.04,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_69.json",
+    "response_text": "The commercial is in black and white and uses a sequence of very tight close-ups alternating between a human face and product/foil imagery.\n\n- **Opening frame:** The commercial begins with an extreme close-up of a person’s eyes and upper face. The eyes are strongly lit with high contrast, and the person appears to be looking slightly upward or to the side. Only the eyes, nose bridge, brow, and part of the face are visible; the wider setting is not shown.\n\n- **Product introduction:** The scene cuts to a package labeled **“KAISER broiling foil.”** The packaging is shown close up, with the product name large across the front. A shiny, patterned foil surface fills much of the background, showing a raised diamond or quilted texture. There may be a hand or fingers at the left edge holding or positioning the package, but it is not fully clear.\n\n- **Emphasis on product wording and texture:** A closer angled shot shows the word **“broiling”** prominently in large letters. The word **“QUILTED”** is also visible near the top edge. Beneath the label, the foil’s textured, grid-like diamond pattern is shown in close detail, reflecting light.\n\n- **Package and foil display:** The next shot shows a Kaiser aluminum foil box at an angle, with the Kaiser star-like logo visible. Text on the side includes **“KAISER ALUMINUM FOIL”** and **“QUILTED.”** A white side panel contains additional printed text; the phrase **“THE FLIPPER BOX”** appears visible. Crumpled or folded textured foil is partly pulled out or displayed beside the box.\n\n- **Close-up of quilted foil:** The commercial then cuts to an extreme close-up of the foil surface. The diamond-shaped raised pattern dominates the frame. A rounded object or edge appears near the top left, but its identity is unclear from the sampled frame. The shot focuses on the reflective, embossed texture.\n\n- **Return to face:** The final sampled frame returns to an extreme close-up of the person’s eyes, now framed slightly differently, with one eye especially prominent. The face remains highly contrasted and tightly cropped. No surrounding environment is visible.\n\nOverall, the visual sequence moves from a dramatic close-up of eyes, to repeated close-ups of **Kaiser broiling/quilted aluminum foil packaging and texture**, and then back to the eyes. The sampled frames visually emphasize the product name, the word **“quilted,”** and the distinctive raised diamond pattern of the foil."
+  },
+  "api_metadata": {
+    "response_id": "resp_0334066b67120102006a106dcdaf58819fa9fd3de5d7ec793c",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 745,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 2360
+    }
+  },
+  "duration_seconds": 19.877,
+  "created_at": "2026-05-22T14:53:21Z",
+  "error": null
+}

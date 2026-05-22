@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_1980_117",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_117",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_117/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_117.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0002.jpg",
+      "timestamp_seconds": 0.957,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0003.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0004.jpg",
+      "timestamp_seconds": 3.56,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0005.jpg",
+      "timestamp_seconds": 4.628,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0006.jpg",
+      "timestamp_seconds": 7.564,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0007.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0008.jpg",
+      "timestamp_seconds": 10.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0009.jpg",
+      "timestamp_seconds": 12.135,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0010.jpg",
+      "timestamp_seconds": 13.47,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0011.jpg",
+      "timestamp_seconds": 13.803,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0012.jpg",
+      "timestamp_seconds": 15.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0013.jpg",
+      "timestamp_seconds": 18.074,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0014.jpg",
+      "timestamp_seconds": 19.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0015.jpg",
+      "timestamp_seconds": 19.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0016.jpg",
+      "timestamp_seconds": 20.81,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0017.jpg",
+      "timestamp_seconds": 23.613,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0018.jpg",
+      "timestamp_seconds": 24.814,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0019.jpg",
+      "timestamp_seconds": 25.415,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0020.jpg",
+      "timestamp_seconds": 26.449,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0021.jpg",
+      "timestamp_seconds": 27.517,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_117/frame_0022.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_117.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_117.json",
+    "response_text": "The commercial is a fast-cut fashion/dance sequence featuring young adult models in denim clothing, mostly outdoors near a beach or rocky shoreline.\n\nIt opens with a close-up of a woman with curly hair in a blue denim-style jacket, seen from a slightly low angle. The image is soft and somewhat blurred. The next shot shows two women posing closely against a pale blue sky: one blonde woman in a dark top with a red scarf or neck detail, and another woman with styled hair and red lipstick in front.\n\nThe scene then widens to a group of women moving and dancing near a sandy or rocky coastal area. They wear blue denim jackets, vests, jeans, and red or bright tops underneath. Hair is blown by wind, and the camera uses tilted angles and close framing to emphasize motion. A close-up follows of a young man in a blue denim vest over a red shirt, leaning toward the camera with rocks or beach structures behind him. Another close-up shows a blond young man in a denim jacket smiling or posing while looking toward the camera.\n\nSeveral shots continue with quick changes between close-ups and group movement. A blonde woman in a denim vest is shown from close range, arms raised or moving. Three men appear together, wearing denim and red/blue tops, moving in rhythm toward the camera. A tilted shot shows several people crowded together, with a blonde woman in front leaning sideways as others move around her. Another woman in a denim jacket and red top bends or twists while a man leans in from the side.\n\nThe camera then isolates individual bodies and clothing details: a man adjusts or pulls at the collar/front of a denim shirt or jacket; another blonde woman leans forward between two men; women in denim jackets sway with windblown hair. Low-angle shots show models towering over the camera, emphasizing denim vests, jackets, and jeans. One shot looks up at a person from below, focusing on jeans and a red sleeve against the sky. Another close-up shows a woman’s face and upper body from below, her hair moving in the wind.\n\nThe commercial continues with group posing and dancing. A man in a denim vest is seen from a low angle with a woman smiling behind him. A group leans together, partially obscured by hair and bodies in motion. A close-up frames a red top, the waistband of light blue jeans, and the open edge of a denim jacket, emphasizing the clothes. A trio of women in jeans and fitted tops pose with arms raised against the sky.\n\nLater, a wider shot shows a group running or dancing across a sloped sandy or snowy-looking surface, kicking up dust or spray. Another wide beach shot shows three women moving near the waterline, wearing denim outfits with red accents, with ocean waves visible in the background. A close-up then shows smiling people clustered together, including a man wearing dark sunglasses, with red gloves or red accessories moving through the foreground.\n\nThe final frame shows a young man in a blue denim jacket leaning back with eyes closed or partly closed while a woman behind him touches or adjusts his collar. In the lower-left corner, white on-screen text appears: “JORDACHE” with a horse-head logo above it, and below that “DISTRESSED DENIM.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0e53e093419a3bde006a107228d35c81a1a4fa8820beb51699",
+    "usage": {
+      "input_tokens": 5567,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 773,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 6340
+    }
+  },
+  "duration_seconds": 22.367,
+  "created_at": "2026-05-22T15:11:59Z",
+  "error": null
+}

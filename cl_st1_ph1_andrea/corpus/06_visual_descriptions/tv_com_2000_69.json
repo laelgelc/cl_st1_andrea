@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2000_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0002.jpg",
+      "timestamp_seconds": 0.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0003.jpg",
+      "timestamp_seconds": 1.725,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0004.jpg",
+      "timestamp_seconds": 1.825,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0005.jpg",
+      "timestamp_seconds": 2.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0006.jpg",
+      "timestamp_seconds": 3.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0007.jpg",
+      "timestamp_seconds": 4.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0008.jpg",
+      "timestamp_seconds": 6.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0009.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0010.jpg",
+      "timestamp_seconds": 9.332,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0011.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0012.jpg",
+      "timestamp_seconds": 12.836,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0013.jpg",
+      "timestamp_seconds": 13.737,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0014.jpg",
+      "timestamp_seconds": 15.505,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0015.jpg",
+      "timestamp_seconds": 17.007,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0016.jpg",
+      "timestamp_seconds": 18.074,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0017.jpg",
+      "timestamp_seconds": 18.174,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0018.jpg",
+      "timestamp_seconds": 25.415,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0019.jpg",
+      "timestamp_seconds": 27.284,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0020.jpg",
+      "timestamp_seconds": 27.417,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0021.jpg",
+      "timestamp_seconds": 28.318,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0022.jpg",
+      "timestamp_seconds": 28.451,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_69/frame_0023.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_69.json",
+    "response_text": "The commercial opens from a very dark frame into a bright, white kitchen. On a countertop or sink area, a large glass baking dish and other cookware are visibly covered with baked-on, reddish-orange food residue. A refrigerator with magnets and notes is visible in the background, and a man is partly seen in a doorway or adjoining area.\n\nThe next close-up shows a sink piled with dirty cookware: a glass baking dish, a metal pot lid, a pot or pan, and a small white container. The dishes have heavy sauce-like residue and food stains.\n\nA man with dark curly hair, wearing a dark blue shirt with darker sleeves, is shown in the kitchen near large windows. He turns and looks off to the side. A blonde woman with short wavy hair, wearing a sleeveless light-blue top, appears facing him. She has a mildly expectant or knowing expression. The man is then shown speaking or reacting visually, though no dialogue is visible.\n\nThere is a brief blurred transition-like shot, then the woman is shown at the sink holding a blue spray bottle. The dirty baking dish and cookware are in front of her. The bottle label is not fully clear at first, but it is blue with a yellow/orange central label. She aims the spray bottle toward the dirty dish.\n\nThe scene cuts to a view through glass doors or windows into a green backyard. The man is outside, moving with a lawn mower across the grass. Inside, the woman continues at the sink. A close-up shows her hand spraying product from the blue bottle onto the baked-on residue in the glass dish. White foam begins to cover the stained surface. The bottle label reads “Dawn Power Dissolver” in later clearer shots.\n\nThe woman is then shown standing inside, looking out through the windows toward the man outside. The backyard is bright and leafy, with a fence and shrubs visible. Back at the counter, she works with the cookware; the blue spray bottle stands upright nearby.\n\nA close-up shows the bottle placed beside the sink, with the woman’s hand near it. The frame emphasizes the product near the faucet area. The woman is then seen through window panes, looking outward with a more pleased or confident expression. The man passes quickly in front of the camera in the foreground, partially obscuring her.\n\nA close-up follows of a circular or rounded dish/pan surface with loosened brownish residue and liquid swirling or moving, suggesting the food soil is being lifted or washed away. This is followed by an extreme close-up of a white, foamy or sudsy texture filling the frame.\n\nThe final product sequence begins with blurred blue-and-white imagery, then a blue spray bottle comes into focus. The label clearly reads “DAWN POWER DISSOLVER” in large lettering. A clean, glossy product shot shows the bottle standing upright on a counter against a softly blurred kitchen-like background. Large white on-screen text appears to the left: “Get new Dawn Power Dissolver and get done.” The last frame holds on the same product shot, with the blue bottle on the right and the white text on the left. A small Dawn-style logo mark appears near the lower left."
+  },
+  "api_metadata": {
+    "response_id": "resp_05acc59a39bb9564006a1075e0c90481949e2057bb1d9890a9",
+    "usage": {
+      "input_tokens": 5814,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 6495
+    }
+  },
+  "duration_seconds": 17.793,
+  "created_at": "2026-05-22T15:27:46Z",
+  "error": null
+}

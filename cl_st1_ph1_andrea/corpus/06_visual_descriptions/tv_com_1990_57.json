@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1990_57",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_57",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_57/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_57.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0002.jpg",
+      "timestamp_seconds": 1.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0003.jpg",
+      "timestamp_seconds": 1.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0004.jpg",
+      "timestamp_seconds": 1.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0005.jpg",
+      "timestamp_seconds": 1.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0006.jpg",
+      "timestamp_seconds": 4.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0007.jpg",
+      "timestamp_seconds": 8.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0008.jpg",
+      "timestamp_seconds": 10.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0009.jpg",
+      "timestamp_seconds": 11.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_57/frame_0010.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_57.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_57.json",
+    "response_text": "The commercial begins with a black frame.\n\nIt then cuts into a very fast, blurred action montage with strong blue, purple, orange, and green colors. The images are difficult to resolve because of motion blur and overlapping layers, but they appear to show winter-sport imagery. A blue form sweeps across the frame, and snowy evergreen branches become visible. There are bright colored elements, including a green circular light-like shape and a small red/orange triangular shape, but their exact function is unclear from the sampled frames.\n\nThe montage continues with snow-covered trees and a small figure in blue moving across a snowy landscape, likely on skis, though the image is partially obscured by blur and overlay effects. The visual style uses rapid cuts and dissolves, giving the impression of speed and cold outdoor activity.\n\nA clearer sports image follows: a person wearing a white helmet and a white-and-blue racing-style outfit with the number “52” on the front adjusts or holds the helmet. Other people and winter-sport gear are visible in the background. The frame is partially double-exposed with earlier snowy/action imagery.\n\nThe commercial then shifts to product imagery. A ChapStick tube labeled “MEDICATED” appears over a cold, icy-looking background, with streams of liquid or light converging toward it. The product is shown through a layered, translucent effect.\n\nNext, a young woman or girl wearing a winter helmet is shown close-up, smiling or speaking with her mouth open. She holds a ChapStick tube upright in front of her face. The brand name “ChapStick” is visible on the tube. Small on-screen text in the lower right reads “Use As Directed.”\n\nAnother close-up shows the same or similar helmeted young woman smiling directly toward the camera. Product images are superimposed around her head: a ChapStick Medicated tube, a round ChapStick Medicated container, and another ChapStick tube. The “Use As Directed” text remains visible in the lower right.\n\nThe final frame is a static product display on a snowy white surface. Three products are arranged side by side: a blue “ChapStick MEDICATED” tube on the left, a round blue “ChapStick MEDICATED” container in the center, and another ChapStick tube on the right. Large blue text across the bottom reads: “TRIPLE MEDICATED RELIEF.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0a2e49def99dd454006a1073524ee8819dbb81aebc402321a5",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 597,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 3200
+    }
+  },
+  "duration_seconds": 16.544,
+  "created_at": "2026-05-22T15:16:50Z",
+  "error": null
+}

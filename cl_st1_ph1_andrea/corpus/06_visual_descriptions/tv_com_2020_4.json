@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2020_4",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_4",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_4/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_4.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0002.jpg",
+      "timestamp_seconds": 2.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0003.jpg",
+      "timestamp_seconds": 4.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0004.jpg",
+      "timestamp_seconds": 6.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0005.jpg",
+      "timestamp_seconds": 6.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0006.jpg",
+      "timestamp_seconds": 9.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0007.jpg",
+      "timestamp_seconds": 12.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0008.jpg",
+      "timestamp_seconds": 14.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0009.jpg",
+      "timestamp_seconds": 14.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0010.jpg",
+      "timestamp_seconds": 15.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0011.jpg",
+      "timestamp_seconds": 16.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0012.jpg",
+      "timestamp_seconds": 19.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0013.jpg",
+      "timestamp_seconds": 20.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0014.jpg",
+      "timestamp_seconds": 21.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0015.jpg",
+      "timestamp_seconds": 21.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0016.jpg",
+      "timestamp_seconds": 23.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_4/frame_0017.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_4.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_4.json",
+    "response_text": "The commercial opens in a bright, upscale living room. A bald adult man in a black outfit sits centered on a light-colored sofa with patterned pillows and blue accent cushions. In front of him, on a glass coffee table, there is a tall silver cylindrical device and a small clear bottle. On-screen text at the upper left reads “25% OFF” with a discount-code line beneath it, and “AROMA360” appears at the lower left.\n\nThe camera moves closer to the man as he gestures with his hands while seated on the sofa. The silver device remains partly visible in the foreground. A close-up follows, showing his face and upper body against the pale sofa and bright wall. The image then becomes very bright, functioning like a white flash or fade transition.\n\nThe scene changes to a white hallway with framed wall art and doors. The same man stands in the corridor, facing the camera and gesturing. The same discount text and Aroma360 branding remain on screen.\n\nNext, a woman appears seated on a tufted white sofa in a modern room with large face artwork on the wall. She is dressed in dark clothing and has long wavy hair. She has an open magazine or catalog on the sofa beside her. A silver cylindrical device is visible in the foreground on a glass table.\n\nThe commercial then cuts to wide shots of luxurious interiors: a large lounge or lobby-like space with tall windows, seating areas, plants, lamps, and decorative wall art; then a formal room with chairs, a chandelier, marble-like surfaces, and a central overlay reading “Top Scents”; then another modern lounge with tall patterned columns and white seating. The “Top Scents” overlay remains visible in these interior shots, with dark rectangular blocks beneath the heading.\n\nThe man reappears standing in a modern kitchen or interior space, again facing the camera. A QR code appears at the lower right with the label “SCAN ME,” while the discount offer remains at the upper left and the Aroma360 mark remains at the lower left.\n\nA product close-up follows: a tall black cylindrical tower-like device stands on a surface, with a small rectangular object nearby. The QR code remains on the right. The background includes a wall-mounted screen and a light-colored wall.\n\nThe next shot shows the man and the woman together, smiling and facing each other in a contemporary room. A black cylindrical device is visible between them near the lower part of the frame. The QR code remains at the lower right.\n\nAnother close-up shows a silver cylindrical device standing on a reflective glass table. A small rectangular object lies nearby on the table. The background is soft and bright, with a sofa and lamp visible.\n\nThe woman and man are then shown seated together on the white sofa. The woman holds the silver cylindrical device upright while the man sits beside her with his hands together. The same large face artwork is visible behind them. The QR code and discount text remain on screen.\n\nA close-up shows the woman holding a small clear bottle or vial near her nose, appearing to smell it. In the following frame, text appears to the right of her reading “HEALTHY LUXURY SCENTING.” The discount offer, Aroma360 branding, and QR code remain visible.\n\nThe commercial ends on a clean white screen with the “AROMA360” logo at the top, large “25% OFF” text in the center, a QR code labeled “SCAN ME,” the line “USE CODE: DJ25,” and the website “aroma360.com” at the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e5e0657f7117ceb006a10797aee9881a093fcd849a81cc318",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1159,
+      "output_tokens_details": {
+        "reasoning_tokens": 442
+      },
+      "total_tokens": 4505
+    }
+  },
+  "duration_seconds": 28.268,
+  "created_at": "2026-05-22T15:43:18Z",
+  "error": null
+}

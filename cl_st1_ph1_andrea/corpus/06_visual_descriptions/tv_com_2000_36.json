@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_2000_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0002.jpg",
+      "timestamp_seconds": 0.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0003.jpg",
+      "timestamp_seconds": 4.928,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0004.jpg",
+      "timestamp_seconds": 5.095,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0005.jpg",
+      "timestamp_seconds": 6.596,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_36/frame_0006.jpg",
+      "timestamp_seconds": 15.039,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_36.json",
+    "response_text": "The commercial begins on a mostly black screen. A small red-and-white logo or watermark is visible in the lower-right corner.\n\nThe next frame shows a single cylindrical battery lying horizontally on a glossy, reflective surface. The background is metallic grey with a textured or striped appearance. The battery label is partially visible and appears to be an Energizer battery, with a dark body and colored banding.\n\nThe view then cuts to a much closer shot of the battery. The label reads “Energizer” and “MAX,” with a red-to-yellow/green curved stripe across the lower part of the label. Behind or partly around the battery is a shiny silver rabbit/bunny figure with long ears. The figure looks metallic or chrome-like and is positioned as if emerging from or gripping the battery.\n\nA very similar close-up follows, with the chrome bunny more clearly visible above and behind the battery. The battery remains the central object, and the reflective silver background continues. The image emphasizes the “Energizer” branding and the “MAX” marking.\n\nThe commercial then cuts back to a wider product shot. The Energizer battery is again lying horizontally on a reflective floor, against a smooth silver-white background. The reflection of the battery is visible below it. Small text appears in the lower-right area, but it is too unclear to read from the sampled frame.\n\nThe final frame presents a clean end-card style product shot. A large Energizer MAX battery is centered horizontally on the reflective surface. Beneath it, bold black text reads: “Do you have the Bunny inside?” The metallic silver background and the lower-right red-and-white watermark remain visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ca3461b90f4826a006a107520843c81a28da3832914109712",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 479,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 2094
+    }
+  },
+  "duration_seconds": 12.964,
+  "created_at": "2026-05-22T15:24:29Z",
+  "error": null
+}

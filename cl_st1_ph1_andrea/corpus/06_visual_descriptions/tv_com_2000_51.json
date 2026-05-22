@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2000_51",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_51",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_51/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_51.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0002.jpg",
+      "timestamp_seconds": 2.626,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0003.jpg",
+      "timestamp_seconds": 3.96,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0004.jpg",
+      "timestamp_seconds": 5.228,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0005.jpg",
+      "timestamp_seconds": 5.929,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0006.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0007.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0008.jpg",
+      "timestamp_seconds": 8.265,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0009.jpg",
+      "timestamp_seconds": 9.232,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0010.jpg",
+      "timestamp_seconds": 9.866,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0011.jpg",
+      "timestamp_seconds": 11.668,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0012.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0013.jpg",
+      "timestamp_seconds": 13.837,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0014.jpg",
+      "timestamp_seconds": 14.437,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0015.jpg",
+      "timestamp_seconds": 15.505,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0016.jpg",
+      "timestamp_seconds": 17.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0017.jpg",
+      "timestamp_seconds": 17.607,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0018.jpg",
+      "timestamp_seconds": 17.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0019.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0020.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0021.jpg",
+      "timestamp_seconds": 19.776,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0022.jpg",
+      "timestamp_seconds": 21.778,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0023.jpg",
+      "timestamp_seconds": 22.679,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_51/frame_0024.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_51.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_51.json",
+    "response_text": "The commercial opens at night in a dark outdoor setting. A man stands beside or partly on a red car, with metal barriers or rooftop/industrial structures in the foreground. The lighting is low and blue-toned, with the car’s front and rounded headlight visible.\n\nThe scene cuts to a close-up of a hand holding a Nokia mobile phone. The phone has a small green backlit screen and an external antenna. A thumb presses the keypad or navigation buttons.\n\nThe man is then shown sitting or leaning on the red car under a bright moon or streetlight, with a dark skyline behind him. A street scene follows: a corner building at night with wet pavement, a lit streetlamp, neon signage, and a blue sign reading “BAR.” A person stands near the entrance.\n\nBack at the rooftop/car location, a close-up shows the man’s face in profile, lit with cool blue light. A close-up of a woman follows; she has dark hair, wears earrings and a necklace, and appears to be smiling slightly while looking toward the man. The two are then shown together beside the car. The man holds the phone while the woman stands close to him.\n\nA close-up of the Nokia phone shows the screen with a connection/loading bar and partially readable text beginning with “Connecting to…”. The exact destination or service text is not fully clear. The thumb continues operating the phone.\n\nThe commercial briefly cuts to a very dark shot with small points of light, then returns to the man and woman silhouetted against the night sky and a bright circular light. Another close-up of the phone shows a short text message or menu item; the words are partially readable but not fully clear. “Options” and “Clear” appear at the bottom of the screen.\n\nA cutaway shows several round ceiling lights in a dark interior. The woman is shown again in close-up, smiling and looking toward the man. Another phone close-up shows a menu or service screen with a line that appears to include “Flight Status,” though some text is blurred. The thumb selects or scrolls.\n\nThe next images show a vintage-looking propeller airplane at night, lit dramatically from below and from the side. This is followed by a bright, reflective nighttime street or outdoor café scene with large umbrellas and strong highlights on wet surfaces. A very dark transitional shot appears, then a close-up of pink neon tubing, forming part of a sign or decorative shape.\n\nA brief interior or club-like scene follows, with people standing or dancing in low light under bright flame-like or lamp-like light sources. The commercial then returns to the woman’s close-up; she looks sideways toward the man with a faint smile.\n\nA wider rooftop shot shows the man and woman seated or leaning on the red car, looking out over a brightly lit city skyline at night. Small white disclaimer text appears along the bottom: “Service is not available in all locations. Please check with your service provider.” The next shot shows a hand holding the Nokia phone up against a blurred city-lights background, with the same disclaimer text along the bottom.\n\nThe couple is again shown from behind or in silhouette beside the car, facing the illuminated city skyline under a bright moon or lamp. The final frame cuts to a clean white product shot: a Nokia phone centered above the large blue “NOKIA” logo. Beneath it are the words “CONNECTING PEOPLE” and the website “nokia.com.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_08be6af5275c2899006a10757e1a1481a1932ac803b923ad0c",
+    "usage": {
+      "input_tokens": 6517,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1003,
+      "output_tokens_details": {
+        "reasoning_tokens": 309
+      },
+      "total_tokens": 7520
+    }
+  },
+  "duration_seconds": 26.207,
+  "created_at": "2026-05-22T15:26:16Z",
+  "error": null
+}

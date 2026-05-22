@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1970_48",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_48",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_48/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_48.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0002.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0003.jpg",
+      "timestamp_seconds": 3.593,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0004.jpg",
+      "timestamp_seconds": 6.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0005.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_48/frame_0006.jpg",
+      "timestamp_seconds": 12.069,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_48.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_48.json",
+    "response_text": "The commercial begins with a dark, simple graphic image: a bright red rectangular outline, like a doorway or frame, centered against a dark background.\n\nIt then cuts to a close-up of a rugged-looking man in Western clothing. He wears a wide-brimmed cowboy hat, a neckerchief, and a dusty jacket. His face is shown in three-quarter view, and he appears to be looking off to the side with a stern or skeptical expression. The background is blurred but suggests an outdoor or rustic setting.\n\nThe next sampled frame shows a transitional, double-exposed image. Several figures in Western-style clothing appear overlapped, as if the commercial is dissolving between shots. A central person in a light shirt with decorative seams is visible from torso to head, while other figures in hats and shirts appear partially at the edges. The image is visually unclear because of the superimposition.\n\nThe scene then shifts to two children leaning out of a wooden-framed window. One child, wearing a light shirt, is smiling and waving toward the camera. Another child, wearing a cap, long-sleeved top, and denim overalls or a denim dress, stands beside them. The wooden structure and window frame suggest an old-fashioned or Western-town setting.\n\nA wider outdoor view follows, showing a Western-style street or town set. There are wooden buildings, wagons, large barrels, crates, sacks, and several people standing or walking around. The setting looks staged as an old town or frontier environment, with bright daylight and dusty ground.\n\nIn the final frame, three adult men in Western attire stand in the foreground, looking toward something off-screen. They wear cowboy hats, shirts, vests, and neckwear. Over them appears large white text reading “Wrangler.” Beneath it, smaller text reads: “IT DOESN’T JUST MEAN COWBOY ANYMORE.” Additional small text appears below, but it is not fully clear in the frame. The archive watermark is visible across the image, and a “Classic Commercial Archives” logo appears in the lower-left corner throughout the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_03aacd320a13208f006a106f5d73cc8196944b054c9867a1c4",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 607,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 2222
+    }
+  },
+  "duration_seconds": 16.479,
+  "created_at": "2026-05-22T14:59:57Z",
+  "error": null
+}

@@ -1,0 +1,228 @@
+{
+  "commercial_id": "tv_com_2020_78",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_78",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_78/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_78.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0002.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0003.jpg",
+      "timestamp_seconds": 2.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0004.jpg",
+      "timestamp_seconds": 3.293,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0005.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0006.jpg",
+      "timestamp_seconds": 5.228,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0007.jpg",
+      "timestamp_seconds": 6.096,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0008.jpg",
+      "timestamp_seconds": 6.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0009.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0010.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0011.jpg",
+      "timestamp_seconds": 9.399,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0012.jpg",
+      "timestamp_seconds": 9.533,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0013.jpg",
+      "timestamp_seconds": 10.367,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0014.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0015.jpg",
+      "timestamp_seconds": 11.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0016.jpg",
+      "timestamp_seconds": 12.469,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0017.jpg",
+      "timestamp_seconds": 12.869,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0018.jpg",
+      "timestamp_seconds": 13.403,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0019.jpg",
+      "timestamp_seconds": 14.037,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0020.jpg",
+      "timestamp_seconds": 14.204,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0021.jpg",
+      "timestamp_seconds": 14.938,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0022.jpg",
+      "timestamp_seconds": 15.905,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0023.jpg",
+      "timestamp_seconds": 17.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2020_78/frame_0024.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 24,
+    "submitted_frame_count": 24,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_78.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_78.json",
+    "response_text": "The commercial opens with an aerial view over a dark, expansive landscape at sunrise or sunset. A winding road runs through the center, and a large gold Chevrolet bowtie logo is overlaid above the road. The logo then expands into a bright white graphic outline that fills much of the screen, functioning as a transition.\n\nThe scene cuts to a pickup truck driving toward the camera on a sunlit, tree-lined residential street. Inside a vehicle, two men are shown in the front seats; the driver wears a light-colored baseball cap, and the passenger sits beside him. The truck is then seen from behind driving through a suburban neighborhood with large trees, houses, parked cars, and a yellow school bus visible to the side.\n\nThe commercial shifts to a black Chevrolet pickup on a rural highway, towing a large trailer. A blonde woman wearing a wide-brimmed cowboy hat is shown driving, seen in profile from inside the cab. The next exterior shot shows a dark truck arriving at a dusty rural or ranch-like location with wooden buildings, tall trees, people walking nearby, and utility vehicles parked around.\n\nA group scene follows inside a vehicle: two men sit in the rear area, smiling or laughing, while another person appears to be getting in through an open door. A front windshield shot shows multiple occupants seated inside the vehicle.\n\nThe montage then moves to an urban setting. People are seen moving quickly under or near an overpass in strong low sunlight, with buildings and columns in the background. A woman driver is shown inside a vehicle, holding the steering wheel and looking toward the camera. This is followed by a vehicle driving on a city road with bright headlights, surrounded by tall downtown buildings.\n\nA rapid close-up shot shows a red truck passing quickly, with motion blur emphasizing speed. The setting then changes outdoors again: people are shown near or on a large fallen tree or log in bright sunlight. One shot shows two men close together outdoors; one wears a cap and holds a small round object, though the object is not clearly identifiable.\n\nThe commercial continues with off-road or trail imagery. A rider on a motorcycle or dirt bike travels along a wooded dirt path, with trees lining both sides. Subsequent frames show a fast-moving rider through a forested area, heavily blurred by motion and foliage. Small white disclaimer text appears near the bottom in some of these frames, but it is too small to read clearly.\n\nA man is then shown inside a vehicle, laughing while holding the steering wheel. The next shot focuses on the rear tailgate of a blue Chevrolet truck, with the Chevrolet bowtie emblem centered on the tailgate. Small white text appears near the bottom, but it is not legible in the sampled frame.\n\nThe final portion becomes a static promotional offer layout. On the left, a dark gray panel contains large white text reading “START THE YEAR IN DRIVE.” Below it, smaller text promotes a “2026 CHEVY SILVERADO 1500 CREW CAB WITH TURBOMAX ENGINE” or select Silverado 1500 Crew Cab models. Large offer figures include “1.9% APR” and “$6,144 total value,” with dense fine print beneath that is mostly too small to read. On the right, a silver Chevrolet Silverado pickup drives along a road through a snowy or wintry landscape. The Chevrolet bowtie logo and “CHEVROLET” wordmark appear at the bottom right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c9b8a8c5a35853b006a107af04e6c819089b1bcf702f298b1",
+    "usage": {
+      "input_tokens": 4669,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1208,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5877
+    }
+  },
+  "duration_seconds": 29.452,
+  "created_at": "2026-05-22T15:49:33Z",
+  "error": null
+}

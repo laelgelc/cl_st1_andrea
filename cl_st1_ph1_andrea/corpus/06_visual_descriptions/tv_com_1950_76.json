@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1950_76",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_76",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_76/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_76.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_76/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_76/frame_0002.jpg",
+      "timestamp_seconds": 81.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_76.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_76.json",
+    "response_text": "The commercial is shown in black and white.\n\nAt the beginning, a well-dressed man wearing a dark suit or tuxedo with a bow tie appears indoors. He is partially obscured or framed by a large reflective/transparent object in the foreground, possibly a piece of equipment or glass panel. The background appears to include a window or light-toned interior setting, but details are indistinct due to blur and reflection.\n\nBy the final frame, the commercial has shifted to a product/brand display. Several large upright objects or appliances are shown in the background, with bold superimposed text across the image. The visible text reads:\n\n“PHILCO”  \n“QUALITY”  \n“FIRST”\n\nThe final image functions as an end card or brand-identification shot, emphasizing the Philco name and the phrase “QUALITY FIRST.” No dialogue, music, or spoken slogan is visible in the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_00a80f1ddae0002b006a106c1c52748190a7561e371b3dc777",
+    "usage": {
+      "input_tokens": 627,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 884
+    }
+  },
+  "duration_seconds": 7.711,
+  "created_at": "2026-05-22T14:45:55Z",
+  "error": null
+}

@@ -1,0 +1,158 @@
+{
+  "commercial_id": "tv_com_2000_4",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_4",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_4/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_4.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0003.jpg",
+      "timestamp_seconds": 3.727,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0004.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0005.jpg",
+      "timestamp_seconds": 10.267,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0006.jpg",
+      "timestamp_seconds": 12.536,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0007.jpg",
+      "timestamp_seconds": 16.973,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0008.jpg",
+      "timestamp_seconds": 18.141,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0009.jpg",
+      "timestamp_seconds": 21.444,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0010.jpg",
+      "timestamp_seconds": 23.647,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0011.jpg",
+      "timestamp_seconds": 25.081,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0012.jpg",
+      "timestamp_seconds": 26.016,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0013.jpg",
+      "timestamp_seconds": 28.852,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_4/frame_0014.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 14,
+    "submitted_frame_count": 14,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_4.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_4.json",
+    "response_text": "The commercial begins on a nearly black frame with a small red heart-shaped channel/logo watermark in the lower-right corner.\n\nA graphic image then appears showing a stylized beer label or sign. The visible text includes “ROLLING ROCK” and “Extra Pale,” with a horse-head emblem. The image has a striped, high-contrast, slightly distorted look, as if seen through scan lines or a graphic transition.\n\nThe scene changes to a dimly lit bar or pool hall. A young adult man with light hair, wearing a pale short-sleeved shirt over a white T-shirt, looks upward toward someone standing close to him. Warm string lights and blurred bar activity are visible in the background.\n\nA wider view shows a pool table in the foreground with billiard balls spread across the green felt. Several young adults are gathered around the table. A woman in an orange sleeveless top stands to the left with a pool cue. Near the center, the light-haired man stands beside a blonde woman in a black strapless top and light skirt. Other patrons are visible around the bar and pool area.\n\nThe man is then shown from behind as he approaches or stands close to the blonde woman. Her face is partly visible beyond his shoulder.\n\nAnother shot shows three people near the pool table: the woman in the orange top holding a cue on the left, the blonde woman in the black top in the center with her back partly turned, and the light-haired man on the right holding green beer bottles. The group appears to be interacting casually in the bar environment.\n\nA wider shot from across a table shows the same pool hall scene. The man and blonde woman stand near the pool table while other people sit or stand around them. Green bottles are visible on a nearby table in the foreground. The setting includes warm lighting, dark wood tones, and bar/pool-room décor.\n\nA closer shot frames the man and blonde woman facing one another near the pool table. He holds a green bottle, and she holds a small object in one hand, possibly related to the pool game, though it is not clearly identifiable. Their facial expressions appear attentive or conversational.\n\nThe next shot is a close-up of hands and torsos around drinks. The light-haired man’s arm moves near two green bottles. A woman in a reddish or pink top is in the background. The bottles have white labels, but the label text is not fully readable in this frame.\n\nThe man is then shown frontally, holding two green bottles with white labels. He looks downward at them. Small white copyright text appears across the lower portion of the frame; it is partially legible and includes “© 2000 … Brewing Co., Latrobe, PA.”\n\nA cutaway shows three young adult men seated at a table, smiling and looking toward the action off-camera. They have green beer bottles in front of them, and one gestures with his hand. The same small white copyright line remains near the bottom.\n\nThe light-haired man appears again in a medium close-up, facing forward with a neutral or slightly resigned expression. A green bottle is partly visible at the bottom edge. The bar background remains softly lit and out of focus, with the copyright text still faintly visible near the bottom.\n\nThe commercial then transitions back to a green-toned branded graphic. A horse-head emblem appears above large white text reading “KEEP ON ROCKIN’.” The background looks like glass or liquid texture, matching the beer branding style.\n\nThe final frame is a close-up of a green glass beer bottle covered with condensation. The label is clearly visible and reads “ROLLING ROCK” and “Extra Pale,” with the horse-head emblem and decorative label details. The red heart-shaped watermark remains at the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_011f17039a25ce22006a1074865d308193b6eb87d47656f469",
+    "usage": {
+      "input_tokens": 3591,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 803,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 4394
+    }
+  },
+  "duration_seconds": 20.104,
+  "created_at": "2026-05-22T15:22:02Z",
+  "error": null
+}

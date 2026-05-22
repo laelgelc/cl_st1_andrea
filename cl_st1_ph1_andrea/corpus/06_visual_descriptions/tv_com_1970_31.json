@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1970_31",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_31",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_31/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_31.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0002.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0003.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0004.jpg",
+      "timestamp_seconds": 14.838,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0005.jpg",
+      "timestamp_seconds": 18.808,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_31/frame_0006.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_31.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_31.json",
+    "response_text": "The commercial opens on a wide view of an unpaved, reddish dirt road running through a wooded hillside. Large centered text reads: “The sweet handling Mustang II Cobras.” A “Classic Commercial Archives” watermark appears at lower left.\n\nThe scene then cuts to two cars driving on the dusty mountain road. A white car with bold red striping is ahead, and a darker car follows behind. Dust rises around them as they move along the road between trees and rocky slopes. The earlier title text is still faintly visible over the image.\n\nNext, a white striped car is shown from the rear/side on a dirt road, angled as if turning or sliding near a rocky embankment. Dust is visible behind it. A text label at the bottom reads “spoiler,” suggesting the rear spoiler being highlighted.\n\nThe commercial then shows the white car from the front on a narrow dirt road in a wooded, rocky area. The car has red striping across the hood. Multiple lines of white overlay text list vehicle features; the visible items include “front spoiler,” “steel belted radials,” “rack & pinion steering,” “staggered shocks,” “stabilizer bar,” and “spoiler,” though some text is partially obscured by the image quality.\n\nThe setting changes to a paved road along a rock wall. The same white car with red hood striping drives toward the camera, leaning slightly with the curve of the road. The surrounding area remains wooded and mountainous.\n\nThe final frame is a blue end card with large white “FORD” lettering. The “O” is stylized as a light bulb shape. Beneath it are the words “FORD DIVISION” and the Ford oval logo. The archive watermark remains visible near the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b02503bad153a48006a106f13f1b081a395f1ae2c3e852b5e",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 541,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 2156
+    }
+  },
+  "duration_seconds": 14.287,
+  "created_at": "2026-05-22T14:58:42Z",
+  "error": null
+}

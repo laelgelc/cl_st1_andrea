@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1970_56",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_56",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_56/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_56.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0002.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0003.jpg",
+      "timestamp_seconds": 3.36,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0004.jpg",
+      "timestamp_seconds": 6.396,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0005.jpg",
+      "timestamp_seconds": 8.098,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0006.jpg",
+      "timestamp_seconds": 10.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0007.jpg",
+      "timestamp_seconds": 15.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0008.jpg",
+      "timestamp_seconds": 18.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0009.jpg",
+      "timestamp_seconds": 20.644,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_56/frame_0010.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_56.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_56.json",
+    "response_text": "The commercial begins with a nearly black frame, with only the archive watermark visible.\n\nIt then cuts to a close view of a television screen showing a sports scene, apparently baseball. The picture is framed within the shape of a CRT television display. A caption at the bottom reads: “All TV pictures simulated.” The image has a soft, slightly washed-out quality and visible color glare.\n\nNext, a man is shown seated indoors in what appears to be a living-room setting. He has dark hair and wears an orange or rust-colored sweater over a collared shirt. He is seated in front of or near a dark chair, with furniture and a window-like background behind him. The image is partially overlaid with reflections or colored light effects.\n\nThe commercial returns to a full view of a large CRT television console. The TV shows another baseball scene on its screen. The set has a large screen on the left and a control panel on the right. The surrounding room remains dim and softly focused.\n\nThe man appears again, seated and facing forward. His hands are raised near his lap or chest, as if holding or gesturing with a small object, though the object is not clearly visible. The same purple and blue light streaks or reflection effects pass over the frame.\n\nA technical product graphic follows: a cutaway or diagram of a television tube or lens system. A beam of colored light, including red, green, and blue/yellow tones, passes through the device. Text on the right reads “Quintrix II,” followed by a smaller line that appears to say “extra precious lens,” though the exact wording is somewhat unclear due to image quality.\n\nThe scene returns to the seated man. He looks downward at something in his hands, possibly a small device or card, but it is not clearly identifiable. Purple lighting overlays remain visible.\n\nAnother shot of the CRT television appears, again showing a simulated broadcast image on the screen. The TV cabinet and right-side control panel are visible. The man’s head or upper body appears faintly behind or above the set due to the overlay/compositing effect.\n\nThe man is then shown smiling while seated in the same room. He faces forward, appearing pleased or amused. The lighting remains soft and tinted by colored reflections.\n\nThe final frame shows the man seated within a smaller image surrounded by a black border, as if the commercial image is being displayed inside a screen. At the bottom, large text reads “Panasonic,” followed by the slogan “just slightly ahead of our time.” The archive watermark remains over the image."
+  },
+  "api_metadata": {
+    "response_id": "resp_07cc83806cb3852d006a106f807470819e812147b69b57be70",
+    "usage": {
+      "input_tokens": 3045,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 3366
+    }
+  },
+  "duration_seconds": 38.015,
+  "created_at": "2026-05-22T15:00:53Z",
+  "error": null
+}

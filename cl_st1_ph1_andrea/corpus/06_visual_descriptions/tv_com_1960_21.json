@@ -1,0 +1,256 @@
+{
+  "commercial_id": "tv_com_1960_21",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_21",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_21/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_21.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0002.jpg",
+      "timestamp_seconds": 1.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0003.jpg",
+      "timestamp_seconds": 2.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0004.jpg",
+      "timestamp_seconds": 6.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0005.jpg",
+      "timestamp_seconds": 8.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0006.jpg",
+      "timestamp_seconds": 10.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0007.jpg",
+      "timestamp_seconds": 12.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0008.jpg",
+      "timestamp_seconds": 15.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0009.jpg",
+      "timestamp_seconds": 18.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0010.jpg",
+      "timestamp_seconds": 20.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0011.jpg",
+      "timestamp_seconds": 22.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0012.jpg",
+      "timestamp_seconds": 23.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0013.jpg",
+      "timestamp_seconds": 24.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0014.jpg",
+      "timestamp_seconds": 25.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0015.jpg",
+      "timestamp_seconds": 27.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0016.jpg",
+      "timestamp_seconds": 31.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0017.jpg",
+      "timestamp_seconds": 36.424,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0018.jpg",
+      "timestamp_seconds": 38.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0019.jpg",
+      "timestamp_seconds": 41.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0020.jpg",
+      "timestamp_seconds": 43.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0021.jpg",
+      "timestamp_seconds": 44.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0022.jpg",
+      "timestamp_seconds": 52.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0023.jpg",
+      "timestamp_seconds": 52.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0024.jpg",
+      "timestamp_seconds": 54.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0025.jpg",
+      "timestamp_seconds": 55.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0026.jpg",
+      "timestamp_seconds": 56.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0027.jpg",
+      "timestamp_seconds": 56.904,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1960_21/frame_0028.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 28,
+    "submitted_frame_count": 28,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_21.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_21.json",
+    "response_text": "The commercial is presented in a sepia/black-and-white style, mixing live-action close-ups with simple line-drawn animation. A small “Nostalgic X’er” watermark appears at the lower right throughout the sampled frames.\n\nAt the beginning, the image is very dark, then resolves into a close view of a drawn face with heavy black shading around the eyes. The drawing shows a stern, bald male figure with arched eyebrows and a hoop earring. This animated face is followed by a superimposed image of a live-action woman, partly blended over the cartoon eyes.\n\nThe next section alternates between live-action female faces and the animated male figure. A blonde woman with a short bob haircut appears in soft focus, facing forward or slightly to the side. Another close-up shows a woman’s face from a low side angle, with strong lighting on her eyes and cheek. The animated bald figure is shown frontally with a severe, frowning expression, thick eyebrows, and a hoop earring. The cuts emphasize eyes and faces: the blonde woman looks intently, then appears surprised with widened eyes and an open mouth; the other woman’s lips and eyes are shown in extreme close-up.\n\nThe commercial then shifts from faces to household surfaces. A floor or counter-like surface appears, followed by a close-up of the animated man’s stern face again. A live-action cleaning setup is shown: a bottle with a label reading “MR CLEAN” stands beside household cleaning items near what appears to be a sink or counter area. Subsequent shots show a sink basin with fixtures, and then a flat vertical surface or door/wall area with marks or smudges near a round knob. The exact cleaning action is not fully clear in the sampled frames, but the visuals suggest dirty household surfaces being addressed.\n\nA close-up of the blonde woman follows; she smiles broadly with bright, excited eyes. Then a product shot appears: a bottle labeled “MR CLEAN” stands alone against a plain background. Immediately afterward, another bottle appears with the large word “LIQUID” printed on it. The camera moves or cuts closer until “LIQUID” fills much of the frame. A large bold word “NOTHING” then fills the screen in oversized lettering.\n\nThe final segment returns to the characters. The blonde woman is shown facing forward with a neutral, composed expression. The animated bald man reappears in close-up, still frowning at first. The camera moves progressively closer to one of his eyes, emphasizing his arched eyebrow and narrowed gaze. Then the animated expression changes: the bald man is shown frontally with a broad smile instead of a frown. The final frame holds on his smiling face, still with the hoop earring visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_081a54bacc3d5af1006a106d1e8cb08190986d1ee595f7a07d",
+    "usage": {
+      "input_tokens": 5425,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 896,
+      "output_tokens_details": {
+        "reasoning_tokens": 337
+      },
+      "total_tokens": 6321
+    }
+  },
+  "duration_seconds": 26.376,
+  "created_at": "2026-05-22T14:50:32Z",
+  "error": null
+}

@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_2010_21",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_21",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_21/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_21.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0002.jpg",
+      "timestamp_seconds": 1.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0003.jpg",
+      "timestamp_seconds": 2.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0004.jpg",
+      "timestamp_seconds": 5.695,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0005.jpg",
+      "timestamp_seconds": 10.7,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0006.jpg",
+      "timestamp_seconds": 12.994,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0007.jpg",
+      "timestamp_seconds": 14.162,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0008.jpg",
+      "timestamp_seconds": 15.622,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0009.jpg",
+      "timestamp_seconds": 17.248,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0010.jpg",
+      "timestamp_seconds": 19.626,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0011.jpg",
+      "timestamp_seconds": 21.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0012.jpg",
+      "timestamp_seconds": 24.047,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0013.jpg",
+      "timestamp_seconds": 25.048,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0014.jpg",
+      "timestamp_seconds": 26.841,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0015.jpg",
+      "timestamp_seconds": 29.01,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_21/frame_0016.jpg",
+      "timestamp_seconds": 31.055,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_21.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_21.json",
+    "response_text": "The commercial begins on a black screen.\n\nIt then cuts to the interior of a house, near the front entrance. A middle-aged woman in a pink cardigan moves quickly in the foreground, partially blurred, with a middle-aged man in a light blue polo shirt standing behind her. The setting appears to be a hallway or foyer with a wooden front door and glass panels.\n\nThe door is open. A young man in a light teal polo shirt and a young woman in a purple top stand outside or at the threshold, smiling toward the people inside. The middle-aged man and woman face them, also smiling. The group appears to be greeting one another at the doorway.\n\nThe scene widens to show all four people near the open door. The young woman in purple extends a hand or gestures inward/downward, while the young man stands close beside her. The middle-aged woman in pink stands with her hands together, smiling, and the middle-aged man looks down while smiling.\n\nA closer shot shows the young woman in purple speaking or smiling animatedly while standing beside the young man. The middle-aged woman and man are partly visible at the left edge, listening. The young man looks down toward the young woman with a smile.\n\nThe view then cuts back to the middle-aged man and woman from inside the house. The woman’s expression becomes more intent or questioning, while the man looks downward and smiles slightly. The back of the young woman’s head is visible in the foreground.\n\nThe middle-aged woman reaches toward the door, appearing to hold or move it as the young man and young woman remain near the threshold. The young woman smiles broadly. The middle-aged woman’s body is turned toward the open door.\n\nThe middle-aged man and woman then stand inside facing the doorway. Both smile; the woman looks toward someone just off-frame to the right. The camera angle suggests the young visitors are entering or continuing to interact at the entrance.\n\nThe young man in the teal polo is shown at the open door, looking inward. The middle-aged woman is at the door’s edge, and the middle-aged man is partly visible at the left. The young woman in purple is no longer in this frame.\n\nThe middle-aged couple are shown again in close-up. Their expressions shift from pleasant to more uncertain or surprised as they look toward the doorway/right side of the frame.\n\nA new young woman, wearing a yellow top, appears outside or at the threshold. The young man turns toward her and gestures with an open hand, as if introducing or ushering her in. The middle-aged couple and another person at the left edge watch from inside.\n\nThe next shot shows more movement through the doorway. A young woman in a red dress or top walks inside, facing the middle-aged couple. The middle-aged man and woman look toward her; the young man remains by the open door, looking outward and holding or gesturing near the door.\n\nIn close-up, the middle-aged man and woman look toward people entering from the left foreground. A blonde young woman is visible in the background, smiling as she moves through the hallway. The middle-aged woman’s expression appears more concerned or puzzled than before.\n\nAnother wider shot shows additional young women moving through the foyer. A dark-haired young woman in black passes in the foreground. The middle-aged couple stand near the interior side of the doorway, watching. The young man in teal remains near the open door, now interacting with another young woman in a gray top outside or at the threshold. The doorway area appears crowded with arrivals.\n\nThe scene then cuts to a black screen with centered white uppercase text reading: “USE IN MODERATION.”\n\nThe final frame is black."
+  },
+  "api_metadata": {
+    "response_id": "resp_02928ab55a026d00006a10774826f48191920419c6ab244c21",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 923,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 4080
+    }
+  },
+  "duration_seconds": 22.552,
+  "created_at": "2026-05-22T15:33:50Z",
+  "error": null
+}

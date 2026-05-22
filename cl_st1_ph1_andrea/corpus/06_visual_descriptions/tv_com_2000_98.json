@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2000_98",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_98",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_98/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_98.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0002.jpg",
+      "timestamp_seconds": 0.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0003.jpg",
+      "timestamp_seconds": 1.124,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0004.jpg",
+      "timestamp_seconds": 2.592,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0005.jpg",
+      "timestamp_seconds": 3.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0006.jpg",
+      "timestamp_seconds": 4.361,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0007.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0008.jpg",
+      "timestamp_seconds": 5.762,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0009.jpg",
+      "timestamp_seconds": 6.429,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0010.jpg",
+      "timestamp_seconds": 7.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0011.jpg",
+      "timestamp_seconds": 15.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0012.jpg",
+      "timestamp_seconds": 16.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0013.jpg",
+      "timestamp_seconds": 17.607,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0014.jpg",
+      "timestamp_seconds": 18.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0015.jpg",
+      "timestamp_seconds": 21.511,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0016.jpg",
+      "timestamp_seconds": 22.679,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0017.jpg",
+      "timestamp_seconds": 24.447,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0018.jpg",
+      "timestamp_seconds": 25.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0019.jpg",
+      "timestamp_seconds": 26.583,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_98/frame_0020.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_98.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_98.json",
+    "response_text": "The commercial unfolds as a highly stylized sequence set around the sea, a sailboat, swimming, and shaving imagery.\n\n- **Opening:** The first shot shows a sailboat on bright, glittering water, filmed from above at an angle. Several women in swimwear are on or near the boat. The lighting is golden and high-contrast, with strong sun reflections on the sea.\n\n- **On the boat:** A woman in a light-colored bikini is shown close-up beside the sailboat rigging, backlit by the sun. The image is silhouetted and warm-toned, making facial details unclear. Quick close-ups follow, including a sun-flared view of a leg or body part near water, creating an abstract, luminous effect.\n\n- **Sea and diving imagery:** The camera cuts to open water and then to a woman standing on the bow of the sailboat with her arms raised above her head. The surrounding landscape includes dark mountain silhouettes and a blue sea under a warm sky. She appears posed as if preparing to dive or perform a graceful movement.\n\n- **Underwater transition:** A figure enters or moves through the water, with bubbles and ripples visible. Another shot shows women standing or balancing on pointed parts of the boat, with sails and sky behind them. The perspective is dramatic and low, emphasizing the boat’s sharp red hull sections and the women’s bodies against the sky.\n\n- **Swimming close-ups:** There are underwater close-ups of hands moving through blue water, followed by a woman underwater with her arms outstretched toward the surface. The underside of the boat or a dark shape appears above her. The lighting remains golden and blue, with sunlight filtering through the water.\n\n- **Razor/product imagery introduced:** A close-up shows a curved, pale gold object with water-like reflections, likely part of the razor or product design, though the exact object is not fully clear in isolation. This is followed by an underwater shot of a woman positioned between two dolphins, with bright surface light above them. The woman’s body is silhouetted and the dolphins are clearly visible in profile.\n\n- **Shaving action:** A close-up shows a woman shaving her leg with a small razor. Her hand holds the razor against the skin, and the background is a sparkling blue water surface. This directly connects the beach/swimming imagery to body care.\n\n- **Razor head close-up:** A close-up of a razor head appears against blue water and bubbles. The blades and white/blue cartridge are visible.\n\n- **Return to boat and swimming:** The commercial cuts back to the sailboat from above, with women lounging or standing on the deck and bow. Another underwater shot shows a woman in a swimsuit floating or swimming sideways, with bubbles rising behind her.\n\n- **Dolphins:** Two dolphins swim through dark blue water, moving diagonally across the frame. They are lit by greenish-yellow highlights against the deep blue background.\n\n- **Product reveal build-up:** The imagery becomes more abstract and bright, with water, foam, and strong white light. A razor-shaped object appears moving through water with a glowing wake and splashing effects.\n\n- **Final product shot:** The final frame shows two packaged **Venus Disposables** razors, one pink and one blue, against a dark, watery, glowing background. Large text at the upper left reads **“Venus”**, with **“DISPOSABLES”** beneath it. The packages both display the **Venus** name. At the bottom, a written slogan reads: **“Reveal the goddess in you.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_0e06d7f310ff5423006a10766059f081949a79a2e08c197798",
+    "usage": {
+      "input_tokens": 5453,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1052,
+      "output_tokens_details": {
+        "reasoning_tokens": 323
+      },
+      "total_tokens": 6505
+    }
+  },
+  "duration_seconds": 26.303,
+  "created_at": "2026-05-22T15:30:02Z",
+  "error": null
+}

@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1960_68",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_68",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_68/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_68.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0002.jpg",
+      "timestamp_seconds": 14.663,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0003.jpg",
+      "timestamp_seconds": 18.583,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0004.jpg",
+      "timestamp_seconds": 23.38,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0005.jpg",
+      "timestamp_seconds": 29.594,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0006.jpg",
+      "timestamp_seconds": 34.266,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0007.jpg",
+      "timestamp_seconds": 39.104,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0008.jpg",
+      "timestamp_seconds": 50.532,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0009.jpg",
+      "timestamp_seconds": 54.828,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_68/frame_0010.jpg",
+      "timestamp_seconds": 58.04,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_68.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_68.json",
+    "response_text": "The commercial appears in black and white with visible film grain and darkened frame edges. It unfolds as a sequence showing a Jeep-type vehicle in outdoor and sales contexts.\n\n1. **Opening darkness**  \n   The first frame is almost entirely dark, with no discernible objects except a small light speck near the lower right.\n\n2. **Vehicle in wooded terrain**  \n   The scene cuts to an open-top Jeep-like vehicle driving along or turning on a dirt road in a wooded area. Two people are visible in the vehicle, seen mostly from behind or side. The vehicle has an open cabin and a spare tire mounted at the rear.\n\n3. **Mountain/stream landscape**  \n   The vehicle is then shown in a scenic outdoor setting among large rocks, trees, and a stream or shallow watercourse. Mountains are visible in the background. The Jeep is positioned in the middle distance, emphasizing its use in rugged natural terrain.\n\n4. **Close-up of wheel over rough ground**  \n   A close-up focuses on the front wheel and fender of the vehicle. The tire is shown near rocks and scrubby vegetation, suggesting off-road movement or capability. The bodywork and wheel dominate the frame.\n\n5. **Rear cargo space loaded with equipment**  \n   The next shot shows the open rear of a vehicle packed with gear. Visible items include folded chairs or frames, a tennis racket, bags or bedding, and a spare tire on the right. The image emphasizes storage capacity and recreational/outdoor equipment.\n\n6. **Vehicle in snowy forest**  \n   The Jeep appears in a snowy landscape among tall trees. It is positioned at mid-distance, driving or standing on a snow-covered path or clearing. The setting contrasts with the earlier rocky and wooded terrain.\n\n7. **Automobile/truck sales lot**  \n   The scene changes to a lot with several vehicles parked side by side, including older cars and a Jeep at the right edge. A man in a suit or work clothes stands near the Jeep. A partial sign with the letters “TRU…” is visible above, likely part of a larger sign, but the full wording is not shown in the frame.\n\n8. **Dark transition**  \n   The image briefly fades or cuts to a dark, nearly featureless frame.\n\n9. **Rocky mountain hillside**  \n   The next shot shows a wide rocky hillside or desert-mountain landscape. A small dark shape is visible on the slope, possibly a vehicle, but it is too small and indistinct to identify clearly.\n\n10. **Printed directory advertisement**  \n   The final frame shows a printed page or directory listing. Large text at the top reads “1874 TRUCKS.” A boxed advertisement reads:  \n   - “WILLYS SALES AND SERVICE”  \n   - “Universal ‘JEEP’”  \n   - “‘JEEP’ Station Wagon”  \n   - “‘JEEP’ Trucks”  \n   - “The Jeep Family of 4-Wheel-Drive Vehicles”  \n   - “‘WHERE TO BUY THEM’ DEALERS”  \n\nOverall, the visuals move from rugged outdoor use of a Jeep-style vehicle, to cargo/recreational capacity, to snow and rough terrain, then to a dealership or sales context and finally a printed dealer advertisement for Willys/Jeep vehicles."
+  },
+  "api_metadata": {
+    "response_id": "resp_049d0449f497407c006a106dcc66488191b5814b397b2118f7",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 853,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 3456
+    }
+  },
+  "duration_seconds": 22.734,
+  "created_at": "2026-05-22T14:53:21Z",
+  "error": null
+}

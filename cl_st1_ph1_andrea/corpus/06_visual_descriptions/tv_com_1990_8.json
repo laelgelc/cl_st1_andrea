@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1990_8",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_8",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_8/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_8.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0002.jpg",
+      "timestamp_seconds": 3.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0003.jpg",
+      "timestamp_seconds": 15.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0004.jpg",
+      "timestamp_seconds": 21.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0005.jpg",
+      "timestamp_seconds": 22.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0006.jpg",
+      "timestamp_seconds": 22.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0007.jpg",
+      "timestamp_seconds": 22.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0008.jpg",
+      "timestamp_seconds": 23.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0009.jpg",
+      "timestamp_seconds": 24.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0010.jpg",
+      "timestamp_seconds": 25.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0011.jpg",
+      "timestamp_seconds": 26.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0012.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_8/frame_0013.jpg",
+      "timestamp_seconds": 28.723,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_8.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_8.json",
+    "response_text": "The commercial opens on a very dark screen with a faint PlayStation-style logo or wordmark barely visible in the center.\n\nIt then cuts to a close-up of a young girl standing at a microphone. She has glasses, braided hair, and wears a school-uniform-like outfit with a white blouse and plaid dress. A dark blue curtain fills the background. She raises one hand near the microphone as if speaking or making a point, though no audio content can be inferred from the frames.\n\nThe camera then shows a wider view of the stage: the girl stands alone at center stage in front of the microphone. An American flag is positioned to the left, and blue curtains cover the back wall. The floor is wooden, and the scene resembles a school auditorium or formal stage setting.\n\nThe commercial then shifts abruptly into computer-generated game imagery. A small human-like figure stands on or moves across a large suspended grid made of square blocks. The environment is mostly black around the platform, emphasizing the floating cube structure. The blocks are metallic gray, with some black blocks and some glowing translucent green blocks. A small ratings icon appears in the lower-right corner during these gameplay-like shots.\n\nSeveral rapid cuts show the game space from different angles:\n- A high, angled view of a long checkerboard-like platform with green glowing squares and black cubes.\n- A frontal view of a stepped or sloped block structure, again with green and black cubes embedded in the grid.\n- A closer view where the small character stands near tall cube walls and a black cube.\n- Another view of a long orange-brown grid platform with rows of black blocks and at least one green square.\n- A top-side view of gray blocks with glowing green cubes and a black cube, while the tiny character is near the edge.\n- A close-up of the character falling or sliding against a gray block surface, limbs extended.\n\nThe commercial then cuts back to the stage setting. A large gray cube now occupies the center of the stage where the girl had been. The American flag is still on the left, and the blue curtains remain in the background. A spotlight-like circular glow appears on the cube’s front face. Across the cube is the title text “Intelligent Qube,” set in black rectangular label-like boxes with white lettering.\n\nThe same product-title shot remains for another moment, with the cube, stage, flag, and curtains visible.\n\nThe final sampled frame returns to a very dark image. Only a few small green glowing rectangular shapes are visible, and the rest of the scene is too dark to identify clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_01defa91675df0ac006a107264a40c81a1be1a80a6e051d256",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 706,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 4050
+    }
+  },
+  "duration_seconds": 19.091,
+  "created_at": "2026-05-22T15:12:55Z",
+  "error": null
+}

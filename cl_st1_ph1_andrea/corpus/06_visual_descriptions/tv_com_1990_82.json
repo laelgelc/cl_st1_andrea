@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1990_82",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_82",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_82/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_82.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0002.jpg",
+      "timestamp_seconds": 4.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0003.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0004.jpg",
+      "timestamp_seconds": 11.534,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0005.jpg",
+      "timestamp_seconds": 14.371,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0006.jpg",
+      "timestamp_seconds": 19.109,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0007.jpg",
+      "timestamp_seconds": 23.847,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0008.jpg",
+      "timestamp_seconds": 25.582,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_82/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_82.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_82.json",
+    "response_text": "The commercial opens on a nearly black frame, with no discernible objects or action visible.\n\nIt then cuts to a wide, elevated shot of an orange-brown grassy hillside. A white pickup-style vehicle with a dark rear cargo area drives along a narrow road or track beside a fence, towing a small white two-wheeled trailer.\n\nThe setting shifts to a dock or port. A white box truck with large side lettering reading “DON’S MARINE SUPPLY” is parked in front of a large ship or industrial vessel. Cranes, forklifts, and dock structures are visible around it. Small white legal text appears along the bottom: “INCLUDING OCCUPANTS, EQUIPMENT, AND CARGO.”\n\nThe commercial cuts back to the orange hillside. The same white pickup-like vehicle is shown in profile towing the small trailer along the fence line. A bottom caption reads: “Not To Exceed GCWR OF 8,600 LBS.”\n\nThe dock scene returns in a closer view. The “DON’S MARINE SUPPLY” truck fills much of the frame, with a forklift at the rear and a worker visible near the forklift. The industrial ship and dock remain in the background.\n\nAnother hillside driving shot follows. The white vehicle and trailer move along the sloping road through the warm-toned landscape, again shown from the side at a distance.\n\nThe next scene shows a gray pickup truck in an industrial marina or dock area. It is loaded with large marine-related equipment in its bed, including a prominent boat propeller and a metal frame. Harbor cranes or dock machinery appear in the background, and the wet ground reflects the vehicle.\n\nThe setting then changes to a coastal road. A red pickup truck is seen from a distance driving on a curving road along cliffs and coastline. The ocean and pale shoreline are visible in the background, with a pink-orange color cast.\n\nIn the final frame, the red pickup is shown closer from the front, driving along the coastal road while towing a trailer. White on-screen text at the bottom reads: “I love what you do for me,” followed by the Toyota logo and the word “TOYOTA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0af084d4add09f22006a1073c0baf481a0b6b4fe71c4ddac3c",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 873,
+      "output_tokens_details": {
+        "reasoning_tokens": 436
+      },
+      "total_tokens": 3229
+    }
+  },
+  "duration_seconds": 22.96,
+  "created_at": "2026-05-22T15:18:47Z",
+  "error": null
+}

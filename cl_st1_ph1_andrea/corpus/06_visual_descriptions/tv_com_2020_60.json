@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2020_60",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_60",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_60/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_60.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0002.jpg",
+      "timestamp_seconds": 3.994,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0003.jpg",
+      "timestamp_seconds": 8.231,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0004.jpg",
+      "timestamp_seconds": 11.268,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0005.jpg",
+      "timestamp_seconds": 14.771,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0006.jpg",
+      "timestamp_seconds": 18.909,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0007.jpg",
+      "timestamp_seconds": 21.311,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0008.jpg",
+      "timestamp_seconds": 25.715,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_60/frame_0009.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_60.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_60.json",
+    "response_text": "The commercial unfolds as a sequence of laundry-related scenes centered on people handling freshly washed clothing and a fabric-care product.\n\n1. **Opening laundry room scene:**  \n   A man stands in a bright home laundry area beside a washer and dryer. A light-blue bottle of laundry product sits on top of the machine. The room includes shelves with folded towels, a laundry basket, a lamp, a bicycle near a staircase, and household objects. The man is holding dark clothing near a woven laundry basket.\n\n2. **Close-up of the same man:**  \n   The camera moves closer to him as he looks down at and holds a white garment or towel with both hands. His expression appears focused or evaluative.\n\n3. **Second laundry room / different person:**  \n   The scene changes to another laundry area with teal walls. A different person stands in front of a dryer holding a red, gray, and blue striped garment. A light-blue laundry product bottle is visible on top of the dryer beside folded yellow towels. A large laundry bag sits on the floor.\n\n4. **Close-up smelling fabric:**  \n   The same person raises the striped garment to their face, appearing to smell it. They wear round glasses and a helmet or cap. The background shows shelves with clothing and a speaker.\n\n5. **Third laundry room / another person:**  \n   The scene changes again to a room with yellow patterned wallpaper. Another person bends toward a dryer, pulling out or handling laundry. A basket of clothing is on the floor, and the same type of light-blue product bottle is visible on top of the machine with folded yellow towels nearby.\n\n6. **Close-up smelling towel:**  \n   The person from the yellow-walled room holds a white towel with blue stripes close to their face, also appearing to smell it.\n\n7. **Return to first laundry room:**  \n   The first man is shown again in the bright laundry space, now holding a white garment in front of him. The woven basket is nearby, and the light-blue product bottle remains visible on the washer/dryer.\n\n8. **Product close-up:**  \n   The camera cuts to a close view of a light-blue bottle. The label shows an illustrated female face with pink fabric or hair-like imagery. The bottle’s handle is prominent.\n\n9. **Final product shot:**  \n   The bottle is shown placed on dark, soft-looking fabric. The label clearly reads “Downy,” with a “3X” marking near the top. The bottle has a pink cap and a pink floral-style graphic on the front."
+  },
+  "api_metadata": {
+    "response_id": "resp_08fa4cc320b0f142006a107aa382d881958033cc7d5ab62978",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 700,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 2534
+    }
+  },
+  "duration_seconds": 15.139,
+  "created_at": "2026-05-22T15:48:02Z",
+  "error": null
+}

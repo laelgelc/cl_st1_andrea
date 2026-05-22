@@ -1,0 +1,109 @@
+{
+  "commercial_id": "tv_com_1990_73",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_73",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_73/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_73.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0002.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0003.jpg",
+      "timestamp_seconds": 8.865,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0004.jpg",
+      "timestamp_seconds": 11.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0005.jpg",
+      "timestamp_seconds": 13.303,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0006.jpg",
+      "timestamp_seconds": 26.983,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_73/frame_0007.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 7,
+    "submitted_frame_count": 7,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_73.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_73.json",
+    "response_text": "The commercial opens on a close-up of an older computer monitor. The screen has a blue background and a centered warning-style label reading “System Error 86.” The label is bordered with a diagonal striped pattern, suggesting an alert or system fault.\n\nThe scene then cuts to a dimly lit office or workspace. A person sits at a desk, leaning forward with one hand near their head, as if concentrating or fatigued. The room contains computer equipment and office furniture. The lighting is low and dramatic, with blue tones in the background and warmer light around the desk area.\n\nNext, the commercial returns to a close-up of a computer monitor. Instead of an error message, the screen now shows the face of a man against a blue background. The image appears like a video image or face displayed on the computer screen. Only his head and part of his face are visible; he appears to be looking forward.\n\nThe viewpoint then shifts to an overhead angle of the desk setup. A computer monitor and keyboard are visible on a red-toned desk surface. The same man’s face is still visible on the monitor. A telephone sits to the side. A person with long hair is shown reclining or leaning back near the desk while holding a telephone handset to their ear. The framing emphasizes the computer, the phone, and the person’s position within the workspace.\n\nA close-up follows of a hand resting on the red desk surface. The hand appears tense or deliberate in placement, with fingers spread slightly. No object is being actively manipulated in this frame.\n\nNear the end, the image becomes very dark and text appears centered on the screen. The first word shown is “There” in white serif lettering against a mostly black background.\n\nThe final frame shows another centered word, “difference,” in light-colored text on a dark background. The sampled frames do not show the full sentence or any product name, and no audio, dialogue, or slogan can be determined from the visuals alone."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c11e0e2f6093f7b006a10739bb978819f80a687ce5310ebfa",
+    "usage": {
+      "input_tokens": 1456,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 447,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1903
+    }
+  },
+  "duration_seconds": 11.048,
+  "created_at": "2026-05-22T15:17:58Z",
+  "error": null
+}

@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1980_32",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_32",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_32/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_32.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0002.jpg",
+      "timestamp_seconds": 14.004,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0003.jpg",
+      "timestamp_seconds": 14.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0004.jpg",
+      "timestamp_seconds": 17.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0005.jpg",
+      "timestamp_seconds": 20.977,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0006.jpg",
+      "timestamp_seconds": 22.245,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0007.jpg",
+      "timestamp_seconds": 23.913,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0008.jpg",
+      "timestamp_seconds": 25.415,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_32/frame_0009.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_32.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_32.json",
+    "response_text": "The commercial begins with a nearly black frame, with no clearly visible objects or setting.\n\nAround 14 seconds, the image cuts to a bluish, high-contrast scene showing shadowy human-like silhouettes moving past or behind a dark vertical edge. The figures are indistinct, and the setting is unclear, though the lighting gives a cold, watery or bathroom-like impression.\n\nThe next shot shows a close view of a dark blue tiled surface with a white grid of grout lines. At the right edge, part of a hand or tool briefly appears, but the object is not fully visible in this frame.\n\nThe camera then moves to a closer view of the same blue tile wall. A gloved hand holds a white, foamy or paste-covered cleaning applicator or cloth against the tile and grout. The surface appears wet or speckled, suggesting cleaning or removal of residue.\n\nA close-up follows of a green-and-white trigger spray bottle nozzle. A hand squeezes or holds the trigger, and a fine mist sprays out to the left. The background is blurred, with warm and cool lighting.\n\nThe commercial then cuts to a bathroom sink area. Chrome faucet handles and a faucet are visible, with a gloved hand wiping the sink surface using a sponge or cloth. The sink area appears dark and glossy, and the cleaning action is focused around the faucet base.\n\nAnother shot shows a hand holding a green spray bottle with a white trigger. The label is visible and reads “LIME-A-WAY” in large black letters. The bottle is angled as if being used or presented, with a softly blurred bathroom background behind it.\n\nNext, a gloved hand wipes a vertical bathroom surface near a metal trim or fixture, next to dark blue tiled wall sections. The sponge or cloth moves along the surface, again emphasizing cleaning.\n\nThe final frame is a product display shot. Two green “LIME-A-WAY” containers stand side by side on a bathroom counter: one squat bottle with a green cap and one taller trigger-spray bottle with a white spray head. Both labels prominently show “LIME-A-WAY” in bold black lettering. The background appears to be a bathroom with blue tile, a mirror, and soft lighting."
+  },
+  "api_metadata": {
+    "response_id": "resp_07597e8af8872f7f006a1070e757b48196ae0163af42f5ff7b",
+    "usage": {
+      "input_tokens": 2527,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 501,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 3028
+    }
+  },
+  "duration_seconds": 13.322,
+  "created_at": "2026-05-22T15:06:28Z",
+  "error": null
+}

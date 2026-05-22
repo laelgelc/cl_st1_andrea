@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2020_22",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_22",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_22/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_22.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0002.jpg",
+      "timestamp_seconds": 1.149,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0003.jpg",
+      "timestamp_seconds": 2.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0004.jpg",
+      "timestamp_seconds": 3.693,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0005.jpg",
+      "timestamp_seconds": 5.529,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0006.jpg",
+      "timestamp_seconds": 7.405,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0007.jpg",
+      "timestamp_seconds": 8.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0008.jpg",
+      "timestamp_seconds": 8.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0009.jpg",
+      "timestamp_seconds": 12.828,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0010.jpg",
+      "timestamp_seconds": 13.829,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0011.jpg",
+      "timestamp_seconds": 15.789,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0012.jpg",
+      "timestamp_seconds": 18.458,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0013.jpg",
+      "timestamp_seconds": 19.334,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0014.jpg",
+      "timestamp_seconds": 19.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0015.jpg",
+      "timestamp_seconds": 21.419,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0016.jpg",
+      "timestamp_seconds": 22.295,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0017.jpg",
+      "timestamp_seconds": 22.796,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0018.jpg",
+      "timestamp_seconds": 25.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0019.jpg",
+      "timestamp_seconds": 26.007,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0020.jpg",
+      "timestamp_seconds": 26.8,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0021.jpg",
+      "timestamp_seconds": 28.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2020_22/frame_0022.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_22.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_22.json",
+    "response_text": "The commercial opens on a black screen with the white **“Shark”** logo centered.\n\nIt then cuts to household messes: a small red-and-black object or spill is shown near the edge of a light-colored rug on a wooden floor, followed by a turquoise bowl or container with spaghetti-like food spilled onto an upholstered dining chair beside a white table.\n\nThe next scene shows an adult user, visible from the torso down, standing in a bright living room holding a green and dark teal portable Shark cleaning machine. The room includes a light rug, wooden floor, orange sofa, and large windows. Onscreen branding in the upper right reads **“Shark EVERYMESS.”**\n\nThe user kneels beside the machine on the rug. A reddish stain is visible on the carpet, and an orange liquid spill is spread across the adjacent wood floor. A spray bottle and attachments sit nearby. Close-up shots show a black Shark vacuum attachment working along the edge where the rug meets the hardwood floor, near the liquid spill. A small disclaimer appears at the bottom: **“Follow Shark’s instructions for mess pickup.”**\n\nA low-angle shot shows the wet spill on the wood floor with the green Shark unit and user blurred in the background. A black floor nozzle then moves into the foreground; white text over it reads **“WET VAC,”** and the nozzle has a large **“Shark”** logo.\n\nThe commercial then shifts to upholstery cleaning. A close-up shows a hand squeezing a white-and-pink trigger sprayer. Another close-up shows a transparent extraction tool labeled **“Shark STAINFORCE”** being used on a dark upholstered surface, possibly a car or vehicle seat. Small bottom text references testing: **“Based on ASTM F558 vs. the portable stain cleaner market leader…”** though the full line is very small.\n\nA product shot presents a Shark cleaning solution spray bottle. The label reads **“Shark STAINFORCE”** and includes claims such as **“30X MORE”** and icons including **“OXY MAX.”** The trigger and nozzle are shown in close-up, with a lower-left graphic reading **“STAINFORCE TECHNOLOGY.”**\n\nThe user then sprays the reddish carpet stain while the Shark portable unit and attachments are visible nearby. Large onscreen text appears: **“30X MORE”** and partially visible wording about stain-fighting power. The extraction tool is then used over the stained carpet.\n\nA split-screen comparison follows: on the left, a black vacuum nozzle collects a pile of food debris resembling fries and pasta; on the right, the transparent extraction tool cleans an orange stain from upholstery or fabric.\n\nThe machine’s internal collection tank is shown from above with dirty water and spaghetti-like debris inside. Hands remove or handle the tank components. Another shot shows the green Shark unit on a countertop beside a clear container of water, while the user holds a hose attachment.\n\nThe ad then shows more suction examples: a black Shark floor nozzle moves across a glossy white hard surface; another close-up shows a hose attachment vacuuming a mound of dry dirt, leaves, and debris. The transparent Shark StainForce extraction head is again shown cleaning carpet, with a StainForce bottle standing nearby.\n\nNear the end, the products are arranged on a white surface in a bright modern interior: the green portable Shark machine in the center, a black nozzle attachment on the left, a transparent extraction head and a StainForce spray bottle on the right. Small text at the bottom says **“Colors & accessories may vary.”**\n\nThe final frame is a polished product packshot. Large white text on the left reads **“Shark EVERY MESS,”** with smaller text underneath: **“WET VAC + DRY VAC + STAIN SYSTEM.”** The green Shark unit and accessories remain displayed on the right."
+  },
+  "api_metadata": {
+    "response_id": "resp_06da584f64bbc16e006a1079e2f04481979b0604004f4a4bfc",
+    "usage": {
+      "input_tokens": 4291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1220,
+      "output_tokens_details": {
+        "reasoning_tokens": 437
+      },
+      "total_tokens": 5511
+    }
+  },
+  "duration_seconds": 38.905,
+  "created_at": "2026-05-22T15:45:13Z",
+  "error": null
+}

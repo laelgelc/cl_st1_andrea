@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_1970_15",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_15",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_15/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_15.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0002.jpg",
+      "timestamp_seconds": 0.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0003.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0004.jpg",
+      "timestamp_seconds": 3.86,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0005.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0006.jpg",
+      "timestamp_seconds": 6.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0007.jpg",
+      "timestamp_seconds": 7.03,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0008.jpg",
+      "timestamp_seconds": 8.031,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0009.jpg",
+      "timestamp_seconds": 9.032,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0010.jpg",
+      "timestamp_seconds": 10.333,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0011.jpg",
+      "timestamp_seconds": 12.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0012.jpg",
+      "timestamp_seconds": 13.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0013.jpg",
+      "timestamp_seconds": 14.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0014.jpg",
+      "timestamp_seconds": 16.239,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0015.jpg",
+      "timestamp_seconds": 18.141,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0016.jpg",
+      "timestamp_seconds": 19.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0017.jpg",
+      "timestamp_seconds": 20.61,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0018.jpg",
+      "timestamp_seconds": 21.611,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0019.jpg",
+      "timestamp_seconds": 23.613,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1970_15/frame_0020.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_15.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_15.json",
+    "response_text": "The clip begins with an unrelated-looking title card on a dark green background. Large white text shows a phone number, “800-841-8000,” followed by the line “NAVY, IT’S NOT JUST A JOB, IT’S AN ADVENTURE.” Smaller text at the bottom reads “SPONSORED BY THE U.S. NAVY.” The image then cuts to black.\n\nAfter the black frame, the commercial shifts to a brightly colored toy scene. Several children are gathered closely around a tabletop game. The children lean in toward the toy, smiling and appearing excited. The game has a plastic race-track layout with multiple colored lanes and small rounded character figures wearing numbered shirts or jerseys. The figures have oversized, wobbling bodies and cartoon-like faces.\n\nA close-up shows the toy figures on the track. The figures are positioned in separate colored lanes, with a visible “FINISH” label at the front edge of the track. Some figures have numbers such as 3 and 4 printed on their shirts. The game also includes a decorative upright backdrop resembling stadium seating, with cartoon spectators and banners. The toy’s design uses bright reds, greens, yellows, blues, and whites.\n\nThe sequence alternates between shots of the children and close-ups of the game. Hands reach into or near the game area, apparently setting up or interacting with the figures. The children watch the track closely. Close-ups show the rounded figures moving or leaning in the lanes, sometimes clustered together near the finish area. The figures appear to wobble or jostle as they advance along the race lanes.\n\nSeveral shots focus on individual toy racers: small plastic characters with helmets or caps, painted faces, and numbered shirts. The race surface has lane markings, and the front panel repeatedly shows the large word “FINISH” with star decorations. Another wider shot shows the whole tabletop game with the upright stadium backdrop and the track extending forward.\n\nLater, the children are shown again from the front, still gathered around the toy. A child in a red shirt is centered, with other children on either side. They look down toward the game. The next shots return to the race, showing multiple wobbling figures near the finish line and along the colored lanes.\n\nNear the end, the camera cuts to the illustrated crowd section of the toy’s backdrop. Cartoon spectators with exaggerated faces appear to be cheering, with orange circular shapes behind them. Then the commercial moves to a product-display shot: the full game is centered against a light studio background. Large orange/yellow text above it reads “Wobblies Wobble Race.” The tabletop track, stadium backdrop, and four separate wobbling character figures are arranged neatly in front for display.\n\nA “Classic Commercial Archives” watermark appears in the lower-left corner throughout much of the clip, with an additional semi-transparent archive watermark across the lower area of several frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_018a1b832c42ee16006a106ed961fc81a096b0ed079cf3a073",
+    "usage": {
+      "input_tokens": 5073,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 963,
+      "output_tokens_details": {
+        "reasoning_tokens": 377
+      },
+      "total_tokens": 6036
+    }
+  },
+  "duration_seconds": 26.091,
+  "created_at": "2026-05-22T14:57:55Z",
+  "error": null
+}

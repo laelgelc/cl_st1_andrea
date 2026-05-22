@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2000_49",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_49",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_49/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_49.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0002.jpg",
+      "timestamp_seconds": 2.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0003.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0004.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0005.jpg",
+      "timestamp_seconds": 6.796,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0006.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0007.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0008.jpg",
+      "timestamp_seconds": 10.7,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0009.jpg",
+      "timestamp_seconds": 11.301,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0010.jpg",
+      "timestamp_seconds": 11.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0011.jpg",
+      "timestamp_seconds": 14.137,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0012.jpg",
+      "timestamp_seconds": 14.905,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0013.jpg",
+      "timestamp_seconds": 15.805,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0014.jpg",
+      "timestamp_seconds": 17.941,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0015.jpg",
+      "timestamp_seconds": 19.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0016.jpg",
+      "timestamp_seconds": 20.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0017.jpg",
+      "timestamp_seconds": 21.811,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0018.jpg",
+      "timestamp_seconds": 22.612,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0019.jpg",
+      "timestamp_seconds": 24.781,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_49/frame_0020.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_49.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_49.json",
+    "response_text": "The commercial opens in a dim, book-lined study or office. A dark-haired young man in a suit sits in a large leather chair beside a desk with a lamp, papers, and bookshelves behind him.\n\nIt then cuts outdoors to a campus-like notice board covered with flyers. Several young people stand around it; one appears to be putting up or looking at postings. The setting has trees and grass in the background.\n\nNext, the setting shifts indoors to a library or bookstore counter. A young man wearing a red vest over a white shirt, with a name tag, handles papers while speaking with a young blonde woman across the counter. Shelves of books and stacks of books are visible behind and around them. A reverse angle shows the woman facing him with her arms crossed, wearing a light-colored top with a sweater draped over her shoulders.\n\nA brief, blue-lit scene shows the same dark-haired young man lying on a bed or under a bed frame, holding a stuffed animal close to him. The shot is stylized and low-lit, making the exact setting somewhat unclear.\n\nThe commercial returns to the study: the suited young man sits in the leather chair, now shown more fully, with the desk and bookshelves still in view. The sequence then cuts rapidly to other locations: a hallway where young men in blue football-style jerseys with large yellow numbers walk toward camera, and an outdoor campus area where several young people stand near a tree.\n\nThe library/book counter scene recurs, again showing the blonde woman at the counter and the red-vested young man with papers. The study scene returns in a closer shot of the suited man in the chair.\n\nA close-up then shows a hand holding a small silver mobile phone. The phone’s screen displays a simple graphic or logo-like symbol. The suited man in the study is then shown holding papers and the phone, appearing animated as he moves in the chair. Another close-up shows him holding a small object, likely the phone, while seated.\n\nThe phone is then shown being used in different settings: a young man in a blue sports jersey looks at a phone in a hallway or locker-room-like area; outdoors, a young man with spiked hair and punk-style clothing looks at a phone while other young people stand blurred in the background.\n\nBack in the library/book counter setting, the blonde woman now holds books while the red-vested man raises a small silver phone toward her. Another angle shows him holding the phone up as he faces her across the counter.\n\nNear the end, the suited young man in the study holds up the silver phone toward the camera. The Kyocera logo and the text “KYOCERA” appear at the lower left, along with a small website line that appears to read “kyocera-wireless.com” or similar.\n\nThe final product card shows a silver Kyocera slider-style phone on a tabletop, surrounded by game-piece-like objects. Large white text reads “$15” with “Instant Gift Card” beneath it. Additional branding appears along the bottom, including “KYOCERA,” a red “Virgin” logo, and a yellow “BEST BUY” logo. Smaller model or offer text is present but not fully legible in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_053af5b889bbb59c006a1075741dcc8193b260b2c20fe09e4d",
+    "usage": {
+      "input_tokens": 4313,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 987,
+      "output_tokens_details": {
+        "reasoning_tokens": 330
+      },
+      "total_tokens": 5300
+    }
+  },
+  "duration_seconds": 25.418,
+  "created_at": "2026-05-22T15:26:05Z",
+  "error": null
+}

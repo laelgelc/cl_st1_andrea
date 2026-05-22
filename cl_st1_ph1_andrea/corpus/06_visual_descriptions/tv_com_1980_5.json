@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_1980_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0002.jpg",
+      "timestamp_seconds": 1.925,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0003.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0004.jpg",
+      "timestamp_seconds": 4.561,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0005.jpg",
+      "timestamp_seconds": 6.897,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0006.jpg",
+      "timestamp_seconds": 9.099,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0007.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0008.jpg",
+      "timestamp_seconds": 14.771,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0009.jpg",
+      "timestamp_seconds": 15.972,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0010.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0011.jpg",
+      "timestamp_seconds": 17.941,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0012.jpg",
+      "timestamp_seconds": 19.376,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0013.jpg",
+      "timestamp_seconds": 20.71,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0014.jpg",
+      "timestamp_seconds": 21.945,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0015.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0016.jpg",
+      "timestamp_seconds": 24.881,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0017.jpg",
+      "timestamp_seconds": 25.815,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_5/frame_0018.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_5.json",
+    "response_text": "The sampled sequence begins with a static product display. Three Benadryl packages and a bottle are arranged on an icy blue surface, with the readable text “Benadryl” and “From Parke-Davis” beneath them. This first image has a clean studio-product-shot style.\n\nThe scene then cuts abruptly to a modern indoor public space, resembling an atrium or shopping-mall interior with stairs, railings, and metallic architectural features. A small group of well-dressed people stands watching a performer. One man in a black outfit with red/yellow accents appears to be handling or juggling bright orange/red balls. A young man in a pale gray or white suit stands near the center, watching.\n\nThe camera moves to closer views of the people in this setting. The young man in the light suit is shown smiling toward the camera or someone nearby. A young woman in a red beret and red/pink outfit appears in the background and then becomes the focus in the next shot, walking forward. She wears earrings and a coordinated red ensemble. The man in the pale suit is visible behind her in one shot.\n\nThe sequence then shifts to a soft-focus close-up of a woman applying a spray product near her neck/shoulder area. She holds a small spray can or bottle, tilts her head back, and has her eyes closed. Horizontal blinds or slats form the background. This is followed by a close product shot of a red-and-white cylindrical can. Readable text includes “New!” and “ELATION,” with smaller text that appears to refer to a fragrance/deodorant product.\n\nThe commercial returns to the atrium performance setting. The black-clad performer raises a black hat while the man in the light suit and other onlookers remain in the background. A later close-up shows bare skin at the waist or side of a torso, with a hand and spray object partially visible near the top left; the exact action is somewhat unclear, but it visually resembles another application of a spray product.\n\nThe imagery becomes more stylized and red-toned. Large red balloon-like spheres or round objects fill the foreground while the woman in red is partly visible behind them. There are quick close-ups of red/pink fabric and a moving limb or arm, but the details are partially obscured and abstract. An overhead shot then shows multiple red umbrellas arranged across a pale tiled floor, with the woman in red walking among them.\n\nThe setting changes back to the modern atrium. The woman in red appears at an elevator doorway, framed by black-and-white wall panels and a railing in the foreground. The man in the light suit is then shown hurrying or running up a curved staircase or ramp with peach-colored railings. The woman in red is shown again near the elevator, smiling or waiting.\n\nNear the end, the commercial cuts to close-ups of the two main figures. The young man in the light suit looks downward and smiles. The young woman in the red beret looks directly toward the camera while holding a bouquet of flowers close to her face; she smiles softly.\n\nThe final frame is a studio product shot. A tall red-and-white aerosol can labeled “IMPULSE” stands beside a bouquet of flowers on a dark background under a spotlight. The flowers include pale pink and red blossoms, visually linking the final product image to the bouquet held by the woman in the preceding shot."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ea590811d7e7f48006a1070872a8c81a2b4b8ffa614da1c67",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1396,
+      "output_tokens_details": {
+        "reasoning_tokens": 708
+      },
+      "total_tokens": 4931
+    }
+  },
+  "duration_seconds": 35.687,
+  "created_at": "2026-05-22T15:05:14Z",
+  "error": null
+}

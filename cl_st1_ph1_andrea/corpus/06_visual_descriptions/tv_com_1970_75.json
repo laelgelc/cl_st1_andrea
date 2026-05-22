@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_1970_75",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_75",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_75/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_75.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0002.jpg",
+      "timestamp_seconds": 0.292,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0003.jpg",
+      "timestamp_seconds": 1.672,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0004.jpg",
+      "timestamp_seconds": 1.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0005.jpg",
+      "timestamp_seconds": 1.941,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0006.jpg",
+      "timestamp_seconds": 3.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0007.jpg",
+      "timestamp_seconds": 3.691,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0008.jpg",
+      "timestamp_seconds": 3.792,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0009.jpg",
+      "timestamp_seconds": 3.893,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0010.jpg",
+      "timestamp_seconds": 5.509,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0011.jpg",
+      "timestamp_seconds": 5.643,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0012.jpg",
+      "timestamp_seconds": 7.394,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0013.jpg",
+      "timestamp_seconds": 12.846,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0014.jpg",
+      "timestamp_seconds": 21.764,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0015.jpg",
+      "timestamp_seconds": 28.034,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1970_75/frame_0016.jpg",
+      "timestamp_seconds": 28.866,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_75.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_75.json",
+    "response_text": "The commercial begins with a dark background containing a smaller rectangular image, as if a film or slide is being shown within the frame. Inside that inset image, a baby is in a bathtub or sink-like basin. An adult leans over the child, with hands near the water and the child’s body. The colors are warm and slightly washed out.\n\nThe image of the baby bathing becomes more central and larger. The adult’s upper body and hair are visible as they bend over the baby. The baby is partly submerged or seated in the basin, with one arm resting forward. The setting appears to be a bathroom, with tiled or vertical surfaces in the background.\n\nThe sequence then shifts into a multi-panel or sliding-screen layout. The baby-bath image remains on the left while a new image appears on the right: a close-up of a baby sitting in a bath, with an adult woman leaning close beside the child. The woman’s long hair falls forward as she looks down toward the baby. The baby faces forward with a neutral or slightly serious expression. A bathroom window or wall fixture is visible behind them.\n\nThe baby-and-woman image fills the frame for a moment. The woman remains bent close to the baby, and the baby’s upper body and arms are visible above the edge of the tub or basin. The lighting remains warm and yellowish.\n\nAnother sliding transition introduces a new panel on the right: a close-up of an adult man’s face. He appears to be touching or pressing his fingers against his cheek or around his mouth/chin area, as if checking or washing his face. He has dark hair and a mustache. The background behind him has vertical striped or tiled patterns.\n\nThe man’s face then occupies the central frame. His hands remain raised to his face, with fingers on his cheek and chin. The camera stays close, emphasizing facial skin and grooming or washing action.\n\nA split-screen transition follows. On the left, the man’s close-up remains partially visible; on the right, a new image appears of an adult woman with short or wet-looking hair, seen from the shoulders up against a bright pale background. She raises one arm behind her head, suggesting bathing or washing. Her shoulders are bare or minimally covered. The word “Today” appears centered over this image in dark text.\n\nThe commercial then cuts to a close-up of a blonde woman wearing a headband. She has visible white foam or cream on both cheeks and around the nose/mouth area. Her hands are on her face, spreading or rubbing the foam. The shot emphasizes face washing or lathering.\n\nThe next major visual is a product shot: a boxed bar of Safeguard soap placed on a reflective surface. The package is cream-colored with dark and colored graphic elements. The brand name “Safeguard” is large and prominent. Smaller text on the box includes “deodorant and antibacterial soap,” though some of the smaller wording is difficult to read clearly. A decorative glass or plant-like object appears to the right in the background.\n\nThe final product shot shows another boxed Safeguard package, labeled “Beige Safeguard.” The box is centered against a simple background. Large on-screen text beneath the package reads: “New deodorant Safeguard with twice the lather.” The commercial then cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_04d80c19fa1b2434006a106fca65ac8193b3fe938455d7efaa",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 837,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 3994
+    }
+  },
+  "duration_seconds": 21.706,
+  "created_at": "2026-05-22T15:01:51Z",
+  "error": null
+}

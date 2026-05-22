@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1950_103",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_103",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_103/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_103.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_103/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_103/frame_0002.jpg",
+      "timestamp_seconds": 41.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_103.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_103.json",
+    "response_text": "The commercial begins with a nearly black frame; no discernible objects, people, or setting are visible.\n\nBy the final sampled frame, the image is in black and white. A man is shown facing the camera from behind a low ledge or counter, with curtains behind him, suggesting a staged or studio setting. He wears a suit jacket and bow tie, along with a cap or helmet-like headwear with goggles on top. Beside him is a ventriloquist-style dummy or puppet, also facing forward and wearing similar aviator-style headgear with goggles.\n\nIn front of the puppet is a boxed or printed product package held up toward the camera. The largest readable text on it appears to say “JET HELMET.” The package includes illustrations and a small portrait or logo area, though the details are not fully clear. The man and puppet are posed together as if presenting or advertising the product.\n\nNo intermediate visual action is available from the sampled frames, so changes between the opening darkness and the final presentation shot cannot be described with certainty."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f290a9e491626ee006a106c938540819c949c3c3f1e982887",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 863
+    }
+  },
+  "duration_seconds": 12.08,
+  "created_at": "2026-05-22T14:47:59Z",
+  "error": null
+}

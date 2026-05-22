@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_11",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_11",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_11/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_11.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0002.jpg",
+      "timestamp_seconds": 1.758,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0003.jpg",
+      "timestamp_seconds": 1.858,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0004.jpg",
+      "timestamp_seconds": 2.192,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0005.jpg",
+      "timestamp_seconds": 2.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0006.jpg",
+      "timestamp_seconds": 3.46,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0007.jpg",
+      "timestamp_seconds": 4.895,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0008.jpg",
+      "timestamp_seconds": 9.165,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0009.jpg",
+      "timestamp_seconds": 9.332,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0010.jpg",
+      "timestamp_seconds": 9.633,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0011.jpg",
+      "timestamp_seconds": 10.066,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0012.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0013.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0014.jpg",
+      "timestamp_seconds": 13.303,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0015.jpg",
+      "timestamp_seconds": 14.004,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0016.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0017.jpg",
+      "timestamp_seconds": 14.971,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0018.jpg",
+      "timestamp_seconds": 15.138,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0019.jpg",
+      "timestamp_seconds": 15.472,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0020.jpg",
+      "timestamp_seconds": 16.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0021.jpg",
+      "timestamp_seconds": 16.573,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0022.jpg",
+      "timestamp_seconds": 17.607,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0023.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0024.jpg",
+      "timestamp_seconds": 19.609,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0025.jpg",
+      "timestamp_seconds": 19.743,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0026.jpg",
+      "timestamp_seconds": 23.079,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0027.jpg",
+      "timestamp_seconds": 23.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0028.jpg",
+      "timestamp_seconds": 25.515,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0029.jpg",
+      "timestamp_seconds": 28.318,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_11/frame_0030.jpg",
+      "timestamp_seconds": 29.186,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_11.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_11.json",
+    "response_text": "The commercial opens on a city sidewalk outside modern glass-fronted buildings. A woman in a pale yellow dress and black cardigan stands at a flower stand, smiling and looking down at flowers. A yellow cereal box labeled “Post Honey Comb” is visible in a shopping bag or container near her.\n\nA man in a black knit cap and red plaid overshirt suddenly appears in motion, clutching the Honey Comb box. He runs quickly along the sidewalk past pedestrians, benches, and the flower stand. The woman reacts and begins moving after him. The camera tracks the man as he rushes by seated people and other passersby.\n\nThe scene briefly cuts to a blond boy or teenager wearing protective pads and a red-and-black top, sitting near the building facade. He looks off to the side. A wider upward shot shows the glass building exterior above him.\n\nThe action then shifts to a fast-moving skateboard sequence on the sidewalk. A small, fast, yellow-brown figure or object—blurred by motion and difficult to identify clearly—rides or slides on a skateboard near a bicycle and building steps. The visual style becomes very kinetic, with close, low-angle shots emphasizing speed and motion blur.\n\nThe man in the red plaid overshirt continues running with the Honey Comb box under his arm. He looks back over his shoulder while moving through a busy commercial street. There are storefronts, pedestrians, cars, and stacks of newspapers. A car passes in the foreground. In another shot, a burst of white spray or splash appears near the street as vehicles pass.\n\nThe chase continues past shops with awnings and signage. A green storefront awning includes readable text such as “MARKET” and “PRODUCE & …,” though the full wording is partly obscured by motion and people. The man moves through this crowded area while the fast yellow-brown skateboard figure or object appears intermittently in the background and foreground.\n\nA low-angle shot shows a large sidewalk grate or vent with people standing above or around it. A blur of pale/yellow motion passes over it, suggesting the fast-moving skateboard figure/object crossing the frame.\n\nThe man is shown again running with the Honey Comb box. He turns his head repeatedly as if checking behind him. Later, an overhead shot shows him alone on a sidewalk, still carrying the cereal box and looking upward. A low-angle close-up from below shows him leaning over or looking down toward the camera, the cereal box partly visible beside him against a blue sky.\n\nThe commercial then cuts to a clean product display: a large “Post Honey Comb” cereal box stands on an outdoor table. In front of it is a bowl of Honey Comb cereal. Around it are breakfast items including a glass of orange juice, a pitcher of milk, toast, and plates of fruit such as kiwi and melon. The background shows a residential-looking exterior with steps and railings.\n\nIn the final scene, the blond boy/teenager sits on front steps wearing protective gear, eating cereal from a bowl. The Honey Comb box is placed beside him, along with a skateboard decorated with colorful graphics. The woman from the opening approaches from the left and stands near him, gesturing with her hands. In the last frame, she faces him while he pauses with the spoon near his mouth, looking toward her."
+  },
+  "api_metadata": {
+    "response_id": "resp_0188853cec7061b3006a1074ad61dc8194a79fe248bee6a194",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 813,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 8356
+    }
+  },
+  "duration_seconds": 23.007,
+  "created_at": "2026-05-22T15:22:44Z",
+  "error": null
+}

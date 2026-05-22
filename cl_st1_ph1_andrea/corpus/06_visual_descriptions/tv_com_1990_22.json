@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1990_22",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_22",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_22/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_22.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0002.jpg",
+      "timestamp_seconds": 7.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0003.jpg",
+      "timestamp_seconds": 9.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0004.jpg",
+      "timestamp_seconds": 25.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0005.jpg",
+      "timestamp_seconds": 28.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0006.jpg",
+      "timestamp_seconds": 33.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0007.jpg",
+      "timestamp_seconds": 41.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0008.jpg",
+      "timestamp_seconds": 43.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0009.jpg",
+      "timestamp_seconds": 44.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_22/frame_0010.jpg",
+      "timestamp_seconds": 59.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_22.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_22.json",
+    "response_text": "The commercial appears as a black-and-white montage with frequent overlays, superimpositions, and hand-drawn arrows directing attention.\n\n1. **Opening frame:** A very dark shot shows a person seated in a large armchair, centered on a patterned circular rug. Details are hard to make out because the image is underexposed.\n\n2. **Cut to a woman with phone/headset:** A close-up shows a woman in a telephone-operator or call-center pose, with a receiver or headset near her face. Window blinds are visible at the right. A black rectangular banner across the middle displays the phone number **“1-800-762-FREE”** in white text. A drawn black arrow points toward the number.\n\n3. **Product/package overlay:** The woman remains faintly visible in the background while two product boxes or packets are superimposed over her face and the window blinds. The package text is partly unclear, though one appears to begin with “SOLAR...” or similar. The image is layered and semi-transparent.\n\n4. **Exercise/gym imagery:** The scene shifts to a layered shot of exercise equipment. A silhouetted person appears to be using a machine, with metal bars and a vertical weight or support column visible. A drawn arrow points toward part of the equipment. Another faint image of a face or body is superimposed beneath the gym-machine silhouette.\n\n5. **More exercise silhouette:** A closer, darker silhouette shows a person pulling or holding a bar on gym equipment. Two hand-drawn arrows point at the curved overhead bar and the diagonal bar near the person’s hands.\n\n6. **Clock image:** A large analog clock fills the frame, with bold numbers around the face and a large dark “5” superimposed near the center. The word **“MONDAY”** appears across the upper-left area of the clock face. A drawn arrow points from the left side toward the clock.\n\n7. **Dog/jeans overlay:** A small dog, possibly being held or positioned against a person’s hip, appears superimposed over a close-up of a person wearing light-colored jeans. The dog is centered, facing forward. A drawn arrow points toward the upper torso/hip area.\n\n8. **Waist and phone number:** A close-up shows a bare midriff with jeans and a belt. The phone number **“1-800-762-FREE”** appears again in a black rectangular banner across the waist area. Drawn arrows point toward the number and toward parts of the body/clothing.\n\n9. **Shirtless man with phone number:** A shirtless man is shown from the chest up against a plain light background. He appears to be smiling or laughing with his mouth open. The same black banner with **“1-800-762-FREE”** is placed across his chest, with an arrow pointing up toward the number.\n\n10. **Final phone-number screen:** The last frame is a plain light background with the black rectangular phone-number banner **“1-800-762-FREE”** centered. Numerous hand-drawn black arrows surround it from all directions, all pointing inward toward the number."
+  },
+  "api_metadata": {
+    "response_id": "resp_092ec5d8d38aaa0e006a1072b7205881979e840310eb1c363b",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 897,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 3500
+    }
+  },
+  "duration_seconds": 22.379,
+  "created_at": "2026-05-22T15:14:21Z",
+  "error": null
+}

@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2020_80",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_80",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_80/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_80.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0002.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0003.jpg",
+      "timestamp_seconds": 7.347,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0004.jpg",
+      "timestamp_seconds": 9.182,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0005.jpg",
+      "timestamp_seconds": 10.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0006.jpg",
+      "timestamp_seconds": 12.636,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0007.jpg",
+      "timestamp_seconds": 18.108,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0008.jpg",
+      "timestamp_seconds": 23.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_80/frame_0009.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_80.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_80.json",
+    "response_text": "The commercial begins with an overhead view looking down onto a brick-paved entrance or patio area. Two dark vertical gate or railing elements stand near the center, with large potted shrubs on both sides and strong sunlight casting shadows.\n\nThe next images use layered dissolves, so several scenes are briefly superimposed. A silver or light-colored SUV appears on a residential street, while ghosted images of people and outdoor greenery overlap it. The visual impression is of a suburban or urban neighborhood with trees, sidewalks, and parked or moving vehicles.\n\nThe setting then shifts to the front of a school-like building. A girl in a school uniform stands near the entrance, carrying bags. Other uniformed students are visible nearby. The architecture includes columns or an arched entryway, with hedges and landscaped greenery in front. A vehicle reflection or overlay is still visible during the transition.\n\nA closer shot shows three schoolchildren standing together outdoors. They wear matching green school uniforms with white shirts and ties. One child has long light-colored hair, one has braided hair, and one has dark hair pulled to the side. They appear to be looking toward something off-screen, with trees and a walkway behind them. The image continues to show faint overlays from the vehicle scenes.\n\nThe children remain the visual focus for a moment, still grouped together in a leafy outdoor area. Their faces and uniforms are clearer, though the dissolve effect continues, with parts of a car or street scene faintly visible across the lower part of the frame.\n\nThe commercial then shows more schoolyard activity. A uniformed student with a backpack walks across the foreground. Other children are visible in the background, some standing and some seated. A close, semi-transparent face of another child overlaps the scene, suggesting a continued montage rather than a single uninterrupted shot.\n\nA Volkswagen SUV then becomes prominent on a tree-lined street. The vehicle is shown from the front-left angle, with the VW badge visible on the grille. Other cars are parked or driving along the street. The children’s faces remain faintly superimposed during the transition, then fade.\n\nThe final portion becomes a dealership-style offer screen. On the left, a light-colored Volkswagen Atlas SUV is shown parked in front of a modern building. The VW logo appears in the upper-left corner. Text reads “The Volkswagen Atlas Peak Edition” with a line below that appears to say “For families that don’t fit in a box.” On the right, large offer text appears: “2026 Atlas,” “2.9% APR for 60 months,” and “$3,000 Customer Bonus,” with fine-print legal text along the bottom.\n\nThe last frame presents the offer more cleanly. A light green/gray Volkswagen Atlas is parked in profile/front three-quarter view on the left. The right side is a dark translucent panel with large white text: “2026 Atlas,” “2.9% APR for 60 months,” “or,” and “$3,000 Customer Bonus.” The VW logo remains at top left, and small-print disclaimer text runs along the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ac1a94583b18e22006a107afdedbc819ebb2b4f96e8e084d3",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 741,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2575
+    }
+  },
+  "duration_seconds": 18.212,
+  "created_at": "2026-05-22T15:49:35Z",
+  "error": null
+}

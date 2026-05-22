@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1970_70",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_70",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_70/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_70.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0002.jpg",
+      "timestamp_seconds": 5.962,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0003.jpg",
+      "timestamp_seconds": 7.664,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0004.jpg",
+      "timestamp_seconds": 10.634,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0005.jpg",
+      "timestamp_seconds": 16.039,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0006.jpg",
+      "timestamp_seconds": 18.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0007.jpg",
+      "timestamp_seconds": 19.843,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0008.jpg",
+      "timestamp_seconds": 25.549,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_70/frame_0009.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_70.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_70.json",
+    "response_text": "The commercial begins with a very dark, low-contrast title-like frame showing large block letters that appear to read “ILGWU” or similar, though the text is not fully clear.\n\nIt then cuts to a close-up of an older man with gray hair, seated indoors. The image has a yellow-green tint and visible video softness. Shelving and containers are visible in the background. The “Classic Commercial Archives” watermark appears over the image.\n\nA wider shot shows three older men gathered around a small table or barrel-like surface, with a white curly-haired dog sitting in the foreground. One man wears a cap and glasses, another appears to be wearing a white coat or apron, and another has gray hair and an apron-like garment. They seem to be looking at or handling something on the table. The setting appears to be an interior shop or workroom with shelves and goods behind them.\n\nThe next shot is a close-up of two of the men, one in a cap and glasses and the other in glasses with a light-colored coat. They face forward, as if reacting to or watching something. A soft dissolve or overlay effect makes parts of the image look doubled.\n\nA close-up then shows hands holding or presenting a pale, rounded mass of food in front of the men. At the bottom of the frame, white all-capital text appears: “MEAT BY-PRODUCTS AND MEAT, VEGETABLES, VITAMINS AND MINERALS.” The men and the dog remain visible behind the food, partially obscured by the close-up and dissolve effect.\n\nThe commercial returns to a close-up of the gray-haired man leaning forward. The ingredient text remains partially visible at the bottom, though it is partly cut off and blurred.\n\nNext, the dog is shown eating from a bowl. Behind the dog, a box of “Gaines-burgers” is displayed prominently. The box is mainly orange/red with blue and yellow areas, and the brand name “Gaines-burgers” is large and easy to read.\n\nA product display follows: three “Gaines-burgers” boxes stand behind a bowl filled with chunks of dog food. The dog is low in the foreground, partly visible near the bowl. The three boxes are different color variants: yellow, orange/red, and white/blue. The bowl sits centered in front of them.\n\nThe final frame is a clearer product shot: three “Gaines-burgers” boxes lined up behind a bowl of food on a reflective surface. Large white on-screen text at the bottom reads: “The canned dog food without the can.” Small text beneath includes “©GENERAL FOODS CORP 1977.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_032cff7d8301e729006a106fc958a081939fe4ad56cede4ccb",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 788,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 3144
+    }
+  },
+  "duration_seconds": 44.091,
+  "created_at": "2026-05-22T15:01:55Z",
+  "error": null
+}

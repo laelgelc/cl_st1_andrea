@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_2010_60",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_60",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_60/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_60.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0002.jpg",
+      "timestamp_seconds": 0.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0003.jpg",
+      "timestamp_seconds": 3.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0004.jpg",
+      "timestamp_seconds": 3.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0005.jpg",
+      "timestamp_seconds": 3.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0006.jpg",
+      "timestamp_seconds": 5.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0007.jpg",
+      "timestamp_seconds": 8.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0008.jpg",
+      "timestamp_seconds": 8.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0009.jpg",
+      "timestamp_seconds": 8.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0010.jpg",
+      "timestamp_seconds": 12.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0011.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_60/frame_0012.jpg",
+      "timestamp_seconds": 13.356,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_60.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_60.json",
+    "response_text": "The sampled frames show a commercial that shifts from an initial travel-themed image into a personal-care/dental-hygiene sequence.\n\nAt the start, the first frame shows a sunny outdoor resort or hotel pool scene. A person floats in a swimming pool in front of a large building with arches, and a table with a drink is visible in the foreground. Overlaid text reads “KAYAK,” with smaller options such as “Flights,” “Hotels,” and “Rental Cars,” and the line “Search One & Done.” This opening image appears visually different from the rest of the sampled sequence.\n\nThe scene then cuts to a bathroom. A young woman with long dark hair is shown washing her hair, with white shampoo foam on the top of her head. She looks toward the camera with a slight smile. The bathroom has cool blue tones, pale tiled or paneled walls, and shelves or ledges with toiletry bottles in the background.\n\nA later shot shows the same woman still in the bathroom, now smiling broadly while touching or massaging the shampooed area of her hair. Her long straight hair hangs over one shoulder, and the setting remains bright, clean, and blue-white.\n\nThe image then appears to transition or split: on one side, the woman’s face is partially visible with a toothbrush in her mouth, while on the other side, part of the earlier hair-washing pose remains visible. This creates a visual connection between shower/hair care and oral care. The next frame fully centers her brushing her teeth with a purple toothbrush. She faces forward, smiling while brushing, with the same bathroom background and toiletries visible behind her.\n\nThe commercial then changes to a stylized animated dental graphic. A row of simplified white teeth appears across the bottom of a turquoise-blue background. Dark blotches or spots on the teeth suggest buildup or staining. A large dark teal curved shape hovers above the teeth like a looming graphic form. Small fine print in the lower-left corner reads “Use as directed.”\n\nThe animated sequence continues with large bold white text appearing across the turquoise background. The word “GUM DISEASE” is visible, partially cropped by the frame at first. The dark curved graphic remains above the row of teeth. The framing emphasizes the threat or condition named by the text.\n\nAnother animated transition introduces a large white sweeping shape moving across the screen. The word “PLAQUE” appears in bold white capital letters near the upper left. The small “Use as directed” text remains faintly visible at the lower left.\n\nThe full animated warning list is then visible: “PLAQUE,” “GUM DISEASE,” and “BAD BREATH” in large bold white capitals on the turquoise background. “BAD BREATH” is the largest and most prominent phrase. The row of teeth and dark curved shape remain at the bottom portion of the frame.\n\nThe commercial then returns to the woman in the bathroom, now shown in a close-up from just below the nose to the shoulders. Her long hair frames her face. She smiles gently, and her mouth is slightly open, showing clean white teeth. The bathroom background is softly blurred.\n\nA following close-up shows a brighter, wider smile with white teeth more clearly visible. The composition focuses on her mouth and lower face, suggesting a successful or desirable oral-care result.\n\nThe final sampled frame switches to a clean blue background with large white text split across the screen: “BRING OUT” on the left and “THE BOLD” on the right. Along the bottom are small animated mouth or lip-like characters with legs, arranged in groups and facing different directions. Some are red open mouths, while others appear pale or rounded. The frame has a playful, stylized product-tagline feel, though no product package is visible in the sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_01096f898ad5043b006a107826f3a08193a3af0f7d8880454e",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 887,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 3288
+    }
+  },
+  "duration_seconds": 22.842,
+  "created_at": "2026-05-22T15:37:33Z",
+  "error": null
+}

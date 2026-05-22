@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2010_117",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_117",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_117/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_117.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0002.jpg",
+      "timestamp_seconds": 0.357,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0003.jpg",
+      "timestamp_seconds": 2.459,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0004.jpg",
+      "timestamp_seconds": 3.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0005.jpg",
+      "timestamp_seconds": 9.699,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0006.jpg",
+      "timestamp_seconds": 10.433,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0007.jpg",
+      "timestamp_seconds": 11.735,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0008.jpg",
+      "timestamp_seconds": 12.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0009.jpg",
+      "timestamp_seconds": 22.245,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0010.jpg",
+      "timestamp_seconds": 25.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_117/frame_0011.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_117.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_117.json",
+    "response_text": "The commercial begins with a black frame.\n\nIt then cuts to a bright, modern living room with large floor-to-ceiling windows looking out onto a green lawn and trees. A small fluffy white dog sits on a pale carpet near a sofa and a round glass coffee table. The room has light-colored furniture, including a white or cream sofa, a wooden cabinet, cushions, a basket, and decorative vases.\n\nA close-up shows a young woman with long light-brown hair smiling softly, apparently looking downward or toward something in the room. The next wider shot shows her kneeling on the carpet beside the coffee table, with a red spray bottle nearby. The white dog is now on the sofa behind her. She appears to be cleaning or attending to something on the carpet.\n\nLater, the woman is shown standing or moving near the large windows, still in the same bright living-room setting. The scene cuts to the inside of a wooden cabinet where a blue-and-green trigger spray bottle labeled “Woolite” is visible. Small legal/disclaimer text appears along the bottom of the frame, including “Woolite is a trademark of Reckitt Benckiser licensed to BISSELL Homecare, Inc.”\n\nThe woman is then shown holding the trigger spray bottle in one hand and a white cleaning cloth in the other. A close-up follows of her hand wiping a grayish mark or stain on the light carpet with the cloth. The stain area appears to lighten or be cleaned as she rubs it.\n\nNear the end, the woman is shown kneeling and smiling toward the camera in the living room, with the sofa and cushions behind her. A product shot follows: a Woolite “sanitize” trigger spray bottle stands on the carpet with a white cloth beside it. The bottle label includes “Woolite” and “sanitize,” and a dark badge near the top appears to say it “kills 99.9%,” though the smaller wording is not fully legible.\n\nThe final frame is a clean product lineup on a pale blue-white background. Three Woolite-branded cleaning products are displayed, with the central spray bottle matching the earlier “Woolite sanitize” product. Large blue “Woolite” text appears to the right of the products."
+  },
+  "api_metadata": {
+    "response_id": "resp_0be9d3e9841c2141006a10796453e88193a3847cfcd548f017",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 758,
+      "output_tokens_details": {
+        "reasoning_tokens": 300
+      },
+      "total_tokens": 2970
+    }
+  },
+  "duration_seconds": 20.722,
+  "created_at": "2026-05-22T15:42:48Z",
+  "error": null
+}

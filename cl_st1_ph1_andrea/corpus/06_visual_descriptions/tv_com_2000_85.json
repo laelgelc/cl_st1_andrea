@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_85",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_85",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_85/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_85.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0002.jpg",
+      "timestamp_seconds": 0.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0003.jpg",
+      "timestamp_seconds": 1.992,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0004.jpg",
+      "timestamp_seconds": 2.359,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0005.jpg",
+      "timestamp_seconds": 3.26,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0006.jpg",
+      "timestamp_seconds": 3.994,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0007.jpg",
+      "timestamp_seconds": 5.629,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0008.jpg",
+      "timestamp_seconds": 6.296,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0009.jpg",
+      "timestamp_seconds": 8.098,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0010.jpg",
+      "timestamp_seconds": 9.232,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0011.jpg",
+      "timestamp_seconds": 11.067,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0012.jpg",
+      "timestamp_seconds": 11.735,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0013.jpg",
+      "timestamp_seconds": 13.103,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0014.jpg",
+      "timestamp_seconds": 14.237,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0015.jpg",
+      "timestamp_seconds": 15.772,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0016.jpg",
+      "timestamp_seconds": 15.972,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0017.jpg",
+      "timestamp_seconds": 16.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0018.jpg",
+      "timestamp_seconds": 17.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0019.jpg",
+      "timestamp_seconds": 18.575,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0020.jpg",
+      "timestamp_seconds": 18.708,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0021.jpg",
+      "timestamp_seconds": 19.276,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0022.jpg",
+      "timestamp_seconds": 20.31,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0023.jpg",
+      "timestamp_seconds": 22.312,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0024.jpg",
+      "timestamp_seconds": 23.38,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0025.jpg",
+      "timestamp_seconds": 24.781,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0026.jpg",
+      "timestamp_seconds": 25.782,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0027.jpg",
+      "timestamp_seconds": 26.75,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0028.jpg",
+      "timestamp_seconds": 26.916,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0029.jpg",
+      "timestamp_seconds": 28.552,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_85/frame_0030.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_85.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_85.json",
+    "response_text": "The commercial begins with a nearly black frame, then cuts to a bright interior room. A young woman with short curly dark hair is seated in a blue chair in a light, modern apartment. She wears pale/white overalls or a light outfit and smiles toward the camera. The room has a blue-and-white wall, an open doorway, shelves, and decorative objects.\n\nThe scene shifts outside to a moving-truck or delivery-truck setting in front of an apartment building. A man standing in the truck hands items down to two people, including the curly-haired woman now wearing a bright coral/red long-sleeve top. Boxes and household items are visible, suggesting a move-in. Another shot shows someone carrying a tall piece of furniture or a large item along a walkway.\n\nThe commercial returns to close-ups of the curly-haired woman in the bright interior. She faces the camera and appears to be speaking, smiling, and then sitting casually in the blue chair with her legs drawn up. The apartment remains sunny and uncluttered, with shelves and small furnishings visible.\n\nA new scene shows the curly-haired woman in the coral/red top sitting with another young woman wearing a gray knit beanie, a light blue hoodie, and a white shirt with the number “14” on it. They sit among furniture and moving boxes. Their expressions suggest a conversation, with the beanie-wearing woman leaning in and the curly-haired woman listening or responding.\n\nThe ad then cuts to close-up product shots. A package labeled “Playtex” fills the frame. Readable text includes “ODOR ABSORBING” and “Gentle Glide.” The colors are mainly teal, white, and magenta/purple, with a soft, bright background. Later product shots show two boxes side by side. One package has a yellow label reading “ALL NATURAL ODOR ABSORBER.” Another package in the background appears to say “Silk Glide” or similar, though the text is partly blurred.\n\nThe narrative scenes continue inside the apartment. The beanie-wearing woman and the curly-haired woman lean on or sit near a counter with boxes and kitchen items around them. In another shot, the curly-haired woman in the coral/red top is on a staircase landing with other people nearby, gesturing toward a person in front of her. The setting looks like a shared apartment building or stairwell.\n\nMore product close-ups follow, again emphasizing the Playtex brand name, “ODOR ABSORBING,” “Gentle Glide,” and the yellow “ALL NATURAL ODOR ABSORBER” label.\n\nThe commercial returns to the curly-haired woman seated in the blue chair in the bright room. She faces the camera, then leans back and smiles. Another scene shows people carrying boxes down a hallway; the curly-haired woman in the coral/red top is helping or moving around the boxes. The hallway is warm-lit and narrow.\n\nBack in the main room, the curly-haired woman in the pale outfit leans forward toward the camera, then stretches back with a broad smile, as if relaxed or relieved. She then appears again in close-up, facing the camera.\n\nNear the end, a group of four people sit together in the apartment among boxes and furniture, eating from plates and holding cups. The curly-haired woman in the coral/red top sits with friends, laughing and raising a cup. The room looks like a newly moved-into living space, with boxes and household items still around.\n\nThe final shots return to the curly-haired woman in the blue chair, wearing the pale outfit. She sits comfortably with one leg up, smiling warmly at the camera."
+  },
+  "api_metadata": {
+    "response_id": "resp_07ae7e889b73609e006a10763354348194be54a1036c9b358a",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 846,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 8389
+    }
+  },
+  "duration_seconds": 19.531,
+  "created_at": "2026-05-22T15:29:10Z",
+  "error": null
+}

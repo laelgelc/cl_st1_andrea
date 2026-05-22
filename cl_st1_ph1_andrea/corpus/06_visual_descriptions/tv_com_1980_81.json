@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1980_81",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_81",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_81/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_81.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0002.jpg",
+      "timestamp_seconds": 6.443,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0003.jpg",
+      "timestamp_seconds": 15.886,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0004.jpg",
+      "timestamp_seconds": 18.128,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0005.jpg",
+      "timestamp_seconds": 19.724,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_81/frame_0006.jpg",
+      "timestamp_seconds": 28.031,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_81.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_81.json",
+    "response_text": "The commercial appears in a soft-focus, slightly blurred, older television style with black vertical borders at the sides.\n\nAt the beginning, the scene is an outdoor public setting, possibly a plaza or street event. Several people are visible in the background, including men in light-colored clothing and hats, and there are many colorful balloons. A blonde woman in a bright pink dress stands prominently near the center, with children nearby. Overlaid text at the bottom reads “Barbara Eden.”\n\nThe next sampled frame cuts to a very blurred close-up or partial view through pale vertical and horizontal shapes, possibly a railing, window frame, or architectural detail. A person’s face or hair may be partly visible at the left edge, but the image is too indistinct to identify clearly.\n\nThe scene then returns to the outdoor setting. The framing is low, showing the lower bodies of two adults: a person in dark trousers and dark shoes on the left, and the woman in the pink dress on the right, wearing heeled shoes. They appear to be standing near each other on a paved surface.\n\nA closer shot follows, focused on the woman’s pink dress and hip area as she moves. The background is crowded and blurred, with indistinct figures and possibly outdoor furniture or street fixtures behind her.\n\nThe next frame shows the woman in the pink dress from behind or side-back as she moves through the outdoor area. A decorative metal chair or bench is visible on the right, and several round yellow objects, likely balloons or decorations, appear around it. The street or plaza remains busy in the background with people and bright colors.\n\nThe final frame switches to a product shot on a dark red/brown background. A plastic egg-shaped package is centered, with visible labeling that includes “Control Top.” Beneath it, white/gold text reads: “Nothing beats a great pair of L’eggs.” A small sparkle effect appears near the beginning of the text."
+  },
+  "api_metadata": {
+    "response_id": "resp_0300565aa3c2a002006a1071a3496c8194b2340415fe225718",
+    "usage": {
+      "input_tokens": 1267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 480,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1747
+    }
+  },
+  "duration_seconds": 11.681,
+  "created_at": "2026-05-22T15:09:34Z",
+  "error": null
+}

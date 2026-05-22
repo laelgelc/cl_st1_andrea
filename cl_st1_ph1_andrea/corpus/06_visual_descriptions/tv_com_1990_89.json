@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_1990_89",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_89",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_89/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_89.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0002.jpg",
+      "timestamp_seconds": 1.458,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0003.jpg",
+      "timestamp_seconds": 2.692,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0004.jpg",
+      "timestamp_seconds": 4.06,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0005.jpg",
+      "timestamp_seconds": 5.862,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0006.jpg",
+      "timestamp_seconds": 9.332,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0007.jpg",
+      "timestamp_seconds": 10.333,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0008.jpg",
+      "timestamp_seconds": 14.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0009.jpg",
+      "timestamp_seconds": 17.374,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0010.jpg",
+      "timestamp_seconds": 18.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0011.jpg",
+      "timestamp_seconds": 21.211,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0012.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0013.jpg",
+      "timestamp_seconds": 22.846,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0014.jpg",
+      "timestamp_seconds": 24.481,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0015.jpg",
+      "timestamp_seconds": 26.75,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_89/frame_0016.jpg",
+      "timestamp_seconds": 29.093,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_89.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_89.json",
+    "response_text": "The commercial begins in near darkness, with only faint outlines of an interior space visible, possibly window or door frames.\n\nA brightly backlit doorway or window then appears. A blonde woman in a light top leans into view from the left, partly silhouetted by the strong light behind her. The setting looks like an interior with wooden framing and glass panels. The next shot shows a patterned metal or lattice screen, with warm light shining through it.\n\nThe camera moves to close-ups of the blonde woman’s face. She is seen through soft, partially obscuring foreground shapes, giving the image a hazy, intimate look. Her expression first appears serious or searching, then in the next close-up she looks downward and smiles slightly.\n\nA wider shot shows two people near a glass doorway in a wood-paneled interior. The blonde woman stands facing a man. The man, wearing a dark sweater and light jeans, stands by the door with one arm raised toward the frame. Strong daylight streams through the glass behind him. A close-up silhouette follows, showing the man’s head and upper body in shadow against the bright background.\n\nThe setting then shifts to a brighter café or restaurant-like space. A young woman with long curly hair, wearing a red top, sits at a table and smiles or laughs. Other people and table items are visible around her, though details are indistinct.\n\nA close-up of a blond man outdoors follows. He is lit by bright daylight and looks toward someone off-camera. The next shot shows another man in a dark jacket holding a small video camera or camcorder up to his eye, filming. A close-up of the device shows the brand name “SONY” printed on it.\n\nThe man with the camcorder is then seen from behind or at an angle, still holding the camera up. A wider exterior shot shows him standing outside a café or storefront, filming toward a seated dark-haired woman at a small table. He wears a dark sweater over a light blue shirt and carries a bag or case over his shoulder.\n\nThe montage continues with a blurred, energetic shot of people in close proximity; a woman in red moves past the camera, and another person in a striped top is partly visible. The imagery is quick and indistinct.\n\nNear the end, a close-up shows the blonde woman and the blond man together in dim blue-toned light. They are close side by side, with the woman partly behind or leaning against him. Both look toward the camera or slightly past it, with calm expressions.\n\nThe final frame is a black background with the word “SONY” centered in large metallic-looking capital letters."
+  },
+  "api_metadata": {
+    "response_id": "resp_0962ae95c8c66551006a1073d9c9948190b85fe25f4645f8e8",
+    "usage": {
+      "input_tokens": 4085,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 592,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 4677
+    }
+  },
+  "duration_seconds": 17.34,
+  "created_at": "2026-05-22T15:19:06Z",
+  "error": null
+}

@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_2010_44",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_44",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_44/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_44.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0002.jpg",
+      "timestamp_seconds": 1.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0003.jpg",
+      "timestamp_seconds": 2.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0004.jpg",
+      "timestamp_seconds": 5.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0005.jpg",
+      "timestamp_seconds": 7.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0006.jpg",
+      "timestamp_seconds": 10.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0007.jpg",
+      "timestamp_seconds": 10.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0008.jpg",
+      "timestamp_seconds": 11.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0009.jpg",
+      "timestamp_seconds": 11.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0010.jpg",
+      "timestamp_seconds": 14.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0011.jpg",
+      "timestamp_seconds": 14.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0012.jpg",
+      "timestamp_seconds": 15.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0013.jpg",
+      "timestamp_seconds": 17.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0014.jpg",
+      "timestamp_seconds": 20.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0015.jpg",
+      "timestamp_seconds": 21.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0016.jpg",
+      "timestamp_seconds": 22.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0017.jpg",
+      "timestamp_seconds": 24.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0018.jpg",
+      "timestamp_seconds": 25.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0019.jpg",
+      "timestamp_seconds": 26.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_44/frame_0020.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_44.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_44.json",
+    "response_text": "The commercial unfolds as a fast-cut sequence combining a concert performance with store, home, and product-display settings.\n\n1. **Opening performance setting:**  \n   The first frame shows a blonde female performer in a bright yellow dress holding a microphone, surrounded by male musicians with guitars and violin. The setting is dark and stage-like, with a large billboard-style image of the same performer in the background. On-screen text identifies her as “britini black” and “recording artist.”\n\n2. **Concert stage with Aaron’s branding:**  \n   The scene cuts to a wider stage shot. The performer stands center stage with a band behind her, colored stage lights overhead, and silhouettes of an audience in the foreground. A large “Aaron’s” sign is displayed prominently at the back of the stage.\n\n3. **Audience foreground:**  \n   The performer is shown from the side/right of the stage, singing into a microphone. Dark audience silhouettes and raised hands fill much of the foreground. The Aaron’s logo remains visible in the background and as a small watermark at the bottom right.\n\n4. **Electronics showroom:**  \n   The commercial cuts to a retail showroom with laptops on a counter. Several people stand around the display, including the blonde performer in the yellow dress. A laptop is open in the foreground. Brand names such as Dell, Frigidaire, JVC, Philips, HP, Panasonic, Sharp, and Sylvania appear along the bottom, with an Aaron’s logo watermark at bottom right.\n\n5. **Living room interaction:**  \n   The performer appears in a furnished living room, standing near a seated blonde woman and a seated man on a sofa. A lamp, framed pictures, curtains, and a fireplace mantel are visible. A graphic at the lower left reads “Guaranteed Low Prices,” and the Aaron’s logo appears at the lower right.\n\n6. **Appliance close-ups:**  \n   Several very close shots show the circular door/window and interior of what appears to be a front-loading laundry appliance. The visuals are blurred by motion, suggesting spinning or moving fabric inside. The Aaron’s watermark remains at the lower right.\n\n7. **Living room with television:**  \n   The scene returns to the living room. The performer stands near a large flat-screen television on the left side of the frame, while the seated couple watches her from the sofa. The room décor, fireplace, lamp, and framed wall art remain visible.\n\n8. **Back to concert stage:**  \n   The performer is shown in a close stage shot, holding the microphone and extending one arm outward. Colored lights and the large Aaron’s backdrop are visible behind her.\n\n9. **Musician close-up:**  \n   A dark, red-lit close-up shows a male musician’s face and upper body in silhouette or low light. Details are limited because the lighting is very dark.\n\n10. **Promotional text overlay:**  \n   A close-up of the performer singing appears with a lower-left graphic reading “Everyone’s Pre-Approved.” The Aaron’s stage sign is blurred in the background.\n\n11. **Band performance with leasing message:**  \n   The performer and band are shown again in the darker performance setting with the billboard-like image behind them. A lower-left graphic reads “Over 1.3 Million People Leasing.”\n\n12. **Race car display:**  \n   The scene cuts to an overhead view of a black race car with large numbers and Aaron’s-related graphics on it. The performer is positioned on or near the car, with other people around it. The Aaron’s watermark remains at bottom right.\n\n13. **Bedroom/furnished room interaction:**  \n   The performer appears in another home interior, pointing upward while a man and woman sit on a bed. The seated woman also points upward. The room includes a bed, pillows, wall art, and a window.\n\n14. **Furniture showroom with phone number:**  \n   The performer moves through a large furniture showroom filled with red sofas, lamps, rugs, and display furniture. Other people are visible behind her. A lower-left graphic displays a phone number, “800 950 7368,” with “Call Today.”\n\n15. **Final performance close-ups:**  \n   The commercial returns to close-up shots of the performer singing into the microphone on the Aaron’s stage, with bright backlights and red stage lighting.\n\n16. **Final branded banner:**  \n   A lower banner appears with “Aarons.com,” a large Aaron’s logo, and product categories listed as “Furniture • Electronics • Appliances • Computers.” This banner continues over wide shots of the stage and a final performance shot with the band and the billboard-like performer image in the background.\n\nOverall, the visuals repeatedly alternate between a branded concert performance and Aaron’s retail/home contexts, showing electronics, furniture, appliances, a race car, and promotional price/leasing graphics. No dialogue, lyrics, or audio content is visible in the frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0062ae353857d643006a1077bea2e88192938a31349e83c4e5",
+    "usage": {
+      "input_tokens": 3913,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1384,
+      "output_tokens_details": {
+        "reasoning_tokens": 393
+      },
+      "total_tokens": 5297
+    }
+  },
+  "duration_seconds": 33.087,
+  "created_at": "2026-05-22T15:35:59Z",
+  "error": null
+}

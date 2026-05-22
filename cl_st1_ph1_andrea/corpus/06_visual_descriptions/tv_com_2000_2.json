@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2000_2",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_2",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_2/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_2.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0002.jpg",
+      "timestamp_seconds": 0.557,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0003.jpg",
+      "timestamp_seconds": 1.758,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0004.jpg",
+      "timestamp_seconds": 2.659,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0005.jpg",
+      "timestamp_seconds": 3.76,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0006.jpg",
+      "timestamp_seconds": 4.861,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0007.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0008.jpg",
+      "timestamp_seconds": 8.598,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0009.jpg",
+      "timestamp_seconds": 11.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0010.jpg",
+      "timestamp_seconds": 12.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0011.jpg",
+      "timestamp_seconds": 14.437,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0012.jpg",
+      "timestamp_seconds": 16.706,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0013.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0014.jpg",
+      "timestamp_seconds": 19.476,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0015.jpg",
+      "timestamp_seconds": 20.277,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0016.jpg",
+      "timestamp_seconds": 24.347,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0017.jpg",
+      "timestamp_seconds": 26.016,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0018.jpg",
+      "timestamp_seconds": 27.484,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0019.jpg",
+      "timestamp_seconds": 30.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0020.jpg",
+      "timestamp_seconds": 30.553,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0021.jpg",
+      "timestamp_seconds": 30.82,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_2/frame_0022.jpg",
+      "timestamp_seconds": 30.954,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_2.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_2.json",
+    "response_text": "The commercial opens on a nearly black frame, with no clear visible content.\n\nIt then cuts to a bright beach scene. Several people are playing volleyball on sand near the ocean. A net stretches across the foreground/midground, with beach umbrellas and seated beachgoers around the court. The water and waves are visible in the background.\n\nThe next shots focus more closely on the volleyball action: a close-up of a player’s legs in black shorts with yellow flame-like trim, then low-angle shots near the net as players look upward and reach for the ball. Small white legal text appears near the bottom in some of these shots; one line appears to refer to “Subway” as a registered trademark, though the full text is partly difficult to read.\n\nA wider beach shot shows the ocean horizon, a purple beach umbrella, and a person running or moving across the sand. The volleyball is shown isolated against a pale blue sky, followed by a shirtless man in black shorts preparing to receive or catch it. Another shot from behind the net shows a woman in a pink sleeveless top looking upward, with other players behind her.\n\nThe setting remains the beach. A low shot shows the volleyball net across the frame, with the sea and sand beyond. The scene then changes to a large mound of sand, with parts of a human body or bodies partly buried or protruding from the sand; the exact arrangement is somewhat unclear. In a later shot, a man’s head and face are visible at the right side of a large sand mound, suggesting he is buried in or covered by sand, while other people stand nearby. White disclaimer text appears at the bottom; it is partially legible and appears to state that results are not typical and involve a reduced-calorie diet including Subway low-fat sandwiches.\n\nAnother beach shot shows several people gathered near the buried person, apparently interacting with the sand around him. The ocean remains in the background.\n\nThe commercial then presents a group shot by the water. A shirtless heavier man stands on the left, while a man in a purple outfit stands center. Large white on-screen text reads: “Jared Fogle” and “Lost 245 lbs.” Other beachgoers stand around them.\n\nThe scene cuts to close-up product imagery: several Subway-style sandwiches with bread, lettuce, tomato, olives, and other fillings. One close-up shows the sandwich ingredients in detail, including green peppers or lettuce, tomato slices, and olives. Part of a Subway-branded paper or wrapper is visible.\n\nThe setting then moves indoors to a Subway restaurant. A group of people, including the man in purple, stand or walk inside with Subway logos visible on the windows behind them. White text at the bottom reads: “Ask your doctor before starting any weight-loss plan.”\n\nA close-up shows the man in purple seated indoors, wearing glasses, eating a sandwich. The final branded shot shows him chewing while holding the sandwich. The Subway logo appears large on-screen with the phrase “eat fresh.” A website address, “www.subway.com,” is visible at the bottom left.\n\nAfter this branded end frame, the sampled sequence continues into abstract or transitional visuals: first a solid orange-brown screen, then a brown-and-tan checkerboard pattern, followed by a higher-contrast black-and-white checkerboard pattern. No people or product are visible in these final checkerboard frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a8705143e94ce01006a107473c7a081a1b32c31fb6dcc0322",
+    "usage": {
+      "input_tokens": 5567,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1164,
+      "output_tokens_details": {
+        "reasoning_tokens": 479
+      },
+      "total_tokens": 6731
+    }
+  },
+  "duration_seconds": 30.617,
+  "created_at": "2026-05-22T15:21:54Z",
+  "error": null
+}

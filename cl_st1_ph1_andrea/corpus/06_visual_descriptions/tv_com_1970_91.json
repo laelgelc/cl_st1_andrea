@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1970_91",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_91",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_91/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_91.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0002.jpg",
+      "timestamp_seconds": 9.176,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0003.jpg",
+      "timestamp_seconds": 13.685,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0004.jpg",
+      "timestamp_seconds": 15.671,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0005.jpg",
+      "timestamp_seconds": 22.434,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_91/frame_0006.jpg",
+      "timestamp_seconds": 28.03,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_91.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_91.json",
+    "response_text": "The commercial opens on a black screen with small, centered white promotional text. The text is partially blurred and difficult to read, but it appears to include the Chevrolet name/logo.\n\nThe next shots show a red compact Chevrolet coupe driving through a rocky outdoor setting. The car is first seen from a low front three-quarter angle, positioned on a road or path bordered by large rock formations. The setting appears canyon-like or mountainous, with warm-toned rocks in the background.\n\nThe car then approaches more directly from the front along a leaf- or gravel-covered road. The front grille, round headlights, and red body are prominent. The camera remains low, emphasizing the car’s front end and its movement over the uneven surface.\n\nA closer moving shot follows along the car’s front-left side as it drives on a paved or smoother road beside rocky scenery. A small white disclaimer appears at the bottom of the frame: “Monza is equipped with GM-built engines produced by various divisions. See your dealer for details.” The left headlight, grille, hood, and side mirror are visible as the car passes.\n\nThe sequence then cuts to the rear-left side of the same red car moving through a wet or splashy surface. Water or mud sprays around the tires, and the rear lights and sloping hatchback-style rear are visible.\n\nThe commercial ends on a black background with a large Chevrolet bowtie emblem centered on screen. The word “CHEVROLET” appears across the emblem in bold lettering, with a glowing blue outline around the logo."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b12a89c8deba8c0006a10700fe20481a1820c4f9de1e20959",
+    "usage": {
+      "input_tokens": 1267,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 444,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1711
+    }
+  },
+  "duration_seconds": 11.782,
+  "created_at": "2026-05-22T15:02:51Z",
+  "error": null
+}

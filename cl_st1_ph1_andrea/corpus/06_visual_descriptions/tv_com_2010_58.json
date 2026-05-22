@@ -1,0 +1,186 @@
+{
+  "commercial_id": "tv_com_2010_58",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_58",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_58/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_58.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0002.jpg",
+      "timestamp_seconds": 0.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0003.jpg",
+      "timestamp_seconds": 1.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0004.jpg",
+      "timestamp_seconds": 3.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0005.jpg",
+      "timestamp_seconds": 4.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0006.jpg",
+      "timestamp_seconds": 7.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0007.jpg",
+      "timestamp_seconds": 9.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0008.jpg",
+      "timestamp_seconds": 10.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0009.jpg",
+      "timestamp_seconds": 11.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0010.jpg",
+      "timestamp_seconds": 12.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0011.jpg",
+      "timestamp_seconds": 13.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0012.jpg",
+      "timestamp_seconds": 16.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0013.jpg",
+      "timestamp_seconds": 20.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0014.jpg",
+      "timestamp_seconds": 21.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0015.jpg",
+      "timestamp_seconds": 24.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0016.jpg",
+      "timestamp_seconds": 26.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0017.jpg",
+      "timestamp_seconds": 27.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_58/frame_0018.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 18,
+    "submitted_frame_count": 18,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_58.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_58.json",
+    "response_text": "The commercial begins with a static brand-style card: a large red Target bullseye logo centered on an off-white background. Beneath it, in script lettering, is the text “Expect More. Pay Less.” Small legal/trademark text appears below. The screen then briefly cuts to black.\n\nThe scene changes to a rustic wooden porch or exterior of an old wooden building. Visible objects include a rocking chair, a basket, a screen door, a large ceramic jug, and weathered wooden floorboards. The setting has an old-fashioned, rural look.\n\nThe next shots reveal a plowed field in front of the wooden building. A boy in plain, old-fashioned clothing—wide-brim hat, light shirt, suspenders, and high-waisted trousers—stands in the field. Nearby, a man in similarly old-fashioned clothing sits on a wooden wagon drawn by a large black horned animal, likely an ox or steer. The man wears a dark wide-brim hat, jacket, vest, and trousers. The wagon has large wooden wheels and harnessing equipment.\n\nAs the sequence continues, the setting’s contrast becomes clear: behind the rural field and fence are modern suburban houses, a driveway, and a parked silver SUV. The boy faces toward the man on the wagon. The man appears to address or gesture toward the boy, raising one hand in one shot. The boy’s expression is neutral or serious as he looks ahead.\n\nA middle-aged man in modern business attire appears behind a wooden picket fence near the silver SUV. He wears a dark suit, white shirt, and tie, and raises his hand in a wave. The old-fashioned boy and wagon driver look in his direction. In another shot, the suited man is seen from behind or partially blocking the foreground while the boy and wagon driver are in the field beyond him. The wagon driver also raises his hand, visually mirroring a greeting or acknowledgment.\n\nThe boy then turns and walks away across the plowed field while the suited man remains behind the fence. Small white legal text appears along the bottom of one frame, but it is too small to read clearly.\n\nA wider view shows the boy standing to the left and the ox-drawn wagon to the right in the field, with the rustic wooden building behind them and modern suburban houses in the background. The man on the wagon is shown again in medium close-up, seated upright and looking forward. The boy is then shown in close-up, still in his plain clothing and hat, with the suburban street and houses behind him.\n\nNear the end, the wagon driver handles reins or straps in his hands while seated on the wagon. The visual action suggests he is preparing or controlling the animal team, though the exact motion is not fully clear from the sampled frames.\n\nThe commercial ends on a black information card for DIRECTV. Large white text reads “PACKAGE OFFERS STARTING AT $19.99/mo.” Below, smaller text includes conditions such as “FOR 12 MONTHS,” “24-MO. AGMT REQ’D,” and mentions additional fees. Larger text at the bottom reads “directv.com” and “1.800.DIRECTV.” Additional fine print appears along the bottom but is mostly too small to read clearly."
+  },
+  "api_metadata": {
+    "response_id": "resp_03cc8451ca8c0ef2006a10781699a08190b271913c6d65c460",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 895,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 4430
+    }
+  },
+  "duration_seconds": 23.9,
+  "created_at": "2026-05-22T15:37:18Z",
+  "error": null
+}

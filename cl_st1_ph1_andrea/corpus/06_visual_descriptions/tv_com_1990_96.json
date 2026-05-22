@@ -1,0 +1,200 @@
+{
+  "commercial_id": "tv_com_1990_96",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_96",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_96/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_96.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0002.jpg",
+      "timestamp_seconds": 4.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0003.jpg",
+      "timestamp_seconds": 5.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0004.jpg",
+      "timestamp_seconds": 7.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0005.jpg",
+      "timestamp_seconds": 8.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0006.jpg",
+      "timestamp_seconds": 9.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0007.jpg",
+      "timestamp_seconds": 10.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0008.jpg",
+      "timestamp_seconds": 11.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0009.jpg",
+      "timestamp_seconds": 17.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0010.jpg",
+      "timestamp_seconds": 18.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0011.jpg",
+      "timestamp_seconds": 18.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0012.jpg",
+      "timestamp_seconds": 18.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0013.jpg",
+      "timestamp_seconds": 18.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0014.jpg",
+      "timestamp_seconds": 19.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0015.jpg",
+      "timestamp_seconds": 19.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0016.jpg",
+      "timestamp_seconds": 20.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0017.jpg",
+      "timestamp_seconds": 20.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0018.jpg",
+      "timestamp_seconds": 20.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0019.jpg",
+      "timestamp_seconds": 21.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_96/frame_0020.jpg",
+      "timestamp_seconds": 24.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 20,
+    "submitted_frame_count": 20,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_96.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_96.json",
+    "response_text": "The commercial begins with a nearly black frame, with only faint, indistinct shapes visible.\n\nIt then cuts into a long sequence of very bright, overexposed abstract imagery. Most of the frame is filled with white or pale pink light, with soft pastel areas of pink, purple, blue, and yellow near the edges. The imagery appears to pulse or flare, but the sampled frames do not clearly show identifiable objects during this early portion.\n\nAround the middle of the clip, the visuals briefly become more defined: a circular, mechanical-looking form appears centered in the frame. It looks like a round opening or chamber set into a square plate, with dark circular marks or fasteners near the corners. A red or orange ring surrounds the central circular area. The image then alternates rapidly between this circular form and bright white/pink flashes. In one frame, the circular area glows strongly red-orange, with a fiery or liquid-like pattern inside, before the image again washes out into pale light.\n\nAfter more bright flashes, the scene changes to a dark product shot. A bottle stands upright in the center, initially mostly in silhouette. It is lit from above or behind, creating a dramatic spotlight effect. The bottle sits on a reflective, gridded or dotted surface, with the reflection visible below it. The background remains black.\n\nIn the final frame, the product is clearly visible: a bottle of Castrol GTX with a red cap and a front label showing the Castrol logo and large “GTX” text. Large red block text appears across the lower part of the frame reading: “ENGINEERED FOR TODAY’S SMALLER CARS.” The product remains centered above the text on the reflective patterned surface."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a9851da69698333006a1073fbab408190b5ad83d62d8248c1",
+    "usage": {
+      "input_tokens": 5073,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 505,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 5578
+    }
+  },
+  "duration_seconds": 17.604,
+  "created_at": "2026-05-22T15:19:41Z",
+  "error": null
+}

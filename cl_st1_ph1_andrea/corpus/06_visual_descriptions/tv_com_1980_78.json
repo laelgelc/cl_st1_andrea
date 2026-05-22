@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1980_78",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_78",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_78/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_78.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0002.jpg",
+      "timestamp_seconds": 10.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0003.jpg",
+      "timestamp_seconds": 14.224,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0004.jpg",
+      "timestamp_seconds": 17.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0005.jpg",
+      "timestamp_seconds": 20.464,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0006.jpg",
+      "timestamp_seconds": 21.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0007.jpg",
+      "timestamp_seconds": 22.544,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_78/frame_0008.jpg",
+      "timestamp_seconds": 27.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_78.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_78.json",
+    "response_text": "The commercial begins with a static promotional end-card style image. A display of audio-related products and packaging appears against a dark background. Readable text includes “Technics” in large red letters and “The science of sound” beneath it. Smaller white text above mentions an offer period and participating Technics dealers, but much of it is difficult to read clearly.\n\nThe scene then cuts abruptly to animation. Three cartoon characters stand side by side against a simple pastel background. The central figure resembles a sailor in a white cap and dark shirt; a woman stands to his left, and a large bearded man in a yellow shirt stands to his right. All three are shown full-body and appear to be smiling or posing.\n\nThe next frame shows a red-to-white gradient screen with faint, partially obscured shapes or lettering. The content is not clear enough to identify with certainty.\n\nThe commercial then shifts to close-ups of handheld electronic game devices. A white folding device is held in two hands. It has two small screens, one in the upper half and one in the lower half, with simple black-and-white game graphics. Control buttons are visible on the right and left sides. The game imagery appears to involve small cartoon-like figures and obstacles.\n\nA similar close-up follows, now of an orange folding handheld game. It also has two screens and side controls. The screens show a simple platform or obstacle-style game layout, with small figures and horizontal/vertical structures.\n\nThe next shot widens to a domestic living-room setting. A handheld game unit sits on a white table in the foreground. An adult or older person in a light yellow shirt stands beside the table, with one hand lowered toward the device. In the background, several children sit on a couch, watching or reacting. The room contains home furnishings and wall decorations, but details are somewhat soft due to the image quality.\n\nThe commercial then cuts to an extreme close-up of a handheld game screen. The device frame includes readable text such as “SNOOPY TENNIS” at the top and “WIDE SCREEN” near the bottom. The screen shows a simple black-and-white tennis-like game scene with small cartoon characters, including a dog-like figure on one side and another character near the opposite side. Fingers hold the device at the edges.\n\nThe final sampled frame shows another handheld game device opened like a book, with two side-by-side screens. The lower front area prominently displays the “Nintendo” name and a large “Toys ‘R’ Us” logo. The two screens show simple game layouts with ladders, platforms, and small figures. Hands hold the device at both sides, with a thumb near the right-side control area."
+  },
+  "api_metadata": {
+    "response_id": "resp_06f114ff9542192b006a10719363748197afe942449b0c7a6d",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 676,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 2321
+    }
+  },
+  "duration_seconds": 19.728,
+  "created_at": "2026-05-22T15:09:26Z",
+  "error": null
+}

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2000_91",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_91",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_91/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_91.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0002.jpg",
+      "timestamp_seconds": 1.258,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0003.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0004.jpg",
+      "timestamp_seconds": 3.026,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0005.jpg",
+      "timestamp_seconds": 3.927,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0006.jpg",
+      "timestamp_seconds": 4.527,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0007.jpg",
+      "timestamp_seconds": 5.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0008.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0009.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0010.jpg",
+      "timestamp_seconds": 17.507,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0011.jpg",
+      "timestamp_seconds": 21.144,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0012.jpg",
+      "timestamp_seconds": 21.778,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_91/frame_0013.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_91.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_91.json",
+    "response_text": "The commercial begins in a stark white studio setting with a blonde adult woman shown from the waist up. She appears uncomfortable or unwell: her brow is furrowed, and she rests one hand against the side of her face. She wears a blue zip-up cardigan over a gray top.\n\nThe camera moves into closer shots of her face. She touches her jaw and neck area, looking strained. A wider shot then shows her standing barefoot in white cropped pants, hunched slightly and holding her arms close to her body, suggesting physical discomfort. She appears to rub or hold herself as if cold or achy.\n\nThe sequence cuts back to a close-up of her face, then to a medium shot where she opens her mouth widely while pressing fingers against her throat or under her chin. Her expression continues to suggest irritation or discomfort.\n\nNext, she is shown holding a clear glass of water in one hand and two white round tablets in the other. She looks at the tablets with a serious, focused expression. Small on-screen text near the lower right reads “use as directed.” The commercial then cuts to a close-up of her bare feet on the white floor, with the cuffs of her white pants visible.\n\nThe visual style then changes dramatically to imagery of water and bubbles. Several frames show turbulent, bluish water filled with bubbles, as if filmed underwater. In one shot, the woman appears submerged or surrounded by rushing bubbles; her hair streams upward, and she faces the camera with a calmer expression than before.\n\nAfter more bubbling water imagery, the scene returns to the white studio. The woman is shown full-body, suspended in midair or jumping, with her arms slightly out and her hair lifted, creating a light, buoyant effect.\n\nThe final frame is a product shot on a white background. Large blue text at the top reads: “LIQUIDATES YOUR BIG COLD.” Below it are Alka-Seltzer Plus cold/cough products: a box and several dark bottles with white caps and colored labels. The website “alkaseltzerplus.com” appears at the bottom left, and a Bayer logo appears at the bottom right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0eee9a20b18059d8006a10764cdf608193aae17d00907d1a66",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 604,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 3948
+    }
+  },
+  "duration_seconds": 16.891,
+  "created_at": "2026-05-22T15:29:33Z",
+  "error": null
+}

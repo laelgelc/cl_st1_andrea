@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1950_6",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_6",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_6/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_6.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0002.jpg",
+      "timestamp_seconds": 12.335,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0003.jpg",
+      "timestamp_seconds": 26.383,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0004.jpg",
+      "timestamp_seconds": 42.899,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0005.jpg",
+      "timestamp_seconds": 46.069,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_6/frame_0006.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_6.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_6.json",
+    "response_text": "The commercial is in black and white and appears to move through several distinct visual segments.\n\n1. **Opening frame**: The clip begins on a very dark, nearly black image with no clearly visible objects or people.\n\n2. **Early scene**: The next sampled frame is blurred and low to the ground. A light-colored object or garment is visible near the upper center-left, with darker vertical shapes nearby. The setting and action are unclear from this frame alone.\n\n3. **Text screen**: A dark background appears with the word **“impossible?”** in white lowercase letters, positioned toward the right-center of the frame. No other clear imagery is visible.\n\n4. **Woman eating**: The commercial cuts to a close-up of a young woman seated indoors. She has short, curled light hair and is looking downward toward a fork held near her mouth. She appears to be tasting or about to taste food. The background includes domestic-looking details such as vertical blinds or shutters.\n\n5. **Food close-up**: A plate or shallow bowl of food is shown on a table setting. The dish contains small mixed pieces, possibly a prepared meal. A fork lies to the left, and other tableware is visible around the plate.\n\n6. **Product display**: The final frame shows three cans arranged side by side on a display surface. The cans are labeled **“GOOD MEASURE”** with a circular **“300”** marking near the top. The visible varieties are **“NOODLES & CHICKEN,” “BEEF STEW,”** and **“CHILI CON CARNE.”** Beneath the cans, text reads **“EDWARD DALTON CO.”** with smaller company text below that is partly difficult to read."
+  },
+  "api_metadata": {
+    "response_id": "resp_00ef2a8314734137006a106b11761881a2ba54b00754291a4b",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 520,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 2135
+    }
+  },
+  "duration_seconds": 12.636,
+  "created_at": "2026-05-22T14:41:33Z",
+  "error": null
+}

@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1970_42",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_42",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_42/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_42.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0002.jpg",
+      "timestamp_seconds": 5.595,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0003.jpg",
+      "timestamp_seconds": 8.465,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0004.jpg",
+      "timestamp_seconds": 13.203,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0005.jpg",
+      "timestamp_seconds": 15.472,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0006.jpg",
+      "timestamp_seconds": 26.349,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0007.jpg",
+      "timestamp_seconds": 27.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_42/frame_0008.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_42.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_42.json",
+    "response_text": "The sampled frames show a short commercial unfolding as follows:\n\n1. **Opening frame:** The image is very dark, with little discernible visual content. Archival watermarks are visible: a “Classic Commercial Archives” logo at lower left and a faint “@ClassicCommercialArchives” watermark across the lower/middle area.\n\n2. **Kitchen scene begins:** The setting changes to a domestic kitchen. A person with short dark hair, wearing a plaid shirt and blue vest, is seen from behind/side near a kitchen cabinet or wall cabinet. The person’s hands are raised near the cabinet area. Details of what they are doing are not fully clear from this frame.\n\n3. **Product close-up:** A hand holds up a brown bottle labeled **“HALLS”** and **“Plus”**; the label indicates it is a **cough** product. At the bottom of the frame, small white text reads: **“use only as directed.”** The hand and sleeve match the plaid shirt seen earlier.\n\n4. **Two people in kitchen:** The scene returns to the kitchen. A man with dark hair sits or leans in the foreground, looking downward. The person in the plaid shirt and blue vest stands beside or behind him, facing him. Kitchen cabinets, patterned curtains, and dishes are visible in the background.\n\n5. **Timer/watch close-up:** There is a tight close-up of a stopwatch or watch face, with numbers and markings visible. A hand or thumb is near the edge of the watch. The framing emphasizes timing, though the exact motion is not visible in the still frame.\n\n6. **Product offered near seated man:** Back in the kitchen, the person in the plaid shirt and blue vest leans toward the seated man, placing a hand on his shoulder and holding the Halls bottle close to him. The man has a slight smile or relaxed expression. The bottle label is visible but partly small.\n\n7. **Final product display:** The commercial cuts to a product pack shot on a plain gray background. A Halls box stands behind a brown Halls bottle. Large white text on the right reads: **“You can feel it working in 15 seconds.”**\n\n8. **End frame:** The final product shot remains on screen with the same box, bottle, and text: **“You can feel it working in 15 seconds.”** The archival watermarks remain visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0265f91483dd8d9e006a106f4412f48191aee20e295d18a2cc",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 678,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 2787
+    }
+  },
+  "duration_seconds": 17.785,
+  "created_at": "2026-05-22T14:59:33Z",
+  "error": null
+}

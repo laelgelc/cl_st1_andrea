@@ -1,0 +1,207 @@
+{
+  "commercial_id": "tv_com_2000_33",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_33",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_33/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_33.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0002.jpg",
+      "timestamp_seconds": 0.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0003.jpg",
+      "timestamp_seconds": 2.959,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0004.jpg",
+      "timestamp_seconds": 7.063,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0005.jpg",
+      "timestamp_seconds": 11.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0006.jpg",
+      "timestamp_seconds": 12.502,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0007.jpg",
+      "timestamp_seconds": 13.47,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0008.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0009.jpg",
+      "timestamp_seconds": 13.803,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0010.jpg",
+      "timestamp_seconds": 14.204,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0011.jpg",
+      "timestamp_seconds": 14.371,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0012.jpg",
+      "timestamp_seconds": 14.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0013.jpg",
+      "timestamp_seconds": 14.971,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0014.jpg",
+      "timestamp_seconds": 16.473,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0015.jpg",
+      "timestamp_seconds": 17.941,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0016.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0017.jpg",
+      "timestamp_seconds": 21.978,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0018.jpg",
+      "timestamp_seconds": 23.446,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0019.jpg",
+      "timestamp_seconds": 24.581,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0020.jpg",
+      "timestamp_seconds": 26.049,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_33/frame_0021.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 21,
+    "submitted_frame_count": 21,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_33.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_33.json",
+    "response_text": "The commercial opens on a nearly black frame, with only a small red heart-like watermark/logo visible in the lower-right corner.\n\nIt then cuts to a bright, modern studio corridor. A blonde woman stands and walks toward the camera in a fitted black turtleneck top, a short denim mini skirt, and a belt. The space has curved pale walls, recessed lighting, a curved bench-like feature along the left wall, and large orange panels or doors at the back. The woman poses casually with her hands near her waist and looks toward the camera.\n\nThe next shot shows the orange double panels/doors more directly, centered in the corridor. They appear closed; no person is visible in this sampled frame.\n\nThe scene changes to a fashion runway-style set. Three women walk forward on a glossy, pale runway with a purple overhead strip and geometric blue, white, and lavender wall panels behind them. They wear coordinated outfits: olive-green jackets or tops with short skirts. The central model leads, smiling, with two others slightly behind her.\n\nThe commercial returns to the blonde woman in the corridor. She gestures with one hand and shifts her pose, still wearing the black turtleneck and denim mini skirt. A closer shot follows, showing her turning her upper body and smiling while her long blonde hair swings, emphasizing movement.\n\nThe next sequence focuses on a model seen from behind walking down a runway. She wears a red long-sleeved top, a dark mini skirt, and dark boots. The background alternates between dark black space and bright blue backlighting, producing lens flare-like light spots. Her hair moves as she walks away from the camera along the runway.\n\nThis is followed by a front-facing runway shot. A brunette woman in a red long-sleeved top and dark mini skirt smiles and walks toward the camera. Two other models in similar red tops and dark skirts walk away in the background on either side, creating a mirrored runway composition.\n\nThe corridor shots return with close-ups of the blonde woman in the black turtleneck. She smiles, tilts her head, and poses at different angles against the orange-panel background and pale curved walls. Her hair continues to move noticeably between shots.\n\nAnother runway segment shows three models walking toward the camera in denim mini skirts, white tops, and dark jackets. Two models are in front, one blonde and one brunette, with crossbody bags; a third model follows behind them. The runway set again features blue and lavender geometric panels and the purple overhead strip.\n\nA brief shot shows the purple overhead runway element by itself from below or at an upward angle, with dark space around it.\n\nThe blonde woman in the corridor appears again in a closer, direct-to-camera shot, wearing the black turtleneck and denim mini skirt. She leans slightly forward and looks engaged, but no audio content is visible.\n\nThe next shot returns to the runway-style setting with a blonde model in a tan jacket, white top, and denim mini skirt. She poses with her hands near her hips and a small shoulder bag, smiling toward the camera. The camera angle is slightly tilted, giving the pose a dynamic look.\n\nA final close-up of the blonde woman in the black turtleneck fills the frame. Her hair is blown or swept across the shot as she looks directly at the camera.\n\nThe commercial ends on a clean product/price card with text on a light background. The text reads: “minis” in purple, “starting at $17⁵⁰” in red/brown and red, and the “OLD NAVY” logo in a blue oval beneath. A small red watermark/logo remains in the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_001b687cd0c51ff7006a10750c8cc48191a9ed512f8fb474f6",
+    "usage": {
+      "input_tokens": 5320,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 890,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 6210
+    }
+  },
+  "duration_seconds": 26.266,
+  "created_at": "2026-05-22T15:24:22Z",
+  "error": null
+}

@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_2010_119",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_119",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_119/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_119.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0002.jpg",
+      "timestamp_seconds": 1.391,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0003.jpg",
+      "timestamp_seconds": 1.958,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0004.jpg",
+      "timestamp_seconds": 3.093,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0005.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0006.jpg",
+      "timestamp_seconds": 5.896,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0007.jpg",
+      "timestamp_seconds": 6.596,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0008.jpg",
+      "timestamp_seconds": 7.764,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0009.jpg",
+      "timestamp_seconds": 8.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0010.jpg",
+      "timestamp_seconds": 8.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0011.jpg",
+      "timestamp_seconds": 9.332,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0012.jpg",
+      "timestamp_seconds": 10.0,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0013.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0014.jpg",
+      "timestamp_seconds": 12.402,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0015.jpg",
+      "timestamp_seconds": 13.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0016.jpg",
+      "timestamp_seconds": 15.572,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0017.jpg",
+      "timestamp_seconds": 16.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0018.jpg",
+      "timestamp_seconds": 17.807,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0019.jpg",
+      "timestamp_seconds": 18.842,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0020.jpg",
+      "timestamp_seconds": 20.477,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0021.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0022.jpg",
+      "timestamp_seconds": 23.113,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0023.jpg",
+      "timestamp_seconds": 23.413,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0024.jpg",
+      "timestamp_seconds": 23.747,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0025.jpg",
+      "timestamp_seconds": 23.98,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0026.jpg",
+      "timestamp_seconds": 24.314,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0027.jpg",
+      "timestamp_seconds": 24.614,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0028.jpg",
+      "timestamp_seconds": 25.682,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_119/frame_0029.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_119.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_119.json",
+    "response_text": "The commercial begins on a black screen, then cuts to a bright outdoor rooftop setting under a clear blue sky.\n\nA series of young adult men are shown in rapid, action-oriented shots performing jumps, flips, and midair movements above rooftops and a city skyline. The camera often uses low angles and close-ups, emphasizing bodies suspended against the sky.\n\nEarly shots show:\n- A man in a green shirt and dark shorts with his arms extended as if balancing or jumping.\n- Another man in a gray sleeveless top running or leaping from a rooftop ledge, with distant buildings behind him.\n- A man with short curly hair in a white shirt and dark shorts flipping backward in midair.\n- A close-up side profile of a man with longer hair, his hair moving in the wind.\n\nThe sequence continues with more athletic motion:\n- A man in a black sleeveless top runs or jumps toward the camera with both arms outstretched.\n- Several close-ups isolate men’s hair in motion, including hair blown across the frame and styled hair moving during action.\n- A man in a white shirt and dark pants bends forward in midair.\n- Two men appear simultaneously in one shot, both upside down or rotating in a synchronized flip above the skyline.\n\nAt around 10 seconds, the action briefly pauses for a product display. Four boxes of “Just For Men” hair-color products appear against a pale blue background. The front package is larger and angled slightly forward. The packaging shows male faces and the brand name “JUST FOR MEN,” with “AUTOSTOP” visible on the front box.\n\nThe commercial then returns to rooftop action:\n- Legs and shoes are shown mid-jump above a city skyline.\n- A man in a white long-sleeved shirt and dark pants rotates through the air.\n- More close-ups focus on a man’s styled hair and face, with his hand moving through or near his hair.\n- The curly-haired man in the white shirt continues flipping across the sky in several shots.\n- Other men in dark athletic clothing perform tucked flips and extended leaps.\n\nNear the end, a man is seen from behind on a rooftop, arms raised in a triumphant or celebratory pose, silhouetted against the city skyline.\n\nThe final frame combines product and slogan-style text. On the left is a large “Just For Men” product box. To the right, large white outlined text reads “JUST YOU,” and beneath it, in a black rectangular bar, white text reads “& THE LOOK YOU WANT.” The rooftop figure remains small in the background below the text, with the city skyline still visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0054d36c6d47c608006a107967f9c481938fd6142e8ae955a1",
+    "usage": {
+      "input_tokens": 5614,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 642,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 6256
+    }
+  },
+  "duration_seconds": 17.339,
+  "created_at": "2026-05-22T15:42:49Z",
+  "error": null
+}

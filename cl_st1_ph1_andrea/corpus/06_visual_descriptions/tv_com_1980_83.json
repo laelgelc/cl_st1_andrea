@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1980_83",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_83",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_83/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_83.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0002.jpg",
+      "timestamp_seconds": 4.594,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0003.jpg",
+      "timestamp_seconds": 6.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0004.jpg",
+      "timestamp_seconds": 10.033,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0005.jpg",
+      "timestamp_seconds": 15.405,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0006.jpg",
+      "timestamp_seconds": 16.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0007.jpg",
+      "timestamp_seconds": 17.907,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0008.jpg",
+      "timestamp_seconds": 19.809,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0009.jpg",
+      "timestamp_seconds": 21.378,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0010.jpg",
+      "timestamp_seconds": 22.112,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0011.jpg",
+      "timestamp_seconds": 22.379,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0012.jpg",
+      "timestamp_seconds": 22.546,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0013.jpg",
+      "timestamp_seconds": 23.313,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0014.jpg",
+      "timestamp_seconds": 29.119,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0015.jpg",
+      "timestamp_seconds": 32.589,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0016.jpg",
+      "timestamp_seconds": 36.226,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0017.jpg",
+      "timestamp_seconds": 37.861,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0018.jpg",
+      "timestamp_seconds": 40.163,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0019.jpg",
+      "timestamp_seconds": 45.569,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0020.jpg",
+      "timestamp_seconds": 47.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0021.jpg",
+      "timestamp_seconds": 49.906,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0022.jpg",
+      "timestamp_seconds": 53.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0023.jpg",
+      "timestamp_seconds": 74.297,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0024.jpg",
+      "timestamp_seconds": 77.334,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0025.jpg",
+      "timestamp_seconds": 77.734,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0026.jpg",
+      "timestamp_seconds": 78.234,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0027.jpg",
+      "timestamp_seconds": 79.603,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0028.jpg",
+      "timestamp_seconds": 80.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0029.jpg",
+      "timestamp_seconds": 82.105,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1980_83/frame_0030.jpg",
+      "timestamp_seconds": 87.044,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_83.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_83.json",
+    "response_text": "The commercial unfolds as a rapid montage with many dissolves and superimposed images, so several shots overlap and are partly transparent.\n\nIt begins in a warmly lit study or living room. An older man with glasses, wearing a shirt and tie, sits in a leather armchair beside bookshelves, curtains, a window, and a lamp. He appears to be looking down at something in his hands or lap, though the object is not clearly visible. The image then dissolves into other layered domestic and reading scenes, including a person reclining and another scene with a man at a table, but the overlaps make the details indistinct.\n\nThe montage shifts to close human portraits and family-like images. A close-up shows an elderly woman with a head covering, her hand near her mouth, looking directly toward the camera. This is followed by washed-out images of people posing together: an older couple, a man in uniform with a woman, a man with a baby, and a smiling family group. These images appear like photographs or documentary scenes and are heavily crossfaded.\n\nThe next section shows travel, public spaces, and people in movement. Two men in white shirts look at a map or paper in what appears to be a transit station or platform. A group of people, including a woman in sunglasses, appears in a crowd scene. A woman in a red sleeveless top is shown in a posed athletic or confident stance, overlapped with sports imagery.\n\nSports images then dominate the montage. There are quick views of athletes in action: tennis players, a baseball player swinging or lifting a bat, a gymnast or figure skater-like figure with arms raised, and other competitive scenes. These are layered over one another with strong dissolves, creating a sense of fast-paced variety rather than a single continuous event.\n\nThe commercial then cuts to intimate and family scenes. A couple lies in bed or reclines together in a blue-toned bedroom shot. A group portrait appears in front of a sign or public display, but the lettering is not fully legible. Another domestic interior shows a child or young person at a table or counter, again partially obscured by overlapping imagery.\n\nA silhouetted scene follows: several people, possibly children or performers, are seen in profile against a bright background. One figure points outward, while others appear to be holding objects or equipment. The details are unclear because the figures are dark silhouettes.\n\nA white phone number, “1-800-541-2000,” appears over several shots. Behind it are more layered images: a man reading or writing at a desk, water or reflective surfaces, and a man in a shirt and tie holding a sign with partially visible handwritten words. The same phone number remains visible across multiple dissolves. Another image shows a man wearing glasses and a novelty crown or headpiece, surrounded by festive or crowded imagery.\n\nThe montage continues with more public and sports scenes. A woman in a crowd raises her arm and appears to be shouting or cheering. A swimmer or diver in a gold-toned swimsuit bends forward near a pool or water surface. Later, the phone number reappears over a scene involving a woman reclining or stretching and another person nearby; the layered composition makes the action unclear.\n\nNear the end, the visuals move through outdoor and performance-like scenes: a person standing on a sidewalk or plaza; a close-up of a blond man’s face; an older white-haired man in a light shirt; a person with light hair seated near railings; and several athletic or performance shots, including a baseball player, a runner or dancer, and a figure kneeling or posing with one arm raised.\n\nThe final frame changes to a clean, graphic layout with a black background. In the center is a smaller rectangular image of a man in a light-colored suit and cowboy hat sitting and reading a magazine. Beneath the image, large white text reads: “Read TIME and understand.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_02071ba5b4457f97006a1071a6c7e081a28af6f926ae6a110e",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1031,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 6834
+    }
+  },
+  "duration_seconds": 29.173,
+  "created_at": "2026-05-22T15:09:55Z",
+  "error": null
+}

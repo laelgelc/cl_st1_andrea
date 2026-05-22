@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1970_21",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_21",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_21/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_21.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0002.jpg",
+      "timestamp_seconds": 7.831,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0003.jpg",
+      "timestamp_seconds": 8.498,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0004.jpg",
+      "timestamp_seconds": 12.102,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0005.jpg",
+      "timestamp_seconds": 13.036,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0006.jpg",
+      "timestamp_seconds": 17.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0007.jpg",
+      "timestamp_seconds": 23.413,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0008.jpg",
+      "timestamp_seconds": 26.916,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_21/frame_0009.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_21.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_21.json",
+    "response_text": "The commercial opens with a soft-focus, dimly lit close-up of a man facing the camera. He has dark hair and wears a light-colored jacket or shirt over a turtleneck-like collar. The background is indistinct.\n\nA large Excedrin bottle then appears superimposed over the man’s face, centered in the frame. The bottle label is readable enough to identify “Excedrin” and “The Extra-Strength Pain Reliever.” The man remains visible behind it as a ghosted image.\n\nThe scene dissolves to a young woman outdoors, facing the camera. She has long dark hair and wears a dark top with a white collar. The Excedrin bottle image remains faintly superimposed across her face at first, then becomes more prominent, again centered over her face.\n\nNext, the image dissolves to another woman outdoors, with shoulder-length reddish-brown hair, wearing a coat and scarf. A ghosted Excedrin bottle label is briefly overlaid across her face. The background appears to be a park-like setting with grass, trees, and water or a path behind her.\n\nThe same woman is then shown more clearly, smiling toward the camera. Large white text appears at the bottom of the frame beginning with “Excedrin.” and continuing with “With more pain reliever…” though the full line is partly cut off by the sampled frame.\n\nThe commercial cuts to a close-up of the Excedrin bottle label, filling most of the frame. Over it, large white promotional text is layered, including visible phrases such as “Excedrin,” “With more pain relievers,” “more extra strength than,” and references to “regular strength aspirin” and “non-aspirin tablets.” At the bottom, small text reads “USE ONLY AS DIRECTED.”\n\nAnother dissolve overlays an enlarged Excedrin label across the man from the opening. In the lower-left corner, bold white text reads: “Extra Strength means Excedrin.” A small copyright notice appears at lower right, but it is partly blurred.\n\nThe final frame shows the man clearly again, facing the camera against a pale, out-of-focus background. The lower-left text “Extra Strength means Excedrin” remains on screen. The visual style throughout uses soft focus, dissolves, and repeated superimposition of the Excedrin bottle over people’s faces.\n\nA “Classic Commercial Archives” watermark is visible in the lower-left corner throughout, with a semi-transparent archive watermark across the lower middle of several frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_00823f9d8c126b8b006a106ef3747c81a08363066f0cab4238",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 766,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 3122
+    }
+  },
+  "duration_seconds": 16.838,
+  "created_at": "2026-05-22T14:58:12Z",
+  "error": null
+}

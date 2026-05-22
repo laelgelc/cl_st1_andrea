@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2000_107",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_107",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_107/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_107.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0002.jpg",
+      "timestamp_seconds": 1.124,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0003.jpg",
+      "timestamp_seconds": 3.193,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0004.jpg",
+      "timestamp_seconds": 5.061,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0005.jpg",
+      "timestamp_seconds": 5.529,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0006.jpg",
+      "timestamp_seconds": 6.396,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0007.jpg",
+      "timestamp_seconds": 9.533,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0008.jpg",
+      "timestamp_seconds": 10.6,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0009.jpg",
+      "timestamp_seconds": 11.735,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0010.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0011.jpg",
+      "timestamp_seconds": 12.369,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0012.jpg",
+      "timestamp_seconds": 13.77,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0013.jpg",
+      "timestamp_seconds": 14.504,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0014.jpg",
+      "timestamp_seconds": 15.438,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0015.jpg",
+      "timestamp_seconds": 16.406,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0016.jpg",
+      "timestamp_seconds": 17.14,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0017.jpg",
+      "timestamp_seconds": 18.408,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0018.jpg",
+      "timestamp_seconds": 19.042,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0019.jpg",
+      "timestamp_seconds": 19.543,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0020.jpg",
+      "timestamp_seconds": 19.809,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0021.jpg",
+      "timestamp_seconds": 20.076,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0022.jpg",
+      "timestamp_seconds": 20.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0023.jpg",
+      "timestamp_seconds": 21.311,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0024.jpg",
+      "timestamp_seconds": 22.379,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0025.jpg",
+      "timestamp_seconds": 23.413,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0026.jpg",
+      "timestamp_seconds": 24.114,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0027.jpg",
+      "timestamp_seconds": 24.281,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0028.jpg",
+      "timestamp_seconds": 24.614,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0029.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2000_107/frame_0030.jpg",
+      "timestamp_seconds": 29.986,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_107.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_107.json",
+    "response_text": "The commercial unfolds as a fast-paced travel and adventure montage.\n\nIt opens with tilted, close-up shots of people in an active situation. A young person in a gray-and-blue top is seen from above or at an angle, looking upward and extending a hand. The next shots show a man’s face in close-up, also looking upward with an intense or excited expression. A black-gloved hand reaches down against a bright sky, while another bare hand reaches up toward it; the hands come very close, though the sampled frames do not clearly show a grasp.\n\nThe scene then cuts to a large white cruise ship moving through blue water under a bright sky. This is followed by an aerial view of a coastline with green vegetation, sandy beach, and blue ocean. Inside what appears to be a helicopter or small aircraft, a man points out through a window toward the sea below. The view cuts to a sailboat seen from above on deep blue water.\n\nA rapid sequence of water and outdoor activities follows: a person is seen against a bright sky; then there are close-up splashing shots of a person in water. Another shot shows blue-green water from above or underwater. A small personal watercraft or jet ski moves across churning water with riders visible, followed by a distant, blurred silhouette of a rider on water against a bright horizon.\n\nThe montage shifts to more adventure imagery. One shot shows people on or near a climbing/rope structure against a bright blue sky. Then a person wearing an orange top, helmet, and backpack moves along a forest trail, likely on a bicycle or similar outdoor activity; this is followed by close-up shots of helmeted people in the forest, their faces filling the frame as green foliage passes behind them.\n\nA helicopter is shown flying low over the ocean near a sandy beach and surf. Another shot shows a curved fishing rod silhouetted against a pale sky with clouds.\n\nThe final adventure sequence shows a climber on a steep, tan, rock-like wall or cliff. The climber, wearing a harness or gear, moves across the textured surface in several consecutive shots, with a blue sky and architectural or cliff edges visible around the wall.\n\nNear the end, the commercial returns to a wide, scenic shot of a large cruise ship on calm water at sunset or sunrise, with warm golden light and hills in the background. On-screen branding appears: “royalcaribbean.com,” the Royal Caribbean International logo/name, and the tagline “Get out there.” The final sampled frame is black, indicating a fade-out or end screen."
+  },
+  "api_metadata": {
+    "response_id": "resp_0684bab75f430977006a10769848c881a3a60b60e1638e443a",
+    "usage": {
+      "input_tokens": 8113,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 978,
+      "output_tokens_details": {
+        "reasoning_tokens": 460
+      },
+      "total_tokens": 9091
+    }
+  },
+  "duration_seconds": 29.987,
+  "created_at": "2026-05-22T15:31:02Z",
+  "error": null
+}

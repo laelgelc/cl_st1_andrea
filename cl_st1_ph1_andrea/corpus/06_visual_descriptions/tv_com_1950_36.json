@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_36",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_36",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_36/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_36.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_36/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_36/frame_0002.jpg",
+      "timestamp_seconds": 13.87,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_36/frame_0003.jpg",
+      "timestamp_seconds": 23.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_36/frame_0004.jpg",
+      "timestamp_seconds": 26.85,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_36/frame_0005.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_36.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_36.json",
+    "response_text": "The commercial is in black and white and unfolds as a product-focused advertisement.\n\n1. **Opening**\n   - The first sampled frame is almost entirely black, suggesting either a fade-in, a blank opening moment, or an unlit transition. No clear objects or people are visible.\n\n2. **Product close-up**\n   - A small, dark, faceted grooming device is shown standing upright on a surface.\n   - The front of the device bears the visible script label **“Lady Schick.”**\n   - The background is blurred, keeping attention on the product.\n\n3. **Closer view of the shaving head**\n   - The camera moves to a tighter close-up of the top portion of the device.\n   - A metal shaving head or foil area is prominent, with small mechanical details visible.\n   - Some lettering is visible near the top area, though not all of it is clearly readable in the frame.\n\n4. **Domestic dressing-table scene**\n   - A woman sits in a bedroom or dressing-room setting.\n   - She is seated on a chair near a vanity or dressing table with a mirror and lamps.\n   - She wears a light-colored, strap-style garment and has one leg crossed.\n   - She holds a small object in one hand near her raised leg, visually suggesting she is using or demonstrating the grooming device.\n   - The background includes patterned wallpaper, a framed picture, lamps, a round mirror, and a bed or upholstered furniture to the side.\n\n5. **Final product and price card**\n   - The final frame shows a round, compact-looking object with a wrist strap placed on a plain surface.\n   - Large on-screen text reads: **“From 14⁹⁵”**.\n   - A slogan-style line appears below: **“The Most Feminine Thing Since Legs.”**\n   - The layout resembles a closing product offer or end card, with the price and slogan visually emphasized."
+  },
+  "api_metadata": {
+    "response_id": "resp_056fd94c6dda28ff006a106b8fc0b88190aa8c99f32f254b25",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 545,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 1913
+    }
+  },
+  "duration_seconds": 13.504,
+  "created_at": "2026-05-22T14:43:41Z",
+  "error": null
+}

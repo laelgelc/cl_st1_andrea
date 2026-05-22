@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_1970_10",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_10",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_10/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_10.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0002.jpg",
+      "timestamp_seconds": 0.724,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0003.jpg",
+      "timestamp_seconds": 3.56,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0004.jpg",
+      "timestamp_seconds": 6.963,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0005.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0006.jpg",
+      "timestamp_seconds": 8.732,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0007.jpg",
+      "timestamp_seconds": 9.299,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0008.jpg",
+      "timestamp_seconds": 20.277,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0009.jpg",
+      "timestamp_seconds": 20.844,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0010.jpg",
+      "timestamp_seconds": 21.444,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0011.jpg",
+      "timestamp_seconds": 22.012,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_10/frame_0012.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_10.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_10.json",
+    "response_text": "The commercial begins with an outdoor action image: a person seated on an airboat, seen from the front, with the large circular fan cage behind them. The setting appears to be a marshy or river environment.\n\nIt then cuts to a wider view of the airboat traveling across calm water. The boat is distant, centered near the upper part of the frame, leaving spray or wake behind it. Vegetation lines the far bank.\n\nThe next scene changes to an empty athletics track with several hurdles arranged in lanes. Bleachers or railings are visible along the left side, and the camera looks down the lanes toward the far end.\n\nA large hamburger then appears superimposed over the track scene, filling much of the center of the frame. The burger has a sesame-seed bun, two beef patties, a middle bun layer, lettuce or other green filling, sauce, and cheese near the lower patty. The track remains faintly visible behind it during the dissolve.\n\nThe camera moves into close-up views of the hamburger. The burger fills the frame, emphasizing the bun, patties, sauce, lettuce, cheese, and sesame seeds. The shots become progressively tighter, focusing on the upper patty area and then the middle bun and fillings.\n\nA brief layered or dissolving image follows, in which the hamburger close-up is blended with a scene showing people in a dimmer, possibly indoor or stage-like setting. The figures are not sharply visible; one person appears near the center, with other figures or objects around them. Because of the overlay and blur, details of the setting and the people are unclear.\n\nThe commercial returns to a clean product shot of the hamburger against a dark background. The burger is shown in a medium close-up, centered and well lit. Subsequent close-ups again emphasize the sesame bun, upper patty, sauce, lettuce, and middle bun layer.\n\nAnother dissolve introduces a person indoors holding a hamburger. The person appears to be an adult man wearing a red or reddish top. He is seated or positioned near a bright window or light source in the background. The hamburger image is still faintly superimposed during the transition, making the details somewhat soft.\n\nThe final frame is a graphic product display on a dark background. A rectangular inset near the top shows the hamburger centered inside a thin border. Beneath it is the McDonald’s golden arches logo, and large white text reads “Big Mac.” Smaller text and copyright information appear below, but only the “Big Mac” branding and McDonald’s logo are clearly prominent. A “Classic Commercial Archives” watermark is visible on the frames throughout."
+  },
+  "api_metadata": {
+    "response_id": "resp_09f3d7ecf2b0b0ca006a106ec8b0f081a0b28c0b5a7bdbbae1",
+    "usage": {
+      "input_tokens": 3097,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 627,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 3724
+    }
+  },
+  "duration_seconds": 18.213,
+  "created_at": "2026-05-22T14:57:30Z",
+  "error": null
+}

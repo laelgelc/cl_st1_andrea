@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_83",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_83",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_83/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_83.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0002.jpg",
+      "timestamp_seconds": 0.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0003.jpg",
+      "timestamp_seconds": 4.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0004.jpg",
+      "timestamp_seconds": 5.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0005.jpg",
+      "timestamp_seconds": 7.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0006.jpg",
+      "timestamp_seconds": 12.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0007.jpg",
+      "timestamp_seconds": 14.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0008.jpg",
+      "timestamp_seconds": 18.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0009.jpg",
+      "timestamp_seconds": 19.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0010.jpg",
+      "timestamp_seconds": 22.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0011.jpg",
+      "timestamp_seconds": 24.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0012.jpg",
+      "timestamp_seconds": 24.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0013.jpg",
+      "timestamp_seconds": 24.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0014.jpg",
+      "timestamp_seconds": 25.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0015.jpg",
+      "timestamp_seconds": 25.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0016.jpg",
+      "timestamp_seconds": 29.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0017.jpg",
+      "timestamp_seconds": 29.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0018.jpg",
+      "timestamp_seconds": 30.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0019.jpg",
+      "timestamp_seconds": 34.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0020.jpg",
+      "timestamp_seconds": 36.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0021.jpg",
+      "timestamp_seconds": 39.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0022.jpg",
+      "timestamp_seconds": 41.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0023.jpg",
+      "timestamp_seconds": 43.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0024.jpg",
+      "timestamp_seconds": 45.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0025.jpg",
+      "timestamp_seconds": 46.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0026.jpg",
+      "timestamp_seconds": 49.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0027.jpg",
+      "timestamp_seconds": 51.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0028.jpg",
+      "timestamp_seconds": 52.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0029.jpg",
+      "timestamp_seconds": 58.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_83/frame_0030.jpg",
+      "timestamp_seconds": 59.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_83.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_83.json",
+    "response_text": "The sampled commercial begins with a bright, pale-blue product display that appears separate in style from the rest of the sequence. A large white “chewy” wordmark is shown above a blue Chewy.com box filled with pet products. Two dogs flank the box, and a toy or small pet figure sits among the products. The background is a simplified living-room setting in the same blue tone. Very small legal text appears near the bottom but is not fully legible.\n\nThe screen then cuts to black for several seconds.\n\nThe next section shifts into a montage of historical or archival-looking imagery. A shirtless male martial artist is shown in a dim outdoor or garden-like setting. This is followed by a wider shot of the same or similar martial artist inside a traditional-looking room with sliding doors, posed mid-action. The footage has a cinematic, older-film appearance.\n\nThe montage then cuts to a close-up of a hand drawing or painting a long, low architectural structure on paper. The image is warm-toned and looks like a drafting or design process.\n\nThe sequence moves into black-and-white baseball imagery. A baseball player in a “Dodgers” uniform and cap is seen near a dugout or fenced area. Then there are crowd shots in black and white, with people standing and cheering. A wide stadium view shows players spread across a baseball field. Another crowd shot shows spectators reacting enthusiastically.\n\nThe montage includes sepia-toned images of an older man in a suit seated at a drafting table in front of a large architectural drawing. Later, the same or similar older man is shown at a desk in front of a curved architectural model or structure. These shots emphasize design, planning, and architecture.\n\nThe baseball montage continues with a player in a white uniform, visible number “42” on the back, running across the field. Large blurred lettering or signage appears behind him. Several quick side-on shots show the player running, with the background streaking horizontally, creating a sense of speed.\n\nThe commercial then changes to a contemporary car sequence. A red Mazda sedan drives along a curving two-lane road through a green, wooded area. The camera shows the car approaching from the front, then passing close to the camera from the side, highlighting the red bodywork and streamlined profile. Small text appears near the bottom in some shots, but it is too small to read clearly.\n\nA close, elevated view of the red car’s front end appears with a visible on-screen label reading “SKYACTIV TECHNOLOGY.” Fine print appears below but is not legible in the sampled frame. The car is then shown driving in an urban setting, passing buildings and stone walls.\n\nInside the car, a male driver is shown from the front, seated behind the wheel and wearing a seatbelt. He looks forward with a focused expression. The exterior red Mazda is then shown from a low front angle on a city street.\n\nThe setting shifts to a wider roadway or bridge, with the red car driving against a city skyline in the distance. A close-up inside the center console shows a hand operating a round control knob surrounded by buttons. The next frame shows the dashboard infotainment screen. Visible interface text includes “aha,” “Presets,” “Nearby,” “TechTalk,” “Facebook,” “Twitter,” “Groove Salad,” “The Drive,” and a time reading “5:37.”\n\nA blurred close-up of the moving red car follows, emphasizing motion through streaked red bodywork and wheel movement.\n\nThe montage briefly returns to the sepia-toned older man at the drafting desk and then to the black-and-white baseball player in the dugout area, now shown in a closer portrait-like shot, looking toward the camera.\n\nNear the end, the image fades or flashes to a bright white circular light effect. The final frame shows the Mazda emblem above the blue word “mazda,” with the stylized word “zoom” beneath it on a diagonal white shape against a dark background."
+  },
+  "api_metadata": {
+    "response_id": "resp_0153632bcf83aeb5006a10789eaf80819db2d74390f714f583",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1182,
+      "output_tokens_details": {
+        "reasoning_tokens": 379
+      },
+      "total_tokens": 6985
+    }
+  },
+  "duration_seconds": 35.919,
+  "created_at": "2026-05-22T15:39:46Z",
+  "error": null
+}

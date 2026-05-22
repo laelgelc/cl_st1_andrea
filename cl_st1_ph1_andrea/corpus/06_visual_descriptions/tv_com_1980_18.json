@@ -1,0 +1,81 @@
+{
+  "commercial_id": "tv_com_1980_18",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_18",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_18/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_18.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_18/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_18/frame_0002.jpg",
+      "timestamp_seconds": 22.879,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_18/frame_0003.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 3,
+    "submitted_frame_count": 3,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_18.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_18.json",
+    "response_text": "The commercial begins on a black screen. A white watermark reading “www.FuzzyMemories.TV” appears at the lower left.\n\nLater, the visuals change to an abstract, glossy-looking background in deep red, magenta, and purple tones, with curved streaks across the frame. White uppercase text near the top reads: “CREATE YOUR MOOD MAGIC AT:”. The watermark remains at the lower left.\n\nBy the final frame, the same red/magenta abstract background and top text remain. A large white rounded rectangle appears in the center containing the Walgreens logo in red script. Below and to the right, black text reads: “The Shopper’s Center.” On the left side of the white rectangle are black silhouette figures of two adults and a child holding hands. The watermark is still visible at the lower left."
+  },
+  "api_metadata": {
+    "response_id": "resp_0b53fac3e73394cc006a1070b522a88197ab7edda7b6c70383",
+    "usage": {
+      "input_tokens": 874,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 1086
+    }
+  },
+  "duration_seconds": 5.869,
+  "created_at": "2026-05-22T15:05:30Z",
+  "error": null
+}

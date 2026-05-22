@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_1950_69",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_69",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_69/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_69.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0002.jpg",
+      "timestamp_seconds": 11.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0003.jpg",
+      "timestamp_seconds": 24.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0004.jpg",
+      "timestamp_seconds": 25.565,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0005.jpg",
+      "timestamp_seconds": 33.731,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0006.jpg",
+      "timestamp_seconds": 35.315,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0007.jpg",
+      "timestamp_seconds": 37.065,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0008.jpg",
+      "timestamp_seconds": 41.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0009.jpg",
+      "timestamp_seconds": 54.148,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0010.jpg",
+      "timestamp_seconds": 55.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0011.jpg",
+      "timestamp_seconds": 60.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0012.jpg",
+      "timestamp_seconds": 64.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0013.jpg",
+      "timestamp_seconds": 78.231,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0014.jpg",
+      "timestamp_seconds": 88.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_69/frame_0015.jpg",
+      "timestamp_seconds": 92.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_69.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_69.json",
+    "response_text": "The commercial is in black and white and presents a Ford automobile through a sequence of emblem shots, exterior details, interior features, and driving scenes. A visible “OsbornTramain” watermark appears in the lower-right corner throughout the sampled frames.\n\n1. **Opening brand emblem**  \n   The commercial begins with a centered Ford crest-style emblem against a plain dark background. The word “FORD” appears prominently at the top of the badge.\n\n2. **Exterior model identification**  \n   The next shot shows a close-up of the rear or front trim area of a car with a chrome badge reading “FAIRLANE.” The surface is glossy, with a circular ornament above the badge.\n\n3. **Side view of parked car**  \n   The car is then shown from the side, parked in front of a house. The frame focuses on the passenger compartment and doors, with the roofline and windows clearly visible.\n\n4. **Door handle close-up**  \n   A hand reaches toward and grips a chrome exterior door handle on the car. The shot emphasizes the handle and the car’s smooth body panel.\n\n5. **Interior door or trim control**  \n   A close-up shows a shiny chrome fixture set into a quilted or tiled-looking interior surface. It appears to be an interior handle or control panel, though its exact function is not fully clear from the frame.\n\n6. **Window area**  \n   A shot from inside or very near the car shows a window frame with blurred foliage outside. A small dark object or mark is visible near the lower-left area of the window. The exact action is unclear.\n\n7. **Seat and lower interior area**  \n   The camera shows the lower side of a car seat with upholstery, piping, and a round knob or control near the base. Part of a seated person’s clothing is visible above the seat cushion, but the person is not fully shown.\n\n8. **Rear exterior detail**  \n   The rear of the car is shown in close-up, including a round tail light, chrome bumper, and smooth rear body panel.\n\n9. **Full rear three-quarter view**  \n   The car appears parked on a residential street. Houses, lawns, trees, and a sidewalk are visible in the background. The vehicle’s rear fins, round tail lights, chrome bumper, and whitewall tires are visible.\n\n10. **Boy’s face**  \n   A close-up shows a smiling young boy outdoors, facing the camera or looking slightly toward it. The background is blurred, likely foliage or ground texture.\n\n11. **Dashboard clock**  \n   The interior dashboard is shown in close-up, focusing on an analog clock set into a rectangular chrome-trimmed panel. Numbers such as 10, 2, 4, and 8 are visible around the dial.\n\n12. **Radio controls**  \n   Another dashboard close-up shows a radio tuning display with numbered frequencies, including 55, 10, 12, 14, and 16. Below the display are several push buttons and knobs.\n\n13. **Moving side view on road**  \n   The car is shown in motion from a close side angle, focusing on the rear side panel with “Fairlane” script visible. The road and landscape pass by in the background.\n\n14. **Frontal driving shot**  \n   The car is shown from the front driving toward the camera on an open road. The grille, headlights, bumper, and hood line are prominent. The background includes open land and distant hills or mountains.\n\n15. **Final brand image**  \n   The final frame overlays or places the large Ford crest emblem in the center foreground, with the car still visible behind it from the front. The road and landscape remain in the background, reinforcing the brand identification at the end."
+  },
+  "api_metadata": {
+    "response_id": "resp_0be00eaf7f527286006a106bf8eb908190b34e0327cc882894",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 842,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 3810
+    }
+  },
+  "duration_seconds": 15.263,
+  "created_at": "2026-05-22T14:45:28Z",
+  "error": null
+}

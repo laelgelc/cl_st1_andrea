@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1960_12",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_12",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_12/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_12.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0002.jpg",
+      "timestamp_seconds": 11.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0003.jpg",
+      "timestamp_seconds": 12.584,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0004.jpg",
+      "timestamp_seconds": 12.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0005.jpg",
+      "timestamp_seconds": 13.184,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0006.jpg",
+      "timestamp_seconds": 13.384,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0007.jpg",
+      "timestamp_seconds": 13.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0008.jpg",
+      "timestamp_seconds": 15.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0009.jpg",
+      "timestamp_seconds": 16.064,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0010.jpg",
+      "timestamp_seconds": 18.624,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0011.jpg",
+      "timestamp_seconds": 21.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0012.jpg",
+      "timestamp_seconds": 25.864,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0013.jpg",
+      "timestamp_seconds": 39.704,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0014.jpg",
+      "timestamp_seconds": 49.024,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0015.jpg",
+      "timestamp_seconds": 52.944,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0016.jpg",
+      "timestamp_seconds": 55.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1960_12/frame_0017.jpg",
+      "timestamp_seconds": 58.024,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_12.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_12.json",
+    "response_text": "The commercial is presented in a sepia/black-and-white style with strong backlighting, silhouettes, and high-contrast typography. A “Nostalgic X’er” watermark appears in the lower-right corner of the sampled frames.\n\nChronological visual description:\n\n1. **Opening image**: The clip begins with a dark, rectangular window-like grid or panel pattern. The scene is dim, with little detail visible.\n\n2. **City-light background and brand lettering**: The view changes to a soft, out-of-focus field of small bright lights, resembling nighttime city lights seen through glass or rain. Large cream-colored serif lettering appears and moves closer or is revealed through camera movement. The word **“Butter-Nut”** becomes increasingly prominent, filling more of the frame.\n\n3. **Extreme close-up of the label text**: The camera continues to move across or zoom into the large **Butter-Nut** letters. Only portions of the word are visible at a time because the letters are so large. The background remains dark with scattered light spots.\n\n4. **Label-like surface**: The large cream letters appear against a dark band, suggesting the branding on a package or can, though at this stage only close-up portions of the label are visible.\n\n5. **Silhouette sequence**: The commercial shifts to a pale, backlit background. A dark human silhouette appears at the left, with the person’s arm raised near the head or face. The exact object or action is unclear from the frame.\n\n6. **Shadow-play of coffee preparation**: Multiple silhouettes and shadows appear on the illuminated background. A hand or arm holds a vessel or cup shape, and another hand appears to pour from a pot or kettle-like object. The scene visually suggests beverage preparation, but the exact objects are partly obscured by the silhouette style.\n\n7. **Close-up pouring image**: A dark stream of liquid is shown pouring into a cup or mug-like container. The container has a visible handle on the right. The liquid and contents are dark and reflective; the exact contents are not fully clear.\n\n8. **Profile close-up**: A close side silhouette of a person’s face appears, showing the nose and lips against a bright background. The person’s mouth area is emphasized, but no clearly visible cup or food item is present in this sampled frame.\n\n9. **Return to light-speckled background**: The scene returns briefly to the soft field of small bright lights, again resembling an abstract city-at-night or illuminated window effect.\n\n10. **Silhouette by a window/grid**: A person’s head and upper body appear in profile as a dark silhouette in front of a lit window or horizontal bar. The person holds a small object or hand near the mouth; the exact object is unclear.\n\n11. **Final product shot**: The commercial ends on a centered can of **Butter-Nut Coffee**. The can has a dark upper label band with large cream serif text reading **“Butter-Nut”**, and a lighter lower band with bold text reading **“Coffee.”** The product remains clearly visible through the final frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c213f4ae6892d92006a106d0255148190b1a76cfcb75cb796",
+    "usage": {
+      "input_tokens": 3346,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1103,
+      "output_tokens_details": {
+        "reasoning_tokens": 466
+      },
+      "total_tokens": 4449
+    }
+  },
+  "duration_seconds": 28.184,
+  "created_at": "2026-05-22T14:50:06Z",
+  "error": null
+}

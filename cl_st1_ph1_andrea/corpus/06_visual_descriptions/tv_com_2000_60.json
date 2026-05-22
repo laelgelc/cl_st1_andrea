@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2000_60",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_60",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_60/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_60.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0002.jpg",
+      "timestamp_seconds": 5.662,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0003.jpg",
+      "timestamp_seconds": 7.597,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0004.jpg",
+      "timestamp_seconds": 9.099,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0005.jpg",
+      "timestamp_seconds": 10.6,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0006.jpg",
+      "timestamp_seconds": 12.769,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0007.jpg",
+      "timestamp_seconds": 14.471,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0008.jpg",
+      "timestamp_seconds": 22.012,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_60/frame_0009.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_60.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_60.json",
+    "response_text": "The commercial begins in a dimly lit interior. A blonde woman in a red sleeveless top is seated at or near a black grand piano. Large windows are visible behind her, but the scene is dark and details are somewhat hard to make out.\n\nThe setting then becomes much brighter and clearer: a modern, spacious interior with large windows, white walls, a staircase or curved upper walkway, plants, and a black grand piano. The blonde woman is seen from behind at the piano. A man dressed in black, including a dark beret, stands several steps away facing her.\n\nThe woman turns toward the man while holding a small handheld device. In a closer shot, she extends the device toward him. White subtitle-style text appears at the bottom of the frame reading: “Reschedule my lecture at the museum.” The man stands facing her, listening or responding visually, while she holds the device up between them.\n\nThe woman is then shown in medium close-up beside the piano and window, still holding the handheld device. She looks down at it and appears to interact with it. A close-up follows of the device in her hand: it resembles a Palm handheld organizer/PDA with a screen showing small app icons and physical buttons along the bottom. Her finger is positioned near the screen, suggesting tapping or selecting something.\n\nThe woman is shown again against the bright window background, extending her hand forward as if presenting or handing something outward.\n\nThe image then cuts to a mostly white screen, creating a bright transition.\n\nThe final frame is a clean product display on a white background. Three Palm handheld devices are shown side by side, labeled “Palm m505,” “Palm m125,” and “Palm m500.” At the top, large text reads “Free 16 meg expansion card,” and a Palm logo appears on the right. Smaller text at the bottom mentions receiving memory free via mail after rebate, availability while supplies last, store details, and an offer expiration date of 12/24/01."
+  },
+  "api_metadata": {
+    "response_id": "resp_00db297198aeb610006a1075b5e78c81a0b7ecfe0059c4d6a9",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 511,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 2867
+    }
+  },
+  "duration_seconds": 13.26,
+  "created_at": "2026-05-22T15:26:59Z",
+  "error": null
+}

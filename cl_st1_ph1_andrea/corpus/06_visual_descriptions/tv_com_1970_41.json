@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1970_41",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_41",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_41/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_41.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0002.jpg",
+      "timestamp_seconds": 6.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0003.jpg",
+      "timestamp_seconds": 9.599,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0004.jpg",
+      "timestamp_seconds": 12.402,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0005.jpg",
+      "timestamp_seconds": 15.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0006.jpg",
+      "timestamp_seconds": 17.24,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0007.jpg",
+      "timestamp_seconds": 18.008,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0008.jpg",
+      "timestamp_seconds": 20.11,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0009.jpg",
+      "timestamp_seconds": 21.611,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_41/frame_0010.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_41.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_41.json",
+    "response_text": "The sampled frames show a commercial sequence centered on an orange/red Toyota car, after an opening television-program graphic.\n\n1. The clip begins with a dark screen containing a television-style promo graphic. Large text at the top reads “CBS SUNDAY.” Inside the graphic is a close-up of a blond man. Additional text near the bottom appears to say “CBS SUNDAY NIGHT MOVIE” and “STARTS 9:00/8:00,” though some details are blurry.\n\n2. The scene changes to an orange/red car seen from the front, driving or positioned on a roadway in an open rural-looking area. The background is flat and pale, with fields or low vegetation.\n\n3. A side view shows the same orange/red car traveling along a road, with blurred countryside behind it. The car is a two-door style with a sloping rear.\n\n4. The car is then shown in a residential street setting, passing or parked near a white house with a porch, a picket fence, and bare tree branches. The camera angle is low and front three-quarter, emphasizing the car’s front grille and headlights.\n\n5. A close-up of the car interior appears. The dashboard, steering wheel, instrument panel, center controls, and gear shift are visible. No driver is clearly shown in this frame.\n\n6. The car is shown again from the front in the residential area, near a white fence and house. The headlights, grille, windshield, and hood are prominent.\n\n7. A close side/rear view shows the car near a roadside fence in an open landscape. The camera is close to the passenger-side window and rear quarter area.\n\n8. The car is shown from a low front-left angle on a road or gravel surface in a bright open setting. A person appears to be inside, but details are not clear.\n\n9. Two people, a man and a woman, stand beside the car. The man has curly hair and wears a jacket over a light shirt. The woman has dark hair and smiles; she wears a light turtleneck and jacket. The car roof or window frame is visible in the foreground.\n\n10. The final frame shows the orange/red car parked near a modern-looking building on a gravel or dirt area. The rear hatch or trunk is open, and the two people stand near the back of the car with luggage or cargo visible. Large white text at the bottom reads “TOYOTA,” with smaller text underneath that is difficult to read clearly. The overall image has visible archival color distortion and a “Classic Commercial Archives” watermark."
+  },
+  "api_metadata": {
+    "response_id": "resp_078fa3bae0d2443c006a106f42c4d8819385c4a6d69368787c",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 675,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 3278
+    }
+  },
+  "duration_seconds": 18.7,
+  "created_at": "2026-05-22T14:59:33Z",
+  "error": null
+}

@@ -1,0 +1,95 @@
+{
+  "commercial_id": "tv_com_1950_107",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_107",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_107/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_107.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_107/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_107/frame_0002.jpg",
+      "timestamp_seconds": 11.935,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_107/frame_0003.jpg",
+      "timestamp_seconds": 20.11,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_107/frame_0004.jpg",
+      "timestamp_seconds": 26.183,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_107/frame_0005.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 5,
+    "submitted_frame_count": 5,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_107.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_107.json",
+    "response_text": "The commercial is in black and white and appears to centre on automobile travel.\n\n- **Opening frame (0.000s):** A car is shown from a distance driving along a winding road in a mountainous or rocky landscape. The road curves through steep terrain, with cliffs or dense dark vegetation on both sides. The vehicle is small in the frame, emphasizing the road and scenery.\n\n- **Around 11.9s:** The scene cuts to a close-up of a woman seated inside what appears to be a vehicle. The background is blurred, with light-colored seat backs visible behind her. She faces forward but looks slightly to the side, with an animated facial expression. The image has some motion blur or double exposure, suggesting either movement or a transition effect.\n\n- **Around 20.1s:** The commercial cuts to a close-up of a man, also seated inside the vehicle. He is wearing a suit and tie and faces directly toward the camera. Seat backs and indistinct figures or interior shapes are visible behind him. His expression is composed, with a slight smile or confident look.\n\n- **Around 26.2s:** The woman appears again in close-up inside the same or similar vehicle interior. She is framed frontally, with blurred interior elements behind her. Her expression is more tense or exaggerated in this sampled frame, and there is visible blur/ghosting, possibly from movement or an overlapping transition.\n\n- **Final frame (58.0s):** The viewpoint shifts to inside a vehicle looking forward through the windshield. A road stretches ahead under trees, with a railing or fence visible to the right. The driver is seen only as a dark silhouette on the left. Windshield wipers and the dashboard area are visible in the foreground. The car appears to be moving along a tree-lined road.\n\nOverall, the sampled frames show a sequence moving between exterior road travel, close-ups of passengers or occupants inside a vehicle, and a driver’s-eye/front-windshield view of the road. No product name, written slogan, or audio information is visible in the provided frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ae2a56cf25d6506006a106c9f9f848193b90b04908c2b6b3e",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 533,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1901
+    }
+  },
+  "duration_seconds": 14.743,
+  "created_at": "2026-05-22T14:48:14Z",
+  "error": null
+}

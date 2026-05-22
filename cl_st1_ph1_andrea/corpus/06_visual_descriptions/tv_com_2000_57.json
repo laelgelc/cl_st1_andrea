@@ -1,0 +1,242 @@
+{
+  "commercial_id": "tv_com_2000_57",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_57",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_57/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_57.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0002.jpg",
+      "timestamp_seconds": 1.725,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0003.jpg",
+      "timestamp_seconds": 4.327,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0004.jpg",
+      "timestamp_seconds": 5.795,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0005.jpg",
+      "timestamp_seconds": 6.897,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0006.jpg",
+      "timestamp_seconds": 7.931,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0007.jpg",
+      "timestamp_seconds": 8.999,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0008.jpg",
+      "timestamp_seconds": 9.933,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0009.jpg",
+      "timestamp_seconds": 10.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0010.jpg",
+      "timestamp_seconds": 11.768,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0011.jpg",
+      "timestamp_seconds": 12.636,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0012.jpg",
+      "timestamp_seconds": 13.537,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0013.jpg",
+      "timestamp_seconds": 14.537,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0014.jpg",
+      "timestamp_seconds": 15.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0015.jpg",
+      "timestamp_seconds": 15.839,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0016.jpg",
+      "timestamp_seconds": 16.64,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0017.jpg",
+      "timestamp_seconds": 17.707,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0018.jpg",
+      "timestamp_seconds": 18.375,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0019.jpg",
+      "timestamp_seconds": 19.309,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0020.jpg",
+      "timestamp_seconds": 20.177,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0021.jpg",
+      "timestamp_seconds": 20.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0022.jpg",
+      "timestamp_seconds": 21.111,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0023.jpg",
+      "timestamp_seconds": 22.078,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0024.jpg",
+      "timestamp_seconds": 22.913,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0025.jpg",
+      "timestamp_seconds": 23.78,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_57/frame_0026.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 26,
+    "submitted_frame_count": 26,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_57.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_57.json",
+    "response_text": "The commercial opens on a black screen. It then cuts to an **America Online** logo: a triangular AOL mark above the words “AMERICA Online,” shown against a dark, soft-focus background.\n\nThe next image is a computer screen displaying an AOL interface. The page reads **“Welcome to AOL”** and prominently features a purple box advertising **“NEW VERSION 6.0”** with **“DOWNLOAD NOW.”** A vertical left-side menu shows AOL-style icons and labels such as **“You’ve Got Mail,” “You’ve Got Pictures,”** and **“My Calendar.”** The right side contains multiple news or feature listings, though much of the small text is not fully legible.\n\nThe commercial then moves into a home setting. A woman and a young boy are at a desktop computer in a colorful child’s room. The boy is seated and pointing at the monitor, while the woman stands close beside him, smiling or watching attentively. The screen shows a bright, child-friendly interface.\n\nA close-up follows of a man seated indoors, facing the camera as if giving a testimonial. He wears a light-colored polo shirt. The background is softly blurred.\n\nThe ad cuts to a graphic title card: a large gray **“6.0”** fills the background, with the **America Online** logo layered over it on a black background.\n\nNext, the screen shows an AOL instant messaging window titled **“Send Instant Message.”** The recipient field contains **“SurfSamSurf.”** The message box reads: **“Check out this new AOL 6.0!”** Buttons labeled **“Send”** and **“Available?”** appear below. In the following close-up, an emoticon drop-down menu is open, showing yellow face icons and text emoticons such as **:-), ;-), :-|, :-P, =-O, :-*, >:O, :-D.** The typed message visible behind the menu includes **“Isn’t this cool?”**\n\nThe next frame shows a blue AOL screen with the familiar mailbox icon and the phrase **“You’ve Got Mail.”** Small disclaimer text appears at the bottom: **“Availability may be limited especially during peak usage.”**\n\nA woman is then shown sitting at a computer in a home office or study. She faces slightly toward the camera, with the computer monitor visible to the side. The same small disclaimer text remains at the bottom of the frame.\n\nA close-up of a screen follows, dominated by large red numerals **“24”** on a blue background. The bottom disclaimer still reads: **“Availability may be limited especially during peak usage.”** The surrounding text is only partly visible.\n\nThe large **“6.0 America Online”** graphic title card appears again.\n\nThe commercial then shows an AOL feature screen labeled **“Parental Controls”** with the subtitle **“EMPOWERING PARENTS.”** A section titled **“Custom Controls”** lists bullet points including **“block software downloads,” “restrict chat rooms,” “block e-mail,”** and **“and more…”**\n\nA couple is shown standing together in a bright room near a desktop computer. The man smiles while the woman faces forward. The lighting is warm and domestic, with shutters and a computer visible in the background. This is followed by a teenage boy seated at a computer, looking at the monitor in a warmly lit room.\n\nThe **“6.0 America Online”** title card appears again.\n\nA blonde woman in a red top is shown in close-up, seated indoors, facing the camera. After this, a computer screen shows an AOL **“Buddy List”** window. The list contains multiple screen names with small buddy icons beside them. Some readable names include **“CaseyPete,” “BaileyRJ,” “PageDoc,” “SamHansen,” “ChrisAga,” “AlexDiane,” “SurfSamSurf,” “TaylorDJay,” “SydneyAWeb,” “DevitoD05,”** and **“BaileyJ.”**\n\nA young man is then shown in close-up, seated against a brick wall, looking toward the camera.\n\nThe ad returns to a computer interface close-up. A tilted page header reads **“Welcome”** and below it **“Today on A…”** The visible content includes headings such as **“New Music”** and **“More Features For You,”** with smaller text about listening to clips or downloading band-related content, though some wording is cut off.\n\nThe **“6.0 America Online”** title card appears once more.\n\nThe blonde woman from earlier is shown again, now smiling near a desktop computer. In the next shot, she sits at the computer typing on the keyboard. The room is bright, with white window shutters and plants near the desk. The monitor displays an AOL-style window.\n\nThe sequence then shifts to an abstract graphic: a bright white and aqua glow radiates upward from a set of streaking lines, suggesting a technological or digital transition. Details are stylized and not tied to a specific physical object.\n\nThe final frame returns to the large **“6.0 America Online”** logo on a dark background. White text appears below: **“So easy to use, no wonder it’s #1”** followed by **“1-800-4-ONLINE.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_0681f700191366cf006a1075a3181c81918a2fb36a89d9c653",
+    "usage": {
+      "input_tokens": 6555,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1168,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 7723
+    }
+  },
+  "duration_seconds": 24.917,
+  "created_at": "2026-05-22T15:26:51Z",
+  "error": null
+}

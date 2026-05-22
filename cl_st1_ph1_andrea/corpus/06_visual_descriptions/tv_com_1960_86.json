@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1960_86",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_86",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_86/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_86.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0002.jpg",
+      "timestamp_seconds": 1.758,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0003.jpg",
+      "timestamp_seconds": 2.959,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0004.jpg",
+      "timestamp_seconds": 3.894,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0005.jpg",
+      "timestamp_seconds": 4.494,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0006.jpg",
+      "timestamp_seconds": 6.229,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0007.jpg",
+      "timestamp_seconds": 11.501,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0008.jpg",
+      "timestamp_seconds": 13.169,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_86/frame_0009.jpg",
+      "timestamp_seconds": 27.051,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_86.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_86.json",
+    "response_text": "The commercial begins in near darkness, with only a few bright highlights visible on what appears to be a shiny, narrow object. The object itself is not clearly identifiable in the first frame.\n\nIt then cuts to an extreme close-up of a hand holding or manipulating a thin, reflective metal tool or object. The background remains dark and out of focus. The camera stays very close, emphasizing the hand and the shiny metal surface rather than showing the full context.\n\nNext, a small metallic component is shown in close-up against a blue-toned background. It has a pointed or peaked top and a circular front feature, like a small fitting, cap, or valve. A hand moves near it in the background. The following frame shows the hand passing behind or around this same small metal component, but the exact action is not fully clear from the sampled images.\n\nThe commercial then reveals the product: a one-gallon metal can of DuPont Zerex. The label reads “DU PONT,” “GUARANTEED anti-leak ZEREX,” and “anti-freeze & summer coolant.” The can is centered on a light surface with a cool blue background. A thin vertical object, possibly a rod or tube, stands to the right of the can.\n\nA closer shot focuses on the can’s label, especially the large word “ZEREX.” A metal tool or pointer appears near the left side of the label, directed toward the printed text. The camera crops the can tightly so that only part of the label is visible.\n\nThe sequence continues with an extreme close-up of large black letters on the can, particularly the “R,” “O,” or adjacent lettering in “ZEREX.” Fingers enter the frame and press or rub near the printed letters, suggesting a demonstration on the label surface, though the exact material or object being handled is not clear.\n\nA graphic overlay then appears beside the product label. The left side still shows part of the Zerex can, while the right side shows enlarged dark lettering. Over the blue-tinted area, white text reads: “50% ZEREX SOLUTION CIRCULATING UNDER PRESSURE.”\n\nThe final frame shows two Zerex product containers on a light surface against a blue background: a white plastic jug on the left and a metal can on the right. Both are labeled “DuPont Zerex anti-leak anti-freeze.” At the bottom of the frame, a caption reads: “Guaranteed not to run out on you.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0f7d96b10ffa96ee006a106e188aa0819698127a026f62d752",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 570,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2926
+    }
+  },
+  "duration_seconds": 13.832,
+  "created_at": "2026-05-22T14:54:30Z",
+  "error": null
+}

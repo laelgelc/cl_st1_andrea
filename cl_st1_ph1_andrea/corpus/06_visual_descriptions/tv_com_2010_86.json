@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_2010_86",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_86",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_86/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_86.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0002.jpg",
+      "timestamp_seconds": 0.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0003.jpg",
+      "timestamp_seconds": 4.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0004.jpg",
+      "timestamp_seconds": 16.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0005.jpg",
+      "timestamp_seconds": 18.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0006.jpg",
+      "timestamp_seconds": 19.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0007.jpg",
+      "timestamp_seconds": 25.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0008.jpg",
+      "timestamp_seconds": 31.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0009.jpg",
+      "timestamp_seconds": 42.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0010.jpg",
+      "timestamp_seconds": 48.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0011.jpg",
+      "timestamp_seconds": 50.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0012.jpg",
+      "timestamp_seconds": 54.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0013.jpg",
+      "timestamp_seconds": 56.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0014.jpg",
+      "timestamp_seconds": 56.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0015.jpg",
+      "timestamp_seconds": 58.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_86/frame_0016.jpg",
+      "timestamp_seconds": 58.19,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_86.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_86.json",
+    "response_text": "The commercial begins with a brightly colored food graphic on a yellow background. A burger, fries, and a small cup of sauce sit on a metal tray. Large white text reads “BABY [pepper graphic]S IS BACK,” with a second line reading “BACK BABY BACK BABY BACK.” The pepper graphic appears as part of the branding or slogan. A knife is stuck upright through the burger.\n\nThe screen then cuts to black for several seconds.\n\nAfter the black screen, the setting changes to a modern, upscale house. A middle-aged, closely cropped gray-haired man in a dark striped polo shirt and light shorts is shown from behind outdoors or near a pool/patio area, looking off to the side. The scene moves inside the home, where he walks through a bright living room with modern furniture, large windows, plants, and children’s toys. A red fuzzy object or decoration is visible on a sofa.\n\nThe man continues through the house. A child runs past him in a blurred foreground shot. In another room, large windows show greenery outside; the man stands near a sofa where at least one child is reclining or sitting. He appears to be moving through domestic spaces and looking toward different areas of the home. A later shot shows him from behind walking toward a doorway or exterior area, where a woman-like figure is visible in the distance, though details are unclear. Another shot shows him in or near a hallway/bedroom area, still wearing the polo and shorts.\n\nThe commercial then cuts to the exterior driveway of the modern house. The man now appears in a gray suit, walking toward a dark gray luxury coupe parked outside. Small legal/disclaimer text appears along the bottom of the frame, but it is too small to read clearly. The car’s front end and emblem are visible.\n\nInside the car, a close shot shows the driver’s hand reaching toward or operating the central dashboard controls/display. The view then cuts to the car outside the modern house, shown in profile with the man seated in the driver’s seat. The car remains parked or slowly positioned near the driveway. A close-up through the open driver-side window shows the suited man looking outward with a composed expression.\n\nThe final section becomes a minimalist white title-card sequence. Large blurred black or gray letters move across the screen, resolving into small centered text. The clearest final text reads: “THE FIRST EVER ELR.” The last frame again shows oversized blurred letters, with only parts of “ELR” visible."
+  },
+  "api_metadata": {
+    "response_id": "resp_07ea3ad5f423285b006a1078b8c7dc8194b50e773f84705fb3",
+    "usage": {
+      "input_tokens": 3157,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 943,
+      "output_tokens_details": {
+        "reasoning_tokens": 436
+      },
+      "total_tokens": 4100
+    }
+  },
+  "duration_seconds": 25.469,
+  "created_at": "2026-05-22T15:40:02Z",
+  "error": null
+}

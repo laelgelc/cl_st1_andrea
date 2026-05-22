@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_2000_48",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_48",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_48/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_48.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0002.jpg",
+      "timestamp_seconds": 0.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0003.jpg",
+      "timestamp_seconds": 3.326,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0004.jpg",
+      "timestamp_seconds": 5.495,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0005.jpg",
+      "timestamp_seconds": 6.763,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0006.jpg",
+      "timestamp_seconds": 7.898,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0007.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0008.jpg",
+      "timestamp_seconds": 12.235,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0009.jpg",
+      "timestamp_seconds": 13.203,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0010.jpg",
+      "timestamp_seconds": 14.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0011.jpg",
+      "timestamp_seconds": 15.605,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0012.jpg",
+      "timestamp_seconds": 17.04,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0013.jpg",
+      "timestamp_seconds": 20.477,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0014.jpg",
+      "timestamp_seconds": 21.678,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0015.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0016.jpg",
+      "timestamp_seconds": 25.515,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_48/frame_0017.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_48.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_48.json",
+    "response_text": "The commercial begins with a dark, scenic landscape shot showing a **“Pedigree”** logo over hills and sky. This image is visually distinct from the later Sprint-branded material.\n\nIt then cuts abruptly to a bright, cold-looking outdoor sports facility under a roof. A man in a red-and-white athletic jacket marked **“Sprint PCS”** is kneeling on the ice or ground, working on a low sled-like piece of equipment. Sports bags and gear lie in the foreground, while several people stand in the background near a small building or booth.\n\nA close-up shows a white flip-style mobile phone lying among dark, snowy gear. The phone is open, but its screen is not yet readable. The commercial cuts to a close-up of the man in the red Sprint PCS jacket; he looks upward or off to the side with a serious or concerned expression.\n\nThe next shots return to the sled/equipment. A hand works near red-and-white icy surfaces and metal rails, with visible snow or ice crystals. The man continues adjusting the equipment while kneeling, suggesting preparation for a winter sport event or run.\n\nThe commercial then intercuts to a supermarket aisle. Two women walk toward the camera, one wearing a black top and the other a light green zip-up jacket. Their facial expressions and gestures look animated or intense, but the reason is not visible from the frames alone.\n\nNext, the setting shifts to a snowy town street. A group of people in winter clothing face the camera. In the center is a man in a dark suit, surrounded by older and younger people wearing hats, parkas, and ski-style clothing. A wider shot shows a larger crowd standing together on a snow-covered street between buildings.\n\nThe scene cuts back to the sports facility, where the man in the red Sprint PCS jacket is still kneeling over the sled-like apparatus. Other people and equipment are visible in the background, reinforcing the preparation setting.\n\nAnother supermarket shot shows the man in the red jacket near a shopping cart with a small child seated in it. A woman stands nearby at a refrigerated display. The supermarket has checkered flooring and long shelves of products.\n\nA quieter interview-style shot follows in a warmly lit kitchen. An older man sits facing the camera. On-screen text identifies **“Jim Shea Sr.”** with **“1964 Nordic Combined”** beneath it. Another label reads **“Jack Shea”** with **“1932 Speed Skating”** beneath it, positioned near an empty chair or off to the side.\n\nThe commercial returns again to the winter sports facility. Small white legal/disclaimer text appears along the bottom, including visible wording such as **“Sprint PCS Ringers & More…”** and references to **select phones**, **custom cell**, and the **Sprint PCS Network**, though not all text is fully legible. The man continues working over the sled.\n\nA close-up of the white flip phone now clearly shows the screen reading **“Missed call.”** The phone is surrounded by dark snowy gear, and the small legal text remains overlaid at the bottom.\n\nThe man in the red Sprint PCS jacket looks up again from the equipment, with other people behind him preparing or standing near similar winter sports gear. The legal text remains visible at the bottom.\n\nThe image then fades to black. The final frame displays the **Sprint** logo with a magenta diamond-like icon on a black background. Beneath it are the website **“www.sprintpcs.com”** and the phone number **“1 800 480 4PCS.”**"
+  },
+  "api_metadata": {
+    "response_id": "resp_05cc90c1e4e8cf4e006a107571154c819d8271e8524aaaa622",
+    "usage": {
+      "input_tokens": 4655,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1239,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5894
+    }
+  },
+  "duration_seconds": 34.226,
+  "created_at": "2026-05-22T15:26:11Z",
+  "error": null
+}

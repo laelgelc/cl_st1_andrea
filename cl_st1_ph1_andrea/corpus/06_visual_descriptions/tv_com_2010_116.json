@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2010_116",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_116",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_116/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_116.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0002.jpg",
+      "timestamp_seconds": 2.092,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0003.jpg",
+      "timestamp_seconds": 3.793,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0004.jpg",
+      "timestamp_seconds": 6.196,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0005.jpg",
+      "timestamp_seconds": 8.965,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0006.jpg",
+      "timestamp_seconds": 11.368,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0007.jpg",
+      "timestamp_seconds": 12.168,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0008.jpg",
+      "timestamp_seconds": 13.203,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_116/frame_0009.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_116.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_116.json",
+    "response_text": "The commercial opens in a bright, softly lit home interior. A woman with short curly dark hair is seated in a pale green chair, wearing a coral-pink short-sleeved blouse. She looks downward with a calm, slight smile. The background includes light-colored walls, framed pictures, and a shelf, giving the setting a clean domestic atmosphere.\n\nThe camera cuts closer to the woman’s upper body and face, partially cropped so that only part of her face, shoulder, and blouse are visible. She appears to be looking down toward her arms or hands, though the exact object of her attention is not fully visible in this close framing.\n\nA product shot follows: a hand holds a white jar labeled “NEW GOLD BOND ULTIMATE rough & bumpy skin DAILY THERAPY CREAM.” The jar has a white body and a gold-toned lid. The text “8 intensive moisturizers” is visible near the top of the label. The background is blurred, with the woman’s blue jeans or lap area faintly visible behind the jar.\n\nThe commercial then shows a close-up of the woman’s upper arm. She rubs or smooths her hand over the skin of her arm, suggesting application or checking the texture of the skin. A small “GOLD BOND ULTIMATE” logo appears in the lower right corner of the frame.\n\nNext, the woman is shown again seated in the chair, blurred in the background, while large centered text appears in front of her: “90% saw smoother, softer skin in just 1 week.” Small fine print appears at the bottom, reading: “Based on clinical study of rough & bumpy skin sufferers.” The woman’s figure remains visible behind the text but is out of focus.\n\nAnother close-up shows the woman’s shoulder and upper arm area. Her hand points to or touches the skin on the upper arm. The same small fine print remains at the bottom: “Based on clinical study of rough & bumpy skin sufferers.”\n\nThe camera returns to a wider shot of the woman in the chair. She looks down at her forearm and rubs it with her opposite hand. She appears pleased or satisfied, with a gentle smile. A small table is visible to the side, and the soft home interior remains in the background.\n\nThe final product display appears on a plain white background. A jar of “GOLD BOND ULTIMATE rough & bumpy skin DAILY THERAPY CREAM” is shown prominently on the right, with the gold lid and white container clearly visible. On the left, large text reads “Ultimate lotion.” In the last frame, a small pale lotion-like graphic or smear appears near the text, partially overlapping the word area, while the product jar remains centered on the right."
+  },
+  "api_metadata": {
+    "response_id": "resp_012a55a214d9f938006a10795af22c8197b4c51c79af3d2bf2",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 644,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2478
+    }
+  },
+  "duration_seconds": 14.418,
+  "created_at": "2026-05-22T15:42:33Z",
+  "error": null
+}

@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_2000_87",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_87",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_87/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_87.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0002.jpg",
+      "timestamp_seconds": 2.192,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0003.jpg",
+      "timestamp_seconds": 3.56,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0004.jpg",
+      "timestamp_seconds": 4.794,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0005.jpg",
+      "timestamp_seconds": 6.496,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0006.jpg",
+      "timestamp_seconds": 8.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0007.jpg",
+      "timestamp_seconds": 10.834,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0008.jpg",
+      "timestamp_seconds": 12.202,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_87/frame_0009.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_87.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_87.json",
+    "response_text": "The commercial opens on a nearly black screen, with a small red heart-shaped watermark/logo visible in the lower-right corner.\n\nIt then cuts to a bright, softly lit interior with sheer white curtains and a polished wooden floor. A light-skinned woman with shoulder-length reddish-brown hair sits on a bench, wearing a pale/light gray or white sleeveless dress. She is barefoot, leaning forward with one elbow on her knee and one hand near her hair or face. The setting looks minimal and airy, with cushions on the floor in the background.\n\nThe camera moves to a closer view of her bare legs as she sits on the bench. Her feet are extended toward the reflective wooden floor, and the floor reflection emphasizes the smoothness and shine of the scene. The background remains bright with white curtains and soft furnishings.\n\nA close-up follows of the woman’s shoulder and upper arm area, partly framing her face at the edge of the shot. The focus is on her skin, with the same pale curtain background.\n\nThe product is then shown: two upright tubes of Jergens “natural glow” “daily moisturizer” placed side by side against the white curtain backdrop. The tubes are beige/tan with teal Jergens logos, and they appear to represent two shade or formula variations, though the smaller text is not fully readable.\n\nNext, there is a close-up of the woman’s bare shoulder and upper back as a hand touches or smooths over the upper arm/shoulder area. Small white disclaimer text appears in the upper-right corner; “results may vary” is legible, while the rest is difficult to read clearly.\n\nThe woman is then shown standing near the white curtains, still wearing the light sleeveless dress. She looks downward with a calm expression, one hand near or touching the curtain or wall. Her hair is styled smooth and side-parted, and the lighting remains soft and bright.\n\nThe image briefly becomes an abstract bright curtain background with no person or product visible, maintaining the white, luminous visual style.\n\nThe final frame shows the Jergens logo centered over the pale curtain background, with the text “GLOWING SKIN IS IN” underneath. The small red heart-shaped watermark/logo remains in the lower-right corner."
+  },
+  "api_metadata": {
+    "response_id": "resp_0465e6becabcd6ca006a10763da74481a0ab6d6c10e40481f3",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 787,
+      "output_tokens_details": {
+        "reasoning_tokens": 335
+      },
+      "total_tokens": 2621
+    }
+  },
+  "duration_seconds": 19.431,
+  "created_at": "2026-05-22T15:29:20Z",
+  "error": null
+}

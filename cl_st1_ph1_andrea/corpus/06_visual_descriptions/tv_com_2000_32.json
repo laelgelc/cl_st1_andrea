@@ -1,0 +1,165 @@
+{
+  "commercial_id": "tv_com_2000_32",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_32",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_32/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_32.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0002.jpg",
+      "timestamp_seconds": 7.764,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0003.jpg",
+      "timestamp_seconds": 10.567,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0004.jpg",
+      "timestamp_seconds": 12.302,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0005.jpg",
+      "timestamp_seconds": 12.836,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0006.jpg",
+      "timestamp_seconds": 13.937,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0007.jpg",
+      "timestamp_seconds": 15.238,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0008.jpg",
+      "timestamp_seconds": 16.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0009.jpg",
+      "timestamp_seconds": 16.806,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0010.jpg",
+      "timestamp_seconds": 17.541,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0011.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0012.jpg",
+      "timestamp_seconds": 22.812,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0013.jpg",
+      "timestamp_seconds": 24.047,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0014.jpg",
+      "timestamp_seconds": 27.984,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_32/frame_0015.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 15,
+    "submitted_frame_count": 15,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_32.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_32.json",
+    "response_text": "The commercial opens on a nearly black screen with only a small red heart-shaped watermark/logo visible at the lower right.\n\nIt then cuts to a dimly lit stage-like setting. A woman with long dark hair walks or poses toward the camera wearing a light blue bra, with blurred warm lights behind her. The visual style is glossy and high-contrast, with strong backlighting and soft focus.\n\nThe next shots show models posing in lingerie on a set made of large illuminated panels and oversized letter-like structures. One woman in a pale pink bra and dark bottoms stands in front of a wall of small bright bulbs, adjusting or holding the waistband area. Another shot shows a woman in light blue lingerie leaning and moving her body beside tall lit structures, her hair thrown upward by motion or wind.\n\nThe camera uses dramatic low angles and close-ups. A woman’s face and hair are shown from below under overhead stage lights, followed by a close-up of a woman in a blue bra turning her head over her shoulder in front of a dotted light wall. A wider shot reveals the full stage: large vertical illuminated letter forms, spotlights shining from above, and a glossy reflective floor. A model in light blue lingerie poses in the center.\n\nAnother woman appears in a white bra beside a vertical panel with circular light fixtures or bulb housings, one arm raised. The montage continues with a woman in a pink bra posing in front of bright diagonal light panels, then a close-up of a blonde woman in a blue bra holding or adjusting both shoulder straps.\n\nA backlit shot shows a figure bent forward beneath a bright overhead spotlight, making the body mostly silhouetted and the background dark. The next wide shot returns to the reflective stage, with a model in blue lingerie standing between the large illuminated structures, hands near her head in a pose.\n\nNear the end, a woman in a pink bra is shown against a dark background, looking sideways. The commercial then cuts to a graphic/stage shot with large illuminated text-like letters. The visible wording appears to read “DO YOU” above or beside “IPEX,” though the exact layout is stylized with striped light patterns. The final frame shows bright vertical pyrotechnic-like spark fountains or intense light bursts in front of the large letters, partially obscuring them, while the red heart-shaped watermark remains at the lower right."
+  },
+  "api_metadata": {
+    "response_id": "resp_098bbdb28a571148006a10750bad5081a19c7e814c00f0a297",
+    "usage": {
+      "input_tokens": 2968,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 782,
+      "output_tokens_details": {
+        "reasoning_tokens": 307
+      },
+      "total_tokens": 3750
+    }
+  },
+  "duration_seconds": 20.838,
+  "created_at": "2026-05-22T15:24:16Z",
+  "error": null
+}

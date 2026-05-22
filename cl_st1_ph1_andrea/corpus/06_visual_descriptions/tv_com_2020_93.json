@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_2020_93",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_93",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_93/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_93.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0002.jpg",
+      "timestamp_seconds": 2.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0003.jpg",
+      "timestamp_seconds": 5.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0004.jpg",
+      "timestamp_seconds": 6.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0005.jpg",
+      "timestamp_seconds": 7.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0006.jpg",
+      "timestamp_seconds": 9.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0007.jpg",
+      "timestamp_seconds": 11.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0008.jpg",
+      "timestamp_seconds": 12.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0009.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0010.jpg",
+      "timestamp_seconds": 14.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_93/frame_0011.jpg",
+      "timestamp_seconds": 14.523,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_93.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_93.json",
+    "response_text": "The commercial opens on a solid red screen with the Target bullseye logo centered in white and red.\n\nIt then cuts to a doorway scene: a large Target shopping bag with red handles and a red-and-white bullseye pattern sits on the floor just inside or near an open door. The bag is filled with packaged items, including what look like household or grocery products. A person’s legs and shoes are partly visible behind it, but the person’s upper body is not shown. Small fine-print text appears along the bottom, but it is too small to read clearly.\n\nNext, a tablet is shown in someone’s hands. On the tablet screen is a Target webpage or app interface with a large “order pickup” graphic and a red button beneath it. The Target branding appears in the interface, including the red header and logo.\n\nThe scene then widens to a living room. An adult man and a young girl sit together on a couch, looking at the tablet. Both appear relaxed and smiling. The background includes a gray sofa, pillows, and warm-toned decor.\n\nThe commercial cuts to an in-store or pickup-counter setting with a red Target-branded wall behind the counter. A Target employee wearing a red top and a face mask stands behind the counter with a Target bullseye-patterned shopping bag. A man and a young girl, both also wearing face masks, stand on the customer side. Large white on-screen text reads “free order pickup.” The background wall includes oversized “order pickup” branding.\n\nThe next scene shows the open trunk of a vehicle. A Target employee with long red hair, wearing a red top, places or adjustss two large red-and-white bullseye Target bags in the trunk. The bags are filled with groceries or household items. White on-screen text reads “free drive up.”\n\nA brief interior car shot follows. A child wearing an orange knit beanie and a seatbelt sits in the back seat, seen from the side/back, looking toward the window. The lighting suggests evening or a dimly lit setting. Small fine-print text appears at the bottom but is not readable in the frame.\n\nThe screen then turns solid red.\n\nNear the end, a red screen displays a circular icon showing a car with a Target bag or pickup symbol, with the words “drive up” in white below it.\n\nThe final frames show a graphic transition or zoom into the Target bullseye: a large white circle fills much of the red screen, then resolves into the red-and-white Target bullseye logo centered on a red background."
+  },
+  "api_metadata": {
+    "response_id": "resp_02b68512cfd59c1d006a107b37a0448195b9544c1369b51a4f",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 574,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 2786
+    }
+  },
+  "duration_seconds": 17.654,
+  "created_at": "2026-05-22T15:50:33Z",
+  "error": null
+}

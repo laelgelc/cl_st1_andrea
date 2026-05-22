@@ -1,0 +1,74 @@
+{
+  "commercial_id": "tv_com_1950_41",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_41",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_41/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_41.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_41/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_41/frame_0002.jpg",
+      "timestamp_seconds": 78.035,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 2,
+    "submitted_frame_count": 2,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_41.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_41.json",
+    "response_text": "The commercial is shown in black and white on a studio-style set.\n\nAt the beginning, two men in suits are visible. One man stands partly cut off on the left side of the frame, wearing a light-colored suit. Another man stands nearer the center-right, wearing a dark suit and tie, smiling toward the camera while holding papers or cards in both hands. Behind them is a decorative lattice panel with an oval sign reading “Revlon.” To the right is a paneled wall or set piece with vertical decorative elements.\n\nBy the final sampled frame, the shot has moved closer to the man in the dark suit. The other man is no longer visible. The Revlon sign remains visible in the background on the left. The man in the dark suit faces slightly toward the camera and holds up a small, dark, slender cylindrical object near his face, as if presenting or demonstrating it. The right side of the background still shows the same set wall with a small vertical object mounted or displayed on it. No additional text besides “Revlon” is visible in the sampled frames."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ad5d35ad6899966006a106ba7170c81918ef970397d289f20",
+    "usage": {
+      "input_tokens": 627,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 964
+    }
+  },
+  "duration_seconds": 9.661,
+  "created_at": "2026-05-22T14:44:00Z",
+  "error": null
+}

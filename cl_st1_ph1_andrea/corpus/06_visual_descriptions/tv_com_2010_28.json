@@ -1,0 +1,214 @@
+{
+  "commercial_id": "tv_com_2010_28",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_28",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_28/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_28.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0002.jpg",
+      "timestamp_seconds": 1.658,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0003.jpg",
+      "timestamp_seconds": 2.409,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0004.jpg",
+      "timestamp_seconds": 3.076,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0005.jpg",
+      "timestamp_seconds": 4.444,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0006.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0007.jpg",
+      "timestamp_seconds": 8.748,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0008.jpg",
+      "timestamp_seconds": 9.95,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0009.jpg",
+      "timestamp_seconds": 12.953,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0010.jpg",
+      "timestamp_seconds": 13.62,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0011.jpg",
+      "timestamp_seconds": 14.204,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0012.jpg",
+      "timestamp_seconds": 16.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0013.jpg",
+      "timestamp_seconds": 17.34,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0014.jpg",
+      "timestamp_seconds": 18.291,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0015.jpg",
+      "timestamp_seconds": 20.126,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0016.jpg",
+      "timestamp_seconds": 20.377,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0017.jpg",
+      "timestamp_seconds": 20.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0018.jpg",
+      "timestamp_seconds": 20.877,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0019.jpg",
+      "timestamp_seconds": 21.094,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0020.jpg",
+      "timestamp_seconds": 21.344,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0021.jpg",
+      "timestamp_seconds": 24.681,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_28/frame_0022.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 22,
+    "submitted_frame_count": 22,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_28.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_28.json",
+    "response_text": "The commercial unfolds as a rapid montage of people using a smartphone to capture and share images or video, followed by product and offer screens.\n\n1. It opens with a dimly lit close-up of a woman’s face, apparently seated inside a vehicle. Only part of her face is illuminated, and she looks off to the side.\n\n2. The scene cuts to a kitchen or food-preparation area. A woman in a white chef-style jacket, with a red head covering, looks downward with a slight smile. Shelves, jars, and kitchen equipment are visible behind her.\n\n3. A young woman outdoors holds a skateboard horizontally behind her head and shoulders. She stands in front of a skate-park-like area, with a pink wall and trees in the background.\n\n4. The same young woman holds up a smartphone toward the camera. The phone screen shows a vertical video of someone skateboarding in a bowl or skate park. The woman holding the phone is blurred in the background.\n\n5. Another person is shown from behind holding a smartphone horizontally. On the phone screen, a skateboarding scene is being recorded or viewed through a camera interface.\n\n6. A man in a dark hat holds up a smartphone in a warmly lit indoor setting. The phone screen shows a clearer, dramatic portrait of a seated man wearing a hat and holding what appears to be a guitar or similar instrument. A small “LG V30” mark appears at the upper left of the frame.\n\n7. A close-up shows a smartphone settings screen. The visible interface includes “Hi-Fi Quad DAC” and audio controls such as sliders and circular dial graphics. A hand is touching the screen.\n\n8. A man wearing large headphones sits indoors near a window, looking down at a phone. He wears a black leather jacket and appears focused on the device.\n\n9. The commercial cuts to a club-like or performance setting with bright red and blue neon light beams. A bald person in a sleeveless top turns and smiles toward the camera.\n\n10. A person in a white shirt and bow tie holds up a smartphone. The phone screen displays the neon-lit dancer from the previous shot, while the holder remains blurred behind it.\n\n11. A phone is held horizontally in camera mode. On the screen, a person stands in front of a colorful wall or doorway. Camera controls and vertical adjustment sliders are visible on the interface.\n\n12. Back in the kitchen, the chef holds a phone up toward the camera. The screen appears fogged or covered by steam, with a finger or hand shape visible through the condensation.\n\n13. The chef looks down at the phone in the kitchen, standing near shelves with jars and ingredients.\n\n14. A horizontal phone camera view shows several small baked goods, possibly cupcakes or soufflés, arranged in white cups. The camera interface is visible around the image.\n\n15. Another shot shows the person in the white shirt and bow tie holding up a phone. The phone screen displays a close-up of the bald person from the neon-lit scene.\n\n16. Inside a dark vehicle, a person holds up a phone showing a smiling close-up of a woman’s face on the screen. Another woman is visible behind the phone in the car, but she is less clearly lit.\n\n17. The skateboarder holds up a phone outdoors. The phone screen shows a close-up face, while the skateboarder smiles in the blurred background.\n\n18. The man in the dark hat holds up a phone again. This time the phone screen shows a close-up of a man’s face in strong, dramatic lighting.\n\n19. The chef holds up a phone in the kitchen. The phone screen shows a bright, smiling portrait of the chef herself, while she is blurred in the background.\n\n20. The montage transitions to a clean product shot: a smartphone floats against a dark background, showing a colorful “V”-shaped wallpaper and the time “9:00.” Small disclaimer text appears along the bottom but is too small to read clearly in full.\n\n21. A brighter product screen shows two LG phones, one front-facing and one rear-facing, beside large text reading “LG V30+.” Additional small legal text appears along the bottom.\n\n22. The final frame is a white offer screen. It shows two LG V30+ phones and large text: “LG V30+” and “$20/mo when you lease an LG V30+.” Smaller text reads: “PLUS, Get a Google Home or LG TONE Active+ on us with lease or purchase.” The Sprint logo appears beneath the offer, with fine-print legal text along the bottom."
+  },
+  "api_metadata": {
+    "response_id": "resp_0e140d9b76eb1bdb006a10776805d8819ca445fec88db31348",
+    "usage": {
+      "input_tokens": 4291,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1422,
+      "output_tokens_details": {
+        "reasoning_tokens": 495
+      },
+      "total_tokens": 5713
+    }
+  },
+  "duration_seconds": 30.781,
+  "created_at": "2026-05-22T15:34:30Z",
+  "error": null
+}

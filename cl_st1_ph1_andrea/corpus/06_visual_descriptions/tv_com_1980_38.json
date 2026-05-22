@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1980_38",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_38",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_38/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_38.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0002.jpg",
+      "timestamp_seconds": 3.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0003.jpg",
+      "timestamp_seconds": 7.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0004.jpg",
+      "timestamp_seconds": 10.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0005.jpg",
+      "timestamp_seconds": 13.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0006.jpg",
+      "timestamp_seconds": 15.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0007.jpg",
+      "timestamp_seconds": 16.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0008.jpg",
+      "timestamp_seconds": 17.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0009.jpg",
+      "timestamp_seconds": 20.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0010.jpg",
+      "timestamp_seconds": 22.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0011.jpg",
+      "timestamp_seconds": 23.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0012.jpg",
+      "timestamp_seconds": 27.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1980_38/frame_0013.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_38.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_38.json",
+    "response_text": "The commercial opens with a very dark outdoor-looking scene. A white picket fence is faintly visible in the background, with indistinct plants or decorations in front. A human figure or large object appears near the fence, but the details are too underexposed to identify clearly.\n\nIt then cuts to a brightly colored outdoor party scene. A large colorful dragon or lion-like costume/decoration fills the frame, with green, orange, red, and fringe-like materials. The setting appears to be a yard with party decorations and a white fence in the background.\n\nNext, the commercial shows a birthday-party setting. A smiling adult woman leans toward a young blond child. Behind them are party decorations and large letters spelling part of “BIRTH…” on a wall or backdrop, suggesting a birthday banner. A cake or decorated table is partly visible in the foreground.\n\nThe scene changes to a clean product-logo image: a large “CLOROX 2” logo appears centered on a white surface, framed by grass and flowers along the bottom and foliage along the top. The logo is inside a diamond shape with orange/yellow edging.\n\nA product shot follows. A hand holds a blue box labeled “CLOROX 2” against a plain blue background. The box has the same diamond-shaped label design, with some smaller side text that is partly visible but not fully clear.\n\nThe ad then moves into a product-demonstration image. White powder or granules are being poured into a clear glass vessel marked with the “CLOROX 2” logo. The background remains blue, and the glass vessel has a handle or spout-like extension.\n\nA close-up of fabric appears next. A white garment or cloth lies over colorful items, possibly laundry. The fabric looks wet or covered with suds/liquid, suggesting a washing or cleaning demonstration, though the exact action is not fully visible from the sampled frame.\n\nThe commercial then shows a laundry room. A woman stands at or beside a washing machine, handling white fabric. On the counter in front of her is a blue “CLOROX 2” box. A laundry basket filled with folded colorful clothes sits nearby, along with additional clothing on the counter.\n\nThe visual sequence returns to outdoor, bright lifestyle imagery. A young girl in a purple dress runs or walks through a field of flowers. The background is green and softly lit, with many pastel-colored blossoms in the foreground.\n\nAnother party close-up follows. An adult woman smiles closely at a blond child, who is also smiling. A decorated birthday cake with small candles is visible at the bottom of the frame. The mood is visually warm and celebratory.\n\nThe next outdoor party scene shows children in playful costumes or dress-up clothing. One child in front wears a red hat and red/striped outfit, while another child behind wears darker clothing and a hat. Balloons, flowers, and a white picket fence appear in the background.\n\nThe commercial ends with a final product packshot against a bright sky with clouds. A large blue “CLOROX 2” box stands on the left, and a blue jug labeled “LIQUID CLOROX 2” stands on the right. The last frame remains on these two products, with the box and liquid bottle prominently displayed."
+  },
+  "api_metadata": {
+    "response_id": "resp_0d23d47a6080a9b3006a1070fb8764819fa80ca8a54da4dcfa",
+    "usage": {
+      "input_tokens": 3344,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1020,
+      "output_tokens_details": {
+        "reasoning_tokens": 354
+      },
+      "total_tokens": 4364
+    }
+  },
+  "duration_seconds": 26.79,
+  "created_at": "2026-05-22T15:07:02Z",
+  "error": null
+}

@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_1990_2",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_2",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_2/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_2.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0002.jpg",
+      "timestamp_seconds": 0.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0003.jpg",
+      "timestamp_seconds": 4.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0004.jpg",
+      "timestamp_seconds": 6.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0005.jpg",
+      "timestamp_seconds": 8.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0006.jpg",
+      "timestamp_seconds": 8.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0007.jpg",
+      "timestamp_seconds": 9.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0008.jpg",
+      "timestamp_seconds": 10.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0009.jpg",
+      "timestamp_seconds": 11.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0010.jpg",
+      "timestamp_seconds": 11.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0011.jpg",
+      "timestamp_seconds": 16.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0012.jpg",
+      "timestamp_seconds": 19.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0013.jpg",
+      "timestamp_seconds": 20.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0014.jpg",
+      "timestamp_seconds": 20.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0015.jpg",
+      "timestamp_seconds": 20.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0016.jpg",
+      "timestamp_seconds": 21.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0017.jpg",
+      "timestamp_seconds": 21.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0018.jpg",
+      "timestamp_seconds": 21.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0019.jpg",
+      "timestamp_seconds": 22.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0020.jpg",
+      "timestamp_seconds": 22.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0021.jpg",
+      "timestamp_seconds": 22.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0022.jpg",
+      "timestamp_seconds": 22.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0023.jpg",
+      "timestamp_seconds": 22.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0024.jpg",
+      "timestamp_seconds": 23.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0025.jpg",
+      "timestamp_seconds": 23.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0026.jpg",
+      "timestamp_seconds": 23.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0027.jpg",
+      "timestamp_seconds": 27.69,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0028.jpg",
+      "timestamp_seconds": 28.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_2/frame_0029.jpg",
+      "timestamp_seconds": 28.79,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_2.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_2.json",
+    "response_text": "The commercial begins on a black screen with the PlayStation logo centered: the multicolored PlayStation symbol above the word “PlayStation.”\n\nIt then cuts to video game footage. A group of futuristic racing craft or hover bikes are lined up on a desert-like track. A large overhead digital sign reads “SET,” and the camera is positioned behind one racer with a large number “2” on the back of the vehicle. The game environment has orange-brown canyon walls and a bright sky.\n\nThe next gameplay shot shows racers moving along a narrow bridge made of wooden planks suspended over a deep canyon or ravine, with grassy terrain on either side. The race HUD timer is visible in the upper-left corner.\n\nThe game returns to the desert starting area, now with the overhead sign reading “GO!” in large yellow letters. A single racer with the number “2” accelerates forward beneath the sign. Subsequent gameplay shots show multiple hover-bike racers speeding through different environments: a sandy canyon, a close-up of a racer leaning into a turn, a water course with floating markers, and a snowy mountain or cliffside track. An ESRB-style rating icon appears in the lower-left corner during several gameplay shots, though the small text is not fully legible in the frames.\n\nAfter more footage of the “GO!” start screen, the commercial cuts to live action. An elderly white woman with white hair is seated indoors in a dim, warm room. She wears a light cardigan over a pink blouse and holds a PlayStation controller. She appears focused, looking toward the television while manipulating the controller. In a wider shot, the TV screen in front of her shows a man’s face from the game or a game-related screen. The room includes furniture and decorative objects in the background, but details are soft and partially shadowed.\n\nThe commercial then switches to a product-title graphic. A dark oval logo with the text “Jet Moto 2” appears centered. The background alternates rapidly between a pale, cloudy or electric-looking white-gray field with lightning-like streaks and a nearly black background. The same “Jet Moto 2” logo remains centered through these flashes.\n\nThe ad then briefly returns to gameplay at the desert start area. The overhead sign still reads “GO!” A human game character or rider stands beside the number “2” craft, and a helmet or small object lies on the track nearby.\n\nFinally, it cuts back to the elderly woman in the chair. She still holds the controller and looks forward with a serious, concentrated expression. The last frame is very dark and shows only a few small turquoise glowing marks or shapes; the surrounding content is unclear."
+  },
+  "api_metadata": {
+    "response_id": "resp_08c57c6f29bf45b6006a10724098ac81a2859b1a0a3304baa0",
+    "usage": {
+      "input_tokens": 7296,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 590,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 7886
+    }
+  },
+  "duration_seconds": 16.441,
+  "created_at": "2026-05-22T15:12:16Z",
+  "error": null
+}

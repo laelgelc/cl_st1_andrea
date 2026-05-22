@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_2000_75",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_75",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_75/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_75.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0002.jpg",
+      "timestamp_seconds": 3.827,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0003.jpg",
+      "timestamp_seconds": 5.962,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0004.jpg",
+      "timestamp_seconds": 7.964,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0005.jpg",
+      "timestamp_seconds": 9.766,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0006.jpg",
+      "timestamp_seconds": 11.902,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0007.jpg",
+      "timestamp_seconds": 14.038,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_75/frame_0008.jpg",
+      "timestamp_seconds": 14.838,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_75.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_75.json",
+    "response_text": "The commercial is set against a bright, plain white studio background with a reflective floor in some later shots.\n\n- **Opening frame:** A tall, narrow, upright soft object or pillow-like figure stands on the left. It has a printed image of a person with crossed arms on it. On the far right edge, only part of a person is visible, wearing green clothing and carrying or holding a reddish/pink object. The scene is sparse and white.\n\n- **Bathroom/sink sequence:** The setting changes to a white sink or bathtub area with shiny chrome taps and a rubber duck nearby. A hand presses a bright green sponge or cloth onto the white surface near the drain and faucet. Small white text appears at the bottom: **“Full strength used on lab tests.”** The hand is shown scrubbing or wiping the surface.\n\n- **Presenter/product close-up:** A woman with braided hair appears in close-up against the white background. She wears green clothing and large green leaf-shaped earrings. She holds up an open brown/orange bottle with a green label reading **“Pine”** / **“Pine Sol”** partially visible. Her facial expression looks serious or emphatic.\n\n- **Presenter with props:** The camera cuts wider. The same woman stands facing the viewer, holding the Pine-Sol bottle in one hand and a red/pink spray bottle or cleaning tool in the other. The upright printed soft figure from the opening is now lying on its side behind her to the left.\n\n- **Product pack shot:** Two large Pine-Sol products dominate the left side: a yellow spray bottle with a trigger and a brown/orange liquid bottle with a green label. The labels read **“Pine Sol.”** The woman appears much smaller to the right, standing beside the oversized product images.\n\n- **End card:** The products remain large on the left. Black headline text appears above them: **“The Smell of Clean.”** The woman on the right raises both arms upward while holding the red/pink item in one hand. Her pose becomes celebratory or triumphant.\n\n- **Final frame:** The same end-card composition remains: the Pine-Sol spray bottle and liquid bottle on the left, the text **“The Smell of Clean.”** above, and the woman on the right with both arms lifted. The reflective white floor shows faint reflections of the products and figure."
+  },
+  "api_metadata": {
+    "response_id": "resp_09375ba6f53591bd006a1075fee1b481a094fd2cc0dd8819d0",
+    "usage": {
+      "input_tokens": 2261,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 581,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2842
+    }
+  },
+  "duration_seconds": 15.577,
+  "created_at": "2026-05-22T15:28:14Z",
+  "error": null
+}

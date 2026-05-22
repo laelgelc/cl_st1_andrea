@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_18",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_18",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_18/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_18.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0002.jpg",
+      "timestamp_seconds": 6.029,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0003.jpg",
+      "timestamp_seconds": 8.265,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0004.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0005.jpg",
+      "timestamp_seconds": 11.001,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0006.jpg",
+      "timestamp_seconds": 12.636,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0007.jpg",
+      "timestamp_seconds": 14.037,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0008.jpg",
+      "timestamp_seconds": 15.372,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0009.jpg",
+      "timestamp_seconds": 17.707,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0010.jpg",
+      "timestamp_seconds": 18.675,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0011.jpg",
+      "timestamp_seconds": 19.476,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0012.jpg",
+      "timestamp_seconds": 20.844,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0013.jpg",
+      "timestamp_seconds": 22.846,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0014.jpg",
+      "timestamp_seconds": 24.114,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0015.jpg",
+      "timestamp_seconds": 26.349,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0016.jpg",
+      "timestamp_seconds": 27.45,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0017.jpg",
+      "timestamp_seconds": 28.518,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0018.jpg",
+      "timestamp_seconds": 31.721,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0019.jpg",
+      "timestamp_seconds": 33.957,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0020.jpg",
+      "timestamp_seconds": 35.792,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0021.jpg",
+      "timestamp_seconds": 36.626,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0022.jpg",
+      "timestamp_seconds": 37.661,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0023.jpg",
+      "timestamp_seconds": 40.363,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0024.jpg",
+      "timestamp_seconds": 42.832,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0025.jpg",
+      "timestamp_seconds": 44.467,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0026.jpg",
+      "timestamp_seconds": 46.169,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0027.jpg",
+      "timestamp_seconds": 48.171,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0028.jpg",
+      "timestamp_seconds": 49.639,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0029.jpg",
+      "timestamp_seconds": 52.242,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_18/frame_0030.jpg",
+      "timestamp_seconds": 58.049,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_18.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_18.json",
+    "response_text": "The commercial opens on a plain white screen.\n\nIt then cuts to a close-up of a black smartphone held horizontally in someone’s hand. On the phone screen is a live video image of a baby’s face, with a small inset image of an adult man in the corner, indicating a video call interface. The next shot reveals the man: he is sitting on a bed in a softly lit room, smiling while looking at the phone. He wears a light blue shirt and appears relaxed, with pillows and a bedside lamp behind him.\n\nThe scene shifts to a woman holding a baby close to her while also holding a black phone out in front of them. The Apple logo is visible on the back of the phone. She and the baby look toward the phone’s camera. The following shot returns to the man’s phone screen, now showing the woman and baby together, again with a small inset of the man.\n\nA new sequence begins with a close-up of a graduation cap on a person’s head; the tassel and square mortarboard are visible, but the wearer’s face is not. This cuts to an older couple seated indoors near a bright window. They are looking down at a phone and smiling. The older woman holds the phone while the older man gestures animatedly beside her. Subsequent shots show the phone in their hand, held horizontally, displaying a video-call image of someone in graduation attire. Another close-up of a phone screen shows faces in a video call, and then the older couple are shown again leaning together, smiling at the phone.\n\nThe next scene changes to a dimly lit medical setting. An ultrasound monitor is visible, showing a grayscale ultrasound image. A person’s hand holds a phone near the monitor. The scene cuts to a young man sitting in a darker room, smiling as he holds up a black phone. A close-up of his phone shows a rounded image that appears to be part of the video call view, with a small inset of his face. He continues smiling and looking at the phone. The sequence alternates between him and the clinical room: a person in medical scrubs is near a woman lying down, and the phone is held up so the man’s face appears on its screen. The woman lying down smiles, and the man is shown in close-up smiling back at his phone. The medical monitor remains in the background in some shots.\n\nAnother video-call sequence begins with a close-up of a phone screen showing an incoming call interface. A woman’s face is visible on the screen, and the name “Alan” is legible at the top. Red and green buttons appear near the bottom, suggesting decline/accept options, though the smaller text is not fully clear. The next shot shows a man sitting in a bedroom or hotel-like room, smiling and lifting one hand toward the phone as if greeting the caller. The phone screen then shows the woman in a video-call view, with a small inset of the man in the corner. The man continues watching the phone from a short distance, smiling.\n\nThe woman on the phone is then shown in her own room, holding a black smartphone and looking at it. She appears to be seated near a bed, with warm lighting and pillows in the background. On the man’s phone, she raises her hand to her mouth and blows a kiss toward the camera. The woman is shown again holding the phone and touching the screen with one finger, while the man looks down at his phone with a pleased expression.\n\nThe commercial ends on a white screen with a gray Apple logo centered."
+  },
+  "api_metadata": {
+    "response_id": "resp_02081048bb17b45a006a10773cba7881a381f66ac6b6fbc642",
+    "usage": {
+      "input_tokens": 5803,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1032,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 6835
+    }
+  },
+  "duration_seconds": 25.231,
+  "created_at": "2026-05-22T15:33:41Z",
+  "error": null
+}

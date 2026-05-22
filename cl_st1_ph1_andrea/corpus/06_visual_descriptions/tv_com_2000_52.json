@@ -1,0 +1,249 @@
+{
+  "commercial_id": "tv_com_2000_52",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_52",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_52/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_52.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0002.jpg",
+      "timestamp_seconds": 0.732,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0003.jpg",
+      "timestamp_seconds": 1.566,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0004.jpg",
+      "timestamp_seconds": 4.694,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0005.jpg",
+      "timestamp_seconds": 10.742,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0006.jpg",
+      "timestamp_seconds": 11.826,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0007.jpg",
+      "timestamp_seconds": 12.41,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0008.jpg",
+      "timestamp_seconds": 14.037,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0009.jpg",
+      "timestamp_seconds": 15.205,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0010.jpg",
+      "timestamp_seconds": 16.081,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0011.jpg",
+      "timestamp_seconds": 16.247,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0012.jpg",
+      "timestamp_seconds": 16.54,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0013.jpg",
+      "timestamp_seconds": 17.082,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0014.jpg",
+      "timestamp_seconds": 17.457,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0015.jpg",
+      "timestamp_seconds": 18.25,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0016.jpg",
+      "timestamp_seconds": 19.668,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0017.jpg",
+      "timestamp_seconds": 20.669,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0018.jpg",
+      "timestamp_seconds": 21.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0019.jpg",
+      "timestamp_seconds": 21.67,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0020.jpg",
+      "timestamp_seconds": 22.253,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0021.jpg",
+      "timestamp_seconds": 23.296,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0022.jpg",
+      "timestamp_seconds": 23.88,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0023.jpg",
+      "timestamp_seconds": 24.589,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0024.jpg",
+      "timestamp_seconds": 25.465,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0025.jpg",
+      "timestamp_seconds": 26.258,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0026.jpg",
+      "timestamp_seconds": 27.259,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2000_52/frame_0027.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 27,
+    "submitted_frame_count": 27,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_52.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_52.json",
+    "response_text": "The commercial opens on a nearly black frame, then cuts to the exterior of a house at night. A lit upstairs window shows a silhouetted figure inside. The house façade is illuminated with cool blue-purple lighting. A wider exterior shot follows: the house sits on a residential street with trees, a glowing porch light, and a dark car passing in the foreground.\n\nThe scene moves inside the house. A shadowy figure is seen on or near a stair landing/railing, suggesting movement through the house at night. The next shot shows a young blonde woman in a bathroom, wearing a pink or rose-colored top, brushing her teeth in front of a mirror under bright bathroom lights.\n\nThe focus then shifts to a computer screen viewed over someone’s shoulder. A word-processing or messaging window is open, and visible typed text reads something like “When can I see y” or “When can I see y…”; the full line is cut off or unclear. A young dark-haired man is then shown seated at a computer in a dim room, looking at the screen with a serious or attentive expression.\n\nAfter a brief dark transition, the blonde woman appears in close-up with a toothbrush in her mouth, smiling. She is later shown from a low angle at a bathroom sink or counter, reaching forward with both arms, possibly operating a camera or computer-related device. Another close-up shows her smiling brightly, resting her face on her hand.\n\nThe man’s computer screen appears again, showing a desktop with multiple windows. One window contains a small image or video area. The woman is shown again smiling, partly obscured by a dark foreground shape, as if seen through or around a monitor. A close-up of a computer interface follows, with toolbar icons and a pale window; the woman’s smiling face is faintly superimposed or reflected over the interface. The man is then shown smiling at his computer.\n\nThe commercial emphasizes internet browsing/searching visually. A close-up of a web page or search interface shows large text including “Internet” and “Enter the…” with “Search” visible. Another layered shot combines the search text with an image of two people lying on pillows or a bed-like surface; the word “Angel” is visible, though the full text is unclear. A close-up of interface icons shows a magnifying glass labeled “Search” and another label beginning “Favorit…” likely “Favorites,” with a cursor arrow pointing near the search area.\n\nThe man’s monitor then shows an image of two people with angel wings or wing-like shapes behind them, lying side by side. A close-up of a hand on a mouse follows, suggesting clicking or navigating. The man is shown again at his desk, looking downward toward the computer.\n\nA split or layered screen effect shows the blonde woman on the left and typed words on the right. The visible text reads “I like…” and then more clearly “I like this.” The phrase is later overlaid with the man’s face, creating a montage of text and faces. The blonde woman is then shown seated or leaning forward at a computer desk in a bedroom-like room; a bed and lamp are visible behind her. She extends her hands toward the camera, holding a small object that is unclear in the sampled frame.\n\nA mostly white computer screen appears, with only a small image area visible near the upper left. The woman then appears in close-up covering part of her face with her hand, smiling or laughing.\n\nThe final frame is a dark end card with the AT&T globe logo above the text “AT&T.” Beneath it, readable text includes “1-800-WORLDNET” and “www.att.com/worldnet.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0f3d7fb8da4dfd8a006a107587616c81a0850b7d7e1f17361f",
+    "usage": {
+      "input_tokens": 5236,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 819,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 6055
+    }
+  },
+  "duration_seconds": 20.394,
+  "created_at": "2026-05-22T15:26:19Z",
+  "error": null
+}

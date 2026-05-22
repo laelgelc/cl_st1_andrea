@@ -1,0 +1,179 @@
+{
+  "commercial_id": "tv_com_1950_82",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_82",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_82/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_82.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0002.jpg",
+      "timestamp_seconds": 11.034,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0003.jpg",
+      "timestamp_seconds": 14.571,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0004.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0005.jpg",
+      "timestamp_seconds": 18.675,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0006.jpg",
+      "timestamp_seconds": 20.51,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0007.jpg",
+      "timestamp_seconds": 24.848,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0008.jpg",
+      "timestamp_seconds": 25.682,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0009.jpg",
+      "timestamp_seconds": 29.686,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0010.jpg",
+      "timestamp_seconds": 31.855,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0011.jpg",
+      "timestamp_seconds": 33.857,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0012.jpg",
+      "timestamp_seconds": 40.197,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0013.jpg",
+      "timestamp_seconds": 50.106,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0014.jpg",
+      "timestamp_seconds": 52.575,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0015.jpg",
+      "timestamp_seconds": 54.811,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0016.jpg",
+      "timestamp_seconds": 58.448,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1950_82/frame_0017.jpg",
+      "timestamp_seconds": 59.05,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 17,
+    "submitted_frame_count": 17,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_82.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_82.json",
+    "response_text": "The commercial is in black and white and mixes animation, product shots, and brief live-action footage.\n\nIt opens on a black screen. After this, a textured background appears with large hand-lettered text reading “IF YOU WANT SHOES.” The next image combines a large high-top sneaker with the “U.S. Keds” circular logo on the side and partially superimposed lettering that appears to read “WITH LOTS OF PEP,” though the overlap makes parts of the text unclear.\n\nAn animated clown-like mascot appears beside more large lettering: “FOR BOUNCE AND ZOOM.” The mascot wears a spotted outfit, small top hat, large shoes, gloves, and a dark ruffled collar. He holds a small umbrella or cane-like object and is shown in a jaunty pose, as if jumping or dancing.\n\nThe commercial then cuts to a close-up of a black high-top Keds shoe. The circular side label reads “U.S. Keds,” and laces and stitching are clearly visible. This is followed by an animated sports scene: the same mascot stands at a baseball plate holding a bat, with a playing field and distant background signs behind him. A ball is shown flying through the sky among clouds, then a wide landscape shot shows an open field or horizon.\n\nThe mascot later appears resting beside or against a large wooden barrel. His outfit now shows “Kedso” on the front. A live-action scene follows with two boys walking across a grassy park or playing field. One appears older and taller, the other younger; both wear casual clothing and sneakers. In the next shot, the animated mascot stands on top of a barrel at the edge of the field while live-action legs of children or boys run past in the foreground, emphasizing a blend of animation with real footage.\n\nA close-up of the mascot follows. He smiles and gestures with the small umbrella/cane, filling most of the frame against a plain background.\n\nThe commercial then presents a product display: a white high-top sneaker with overlaid script reading “the Shoe of Champions,” and a rectangular “Keds” label across the shoe. A close-up of the inside of the shoe follows, showing printed feature text on the insole area. The visible wording includes “CUSHIONED INSOLE” and “SHOCK-PROOF ARCH CUSHION,” arranged in curved lines inside the shoe.\n\nA dissolve briefly overlays the shoe interior with a live-action shot of the two boys standing outdoors, though the overlap makes details partly indistinct.\n\nThe final shots return to animation. The mascot stands beside a large circular “US RUBBER” logo. He gestures upward with one hand and then tips or lifts his small top hat, smiling toward the viewer. The “US RUBBER” logo remains prominently displayed to his right as the commercial ends."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a70d4cc51ad07ab006a106c329864819c9bd6280323a44d1f",
+    "usage": {
+      "input_tokens": 4332,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 782,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 5114
+    }
+  },
+  "duration_seconds": 20.71,
+  "created_at": "2026-05-22T14:46:31Z",
+  "error": null
+}

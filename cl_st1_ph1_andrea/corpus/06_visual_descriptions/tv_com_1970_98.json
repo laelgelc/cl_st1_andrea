@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_1970_98",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_98",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_98/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_98.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0002.jpg",
+      "timestamp_seconds": 5.646,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0003.jpg",
+      "timestamp_seconds": 6.657,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0004.jpg",
+      "timestamp_seconds": 10.091,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0005.jpg",
+      "timestamp_seconds": 11.708,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0006.jpg",
+      "timestamp_seconds": 15.075,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0007.jpg",
+      "timestamp_seconds": 16.22,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0008.jpg",
+      "timestamp_seconds": 17.264,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0009.jpg",
+      "timestamp_seconds": 20.193,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0010.jpg",
+      "timestamp_seconds": 20.901,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0011.jpg",
+      "timestamp_seconds": 22.079,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0012.jpg",
+      "timestamp_seconds": 29.026,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_98/frame_0013.jpg",
+      "timestamp_seconds": 29.992,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_98.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_98.json",
+    "response_text": "The commercial opens at night or in a dark exterior setting outside a storefront. Through the lit front window, a sign reads “Chicken Lickin’,” with smaller red text below that is partly legible and appears to include “King” and “Pizza.” The number “874” is visible above the door. A dark car is parked or passing in the foreground, partly blocking the lower right of the storefront.\n\nThe scene cuts inside to a restaurant kitchen. A man in a white uniform and a white paper hat with a colored band is holding a black corded telephone receiver to his ear. Stainless-steel kitchen surfaces and equipment are visible behind him. The camera moves closer to his face as he continues using the phone.\n\nA wider kitchen view shows the same worker standing near a large blue trash can or bucket and a bottle labeled “liquid cleaner” or similar. He holds the telephone while looking downward, apparently dealing with cleaning supplies. Fluorescent ceiling lights and shelves with stacked cups or containers are visible.\n\nThe next shot shows him standing near a counter with a large dark window behind him. The window bears reversed red lettering, including “Chicken Lickin’” and “pizza,” indicating it is being viewed from inside the store. He still holds the phone and a cleaning tool handle rests against or near him.\n\nThe commercial then cuts to close-up cleaning action. A hand dips or presses a sponge or cloth into a yellow bucket filled with liquid. Nearby, part of an orange box with the words “Spic Span” is visible. The floor appears dirty or stained around the bucket.\n\nA high-angle shot shows the worker mopping or scrubbing a large, dirty kitchen floor. A yellow bucket and a blue bucket sit on the floor, and a wide patch of white foam or cleaner spreads across the surface. Counters, shelves, and kitchen equipment surround the space. The worker uses a long-handled cleaning tool.\n\nA closer shot focuses on the yellow-handled scrubber moving across the foamy floor. The head of the tool is rectangular and appears to be pushing or scrubbing through the white cleaner.\n\nThe man then bends or moves downward in the kitchen, partly out of frame, with shelves and bottles behind him. The next close-up shows a rectangular scrubbing attachment with a yellow sponge on top and a black base with raised triangular studs underneath.\n\nThe worker is shown again holding the telephone receiver while also holding or looking at the scrubber attachment near his chest. The quilted or metallic kitchen wall behind him is visible.\n\nThe final product shot shows an orange box labeled “Spic Span” on a counter. Large white text beside it reads: “Gets the dirt liquid cleaners leave behind.” A black telephone lies on the counter in front of the box, and stacked plates and kitchen shelves appear in the background. The commercial then cuts to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_009b6c1ec15d40ec006a107026dca481a09f09313c72ab54bc",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 651,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 3241
+    }
+  },
+  "duration_seconds": 18.241,
+  "created_at": "2026-05-22T15:03:20Z",
+  "error": null
+}

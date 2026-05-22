@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2020_107",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_107",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_107/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_107.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0002.jpg",
+      "timestamp_seconds": 1.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0003.jpg",
+      "timestamp_seconds": 4.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0004.jpg",
+      "timestamp_seconds": 5.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0005.jpg",
+      "timestamp_seconds": 7.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0006.jpg",
+      "timestamp_seconds": 8.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0007.jpg",
+      "timestamp_seconds": 9.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0008.jpg",
+      "timestamp_seconds": 10.356,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0009.jpg",
+      "timestamp_seconds": 11.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0010.jpg",
+      "timestamp_seconds": 12.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0011.jpg",
+      "timestamp_seconds": 14.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0012.jpg",
+      "timestamp_seconds": 16.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0013.jpg",
+      "timestamp_seconds": 18.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0014.jpg",
+      "timestamp_seconds": 19.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0015.jpg",
+      "timestamp_seconds": 20.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0016.jpg",
+      "timestamp_seconds": 21.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0017.jpg",
+      "timestamp_seconds": 22.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0018.jpg",
+      "timestamp_seconds": 24.39,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_107/frame_0019.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_107.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_107.json",
+    "response_text": "The commercial unfolds as a fast montage with many cross-dissolves and superimposed images, linking Olympic/Paralympic athletes, winter sports, vehicles, and Honda branding.\n\nAt the start, a woman is shown in close-up at an ice rink or arena. The background is dark, with a visible red “HONDA” sign on the boards behind her. On-screen text identifies her as “MADISON CHOCK” and “U.S. Olympian, Figure Skating.” She looks downward in a composed pose.\n\nThe image dissolves into a layered shot of the same woman over a person in a racing helmet or cockpit environment. The transparent overlap creates the impression of her face and the helmeted driver occupying the same frame.\n\nThe montage then shifts to a winter-sport athlete in a white helmet and winter suit. On-screen text identifies “KAYSHA LOVE” and “U.S. Olympian, Bobsled.” The athlete faces forward, with snowy or icy tones around her.\n\nA snowboarder appears next, moving through a snowy forest setting. The athlete is shown in action on a snowboard, with trees and snowbanks in the background. On-screen text identifies “BRENNA HUCKABY” and “U.S. Paralympian, Para Snowboarding.” The shot is partially overlaid with the previous helmeted image.\n\nThe camera then cuts to a blurred, fast-moving icy or snowy surface, followed by a view of a curved bobsled track or similar ice track with railings. The track curves away into the distance, and the image remains tinted blue-green with translucent overlays.\n\nA woman in glasses and a white lab coat appears in a technology or laboratory-like environment. She faces a transparent digital interface with blue graphics, including panels, circular icons, and a glowing outline of a car. A badge on her coat includes the “HONDA” name. She reaches toward or interacts with the display. The car graphic becomes more prominent, layered over her and the interface.\n\nThe digital vehicle visualization transitions into a real blue car driving on a winding mountain road. For a moment, a glowing blue technical outline of the car’s internal structure is overlaid on the exterior vehicle. The car then appears from the rear on the road, with mountains and dark hills in the background.\n\nThe montage returns to figure skating. Two skaters perform together on an illuminated ice surface. On-screen text identifies “MADISON CHOCK” on the left and “EVAN BATES” on the right, both labeled as “U.S. Olympian, Figure Skating.” They spin and lift in a dramatic pose under bright arena lights.\n\nA brief racing image follows: a close-up of a helmeted or suited driver is overlaid with a race car on a track. The motion is fast and partially transparent, making exact details difficult to distinguish.\n\nLarge white uppercase text then begins to appear over the moving images. First, the word “THIS” appears over a scene that includes a figure in motion and a vehicle. The phrase builds across subsequent frames: “THIS IS,” then “THIS IS THE,” then “THIS IS THE POWER,” and finally “THIS IS THE POWER OF DREAMS.” The text is centered, bold, and white.\n\nBehind the text, different visuals continue: a white SUV or crossover vehicle driving on a road or bridge-like structure, a blue car traveling along a snowy forest road, and more layered winter-sport imagery. The slogan remains centered while the background changes.\n\nNear the end, the screen is divided into multiple vertical panels showing different scenes: on the left, people standing outdoors with one person raising an arm; in the center, a vehicle on a road; and on the right, a winter athlete moving through snow. The centered white text “THIS IS THE POWER OF DREAMS” remains over the panels.\n\nThe final frame cuts to a clean white background with three main elements: on the left, the U.S. flag above the Olympic rings; in the center, the red “HONDA” logo; and on the right, the U.S. flag above the Paralympic symbol. Beneath the Honda logo is small text reading “PROUD PARTNER OF TEAM USA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_03d5a151842ef184006a107b8d857c8191ba7c43a5818533ce",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1025,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 4749
+    }
+  },
+  "duration_seconds": 23.687,
+  "created_at": "2026-05-22T15:52:05Z",
+  "error": null
+}

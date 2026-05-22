@@ -1,0 +1,221 @@
+{
+  "commercial_id": "tv_com_2000_112",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2000_112",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2000_112/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2000_112.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0002.jpg",
+      "timestamp_seconds": 1.791,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0003.jpg",
+      "timestamp_seconds": 2.759,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0004.jpg",
+      "timestamp_seconds": 3.627,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0005.jpg",
+      "timestamp_seconds": 4.561,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0006.jpg",
+      "timestamp_seconds": 5.996,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0007.jpg",
+      "timestamp_seconds": 8.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0008.jpg",
+      "timestamp_seconds": 9.032,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0009.jpg",
+      "timestamp_seconds": 10.133,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0010.jpg",
+      "timestamp_seconds": 11.268,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0011.jpg",
+      "timestamp_seconds": 12.269,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0012.jpg",
+      "timestamp_seconds": 13.37,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0013.jpg",
+      "timestamp_seconds": 14.304,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0014.jpg",
+      "timestamp_seconds": 15.305,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0015.jpg",
+      "timestamp_seconds": 17.641,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0016.jpg",
+      "timestamp_seconds": 18.308,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0017.jpg",
+      "timestamp_seconds": 19.342,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0018.jpg",
+      "timestamp_seconds": 20.677,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0019.jpg",
+      "timestamp_seconds": 22.946,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0020.jpg",
+      "timestamp_seconds": 24.214,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0021.jpg",
+      "timestamp_seconds": 25.181,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0022.jpg",
+      "timestamp_seconds": 27.017,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2000_112/frame_0023.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 23,
+    "submitted_frame_count": 23,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2000_112.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2000_112.json",
+    "response_text": "The commercial opens on a very dark, almost unreadable frame.\n\nIt then cuts to a close view of a blonde woman in rainy weather holding a dark umbrella above her head. The color palette is cold and bluish-gray. She appears to be outdoors near buildings, and the weather looks wet and windy. A brief, dark, blurry close-up follows, with water or rain visible but the subject unclear.\n\nThe scene moves inside a car: the windshield is covered with raindrops, and the wipers are moving across the glass. A driver’s hand is visible on the steering wheel. The dashboard and front interior are shown from the passenger side.\n\nOutside, a dark Volvo station wagon/SUV-type vehicle is parked on a wet street beside buildings. Its headlights and fog lights are on, and the driver-side door is open. A person with an umbrella appears to be getting into or standing beside the car. The street surface reflects the lights because it is wet.\n\nThe setting then shifts from the town to open, rugged landscapes. Aerial or high-angle shots show winding roads in a dark, stormy environment. The Volvo drives along a rain-soaked road, throwing up spray. The surrounding area appears mountainous or coastal, with heavy clouds and mist.\n\nInside the car, the blonde woman is shown in the front passenger seat, while a man drives. Both are seen in profile or three-quarter view through the dim interior light. Their expressions appear serious or focused. No spoken content is visible.\n\nThe vehicle continues across open terrain and along coastal roads. Wide shots show it moving through rain and spray near water and rocky shorelines. The car’s headlights remain on, and the roads look slick. The landscape includes cliffs, waves, rocks, and dark hills under storm clouds.\n\nSeveral shots emphasize the harsh environment: waves crash against dark rocks, sea foam splashes upward, and the sky remains overcast. The Volvo is shown driving along a narrow coastal road bordered by rocks and water. One shot shows it approaching from the front on a wet roadway.\n\nA large, web-like or net-like object appears in the road ahead, covered in moisture. The car approaches it. Close-up shots reveal the object more clearly: it looks like a large sheet or mass of webbing stretched over something low on the ground, with strands clinging to a wheel-like or rounded form. The exact object is unclear from the sampled frames.\n\nThe occupants are shown again through the windshield. The woman looks ahead with a tense, concentrated expression; the male driver is beside her, also focused forward. Rain and reflections on the glass partially obscure their faces.\n\nThe car then appears near a rocky coastal area. In one shot, the front grille or side of the Volvo is close to the camera while, in the distance, a small human figure stands or walks along the shore or road. The scale and identity of the figure are unclear.\n\nMore shots show waves breaking violently over rocks. A small dark object or figure appears amid the water in one distant frame, but it is too unclear to identify. The commercial then cuts to a wide view of a stormy sky over a low horizon and a rocky shoreline.\n\nThe final frame displays centered white text over the storm-cloud background:\n\n“VOLVO”  \n“CROSS COUNTRY”  \n“for life”\n\nAt the bottom, the website “volvocars.com” appears."
+  },
+  "api_metadata": {
+    "response_id": "resp_0682f795cd7cda40006a1076b42bdc81a0abca7b1f57aed862",
+    "usage": {
+      "input_tokens": 6251,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 770,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 7021
+    }
+  },
+  "duration_seconds": 20.251,
+  "created_at": "2026-05-22T15:31:20Z",
+  "error": null
+}

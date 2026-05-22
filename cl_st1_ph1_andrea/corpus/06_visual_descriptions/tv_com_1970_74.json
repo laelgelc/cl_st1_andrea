@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1970_74",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_74",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_74/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_74.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0002.jpg",
+      "timestamp_seconds": 9.912,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0003.jpg",
+      "timestamp_seconds": 12.426,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0004.jpg",
+      "timestamp_seconds": 14.773,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0005.jpg",
+      "timestamp_seconds": 19.097,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0006.jpg",
+      "timestamp_seconds": 21.477,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0007.jpg",
+      "timestamp_seconds": 25.198,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0008.jpg",
+      "timestamp_seconds": 25.298,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0009.jpg",
+      "timestamp_seconds": 29.024,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_74/frame_0010.jpg",
+      "timestamp_seconds": 29.589,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_74.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_74.json",
+    "response_text": "The commercial is an animated sequence with a clean, flat-color cartoon style, using a mostly blue-and-white background.\n\n- At the start, a long-nosed cartoon character lies on or beside a large white surface marked with the black word “Western.” The character appears to be resting on a white pillow, with a blue background behind him. A hand reaches toward a small object or cord near the right edge, but its exact function is not fully clear.\n\n- The same character is then shown reclining with large headphones over his ears. He holds or is connected to a small rectangular device with wires, and one finger is raised. The word “Western” remains visible along the left side on the white surface.\n\n- The scene shifts to a more energetic musical image: a long-haired cartoon guitarist is shown playing an electric guitar. A microphone stand appears on the left, and a small red amplifier or speaker sits near the floor. There is also a semi-transparent figure or visual overlay at the left, suggesting motion or a fantasy/imagination effect, though the exact action is unclear from the sampled frame.\n\n- The commercial returns to the reclining headphone-wearing character, still holding the wired device. The background remains blue, with pale, cloud-like or smoky shapes behind him.\n\n- A close-up shows the long-nosed character’s face and upper body. He wears a collared shirt and dark jacket or suit-like clothing. His expression looks uneasy, skeptical, or concerned, with raised brow lines and a slightly open mouth.\n\n- The character appears again with headphones, partially overlapped with a translucent version of himself or a motion blur. The black “Western” text is large and prominent on the white area behind him.\n\n- The image then shows the character lying back against the pillow with headphones, positioned near the large “Western” lettering. The camera framing or artwork appears to slide so that the word “Western” dominates the left and center of the frame while the character moves partly out of view to the right.\n\n- Near the end, the visual changes to a simple white panel with red text reading “Hawaii” on one line and “Mexico” below it. The words are centered and slightly italic/slanted. A blue triangular area remains at the left edge.\n\n- The final sampled frame is black, indicating the end of the visible clip or a fade/cut to black."
+  },
+  "api_metadata": {
+    "response_id": "resp_0067f5b1159789b4006a106fc9f430819496e0b3f065c24e21",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 798,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 2821
+    }
+  },
+  "duration_seconds": 22.256,
+  "created_at": "2026-05-22T15:01:52Z",
+  "error": null
+}

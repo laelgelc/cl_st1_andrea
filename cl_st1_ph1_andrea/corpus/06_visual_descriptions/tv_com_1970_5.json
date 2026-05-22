@@ -1,0 +1,172 @@
+{
+  "commercial_id": "tv_com_1970_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0002.jpg",
+      "timestamp_seconds": 1.925,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0003.jpg",
+      "timestamp_seconds": 4.294,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0004.jpg",
+      "timestamp_seconds": 11.568,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0005.jpg",
+      "timestamp_seconds": 14.938,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0006.jpg",
+      "timestamp_seconds": 16.339,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0007.jpg",
+      "timestamp_seconds": 17.674,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0008.jpg",
+      "timestamp_seconds": 19.976,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0009.jpg",
+      "timestamp_seconds": 21.044,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0010.jpg",
+      "timestamp_seconds": 21.845,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0011.jpg",
+      "timestamp_seconds": 22.479,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0012.jpg",
+      "timestamp_seconds": 24.147,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0013.jpg",
+      "timestamp_seconds": 25.115,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0014.jpg",
+      "timestamp_seconds": 27.884,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0015.jpg",
+      "timestamp_seconds": 28.852,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1970_5/frame_0016.jpg",
+      "timestamp_seconds": 29.086,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 16,
+    "submitted_frame_count": 16,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_5.json",
+    "response_text": "The commercial opens on a nearly black screen. A circular “Classic Commercial Archives” watermark is visible at the lower left, and a faint archive watermark runs across the lower part of the image.\n\nIt then cuts to a very soft, blurry close-up of a pale mechanical-looking or object-like form. The image is indistinct, and the object cannot be identified with confidence. Faint text appears near the bottom, but it is not legible enough to read fully.\n\nThe scene changes to a large dark-colored sedan driving on a residential or tree-lined street. The car is shown from the front/side as it moves along the road. The vehicle has a prominent chrome grille and rectangular headlights, suggesting a 1970s luxury sedan. The background includes trees, sidewalks, and houses or buildings.\n\nA closer exterior shot emphasizes the front of the car: the wide chrome grille, hood ornament, rectangular headlamps, and front bumper fill most of the frame. The car is either stopped or moving slowly near a curb.\n\nThe commercial then moves inside the car. An older man with glasses, wearing a suit and tie, is seen through or over a partition-like surface, seated in the rear passenger area. He appears to be handling something near his mouth or hands, but the object is not clearly identifiable in this frame.\n\nThe car is shown again from the front, driving toward the camera on a sunny, tree-lined street. Through the windshield, multiple occupants are visible: a driver in front and at least one passenger in the rear. The large grille and hood ornament remain visually prominent.\n\nSeveral shots use dissolves or overlays between the exterior of the moving car and interior views. One composite image shows the front grille and windshield overlaid with a view of the steering wheel and dashboard area. Another closer interior shot shows a hand near the steering wheel or controls; the dashboard and steering wheel are visible, but the exact action is unclear.\n\nA clearer interior shot shows the older man seated in the rear compartment. He wears dark-framed glasses, a dark suit, white shirt, and tie. He is holding and manipulating a small dark object or container with both hands on a tray-like surface in front of him. The nature of the object is unclear from the sampled frames.\n\nThe next shot shows the driver in profile. He is a middle-aged man with a beard or sideburns, wearing a dark suit, looking forward while driving. The car interior is bright from daylight through the windows.\n\nA close-up returns to the older man in the rear seat. He holds a small dark item in one hand and a lighter-colored piece or cap in the other. His face is centered, and he appears focused on the object. The exact object and purpose remain unclear visually.\n\nThe exterior driving shots resume. The dark sedan travels along a broad road with trees in the background. One shot shows the car entering from the left/front, then another shows it passing quickly across the frame from left to right, creating motion blur along the body and wheels.\n\nA final interior/exterior dissolve shows the older man’s face overlaid with the car’s exterior, continuing the visual association between passenger comfort and the vehicle.\n\nThe commercial ends on a black background with a circular emblem at the top containing a sign with the words “MERCURY” and “LINCOLN” and an animal figure above it. Large white text across the lower-middle reads “MERCURY MONARCH.” Smaller text beneath reads “LINCOLN-MERCURY DIVISION.” At the lower right, a Ford oval logo appears with anniversary-style wording that is partially visible but not fully clear."
+  },
+  "api_metadata": {
+    "response_id": "resp_0ddf593e26db5184006a106eb09eb08195aa28205fb4528eb4",
+    "usage": {
+      "input_tokens": 4085,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 968,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 5053
+    }
+  },
+  "duration_seconds": 24.165,
+  "created_at": "2026-05-22T14:57:12Z",
+  "error": null
+}

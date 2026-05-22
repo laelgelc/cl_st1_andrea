@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1970_61",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_61",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_61/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_61.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0002.jpg",
+      "timestamp_seconds": 3.326,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0003.jpg",
+      "timestamp_seconds": 4.461,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0004.jpg",
+      "timestamp_seconds": 7.063,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0005.jpg",
+      "timestamp_seconds": 11.668,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0006.jpg",
+      "timestamp_seconds": 13.57,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0007.jpg",
+      "timestamp_seconds": 17.007,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0008.jpg",
+      "timestamp_seconds": 19.342,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_61/frame_0009.jpg",
+      "timestamp_seconds": 28.085,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_61.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_61.json",
+    "response_text": "The commercial opens on a black screen with archive watermarks visible.\n\nIt then cuts to a soft, slightly blurred city street scene. An open-top vintage car is shown close up, with young people inside or around it. The image has a layered, dissolving look, as if shots are overlapping during a transition.\n\nNext, the car appears in a narrow urban street. Several people are gathered around it; one person in an orange or red top leans or moves near the side of the car, while another person crouches or sits lower beside it. Buildings line the street on both sides.\n\nThe setting then shifts to a greener, tree-lined area. The same or a similar open-top vintage car is seen from the side, moving or parked with passengers inside. A man in a light hat and a blonde woman are visible in the car. The car has an old-fashioned body style with rounded fenders.\n\nA close-up follows of a young man wearing a light blue cap or soft hat and a patterned shirt. He is outdoors in a busy area, with people and structures behind him. The shot then moves closer to his face as he appears to look toward a blonde woman at the right edge of the frame. His mouth is open, suggesting he may be speaking or reacting, though no audio content is available from the frames.\n\nThe commercial then cuts to a wider street or plaza scene. A group of young people gathers around a railing or low barrier. A red “Coca-Cola” sign is visible in the background. The group appears casual and animated, with several people leaning forward or looking in the same direction. A person in a striped shirt walks or stands on the right side of the frame.\n\nAnother shot shows the vintage open-top car from the side, now with multiple passengers. It is positioned in front of a bus or trolley with people visible through its windows. The car’s rear area contains a large arrangement of flowers or foliage.\n\nThe final frame shows the group posed around the vintage car in a park-like setting with trees and a statue or fountain in the background. Several young adults stand, sit, or lean on the car. One person on the left holds up a football. Large white script text across the lower part of the image reads “Coke adds life.” Archive watermarks remain visible over the image."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a0e8296fb0354ac006a106f973c74819fab2b784312a89153",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 552,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2908
+    }
+  },
+  "duration_seconds": 14.495,
+  "created_at": "2026-05-22T15:00:53Z",
+  "error": null
+}

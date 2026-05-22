@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1960_71",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1960_71",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1960_71/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1960_71.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0002.jpg",
+      "timestamp_seconds": 0.273,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0003.jpg",
+      "timestamp_seconds": 4.736,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0004.jpg",
+      "timestamp_seconds": 8.949,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0005.jpg",
+      "timestamp_seconds": 10.2,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0006.jpg",
+      "timestamp_seconds": 12.744,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0007.jpg",
+      "timestamp_seconds": 13.537,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0008.jpg",
+      "timestamp_seconds": 24.13,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1960_71/frame_0009.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1960_71.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1960_71.json",
+    "response_text": "The commercial begins with non-representational frames: a pale pink, scratched film surface, followed by a darker red field. No objects or people are visible in these opening frames.\n\nThe scene then cuts outdoors to a bright paved area, possibly a sidewalk or parking lot. Two boys wearing striped shirts stand or lean over small toy vehicles and cords or hand-held devices. One boy holds something extended toward the other, while the other looks down and handles an object. In the background, several toy-like vehicles are visible on the pavement, and larger parked cars can be seen farther back. The image is heavily red-tinted and somewhat faded.\n\nNext, two boys are shown kneeling on a sidewalk. One boy is drawing or writing with chalk on the pavement. Large chalk markings are visible, including broad lines and partially legible letters or shapes. The other boy kneels nearby, watching or assisting. This suggests they are preparing a play surface or track, though the exact design is not fully clear.\n\nA close-up follows of a long, low toy car, shown in profile. It has a sleek body, visible wheels, and mechanical-looking details. The image appears layered or cross-faded with the previous shot of the boy drawing on the sidewalk, creating a montage effect.\n\nThe next frame shows chalk markings on pavement arranged into a grid or track-like layout. A hand at the upper right pushes or places a small wheeled toy vehicle near the chalked area. A small round object or marker is also visible on the pavement. The chalk design includes rectangles, lines, and faint lettering, but the exact words are not clearly readable.\n\nThe commercial then presents a side view of a toy vehicle resembling an antique car or buggy with a rear trailer or covered section. It has large wheels, exposed mechanical details, and a small seated figure or driver form. The vehicle is shown against a plain light background or pavement-like surface.\n\nThe final product display shows four red toy vehicles arranged diagonally on a clean light background. Each vehicle has a long cord or strip extending from it, ending in a flat paddle-like handle or controller. The vehicles include an antique-style car, a small open roadster, a long narrow dragster-like vehicle, and a low wedge-shaped futuristic car. Large bold letters reading “SSP” appear at the upper right. The last frame holds on this same product lineup and “SSP” text."
+  },
+  "api_metadata": {
+    "response_id": "resp_07ccdce5bf62a721006a106dd2f2148195b8ec5ff2715105c8",
+    "usage": {
+      "input_tokens": 2356,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 814,
+      "output_tokens_details": {
+        "reasoning_tokens": 325
+      },
+      "total_tokens": 3170
+    }
+  },
+  "duration_seconds": 23.282,
+  "created_at": "2026-05-22T14:53:29Z",
+  "error": null
+}

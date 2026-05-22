@@ -1,0 +1,263 @@
+{
+  "commercial_id": "tv_com_1990_3",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_3",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_3/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_3.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0002.jpg",
+      "timestamp_seconds": 0.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0003.jpg",
+      "timestamp_seconds": 0.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0004.jpg",
+      "timestamp_seconds": 0.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0005.jpg",
+      "timestamp_seconds": 0.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0006.jpg",
+      "timestamp_seconds": 1.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0007.jpg",
+      "timestamp_seconds": 1.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0008.jpg",
+      "timestamp_seconds": 2.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0009.jpg",
+      "timestamp_seconds": 2.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0010.jpg",
+      "timestamp_seconds": 2.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0011.jpg",
+      "timestamp_seconds": 3.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0012.jpg",
+      "timestamp_seconds": 3.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0013.jpg",
+      "timestamp_seconds": 3.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0014.jpg",
+      "timestamp_seconds": 5.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0015.jpg",
+      "timestamp_seconds": 5.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0016.jpg",
+      "timestamp_seconds": 6.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0017.jpg",
+      "timestamp_seconds": 6.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0018.jpg",
+      "timestamp_seconds": 7.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0019.jpg",
+      "timestamp_seconds": 7.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0020.jpg",
+      "timestamp_seconds": 8.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0021.jpg",
+      "timestamp_seconds": 8.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0022.jpg",
+      "timestamp_seconds": 9.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0023.jpg",
+      "timestamp_seconds": 10.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0024.jpg",
+      "timestamp_seconds": 10.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0025.jpg",
+      "timestamp_seconds": 11.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0026.jpg",
+      "timestamp_seconds": 12.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0027.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "last_frame"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0028.jpg",
+      "timestamp_seconds": 13.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_3/frame_0029.jpg",
+      "timestamp_seconds": 13.956,
+      "selection_reason": "scene_change"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 29,
+    "submitted_frame_count": 29,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_3.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_3.json",
+    "response_text": "The commercial opens in a very dark shot of a woman seated or crouched in a narrow space. Details are difficult to see because the frame is underexposed.\n\nIt then cuts to a brightly lit, stylized set dominated by large orange cylindrical forms arranged like oversized columns or containers. A young woman with dark, shoulder-length hair appears in a sleeveless blue dress. She is positioned among the orange forms, with strong sunlight and hard shadows creating white and blue patches in the background. She repeatedly touches and adjusts her hair: first with both hands near her head, then covering part of her face, then smoothing or lifting her hair. The camera alternates between medium shots and a close-up of her face with eyes lowered, emphasizing her makeup, lips, and hair.\n\nA wide shot shows her standing full-length in a corridor-like space formed by multiple large orange cylinders on both sides, under a vivid blue sky. She is centered, wearing the blue dress and dark shoes. The setting looks highly artificial and graphic, with saturated orange, blue, and white color contrasts.\n\nThe woman continues posing against the orange-and-white background. She touches the sides of her neck and hair, then smiles and looks downward. A blurred orange transition follows.\n\nText appears over a blurred background of the orange cylindrical forms. The on-screen text reads:\n\n“THE  \nVIDAL  \nSASSOON  \nACADEMY”\n\nThe text is white, in large serif-like capitals, positioned mainly on the left side. A brief bright white flash or overexposed transition interrupts and then the same “THE VIDAL SASSOON ACADEMY” text reappears.\n\nThe commercial then shifts to product imagery. A blurred close-up resolves into a red bottle with a white-and-gold label reading “VIDAL SASSOON.” Below it, the label reads “ALCOHOL-FREE SPRAY-ON GEL.” The bottle is shown against a bright blue background. A row of multiple identical red bottles is then displayed along a white ledge or platform, receding into the distance under a blue sky. Another close-up focuses tightly on the words “ALCOHOL-FREE SPRAY-ON” on the red bottle.\n\nA woman with wet or slicked dark hair is shown from the shoulders up against an orange background while a hand holds the red spray bottle near her head. The product is being sprayed or positioned as if being applied, though the spray mist is not clearly visible in the sampled frame.\n\nThe product appears again standing on a white ledge in front of a large orange curved form and a blue sky.\n\nThe commercial then introduces additional models. A blonde woman with a short bob haircut and blunt bangs appears smiling close to a dark-haired woman seen from behind. The blonde woman wears a thin-strap top. Another shot shows the original dark-haired woman smiling softly with her chin resting on her hand, her hair styled in a smooth bob-like shape.\n\nTwo women—the blonde woman in a purple or burgundy thin-strap top and the dark-haired woman in the blue dress—stand together smiling, with arms around each other or shoulders touching. The lighting is very bright and sometimes overexposed, giving the skin and background a washed-out glow. A group shot shows the back of a dark bob haircut in the center, with the blonde woman at left and the dark-haired woman at right, all close together.\n\nA close-up presents the dark-haired woman facing the camera with a smooth, rounded bob hairstyle, smiling against an orange-and-white background. The blonde and dark-haired women are then shown together again, laughing and looking at each other. A highly overexposed close-up of the blonde woman follows, her short haircut and red lipstick still visible despite the brightness.\n\nNear the end, text appears over a warm, blurred background. The visible words read:\n\n“STYLE THAT’S  \nPERFECTLY  \nYOU”\n\nThe word “STYLE” is smaller and positioned to the left of “THAT’S.” The text is white and centered/left-centered over the soft-focus image.\n\nA large blurred white letter or graphic shape briefly fills much of the frame, then the commercial ends with a bright, sunlit close-up of the blonde woman and the dark-haired woman side by side, facing toward the right. Their hair is smooth and styled; the image remains highly saturated and overexposed, with blue sky visible behind them."
+  },
+  "api_metadata": {
+    "response_id": "resp_0c51743936962730006a1072490c38819fa1f8e40a629a81dd",
+    "usage": {
+      "input_tokens": 7296,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1037,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 8333
+    }
+  },
+  "duration_seconds": 29.473,
+  "created_at": "2026-05-22T15:12:37Z",
+  "error": null
+}

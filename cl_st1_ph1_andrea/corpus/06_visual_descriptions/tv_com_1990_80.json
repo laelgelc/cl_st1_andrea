@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_1990_80",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_80",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_80/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_80.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0002.jpg",
+      "timestamp_seconds": 4.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0003.jpg",
+      "timestamp_seconds": 5.723,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0004.jpg",
+      "timestamp_seconds": 5.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0005.jpg",
+      "timestamp_seconds": 6.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0006.jpg",
+      "timestamp_seconds": 6.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0007.jpg",
+      "timestamp_seconds": 9.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0008.jpg",
+      "timestamp_seconds": 10.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0009.jpg",
+      "timestamp_seconds": 10.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0010.jpg",
+      "timestamp_seconds": 10.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0011.jpg",
+      "timestamp_seconds": 11.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0012.jpg",
+      "timestamp_seconds": 11.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0013.jpg",
+      "timestamp_seconds": 11.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0014.jpg",
+      "timestamp_seconds": 12.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0015.jpg",
+      "timestamp_seconds": 13.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0016.jpg",
+      "timestamp_seconds": 14.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0017.jpg",
+      "timestamp_seconds": 15.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0018.jpg",
+      "timestamp_seconds": 16.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0019.jpg",
+      "timestamp_seconds": 16.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0020.jpg",
+      "timestamp_seconds": 17.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0021.jpg",
+      "timestamp_seconds": 18.09,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0022.jpg",
+      "timestamp_seconds": 19.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0023.jpg",
+      "timestamp_seconds": 19.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0024.jpg",
+      "timestamp_seconds": 20.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0025.jpg",
+      "timestamp_seconds": 22.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0026.jpg",
+      "timestamp_seconds": 23.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0027.jpg",
+      "timestamp_seconds": 23.856,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0028.jpg",
+      "timestamp_seconds": 24.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0029.jpg",
+      "timestamp_seconds": 25.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_1990_80/frame_0030.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_80.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_80.json",
+    "response_text": "The commercial begins on a black frame, then cuts into a fast-paced industrial montage.\n\nA middle-aged male worker in a blue work shirt, safety glasses, gloves, and a light-colored cap is shown in close-up, looking upward or to the side while working in a factory-like setting. The next shots show gloved hands operating tools and machinery around automotive components, including hoses, metal parts, and a vehicle frame or chassis. The imagery is tightly cropped and emphasizes manual assembly and mechanical work.\n\nThe montage briefly shifts to a blurred roadway or track scene with lateral motion, suggesting speed or vehicle movement, though no vehicle is clearly visible in that frame. It then returns to factory work: a worker in a white hard hat and face protection operates equipment, producing a burst of sparks. Another close-up shows the front of a dark car with headlights on, followed by motion-blurred shots of cars driving close together or passing by.\n\nThe next sequence shows more factory or construction-like activity. Workers in hard hats and protective clothing operate tools near large machinery. A dark-colored sedan is then seen from the rear being moved or pushed through a production area by workers on either side. The camera view becomes highly stylized with strong motion blur as the car advances through a corridor or assembly line.\n\nFurther shots show the vehicle undergoing work in an enclosed area. Sparks fly near the car’s body, and then the car is shown from the front inside a brightly lit chamber, with water or mist spraying down over it. A red-lit control-room-like shot follows, showing gauges and a silhouetted seated person behind glass. The red lighting and illuminated controls create a testing or monitoring atmosphere.\n\nThe montage continues with views inside or through the body of a car, then a close-up of a worker in a red hard hat using an orange power tool. Another shot shows a small vehicle or cart moving away down a long industrial aisle, ridden by a person wearing a light blue coat. A close-up then shows gloved hands cleaning or polishing the rear side of a dark car near a chrome or reflective trim area.\n\nThe setting shifts to outdoor vehicle testing. A dark sedan drives along a banked test track. Another shot shows two cars on a wet road surface maneuvering around an orange traffic cone. A group of workers and staff wearing hard hats, uniforms, and casual work clothes walk toward the camera; some smile, and one person holds a clipboard.\n\nA dark red sedan is then presented more clearly on a glossy, wet-looking surface, with its reflection visible beneath it. The car appears in a controlled studio or test environment. This is followed by a closer shot of a smiling group of workers, including people wearing white hard hats, safety glasses, caps, and work shirts.\n\nNear the end, the dark red sedan drives past orange cones in front of a large assembled group of workers standing across the background. In the final frame, the car is parked in profile on the reflective floor, with the crowd behind it raising their arms. Large on-screen text at the bottom reads “CAMRY,” with smaller text below: “WE JUST COULDN’T LEAVE WELL ENOUGH ALONE.” In the upper right, visible text reads “I love what you do for me” next to the Toyota logo and the word “TOYOTA.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_08ad1e20626b8fd0006a1073bbc75881a1abc38349fa11da48",
+    "usage": {
+      "input_tokens": 7543,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 797,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 8340
+    }
+  },
+  "duration_seconds": 22.467,
+  "created_at": "2026-05-22T15:18:42Z",
+  "error": null
+}

@@ -1,0 +1,151 @@
+{
+  "commercial_id": "tv_com_2010_108",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_108",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_108/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_108.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0002.jpg",
+      "timestamp_seconds": 2.025,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0003.jpg",
+      "timestamp_seconds": 4.194,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0004.jpg",
+      "timestamp_seconds": 5.487,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0005.jpg",
+      "timestamp_seconds": 6.655,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0006.jpg",
+      "timestamp_seconds": 8.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0007.jpg",
+      "timestamp_seconds": 10.325,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0008.jpg",
+      "timestamp_seconds": 11.284,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0009.jpg",
+      "timestamp_seconds": 14.621,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0010.jpg",
+      "timestamp_seconds": 18.541,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0011.jpg",
+      "timestamp_seconds": 21.169,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0012.jpg",
+      "timestamp_seconds": 24.381,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_108/frame_0013.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 13,
+    "submitted_frame_count": 13,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_108.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_108.json",
+    "response_text": "The commercial opens in an outdoor demonstration setting with a bright blue OxiClean-branded backdrop. A middle-aged man in a blue button-down shirt stands beside a transparent tank filled with dark red/brown liquid. A box of OxiClean is displayed on a small white pedestal to his right. Several women/girls stand nearby, watching.\n\nThe camera cuts closer to the transparent tank. The liquid inside appears heavily stained or dirty, with cloudy white areas mixing into reddish-brown liquid. A white cylindrical component protrudes from the top of the tank. The OxiClean logo appears as an on-screen graphic in the lower right.\n\nThe view returns to a wider shot. The man stands behind or beside a clearer-looking tank with pale liquid and some colored objects inside. He gestures broadly with both hands. A small group of women and children stand to the left, smiling or watching. The branded blue background remains visible.\n\nThe commercial then shifts to a woman standing at a table in front of the same OxiClean backdrop. She holds up a light blue shirt with a large dark stain on the front. A white plastic wash basin sits on the table in front of her.\n\nA close-up shows her hands pushing the blue shirt down into the white basin, where dark liquid is visible around the fabric.\n\nAnother close-up shows the shirt being lifted or agitated in foamy water. The blue fabric is wet and covered with suds; the earlier dark stain is no longer clearly visible in the sampled frame.\n\nThe camera cuts to the woman’s face as she holds the wet blue shirt up. She smiles widely and looks pleased or surprised.\n\nNext, a different woman with red hair tied up in a bun stands in front of the OxiClean backdrop. She wears a black-and-white striped shirt and holds a small white stuffed animal over a clear container or basin.\n\nA closer shot shows the red-haired woman smiling while looking down at the stuffed animal.\n\nThe next close-up shows a hand holding part of a white fabric or plush item in soapy water. The lower portion is covered in foam, while the upper portion appears stained or discolored brown/tan.\n\nThe commercial then cuts to a blonde woman in front of the OxiClean backdrop. She looks down at an off-white or cream-colored item she is holding, with an expression suggesting interest or surprise.\n\nA brief white flash or blank white transition follows.\n\nThe final frame is a product display on a white surface. Two OxiClean laundry products are shown prominently: a dark blue pouch labeled “OxiClean Laundry Paks High Def” and a blue plastic detergent bottle labeled “OxiClean High Def.” Folded towels or clothing appear on the left, and a white laundry basket with pink fabric inside appears on the right."
+  },
+  "api_metadata": {
+    "response_id": "resp_0df3822d52b6e83a006a107932cf1c81948ce5af739ab198fb",
+    "usage": {
+      "input_tokens": 2590,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 602,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 3192
+    }
+  },
+  "duration_seconds": 16.039,
+  "created_at": "2026-05-22T15:41:54Z",
+  "error": null
+}

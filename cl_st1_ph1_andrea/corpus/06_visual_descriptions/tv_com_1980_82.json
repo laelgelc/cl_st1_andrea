@@ -1,0 +1,130 @@
+{
+  "commercial_id": "tv_com_1980_82",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_82",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_82/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_82.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0002.jpg",
+      "timestamp_seconds": 4.031,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0003.jpg",
+      "timestamp_seconds": 7.462,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0004.jpg",
+      "timestamp_seconds": 10.145,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0005.jpg",
+      "timestamp_seconds": 11.775,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0006.jpg",
+      "timestamp_seconds": 12.93,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0007.jpg",
+      "timestamp_seconds": 15.851,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0008.jpg",
+      "timestamp_seconds": 16.802,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0009.jpg",
+      "timestamp_seconds": 18.942,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1980_82/frame_0010.jpg",
+      "timestamp_seconds": 28.03,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 10,
+    "submitted_frame_count": 10,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_82.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_82.json",
+    "response_text": "The commercial begins in a dimly lit shot with two people leaning over a small tabletop object. The image is dark and somewhat unclear, but the figures appear to be facing each other across a table with a game-like board between them.\n\nThe next shots move into close-ups of the tabletop game. A rectangular plastic board is shown from above. It has a central vertical channel containing small cube-like pieces with letters on them, and there are rows of small holes or markers on both sides of the channel. Two pairs of hands rapidly manipulate pieces on the board, sliding or arranging the lettered cubes. A small upright cylindrical part is visible at the top of the board.\n\nThe camera then cuts wider to reveal two adult players: a woman on the left with light-colored, shoulder-length wavy hair wearing a light purple top, and a man on the right with dark curly hair wearing a light sweater over a plaid shirt. They are seated across from each other at a table, leaning in closely over the game. Both focus on the board, with their hands near the playing area.\n\nSeveral alternating close-ups and medium shots show the same pattern: hands moving quickly around the central column of letter cubes, then the two players watching the board or glancing at each other. In some close-ups, the lettered cubes are stacked vertically in the central track, but the exact words or sequences are not fully clear from the sampled frames. The players’ facial expressions suggest concentration and amusement; at one point the woman smiles toward the man.\n\nA brief layered or transitional image shows the players with a semi-transparent close-up of the game board overlaid, emphasizing the action on the game.\n\nThe final frame is a product shot against a dark background. A boxed game is centered on screen. The box prominently displays the name “Razzle” in large white letters and includes a picture of the game board with hands playing it. Smaller text appears near the top of the box, including “Parker Brothers,” though some of the fine print is not fully legible."
+  },
+  "api_metadata": {
+    "response_id": "resp_0140d1661d271211006a1071a657f4819f8f9181e7bdf50b1a",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 766,
+      "output_tokens_details": {
+        "reasoning_tokens": 351
+      },
+      "total_tokens": 2789
+    }
+  },
+  "duration_seconds": 23.362,
+  "created_at": "2026-05-22T15:09:49Z",
+  "error": null
+}

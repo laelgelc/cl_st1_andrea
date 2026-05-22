@@ -1,0 +1,137 @@
+{
+  "commercial_id": "tv_com_1970_81",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1970_81",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1970_81/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1970_81.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0002.jpg",
+      "timestamp_seconds": 3.826,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0003.jpg",
+      "timestamp_seconds": 5.206,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0004.jpg",
+      "timestamp_seconds": 10.758,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0005.jpg",
+      "timestamp_seconds": 13.417,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0006.jpg",
+      "timestamp_seconds": 14.83,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0007.jpg",
+      "timestamp_seconds": 19.003,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0008.jpg",
+      "timestamp_seconds": 21.393,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0009.jpg",
+      "timestamp_seconds": 26.239,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0010.jpg",
+      "timestamp_seconds": 27.551,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1970_81/frame_0011.jpg",
+      "timestamp_seconds": 28.032,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 11,
+    "submitted_frame_count": 11,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1970_81.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1970_81.json",
+    "response_text": "The commercial appears to take place at an outdoor social gathering, likely in a backyard or patio area beside a house. The visual focus is on people using and looking at instant photographs from a Polaroid-style camera.\n\nAt the beginning, a man in a light blue shirt leans in toward another person who is partly out of frame. He is holding a boxy instant camera or camera-related device. The setting includes greenery and the exterior wall of a house.\n\nThe next shot widens to show a group of adults and children gathered around a picnic table covered with a red-and-white checkered tablecloth. Several people are seated, while others stand around the table. The atmosphere is informal and social, with people looking toward one another and toward the camera activity. The house windows and patio furniture are visible in the background.\n\nThe commercial then uses soft dissolves and superimposed images. A close-up shows two men smiling and looking down at an instant camera and/or a developing photograph. One man holds the camera while the other leans close, both appearing amused and engaged. Their faces overlap with previous or subsequent images, creating a layered montage effect.\n\nSeveral shots show instant photographs being held up in front of the camera. One photo shows a bearded man with another person leaning near him, and the instant camera is visible within the photographed scene. Another developing photo shows two children or young people looking at a camera or photograph. The images appear with the characteristic white border of instant prints.\n\nA clearer shot then shows a finished instant photograph being held in someone’s hand. The photo contains three smiling people outdoors: an adult woman or older girl in the middle, a young child on one side, and a boy wearing a cap on the other. The print has a wide white border, emphasizing the instant-photo format.\n\nThe sequence returns to two adult men standing close together, smiling and looking at an instant print. One man holds the camera while the other holds or examines the photograph. Their expressions suggest enjoyment and approval.\n\nAnother layered dissolve shows a woman or girl with an instant camera held close, partly obscured by superimposed imagery. The visuals remain soft and slightly blurred, consistent with the montage style.\n\nNear the end, there is a close-up of a man’s face as he looks downward or to the side, followed by a shot of two men with the instant camera. One man holds the camera up to his eye as if preparing to take a picture, while the other stands close beside him, looking at him and gesturing with one hand. White text appears along the bottom of the frame reading “*Suggested list price.” The final frame continues this composition, with the man aiming the camera and the other man watching him."
+  },
+  "api_metadata": {
+    "response_id": "resp_01641457f3a5ab9b006a106fecd03881a1a0719a8094584165",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 578,
+      "output_tokens_details": {
+        "reasoning_tokens": 26
+      },
+      "total_tokens": 2790
+    }
+  },
+  "duration_seconds": 14.987,
+  "created_at": "2026-05-22T15:02:19Z",
+  "error": null
+}

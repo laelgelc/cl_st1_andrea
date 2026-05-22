@@ -1,0 +1,270 @@
+{
+  "commercial_id": "tv_com_2010_5",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2010_5",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2010_5/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2010_5.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0002.jpg",
+      "timestamp_seconds": 0.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0003.jpg",
+      "timestamp_seconds": 3.056,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0004.jpg",
+      "timestamp_seconds": 3.59,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0005.jpg",
+      "timestamp_seconds": 3.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0006.jpg",
+      "timestamp_seconds": 6.156,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0007.jpg",
+      "timestamp_seconds": 8.256,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0008.jpg",
+      "timestamp_seconds": 10.556,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0009.jpg",
+      "timestamp_seconds": 10.756,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0010.jpg",
+      "timestamp_seconds": 10.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0011.jpg",
+      "timestamp_seconds": 11.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0012.jpg",
+      "timestamp_seconds": 11.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0013.jpg",
+      "timestamp_seconds": 12.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0014.jpg",
+      "timestamp_seconds": 14.423,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0015.jpg",
+      "timestamp_seconds": 14.923,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0016.jpg",
+      "timestamp_seconds": 15.29,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0017.jpg",
+      "timestamp_seconds": 15.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0018.jpg",
+      "timestamp_seconds": 17.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0019.jpg",
+      "timestamp_seconds": 18.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 20,
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0020.jpg",
+      "timestamp_seconds": 18.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 21,
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0021.jpg",
+      "timestamp_seconds": 19.523,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 22,
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0022.jpg",
+      "timestamp_seconds": 20.19,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 23,
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0023.jpg",
+      "timestamp_seconds": 20.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 24,
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0024.jpg",
+      "timestamp_seconds": 23.023,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 25,
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0025.jpg",
+      "timestamp_seconds": 23.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 26,
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0026.jpg",
+      "timestamp_seconds": 23.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 27,
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0027.jpg",
+      "timestamp_seconds": 23.99,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 28,
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0028.jpg",
+      "timestamp_seconds": 26.656,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 29,
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0029.jpg",
+      "timestamp_seconds": 26.823,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 30,
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames/tv_com_2010_5/frame_0030.jpg",
+      "timestamp_seconds": 29.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 30,
+    "submitted_frame_count": 30,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2010_5.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2010_5.json",
+    "response_text": "The commercial begins with a black frame, then cuts to a wide, blue-toned alpine landscape. Snow-covered mountain peaks fill the frame under a pale sky.\n\nThe view moves across the mountains to a snowy slope and glacier-like terrain. A skier in a turquoise jacket and beige pants appears briefly from behind, holding ski poles and moving downhill across the snow. The camera then returns to a very wide mountain vista, showing a high ridge and a tiny skier-like figure near the crest. Another shot follows from behind the skier, with the person positioned against a vast panorama of jagged snowy peaks.\n\nThe setting then shifts abruptly from the mountains to an indoor or night-time ice-racing environment. The images are darker and highly motion-blurred. Several speed skaters in black-and-red racing suits, white caps, and protective glasses skate toward the camera in a low racing posture. Close-ups emphasize their forward-leaning bodies, arms, faces, and rapid movement. A wide overhead shot shows a large oval ice track with bright lights and one skater moving along the curve. Side views show two skaters racing close together, their reflections visible on the ice. Low-angle shots focus on skates cutting over the glossy ice surface.\n\nThe commercial then transitions to a snow-covered urban environment with tall buildings in the background. From inside or near a vehicle, a helmeted person in a dark suit with red sleeves is seen outside. A low view shows sled-like equipment on a snowy street or plaza. The athlete is then shown lying face-down on a small sled, skeleton-style, moving along a snowy/icy path with city buildings behind them. Another shot shows an empty curving ice track or chute running through an urban setting, followed by a blurred perspective suggesting fast travel through that track.\n\nNext, a dark streamlined sled or bobsled-like vehicle fills the frame from the front, with red elements or athletes visible at the sides. This blends back into the speed-skating imagery through overlapping, motion-blurred shots. A speed skater in the red-and-black suit again appears in close-up, leaning forward and skating toward the camera.\n\nNear the end, there are extreme close-ups of a helmeted athlete wearing reflective blue goggles against a pale blue background. The face is partially cropped and blurred by motion.\n\nThe final frame is a title card over a panoramic snowy mountain range. Large white text reads “VISA” followed by the Olympic rings. Beneath it, smaller text reads “everywhere you want to be.” Additional small text appears below but is too small and unclear to read confidently."
+  },
+  "api_metadata": {
+    "response_id": "resp_05d265eeb238a49d006a107700bcf081a3a9f6f17cbb581afa",
+    "usage": {
+      "input_tokens": 6973,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 825,
+      "output_tokens_details": {
+        "reasoning_tokens": 301
+      },
+      "total_tokens": 7798
+    }
+  },
+  "duration_seconds": 23.856,
+  "created_at": "2026-05-22T15:32:40Z",
+  "error": null
+}

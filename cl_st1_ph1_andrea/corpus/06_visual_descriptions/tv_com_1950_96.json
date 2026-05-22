@@ -1,0 +1,102 @@
+{
+  "commercial_id": "tv_com_1950_96",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_96",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_96/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_96.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0002.jpg",
+      "timestamp_seconds": 4.223,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0003.jpg",
+      "timestamp_seconds": 13.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0004.jpg",
+      "timestamp_seconds": 24.49,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0005.jpg",
+      "timestamp_seconds": 31.89,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_96/frame_0006.jpg",
+      "timestamp_seconds": 55.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 6,
+    "submitted_frame_count": 6,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_96.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_96.json",
+    "response_text": "The commercial is in black and white and appears to move through several distinct visual setups.\n\n- **Opening frame (0.000s):** Two adult men stand outdoors in what looks like a leafy garden or yard. One man wears a dark suit and a brimmed hat; he faces another man in a light-colored coat or jacket. The man in the light coat gestures with one hand near the suited man’s chest area. Background details include foliage and possibly a fence or garden structure.\n\n- **Close-up of suited man (4.223s):** The view cuts closer to the man in the hat. He wears a suit, tie, and a light-colored flower or boutonniere on his lapel. A hand from off-screen at right holds or adjusts a small flower near his lapel. The man’s face is serious or neutral. The leafy outdoor background remains visible but blurred.\n\n- **Dog under furniture (13.890s):** The scene changes to a small dog with long dark-and-white fur, seen from a low angle beneath or beside a table or chair. The dog looks upward. A human hand is visible above, holding a small object, but the object’s purpose is unclear from the frame. A person’s trouser leg is visible on the left.\n\n- **Service-station imagery (24.490s):** The commercial cuts to an exterior view involving gasoline pumps or a service-station display. Two pumps are visible, one labeled **“ESSO”** and another with a different brand or label that is hard to read. The image appears to include reflections or a superimposed display, making the scene somewhat visually layered. A hand or arm appears at the right edge near a sign or panel, but the action is unclear.\n\n- **Close-up of pump branding (31.890s):** A closer shot centers on the top of an **“ESSO EXTRA”** gasoline pump. A small **“Humble”** label appears above the main sign. Additional small text is visible on the pump body, including phrases that appear to read **“Glass must be full”** on the left and **“Happy Motoring Dealer”** on the right, though some lettering is partially unclear due to image quality.\n\n- **Final frame (55.023s):** The commercial ends on a large round cartoon face with exaggerated eyes, eyebrows, nostrils, and a wide toothy grin. The face fills most of the frame. It resembles a graphic emblem or animated-style character, but no surrounding context is visible in this sampled frame."
+  },
+  "api_metadata": {
+    "response_id": "resp_09fb49b09a19c618006a106c7227d081a18a67da76d7909357",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 723,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 2338
+    }
+  },
+  "duration_seconds": 18.637,
+  "created_at": "2026-05-22T14:47:32Z",
+  "error": null
+}

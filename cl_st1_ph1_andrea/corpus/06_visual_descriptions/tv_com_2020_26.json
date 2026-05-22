@@ -1,0 +1,193 @@
+{
+  "commercial_id": "tv_com_2020_26",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_2020_26",
+    "frame_manifest_path": "corpus/05_frames/tv_com_2020_26/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_2020_26.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0002.jpg",
+      "timestamp_seconds": 2.108,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0003.jpg",
+      "timestamp_seconds": 3.61,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0004.jpg",
+      "timestamp_seconds": 5.612,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0005.jpg",
+      "timestamp_seconds": 6.446,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0006.jpg",
+      "timestamp_seconds": 7.53,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0007.jpg",
+      "timestamp_seconds": 8.323,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0008.jpg",
+      "timestamp_seconds": 9.241,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0009.jpg",
+      "timestamp_seconds": 10.784,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0010.jpg",
+      "timestamp_seconds": 12.786,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0011.jpg",
+      "timestamp_seconds": 13.912,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0012.jpg",
+      "timestamp_seconds": 15.121,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 13,
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0013.jpg",
+      "timestamp_seconds": 17.666,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 14,
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0014.jpg",
+      "timestamp_seconds": 18.291,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 15,
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0015.jpg",
+      "timestamp_seconds": 19.417,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 16,
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0016.jpg",
+      "timestamp_seconds": 20.252,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 17,
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0017.jpg",
+      "timestamp_seconds": 22.17,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 18,
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0018.jpg",
+      "timestamp_seconds": 25.131,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 19,
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames/tv_com_2020_26/frame_0019.jpg",
+      "timestamp_seconds": 29.053,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 19,
+    "submitted_frame_count": 19,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_2020_26.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_2020_26.json",
+    "response_text": "The commercial opens inside a True Value-style hardware store. A wide aisle view shows red-and-white store signage and stocked shelves, with aisle signs for departments such as “Lawn & Garden,” “Paint,” “Electrical,” and “Tools.” A store employee in a red shirt walks with two customers near a red shopping cart.\n\nThe scene then cuts to a tool aisle. A bearded male customer in a plaid shirt stands close to a store employee wearing a red True Value shirt and name tag. The shelves behind them are filled with packaged tools and accessories. The employee appears to be helping or pointing something out, though the exact object or conversation is not visible.\n\nThe customer is then shown shopping in the aisles. He places or handles several items: a large red Milwaukee-branded box in a cart, a yellow DeWalt level, a red container or tool-related product, and a white bottle-like item from a shelf. A wider store shot shows him pushing a red shopping cart through the store, with other shoppers and promotional signage visible, including a “Deal Zone” sign.\n\nThe commercial transitions rapidly from the store to home-improvement work scenes. A blurred movement shot leads into a garage or workshop setting, where a circular saw cuts through a piece of wood. Another close-up shows a drill or driver near a fastener or small wood piece in a bright indoor space. A tilted/rotated shot shows a person working in what appears to be a kitchen or interior room, with tools and cabinets visible, though the exact task is unclear.\n\nNext, the focus shifts outdoors. A close-up shows hands attaching or tightening a small nozzle or connector. A man then uses a yellow pressure washer in front of a garage, spraying and cleaning a dark driveway surface.\n\nThe next project is interior painting. A close-up shows a paint roller applying a dark gray or brown paint to a wall. A wider shot shows a woman painting an interior wall with a roller on an extension pole. The room has taped trim around a window and appears to be in the middle of renovation or repainting.\n\nNear the end, the commercial shows a finished or decorated living space. A bald, bearded man in a brown sweater stands in a living room near a staircase, fireplace, chair, and wall shelf. He reaches toward or adjusts an item on a wall-mounted shelf with plants and decorative objects.\n\nThe final frame blurs the living-room background and displays the True Value logo in the center, with the visible tagline: “YOUR PROJECT. YOUR WAY.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_0150478cf793af6c006a1079f9b65c819c95b31d990bf9b117",
+    "usage": {
+      "input_tokens": 3724,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 753,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 4477
+    }
+  },
+  "duration_seconds": 20.562,
+  "created_at": "2026-05-22T15:45:18Z",
+  "error": null
+}

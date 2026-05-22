@@ -1,0 +1,116 @@
+{
+  "commercial_id": "tv_com_1990_50",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1990_50",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1990_50/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1990_50.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0002.jpg",
+      "timestamp_seconds": 2.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0003.jpg",
+      "timestamp_seconds": 2.79,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0004.jpg",
+      "timestamp_seconds": 2.956,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0005.jpg",
+      "timestamp_seconds": 3.623,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0006.jpg",
+      "timestamp_seconds": 9.123,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0007.jpg",
+      "timestamp_seconds": 9.456,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1990_50/frame_0008.jpg",
+      "timestamp_seconds": 14.023,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 8,
+    "submitted_frame_count": 8,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1990_50.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1990_50.json",
+    "response_text": "The commercial is presented in a hand-drawn cartoon style.\n\n- **Opening:** The first frame is very dark, with only a faint outline of a cartoon figure or face visible. Details are difficult to make out.\n\n- **Early sequence:** The scene becomes bright and shows an orange-red cartoon character surrounded by large white puffs of smoke or dust. Across the top is the handwritten text: **“Hey! Don’t try this at home”**. The character appears squashed or stretched, with motion lines around it, suggesting frantic movement or pressure. In the next frames, the round red character changes shape, first swelling into a larger ball-like form and then resolving into a side-facing face with a very large nose. Smoke clouds continue to surround it.\n\n- **Continuation:** The cartoon figure is partly hidden by more smoke clouds. Its mouth is open, and only parts of its orange-red face are visible through the clouds. The action is visually chaotic and comic, but the exact action is not fully clear from the sampled frames.\n\n- **Dental close-up:** The scene cuts to a close-up line drawing of teeth or tooth-like shapes. A red/orange toothbrush head or dental implement appears at the upper left, with long white bristles reaching down between the teeth. Small text at the lower right reads: **“brush & floss regularly”**. In the next frame, a bright sparkle appears near the right side of the teeth, suggesting cleanliness or shine.\n\n- **Final product message:** The last frame shows the cartoon character again, now standing beside or holding a circular sign. The sign reads: **“For all the hard to reach places”**, with the word **“very”** added in red above part of the phrase. A black diagonal banner across the lower middle reads: **“REACH BETWEEN”**, with blue and orange graphic stripes. At the bottom is the **Johnson & Johnson** name/logo."
+  },
+  "api_metadata": {
+    "response_id": "resp_0f4cf669c45b932e006a107338f33481a1895ea9e340d971be",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 846,
+      "output_tokens_details": {
+        "reasoning_tokens": 453
+      },
+      "total_tokens": 2955
+    }
+  },
+  "duration_seconds": 20.621,
+  "created_at": "2026-05-22T15:16:29Z",
+  "error": null
+}

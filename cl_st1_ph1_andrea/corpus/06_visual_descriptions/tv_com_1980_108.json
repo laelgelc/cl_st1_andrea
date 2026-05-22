@@ -1,0 +1,123 @@
+{
+  "commercial_id": "tv_com_1980_108",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1980_108",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1980_108/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1980_108.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0002.jpg",
+      "timestamp_seconds": 7.364,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0003.jpg",
+      "timestamp_seconds": 11.201,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0004.jpg",
+      "timestamp_seconds": 14.905,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0005.jpg",
+      "timestamp_seconds": 17.44,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0006.jpg",
+      "timestamp_seconds": 19.442,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0007.jpg",
+      "timestamp_seconds": 21.411,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0008.jpg",
+      "timestamp_seconds": 23.413,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1980_108/frame_0009.jpg",
+      "timestamp_seconds": 28.052,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 9,
+    "submitted_frame_count": 9,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1980_108.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1980_108.json",
+    "response_text": "The commercial begins with a dark/black frame.\n\nIt then cuts to a breakfast-table scene in a kitchen. A young girl with braided hair and an adult man sit side by side at a table, each holding a spoon and eating from bowls. A large purple-and-white cereal box labeled “Post Raisin Bran” stands prominently on the left side of the table, facing the camera. Other breakfast items are visible, including a glass of milk, a glass of orange juice, plates with toast, and a white mug. The background shows a domestic kitchen with hanging pots, shelves, and kitchenware.\n\nThe next shot is a product-style graphic on a plain light background. At the top are containers/packages labeled with “plump raisins” or similar wording, and dark raisins are shown falling into a rounded rectangular frame. The red “Post” logo appears on the left of the frame. Below, small text reads “20 and 25 oz sizes.”\n\nThe commercial returns to the kitchen breakfast scene. The girl and man continue eating cereal from bowls. The cereal box remains clearly visible on the left. The girl looks pleased or amused, while the man looks down toward his bowl. Their spoons are raised as if in mid-bite.\n\nA transition overlays the kitchen scene with a product graphic: falling raisins appear superimposed over the breakfast table and the “Post” logo/outlined frame, creating a cross-dissolve effect from the live-action scene into a cereal/raisin visual.\n\nThe following graphic shows cereal flakes and raisins falling into a rounded rectangular outline with the red “Post” logo at the upper left. The background is pale and softly lit, with faint indistinct shapes behind the cereal imagery.\n\nNext is an extreme close-up of cereal flakes with several dark raisins embedded or resting on top. The texture of the bran flakes is emphasized, and the raisins appear glossy against the rough cereal surface.\n\nThe commercial then cuts to a clean product end-card. A large purple rounded rectangle contains the red “Post” logo and big white text reading “RAISIN BRAN.” A diagonal label says “NEW IMPROVED” and includes smaller wording about raisins that is partly difficult to read. Beneath the logo, black text reads: “The fruit and cereal lovers cereal.”\n\nThe final frame keeps the same white-background end-card style, but the central rounded rectangle now contains a photo-like image of the young girl and the adult man from the breakfast scene smiling at each other. The red “Post” logo sits at the top-left of the frame. The tagline below remains: “The fruit and cereal lovers cereal.”"
+  },
+  "api_metadata": {
+    "response_id": "resp_022b8fb47815f548006a107203c17c819d8f9d648883e04808",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 864,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 2698
+    }
+  },
+  "duration_seconds": 26.029,
+  "created_at": "2026-05-22T15:11:25Z",
+  "error": null
+}

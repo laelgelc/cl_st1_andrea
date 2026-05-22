@@ -1,0 +1,144 @@
+{
+  "commercial_id": "tv_com_1950_38",
+  "status": "success",
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "prompt": {
+    "prompt_file": "describe_commercials_visual_prompts/visual_commercial_description_v1.txt",
+    "prompt_sha256": "1fae2c687eb9f70e5080f840a9257dfb7f15d4cbab681eef900a93daef219824",
+    "prompt_text": "You are analyzing a television commercial for corpus-linguistic and multimodal discourse analysis.\n\nYou are given sampled frames from a video clip. The frames are in chronological order.\nTreat the frames as a temporal sequence from one commercial, not as independent images.\n\nDescribe the visual content of the commercial as it unfolds over time.\nDescribe only what is visually supported by the frames.\n\nDo not guess dialogue, slogans, music, voice-over, or other audio content.\nIf something is unclear or not visible in the sampled frames, say so."
+  },
+  "input": {
+    "frame_dir": "corpus/05_frames/tv_com_1950_38",
+    "frame_manifest_path": "corpus/05_frames/tv_com_1950_38/frames_manifest.json",
+    "source_video": "corpus/02_commercials/tv_com_1950_38.mp4",
+    "stage1_sampling_config": {
+      "strategy": "scene_change_with_first_last",
+      "scene_threshold": 0.25,
+      "include_first_frame": true,
+      "include_last_frame": true,
+      "last_frame_offset_seconds": 1.0,
+      "image_width": 768,
+      "max_frames": 30,
+      "cap_policy": "chronological_even",
+      "timestamp_tolerance_seconds": 0.1,
+      "min_scene_gap_seconds": 0.0
+    }
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0001.jpg",
+      "timestamp_seconds": 0.0,
+      "selection_reason": "first_frame"
+    },
+    {
+      "frame_index": 2,
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0002.jpg",
+      "timestamp_seconds": 1.124,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 3,
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0003.jpg",
+      "timestamp_seconds": 2.526,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 4,
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0004.jpg",
+      "timestamp_seconds": 11.835,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 5,
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0005.jpg",
+      "timestamp_seconds": 13.637,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 6,
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0006.jpg",
+      "timestamp_seconds": 14.871,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 7,
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0007.jpg",
+      "timestamp_seconds": 22.646,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 8,
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0008.jpg",
+      "timestamp_seconds": 27.217,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 9,
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0009.jpg",
+      "timestamp_seconds": 45.802,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 10,
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0010.jpg",
+      "timestamp_seconds": 56.379,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 11,
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0011.jpg",
+      "timestamp_seconds": 63.219,
+      "selection_reason": "scene_change"
+    },
+    {
+      "frame_index": 12,
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames/tv_com_1950_38/frame_0012.jpg",
+      "timestamp_seconds": 68.025,
+      "selection_reason": "last_frame"
+    }
+  ],
+  "frame_counts": {
+    "manifest_frame_count": 12,
+    "submitted_frame_count": 12,
+    "stage2_frame_cap_applied": false,
+    "max_frames_per_request": 0
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_38.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_38.json",
+    "response_text": "The commercial is a black-and-white animated sequence featuring an Ajax Cleanser can and small cartoon, elf-like characters.\n\nAt the start, a dark title card appears with centered text reading “Ajax Cleanser 1950’s TV Commercial.” The next shots introduce a large cylindrical can labeled “AJAX CLEANSER.” Around the can are smiling cartoon figures with pointed ears, dressed in dark outfits. The can’s top is visible, with circular shaker holes and curved text around the rim. The label includes “NEW TYPE FOAMING CLEANSER,” and the can is presented as the central object.\n\nThe setting then shifts to a bathroom-like space with tiled walls and a bathtub edge. One of the small characters carries or tilts a large Ajax Cleanser can over the tub area, as if using it for cleaning. The can is nearly as large as the character. Another shot shows a character standing on the bathtub ledge near a large faucet, apparently working on or scrubbing the faucet fixture. The faucet and handles are exaggerated in size, consistent with the cartoon style.\n\nA later shot shows a character beside a pull-chain shower. Water is pouring down heavily, creating a splash or foam-like mass, while the character holds the chain and looks toward the falling water. Another bathroom shot shows two characters cleaning or polishing the large faucet area. One character stands under or beside the faucet spout, while another is positioned at the right near the fixture. The animation emphasizes manual cleaning action on bathroom hardware.\n\nThe sequence returns to the shower area, where a character stands near the pull chain and a rounded, foamy or cleaned object beside the water stream. The exact object is not fully clear from the sampled frame, but it appears to be part of the cleaning demonstration in the bathroom setting.\n\nNear the end, the product is shown on a flat surface with one of the cartoon figures standing beside it holding a sign that reads “FOAMS AS IT CLEANS.” The Ajax can remains prominent, with the brand name clearly visible. A close-up follows of a character leaning over the top of the can, holding a sign that reads “POLISHES WITH HALF THE EFFORT!” The can top again shows shaker holes and printed text around the rim.\n\nThe final frames show the can centered with three cartoon figures around it, each holding or gesturing toward advertising signs. Visible signs include “CUTS GREASE FASTER,” “POLISHES WITH HALF THE EFFORT,” and “FOAMS AS IT CLEANS.” The characters smile broadly and pose around the can, presenting the product as the focus of the closing image."
+  },
+  "api_metadata": {
+    "response_id": "resp_0a4365d39a8bf440006a106b9b7370819caf013870e1942504",
+    "usage": {
+      "input_tokens": 3097,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 603,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 3700
+    }
+  },
+  "duration_seconds": 14.532,
+  "created_at": "2026-05-22T14:43:53Z",
+  "error": null
+}

@@ -43,7 +43,7 @@ Tasks:
 4. Create the column `File_ID` by concatenating the `Decade` and `Sequence` columns separated by an underscore for each eligible row. Use `tv_commercial_` as the prefix. Code `Sequence` as 3-digit integer. Example: `tv_commercial_1950_001`.
 5. The script should accept a list of video URLs and a list of time ranges for slicing, and output the sliced videos with appropriate naming conventions.
 
-## Phase 1 - Data Collection
+## Phase 1 - Data Collection and Sampling
 
 ### Source metadata
 
@@ -542,3 +542,102 @@ The `.txt` file contains the visual description. The `.json` file records model,
 prompt, frame, response, and reproducibility metadata.
 
 Requires `OPENAI_API_KEY` in `env/.env` or the system environment.
+
+### Data Sampling
+
+The sampling procedure was carried out after the transcript files had been generated and linked to the metadata table.
+
+First, a `Transcript Word Count` column was added to `tv_commercials_df`. For each row where `Download Success` was `True`, the corresponding transcript file was located in:
+
+```text
+corpus/04_transcripts/
+```
+
+Each transcript filename was matched using the value in the `Commercial ID` column plus the `.txt` extension. The number of words in each transcript was counted and stored in `Transcript Word Count`. Rows associated with unsuccessful downloads were not counted.
+
+Next, transcript word counts were examined separately by decade. The decade was inferred from the `Commercial ID` pattern, for example:
+
+```text
+tv_com_1950_1
+tv_com_1960_1
+tv_com_1970_1
+```
+
+For each decade from 1950 to 2020, descriptive statistics were calculated for `Transcript Word Count`, excluding rows where `Download Success` was `False`. Outliers were identified independently within each decade using the interquartile range rule:
+
+```text
+lower limit = Q1 - 1.5 × IQR
+upper limit = Q3 + 1.5 × IQR
+```
+
+Commercials with transcript word counts below the lower limit or above the upper limit were treated as outliers for that decade.
+
+An `Outlier` column was then added to `tv_commercials_df`. It was initially set to `False` for all rows, and then updated to `True` for all commercials identified as outliers in their respective decades.
+
+After outlier identification, the number of eligible non-outlier commercials was counted per decade. Eligible commercials were those where:
+
+- `Download Success` was `True`;
+- `Outlier` was `False`.
+
+The resulting counts were:
+
+| Decade | Non-Outlier Commercials |
+|---:|---:|
+| 1950 | 111 |
+| 1960 | 119 |
+| 1970 | 103 |
+| 1980 | 105 |
+| 1990 | 115 |
+| 2000 | 114 |
+| 2010 | 112 |
+| 2020 | 115 |
+
+The smallest number of eligible non-outlier commercials was `103`, found in the 1970 decade. This value was used as the balanced sample size for all decades.
+
+A `Selected` column was then added to `tv_commercials_df` and initially set to `False`. From each decade, `103` eligible non-outlier commercials were randomly selected and marked as `Selected = True`.
+
+The random selection used a fixed seed value:
+
+```text
+42
+```
+
+This makes the sampling reproducible, provided that the input data, filtering conditions, row order, and software behaviour remain unchanged.
+
+The final balanced sample contains:
+
+| Decade | Selected Commercials |
+|---:|---:|
+| 1950 | 103 |
+| 1960 | 103 |
+| 1970 | 103 |
+| 1980 | 103 |
+| 1990 | 103 |
+| 2000 | 103 |
+| 2010 | 103 |
+| 2020 | 103 |
+
+This produces a balanced dataset of `824` selected commercials across eight decades.
+
+The updated metadata, including the `Transcript Word Count`, `Outlier`, and `Selected` columns, was saved back to:
+
+```text
+corpus/00_sources/tv_commercials.ndjson
+corpus/00_sources/tv_commercials.xlsx
+corpus/00_sources/tv_commercials.tsv
+```
+
+## Phase 2 - Lexical Multi-dimensional Analysis of the commercial verbal subcorpus to identify dimensions of underlying discourses
+
+
+
+## Phase 3 - Lexical Multi-dimensional Analysis of the commercial visual subcorpus to identify dimensions of underlying discourses
+
+
+
+## Phase 4 - Canonical Correlation Analysis of the commercial verbal and visual subcorpora to identify cross-modal discursive patterns
+
+
+
+## Phase 5 - ANOVA Analysis of the commercial verbal, visual, and cross-modal discourses to detect diachronic variation in discourses
+

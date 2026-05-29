@@ -32,11 +32,11 @@ def tag_file(task):
 # ---------------------------------------------------------
 def main():
 
-    INPUT_BASE = Path("corpus/commercial_verbal")
+    INPUT_BASE = Path("corpus/commercial_visual")
     OUTPUT_BASE = Path("corpus/07_tagged")
     OUTPUT_BASE.mkdir(parents=True, exist_ok=True)
 
-    # Gather decade folders under corpus/commercial_verbal/
+    # Gather decade folders under corpus/commercial_visual/
     folders = sorted(
         folder for folder in INPUT_BASE.iterdir()
         if folder.is_dir()

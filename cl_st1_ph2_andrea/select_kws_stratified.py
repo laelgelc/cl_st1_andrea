@@ -2,177 +2,281 @@
 """
 select_kws_stratified.py
 
-Selects a stratified (quota-based) subset of *positive* keywords (POSKW) from
-key-lemma tables produced upstream (e.g., by `keylemmas.py`).
+Selects a balanced, decade-stratified subset of positive keywords (POSKW)
+from key-lemma tables produced by keylemmas.py.
+
+In this project, the strata are decades:
+
+    1950
+    1960
+    1970
+    1980
+    1990
+    2000
+    2010
+    2020
+
+The strata are of the same nature, so each decade receives the same maximum
+keyword quota. There is no human/non-human weighting.
 
 What it does
 ------------
-1) Reads every `*.txt` key-lemma file in `corpus/08_keylemmas/` (one file per
-   stratum/subcorpus, e.g., `human.txt`, `generic_gpt.txt`, `summary_guided_gpt.txt`).
-2) Extracts lemmas whose final column is `POSKW`, applying additional filters:
-   - drop lemmas containing Unicode punctuation
-   - drop lemmas containing any digits
-   - drop lemmas containing any uppercase letters (keep lowercase-only)
-3) Applies per-stratum quotas:
-   - each non-human stratum: at most `--ceiling` lemmas
-   - `human`: at most `--ceiling * --human-weight` lemmas
-   Selection preserves the original file order (i.e., top-ranked first).
-4) Builds a consolidated list in a priority order tailored to this project:
-   human → summary_guided_* → (other strata) → generic_*
-   Truncates the consolidated list to `--max-total` (before de-duplication).
-5) Writes outputs to `corpus/09_kw_selected/`:
-   - one file per stratum: `<stratum>.txt`
-   - one consolidated, de-duplicated list: `keywords.txt` (alphabetical)
+1) Reads every decade key-lemma file in corpus/08_keylemmas/.
+   Supported extensions: .tsv and .txt.
+
+2) Extracts lemmas whose final column is POSKW, applying additional filters:
+   - drop lemmas containing Unicode punctuation;
+   - drop lemmas containing digits;
+   - drop lemmas containing uppercase letters.
+
+3) Applies the same quota to every decade:
+   - each decade: at most --per-decade lemmas.
+
+4) Builds a consolidated list in chronological decade order.
+
+5) Optionally truncates the consolidated list to --max-total before
+   de-duplication.
+
+6) Writes outputs to corpus/09_kw_selected/:
+   - one file per decade: <decade>.txt
+   - one consolidated, de-duplicated list: keywords.txt
 
 Typical usage
 -------------
 python select_kws_stratified.py \
-    --ceiling 250 \
-    --human-weight 2 \
+    --per-decade 250 \
     --max-total 1200
 """
 
 import os
+import re
 import glob
-import unicodedata
 import argparse
+import unicodedata
+
 
 INPUT_DIR = "corpus/08_keylemmas"
 OUTPUT_DIR = "corpus/09_kw_selected"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+DECADE_RE = re.compile(r"^\d{4}$")
+SUPPORTED_EXTENSIONS = (".tsv", ".txt")
+
 
 # -----------------------------------------------------------
 # Helpers
 # -----------------------------------------------------------
 
-def contains_punctuation(s):
-    return any(unicodedata.category(ch).startswith("P") for ch in s)
+def natural_sort_key(text):
+    """Return a natural-sort key that treats digit runs as integers."""
+    parts = re.split(r"(\d+)", text)
+    return [int(part) if part.isdigit() else part.lower() for part in parts]
+
+
+def contains_punctuation(text):
+    """Return True if text contains any Unicode punctuation character."""
+    return any(unicodedata.category(ch).startswith("P") for ch in text)
+
+
+def is_clean_lemma(lemma):
+    """Return True if lemma passes lexical filtering rules."""
+    if contains_punctuation(lemma):
+        return False
+    if any(ch.isdigit() for ch in lemma):
+        return False
+    if any(ch.isupper() for ch in lemma):
+        return False
+
+    return True
+
+
+def discover_keylemma_files(input_dir):
+    """Return decade-named key-lemma files from the input directory."""
+    if not os.path.isdir(input_dir):
+        raise FileNotFoundError(f"Input directory does not exist: {input_dir}")
+
+    files = []
+
+    for extension in SUPPORTED_EXTENSIONS:
+        files.extend(glob.glob(os.path.join(input_dir, f"*{extension}")))
+
+    decade_files = {}
+
+    for filepath in files:
+        stem = os.path.splitext(os.path.basename(filepath))[0]
+
+        if not DECADE_RE.match(stem):
+            continue
+
+        # Prefer .tsv if both .tsv and .txt exist for the same decade.
+        existing = decade_files.get(stem)
+        if existing is None:
+            decade_files[stem] = filepath
+        elif filepath.endswith(".tsv") and existing.endswith(".txt"):
+            decade_files[stem] = filepath
+
+    if not decade_files:
+        raise FileNotFoundError(
+            f"No decade key-lemma files found in {input_dir}. "
+            "Expected files such as 1950.tsv, 1960.tsv, etc."
+        )
+
+    return [
+        (decade, decade_files[decade])
+        for decade in sorted(decade_files, key=natural_sort_key)
+    ]
+
 
 def load_poskw(filepath):
     """
-    Load POSKW lemmas from a keylemma file.
-    Skips header, punctuation, digits, uppercase.
-    Returns lemmas in file order.
+    Load POSKW lemmas from a key-lemma file.
+
+    The file may be tab-separated or whitespace-separated.
+    The first column is assumed to be the lemma.
+    The final column is assumed to be the status.
     """
     lemmas = []
-    with open(filepath, "r", encoding="utf-8") as f:
-        lines = f.readlines()[1:]  # skip header
 
-    for line in lines:
-        parts = line.strip().split()
+    with open(filepath, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    if not lines:
+        return lemmas
+
+    for line in lines[1:]:  # skip header
+        line = line.strip()
+
+        if not line:
+            continue
+
+        if "\t" in line:
+            parts = line.split("\t")
+        else:
+            parts = line.split()
+
         if len(parts) < 2:
             continue
-        lemma, status = parts[0], parts[-1]
 
-        # filtering criteria
+        lemma = parts[0].strip()
+        status = parts[-1].strip()
+
         if status != "POSKW":
             continue
-        if contains_punctuation(lemma):
-            continue
-        if any(ch.isdigit() for ch in lemma):
-            continue
-        if any(ch.isupper() for ch in lemma):
+
+        if not is_clean_lemma(lemma):
             continue
 
         lemmas.append(lemma)
 
     return lemmas
 
+
+def write_word_list(path, words):
+    """Write one word per line."""
+    with open(path, "w", encoding="utf-8") as fout:
+        for word in words:
+            fout.write(word + "\n")
+
+
 # -----------------------------------------------------------
 # Main
 # -----------------------------------------------------------
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--ceiling", type=int, required=True,
-                        help="Max keywords per non-human stratum (e.g., 125)")
-    parser.add_argument("--human-weight", type=int, required=True,
-                        help="Multiplier applied to human quota (e.g., 2 → 250)")
-    parser.add_argument("--max-total", type=int, required=True,
-                        help="Max total keywords allowed (e.g., 1000)")
+    parser = argparse.ArgumentParser(
+        description="Select balanced POSKW keyword lists across decade strata."
+    )
+    parser.add_argument(
+        "--input",
+        default=INPUT_DIR,
+        help="Input directory containing decade key-lemma files.",
+    )
+    parser.add_argument(
+        "--output",
+        default=OUTPUT_DIR,
+        help="Output directory for selected keyword lists.",
+    )
+    parser.add_argument(
+        "--per-decade",
+        type=int,
+        required=True,
+        help="Maximum number of POSKW lemmas to select from each decade.",
+    )
+    parser.add_argument(
+        "--max-total",
+        type=int,
+        default=0,
+        help=(
+            "Optional maximum consolidated keyword count before de-duplication. "
+            "Use 0 for no maximum."
+        ),
+    )
+
     args = parser.parse_args()
 
-    ceiling = args.ceiling
-    human_weight = args.human_weight
-    max_total = args.max_total
+    if args.per_decade <= 0:
+        raise ValueError("--per-decade must be greater than 0")
 
-    # Load all strata
+    if args.max_total < 0:
+        raise ValueError("--max-total must be non-negative")
+
+    os.makedirs(args.output, exist_ok=True)
+
+    keylemma_files = discover_keylemma_files(args.input)
+
+    # Load all decade strata.
     strata = {}
-    for filepath in sorted(glob.glob(os.path.join(INPUT_DIR, "*.txt"))):
-        name = os.path.basename(filepath).replace(".txt", "")
-        strata[name] = load_poskw(filepath)
 
-    # Determine quotas
-    quotas = {}
-    for name in strata:
-        if name == "human":
-            quotas[name] = ceiling * human_weight
-        else:
-            quotas[name] = ceiling
+    for decade, filepath in keylemma_files:
+        strata[decade] = load_poskw(filepath)
 
-    # Display quotas
-    print("=== Keyword Quotas ===")
-    for name in sorted(quotas):
-        print(f"{name:<15} → {quotas[name]} keywords (max)")
-    print("=======================\n")
+    print("=== Decade Keyword Quotas ===")
+    for decade in sorted(strata, key=natural_sort_key):
+        print(f"{decade:<6} → {args.per_decade} keywords max")
+    print("=============================\n")
 
-    # Per-stratum selection
-    selected_by_stratum = {}
+    # Per-decade selection.
+    selected_by_decade = {}
+
+    for decade in sorted(strata, key=natural_sort_key):
+        lemmas = strata[decade]
+        chosen = lemmas[:args.per_decade]
+        selected_by_decade[decade] = chosen
+
+        print(
+            f"{decade:<6} → selected {len(chosen)}/{args.per_decade} "
+            f"from {len(lemmas)} available POSKW lemmas"
+        )
+
+    # Build consolidated list in chronological decade order.
     consolidated = []
 
-    for name, lemmas in strata.items():
-        quota = quotas[name]
-        chosen = lemmas[:quota]
-        selected_by_stratum[name] = chosen
+    for decade in sorted(selected_by_decade, key=natural_sort_key):
+        consolidated.extend(selected_by_decade[decade])
 
-        print(f"{name:<15} → selected {len(chosen)}/{quota} keywords")
+    # Enforce optional max_total before de-duplication.
+    if args.max_total and len(consolidated) > args.max_total:
+        consolidated = consolidated[:args.max_total]
 
-    # Build consolidated list in priority order
-    # priority: human → summary_guided_* → (others) → generic_*
-
-    human_key = ["human"] if "human" in strata else []
-    summary_guided_keys = sorted([s for s in strata if s.startswith("summary_guided_")])
-    generic_keys = sorted([s for s in strata if s.startswith("generic_")])
-
-    # Any remaining files (e.g., model names) are treated as "other"
-    other_keys = sorted([
-        s for s in strata
-        if s not in set(human_key + summary_guided_keys + generic_keys)
-    ])
-
-    ordered_strata = human_key + summary_guided_keys + other_keys + generic_keys
-
-    for s in ordered_strata:
-        consolidated.extend(selected_by_stratum[s])
-
-    # Enforce max_total
-    if len(consolidated) > max_total:
-        consolidated = consolidated[:max_total]
-
-    unique_count = len(set(consolidated))
-    total_count = len(consolidated)
-
-    print(f"\nTotal consolidated keywords (incl. duplicates): {total_count}")
-    print(f"Unique keywords (used downstream): {unique_count}")
-    print(f"Duplicates removed later: {total_count - unique_count}")
-
-    # Write per-stratum outputs
-    for name, words in selected_by_stratum.items():
-        outpath = os.path.join(OUTPUT_DIR, f"{name}.txt")
-        with open(outpath, "w", encoding="utf-8") as fout:
-            for w in words:
-                fout.write(w + "\n")
-
-    # Write consolidated
-    # Deduplicate and sort before saving
     unique_lemmas = sorted(set(consolidated))
 
-    cons_path = os.path.join(OUTPUT_DIR, "keywords.txt")
-    with open(cons_path, "w", encoding="utf-8") as fout:
-        for w in unique_lemmas:
-            fout.write(w + "\n")
+    total_count = len(consolidated)
+    unique_count = len(unique_lemmas)
 
-    print(f"\nFinal unique keywords written: {len(unique_lemmas)}")
+    print(f"\nTotal consolidated keywords before de-duplication: {total_count}")
+    print(f"Unique keywords after de-duplication: {unique_count}")
+    print(f"Duplicates removed: {total_count - unique_count}")
+
+    # Write per-decade outputs.
+    for decade, words in selected_by_decade.items():
+        outpath = os.path.join(args.output, f"{decade}.txt")
+        write_word_list(outpath, words)
+
+    # Write consolidated deduplicated output.
+    cons_path = os.path.join(args.output, "keywords.txt")
+    write_word_list(cons_path, unique_lemmas)
+
+    print(f"\nFinal unique keywords written to: {cons_path}")
+    print(f"Final unique keyword count: {len(unique_lemmas)}")
 
 
 if __name__ == "__main__":

@@ -654,11 +654,93 @@ corpus/00_sources/tv_commercials.tsv
 
 ## Phase 2 - Lexical Multi-dimensional Analysis of the commercial verbal subcorpus to identify dimensions of underlying discourses
 
+### Commercial verbal subcorpus organisation
 
+The selected commercial transcripts were copied from the Phase 1 transcript directory:
+
+```text
+../cl_st1_ph1_andrea/corpus/04_transcripts/
+```
+
+to the Phase 2 commercial verbal subcorpus directory:
+
+```text
+corpus/commercial_verbal/
+```
+
+Only commercials marked as `Selected = True` in `tv_commercials_df` were included.
+
+The copied transcript files were organised into decade-specific subdirectories using the value in the `Decade` column:
+
+```text
+corpus/commercial_verbal/1950/
+corpus/commercial_verbal/1960/
+corpus/commercial_verbal/1970/
+corpus/commercial_verbal/1980/
+corpus/commercial_verbal/1990/
+corpus/commercial_verbal/2000/
+corpus/commercial_verbal/2010/
+corpus/commercial_verbal/2020/
+```
+
+Each copied transcript file keeps the filename derived from its `Commercial ID`:
+
+```text
+corpus/commercial_verbal/<Decade>/<Commercial ID>.txt
+```
+
+For example:
+
+```text
+corpus/commercial_verbal/1950/tv_com_1950_1.txt
+```
+
+The resulting verbal subcorpus contains the balanced sample of selected commercials, with `103` transcript files per decade and `824` transcript files in total.
 
 ## Phase 3 - Lexical Multi-dimensional Analysis of the commercial visual subcorpus to identify dimensions of underlying discourses
 
+### Commercial visual subcorpus organisation
 
+The selected commercial visual descriptions were copied from the Phase 1 visual description directory:
+
+```text
+../cl_st1_ph1_andrea/corpus/06_visual_descriptions/
+```
+
+to the Phase 2 commercial visual subcorpus directory:
+
+```text
+corpus/commercial_visual/
+```
+
+Only commercials marked as `Selected = True` in `tv_commercials_df` were included.
+
+The copied visual description files were organised into decade-specific subdirectories using the value in the `Decade` column:
+
+```text
+corpus/commercial_visual/1950/
+corpus/commercial_visual/1960/
+corpus/commercial_visual/1970/
+corpus/commercial_visual/1980/
+corpus/commercial_visual/1990/
+corpus/commercial_visual/2000/
+corpus/commercial_visual/2010/
+corpus/commercial_visual/2020/
+```
+
+Each copied visual description file keeps the filename derived from its `Commercial ID`:
+
+```text
+corpus/commercial_visual/<Decade>/<Commercial ID>.txt
+```
+
+For example:
+
+```text
+corpus/commercial_visual/1950/tv_com_1950_1.txt
+```
+
+The resulting visual subcorpus mirrors the verbal subcorpus, containing the same balanced sample of selected commercials, with `103` visual description files per decade and `824` visual description files in total.
 
 ## Phase 4 - Canonical Correlation Analysis of the commercial verbal and visual subcorpora to identify cross-modal discursive patterns
 

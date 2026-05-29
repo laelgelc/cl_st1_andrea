@@ -577,20 +577,21 @@ An `Outlier` column was then added to `tv_commercials_df`. It was initially set 
 After outlier identification, the number of eligible non-outlier commercials was counted per decade. Eligible commercials were those where:
 
 - `Download Success` was `True`;
-- `Outlier` was `False`.
+- `Outlier` was `False`;
+- `Transcript Word Count` was greater than `20`
 
 The resulting counts were:
 
-| Decade | Non-Outlier Commercials |
-|---:|---:|
-| 1950 | 111 |
-| 1960 | 119 |
-| 1970 | 103 |
-| 1980 | 105 |
-| 1990 | 115 |
-| 2000 | 114 |
-| 2010 | 112 |
-| 2020 | 115 |
+| Decade | Non-Outlier Commercials, Longer than 20 Words |
+|-------:|----------------------------------------------:|
+|   1950 |                                           111 |
+|   1960 |                                           119 |
+|   1970 |                                           103 |
+|   1980 |                                           105 |
+|   1990 |                                           115 |
+|   2000 |                                           114 |
+|   2010 |                                           112 |
+|   2020 |                                           115 |
 
 The smallest number of eligible non-outlier commercials was `103`, found in the 1970 decade. This value was used as the balanced sample size for all decades.
 
@@ -606,16 +607,16 @@ This makes the sampling reproducible, provided that the input data, filtering co
 
 The final balanced sample contains:
 
-| Decade | Selected Commercials |
-|---:|---:|
-| 1950 | 103 |
-| 1960 | 103 |
-| 1970 | 103 |
-| 1980 | 103 |
-| 1990 | 103 |
-| 2000 | 103 |
-| 2010 | 103 |
-| 2020 | 103 |
+| Decade |   Selected Commercials |
+|-------:|-----------------------:|
+|   1950 |                    103 |
+|   1960 |                    103 |
+|   1970 |                    103 |
+|   1980 |                    103 |
+|   1990 |                    103 |
+|   2000 |                    103 |
+|   2010 |                    103 |
+|   2020 |                    103 |
 
 This produces a balanced dataset of `824` selected commercials across eight decades.
 

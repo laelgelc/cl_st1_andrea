@@ -59,6 +59,10 @@ Current metadata files:
 corpus/00_sources/TV_commercials_1950_2025.xlsx
 corpus/00_sources/tv_commercials.ndjson
 corpus/00_sources/tv_commercials.xlsx
+corpus/00_sources/tv_commercials.tsv
+corpus/00_sources/tv_commercials_selected_1.ndjson
+corpus/00_sources/tv_commercials_selected_1.xlsx
+corpus/00_sources/tv_commercials_selected_1.tsv
 ```
 
 The original spreadsheet, `TV_commercials_1950_2025.xlsx`, is processed into a structured metadata table. The processed metadata includes:
@@ -634,23 +638,39 @@ After the sampling metadata had been prepared, the `Category` column was reviewe
 
 The following category labels were updated:
 
-| Original label | Standardised label |
-|---|---|
-| `Food, Beverage & Nutrition` | `Food, Beverages & Nutrition` |
-| `Retail (Fashion/ Consumer Goods) &  Services` | `Retail (Fashion & Consumer Goods) & Services` |
-| `Retail (Fashion/ Consumer Goods) &  Services ` | `Retail (Fashion & Consumer Goods) & Services` |
+| Original label                                                            | Standardised label                                                        |
+|---------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| `Food, Beverage & Nutrition`                                              | `Food, Beverages & Nutrition`                                             |
+| `Retail (Fashion/ Consumer Goods) &  Services`                            | `Retail (Fashion & Consumer Goods) & Services`                            |
+| `Retail (Fashion/ Consumer Goods) &  Services `                           | `Retail (Fashion & Consumer Goods) & Services`                            |
 | `Retail (Fashion/ Consumer Goods) &  Services, Consumer Goods & Services` | `Retail (Fashion & Consumer Goods) & Services, Consumer Goods & Services` |
-| `Retail (Fashion/ Consumer Goods) &  Services, Fashion & Consumer Goods` | `Retail (Fashion & Consumer Goods) & Services, Fashion & Consumer Goods` |
-| `Technology, Communication & Eletronics` | `Technology, Communication & Electronics` |
-| `Transport (Personal/ Public), Travel & Energy` | `Transport (Personal & Public), Travel & Energy` |
+| `Retail (Fashion/ Consumer Goods) &  Services, Fashion & Consumer Goods`  | `Retail (Fashion & Consumer Goods) & Services, Fashion & Consumer Goods`  |
+| `Technology, Communication & Eletronics`                                  | `Technology, Communication & Electronics`                                 |
+| `Transport (Personal/ Public), Travel & Energy`                           | `Transport (Personal & Public), Travel & Energy`                          |
 
-The corrected metadata was saved back to:
+The updated metadata, including the `Transcript Word Count`, `Outlier`, and `Selected` columns, was saved back to:
 
 ```text
 corpus/00_sources/tv_commercials.ndjson
 corpus/00_sources/tv_commercials.xlsx
 corpus/00_sources/tv_commercials.tsv
 ```
+
+A reduced metadata table containing only the selected commercials was also created. This table includes the following columns:
+
+- `Decade`
+- `Category`
+- `Commercial ID`
+
+Only rows where `Selected` is `True` are included. This selected-sample metadata table was saved as:
+
+```text
+corpus/00_sources/tv_commercials_selected_1.ndjson
+corpus/00_sources/tv_commercials_selected_1.xlsx
+corpus/00_sources/tv_commercials_selected_1.tsv
+```
+
+These files provide a compact reference list for the balanced sample of `824` selected commercials.
 
 ## Phase 2 - Lexical Multi-dimensional Analysis of the commercial verbal subcorpus to identify dimensions of underlying discourses
 

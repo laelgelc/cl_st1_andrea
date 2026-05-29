@@ -627,6 +627,30 @@ corpus/00_sources/tv_commercials.xlsx
 corpus/00_sources/tv_commercials.tsv
 ```
 
+### Category label standardisation
+
+After the sampling metadata had been prepared, the `Category` column was reviewed and standardised to correct spelling, punctuation, and naming inconsistencies.
+
+The following category labels were updated:
+
+| Original label | Standardised label |
+|---|---|
+| `Food, Beverage & Nutrition` | `Food, Beverages & Nutrition` |
+| `Retail (Fashion/ Consumer Goods) &  Services` | `Retail (Fashion & Consumer Goods) & Services` |
+| `Retail (Fashion/ Consumer Goods) &  Services ` | `Retail (Fashion & Consumer Goods) & Services` |
+| `Retail (Fashion/ Consumer Goods) &  Services, Consumer Goods & Services` | `Retail (Fashion & Consumer Goods) & Services, Consumer Goods & Services` |
+| `Retail (Fashion/ Consumer Goods) &  Services, Fashion & Consumer Goods` | `Retail (Fashion & Consumer Goods) & Services, Fashion & Consumer Goods` |
+| `Technology, Communication & Eletronics` | `Technology, Communication & Electronics` |
+| `Transport (Personal/ Public), Travel & Energy` | `Transport (Personal & Public), Travel & Energy` |
+
+The corrected metadata was saved back to:
+
+```text
+corpus/00_sources/tv_commercials.ndjson
+corpus/00_sources/tv_commercials.xlsx
+corpus/00_sources/tv_commercials.tsv
+```
+
 ## Phase 2 - Lexical Multi-dimensional Analysis of the commercial verbal subcorpus to identify dimensions of underlying discourses
 
 

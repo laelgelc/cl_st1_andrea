@@ -63,3 +63,10 @@ python factor_lists.py \
 
 python corpus_size.py
 # Output: corpus_size/corpus_size.tsv
+
+cd latex_boxplots
+# Builds boxplots for factor analysis:
+python latex_boxplots.py
+# Output: latex_boxplots/slides
+cd ..
+

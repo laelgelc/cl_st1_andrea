@@ -60,3 +60,6 @@ python factor_lists.py \
   --output-dir factors \
   --cutoff 0.3
 # Output: factors
+
+python corpus_size.py
+# Output: corpus_size/corpus_size.tsv

@@ -1,144 +1,372 @@
 #!/usr/bin/env python3
-# Updated factor_lists.py
+"""
+Create readable factor-loading lists from SAS rotated.csv output.
+
+Expected inputs:
+    sas/output_<Project Name>/rotated.csv
+    index_keywords.txt
+
+Expected index_keywords.txt format:
+    No header
+    Space-separated
+    Columns:
+        keyword_id lemma
+
+Example:
+    000001 act
+    000002 air
+    000003 camera
+
+Outputs:
+    factors/
+        f1_pos.txt
+        f1_neg.txt
+        ...
+
+    factors/var_id/
+        f1_pos_var_id.txt
+        f1_neg_var_id.txt
+        ...
+
+    factors/primary_loadings/
+        f1_pos.txt
+        f1_neg.txt
+        ...
+
+The output files intentionally include a first summary line:
+    variables loading on this pole = <count>
+"""
+
+from __future__ import annotations
+
+import argparse
 from pathlib import Path
-import os
+
 import pandas as pd
 
-def fmt_loading(x):
-    """Format a loading value with no leading zero (e.g., .45, -.62)."""
-    s = f"{x:.2f}"
-    if s.startswith("0"):
-        return s[1:]       # 0.45  → .45
-    if s.startswith("-0"):
-        return "-" + s[2:] # -0.45 → -.45
-    return s              # fallback
 
-# Step 1: Load rotated matrix
-rotated = pd.read_csv("sas/output_cl_st1_ph3_andressa/rotated.csv")
+DEFAULT_PROJECT = "cl_st1_ph2_andrea"
+DEFAULT_SAS_OUTPUT_DIR = Path("sas") / f"output_{DEFAULT_PROJECT}"
+DEFAULT_INDEX_FILE = Path("index_keywords.txt")
+DEFAULT_OUTPUT_DIR = Path("factors")
+DEFAULT_CUTOFF = 0.3
 
-# Step 2: Load index_keywords.txt
-id_to_word = {}
-with open("index_keywords.txt", encoding="utf-8") as f:
-    for line in f:
-        parts = line.strip().split()
-        if parts:
-            id_num, word = parts
-            id_to_word[f"v{id_num}"] = word
 
-# Step 3: Prepare output folders
-os.makedirs("factors", exist_ok=True)
-os.makedirs("factors/var_id", exist_ok=True)
-os.makedirs("factors/primary_loadings", exist_ok=True)
+def fmt_loading(value: float) -> str:
+    """Format a loading value with no leading zero, e.g. .45, -.62."""
+    text = f"{value:.2f}"
 
-# Step 4: Main loop
-cutoff = 0.3
-results = {}
+    if text.startswith("0"):
+        return text[1:]
 
-for idx, row in rotated.iterrows():
-    varname = row["_NAME_"]
-    word = id_to_word.get(varname, varname)
+    if text.startswith("-0"):
+        return "-" + text[2:]
 
-    # Skip rows without primary loading
-    if pd.isna(row["pole"]) or pd.isna(row["factor"]) or row["loaded"] != 1:
-        continue
+    return text
 
-    primary_factor = row["factor"]
-    primary_pole = int(row["pole"])
 
-    # Build primary output filename
-    factor_id = primary_factor.replace("fac", "f")
-    primary_outfile = f"factors/{factor_id}_{'pos' if primary_pole == 1 else 'neg'}.txt"
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Create readable factor-loading lists from SAS rotated.csv output."
+    )
 
-    if primary_outfile not in results:
-        results[primary_outfile] = []
+    parser.add_argument(
+        "--sas-output-dir",
+        default=str(DEFAULT_SAS_OUTPUT_DIR),
+        help=(
+            "Directory containing rotated.csv, usually "
+            "sas/output_<Project Name>."
+        ),
+    )
+    parser.add_argument(
+        "--index-file",
+        default=str(DEFAULT_INDEX_FILE),
+        help="Path to index_keywords.txt.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=str(DEFAULT_OUTPUT_DIR),
+        help="Output directory for factor lists.",
+    )
+    parser.add_argument(
+        "--cutoff",
+        type=float,
+        default=DEFAULT_CUTOFF,
+        help="Minimum absolute loading for secondary loadings.",
+    )
 
-    # Correct mapping: fac1 -> Factor1
-    factor_column = primary_factor.replace("fac", "Factor")
+    return parser.parse_args()
 
-    primary_score = row.get(factor_column, None)
 
-    if pd.isna(primary_score):
-        continue
+def load_keyword_index(index_file: Path) -> dict[str, str]:
+    """
+    Load keyword ID to lemma mapping.
 
-    # Format primary loading
-    formatted_score = fmt_loading(primary_score)    
-    entry = f"{word} ({formatted_score})"
+    Expected format:
+        000001 act
+        000002 air
 
-    results[primary_outfile].append(entry)
+    Returns:
+        v000001 -> act
+        v000002 -> air
+    """
+    if not index_file.exists():
+        raise FileNotFoundError(f"Keyword index file not found: {index_file}")
 
-    # Step 5: Handle secondary loadings
-    for col in rotated.columns:
-        if col.startswith("Factor") and col != factor_column:
-            value = row[col]
-            if abs(value) >= cutoff:
-                sec_pole = 1 if value > 0 else -1
-                sec_factor_num = col.replace("Factor", "")
-                sec_outfile = f"factors/f{sec_factor_num}_{'pos' if sec_pole == 1 else 'neg'}.txt"
+    id_to_word: dict[str, str] = {}
 
-                if sec_outfile not in results:
-                    results[sec_outfile] = []
+    with index_file.open("r", encoding="utf-8") as f:
+        for line_number, line in enumerate(f, start=1):
+            line = line.strip()
 
-                formatted_sec = fmt_loading(value)
-                sec_entry = f"({word} ({formatted_sec}))"
-                results[sec_outfile].append(sec_entry)
+            if not line:
+                continue
 
-# Step 6: Sort and save all outputs
-for outfile, entries in results.items():
-    # Extract loading values for sorting
-    def extract_loading(entry):
-        parts = entry.replace("(", "").replace(")", "").split()
-        if len(parts) >= 2:
-            try:
-                return abs(float(parts[-1]))
-            except ValueError:
-                return 0.0
-        return 0.0
+            parts = line.split(maxsplit=1)
 
-    sorted_entries = sorted(entries, key=extract_loading, reverse=True)
-    count = len(sorted_entries)
+            if len(parts) != 2:
+                raise ValueError(
+                    f"Unexpected format in {index_file} at line {line_number}: "
+                    "expected keyword_id and lemma."
+                )
 
-    # Save the full word version (primary + secondary) into factors/
-    with open(outfile, "w", encoding="utf-8") as f:
-        f.write(f"variables loading on this pole = {count}\n")
-        f.write(", ".join(sorted_entries) + "\n")
+            keyword_id, word = parts
 
-    # Save the var_id version into factors/var_id/
-    var_id_entries = []
+            if line_number == 1 and keyword_id.lower() in {"keyword_id", "id"}:
+                raise ValueError(
+                    f"{index_file} appears to contain a header. "
+                    "Expected a headerless file."
+                )
 
-    for entry in sorted_entries:
-        parts = entry.replace("(", "").replace(")", "").split()
-        if not parts:
+            if not keyword_id.isdigit():
+                raise ValueError(
+                    f"Invalid keyword ID in {index_file} at line {line_number}: "
+                    f"{keyword_id}"
+                )
+
+            id_to_word[f"v{keyword_id}"] = word
+
+    if not id_to_word:
+        raise ValueError(f"No keyword entries found in {index_file}")
+
+    return id_to_word
+
+
+def load_rotated(rotated_path: Path) -> pd.DataFrame:
+    """Load and validate SAS rotated.csv output."""
+    if not rotated_path.exists():
+        raise FileNotFoundError(f"Rotated CSV file not found: {rotated_path}")
+
+    rotated = pd.read_csv(rotated_path)
+
+    required_columns = {"_NAME_", "loaded", "factor", "pole"}
+    missing_columns = required_columns - set(rotated.columns)
+
+    if missing_columns:
+        raise ValueError(
+            f"{rotated_path} is missing required columns: "
+            f"{', '.join(sorted(missing_columns))}"
+        )
+
+    factor_columns = [
+        column for column in rotated.columns
+        if column.startswith("Factor")
+    ]
+
+    if not factor_columns:
+        raise ValueError(f"No Factor columns found in {rotated_path}")
+
+    return rotated
+
+
+def extract_loading(entry: str) -> float:
+    """Extract absolute loading value from a formatted entry for sorting."""
+    parts = entry.replace("(", "").replace(")", "").split()
+
+    if len(parts) >= 2:
+        try:
+            return abs(float(parts[-1]))
+        except ValueError:
+            return 0.0
+
+    return 0.0
+
+
+def build_word_to_var_id(id_to_word: dict[str, str]) -> dict[str, str]:
+    """Build reverse lookup from lemma to variable ID."""
+    return {
+        word: var_id
+        for var_id, word in id_to_word.items()
+    }
+
+
+def write_factor_outputs(
+        results: dict[Path, list[str]],
+        output_dir: Path,
+        id_to_word: dict[str, str],
+) -> None:
+    """Write word, variable-ID, and primary-only factor-list outputs."""
+    var_id_dir = output_dir / "var_id"
+    primary_dir = output_dir / "primary_loadings"
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    var_id_dir.mkdir(parents=True, exist_ok=True)
+    primary_dir.mkdir(parents=True, exist_ok=True)
+
+    word_to_var_id = build_word_to_var_id(id_to_word)
+
+    for outfile, entries in results.items():
+        sorted_entries = sorted(entries, key=extract_loading, reverse=True)
+        count = len(sorted_entries)
+
+        # Save full word version: primary plus secondary loadings.
+        with outfile.open("w", encoding="utf-8") as f:
+            f.write(f"variables loading on this pole = {count}\n")
+            f.write(", ".join(sorted_entries) + "\n")
+
+        # Save variable-ID version.
+        var_id_entries = []
+
+        for entry in sorted_entries:
+            parts = entry.replace("(", "").replace(")", "").split()
+
+            if not parts:
+                continue
+
+            word_part = parts[0]
+            found_id = word_to_var_id.get(word_part, word_part)
+            loading = parts[-1]
+
+            if entry.startswith("("):
+                new_entry = f"({found_id} ({loading}))"
+            else:
+                new_entry = f"{found_id} ({loading})"
+
+            var_id_entries.append(new_entry)
+
+        var_outfile = var_id_dir / outfile.name.replace(".txt", "_var_id.txt")
+
+        with var_outfile.open("w", encoding="utf-8") as f:
+            f.write(f"variables loading on this pole = {count}\n")
+            f.write(", ".join(var_id_entries) + "\n")
+
+        # Save primary-only word version.
+        primary_only_entries = [
+            entry for entry in sorted_entries
+            if not entry.startswith("(")
+        ]
+        primary_only_count = len(primary_only_entries)
+
+        primary_outfile = primary_dir / outfile.name
+
+        with primary_outfile.open("w", encoding="utf-8") as f:
+            f.write(f"variables loading on this pole = {primary_only_count}\n")
+            f.write(", ".join(primary_only_entries) + "\n")
+
+
+def main() -> None:
+    """Run factor-list generation."""
+    args = parse_args()
+
+    sas_output_dir = Path(args.sas_output_dir)
+    rotated_path = sas_output_dir / "rotated.csv"
+    index_file = Path(args.index_file)
+    output_dir = Path(args.output_dir)
+    cutoff = args.cutoff
+
+    if cutoff < 0:
+        raise ValueError("--cutoff must be non-negative")
+
+    rotated = load_rotated(rotated_path)
+    id_to_word = load_keyword_index(index_file)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    results: dict[Path, list[str]] = {}
+
+    factor_columns = [
+        column for column in rotated.columns
+        if column.startswith("Factor")
+    ]
+
+    for _, row in rotated.iterrows():
+        varname = row["_NAME_"]
+        word = id_to_word.get(varname, varname)
+
+        # Skip rows without primary loading.
+        if (
+                pd.isna(row["pole"])
+                or pd.isna(row["factor"])
+                or row["loaded"] != 1
+        ):
             continue
-        word_part = parts[0]
 
-        found_id = None
-        for var_id, word in id_to_word.items():
-            if word == word_part:
-                found_id = var_id
-                break
-        if found_id is None:
-            found_id = word_part
+        primary_factor = str(row["factor"])
+        primary_pole = int(row["pole"])
 
-        loading = parts[-1]
-        if entry.startswith("("):  # secondary loading
-            new_entry = f"({found_id} ({loading}))"
-        else:  # primary loading
-            new_entry = f"{found_id} ({loading})"
+        factor_id = primary_factor.replace("fac", "f")
+        pole_label = "pos" if primary_pole == 1 else "neg"
+        primary_outfile = output_dir / f"{factor_id}_{pole_label}.txt"
 
-        var_id_entries.append(new_entry)
+        results.setdefault(primary_outfile, [])
 
-    var_outfile = Path("factors/var_id") / Path(outfile).name.replace(".txt", "_var_id.txt")
-    with open(var_outfile, "w", encoding="utf-8") as f:
-        f.write(f"variables loading on this pole = {count}\n")
-        f.write(", ".join(var_id_entries) + "\n")
+        # Mapping: fac1 -> Factor1
+        factor_column = primary_factor.replace("fac", "Factor")
+        primary_score = row.get(factor_column, None)
 
-    # Save the **primary-only** word version into factors/primary_loadings/
-    primary_only_entries = [e for e in sorted_entries if not e.startswith("(")]
-    primary_only_count = len(primary_only_entries)
+        if pd.isna(primary_score):
+            continue
 
-    primary_outfile_clean = Path("factors/primary_loadings") / Path(outfile).name
-    with open(primary_outfile_clean, "w", encoding="utf-8") as f:
-        f.write(f"variables loading on this pole = {primary_only_count}\n")
-        f.write(", ".join(primary_only_entries) + "\n")
+        formatted_score = fmt_loading(float(primary_score))
+        entry = f"{word} ({formatted_score})"
 
-print("Done.")
+        results[primary_outfile].append(entry)
+
+        # Secondary loadings.
+        for column in factor_columns:
+            if column == factor_column:
+                continue
+
+            value = row[column]
+
+            if pd.isna(value):
+                continue
+
+            if abs(value) >= cutoff:
+                secondary_pole = 1 if value > 0 else -1
+                secondary_factor_num = column.replace("Factor", "")
+                secondary_pole_label = "pos" if secondary_pole == 1 else "neg"
+                secondary_outfile = (
+                        output_dir
+                        / f"f{secondary_factor_num}_{secondary_pole_label}.txt"
+                )
+
+                results.setdefault(secondary_outfile, [])
+
+                formatted_secondary = fmt_loading(float(value))
+                secondary_entry = f"({word} ({formatted_secondary}))"
+
+                results[secondary_outfile].append(secondary_entry)
+
+    if not results:
+        raise ValueError(
+            "No factor-loading entries were generated. "
+            "Check rotated.csv, loaded column, factor column, and cutoff."
+        )
+
+    write_factor_outputs(
+        results=results,
+        output_dir=output_dir,
+        id_to_word=id_to_word,
+    )
+
+    print("Done.")
+    print(f"Rotated input: {rotated_path}")
+    print(f"Keyword index: {index_file}")
+    print(f"Output directory: {output_dir}")
+    print(f"Factor-list files written: {len(results)}")
+
+
+if __name__ == "__main__":
+    main()

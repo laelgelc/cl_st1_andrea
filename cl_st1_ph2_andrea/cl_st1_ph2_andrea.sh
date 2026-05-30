@@ -54,5 +54,9 @@ python sas_formats.py
 ## RUN SAS
 ## Rogerio Yamada's account
 
-python factor_lists.py
+python factor_lists.py \
+  --sas-output-dir sas/output_cl_st1_ph2_andrea \
+  --index-file index_keywords.txt \
+  --output-dir factors \
+  --cutoff 0.3
 # Output: factors

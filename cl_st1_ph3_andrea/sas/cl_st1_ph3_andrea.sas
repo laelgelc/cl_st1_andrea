@@ -29,8 +29,8 @@
 
 options fmtsearch=(work library);
 
-/* enter number of keyword variables */
-%let nkeywords = 688 ;
+/* enter the variable ID corresponding to the last keyword variable */
+%let lastkeywordvar = v000688 ;
 
 /* enter number of factors to extract */
 %let extractfactors = 5 ;
@@ -62,13 +62,13 @@ DATA &project;
   LENGTH
       filename $7
       decade   $4
-      v000001 - v&nkeywords 3
+      v000001 - &lastkeywordvar 3
   ;
 
   INPUT
       filename :$7.
       decade   :$4.
-      v000001 - v&nkeywords
+      v000001 - &lastkeywordvar
   ;
 RUN;
 

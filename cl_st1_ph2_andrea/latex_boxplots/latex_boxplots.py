@@ -1,28 +1,45 @@
 #!/usr/bin/env python3
 """
-Generate TikZ boxplots in LaTeX for factor dimensions, comparing:
- - by source
- - by model
- - by prompt
- - by group (optional; currently disabled)
+Generate TikZ boxplots in LaTeX for factor dimensions by decade.
 
-Reads:
-    ../sas/output_cl_st1_ph3_andressa/cl_st1_ph3_andressa_scores_only.tsv
-    ../sas/output_cl_st1_ph3_andressa/params_model_f<n>.tsv
-    ../sas/output_cl_st1_ph3_andressa/params_prompt_f<n>.tsv
-    ../sas/output_cl_st1_ph3_andressa/params_source_f<n>.tsv
-    ../sas/output_cl_st1_ph3_andressa/params_group_f<n>.tsv
+This script is expected to be located in:
 
-Writes:
-    slides/boxplot_f<dim>_by_source.tex
-    slides/boxplot_f<dim>_by_model.tex
-    slides/boxplot_f<dim>_by_prompt.tex
-    slides/boxplot_f<dim>_by_group.tex
-    slides/mosaic_by_source.tex
-    slides/mosaic_by_model.tex
-    slides/mosaic_by_prompt.tex
-    slides/mosaic_by_group.tex
+    latex_boxplots/latex_boxplots.py
+
+Default input, resolved relative to the project directory:
+
+    ../sas/output_<project>/<project>_scores_only.tsv
+    ../sas/output_<project>/params_decade_f<n>.tsv
+
+where <project> is inferred from the parent directory name, for example:
+
+    cl_st1_ph2_andrea
+    cl_st1_ph3_andrea
+
+Default output:
+
+    latex_boxplots/slides/boxplot_f<dim>_by_decade.tex
+    latex_boxplots/slides/mosaic_by_decade.tex
+
+Typical usage from inside latex_boxplots/:
+
+    python latex_boxplots.py
+
+Typical usage from the project root:
+
+    python latex_boxplots/latex_boxplots.py
+
+Optional explicit usage:
+
+    python latex_boxplots.py \
+        --project cl_st1_ph3_andrea \
+        --sas-output-dir ../sas/output_cl_st1_ph3_andrea \
+        --output-dir slides
 """
+
+from __future__ import annotations
+
+import argparse
 import csv
 import re
 from pathlib import Path
@@ -30,22 +47,81 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 
-INPUT_FILE = Path("../sas/output_cl_st1_ph3_andressa/cl_st1_ph3_andressa_scores_only.tsv")
-PARAMS_DIR = Path("../sas/output_cl_st1_ph3_andressa")
-OUTPUT_DIR = Path("slides")
-OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = SCRIPT_DIR.parent
+DEFAULT_PROJECT = PROJECT_DIR.name
+DEFAULT_OUTPUT_DIR = SCRIPT_DIR / "slides"
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Generate LaTeX/TikZ factor-score boxplots by decade."
+    )
+
+    parser.add_argument(
+        "--project",
+        default=DEFAULT_PROJECT,
+        help=(
+            "Project name, e.g. cl_st1_ph2_andrea or cl_st1_ph3_andrea. "
+            "Default: inferred from the parent directory name."
+        ),
+    )
+    parser.add_argument(
+        "--sas-output-dir",
+        default=None,
+        help=(
+            "Directory containing SAS outputs. "
+            "Default: ../sas/output_<project>, resolved relative to this script."
+        ),
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=None,
+        help=(
+            "Directory where LaTeX boxplot files will be written. "
+            "Default: latex_boxplots/slides."
+        ),
+    )
+
+    return parser.parse_args()
+
+
+def resolve_paths(args: argparse.Namespace) -> tuple[Path, Path]:
+    """Resolve input and output directories."""
+    if args.sas_output_dir is None:
+        sas_output_dir = PROJECT_DIR / "sas" / f"output_{args.project}"
+    else:
+        sas_output_dir = Path(args.sas_output_dir)
+
+        if not sas_output_dir.is_absolute():
+            sas_output_dir = (Path.cwd() / sas_output_dir).resolve()
+
+    if args.output_dir is None:
+        output_dir = DEFAULT_OUTPUT_DIR
+    else:
+        output_dir = Path(args.output_dir)
+
+        if not output_dir.is_absolute():
+            output_dir = (Path.cwd() / output_dir).resolve()
+
+    return sas_output_dir, output_dir
 
 
 def read_rsquare(param_file: Path) -> float:
     """
-    Return R^2 (%) from a params TSV file containing a column RSquare.
-    If the file is missing/empty/unreadable, return 0.0.
+    Return R² (%) from a params TSV file containing a column named RSquare.
+
+    If the file is missing, empty, or unreadable, return 0.0.
     """
     try:
-        with open(param_file, newline="") as f:
+        with param_file.open("r", encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f, delimiter="\t")
             rows = list(reader)
+
         return float(rows[0]["RSquare"]) * 100.0 if rows else 0.0
+
     except FileNotFoundError:
         return 0.0
     except Exception:
@@ -53,7 +129,8 @@ def read_rsquare(param_file: Path) -> float:
 
 
 def latex_escape(text: str) -> str:
-    reps = {
+    """Escape characters that have special meaning in LaTeX."""
+    replacements = {
         "\\": r"\textbackslash{}",
         "_": r"\_",
         "%": r"\%",
@@ -64,32 +141,51 @@ def latex_escape(text: str) -> str:
         "^": r"\textasciicircum{}",
         "~": r"\textasciitilde{}",
     }
-    for o, e in reps.items():
-        text = text.replace(o, e)
+
+    for original, escaped in replacements.items():
+        text = text.replace(original, escaped)
+
     return text
 
 
-def compute_boxplot_stats(s: pd.Series):
-    q1, med, q3 = s.quantile([0.25, 0.5, 0.75])
+def compute_boxplot_stats(series: pd.Series) -> tuple[float, float, float, float, float]:
+    """Compute lower whisker, Q1, median, Q3, and upper whisker."""
+    q1, median, q3 = series.quantile([0.25, 0.5, 0.75])
     iqr = q3 - q1
+
     return (
-        max(s.min(), q1 - 1.5 * iqr),
+        max(series.min(), q1 - 1.5 * iqr),
         q1,
-        med,
+        median,
         q3,
-        min(s.max(), q3 + 1.5 * iqr),
+        min(series.max(), q3 + 1.5 * iqr),
     )
 
 
-def detect_dims(df: pd.DataFrame) -> list[int]:
-    """
-    Detect available factor dimensions from columns fac1, fac2, ...
-    """
-    fac_cols = [c for c in df.columns if re.fullmatch(r"fac\d+", str(c))]
-    dims = sorted({int(str(c)[3:]) for c in fac_cols})
+def detect_dims(df: pd.DataFrame, input_file: Path) -> list[int]:
+    """Detect available factor dimensions from columns named fac1, fac2, etc."""
+    factor_columns = [
+        column for column in df.columns
+        if re.fullmatch(r"fac\d+", str(column))
+    ]
+
+    dims = sorted({int(str(column)[3:]) for column in factor_columns})
+
     if not dims:
-        raise RuntimeError(f"No fac<n> columns found in {INPUT_FILE}")
+        raise RuntimeError(f"No fac<n> columns found in {input_file}")
+
     return dims
+
+
+def sort_decade_values(values: list[str]) -> list[str]:
+    """Sort decade labels numerically where possible."""
+    def key(value: str) -> tuple[int, str]:
+        value = str(value)
+        if value.isdigit():
+            return int(value), value
+        return 999999, value
+
+    return sorted(values, key=key)
 
 
 def generate_boxplot(
@@ -98,11 +194,17 @@ def generate_boxplot(
         group_var: str,
         suffix: str,
         caption: str,
-):
-    col = f"fac{dim}"
-    means = df.groupby(group_var)[col].mean().sort_values(ascending=False)
-    groups = means.index.tolist()
-    labels = [latex_escape(str(g)) for g in groups]
+        output_dir: Path,
+) -> None:
+    """Generate one TikZ boxplot file for one factor dimension."""
+    column = f"fac{dim}"
+
+    if column not in df.columns:
+        raise ValueError(f"Column not found in dataframe: {column}")
+
+    means = df.groupby(group_var)[column].mean()
+    groups = sort_decade_values([str(group) for group in means.index.tolist()])
+    labels = [latex_escape(str(group)) for group in groups]
     total = len(groups)
 
     tex = [
@@ -128,33 +230,38 @@ def generate_boxplot(
         f"\\addplot[red, densely dashed] coordinates {{(0.5,0) ({total + 0.5},0)}};",
     ]
 
-    for i, grp in enumerate(groups, start=1):
-        vals = df[df[group_var] == grp][col]
-        lw, q1, med, q3, uw = compute_boxplot_stats(vals)
+    for index, group in enumerate(groups, start=1):
+        values = df[df[group_var].astype(str) == str(group)][column].dropna()
 
-        # outliers
+        if values.empty:
+            continue
+
+        lower_whisker, q1, median, q3, upper_whisker = compute_boxplot_stats(values)
+
         iqr = q3 - q1
-        out = vals[(vals < q1 - 1.5 * iqr) | (vals > q3 + 1.5 * iqr)]
-        if not out.empty:
-            coords = " ".join(f"({i},{v})" for v in sorted(out))
+        outliers = values[
+            (values < q1 - 1.5 * iqr)
+            | (values > q3 + 1.5 * iqr)
+            ]
+
+        if not outliers.empty:
+            coords = " ".join(f"({index},{value})" for value in sorted(outliers))
             tex.append(
                 rf"\addplot+[only marks, mark=*, mark options={{fill=black, mark size=.8pt}}] coordinates {{{coords}}};"
             )
 
-        # box
         tex += [
             r"\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={",
-            f"  lower whisker={lw},",
+            f"  lower whisker={lower_whisker},",
             f"  lower quartile={q1},",
-            f"  median={med},",
+            f"  median={median},",
             f"  upper quartile={q3},",
-            f"  upper whisker={uw}",
+            f"  upper whisker={upper_whisker}",
             r"}] coordinates {};",
         ]
 
-        # mean point
         tex.append(
-            f"\\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {{({i},{vals.mean()})}};"
+            f"\\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {{({index},{values.mean()})}};"
         )
 
     tex += [
@@ -165,84 +272,113 @@ def generate_boxplot(
         r"\end{figure}",
     ]
 
-    (OUTPUT_DIR / f"boxplot_f{dim}_{suffix}.tex").write_text("\n".join(tex), encoding="utf-8")
+    output_path = output_dir / f"boxplot_f{dim}_{suffix}.tex"
+    output_path.write_text("\n".join(tex), encoding="utf-8")
 
 
-def generate_mosaic(suffix: str, caption: str, dims: list[int]):
+def generate_mosaic(
+        suffix: str,
+        caption: str,
+        dims: list[int],
+        output_dir: Path,
+        max_plots: int = 4,
+) -> None:
     """
-    Build a simple one-row mosaic (up to 4 plots) by reusing the already-written boxplot tex files.
+    Build a simple one-row mosaic by reusing already-written boxplot tex files.
+
+    By default, the mosaic includes up to the first four dimensions.
     """
     blocks = []
-    for dim in dims:
-        fn = OUTPUT_DIR / f"boxplot_f{dim}_{suffix}.tex"
-        lines = fn.read_text(encoding="utf-8").splitlines()
-        start = next(i for i, l in enumerate(lines) if l.strip().startswith(r"\hspace*"))
-        end = next(i for i, l in enumerate(lines) if l.strip() == r"\end{tikzpicture}")
-        blocks.append("\n".join(lines[start : end + 1]))
 
-    mos = [r"\begin{figure}[ht]", r"\centering"]
+    for dim in dims[:max_plots]:
+        path = output_dir / f"boxplot_f{dim}_{suffix}.tex"
 
-    # top row: render whatever we have (up to 4)
-    for i in range(min(4, len(blocks))):
-        mos += [
+        if not path.exists():
+            raise FileNotFoundError(f"Boxplot file not found for mosaic: {path}")
+
+        lines = path.read_text(encoding="utf-8").splitlines()
+
+        start = next(
+            index for index, line in enumerate(lines)
+            if line.strip().startswith(r"\hspace*")
+        )
+        end = next(
+            index for index, line in enumerate(lines)
+            if line.strip() == r"\end{tikzpicture}"
+        )
+
+        blocks.append("\n".join(lines[start:end + 1]))
+
+    mosaic = [
+        r"\begin{figure}[ht]",
+        r"\centering",
+    ]
+
+    for block in blocks:
+        mosaic += [
             r"\begin{minipage}[t]{0.24\textwidth}",
             r"\centering",
-            blocks[i],
+            block,
             r"\end{minipage}\hfill",
         ]
 
-    mos += [
+    mosaic += [
         f"\\caption{{{caption}}}",
         rf"\label{{fig:mosaic_{suffix}}}",
         r"\end{figure}",
     ]
 
-    out_path = OUTPUT_DIR / f"mosaic_{suffix}.tex"
-    out_path.write_text("\n".join(mos), encoding="utf-8")
+    output_path = output_dir / f"mosaic_{suffix}.tex"
+    output_path.write_text("\n".join(mosaic), encoding="utf-8")
 
 
-def main():
-    df = pd.read_csv(INPUT_FILE, sep="\t")
+def main() -> None:
+    """Generate all decade boxplots and the decade mosaic."""
+    args = parse_args()
 
-    # normalize group fields
-    df["source"] = df["source"].astype(str).str.strip().str.lower()
-    df["model"] = df["model"].astype(str).str.strip().str.lower()
-    df["prompt"] = df["prompt"].astype(str).str.strip().str.lower()
-    df["group"] = df["group"].astype(str).str.strip().str.lower()
+    project = args.project
+    sas_output_dir, output_dir = resolve_paths(args)
+    output_dir.mkdir(exist_ok=True, parents=True)
 
-    dims = detect_dims(df)
+    input_file = sas_output_dir / f"{project}_scores_only.tsv"
 
-    # ----- 1) by source -----
-    for dim in tqdm(dims, desc="By source"):
-        rs = read_rsquare(PARAMS_DIR / f"params_source_f{dim}.tsv")
-        cap = f"Mean Dim. {dim} Scores by Source (R² = {rs:.2f}\\%)"
-        generate_boxplot(df, dim, "source", "by_source", cap)
+    if not input_file.exists():
+        raise FileNotFoundError(f"Scores-only file not found: {input_file}")
 
-    # ----- 2) by model -----
-    for dim in tqdm(dims, desc="By model"):
-        rs = read_rsquare(PARAMS_DIR / f"params_model_f{dim}.tsv")
-        cap = f"Mean Dim. {dim} Scores by Model (R² = {rs:.2f}\\%)"
-        generate_boxplot(df, dim, "model", "by_model", cap)
+    df = pd.read_csv(input_file, sep="\t")
 
-    # ----- 3) by prompt -----
-    for dim in tqdm(dims, desc="By prompt"):
-        rs = read_rsquare(PARAMS_DIR / f"params_prompt_f{dim}.tsv")
-        cap = f"Mean Dim. {dim} Scores by Prompt (R² = {rs:.2f}\\%)"
-        generate_boxplot(df, dim, "prompt", "by_prompt", cap)
+    if "decade" not in df.columns:
+        raise ValueError(f"Column 'decade' not found in {input_file}")
 
-    # ----- 4) by group (optional) -----
-    # for dim in tqdm(dims, desc="By group"):
-    #     rs = read_rsquare(PARAMS_DIR / f"params_group_f{dim}.tsv")
-    #     cap = f"Mean Dim. {dim} Scores by Group (R² = {rs:.2f}\\%)"
-    #     generate_boxplot(df, dim, "group", "by_group", cap)
+    df["decade"] = df["decade"].astype(str).str.strip()
 
-    # mosaics
-    generate_mosaic("by_source", "Mean Dim. Scores by Source", dims)
-    generate_mosaic("by_model", "Mean Dim. Scores by Model", dims)
-    generate_mosaic("by_prompt", "Mean Dim. Scores by Prompt", dims)
-    # generate_mosaic("by_group",  "Mean Dim. Scores by Group", dims)
+    dims = detect_dims(df, input_file)
 
-    print(f"All boxplots & mosaics saved to {OUTPUT_DIR.resolve()}")
+    for dim in tqdm(dims, desc="By decade"):
+        rsquare = read_rsquare(sas_output_dir / f"params_decade_f{dim}.tsv")
+        caption = f"Mean Dim. {dim} Scores by Decade (R² = {rsquare:.2f}\\%)"
+
+        generate_boxplot(
+            df=df,
+            dim=dim,
+            group_var="decade",
+            suffix="by_decade",
+            caption=caption,
+            output_dir=output_dir,
+        )
+
+    generate_mosaic(
+        suffix="by_decade",
+        caption="Mean Dim. Scores by Decade",
+        dims=dims,
+        output_dir=output_dir,
+    )
+
+    print(f"Project: {project}")
+    print(f"Input file: {input_file}")
+    print(f"Parameter directory: {sas_output_dir}")
+    print(f"Output directory: {output_dir.resolve()}")
+    print("All boxplots and mosaics generated.")
 
 
 if __name__ == "__main__":

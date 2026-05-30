@@ -40,3 +40,7 @@ Duplicates removed: 112
 Final unique keywords written to: corpus/09_kw_selected/keywords.txt
 Final unique keyword count: 688
 "
+
+rm -rf columns columns_clean
+python columns.py
+# Output: columns, columns_clean, file_ids.txt, index_keywords.txt

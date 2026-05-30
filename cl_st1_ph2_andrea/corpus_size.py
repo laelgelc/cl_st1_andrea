@@ -1,121 +1,142 @@
 #!/usr/bin/env python3
+"""
+Calculate corpus size for the tagged commercial corpus.
+
+Expected input structure:
+    corpus/07_tagged/<Decade>/<Commercial ID>.txt
+
+Example:
+    corpus/07_tagged/1950/tv_com_1950_1.txt
+    corpus/07_tagged/1960/tv_com_1960_1.txt
+
+Expected tagged-file format:
+    word<TAB>tag<TAB>lemma
+
+Output:
+    corpus_size/corpus_size.tsv
+
+Output format:
+    Header included
+    Tab-separated
+    Columns:
+        Strata
+        Text Count
+        Word Count
+"""
+
 import re
 from pathlib import Path
 from collections import defaultdict
 
-# --- CONFIGURATION ---
-CORPUS_ROOT = Path('corpus/07_tagged')
-VALID_LINE_PATTERN = re.compile(r'^[A-Za-z]')
 
-# --- GLOBAL COUNTERS ---
+# --- Configuration ---
+CORPUS_ROOT = Path("corpus/07_tagged")
+OUTPUT_DIR = Path("corpus_size")
+OUTPUT_FILE = OUTPUT_DIR / "corpus_size.tsv"
+
+DECADE_PATTERN = re.compile(r"^\d{4}$")
+VALID_TOKEN_PATTERN = re.compile(r"^[A-Za-z]")
+
+
+# --- Counters ---
 total_files = 0
 total_words = 0
 
-# By source (human vs ai)
-file_counts_source = defaultdict(int)
-word_counts_source = defaultdict(int)
-
-# By model (gemma, gpt, qwen, etc)
-file_counts_model = defaultdict(int)
-word_counts_model = defaultdict(int)
-
-# By season (derived from filename)
-file_counts_season = defaultdict(int)
-word_counts_season = defaultdict(int)
-
-# By source + model
-file_counts_source_model = defaultdict(lambda: defaultdict(int))
-word_counts_source_model = defaultdict(lambda: defaultdict(int))
+file_counts_decade = defaultdict(int)
+word_counts_decade = defaultdict(int)
 
 
-# -------------------------------------------------
-def extract_season(filename_stem: str) -> str:
+def natural_sort_key(text):
+    """Return a natural-sort key that treats digit runs as integers."""
+    parts = re.split(r"(\d+)", str(text))
+    return [int(part) if part.isdigit() else part.lower() for part in parts]
+
+
+def count_tokens_in_tagged_file(path: Path) -> int:
     """
-    Extracts season = 2nd and 3rd digits of filename stem.
-    Example: a0712_xxx -> season = "07"
+    Count token lines in a TreeTagger output file.
+
+    Each valid tagged token line counts as one word/token.
     """
-    if len(filename_stem) >= 3 and filename_stem[1].isdigit() and filename_stem[2].isdigit():
-        return filename_stem[1:3]
-    return "unknown"
+    words = 0
+
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+
+            if not line:
+                continue
+
+            if not VALID_TOKEN_PATTERN.match(line):
+                continue
+
+            parts = line.split()
+
+            if len(parts) >= 3:
+                words += 1
+
+    return words
 
 
-# -------------------------------------------------
-def process_file(path: Path, source: str, model: str, season: str):
+def main():
     global total_files, total_words
 
-    # File counter
-    file_counts_source[source] += 1
-    file_counts_model[model] += 1
-    file_counts_season[season] += 1
-    file_counts_source_model[source][model] += 1
-    total_files += 1
+    if not CORPUS_ROOT.exists():
+        raise FileNotFoundError(f"Corpus directory does not exist: {CORPUS_ROOT}")
 
-    # Word counting
-    words = 0
-    with path.open(encoding='utf-8') as f:
-        for line in f:
-            if VALID_LINE_PATTERN.match(line):
-                words += len(line.split())
+    if not CORPUS_ROOT.is_dir():
+        raise NotADirectoryError(f"Corpus path is not a directory: {CORPUS_ROOT}")
 
-    # Word counters
-    word_counts_source[source] += words
-    word_counts_model[model] += words
-    word_counts_season[season] += words
-    word_counts_source_model[source][model] += words
-    total_words += words
+    decade_dirs = sorted(
+        [
+            path for path in CORPUS_ROOT.iterdir()
+            if path.is_dir() and DECADE_PATTERN.match(path.name)
+        ],
+        key=lambda path: natural_sort_key(path.name),
+    )
+
+    if not decade_dirs:
+        raise FileNotFoundError(
+            f"No decade folders found under {CORPUS_ROOT}. "
+            "Expected folders such as 1950, 1960, 1970, etc."
+        )
+
+    for decade_dir in decade_dirs:
+        decade = decade_dir.name
+
+        text_files = sorted(
+            decade_dir.glob("*.txt"),
+            key=lambda path: natural_sort_key(path.name),
+        )
+
+        for text_file in text_files:
+            words = count_tokens_in_tagged_file(text_file)
+
+            file_counts_decade[decade] += 1
+            word_counts_decade[decade] += words
+
+            total_files += 1
+            total_words += words
+
+    OUTPUT_DIR.mkdir(exist_ok=True)
+
+    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
+        f.write("Strata\tText Count\tWord Count\n")
+
+        for decade in sorted(file_counts_decade, key=natural_sort_key):
+            f.write(
+                f"{decade}\t"
+                f"{file_counts_decade[decade]}\t"
+                f"{word_counts_decade[decade]}\n"
+            )
+
+        f.write("\n")
+        f.write(f"overall\t{total_files}\t{total_words}\n")
+
+    print(f"Corpus sizes saved to {OUTPUT_FILE}")
+    print(f"Total texts: {total_files}")
+    print(f"Total words: {total_words}")
 
 
-# -------------------------------------------------
-# WALK THE CORPUS
-for txt in CORPUS_ROOT.rglob("*.txt"):
-    model_folder = txt.parent.name  # e.g., "gemma", "human", "gpt"
-
-    # SOURCE
-    source = "human" if model_folder == "human" else "ai"
-
-    # MODEL
-    model = model_folder
-
-    # SEASON (from filename stem)
-    season = extract_season(txt.stem)
-
-    process_file(txt, source, model, season)
-
-
-# -------------------------------------------------
-# WRITE OUT TSV
-out_dir = Path('corpus_size')
-out_dir.mkdir(exist_ok=True)
-out = out_dir / 'corpus_size.tsv'
-
-with out.open('w', encoding='utf-8') as f:
-    f.write("Strata\tText Count\tWord Count\n")
-
-    # by source
-    for src in sorted(file_counts_source):
-        f.write(f"{src}\t{file_counts_source[src]}\t{word_counts_source[src]}\n")
-    f.write("\n")
-
-    # by model
-    for mdl in sorted(file_counts_model):
-        f.write(f"{mdl}\t{file_counts_model[mdl]}\t{word_counts_model[mdl]}\n")
-    f.write("\n")
-
-    # by source/model combined
-    f.write("# Source/Model breakdown\n")
-    for src in sorted(file_counts_source_model):
-        for mdl in sorted(file_counts_source_model[src]):
-            f.write(f"{src}/{mdl}\t"
-                    f"{file_counts_source_model[src][mdl]}\t"
-                    f"{word_counts_source_model[src][mdl]}\n")
-    f.write("\n")
-
-    # by season
-    for ss in sorted(file_counts_season):
-        f.write(f"{ss}\t{file_counts_season[ss]}\t{word_counts_season[ss]}\n")
-    f.write("\n")
-
-    # overall
-    f.write(f"overall\t{total_files}\t{total_words}\n")
-
-print(f"Corpus sizes saved to {out}")
+if __name__ == "__main__":
+    main()

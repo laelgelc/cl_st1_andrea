@@ -1,6 +1,6 @@
 /* ============================================================
    Lexical Multi-dimensional Analysis
-   Project: cl_st1_ph2_andrea
+   Project: cl_st1_ph3_andrea
 
    Expected input:
      counts.txt
@@ -9,7 +9,7 @@
      No header
      Space-separated
      Columns:
-       filename decade v000001-v000265
+       filename decade v000001-v000688
 
    Example:
      t000001 1950 0 1 0 0 ...
@@ -19,7 +19,7 @@
 /* BEGINNING PART 1 */
 /* === EDIT BELOW ====*/
 
-%let project = cl_st1_ph2_andrea ;
+%let project = cl_st1_ph3_andrea ;
 
 %let myfolder = &project ;
 
@@ -30,7 +30,7 @@
 options fmtsearch=(work library);
 
 /* enter number of keyword variables */
-%let nkeywords = 265 ;
+%let nkeywords = 688 ;
 
 /* enter number of factors to extract */
 %let extractfactors = 5 ;
@@ -853,7 +853,7 @@ data filelist;
   input root;
   retain filename dname ' ' level 0 dir 1;
 cards4;
-/home/u63529080/cl_st1_ph2_andrea
+/home/u63529080/cl_st1_ph3_andrea
 ;;;;
 run;
 

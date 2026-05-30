@@ -1,134 +1,211 @@
 #!/usr/bin/env python3
-import os
+"""
+Create binary keyword-presence columns for the commercial verbal subcorpus.
+
+Input:
+    corpus/09_kw_selected/keywords.txt
+    corpus/07_tagged/<Decade>/<Commercial ID>.txt
+
+Outputs:
+    columns/<Keyword ID>.txt
+        Full column files with file ID, decade, and binary keyword presence.
+
+    columns_clean/<Keyword ID>.txt
+        Clean binary columns for downstream analysis.
+
+    file_ids.txt
+        Mapping from generated text IDs to tagged corpus files.
+
+    index_keywords.txt
+        Mapping from keyword IDs to lemmas.
+"""
+
+import re
 from pathlib import Path
+
 
 # === Configuration ===
 KEYWORD_FILE = Path("corpus/09_kw_selected/keywords.txt")
-TAGGED_BASE  = Path("corpus/07_tagged")
-OUTPUT_DIR   = Path("columns")
-CLEAN_DIR    = Path("columns_clean")
-INDEX_FILE   = Path("index_keywords.txt")
-FILE_IDS     = Path("file_ids.txt")   # <-- renamed
+TAGGED_BASE = Path("corpus/07_tagged")
+OUTPUT_DIR = Path("columns")
+CLEAN_DIR = Path("columns_clean")
+INDEX_FILE = Path("index_keywords.txt")
+FILE_IDS = Path("file_ids.txt")
 
-# === Step 1: Load consolidated keywords ===
-lemmas = [
-    kw.strip()
-    for kw in KEYWORD_FILE.read_text(encoding="utf-8").splitlines()
-    if kw.strip()
-]
+DECADE_RE = re.compile(r"^\d{4}$")
 
-# Ensure stable, duplicate-free keyword list (keywords.txt is usually already unique)
-lemmas = sorted(set(lemmas))
 
-# === Step 2: Create index map for unique lemmas (proper numbering) ===
-lemma_index = {lemma: f"{i+1:06d}" for i, lemma in enumerate(lemmas)}
+def natural_sort_key(text):
+    """Return a natural-sort key that treats digit runs as integers."""
+    parts = re.split(r"(\d+)", str(text))
+    return [int(part) if part.isdigit() else part.lower() for part in parts]
 
-# === Step 3: Collect all tagged text files ===
-text_paths = []
-for folder in sorted(TAGGED_BASE.iterdir()):
-    if not folder.is_dir():
-        continue
-    for text_file in sorted(folder.rglob("*.txt")):
-        text_paths.append(text_file)
 
-# === Step 4: Assign file IDs ===
-file_id_map = {}
-with FILE_IDS.open("w", encoding="utf-8") as fidx:
-    for i, text_file in enumerate(text_paths, 1):
-        fid = f"t{i:06d}"
-        file_id_map[text_file] = fid
-        rel = text_file.relative_to(TAGGED_BASE).as_posix()
-        fidx.write(f"{fid} {rel}\n")
+def normalise_lemma(lemma):
+    """Normalise lemmas consistently with the keyword-selection stage."""
+    return lemma.strip().lower()
 
-# === Step 5: Read each text and record lemma presence ===
-text_infos = []
-for text_file in text_paths:
-    fid = file_id_map[text_file]
 
-    # Top-level folder under corpus/07_tagged/
-    folder = text_file.relative_to(TAGGED_BASE).parts[0]
+def load_keywords(path):
+    """Load the consolidated keyword list."""
+    if not path.exists():
+        raise FileNotFoundError(f"Keyword file does not exist: {path}")
 
-    # ----- SOURCE -----
-    source = "human" if folder == "human" else "ai"
+    lemmas = [
+        normalise_lemma(keyword)
+        for keyword in path.read_text(encoding="utf-8").splitlines()
+        if keyword.strip()
+    ]
 
-    # ----- PROMPT -----
-    if folder == "human":
-        prompt = "human"
-    elif folder.startswith("generic_"):
-        prompt = "generic"
-    elif folder.startswith("summary_guided_"):
-        prompt = "summary_guided"
-    else:
-        prompt = "unknown"
+    return sorted(set(lemmas), key=natural_sort_key)
 
-    # ----- MODEL -----
-    # Expected folder formats:
-    #   human
-    #   generic_gpt
-    #   summary_guided_gpt
-    if folder == "human":
-        model = "human"
-    else:
-        # model is whatever comes after the last underscore
-        # generic_gpt -> gpt
-        # summary_guided_gpt -> gpt
-        model = folder.split("_")[-1].lower()
 
-    # Extract lemmas from 3rd column (word, tag, lemma) in tagged files
+def collect_tagged_texts(tagged_base):
+    """Collect tagged text files from decade folders."""
+    if not tagged_base.exists():
+        raise FileNotFoundError(f"Tagged corpus directory does not exist: {tagged_base}")
+
+    if not tagged_base.is_dir():
+        raise NotADirectoryError(f"Tagged corpus path is not a directory: {tagged_base}")
+
+    text_paths = []
+
+    decade_folders = sorted(
+        [
+            folder for folder in tagged_base.iterdir()
+            if folder.is_dir() and DECADE_RE.match(folder.name)
+        ],
+        key=lambda path: natural_sort_key(path.name),
+    )
+
+    if not decade_folders:
+        raise FileNotFoundError(
+            f"No decade folders found under {tagged_base}. "
+            "Expected folders such as 1950, 1960, 1970, etc."
+        )
+
+    for folder in decade_folders:
+        for text_file in sorted(folder.rglob("*.txt"), key=lambda path: natural_sort_key(path.name)):
+            text_paths.append(text_file)
+
+    if not text_paths:
+        raise FileNotFoundError(f"No tagged .txt files found under {tagged_base}")
+
+    return text_paths
+
+
+def read_present_lemmas(text_file):
+    """Read lemmas from the third column of a TreeTagger output file."""
     present = set()
-    with text_file.open(encoding="utf-8") as tf:
+
+    with text_file.open("r", encoding="utf-8") as tf:
         for line in tf:
-            parts = line.strip().split()
+            parts = line.rstrip("\n").split("\t")
+
+            if len(parts) < 3:
+                parts = line.strip().split()
+
             if len(parts) >= 3:
-                present.add(parts[2])
+                lemma = normalise_lemma(parts[2])
+                if lemma and lemma != "<unknown>":
+                    present.add(lemma)
 
-    text_infos.append({
-        "id": fid,
-        "name": text_file.name,
-        "source": source,
-        "prompt": prompt,
-        "model": model,
-        "lemmas": present
-    })
+    return present
 
-# === Step 6: Write one column file per lemma ===
-OUTPUT_DIR.mkdir(exist_ok=True)
 
-for lemma in lemmas:
-    lemma_id = lemma_index[lemma]
-    outpath = OUTPUT_DIR / f"{lemma_id}.txt"
+def main():
+    # === Step 1: Load consolidated keywords ===
+    lemmas = load_keywords(KEYWORD_FILE)
 
-    with outpath.open("w", encoding="utf-8") as outf:
-        for info in text_infos:
-            has_kw = 1 if lemma in info["lemmas"] else 0
-            outf.write(
-                f"{info['id']} {info['prompt']} {info['model']} "
-                f"{info['source']} {has_kw}\n"
-            )
+    if not lemmas:
+        raise ValueError(f"No keywords found in {KEYWORD_FILE}")
 
-# === Step 7: Save lemma index (consistent with column filenames) ===
-with INDEX_FILE.open("w", encoding="utf-8") as idxf:
+    # === Step 2: Create index map for unique lemmas ===
+    lemma_index = {
+        lemma: f"{i + 1:06d}"
+        for i, lemma in enumerate(lemmas)
+    }
+
+    # === Step 3: Collect all tagged text files ===
+    text_paths = collect_tagged_texts(TAGGED_BASE)
+
+    # === Step 4: Assign file IDs ===
+    file_id_map = {}
+
+    with FILE_IDS.open("w", encoding="utf-8") as fidx:
+        for i, text_file in enumerate(text_paths, 1):
+            file_id = f"t{i:06d}"
+            file_id_map[text_file] = file_id
+
+            rel = text_file.relative_to(TAGGED_BASE).as_posix()
+
+            fidx.write(f"{file_id} {rel}\n")
+
+    # === Step 5: Read each text and record lemma presence ===
+    text_infos = []
+
+    for text_file in text_paths:
+        file_id = file_id_map[text_file]
+        rel_parts = text_file.relative_to(TAGGED_BASE).parts
+        decade = rel_parts[0]
+
+        present = read_present_lemmas(text_file)
+
+        text_infos.append(
+            {
+                "id": file_id,
+                "decade": decade,
+                "lemmas": present,
+            }
+        )
+
+    # === Step 6: Write one column file per lemma ===
+    OUTPUT_DIR.mkdir(exist_ok=True)
+
     for lemma in lemmas:
-        idxf.write(f"{lemma_index[lemma]} {lemma}\n")
+        lemma_id = lemma_index[lemma]
+        outpath = OUTPUT_DIR / f"{lemma_id}.txt"
 
-# === Step 8: Produce clean column files ===
-CLEAN_DIR.mkdir(exist_ok=True)
+        with outpath.open("w", encoding="utf-8") as outf:
+            for info in text_infos:
+                has_keyword = 1 if lemma in info["lemmas"] else 0
+                outf.write(
+                    f"{info['id']} "
+                    f"{info['decade']} "
+                    f"{has_keyword}\n"
+                )
 
-for lemma in lemmas:
-    lemma_id = lemma_index[lemma]
-    src = OUTPUT_DIR / f"{lemma_id}.txt"
-    dst = CLEAN_DIR / f"{lemma_id}.txt"
+    # === Step 7: Save lemma index ===
+    with INDEX_FILE.open("w", encoding="utf-8") as idxf:
+        for lemma in lemmas:
+            idxf.write(f"{lemma_index[lemma]} {lemma}\n")
 
-    lines = src.read_text(encoding="utf-8").splitlines()
+    # === Step 8: Produce clean binary column files ===
+    CLEAN_DIR.mkdir(exist_ok=True)
 
-    with dst.open("w", encoding="utf-8") as fout:
-        fout.write(f"{lemma_id}\n")
-        for line in lines:
-            parts = line.split()
-            if parts:
-                fout.write(f"{parts[-1]}\n")
+    for lemma in lemmas:
+        lemma_id = lemma_index[lemma]
+        src = OUTPUT_DIR / f"{lemma_id}.txt"
+        dst = CLEAN_DIR / f"{lemma_id}.txt"
 
-print("Processing complete.")
-print("→ Columns in 'columns/'")
-print("→ Clean binary columns in 'columns_clean/'")
-print("→ File IDs saved to 'file_ids.txt'")
+        lines = src.read_text(encoding="utf-8").splitlines()
+
+        with dst.open("w", encoding="utf-8") as fout:
+            fout.write(f"{lemma_id}\n")
+
+            for line in lines:
+                parts = line.split()
+                if parts:
+                    fout.write(f"{parts[-1]}\n")
+
+    print("Processing complete.")
+    print(f"→ Keywords loaded: {len(lemmas)}")
+    print(f"→ Tagged texts processed: {len(text_infos)}")
+    print("→ Columns in 'columns/'")
+    print("→ Clean binary columns in 'columns_clean/'")
+    print("→ File IDs saved to 'file_ids.txt'")
+    print("→ Keyword index saved to 'index_keywords.txt'")
+
+
+if __name__ == "__main__":
+    main()

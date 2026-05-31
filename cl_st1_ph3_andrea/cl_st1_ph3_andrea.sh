@@ -68,3 +68,6 @@ cd ..
 
 python latex_anova_table.py
 # Output: latex_tables
+
+python examples.py
+# Output: examples (LaTeX format)

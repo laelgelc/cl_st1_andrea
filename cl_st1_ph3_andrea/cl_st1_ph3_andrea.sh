@@ -84,3 +84,10 @@ python examples_txt.py
 python interpretation_prompts.py
 # Output: interpretation/input
 
+# Submit prompts:
+python generate_interpretation_gpt.py \
+    --input interpretation/input \
+    --output interpretation/output \
+    --model gpt-5.5 \
+    --workers 4
+# Output: interpretation/output

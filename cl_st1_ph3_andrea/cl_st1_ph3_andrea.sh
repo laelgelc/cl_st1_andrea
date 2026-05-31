@@ -78,3 +78,8 @@ python score_details.py
 
 python examples_txt.py
 # Output: examples_txt (plaintext format)
+
+# Interpretation
+# Build prompts:
+python interpretation_prompts.py
+# Output: interpretation/input

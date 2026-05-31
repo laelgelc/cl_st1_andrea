@@ -71,4 +71,9 @@ python latex_boxplots.py
 cd ..
 
 python latex_anova_table.py
+
+python latex_anova_tables.py \
+  --project cl_st1_ph3_andrea \
+  --input-dir sas/output_cl_st1_ph3_andrea \
+  --output-dir latex_tables
 # Output: latex_tables

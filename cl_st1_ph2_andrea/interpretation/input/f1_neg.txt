@@ -1,0 +1,177 @@
+You are a corpus linguist specialising in Lexical Multi-Dimensional Analysis (LMDA).
+Your task is to interpret a single factor pole as a discourse dimension.
+
+The corpus consists of selected television-commercial texts organised by decade.
+The dataset is a balanced sample of commercials from the 1950s through the 2020s,
+with the same number of selected commercials in each decade.
+
+This phase analyses the commercial verbal subcorpus: transcript texts representing the spoken/audio-verbal content of the selected television commercials.
+
+The analysis is applied to decade-based strata:
+• 1950s
+• 1960s
+• 1970s
+• 1980s
+• 1990s
+• 2000s
+• 2010s
+• 2020s
+
+Your interpretation must identify the discourses encoded at this pole, taking into account:
+• lexical loadings, which represent the full analysed subcorpus;
+• example excerpts, which illustrate high-scoring texts at this pole;
+• the decades that score most strongly at this pole.
+
+
+Interpret Factor f1 (neg) as a discourse dimension.
+Propose possible labels for this pole only and justify them.
+
+Base your interpretation on:
+• Mean decade scores. For positive poles, consider the highest-scoring decades in the table. For negative poles, consider the lowest-scoring decades; these may be the lowest positive scores or the most negative scores if there are any.
+• Factor loadings.
+• Example excerpts from high-scoring texts.
+• The loading words that appear in these examples.
+• Which decades appear to drive this pole.
+• Diachronic tendencies suggested by the decade scores.
+
+Do not offer a "versus" interpretation of the opposite pole.
+Focus on this single pole only.
+
+Give equal weight to the loadings and the examples. Remember that loadings represent the full analysed subcorpus, whereas the excerpts are only a limited set of high-scoring samples.
+
+
+=== MEAN DECADE SCORES ===
+Effect	decade	N	Mean fac1	SD fac1
+decade	1950	103	5.38834951	2.63547819
+decade	1960	103	2.86407767	2.27108225
+decade	1970	103	1.95145631	1.45102155
+decade	1980	103	1.60194175	1.70546875
+decade	1990	100	1.43000000	1.72477491
+decade	2000	102	1.07843137	1.71589122
+decade	2010	103	1.26213592	1.65660393
+decade	2020	103	0.80582524	1.62732942
+
+=== FACTOR LOADINGS (f1_neg) ===
+variables loading on this pole = 36
+employee (-.88), current (-.77), nintendo (-.71), card (-.70), information (-.68), select (-.68), ai (-.65), bacon (-.64), deal (-.64), prescription (-.64), present (-.64), computer (-.63), wireless (-.63), team (-.62), search (-.61), technology (-.61), rock (-.59), join (-.55), kenner (-.55), (lease (-.54)), daily (-.52), holiday (-.51), (class (-.50)), unique (-.50), video (-.50), (hurry (-.48)), gas (-.42), support (-.42), toilet (-.41), johnson (-.40), network (-.40), nylon (-.40), (sink (-.34)), gotta (-.33), (length (-.31)), wrong (-.31)
+
+=== EXAMPLE EXCERPTS ===
+
+===== EXCERPT: f1_neg_001.txt (text ID t000797) =====
+Text ID: t000797
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_83.txt
+
+Score (f1_neg): -4
+Loading words (f1_neg), N=5: employee, current, select, deal, holiday
+There's no place like home for the holidays, and no place like the Jeep Wrap-Up the Year sales event for great deals. On the most capable Wrangler ever, or the most luxurious vehicle in its class, the Grand Cherokee. From the most awarded SUV brand. Hurry in today and wrap up the year with no monthly payments for 90 days. Jeep, there's only one. Or, well-qualified current FCA employee lessees can lease select 2025 Jeep Grand Cherokee models and dealer stock for $280 a month, with $280 due at signing and zero down payment. See your Metro Detroit Jeep brand dealers. Thanks for watching.
+
+--- Loading words for this example (neg): employee, current, select, deal, holiday
+
+
+===== EXCERPT: f1_neg_002.txt (text ID t000798) =====
+Text ID: t000798
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_84.txt
+
+Score (f1_neg): -3
+Loading words (f1_neg), N=3: employee, current, holiday
+I have something for you. I have something for you too. Michigan residents get 1,000 lease cash during the GMC holiday event. GM employees with a current eligible GMC lease use it to get this low mileage lease on the Sierra for $169 per month.
+
+--- Loading words for this example (neg): employee, current, holiday
+
+
+===== EXCERPT: f1_neg_003.txt (text ID t000816) =====
+Text ID: t000816
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_107.txt
+
+Score (f1_neg): -3
+Loading words (f1_neg), N=3: information, team, support
+At Honda, we believe in the power of dreams. Only dreams can turn a pursuit into a mission. Passion into positive energy. And teamwork into a work of art. Because once you have a dream, there's no telling how far you can go. That's why Honda is proudly supporting Team USA's Olympic and Paralympic teams. For more information, visit www.honda.com
+
+--- Loading words for this example (neg): information, team, support
+
+
+===== EXCERPT: f1_neg_004.txt (text ID t000801) =====
+Text ID: t000801
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_88.txt
+
+Score (f1_neg): -2
+Loading words (f1_neg), N=2: employee, current
+GM employees and eligible family members with the current eligible GM lease. Get this low mileage lease on this 2023 Cadillac CT5 for $499 per month. Get this low mileage lease on this 2023 Cadillac CT5 for $499 per month.
+
+--- Loading words for this example (neg): employee, current
+
+
+===== EXCERPT: f1_neg_005.txt (text ID t000803) =====
+Text ID: t000803
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_90.txt
+
+Score (f1_neg): -2
+Loading words (f1_neg), N=4: employee, information, ai, team
+Big projects are run from small living rooms and our ingenuity has helped us find new ways to work together. The knowledge we share with each other has always been at the core of our success, but it's harder to tap into when we're apart. When we harness information and expertise, we're empowered to achieve more. Introducing Microsoft Viva, a new employee experience built on Microsoft 365 that works with Microsoft Teams. With Viva Topics, AI gives you access to your company's collective knowledge in the apps you use every day. Connecting you with the knowledge you need exactly when you need it. So you can build on each other's ideas, find solutions faster, and continue to stay connected as a team. Knowledge is powerful, but connected knowledge is revolutionary. Microsoft Viva.
+
+--- Loading words for this example (neg): employee, information, ai, team
+
+
+===== EXCERPT: f1_neg_006.txt (text ID t000815) =====
+Text ID: t000815
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_104.txt
+
+Score (f1_neg): -2
+Loading words (f1_neg), N=2: ai, technology
+As your IT manager, I choose which platform we use for virtual meetings. It will prompt you to download a weird app, and your clients will be actively upset when you send them a link. I use Zoom. Sit down, Mr. Thompson! I use Zoom AI Companion. You have no companion of any kind! I use Zoom Contact Center. No, you will not start a movement! I use Zoom in this coffee shop. Use Zoom to translate. Be part of the movement. Zoom ahead. Technology should confuse us, not help us!
+
+--- Loading words for this example (neg): ai, technology
+
+
+===== EXCERPT: f1_neg_007.txt (text ID t000741) =====
+Text ID: t000741
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_22.txt
+
+Score (f1_neg): -1
+Loading words (f1_neg), N=1: technology
+Life is messy, but clean up doesn't have to be. Meet the Shark EveryMess, the only portable 3-in-1 tool that can dry back, wet back, and remove tough stains for every clean up. With two times more stain-grabbing suction, StainForce technology combines two ultra-concentrated formulas for 30 times more stain-fighting power. And when you're done, rinse-and-ready technology self-cleans in seconds. The Shark EveryMess, your 3-in-1 everyday solution for everything messy. StainForce.
+
+--- Loading words for this example (neg): technology
+
+
+===== EXCERPT: f1_neg_008.txt (text ID t000771) =====
+Text ID: t000771
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_55.txt
+
+Score (f1_neg): -1
+Loading words (f1_neg), N=1: support
+okay sparky that's enough working from home isn't an exact science supporting your family's immunity is with culturel's probiotics scientifically proven for 24-hour immune support
+
+--- Loading words for this example (neg): support
+
+
+===== EXCERPT: f1_neg_009.txt (text ID t000747) =====
+Text ID: t000747
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_28.txt
+
+Score (f1_neg): -1
+Loading words (f1_neg), N=2: present, technology
+Want a sleek that stays up to five washes? It's possible. Garnier presents Ferti Sleek and Stay Serum. Patented water resistant technology to block out frizz. For ultra glassy sleek that stays up to five washes. Ferti Sleek and Stay System by Garnier.
+
+--- Loading words for this example (neg): present, technology
+
+
+===== EXCERPT: f1_neg_010.txt (text ID t000753) =====
+Text ID: t000753
+Decade: 2020
+File:   corpus/commercial_verbal/2020/tv_com_2020_35.txt
+
+Score (f1_neg): -1
+Loading words (f1_neg), N=1: support
+Sweet headgear. Nice goggles. Yeah, get a drink in there. Hey Daddy, watch this. You're ready to go. Help support their immune system with new Super Danimals.
+
+--- Loading words for this example (neg): support

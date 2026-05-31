@@ -2,7 +2,10 @@
 """
 Create readable factor-loading lists from SAS rotated.csv output.
 
-Expected inputs:
+The project name is inferred from the current working directory unless supplied
+explicitly with --project.
+
+Expected default inputs:
     sas/output_<Project Name>/rotated.csv
     index_keywords.txt
 
@@ -35,6 +38,17 @@ Outputs:
 
 The output files intentionally include a first summary line:
     variables loading on this pole = <count>
+
+Typical usage from the project root:
+    python factor_lists.py
+
+Optional explicit usage:
+    python factor_lists.py \
+        --project cl_st1_ph3_andrea \
+        --sas-output-dir sas/output_cl_st1_ph3_andrea \
+        --index-file index_keywords.txt \
+        --output-dir factors \
+        --cutoff 0.3
 """
 
 from __future__ import annotations
@@ -45,8 +59,7 @@ from pathlib import Path
 import pandas as pd
 
 
-DEFAULT_PROJECT = "cl_st1_ph2_andrea"
-DEFAULT_SAS_OUTPUT_DIR = Path("sas") / f"output_{DEFAULT_PROJECT}"
+DEFAULT_PROJECT = Path.cwd().name
 DEFAULT_INDEX_FILE = Path("index_keywords.txt")
 DEFAULT_OUTPUT_DIR = Path("factors")
 DEFAULT_CUTOFF = 0.3
@@ -72,11 +85,19 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
-        "--sas-output-dir",
-        default=str(DEFAULT_SAS_OUTPUT_DIR),
+        "--project",
+        default=DEFAULT_PROJECT,
         help=(
-            "Directory containing rotated.csv, usually "
-            "sas/output_<Project Name>."
+            "Project name, e.g. cl_st1_ph2_andrea or cl_st1_ph3_andrea. "
+            "Default: current directory name."
+        ),
+    )
+    parser.add_argument(
+        "--sas-output-dir",
+        default=None,
+        help=(
+            "Directory containing rotated.csv. "
+            "Default: sas/output_<project>."
         ),
     )
     parser.add_argument(
@@ -97,6 +118,14 @@ def parse_args() -> argparse.Namespace:
     )
 
     return parser.parse_args()
+
+
+def resolve_sas_output_dir(project: str, sas_output_dir_arg: str | None) -> Path:
+    """Resolve the SAS output directory."""
+    if sas_output_dir_arg is None:
+        return Path("sas") / f"output_{project}"
+
+    return Path(sas_output_dir_arg)
 
 
 def load_keyword_index(index_file: Path) -> dict[str, str]:
@@ -269,7 +298,8 @@ def main() -> None:
     """Run factor-list generation."""
     args = parse_args()
 
-    sas_output_dir = Path(args.sas_output_dir)
+    project = args.project
+    sas_output_dir = resolve_sas_output_dir(project, args.sas_output_dir)
     rotated_path = sas_output_dir / "rotated.csv"
     index_file = Path(args.index_file)
     output_dir = Path(args.output_dir)
@@ -362,6 +392,7 @@ def main() -> None:
     )
 
     print("Done.")
+    print(f"Project: {project}")
     print(f"Rotated input: {rotated_path}")
     print(f"Keyword index: {index_file}")
     print(f"Output directory: {output_dir}")

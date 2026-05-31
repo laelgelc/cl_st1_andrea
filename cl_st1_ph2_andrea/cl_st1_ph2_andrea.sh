@@ -55,10 +55,6 @@ python sas_formats.py
 ## Rogerio Yamada's account
 
 python factor_lists.py \
-  --sas-output-dir sas/output_cl_st1_ph2_andrea \
-  --index-file index_keywords.txt \
-  --output-dir factors \
-  --cutoff 0.3
 # Output: factors
 
 python corpus_size.py
@@ -71,9 +67,4 @@ python latex_boxplots.py
 cd ..
 
 python latex_anova_table.py
-
-python latex_anova_tables.py \
-  --project cl_st1_ph3_andrea \
-  --input-dir sas/output_cl_st1_ph3_andrea \
-  --output-dir latex_tables
 # Output: latex_tables

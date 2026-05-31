@@ -54,7 +54,7 @@ python sas_formats.py
 ## RUN SAS
 ## Rogerio Yamada's account
 
-python factor_lists.py \
+python factor_lists.py
 # Output: factors
 
 python corpus_size.py

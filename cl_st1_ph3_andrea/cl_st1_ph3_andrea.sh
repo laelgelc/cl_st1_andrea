@@ -71,3 +71,6 @@ python latex_anova_table.py
 
 python examples.py
 # Output: examples (LaTeX format)
+
+python examples_txt.py
+# Output: examples_txt (plaintext format)

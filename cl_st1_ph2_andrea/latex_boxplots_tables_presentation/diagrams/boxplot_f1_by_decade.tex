@@ -1,0 +1,100 @@
+\begin{figure}[H]
+\centering
+\hspace*{-.25in}
+\begin{tikzpicture}
+\begin{axis}[
+  boxplot/draw direction=y,
+  enlarge x limits=0.01,
+  every boxplot/.style={draw=black, fill=blue!25},
+  ylabel={Mean Dim. 1 Score},
+  ylabel style={font=\scriptsize},
+  height=0.45\textheight, width=\textwidth,
+  yticklabel style={font=\footnotesize},
+  x tick label style={rotate=60, anchor=east, font=\scriptsize},
+  x=7.5,
+  xtick={1,...,8},
+  xticklabels={
+1950,
+  1960,
+  1970,
+  1980,
+  1990,
+  2000,
+  2010,
+  2020
+},
+]
+\addplot[red, densely dashed] coordinates {(0.5,0) (8.5,0)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-2,
+  lower quartile=3.0,
+  median=5.0,
+  upper quartile=7.0,
+  upper whisker=12
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(1,5.388349514563107)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(2,9) (2,9) (2,9)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-1,
+  lower quartile=1.0,
+  median=3.0,
+  upper quartile=4.0,
+  upper whisker=8.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(2,2.8640776699029127)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-2,
+  lower quartile=1.0,
+  median=2.0,
+  upper quartile=3.0,
+  upper whisker=6
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(3,1.9514563106796117)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-2,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=3.0,
+  upper whisker=7
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(4,1.6019417475728155)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(5,6) (5,6)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-2,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=2.0,
+  upper whisker=5.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(5,1.43)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(6,-4) (6,6) (6,6) (6,7)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3.0,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=2.0,
+  upper whisker=5.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(6,1.0784313725490196)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=2.0,
+  upper whisker=5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(7,1.2621359223300972)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(8,-4) (8,6)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3.0,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=2.0,
+  upper whisker=5.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(8,0.8058252427184466)};
+\end{axis}
+\end{tikzpicture}
+\caption{Mean Dim. 1 Scores by Decade (R² = 35.59\%)}
+\label{fig:means_f1_by_decade}
+\end{figure}

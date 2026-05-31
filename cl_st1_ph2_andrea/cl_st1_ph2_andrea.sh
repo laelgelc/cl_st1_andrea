@@ -1,5 +1,34 @@
+# ============================================================
+# Project pipeline for CL-ST1 Phase 2
+#
+# Run this script from the project phase directory, e.g.:
+#
+#   cl_st1_ph2_andrea/
+#
+# The pipeline prepares the corpus, selects keywords, builds the
+# SAS input files, generates post-SAS factor outputs, creates
+# visualisations and examples, and finally prepares/interprets
+# factor-pole prompts.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. Tag the source corpus
+#
+# Reads the phase corpus and produces token/tag/lemma files
+# grouped by decade.
+# ------------------------------------------------------------
+
 python tag.py
 # Output: corpus/07_tagged/<Decade>/
+
+
+# ------------------------------------------------------------
+# 2. Extract key lemmas by decade
+#
+# Uses the tagged corpus to identify decade-level key lemmas.
+# The cutoff controls the minimum threshold for retaining lemmas.
+# ------------------------------------------------------------
 
 python keylemmas.py \
     --input corpus/07_tagged \
@@ -7,10 +36,19 @@ python keylemmas.py \
     --cutoff 3
 # Output: corpus/08_keylemmas/<Decade>.tsv
 
+
+# ------------------------------------------------------------
+# 3. Select a stratified keyword set
+#
+# Selects up to 250 keywords per decade, with a maximum of 1200
+# keywords before final de-duplication. The final keyword list is
+# used to construct binary keyword columns for SAS.
+# ------------------------------------------------------------
+
 python select_kws_stratified.py \
     --per-decade 250 \
     --max-total 1200
-# Output: corpus/09_kw_selected
+# Output: corpus/09_kw_selected/keywords.txt
 
 "
 === Decade Keyword Quotas ===
@@ -41,53 +79,159 @@ Final unique keywords written to: corpus/09_kw_selected/keywords.txt
 Final unique keyword count: 265
 "
 
+# ------------------------------------------------------------
+# 4. Build binary keyword columns
+#
+# Remove previous generated column folders before rebuilding them.
+# This keeps the keyword matrix consistent with the latest selected
+# keyword list.
+# ------------------------------------------------------------
+
 rm -rf columns columns_clean
+
 python columns.py
-# Output: columns, columns_clean, file_ids.txt, index_keywords.txt
+# Outputs:
+#   columns/
+#   columns_clean/
+#   file_ids.txt
+#   index_keywords.txt
+
+
+# ------------------------------------------------------------
+# 5. Merge columns into the SAS counts matrix
+#
+# Combines the per-text keyword columns into the space-separated
+# counts file expected by the SAS LMDA workflow.
+# ------------------------------------------------------------
 
 python merge_columns.py
 # Output: sas/counts.txt
 
-python sas_formats.py
-# Output: sas/word_labels_format.sas, etc
 
-## RUN SAS
-## Rogerio Yamada's account
+# ------------------------------------------------------------
+# 6. Generate SAS format files
+#
+# Creates SAS label/format files that map keyword variable IDs
+# such as v000001 to readable word labels.
+# ------------------------------------------------------------
+
+python sas_formats.py
+# Outputs:
+#   sas/word_labels_format.sas
+#   sas/word_labels_full_format.sas
+#   other SAS helper format files
+
+
+# ------------------------------------------------------------
+# Run SAS
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+# 8. Build factor loading lists
+#
+# Reads SAS factor outputs and produces readable positive/negative
+# loading lists for each factor.
+# ------------------------------------------------------------
 
 python factor_lists.py
-# Output: factors
+# Output: factors/
+
+
+# ------------------------------------------------------------
+# 9. Calculate corpus size summaries
+#
+# Produces corpus-size metadata for reporting and checking balance
+# across decades.
+# ------------------------------------------------------------
 
 python corpus_size.py
 # Output: corpus_size/corpus_size.tsv
 
+
+# ------------------------------------------------------------
+# 10. Generate LaTeX/TikZ boxplots
+#
+# Creates one boxplot per factor dimension and a combined mosaic
+# for use in slides or reports.
+# ------------------------------------------------------------
+
 cd latex_boxplots
-# Builds boxplots for factor analysis:
+
 python latex_boxplots.py
-# Output: latex_boxplots/slides
+# Output: latex_boxplots/slides/
+
 cd ..
 
+
+# ------------------------------------------------------------
+# 11. Generate LaTeX ANOVA table
+#
+# Summarises decade effects for each factor using F, p, R², and
+# percent R².
+# ------------------------------------------------------------
+
 python latex_anova_table.py
-# Output: latex_tables
+# Output: latex_tables/anova_decade.tex
+
+
+# ------------------------------------------------------------
+# 12. Generate LaTeX example extracts
+#
+# Selects representative high-scoring texts by factor pole and
+# decade, then writes LaTeX examples with factor-loading lemmas
+# highlighted.
+# ------------------------------------------------------------
 
 python examples.py
-# Output: examples (LaTeX format)
+# Output: examples/
 
-# Sanity check on the scores:
+
+# ------------------------------------------------------------
+# 13. Generate score-details report
+#
+# Sanity-check report showing, for each text and factor, which
+# positive- and negative-pole loading words are present.
+# ------------------------------------------------------------
+
 python score_details.py
 # Output: examples/score_details.txt
 
+
+# ------------------------------------------------------------
+# 14. Generate plaintext example extracts
+#
+# Produces plain `.txt` versions of the selected examples, including
+# score metadata and loading words. These are useful for manual review
+# and for building interpretation prompts.
+# ------------------------------------------------------------
+
 python examples_txt.py
-# Output: examples_txt (plaintext format)
+# Output: examples_txt/
 
-# Interpretation
-# Build prompts:
+
+# ------------------------------------------------------------
+# 15. Build interpretation prompts
+#
+# Combines factor loadings, mean decade scores, plaintext examples,
+# and score-details information into one prompt per factor pole.
+# ------------------------------------------------------------
+
 python interpretation_prompts.py
-# Output: interpretation/input
+# Output: interpretation/input/
 
-# Submit prompts:
+
+# ------------------------------------------------------------
+# 16. Submit interpretation prompts to GPT
+#
+# Sends each prompt file to the configured GPT model and writes one
+# response file per factor pole. Requires OPENAI_API_KEY in the
+# environment or in env/.env.
+# ------------------------------------------------------------
+
 python generate_interpretation_gpt.py \
     --input interpretation/input \
     --output interpretation/output \
     --model gpt-5.5 \
     --workers 4
-# Output: interpretation/output
+# Output: interpretation/output/

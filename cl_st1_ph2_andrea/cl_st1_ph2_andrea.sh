@@ -70,3 +70,5 @@ python latex_boxplots.py
 # Output: latex_boxplots/slides
 cd ..
 
+python latex_anova_table.py
+# Output: latex_tables

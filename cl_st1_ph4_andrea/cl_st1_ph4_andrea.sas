@@ -53,123 +53,121 @@ RUN;
 
 /* ZIP OUTPUT FILES */
 
-%let addcntzip = /home/u63529080/zip/output_&project..zip;
+%LET addcntzip = /home/u63529080/zip/output_&project..zip;
 
 FILENAME temp "&addcntzip";
 
 DATA _NULL_;
-  rc=FDELETE('temp');
+    rc = FDELETE('temp');
 RUN;
 
-data filelist;
-run;
+DATA filelist;
+RUN;
 
-data filelist;
-  length root dname $ 2048 filename $ 256 dir level 8;
-  input root;
-  retain filename dname ' ' level 0 dir 1;
-cards4;
+DATA filelist;
+    LENGTH root dname $ 2048 filename $ 256 dir level 8;
+    INPUT root;
+    RETAIN filename dname ' ' level 0 dir 1;
+CARDS4;
 /home/u63529080/cl_st1_ph4_andrea_CCA
 ;;;;
-run;
+RUN;
 
-data filelist;
-  modify filelist;
-  rc1=filename('tmp',catx('/',root,dname,filename));
-  rc2=dopen('tmp');
-  dir = 1 & rc2;
+DATA filelist;
+    MODIFY filelist;
+    rc1 = FILENAME('tmp', CATX('/', root, dname, filename));
+    rc2 = DOPEN('tmp');
+    dir = 1 & rc2;
 
-  if dir then do;
-      dname=catx('/',dname,filename);
-      filename=' ';
-  end;
+    IF dir THEN DO;
+        dname = CATX('/', dname, filename);
+        filename = ' ';
+    END;
 
-  replace;
+    REPLACE;
 
-  if dir;
+    IF dir;
 
-  level=level+1;
+    level = level + 1;
 
-  do i=1 to dnum(rc2);
-    filename=dread(rc2,i);
-    output;
-  end;
+    DO i = 1 TO DNUM(rc2);
+        filename = DREAD(rc2, i);
+        OUTPUT;
+    END;
 
-  rc3=dclose(rc2);
-run;
+    rc3 = DCLOSE(rc2);
+RUN;
 
-proc sort data=filelist;
-  by root dname filename;
-run;
+PROC SORT DATA=filelist;
+    BY root dname filename;
+RUN;
 
-proc print data=filelist;
-run;
+PROC PRINT DATA=filelist;
+RUN;
 
-data _null_;
+DATA _NULL_;
+    SET filelist;
 
-  set filelist;
+    IF dir = 0;
 
-  if dir=0;
+    rc1 = FILENAME("in", CATX('/', root, dname, filename), "disk", "lrecl=1 recfm=n");
+    rc1txt = SYSMSG();
 
-  rc1=filename("in" , catx('/',root,dname,filename), "disk", "lrecl=1 recfm=n");
-  rc1txt=sysmsg();
+    rc2 = FILENAME(
+        "out",
+        "&addcntzip.",
+        "ZIP",
+        "lrecl=1 recfm=n member='" !! CATX('/', dname, filename) !! "'"
+    );
+    rc2txt = SYSMSG();
 
-  rc2=filename(
-      "out",
-      "&addcntzip.",
-      "ZIP",
-      "lrecl=1 recfm=n member='" !! catx('/',dname,filename) !! "'"
-  );
-  rc2txt=sysmsg();
+    DO _N_ = 1 TO 6;
+        rc3 = FCOPY("in", "out");
+        rc3txt = SYSMSG();
 
-  do _N_ = 1 to 6;
-    rc3=fcopy("in","out");
-    rc3txt=sysmsg();
+        IF FEXIST("out") THEN LEAVE;
+        ELSE sleeprc = SLEEP(0.5, 1);
+    END;
 
-    if fexist("out") then leave;
-    else sleeprc=sleep(0.5,1);
-  end;
+    rc4 = FEXIST("out");
+    rc4txt = SYSMSG();
 
-  rc4=fexist("out");
-  rc4txt=sysmsg();
-
-  put _N_ @12 (rc:) (=);
-
-run;
+    PUT _N_ @12 (rc:) (=);
+RUN;
 
 
-/* delete all png, html, tsv, and csv files after zipping */
+/* DELETE ALL PNG, HTML, TSV, AND CSV FILES AFTER ZIPPING */
 
-%let path=&whereisit/&myfolder;
+%LET path = &whereisit/&myfolder;
 
-FILENAME _folder_ "%bquote(&path.)";
+FILENAME _folder_ "%BQUOTE(&path.)";
 
-data filenames(keep=memname);
-  handle=dopen( '_folder_' );
+DATA filenames(KEEP=memname);
+    handle = DOPEN('_folder_');
 
-  if handle > 0 then do;
-    count=dnum(handle);
+    IF handle > 0 THEN DO;
+        count = DNUM(handle);
 
-    do i=1 to count;
-      memname=dread(handle,i);
+        DO i = 1 TO count;
+            memname = DREAD(handle, i);
 
-      if scan(memname, 2, '.')='png'
-      OR scan(memname, 2, '.')='html'
-      OR scan(memname, 2, '.')='tsv'
-      OR scan(memname, 2, '.')='csv'
-      then output filenames;
-    end;
-  end;
+            IF SCAN(memname, 2, '.') = 'png'
+                OR SCAN(memname, 2, '.') = 'html'
+                OR SCAN(memname, 2, '.') = 'tsv'
+                OR SCAN(memname, 2, '.') = 'csv'
+            THEN OUTPUT filenames;
+        END;
+    END;
 
-  rc=dclose(handle);
-run;
+    rc = DCLOSE(handle);
+RUN;
 
-filename _folder_ clear;
+FILENAME _folder_ CLEAR;
 
-data _null_;
-set filenames;
-fname = 'todelete';
-rc = filename(fname, quote(cats("&path",'/',memname)));
-rc = fdelete(fname);
-rc = filename(fname);
-run;
+DATA _NULL_;
+    SET filenames;
+    fname = 'todelete';
+    rc = FILENAME(fname, QUOTE(CATS("&path", '/', memname)));
+    rc = FDELETE(fname);
+    rc = FILENAME(fname);
+RUN;

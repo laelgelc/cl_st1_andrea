@@ -171,3 +171,5 @@ DATA _NULL_;
     rc = FDELETE(fname);
     rc = FILENAME(fname);
 RUN;
+
+/* END OF PROGRAMME */

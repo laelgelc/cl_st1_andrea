@@ -1,29 +1,29 @@
 /* CCA - CL_St1_Ph4_andrea_CCA */
 
 /* Match this to the actual folder in SAS OnDemand */
-%let project = cl_st1_ph4_andrea_cca;
-%let myfolder = &project;
+%LET project = cl_st1_ph4_andrea_cca;
+%LET myfolder = &project;
 
 /* Replace with your SAS user ID */
-%let sasusername = u63529080;
+%LET sasusername = u63529080;
 
 /* Importing the data set */
-proc import datafile="/home/&sasusername/&myfolder/tv_commercials_cca.tsv"
-            out=cl_st1_ph4_andrea_cca
-            dbms=tab
-            replace;
-   getnames=yes;
-   guessingrows=max;
-run;
+PROC IMPORT DATAFILE="/home/&sasusername/&myfolder/tv_commercials_cca.tsv"
+            OUT=cl_st1_ph4_andrea_cca
+            DBMS=TAB
+            REPLACE;
+   GETNAMES=YES;
+   GUESSINGROWS=MAX;
+RUN;
 
 /* CCA */
-title "CCA for &project";
-ods noproctitle;
-ods graphics / imagemap=on;
+TITLE "CCA for &project";
+ODS NOPROCTITLE;
+ODS GRAPHICS / IMAGEMAP=ON;
 
-proc cancorr data=work.cl_st1_ph4_andrea_cca
-             out=cca_scores;
-    var ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8;
-    with vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8;
-run;
-quit;
+PROC CANCORR DATA=work.cl_st1_ph4_andrea_cca
+             OUT=cca_scores;
+    VAR ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8;
+    WITH vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8;
+RUN;
+QUIT;

@@ -830,5 +830,94 @@ cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca.tsv
 
 These files provide the aligned verbal–visual factor-score matrix for the subsequent Canonical Correlation Analysis.
 
+### Canonical Correlation Analysis
+
+The aligned CCA dataset was analysed in SAS using `PROC CANCORR`. The SAS input file was:
+
+```text
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/tv_commercials_cca.tsv
+```
+
+The SAS output files were saved under:
+
+```text
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/
+```
+
+The main outputs are:
+
+```text
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/tv_commercials_cca-results.html
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/tv_commercials_cca_scores.tsv
+```
+
+A Markdown summary of the main CCA results was also prepared as:
+
+```text
+cl_st1_ph4_andrea/tv_commercials_cca-results.md
+```
+
+The CCA used the eight verbal LMDA factor-score dimensions as the `VAR` set:
+
+```text
+ver1
+ver2
+ver3
+ver4
+ver5
+ver6
+ver7
+ver8
+```
+
+and the eight visual LMDA factor-score dimensions as the `WITH` set:
+
+```text
+vis1
+vis2
+vis3
+vis4
+vis5
+vis6
+vis7
+vis8
+```
+
+The sequential significance tests indicated that the first four canonical functions were statistically significant at `α = .05`:
+
+| Canonical function | Canonical correlation | Squared canonical correlation | p value | Interpretation status |
+|---:|---:|---:|---:|---|
+| 1 | 0.383981 | 0.147441 | < .0001 | strongest and most robust |
+| 2 | 0.335207 | 0.112364 | < .0001 | robust |
+| 3 | 0.244872 | 0.059962 | < .0001 | robust but weaker |
+| 4 | 0.162135 | 0.026288 | 0.0435 | marginal; interpret cautiously |
+
+Canonical functions 5–8 were not statistically significant.
+
+### Canonical structure interpretation
+
+The CCA results were inspected using canonical structure loadings rather than raw canonical coefficients. Canonical structure loadings were preferred for interpretation because they show how strongly each original verbal or visual LMDA dimension correlates with its corresponding canonical variate.
+
+A loading cutoff of:
+
+```text
+|loading| >= .30
+```
+
+was used to identify the main contributors to each canonical dimension. The original sign of each loading was preserved.
+
+The first four canonical dimensions showed the following structure:
+
+| Canonical dimension | Positive verbal pole | Negative verbal pole | Positive visual pole | Negative visual pole |
+|---:|---|---|---|---|
+| 1 | `ver1`, `ver7` | — | `vis7` | `vis1`, `vis4`, `vis2`, `vis3`, `vis6` |
+| 2 | `ver6`, `ver5` | `ver3` | `vis4`, `vis8` | `vis1` |
+| 3 | `ver2`, `ver5`, `ver8` | — | `vis3`, `vis2` | `vis6`, `vis5` |
+| 4 | `ver8` | `ver5` | `vis6`, `vis7` | `vis5` |
+
+The first canonical dimension is dominated by `ver1` on the verbal side and contrasts `vis7` with a broader cluster of negative visual loadings. The second dimension opposes a cross-modal pattern combining `ver6`, `ver5`, `vis4`, and `vis8` against a contrasting pole defined by `ver3` and `vis1`. The third dimension is centred on `ver2`, supported by `ver5` and `ver8`, and visually aligns with `vis3` and `vis2` while contrasting with `vis6` and `vis5`. The fourth dimension contrasts `ver8` and `vis6`/`vis7` with `ver5` and `vis5`, but it should be interpreted cautiously because its canonical correlation is small and its significance is marginal.
+
+At this stage, the interpretation remains statistical and structural. The substantive discourse interpretation requires replacing labels such as `ver1`, `ver2`, `vis1`, and `vis2` with the factor interpretations developed in Phase 2 and Phase 3.
+
 ## Phase 5 - ANOVA Analysis of the commercial verbal, visual, and cross-modal discourses to detect diachronic variation in discourses
 

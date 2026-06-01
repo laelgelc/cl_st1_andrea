@@ -717,6 +717,8 @@ corpus/commercial_verbal/1950/tv_com_1950_1.txt
 
 The resulting verbal subcorpus contains the balanced sample of selected commercials, with `103` transcript files per decade and `824` transcript files in total.
 
+The Lexical Multi-dimensional Analysis (LMDA) was processed according to the corresponding procedures.
+
 ## Phase 3 - Lexical Multi-dimensional Analysis of the commercial visual subcorpus to identify dimensions of underlying discourses
 
 ### Commercial visual subcorpus organisation
@@ -762,9 +764,71 @@ corpus/commercial_visual/1950/tv_com_1950_1.txt
 
 The resulting visual subcorpus mirrors the verbal subcorpus, containing the same balanced sample of selected commercials, with `103` visual description files per decade and `824` visual description files in total.
 
+The Lexical Multi-dimensional Analysis (LMDA) was processed according to the corresponding procedures.
+
 ## Phase 4 - Canonical Correlation Analysis of the commercial verbal and visual subcorpora to identify cross-modal discursive patterns
 
+Phase 4 prepares the verbal and visual LMDA factor-score outputs for Canonical Correlation Analysis (CCA). The goal is to create a paired cross-modal dataset in which each row represents the same commercial in both modalities.
 
+The Phase 2 verbal factor scores and Phase 3 visual factor scores were loaded from their respective SAS output files and linked to their `file_ids.txt` mappings. The factor-score columns were renamed to make the modality explicit:
+
+- verbal dimensions: `ver1` to `ver8`;
+- visual dimensions: `vis1` to `vis8`.
+
+Only the metadata and factor-score columns required for CCA were retained:
+
+- `file_id`;
+- `group_filename`;
+- `decade`;
+- verbal factor-score columns;
+- visual factor-score columns.
+
+Before merging, the verbal and visual score tables were compared by `file_id`. The comparison showed that the verbal score table contained `820` commercials and the visual score table contained `824` commercials. There were no verbal-only rows, but four visual-only rows were identified:
+
+```text
+t000455
+t000474
+t000481
+t000538
+```
+
+Because CCA requires paired observations, the CCA dataset was created using only commercials present in both modalities. The verbal and visual score tables were therefore inner-merged by `file_id`, producing a CCA-ready table with `820` matched rows.
+
+The shared metadata fields were checked after merging. Both `group_filename` and `decade` agreed across the matched verbal and visual records, so duplicate metadata columns were reduced to a single clean copy.
+
+The resulting CCA dataset contains the following columns:
+
+```text
+file_id
+group_filename
+decade
+ver1
+ver2
+ver3
+ver4
+ver5
+ver6
+ver7
+ver8
+vis1
+vis2
+vis3
+vis4
+vis5
+vis6
+vis7
+vis8
+```
+
+The CCA-ready dataset was exported to the Phase 1 source metadata directory in three formats:
+
+```text
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca.ndjson
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca.xlsx
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca.tsv
+```
+
+These files provide the aligned verbal–visual factor-score matrix for the subsequent Canonical Correlation Analysis.
 
 ## Phase 5 - ANOVA Analysis of the commercial verbal, visual, and cross-modal discourses to detect diachronic variation in discourses
 

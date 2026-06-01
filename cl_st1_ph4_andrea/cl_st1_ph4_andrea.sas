@@ -6,9 +6,10 @@
 
 /* Replace with your SAS user ID */
 %LET sasusername = u63529080;
+%LET whereisit = /home/&sasusername;
 
 /* Importing the data set */
-PROC IMPORT DATAFILE="/home/&sasusername/&myfolder/tv_commercials_cca.tsv"
+PROC IMPORT DATAFILE="&whereisit/&myfolder/tv_commercials_cca.tsv"
             OUT=tv_commercials_cca
             DBMS=TAB
             REPLACE;
@@ -45,7 +46,7 @@ QUIT;
 ODS HTML CLOSE;
 
 PROC EXPORT DATA=work.tv_commercials_cca_scores
-            OUTFILE="/home/&sasusername/&myfolder/tv_commercials_cca_scores.tsv"
+            OUTFILE="&whereisit/&myfolder/tv_commercials_cca_scores.tsv"
             DBMS=TAB
             REPLACE;
 RUN;

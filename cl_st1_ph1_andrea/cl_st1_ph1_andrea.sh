@@ -177,7 +177,7 @@ nohup bash run_python_ec2_transcription.sh \
 # ==============================================================================
 
 # Test run.
-python sample_commercials_frames.py
+python sample_commercials_frames.py --test-mode --test-limit 10
 
 # Full run.
 python sample_commercials_frames.py --no-test-mode

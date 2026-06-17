@@ -3,9 +3,9 @@
 Sample representative frames from TV commercial clips.
 
 This programme reads individual commercial video files from an input directory,
-extracts a cost-aware storyboard using first-frame, scene-change, and last-frame
-sampling, and writes selected JPEG frames plus JSON manifests to an output
-directory.
+extracts a reproducible storyboard using first-frame, fixed-interval, and
+last-frame sampling, and writes selected JPEG frames plus JSON manifests to an
+output directory.
 
 Default input:
     corpus/02_commercials/
@@ -13,11 +13,20 @@ Default input:
 Default output:
     corpus/05_frames/
 
+Default sampling strategy:
+    include first frame: yes
+    include one frame every: 0.25 seconds
+    include last frame: yes
+    last-frame offset: 1.0 second before end
+    resize width: 768 px
+    maximum selected frames: no cap
+
 Typical usage:
     python sample_commercials_frames.py
     python sample_commercials_frames.py --no-test-mode
-    python sample_commercials_frames.py --no-test-mode --max-frames 20
-    python sample_commercials_frames.py --no-test-mode --scene-threshold 0.30
+    python sample_commercials_frames.py --no-test-mode --frame-interval-seconds 0.50
+    python sample_commercials_frames.py --no-test-mode --max-frames 0
+    python sample_commercials_frames.py --no-test-mode --max-frames 120
 
 The programme does not call any LLM or perform visual interpretation. It prepares
 ordered frame sequences for a later multimodal analysis stage.
@@ -30,21 +39,20 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import math
 import shutil
 import subprocess
 import sys
 import tempfile
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
 
 TOOL_NAME = "sample_commercials_frames"
-TOOL_VERSION = "v1"
+TOOL_VERSION = "v2"
 
 DEFAULT_INPUT_DIR = "corpus/02_commercials"
 DEFAULT_OUTPUT_DIR = "corpus/05_frames"
@@ -55,14 +63,13 @@ DEFAULT_TEST_MODE = True
 DEFAULT_TEST_LIMIT = 5
 DEFAULT_WORKERS = 1
 
-DEFAULT_SCENE_THRESHOLD = 0.25
-DEFAULT_MAX_FRAMES = 30
+DEFAULT_FRAME_INTERVAL_SECONDS = 0.25
+DEFAULT_MAX_FRAMES = 0
 DEFAULT_IMAGE_WIDTH = 768
 DEFAULT_INCLUDE_FIRST_FRAME = True
 DEFAULT_INCLUDE_LAST_FRAME = True
 DEFAULT_LAST_FRAME_OFFSET_SECONDS = 1.0
 DEFAULT_TIMESTAMP_TOLERANCE_SECONDS = 0.10
-DEFAULT_MIN_SCENE_GAP_SECONDS = 0.0
 
 SUPPORTED_EXTENSIONS = {".mp4"}
 
@@ -98,14 +105,13 @@ class WorkItem:
 class SamplingConfig:
     """Sampling settings used for each commercial."""
 
-    scene_threshold: float
+    frame_interval_seconds: float
     max_frames: int
     image_width: int
     include_first_frame: bool
     include_last_frame: bool
     last_frame_offset_seconds: float
     timestamp_tolerance_seconds: float
-    min_scene_gap_seconds: float
 
 
 @dataclass(frozen=True)
@@ -115,7 +121,6 @@ class CandidateFrame:
     timestamp_seconds: float
     selection_reason: str
     temp_path: Path
-    scene_score: float | None = None
 
 
 @dataclass(frozen=True)
@@ -198,8 +203,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--manifest-file", default=None)
     parser.add_argument("--start-commercial-id", default=None)
 
-    parser.add_argument("--scene-threshold", type=float, default=DEFAULT_SCENE_THRESHOLD)
-    parser.add_argument("--max-frames", type=int, default=DEFAULT_MAX_FRAMES)
+    parser.add_argument(
+        "--frame-interval-seconds",
+        type=float,
+        default=DEFAULT_FRAME_INTERVAL_SECONDS,
+        help="Extract one interval frame every N seconds.",
+    )
+    parser.add_argument(
+        "--max-frames",
+        type=int,
+        default=DEFAULT_MAX_FRAMES,
+        help="Maximum selected frames per commercial. Use 0 for no cap.",
+    )
     parser.add_argument("--image-width", type=int, default=DEFAULT_IMAGE_WIDTH)
 
     first_group = parser.add_mutually_exclusive_group()
@@ -208,11 +223,13 @@ def parse_args() -> argparse.Namespace:
         dest="include_first_frame",
         action="store_true",
         default=DEFAULT_INCLUDE_FIRST_FRAME,
+        help="Include the first frame at timestamp 0.0 seconds.",
     )
     first_group.add_argument(
         "--no-include-first-frame",
         dest="include_first_frame",
         action="store_false",
+        help="Do not explicitly include the first frame.",
     )
 
     last_group = parser.add_mutually_exclusive_group()
@@ -221,27 +238,26 @@ def parse_args() -> argparse.Namespace:
         dest="include_last_frame",
         action="store_true",
         default=DEFAULT_INCLUDE_LAST_FRAME,
+        help="Include a frame near the end of the clip.",
     )
     last_group.add_argument(
         "--no-include-last-frame",
         dest="include_last_frame",
         action="store_false",
+        help="Do not explicitly include a final frame.",
     )
 
     parser.add_argument(
         "--last-frame-offset-seconds",
         type=float,
         default=DEFAULT_LAST_FRAME_OFFSET_SECONDS,
+        help="Seconds before the end of the clip for the explicit final frame.",
     )
     parser.add_argument(
         "--timestamp-tolerance-seconds",
         type=float,
         default=DEFAULT_TIMESTAMP_TOLERANCE_SECONDS,
-    )
-    parser.add_argument(
-        "--min-scene-gap-seconds",
-        type=float,
-        default=DEFAULT_MIN_SCENE_GAP_SECONDS,
+        help="Deduplicate candidate frames within this timestamp tolerance.",
     )
 
     return parser.parse_args()
@@ -260,18 +276,16 @@ def validate_args(args: argparse.Namespace) -> None:
         raise ConfigurationError("--test-limit must be greater than 0")
     if args.workers <= 0:
         raise ConfigurationError("--workers must be greater than 0")
-    if not 0 < args.scene_threshold < 1:
-        raise ConfigurationError("--scene-threshold must be greater than 0 and less than 1")
-    if args.max_frames <= 0:
-        raise ConfigurationError("--max-frames must be greater than 0")
+    if args.frame_interval_seconds <= 0:
+        raise ConfigurationError("--frame-interval-seconds must be greater than 0")
+    if args.max_frames < 0:
+        raise ConfigurationError("--max-frames must be greater than or equal to 0")
     if args.image_width < 0:
         raise ConfigurationError("--image-width must be greater than or equal to 0")
     if args.last_frame_offset_seconds < 0:
         raise ConfigurationError("--last-frame-offset-seconds must be non-negative")
     if args.timestamp_tolerance_seconds < 0:
         raise ConfigurationError("--timestamp-tolerance-seconds must be non-negative")
-    if args.min_scene_gap_seconds < 0:
-        raise ConfigurationError("--min-scene-gap-seconds must be non-negative")
 
     try:
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -502,98 +516,70 @@ def extract_last_frame(
     )
 
 
-def parse_showinfo_scene_candidates(stderr_text: str, temp_dir: Path) -> list[CandidateFrame]:
-    """Parse ffmpeg showinfo output and match scene-change frames to output files.
+def interval_timestamps(
+        duration_seconds: float,
+        interval_seconds: float,
+        include_start: bool,
+        last_frame_timestamp_seconds: float | None,
+) -> list[float]:
+    """Return fixed-interval timestamps within the video duration.
 
-    The parser extracts approximate presentation timestamps from showinfo lines.
-    These timestamps are then paired with generated scene frame files in order.
+    The generated interval timestamps start at 0.0 when include_start is true,
+    otherwise at the first interval. If a last-frame timestamp is provided,
+    interval timestamps at or after that point are omitted so that the explicit
+    last-frame candidate remains the end safeguard.
     """
     timestamps: list[float] = []
 
-    for line in stderr_text.splitlines():
-        marker = "pts_time:"
-        if marker not in line:
-            continue
-        after = line.split(marker, 1)[1]
-        value = after.split()[0]
-        try:
-            timestamps.append(float(value))
-        except ValueError:
-            continue
+    timestamp = 0.0 if include_start else interval_seconds
+    upper_bound = duration_seconds
 
-    scene_paths = sorted(temp_dir.glob("scene_*.jpg"))
+    if last_frame_timestamp_seconds is not None:
+        upper_bound = min(upper_bound, last_frame_timestamp_seconds)
 
+    while timestamp < upper_bound:
+        timestamps.append(round(timestamp, 3))
+        timestamp += interval_seconds
+
+    return timestamps
+
+
+def extract_interval_frames(
+        video_path: Path,
+        temp_dir: Path,
+        duration_seconds: float,
+        interval_seconds: float,
+        image_width: int,
+        include_start: bool,
+        last_frame_timestamp_seconds: float | None,
+) -> list[CandidateFrame]:
+    """Extract fixed-interval frames and return candidate metadata."""
     candidates: list[CandidateFrame] = []
-    for index, scene_path in enumerate(scene_paths):
-        timestamp = timestamps[index] if index < len(timestamps) else float(index)
+
+    timestamps = interval_timestamps(
+        duration_seconds=duration_seconds,
+        interval_seconds=interval_seconds,
+        include_start=include_start,
+        last_frame_timestamp_seconds=last_frame_timestamp_seconds,
+    )
+
+    for index, timestamp_seconds in enumerate(timestamps, start=1):
+        output_path = temp_dir / f"interval_{index:06d}.jpg"
+        extract_frame_at_timestamp(
+            video_path=video_path,
+            timestamp_seconds=timestamp_seconds,
+            output_path=output_path,
+            image_width=image_width,
+        )
         candidates.append(
             CandidateFrame(
-                timestamp_seconds=timestamp,
-                selection_reason="scene_change",
-                temp_path=scene_path,
-                scene_score=None,
+                timestamp_seconds=timestamp_seconds,
+                selection_reason="interval",
+                temp_path=output_path,
             )
         )
 
     return candidates
-
-
-def extract_scene_change_frames(
-        video_path: Path,
-        temp_dir: Path,
-        scene_threshold: float,
-        image_width: int,
-        min_scene_gap_seconds: float,
-) -> list[CandidateFrame]:
-    """Extract scene-change frames and return candidate metadata."""
-    output_pattern = temp_dir / "scene_%06d.jpg"
-
-    filters = [f"select='gt(scene,{scene_threshold})'"]
-    scale = scale_filter(image_width)
-    if scale:
-        filters.append(scale)
-    filters.append("showinfo")
-
-    command = [
-        "ffmpeg",
-        "-y",
-        "-i",
-        str(video_path),
-        "-vf",
-        ",".join(filters),
-        "-vsync",
-        "vfr",
-        str(output_pattern),
-    ]
-
-    result = run_command(command)
-    if result.returncode != 0:
-        raise RuntimeError(f"ffmpeg scene-change extraction failed: {result.stderr.strip()}")
-
-    candidates = parse_showinfo_scene_candidates(result.stderr, temp_dir)
-
-    if min_scene_gap_seconds > 0:
-        candidates = filter_by_min_gap(candidates, min_scene_gap_seconds)
-
-    return candidates
-
-
-def filter_by_min_gap(
-        candidates: list[CandidateFrame],
-        min_gap_seconds: float,
-) -> list[CandidateFrame]:
-    """Filter candidates so scene-change frames are at least a minimum time apart."""
-    if not candidates:
-        return []
-
-    sorted_candidates = sorted(candidates, key=lambda c: c.timestamp_seconds)
-    filtered = [sorted_candidates[0]]
-
-    for candidate in sorted_candidates[1:]:
-        if candidate.timestamp_seconds - filtered[-1].timestamp_seconds >= min_gap_seconds:
-            filtered.append(candidate)
-
-    return filtered
 
 
 def deduplicate_candidates(
@@ -607,7 +593,7 @@ def deduplicate_candidates(
     priority = {
         "first_frame": 3,
         "last_frame": 2,
-        "scene_change": 1,
+        "interval": 1,
     }
 
     sorted_candidates = sorted(
@@ -660,12 +646,16 @@ def cap_candidates_evenly(
 ) -> tuple[list[CandidateFrame], bool]:
     """Apply deterministic chronological even downsampling.
 
-    The first and last chronological candidates are protected. Remaining frame
-    slots are filled with evenly spaced candidates from the middle of the sequence.
-    This preserves visual coverage across the whole commercial while enforcing
-    the configured frame cap.
+    If max_frames is 0, no cap is applied and all candidates are returned.
+
+    If max_frames is positive and the candidate count exceeds max_frames, the
+    first and last chronological candidates are protected. Remaining frame slots
+    are filled with evenly spaced candidates from the middle of the sequence.
     """
     sorted_candidates = sorted(candidates, key=lambda c: c.timestamp_seconds)
+
+    if max_frames == 0:
+        return sorted_candidates, False
 
     if len(sorted_candidates) <= max_frames:
         return sorted_candidates, False
@@ -717,19 +707,26 @@ def write_selected_frames(
     return selected_frames
 
 
+def cap_policy_name(max_frames: int) -> str:
+    """Return the manifest cap policy name for the configured max frame count."""
+    if max_frames == 0:
+        return "none"
+    return "chronological_even"
+
+
 def sampling_config_to_dict(config: SamplingConfig) -> dict[str, Any]:
     """Return manifest-ready sampling configuration."""
     return {
-        "strategy": "scene_change_with_first_last",
-        "scene_threshold": config.scene_threshold,
+        "strategy": "fixed_interval_with_first_last",
+        "frame_interval_seconds": config.frame_interval_seconds,
         "include_first_frame": config.include_first_frame,
         "include_last_frame": config.include_last_frame,
         "last_frame_offset_seconds": config.last_frame_offset_seconds,
         "image_width": config.image_width,
         "max_frames": config.max_frames,
-        "cap_policy": "chronological_even",
+        "max_frames_meaning": "no_cap" if config.max_frames == 0 else "maximum_selected_frames",
+        "cap_policy": cap_policy_name(config.max_frames),
         "timestamp_tolerance_seconds": config.timestamp_tolerance_seconds,
-        "min_scene_gap_seconds": config.min_scene_gap_seconds,
     }
 
 
@@ -792,8 +789,8 @@ def process_commercial(
     """Process one commercial and return a structured result.
 
     This function performs all per-item video processing: duration probing,
-    frame extraction, candidate deduplication, frame capping, final frame writing,
-    and per-commercial manifest writing. It does not log directly.
+    frame extraction, candidate deduplication, optional frame capping, final frame
+    writing, and per-commercial manifest writing. It does not log directly.
     """
     start = time.time()
 
@@ -811,6 +808,13 @@ def process_commercial(
             temp_dir = Path(temp_name)
             candidates: list[CandidateFrame] = []
 
+            last_frame_timestamp_seconds = None
+            if config.include_last_frame:
+                last_frame_timestamp_seconds = max(
+                    video_duration_seconds - config.last_frame_offset_seconds,
+                    0.0,
+                    )
+
             if config.include_first_frame:
                 candidates.append(
                     extract_first_frame(
@@ -820,14 +824,16 @@ def process_commercial(
                     )
                 )
 
-            scene_candidates = extract_scene_change_frames(
+            interval_candidates = extract_interval_frames(
                 video_path=work_item.input_path,
                 temp_dir=temp_dir,
-                scene_threshold=config.scene_threshold,
+                duration_seconds=video_duration_seconds,
+                interval_seconds=config.frame_interval_seconds,
                 image_width=config.image_width,
-                min_scene_gap_seconds=config.min_scene_gap_seconds,
+                include_start=not config.include_first_frame,
+                last_frame_timestamp_seconds=last_frame_timestamp_seconds,
             )
-            candidates.extend(scene_candidates)
+            candidates.extend(interval_candidates)
 
             if config.include_last_frame:
                 candidates.append(
@@ -973,7 +979,12 @@ def write_run_manifest(
     write_json(timestamped_manifest_path(manifest_file, run_id), data)
 
 
-def log_startup(args: argparse.Namespace, config: SamplingConfig, log_file: Path, manifest_file: Path) -> None:
+def log_startup(
+        args: argparse.Namespace,
+        config: SamplingConfig,
+        log_file: Path,
+        manifest_file: Path,
+) -> None:
     """Log startup configuration."""
     logging.info("Starting frame sampling run")
     logging.info("Input dir: %s", args.input_dir)
@@ -984,14 +995,16 @@ def log_startup(args: argparse.Namespace, config: SamplingConfig, log_file: Path
     logging.info("Reprocess existing: %s", args.reprocess)
     logging.info("Workers: %s", args.workers)
     logging.info("Supported extensions: %s", ", ".join(sorted(SUPPORTED_EXTENSIONS)))
-    logging.info("Scene threshold: %s", config.scene_threshold)
-    logging.info("Max frames: %s", config.max_frames)
+    logging.info("Frame interval seconds: %s", config.frame_interval_seconds)
+    logging.info(
+        "Max frames: %s",
+        "no cap" if config.max_frames == 0 else config.max_frames,
+    )
     logging.info("Image width: %s", config.image_width)
     logging.info("Include first frame: %s", config.include_first_frame)
     logging.info("Include last frame: %s", config.include_last_frame)
     logging.info("Last frame offset seconds: %s", config.last_frame_offset_seconds)
     logging.info("Timestamp tolerance seconds: %s", config.timestamp_tolerance_seconds)
-    logging.info("Minimum scene gap seconds: %s", config.min_scene_gap_seconds)
 
 
 def run_processing(
@@ -1043,14 +1056,13 @@ def log_result(result: ProcessingResult) -> None:
 def build_sampling_config(args: argparse.Namespace) -> SamplingConfig:
     """Build a SamplingConfig from parsed CLI arguments."""
     return SamplingConfig(
-        scene_threshold=args.scene_threshold,
+        frame_interval_seconds=args.frame_interval_seconds,
         max_frames=args.max_frames,
         image_width=args.image_width,
         include_first_frame=args.include_first_frame,
         include_last_frame=args.include_last_frame,
         last_frame_offset_seconds=args.last_frame_offset_seconds,
         timestamp_tolerance_seconds=args.timestamp_tolerance_seconds,
-        min_scene_gap_seconds=args.min_scene_gap_seconds,
     )
 
 

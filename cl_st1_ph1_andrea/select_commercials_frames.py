@@ -252,6 +252,18 @@ def path_to_str(path: Path) -> str:
     return str(path)
 
 
+def get_image_data(image: Any) -> Any:
+    """Return flattened image pixel data across Pillow versions.
+
+    Pillow deprecated Image.getdata() in favour of get_flattened_data().
+    This helper uses the newer method when available and falls back to getdata()
+    for compatibility with currently installed Pillow versions.
+    """
+    if hasattr(image, "get_flattened_data"):
+        return image.get_flattened_data()
+    return image.getdata()
+
+
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
@@ -623,7 +635,7 @@ def image_luminance_values(image_path: Path) -> list[float]:
     assert Image is not None
     with Image.open(image_path) as image:
         rgb_image = image.convert("RGB")
-        pixels = rgb_image.getdata()
+        pixels = get_image_data(rgb_image)
 
     return [
         0.299 * red + 0.587 * green + 0.114 * blue
@@ -668,7 +680,7 @@ def compute_image_signature(image_path: Path, signature_size: int) -> tuple[floa
     with Image.open(image_path) as image:
         grayscale = image.convert("L")
         resized = grayscale.resize((signature_size, signature_size), Image.Resampling.LANCZOS)
-        values = resized.getdata()
+        values = get_image_data(resized)
 
     return tuple(value / 255.0 for value in values)
 

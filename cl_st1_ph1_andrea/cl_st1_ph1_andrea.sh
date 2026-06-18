@@ -183,9 +183,14 @@ python sample_commercials_frames.py --test-mode --test-limit 10
 python sample_commercials_frames.py --no-test-mode
 
 
+# Test run.
+python select_commercials_frames.py --test-mode --test-limit 10
+
+# Full run.
+python select_commercials_frames.py --no-test-mode
 
 # ==============================================================================
-# 7. Describe commercial visuals from sampled frames
+# 8. Describe commercial visuals from sampled frames
 #
 # Programme:
 #   describe_commercials_visual.py

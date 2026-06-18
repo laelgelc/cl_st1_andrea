@@ -90,10 +90,10 @@ The `Download Success` column records whether the source video was successfully 
 
 Known failed source videos:
 
-| Video ID | Download Success | Reason |
-|---|---:|---|
-| `video_0300` | `False` | `Error: Unsupported URL: https://www.youtube.com/watch?v=_pHfv_HVSr&feature=youtu.be` |
-| `video_0739` | `False` | `Error: [youtube] WX1wgKCVJzc: Private video.` |
+| Video ID     | Download Success | Reason                                                                                |
+|--------------|-----------------:|---------------------------------------------------------------------------------------|
+| `video_0300` |          `False` | `Error: Unsupported URL: https://www.youtube.com/watch?v=_pHfv_HVSr&feature=youtu.be` |
+| `video_0739` |          `False` | `Error: [youtube] WX1wgKCVJzc: Private video.`                                        |
 
 ### Download source videos
 
@@ -425,18 +425,21 @@ nohup bash run_python_ec2.sh \
        --no-vad-filter \
 > whisper_transcription_output.log 2>&1 &
 ```
+
 ### Sample commercial frames
 
-The `sample_commercials_frames.py` programme samples representative frames from
-commercial clips in `corpus/02_commercials/` and writes ordered frame sequences to
-`corpus/05_frames/`.
+The `sample_commercials_frames.py` programme samples frames from commercial clips in
+`corpus/02_commercials/` and writes ordered frame sequences to `corpus/05_frames/`.
 
-The sampler uses a scene-change strategy with safeguards:
+The sampler uses a fixed-interval strategy with safeguards:
 
 - first frame;
-- scene-change frames;
-- final frame near the end;
-- maximum frame cap with chronological even downsampling.
+- one frame every 0.25 seconds by default;
+- final frame 1.0 second before the end;
+- resize width of 768 px;
+- optional maximum frame cap with chronological even downsampling.
+
+By default, `--max-frames 0` means no cap, so all deduplicated sampled frames are saved.
 
 Default test run:
 
@@ -450,16 +453,22 @@ Full run:
 python sample_commercials_frames.py --no-test-mode
 ```
 
-Use a lower frame cap to reduce later LLM image-token cost:
+Use a different interval:
 
 ```bash
-python sample_commercials_frames.py --no-test-mode --max-frames 20
+python sample_commercials_frames.py --no-test-mode --frame-interval-seconds 0.50
 ```
 
-Use a more conservative scene-change threshold:
+Apply a frame cap:
 
 ```bash
-python sample_commercials_frames.py --no-test-mode --scene-threshold 0.30
+python sample_commercials_frames.py --no-test-mode --max-frames 30
+```
+
+Explicitly disable the cap:
+
+```bash
+python sample_commercials_frames.py --no-test-mode --max-frames 0
 ```
 
 Outputs are written to:
@@ -470,6 +479,53 @@ corpus/05_frames/<Commercial ID>/
 
 Each commercial directory contains selected JPEG frames and a `frames_manifest.json`
 file recording timestamps, selection reasons, frame counts, and sampling parameters.
+
+### Select commercial frames
+
+The `select_commercials_frames.py` programme filters the dense sampled-frame output
+from `corpus/05_frames/` and writes cleaner selected frame sequences to
+`corpus/05_frames_selected/`.
+
+It removes:
+
+- dark or near-black frames, including dark sequences at the beginning, middle, or end;
+- visually duplicate or near-duplicate frames caused by dense 0.25-second sampling.
+
+Default test run:
+
+```bash
+python select_commercials_frames.py
+```
+
+Full run:
+
+```bash
+python select_commercials_frames.py --no-test-mode
+```
+
+Force regeneration:
+
+```bash
+python select_commercials_frames.py --no-test-mode --reprocess
+```
+
+Use more aggressive duplicate removal:
+
+```bash
+python select_commercials_frames.py \
+  --no-test-mode \
+  --duplicate-distance-threshold 0.06
+```
+
+Outputs are written to:
+
+```text
+corpus/05_frames_selected/<Commercial ID>/
+```
+
+Each commercial directory contains selected JPEG frames and a
+`selected_frames_manifest.json` file recording source frames, rejected frames,
+darkness metrics, duplicate metrics, and selection settings.
 
 ### Describe commercial visuals
 
@@ -885,12 +941,12 @@ vis8
 
 The sequential significance tests indicated that the first four canonical functions were statistically significant at `α = .05`:
 
-| Canonical function | Canonical correlation | Squared canonical correlation | p value | Interpretation status |
-|---:|---:|---:|---:|---|
-| 1 | 0.383981 | 0.147441 | < .0001 | strongest and most robust |
-| 2 | 0.335207 | 0.112364 | < .0001 | robust |
-| 3 | 0.244872 | 0.059962 | < .0001 | robust but weaker |
-| 4 | 0.162135 | 0.026288 | 0.0435 | marginal; interpret cautiously |
+| Canonical function | Canonical correlation | Squared canonical correlation | p value | Interpretation status          |
+|-------------------:|----------------------:|------------------------------:|--------:|--------------------------------|
+|                  1 |              0.383981 |                      0.147441 | < .0001 | strongest and most robust      |
+|                  2 |              0.335207 |                      0.112364 | < .0001 | robust                         |
+|                  3 |              0.244872 |                      0.059962 | < .0001 | robust but weaker              |
+|                  4 |              0.162135 |                      0.026288 |  0.0435 | marginal; interpret cautiously |
 
 Canonical functions 5–8 were not statistically significant.
 
@@ -908,12 +964,12 @@ was used to identify the main contributors to each canonical dimension. The orig
 
 The first four canonical dimensions showed the following structure:
 
-| Canonical dimension | Positive verbal pole | Negative verbal pole | Positive visual pole | Negative visual pole |
-|---:|---|---|---|---|
-| 1 | `ver1`, `ver7` | — | `vis7` | `vis1`, `vis4`, `vis2`, `vis3`, `vis6` |
-| 2 | `ver6`, `ver5` | `ver3` | `vis4`, `vis8` | `vis1` |
-| 3 | `ver2`, `ver5`, `ver8` | — | `vis3`, `vis2` | `vis6`, `vis5` |
-| 4 | `ver8` | `ver5` | `vis6`, `vis7` | `vis5` |
+| Canonical dimension | Positive verbal pole   | Negative verbal pole | Positive visual pole | Negative visual pole                   |
+|--------------------:|------------------------|----------------------|----------------------|----------------------------------------|
+|                   1 | `ver1`, `ver7`         | —                    | `vis7`               | `vis1`, `vis4`, `vis2`, `vis3`, `vis6` |
+|                   2 | `ver6`, `ver5`         | `ver3`               | `vis4`, `vis8`       | `vis1`                                 |
+|                   3 | `ver2`, `ver5`, `ver8` | —                    | `vis3`, `vis2`       | `vis6`, `vis5`                         |
+|                   4 | `ver8`                 | `ver5`               | `vis6`, `vis7`       | `vis5`                                 |
 
 The first canonical dimension is dominated by `ver1` on the verbal side and contrasts `vis7` with a broader cluster of negative visual loadings. The second dimension opposes a cross-modal pattern combining `ver6`, `ver5`, `vis4`, and `vis8` against a contrasting pole defined by `ver3` and `vis1`. The third dimension is centred on `ver2`, supported by `ver5` and `ver8`, and visually aligns with `vis3` and `vis2` while contrasting with `vis6` and `vis5`. The fourth dimension contrasts `ver8` and `vis6`/`vis7` with `ver5` and `vis5`, but it should be interpreted cautiously because its canonical correlation is small and its significance is marginal.
 

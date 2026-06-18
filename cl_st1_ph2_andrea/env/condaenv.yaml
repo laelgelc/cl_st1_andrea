@@ -4,13 +4,13 @@
 # cd Downloads
 # conda env list
 # conda remove --name my_env --all
-# conda env create --file=condaenv.yaml
+# conda env create --file condaenv.yaml
 # conda activate my_env
 # conda list
 # conda deactivate
 # exit
 # Regarding Google Cloud Python APIs, please check https://github.com/googleapis/google-cloud-python
-name: my_env
+name: cl_st1_andrea
 channels:
   - anaconda
   - conda-forge
@@ -20,6 +20,7 @@ dependencies:
   - beautifulsoup4
   - bibtexparser
 #  - boto3
+#  - cffconvert
 #  - dash
 #  - demoji
   - deno
@@ -43,6 +44,7 @@ dependencies:
   - pandas
   - pandas-stubs
 #  - pandoc
+  - pillow
   - plotly
   - pyarrow
 #  - pyinstaller

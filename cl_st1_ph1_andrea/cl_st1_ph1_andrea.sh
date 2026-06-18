@@ -156,9 +156,8 @@ nohup bash run_python_ec2_transcription.sh \
        --no-vad-filter \
 > whisper_transcription_output.log 2>&1 &
 
-
 # ==============================================================================
-# 6. Sample representative frames from commercial clips
+# 6A. Sample dense representative frames from commercial clips
 #
 # Programme:
 #   sample_commercials_frames.py
@@ -172,8 +171,11 @@ nohup bash run_python_ec2_transcription.sh \
 #
 # Notes:
 #   - Default run is test mode.
-#   - The sampler uses first-frame, scene-change, and last-frame extraction.
-#   - The resulting frame directories are the input for visual LLM description.
+#   - The sampler creates dense chronological frame sequences from commercial clips.
+#   - The default interval is one frame every 0.25 seconds, with first-frame and
+#     final-frame safeguards.
+#   - The resulting dense frame directories are the input for the frame-selection
+#     stage below.
 # ==============================================================================
 
 # Test run.
@@ -183,14 +185,41 @@ python sample_commercials_frames.py --test-mode --test-limit 10
 python sample_commercials_frames.py --no-test-mode
 
 
+# ==============================================================================
+# 6B. Select useful commercial frames from dense sampled frames
+#
+# Programme:
+#   select_commercials_frames.py
+#
+# Input:
+#   corpus/05_frames/<Commercial ID>/frame_0001.jpg
+#   corpus/05_frames/<Commercial ID>/frames_manifest.json
+#
+# Output:
+#   corpus/05_frames_selected/<Commercial ID>/frame_0001.jpg
+#   corpus/05_frames_selected/<Commercial ID>/selected_frames_manifest.json
+#
+# Notes:
+#   - Default run is test mode.
+#   - The selector removes dark or near-black frames wherever they occur.
+#   - The selector removes visually duplicate or near-duplicate frames caused by
+#     dense 0.25-second sampling.
+#   - The resulting selected frame directories should be preferred as the input
+#     for visual LLM description.
+#   - Requires Pillow in the active Python environment.
+# ==============================================================================
+
 # Test run.
 python select_commercials_frames.py --test-mode --test-limit 10
 
 # Full run.
 python select_commercials_frames.py --no-test-mode
 
+# Full run with forced regeneration of existing selected-frame outputs.
+python select_commercials_frames.py --no-test-mode --reprocess
+
 # ==============================================================================
-# 8. Describe commercial visuals from sampled frames
+# 7. Describe commercial visuals from sampled frames
 #
 # Programme:
 #   describe_commercials_visual.py

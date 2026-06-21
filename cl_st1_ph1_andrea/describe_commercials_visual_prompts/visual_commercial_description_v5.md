@@ -1,11 +1,14 @@
-You are describing the visual content of a television commercial storyboard for a visually impaired person who can hear the commercial audio but cannot see the images.
+You are describing the visual content of a television commercial storyboard for a visually impaired person who has access to the commercial audio but cannot see the images.
 
 The storyboard consists of selected frames from the commercial. The frames are arranged in chronological order, as reflected in their filenames: frame_0001.jpg, frame_0002.jpg, frame_0003.jpg, and so on.
 
-Use the selected frames as the primary source of evidence for what is visible. Use the audio only as supporting context, as a visually impaired viewer would hear it while needing the images described. The audio may help clarify product names, brand names, slogans, speakers, or ambiguous visual references, but do not treat audio-only information as visible.
+Use the selected frames as the primary source of evidence for what is visible. You may also receive an audio-derived transcript context block generated from the commercial audio. Treat this transcript as imperfect supporting context, not as equivalent to the original audio signal. The transcript may help clarify product names, brand names, slogans, speakers, spoken references, or ambiguous visual references, but it may omit or misrepresent music, overlapping speech, sound effects, intonation, emphasis, or sung material. Do not treat transcript-only information as visible.
 
 ## Product context:
 <This is a commercial for LiquidPeptans, from the 1950s. This antacid product is used for reducing acid acidity to relieve discomfort.>
+
+## Audio-derived transcript context:
+<AUDIO_DERIVED_TRANSCRIPT_CONTEXT>
 
 Your task is to write a continuous prose-style account of what is visually happening in the storyboard. The description should help a visually impaired person form a clear mental image of the commercial.
 
@@ -37,13 +40,17 @@ Describe the visual content chronologically. Integrate the following aspects nat
 ## Guidelines:
 - Follow the chronological order of the storyboard.
 - Prioritise what is visually observable in the selected frames.
+- Use the audio-derived transcript context only as imperfect supporting context.
+- Use the transcript to clarify product names, brand names, slogans, speakers, spoken references, or ambiguous visual references when this helps describe what is visible.
+- Do not treat the transcript as equivalent to the original audio signal.
+- Do not infer music, tone of voice, emotional delivery, sound effects, overlapping speech, or sung qualities unless they are explicitly represented in the transcript context or clearly supported by visible evidence.
 - Follow audio description principles for visually impaired audiences: be clear, concrete, concise, sequential, and vivid enough to support mental visualisation.
 - Describe actions, gestures, body positions, facial expressions, movements, interactions, objects, products, demonstrations, graphics, symbols, packaging, and relevant on-screen text.
 - Include on-screen written text only when it is visible and relevant to the visual presentation, demonstration, or narrative.
 - Describe the appearance, handling, use, and demonstration of products or services whenever shown.
 - Use spatial language when it helps the person form a mental image, such as foreground, background, beside, near, above, below, facing, next to, or across from.
-- Use the product context and audio only to clarify what is being shown, not to add unseen content.
-- If information comes only from the audio or metadata and is not visible, phrase it as context rather than as something seen.
+- Use the product context and transcript context only to clarify what is being shown, not to add unseen content.
+- If information comes only from the transcript or metadata and is not visible, phrase it as context rather than as something seen.
 - Prefer observable visual evidence over assumptions.
 - When interpretation is necessary, keep it cautious and grounded in visible details.
 - First describe what can be seen; only secondarily mention what the visible arrangement appears to communicate.
@@ -54,9 +61,11 @@ Describe the visual content chronologically. Integrate the following aspects nat
 - Do not summarise the commercial as an advertisement strategy.
 - Do not explicitly analyse the persuasive purpose of the advertisement.
 - Do not refer to the input format or storyboard mechanics. Avoid phrases such as “in frame_0001,” “the next image,” “the storyboard shows,” or “the selected frames show.”
+- Do not say or imply that you heard the original audio.
+- Do not describe music, sound effects, vocal tone, or acoustic qualities unless they are visually represented or explicitly stated in the transcript context.
 - Do not discuss camera work, editing techniques, shot types, or production methods unless they are necessary to describe visible content.
 - Do not use bullet points, headings, numbered lists, or tables in the output.
-- Do not quote or transcribe the audio unless spoken words are necessary to clarify visible on-screen content or product identification.
+- Do not quote or transcribe the transcript unless spoken words are necessary to clarify visible on-screen content or product identification.
 
 ## Output:
-Write one continuous prose description of the visual events shown in the commercial, following the chronological order of the frames. The description should be suitable for a visually impaired person who can hear the commercial but needs the visual imagery described to form a mental image of it.
+Write one continuous prose description of the visual events shown in the commercial, following the chronological order of the frames. The description should be suitable for a visually impaired person who has access to the commercial audio but needs the visual imagery described to form a mental image of it.

@@ -1,0 +1,33 @@
+{
+  "commercial_id": "tv_com_1950_1",
+  "status": "failed",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1950_1",
+    "audio_file": "corpus/03_audio/tv_com_1950_1.wav",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v4.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1950_1.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Liquid Peptans, from the 1950s. This antacid product is used for reducing stomach acidity to relieve discomfort.",
+    "row": {
+      "Decade": "1950",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1950_1",
+      "Product Name": "Liquid Peptans",
+      "Description": "This is a commercial for Liquid Peptans, from the 1950s. This antacid product is used for reducing stomach acidity to relieve discomfort."
+    }
+  },
+  "audio": {
+    "filename": "tv_com_1950_1.wav",
+    "path": "corpus/03_audio/tv_com_1950_1.wav",
+    "submitted": false
+  },
+  "output": {
+    "text_path": "corpus/06_visual_descriptions/tv_com_1950_1.txt",
+    "json_path": "corpus/06_visual_descriptions/tv_com_1950_1.json"
+  },
+  "duration_seconds": 13.752,
+  "created_at": "2026-06-21T16:47:49Z",
+  "error": "OpenAI visual description request failed: Error code: 400 - {'error': {'message': \"Invalid value: 'input_audio'. Supported values are: 'input_text', 'input_image', 'output_text', 'refusal', 'input_file', 'computer_screenshot', and 'summary_text'.\", 'type': 'invalid_request_error', 'param': 'input[0].content[2].type', 'code': 'invalid_value'}}"
+}

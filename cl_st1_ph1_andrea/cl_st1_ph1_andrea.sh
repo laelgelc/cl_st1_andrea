@@ -219,37 +219,51 @@ python select_commercials_frames.py --no-test-mode
 python select_commercials_frames.py --no-test-mode --reprocess
 
 # ==============================================================================
-# 7. Describe commercial visuals from sampled frames
+# 7. Describe commercial visuals from selected frames
 #
 # Programme:
 #   describe_commercials_visual.py
 #
-# Input:
-#   corpus/05_frames/<Commercial ID>/frames_manifest.json
-#   corpus/05_frames/<Commercial ID>/frame_0001.jpg
-#   corpus/05_frames/<Commercial ID>/frame_0002.jpg
+# Inputs:
+#   corpus/00_sources/tv_commercials_selected_2.tsv
+#   describe_commercials_visual_prompts/visual_commercial_description_v4.md
+#   corpus/05_frames_selected/<Commercial ID>/selected_frames_manifest.json
+#   corpus/05_frames_selected/<Commercial ID>/frame_0001.jpg
+#   corpus/05_frames_selected/<Commercial ID>/frame_0002.jpg
 #   ...
 #
-# Output:
+# Generated prompts:
+#   corpus/06_visual_descriptions_prompts/<Commercial ID>.md
+#
+# Outputs:
 #   corpus/06_visual_descriptions/<Commercial ID>.txt
 #   corpus/06_visual_descriptions/<Commercial ID>.json
 #
 # Notes:
-#   - This is Stage 2 of the visual analysis pipeline.
-#   - It does not sample video frames; it uses the frames already produced by
-#     sample_commercials_frames.py.
+#   - This is the LLM-based visual-description stage.
+#   - It uses the selected-commercial metadata table:
+#       corpus/00_sources/tv_commercials_selected_2.tsv
+#   - For each row, it creates a commercial-specific prompt by inserting the
+#     row's Description value into:
+#       describe_commercials_visual_prompts/visual_commercial_description_v4.md
+#   - Generated prompt documents are written to:
+#       corpus/06_visual_descriptions_prompts/
+#   - It submits each generated prompt with the corresponding selected frames from:
+#       corpus/05_frames_selected/<Commercial ID>/
+#   - It does not use dense sampled frames from corpus/05_frames/ for LLM requests.
 #   - Default run is test mode.
-#   - The default prompt is:
-#       describe_commercials_visual_prompts/visual_commercial_description_v1.txt
 #   - The programme requires OPENAI_API_KEY in env/.env or in the system environment.
 #   - Existing successful descriptions are skipped unless --reprocess is used.
 # ==============================================================================
 
-# Default test run using the default prompt, model, and image-detail settings.
-python describe_commercials_visual.py
+# Test run attempting up to 10 new items, using the selected-commercial metadata,
+# v4 prompt template, selected frames, default model, and default image-detail settings.
+python describe_commercials_visual.py \
+  --test-limit 10
 
 # Test run starting from a specific commercial ID and attempting up to 10 new items.
-# Use the exact commercial ID format found under corpus/05_frames/.
+# Use the exact commercial ID format found in corpus/00_sources/tv_commercials_selected_2.tsv
+# and under corpus/05_frames_selected/.
 python describe_commercials_visual.py \
   --test-limit 10 \
   --start-commercial-id tv_com_1960_54
@@ -259,24 +273,21 @@ python describe_commercials_visual.py \
   --no-test-mode \
   --workers 4
 
+# Full run with a Stage 2 frame cap for cost control.
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --workers 4 \
+  --max-frames-per-request 40
+
+# Reprocess existing generated prompts and visual descriptions.
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --reprocess \
+  --workers 4
+
 # Full run with workers on an EC2 instance.
 nohup bash run_python_ec2.sh \
    describe_commercials_visual.py \
        --no-test-mode \
        --workers 4 \
 > describe_commercials_visual_output.log 2>&1 &
-
-# Full run with the lightly structured prompt.
-python describe_commercials_visual.py \
-  --no-test-mode \
-  --prompt-file describe_commercials_visual_prompts/visual_commercial_description_v2_lightly_structured.txt
-
-# Full run with an additional Stage 2 frame cap for cost control.
-python describe_commercials_visual.py \
-  --no-test-mode \
-  --max-frames-per-request 20
-
-# Test run.
-python describe_commercials_visual.py \
-  --test-limit 10 \
-  --start-commercial-id tv_com_1960_54

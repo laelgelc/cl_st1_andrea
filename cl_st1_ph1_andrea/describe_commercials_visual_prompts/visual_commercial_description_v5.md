@@ -5,7 +5,7 @@ The storyboard consists of selected frames from the commercial. The frames are a
 Use the selected frames as the primary source of evidence for what is visible. Use the audio only as supporting context, as a visually impaired viewer would hear it while needing the images described. The audio may help clarify product names, brand names, slogans, speakers, or ambiguous visual references, but do not treat audio-only information as visible.
 
 ## Product context:
-This is a commercial for the Nintendo Game Boy, from 1989. This handheld gaming device is used for playing video games.
+<This is a commercial for LiquidPeptans, from the 1950s. This antacid product is used for reducing acid acidity to relieve discomfort.>
 
 Your task is to write a continuous prose-style account of what is visually happening in the storyboard. The description should help a visually impaired person form a clear mental image of the commercial.
 

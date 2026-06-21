@@ -789,26 +789,34 @@ def image_to_data_url(image_path: Path) -> str:
     return f"data:{mime_type};base64,{encoded}"
 
 
-def audio_to_base64(audio_path: Path) -> str:
-    """Encode a local audio file as base64."""
+def upload_audio_file(client: Any, audio_info: AudioInfo) -> str:
+    """Upload a local commercial audio file and return its OpenAI file ID."""
 
-    return base64.b64encode(audio_path.read_bytes()).decode("ascii")
+    with audio_info.path.open("rb") as audio_file:
+        uploaded_file = client.files.create(
+            file=audio_file,
+            purpose="user_data",
+        )
+
+    file_id = getattr(uploaded_file, "id", None)
+
+    if not isinstance(file_id, str) or not file_id:
+        raise RuntimeError(f"OpenAI file upload did not return a file ID for {audio_info.path}")
+
+    return file_id
 
 
-def build_audio_content_item(audio_info: AudioInfo) -> dict[str, Any]:
+def build_audio_content_item(audio_file_id: str) -> dict[str, Any]:
     """
-    Build an audio input item for the OpenAI Responses API.
+    Build an audio file input item for the OpenAI Responses API.
 
-    The expected structure follows the standard multimodal content style for
-    base64 audio inputs. If the SDK/API changes, update only this function.
+    Audio is submitted as an uploaded input file because the Responses API content
+    schema does not accept an input_audio item in this context.
     """
 
     return {
-        "type": "input_audio",
-        "input_audio": {
-            "data": audio_to_base64(audio_info.path),
-            "format": audio_info.format,
-        },
+        "type": "input_file",
+        "file_id": audio_file_id,
     }
 
 
@@ -817,6 +825,7 @@ def build_request_content(
         commercial_id: str,
         frames: list[FrameInfo],
         audio_info: AudioInfo,
+        audio_file_id: str,
         image_detail: str,
 ) -> list[dict[str, Any]]:
     """Build OpenAI Responses API multimodal request content."""
@@ -834,7 +843,7 @@ def build_request_content(
                 "Use the selected frames as the primary evidence for visible content."
             ),
         },
-        build_audio_content_item(audio_info),
+        build_audio_content_item(audio_file_id),
     ]
 
     for index, frame in enumerate(frames, start=1):
@@ -972,6 +981,7 @@ def write_success_outputs(
         config: RuntimeConfig,
         frames: list[FrameInfo],
         audio_info: AudioInfo,
+        audio_file_id: str,
         response_text: str,
         api_metadata: dict[str, Any],
         duration_seconds: float,
@@ -1008,6 +1018,7 @@ def write_success_outputs(
             "path": str(audio_info.path),
             "format": audio_info.format,
             "sha256": sha256_file(audio_info.path),
+            "openai_file_id": audio_file_id,
             "submitted": True,
         },
         "frames": [
@@ -1095,15 +1106,17 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
         submitted_frames, _cap_applied = cap_frames_evenly(frames, config.max_frames_per_request)
         audio_info = resolve_audio_file(work_item.audio_path)
 
+        client = OpenAI()
+        audio_file_id = upload_audio_file(client, audio_info)
+
         content = build_request_content(
             prompt_text=prompt_text,
             commercial_id=work_item.commercial_id,
             frames=submitted_frames,
             audio_info=audio_info,
+            audio_file_id=audio_file_id,
             image_detail=config.image_detail,
         )
-
-        client = OpenAI()
 
         response_text, api_metadata = call_openai_visual_description(
             client=client,
@@ -1121,6 +1134,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             config=config,
             frames=submitted_frames,
             audio_info=audio_info,
+            audio_file_id=audio_file_id,
             response_text=response_text,
             api_metadata=api_metadata,
             duration_seconds=duration_seconds,

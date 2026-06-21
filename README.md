@@ -529,45 +529,80 @@ darkness metrics, duplicate metrics, and selection settings.
 
 ### Describe commercial visuals
 
-The `describe_commercials_visual.py` programme describes the visual content of
-sampled commercial frames using a multimodal OpenAI model.
+The visual-description stage generates commercial-specific prompts and submits
+selected frame sequences to a multimodal OpenAI model to produce prose visual
+descriptions of the selected commercials.
 
-It is Stage 2 of the visual analysis pipeline:
-
-1. `sample_commercials_frames.py` samples representative frames from each commercial.
-2. `describe_commercials_visual.py` submits those frames to a multimodal model and
-   writes a visual description.
-
-Default input:
+It uses:
 
 ```text
-corpus/05_frames/
+corpus/00_sources/tv_commercials_selected_2.tsv
 ```
 
-Default output:
+as the selected-commercial metadata file. This file contains the selected
+commercials and their brief `Description` values.
+
+It also uses the prompt template:
+
+```text
+describe_commercials_visual_prompts/visual_commercial_description_v4.md
+```
+
+For each row in `tv_commercials_selected_2.tsv`, the programme creates a
+commercial-specific Markdown prompt by replacing the product-context placeholder
+in the template with the row's `Description` value.
+
+Generated prompt files are written to:
+
+```text
+corpus/06_visual_descriptions_prompts/
+```
+
+Each prompt file is named after the commercial ID:
+
+```text
+corpus/06_visual_descriptions_prompts/<Commercial ID>.md
+```
+
+For example:
+
+```text
+corpus/06_visual_descriptions_prompts/tv_com_1950_1.md
+```
+
+The programme then submits each commercial-specific prompt together with the
+corresponding selected frames from:
+
+```text
+corpus/05_frames_selected/<Commercial ID>/
+```
+
+The dense sampled frames in `corpus/05_frames/` are not used for this stage.
+Only the filtered selected frames from `corpus/05_frames_selected/` are submitted
+to the model.
+
+Responses are saved in:
 
 ```text
 corpus/06_visual_descriptions/
 ```
 
-Default prompt:
+Each successful commercial produces:
 
 ```text
-describe_commercials_visual_prompts/visual_commercial_description_v1.txt
+corpus/06_visual_descriptions/<Commercial ID>.txt
+corpus/06_visual_descriptions/<Commercial ID>.json
 ```
+
+The `.txt` file contains the clean visual description returned by the model. The
+`.json` file records reproducibility metadata, including the metadata source,
+prompt template, generated prompt file, prompt hashes, submitted frames, model
+configuration, response metadata, and any error information.
 
 Default test run:
 
 ```bash
 python describe_commercials_visual.py
-```
-
-Test run from a specific commercial ID:
-
-```bash
-python describe_commercials_visual.py \
-  --test-limit 10 \
-  --start-commercial-id tv_com_1960_54
 ```
 
 Full run:
@@ -576,32 +611,30 @@ Full run:
 python describe_commercials_visual.py --no-test-mode
 ```
 
-Use a different prompt:
+Reprocess existing prompts and visual descriptions:
 
 ```bash
-python describe_commercials_visual.py \
-  --prompt-file describe_commercials_visual_prompts/visual_commercial_description_v2_lightly_structured.txt
+python describe_commercials_visual.py --no-test-mode --reprocess
 ```
 
-Use a lower frame cap for cost control:
+Resume from a specific commercial ID:
 
 ```bash
 python describe_commercials_visual.py \
   --no-test-mode \
-  --max-frames-per-request 20
+  --start-commercial-id tv_com_1960_54
 ```
 
-The programme writes one `.txt` and one `.json` output per commercial:
+Use a Stage 2 frame cap for cost control:
 
-```text
-corpus/06_visual_descriptions/<Commercial ID>.txt
-corpus/06_visual_descriptions/<Commercial ID>.json
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --max-frames-per-request 40
 ```
 
-The `.txt` file contains the visual description. The `.json` file records model,
-prompt, frame, response, and reproducibility metadata.
-
-Requires `OPENAI_API_KEY` in `env/.env` or the system environment.
+The visual-description stage requires `OPENAI_API_KEY` in `env/.env` or in the
+system environment. The API key must not be logged or written to output files.
 
 ### Data Sampling
 

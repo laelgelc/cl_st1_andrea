@@ -1,0 +1,535 @@
+{
+  "commercial_id": "tv_com_1990_37",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_37",
+    "audio_file": "corpus/03_audio/tv_com_1990_37.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_37.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_37.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Alka-Seltzer Plus, from 1991. This medicine is used for relieving cold.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1990_37",
+      "Product Name": "Alka-Seltzer Plus",
+      "Description": "This is a commercial for Alka-Seltzer Plus, from 1991. This medicine is used for relieving cold."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "5ad5b7f402101f488a24223266af9443b7847fe3aed4731d93147f9856cabfb3",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_37.wav",
+    "path": "corpus/03_audio/tv_com_1990_37.wav",
+    "format": "wav",
+    "sha256": "dbe3efff6eaa328fe095bbd3c38bfb399b76e3401784c02d5d975430145f726a",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_37.json",
+    "path": "corpus/04_transcripts/tv_com_1990_37.json",
+    "sha256": "0da6ccaa9ad90efddfe25eb1e8fa6eb0da2d807f683f3c09fc1c78624f3349f7",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_37.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_37.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_37.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1991 Alka-Seltzer Plus Everest",
+      "decade": 1990,
+      "sequence": 37,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0360",
+      "url": "https://youtu.be/0KrIOkfg1oU",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "ea74c4c7b24ed16a96f5b789dfc2d70c20d1a2d11b5ec0584c2d1f8e506c4063"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "5a5c9cfeaf59e31175f43507faf07f6e7f3a139390908ac30f79683e17e4d71d",
+      "segment_count_available": 10,
+      "segment_count_inserted": 10,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_37/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 61,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A snow-covered mountain fills the screen, its ridges and dark rock bands partly veiled by drifting cloud. The image has a cold blue cast, emphasizing the harsh, high-altitude setting. The scene then moves indoors to a warmly lit, wood-paneled room. An older white man with neatly combed silver hair and a short silver beard sits in an armchair, wearing a gray checked blazer over a gray sweater and light blue collared shirt. A table lamp glows behind him, and a fireplace or mantel is partly visible to one side. White on-screen text identifies him as “Walt McConnell, Everest Expedition Leader.” He appears relaxed and attentive, looking slightly off to the side as he speaks, then later turns more directly toward the viewer with a small, confident smile. The setting contrasts strongly with the icy mountain images: warm browns, soft lighting, and a quiet interview atmosphere. The commercial cuts back to Everest expedition imagery. In a blue-white snowy landscape, a yellow piece of expedition gear or tent fabric stands upright near thin poles and equipment, with distant mountain shapes fading into the pale background. A climber in heavy red and blue cold-weather gear moves through a snowy base-camp area. The climber carries a large pack with bulky red rolls strapped high on the back and a bright yellow cylinder or bag on the front, while holding a trekking pole or ice tool. Behind the climber are dome tents and scattered crates or expedition boxes on snow and rock. The person’s face is mostly hidden by hood, goggles, and gear, giving the impression of difficult conditions and protective equipment. The interview with Walt resumes in close view; his face fills more of the screen, silver hair falling across his forehead, his expression steady and assured as he looks down briefly and then back up. The product is then presented indoors: a blue box of “Alka-Seltzer Plus Cold Medicine” stands upright on a tabletop. Beneath it lies a printed map or newspaper page with the words “MOUNT EVEREST” partly visible, and behind it is a framed mountain picture. The box is dark blue with large white and yellow lettering: “Alka-Seltzer Plus Cold Medicine.” A red label reads “Fast Relief,” and a graphic of a fizzing tablet appears near the lower right of the front panel. Smaller text is present but not fully legible. The product remains centered and well lit as the box is shown from slightly different angles, making the brand name and medicine type clear. A small white instruction, “Use only as directed,” appears at the bottom of the screen while the box is still displayed. The snowy expedition images return. A mountaineer, bundled in a muted purple or brown parka with hood up, climbs a bright white slope. The person leans forward under a heavy black pack, planting a pole into the snow. A rope trails across the snow behind or beside them, suggesting a roped climb. Close views show black mountaineering boots fitted with crampons stepping into the snow, the metal points gripping the surface as each foot presses down. The climber’s lower legs are dark, speckled with snow, and the movement is slow and deliberate. In profile, the same or another climber is shown wearing a purple hood, a cap or helmet cover, round dark goggles, red and white mittens, and a large backpack. A beard is visible below the goggles, and the climber grips a pole while facing the vast pale landscape. The posture is upright but braced, as if pausing on the slope. Walt appears again in the warm interview room, his face close to the screen. He looks downward, then raises his gaze toward the viewer, continuing to speak with a composed, matter-of-fact expression. Back on the mountain, two climbers in bulky parkas embrace on a snowy ridge or high camp area. One wears a bright orange-red parka with a hood and has a rope or harness around the waist; the other is darker-clad and partly hidden by the hug. Snowy cliffs and slopes rise behind them. Their arms wrap tightly around each other, suggesting relief or celebration after a difficult climb. The image of the hug blends into another product display: the blue Alka-Seltzer Plus Cold Medicine box now rests among colorful coiled climbing ropes, including bright pink and purple ropes, with other dark expedition gear nearby. The box is angled but readable, again showing “Alka-Seltzer Plus Cold Medicine,” the red “Fast Relief” label, and the fizzing tablet graphic. White italic on-screen text appears over the lower part of the image: “Tough Medicine For Tough Winter Colds.” The final product presentation shifts to a green box for “Alka-Seltzer Plus Night-Time Cold Medicine,” set against a dark blue-purple studio background with a glossy surface below. The green box fills most of the screen, then is shown fully upright. Large white and yellow text reads “Alka-Seltzer Plus Night-Time Cold Medicine.” A red “Fast Relief” label appears on the front, and a bright red starburst over a fizzing tablet graphic states, “CONTAINS NO ALCOHOL.” The box remains alone and prominent, with the nighttime version clearly distinguished by the green packaging and the alcohol-free callout.",
+  "api_metadata": {
+    "response_id": "resp_083d04a67607c6f8006a384b32fb1c819e9345f2a78c6074ac",
+    "usage": {
+      "input_tokens": 17207,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1516,
+      "output_tokens_details": {
+        "reasoning_tokens": 433
+      },
+      "total_tokens": 18723
+    }
+  },
+  "duration_seconds": 41.808,
+  "created_at": "2026-06-21T20:36:38Z",
+  "error": null
+}

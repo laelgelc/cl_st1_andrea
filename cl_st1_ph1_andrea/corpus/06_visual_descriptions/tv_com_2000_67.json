@@ -1,0 +1,367 @@
+{
+  "commercial_id": "tv_com_2000_67",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2000_67",
+    "audio_file": "corpus/03_audio/tv_com_2000_67.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2000_67.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2000_67.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Clorox Disinfecting Wipes, from 2012. This cleaning product is used for disinfecting household surfaces.",
+    "row": {
+      "Decade": "2000",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_2000_67",
+      "Product Name": "Clorox Disinfecting Wipes",
+      "Description": "This is a commercial for Clorox Disinfecting Wipes, from 2012. This cleaning product is used for disinfecting household surfaces."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "27e1c1f1b94d8481c1d98fe1df1be391d80cda8686ad4e9520a4725f546f8a9a",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2000_67.wav",
+    "path": "corpus/03_audio/tv_com_2000_67.wav",
+    "format": "wav",
+    "sha256": "ffa3c5b8b18f7b4001d26c067ce91c7596d8566f6167350096650a1e58bcdabb",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2000_67.json",
+    "path": "corpus/04_transcripts/tv_com_2000_67.json",
+    "sha256": "bc2270a9cfdb477ae31768b7a56dfdaacdb89dc0bd5b15bf6b6f40ca3693c7cd",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2000_67.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_67.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_67.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2012 Clorox Disinfecting Wipes Plunger on Table",
+      "decade": 2000,
+      "sequence": 67,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0509",
+      "url": "https://youtu.be/QTYSIjVpFls",
+      "source_start": "0:00:00",
+      "source_end": "0:00:15"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 15.0233125,
+      "text_sha256": "9f896140227c5023aa54c63a153f683f7b217eb0f9d40b5d66afbc67607c0901"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "e57f2d1be7e6b9aa424a13022a23524df08da32c41ad5be2fc23ce6328a4a5d4",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_67/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 37,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial begins in a bright, white-painted home entry area connected to a kitchen. Sunlight comes through a glass door and a window by a sink. A woman with light skin and blonde hair pulled back enters through the door, wearing a light gray hoodie and dark pants, with a brown shoulder bag over one shoulder. The space looks like a family mudroom: children’s drawings are taped to a white door, open cubbies hold backpacks and rows of shoes, and a kitchen counter holds plastic cups, sunglasses, a crumpled white cloth, and a vase of white flowers near the sink. The woman steps inside, glances toward the kitchen, and begins sliding the bag off her shoulder.\n\nThe scene opens wider into a busy family kitchen and dining area. A bearded man with curly dark hair, wearing a red plaid shirt over a gray T-shirt and jeans, stands behind a large pale wooden table. A young child in a blue shirt sits at the table to the right, focused downward on papers or small objects. On the left is a high chair with colorful fabric draped over it; behind them are white cabinets, a refrigerator covered with magnets and papers, pendant lights, and a kitchen island. The man stands near the table as if he has just come from a repair job, holding himself casually while facing the woman.\n\nOn the wooden tabletop, the source of concern becomes clear: a black rubber toilet plunger with a wooden handle is standing upright directly on the table. Nearby lie dirty-looking work gloves or rags, a short grimy pipe-like piece, and a small dark ring or gasket. The man handles a cloth while the plumbing items remain spread across the eating or activity surface, with the child still seated close by. The woman appears unimpressed; in a closer view, she stands with one hand at her hip, her expression controlled but displeased, and makes a small pinching or pointed gesture near her face as if emphasizing a point.\n\nThe product is then introduced visually. A yellow cylindrical container labeled “Clorox Disinfecting Wipes” sits on the counter, with the red, white, and blue Clorox diamond logo prominent on the front. A hand pulls a white disinfecting wipe up through the opening in the lid, leaving the wipe protruding from the top. Small white disclaimer text appears along the bottom: “Food contact surfaces require a potable rinse. Use as directed.”\n\nThe woman’s hand then wipes the pale wooden tabletop with the white wipe, moving steadily across the surface where the plunger and dirty plumbing parts had been. Her other hand rests on the table for balance. The wood grain is clearly visible, and the wiping motion covers a broad area, passing from left to right and then farther across the table until the surface looks clean and clear. The same small disclaimer text remains at the bottom during the cleaning demonstration.\n\nThe commercial ends with a product display on the wooden surface. The yellow Clorox Disinfecting Wipes canister stands upright with a white wipe sticking out of the top, set against the softly blurred kitchen background. Large bold white text beside it reads: “CLOROX DISINFECTING WIPES KILLS 99.9% OF GERMS.”",
+  "api_metadata": {
+    "response_id": "resp_0edd069768e57657006a3850d6fdcc819e824f6882c4ed1e08",
+    "usage": {
+      "input_tokens": 8787,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1173,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 9960
+    }
+  },
+  "duration_seconds": 36.132,
+  "created_at": "2026-06-21T21:00:36Z",
+  "error": null
+}

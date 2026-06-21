@@ -1,0 +1,493 @@
+{
+  "commercial_id": "tv_com_2020_5",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2020_5",
+    "audio_file": "corpus/03_audio/tv_com_2020_5.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2020_5.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2020_5.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Downy Rinse, from 2025. This laundry product is used for removing odors from clothes during the rinse cycle.",
+    "row": {
+      "Decade": "2020",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_2020_5",
+      "Product Name": "Downy Rinse",
+      "Description": "This is a commercial for Downy Rinse, from 2025. This laundry product is used for removing odors from clothes during the rinse cycle."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "eab38be57359fae97b0d3da0a757313fe502007615e636aa16ecf498439c98e4",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2020_5.wav",
+    "path": "corpus/03_audio/tv_com_2020_5.wav",
+    "format": "wav",
+    "sha256": "0e9f0793378f7cb4bb633d9a6082cd4fdcdf4cbdb20f6d4de210df618336f1c1",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2020_5.json",
+    "path": "corpus/04_transcripts/tv_com_2020_5.json",
+    "sha256": "4c64b10fb752365e5e4194d9a8a53d7bcba7e47397f8912e0694a8c5b4eb1d44",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2020_5.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_5.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_5.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2025 Downy Rinse Impossible Odors Our featuring Cam Jordan",
+      "decade": 2020,
+      "sequence": 5,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0624",
+      "url": "https://youtu.be/DNOsNsJscWg",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "67eaf88e214c74b49fa3f694ceae084c1dcc03084fd4190efaacd5591142d7ab"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "327ab9eea124b9a962127019556e4c758a9c915efe0bc17b8c5de64a02fb2047",
+      "segment_count_available": 17,
+      "segment_count_inserted": 17,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_5/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 55,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A woman identified by on-screen text as “Anita Jordan, Mother of Cam Jordan, New Orleans Saints, DE” sits in a comfortable living room interview setup. She appears middle-aged, with curly dark hair, glasses, and a light blue open shirt over a dark burgundy outfit. She sits in an armchair, looking down at a phone in her hand. Behind her are houseplants, curtains, a sofa, and framed photos; a small table beside her holds a family photo and a trophy-like object. A small Downy Rinse logo appears near the upper left.\n\nThe scene shifts to football imagery. A black New Orleans Saints jersey with “Jordan” and the number “94” is visible, though out of focus at first. Then several Saints players stand together on the sideline in black uniforms with gold helmets. One player in jersey number 94 is marked by a white arrow and the label “Cam Jordan.” He stands with his hands on his hips, helmet on, surrounded closely by teammates in numbers including 96, 93, and 91. A subtitle at the bottom reads, “You smell like hot dog water, boy!” The teammate at Cam’s left leans toward him as if teasing or calling him out. Cam turns his helmeted head toward the teammate, still standing with his hands planted on his hips, while the arrow continues pointing to him. Further subtitles appear briefly, including “Who?” and “You.”\n\nBack in the living room, Anita reacts with a surprised, concerned expression, gesturing with one hand as she sits forward. In a closer view, she looks off to the side, her face animated as if deciding something needs to be done.\n\nA bold graphic transition appears in a dark corridor. Large white text fills the center: “Downy Rinse Out Odor Drop-In,” with the Downy logo above it. The hallway looks like an arena or stadium interior, dimly lit with a long carpeted path leading inward. A sign on a wall then reads “SAINTS LOCKER ROOM” with the room number “1011.”\n\nAnita enters the Saints locker room through a doorway, holding the handle of a rolling suitcase or bag. She wears the same light blue shirt and burgundy outfit, and she peers into the room with a purposeful, slightly questioning look. The locker room is sleek and dark, with black lockers, illuminated shelves, and a long wooden bench. A man, visually identifiable as Cam Jordan in this part of the story, sits on the bench wearing a cream-colored Saints polo shirt, black shorts, black socks, and white sneakers. He has a muscular build and blond-tipped twisted hair pulled back. He turns toward Anita with a smile.\n\nAnita smiles broadly as she approaches him. They sit side by side on the locker room bench. She holds a black garment close to her face, appearing to smell it, while Cam looks at her. A black duffel bag sits on the floor nearby. The locker room background includes open cubbies with hanging clothing and, in one locker, a black jersey reading “Jordan 94.”\n\nThey move to a laundry area within the locker room. A white top-loading washing machine is open, with shelves of neatly folded white towels behind it. Anita stands at the washer with Cam beside her. She holds a clear plastic bottle filled with turquoise liquid; the label reads “Downy Rinse Out Odor.” A black garment is also in use at the washer. Cam handles the garment while Anita demonstrates the product. In a close-up, a hand tilts the Downy bottle over the washing machine’s dispenser drawer, pouring or positioning the product for use during the wash.\n\nThe commercial then visualizes how the product works with an animated, microscopic-looking scene. A turquoise wave of liquid sweeps across a pale, textured surface made of rows of rounded fabric-like fibers or beads. As the blue-green liquid rolls forward, small dirty greenish particles lift away and scatter upward, suggesting odor being rinsed out. Large blue text appears over the clean, bright background: “RINSE OUT IMPOSSIBLE ODORS IN ONE WASH.” The turquoise wave continues across the surface, leaving the area behind it looking cleaner and lighter.\n\nBack on the locker room bench, Anita hands the black garment to Cam. He takes it, brings it to his nose, and smells it. Anita sits beside him, watching with a pleased, expectant expression. Cam lowers his gaze to the shirt, then appears satisfied as he continues holding it. The setting remains the dark, polished Saints locker room, with the “Jordan 94” jersey visible behind them.\n\nThe final product display shows a bottle of Downy Rinse Out Odor standing upright on a clean counter beside a stack of neatly folded white towels. Large white text on the left reads “RINSE IT OUT.” The Downy and NFL logos appear near the lower left with small text indicating it is an official locker room product of the NFL, and a P&G logo appears in the upper right. The turquoise liquid in the bottle and the bright white towels create a clean, fresh visual finish.",
+  "api_metadata": {
+    "response_id": "resp_063b6db3760de8a1006a38570761d481a0a0a9e59bf1a647e1",
+    "usage": {
+      "input_tokens": 12530,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1422,
+      "output_tokens_details": {
+        "reasoning_tokens": 378
+      },
+      "total_tokens": 13952
+    }
+  },
+  "duration_seconds": 43.197,
+  "created_at": "2026-06-21T21:27:03Z",
+  "error": null
+}

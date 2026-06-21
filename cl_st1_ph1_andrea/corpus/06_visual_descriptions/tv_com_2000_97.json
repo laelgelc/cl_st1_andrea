@@ -1,0 +1,570 @@
+{
+  "commercial_id": "tv_com_2000_97",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2000_97",
+    "audio_file": "corpus/03_audio/tv_com_2000_97.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2000_97.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2000_97.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for TAG Body Spray Deodorant, from 2005. This men's fragrance product is used for scenting the body.",
+    "row": {
+      "Decade": "2000",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_2000_97",
+      "Product Name": "TAG Body Spray",
+      "Description": "This is a commercial for TAG Body Spray Deodorant, from 2005. This men's fragrance product is used for scenting the body."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "31389b20e2274567b8a62d42dd13340722f9fade5798ad4dfbc844d421d64a5a",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2000_97.wav",
+    "path": "corpus/03_audio/tv_com_2000_97.wav",
+    "format": "wav",
+    "sha256": "f625d5a33666199b2eea1ca425ab4cdd32ba3f94fdd50d08af7aedfa3ad910d8",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2000_97.json",
+    "path": "corpus/04_transcripts/tv_com_2000_97.json",
+    "sha256": "3844e9b1167d9ee3dd21c3a10ca7c7de76f088c7aba81814c0883a06863d2de0",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2000_97.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_97.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_97.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2005 TAG Body Spray Deodorant at Supermarket",
+      "decade": 2000,
+      "sequence": 97,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0539",
+      "url": "https://youtu.be/M6Tih3NVKvc",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "21e7b1421e802ce3f3f2ba0196ead47ccafbbecd09e7a0185087ffac2a289b71"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "168b7c1435a3b314d9c1cff1695f1ffecb4c9afaab9eb1e760d6f6893275a200",
+      "segment_count_available": 5,
+      "segment_count_inserted": 5,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_97/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 66,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "In a brightly lit supermarket personal-care aisle, shelves on both sides are packed with rows of bottles and aerosol cans. Large aisle markers with letters such as “a” and “b” appear on the end panels. A young adult man with short hair, wearing a green zip-up jacket with a pale horizontal stripe, a grey graphic T-shirt, jeans, and dark shoes, stands near the left-hand shelf, looking at the products. A young woman with long dark hair, a pale long-sleeved top, jeans, and a green hand basket walks away down the aisle on the right, passing behind him.\n\nThe man turns fully toward the shelf and studies rows of deodorant and body-spray cans. He reaches out with one hand. In a close view, black aerosol cans labelled “TAG” fill the foreground, each with a bold white TAG logo and a red-orange oval graphic near the bottom. His hand closes around one of the cans and pulls it from the row. Behind the cans, a blonde young woman’s face is visible through a gap between products, watching intently from the other side of the shelf. The man holds the black TAG can in front of him, examines it, then lowers it slightly and brings it back toward the shelf.\n\nThe blonde woman’s face fills the view between dark shelf edges; she has light skin, straight blonde hair, and wide eyes fixed forward. Her expression shifts from neutral curiosity to a faint, focused smile. Back at the shelf, the man continues handling the TAG can, raising it toward the row as if comparing it or putting it back. His arm extends along the shelf, and the can disappears near the products.\n\nSuddenly, on the opposite side of the shelf, the blonde woman, now visible in a red strapless top, presses into the stocked display. She thrusts her arms through the shelves toward him. The man is forced backward against the products; rows of bottles and cans buckle and spill. White and dark containers tumble out in a cascade, scattering across the aisle floor as he struggles against the collapsing display.\n\nThe dark-haired woman with the green basket turns her head sharply and gives a narrowed, interested look. A moment later, the man pulls away from the wrecked shelf, startled, arms raised slightly as products lie scattered at his feet. The aisle opens toward checkout counters in the background, where other shoppers and staff are visible. The man stands amid fallen cans and bottles, looking around with his mouth open in surprise.\n\nThe dark-haired woman in the pale top charges straight down the aisle toward him, her long hair streaming behind her. He turns in alarm in front of a wall of neatly lined body-spray cans. She launches herself at him from the side. They drop low near the shelves; she clings to him as he crouches and tries to keep balance. She slides over his back and shoulders, and they tumble onto the shiny supermarket floor.\n\nMore women rush in. A blonde woman in a pale pink top and jeans sprints from the left with her arms outstretched. The man tries to leap away, but bodies are already on the floor around him. He jumps over one woman crawling or sprawled beneath him, while the blonde woman reaches for him. She catches him midair or as he passes; he flips awkwardly over her shoulder, legs flying up, and falls back toward the aisle. Nearby, another woman lies stretched on the floor by the lower shelves, reaching or clinging toward the commotion. Loose cans and caps are scattered across the floor.\n\nThe man lands and slides on the polished floor near the checkout area, ending up face-down or on his side. Several bystanders in the background watch from near registers and store fixtures. A woman in a turquoise sleeveless top runs in with her mouth open and hair flying, then joins the pile. The scene becomes a heap of women gathered around the man on the floor: one in turquoise leans over, the dark-haired woman in white presses close, the blonde woman in pink lies partly across him, and another woman with curly dark hair is also tangled in the group. Their hands and arms grip his shoulders, chest, and jacket as they crowd tightly around him.\n\nThe final close views show the man’s face almost buried among the women leaning over him. Their faces are inches from him, smiling or intent, with cheeks and hair pressed close. The dark-haired woman lies beneath or beside him, smiling up at his face; the blonde and other women hover around, nuzzling close to his head and neck. The image is crowded and intimate, with the man pinned in the middle of the cluster while the women press in from every side.",
+  "api_metadata": {
+    "response_id": "resp_01bf30a2c3ad49ee006a3851d1a5f881a1918cdd42ec8c8d91",
+    "usage": {
+      "input_tokens": 18355,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1467,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 19822
+    }
+  },
+  "duration_seconds": 44.41,
+  "created_at": "2026-06-21T21:04:56Z",
+  "error": null
+}

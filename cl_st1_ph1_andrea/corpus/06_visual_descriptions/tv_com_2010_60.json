@@ -1,0 +1,297 @@
+{
+  "commercial_id": "tv_com_2010_60",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_60",
+    "audio_file": "corpus/03_audio/tv_com_2010_60.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_60.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_60.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Listerine Cool Mint Mouthwash, from 2017. This oral care product is used for freshening breath and maintaining oral hygiene.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_2010_60",
+      "Product Name": "Listerine Cool Mouthwash",
+      "Description": "This is a commercial for Listerine Cool Mint Mouthwash, from 2017. This oral care product is used for freshening breath and maintaining oral hygiene."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "83f49143691e320006b168fe5355565ce77dc7302ebe27640e50f44bd141d76c",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_60.wav",
+    "path": "corpus/03_audio/tv_com_2010_60.wav",
+    "format": "wav",
+    "sha256": "a5b30b142bd861db08bab9e9ca8baceb64ca2edde6e78c780af72b1fc64db9b0",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_60.json",
+    "path": "corpus/04_transcripts/tv_com_2010_60.json",
+    "sha256": "25534b2bd4857ec58aa8e7637cf36f8129de440a1dd131c9d820ecf73cecbcc5",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_60.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_60.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_60.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2017 Listerine Cool Mouthwash Bring out the Bold Half of your daily routine",
+      "decade": 2010,
+      "sequence": 60,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0460",
+      "url": "https://youtu.be/a8384qGe8nk",
+      "source_start": "0:15:06",
+      "source_end": "0:15:20"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 14.024875,
+      "text_sha256": "77e3757992ee926b48d08c51b13ffb2de9d710ea6da365e1c8929fde42ae82a9"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "38198a9057611637032057ed4d202268a835b6148864d32c2a1a2c7271c6734d",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_60/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 13.023,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 27,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens on a sunny resort pool scene with a white arched building, trees, lounge furniture, and a person floating in the water. A glass with a lime sits in the foreground. Large orange blocks across the center spell “KAYAK,” with smaller travel icons and words for “Flights,” “Hotels,” and “Rental Cars,” and the line “Search One & Done.” underneath.\n\nIt then cuts to a bright, clean bathroom. A young adult woman with long straight black hair and a white camisole strap visible on her shoulder stands facing forward. She has shampoo lather on only one side of the top of her head, near her left temple, while the rest of her hair hangs smooth and dark over one shoulder. She rubs the foamy patch with one hand and gives a knowing, slightly amused smile. Behind her are pale blue-gray tiles, a glass shower area, a wooden vanity, and small teal bottles on shelves. As she continues rubbing the lather, she smiles more broadly, looking directly ahead, visually suggesting she is doing only part of a normal hygiene routine.\n\nThe scene shifts to her brushing her teeth. For a moment the image is split, with her on the left brushing and part of her raised arm from the shampooing action still visible on the right, reinforcing the idea of an incomplete routine. She is then centered in the bathroom, holding a purple toothbrush in her mouth. Her long hair is still damp-looking, with a small patch of foam near her hairline, and she brushes with a cheerful expression while facing forward.\n\nThe visuals change to a simple animated mouth diagram on a teal background. Along the bottom is a row of rounded white teeth marked with scattered black spots and patches, representing buildup or germs. A large dark teal shape above them suggests the inside of a mouth or tongue. From the left, a wave of clear blue liquid rushes across the teeth, flowing between them and washing over the black marks. Tiny text in the lower left reads “Use as directed.” As the liquid passes, several teeth appear cleaner and brighter.\n\nLarge white block letters then appear at the upper left, first reading “PLAQUE,” then expanding to “PLAQUE,” “GUM DISEASE,” and “BAD BREATH” stacked in bold uppercase text. The row of teeth remains along the bottom, still under the dark mouth shape. Another large blue splash of liquid surges in from the right and sweeps across the teeth, filling much of the screen as it moves. After it passes, the teeth look clean and white with only a few tiny specks remaining.\n\nThe commercial returns to the woman in the bathroom, now shown from just below the nose to the shoulders, with her long dark hair framing her face. Her mouth is relaxed at first, then she opens into a bright smile, showing clean white teeth. The background remains softly blurred with the same pale bathroom colors and teal bottles, ending on her confident, fresh-looking smile.",
+  "api_metadata": {
+    "response_id": "resp_03cb375fee266b55006a3854b0b740819db05efefec1deaf31",
+    "usage": {
+      "input_tokens": 6841,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1120,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 7961
+    }
+  },
+  "duration_seconds": 32.805,
+  "created_at": "2026-06-21T21:17:00Z",
+  "error": null
+}

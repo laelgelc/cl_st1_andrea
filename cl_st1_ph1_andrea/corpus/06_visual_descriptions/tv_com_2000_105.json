@@ -1,0 +1,430 @@
+{
+  "commercial_id": "tv_com_2000_105",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2000_105",
+    "audio_file": "corpus/03_audio/tv_com_2000_105.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2000_105.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2000_105.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Dodge Ram 1500 Truck, from 2005. This pickup truck is used for hauling, towing, and daily driving.",
+    "row": {
+      "Decade": "2000",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_2000_105",
+      "Product Name": "Dodge Ram 1500 Truck",
+      "Description": "This is a commercial for Dodge Ram 1500 Truck, from 2005. This pickup truck is used for hauling, towing, and daily driving."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "7f609812506cab7b9fb0528ec444edadae9f19a258c5001a0ec9b3eb9b21e133",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2000_105.wav",
+    "path": "corpus/03_audio/tv_com_2000_105.wav",
+    "format": "wav",
+    "sha256": "0af68f6f6c28b77d7ba7851bdd8f29aa764f89bdc4dc59810831d7ef462a221c",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2000_105.json",
+    "path": "corpus/04_transcripts/tv_com_2000_105.json",
+    "sha256": "82ae093c7e5992802c1e6edc4de6b6d31876f3927a5504c4221f37af3a647cb1",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2000_105.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_105.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_105.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2005 Dodge Ram 1500 Truck",
+      "decade": 2000,
+      "sequence": 105,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0547",
+      "url": "https://youtu.be/hsAQPwja4iQ",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "969534284f2e1af5e4a46977e0a3a7e0017f00b278216fe072c653aa184d5e0c"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "832292d21a338c392339f3c99f9be404c006778c2bd08181fc5094950ba746de",
+      "segment_count_available": 13,
+      "segment_count_inserted": 13,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_105/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 28.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 46,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A black Dodge Ram pickup fills the view from the front, its large chrome crosshair grille and dark windshield dominating the image as it travels along a road bordered by open countryside. Small white disclaimer text runs along the bottom, partly readable as noting that vehicles are shown with optional features and that a professional driver is used. The truck is then seen close along its side, with a shiny wheel turning and a chrome stripe reflecting the road. It speeds through a curving mountain roadway with rocky hills and bright sky around it, briefly blurring as it passes.\n\nA light-skinned, middle-aged man with short light-brown or blond hair stands beside the black truck’s driver-side door. He wears a dark jacket over a light shirt and holds the door area with one hand, facing forward as if addressing the viewer. The “Ram 1500” badge is visible low on the door. The view moves to a close look at the truck’s side near the front wheel, where a badge reads “5.7 Litre HEMI Magnum” in bold metallic lettering on the glossy black bodywork.\n\nA silver Dodge Ram is parked in an urban industrial-looking area, beside an old weathered building with tall windows. A light-skinned man in a mustard-yellow jacket, dark shirt, jeans, and dark shoes stands near the front passenger side, presenting the truck. He faces forward with a direct, matter-of-fact expression while the truck’s chrome grille, rounded headlights, and polished wheels are clearly visible.\n\nThe scene changes to a construction or industrial yard. A light-skinned man with a short beard wears a white hard hat, tan work jacket, plaid shirt, jeans, and work boots. He leans casually against a light-colored Ram truck, then is shown full-body beside it with metal structures, conveyors, and industrial equipment in the background. His posture and clothing visually mark him as a worker at the site.\n\nA red Dodge Ram pickup appears in a rural setting beside a barn, with green hills, grass, and leafless tree branches around it. A light-skinned woman with shoulder-length blonde hair stands beside the red truck, one hand resting on the hood. She wears a dark jacket over a plaid shirt and jeans, facing forward. White on-screen text at the bottom reads, “0% APR FINANCING FOR QUALIFIED BUYERS.” A closer view shows her face and upper body against the red truck, her expression attentive and confident.\n\nThe yellow-jacketed man reappears beside the silver Ram in front of a large old industrial building. Faded painted lettering on the wall behind him includes “PHELPS IRON” and “STEEL FABRIC…” suggesting a metalworking or fabrication location. The woman at the red truck then uses the open tailgate to load a large brown saddle into the bed. She lifts and swings the saddle forward, placing it onto the black ribbed bed liner, showing the pickup being used for hauling farm or riding gear.\n\nBack at the industrial yard, the hard-hat worker stands beside the light-colored Ram, whose bed carries a large shiny corrugated metal cylinder or duct-like piece. He works near the side of the truck, handling a strap or tie-down line as if securing the load. The truck is parked among metal towers, silos, and conveyor structures, reinforcing a heavy-duty work setting.\n\nA blue-toned promotional graphic fills the screen with a blurred truck front in the background. At the top is a red-and-white “DODGE SPRING SALES EVENT” badge. Large white text appears in the center: “COME JOIN US.” Beneath it, the website “DODGE.COM/SPRINGEVENT” is displayed. The screen then changes to lease information over the same blue truck background. The top badge still reads “DODGE SPRING SALES EVENT.” Large white text lists “2005 RAM 1500 QUAD CAB 4X4,” then “$249 MO.” and “39 MOS.” It also states “WITH $3,500 DUE AT SIGNING” and “TAX, TITLE AND LICENSE EXTRA,” followed by “CALL 888-FOR DODGE FOR LEASE DETAILS.” Fine-print legal text appears along the bottom.\n\nThe commercial returns to the silver Ram in the industrial courtyard. The man in the yellow jacket stands beside the front of the truck with one arm resting on the hood or fender, facing forward. The silver pickup sits angled behind him, its extended cab and open bed visible, with wet-looking pavement and the old building surrounding it. He remains in place as the truck is presented one last time.",
+  "api_metadata": {
+    "response_id": "resp_0c9b386736fc2d99006a38521a7a2c819c827d5442e01eb4a2",
+    "usage": {
+      "input_tokens": 14275,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1454,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 15729
+    }
+  },
+  "duration_seconds": 34.812,
+  "created_at": "2026-06-21T21:06:01Z",
+  "error": null
+}

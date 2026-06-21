@@ -1,0 +1,255 @@
+{
+  "commercial_id": "tv_com_2010_32",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_32",
+    "audio_file": "corpus/03_audio/tv_com_2010_32.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_32.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_32.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for ACT Kids, from 2013. This oral care product is used for strengthening teeth and preventing cavities.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_2010_32",
+      "Product Name": "ACT Kids",
+      "Description": "This is a commercial for ACT Kids, from 2013. This oral care product is used for strengthening teeth and preventing cavities."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "19f9dfd8b5383a10b52d3c2b90481efd91bd6ddd217aa4c54748d2a401c2e2d1",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_32.wav",
+    "path": "corpus/03_audio/tv_com_2010_32.wav",
+    "format": "wav",
+    "sha256": "06bd72686c248b80d722b0327d34b924eeb5d7f25b840ade81a408ee71155cfc",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_32.json",
+    "path": "corpus/04_transcripts/tv_com_2010_32.json",
+    "sha256": "fd1191fdd678cda677f5f05192acb05f6fcc09c5099f254f0179de99dfda2f3b",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_32.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_32.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_32.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2013 ACT Fluoride Kids Scooby-Doo Rinse Enthusiasm",
+      "decade": 2010,
+      "sequence": 32,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0594",
+      "url": "https://youtu.be/fG2XGC4_Ehw",
+      "source_start": "0:00:00",
+      "source_end": "0:00:16"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 15.093,
+      "text_sha256": "a75b68e6e67e43475eb49c7de141a3ede2dc32dd4dbc30d085579b8ed85228de"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "acf7416c2d0f23c052e43d2b185d66795ffa1077d0722d49a91b604d1c57493e",
+      "segment_count_available": 3,
+      "segment_count_inserted": 3,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_32/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 14.093,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 21,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A bright, tidy bathroom appears with turquoise-blue walls, a white sink counter, an oval wall mirror, and silver light fixtures. A young girl with long dark hair and bangs, wearing a coral-pink top, stands at the sink facing the mirror. Beside her is an adult woman, likely her mother, with shoulder-length dark hair, wearing a royal-blue sweater and tan pants. The woman stands slightly behind and to the right of the girl, raising her bent arm in an exaggerated, enthusiastic motion as if cheering or encouraging the child. The girl remains by the counter, looking toward the mirror and sink area. On the counter are colorful bathroom items, including cups and oral-care products.\n\nThe woman’s movements become bigger and more playful: she lifts one arm high above her head and bends the other at her side, like a celebratory dance. The child stays near the sink, appearing calm and focused. The bathroom remains bright and clean, with a white cabinet and a striped shower curtain in soft blue and white tones in the background.\n\nA green bottle of ACT Kids mouth rinse is then shown standing on the white bathroom counter. The label has the large ACT logo, the word “kids,” and a cartoon Scooby-Doo character near the bottom. The bottle has a clear cap and contains green liquid. Behind it, the sink faucet and a red cup are softly visible, keeping the bathroom setting clear.\n\nThe young girl is shown close up, smiling gently while holding the green ACT Kids bottle in front of her chest. The clear cap at the top is being used as a measuring cup, and green liquid is visible inside it. White on-screen text to the left reads “great taste,” with a small blue arrow beneath it. Fine-print text appears in small white letters near the lower left. As the girl continues smiling, the on-screen claim changes to “40% fewer cavities,” again with a blue arrow underneath. She looks pleased and confident while presenting the bottle.\n\nBack in the bathroom, the girl and woman face each other near the sink. The green ACT Kids bottle sits visibly on the counter at the left. The girl leans back with a happy expression and raises her hand. The woman smiles and raises her own hand, and they complete a playful high-five. Both appear cheerful and relaxed, sharing a small celebratory moment after using or presenting the product.\n\nTwo ACT Kids bottles are then displayed side by side on the counter. The green bottle with Scooby-Doo stands on the left, and a blue ACT Kids bottle with SpongeBob SquarePants on the label stands on the right. Folded towels in bright colors sit behind them. To the right, white text reads, “Kids love it. Cavities don’t.” Small fine print appears below.\n\nThe scene changes to a glossy blue product display with a watery, shimmering look. A tall blue bottle of ACT Braces Care mouthwash emerges among splashing water effects. The bottle stands upright against a deep blue, softly glowing background. Its label shows the large ACT logo and the words “BRACES CARE,” with “Anticavity Fluoride Mouthwash” beneath. Near the top, small text reads “#1 dentist recommended fluoride brand,” and a small “NEW!” label appears on the packaging.\n\nThe ACT Braces Care bottle remains on the left side as water ripples along the bottom of the image. To the right, large white text reads “Smile Strong.” A small instruction at the lower right reads “Use as directed.” A red “NEW!” banner appears near the upper left of the bottle, emphasizing the product’s newness, while the blue background and water imagery continue through the final view.",
+  "api_metadata": {
+    "response_id": "resp_08ad256515760cd4006a3853bccc3881a3b28bbd7c369b05f4",
+    "usage": {
+      "input_tokens": 5643,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 898,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 6541
+    }
+  },
+  "duration_seconds": 23.846,
+  "created_at": "2026-06-21T21:12:49Z",
+  "error": null
+}

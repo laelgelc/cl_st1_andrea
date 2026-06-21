@@ -1,0 +1,458 @@
+{
+  "commercial_id": "tv_com_2000_37",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2000_37",
+    "audio_file": "corpus/03_audio/tv_com_2000_37.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2000_37.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2000_37.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for 10-10-987 Long-Distance, from 2003. This telephone calling service is used for making long-distance phone calls.",
+    "row": {
+      "Decade": "2000",
+      "Category": "Retail (Fashion & Consumer Goods) & Services",
+      "Commercial ID": "tv_com_2000_37",
+      "Product Name": "10-10-987 Long-Distance",
+      "Description": "This is a commercial for 10-10-987 Long-Distance, from 2003. This telephone calling service is used for making long-distance phone calls."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "4e529a86688dd748bdffbdf03450b5b78c57c863a334195c077b1e49b11e80ec",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2000_37.wav",
+    "path": "corpus/03_audio/tv_com_2000_37.wav",
+    "format": "wav",
+    "sha256": "cd288539b5401d5dcce75fd5ab9259d489944f9308e3fa24e9a8951e235eac07",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2000_37.json",
+    "path": "corpus/04_transcripts/tv_com_2000_37.json",
+    "sha256": "9e27961e839b87978db24e72dd145bb5f3f22d3247457457bbfeaa7660b632ee",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2000_37.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_37.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_37.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2003 10-10-987 Long-distance telephone calling service",
+      "decade": 2000,
+      "sequence": 37,
+      "category": "Retail (Fashion/ Consumer Goods) &  Services",
+      "video_id": "video_0479",
+      "url": "https://youtu.be/tvXaTjs5yFg",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "32649a225126815160973fe328d55ba6dd735e28e102006197b90a6aad2a9268"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "f7e1ac2bb0fc931534333c455d01be2952c73f0061ffe452f3c0c3c3dd52002b",
+      "segment_count_available": 17,
+      "segment_count_inserted": 17,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 28.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_37/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 29.053,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 50,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial begins on a plain white background with black and red lettering briefly appearing in a distorted, jumbled way, as if the words are snapping into place. The text resolves into a simple question in large, bold type: “When did you first try it,” with “you” and “try it” emphasized in red while the other words are black.\n\nA middle-aged, heavyset white man with short gray hair appears against the same white studio background. He wears a light blue button-up shirt over a dark undershirt. He faces forward, relaxed and friendly, speaking directly toward the viewer. Then a Black woman with medium-brown skin and shoulder-length tight curls appears, also facing forward. She wears large hoop earrings, a brown sleeveless vest, and a black cord necklace with a round pendant. At first she looks upward with a playful smile, then lowers her gaze toward the viewer and grins broadly.\n\nThe white background returns with another bold text question assembling on screen: “Why do you like it?” The words are mostly black, with “like it” large and red. An elderly white man with thick white hair appears, first seen from the shoulders up, then from farther back. He wears a short-sleeved plaid shirt tucked into dark pants with a black belt. He stands upright against the blank white backdrop, speaking toward the viewer with an open, earnest expression.\n\nThe ad switches to a graphic offer on the white background. Large red numbers and black text read: “3¢ a minute and 39¢ per call,” with “Across the USA” below; “USA” is especially large and red. The style remains very clean and minimal, using only bold typography and the white space.\n\nThe curly-haired Black woman returns on the left side of the screen. To her right, the service number begins to appear piece by piece in black and red. A small white disclaimer runs along the bottom: “Rates Exclude Federal Universal Service Fee.” The numbers build from “10 10” to the full “1010 987,” with “987” in large red italicized numerals and “1010” in black. She continues facing forward, eyebrows slightly raised, as if emphasizing how inexpensive it is. The middle-aged man in the blue shirt then appears beside the same “1010 987” logo, smiling knowingly toward the viewer.\n\nA mostly blank white screen follows, with “10 10” in black at the upper left. The logo builds again into “1010 987,” and a rate line appears beneath it: “3¢ a minute,” with the “3¢” in large red type and the rest in black.\n\nA young white woman with long, full, curly red hair appears centered against the white background. She wears a pink top or jacket with an open collar. She looks straight ahead, speaking with a bright, animated expression, then smiles. At the bottom, small white-on-shadow text reads “Available in most areas” on the left, and “Telecom USA” on the right. A blond white man appears next, wearing a dark short-sleeved shirt with white stripes on the sleeves. He stands casually, slightly angled, and smiles. The same bottom text remains: “Available in most areas” and “Telecom USA.”\n\nThe red-haired young woman returns in a tighter view, her face filling more of the screen. Her curly hair frames her face, and she looks directly ahead with wide eyes and a confident, pleased smile. The “Available in most areas” and “Telecom USA” notices remain along the bottom.\n\nAnother bold text question appears on the white background: “Could it be any easier?” The phrase builds in black and red, with “any” and “easier” in red and larger than the surrounding words.\n\nThe middle-aged man in the blue shirt reappears, now shown from about mid-thigh up. He stands with both hands on his hips, wearing jeans and a belt; a tan pouch or tool-like case hangs at his side. To his left, the dialing instructions appear visually. First “1010” appears in black, then the red “987” completes the logo. Beneath it, “+1” appears, followed by the words “and the number.” The layout visually demonstrates the calling sequence: dial “1010 987,” then “+1,” then the phone number. He remains steady, facing forward as the instructions fill the space beside him.\n\nThe curly-haired Black woman returns in a tight face view. She looks upward with a playful smile, then looks forward and laughs or smiles broadly. Along the bottom, small contact information appears: “1-800-242-7070” on the left and “www.10-10-987.com” on the right.\n\nThe final graphic centers the “1010 987” logo on the white background, with the red “987” large and slanted and “1010” in black to its left. The phone number “1-800-242-7070” remains at bottom left, and the website “www.10-10-987.com” remains at bottom right. The elderly man in the plaid shirt then enters on the right side of the composition, first partly visible and then fully shown from the chest up. He faces the viewer beside the large logo, ending with a direct, attentive expression as the service name and contact information stay on screen.",
+  "api_metadata": {
+    "response_id": "resp_028b59f453ba4b14006a384f9847488192b616adc404738e3d",
+    "usage": {
+      "input_tokens": 14489,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1622,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 16111
+    }
+  },
+  "duration_seconds": 44.783,
+  "created_at": "2026-06-21T20:55:29Z",
+  "error": null
+}

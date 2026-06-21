@@ -1,0 +1,822 @@
+{
+  "commercial_id": "tv_com_1950_18",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1950_18",
+    "audio_file": "corpus/03_audio/tv_com_1950_18.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1950_18.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1950_18.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Aunt Jemima Pancake Mix, from the 1950s. This dry food mix is used for preparing pancakes to simplify cooking and breakfast preparation.",
+    "row": {
+      "Decade": "1950",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_1950_18",
+      "Product Name": "Aunt Jemima Pancake Mix",
+      "Description": "This is a commercial for Aunt Jemima Pancake Mix, from the 1950s. This dry food mix is used for preparing pancakes to simplify cooking and breakfast preparation."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "03a39e6f88458ed2a6e493f8dee650856378bb46d4a5f77250f1d7a710190877",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1950_18.wav",
+    "path": "corpus/03_audio/tv_com_1950_18.wav",
+    "format": "wav",
+    "sha256": "4adc3f91dbba3a9fc630b523ee7ba88e87f5a02fffd1b4053bcf87aeba4bbd97",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1950_18.json",
+    "path": "corpus/04_transcripts/tv_com_1950_18.json",
+    "sha256": "fe9406f12e38c574cbc52f3ba68fa0e7d19ffece82df972cb2658ed6a3665962",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1950_18.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1950_18.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1950_18.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Peggy and Chuck Aunt Jemima Pancake Mix Husband with the baby",
+      "decade": 1950,
+      "sequence": 18,
+      "category": "Food, Beverages & Nutrition",
+      "video_id": "video_0018",
+      "url": "https://youtu.be/PyLj_kJ5dDc",
+      "source_start": "0:00:00",
+      "source_end": "0:00:58"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 58.0266875,
+      "text_sha256": "8926eccbab3b58123e0e4e92c89d301c8cbe187e9ff12a12b476a88aeb135253"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "038be2a194d44f644133504a1623891888657c2cfb07b411291cbb1ed4ecd8e1",
+      "segment_count_available": 24,
+      "segment_count_inserted": 24,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 29.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 30.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 31.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 31.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 32.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 32.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 33.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 35.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 36.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 36.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 36.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 36.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 37.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 37.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 38.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 38.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 38.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 39.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 40.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 40.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 41.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 41.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 42.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 42.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 43.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 43.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 43.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 44.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 44.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 44.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 45.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 45.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 45.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 46.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 46.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 46.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 46.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 47.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 47.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 47.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 48.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 48.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 51.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 51.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0094.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0094.jpg",
+      "frame_index": 94,
+      "timestamp_seconds": 51.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0095.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0095.jpg",
+      "frame_index": 95,
+      "timestamp_seconds": 51.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0096.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0096.jpg",
+      "frame_index": 96,
+      "timestamp_seconds": 52.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0097.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0097.jpg",
+      "frame_index": 97,
+      "timestamp_seconds": 53.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0098.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0098.jpg",
+      "frame_index": 98,
+      "timestamp_seconds": 54.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0099.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0099.jpg",
+      "frame_index": 99,
+      "timestamp_seconds": 54.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0100.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0100.jpg",
+      "frame_index": 100,
+      "timestamp_seconds": 54.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0101.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0101.jpg",
+      "frame_index": 101,
+      "timestamp_seconds": 54.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0102.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_18/frame_0102.jpg",
+      "frame_index": 102,
+      "timestamp_seconds": 56.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 102,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens in black and white with a large white letter Q encircling a stylized face in a dark hat and white collar against a plain background. This graphic dissolves into a home kitchen, where large white title lettering appears over the scene: “Aunt Jemima presents Peggy and Chuck,” with “Peggy” and “Chuck” written in a script style. Behind the lettering, a tidy kitchen is visible with a refrigerator at the back, cupboards, a windowed door on the right, and a counter in the foreground holding a griddle, pans, dishes, and an Aunt Jemima pancake mix box.\n\nAs the title fades, a young adult woman stands at the kitchen counter. She wears a light-colored, short-sleeved house dress or blouse with a belted waist, and her dark hair is neatly styled short. She holds a tall cylindrical container, shaking or handling it as if mixing pancake batter. On the counter beside her are cooking items, including a flat griddle, a small pan, a bowl, and ingredients laid out near the Aunt Jemima box. A young adult man enters from the right holding a baby. He wears a darker shirt tucked into light trousers. The baby, in a patterned outfit, is held upright against his chest. The woman turns toward them, smiles, and gestures toward the child, briefly reaching out as if including the baby in the conversation, then turns back to the counter to continue explaining or preparing the food.\n\nThe view shifts to a close look at the griddle. Four pale apple rings, each shaped like a small doughnut with a hole in the center, sit spaced apart on the hot surface. A woman’s hand tilts a tall mixing container over the griddle while another hand holds a spoon nearby. Thick, light pancake batter pours from the container onto one apple ring, spreading into a round pancake shape around it. She moves from one ring to another, pouring batter so that the apple slices become centered inside the pancake batter. The batter pools and spreads in smooth circles, leaving some rings still visible and others partly covered.\n\nThe scene then moves to a round breakfast table in the same kitchen. The woman sits on the left, the man on the right, and the baby sits between them in a high chair. The table is set with plates, cups, a small pitcher of dark syrup, and breakfast food. The man lifts food with a fork and eats from his plate, while the woman sits with a pleasant expression and reaches for items on the table. The baby leans forward in the high chair, occupied with food or a cup. The woman pours dark syrup from a small pitcher, and the man reaches toward the table, then picks up a folded newspaper or printed leaflet with pictures on it. He opens it and reads while still seated at breakfast. The woman continues eating and serving, glancing toward the baby, while the baby raises a cup or food toward the mouth. The family appears relaxed and domestic, gathered around the breakfast table.\n\nThe commercial returns to a cooking demonstration at the counter. An Aunt Jemima pancake mix box is clearly visible on the left, showing the brand name and a portrait-style logo of a smiling woman in a head scarf, along with an image of pancakes on the front. A flat electric griddle sits in the center, with a control dial on the left edge. To the right is a metal bowl holding apple rings, and behind the griddle are a tall mixing container and small bowls. A hand uses a spatula to lift apple rings from the metal bowl and place them on the griddle. The rings are set down one by one, spaced apart in a neat arrangement, then adjusted with the spatula as if sautéing them.\n\nAfter several apple rings are arranged on the griddle, the batter container is tilted over them again. Thick pancake batter pours in a steady stream onto and around the apple rings. A spoon held in the other hand helps control the batter. Some batter forms plain round pancakes nearby, while other pours cover the apple rings so the rings sit centered inside the pancakes. The griddle surface shows several pale circles cooking at once.\n\nA finished serving plate appears on a woven placemat. On the plate are pancakes with glossy syrup or topping spread over them, and several sausage links arranged along the back of the plate. A fork rests to the left on a napkin, and serving utensils and tableware sit around the plate. Large white lettering overlays the food: “Aunt Jemima,” followed by a list of varieties in stacked capital letters: “REGULAR,” “BUCKWHEAT,” and “BUTTERMILK.”\n\nThe final image presents the product more directly. The same large “Aunt Jemima” name remains across the top, with “REGULAR,” “BUCKWHEAT,” and “BUTTERMILK” listed on the left. On the right, an Aunt Jemima pancake mix box stands beside a tall cylindrical shaker or container. The box again shows the Aunt Jemima name, the portrait logo, and a pancake image, while the background is softly blurred to keep attention on the package and the bold white product text.",
+  "api_metadata": {
+    "response_id": "resp_02db3e327c88daac006a38375bf6e4819ebe2e94a0030acce8",
+    "usage": {
+      "input_tokens": 27867,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 2084,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 29951
+    }
+  },
+  "duration_seconds": 74.231,
+  "created_at": "2026-06-21T19:12:27Z",
+  "error": null
+}

@@ -1,0 +1,815 @@
+{
+  "commercial_id": "tv_com_1960_38",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1960_38",
+    "audio_file": "corpus/03_audio/tv_com_1960_38.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1960_38.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1960_38.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Sinclair Gasoline with Nickel, from the 1960s. This gasoline product is formulated with a liquid-nickel additive designed to reduce engine wear.",
+    "row": {
+      "Decade": "1960",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1960_38",
+      "Product Name": "Sinclair gasoline with nickel",
+      "Description": "This is a commercial for Sinclair Gasoline with Nickel, from the 1960s. This gasoline product is formulated with a liquid-nickel additive designed to reduce engine wear."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "046b4de53b0a0bec6774b82b46f10d85b379b9cc9c0945c93667e0b91e6a0dfd",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1960_38.wav",
+    "path": "corpus/03_audio/tv_com_1960_38.wav",
+    "format": "wav",
+    "sha256": "51db115e330d632eeba2195e8476822e59bfc3dd5a5fde1bef91add1ee39df8f",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1960_38.json",
+    "path": "corpus/04_transcripts/tv_com_1960_38.json",
+    "sha256": "d88cb9c7ffbe64f20e539656ea41ba5d73d6b88875f86e3589841de5458301ae",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1960_38.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_38.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_38.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Sinclair gasoline with nickel at Sinclair Service Station",
+      "decade": 1960,
+      "sequence": 38,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0118",
+      "url": "https://youtu.be/pXjcM-F4ACc",
+      "source_start": "1:19:18",
+      "source_end": "1:19:57"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 39.03275,
+      "text_sha256": "a34bfebf86bc1c947bf5fd707ebe6dfaa7faa70e0beab0b52228bd8d70837314"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "f31dc6799a91923c9e8eed9f48e16b629ab7f630f1ead207f92831eddf0febb3",
+      "segment_count_available": 6,
+      "segment_count_inserted": 6,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 28.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 29.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 29.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 29.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 29.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 30.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 30.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 31.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 32.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 32.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 32.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 32.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 33.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 33.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0094.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0094.jpg",
+      "frame_index": 94,
+      "timestamp_seconds": 33.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0095.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0095.jpg",
+      "frame_index": 95,
+      "timestamp_seconds": 33.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0096.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0096.jpg",
+      "frame_index": 96,
+      "timestamp_seconds": 34.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0097.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0097.jpg",
+      "frame_index": 97,
+      "timestamp_seconds": 34.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0098.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0098.jpg",
+      "frame_index": 98,
+      "timestamp_seconds": 34.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0099.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0099.jpg",
+      "frame_index": 99,
+      "timestamp_seconds": 34.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0100.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0100.jpg",
+      "frame_index": 100,
+      "timestamp_seconds": 35.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0101.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_38/frame_0101.jpg",
+      "frame_index": 101,
+      "timestamp_seconds": 36.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 101,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "Two 1960s cars line up side by side on a bright, open drag strip, the image briefly tinted red before it becomes sun-bleached and pale. A red car sits on the left, and a white race-prepared Dodge is on the right, both low and long with chrome trim. The white car surges forward from the start, its front end lifting slightly as it accelerates down the flat track. In the distance, small figures stand near the runway-like course, with low barriers, open land, and a line of trees beyond.\n\nInside the racing car, a young adult white man in a light-colored racing helmet and white driving clothes is seen in profile. He faces forward with a concentrated expression, hands low in front of him as if gripping the steering wheel. Sunlight flashes across his face while the blurred landscape passes outside the side window. The race continues on the wide strip: two cars run parallel across the open course, separated by lanes and low divider blocks. From above, the cars appear as small shapes on a broad, pale roadway with a center line, then they rush past a finish-line area marked by a painted stripe and small timing lights near the ground.\n\nThe white Dodge becomes clearer beside the red competitor. Large lettering along its side reads “Chicago Dodge Boys,” and it carries racing-style markings and decals. The two cars run close together for a moment, then the white car edges ahead. The track ahead is shown empty and bright, emphasizing the long straight run. The white Dodge then approaches a line of orange traffic cones, turning slightly as it slows and curves toward a stopping area. Its hood has a dark scoop, and the car’s front grille and round headlights face forward as it rolls in.\n\nThe driver is shown again through the side window of the white Dodge. He wears the same rounded helmet and white racing outfit, seated upright in a stripped-down racing interior with a visible roll bar behind him. The name “Jack Thomas” is painted in large white letters on the red lower stripe along the car’s side. He first looks outward, then turns his head forward and down, as if settling after the run or preparing to speak with someone nearby.\n\nThe scene moves to a service area beside the race car. The white “Chicago Dodge Boys” Dodge is parked with its hood open near a wall, stairs, and equipment. Several adult men stand around it: one in light trousers faces the car’s front, another is near the open hood, and the helmeted driver stands off to the side. Red fuel or oil drums and service equipment sit nearby. A later view shows three red drums lined up under a small Sinclair sign on the wall, with a man in a light uniform handling a hose or nozzle among the drums. The labels on the drums become the focus: bold white text on the red barrels reads “CONTAINS NICKEL COMPOUND,” with the word “NICKEL” especially large.\n\nA close view fills the screen with the barrel label, “CONTAINS NICKEL COMPOUND,” printed in blocky white letters on the curved red metal surface. After that, hands handle a red Sinclair container or drum near mechanical equipment under the side of a vehicle or service rig. The container has a white label with “Sinclair” and the dinosaur logo. It is tilted and positioned close to a hose or pipe connection, suggesting the product is being transferred or added as part of the fuel or service process. The surrounding metal parts, tubing, and underside surfaces are bright and overexposed, giving the work area a washed-out, sunlit look.\n\nA Sinclair service station appears in full view. It has a broad flat canopy over several red-and-white gas pumps, a small office building behind them, and a large “Sinclair” name across the front. Palm trees and parked cars are visible around the lot. A light-colored convertible drives in from the right and stops beside the pumps. The car is long and low with whitewall tires; at least one adult sits inside, visible above the open side of the convertible. The station attendant, an adult man in a light uniform and a Sinclair cap, stands near the pumps.\n\nThe attendant is shown close up at the pump island. His cap bears a Sinclair patch, and his light shirt has a service-station uniform look. He handles the pump area and hose, then moves along the side of the convertible. He bends down near the car’s rear side, working at the fuel filler area with his head and shoulders lowered close to the body panel. The convertible’s pale paint and chrome trim reflect the bright outdoor light while the attendant concentrates on the refueling task.\n\nThe commercial ends on product and brand graphics. A pump display shows a white poster bordered in red with bold black text reading “GET MORE MILES PER DOLLAR.” Beneath it, a cartoon Sinclair dinosaur carries a sign that says “NICKEL.” Finally, a large roadside Sinclair sign fills the view: the word “Sinclair” appears in dark lettering on a white shield-shaped sign, with the dinosaur silhouette below it.",
+  "api_metadata": {
+    "response_id": "resp_0629dacd66835fd8006a383d65731c81a3b7eca9f5e79e3eba",
+    "usage": {
+      "input_tokens": 21491,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1552,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 23043
+    }
+  },
+  "duration_seconds": 61.582,
+  "created_at": "2026-06-21T19:37:51Z",
+  "error": null
+}

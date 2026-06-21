@@ -1,0 +1,654 @@
+{
+  "commercial_id": "tv_com_1980_23",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_23",
+    "audio_file": "corpus/03_audio/tv_com_1980_23.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_23.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_23.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Lysol Laundry Sanitizer, from 1986. This laundry care product is used for sanitizing clothing and fabrics.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_1980_23",
+      "Product Name": "Lyson Laundry Sanitizer",
+      "Description": "This is a commercial for Lysol Laundry Sanitizer, from 1986. This laundry care product is used for sanitizing clothing and fabrics."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "971053b25ca3b4096ded73cef5825b5049c2b2ca2fa4dd22f5f8576e44502316",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_23.wav",
+    "path": "corpus/03_audio/tv_com_1980_23.wav",
+    "format": "wav",
+    "sha256": "06551c66c3bf3925ccf8f8849369e83fb8600eb183b6acb7006843c2cec8d0b5",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_23.json",
+    "path": "corpus/04_transcripts/tv_com_1980_23.json",
+    "sha256": "e8d8df03acd00356f26cdff00344c76c423f6f03b6ad9080b101b02c4738505a",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_23.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_23.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_23.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1986 Lyson Laundry Sanitizer",
+      "decade": 1980,
+      "sequence": 23,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0245",
+      "url": "https://youtu.be/lZbmrqjdmiM",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "a0177a3cfc63f028aec4e02fc7a4758df83ef2ce8066ba2679408dedcf2f3689"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "35f09e3cf5df8471db9fdbd130e42eb41f9a562c85d18c9551404a919dde4d98",
+      "segment_count_available": 5,
+      "segment_count_inserted": 5,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_23/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 78,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A white front-loading washing machine fills the view, its round window showing clothes tumbling inside. The laundry room around it is warm and domestic, with a counter above the machine, storage shelves, a window in the background, and a laundry basket off to the side. A blonde woman, likely an adult homemaker, wearing a pale pink top, light blue cardigan, and jeans, kneels beside the washer. She reaches across the black control panel and opens the washer door downward, like a small shelf.\n\nShe pulls a pale blue-white piece of laundry from the machine. As the cloth comes out, it transforms visually into a misty, translucent, ghostlike shape with an angry face: dark slanted eyes and a jagged mouth. The woman stays crouched by the open washer, one hand braced on the counter, looking startled and concerned as the cloudy germ-like figure floats in front of her and drifts away to the left.\n\nThe product is then presented in close-up on the laundry counter: a dark blue box labeled “Lysol Laundry Sanitizer.” The word “Lysol” appears in yellow script at the top, “LAUNDRY” in large white letters, and “SANITIZER” in large red letters across a pale blue circular background. A yellow starburst near the upper left says “NEW.” Smaller text on the box includes claims such as reducing germs in the wash by 99.9%, whitening and brightening, leaving wash fresh-smelling, being safe for washable fabrics, and being used with detergent. Behind it sits a large white container clearly labeled “LAUNDRY DETERGENT.”\n\nA hand lifts and tilts the blue Lysol box near the detergent container. A clear plastic measuring cup with red measurement markings sits below on the counter, beside folded laundry. Yellow on-screen text at the bottom reads, “Use with Detergent.” The product is poured from the box into the measuring cup, a white stream falling into the cup while the detergent container remains visible behind it. The box is then brought upright again, returning to a front-facing product view.\n\nThe washing machine’s round window appears again, now with bold yellow text over it reading, “Reduces Germs 99.9%.” Behind the words, clothes and sudsy, pale shapes move inside the washer window, suggesting the product working in the wash. The cloudy germlike image fades behind the glass as the laundry continues to tumble.\n\nBack in the laundry room, the woman stands at the counter holding the blue Lysol Laundry Sanitizer box and sets it down beside the white “LAUNDRY DETERGENT” container. A blue scoop or measuring cup and other laundry items sit nearby on the shelf and counter. She then bends toward the washer controls and the front door, checking the machine. The blue Lysol box remains displayed on the counter above the washer, positioned next to the detergent container.\n\nShe closes the washer door, pressing it shut with one hand while bracing herself with the other on the counter. Afterward, she opens the door again and leans in to look at the laundry inside. The washer door folds down, and clean-looking clothes are visible through the round opening. A large, bright blue word graphic, “SANITIZED,” bursts diagonally out from the washer opening toward the viewer. The woman looks up and smiles, still crouched beside the open machine, with the product box visible on the counter behind her.\n\nThe commercial ends with a close-up of the blue Lysol Laundry Sanitizer box, then a wider product display on a shelf surrounded by neatly folded towels and colorful folded fabrics. The box remains centered and front-facing, with the yellow “NEW” burst and the large “LAUNDRY SANITIZER” label clearly visible. Large yellow text appears across the bottom: “Reduces Germs 99.9%.”",
+  "api_metadata": {
+    "response_id": "resp_080baa27eb2c3d75006a384670cd188192ba67aeb30d71559f",
+    "usage": {
+      "input_tokens": 21441,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1234,
+      "output_tokens_details": {
+        "reasoning_tokens": 440
+      },
+      "total_tokens": 22675
+    }
+  },
+  "duration_seconds": 40.107,
+  "created_at": "2026-06-21T20:16:15Z",
+  "error": null
+}

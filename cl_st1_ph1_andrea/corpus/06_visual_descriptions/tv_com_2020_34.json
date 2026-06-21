@@ -1,0 +1,528 @@
+{
+  "commercial_id": "tv_com_2020_34",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2020_34",
+    "audio_file": "corpus/03_audio/tv_com_2020_34.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2020_34.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2020_34.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Charmin Ultra Soft Toilet Paper, from 2022. This hygiene product is used for personal cleaning after using the toilet.",
+    "row": {
+      "Decade": "2020",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_2020_34",
+      "Product Name": "Charmin Ultra Soft",
+      "Description": "This is a commercial for Charmin Ultra Soft Toilet Paper, from 2022. This hygiene product is used for personal cleaning after using the toilet."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "2699de67d250bdf6b72edff8a8cc595fd6f8a1a53ede39ce1ccdd8eae072bdee",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2020_34.wav",
+    "path": "corpus/03_audio/tv_com_2020_34.wav",
+    "format": "wav",
+    "sha256": "5a884c53b051c45ba3a2fb2e30e2247aa35e17a8773a3c55b0eafe6010efb485",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2020_34.json",
+    "path": "corpus/04_transcripts/tv_com_2020_34.json",
+    "sha256": "e0bae399d97a27562b507c4cae8bb9ff21539fe5f1fad8ee894d058ed09098e3",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2020_34.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_34.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_34.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2022 Charmin Ultra Soft Toilet Paper Enjoy the Go New Roll",
+      "decade": 2020,
+      "sequence": 34,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0653",
+      "url": "https://youtu.be/W39Zow6bFiU",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.977,
+      "text_sha256": "c290be9f1dc57e6006ae8e7acabf80cdd99c492caa52e3c726c9ed64bb67c4a4"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "287e70ca30fb5dc97a9cdcfbe5697cd53266d2e1f65fdb6a33479f69287ec3b7",
+      "segment_count_available": 9,
+      "segment_count_inserted": 9,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_34/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 60,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "In a bright, tidy home kitchen with blue walls, white cabinets, open shelves, a window with blinds, and a wooden island holding vegetables and a paper grocery bag, two animated blue bears stand near a large blue package of Charmin Ultra Soft toilet paper. Both bears have white bellies and rounded white muzzles; one is larger and stands to the left, while the smaller bear on the right wears a white bead bracelet and small white flowers near one ear. The package sits on the island, facing forward, with visible text including “MEGA,” “Charmin,” and “Ultra Soft,” plus a picture of a bear hugging a roll of toilet paper. The smaller bear lifts or slides the package toward the larger bear. The larger bear steps closer, and for a moment they both hold the package between them, looking at each other. The larger bear then takes the package, smiling, while the smaller bear turns and walks off to the right side of the kitchen.\n\nAs the larger bear remains holding the Charmin package, the scene shifts into a dreamy, glowing blue fantasy space. The background becomes dark and softly blurred, with small floating light spots, while the bear is rimmed in bright blue light. He now holds a single white roll of toilet paper in both paws, gazing at it with an affectionate, almost entranced expression. He cradles it close, smiles, and admires the roll as if it were something precious. He then brings the roll near his face and chest, holding it gently.\n\nThe bear begins unrolling a strip of toilet paper. A wide white ribbon of paper stretches from the roll in his right paw across his front to his left paw. He looks pleased and absorbed, examining the paper as it curves in a soft arc. He smiles broadly, then studies the strip with a softened, adoring expression. The bear raises the paper to his cheek and presses it against the side of his face, eyes half closed, rubbing it as though enjoying its softness. The glowing blue lighting and blurred background make the moment feel exaggerated and dreamlike.\n\nA product demonstration appears on a clean blue surface. Two stacks of white sheets sit side by side under small labels. On the left is a shorter stack labeled with a small sign for a “Leading Bargain Brand,” and on the right is a much taller stack labeled “Charmin Ultra Soft.” Under both stacks, the text “200 Sheets” is visible, showing that both sides represent the same number of sheets. The taller Charmin stack rises much higher than the bargain-brand stack. Blue bear paws enter from the sides; the right paw, wearing the white bead bracelet, rests against or presses the taller Charmin stack, while another blue paw gestures over the smaller stack. Fine print appears along the bottom, but it is very small. The visual comparison emphasizes the larger, thicker-looking stack of Charmin sheets.\n\nThe fantasy image returns briefly to the larger bear cuddling the roll and strip of toilet paper against his cheek, his mouth open in a delighted smile. Then the kitchen comes back into view. The larger bear is on the left, looking surprised and slightly guilty, with a loose piece or roll of toilet paper near him. The smaller bear with the bracelet stands on the right, holding the large Charmin Ultra Soft package upright in front of her body so the brand name and “Ultra Soft” label are clearly visible. She looks toward the larger bear with a calm, knowing expression. The larger bear shifts from looking caught to smiling sheepishly. He lifts a white roll of toilet paper and hugs it against his cheek, still unable to resist touching it, while the smaller bear continues to hold the package and smile.\n\nThe commercial ends on a pale blue brand screen. A large Charmin logo appears in the center, with the white roll of toilet paper forming a banner beneath it. Teal text on the banner reads “enjoy the go.” A small P&G logo sits in the upper right corner. On the left, a blue Charmin bear walks in toward the logo, facing it as the final brand image holds on screen.",
+  "api_metadata": {
+    "response_id": "resp_0cdb3f1f4f8b6fa3006a3857f05258819dba38d2cd83ea367e",
+    "usage": {
+      "input_tokens": 13423,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1310,
+      "output_tokens_details": {
+        "reasoning_tokens": 476
+      },
+      "total_tokens": 14733
+    }
+  },
+  "duration_seconds": 35.718,
+  "created_at": "2026-06-21T21:30:55Z",
+  "error": null
+}

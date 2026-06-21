@@ -1,0 +1,115 @@
+{
+  "commercial_id": "tv_com_1990_45",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_45",
+    "audio_file": "corpus/03_audio/tv_com_1990_45.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_45.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_45.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Oldsmobile Eighty Eight LSS, from 1992. This car is used for personal transportation.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1990_45",
+      "Product Name": "Oldsmobile Eighty Eight LSS",
+      "Description": "This is a commercial for Oldsmobile Eighty Eight LSS, from 1992. This car is used for personal transportation."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "acf178a650a7fba6841ad3cfb0da60d8ed89a84dfd5bc87eb5264c70328f8a04",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_45.wav",
+    "path": "corpus/03_audio/tv_com_1990_45.wav",
+    "format": "wav",
+    "sha256": "b701348d9936064a51dafb43afe227a373402eca37ed9421dee13e6bceb48201",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_45.json",
+    "path": "corpus/04_transcripts/tv_com_1990_45.json",
+    "sha256": "a41aa398d7b5e4a81cdb3af5e7ab292fed567813a34c2c1cd24a9ae50affa5c1",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_45.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_45.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_45.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1992 Oldsmobile Eighty Eight LSS Luxury Sports Sedan by General Motors",
+      "decade": 1990,
+      "sequence": 45,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0368",
+      "url": "https://youtu.be/2AmQRy5oVWg",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "aea2165f352715f326bdddec485fc64004db3a4c045b00da57b14aee53ff3714"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "1d165fa3300f88875b92a9aac10c2ce874cd00a29357b9951d80ea19a93f83dc",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_45/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 1,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A bronze or gold Oldsmobile sedan is displayed in a clean side profile, facing to the right, against a warm amber-brown studio background with a smoky, softly glowing atmosphere. The car has four doors, a long low body, dark-tinted windows, and polished wheels, with its silhouette emphasized by dramatic lighting from above and behind. The floor beneath it is dark and reflective, giving the car a showroom-like presentation. No people are visible. Across the bottom of the image, large white serif text identifies the vehicle: “Oldsmobile Eighty Eight LSS.”",
+  "api_metadata": {
+    "response_id": "resp_04e5742d4230490e006a384b6ab20c8191a86c7c1e2278eb89",
+    "usage": {
+      "input_tokens": 1764,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1985
+    }
+  },
+  "duration_seconds": 7.998,
+  "created_at": "2026-06-21T20:37:05Z",
+  "error": null
+}

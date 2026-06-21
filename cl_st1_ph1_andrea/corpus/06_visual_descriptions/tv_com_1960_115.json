@@ -1,0 +1,759 @@
+{
+  "commercial_id": "tv_com_1960_115",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1960_115",
+    "audio_file": "corpus/03_audio/tv_com_1960_115.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1960_115.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1960_115.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Chevy Impala, from 1967. This passenger automobile is used for personal transportation and is showcased for its design.",
+    "row": {
+      "Decade": "1960",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1960_115",
+      "Product Name": "Chevy Impala",
+      "Description": "This is a commercial for Chevy Impala, from 1967. This passenger automobile is used for personal transportation and is showcased for its design."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "68d616d537a58876527346ff3295ed2120e89c29e947d67f60d2dcfbce04c658",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1960_115.wav",
+    "path": "corpus/03_audio/tv_com_1960_115.wav",
+    "format": "wav",
+    "sha256": "f15e5d70bfa03464e8d247f4e91f7e102259844f71abc2c1bcba04dca9fb258e",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1960_115.json",
+    "path": "corpus/04_transcripts/tv_com_1960_115.json",
+    "sha256": "65c57276da78cbefa680ce173664632c4d4e6ec3224f3cd6a16698eebf511160",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1960_115.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_115.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_115.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1967 Chevy Impala A glass garage",
+      "decade": 1960,
+      "sequence": 115,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0174",
+      "url": "https://youtu.be/_p-Am92fkx0",
+      "source_start": "0:00:07",
+      "source_end": "0:01:05"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 58.0266875,
+      "text_sha256": "4a05e3d90ac903d0df608671a4d57dab74efa22d186fb7e4fb73d7258d5c0078"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "f0a6d6937cf2fb9eecf4578c83d906ddb2daa3c96ea22e13a4f8d7e6f74a10dc",
+      "segment_count_available": 11,
+      "segment_count_inserted": 11,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 30.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 30.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 30.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 31.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 34.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 34.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 34.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 35.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 35.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 35.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 36.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 36.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 36.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 36.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 37.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 37.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 37.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 37.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 39.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 39.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 40.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 46.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 46.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 46.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 46.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 47.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 47.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 47.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 47.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 48.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 48.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 48.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 48.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 49.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 49.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 49.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 49.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 50.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 50.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 50.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 51.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 51.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 51.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 52.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 52.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 52.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 52.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 53.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 53.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 53.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 53.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 54.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 54.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 54.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 54.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 55.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 55.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 55.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 55.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_115/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 56.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 93,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A middle-aged man with short dark hair stands outdoors beside a shiny blue 1967 Chevrolet Impala Sport Coupe. He wears a light cream V-neck sweater over a pale collared shirt, dark trousers, and a wristwatch. He is next to the driver’s side of the car, at first leaning near the roof and then facing forward as if speaking directly to the viewer. The Impala’s glossy blue paint, chrome trim, and large side windows catch the sunlight. Behind the car is a suburban driveway or patio area with trees, lawn, distant low hills or rooftops, and a work area that includes a pegboard with tools, a hanging lamp, and construction-like items.\n\nAs he talks, the man gestures broadly with both hands, then steps back so the whole side of the car is visible. The Impala is a long two-door coupe with a smooth, sweeping roofline, whitewall tires, chrome wheel covers, and a bright chrome front end. Around the car are thin posts, rails, and transparent-looking panels or outlines that suggest a glass enclosure. On the ground near the front of the car are a round dark coil or hose and long narrow pieces that look like materials for the structure. The man points down at these items and toward the car, presenting the setup like a demonstration. He moves around the driver’s side, rests a hand near the roofline, and turns toward the workbench and tools as if explaining his “glass garage” idea.\n\nThe focus then shifts to close details of the Impala itself. The side window and roof pillar frame the interior: a steering wheel, dashboard, and light-colored seats are visible through the glass. From the rear, the car’s broad tail, rectangular taillights, chrome bumper, and whitewall rear tire are shown. A license plate centered on the back reads “IMPALA.” The car is displayed from different angles, emphasizing its long, low body, curved rear fenders, and sleek fastback-like roof.\n\nThe man reappears close to the car, speaking animatedly. He smiles, points, counts or pinches his fingers together for emphasis, and uses his hands to outline shapes in the air beside the roof and side windows, as if tracing the car’s modern profile. He then folds his arms tightly across his chest, acting out the idea of something being shut away or hidden, before relaxing again and looking off to the side.\n\nHe is then seen inside the Impala, leaning out through the open driver’s window with his elbows near the door. The blue door frame, chrome mirror, and shiny trim surround him. He grins and looks outward, then turns his head toward the front and back into the car. Through the windshield, the steering wheel and striped upholstery are visible. Reflections ripple across the windshield and hood, making the glass surfaces shine. The hood fills much of the view, its blue paint reflecting trees and the surrounding structure.\n\nNear the end, the man leans out of the driver’s window again. Above the roofline, a white, foamy or snow-like layer appears to rest on a transparent overhead surface, suggesting the car is under a clear protective covering while still visible. The man remains inside the car, looking outward with a more intent expression. A Chevrolet bowtie logo appears over the upper left of the image, with the word “CHEVROLET” in capital letters across it. The logo stays on screen as the man sits in the blue Impala beneath the clear-looking shelter.",
+  "api_metadata": {
+    "response_id": "resp_08b25d643fd6e655006a3841020d6881a08ff7ed8bf76a8a94",
+    "usage": {
+      "input_tokens": 27160,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 2266,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 29426
+    }
+  },
+  "duration_seconds": 70.858,
+  "created_at": "2026-06-21T19:53:34Z",
+  "error": null
+}

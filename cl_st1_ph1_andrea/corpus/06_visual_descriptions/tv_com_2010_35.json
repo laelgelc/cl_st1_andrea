@@ -1,0 +1,654 @@
+{
+  "commercial_id": "tv_com_2010_35",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_35",
+    "audio_file": "corpus/03_audio/tv_com_2010_35.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_35.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_35.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Levi’s, from 2017. This clothing brand is used for casual apparel.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Retail (Fashion & Consumer Goods) & Services",
+      "Commercial ID": "tv_com_2010_35",
+      "Product Name": "Levi's",
+      "Description": "This is a commercial for Levi’s, from 2017. This clothing brand is used for casual apparel."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "ada061b3563faae5dd8a72f3cb1d73fa48f65db159d8061a943fa8d7a0d05f2b",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_35.wav",
+    "path": "corpus/03_audio/tv_com_2010_35.wav",
+    "format": "wav",
+    "sha256": "49970568cb153a10711549f564aa380098609d236ba667c358b2e852636e4954",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_35.json",
+    "path": "corpus/04_transcripts/tv_com_2010_35.json",
+    "sha256": "976c2559b16d8efa07a4841b9c78536c649ad15381202ab5546f07798babb1c4",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_35.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_35.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_35.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2017 Levi's Sea of blue",
+      "decade": 2010,
+      "sequence": 35,
+      "category": "Retail (Fashion/ Consumer Goods) &  Services",
+      "video_id": "video_0597",
+      "url": "https://youtu.be/TMbWljl4Qx4?si=0b2VWBGaZ-5LPsMO",
+      "source_start": "0:00:00",
+      "source_end": "0:01:00"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 60.0235625,
+      "text_sha256": "efc9222e584367b2069ef3d2ae9252a53f5a0aea4985e774f5f4dfed1c28385d"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "d4404f93d9288820e23371cc9a62de9b7ea2a6b95e2e50b23a38cf75b1696d45",
+      "segment_count_available": 8,
+      "segment_count_inserted": 8,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 29.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 29.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 29.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 30.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 30.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 37.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 37.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 37.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 37.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 38.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 38.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 38.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 39.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 39.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 40.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 40.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 41.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 41.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 41.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 42.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 42.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 43.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 43.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 43.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 45.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 46.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 47.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 48.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 50.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 50.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 50.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 51.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 51.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 51.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 51.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 52.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 52.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 52.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 52.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 53.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 53.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 53.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 53.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 54.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 54.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 54.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 54.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 55.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 55.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 55.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 55.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 56.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 56.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 56.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 56.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 57.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 57.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 57.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 57.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 58.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_35/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 58.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 78,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "At night on what appears to be a rooftop party, a young woman stands beside a young man in a softly lit crowd. The man, light-skinned with curly hair and dark-framed glasses, wears a grey sweater over a collared shirt and looks down at a smartphone, the screen lighting his face and hands. Next to him, the woman, light-skinned with straight dark hair cut in a bob with bangs, wears a blue denim Levi’s jacket over a white top and a black choker necklace. She looks away from the phone and out toward the party with a calm, slightly curious expression, then her face softens into a small, knowing smile. Blurred city lights and other partygoers glow behind them.\n\nThe woman remains near the man with the phone, but her attention shifts elsewhere. She raises one hand toward her ear while smiling, as if responding to someone across the rooftop. Another young woman, out of focus in the foreground to the right, looks down at her own phone. Across the party, a young man with dark wavy hair and light stubble stands in a light grey buttoned shirt. He holds a phone to his ear, one arm folded across his body, and smiles toward the woman. He lowers the phone and gives a small open-palmed gesture, as though inviting her over or signaling that it is time to meet.\n\nBack with the woman in the denim jacket, she touches both ears, briefly covering or adjusting them, then lowers her hands. Her expression is playful and composed. The man beside her continues to stare at his glowing phone, absorbed and unaware. She tilts her head slightly, smiles again, and appears to make her decision. The rooftop setting becomes clearer: warm string lights hang overhead, people gather in small groups, and the background is full of soft yellow and blue city lights.\n\nThe dark-haired young man moves toward her through the party. He approaches from the left, and she faces him from the right. They stand close under rows of round string bulbs, with other guests blurred behind them. Both look a little shy but pleased. She glances downward with a small smile, then looks back up at him. He leans in slightly; she holds her ground, smiling back. Their body language is intimate and expectant, focused only on each other while the party continues around them.\n\nThey draw nearer until their faces are close. His expression is relaxed and flirtatious, eyes partly lowered; hers is steady and amused. A close view shows a hand gripping the front of the woman’s denim jacket near the chest pocket, emphasizing the blue denim texture, seams, metal button, and the small red Levi’s tab. The two remain almost face to face, their eyes meeting. She looks up at him through her bangs, her black choker visible against her white top, and her expression turns more intent.\n\nA close view of his dark jeans shows the back pocket with Levi’s-style curved stitching and a small red tab. A hand rests near his waistband and back pocket, suggesting they have moved even closer. The light grey shirt he wears hangs over the top of the jeans, and the denim’s dark wash stands out in the warm party light.\n\nThey continue to face one another, both smiling faintly. He looks down and then back toward her, and she watches him with a confident, almost teasing expression. Suddenly, they are shown near the edge of a lit swimming pool on the rooftop. They are pressed close together, laughing or smiling, with her arms around him. She is now visible in a white top and dark bottoms; he wears the light grey shirt and dark jeans. They stumble together, still holding on to each other, and lose balance beside the glowing blue pool.\n\nThe pair tumble sideways into the water. His legs kick upward, the soles of his shoes flashing pale as they fall. Her body tips with his, and their arms remain wrapped around each other. They splash into the pool together, sending up a wide burst of white water. Partygoers stand around the pool in the background, some watching, while the surface erupts into foam and spray.\n\nUnderwater, the scene turns blue and dreamlike. The couple sinks together in a cloud of bubbles, still holding each other. Their clothes billow in the water; her dark hair spreads and floats around her face. They pull close and kiss beneath the surface. The water is filled with swirling white foam and shimmering reflections from the rooftop lights above, forming golden circles around them.\n\nThey remain underwater, embracing and kissing as bubbles rise past their faces. Her arms loop around his shoulders and neck, and his body stays close to hers. Their movement slows in the water, suspended in the blue light. Her white top ripples and floats, and his grey shirt darkens as it clings to him. The surrounding water churns, then begins to settle into a ring of bubbles.\n\nA final underwater view focuses on his dark Levi’s jeans as he floats and turns in the water. The back pocket, stitching, and tan waistband patch are visible while water streams over the denim. Red on-screen text appears beside the jeans: “Live.” As the underwater movement continues, the text expands into the brand line “Live in Levi’s,” with “Levi’s” inside the familiar red logo shape. Beneath it, small white text reads “LEVI.COM.” Behind the text, the couple is still underwater, close together, surrounded by blue water, bubbles, and reflections of the rooftop lights.",
+  "api_metadata": {
+    "response_id": "resp_0489ee1a6babc978006a3853c558b8819d9b773bf6e7bbab28",
+    "usage": {
+      "input_tokens": 16909,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1939,
+      "output_tokens_details": {
+        "reasoning_tokens": 819
+      },
+      "total_tokens": 18848
+    }
+  },
+  "duration_seconds": 52.475,
+  "created_at": "2026-06-21T21:13:24Z",
+  "error": null
+}

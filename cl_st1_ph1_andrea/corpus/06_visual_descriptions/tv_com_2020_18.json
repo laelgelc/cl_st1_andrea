@@ -1,0 +1,689 @@
+{
+  "commercial_id": "tv_com_2020_18",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2020_18",
+    "audio_file": "corpus/03_audio/tv_com_2020_18.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2020_18.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2020_18.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Oikos High Protein Yogurt, from 2026. This dairy product is used for eating as a high-protein snack or breakfast food.",
+    "row": {
+      "Decade": "2020",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_2020_18",
+      "Product Name": "OIKOS",
+      "Description": "This is a commercial for Oikos High Protein Yogurt, from 2026. This dairy product is used for eating as a high-protein snack or breakfast food."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "391137d704683460137c62de51d9308f76d372a9cefb3859ef5378366fa7a389",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2020_18.wav",
+    "path": "corpus/03_audio/tv_com_2020_18.wav",
+    "format": "wav",
+    "sha256": "921471f7c183533c3c99d0da96358098cb9d413b856e60a5367554b8322b22e4",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2020_18.json",
+    "path": "corpus/04_transcripts/tv_com_2020_18.json",
+    "sha256": "7bc5d72bb8bf3824f24335df2b6a92d333878aabf119eae400f00d0c6722d0ba",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2020_18.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_18.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_18.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2026 OIKOS High Protein Yogurt The Big Hill",
+      "decade": 2020,
+      "sequence": 18,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0637",
+      "url": "https://youtu.be/3c3cX2AmCME",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "21c4cf649ad9bfc9ce18793081c0c8e97a57e2848228e1bc1bb3696edf765f48"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "5b46dc046a3c3e457455c2f873c620735de1caeea7d0d58d36d97c4ad1ba2f83",
+      "segment_count_available": 11,
+      "segment_count_inserted": 11,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_18/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 83,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A steep San Francisco street slopes sharply downhill between rows of pale apartment buildings and bay-windowed houses. Cable-car tracks run down the center of the road, and the Golden Gate Bridge is visible in the hazy distance. A red-and-wood cable car sits partway up the hill, framed by the buildings and trees.\n\nInside the open cable car, passengers sit on wooden benches beneath polished vertical poles. A uniformed male-presenting conductor in a black cap and vest stands near the front with a handheld microphone. Among the passengers are a young adult woman with long brown hair, wearing an olive-green jacket over a cream turtleneck and wide blue jeans, and a very muscular Black man with braided hair, a sleeveless bright blue top, pale pants, earrings, and a large necklace. The woman is holding an Oikos drink bottle, while the man has an Oikos yogurt cup. They look concerned as the cable car appears stalled on the hill. An older woman with short reddish hair, large glasses, a pink floral top, a pale jacket, lavender pants, and a leopard-print bag sits beside the man, watching the situation.\n\nThe young woman hands her Oikos bottle to the muscular man and moves toward the outside of the cable car. He ends up holding both his Oikos cup and her bottle as she climbs down from the side. The cable car’s maroon exterior is decorated with ornate gold lettering reading “O’Farrell & Hyde Jones Streets.” The woman braces both hands against the side panel and leans her whole body into it, pushing hard. Small white text appears near the bottom: “DRAMATIZATION. DO NOT ATTEMPT.” Her face tightens with effort as she strains against the cable car, her hair falling forward.\n\nInside, passengers grip the poles and overhead rail as the cable car begins moving. From above, the red-roofed cable car creeps along the tracks up the steep street while pedestrians and seated people on the sidewalk look on. From a low view near a stairway, the car is seen tilted on the incline, with the woman pushing from behind and the passengers riding inside.\n\nBack on the bench, the muscular man clutches the woman’s Oikos bottle and looks surprised, shifting in his seat as the car lurches. The older woman beside him turns her head toward him with wide eyes and an impressed, startled expression. In a nearby apartment window, a person in a striped robe and hair curlers looks down at the passing cable car while holding a spoon and cup, watching the strange scene through sheer curtains. The cable car rolls past a storefront sign reading “The Corner Market,” with smaller text advertising coffee and provisions in San Francisco.\n\nThe cable car gains speed up the hill. On the sidewalk, road workers in reflective vests and hard hats stand beside orange traffic cones and a white vehicle as the cable car rushes past them. The young woman is then seen alone in the middle of the steep street, bent forward and breathing hard, with the tracks stretching behind her. She straightens and thrusts one arm upward, calling toward the cable car, her face urgent. Farther up the hill, the cable car continues away near the crest.\n\nAt the rear of the cable car, the muscular man stands on the outside step holding the Oikos bottle out, with the San Francisco skyline and the tall, triangular Transamerica Pyramid behind him. He gestures broadly as if returning the bottle. The young woman stands far below near the top of the hill with both arms raised, and a small bottle arcs through the sky above her against the pale blue background and the Golden Gate Bridge. For a moment the road is empty except for the tracks and the bridge beyond. Then the woman pops back into view, hair flying upward from the movement, smiling with relief as she holds up the recovered Oikos bottle.\n\nShe drinks from the Oikos protein shake bottle while standing on the sunny hillside street. Large bold white text appears to her left: “PROTEIN PACKED.” Fine print along the bottom says that protein and exercise help fuel strong muscles as part of a balanced diet and notes that it is not a low-calorie food.\n\nThe commercial ends on a black product display. White block text on the left reads, “STRONGER MAKES EVERYTHING BETTER.” On the right are three Oikos products arranged together: an Oikos Pro cup labeled “20g protein” with berries pictured on the label, a large Oikos Triple Zero blended Greek yogurt tub labeled “18g protein” and “Plain,” and an Oikos Protein Shake bottle labeled “30g protein.” The same small nutrition disclaimer remains along the bottom.",
+  "api_metadata": {
+    "response_id": "resp_0cb8ecad37275188006a385771491081a3a92606920b1b0c24",
+    "usage": {
+      "input_tokens": 17935,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1448,
+      "output_tokens_details": {
+        "reasoning_tokens": 500
+      },
+      "total_tokens": 19383
+    }
+  },
+  "duration_seconds": 42.32,
+  "created_at": "2026-06-21T21:28:51Z",
+  "error": null
+}

@@ -1,0 +1,563 @@
+{
+  "commercial_id": "tv_com_1950_57",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1950_57",
+    "audio_file": "corpus/03_audio/tv_com_1950_57.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1950_57.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1950_57.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Mobil Gasoline, from the 1950s. This fuel product is used to power internal combustion engines in vehicles for transportation.",
+    "row": {
+      "Decade": "1950",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1950_57",
+      "Product Name": "Mobil Gasoline",
+      "Description": "This is a commercial for Mobil Gasoline, from the 1950s. This fuel product is used to power internal combustion engines in vehicles for transportation."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "fad86429507969fb20c151c2ab33282a2f0d48a044e8b8b0ed61448e5692fdfb",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1950_57.wav",
+    "path": "corpus/03_audio/tv_com_1950_57.wav",
+    "format": "wav",
+    "sha256": "8e2ec5e530a2cc856575d50e8e916c90c27bfc2719a91b6ba9c4909a9ffafb03",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1950_57.json",
+    "path": "corpus/04_transcripts/tv_com_1950_57.json",
+    "sha256": "a79e572f6f71a5e897de38753af98bdef0a936b54d8902a8b3dbc8b5d7082551",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1950_57.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1950_57.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1950_57.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Mobil Oil Gasoline",
+      "decade": 1950,
+      "sequence": 57,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0057",
+      "url": "https://youtu.be/-S0XTBFvw64",
+      "source_start": "0:00:00",
+      "source_end": "0:00:59"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 59.025125,
+      "text_sha256": "db6d5b76ea70e6c50acf4fd7ed1b034f9795174fb13a3edf8b3f025aab3580ed"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "84b118abf79a880c578a0027600c6dcd24401bfc98ee44ece8d8dcb65ea71a45",
+      "segment_count_available": 11,
+      "segment_count_inserted": 11,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 41.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 43.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 44.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 44.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 44.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 45.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 45.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 46.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 48.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 49.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 49.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 50.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 50.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 51.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 51.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 51.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 51.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 52.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 52.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 52.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 52.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 53.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 53.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 53.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 53.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 54.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 54.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 54.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 54.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 55.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 55.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 55.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 56.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 56.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 57.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1950_57/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 57.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 65,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial begins in dark, low-contrast black and white, then moves into a close view of the side of a car around the fuel-filler area. Only a person’s hand and forearm are visible, reaching in from the upper left. The hand opens a small square fuel door set into the car’s body and works around the round gas cap behind it. A gasoline pump nozzle is brought toward the opening, and the hand positions it at the filler. The car’s shiny side panel fills most of the picture, with the open fuel door forming a dark square near the center.\n\nLarge white capital letters then appear over this close-up: “DON’T MAKE THE OCTANE MISTAKE.” The words are bold and centered, with “OCTANE” and “MISTAKE” especially large. A dark rectangular opening forms in the middle of the text, like a doorway, and through it a mechanical display comes into view.\n\nInside the dark opening is a freestanding automobile engine on a pedestal against a black background. The engine is presented like a demonstration model, bright metal parts catching the light. It has a rectangular engine block, round and cylindrical components on the front, pipes and linkages along the sides, and a fan-like part visible on the left. Behind it, the word “Mobil” appears in very large white letters, filling the upper background. The engine remains centered, with the brand name towering behind it.\n\nThe engine is then shown by itself against the dark background. Its inner structure becomes more visible, as if the outer surface has been partly opened or made transparent. Mechanical parts inside the block can be seen, including vertical piston-like shapes and connecting elements. The word “OCTANE” appears above the engine in bold white capital letters. A small number of bright white circular dots appear over limited parts of the engine, suggesting only a few measured points or needs.\n\nThe label changes to “MEGATANE,” also in bold white capitals above the engine. Now many more bright white dots appear scattered across the engine, covering the front and sides in a much denser pattern. The commercial alternates the comparison visually: under “OCTANE,” only a few dots are visible; under “MEGATANE,” numerous dots light up all over the engine. The engine remains the central object, with the dots acting like markers on its many working areas.\n\nA full-screen text card follows on a plain dark background. In large white block letters it first reads, “THE HIGHER THE MEGATANE RATING.” More lines appear beneath it until the complete message reads, “THE HIGHER THE MEGATANE RATING THE BETTER YOUR MOTOR WILL RUN.” Several key words are underlined, including “HIGHER” and “BETTER,” making the comparison visually emphatic.\n\nThe text gives way to a road scene. A light-colored 1950s car occupies the right side of the picture, seen from low beside its rear quarter and wheel as it travels along a paved multi-lane road. The road stretches ahead into the distance with a center lane marking, utility poles, trees, and low roadside buildings or houses. The car’s whitewall tire and rounded body side are prominent. The road surface and passing scenery convey steady forward motion.\n\nThe view shifts to the car farther ahead on the road, seen from behind as it drives away. A large tree stands to the right near a house or roadside structure, and smaller trees line the background. The car continues into the distance, then the road scene visually transitions toward a Mobil service station sign. The rectangular sign with rounded corners reads “Mobil” in large dark letters on a light background, mounted on a pole. Beneath the sign is the winged Pegasus emblem, small but recognizable in silhouette.\n\nThe Mobil sign fills the center, then gives way to the service station grounds. A low station building appears with “Mobil Service” signage along the front. A wide flat canopy projects over the driveway area. Under and near the canopy are several tall gasoline pumps, boxy and upright, with hoses hanging on their sides. A freestanding board or display stands near the pumps on the left, filled with rows of small rectangular areas, though the writing is not clear.\n\nThe commercial moves along the row of pumps. Two large pumps dominate the foreground, each with a rectangular face, small display windows near the top, and a Mobil logo panel near the lower front. Their tops carry product labels; one clearly reads “Mobil Premium.” The pumps are arranged side by side on the station island, with the station building and windows behind them. The scene is outdoors in bright daylight, but rendered in soft black-and-white contrast.\n\nThe view settles on a single Mobil Premium gasoline pump. The pump’s top sign reads “Mobil Premium,” and below it are small rectangular meter windows and round or button-like details. A Mobil logo panel is mounted near the lower front. The pump stands tall and clean-lined, with the station building partially visible behind it.\n\nFinally, the front face of the pump changes into a dark display panel, as if opening a window into the product’s effect inside the engine. The large word “Mobil” remains at the top of the pump. Within the dark rectangular area on the pump face, the same engine model appears again, now covered with many glowing white dots like the earlier “MEGATANE” demonstration. The engine fills the pump’s display area, visually linking Mobil gasoline with the many highlighted engine needs.",
+  "api_metadata": {
+    "response_id": "resp_08cfa0220f821871006a38393a014c8192946434d309ab21e4",
+    "usage": {
+      "input_tokens": 18286,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1629,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 19915
+    }
+  },
+  "duration_seconds": 49.508,
+  "created_at": "2026-06-21T19:20:03Z",
+  "error": null
+}

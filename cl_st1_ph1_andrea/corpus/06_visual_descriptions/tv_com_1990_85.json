@@ -1,0 +1,402 @@
+{
+  "commercial_id": "tv_com_1990_85",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_85",
+    "audio_file": "corpus/03_audio/tv_com_1990_85.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_85.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_85.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Duracell Copper Top batteries, from 1991. This battery product is used for powering electronic devices.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Retail (Fashion & Consumer Goods) & Services",
+      "Commercial ID": "tv_com_1990_85",
+      "Product Name": "Duracell",
+      "Description": "This is a commercial for Duracell Copper Top batteries, from 1991. This battery product is used for powering electronic devices."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "79f8947b2ee95d55da2a41aae1e5874d16e1f5db7c8c0294d1f9d897e98dc1f3",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_85.wav",
+    "path": "corpus/03_audio/tv_com_1990_85.wav",
+    "format": "wav",
+    "sha256": "a3014490e4656ed4e8e7c7998f53d49d4a8ac6f22d523c32b34da937f16b93ff",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_85.json",
+    "path": "corpus/04_transcripts/tv_com_1990_85.json",
+    "sha256": "8ec85c8c29c7574a1ba72b4f31306959715794ca121d29b44bde27d0d78f8d8c",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_85.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_85.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_85.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1991 Duracell Race ",
+      "decade": 1990,
+      "sequence": 85,
+      "category": "Retail (Fashion/ Consumer Goods) &  Services",
+      "video_id": "video_0408",
+      "url": "https://youtu.be/PI9vsH5kio0",
+      "source_start": "0:00:00",
+      "source_end": "0:00:15"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 15.0233125,
+      "text_sha256": "83a8f9cd42924a39178a9bcdffe0e864a0240343967167f472ec93cfce962cec"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "648d4fb15bd210833d465bdffb155798ad2b81422a4b1a69600ae8f59e8f7a1f",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_85/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 42,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens in a blue, rainy-looking city scene on a pedestrian bridge. The wooden walkway is shiny with water, and the bridge’s suspension cables and lattice railing lead toward a hazy skyline. Two tall rectangular towers stand in the distance. From the left, small human-like toy runners enter the scene, jogging across the bridge. They have exaggerated cartoon faces, jointed limbs, and glossy plastic bodies. Each wears running clothes and has a large cylindrical battery strapped to his back like a backpack, making the race feel like a battery-powered footrace.\n\nMore runners crowd in from the left, moving together across the wet bridge. One runner in a black outfit, with a dark battery and copper-coloured top on his back, pulls ahead. Around him are other caricatured athletes in bright racing outfits: one in yellow with a red cap or red hair, another in a visor, and others in striped or colourful singlets. Their faces are sculpted into broad grins or determined expressions as they pump their arms and legs.\n\nThe view tightens on three runners side by side. The figures are male-presenting toy athletes with exaggerated jaws and smiles. Their race bibs show partial numbers, including “162” on the yellow runner and “168” on the central runner. The central runner, with swept-back brown hair and a black racing outfit, looks confident and cheerful. To his right, another runner wears a white visor and a black-and-yellow outfit. The yellow runner at the front suddenly lurches out of place and drops downward, breaking the smooth rhythm of the pack.\n\nAt ground level, the fallen yellow runner lands in a puddle on the wet pavement. Other runners’ legs and white shoes pass close by as he lies on his side. Water splashes up dramatically around him, partially obscuring his body. His cylindrical battery is visible on his back, its end facing outward, while he remains down in the water as the race continues past him.\n\nThe scene shifts to a narrow city street lined with tall stone buildings. Steam billows from the lower left, as if from a street vent or manhole. Several police figures stand in the street: one uniformed officer faces forward with hands on hips, another officer appears to the left, and a mounted officer on a dark horse waits farther back. The toy runners emerge through the steam at street level, still moving forward between the buildings. A small white disclaimer appears along the bottom of the screen: “Improvement varies depending on battery size and usage.” A sign high on the right reads “WALL,” suggesting a Wall Street setting.\n\nThe group of runners pushes through the steamy street. In the foreground, a runner dressed in a patriotic red, white, and blue outfit, with a spiked crown-like headpiece and dark sunglasses, stands or moves at the left edge. Nearby, a bearded runner with a headband looks worried or startled, his eyes wide and mouth slightly open. The street remains crowded with the stationary police figures and the mounted officer in the background, while the race continues past them.\n\nThe focus returns to the leading runner. He is shown from the side in close view, jogging smoothly with a relaxed smile. A black Duracell battery with a copper top is clearly strapped across his back, the white “DURACELL” name visible on the side. Behind him, the runner in the white visor follows, slightly farther back. The lead runner’s arms pump steadily, and his posture stays upright and confident.\n\nThe setting changes again to a grassy foreground with the Statue of Liberty blurred in the blue-grey distance. The lead runner moves across the grass, still wearing the Duracell battery on his back. He slows and turns so his back faces the viewer, the copper-topped battery centered between his shoulders. The Statue of Liberty remains a soft silhouette in the background, arm raised.\n\nThe battery on the runner’s back visually transforms into a large product image. A close, oversized Duracell battery fills the center of the screen against the grassy foreground and distant statue. First the black body with the white “DURACELL” lettering is prominent, then the full copper-and-black battery is shown horizontally, with the copper top on the left and the black body on the right. At the bottom, large white on-screen text reads: “You Can’t Top The Copper Top.”",
+  "api_metadata": {
+    "response_id": "resp_0c7b27f095b2f2d6006a384cc8d04081a19e32addd6e109c93",
+    "usage": {
+      "input_tokens": 12211,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1404,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 13615
+    }
+  },
+  "duration_seconds": 41.665,
+  "created_at": "2026-06-21T20:43:26Z",
+  "error": null
+}

@@ -1,0 +1,332 @@
+{
+  "commercial_id": "tv_com_1980_90",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_90",
+    "audio_file": "corpus/03_audio/tv_com_1980_90.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_90.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_90.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Maytag Refrigerator, from 1989. This home appliance is used for storing and preserving food.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_1980_90",
+      "Product Name": "Maytag Refrigerator",
+      "Description": "This is a commercial for Maytag Refrigerator, from 1989. This home appliance is used for storing and preserving food."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "a3cb41572161ace10600e79d7192ffab7e201754f25711fb5e45cd8bc3ca596c",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_90.wav",
+    "path": "corpus/03_audio/tv_com_1980_90.wav",
+    "format": "wav",
+    "sha256": "d7154c1f5323e5c132e1f5fc28e39db70032e510b86b8db377fbdef37eab4284",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_90.json",
+    "path": "corpus/04_transcripts/tv_com_1980_90.json",
+    "sha256": "47d3a774fc6a751332e3dcd36fdc54e361cb80713a552276960229d99068646e",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_90.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_90.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_90.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1989 Maytag Refrigerator",
+      "decade": 1980,
+      "sequence": 90,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0302",
+      "url": "https://youtu.be/pNpICBhFDcE",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "749751fff6f08053a42849dc6e935c1d389a25c3c9f1a12f40c079ff77e17998"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "1acbc6e5744ae1f6967bd3f35e534427a652930a4beaf687bfc7985ada840403",
+      "segment_count_available": 8,
+      "segment_count_inserted": 8,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_90/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 32,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens in a stylized nighttime landscape under a deep blue sky with dark clouds and a low line of mountains on the horizon. Across a wide, misty plain stand countless pale rectangular refrigerators, arranged like rows of upright monuments stretching far into the distance. Some are close enough to show simple door divisions, while many more appear as small white blocks fading into the haze. The scene has a cool, blue, almost dreamlike look, with fog drifting low around the appliances.\n\nAs the view moves through this field, larger refrigerators pass in the foreground, their beige or off-white surfaces briefly filling the sides of the image. One tall appliance slides very close on the right, revealing dark vertical handles before it passes out of view. The mass of older-looking refrigerators remains behind it, still spread across the misty ground beneath the dark sky.\n\nA single new refrigerator then stands alone on the open plain, centered against the mountain horizon. It is a tall, light-colored side-by-side model with two full-length doors and dark vertical handles. The doors begin to open outward. First a narrow strip of bright interior light appears, then both doors swing wider to reveal a fully stocked refrigerator and freezer. The inside is brightly lit and organized with shelves, bins, and door compartments holding bottles, cartons, jars, packaged foods, and other groceries. The left side has narrower compartments, while the right side has wider shelves and storage racks. The open doors frame the food display, making the refrigerator the only bright, detailed object in the otherwise dark blue landscape.\n\nThe scene shifts to a modern-looking Maytag dealer building set in the same nighttime environment. The building is low, angular, and white, with strong blue lighting outlining its edges and open showroom windows. A Maytag sign is visible near the roofline. Inside the lit showroom, appliances and counters can be seen, along with several people. Figures in dark clothing stand or walk near the entrance and counter; one person appears beside another near the front, while other people are visible behind the counter area. Small white disclaimer text appears along the bottom of the screen: “Limited to sealed refrigeration system and original purchase price. Limited time offer.”\n\nThe dealership remains in view as the people continue standing and moving in small groups near the entrance and showroom counter. The blue glow around the building contrasts with the dark sky and mountain silhouettes behind it, making the store look like a bright island in the open landscape.\n\nThe commercial returns to the refrigerator standing alone on the misty plain. Its doors are open again, and the interior shelves remain brightly lit and packed with groceries. The final view shows the refrigerator turned slightly at an angle, emphasizing its side-by-side design and the dark ice-and-water dispenser area on the left door. Large white capital letters appear across the bottom: “GUARANTEED UNTIL 2000 A.D.” The refrigerator remains upright and prominent against the dark blue sky and distant mountains.",
+  "api_metadata": {
+    "response_id": "resp_04b32a3079883d10006a3848ad6d388192959f8d0e575bb733",
+    "usage": {
+      "input_tokens": 9736,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1031,
+      "output_tokens_details": {
+        "reasoning_tokens": 437
+      },
+      "total_tokens": 10767
+    }
+  },
+  "duration_seconds": 29.837,
+  "created_at": "2026-06-21T20:25:44Z",
+  "error": null
+}

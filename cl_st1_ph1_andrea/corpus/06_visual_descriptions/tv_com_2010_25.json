@@ -1,0 +1,129 @@
+{
+  "commercial_id": "tv_com_2010_25",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_25",
+    "audio_file": "corpus/03_audio/tv_com_2010_25.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_25.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_25.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Verizon Unlimited Wireless, from 2017. This wireless service is used for mobile communication and data access.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Technology, Communication & Electronics",
+      "Commercial ID": "tv_com_2010_25",
+      "Product Name": "Verizon Unlimited Wireless",
+      "Description": "This is a commercial for Verizon Unlimited Wireless, from 2017. This wireless service is used for mobile communication and data access."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "1ba4e17959b8649290e42b62577d5f10feacf7ab96ce90c319431581f97929ed",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_25.wav",
+    "path": "corpus/03_audio/tv_com_2010_25.wav",
+    "format": "wav",
+    "sha256": "e908d59e0c9cdd3a93994742986ef635b21c1d27ba04d26e0099a27ee87f7463",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_25.json",
+    "path": "corpus/04_transcripts/tv_com_2010_25.json",
+    "sha256": "7476c030a4da9fc3d7d38c9adbbdba09dd52eb688355169fb548e16ebba7b5f9",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_25.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_25.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_25.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2017 Verizon Unlimited Wireless Game On",
+      "decade": 2010,
+      "sequence": 25,
+      "category": "Technology, Communication & Eletronics",
+      "video_id": "video_0587",
+      "url": "https://youtu.be/eWGiB8plY-g",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "63b306ac857396d50a78b68ff3248baa1d71b014bcc8b3d7c05fe43a614319f0"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "46d677bd38e3b5fe94a634873a347f02deadaf7f464cb904d54d7c287a9a726d",
+      "segment_count_available": 7,
+      "segment_count_inserted": 7,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_25/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_25/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_25/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 3,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A dark, spacious industrial-looking interior fills the screen, like a warehouse or large studio with high ceilings, metal beams, and dim window panels along the sides. In the center stands a large three-dimensional Verizon logo: the word “verizon” in bright white lowercase letters, with a glowing red check mark immediately to the right. The letters sit on a glossy black floor that reflects the white wordmark and the red check mark beneath it. Overhead, faint rectangular ceiling lights create a cool, dramatic glow, while the background remains mostly shadowed.\n\nThe same Verizon branding remains prominent and steady as the commercial continues. The logo dominates the middle of the space, with the red check mark on the right adding the only strong color against the dark gray and black surroundings. There are no people, phones, or other products visible; the service is represented visually through the large brand mark and the polished, high-contrast setting. Near the end, the Verizon logo is still centered in the same dark warehouse-like environment, its reflection stretching across the shiny floor, reinforcing the brand name and check mark as the final visual focus.",
+  "api_metadata": {
+    "response_id": "resp_05b4cf46c257ab90006a38536d41ac81928d1d12617b6b587e",
+    "usage": {
+      "input_tokens": 2149,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 2433
+    }
+  },
+  "duration_seconds": 9.423,
+  "created_at": "2026-06-21T21:11:16Z",
+  "error": null
+}

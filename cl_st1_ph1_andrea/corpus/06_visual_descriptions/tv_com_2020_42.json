@@ -1,0 +1,402 @@
+{
+  "commercial_id": "tv_com_2020_42",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2020_42",
+    "audio_file": "corpus/03_audio/tv_com_2020_42.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2020_42.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2020_42.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Ritz Original Crackers, from 2020. This snack product is used for eating as a snack.",
+    "row": {
+      "Decade": "2020",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_2020_42",
+      "Product Name": "Ritz Original Crackers",
+      "Description": "This is a commercial for Ritz Original Crackers, from 2020. This snack product is used for eating as a snack."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "0a68a6b0f0a317260c28c7a2a8489d1ca9a8f308033d82bc11e21040e1ef84de",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2020_42.wav",
+    "path": "corpus/03_audio/tv_com_2020_42.wav",
+    "format": "wav",
+    "sha256": "748553542ea28d477518c6823aed6197c485871a1b6bf45b5ecb82dcdaaf4fd2",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2020_42.json",
+    "path": "corpus/04_transcripts/tv_com_2020_42.json",
+    "sha256": "5b81a8f167043c9870bc6f8d84b4872439ab43f9b5859e71d7530f6ce4e2c9d3",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2020_42.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_42.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_42.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2020 Ritz Original Crackers Make Room",
+      "decade": 2020,
+      "sequence": 42,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0661",
+      "url": "https://youtu.be/Y6PA-o6RT-g",
+      "source_start": "0:00:00",
+      "source_end": "0:00:15"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 15.0233125,
+      "text_sha256": "20d56895197c338026323ab581704ac3ba7b1b57a7976b47ab99708d74e9e420"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "ab5dbae1b569fad12102a1fa1e83242d94d2a6620e8ddcac3ad2ba4e55a3c4c6",
+      "segment_count_available": 2,
+      "segment_count_inserted": 2,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_42/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 42,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens on a flat, bright red background as the Ritz logo assembles: a dark blue circle with a yellow crescent-like curve underneath, then tall yellow letters spelling “RITZ” across it. The look is bold and graphic, using the brand’s red, yellow, and blue colors.\n\nThe scene shifts into a clean, colorful product display. A single round golden cracker, with scalloped edges and small holes, appears against red. Beside it, on a yellow panel, another Ritz cracker is topped with a layer of white spread, a mound of brown topping, and a green jalapeño slice. On a dark blue panel, a third cracker is half-covered in white icing or dip and bright rainbow sprinkles. The crackers sit side by side like simple, playful serving ideas.\n\nA narrow strip of the cracker graphics gives way to a real outdoor sidewalk scene. Two very young children, both toddler or preschool age, run toward each other with arms outstretched. One child has light hair, a pale shirt, and blue jeans, seen mostly from behind; the other wears a light blue shirt and dark shorts and faces forward. Parked cars line the curb on the left, and the concrete sidewalk stretches into the distance. The children meet in the middle and wrap their arms around each other in a hug. Small yellow dots appear over the scene, turning the hug into part of the commercial’s bright graphic design.\n\nA red-and-yellow cracker-shaped circular border closes around the hugging children and opens onto a school cafeteria. Children sit at long lunch tables in a bright room with white walls and dark green panels. In the foreground, several school-age children in white shirts talk and eat. A girl with long dark hair, wearing a navy sweater over a white collared shirt, walks between two seated boys carrying a lunch tray. On the tray are a green apple, a small milk carton with an orange straw, and other lunch items including round crackers. The boy on her left, blond and in a white shirt, looks toward her while holding food; the boy on her right, also in a white shirt, turns toward her as if making space. She lowers the tray onto the table and sits or settles in, looking calm and slightly tentative, then begins to smile.\n\nHer face is then framed by a dark blue circular graphic surrounded by six Ritz crackers like a ring. The background is solid red, and the cafeteria remains visible only inside the center circle. As she smiles, the crackers around the circle emphasize the idea of people gathered around a shared center.\n\nThe commercial returns to a red graphic background filled with close-up crackers and toppings. Large plain Ritz crackers and topped Ritz crackers slide into a symmetrical arrangement. One topped cracker has white sauce and red bits; another has brown topping, white spread, and a jalapeño slice. Tiny round yellow crumbs or mini cracker dots appear between them. The arrangement expands into a blue, scalloped circular shape with crackers orbiting around a smaller center image.\n\nInside that center image is a bright cartoon scene from SpongeBob SquarePants. SpongeBob, the yellow square sponge character, is squeezed in a group hug with several other animated characters. Mr. Krabs’ red claws, Squidward’s long pale-blue face, Sandy in her white astronaut-like suit and helmet, and Patrick the pink starfish all crowd together around SpongeBob. Patrick smiles broadly with eyes half closed, Sandy grins from the side, and Squidward looks more reserved in the middle. The group is packed tightly together, visually echoing the theme of making room for one more.\n\nThe cartoon is replaced by a single Ritz cracker centered on a blue background, then by a topped cracker centered in the same way: golden cracker base, white spread, brown topping, and a green jalapeño slice. A small white copyright line appears near the bottom, but it is too small to read clearly.\n\nA new live-action scene appears at sunset or golden hour on what looks like a rooftop or outdoor gathering space. A diverse group of young adults crowd close together for a selfie. A smiling Black man in a tan jacket is centered in front, arm extended toward the viewer as if holding the camera. Around him, friends lean in from all sides: a bearded man on the left in a gray shirt opens his mouth in a playful expression, a woman with short dark hair and red lipstick smiles in front, and several others smile or laugh in the warm backlight. The sun glows behind them, and city buildings are faintly visible in the distance. They all press together to fit into the picture.\n\nA large yellow Ritz-cracker-shaped graphic with a dark blue center wipes over the group, returning to the brand’s simple color palette. A single golden Ritz cracker appears centered on a red background, clearly showing its scalloped edge, browned surface, and seven small holes. The final red screen displays the Ritz logo again in yellow letters over the blue circle, and then a smaller Ritz logo appears at the left with the beginning of a yellow lowercase “a” to its right, while the visual presentation remains dominated by the red brand background.",
+  "api_metadata": {
+    "response_id": "resp_0e3ada24e2daf11a006a38583a63108192a9f5603613d576da",
+    "usage": {
+      "input_tokens": 9743,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1558,
+      "output_tokens_details": {
+        "reasoning_tokens": 515
+      },
+      "total_tokens": 11301
+    }
+  },
+  "duration_seconds": 45.564,
+  "created_at": "2026-06-21T21:32:15Z",
+  "error": null
+}

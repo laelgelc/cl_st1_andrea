@@ -1,0 +1,171 @@
+{
+  "commercial_id": "tv_com_1980_48",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_48",
+    "audio_file": "corpus/03_audio/tv_com_1980_48.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_48.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_48.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Meissners Travel Service, from 1989. This travel service is used for booking trips.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1980_48",
+      "Product Name": "Meissners Travel Service",
+      "Description": "This is a commercial for Meissners Travel Service, from 1989. This travel service is used for booking trips."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "fa562d60b989b075a337afddcf6d33f6fd8e5e9bf20a18e1a15eee5fa505fcaf",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_48.wav",
+    "path": "corpus/03_audio/tv_com_1980_48.wav",
+    "format": "wav",
+    "sha256": "2e2521a2ba7a40c164e5bafc5c929bed04de54d4bd0a4587fbb6ab359286f0a6",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_48.json",
+    "path": "corpus/04_transcripts/tv_com_1980_48.json",
+    "sha256": "7f5ad395e28997dc90e1da6095c6a2010cf09287392b193e4d7f08205966a8c1",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_48.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_48.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_48.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1989 Meissners Travel Service",
+      "decade": 1980,
+      "sequence": 48,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0268",
+      "url": "https://youtu.be/B4ZE4GDhGq8",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "ba4099639d80d27f25b7995acc7b67c59981512467d5c9e84f78bc31639b0537"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "24b987c5bd2079f2f487af5dd4ca73239a40e5b7e9423c15d39706c5e312f5fa",
+      "segment_count_available": 8,
+      "segment_count_inserted": 8,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_48/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 9,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens on a graphic layout with a blue-and-gray vertically striped background. At the upper left is a small white airplane symbol followed by large white text reading “Meissner’s,” with “Travel Service” underneath. Around the logo are overlapping, postcard-like vacation photos: a beach scene with several people sitting near the water, a formal table set with flowers, and a small outdoor image of people walking through green scenery with mountains in the distance.\n\nThe same Meissner’s Travel Service logo remains in place while the travel photos change and overlap in a collage. A pool or seaside image shows people relaxing in water. Another photo shows two figures in silhouette, seated close together under a shaded structure against a bright yellow background, suggesting a romantic or leisure setting. A smaller image at the lower right shows a person climbing or pulling themselves up on a rope or sail-like surface over blue water.\n\nMore vacation images slide into the collage. A wide photo on the left shows a person riding a horse along a beach or shoreline, with pale sand and water behind them. At the upper right, the silhouetted couple remains visible in a warm-toned scene, and below it a sunset or harbor image shows sailboats and masts reflected near the water. The overall look is like a travel brochure spread, with multiple destinations and activities presented as photographic snapshots.\n\nThe collage continues with different leisure scenes. A large tilted photo at the upper right shows a smiling woman in a swimsuit riding or holding onto a water-skiing or water-sport device, surrounded by spray or pale blue water. A long photo across the left shows a low, dark silhouette of beach or shoreline at sunset. A smaller photo at the lower right shows two people standing close together on a beach in front of an orange-gold sunset, their bodies mostly in silhouette.\n\nThe commercial then switches to a blue background with a centered photograph of a storefront. The storefront sign reads “MEISSNER TRAVEL AGENCY,” with other shop signage visible above and around it. Beneath the photo, large white all-capital text reads “DOWNTOWN KITCHENER,” and below that, “157 KING STREET W.” The image presents the travel agency as a physical street-level office with a glass entrance and display windows.\n\nA second blue-background location card appears with another storefront photograph. The sign above the glass-fronted shop reads “MEISSNER TRAVEL.” Below the photo, large white text reads “WESTMOUNT PLACE,” with “WATERLOO” beneath it. The office interior is faintly visible through the windows, with posters and displays near the entrance.\n\nThe final location card shows a Meissner Travel storefront inside a mall. The red-orange sign above the glass doors reads “MEISSNER TRAVEL.” The office appears brightly lit inside, with travel posters and display materials visible through the windows. Beneath the photo, large white text reads “CONESTOGA MALL,” with “WATERLOO” below, completing the visual listing of the travel service’s locations.",
+  "api_metadata": {
+    "response_id": "resp_0e8fcaf13d222bec006a38475693b4819e8f7ec3778435b68e",
+    "usage": {
+      "input_tokens": 3897,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 774,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 4671
+    }
+  },
+  "duration_seconds": 21.351,
+  "created_at": "2026-06-21T20:19:51Z",
+  "error": null
+}

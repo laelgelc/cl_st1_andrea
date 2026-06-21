@@ -1,0 +1,374 @@
+{
+  "commercial_id": "tv_com_2010_72",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_72",
+    "audio_file": "corpus/03_audio/tv_com_2010_72.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_72.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_72.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Halo Top Ice Cream, from 2017. This frozen dessert product is used for eating as a low-calorie ice cream.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_2010_72",
+      "Product Name": "Halo Top Ice Cream",
+      "Description": "This is a commercial for Halo Top Ice Cream, from 2017. This frozen dessert product is used for eating as a low-calorie ice cream."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "bd38bdd215a84339dc5b129958c26ad30775ad0c4cd10118d36e7ee97250b7a6",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_72.wav",
+    "path": "corpus/03_audio/tv_com_2010_72.wav",
+    "format": "wav",
+    "sha256": "67607382dc957c9893c759f6f94a9ec6dd125fbeea8c09c44bce70e1cefedd8b",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_72.json",
+    "path": "corpus/04_transcripts/tv_com_2010_72.json",
+    "sha256": "bafb0038027fab06a9613dc712c847a26cd746eec8b660c07a49c1709bc072b2",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_72.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_72.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_72.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2017 Halo Top Ice Cream Sin-free ice cream",
+      "decade": 2010,
+      "sequence": 72,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0460",
+      "url": "https://youtu.be/a8384qGe8nk",
+      "source_start": "0:23:34",
+      "source_end": "0:24:03"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "2966e9027d21d4ed4e5fa01599d48190e34178378a2148f20166d199285576a8"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "fef2c0038c3692edec9ff76035f27be26fc0120beee31e9d2fc9d54aec49c159",
+      "segment_count_available": 7,
+      "segment_count_inserted": 7,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_72/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 38,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A bright magenta screen appears first with the white hashtag “#KimsDataStash” centered on it. The scene then shifts to a fantasy sky setting: a red-faced, horned, devil-like man in a heavy black fur coat and dark clothing walks along a narrow white cloud path, surrounded by pastel clouds and soft rays of light. He moves toward a lavender, heavenly-looking room decorated with painted cloud windows, white fluffy palm-like trees, rounded arches, and pale pink chairs. From inside the room, the backs of white feathered wings and a person’s head are visible in the foreground as the door begins to open.\n\nThe horned man bursts through the pale purple door holding a small ice cream pint in a black-gloved hand. He has bright red skin, small dark horns curving upward from his forehead, blond hair swept to one side, a pale mustache, and wide, intense eyes. His outfit is theatrical and villainous: a black furry shoulder cape over dark leather-like clothing, with gloves and a scarf or tie at the neck. He steps into the pastel room, thrusting the pint forward as if confronting the angelic figure seated inside. A close view of the pint shows a white container with colorful sprinkles, a gold lid, and the brand name “HALO TOP” around the top. The flavor reads “birthday cake,” and a large purple shape on the front displays “280,” with “protein” visible near the bottom.\n\nAcross from him sits a young adult man dressed as an angel, wearing a white suit, white vest, pale pink tie, and large white feathered wings. He has short light brown hair and a clean-cut appearance. He sits at a round white table in the pastel ice cream-parlor-like room, hands clasped, looking up at the horned man with an amused, pleased expression. Behind him, oversized decorative ice cream cones in soft yellow, pink, and mint colors hang on the lavender wall. On the table are several small cups or pints of ice cream and tasting utensils, arranged neatly near the angel.\n\nThe horned man stands beside the table and continues holding up the Halo Top pint while facing the angel. The room’s background includes cloud-painted window panels, a white counter, a white toaster-like appliance, a golden decorative object, and a white harp near the wall. The devil-like man’s expressions shift from surprise to irritation and disbelief as he gestures with the pint. The angel remains seated, calm and delighted, looking up at him with a smile as though enjoying the product or the exchange.\n\nThe confrontation becomes more physical. The horned man moves behind the angel’s chair, looming close over his shoulder while still holding the pint. To the left, the white harp suddenly breaks apart or vanishes into a spray of sparkling dust, leaving glitter-like particles in the air. The angel recoils and turns his head sharply, eyes wide and mouth open, startled by what is happening behind him. The devil-like man briefly crouches or ducks near the back wall under the arch, partly hidden behind the angel and the table.\n\nThe angel sits at the round table surrounded by multiple Halo Top containers and small sample cups, while the horned man emerges from behind him and reaches across the tabletop. He gathers up the ice cream pints, taking them from the angel’s space. The angel stays seated, twisting around to watch, his wings spread behind him and his face still surprised. The horned man then heads back toward the open door, clutching a Halo Top pint against his chest. He turns to glance back over his shoulder, framed by the lavender room, cloud murals, white decorative trees, pink chairs, and the open doorway leading back into the cloudy sky.",
+  "api_metadata": {
+    "response_id": "resp_0e832ebc2d7487c8006a385524ad68819fae3c7e43bd398f7f",
+    "usage": {
+      "input_tokens": 9048,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1278,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 10326
+    }
+  },
+  "duration_seconds": 35.076,
+  "created_at": "2026-06-21T21:19:00Z",
+  "error": null
+}

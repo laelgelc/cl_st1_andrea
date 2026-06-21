@@ -1,0 +1,409 @@
+{
+  "commercial_id": "tv_com_2020_2",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2020_2",
+    "audio_file": "corpus/03_audio/tv_com_2020_2.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2020_2.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2020_2.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Blueland, from 2020. This eco-friendly cleaning brand is used for household cleaning with reusable bottles and water-soluble tablets.",
+    "row": {
+      "Decade": "2020",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_2020_2",
+      "Product Name": "Blueland",
+      "Description": "This is a commercial for Blueland, from 2020. This eco-friendly cleaning brand is used for household cleaning with reusable bottles and water-soluble tablets."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "d9b544419849fed592a73335a36a8eabd5f1e49c908c1d1bffad2a297bc7a5cf",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2020_2.wav",
+    "path": "corpus/03_audio/tv_com_2020_2.wav",
+    "format": "wav",
+    "sha256": "8640e2c84ab5f66d5a0269385a0ecc59073d4e0aae1c559b5367a592e5c70e4e",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2020_2.json",
+    "path": "corpus/04_transcripts/tv_com_2020_2.json",
+    "sha256": "4406f39b700852cde8c9e3eb3f250fe97f8bd306e4617db0b21ee5c46d28209a",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2020_2.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_2.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2020_2.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2020 Blueland tablets Clean Anything featuring Kevin O'Leary",
+      "decade": 2020,
+      "sequence": 2,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0621",
+      "url": "https://youtu.be/YruKk0e0Fo8",
+      "source_start": "0:00:00",
+      "source_end": "0:00:43"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 43.0265625,
+      "text_sha256": "eee6493219d97fd81ed43490b69efd83c6284be571b9b37a99a0467df0acada3"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "135b84885630e5226e5f1fc4df210a18d934fc53cb71fe1fcbd5703421e90e05",
+      "segment_count_available": 13,
+      "segment_count_inserted": 13,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 29.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 30.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 30.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 31.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 36.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 37.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2020_2/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 38.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 43,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens on a bald, middle-aged to older white man in a black suit, white dress shirt, and black tie, speaking directly against a clean white background. His expression is intense and animated, with furrowed brows and a slightly open mouth. Text appears to his left identifying him as “KEVIN O’LEARY” with the subtitle “Entrepreneur & Investor.” He remains centered and formally dressed, the plain background emphasizing his face and businesslike appearance.\n\nThe scene widens to a bright white bathroom. Kevin is still in his suit, now wearing vivid pink rubber cleaning gloves. He stands beside an open white toilet, holding cleaning items, with a freestanding bathtub behind him, a blue towel hanging over its side, a toilet paper roll on the wall, and a bucket or bin of cleaning supplies on the floor. The bathroom is very white and polished, with a potted plant adding a small touch of green. He looks somewhat comically out of place in formal business clothes while positioned as if preparing to clean the toilet.\n\nA clear Blueland bottle sits on a white sink counter near a chrome faucet. A pink-gloved hand places or steadies the bottle, which has blue liquid at the bottom and a blue dissolving tablet visible inside. The tablet fizzes and breaks apart in the water, creating a bright blue layer along the bottom. Kevin appears again in the bathroom, smiling broadly as he holds a spray bottle with pink liquid in one gloved hand and a small blue cloth or cleaning item in the other, presenting the product enthusiastically beside the open toilet.\n\nThe cleaning demonstration moves to a gray metal safe. A yellowish cleaner bottle stands on top of it, and the safe door is smeared with reddish-brown grime. A hand in a suit sleeve uses a white cloth to wipe across the dirty surface. As the cloth moves from side to side, the stain disappears, leaving the safe door clean. The wider view reveals Kevin standing at the safe in a room with a white brick wall, a globe on a stand to the left, a lamp nearby, and a plant to the right. A spray bottle filled with yellow liquid sits on top of the safe. Kevin wipes the safe’s combination dial area, then opens the safe door, revealing shelves packed with small brown Blueland tablet packets and a few containers inside. He smiles toward the viewer while holding the cloth, as if showing off the result.\n\nNext, a framed portrait of Kevin is shown on an easel. The portrait depicts him in a suit, but the top of the head has been marked with a thick yellow painted streak resembling hair. A hand holds a clear spray bottle at the left edge and sprays mist across the portrait. A white cloth then wipes the painted area. With several passes, the yellow mark is removed, revealing the bald head in the portrait underneath. The portrait is shown in a gold frame, and Kevin stands beside it holding the spray bottle and cloth, looking pleased with the cleaned image.\n\nA close view shows Kevin’s hands holding a small brown Blueland packet in one hand and a round white tablet in the other. He has a wedding ring on one hand and a watch with a red strap on his wrist. The packet has a circular cutout or white circle on the front, and the tablet is displayed clearly as a compact cleaning refill.\n\nKevin is then shown reclining in the white bathtub, still wearing his black suit but now with a bright blue patterned shower cap on his head. The tub is filled not with water, but with piles of small brown tablet packets. He holds one packet up in one hand as if proudly presenting it. His black dress shoes rest inside the tub, and the surrounding bathroom remains neat, with folded towels stacked nearby and a chrome tub fixture behind him.\n\nThe product lineup appears on a white surface against a pale background. Large blue text at the top reads “BLUELAND,” and a dark rectangular button below it reads “SHOP NOW.” Four products stand in a row: three clear spray bottles with white trigger tops and colored accents—blue liquid, pink liquid, and yellow liquid—and a clear pump bottle, likely hand soap, with pale liquid inside. Small brown tablet packets and tablets sit in front of the bottles. A pink-gloved hand reaches in from the left and touches the blue bottle, drawing attention to the reusable bottle system.\n\nFinally, Kevin is back in the bathroom beside the open toilet. He stands over the bowl in his suit and pink gloves, holding the pink-liquid spray bottle and a blue cloth. He looks down toward the toilet seat and bowl, continuing the cleaning gag from earlier, with the bathtub, blue towel, plant, toilet paper roll, and bucket of supplies still arranged around him in the bright white bathroom.",
+  "api_metadata": {
+    "response_id": "resp_05e7f720e9bd61ed006a3856df3888819eac3601b0b7d25984",
+    "usage": {
+      "input_tokens": 10137,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1266,
+      "output_tokens_details": {
+        "reasoning_tokens": 298
+      },
+      "total_tokens": 11403
+    }
+  },
+  "duration_seconds": 32.423,
+  "created_at": "2026-06-21T21:26:20Z",
+  "error": null
+}

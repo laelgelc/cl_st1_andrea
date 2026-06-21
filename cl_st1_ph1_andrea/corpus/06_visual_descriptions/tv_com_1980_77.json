@@ -1,0 +1,115 @@
+{
+  "commercial_id": "tv_com_1980_77",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_77",
+    "audio_file": "corpus/03_audio/tv_com_1980_77.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_77.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_77.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for the Atari XE Game System, from 1987. This video game console is used for playing video games.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Technology, Communication & Electronics",
+      "Commercial ID": "tv_com_1980_77",
+      "Product Name": "Atari XE Game System",
+      "Description": "This is a commercial for the Atari XE Game System, from 1987. This video game console is used for playing video games."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "d77229b87a287cdef5630e3aaa27fbfb8392023d9aa260e8fafc9478efcc2dec",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_77.wav",
+    "path": "corpus/03_audio/tv_com_1980_77.wav",
+    "format": "wav",
+    "sha256": "2303edeebcf95922a02d677b9f702ebedfad24f8a35dba5a46c8fa50f215bec7",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_77.json",
+    "path": "corpus/04_transcripts/tv_com_1980_77.json",
+    "sha256": "761c65c8f1838386c4ef8de452cc784869d404ffa4c604aded29fb0f12d039d7",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_77.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_77.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_77.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1987 Atari XE Game System",
+      "decade": 1980,
+      "sequence": 77,
+      "category": "Technology, Communication & Electronics",
+      "video_id": "video_0293",
+      "url": "https://youtu.be/c6LAyQrNQlw",
+      "source_start": "0:06:49",
+      "source_end": "0:07:17"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 28.0265,
+      "text_sha256": "c09defc0b1ce580f43abd9093a359ee348b37a33563645cd3339c822470de644"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "0d505cbcc75cdaa31914cfaaafac93fe0c437c7900f5afbdfccdbe00e84633a2",
+      "segment_count_available": 14,
+      "segment_count_inserted": 14,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_77/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "fallback_brightest_frame"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 1,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A man in a light gray suit jacket, dark shirt, and tie sits in a dark studio-like setting beside a computer game setup. He has curly light-brown hair and faces slightly toward the viewer while raising one hand to point over his shoulder at a monitor behind him. The monitor displays a colorful, blocky computer game screen: a maze-like layout with blue and green platforms and corridors, suggesting an action or puzzle game. Beneath the monitor is a beige computer keyboard or console unit, and to the right sits a small game box or cartridge package with a bright illustrated label. A white on-screen caption at the bottom identifies the speaker as “President” and, in larger letters, “BRODERBUND.” The dark background keeps attention on the man, the game screen, and the Atari XE-style computer game equipment he is presenting.",
+  "api_metadata": {
+    "response_id": "resp_0f9c4db19ee22fa3006a38484ea404819db3be0ef40c4624d5",
+    "usage": {
+      "input_tokens": 1858,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 2186
+    }
+  },
+  "duration_seconds": 9.959,
+  "created_at": "2026-06-21T20:23:51Z",
+  "error": null
+}

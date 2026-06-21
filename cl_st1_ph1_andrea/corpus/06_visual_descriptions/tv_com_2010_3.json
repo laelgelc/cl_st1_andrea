@@ -1,0 +1,535 @@
+{
+  "commercial_id": "tv_com_2010_3",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_3",
+    "audio_file": "corpus/03_audio/tv_com_2010_3.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_3.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_3.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for SodaStream Soda Maker, from 2014. This beverage appliance is used for making carbonated drinks at home.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_2010_3",
+      "Product Name": "Sodastream Soda Maker",
+      "Description": "This is a commercial for SodaStream Soda Maker, from 2014. This beverage appliance is used for making carbonated drinks at home."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "01a970addf608d529017e1cd8bce9362babe3dd5bd20591c579073e8699a1e35",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_3.wav",
+    "path": "corpus/03_audio/tv_com_2010_3.wav",
+    "format": "wav",
+    "sha256": "665f5aa7a9c80ffed057406e3f1d6941609bb3c5c2cbc2a250c9de33ba8d4966",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_3.json",
+    "path": "corpus/04_transcripts/tv_com_2010_3.json",
+    "sha256": "18531538aa97376c2d9ccccc7a706242c464539939c319e3d78649e152651f1b",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_3.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_3.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_3.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2014 Sodastream Soda Maker featuring Scarlett Johansson",
+      "decade": 2010,
+      "sequence": 3,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0565",
+      "url": "https://youtu.be/ynnS0TdqFeI",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "78d1c6720f5afaa6d450ced40c556ac9fbd32329ad0083282c2dd6abaaaedd34"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "4b5fd8fd9b2b7fcd8fae7d86faa6a32241ea6acc0944af0f4138c5162ec52d53",
+      "segment_count_available": 9,
+      "segment_count_inserted": 9,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_3/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 61,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "At the beginning, a fair-skinned blonde woman with styled, wavy hair sits or stands close to a dressing-room vanity. She wears a white robe over a dark top, with polished makeup and small earrings. Behind her, a large mirror is bordered by round glowing bulbs, and the reflected background includes bright dressing-room items such as flowers, bottles, and containers in blue and other colors. She faces forward, speaking directly toward the viewer, her expression calm and confident. As she continues, she shifts playfully from side to side in front of the vanity, her hair moving and the robe collar framing her face.\n\nThe setting changes to a clean, futuristic-looking white and pale gray space. The woman, still in the white robe, stands before a gray wall decorated with raised, shiny silver spheres that resemble bubbles. A white SodaStream soda maker stands on a white table to her side. She moves toward it as if beginning a demonstration. The table holds a clear bottle or carafe, small brightly colored flavor containers or cups, and a glass. She places or steadies a clear bottle in the white machine, then presses the top area of the appliance. The bottle is mounted vertically beneath the machine’s head, and the soda maker’s simple white body stands out against the gray bubble-patterned wall.\n\nShe then removes or presents the carbonated bottle and moves to the flavoring step. In a close view, her hand places a red cap or flavor attachment at the mouth of a clear SodaStream bottle. Orange liquid streams down inside the bottle, swirling and tinting the clear water into an orange drink. The black “sodastream” name is visible on the front of the bottle. She holds her palm flat over the red top as the orange flavor mixes, then lifts the finished drink. She now holds a clear glass filled with orange soda, raising it near her face. Her expression is composed and slightly pleased, as if presenting the result.\n\nThe white table is visible again with the SodaStream maker on the left, the woman centered, and the orange drink in her hand. To the right sit a tall clear container filled with orange liquid, a clear bottle, and several small color-coded flavor cups, including yellow, green, and red. She stands upright in the white robe against the gray wall with silver bubble shapes, using small hand gestures while holding the drink. Her face turns more direct and intent, and she brings one hand near her chin as if emphasizing a point.\n\nShe then looks over her shoulder with a knowing, slightly mischievous expression. The clean product-demonstration space opens into a darker, theatrical setting behind her. She steps away from the table, still in the white robe, toward a blue-lit stage or lounge area. The floor is glossy and reflective. As she walks, the robe flares open and moves dramatically around her legs, revealing a fitted black sleeveless dress underneath. The white robe slips back or hangs from her arm, and she carries the orange drink as she enters the darker space.\n\nThe atmosphere becomes more glamorous and nightclub-like. A deep blue curtain or wall fills the background, patterned with sparkling vertical lights and scattered round hanging decorations. Dark silhouettes of seated people or musicians appear in the background, creating the sense of a lounge or stage audience. The woman is now fully dressed in the black dress, which has an asymmetrical neckline and cutout styling across the upper chest. Her blonde hair falls over one shoulder and moves as she turns. She holds the orange drink in one hand, with a dark straw protruding from the glass.\n\nShe pauses in front of the blue-lit backdrop, turning from profile to face forward. The drink remains prominent in her hand. She brings the straw to her lips and begins sipping. Her eyes look straight ahead, then lower briefly, and her expression becomes more sultry and deliberate. Her hair shifts as if blown gently from the side, and the orange color of the drink contrasts strongly with the dark dress and blue background. She continues to hold the glass close, sipping through the straw while looking toward the viewer and then slightly downward.\n\nFor several moments, the focus remains on her face and the drink. She alternates between sipping and pausing with the straw at her lips, maintaining a poised, glamorous stance. The blue background stays softly lit with silhouettes behind her, while her face is brightly lit and centered. Near the end, she lowers her lips slightly from the straw, still holding the glass at chest height, her expression relaxed and self-assured.\n\nThe final view pulls back to show her standing alone at center stage against the blue sparkling backdrop, with dark figures and round decorations spread across the background. A large white “sodastream” logo appears across the lower center of the screen in clean lowercase lettering, partially overlapping the stage scene. The woman remains small behind the logo, holding the drink as the brand name dominates the closing image.",
+  "api_metadata": {
+    "response_id": "resp_043006ea6ada9b17006a3852b1fe00819c97782ee80d48936f",
+    "usage": {
+      "input_tokens": 13581,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1511,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 15092
+    }
+  },
+  "duration_seconds": 44.903,
+  "created_at": "2026-06-21T21:08:42Z",
+  "error": null
+}

@@ -1,0 +1,570 @@
+{
+  "commercial_id": "tv_com_1990_72",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_72",
+    "audio_file": "corpus/03_audio/tv_com_1990_72.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_72.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_72.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Soft and Dri Clear Gel Antiperspirant, from 1994. This personal care product is used for reducing sweat and body odor.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1990_72",
+      "Product Name": "Soft and Dri",
+      "Description": "This is a commercial for Soft and Dri Clear Gel Antiperspirant, from 1994. This personal care product is used for reducing sweat and body odor."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "9d86bc3bfba7dd7659f8d7b603ae366bc1101a0413e3140d2c3db7e9b6db086f",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_72.wav",
+    "path": "corpus/03_audio/tv_com_1990_72.wav",
+    "format": "wav",
+    "sha256": "a477e431c2d4285f5721be4dddff72142d8bd9dc4cfae61768745aefd8b5cedd",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_72.json",
+    "path": "corpus/04_transcripts/tv_com_1990_72.json",
+    "sha256": "b26d8be7920d96f0b492716da888ffc872a7d1c1134a669b4b92cc87924845cb",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_72.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_72.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_72.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1994 Soft & Dri Deodorant",
+      "decade": 1990,
+      "sequence": 72,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0395",
+      "url": "https://youtu.be/wF7S7SeqGGQ",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "de9df50310113dfb546596d4f6396d7a54327196c24b9410311f09f6586085c2"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "a90f441282dc8100086e52111e28a5f4970e84c71b8ac1f996cb9faad9d3295d",
+      "segment_count_available": 13,
+      "segment_count_inserted": 13,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_72/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 66,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A bright, nearly empty white studio fills the screen. A young adult woman with fair skin and a short blonde bob moves in from the left, barefoot, wearing slim black pants and a loose white shirt over a dark top. She walks with a light, dance-like step, turning her body and swinging one leg forward against the clean white background. Her look is polished and fashion-oriented: red lipstick, softly made-up eyes, and a confident half-smile.\n\nHer face appears close up, tilted slightly toward the viewer. She smiles with glossy red lips, her white shirt collar open around her neck. Elegant black text begins appearing beside her face on the left, building phrase by phrase: “what’s the,” then “MOST,” then “important THING,” and finally “YOU put on.” The words are arranged in mixed tall block letters and flowing italic script, like a fashion magazine layout. She looks directly outward with a knowing expression.\n\nThe image moves into an extreme close view of her mouth as a lipstick tube touches her lower lip. The lipstick is a rich red, matching the color already on her lips. The silver and black lipstick case is visible at the lower left as the red tip glides carefully along the curve of her mouth. Afterward, she turns back over one shoulder in the white studio, smiling with the same bright red lips.\n\nA close view of one closed eye follows. A small makeup brush sweeps pale green eye shadow across her eyelid beneath blonde bangs. The brush moves from the inner area outward, leaving a soft green wash over the lid. Her eye opens briefly, showing a blue eye framed by lashes and the green shadow. Then the eye closes again, and black text appears to the right on the white background, assembling into “I bet IT’S green.” The word “IT’S” is large and bold, with “green” in a smaller italic style.\n\nThe woman returns in a close-up, smiling broadly. She lifts a clear plastic Soft & Dri container beside her cheek, holding it upright so the front label faces outward. The package is transparent and rectangular with rounded edges, a pale cap, and a white label printed with large dark blue letters reading “SOFT & DRI.” A pink band and flower graphic decorate the lower part of the label. The product is then shown much larger on a bathroom-like white surface among softly blurred white containers. The transparent package makes the inside mechanism faintly visible, emphasizing the clear-gel presentation while the Soft & Dri name fills most of the front.\n\nThe woman is then seen from behind, bare across the upper back and shoulders, her blonde bob ending at the nape of her neck. She turns slightly to the side and brings the Soft & Dri product up near one underarm, demonstrating application. Her posture is relaxed and controlled, and the background remains clean and white.\n\nNow she appears dressed in a simple black spaghetti-strap dress. The setting expands into a bright, minimalist room with white floors and walls and tall slanted windows on one side, casting pale vertical lines. She stands gracefully, gesturing with her hands as if presenting herself in the dress. A vivid red modern chair with rounded petal-like sides sits nearby, the only strong color accent besides her lipstick. She sits in the red chair with one arm folded and one hand lifted near her face, then smiles and poses.\n\nStanding again in the black dress, she raises both arms straight overhead, exposing the underarm areas of the dress. Black italic text appears around her: “no” on the left and “chalky residue” on the right. Her expression is cheerful and assured, and the dark fabric under her arms appears clean, with no visible white marks. She shifts slightly with arms still raised, smiling to the side.\n\nShe is next seated in the red chair, leaning back with one hand near her mouth in a thoughtful pose. Large black text appears to her right, arranged in a stylish mix of fonts to read “HEY, wait A MINUTE.” She looks outward with a more questioning expression, as if pausing the thought before continuing.\n\nIn front of tall mirrors, she examines herself in the black dress. One reflection shows her from the front while another view shows her from behind. She places her hands at her waist and hips, checking the fit and the fabric. Then, in a closer mirror view, she lifts both thin shoulder straps slightly with her fingers and adjusts them. She turns her head to the side, smooths a hand across the back of her neck and shoulder area, and continues inspecting the dress. The black fabric remains visually free of white streaks or smudges. She then stands near the slanted windows with her arms crossed, smiling down and then looking up with a satisfied expression.\n\nNear the end, she appears full-length again in the open white studio, now in the black dress and dark strappy shoes. She stands tall with both arms stretched overhead, wrists crossed, then lowers and shifts her pose with a relaxed, model-like confidence. The final product display shows the Soft & Dri package standing among softly blurred toiletry bottles. The clear rectangular container tilts slightly, its white label with large dark blue “SOFT & DRI” lettering, pink band, and flower graphic clearly visible. On the left, large black text repeats the central phrase in mixed fonts: “THE MOST important THING YOU put on.”",
+  "api_metadata": {
+    "response_id": "resp_06bf34880d1ffd48006a384c50f9d08191b12ebb291adda010",
+    "usage": {
+      "input_tokens": 18466,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1614,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 20080
+    }
+  },
+  "duration_seconds": 48.256,
+  "created_at": "2026-06-21T20:41:27Z",
+  "error": null
+}

@@ -1,0 +1,276 @@
+{
+  "commercial_id": "tv_com_1980_33",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_33",
+    "audio_file": "corpus/03_audio/tv_com_1980_33.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_33.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_33.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Dow Fantastik All-Purpose Cleaner, from 1984. This household cleaning product is used for cleaning surfaces.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_1980_33",
+      "Product Name": "Dow Fantastik All-Purpose Cleaner",
+      "Description": "This is a commercial for Dow Fantastik All-Purpose Cleaner, from 1984. This household cleaning product is used for cleaning surfaces."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "5b322464713aa8130e8548dcb19721e210d63ad8846c2f6aac4bb53699f9d2ab",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_33.wav",
+    "path": "corpus/03_audio/tv_com_1980_33.wav",
+    "format": "wav",
+    "sha256": "7426b088cc35a0aaeccbb45e1c07e9ef1039efc3c9901e79fb7bf70d64255067",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_33.json",
+    "path": "corpus/04_transcripts/tv_com_1980_33.json",
+    "sha256": "0af005d4f0144ec829398eee73db41f0c37addb1bd9c75d9afb64431e63890aa",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_33.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_33.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_33.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1984 DOW Fantastik All purpose cleaner",
+      "decade": 1980,
+      "sequence": 33,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0255",
+      "url": "https://youtu.be/OVmZiCT9NvM",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "a24eea819fbd9eb3cc8fb4919b26417bbf7232b6116bbff17d90342574859cf9"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "97b791aa7f06bb66fa071a541a1bc564964cb34368c3589ed24bd067cfc2d2ca",
+      "segment_count_available": 9,
+      "segment_count_inserted": 9,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_33/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 24,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A single drop of pale liquid lands on a dirty, brownish speckled surface and splashes upward like a small crown. As the splash settles, the liquid spreads into a rounded, lighter patch at the center, pushing into the surrounding grime so that the middle looks cleaner and brighter than the spotted area around it. The cleaned spot becomes more defined, a soft-edged pale circle surrounded by darker dirt and stains.\n\nThe Fantastik All Purpose Cleaner bottle then fills the view against a dark background. Its label is teal-green with bright curved stripes near the top in red, orange, and green. Large yellow lettering reads “fantastik,” with “All Purpose Cleaner” in smaller white letters below. The bottle shifts partly out of view, as if making way for a cleaning demonstration.\n\nA light-colored wall appears with a childlike drawing on it: a stick-figure girl with blue hair, a triangular dress, red shoes, and simple arms and legs. The drawing is beside a wall switch plate on the left. A hand moves in with a yellow sponge or cloth and wipes across the wall. As it passes over the drawing, the marks disappear, leaving the wall plain and clean. A light-skinned adult woman with light blonde hair is then seen in close view, looking downward with a calm, satisfied expression.\n\nThe Fantastik All Purpose Cleaner bottle appears again, the same teal label and yellow “fantastik” name prominent. It moves away, and another cleaning example follows. A white vertical surface near a shiny chrome fixture is marked with streaks and smudges. A hand presses a yellow sponge or cloth against the dirty area and wipes across it in broad strokes. The stains vanish where the sponge passes, leaving the white surface smooth and clean. The blonde woman appears again, seen from the side and slightly looking down, her expression composed and pleased.\n\nFinally, a different product is displayed alone on a bright white circular surface against a black background. It is a yellow trigger-spray bottle with a blue label. The label reads “fantastik Bathroom Cleaner,” and a small red banner near the top says “deodorizes.” As the bottle is shown more fully, its blue spray trigger and curved yellow neck are visible, presenting the bathroom cleaner as the closing product image.",
+  "api_metadata": {
+    "response_id": "resp_0765d23a8254a262006a3846c79ed0819db6793bff89ff03d0",
+    "usage": {
+      "input_tokens": 6298,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 857,
+      "output_tokens_details": {
+        "reasoning_tokens": 389
+      },
+      "total_tokens": 7155
+    }
+  },
+  "duration_seconds": 25.72,
+  "created_at": "2026-06-21T20:17:34Z",
+  "error": null
+}

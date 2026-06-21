@@ -1,0 +1,171 @@
+{
+  "commercial_id": "tv_com_1990_60",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_60",
+    "audio_file": "corpus/03_audio/tv_com_1990_60.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_60.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_60.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Oldsmobile Achieva, from 1992. This car is used for personal transportation.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Personal, Public Transport & Travel",
+      "Commercial ID": "tv_com_1990_60",
+      "Product Name": "Oldsmobile Achieva",
+      "Description": "This is a commercial for Oldsmobile Achieva, from 1992. This car is used for personal transportation."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "9bdd5b1f5f73466ce5deff56e141ac80e2284ed8621878147f15ef5494b6d558",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_60.wav",
+    "path": "corpus/03_audio/tv_com_1990_60.wav",
+    "format": "wav",
+    "sha256": "5aac3c4f1d083f7e0150287729d1b0cdb03a588ff8f9c8c7dc98f25866eca93f",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_60.json",
+    "path": "corpus/04_transcripts/tv_com_1990_60.json",
+    "sha256": "84006e68ea64cfbc7cc726cd62049c48ce00ad830b7ec1cae5cd07c9839bdb66",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_60.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_60.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_60.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1992 Oldsmobile Achieva Prime Time Oldsmobile automaker by General Motors",
+      "decade": 1990,
+      "sequence": 60,
+      "category": "Personal, Public Transport & Travel",
+      "video_id": "video_0383",
+      "url": "https://youtu.be/T0crd-0qvGo",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "34f50ed8ecdef2631799ab1cff3d61d6dead1b461aa023350f9d2e2cf58334b0"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "cb4c8f6f2c1227454415300134d0029a80df3c5ac8c770fd073e2f2ac1e63b8f",
+      "segment_count_available": 8,
+      "segment_count_inserted": 8,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_60/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 9,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A dark blue graphic fills the screen with the white title “Total Cost For 100,000 Miles” near the top. Along a thin horizontal baseline are three labels: “ACHIEVA,” “CAMRY,” and “ACCORD.” An orange vertical bar rises above “ACHIEVA,” then a dollar amount, “$5,555,” appears above it. A green bar then rises above “CAMRY,” followed by the value “$7,140.” A blue bar appears above “ACCORD,” and the completed comparison shows “$7,220” above that bar. The orange Achieva bar is visibly the shortest, the green Camry bar is taller, and the blue Accord bar is slightly taller than the Camry bar. Small disclaimer text appears along the bottom, stating that total cost consists of maintenance, repair, and operating cost, that 1992 vehicles were tested, and that experience may vary.\n\nAs the cost chart remains on screen, the image of a silver four-door sedan begins to appear behind the translucent bars. The car is shown from the rear passenger-side angle, facing left, with its long side profile, rear trunk, red taillight, dark rear panel, and alloy-style wheels visible. The chart fades away, leaving the car alone against a warm, softly mottled brown and gold studio background. At the bottom of the screen, white text reads “Oldsmobile Achieva.”\n\nThe final view holds on the silver Oldsmobile Achieva, parked on a raised dark platform with a slightly reflective surface below. The car remains still, cleanly lit, and centered, its rear end on the right and front end extending to the left. The “Oldsmobile Achieva” text stays at the bottom as the commercial ends visually with the car presented as the featured product.",
+  "api_metadata": {
+    "response_id": "resp_06c348ecb5a343b8006a384bf8379481a0bdb2acd1448246cd",
+    "usage": {
+      "input_tokens": 3868,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 603,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 4471
+    }
+  },
+  "duration_seconds": 16.14,
+  "created_at": "2026-06-21T20:39:33Z",
+  "error": null
+}

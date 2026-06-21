@@ -1,0 +1,395 @@
+{
+  "commercial_id": "tv_com_2000_12",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2000_12",
+    "audio_file": "corpus/03_audio/tv_com_2000_12.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2000_12.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2000_12.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Reese’s Candy, from 2002. This candy product is used for eating as a sweet snack and includes a promotional movie tie-in offer.",
+    "row": {
+      "Decade": "2000",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_2000_12",
+      "Product Name": "Reese's Candy",
+      "Description": "This is a commercial for Reese’s Candy, from 2002. This candy product is used for eating as a sweet snack and includes a promotional movie tie-in offer."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "a3a95d4f937b5a0a6dc4f02bcb8fb28c3661cd06a2c054d79812fa9ad9db6a1d",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2000_12.wav",
+    "path": "corpus/03_audio/tv_com_2000_12.wav",
+    "format": "wav",
+    "sha256": "5ab446124be9cddd025feb31b6961408d579342d1c05a36b9b1d55e59b4a65de",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2000_12.json",
+    "path": "corpus/04_transcripts/tv_com_2000_12.json",
+    "sha256": "14894a6606f0c37622c61c7ee4833bec2efcae1255c9e35ee69e6b33081ebe82",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2000_12.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_12.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2000_12.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2002 Reese's Pieces candy E.T.",
+      "decade": 2000,
+      "sequence": 12,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0454",
+      "url": "https://youtu.be/ikDt8gxWnSs",
+      "source_start": "0:00:00",
+      "source_end": "0:00:30"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.0234375,
+      "text_sha256": "aad68ce5f934e9ba4dc16064a025ff608bce9c2c3f3d8343c6db25d7ca4a7cdf"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "d69c8cda9ecee4851f4f51913ac8e52464dd3e1741179eb8069757656ffc5a82",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2000_12/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 29.053,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 41,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The scene opens in a dim kitchen at night, seen from near floor level. An open refrigerator glows on the left, casting cool white-blue light across the shiny floor. Inside the fridge are shelves with jars and containers, and on the floor nearby are scattered items, including small round objects and what looks like spilled food or packaging. Wooden cabinets line the right side, and an orange hanging lamp glows above a table in the background. The room feels quiet and slightly mysterious, with deep shadows and a bluish nighttime atmosphere.\n\nAttention shifts to a round kitchen table under the orange lamp. At the center sits a dark bowl on a rectangular bamboo-style placemat. The bowl is filled with Reese’s candy: bright orange wrapped bars and loose candy pieces in orange, yellow, and brown. Around the table are everyday objects, including papers or folders, a mug, and small condiment shakers, but the bowl of candy is the brightest and most prominent object. The light from the lamp creates a circular pool of illumination around it while the edges of the kitchen remain dark.\n\nThe bowl is then seen closer, filled to the rim with Reese’s products. A large orange wrapper with the yellow Reese’s logo rises above the loose candy pieces. Other orange wrappers are tucked around it, and the candy pieces gleam against the dark bowl. The kitchen background is blurred and shadowy, with the table and the candy sharply emphasized. A closer view of a Reese’s package shows the label clearly: “Reese’s” and “2 Peanut Butter Cups” on the orange wrapper. Loose Reese’s Pieces in orange, yellow, and brown appear around it, as if the candies are clustered and beginning to move or swirl.\n\nA product display appears against the same cool kitchen background. Several Reese’s packages are arranged upright like a group portrait on a textured blue surface. Visible products include Reese’s Pieces, ReeseSticks, Reese’s Bites, Reese’s Peanut Butter Cups Miniatures, NutRageous, and a standard Reese’s 2 Peanut Butter Cups bar in front. All the packaging is mainly bright orange with yellow and brown branding. Along the bottom, small white text explains the free-ticket offer: free tickets by mail with proofs of purchase from three bags or twelve candy bars, requests received by 8/1/02, six to eight weeks for delivery, up to six tickets per household, and details available at in-store displays. A yellow ticket slides into view on the right with large black text reading “FREE MOVIE TICKET,” visually connecting the candy purchase to the movie-ticket promotion.\n\nThe scene returns to the kitchen, where loose Reese’s Pieces and wrapped candies fly through the air in a stream. Orange, yellow, and brown pieces arc across the room, along with small wrapped candies. They move in a long, curving trail, passing in front of cabinets and the kitchen counter. E.T., the small brown alien character, is now visible in the kitchen. He has a wrinkled, leathery face, a long thin neck, large wide-set eyes, and a small body with narrow shoulders. He stands upright in the foreground, looking toward the flying candy with a calm, curious expression.\n\nThe candies continue to sail past E.T. in slow, graceful arcs. Some pass close to his face, and a few appear to drift toward his mouth. Behind him are wooden cabinets, a sink beneath a window with closed blinds, curtains, and countertop items such as a red bowl and kitchen utensils. E.T.’s head turns slightly as he watches the colorful pieces move around him. His large eyes follow the candies, and his mouth forms a small, pleased smile.\n\nA few candies hover directly in front of E.T.’s face, then one reaches his mouth. He appears to eat or taste it, his expression softening into satisfaction. He raises one long, thin finger beside his face. The fingertip begins to glow with a warm yellow-white light, standing out against the dark kitchen. Small Reese’s Pieces continue to drift behind and near him, their orange and yellow colors echoing the glow at the end of his finger. E.T. looks at the glowing fingertip with quiet focus, as if his familiar glowing touch has been sparked by the candy moment.\n\nThe final image is a simple brand card: the word “Reese’s” in large yellow script with a dark outline, centered on a warm orange background. The logo remains steady and uncluttered, ending the sequence with the Reese’s name filling the screen.",
+  "api_metadata": {
+    "response_id": "resp_071063a926b27858006a384e957a0881a0a9bbfe51c63b362c",
+    "usage": {
+      "input_tokens": 11958,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1394,
+      "output_tokens_details": {
+        "reasoning_tokens": 475
+      },
+      "total_tokens": 13352
+    }
+  },
+  "duration_seconds": 37.129,
+  "created_at": "2026-06-21T20:51:02Z",
+  "error": null
+}

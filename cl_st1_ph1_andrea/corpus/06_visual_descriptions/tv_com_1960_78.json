@@ -1,0 +1,941 @@
+{
+  "commercial_id": "tv_com_1960_78",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1960_78",
+    "audio_file": "corpus/03_audio/tv_com_1960_78.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1960_78.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1960_78.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Bell System Service by C&P Telephone of West Virginia, from the 1960s. This telecommunications service is used to provide telephone communication.",
+    "row": {
+      "Decade": "1960",
+      "Category": "Retail (Fashion & Consumer Goods) & Services",
+      "Commercial ID": "tv_com_1960_78",
+      "Product Name": "Bell System Service by C&P Telephone of West Virginia",
+      "Description": "This is a commercial for Bell System Service by C&P Telephone of West Virginia, from the 1960s. This telecommunications service is used to provide telephone communication."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "c56c8d75e8e1fc777849e3868153de4092e1c22d5dbd8876c5dc069ddf0ff02e",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1960_78.wav",
+    "path": "corpus/03_audio/tv_com_1960_78.wav",
+    "format": "wav",
+    "sha256": "3a373112e7cb1befb017d29e85d0372b8110817cc479531449dbcc9aaeaf8e85",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1960_78.json",
+    "path": "corpus/04_transcripts/tv_com_1960_78.json",
+    "sha256": "d91a2dc36c3383dd2cccbd35c958c90592545548903ccc4279adb62857b679a9",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1960_78.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_78.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_78.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "C&P Telephone of West Virginia Bell System Service",
+      "decade": 1960,
+      "sequence": 78,
+      "category": "Retail (Fashion/ Consumer Goods) &  Services",
+      "video_id": "video_0109",
+      "url": "https://youtu.be/EQrvaRltBBE",
+      "source_start": "0:10:26",
+      "source_end": "0:11:24"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 58.0266875,
+      "text_sha256": "cde79b70d4a4583265ca0ac68710b50f1c1e46e44af45f4bd644fd49cf107dd8"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "743c085df7e92a3c1d49e567f0df7be0ac8c632a98aced3d2f43ad0c745d8497",
+      "segment_count_available": 7,
+      "segment_count_inserted": 7,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 15.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 29.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 31.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 31.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 32.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 32.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 33.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 33.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 34.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 34.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 34.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 34.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 35.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 35.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 35.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0094.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0094.jpg",
+      "frame_index": 94,
+      "timestamp_seconds": 35.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0095.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0095.jpg",
+      "frame_index": 95,
+      "timestamp_seconds": 36.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0096.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0096.jpg",
+      "frame_index": 96,
+      "timestamp_seconds": 36.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0097.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0097.jpg",
+      "frame_index": 97,
+      "timestamp_seconds": 36.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0098.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0098.jpg",
+      "frame_index": 98,
+      "timestamp_seconds": 36.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0099.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0099.jpg",
+      "frame_index": 99,
+      "timestamp_seconds": 37.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0100.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0100.jpg",
+      "frame_index": 100,
+      "timestamp_seconds": 37.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0101.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0101.jpg",
+      "frame_index": 101,
+      "timestamp_seconds": 37.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0102.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0102.jpg",
+      "frame_index": 102,
+      "timestamp_seconds": 37.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0103.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0103.jpg",
+      "frame_index": 103,
+      "timestamp_seconds": 38.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0104.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0104.jpg",
+      "frame_index": 104,
+      "timestamp_seconds": 38.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0105.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0105.jpg",
+      "frame_index": 105,
+      "timestamp_seconds": 38.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0106.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0106.jpg",
+      "frame_index": 106,
+      "timestamp_seconds": 38.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0107.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0107.jpg",
+      "frame_index": 107,
+      "timestamp_seconds": 39.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0108.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0108.jpg",
+      "frame_index": 108,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0109.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0109.jpg",
+      "frame_index": 109,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0110.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0110.jpg",
+      "frame_index": 110,
+      "timestamp_seconds": 42.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0111.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0111.jpg",
+      "frame_index": 111,
+      "timestamp_seconds": 43.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0112.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0112.jpg",
+      "frame_index": 112,
+      "timestamp_seconds": 43.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0113.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0113.jpg",
+      "frame_index": 113,
+      "timestamp_seconds": 43.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0114.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0114.jpg",
+      "frame_index": 114,
+      "timestamp_seconds": 50.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0115.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0115.jpg",
+      "frame_index": 115,
+      "timestamp_seconds": 52.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0116.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0116.jpg",
+      "frame_index": 116,
+      "timestamp_seconds": 52.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0117.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0117.jpg",
+      "frame_index": 117,
+      "timestamp_seconds": 52.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0118.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0118.jpg",
+      "frame_index": 118,
+      "timestamp_seconds": 53.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0119.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_78/frame_0119.jpg",
+      "frame_index": 119,
+      "timestamp_seconds": 53.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 119,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens in black and white on a tight view of telephone switchboard equipment. Only hands and forearms are visible at first. Light-skinned hands move quickly among rows of dark sockets, rounded metal rails, and dangling cords. One hand with a ring and a patterned sleeve guides a plug toward the board, while another hand works nearby. The hands lift, place, and press cords into the switchboard, giving the impression of practiced, precise work in a busy telephone office.\n\nThe scene changes to a close view of a bundle of thin telephone wires. Several individual strands fan out from a thicker cable, some ending in small pale tags or connectors. A pair of sturdy hands separates the wires, pinches one strand, and draws it carefully away from the bundle. The worker’s sleeves are heavier than the operator’s, suggesting field or repair clothing. The hands sort and align the fine wires with patient, delicate movements, as if preparing a splice or repair.\n\nThe view shifts to an open telephone instrument or service box. Inside are tightly arranged wires and small mechanical parts. Two hands work inside the exposed casing; one steadies the components while the other adjusts wiring near the top. A round dial plate with letters and numbers becomes visible among the internal parts, showing the familiar layout of a rotary telephone. The hands continue making small adjustments among the wires and terminals.\n\nOutdoors, gloved hands fasten gear around a work boot and trouser cuff on rough ground. The worker wears heavy lace-up boots and work pants. A leather strap and metal climbing hardware are tightened around the ankle and lower leg. The hands pull the strap snug, thread it through a buckle, and secure the climbing equipment, preparing for work on a pole.\n\nBack indoors, a person in a light shirt writes on a clipboard beside rows of telephone switching equipment. Only the torso, hands, and part of the equipment are visible. The person holds a pen and makes notes on a form while standing close to panels filled with switches, plugs, and repeated rectangular components. The work area looks technical and densely packed, with machinery filling the background.\n\nThe view returns to the switchboard, now revealing several women operators seated in a row. They wear headsets with mouthpieces and sit facing a tall wall of cords, sockets, and controls. The nearest operator, in a light blouse, reaches forward with one hand to insert or remove a plug while her other hand works lower on the board. Behind her, other operators in patterned and light-colored tops lean toward their own switchboard positions, also handling cords and controls. Their posture is focused and active, with each woman attending to her station.\n\nA dimly lit workbench appears, where a man wearing glasses leans over telephone wires and small parts beneath a lamp. His face is mostly in shadow, and the bright work light falls on a pale panel and the wires on the table. He bends close to the task, using both hands to handle cables and connectors in a repair or installation setting.\n\nThe scene moves into a home interior. A young adult man with short dark hair, glasses, and a work jacket sits beside a small table or nightstand. On the table is a rotary telephone with its handset off or being handled, and beside it stands a decorative lamp with a figurine-like base and a fabric shade. Window shutters are visible behind him. The man, apparently an installer or repairman, handles the telephone cord and handset, lifting and repositioning the receiver as he works. He checks the connection, sets the handset back onto the cradle, and then looks down toward his lap or tool area as if finishing the job.\n\nOutside again, a telephone lineman in a hard hat and dark glasses climbs a wooden utility pole. He wears gloves, work clothes, a heavy tool belt, and climbing spikes strapped to his boots. The pole fills the center of the scene, its rough wood marked by holes and weathering. The lineman grips the pole with both arms, plants one boot against it, and climbs upward in short, forceful steps. His tool belt swings at his side as he raises one knee, sets a spike, and pulls himself higher.\n\nThe commercial then shows a man in a white shirt and tie wearing a telephone-style headset with an earpiece and mouthpiece. He stands at a technical control panel surrounded by tall racks of switching equipment. With one hand he turns or adjusts a knob on a panel while looking directly at the instruments. The equipment around him is dense with dials, switches, and repeated vertical rows of components, suggesting a telephone engineering or testing room.\n\nThe image changes to a woman seated in a comfortable, domestic-looking room. She appears to be a young adult with styled dark hair and a light-colored jacket or blouse. She faces forward, speaking toward the viewer with a composed expression that becomes a smile. Behind her are drapes, a patterned upholstered chair, and a table lamp with glass shades, giving the setting a neat living-room atmosphere.\n\nLarge white capital letters appear over the lower part of the woman’s image: “BEST SERVICE” on one line and “LOWEST COST” beneath it. She continues smiling behind the words. Finally, the picture fades to a plain light background with the Bell System emblem at the left. The visible text reads: “The C & P Telephone Company of West Virginia,” with smaller text underneath: “Part of the Nationwide Bell System.”",
+  "api_metadata": {
+    "response_id": "resp_0d24a6810edeaf1d006a383f37e568819f80ecceefbc88b4a0",
+    "usage": {
+      "input_tokens": 31956,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1354,
+      "output_tokens_details": {
+        "reasoning_tokens": 258
+      },
+      "total_tokens": 33310
+    }
+  },
+  "duration_seconds": 43.165,
+  "created_at": "2026-06-21T19:45:29Z",
+  "error": null
+}

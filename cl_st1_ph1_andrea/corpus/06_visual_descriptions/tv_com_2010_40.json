@@ -1,0 +1,535 @@
+{
+  "commercial_id": "tv_com_2010_40",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_2010_40",
+    "audio_file": "corpus/03_audio/tv_com_2010_40.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_2010_40.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_2010_40.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for 1-800 Contacts, from 2012. These contact lens retailer are used for ordering contact lenses.",
+    "row": {
+      "Decade": "2010",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_2010_40",
+      "Product Name": "2012 1-800 Contacts",
+      "Description": "This is a commercial for 1-800 Contacts, from 2012. These contact lens retailer are used for ordering contact lenses."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "2719ab76a09a07f96b204a2ce2ff949efa2c6107b81d6f7b936ed7ad21f130c9",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_2010_40.wav",
+    "path": "corpus/03_audio/tv_com_2010_40.wav",
+    "format": "wav",
+    "sha256": "cc21d0ae40ec558582289d4910f3b2d3d57849da061a17b9cde4b3fc04e25117",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_2010_40.json",
+    "path": "corpus/04_transcripts/tv_com_2010_40.json",
+    "sha256": "4918275ebe0b8399fcf48bf360d05cf02adc5f738d5e41ab7be505d27a8723d9",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_2010_40.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_40.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_2010_40.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "2012 1-800 Contacts Look with your special eyes",
+      "decade": 2010,
+      "sequence": 40,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0460",
+      "url": "https://youtu.be/a8384qGe8nk",
+      "source_start": "0:01:13",
+      "source_end": "0:01:42"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "f6e380a11b4ce48b504a37ddc78cee8eb7ad8d2b731db51a091fecf236b5fdad"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "feef6730a64a93db21bc19d8f54d6a89b79157ea8c5f4683821585af97d786a3",
+      "segment_count_available": 4,
+      "segment_count_inserted": 4,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_2010_40/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 28.023,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 61,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A bright, softly lit modern living room comes into view, initially out of focus. Cream-colored sofas sit in the foreground, with a warm-toned dining or kitchen area visible through a wide opening in the back. Sunlight filters through tall pale curtains, and the room has beige walls, a stone accent wall, and clean, neutral furnishings.\n\nA light-skinned adult woman with shoulder-length blonde hair, styled with a small braid or twist along the side, enters from the left. She is dressed all in white or cream, wearing a silky blouse and matching pants. She walks into the living room holding an open white shipping box filled with blue-and-white contact lens boxes and paperwork. A light-skinned adult man with short dark hair sits on the cream sofa in the background, wearing a pale gray button-up shirt and light pants. He watches her from the couch with a curious, slightly wary expression.\n\nThe woman moves farther into the room, keeping the open package in her hands. She pauses near the right side of the living room, beside a low ledge and a dark rectangular area that looks like a television or fireplace. The man remains seated for a moment, then shifts forward, becoming more alert. He leans off the sofa and starts to rise, looking toward the woman and the box she is carrying.\n\nThe woman stands in profile in front of the tall curtains, still holding the package at chest height. The man comes up behind her from the left, stepping closer. Both of them face toward something off to the right, out of view, as if reacting to what the dialogue refers to. The woman’s expression is composed but intent; the man’s face tightens with skepticism and surprise. The open box shows blue contact lens packaging inside, and the outside of the carton bears the 1-800 Contacts branding.\n\nThey stand side by side now, close together. The man, on the left, looks unsettled and slightly incredulous. The woman, on the right, holds the box and paperwork against her body. She looks forward with wide, earnest eyes, then begins gesturing with one hand as if making a point. Her posture is upright and confident, while the man’s shoulders are a bit hunched and guarded.\n\nAs she raises her hand to emphasize what she is saying, the man turns toward her. He reaches across and gently catches or holds her wrist and hand, stopping the gesture. The two draw closer. In a wider view, he keeps hold of her hand while she continues holding the 1-800 Contacts box in her other arm. Their bodies angle toward each other, and the moment shifts from confrontation or disbelief into reassurance.\n\nThe scene moves into a closer view of the couple. The man’s expression changes from stern to chastened and emotional. He looks down at the box, where the bold blue-and-yellow “1-800 CONTACTS” logo is clearly visible on the front. The woman stands very close, one arm around him, her face soft and sympathetic. He begins to speak while looking down, then his face crumples. The woman’s hand rests gently near his shoulder and neck, comforting him.\n\nThe man lowers his head until it rests against the woman’s shoulder and upper chest, overcome. She supports him with one hand against the side of his head and neck, her other arm still around him. The branded box remains in the foreground, tilted toward the viewer, with several blue-and-white contact lens boxes visible inside. The woman closes her eyes briefly and tilts her head back slightly, looking patient and tender as he leans into her.\n\nThe couple shifts out of the center, and a new person becomes visible seated on the cream sofa. He is a light-skinned adult man with neatly combed dark hair, wearing a gray suit, white dress shirt, and gold tie with a matching pocket square. He sits upright and faces forward as a spokesperson. To his left, on a small round white pedestal table, is the same style of open 1-800 Contacts shipping box, filled with contact lens boxes. The front of the box clearly displays the “1-800 CONTACTS” logo in blue and yellow.\n\nThe spokesperson remains seated in the tidy living room, with warm wood trim and a lit table lamp visible behind him through the open doorway. He speaks directly forward, calm and composed, while the product box stays prominently displayed beside him. Near the end, he brings his hands up in a small, deliberate gesture over the table and then rests them together, keeping the branded package clearly in view.",
+  "api_metadata": {
+    "response_id": "resp_082e4af2b1024ec7006a3853f1490c81a0880e82d675cd9e56",
+    "usage": {
+      "input_tokens": 13544,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1378,
+      "output_tokens_details": {
+        "reasoning_tokens": 454
+      },
+      "total_tokens": 14922
+    }
+  },
+  "duration_seconds": 38.135,
+  "created_at": "2026-06-21T21:13:54Z",
+  "error": null
+}

@@ -1,0 +1,311 @@
+{
+  "commercial_id": "tv_com_1980_15",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_15",
+    "audio_file": "corpus/03_audio/tv_com_1980_15.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_15.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_15.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Agree Shampoo, from 1989. This oil- and silicone-free hair care product is used for washing hair.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1980_15",
+      "Product Name": "Agree Shampoo Oil and Silicone Free",
+      "Description": "This is a commercial for Agree Shampoo, from 1989. This oil- and silicone-free hair care product is used for washing hair."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "a62e03b36029a1691de1eca5f87f906ce14bfb5c6f79766f0e744c374aa9346c",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_15.wav",
+    "path": "corpus/03_audio/tv_com_1980_15.wav",
+    "format": "wav",
+    "sha256": "cc89e7ff52f4f40eb8d72e4e0b3053241cae673bd4d19851de106fb10e5bf4c7",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_15.json",
+    "path": "corpus/04_transcripts/tv_com_1980_15.json",
+    "sha256": "ac15146f13d6645943f475525d041d4067e9c1fbe6c0191601272679e993760a",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_15.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_15.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_15.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1989 Agree Shampoo Oil and Silicone Free ",
+      "decade": 1980,
+      "sequence": 15,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0237",
+      "url": "https://youtu.be/d99M3i84BzY",
+      "source_start": "0:00:00",
+      "source_end": "0:00:14"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 14.024875,
+      "text_sha256": "c17de9b0dc0fd09070704029831f40de838e786da9ab2a60432b6abc3994cd7f"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "70e4fc24a58a8d8929b6ce7fab4063cb93275e5dd5527d9c1ab5c21b1f7e27b5",
+      "segment_count_available": 3,
+      "segment_count_inserted": 3,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_15/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 29,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A young adult woman with long, dark, very curly hair sits at a small table in a softly lit room by a tall window. She wears a loose white shirt over a light top, with bracelets on one wrist. The room looks like a casual home or apartment space: pale walls, daylight from the window at her left, a cardboard box and a chair behind her, and a small decorative object on a side surface. A bright pink bottle of Agree stands upright on the table near the window, clearly visible beside her.\n\nSmiling and speaking toward the viewer, she handles two small photographs or cards, lifting them up in front of her chest. She holds one in each hand and presents them as if showing examples of things she is sorting through. One card appears to show a woman’s face; the other appears to show a man’s face. She looks from one to the other, then glances off to the side with a playful, knowing expression. Still smiling, she flicks or tosses one of the cards away to her left, out of view, while keeping the other briefly in her hand. She then lowers the remaining card and sets it aside, clearing her hands.\n\nWith the cards gone, she turns her attention fully forward. She rests her chin on one hand for a moment, her curly hair framing her face, then lifts her hand through the curls near her cheek as if referring to her hair. Her expression is relaxed and pleased. The pink Agree bottle remains standing on the table to her left, its color contrasting with the pale room and her white shirt.\n\nShe turns toward the window side and reaches for the pink bottle. She picks it up and brings it into view beside her face. The bottle is tall and rounded with a deeper pink cap and a translucent pink body. She holds it up confidently, then gives it a light shake or small wave, keeping her eyes forward. As she tilts it, the white script brand name “Agree” becomes visible on the bottle. She continues to present it near her face, smiling with a satisfied, slightly proud look, as if introducing the shampoo she now uses.\n\nThe final image changes to a clean product display on the tabletop near the window. Three Agree bottles stand side by side in a row: a pink bottle on the left, a green or teal bottle in the center, and a blue bottle on the right. Each has the white “Agree” logo running vertically across the front. The bottles are brightly lit against the softer room background, with the window light behind them and the tabletop reflecting their colors.",
+  "api_metadata": {
+    "response_id": "resp_0afca6f3cc26ea18006a38463c95c8819cb4aaaff250eace29",
+    "usage": {
+      "input_tokens": 8883,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1039,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 9922
+    }
+  },
+  "duration_seconds": 30.716,
+  "created_at": "2026-06-21T20:15:17Z",
+  "error": null
+}

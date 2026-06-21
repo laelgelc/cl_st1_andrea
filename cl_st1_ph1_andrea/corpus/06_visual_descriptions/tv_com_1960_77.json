@@ -1,0 +1,549 @@
+{
+  "commercial_id": "tv_com_1960_77",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1960_77",
+    "audio_file": "corpus/03_audio/tv_com_1960_77.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1960_77.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1960_77.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Everflex Garden Hose, from the 1960s. This garden hose product is used to transport water for gardening and outdoor cleaning.",
+    "row": {
+      "Decade": "1960",
+      "Category": "Household, Cleaning & Home Care",
+      "Commercial ID": "tv_com_1960_77",
+      "Product Name": "Everflex Garden Hose by B.F. Goodrich",
+      "Description": "This is a commercial for Everflex Garden Hose, from the 1960s. This garden hose product is used to transport water for gardening and outdoor cleaning."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "e70d5baeb30eb038f54a9dea84dcfcb630721f05167bed3f174ffb6f3049310d",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1960_77.wav",
+    "path": "corpus/03_audio/tv_com_1960_77.wav",
+    "format": "wav",
+    "sha256": "01d9185dc0a79ccb7d770b62229e63177cea25e3199cdbcf09123484fac66fa5",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1960_77.json",
+    "path": "corpus/04_transcripts/tv_com_1960_77.json",
+    "sha256": "55cf08ef841cbb1a80c732394948dcc18f1b23c07b36fb26231e7eb731d721df",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1960_77.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_77.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_77.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Everflex Garden Hose by B.F. Goodrich",
+      "decade": 1960,
+      "sequence": 77,
+      "category": "Household, Cleaning & Home Care",
+      "video_id": "video_0109",
+      "url": "https://youtu.be/EQrvaRltBBE",
+      "source_start": "0:07:13",
+      "source_end": "0:08:12"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 59.025125,
+      "text_sha256": "770e1a7d71d27d59e91bc67d51c57631c7d1467bf5c14e765560bc5fa040bee7"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "3da9b52bb57e219cba7e836a51eb1faf8838aeaba4faad0aa22960023192e367",
+      "segment_count_available": 12,
+      "segment_count_inserted": 12,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 29.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 33.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 34.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 36.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 37.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 37.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 37.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 38.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 38.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 39.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 39.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 39.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 40.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 41.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 41.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 41.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 42.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 43.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 43.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 43.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 44.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 45.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 48.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 48.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 48.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 48.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 49.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 49.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 49.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 50.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 50.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 50.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 51.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 51.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 51.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 51.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 52.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 52.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 53.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 53.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 54.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_77/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 55.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 63,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial is in black and white and begins inside a cold, industrial room filled with large, clear rectangular blocks of ice. A middle-aged man with light skin stands near the ice, facing forward as presenter. He wears a dark fedora, a heavy light-colored overcoat with a thick fur or fleece collar, a shirt and tie, and he holds a handheld microphone close to his chest. Behind him, rows of ice blocks rest on rails or platforms against a rough wall, giving the space the look of an ice storage room.\n\nA wider view reveals the scale of the room: stacks of ice blocks line both sides of a narrow walkway, with pipes or beams overhead and a dark, wet-looking floor below. The presenter walks among the ice while speaking. In the background, another man, dressed like a worker in light-colored coveralls, bends over and handles a large block of ice.\n\nThe presenter stops beside a stack of ice and picks up a coiled garden hose package. He holds it at chest height and turns it so the label faces outward. The product is a dark, neatly coiled hose wrapped around a large paper display card. The label reads “NEW,” “B.F. Goodrich,” “Koroseal,” and “EVERFLEX GARDEN HOSE.” Small illustrations on the card show the hose being tested and coiled, and a line near the bottom reads, “Even at 32 degrees—it coils with ease!” The presenter looks down at the package as he displays it, then holds it toward the viewer.\n\nThe demonstration shifts to the worker. He drags or positions a heavy rectangular cake of ice on a low platform between the stacks. Inside the clear ice, the coiled Everflex hose and its label can be seen frozen in place. The hose forms dark loops embedded in the frosty block, with the printed product card visible through the ice. The worker stands over the block with a long-handled striking tool, like a sledgehammer or heavy mallet, preparing to break it open.\n\nThe worker swings the tool down into the ice. In close views, the metal head crashes into the frozen block, sending cracks, chips, and cloudy shards outward. The label and hose remain visible behind the splintering ice. Repeated blows break the block apart into large jagged pieces, and the dark loops of the hose begin to emerge from the broken ice. Ice fragments scatter across the platform and wet floor.\n\nOnce the block is shattered, the worker kneels beside the pile of broken ice. He reaches in with both hands and starts pulling the hose free. The hose bends in smooth curves as he lifts it from among the chunks. He draws out one loop, then another, working it loose without it appearing stiff or tangled. The hose keeps its rounded shape as he gathers it, forming a tidy coil in his hands. Broken ice surrounds him on the platform and floor, while the stacked ice blocks stand behind him like translucent walls.\n\nThe worker rises and carries the coiled hose toward the presenter. The presenter, still in his fedora and heavy coat, turns to look at him while holding the microphone. The worker stands beside him, holding the dark hose coil at chest level with both hands. The presenter gestures toward the hose and then reaches for the product card. He places or holds the labeled card against the coil so the packaging is again clearly visible.\n\nThe final view centers on the product. The coiled hose fills the background, with the large label held in front. The readable text says “NEW,” “B.F. Goodrich,” “Koroseal,” and “EVERFLEX GARDEN HOSE,” with the printed line “Even at 32 degrees—it coils with ease!” beneath two small demonstration pictures. The hose appears cleanly coiled and intact after being removed from the ice.",
+  "api_metadata": {
+    "response_id": "resp_0d7d49ac78a87d73006a383f2c291481919bac32659307b7fc",
+    "usage": {
+      "input_tokens": 17795,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1297,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 19092
+    }
+  },
+  "duration_seconds": 38.089,
+  "created_at": "2026-06-21T19:45:16Z",
+  "error": null
+}

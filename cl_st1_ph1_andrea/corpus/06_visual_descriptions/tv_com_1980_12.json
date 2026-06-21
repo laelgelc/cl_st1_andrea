@@ -1,0 +1,549 @@
+{
+  "commercial_id": "tv_com_1980_12",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_12",
+    "audio_file": "corpus/03_audio/tv_com_1980_12.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_12.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_12.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Colgate Toothpaste, from 1983. This oral care product is used for cleaning teeth.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1980_12",
+      "Product Name": "Colgate Toothpaste",
+      "Description": "This is a commercial for Colgate Toothpaste, from 1983. This oral care product is used for cleaning teeth."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "c2edc52d1ef6f90fc9602832c0b32530a227ac57bee5099b68249d6207209a59",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_12.wav",
+    "path": "corpus/03_audio/tv_com_1980_12.wav",
+    "format": "wav",
+    "sha256": "26cee1f107b4b27d30b3feab91b33bad4bca3b613314b53af091d97577636639",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_12.json",
+    "path": "corpus/04_transcripts/tv_com_1980_12.json",
+    "sha256": "c3ff7e38a594b3357ee3992c7b51a1bd34f4527951f4140032558af972d87fe7",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_12.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_12.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_12.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1983 Colgate Toothpaste",
+      "decade": 1980,
+      "sequence": 12,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0234",
+      "url": "https://youtu.be/rmYgeTVGb9Y",
+      "source_start": "0:00:00",
+      "source_end": "0:00:29"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 29.0249375,
+      "text_sha256": "ce1d0cd3d2ea71886af04d84eaff3be27cfd66b0d1aa2cd5ed2f3d7a8bcb6726"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "5ee47968fdff504ad05b1cca5858cc47bf00d32e4cbd95beefbe0ff289a675ec",
+      "segment_count_available": 11,
+      "segment_count_inserted": 11,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_12/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 63,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A white and silver Colgate toothpaste tube appears against a pale, nearly blank background, its red label facing forward with large white “Colgate” lettering and a smaller blue badge reading “Winter fresh Gel.” The tube moves like a pen, its open nozzle trailing a glossy blue gel. The gel forms a large cursive lowercase “g,” then continues into looping strokes, with tiny bright sparkles flashing where the gel line curves. The tube glides from left to right and diagonally, gradually spelling “gel” in smooth blue script.\n\nA young girl rides a bicycle straight toward the viewer outdoors on a leafy path or street. She has long brown hair in two pigtails tied with light bows, and she wears a white turtleneck under a bright purple vest with dark pants. She holds the curved silver handlebars and looks ahead, her expression shifting from focused to smiling. The background is softly blurred with green and golden trees, giving the scene a warm, sunny feel. Around her head and shoulders, animated teal and white star-shaped sparkles float and twinkle, adding a magical visual effect.\n\nThe commercial returns to the pale background and the Colgate Winterfresh Gel tube again drawing the word “gel.” The tube’s nozzle lays down more blue gel in thick, even strokes, completing the rounded “g,” curling through the “e,” and rising into the tall loop of the “l.” The red “Colgate” label remains prominent as the tube tilts and slides, with the blue gel line gleaming and small sparkles accenting the curves.\n\nTwo boys then appear walking side by side along a sunlit sidewalk or storefront area. The boy on the left has dark hair and medium-to-dark skin, and wears a yellow button-up shirt with a large dark number-like patch on the chest. The boy on the right has light skin, light brown hair, and a short-sleeved plaid shirt. Both look forward with delighted, open-mouthed expressions, then glance toward each other and smile. The same floating teal and white sparkle graphics hover above and around them, while trees and building awnings blur in the background.\n\nA close product demonstration follows on a black background. A toothbrush lies horizontally across the lower part of the image, its bristles upright. A Colgate Winterfresh Gel tube is angled downward over the bristles, and thick, creamy blue gel is squeezed out. Behind it, a red Colgate carton is visible with large white “Colgate” text and smaller wording including “MFP Fluoride Gel,” along with the “Winterfresh Gel” branding. The blue gel spreads into a smooth mound across the top of the bristles, then stretches into a ribbon as the tube lifts away, leaving the brush generously covered.\n\nThe background stays black with the toothbrush and blue gel in view. Large white letters “MFP” appear above the brush, with a small registered trademark symbol beside them. The letters then give way to the phrase “Maximum Fluoride Protection,” stacked in three lines above the gel-covered toothbrush, in bold white and pale purple lettering.\n\nThe blue gel writing motif returns once more, with the Colgate Winterfresh Gel tube finishing the flowing cursive word “gel” against the pale background. The tube is angled from the upper right toward the word, and the shiny blue script sits large on the left side.\n\nIn a bathroom, an adult man leans forward behind two young girls at a white sink. The man has light skin, short brown hair, and wears a lavender or muted purple shirt. The two girls, who look similar in age and appearance, have light skin and braided pigtails, and they stand on either side of the sink. Each holds a toothbrush near her mouth as if brushing, smiling while looking forward. The bathroom is bright and domestic, with faucets in the foreground and a mirror or wall fixtures behind them. Small sparkle graphics again appear around the family, connecting this bathroom scene to the earlier magical-looking visuals.\n\nThe final product display shows two red Colgate toothpaste cartons stacked on a black background. The upper box carries the large white “Colgate” name and a bold yellow label reading “Great Regular Flavor.” The lower box also shows the large white “Colgate” name, with a blue-and-white label reading “Winter-fresh Gel.” The boxes settle fully into view, one above the other, and a white line of text appears beneath them: “The cavity-fighting gel with the Winterfresh taste.”",
+  "api_metadata": {
+    "response_id": "resp_08868fef7db677af006a38460d0870819f8cab08dae35c7958",
+    "usage": {
+      "input_tokens": 17669,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1910,
+      "output_tokens_details": {
+        "reasoning_tokens": 1002
+      },
+      "total_tokens": 19579
+    }
+  },
+  "duration_seconds": 49.392,
+  "created_at": "2026-06-21T20:14:48Z",
+  "error": null
+}

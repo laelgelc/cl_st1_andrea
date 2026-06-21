@@ -1,0 +1,920 @@
+{
+  "commercial_id": "tv_com_1990_67",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_67",
+    "audio_file": "corpus/03_audio/tv_com_1990_67.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_67.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_67.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Slim Jim Jerky Sticks, from 1996. This snack product is used for eating as a quick meat snack.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Food, Beverages & Nutrition",
+      "Commercial ID": "tv_com_1990_67",
+      "Product Name": "Slim Jim Jerky Sticks",
+      "Description": "This is a commercial for Slim Jim Jerky Sticks, from 1996. This snack product is used for eating as a quick meat snack."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "94857b06d9e3ecc15fa4a13fa07b453eb85a6e1ea4ebbbcf7f89db3fb05484f8",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_67.wav",
+    "path": "corpus/03_audio/tv_com_1990_67.wav",
+    "format": "wav",
+    "sha256": "ca51d5a89d85fb27b7510da4f8675b109fc374f89016848e408904c4df50595c",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_67.json",
+    "path": "corpus/04_transcripts/tv_com_1990_67.json",
+    "sha256": "31a6ce32d6be0e325e228879cf052313637e005ce888ef8de1c0ebdfb3c0c397",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_67.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_67.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_67.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1996 Slim Jim Jerky sticks Changing light bulb",
+      "decade": 1990,
+      "sequence": 67,
+      "category": "Food, Beverage & Nutrition",
+      "video_id": "video_0390",
+      "url": "https://youtu.be/Lxp_3000h_U",
+      "source_start": "0:00:00",
+      "source_end": "0:00:31"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 30.1163125,
+      "text_sha256": "b37cb9e37f9ab786aba691fdb75501b57df607df77f4363523715efa5a609763"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "f8b17cd957c7d13183781a8d44e9baad45ec021ec078e92d6542befd512dba8f",
+      "segment_count_available": 12,
+      "segment_count_inserted": 12,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 10.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 13.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 13.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 14.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 14.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 14.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 19.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 19.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 19.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 19.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 20.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 20.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 20.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 20.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 21.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 21.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0094.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0094.jpg",
+      "frame_index": 94,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0095.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0095.jpg",
+      "frame_index": 95,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0096.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0096.jpg",
+      "frame_index": 96,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0097.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0097.jpg",
+      "frame_index": 97,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0098.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0098.jpg",
+      "frame_index": 98,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0099.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0099.jpg",
+      "frame_index": 99,
+      "timestamp_seconds": 25.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0100.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0100.jpg",
+      "frame_index": 100,
+      "timestamp_seconds": 25.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0101.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0101.jpg",
+      "frame_index": 101,
+      "timestamp_seconds": 25.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0102.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0102.jpg",
+      "frame_index": 102,
+      "timestamp_seconds": 25.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0103.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0103.jpg",
+      "frame_index": 103,
+      "timestamp_seconds": 26.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0104.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0104.jpg",
+      "frame_index": 104,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0105.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0105.jpg",
+      "frame_index": 105,
+      "timestamp_seconds": 26.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0106.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0106.jpg",
+      "frame_index": 106,
+      "timestamp_seconds": 26.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0107.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0107.jpg",
+      "frame_index": 107,
+      "timestamp_seconds": 27.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0108.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0108.jpg",
+      "frame_index": 108,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0109.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0109.jpg",
+      "frame_index": 109,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0110.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0110.jpg",
+      "frame_index": 110,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0111.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0111.jpg",
+      "frame_index": 111,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0112.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0112.jpg",
+      "frame_index": 112,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0113.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0113.jpg",
+      "frame_index": 113,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0114.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0114.jpg",
+      "frame_index": 114,
+      "timestamp_seconds": 28.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0115.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0115.jpg",
+      "frame_index": 115,
+      "timestamp_seconds": 29.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0116.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_67/frame_0116.jpg",
+      "frame_index": 116,
+      "timestamp_seconds": 29.116,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 116,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "The commercial opens inside a warmly lit lamp and lighting store, crowded with lampshades, table lamps, chandeliers, and glowing bulbs. Rows of lamps sit on red display tables, and a large wall on the right is packed with bright round bulbs and electrical fixtures. Two teenage boys are near this wall display. One is a Black boy wearing a red shirt under a patterned, light-colored overshirt; the other is a white boy with curly red hair, wearing a red shirt and an open dark plaid shirt. They are handling lamps and bulbs as if trying to change or fix a light. Behind them, an older bald white man in a light blue store jacket stands by a tall ladder. His jacket has a name patch that reads “Bob.” A white-haired older woman in a teal jacket stands farther back with a small tan-and-white dog. Pink neon signage glows in the shop window behind them.\n\nThe boys look bored and awkward around the lamp display. The red-haired boy sits or leans on a display table, raising his hands to his head in frustration, while the Black boy holds a lampshade and looks toward him. Bob, the store worker, grips the ladder and looks over at them with a dry, amused expression. The boys then look upward, their faces lit by the wall of bulbs.\n\nAbove them, a ceiling tile suddenly breaks open. A jagged square hole appears in the ceiling, with broken material and wiring visible around it. Something colorful drops through from above, trailing debris and glittering fragments. Bob looks up in alarm, mouth wide open, one hand still on the ladder. A blur of red, yellow, and black fills the scene as the falling figure descends.\n\nA flamboyantly dressed, muscular adult man appears, strongly resembling a larger-than-life wrestling-style character. He has long dark hair, a full dark beard, yellow shutter-style sunglasses, and a tall red-and-yellow tiger-striped cowboy hat. His outfit is covered in fiery red, orange, yellow, and black patterns, including a matching jacket and bright yellow gloves. He stands among the lamps with a commanding presence, framed by glowing bulbs and chandeliers. The two boys react with excitement, smiling and shouting toward him.\n\nThe costumed man holds up red-and-yellow Slim Jim packages. The packages show the white “Slim Jim” logo near the bottom, with yellow panels above and red tops. He gestures with them as if presenting them to the boys. He then pulls out a dark jerky stick and raises it to his mouth. Holding the Slim Jim pack in one hand, he bites into the stick with an exaggerated open-mouthed expression. The visual energy becomes chaotic and bright, with flashes of white light and sparks filling the image.\n\nAfter the bite, Bob is shown on or near a ladder beneath a ceiling fan and chandelier. The entire area becomes overwhelmingly bright, as if the lights have surged. Bob flails, then is lifted or thrown upward toward the ceiling fan. His blue jacket flutters around him as he becomes tangled near the fan and hanging light fixtures. The fan blades spin around him, and bright sparks spray out from the fixtures in wide, glittering bursts. Bob clings and twists awkwardly, his legs bent and arms crossed defensively, his face stretched in panic.\n\nThe red-haired boy and the Black boy now have Slim Jim sticks. The red-haired boy bites into one, his mouth open wide, while the Black boy grins beside him. A bright flare streaks between them as they react with laughter and excitement. The costumed man, still holding Slim Jim packages, watches over them approvingly through his yellow sunglasses.\n\nThe chaos continues overhead. Bob remains entangled near the ceiling fan and chandelier, surrounded by showers of sparks and haze. The older woman in teal appears in front of the glowing pink neon sign, looking shocked with her mouth open. Her small dog jumps up toward her, and she catches or hugs it tightly as the light around them flares white.\n\nThe fan and ceiling area keep throwing off sparks. Bob is tossed and spun around beneath the fixtures, then dragged into a cluster of hanging lights, wires, and chandelier parts. The dangling cords and decorative strands wrap around him. He struggles underneath the tangled mass, partly hidden by swaying glass pieces, wires, and bulbs.\n\nThe costumed man returns beside the two boys. He stands tall between and behind them, still holding Slim Jim packaging. The red-haired boy and the Black boy laugh with their heads tilted back, each holding a jerky stick. The man’s bright patterned outfit and oversized hat dominate the center of the group, while the boys crowd close to him, delighted.\n\nA new burst of white light fills the store near the wall of bulbs. The Black boy steps toward the glowing wall, shielding himself slightly with his posture, while the costumed man stands just behind him. Sparks rain down like bright orange-white streaks. The Black boy holds up an object near the light display as if joining in the electrified excitement, while the costumed man observes from the side.\n\nThe scene briefly cuts to Bob again, now blasted by light and tangled in the wreckage above. He drops or swings downward from a bundle of cords and metal fixtures, his limbs flailing under a ceiling full of exposed wires. The boys and the costumed man stare toward the chaos with wide-open mouths and excited expressions, their faces washed in intense light.\n\nBob then ends up sprawled on a front display platform near the shop window. He lies on his side amid scattered debris, wires, and broken lighting parts. A glowing blue neon tube is wrapped around his torso like a loose loop, making him look illuminated and trapped. He still wears his light blue jacket and tie, and his face shows stunned exhaustion. Around him are lamps, cords, fallen objects, and a red neon glow on the right side of the platform.\n\nFrom outside the store window, the aftermath is visible. Bob lies in the display area under the glowing blue tubing while silhouettes of people stand inside the shop behind him. A pink neon sign in the window spells out “BOB” vertically or at an angle, reinforcing the store name or Bob’s identity. Lamps still glow around the display, while loose cords hang from above and the right side of the store remains filled with bright light.\n\nThe commercial ends with a close view of the costumed man facing forward. He holds several Slim Jim Jerky Sticks packages in both hands, fanned out on either side of his face. The red-and-yellow wrappers are clearly visible, with the white “Slim Jim” logo on the lower red section. He stares through yellow shutter sunglasses beneath his striped cowboy hat, long hair framing his face and beard. The glowing lamp-store background remains soft and bright behind him as he shakes the packages slightly and presents them directly outward.",
+  "api_metadata": {
+    "response_id": "resp_03f4b562b5dbc837006a384c1f1f6c819cbaa550eb2a607065",
+    "usage": {
+      "input_tokens": 31181,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1882,
+      "output_tokens_details": {
+        "reasoning_tokens": 491
+      },
+      "total_tokens": 33063
+    }
+  },
+  "duration_seconds": 59.456,
+  "created_at": "2026-06-21T20:40:49Z",
+  "error": null
+}

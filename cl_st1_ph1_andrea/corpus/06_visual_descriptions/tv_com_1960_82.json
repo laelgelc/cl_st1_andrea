@@ -1,0 +1,878 @@
+{
+  "commercial_id": "tv_com_1960_82",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1960_82",
+    "audio_file": "corpus/03_audio/tv_com_1960_82.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1960_82.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1960_82.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Lee's Carpets, from the 1960s. This flooring product is used for covering floors to provide comfort and home interior decoration.",
+    "row": {
+      "Decade": "1960",
+      "Category": "Retail (Fashion & Consumer Goods) & Services",
+      "Commercial ID": "tv_com_1960_82",
+      "Product Name": "Lee's Carpets",
+      "Description": "This is a commercial for Lee's Carpets, from the 1960s. This flooring product is used for covering floors to provide comfort and home interior decoration."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "9af8a948baca9fe318440c7d7db8341dd00280f783d2009ec5174a719166c63b",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1960_82.wav",
+    "path": "corpus/03_audio/tv_com_1960_82.wav",
+    "format": "wav",
+    "sha256": "720689e2d12c2753838c733e6fba1a2e9e5e600ccbc521e7c89917692d1249b0",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1960_82.json",
+    "path": "corpus/04_transcripts/tv_com_1960_82.json",
+    "sha256": "27673691b6c78cf892fba5099571bab2f60d976ecc969563a55203a9c18972e4",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1960_82.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_82.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1960_82.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Lee's Carpets",
+      "decade": 1960,
+      "sequence": 82,
+      "category": "Retail (Fashion/ Consumer Goods) &  Services",
+      "video_id": "video_0146",
+      "url": "https://youtu.be/riZjWYZVutI",
+      "source_start": "0:01:33",
+      "source_end": "0:02:22"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 49.0405625,
+      "text_sha256": "800e7559fa1c4ab9f18364308c5f034f08ff5895d669542ccae2d93b3e357047"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "557efc9a530db3fb0c9b950198b5c9e5ed5fcf1a6cbdb6a2cc7c9cb871cfb6ed",
+      "segment_count_available": 5,
+      "segment_count_inserted": 5,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 4.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 6.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 11.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 12.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 13.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 14.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 15.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 15.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 15.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 16.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 16.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 16.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 16.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 17.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 17.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 17.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 17.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 18.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0046.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0046.jpg",
+      "frame_index": 46,
+      "timestamp_seconds": 18.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0047.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0047.jpg",
+      "frame_index": 47,
+      "timestamp_seconds": 18.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0048.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0048.jpg",
+      "frame_index": 48,
+      "timestamp_seconds": 18.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0049.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0049.jpg",
+      "frame_index": 49,
+      "timestamp_seconds": 21.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0050.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0050.jpg",
+      "frame_index": 50,
+      "timestamp_seconds": 21.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0051.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0051.jpg",
+      "frame_index": 51,
+      "timestamp_seconds": 22.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0052.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0052.jpg",
+      "frame_index": 52,
+      "timestamp_seconds": 22.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0053.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0053.jpg",
+      "frame_index": 53,
+      "timestamp_seconds": 22.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0054.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0054.jpg",
+      "frame_index": 54,
+      "timestamp_seconds": 22.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0055.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0055.jpg",
+      "frame_index": 55,
+      "timestamp_seconds": 23.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0056.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0056.jpg",
+      "frame_index": 56,
+      "timestamp_seconds": 23.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0057.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0057.jpg",
+      "frame_index": 57,
+      "timestamp_seconds": 23.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0058.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0058.jpg",
+      "frame_index": 58,
+      "timestamp_seconds": 23.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0059.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0059.jpg",
+      "frame_index": 59,
+      "timestamp_seconds": 24.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0060.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0060.jpg",
+      "frame_index": 60,
+      "timestamp_seconds": 24.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0061.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0061.jpg",
+      "frame_index": 61,
+      "timestamp_seconds": 24.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0062.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0062.jpg",
+      "frame_index": 62,
+      "timestamp_seconds": 24.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0063.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0063.jpg",
+      "frame_index": 63,
+      "timestamp_seconds": 26.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0064.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0064.jpg",
+      "frame_index": 64,
+      "timestamp_seconds": 27.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0065.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0065.jpg",
+      "frame_index": 65,
+      "timestamp_seconds": 27.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0066.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0066.jpg",
+      "frame_index": 66,
+      "timestamp_seconds": 27.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0067.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0067.jpg",
+      "frame_index": 67,
+      "timestamp_seconds": 28.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0068.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0068.jpg",
+      "frame_index": 68,
+      "timestamp_seconds": 28.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0069.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0069.jpg",
+      "frame_index": 69,
+      "timestamp_seconds": 28.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0070.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0070.jpg",
+      "frame_index": 70,
+      "timestamp_seconds": 28.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0071.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0071.jpg",
+      "frame_index": 71,
+      "timestamp_seconds": 29.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0072.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0072.jpg",
+      "frame_index": 72,
+      "timestamp_seconds": 29.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0073.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0073.jpg",
+      "frame_index": 73,
+      "timestamp_seconds": 29.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0074.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0074.jpg",
+      "frame_index": 74,
+      "timestamp_seconds": 29.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0075.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0075.jpg",
+      "frame_index": 75,
+      "timestamp_seconds": 30.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0076.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0076.jpg",
+      "frame_index": 76,
+      "timestamp_seconds": 30.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0077.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0077.jpg",
+      "frame_index": 77,
+      "timestamp_seconds": 30.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0078.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0078.jpg",
+      "frame_index": 78,
+      "timestamp_seconds": 30.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0079.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0079.jpg",
+      "frame_index": 79,
+      "timestamp_seconds": 31.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0080.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0080.jpg",
+      "frame_index": 80,
+      "timestamp_seconds": 31.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0081.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0081.jpg",
+      "frame_index": 81,
+      "timestamp_seconds": 31.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0082.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0082.jpg",
+      "frame_index": 82,
+      "timestamp_seconds": 31.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0083.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0083.jpg",
+      "frame_index": 83,
+      "timestamp_seconds": 32.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0084.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0084.jpg",
+      "frame_index": 84,
+      "timestamp_seconds": 32.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0085.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0085.jpg",
+      "frame_index": 85,
+      "timestamp_seconds": 32.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0086.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0086.jpg",
+      "frame_index": 86,
+      "timestamp_seconds": 32.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0087.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0087.jpg",
+      "frame_index": 87,
+      "timestamp_seconds": 33.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0088.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0088.jpg",
+      "frame_index": 88,
+      "timestamp_seconds": 33.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0089.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0089.jpg",
+      "frame_index": 89,
+      "timestamp_seconds": 33.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0090.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0090.jpg",
+      "frame_index": 90,
+      "timestamp_seconds": 33.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0091.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0091.jpg",
+      "frame_index": 91,
+      "timestamp_seconds": 34.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0092.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0092.jpg",
+      "frame_index": 92,
+      "timestamp_seconds": 34.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0093.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0093.jpg",
+      "frame_index": 93,
+      "timestamp_seconds": 34.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0094.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0094.jpg",
+      "frame_index": 94,
+      "timestamp_seconds": 34.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0095.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0095.jpg",
+      "frame_index": 95,
+      "timestamp_seconds": 35.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0096.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0096.jpg",
+      "frame_index": 96,
+      "timestamp_seconds": 35.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0097.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0097.jpg",
+      "frame_index": 97,
+      "timestamp_seconds": 38.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0098.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0098.jpg",
+      "frame_index": 98,
+      "timestamp_seconds": 38.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0099.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0099.jpg",
+      "frame_index": 99,
+      "timestamp_seconds": 38.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0100.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0100.jpg",
+      "frame_index": 100,
+      "timestamp_seconds": 39.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0101.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0101.jpg",
+      "frame_index": 101,
+      "timestamp_seconds": 39.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0102.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0102.jpg",
+      "frame_index": 102,
+      "timestamp_seconds": 41.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0103.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0103.jpg",
+      "frame_index": 103,
+      "timestamp_seconds": 41.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0104.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0104.jpg",
+      "frame_index": 104,
+      "timestamp_seconds": 42.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0105.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0105.jpg",
+      "frame_index": 105,
+      "timestamp_seconds": 42.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0106.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0106.jpg",
+      "frame_index": 106,
+      "timestamp_seconds": 43.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0107.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0107.jpg",
+      "frame_index": 107,
+      "timestamp_seconds": 43.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0108.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0108.jpg",
+      "frame_index": 108,
+      "timestamp_seconds": 43.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0109.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0109.jpg",
+      "frame_index": 109,
+      "timestamp_seconds": 43.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0110.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1960_82/frame_0110.jpg",
+      "frame_index": 110,
+      "timestamp_seconds": 44.0,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 110,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A glamorous, staged living room opens onto a balcony or terrace, with pale curtains, climbing greenery, a white balustrade, and a hazy outdoor view beyond. The room is warmly lit in gold and amber tones. At the right stands an ornate wooden chest with curved legs, topped by a vase of flowers; at the left are leafy plants and a low built-in seating area with red, cream, and yellow cushions. The floor is covered in a rich, warm golden-brown carpet that extends across the foreground and steps.\n\nA young adult woman with styled reddish-blonde hair appears as a dancer. She wears a flowing, pale gold gown with sheer, winglike fabric panels attached to her arms. She moves gracefully across the raised platform, lifting the fabric so it billows around her like soft drapery. She turns and steps lightly, the long skirt and sheer sleeves fanning out as she crosses from the right side of the room toward the center and then toward the lower seating area. Her posture is poised and theatrical, with arms extended and head turned in profile, presenting the carpeted room as a romantic, elegant setting.\n\nShe descends toward the lower level and continues dancing along the curved edge of the seating area. The carpet is uninterrupted under her feet and across the steps, emphasizing the warm, smooth surface. She gradually lowers herself, first bending and reaching toward the cushions, then settling into a seated, reclining pose on the carpet beside the low platform. Her dress spreads around her in soft folds. She stretches one arm outward across the floor and rests the other near the step, looking down toward the carpet with a composed, almost admiring expression.\n\nThe focus shifts to a close view of feet moving over the carpet. The dancer’s pale high-heeled shoes pass lightly across the golden surface. Then other feet enter: men’s brown and black dress shoes with trouser cuffs, women’s pumps in pale blue, greenish, and dark colors, and more shoes moving from different directions. The carpet is no longer treated delicately; it is walked on, crossed, and crowded by many feet. In the background, the reclining woman remains low near the step, her pale gold dress visible behind the traffic.\n\nA large white shaggy dog’s legs and paws step onto the carpet, its fur hanging down over its feet. A child-sized pair of black Mary Jane shoes with white socks appears beside the dog’s paws, followed by bright red stockings and black shoes crossing through. The scene becomes a parade of everyday wear and strain: dress shoes, women’s heels, children’s shoes, and the dog’s paws all press into and move over the same carpet. A skateboard rolls through as well, its small black wheels and pale board visible close to the floor, carrying a polished black dress shoe as it passes over the carpet. The carpet surface remains visually even and intact despite the repeated motion.\n\nThe woman is shown again reclining on the carpet, now closer. She supports herself on one arm and uses her other hand to touch and smooth the carpet pile. She looks down with a slight smile, as if checking the texture after the heavy use. Her large ring catches the light as her fingers glide over the warm brown surface. The folds of her pale gold gown pool behind her, contrasting with the dense, matte carpet.\n\nThe close views of wear continue: the white dog’s paws step past the skateboard; men’s polished shoes press down; women’s pointed heels and small stiletto heels cross and pivot; a chair or furniture leg briefly plants on the carpet, casting a long shadow. More shoes pass quickly, including brown men’s shoes, glossy black shoes, and pale women’s pumps. The repeated stepping, rolling, and pressing visually suggests the carpet taking a “beating,” while the surface still appears smooth and resilient.\n\nThe view returns to the reclining woman in the elegant room. She remains beside the curved platform, one hand stretched across the carpet, with the balcony, plants, cushions, and ornate chest still behind her. Then the image moves in close on her hand. Her fingers, with the prominent ring, slowly stroke the carpet pile back and forth. The texture is visible as a dense, short, warm brown nap; her hand presses and smooths it, showing the surface springing back without obvious flattening.\n\nThe final images show the underside or backing of a carpet sample held close to the viewer. A brown fabric binding strip is stitched along a coarse backing material. Raised gold lettering on the strip reads “LEE’S,” with part of the preceding word visible at the left, consistent with “by Lee’s.” The stitching along the edge and the woven backing are clearly visible, shifting the attention from the glamorous top surface to the construction underneath.",
+  "api_metadata": {
+    "response_id": "resp_06b30c73ca9b27a3006a383f624100819c9d95d26c3b826b18",
+    "usage": {
+      "input_tokens": 29619,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1220,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 30839
+    }
+  },
+  "duration_seconds": 42.209,
+  "created_at": "2026-06-21T19:46:11Z",
+  "error": null
+}

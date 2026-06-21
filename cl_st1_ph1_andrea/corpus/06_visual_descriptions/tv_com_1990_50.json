@@ -1,0 +1,423 @@
+{
+  "commercial_id": "tv_com_1990_50",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1990_50",
+    "audio_file": "corpus/03_audio/tv_com_1990_50.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1990_50.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1990_50.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Johnson & Johnson Reach Toothbrush, from 1992. This dental care product is used for brushing teeth.",
+    "row": {
+      "Decade": "1990",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1990_50",
+      "Product Name": "Johnson & Johnson Reach Toothbrush",
+      "Description": "This is a commercial for Johnson & Johnson Reach Toothbrush, from 1992. This dental care product is used for brushing teeth."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "1c43ccaab33e60ad1136740b27591a931d5c423e0edad8660827a2368abfa664",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1990_50.wav",
+    "path": "corpus/03_audio/tv_com_1990_50.wav",
+    "format": "wav",
+    "sha256": "91d6d77618c3d5dec5d6dbc2a23a1d2009c669680bddd59cb25521c11929a497",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1990_50.json",
+    "path": "corpus/04_transcripts/tv_com_1990_50.json",
+    "sha256": "790e605f3da62a61a149a908cfc6ac09f3fefbf50541212fc81b1f51ddfbd663",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1990_50.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_50.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1990_50.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "1992 Johnson & Johnson Reach between toothbrush",
+      "decade": 1990,
+      "sequence": 50,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0373",
+      "url": "https://youtu.be/YZC6Uo2qe0I",
+      "source_start": "0:00:00",
+      "source_end": "0:00:15"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 15.0233125,
+      "text_sha256": "09694d411e1d68812dd96d27b79b34b615c980a105685e9b5def36a8a78e7c19"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "aacab5eca13b066a3fe371d01c057b13b9aaea8d28dddf989fd8a27e7c819400",
+      "segment_count_available": 5,
+      "segment_count_inserted": 5,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 1.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 1.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 1.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 3.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 4.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 5.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0020.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0020.jpg",
+      "frame_index": 20,
+      "timestamp_seconds": 5.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0021.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0021.jpg",
+      "frame_index": 21,
+      "timestamp_seconds": 5.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0022.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0022.jpg",
+      "frame_index": 22,
+      "timestamp_seconds": 5.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0023.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0023.jpg",
+      "frame_index": 23,
+      "timestamp_seconds": 6.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0024.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0024.jpg",
+      "frame_index": 24,
+      "timestamp_seconds": 6.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0025.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0025.jpg",
+      "frame_index": 25,
+      "timestamp_seconds": 6.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0026.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0026.jpg",
+      "frame_index": 26,
+      "timestamp_seconds": 7.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0027.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0027.jpg",
+      "frame_index": 27,
+      "timestamp_seconds": 7.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0028.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0028.jpg",
+      "frame_index": 28,
+      "timestamp_seconds": 7.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0029.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0029.jpg",
+      "frame_index": 29,
+      "timestamp_seconds": 7.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0030.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0030.jpg",
+      "frame_index": 30,
+      "timestamp_seconds": 8.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0031.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0031.jpg",
+      "frame_index": 31,
+      "timestamp_seconds": 8.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0032.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0032.jpg",
+      "frame_index": 32,
+      "timestamp_seconds": 8.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0033.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0033.jpg",
+      "frame_index": 33,
+      "timestamp_seconds": 8.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0034.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0034.jpg",
+      "frame_index": 34,
+      "timestamp_seconds": 9.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0035.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0035.jpg",
+      "frame_index": 35,
+      "timestamp_seconds": 9.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0036.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0036.jpg",
+      "frame_index": 36,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0037.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0037.jpg",
+      "frame_index": 37,
+      "timestamp_seconds": 9.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0038.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0038.jpg",
+      "frame_index": 38,
+      "timestamp_seconds": 10.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0039.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0039.jpg",
+      "frame_index": 39,
+      "timestamp_seconds": 10.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0040.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0040.jpg",
+      "frame_index": 40,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0041.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0041.jpg",
+      "frame_index": 41,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0042.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0042.jpg",
+      "frame_index": 42,
+      "timestamp_seconds": 11.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0043.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0043.jpg",
+      "frame_index": 43,
+      "timestamp_seconds": 12.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0044.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0044.jpg",
+      "frame_index": 44,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0045.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1990_50/frame_0045.jpg",
+      "frame_index": 45,
+      "timestamp_seconds": 13.0,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 45,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A simple hand-drawn cartoon character appears against a mostly white background. The character has a long, narrow body, a very large rounded nose, wide eyes, a small curl of hair on top, and rosy pink cheeks. Behind him is a sketched steam-cleaning machine with pipes and a gauge-like detail, and he holds a green hose in one hand. Puffs of steam float around him like little clouds. He smiles as if ready to try something impractical.\n\nThe character gathers several green hose ends together, then brings one hose toward his mouth. Large black text appears across the top: “Hey! Don’t try this at home.” As he puts the green hose into his mouth, his cheeks begin to swell. His face turns increasingly pink, then red, and beads of sweat appear on his forehead. He looks worried, with his eyes opened wide and glancing sideways. His head inflates into a large round red balloon shape while he clutches the hose below his mouth. Steam starts bursting out around him, including from the sides near his ears, and the white background fills with thick cartoon steam clouds. His eyes squeeze shut as the steam clouds crowd in, almost covering him completely.\n\nThe steam becomes so dense that only parts of his red face and open mouth are briefly visible through gaps in the clouds. He looks overwhelmed, with his tongue and dark open mouth visible for a moment, before the clouds take over the screen. Then, as the steam clears, the same cartoon character reappears, now calmer and back to his normal white outline with rosy cheeks. He holds up an orange toothbrush in one hand and a round hand mirror in the other. The mirror is drawn with a simple circular frame and handle; inside it, a large single eye is reflected, comically magnified, with exaggerated eyelashes. The character examines the toothbrush and mirror, smiling and winking, as small leftover steam puffs drift around him.\n\nThe toothbrush is then shown in a close-up diagram. Its handle and head are orange, and the black-outlined bristles are arranged in an uneven, wavy lower edge rather than a straight line. Blue arrows point downward from the bristles toward a row of rounded teeth drawn from above. The bristles descend toward the spaces between the teeth. As they make contact, the bristles bend and spread into the gaps, visually demonstrating how the rippled bristle shape fits between neighboring teeth. The teeth are sketched as oval molars with shaded edges and simple wavy marks on their chewing surfaces.\n\nThe bristles continue sweeping over and between the teeth. The flexible tufts appear to reach into the crevices, pressing down into the narrow spaces. In the lower right corner, small black on-screen text reads “brush & floss regularly.” The toothbrush moves along the row, and the bristles bend in waves as they pass across the tooth surfaces. At one point, a blue starburst sparkle appears at the contact point between two teeth, suggesting a clean shine. The star grows larger for emphasis while the toothbrush bristles pull away to the left.\n\nThe cartoon character returns, smiling and holding the round mirror. A bold black horizontal banner covers the lower part of his body. On the banner, the product name appears in large block letters: “REACH” in white above “BETWEEN” in blue. On either side of the name are diagonal colored stripes, one blue and one orange, echoing the idea of ripples or bristle rows. To the upper right of the character, small text reads, “For all the hard to reach places.”\n\nThe character turns his head from front view to profile, still holding the mirror. He looks thoughtful and pleased, then glances at the mirror. The small slogan text remains near the upper right. The mirror shifts so its round face is more prominent. The words from the slogan begin to appear large inside the mirror, as though magnified. The phrase becomes clear: “for all the hard to reach places.” The final image holds the cartoon character smiling with rosy cheeks beside the enlarged mirror slogan, while the black “REACH BETWEEN” banner remains across the bottom. A small Johnson & Johnson signature-style logo appears near the lower right.",
+  "api_metadata": {
+    "response_id": "resp_095cf33b9f75c2db006a384ba20c68819e9d940249f6013ed2",
+    "usage": {
+      "input_tokens": 12992,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1104,
+      "output_tokens_details": {
+        "reasoning_tokens": 248
+      },
+      "total_tokens": 14096
+    }
+  },
+  "duration_seconds": 35.361,
+  "created_at": "2026-06-21T20:38:23Z",
+  "error": null
+}

@@ -1,0 +1,241 @@
+{
+  "commercial_id": "tv_com_1980_3",
+  "status": "success",
+  "input": {
+    "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1980_3",
+    "audio_file": "corpus/03_audio/tv_com_1980_3.wav",
+    "transcript_json_file": "corpus/04_transcripts/tv_com_1980_3.json",
+    "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v5.md",
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1980_3.md"
+  },
+  "commercial_metadata": {
+    "description": "This is a commercial for Rolaids Antacid Tablets, from the 1980s. This medication is used for relieving heartburn and indigestion.",
+    "row": {
+      "Decade": "1980",
+      "Category": "Health, Beauty & Personal Care",
+      "Commercial ID": "tv_com_1980_3",
+      "Product Name": "Rolaids Antacid Tablets",
+      "Description": "This is a commercial for Rolaids Antacid Tablets, from the 1980s. This medication is used for relieving heartburn and indigestion."
+    }
+  },
+  "prompt": {
+    "template_sha256": "3c99a0cc915ecfc227701e67eaa960247ebdca11994283e4b90f1fff1c07987a",
+    "generated_prompt_sha256": "1f55464de430c3a82a32b54e1d90c9bce763c08134e35ce2465587aa853e07f9",
+    "product_context_placeholder_replaced": true,
+    "transcript_context_placeholder_replaced": true
+  },
+  "audio": {
+    "filename": "tv_com_1980_3.wav",
+    "path": "corpus/03_audio/tv_com_1980_3.wav",
+    "format": "wav",
+    "sha256": "3e56a478c282341fd94e7187c32615a8c73518f28e59016b78fa49efbdcf3122",
+    "submitted": false,
+    "role": "provenance_only"
+  },
+  "transcript": {
+    "filename": "tv_com_1980_3.json",
+    "path": "corpus/04_transcripts/tv_com_1980_3.json",
+    "sha256": "bdae33a2d26e20dcf34dd318d8ca1026757c5b45e7de6dc28a8cc4b774485cc8",
+    "audio_input_path_recorded_in_transcript": "corpus/03_audio/tv_com_1980_3.wav",
+    "text_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_3.txt",
+    "json_output_path_recorded_in_transcript": "corpus/04_transcripts/tv_com_1980_3.json",
+    "model": {
+      "backend": "faster-whisper",
+      "model_name": "large-v3",
+      "device": "cuda",
+      "compute_type": "float16",
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "vad_filter": false
+    },
+    "metadata": {
+      "title": "Rolaids Antacid tablets",
+      "decade": 1980,
+      "sequence": 3,
+      "category": "Health, Beauty & Personal Care",
+      "video_id": "video_0229",
+      "url": "https://youtu.be/tgoUa2wWvAQ",
+      "source_start": "0:03:05",
+      "source_end": "0:03:19"
+    },
+    "transcription_summary": {
+      "detected_language": "en",
+      "language_probability": 1,
+      "duration_seconds": 14.024875,
+      "text_sha256": "283f6cd81ab95070ea974f6b33ca0d1b7b9da3fcc1b2008fe9f2a1c18cb9934d"
+    },
+    "context": {
+      "transcript_context_inserted": true,
+      "transcript_context_sha256": "cd9713e7c7a1b92b02e4376744a511bc5c610347349431895a301572939eae05",
+      "segment_count_available": 3,
+      "segment_count_inserted": 3,
+      "segment_cap_applied": false,
+      "max_transcript_segments": 0,
+      "segment_markdown_spacing": "blank_line_between_segments"
+    },
+    "submitted_as_prompt_text": true
+  },
+  "frames": [
+    {
+      "filename": "frame_0001.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0001.jpg",
+      "frame_index": 1,
+      "timestamp_seconds": 0.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0002.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0002.jpg",
+      "frame_index": 2,
+      "timestamp_seconds": 0.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0003.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0003.jpg",
+      "frame_index": 3,
+      "timestamp_seconds": 1.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0004.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0004.jpg",
+      "frame_index": 4,
+      "timestamp_seconds": 2.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0005.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0005.jpg",
+      "frame_index": 5,
+      "timestamp_seconds": 2.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0006.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0006.jpg",
+      "frame_index": 6,
+      "timestamp_seconds": 2.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0007.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0007.jpg",
+      "frame_index": 7,
+      "timestamp_seconds": 2.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0008.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0008.jpg",
+      "frame_index": 8,
+      "timestamp_seconds": 3.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0009.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0009.jpg",
+      "frame_index": 9,
+      "timestamp_seconds": 3.25,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0010.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0010.jpg",
+      "frame_index": 10,
+      "timestamp_seconds": 3.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0011.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0011.jpg",
+      "frame_index": 11,
+      "timestamp_seconds": 4.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0012.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0012.jpg",
+      "frame_index": 12,
+      "timestamp_seconds": 4.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0013.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0013.jpg",
+      "frame_index": 13,
+      "timestamp_seconds": 9.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0014.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0014.jpg",
+      "frame_index": 14,
+      "timestamp_seconds": 10.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0015.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0015.jpg",
+      "frame_index": 15,
+      "timestamp_seconds": 11.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0016.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0016.jpg",
+      "frame_index": 16,
+      "timestamp_seconds": 11.5,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0017.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0017.jpg",
+      "frame_index": 17,
+      "timestamp_seconds": 12.0,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0018.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0018.jpg",
+      "frame_index": 18,
+      "timestamp_seconds": 12.75,
+      "selection_reason": "kept"
+    },
+    {
+      "filename": "frame_0019.jpg",
+      "path": "corpus/05_frames_selected/tv_com_1980_3/frame_0019.jpg",
+      "frame_index": 19,
+      "timestamp_seconds": 13.07,
+      "selection_reason": "kept"
+    }
+  ],
+  "frame_counts": {
+    "submitted_frame_count": 19,
+    "max_frames_per_request": 0
+  },
+  "model": "gpt-5.5",
+  "image_detail": "low",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "response_text": "A white roll-shaped package of Rolaids Antacid Tablets sits centered on a glossy white surface marked with long perspective lines, like a tiled floor or illuminated display platform. The background is dark and softly shaded, making the package glow slightly. The label shows the large blue “Rolaids” name with red “ANTACID TABLETS” beneath it, and a colored panel on the left indicating the sodium-free version.\n\nThe product remains in this clean studio setting as a much larger Rolaids package moves into the foreground from above, filling the upper part of the image with an enlarged close-up of the label. The red word “ANTACID” becomes oversized and partly cropped as it passes across the screen. Near the bottom, small black on-screen text appears: “FOR OCCASIONAL USE ONLY AS DIRECTED.” The enlarged package continues to dominate the upper half, with the orange “SODIUM FREE” badge on the left and the blue “Rolaids” name stretching across the front. As it settles lower and becomes fully visible, another Rolaids package can be seen behind it, smaller and farther back on the same white lined surface.\n\nA woman then appears against a dark, softly lit studio background. She is an adult woman with short, curly brown hair, light skin, pearl earrings, and a short pearl necklace. She wears a pale pink cardigan over a white collared blouse. Facing forward, she holds a small Rolaids roll or packet upright beside her face between her fingers. Her expression is attentive and direct, with raised eyes and a composed, presenter-like manner, as if explaining the product to the viewer.\n\nThe scene returns to the product display. A large sodium-free Rolaids Antacid Tablets package stretches across the upper half of the image, again on the bright white lined surface. The orange square on the left clearly reads “SODIUM FREE,” and the blue “Rolaids” name is prominent. Bold black text appears near the bottom center reading “RICH IN CALCIUM.” The package remains in place as the calcium message stays visible below it, then begins to fade at the very end while the sodium-free Rolaids package remains the central visual focus.",
+  "api_metadata": {
+    "response_id": "resp_0088f34c9c9cd2df006a3845ba244881a18e7fda55c881251d",
+    "usage": {
+      "input_tokens": 5238,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 969,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 6207
+    }
+  },
+  "duration_seconds": 27.094,
+  "created_at": "2026-06-21T20:13:05Z",
+  "error": null
+}

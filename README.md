@@ -530,11 +530,20 @@ darkness metrics, duplicate metrics, and selection settings.
 ### Describe commercial visuals
 
 The visual-description stage generates commercial-specific prompts and submits
-selected frame sequences, together with the corresponding commercial audio, to a
+selected frame sequences, supported by audio-derived transcript context, to a
 multimodal OpenAI model. The output is a prose visual description designed to
-describe what is visible while using the audio only as supporting context.
+describe what is visible in the selected frames.
 
-It uses the selected-commercial metadata file:
+The selected frames are the primary evidence for visible content. The original
+commercial `.wav` audio file is retained for provenance, but it is not uploaded
+or submitted to the model. Instead, the corresponding Whisper/faster-whisper JSON
+transcript is converted into a timestamped Markdown context block and inserted
+into the generated prompt. This transcript context is treated as imperfect
+supporting information, useful for clarifying product names, brand names,
+slogans, speakers, or ambiguous references, but it should not be treated as
+visible evidence.
+
+The stage uses the selected-commercial metadata file:
 
 ```text
 corpus/00_sources/tv_commercials_selected_2.tsv
@@ -545,12 +554,33 @@ This file contains the selected commercials and their brief `Description` values
 It also uses the prompt template:
 
 ```text
-describe_commercials_visual_prompts/visual_commercial_description_v4.md
+describe_commercials_visual_prompts/visual_commercial_description_v5.md
 ```
 
 For each row in `tv_commercials_selected_2.tsv`, the programme creates a
-commercial-specific Markdown prompt by replacing the product-context placeholder
-in the template with the row's `Description` value.
+commercial-specific Markdown prompt by replacing:
+
+- the product-context placeholder with the row's `Description` value;
+- the transcript-context placeholder with a formatted context block generated
+  from the corresponding transcript JSON file.
+
+Transcript JSON files are read from:
+
+```text
+corpus/04_transcripts/
+```
+
+Each transcript file is expected to be named after the commercial ID:
+
+```text
+corpus/04_transcripts/<Commercial ID>.json
+```
+
+For example:
+
+```text
+corpus/04_transcripts/tv_com_1950_1.json
+```
 
 Generated prompt files are written to:
 
@@ -572,14 +602,17 @@ corpus/06_visual_descriptions_prompts/tv_com_1950_1.md
 
 For each commercial, the programme submits:
 
-- the generated commercial-specific prompt;
+- the generated commercial-specific prompt, including product context and
+  timestamped transcript context;
+- a neutral metadata note recording the commercial ID, transcript source, audio
+  provenance path, and selected-frame count;
 - the corresponding selected frames from:
 
 ```text
 corpus/05_frames_selected/<Commercial ID>/
 ```
 
-- the corresponding audio file from:
+The corresponding audio file is located at:
 
 ```text
 corpus/03_audio/<Commercial ID>.wav
@@ -591,10 +624,8 @@ For example:
 corpus/03_audio/tv_com_1950_1.wav
 ```
 
-The selected frames remain the primary evidence for what is visible. The audio is
-included only as supporting context, for example to help clarify product names,
-brand names, slogans, speakers, or ambiguous visual references. Audio-only
-information should not be described as visible.
+This audio file is validated, hashed, and recorded in the output metadata as a
+provenance artefact only. It is not submitted to the model.
 
 The dense sampled frames in `corpus/05_frames/` are not used for this stage.
 Only the filtered selected frames from `corpus/05_frames_selected/` are submitted
@@ -615,15 +646,31 @@ corpus/06_visual_descriptions/<Commercial ID>.json
 
 The `.txt` file contains the clean visual description returned by the model. The
 `.json` file records reproducibility metadata, including the metadata source,
-prompt template, generated prompt file, prompt hashes, submitted frames,
-submitted audio file, model configuration, response metadata, and any error
-information.
+prompt template, generated prompt file, prompt hashes, audio provenance path and
+hash, transcript path and hash, transcript-context hash, submitted selected
+frames, model configuration, response metadata, and any error information.
+
+Run-level logs and manifests are also written to:
+
+```text
+corpus/06_visual_descriptions/
+```
+
+Recommended run-level files include:
+
+```text
+corpus/06_visual_descriptions/describe_commercials_visual.log
+corpus/06_visual_descriptions/describe_commercials_visual_manifest.json
+corpus/06_visual_descriptions/describe_commercials_visual_manifest_<RUN_ID>.json
+```
 
 Default test run:
 
 ```bash
 python describe_commercials_visual.py
 ```
+
+This processes up to 5 commercials by default.
 
 Full run:
 
@@ -645,7 +692,7 @@ python describe_commercials_visual.py \
   --start-commercial-id tv_com_1960_54
 ```
 
-Use a Stage 2 frame cap for cost control:
+Use a frame cap for cost control:
 
 ```bash
 python describe_commercials_visual.py \
@@ -653,12 +700,28 @@ python describe_commercials_visual.py \
   --max-frames-per-request 40
 ```
 
-Use a non-default audio directory:
+Use a transcript segment cap:
+
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --max-transcript-segments 40
+```
+
+Use a non-default audio provenance directory:
 
 ```bash
 python describe_commercials_visual.py \
   --no-test-mode \
   --audio-dir corpus/03_audio
+```
+
+Use a non-default transcript directory:
+
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --transcripts-dir corpus/04_transcripts
 ```
 
 The visual-description stage requires `OPENAI_API_KEY` in `env/.env` or in the

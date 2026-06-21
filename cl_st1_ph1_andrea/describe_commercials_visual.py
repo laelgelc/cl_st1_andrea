@@ -1,16 +1,18 @@
 """
 Generate commercial-specific visual-description prompts and submit selected frames
-to a multimodal OpenAI model.
+and corresponding commercial audio to a multimodal OpenAI model.
 
 This programme is the LLM-based visual-description stage of the Phase 1 visual
 pipeline. It reads selected commercial metadata, creates one prompt document per
-commercial from a Markdown template, pairs each prompt with selected frames, and
-writes visual descriptions plus reproducibility metadata.
+commercial from a Markdown template, pairs each prompt with selected frames and
+the corresponding audio file, and writes visual descriptions plus reproducibility
+metadata.
 
 Default inputs:
     corpus/00_sources/tv_commercials_selected_2.tsv
     describe_commercials_visual_prompts/visual_commercial_description_v4.md
     corpus/05_frames_selected/<Commercial ID>/
+    corpus/03_audio/<Commercial ID>.wav
 
 Default generated prompts:
     corpus/06_visual_descriptions_prompts/<Commercial ID>.md
@@ -23,11 +25,15 @@ Typical usage:
     python describe_commercials_visual.py
     python describe_commercials_visual.py --no-test-mode
     python describe_commercials_visual.py --no-test-mode --workers 4
+    python describe_commercials_visual.py --no-test-mode --audio-dir corpus/03_audio
     python describe_commercials_visual.py --no-test-mode --max-frames-per-request 40
     python describe_commercials_visual.py --no-test-mode --reprocess
 
 The programme uses selected frames from corpus/05_frames_selected/. It does not
 use the dense sampled-frame directory corpus/05_frames/ for LLM requests.
+
+The audio is included as supporting context only. The selected frames remain the
+primary evidence for visible content.
 
 Requires OPENAI_API_KEY in env/.env or the system environment.
 """
@@ -58,6 +64,7 @@ PRODUCT_CONTEXT_PLACEHOLDER = (
 )
 
 SUPPORTED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+SUPPORTED_AUDIO_EXTENSIONS = {".wav"}
 
 
 class ConfigurationError(Exception):
@@ -86,6 +93,15 @@ class FrameInfo:
 
 
 @dataclass(frozen=True)
+class AudioInfo:
+    """Information about one commercial audio file to submit to the LLM."""
+
+    filename: str
+    path: Path
+    format: str
+
+
+@dataclass(frozen=True)
 class WorkItem:
     """Planned work for one commercial visual-description request."""
 
@@ -93,6 +109,7 @@ class WorkItem:
     description: str
     metadata_row: dict[str, str]
     frame_dir: Path
+    audio_path: Path
     prompt_file: Path
     output_text_path: Path
     output_json_path: Path
@@ -107,6 +124,7 @@ class RuntimeConfig:
     prompt_template_text: str
     prompt_template_sha256: str
     frames_dir: Path
+    audio_dir: Path
     prompt_output_dir: Path
     output_dir: Path
     model: str
@@ -124,6 +142,7 @@ class ProcessingResult:
 
     commercial_id: str
     input_path: str | None
+    audio_path: str | None
     output_path: str
     json_path: str
     prompt_path: str
@@ -131,6 +150,7 @@ class ProcessingResult:
     error: str | None
     duration_seconds: float
     submitted_frame_count: int
+    submitted_audio: bool
     response_id: str | None
     usage: dict[str, Any] | None
     timestamp: str
@@ -159,7 +179,7 @@ def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
 
     parser = argparse.ArgumentParser(
-        description="Generate commercial-specific prompts and visual descriptions from selected frames."
+        description="Generate commercial-specific prompts and visual descriptions from selected frames and audio."
     )
 
     parser.add_argument(
@@ -179,6 +199,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("corpus/05_frames_selected"),
         help="Directory containing selected frame folders.",
+    )
+    parser.add_argument(
+        "--audio-dir",
+        type=Path,
+        default=Path("corpus/03_audio"),
+        help="Directory containing commercial audio files named <Commercial ID>.wav.",
     )
     parser.add_argument(
         "--prompt-output-dir",
@@ -310,6 +336,12 @@ def validate_args(args: argparse.Namespace) -> None:
     if not args.frames_dir.is_dir():
         raise ConfigurationError(f"Selected frames path is not a directory: {args.frames_dir}")
 
+    if not args.audio_dir.exists():
+        raise ConfigurationError(f"Audio directory missing: {args.audio_dir}")
+
+    if not args.audio_dir.is_dir():
+        raise ConfigurationError(f"Audio path is not a directory: {args.audio_dir}")
+
     if args.test_limit <= 0:
         raise ConfigurationError("--test-limit must be greater than 0")
 
@@ -350,6 +382,18 @@ def sha256_text(text: str) -> str:
     """Return the SHA-256 hash of text."""
 
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def sha256_file(path: Path) -> str:
+    """Return the SHA-256 hash of a file."""
+
+    digest = hashlib.sha256()
+
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(chunk)
+
+    return digest.hexdigest()
 
 
 def read_selected_metadata(metadata_tsv: Path) -> list[CommercialMetadata]:
@@ -477,6 +521,7 @@ def plan_work(
 
         prompt_file = config.prompt_output_dir / f"{commercial_id}.md"
         frame_dir = config.frames_dir / commercial_id
+        audio_path = config.audio_dir / f"{commercial_id}.wav"
         output_text_path = config.output_dir / f"{commercial_id}.txt"
         output_json_path = config.output_dir / f"{commercial_id}.json"
 
@@ -485,6 +530,7 @@ def plan_work(
                 ProcessingResult(
                     commercial_id=commercial_id,
                     input_path=str(frame_dir),
+                    audio_path=str(audio_path),
                     output_path=str(output_text_path),
                     json_path=str(output_json_path),
                     prompt_path=str(prompt_file),
@@ -492,6 +538,7 @@ def plan_work(
                     error=None,
                     duration_seconds=0.0,
                     submitted_frame_count=0,
+                    submitted_audio=False,
                     response_id=None,
                     usage=None,
                     timestamp=utc_timestamp(),
@@ -505,6 +552,7 @@ def plan_work(
                 description=item.description,
                 metadata_row=item.row,
                 frame_dir=frame_dir,
+                audio_path=audio_path,
                 prompt_file=prompt_file,
                 output_text_path=output_text_path,
                 output_json_path=output_json_path,
@@ -670,6 +718,27 @@ def discover_selected_frames(frame_dir: Path) -> list[FrameInfo]:
     return discover_frames_by_filename(frame_dir)
 
 
+def resolve_audio_file(audio_path: Path) -> AudioInfo:
+    """Resolve and validate a commercial audio file."""
+
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Missing audio file: {audio_path}")
+
+    if not audio_path.is_file():
+        raise FileNotFoundError(f"Audio path is not a file: {audio_path}")
+
+    suffix = audio_path.suffix.lower()
+
+    if suffix not in SUPPORTED_AUDIO_EXTENSIONS:
+        raise ValueError(f"Unsupported audio extension: {audio_path}")
+
+    return AudioInfo(
+        filename=audio_path.name,
+        path=audio_path,
+        format=suffix.lstrip("."),
+    )
+
+
 def cap_frames_evenly(frames: list[FrameInfo], max_frames: int) -> tuple[list[FrameInfo], bool]:
     """Apply optional deterministic chronological even downsampling."""
 
@@ -720,10 +789,34 @@ def image_to_data_url(image_path: Path) -> str:
     return f"data:{mime_type};base64,{encoded}"
 
 
+def audio_to_base64(audio_path: Path) -> str:
+    """Encode a local audio file as base64."""
+
+    return base64.b64encode(audio_path.read_bytes()).decode("ascii")
+
+
+def build_audio_content_item(audio_info: AudioInfo) -> dict[str, Any]:
+    """
+    Build an audio input item for the OpenAI Responses API.
+
+    The expected structure follows the standard multimodal content style for
+    base64 audio inputs. If the SDK/API changes, update only this function.
+    """
+
+    return {
+        "type": "input_audio",
+        "input_audio": {
+            "data": audio_to_base64(audio_info.path),
+            "format": audio_info.format,
+        },
+    }
+
+
 def build_request_content(
         prompt_text: str,
         commercial_id: str,
         frames: list[FrameInfo],
+        audio_info: AudioInfo,
         image_detail: str,
 ) -> list[dict[str, Any]]:
     """Build OpenAI Responses API multimodal request content."""
@@ -733,11 +826,15 @@ def build_request_content(
         {
             "type": "input_text",
             "text": (
-                "Frame sequence metadata:\n"
+                "Commercial sequence metadata:\n"
                 f"Commercial ID: {commercial_id}\n"
-                f"Number of selected frames: {len(frames)}"
+                f"Audio file: {audio_info.filename}\n"
+                f"Number of selected frames: {len(frames)}\n\n"
+                "The audio is provided as supporting context only. "
+                "Use the selected frames as the primary evidence for visible content."
             ),
         },
+        build_audio_content_item(audio_info),
     ]
 
     for index, frame in enumerate(frames, start=1):
@@ -874,6 +971,7 @@ def write_success_outputs(
         work_item: WorkItem,
         config: RuntimeConfig,
         frames: list[FrameInfo],
+        audio_info: AudioInfo,
         response_text: str,
         api_metadata: dict[str, Any],
         duration_seconds: float,
@@ -892,6 +990,7 @@ def write_success_outputs(
         "input": {
             "metadata_tsv": str(config.metadata_tsv),
             "frame_dir": str(work_item.frame_dir),
+            "audio_file": str(audio_info.path),
             "prompt_template": str(config.prompt_template),
             "generated_prompt_file": str(work_item.prompt_file),
         },
@@ -903,6 +1002,13 @@ def write_success_outputs(
             "template_sha256": config.prompt_template_sha256,
             "generated_prompt_sha256": generated_prompt_sha256,
             "placeholder_replaced": PRODUCT_CONTEXT_PLACEHOLDER not in generated_prompt_text,
+        },
+        "audio": {
+            "filename": audio_info.filename,
+            "path": str(audio_info.path),
+            "format": audio_info.format,
+            "sha256": sha256_file(audio_info.path),
+            "submitted": True,
         },
         "frames": [
             {
@@ -949,12 +1055,18 @@ def write_failure_output(
         "input": {
             "metadata_tsv": str(config.metadata_tsv),
             "frame_dir": str(work_item.frame_dir),
+            "audio_file": str(work_item.audio_path),
             "prompt_template": str(config.prompt_template),
             "generated_prompt_file": str(work_item.prompt_file),
         },
         "commercial_metadata": {
             "description": work_item.description,
             "row": work_item.metadata_row,
+        },
+        "audio": {
+            "filename": work_item.audio_path.name,
+            "path": str(work_item.audio_path),
+            "submitted": False,
         },
         "output": {
             "text_path": str(work_item.output_text_path),
@@ -970,7 +1082,7 @@ def write_failure_output(
 
 
 def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> ProcessingResult:
-    """Process one commercial prompt and selected-frame sequence."""
+    """Process one commercial prompt, selected-frame sequence, and audio file."""
 
     start = time.time()
 
@@ -981,11 +1093,13 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
 
         frames = discover_selected_frames(work_item.frame_dir)
         submitted_frames, _cap_applied = cap_frames_evenly(frames, config.max_frames_per_request)
+        audio_info = resolve_audio_file(work_item.audio_path)
 
         content = build_request_content(
             prompt_text=prompt_text,
             commercial_id=work_item.commercial_id,
             frames=submitted_frames,
+            audio_info=audio_info,
             image_detail=config.image_detail,
         )
 
@@ -1006,6 +1120,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             work_item=work_item,
             config=config,
             frames=submitted_frames,
+            audio_info=audio_info,
             response_text=response_text,
             api_metadata=api_metadata,
             duration_seconds=duration_seconds,
@@ -1014,6 +1129,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
         return ProcessingResult(
             commercial_id=work_item.commercial_id,
             input_path=str(work_item.frame_dir),
+            audio_path=str(audio_info.path),
             output_path=str(work_item.output_text_path),
             json_path=str(work_item.output_json_path),
             prompt_path=str(work_item.prompt_file),
@@ -1021,6 +1137,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             error=None,
             duration_seconds=round(duration_seconds, 3),
             submitted_frame_count=len(submitted_frames),
+            submitted_audio=True,
             response_id=api_metadata.get("response_id"),
             usage=api_metadata.get("usage"),
             timestamp=utc_timestamp(),
@@ -1043,6 +1160,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
         return ProcessingResult(
             commercial_id=work_item.commercial_id,
             input_path=str(work_item.frame_dir),
+            audio_path=str(work_item.audio_path),
             output_path=str(work_item.output_text_path),
             json_path=str(work_item.output_json_path),
             prompt_path=str(work_item.prompt_file),
@@ -1050,6 +1168,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             error=error,
             duration_seconds=round(duration_seconds, 3),
             submitted_frame_count=0,
+            submitted_audio=False,
             response_id=None,
             usage=None,
             timestamp=utc_timestamp(),
@@ -1125,6 +1244,7 @@ def main() -> int:
             prompt_template_text=prompt_template_text,
             prompt_template_sha256=prompt_template_sha256,
             frames_dir=args.frames_dir,
+            audio_dir=args.audio_dir,
             prompt_output_dir=args.prompt_output_dir,
             output_dir=args.output_dir,
             model=args.model,
@@ -1141,6 +1261,7 @@ def main() -> int:
         logging.info("Prompt template: %s", args.prompt_template)
         logging.info("Prompt template SHA-256: %s", prompt_template_sha256)
         logging.info("Selected frames dir: %s", args.frames_dir)
+        logging.info("Audio dir: %s", args.audio_dir)
         logging.info("Generated prompts dir: %s", args.prompt_output_dir)
         logging.info("Output dir: %s", args.output_dir)
         logging.info("Model: %s", args.model)
@@ -1185,9 +1306,10 @@ def main() -> int:
 
                 if result.status == "success":
                     logging.info(
-                        "SUCCESS %s frames=%s response_id=%s",
+                        "SUCCESS %s frames=%s audio=%s response_id=%s",
                         result.commercial_id,
                         result.submitted_frame_count,
+                        result.submitted_audio,
                         result.response_id,
                     )
                 else:
@@ -1205,9 +1327,10 @@ def main() -> int:
 
                     if result.status == "success":
                         logging.info(
-                            "SUCCESS %s frames=%s response_id=%s",
+                            "SUCCESS %s frames=%s audio=%s response_id=%s",
                             result.commercial_id,
                             result.submitted_frame_count,
+                            result.submitted_audio,
                             result.response_id,
                         )
                     else:
@@ -1217,13 +1340,32 @@ def main() -> int:
         succeeded = sum(1 for result in results if result.status == "success")
         failed = sum(1 for result in results if result.status == "failed")
         skipped_existing = sum(1 for result in results if result.status == "skipped_existing")
+        missing_audio_failures = sum(
+            1
+            for result in results
+            if result.status == "failed"
+            and result.error is not None
+            and "missing audio file" in result.error.lower()
+        )
+        missing_frame_failures = sum(
+            1
+            for result in results
+            if result.status == "failed"
+            and result.error is not None
+            and (
+                    "missing selected frame directory" in result.error.lower()
+                    or "missing selected frame file" in result.error.lower()
+                    or "no supported selected frame files" in result.error.lower()
+                    or "no usable selected frames" in result.error.lower()
+            )
+        )
 
         end_time = utc_timestamp()
 
         run_metadata = {
             "run_id": current_run_id,
             "tool_name": "describe_commercials_visual",
-            "version": "v4_prompt_selected_frames",
+            "version": "v4_prompt_selected_frames_audio",
             "start_time": start_time,
             "end_time": end_time,
             "test_mode": args.test_mode,
@@ -1235,6 +1377,7 @@ def main() -> int:
                 "prompt_template": str(args.prompt_template),
                 "prompt_template_sha256": prompt_template_sha256,
                 "frames_dir": str(args.frames_dir),
+                "audio_dir": str(args.audio_dir),
                 "prompt_output_dir": str(args.prompt_output_dir),
                 "output_dir": str(args.output_dir),
                 "model": args.model,
@@ -1255,6 +1398,8 @@ def main() -> int:
             "attempted": attempted,
             "succeeded": succeeded,
             "failed": failed,
+            "missing_audio_failures": missing_audio_failures,
+            "missing_frame_failures": missing_frame_failures,
         }
 
         write_run_manifest(

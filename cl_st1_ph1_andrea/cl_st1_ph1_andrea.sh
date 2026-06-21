@@ -219,7 +219,7 @@ python select_commercials_frames.py --no-test-mode
 python select_commercials_frames.py --no-test-mode --reprocess
 
 # ==============================================================================
-# 7. Describe commercial visuals from selected frames
+# 7. Describe commercial visuals from selected frames and audio
 #
 # Programme:
 #   describe_commercials_visual.py
@@ -231,6 +231,7 @@ python select_commercials_frames.py --no-test-mode --reprocess
 #   corpus/05_frames_selected/<Commercial ID>/frame_0001.jpg
 #   corpus/05_frames_selected/<Commercial ID>/frame_0002.jpg
 #   ...
+#   corpus/03_audio/<Commercial ID>.wav
 #
 # Generated prompts:
 #   corpus/06_visual_descriptions_prompts/<Commercial ID>.md
@@ -248,8 +249,15 @@ python select_commercials_frames.py --no-test-mode --reprocess
 #       describe_commercials_visual_prompts/visual_commercial_description_v4.md
 #   - Generated prompt documents are written to:
 #       corpus/06_visual_descriptions_prompts/
-#   - It submits each generated prompt with the corresponding selected frames from:
-#       corpus/05_frames_selected/<Commercial ID>/
+#   - It submits each generated prompt with:
+#       * the corresponding selected frames from:
+#           corpus/05_frames_selected/<Commercial ID>/
+#       * the corresponding audio file from:
+#           corpus/03_audio/<Commercial ID>.wav
+#   - The selected frames remain the primary evidence for visible content.
+#   - The audio is used only as supporting context to clarify product names,
+#     brand names, slogans, speakers, or ambiguous visual references.
+#   - Audio-only information should not be treated as visible.
 #   - It does not use dense sampled frames from corpus/05_frames/ for LLM requests.
 #   - Default run is test mode.
 #   - The programme requires OPENAI_API_KEY in env/.env or in the system environment.
@@ -257,13 +265,14 @@ python select_commercials_frames.py --no-test-mode --reprocess
 # ==============================================================================
 
 # Test run attempting up to 10 new items, using the selected-commercial metadata,
-# v4 prompt template, selected frames, default model, and default image-detail settings.
+# v4 prompt template, selected frames, corresponding audio files, default model,
+# and default image-detail settings.
 python describe_commercials_visual.py \
   --test-limit 10
 
 # Test run starting from a specific commercial ID and attempting up to 10 new items.
-# Use the exact commercial ID format found in corpus/00_sources/tv_commercials_selected_2.tsv
-# and under corpus/05_frames_selected/.
+# Use the exact commercial ID format found in corpus/00_sources/tv_commercials_selected_2.tsv,
+# corpus/05_frames_selected/, and corpus/03_audio/.
 python describe_commercials_visual.py \
   --test-limit 10 \
   --start-commercial-id tv_com_1960_54
@@ -273,10 +282,23 @@ python describe_commercials_visual.py \
   --no-test-mode \
   --workers 4
 
+# Full run with workers and an explicit audio directory.
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --workers 4 \
+  --audio-dir corpus/03_audio
+
 # Full run with a Stage 2 frame cap for cost control.
 python describe_commercials_visual.py \
   --no-test-mode \
   --workers 4 \
+  --max-frames-per-request 40
+
+# Full run with a Stage 2 frame cap and an explicit audio directory.
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --workers 4 \
+  --audio-dir corpus/03_audio \
   --max-frames-per-request 40
 
 # Reprocess existing generated prompts and visual descriptions.
@@ -290,4 +312,5 @@ nohup bash run_python_ec2.sh \
    describe_commercials_visual.py \
        --no-test-mode \
        --workers 4 \
+       --audio-dir corpus/03_audio \
 > describe_commercials_visual_output.log 2>&1 &

@@ -530,17 +530,17 @@ darkness metrics, duplicate metrics, and selection settings.
 ### Describe commercial visuals
 
 The visual-description stage generates commercial-specific prompts and submits
-selected frame sequences to a multimodal OpenAI model to produce prose visual
-descriptions of the selected commercials.
+selected frame sequences, together with the corresponding commercial audio, to a
+multimodal OpenAI model. The output is a prose visual description designed to
+describe what is visible while using the audio only as supporting context.
 
-It uses:
+It uses the selected-commercial metadata file:
 
 ```text
 corpus/00_sources/tv_commercials_selected_2.tsv
 ```
 
-as the selected-commercial metadata file. This file contains the selected
-commercials and their brief `Description` values.
+This file contains the selected commercials and their brief `Description` values.
 
 It also uses the prompt template:
 
@@ -570,12 +570,31 @@ For example:
 corpus/06_visual_descriptions_prompts/tv_com_1950_1.md
 ```
 
-The programme then submits each commercial-specific prompt together with the
-corresponding selected frames from:
+For each commercial, the programme submits:
+
+- the generated commercial-specific prompt;
+- the corresponding selected frames from:
 
 ```text
 corpus/05_frames_selected/<Commercial ID>/
 ```
+
+- the corresponding audio file from:
+
+```text
+corpus/03_audio/<Commercial ID>.wav
+```
+
+For example:
+
+```text
+corpus/03_audio/tv_com_1950_1.wav
+```
+
+The selected frames remain the primary evidence for what is visible. The audio is
+included only as supporting context, for example to help clarify product names,
+brand names, slogans, speakers, or ambiguous visual references. Audio-only
+information should not be described as visible.
 
 The dense sampled frames in `corpus/05_frames/` are not used for this stage.
 Only the filtered selected frames from `corpus/05_frames_selected/` are submitted
@@ -596,8 +615,9 @@ corpus/06_visual_descriptions/<Commercial ID>.json
 
 The `.txt` file contains the clean visual description returned by the model. The
 `.json` file records reproducibility metadata, including the metadata source,
-prompt template, generated prompt file, prompt hashes, submitted frames, model
-configuration, response metadata, and any error information.
+prompt template, generated prompt file, prompt hashes, submitted frames,
+submitted audio file, model configuration, response metadata, and any error
+information.
 
 Default test run:
 
@@ -631,6 +651,14 @@ Use a Stage 2 frame cap for cost control:
 python describe_commercials_visual.py \
   --no-test-mode \
   --max-frames-per-request 40
+```
+
+Use a non-default audio directory:
+
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --audio-dir corpus/03_audio
 ```
 
 The visual-description stage requires `OPENAI_API_KEY` in `env/.env` or in the

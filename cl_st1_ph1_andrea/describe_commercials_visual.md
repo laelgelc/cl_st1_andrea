@@ -1,12 +1,10 @@
-## Redesigned Specification: `sample_commercials_frames.py`
+## Redesigned Specification: `describe_commercials_visual.py`
 
 ### 1. Programme purpose
 
-`sample_commercials_frames.py` should be redesigned to support the next visual-description stage of the commercial-analysis pipeline.
+`describe_commercials_visual.py` prepares commercial-specific prompt files and submits selected commercial frames, together with the corresponding commercial audio, to a multimodal LLM.
 
-The programme should now prepare **commercial-specific prompt files** and organise the inputs needed for submitting selected commercial frames to a multimodal LLM.
-
-It should:
+The programme should:
 
 1. Use the Markdown prompt template:
 
@@ -25,21 +23,28 @@ corpus/00_sources/tv_commercials_selected_2.tsv
 4. Save those prompt documents in:
 
 ```text
-06_visual_descriptions_prompts/
+corpus/06_visual_descriptions_prompts/
 ```
 
-5. Pair each prompt document with the corresponding selected frames from:
+5. Pair each prompt document with:
+   - the corresponding selected frames from:
 
 ```text
-05_frames_selected/
+corpus/05_frames_selected/
 ```
 
-6. Submit each commercial-specific prompt plus its corresponding frames to the LLM.
+   - the corresponding commercial audio file from:
+
+```text
+corpus/03_audio/
+```
+
+6. Submit each commercial-specific prompt, its selected frames, and its audio file to the LLM.
 
 7. Save LLM responses in:
 
 ```text
-06_visual_descriptions/
+corpus/06_visual_descriptions/
 ```
 
 using the same output pattern currently implemented for visual-description responses.
@@ -102,19 +107,19 @@ The programme should fail early with a clear error if:
 The programme should use selected frames from:
 
 ```text
-05_frames_selected/
+corpus/05_frames_selected/
 ```
 
 For each commercial ID, the programme expects a directory:
 
 ```text
-05_frames_selected/<Commercial ID>/
+corpus/05_frames_selected/<Commercial ID>/
 ```
 
 Example:
 
 ```text
-05_frames_selected/tv_com_1950_1/
+corpus/05_frames_selected/tv_com_1950_1/
 ```
 
 Each directory should contain selected image frames, typically:
@@ -138,81 +143,39 @@ Supported image extensions:
 
 ---
 
-### 3. Prompt generation
+#### 2.4 Commercial audio directory
 
-For every row in `corpus/00_sources/tv_commercials_selected_2.tsv`, the programme should create a commercial-specific prompt file.
-
-#### 3.1 Prompt replacement rule
-
-In the template prompt, replace exactly this placeholder text:
+The programme should use the corresponding commercial audio file from:
 
 ```text
-<This is a commercial for LiquidPeptans, from the 1950s. This antacid product is used for reducing acid acidity to relieve discomfort.>
+corpus/03_audio/
 ```
 
-with the row’s `Description` value.
+Each audio file is named after the `Commercial ID` column and has the `.wav` extension.
 
-For example, if the TSV row contains:
+Expected path pattern:
 
 ```text
-Commercial ID: tv_com_1950_1
-Description: This is a commercial for Liquid Peptans, from the 1950s. This antacid product is used for reducing stomach acidity to relieve discomfort.
+corpus/03_audio/<Commercial ID>.wav
 ```
-
-then the generated prompt should contain:
-
-```text
-## Product context:
-This is a commercial for Liquid Peptans, from the 1950s. This antacid product is used for reducing stomach acidity to relieve discomfort.
-```
-
-The generated prompt should preserve the rest of the Markdown template unchanged.
-
----
-
-#### 3.2 Prompt output directory
-
-Generated prompt documents should be saved in:
-
-```text
-06_visual_descriptions_prompts/
-```
-
-The directory should be created if it does not already exist.
-
----
-
-#### 3.3 Prompt filename
-
-Each generated prompt file should be named after the `Commercial ID` column.
 
 Example:
 
 ```text
-06_visual_descriptions_prompts/tv_com_1950_1.md
-06_visual_descriptions_prompts/tv_com_1950_3.md
-06_visual_descriptions_prompts/tv_com_1950_5.md
+corpus/03_audio/tv_com_1950_1.wav
 ```
 
-The programme should sanitise filenames only if necessary, but the expected commercial IDs are already filesystem-safe.
+The audio should be submitted to the LLM together with the commercial-specific prompt and selected frames.
 
----
+The audio is used only as supporting context, in line with the prompt instructions. The selected frames remain the primary source of evidence for what is visible. The audio may help clarify product names, brand names, slogans, speakers, or ambiguous visual references, but the model should not treat audio-only information as visible.
 
-#### 3.4 Prompt overwrite behaviour
+Supported audio extension for this version:
 
-By default, existing prompt files may be skipped if their content already matches the newly generated content.
+```text
+.wav
+```
 
-If the content differs, the programme should overwrite the file when `--reprocess` is used.
-
-Recommended behaviour:
-
-| Situation                              | Default behaviour | With `--reprocess` |
-|----------------------------------------|-------------------|--------------------|
-| Prompt file missing                    | Create it         | Create it          |
-| Prompt file exists and content matches | Leave unchanged   | Rewrite allowed    |
-| Prompt file exists and content differs | Skip or warn      | Overwrite          |
-
-A simple implementation may overwrite prompts every run, provided this is logged clearly.
+The programme should fail per commercial, not globally, if the expected audio file is missing, unless an explicit future option such as `--allow-missing-audio` is introduced.
 
 ---
 
@@ -223,30 +186,64 @@ For each commercial listed in `corpus/00_sources/tv_commercials_selected_2.tsv`,
 1. The commercial-specific prompt document created in:
 
 ```text
-06_visual_descriptions_prompts/<Commercial ID>.md
+corpus/06_visual_descriptions_prompts/<Commercial ID>.md
 ```
 
 2. The corresponding selected frames from:
 
 ```text
-05_frames_selected/<Commercial ID>/
+corpus/05_frames_selected/<Commercial ID>/
+```
+
+3. The corresponding audio file from:
+
+```text
+corpus/03_audio/<Commercial ID>.wav
 ```
 
 Frames must be submitted in chronological order.
 
-The prompt should be submitted as the textual instruction, followed by the ordered images.
+The request should include the prompt first, followed by a neutral metadata note, the audio file, and then the ordered frame sequence.
+
+Recommended logical request structure:
+
+```text
+[prompt text from generated prompt file]
+
+Commercial ID: tv_com_1950_1
+Audio file: corpus/03_audio/tv_com_1950_1.wav
+Number of selected frames: 64
+
+[audio input]
+
+Frame 1 — filename: frame_0001.jpg — timestamp: ... — selection reason: ...
+[image input]
+
+Frame 2 — filename: frame_0002.jpg — timestamp: ... — selection reason: ...
+[image input]
+
+...
+```
+
+The request labels should remain factual and neutral. They should not add interpretation.
 
 ---
 
-### 5. Frame selection and ordering
+### 5. Frame and audio selection
 
 For each commercial, the programme should locate selected frames under:
 
 ```text
-05_frames_selected/<Commercial ID>/
+corpus/05_frames_selected/<Commercial ID>/
 ```
 
-If a manifest exists, such as:
+and the corresponding audio file at:
+
+```text
+corpus/03_audio/<Commercial ID>.wav
+```
+
+If a selected-frame manifest exists, such as:
 
 ```text
 selected_frames_manifest.json
@@ -267,7 +264,7 @@ frame_0010.jpg
 The programme should not use the dense original frames from:
 
 ```text
-05_frames/
+corpus/05_frames/
 ```
 
 for LLM submission.
@@ -275,63 +272,24 @@ for LLM submission.
 It should use:
 
 ```text
-05_frames_selected/
+corpus/05_frames_selected/
 ```
 
 only.
 
----
-
-### 6. Output directory
-
-LLM responses should be saved in:
+The audio file should be resolved directly from the commercial ID:
 
 ```text
-06_visual_descriptions/
+corpus/03_audio/<Commercial ID>.wav
 ```
 
-The directory should be created if needed.
-
-The programme should preserve the current response-output structure.
-
-For each commercial, it should write at least:
-
-```text
-06_visual_descriptions/<Commercial ID>.txt
-06_visual_descriptions/<Commercial ID>.json
-```
-
-Example:
-
-```text
-06_visual_descriptions/tv_com_1950_1.txt
-06_visual_descriptions/tv_com_1950_1.json
-```
-
----
-
-### 7. `.txt` response output
-
-The `.txt` file should contain only the model’s generated visual description.
-
-It should:
-
-- be UTF-8 encoded;
-- be stripped of leading and trailing whitespace;
-- end with exactly one newline;
-- contain no programme metadata.
-
-Example:
-
-```text
-06_visual_descriptions/tv_com_1950_1.txt
-```
+If the audio file is missing, the commercial should be marked as failed and processing should continue with the next commercial.
 
 ---
 
 ### 8. `.json` response metadata output
 
-The `.json` output should preserve the current metadata style and add prompt-generation traceability.
+The `.json` output should preserve the current metadata style and add prompt-generation, frame-submission, and audio-submission traceability.
 
 Recommended fields:
 
@@ -341,9 +299,10 @@ Recommended fields:
   "status": "success",
   "input": {
     "metadata_tsv": "corpus/00_sources/tv_commercials_selected_2.tsv",
-    "frame_dir": "05_frames_selected/tv_com_1950_1",
+    "frame_dir": "corpus/05_frames_selected/tv_com_1950_1",
+    "audio_file": "corpus/03_audio/tv_com_1950_1.wav",
     "prompt_template": "describe_commercials_visual_prompts/visual_commercial_description_v4.md",
-    "generated_prompt_file": "06_visual_descriptions_prompts/tv_com_1950_1.md"
+    "generated_prompt_file": "corpus/06_visual_descriptions_prompts/tv_com_1950_1.md"
   },
   "commercial_metadata": {
     "description": "This is a commercial for Liquid Peptans, from the 1950s. This antacid product is used for reducing stomach acidity to relieve discomfort."
@@ -353,10 +312,15 @@ Recommended fields:
     "generated_prompt_sha256": "...",
     "placeholder_replaced": true
   },
+  "audio": {
+    "filename": "tv_com_1950_1.wav",
+    "path": "corpus/03_audio/tv_com_1950_1.wav",
+    "submitted": true
+  },
   "frames": [
     {
       "filename": "frame_0001.jpg",
-      "path": "05_frames_selected/tv_com_1950_1/frame_0001.jpg"
+      "path": "corpus/05_frames_selected/tv_com_1950_1/frame_0001.jpg"
     }
   ],
   "frame_counts": {
@@ -370,13 +334,16 @@ Recommended fields:
 }
 ```
 
-For failures, the `.json` file should record:
+For failures caused by a missing audio file, the `.json` file should record:
 
 ```json
 {
   "commercial_id": "tv_com_1950_1",
   "status": "failed",
-  "error": "Missing selected frame directory: 05_frames_selected/tv_com_1950_1"
+  "input": {
+    "audio_file": "corpus/03_audio/tv_com_1950_1.wav"
+  },
+  "error": "Missing audio file: corpus/03_audio/tv_com_1950_1.wav"
 }
 ```
 
@@ -389,15 +356,15 @@ A failed `.txt` file is not required.
 The programme should continue to write run-level logs and manifests in:
 
 ```text
-06_visual_descriptions/
+corpus/06_visual_descriptions/
 ```
 
 Recommended files:
 
 ```text
-06_visual_descriptions/describe_commercials_visual.log
-06_visual_descriptions/describe_commercials_visual_manifest.json
-06_visual_descriptions/describe_commercials_visual_manifest_<RUN_ID>.json
+corpus/06_visual_descriptions/describe_commercials_visual.log
+corpus/06_visual_descriptions/describe_commercials_visual_manifest.json
+corpus/06_visual_descriptions/describe_commercials_visual_manifest_<RUN_ID>.json
 ```
 
 The run manifest should include:
@@ -409,6 +376,7 @@ The run manifest should include:
 - prompt template hash;
 - metadata TSV path;
 - selected frame input directory;
+- audio input directory;
 - generated prompt directory;
 - visual description output directory;
 - model configuration;
@@ -418,7 +386,9 @@ The run manifest should include:
 - number skipped;
 - number submitted to LLM;
 - number succeeded;
-- number failed.
+- number failed;
+- number failed because of missing audio;
+- number failed because of missing frames.
 
 ---
 
@@ -433,42 +403,10 @@ Recommended default:
 3. Generate one prompt file per row.
 4. For each commercial:
    - locate selected frames;
+   - locate the corresponding audio file;
    - skip if successful outputs already exist, unless `--reprocess`;
-   - submit prompt and frames to the LLM;
+   - submit prompt, audio, and frames to the LLM;
    - save `.txt` and `.json` outputs.
-
----
-
-### 11. Resume and reprocessing behaviour
-
-The programme should remain safe to rerun.
-
-By default, a commercial should be skipped if:
-
-```text
-06_visual_descriptions/<Commercial ID>.txt
-06_visual_descriptions/<Commercial ID>.json
-```
-
-both exist, and the JSON file has:
-
-```json
-"status": "success"
-```
-
-Use:
-
-```bash
-python sample_commercials_frames.py --reprocess
-```
-
-to regenerate:
-
-- prompt files;
-- LLM response files;
-- per-commercial JSON metadata.
-
-Failed prior outputs should not be treated as complete.
 
 ---
 
@@ -480,9 +418,10 @@ Recommended CLI arguments:
 |----------------------------------|--------------------------------------------------------------------------:|------------------------------------------------|
 | `--prompt-template PATH`         | `describe_commercials_visual_prompts/visual_commercial_description_v4.md` | Markdown prompt template                       |
 | `--metadata-tsv PATH`            |                         `corpus/00_sources/tv_commercials_selected_2.tsv` | Selected commercial metadata                   |
-| `--frames-dir PATH`              |                                                      `05_frames_selected` | Selected frames input directory                |
-| `--prompt-output-dir PATH`       |                                          `06_visual_descriptions_prompts` | Generated prompt documents                     |
-| `--output-dir PATH`              |                                                  `06_visual_descriptions` | LLM response output directory                  |
+| `--frames-dir PATH`              |                                               `corpus/05_frames_selected` | Selected frames input directory                |
+| `--audio-dir PATH`               |                                                         `corpus/03_audio` | Commercial audio input directory               |
+| `--prompt-output-dir PATH`       |                                   `corpus/06_visual_descriptions_prompts` | Generated prompt documents                     |
+| `--output-dir PATH`              |                                           `corpus/06_visual_descriptions` | LLM response output directory                  |
 | `--model MODEL`                  |                                                                 `gpt-5.5` | Multimodal LLM model                           |
 | `--image-detail {low,high,auto}` |                                                                     `low` | Image detail setting                           |
 | `--temperature FLOAT`            |                                                                       `0` | Generation temperature, omitted if unsupported |
@@ -496,6 +435,12 @@ Recommended CLI arguments:
 | `--max-retries N`                |                                                                       `2` | API retry attempts                             |
 | `--retry-backoff-seconds FLOAT`  |                                                                     `5.0` | Initial retry backoff                          |
 
+Optional future argument:
+
+| Argument                | Purpose                                                                                                                                   |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| `--allow-missing-audio` | Continue processing a commercial without audio if the `.wav` file is missing. The first implementation should not enable this by default. |
+
 ---
 
 ### 13. Example commands
@@ -503,33 +448,34 @@ Recommended CLI arguments:
 #### Default test run
 
 ```bash
-python sample_commercials_frames.py
+python describe_commercials_visual.py
 ```
 
 This should:
 
 - read `corpus/00_sources/tv_commercials_selected_2.tsv`;
-- generate prompt documents in `06_visual_descriptions_prompts/`;
+- generate prompt documents in `corpus/06_visual_descriptions_prompts/`;
 - process up to 5 commercials;
-- use frames from `05_frames_selected/`;
-- save responses in `06_visual_descriptions/`.
+- use frames from `corpus/05_frames_selected/`;
+- use audio from `corpus/03_audio/`;
+- save responses in `corpus/06_visual_descriptions/`.
 
 #### Full run
 
 ```bash
-python sample_commercials_frames.py --no-test-mode
+python describe_commercials_visual.py --no-test-mode
 ```
 
 #### Reprocess all prompts and responses
 
 ```bash
-python sample_commercials_frames.py --no-test-mode --reprocess
+python describe_commercials_visual.py --no-test-mode --reprocess
 ```
 
 #### Start from a specific commercial
 
 ```bash
-python sample_commercials_frames.py \
+python describe_commercials_visual.py \
   --no-test-mode \
   --start-commercial-id tv_com_1960_54
 ```
@@ -537,9 +483,17 @@ python sample_commercials_frames.py \
 #### Use a frame cap for cost control
 
 ```bash
-python sample_commercials_frames.py \
+python describe_commercials_visual.py \
   --no-test-mode \
   --max-frames-per-request 40
+```
+
+#### Use a non-default audio directory
+
+```bash
+python describe_commercials_visual.py \
+  --no-test-mode \
+  --audio-dir corpus/03_audio
 ```
 
 ---
@@ -556,6 +510,7 @@ The programme should fail before API calls if:
 - the TSV file lacks `Commercial ID`;
 - the TSV file lacks `Description`;
 - the selected-frame directory does not exist;
+- the audio directory does not exist;
 - the prompt-output directory cannot be created;
 - the response-output directory cannot be created;
 - `OPENAI_API_KEY` is missing;
@@ -579,6 +534,8 @@ A commercial should be marked as failed, but the run should continue, if:
 - the selected-frame directory contains no supported image files;
 - the selected-frame manifest is invalid;
 - one or more manifest-listed frame files are missing;
+- the corresponding audio file is missing from `corpus/03_audio/`;
+- the corresponding audio file is not a supported audio format;
 - the generated prompt file cannot be written;
 - the LLM request fails after retries;
 - the LLM response contains no usable text.
@@ -595,17 +552,18 @@ The redesign is acceptable when:
 2. The programme reads `corpus/00_sources/tv_commercials_selected_2.tsv`.
 3. One Markdown prompt file is created per TSV row.
 4. Each generated prompt file is named after `Commercial ID`.
-5. Prompt files are saved in `06_visual_descriptions_prompts/`.
+5. Prompt files are saved in `corpus/06_visual_descriptions_prompts/`.
 6. The product-context placeholder is replaced with the row’s `Description`.
-7. The programme uses frames from `05_frames_selected/`.
-8. The programme does not submit frames from `05_frames/`.
-9. Each LLM request contains the commercial-specific prompt and that commercial’s selected frames.
-10. Responses are saved in `06_visual_descriptions/`.
-11. Response naming follows the existing `<Commercial ID>.txt` and `<Commercial ID>.json` pattern.
-12. Existing successful outputs are skipped unless `--reprocess` is used.
-13. Per-commercial failures are logged and do not stop the whole run.
-14. Prompt hashes and generated prompt paths are recorded for reproducibility.
-15. The programme writes a run-level manifest and log.
-16. The programme supports test mode and full-run mode.
-17. The programme supports resuming from a commercial ID.
-18. The programme does not log the API key.
+7. The programme uses frames from `corpus/05_frames_selected/`.
+8. The programme does not submit frames from `corpus/05_frames/`.
+9. The programme locates the corresponding audio file as `corpus/03_audio/<Commercial ID>.wav`.
+10. Each LLM request contains the commercial-specific prompt, the commercial audio file, and that commercial’s selected frames.
+11. Responses are saved in `corpus/06_visual_descriptions/`.
+12. Response naming follows the existing `<Commercial ID>.txt` and `<Commercial ID>.json` pattern.
+13. Existing successful outputs are skipped unless `--reprocess` is used.
+14. Per-commercial failures are logged and do not stop the whole run.
+15. Prompt hashes, generated prompt paths, audio paths, and submitted frame paths are recorded for reproducibility.
+16. The programme writes a run-level manifest and log.
+17. The programme supports test mode and full-run mode.
+18. The programme supports resuming from a commercial ID.
+19. The programme does not log the API key.

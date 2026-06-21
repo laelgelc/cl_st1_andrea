@@ -1,17 +1,18 @@
 """
 Generate commercial-specific visual-description prompts and submit selected frames
-and corresponding commercial audio to a multimodal OpenAI model.
+with audio-derived transcript context to a multimodal OpenAI model.
 
 This programme is the LLM-based visual-description stage of the Phase 1 visual
 pipeline. It reads selected commercial metadata, creates one prompt document per
-commercial from a Markdown template, pairs each prompt with selected frames and
-the corresponding audio file, and writes visual descriptions plus reproducibility
-metadata.
+commercial from a Markdown template, inserts product context and a timestamped
+Whisper/faster-whisper transcript context block, submits the generated prompt with
+selected frames, and writes visual descriptions plus reproducibility metadata.
 
 Default inputs:
     corpus/00_sources/tv_commercials_selected_2.tsv
-    describe_commercials_visual_prompts/visual_commercial_description_v4.md
+    describe_commercials_visual_prompts/visual_commercial_description_v5.md
     corpus/05_frames_selected/<Commercial ID>/
+    corpus/04_transcripts/<Commercial ID>.json
     corpus/03_audio/<Commercial ID>.wav
 
 Default generated prompts:
@@ -25,6 +26,7 @@ Typical usage:
     python describe_commercials_visual.py
     python describe_commercials_visual.py --no-test-mode
     python describe_commercials_visual.py --no-test-mode --workers 4
+    python describe_commercials_visual.py --no-test-mode --transcripts-dir corpus/04_transcripts
     python describe_commercials_visual.py --no-test-mode --audio-dir corpus/03_audio
     python describe_commercials_visual.py --no-test-mode --max-frames-per-request 40
     python describe_commercials_visual.py --no-test-mode --reprocess
@@ -32,8 +34,11 @@ Typical usage:
 The programme uses selected frames from corpus/05_frames_selected/. It does not
 use the dense sampled-frame directory corpus/05_frames/ for LLM requests.
 
-The audio is included as supporting context only. The selected frames remain the
-primary evidence for visible content.
+The original audio file is retained as a provenance artefact, but it is not
+submitted to the OpenAI Responses API. Instead, the corresponding Whisper JSON
+transcript is inserted into the generated prompt as imperfect audio-derived
+supporting context. The selected frames remain the primary evidence for visible
+content.
 
 Requires OPENAI_API_KEY in env/.env or the system environment.
 """
@@ -63,8 +68,11 @@ PRODUCT_CONTEXT_PLACEHOLDER = (
     "This antacid product is used for reducing acid acidity to relieve discomfort.>"
 )
 
+TRANSCRIPT_CONTEXT_PLACEHOLDER = "<AUDIO_DERIVED_TRANSCRIPT_CONTEXT>"
+
 SUPPORTED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 SUPPORTED_AUDIO_EXTENSIONS = {".wav"}
+SUPPORTED_TRANSCRIPT_EXTENSIONS = {".json"}
 
 
 class ConfigurationError(Exception):
@@ -94,11 +102,28 @@ class FrameInfo:
 
 @dataclass(frozen=True)
 class AudioInfo:
-    """Information about one commercial audio file to submit to the LLM."""
+    """Information about one commercial audio file retained for provenance."""
 
     filename: str
     path: Path
     format: str
+    sha256: str | None
+
+
+@dataclass(frozen=True)
+class TranscriptInfo:
+    """Information about one commercial transcript JSON file."""
+
+    filename: str
+    path: Path
+    commercial_id: str | None
+    audio_input_path: str | None
+    text_output_path: str | None
+    json_output_path: str | None
+    model: dict[str, Any]
+    transcription: dict[str, Any]
+    metadata: dict[str, Any]
+    sha256: str
 
 
 @dataclass(frozen=True)
@@ -110,6 +135,7 @@ class WorkItem:
     metadata_row: dict[str, str]
     frame_dir: Path
     audio_path: Path
+    transcript_json_path: Path
     prompt_file: Path
     output_text_path: Path
     output_json_path: Path
@@ -125,12 +151,14 @@ class RuntimeConfig:
     prompt_template_sha256: str
     frames_dir: Path
     audio_dir: Path
+    transcripts_dir: Path
     prompt_output_dir: Path
     output_dir: Path
     model: str
     image_detail: str
     temperature: float
     max_frames_per_request: int
+    max_transcript_segments: int
     max_retries: int
     retry_backoff_seconds: float
     reprocess: bool
@@ -143,6 +171,7 @@ class ProcessingResult:
     commercial_id: str
     input_path: str | None
     audio_path: str | None
+    transcript_path: str | None
     output_path: str
     json_path: str
     prompt_path: str
@@ -151,6 +180,7 @@ class ProcessingResult:
     duration_seconds: float
     submitted_frame_count: int
     submitted_audio: bool
+    submitted_transcript_context: bool
     response_id: str | None
     usage: dict[str, Any] | None
     timestamp: str
@@ -179,13 +209,16 @@ def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
 
     parser = argparse.ArgumentParser(
-        description="Generate commercial-specific prompts and visual descriptions from selected frames and audio."
+        description=(
+            "Generate commercial-specific prompts and visual descriptions from "
+            "selected frames and timestamped transcript context."
+        )
     )
 
     parser.add_argument(
         "--prompt-template",
         type=Path,
-        default=Path("describe_commercials_visual_prompts/visual_commercial_description_v4.md"),
+        default=Path("describe_commercials_visual_prompts/visual_commercial_description_v5.md"),
         help="Markdown prompt template.",
     )
     parser.add_argument(
@@ -204,7 +237,13 @@ def parse_args() -> argparse.Namespace:
         "--audio-dir",
         type=Path,
         default=Path("corpus/03_audio"),
-        help="Directory containing commercial audio files named <Commercial ID>.wav.",
+        help="Directory containing provenance audio files named <Commercial ID>.wav.",
+    )
+    parser.add_argument(
+        "--transcripts-dir",
+        type=Path,
+        default=Path("corpus/04_transcripts"),
+        help="Directory containing Whisper JSON transcripts named <Commercial ID>.json.",
     )
     parser.add_argument(
         "--prompt-output-dir",
@@ -248,6 +287,12 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=0,
         help="Optional cap on frames submitted per request; 0 means no cap.",
+    )
+    parser.add_argument(
+        "--max-transcript-segments",
+        type=int,
+        default=0,
+        help="Optional cap on transcript segments inserted into the prompt; 0 means no cap.",
     )
     parser.add_argument("--max-retries", type=int, default=2, help="Maximum API retry attempts.")
     parser.add_argument(
@@ -342,6 +387,12 @@ def validate_args(args: argparse.Namespace) -> None:
     if not args.audio_dir.is_dir():
         raise ConfigurationError(f"Audio path is not a directory: {args.audio_dir}")
 
+    if not args.transcripts_dir.exists():
+        raise ConfigurationError(f"Transcripts directory missing: {args.transcripts_dir}")
+
+    if not args.transcripts_dir.is_dir():
+        raise ConfigurationError(f"Transcripts path is not a directory: {args.transcripts_dir}")
+
     if args.test_limit <= 0:
         raise ConfigurationError("--test-limit must be greater than 0")
 
@@ -353,6 +404,9 @@ def validate_args(args: argparse.Namespace) -> None:
 
     if args.max_frames_per_request < 0:
         raise ConfigurationError("--max-frames-per-request must be greater than or equal to 0")
+
+    if args.max_transcript_segments < 0:
+        raise ConfigurationError("--max-transcript-segments must be greater than or equal to 0")
 
     if args.max_retries < 0:
         raise ConfigurationError("--max-retries must be greater than or equal to 0")
@@ -373,6 +427,12 @@ def load_prompt_template(prompt_template: Path) -> str:
         raise ConfigurationError(
             "Required product-context placeholder was not found in prompt template: "
             f"{PRODUCT_CONTEXT_PLACEHOLDER}"
+        )
+
+    if TRANSCRIPT_CONTEXT_PLACEHOLDER not in text:
+        raise ConfigurationError(
+            "Required transcript-context placeholder was not found in prompt template: "
+            f"{TRANSCRIPT_CONTEXT_PLACEHOLDER}"
         )
 
     return text
@@ -445,10 +505,242 @@ def read_selected_metadata(metadata_tsv: Path) -> list[CommercialMetadata]:
     return rows
 
 
-def generate_prompt_text(template_text: str, description: str) -> str:
-    """Generate a commercial-specific prompt by replacing the product context placeholder."""
+def format_seconds(seconds: float | int | None) -> str:
+    """Format seconds as a three-decimal timestamp string."""
 
-    return template_text.replace(PRODUCT_CONTEXT_PLACEHOLDER, description)
+    if seconds is None:
+        return "unknown"
+
+    try:
+        return f"{float(seconds):.3f}"
+    except (TypeError, ValueError):
+        return "unknown"
+
+
+def resolve_audio_file(audio_path: Path) -> AudioInfo:
+    """Resolve and validate a commercial audio file retained for provenance."""
+
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Missing audio file: {audio_path}")
+
+    if not audio_path.is_file():
+        raise FileNotFoundError(f"Audio path is not a file: {audio_path}")
+
+    suffix = audio_path.suffix.lower()
+
+    if suffix not in SUPPORTED_AUDIO_EXTENSIONS:
+        raise ValueError(f"Unsupported audio extension: {audio_path}")
+
+    return AudioInfo(
+        filename=audio_path.name,
+        path=audio_path,
+        format=suffix.lstrip("."),
+        sha256=sha256_file(audio_path),
+    )
+
+
+def load_transcript_json(transcript_json_path: Path) -> TranscriptInfo:
+    """Load and validate a Whisper/faster-whisper transcript JSON file."""
+
+    if not transcript_json_path.exists():
+        raise FileNotFoundError(f"Missing transcript JSON file: {transcript_json_path}")
+
+    if not transcript_json_path.is_file():
+        raise FileNotFoundError(f"Transcript JSON path is not a file: {transcript_json_path}")
+
+    if transcript_json_path.suffix.lower() not in SUPPORTED_TRANSCRIPT_EXTENSIONS:
+        raise ValueError(f"Unsupported transcript extension: {transcript_json_path}")
+
+    with transcript_json_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, dict):
+        raise ValueError(f"Transcript JSON root must be an object: {transcript_json_path}")
+
+    transcription = data.get("transcription")
+    if not isinstance(transcription, dict):
+        raise ValueError(f"Transcript JSON missing transcription object: {transcript_json_path}")
+
+    segments = transcription.get("segments")
+    if not isinstance(segments, list):
+        raise ValueError(f"Transcript JSON missing transcription.segments list: {transcript_json_path}")
+
+    return TranscriptInfo(
+        filename=transcript_json_path.name,
+        path=transcript_json_path,
+        commercial_id=data.get("commercial_id") if isinstance(data.get("commercial_id"), str) else None,
+        audio_input_path=data.get("input_path") if isinstance(data.get("input_path"), str) else None,
+        text_output_path=data.get("text_output_path") if isinstance(data.get("text_output_path"), str) else None,
+        json_output_path=data.get("json_output_path") if isinstance(data.get("json_output_path"), str) else None,
+        model=data.get("model") if isinstance(data.get("model"), dict) else {},
+        transcription=transcription,
+        metadata=data.get("metadata") if isinstance(data.get("metadata"), dict) else {},
+        sha256=sha256_file(transcript_json_path),
+    )
+
+
+def transcript_segments(transcript_info: TranscriptInfo, max_segments: int) -> tuple[list[dict[str, Any]], bool]:
+    """Return transcript segments, optionally capped from the end of the list."""
+
+    raw_segments = transcript_info.transcription.get("segments", [])
+
+    usable_segments = [
+        segment
+        for segment in raw_segments
+        if isinstance(segment, dict) and str(segment.get("text", "")).strip()
+    ]
+
+    if max_segments == 0 or len(usable_segments) <= max_segments:
+        return usable_segments, False
+
+    return usable_segments[:max_segments], True
+
+
+def build_transcript_context_block(
+        transcript_info: TranscriptInfo,
+        audio_info: AudioInfo,
+        max_segments: int,
+) -> tuple[str, dict[str, Any]]:
+    """
+    Build a concise Markdown context block from a Whisper/faster-whisper transcript JSON.
+
+    The block is inserted into the generated prompt in place of
+    <AUDIO_DERIVED_TRANSCRIPT_CONTEXT>. It is explicitly framed as imperfect
+    audio-derived supporting context, not as a substitute for the raw audio signal.
+
+    Timestamped transcript segment lines are separated by blank lines so that
+    Markdown renderers preserve them as visually distinct lines rather than joining
+    them into one paragraph.
+    """
+
+    model = transcript_info.model
+    transcription = transcript_info.transcription
+    metadata = transcript_info.metadata
+    segments, cap_applied = transcript_segments(transcript_info, max_segments)
+
+    backend = model.get("backend", "unknown")
+    model_name = model.get("model_name", "unknown")
+    language_setting = model.get("language", "unknown")
+    vad_filter = model.get("vad_filter", "unknown")
+    detected_language = transcription.get("detected_language", "unknown")
+    language_probability = transcription.get("language_probability", "unknown")
+    duration_seconds = transcription.get("duration_seconds", "unknown")
+
+    lines = [
+        (
+            "The following transcript was generated automatically from the commercial audio "
+            "using Whisper/faster-whisper. It is provided only as imperfect supporting context. "
+            "It may contain transcription errors and does not preserve the full audio signal."
+        ),
+        "",
+        f"Audio file source: {audio_info.path}",
+        "",
+        f"Transcript JSON source: {transcript_info.path}",
+        "",
+        f"Transcription backend: {backend}",
+        "",
+        f"Transcription model: {model_name}",
+        "",
+        f"Language setting: {language_setting}",
+        "",
+        f"Detected language: {detected_language}",
+        "",
+        f"Language probability: {language_probability}",
+        "",
+        f"VAD filter: {vad_filter}",
+        "",
+        f"Duration: {duration_seconds} seconds",
+    ]
+
+    if metadata:
+        title = metadata.get("title")
+        decade = metadata.get("decade")
+        category = metadata.get("category")
+        if title or decade or category:
+            lines.extend(
+                [
+                    "",
+                    "Transcript metadata:",
+                    "",
+                    f"Title: {title if title is not None else 'unknown'}",
+                    "",
+                    f"Decade: {decade if decade is not None else 'unknown'}",
+                    "",
+                    f"Category: {category if category is not None else 'unknown'}",
+                ]
+            )
+
+    if cap_applied:
+        lines.extend(
+            [
+                "",
+                (
+                    "Timestamped transcript segments "
+                    f"(first {len(segments)} of {len(transcript_info.transcription.get('segments', []))} usable segments):"
+                ),
+                "",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "",
+                "Timestamped transcript segments:",
+                "",
+            ]
+        )
+
+    if not segments:
+        lines.extend(
+            [
+                "[No usable transcript segments were available.]",
+                "",
+            ]
+        )
+    else:
+        for segment in segments:
+            start = format_seconds(segment.get("start"))
+            end = format_seconds(segment.get("end"))
+            text = " ".join(str(segment.get("text", "")).strip().split())
+            lines.extend(
+                [
+                    f"[{start}–{end}] {text}",
+                    "",
+                ]
+            )
+
+    context_block = "\n".join(lines).rstrip()
+
+    metadata_record = {
+        "transcript_context_inserted": True,
+        "transcript_context_sha256": sha256_text(context_block),
+        "segment_count_available": len(
+            [
+                segment
+                for segment in transcript_info.transcription.get("segments", [])
+                if isinstance(segment, dict) and str(segment.get("text", "")).strip()
+            ]
+        ),
+        "segment_count_inserted": len(segments),
+        "segment_cap_applied": cap_applied,
+        "max_transcript_segments": max_segments,
+        "segment_markdown_spacing": "blank_line_between_segments",
+    }
+
+    return context_block, metadata_record
+
+
+def generate_prompt_text(
+        template_text: str,
+        description: str,
+        transcript_context_block: str,
+) -> str:
+    """Generate a commercial-specific prompt by replacing template placeholders."""
+
+    prompt_text = template_text.replace(PRODUCT_CONTEXT_PLACEHOLDER, description)
+    prompt_text = prompt_text.replace(TRANSCRIPT_CONTEXT_PLACEHOLDER, transcript_context_block)
+
+    return prompt_text
 
 
 def write_prompt_file(
@@ -522,6 +814,7 @@ def plan_work(
         prompt_file = config.prompt_output_dir / f"{commercial_id}.md"
         frame_dir = config.frames_dir / commercial_id
         audio_path = config.audio_dir / f"{commercial_id}.wav"
+        transcript_json_path = config.transcripts_dir / f"{commercial_id}.json"
         output_text_path = config.output_dir / f"{commercial_id}.txt"
         output_json_path = config.output_dir / f"{commercial_id}.json"
 
@@ -531,6 +824,7 @@ def plan_work(
                     commercial_id=commercial_id,
                     input_path=str(frame_dir),
                     audio_path=str(audio_path),
+                    transcript_path=str(transcript_json_path),
                     output_path=str(output_text_path),
                     json_path=str(output_json_path),
                     prompt_path=str(prompt_file),
@@ -539,6 +833,7 @@ def plan_work(
                     duration_seconds=0.0,
                     submitted_frame_count=0,
                     submitted_audio=False,
+                    submitted_transcript_context=False,
                     response_id=None,
                     usage=None,
                     timestamp=utc_timestamp(),
@@ -553,6 +848,7 @@ def plan_work(
                 metadata_row=item.row,
                 frame_dir=frame_dir,
                 audio_path=audio_path,
+                transcript_json_path=transcript_json_path,
                 prompt_file=prompt_file,
                 output_text_path=output_text_path,
                 output_json_path=output_json_path,
@@ -718,27 +1014,6 @@ def discover_selected_frames(frame_dir: Path) -> list[FrameInfo]:
     return discover_frames_by_filename(frame_dir)
 
 
-def resolve_audio_file(audio_path: Path) -> AudioInfo:
-    """Resolve and validate a commercial audio file."""
-
-    if not audio_path.exists():
-        raise FileNotFoundError(f"Missing audio file: {audio_path}")
-
-    if not audio_path.is_file():
-        raise FileNotFoundError(f"Audio path is not a file: {audio_path}")
-
-    suffix = audio_path.suffix.lower()
-
-    if suffix not in SUPPORTED_AUDIO_EXTENSIONS:
-        raise ValueError(f"Unsupported audio extension: {audio_path}")
-
-    return AudioInfo(
-        filename=audio_path.name,
-        path=audio_path,
-        format=suffix.lstrip("."),
-    )
-
-
 def cap_frames_evenly(frames: list[FrameInfo], max_frames: int) -> tuple[list[FrameInfo], bool]:
     """Apply optional deterministic chronological even downsampling."""
 
@@ -789,43 +1064,12 @@ def image_to_data_url(image_path: Path) -> str:
     return f"data:{mime_type};base64,{encoded}"
 
 
-def upload_audio_file(client: Any, audio_info: AudioInfo) -> str:
-    """Upload a local commercial audio file and return its OpenAI file ID."""
-
-    with audio_info.path.open("rb") as audio_file:
-        uploaded_file = client.files.create(
-            file=audio_file,
-            purpose="user_data",
-        )
-
-    file_id = getattr(uploaded_file, "id", None)
-
-    if not isinstance(file_id, str) or not file_id:
-        raise RuntimeError(f"OpenAI file upload did not return a file ID for {audio_info.path}")
-
-    return file_id
-
-
-def build_audio_content_item(audio_file_id: str) -> dict[str, Any]:
-    """
-    Build an audio file input item for the OpenAI Responses API.
-
-    Audio is submitted as an uploaded input file because the Responses API content
-    schema does not accept an input_audio item in this context.
-    """
-
-    return {
-        "type": "input_file",
-        "file_id": audio_file_id,
-    }
-
-
 def build_request_content(
         prompt_text: str,
         commercial_id: str,
         frames: list[FrameInfo],
+        transcript_info: TranscriptInfo,
         audio_info: AudioInfo,
-        audio_file_id: str,
         image_detail: str,
 ) -> list[dict[str, Any]]:
     """Build OpenAI Responses API multimodal request content."""
@@ -837,13 +1081,14 @@ def build_request_content(
             "text": (
                 "Commercial sequence metadata:\n"
                 f"Commercial ID: {commercial_id}\n"
-                f"Audio file: {audio_info.filename}\n"
+                f"Audio provenance file: {audio_info.path}\n"
+                f"Transcript JSON source: {transcript_info.path}\n"
                 f"Number of selected frames: {len(frames)}\n\n"
-                "The audio is provided as supporting context only. "
-                "Use the selected frames as the primary evidence for visible content."
+                "The original audio file is retained for provenance but is not submitted. "
+                "The generated prompt contains an imperfect audio-derived transcript context block. "
+                "Use selected frames as the primary evidence for visible content."
             ),
         },
-        build_audio_content_item(audio_file_id),
     ]
 
     for index, frame in enumerate(frames, start=1):
@@ -981,7 +1226,8 @@ def write_success_outputs(
         config: RuntimeConfig,
         frames: list[FrameInfo],
         audio_info: AudioInfo,
-        audio_file_id: str,
+        transcript_info: TranscriptInfo,
+        transcript_context_metadata: dict[str, Any],
         response_text: str,
         api_metadata: dict[str, Any],
         duration_seconds: float,
@@ -1001,6 +1247,7 @@ def write_success_outputs(
             "metadata_tsv": str(config.metadata_tsv),
             "frame_dir": str(work_item.frame_dir),
             "audio_file": str(audio_info.path),
+            "transcript_json_file": str(transcript_info.path),
             "prompt_template": str(config.prompt_template),
             "generated_prompt_file": str(work_item.prompt_file),
         },
@@ -1011,15 +1258,34 @@ def write_success_outputs(
         "prompt": {
             "template_sha256": config.prompt_template_sha256,
             "generated_prompt_sha256": generated_prompt_sha256,
-            "placeholder_replaced": PRODUCT_CONTEXT_PLACEHOLDER not in generated_prompt_text,
+            "product_context_placeholder_replaced": PRODUCT_CONTEXT_PLACEHOLDER not in generated_prompt_text,
+            "transcript_context_placeholder_replaced": TRANSCRIPT_CONTEXT_PLACEHOLDER not in generated_prompt_text,
         },
         "audio": {
             "filename": audio_info.filename,
             "path": str(audio_info.path),
             "format": audio_info.format,
-            "sha256": sha256_file(audio_info.path),
-            "openai_file_id": audio_file_id,
-            "submitted": True,
+            "sha256": audio_info.sha256,
+            "submitted": False,
+            "role": "provenance_only",
+        },
+        "transcript": {
+            "filename": transcript_info.filename,
+            "path": str(transcript_info.path),
+            "sha256": transcript_info.sha256,
+            "audio_input_path_recorded_in_transcript": transcript_info.audio_input_path,
+            "text_output_path_recorded_in_transcript": transcript_info.text_output_path,
+            "json_output_path_recorded_in_transcript": transcript_info.json_output_path,
+            "model": transcript_info.model,
+            "metadata": transcript_info.metadata,
+            "transcription_summary": {
+                "detected_language": transcript_info.transcription.get("detected_language"),
+                "language_probability": transcript_info.transcription.get("language_probability"),
+                "duration_seconds": transcript_info.transcription.get("duration_seconds"),
+                "text_sha256": sha256_text(str(transcript_info.transcription.get("text", ""))),
+            },
+            "context": transcript_context_metadata,
+            "submitted_as_prompt_text": True,
         },
         "frames": [
             {
@@ -1067,6 +1333,7 @@ def write_failure_output(
             "metadata_tsv": str(config.metadata_tsv),
             "frame_dir": str(work_item.frame_dir),
             "audio_file": str(work_item.audio_path),
+            "transcript_json_file": str(work_item.transcript_json_path),
             "prompt_template": str(config.prompt_template),
             "generated_prompt_file": str(work_item.prompt_file),
         },
@@ -1078,6 +1345,12 @@ def write_failure_output(
             "filename": work_item.audio_path.name,
             "path": str(work_item.audio_path),
             "submitted": False,
+            "role": "provenance_only",
+        },
+        "transcript": {
+            "filename": work_item.transcript_json_path.name,
+            "path": str(work_item.transcript_json_path),
+            "submitted_as_prompt_text": False,
         },
         "output": {
             "text_path": str(work_item.output_text_path),
@@ -1093,28 +1366,47 @@ def write_failure_output(
 
 
 def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> ProcessingResult:
-    """Process one commercial prompt, selected-frame sequence, and audio file."""
+    """Process one commercial prompt, selected-frame sequence, and transcript context."""
 
     start = time.time()
 
     try:
         from openai import OpenAI
 
-        prompt_text = work_item.prompt_file.read_text(encoding="utf-8")
-
         frames = discover_selected_frames(work_item.frame_dir)
         submitted_frames, _cap_applied = cap_frames_evenly(frames, config.max_frames_per_request)
+
         audio_info = resolve_audio_file(work_item.audio_path)
+        transcript_info = load_transcript_json(work_item.transcript_json_path)
+
+        transcript_context_block, transcript_context_metadata = build_transcript_context_block(
+            transcript_info=transcript_info,
+            audio_info=audio_info,
+            max_segments=config.max_transcript_segments,
+        )
+
+        prompt_text = generate_prompt_text(
+            template_text=config.prompt_template_text,
+            description=work_item.description,
+            transcript_context_block=transcript_context_block,
+        )
+
+        write_prompt_file(
+            prompt_file=work_item.prompt_file,
+            prompt_text=prompt_text,
+            reprocess=config.reprocess,
+        )
+
+        prompt_text = work_item.prompt_file.read_text(encoding="utf-8")
 
         client = OpenAI()
-        audio_file_id = upload_audio_file(client, audio_info)
 
         content = build_request_content(
             prompt_text=prompt_text,
             commercial_id=work_item.commercial_id,
             frames=submitted_frames,
+            transcript_info=transcript_info,
             audio_info=audio_info,
-            audio_file_id=audio_file_id,
             image_detail=config.image_detail,
         )
 
@@ -1134,7 +1426,8 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             config=config,
             frames=submitted_frames,
             audio_info=audio_info,
-            audio_file_id=audio_file_id,
+            transcript_info=transcript_info,
+            transcript_context_metadata=transcript_context_metadata,
             response_text=response_text,
             api_metadata=api_metadata,
             duration_seconds=duration_seconds,
@@ -1144,6 +1437,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             commercial_id=work_item.commercial_id,
             input_path=str(work_item.frame_dir),
             audio_path=str(audio_info.path),
+            transcript_path=str(transcript_info.path),
             output_path=str(work_item.output_text_path),
             json_path=str(work_item.output_json_path),
             prompt_path=str(work_item.prompt_file),
@@ -1151,7 +1445,8 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             error=None,
             duration_seconds=round(duration_seconds, 3),
             submitted_frame_count=len(submitted_frames),
-            submitted_audio=True,
+            submitted_audio=False,
+            submitted_transcript_context=True,
             response_id=api_metadata.get("response_id"),
             usage=api_metadata.get("usage"),
             timestamp=utc_timestamp(),
@@ -1175,6 +1470,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             commercial_id=work_item.commercial_id,
             input_path=str(work_item.frame_dir),
             audio_path=str(work_item.audio_path),
+            transcript_path=str(work_item.transcript_json_path),
             output_path=str(work_item.output_text_path),
             json_path=str(work_item.output_json_path),
             prompt_path=str(work_item.prompt_file),
@@ -1183,6 +1479,7 @@ def process_commercial_visual(work_item: WorkItem, config: RuntimeConfig) -> Pro
             duration_seconds=round(duration_seconds, 3),
             submitted_frame_count=0,
             submitted_audio=False,
+            submitted_transcript_context=False,
             response_id=None,
             usage=None,
             timestamp=utc_timestamp(),
@@ -1259,12 +1556,14 @@ def main() -> int:
             prompt_template_sha256=prompt_template_sha256,
             frames_dir=args.frames_dir,
             audio_dir=args.audio_dir,
+            transcripts_dir=args.transcripts_dir,
             prompt_output_dir=args.prompt_output_dir,
             output_dir=args.output_dir,
             model=args.model,
             image_detail=args.image_detail,
             temperature=args.temperature,
             max_frames_per_request=args.max_frames_per_request,
+            max_transcript_segments=args.max_transcript_segments,
             max_retries=args.max_retries,
             retry_backoff_seconds=args.retry_backoff_seconds,
             reprocess=args.reprocess,
@@ -1275,27 +1574,20 @@ def main() -> int:
         logging.info("Prompt template: %s", args.prompt_template)
         logging.info("Prompt template SHA-256: %s", prompt_template_sha256)
         logging.info("Selected frames dir: %s", args.frames_dir)
-        logging.info("Audio dir: %s", args.audio_dir)
+        logging.info("Audio provenance dir: %s", args.audio_dir)
+        logging.info("Transcripts dir: %s", args.transcripts_dir)
         logging.info("Generated prompts dir: %s", args.prompt_output_dir)
         logging.info("Output dir: %s", args.output_dir)
         logging.info("Model: %s", args.model)
         logging.info("Image detail: %s", args.image_detail)
         logging.info("Temperature: %s", args.temperature)
         logging.info("Temperature sent to API: %s", model_supports_temperature(args.model))
+        logging.info("Max transcript segments: %s", args.max_transcript_segments or "no cap")
         logging.info("Test mode: %s (limit=%s)", args.test_mode, args.test_limit)
         logging.info("Reprocess existing: %s", args.reprocess)
         logging.info("Workers: %s", args.workers)
         logging.info("OPENAI_API_KEY is configured")
-
-        prompt_write_count = 0
-        for metadata in metadata_rows:
-            prompt_text = generate_prompt_text(prompt_template_text, metadata.description)
-            prompt_file = args.prompt_output_dir / f"{metadata.commercial_id}.md"
-            if write_prompt_file(prompt_file, prompt_text, args.reprocess):
-                prompt_write_count += 1
-
-        logging.info("Read %s selected metadata rows", len(metadata_rows))
-        logging.info("Generated or rewritten %s prompt files", prompt_write_count)
+        logging.info("Raw audio files will not be submitted; transcript JSON will be inserted into prompts")
 
         work_items, skipped_results = plan_work(
             metadata_rows=metadata_rows,
@@ -1305,6 +1597,7 @@ def main() -> int:
             test_limit=args.test_limit,
         )
 
+        logging.info("Read %s selected metadata rows", len(metadata_rows))
         logging.info("Planned %s commercials for processing", len(work_items))
         logging.info("Skipped existing successful outputs: %s", len(skipped_results))
 
@@ -1320,10 +1613,10 @@ def main() -> int:
 
                 if result.status == "success":
                     logging.info(
-                        "SUCCESS %s frames=%s audio=%s response_id=%s",
+                        "SUCCESS %s frames=%s transcript_context=%s response_id=%s",
                         result.commercial_id,
                         result.submitted_frame_count,
-                        result.submitted_audio,
+                        result.submitted_transcript_context,
                         result.response_id,
                     )
                 else:
@@ -1341,10 +1634,10 @@ def main() -> int:
 
                     if result.status == "success":
                         logging.info(
-                            "SUCCESS %s frames=%s audio=%s response_id=%s",
+                            "SUCCESS %s frames=%s transcript_context=%s response_id=%s",
                             result.commercial_id,
                             result.submitted_frame_count,
-                            result.submitted_audio,
+                            result.submitted_transcript_context,
                             result.response_id,
                         )
                     else:
@@ -1360,6 +1653,16 @@ def main() -> int:
             if result.status == "failed"
             and result.error is not None
             and "missing audio file" in result.error.lower()
+        )
+        missing_transcript_failures = sum(
+            1
+            for result in results
+            if result.status == "failed"
+            and result.error is not None
+            and (
+                    "missing transcript json file" in result.error.lower()
+                    or "transcript json" in result.error.lower()
+            )
         )
         missing_frame_failures = sum(
             1
@@ -1379,19 +1682,25 @@ def main() -> int:
         run_metadata = {
             "run_id": current_run_id,
             "tool_name": "describe_commercials_visual",
-            "version": "v4_prompt_selected_frames_audio",
+            "version": "v5_prompt_selected_frames_transcript_context",
             "start_time": start_time,
             "end_time": end_time,
             "test_mode": args.test_mode,
             "test_limit": args.test_limit,
             "reprocess": args.reprocess,
             "workers": args.workers,
+            "strategy": {
+                "primary_evidence": "selected_frames",
+                "supporting_context": "timestamped_whisper_json_transcript_inserted_into_prompt",
+                "audio_file_role": "provenance_only_not_submitted",
+            },
             "config": {
                 "metadata_tsv": str(args.metadata_tsv),
                 "prompt_template": str(args.prompt_template),
                 "prompt_template_sha256": prompt_template_sha256,
                 "frames_dir": str(args.frames_dir),
                 "audio_dir": str(args.audio_dir),
+                "transcripts_dir": str(args.transcripts_dir),
                 "prompt_output_dir": str(args.prompt_output_dir),
                 "output_dir": str(args.output_dir),
                 "model": args.model,
@@ -1399,6 +1708,7 @@ def main() -> int:
                 "temperature": args.temperature,
                 "temperature_sent_to_api": model_supports_temperature(args.model),
                 "max_frames_per_request": args.max_frames_per_request,
+                "max_transcript_segments": args.max_transcript_segments,
                 "max_retries": args.max_retries,
                 "retry_backoff_seconds": args.retry_backoff_seconds,
             },
@@ -1406,13 +1716,13 @@ def main() -> int:
 
         summary = {
             "metadata_rows": len(metadata_rows),
-            "prompt_files_written": prompt_write_count,
             "planned": len(work_items),
             "skipped_existing": skipped_existing,
             "attempted": attempted,
             "succeeded": succeeded,
             "failed": failed,
             "missing_audio_failures": missing_audio_failures,
+            "missing_transcript_failures": missing_transcript_failures,
             "missing_frame_failures": missing_frame_failures,
         }
 

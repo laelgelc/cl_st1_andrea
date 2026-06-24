@@ -127,7 +127,32 @@ python select_kws_stratified.py \
 # Output: corpus/09_kw_selected/keywords.txt
 
 "
+=== Decade Keyword Quotas ===
+1950   → 260 keywords max
+1960   → 260 keywords max
+1970   → 260 keywords max
+1980   → 260 keywords max
+1990   → 260 keywords max
+2000   → 260 keywords max
+2010   → 260 keywords max
+2020   → 260 keywords max
+=============================
 
+1950   → selected 260/260 from 260 available POSKW lemmas
+1960   → selected 133/260 from 133 available POSKW lemmas
+1970   → selected 44/260 from 44 available POSKW lemmas
+1980   → selected 66/260 from 66 available POSKW lemmas
+1990   → selected 116/260 from 116 available POSKW lemmas
+2000   → selected 124/260 from 124 available POSKW lemmas
+2010   → selected 148/260 from 148 available POSKW lemmas
+2020   → selected 203/260 from 203 available POSKW lemmas
+
+Total consolidated keywords before de-duplication: 1094
+Unique keywords after de-duplication: 973
+Duplicates removed: 121
+
+Final unique keywords written to: corpus/09_kw_selected/keywords.txt
+Final unique keyword count: 973
 "
 
 # ------------------------------------------------------------

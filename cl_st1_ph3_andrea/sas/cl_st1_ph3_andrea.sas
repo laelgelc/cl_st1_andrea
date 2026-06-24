@@ -9,7 +9,7 @@
      No header
      Space-separated
      Columns:
-       filename decade v000001-v000688
+       filename decade v000001-v000973
 
    Example:
      t000001 1950 0 1 0 0 ...
@@ -30,7 +30,7 @@
 options fmtsearch=(work library);
 
 /* enter the variable ID corresponding to the last keyword variable */
-%let lastkeywordvar = v000688 ;
+%let lastkeywordvar = v000973 ;
 
 /* enter number of factors to extract */
 %let extractfactors = 8 ;

@@ -117,6 +117,19 @@ Final unique keywords written to: corpus/09_kw_selected/keywords.txt
 Final unique keyword count: 915
 "
 
+# Run 3 - Prompt template 'visual_commercial_description_v5.md'
+# and considering lowercase alphabetic characters,
+# optionally joined by internal hyphens
+
+python select_kws_stratified.py \
+    --per-decade 260 \
+    --max-total 1200
+# Output: corpus/09_kw_selected/keywords.txt
+
+"
+
+"
+
 # ------------------------------------------------------------
 # 4. Build binary keyword columns
 #

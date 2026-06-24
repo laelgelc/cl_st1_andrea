@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Compute decade-specific key lemmas for the tagged commercial corpus.
+Compute decade-specific key lemmas for the tagged commercial verbal subcorpus.
 
 Expected input structure:
 
@@ -26,17 +26,17 @@ Typical usage:
 cutoff = minimum percent presence requirement in the target decade.
 """
 
-import argparse
-import math
 import os
 import re
+import math
+import argparse
 from collections import defaultdict
 
 
-# POS tags to keep: nouns, proper nouns, main verbs, adjectives.
+# POS tags to keep: nouns, proper nouns, main verbs, adjectives
 VALID_TAG_PREFIXES = ("NN", "NP", "VB", "JJ")
 
-# Lemmas to exclude after lowercasing.
+# Lemmas to exclude after lowercasing
 STOPWORDS = {
     "be",
     "have",
@@ -50,49 +50,6 @@ def natural_sort_key(text):
     """Return a natural-sort key that treats digit runs as integers."""
     parts = re.split(r"(\d+)", text)
     return [int(part) if part.isdigit() else part.lower() for part in parts]
-
-
-def is_valid_lemma_shape(lemma):
-    """
-    Return True if a lowercased lemma has valid lexical shape.
-
-    Valid lemmas must:
-
-    1. contain at least two alphabetic characters overall;
-    2. consist of one or more alphabetic parts;
-    3. use hyphens only internally, between alphabetic parts.
-
-    This deliberately allows Unicode alphabetic characters, including accented
-    letters, because it relies on str.isalpha() rather than an ASCII-only regex.
-
-    Examples kept:
-        car
-        tv
-        built-in
-        black-and-white
-        café
-        prêt-à-porter
-
-    Examples rejected:
-        a
-        1
-        .
-        build-in.
-        built-
-        -built
-        1950s-style
-    """
-    parts = lemma.split("-")
-
-    # Reject empty string, leading hyphen, trailing hyphen, and repeated hyphens.
-    if any(not part for part in parts):
-        return False
-
-    # Reject digits, punctuation, spaces, underscores, apostrophes, etc.
-    if any(not all(ch.isalpha() for ch in part) for part in parts):
-        return False
-
-    return sum(1 for ch in lemma if ch.isalpha()) >= 2
 
 
 def ll(a, b, c, d):
@@ -179,10 +136,8 @@ def load_lemma_presence(base_dir, *, label_prefix=""):
 
                     lemma_lc = lemma.lower()
 
-                    # Lemma must have valid lexical shape:
-                    # alphabetic parts only, optional internal hyphens,
-                    # and at least two alphabetic characters overall.
-                    if not is_valid_lemma_shape(lemma_lc):
+                    # Lemma must contain at least two alphabetic characters.
+                    if sum(1 for ch in lemma_lc if ch.isalpha()) < 2:
                         continue
 
                     if lemma_lc in STOPWORDS:
@@ -219,7 +174,7 @@ def save_keywords(path, rows):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Compute decade-specific key lemmas for the commercial corpus."
+        description="Compute decade-specific key lemmas for the commercial verbal subcorpus."
     )
     parser.add_argument(
         "--input",

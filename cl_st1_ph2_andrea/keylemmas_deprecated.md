@@ -227,17 +227,17 @@ Each row represents one lemma.
 
 ### 4.4 Output Columns
 
-| Column              | Description                                                               |
-|---------------------|---------------------------------------------------------------------------|
-| `lemma`             | Lowercased lemma retained after POS and lexical filtering                 |
-| `target_count`      | Number of texts in the target decade where the lemma occurs at least once |
-| `comparison_count`  | Number of texts in all other decades where the lemma occurs at least once |
-| `target_per_1k`     | Presence rate per 1,000 target-decade texts                               |
-| `comparison_per_1k` | Presence rate per 1,000 comparison texts                                  |
-| `expected`          | Expected target-decade count under the null distribution                  |
-| `LL`                | Log-likelihood statistic                                                  |
-| `%DIFF`             | Percentage difference between target and comparison rates                 |
-| `status`            | Keyword classification: `POSKW`, `NEGKW`, or `NOTKW`                      |
+| Column | Description |
+|---|---|
+| `lemma` | Lowercased lemma retained after POS and lexical filtering |
+| `target_count` | Number of texts in the target decade where the lemma occurs at least once |
+| `comparison_count` | Number of texts in all other decades where the lemma occurs at least once |
+| `target_per_1k` | Presence rate per 1,000 target-decade texts |
+| `comparison_per_1k` | Presence rate per 1,000 comparison texts |
+| `expected` | Expected target-decade count under the null distribution |
+| `LL` | Log-likelihood statistic |
+| `%DIFF` | Percentage difference between target and comparison rates |
+| `status` | Keyword classification: `POSKW`, `NEGKW`, or `NOTKW` |
 
 ---
 
@@ -311,36 +311,19 @@ or empty, the programme must use the surface wordform instead.
 
 All retained lemmas must be lowercased before counting.
 
-### 6.4 Minimum Alphabetic Content and Lemma Shape
+### 6.4 Minimum Alphabetic Content
 
-A lemma must:
-
-1. contain at least two alphabetic characters; and
-2. consist only of lowercase alphabetic characters, optionally joined by internal hyphens.
-
-Valid hyphens are allowed only between alphabetic parts.
-
-Pattern:
-
-```regex
-^[a-z]+(?:-[a-z]+)*$
-```
+A lemma must contain at least two alphabetic characters.
 
 Examples:
 
-| Lemma             | Keep? |
-|-------------------|-------|
-| `car`             | yes   |
-| `tv`              | yes   |
-| `built-in`        | yes   |
-| `black-and-white` | yes   |
-| `a`               | no    |
-| `1`               | no    |
-| `.`               | no    |
-| `build-in.`       | no    |
-| `built-`          | no    |
-| `-built`          | no    |
-| `1950s-style`     | no    |
+| Lemma | Keep? |
+|---|---|
+| `car` | yes |
+| `tv` | yes |
+| `a` | no |
+| `1` | no |
+| `.` | no |
 
 ### 6.5 Stopwords
 
@@ -362,12 +345,12 @@ The stopword list is intentionally small and project-specific.
 
 The programme must calculate a log-likelihood value using the following inputs:
 
-| Symbol | Meaning                    |
-|--------|----------------------------|
-| `a`    | target presence count      |
-| `b`    | comparison presence count  |
-| `c`    | number of target texts     |
-| `d`    | number of comparison texts |
+| Symbol | Meaning |
+|---|---|
+| `a` | target presence count |
+| `b` | comparison presence count |
+| `c` | number of target texts |
+| `d` | number of comparison texts |
 
 Expected values:
 

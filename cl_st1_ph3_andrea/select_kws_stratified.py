@@ -24,10 +24,14 @@ What it does
 1) Reads every decade key-lemma file in corpus/08_keylemmas/.
    Supported extensions: .tsv and .txt.
 
-2) Extracts lemmas whose final column is POSKW, applying additional filters:
-   - drop lemmas containing Unicode punctuation;
+2) Extracts lemmas whose final column is POSKW, applying lexical filters
+   aligned with the upstream key-lemma extraction stage:
+   - keep alphabetic lemmas and valid hyphenated compounds;
+   - allow Unicode alphabetic characters, including accented letters;
+   - allow hyphens only internally, between alphabetic parts;
    - drop lemmas containing digits;
-   - drop lemmas containing uppercase letters.
+   - drop lemmas containing uppercase letters;
+   - drop lemmas containing punctuation other than valid internal hyphens.
 
 3) Applies the same quota to every decade:
    - each decade: at most --per-decade lemmas.
@@ -48,11 +52,10 @@ python select_kws_stratified.py \
     --max-total 1200
 """
 
+import argparse
+import glob
 import os
 import re
-import glob
-import argparse
-import unicodedata
 
 
 INPUT_DIR = "corpus/08_keylemmas"
@@ -72,21 +75,64 @@ def natural_sort_key(text):
     return [int(part) if part.isdigit() else part.lower() for part in parts]
 
 
-def contains_punctuation(text):
-    """Return True if text contains any Unicode punctuation character."""
-    return any(unicodedata.category(ch).startswith("P") for ch in text)
+def is_valid_lemma_shape(lemma):
+    """
+    Return True if a lemma has valid lexical shape.
+
+    Valid lemmas must:
+
+    1. contain at least two alphabetic characters overall;
+    2. consist of one or more alphabetic parts;
+    3. use hyphens only internally, between alphabetic parts.
+
+    This deliberately allows Unicode alphabetic characters, including accented
+    letters, because it relies on str.isalpha() rather than an ASCII-only regex.
+
+    Examples kept:
+        car
+        tv
+        built-in
+        black-and-white
+        close-up
+        café
+        prêt-à-porter
+
+    Examples rejected:
+        a
+        1
+        .
+        tvdays.com
+        display**
+        build-in.
+        built-
+        -built
+        1950s-style
+    """
+    parts = lemma.split("-")
+
+    # Reject empty string, leading hyphen, trailing hyphen, and repeated hyphens.
+    if any(not part for part in parts):
+        return False
+
+    # Reject digits, punctuation, spaces, underscores, apostrophes, etc.
+    if any(not all(ch.isalpha() for ch in part) for part in parts):
+        return False
+
+    return sum(1 for ch in lemma if ch.isalpha()) >= 2
 
 
 def is_clean_lemma(lemma):
-    """Return True if lemma passes lexical filtering rules."""
-    if contains_punctuation(lemma):
-        return False
-    if any(ch.isdigit() for ch in lemma):
-        return False
+    """
+    Return True if lemma passes lexical filtering rules.
+
+    The filtering is aligned with the upstream key-lemma extraction stage:
+    lowercase alphabetic parts are allowed, valid internal hyphens are allowed,
+    and Unicode alphabetic characters are supported.
+    """
     if any(ch.isupper() for ch in lemma):
         return False
 
-    return True
+    return is_valid_lemma_shape(lemma)
 
 
 def discover_keylemma_files(input_dir):

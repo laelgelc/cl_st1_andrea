@@ -45,6 +45,8 @@ python keylemmas.py \
 # used to construct binary keyword columns for SAS.
 # ------------------------------------------------------------
 
+# Run 1 - Prompt template 'visual_commercial_description_v1.txt'
+
 python select_kws_stratified.py \
     --per-decade 250 \
     --max-total 1200
@@ -77,6 +79,42 @@ Duplicates removed: 112
 
 Final unique keywords written to: corpus/09_kw_selected/keywords.txt
 Final unique keyword count: 688
+"
+
+# Run 2 - Prompt template 'visual_commercial_description_v5.md'
+
+python select_kws_stratified.py \
+    --per-decade 260 \
+    --max-total 1200
+# Output: corpus/09_kw_selected/keywords.txt
+
+"
+=== Decade Keyword Quotas ===
+1950   → 260 keywords max
+1960   → 260 keywords max
+1970   → 260 keywords max
+1980   → 260 keywords max
+1990   → 260 keywords max
+2000   → 260 keywords max
+2010   → 260 keywords max
+2020   → 260 keywords max
+=============================
+
+1950   → selected 245/260 from 245 available POSKW lemmas
+1960   → selected 129/260 from 129 available POSKW lemmas
+1970   → selected 41/260 from 41 available POSKW lemmas
+1980   → selected 61/260 from 61 available POSKW lemmas
+1990   → selected 107/260 from 107 available POSKW lemmas
+2000   → selected 120/260 from 120 available POSKW lemmas
+2010   → selected 136/260 from 136 available POSKW lemmas
+2020   → selected 190/260 from 190 available POSKW lemmas
+
+Total consolidated keywords before de-duplication: 1029
+Unique keywords after de-duplication: 915
+Duplicates removed: 114
+
+Final unique keywords written to: corpus/09_kw_selected/keywords.txt
+Final unique keyword count: 915
 "
 
 # ------------------------------------------------------------

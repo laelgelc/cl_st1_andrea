@@ -1063,16 +1063,32 @@ vis7
 vis8
 ```
 
-The sequential significance tests indicated that the first four canonical functions were statistically significant at `α = .05`:
+The sequential significance tests indicated that the first seven canonical functions were statistically significant at `α = .05` and were therefore retained for downstream diachronic analysis in Phase 5. The eighth canonical function was not retained for interpretation or ANOVA testing.
 
-| Canonical function | Canonical correlation | Squared canonical correlation | p value | Interpretation status          |
-|-------------------:|----------------------:|------------------------------:|--------:|--------------------------------|
-|                  1 |              0.383981 |                      0.147441 | < .0001 | strongest and most robust      |
-|                  2 |              0.335207 |                      0.112364 | < .0001 | robust                         |
-|                  3 |              0.244872 |                      0.059962 | < .0001 | robust but weaker              |
-|                  4 |              0.162135 |                      0.026288 |  0.0435 | marginal; interpret cautiously |
+The `OUT=` option in `PROC CANCORR` was used to export the per-commercial canonical variate scores. The resulting file was:
 
-Canonical functions 5–8 were not statistically significant.
+```text
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/tv_commercials_cca_scores.tsv
+```
+
+This score file contains the original metadata, the verbal and visual LMDA factor scores, and the canonical variate scores:
+
+```text
+file_id
+group_filename
+decade
+ver1 ... ver8
+vis1 ... vis8
+V1 ... V8
+W1 ... W8
+```
+
+In this output:
+
+- `V1` to `V8` are the verbal-side canonical variate scores;
+- `W1` to `W8` are the visual-side canonical variate scores.
+
+Only `V1` to `V7` and `W1` to `W7` were used in Phase 5, because only the first seven canonical dimensions were retained as statistically significant.
 
 ### Canonical structure interpretation
 
@@ -1086,18 +1102,242 @@ A loading cutoff of:
 
 was used to identify the main contributors to each canonical dimension. The original sign of each loading was preserved.
 
-The first four canonical dimensions showed the following structure:
+The retained canonical dimensions are interpreted as cross-modal discursive patterns linking verbal LMDA dimensions with visual LMDA dimensions. The canonical structure loading table was exported as:
 
-| Canonical dimension | Positive verbal pole   | Negative verbal pole | Positive visual pole | Negative visual pole                   |
-|--------------------:|------------------------|----------------------|----------------------|----------------------------------------|
-|                   1 | `ver1`, `ver7`         | —                    | `vis7`               | `vis1`, `vis4`, `vis2`, `vis3`, `vis6` |
-|                   2 | `ver6`, `ver5`         | `ver3`               | `vis4`, `vis8`       | `vis1`                                 |
-|                   3 | `ver2`, `ver5`, `ver8` | —                    | `vis3`, `vis2`       | `vis6`, `vis5`                         |
-|                   4 | `ver8`                 | `ver5`               | `vis6`, `vis7`       | `vis5`                                 |
+```text
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca_dimension_loadings.ndjson
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca_dimension_loadings.xlsx
+cl_st1_ph1_andrea/corpus/00_sources/tv_commercials_cca_dimension_loadings.tsv
+```
 
-The first canonical dimension is dominated by `ver1` on the verbal side and contrasts `vis7` with a broader cluster of negative visual loadings. The second dimension opposes a cross-modal pattern combining `ver6`, `ver5`, `vis4`, and `vis8` against a contrasting pole defined by `ver3` and `vis1`. The third dimension is centred on `ver2`, supported by `ver5` and `ver8`, and visually aligns with `vis3` and `vis2` while contrasting with `vis6` and `vis5`. The fourth dimension contrasts `ver8` and `vis6`/`vis7` with `ver5` and `vis5`, but it should be interpreted cautiously because its canonical correlation is small and its significance is marginal.
+This table is used to interpret the substantive meaning of each significant cross-modal dimension after the Phase 5 ANOVAs.
 
 At this stage, the interpretation remains statistical and structural. The substantive discourse interpretation requires replacing labels such as `ver1`, `ver2`, `vis1`, and `vis2` with the factor interpretations developed in Phase 2 and Phase 3.
 
 ## Phase 5 - ANOVA Analysis of the commercial verbal, visual, and cross-modal discourses to detect diachronic variation in discourses
 
+Phase 5 conducts ANOVAs to detect diachronic variation in the discourse dimensions identified in the previous phases. The independent variable is `decade`, and the dependent variables are the verbal, visual, and cross-modal discourse scores.
+
+The Phase 5 SAS programme is:
+
+```text
+cl_st1_ph5_andrea/cl_st1_ph5_andrea.sas
+```
+
+The input file is the canonical-score matrix exported from Phase 4:
+
+```text
+cl_st1_ph4_andrea/output_cl_st1_ph4_andrea_CCA/tv_commercials_cca_scores.tsv
+```
+
+For use in SAS OnDemand, this file should be copied or uploaded to the Phase 5 SAS project folder:
+
+```text
+/home/<sasusername>/cl_st1_ph5_andrea/tv_commercials_cca_scores.tsv
+```
+
+The Phase 5 input table contains:
+
+```text
+file_id
+group_filename
+decade
+ver1
+ver2
+ver3
+ver4
+ver5
+ver6
+ver7
+ver8
+vis1
+vis2
+vis3
+vis4
+vis5
+vis6
+vis7
+vis8
+V1
+V2
+V3
+V4
+V5
+V6
+V7
+V8
+W1
+W2
+W3
+W4
+W5
+W6
+W7
+W8
+```
+
+The Phase 5 analysis uses three groups of dependent variables.
+
+### Verbal discourse ANOVAs
+
+The verbal ANOVAs test whether the Phase 2 verbal LMDA dimensions vary significantly across decades.
+
+The dependent variables are:
+
+```text
+ver1
+ver2
+ver3
+ver4
+ver5
+ver6
+ver7
+ver8
+```
+
+The general model is:
+
+```text
+ver<n> = decade
+```
+
+A significant result indicates that the corresponding verbal discourse dimension shows diachronic variation across the commercial corpus.
+
+### Visual discourse ANOVAs
+
+The visual ANOVAs test whether the Phase 3 visual LMDA dimensions vary significantly across decades.
+
+The dependent variables are:
+
+```text
+vis1
+vis2
+vis3
+vis4
+vis5
+vis6
+vis7
+vis8
+```
+
+The general model is:
+
+```text
+vis<n> = decade
+```
+
+A significant result indicates that the corresponding visual discourse dimension shows diachronic variation across decades.
+
+### Cross-modal discourse ANOVAs
+
+The cross-modal ANOVAs test whether the canonical variate scores from the CCA vary significantly across decades.
+
+The retained canonical dimensions are dimensions 1 to 7. For each retained canonical dimension, both sides of the canonical pair are analysed:
+
+```text
+V1 W1
+V2 W2
+V3 W3
+V4 W4
+V5 W5
+V6 W6
+V7 W7
+```
+
+In this notation:
+
+- `V<n>` is the verbal-side canonical variate score for canonical dimension `<n>`;
+- `W<n>` is the visual-side canonical variate score for canonical dimension `<n>`.
+
+The general models are:
+
+```text
+V<n> = decade
+W<n> = decade
+```
+
+A significant result for `V<n>` indicates diachronic variation in the verbal-side expression of the cross-modal dimension. A significant result for `W<n>` indicates diachronic variation in the visual-side expression of the same cross-modal dimension.
+
+The canonical structure loading table from Phase 4 is used to interpret the substantive meaning of any significant cross-modal result.
+
+### Derived cross-modal composite scores
+
+The Phase 5 SAS script also creates optional derived cross-modal composite scores:
+
+```text
+cross1
+cross2
+cross3
+cross4
+cross5
+cross6
+cross7
+```
+
+Each composite is calculated as the mean of the corresponding verbal-side and visual-side canonical variate scores:
+
+```text
+cross1 = mean(V1, W1)
+cross2 = mean(V2, W2)
+...
+cross7 = mean(V7, W7)
+```
+
+These variables provide one derived cross-modal index per retained canonical dimension. They are useful if a single score per cross-modal discourse is desired, but they should be interpreted as derived composite indices rather than original CCA outputs.
+
+The general model for these composite scores is:
+
+```text
+cross<n> = decade
+```
+
+### SAS outputs
+
+The Phase 5 SAS script writes a main HTML results file:
+
+```text
+tv_commercials_phase5_anova-results.html
+```
+
+It also exports the Phase 5 analysis dataset:
+
+```text
+tv_commercials_phase5_scores.tsv
+```
+
+The main ANOVA result tables are exported as tab-separated files:
+
+```text
+anova_verbal_model.tsv
+anova_visual_model.tsv
+anova_crossmodal_model.tsv
+anova_crossmodal_composite_model.tsv
+```
+
+The corresponding overall ANOVA tables are also exported:
+
+```text
+anova_verbal_overall.tsv
+anova_visual_overall.tsv
+anova_crossmodal_overall.tsv
+anova_crossmodal_composite_overall.tsv
+```
+
+The output directory is zipped following the same general pattern used in earlier SAS phases:
+
+```text
+/home/<sasusername>/zip/output_cl_st1_ph5_andrea.zip
+```
+
+### Interpretation workflow
+
+The recommended Phase 5 interpretation workflow is:
+
+1. Inspect the verbal ANOVA results to identify which verbal LMDA dimensions vary by decade.
+2. Inspect the visual ANOVA results to identify which visual LMDA dimensions vary by decade.
+3. Inspect the cross-modal ANOVA results for `V1`–`V7` and `W1`–`W7`.
+4. Optionally inspect the derived composite results for `cross1`–`cross7`.
+5. For significant cross-modal dimensions, return to the Phase 4 canonical structure loading table to identify which verbal and visual LMDA dimensions define the cross-modal pattern.
+6. Replace variable names such as `ver1`, `vis3`, `V1`, and `W1` with the substantive discourse labels developed in Phases 2, 3, and 4.
+
+Because multiple ANOVAs are conducted, p values should be interpreted cautiously. Where appropriate, results may be supplemented with post-hoc comparisons, effect sizes, and visualisations of decade-level means.

@@ -1,0 +1,104 @@
+\begin{figure}[H]
+\centering
+\hspace*{-.25in}
+\begin{tikzpicture}
+\begin{axis}[
+  boxplot/draw direction=y,
+  enlarge x limits=0.01,
+  every boxplot/.style={draw=black, fill=blue!25},
+  ylabel={Mean Dim. 4 Score},
+  ylabel style={font=\scriptsize},
+  height=0.45\textheight, width=\textwidth,
+  yticklabel style={font=\footnotesize},
+  x tick label style={rotate=60, anchor=east, font=\scriptsize},
+  x=7.5,
+  xtick={1,...,8},
+  xticklabels={
+1950,
+  1960,
+  1970,
+  1980,
+  1990,
+  2000,
+  2010,
+  2020
+},
+]
+\addplot[red, densely dashed] coordinates {(0.5,0) (8.5,0)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(1,-7) (1,-7) (1,-7) (1,-6) (1,-6) (1,-5) (1,-5) (1,-5) (1,-5) (1,-5) (1,5) (1,5) (1,7) (1,14)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-4.0,
+  lower quartile=-1.0,
+  median=0.0,
+  upper quartile=1.0,
+  upper whisker=4.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(1,-0.009708737864077669)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(2,-6) (2,-4) (2,-4) (2,6) (2,6) (2,6) (2,7) (2,7) (2,8) (2,8) (2,9) (2,13)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3.0,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=2.0,
+  upper whisker=5.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(2,1.2621359223300972)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(3,-6) (3,8) (3,8)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-4.5,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=3.0,
+  upper whisker=7.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(3,1.5533980582524272)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(4,-5) (4,8) (4,8) (4,8) (4,9) (4,13)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-4.5,
+  lower quartile=0.0,
+  median=1.0,
+  upper quartile=3.0,
+  upper whisker=7.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(4,1.6504854368932038)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(5,-5) (5,9) (5,10) (5,16)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3.5,
+  lower quartile=1.0,
+  median=2.0,
+  upper quartile=4.0,
+  upper whisker=8.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(5,2.4466019417475726)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(6,14) (6,16)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-2,
+  lower quartile=2.0,
+  median=3.0,
+  upper quartile=6.0,
+  upper whisker=12.0
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(6,3.9320388349514563)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(7,17) (7,19)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-4,
+  lower quartile=1.0,
+  median=3.0,
+  upper quartile=6.0,
+  upper whisker=13.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(7,3.970873786407767)};
+\addplot+[only marks, mark=*, mark options={fill=black, mark size=.8pt}] coordinates {(8,9) (8,9) (8,11) (8,13) (8,13) (8,16)};
+\addplot+[solid, draw=black, fill=blue!25, boxplot prepared={
+  lower whisker=-3,
+  lower quartile=1.0,
+  median=2.0,
+  upper quartile=4.0,
+  upper whisker=8.5
+}] coordinates {};
+\addplot[only marks, mark=*, draw=red, fill=red, mark size=1.2pt] coordinates {(8,2.9029126213592233)};
+\end{axis}
+\end{tikzpicture}
+\caption{Mean Dim. 4 Scores by Decade (R² = 14.73\%)}
+\label{fig:means_f4_by_decade}
+\end{figure}

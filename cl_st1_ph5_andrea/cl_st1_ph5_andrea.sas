@@ -196,10 +196,10 @@ RUN;
 
 TITLE2 "Derived cross-modal composite ANOVAs: cross1-cross7 by decade";
 
-ODS OUTPUT ModelANOVA=anova_crossmodal_composite_model;
-ODS OUTPUT OverallANOVA=anova_crossmodal_composite_overall;
-ODS OUTPUT LSMeans=lsmeans_crossmodal_composite;
-ODS OUTPUT Diffs=diffs_crossmodal_composite;
+ODS OUTPUT ModelANOVA=anova_crosscomp_model;
+ODS OUTPUT OverallANOVA=anova_crosscomp_overall;
+ODS OUTPUT LSMeans=lsmeans_crosscomp;
+ODS OUTPUT Diffs=diffs_crosscomp;
 
 ODS EXCLUDE ALL;
 
@@ -246,8 +246,8 @@ PROC EXPORT DATA=work.anova_crossmodal_model
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_crossmodal_composite_model
-            OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_model.tsv"
+PROC EXPORT DATA=work.anova_crosscomp_model
+            OUTFILE="&whereisit/&myfolder/anova_crosscomp_model.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
@@ -272,8 +272,8 @@ PROC EXPORT DATA=work.anova_crossmodal_overall
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_crossmodal_composite_overall
-            OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_overall.tsv"
+PROC EXPORT DATA=work.anova_crosscomp_overall
+            OUTFILE="&whereisit/&myfolder/anova_crosscomp_overall.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
@@ -298,8 +298,8 @@ PROC EXPORT DATA=work.lsmeans_crossmodal
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.lsmeans_crossmodal_composite
-            OUTFILE="&whereisit/&myfolder/lsmeans_crossmodal_composite.tsv"
+PROC EXPORT DATA=work.lsmeans_crosscomp
+            OUTFILE="&whereisit/&myfolder/lsmeans_crosscomp.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
@@ -324,8 +324,8 @@ PROC EXPORT DATA=work.diffs_crossmodal
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.diffs_crossmodal_composite
-            OUTFILE="&whereisit/&myfolder/diffs_crossmodal_composite.tsv"
+PROC EXPORT DATA=work.diffs_crosscomp
+            OUTFILE="&whereisit/&myfolder/diffs_crosscomp.tsv"
             DBMS=TAB
             REPLACE;
 RUN;

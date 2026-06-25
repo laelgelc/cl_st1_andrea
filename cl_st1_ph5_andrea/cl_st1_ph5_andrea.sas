@@ -22,10 +22,6 @@
    because only the first seven canonical dimensions are statistically significant.
 */
 
-/* ------------------------------------------------------------------ */
-/* 1. PROJECT SETTINGS                                                */
-/* ------------------------------------------------------------------ */
-
 /* Match this to the actual folder in SAS OnDemand */
 %LET project = cl_st1_ph5_andrea_ANOVA;
 %LET myfolder = &project;
@@ -37,16 +33,7 @@
 /* Input file exported from Phase 4 CCA */
 %LET inputfile = tv_commercials_cca_scores.tsv;
 
-/* Main HTML output */
-%LET resultsfile = tv_commercials_phase5_anova-results.html;
-
-/* Output ZIP file */
-%LET addcntzip = /home/&sasusername/zip/output_&project..zip;
-
-/* ------------------------------------------------------------------ */
-/* 2. IMPORT PHASE 4 CCA SCORE DATA                                    */
-/* ------------------------------------------------------------------ */
-
+/* Importing the Phase 4 CCA score data set */
 PROC IMPORT DATAFILE="&whereisit/&myfolder/&inputfile"
             OUT=tv_commercials_cca_scores
             DBMS=TAB
@@ -81,25 +68,8 @@ PROC MEANS DATA=work.tv_commercials_cca_scores N NMISS MEAN STD MIN MAX;
         W1 W2 W3 W4 W5 W6 W7;
 RUN;
 
-/* ------------------------------------------------------------------ */
-/* 3. CREATE PHASE 5 SCORE DATA WITH CROSS-MODAL COMPOSITES            */
-/* ------------------------------------------------------------------ */
-
-DATA tv_commercials_phase5_scores;
-    SET work.tv_commercials_cca_scores;
-
-    cross1 = MEAN(V1, W1);
-    cross2 = MEAN(V2, W2);
-    cross3 = MEAN(V3, W3);
-    cross4 = MEAN(V4, W4);
-    cross5 = MEAN(V5, W5);
-    cross6 = MEAN(V6, W6);
-    cross7 = MEAN(V7, W7);
-RUN;
-
-/* ------------------------------------------------------------------ */
-/* 4. OPEN MAIN HTML RESULTS                                           */
-/* ------------------------------------------------------------------ */
+/* Main HTML output */
+%LET resultsfile = tv_commercials_phase5_anova-results.html;
 
 ODS HTML FILE="&whereisit/&myfolder/&resultsfile"
          STYLE=HTMLBlue;
@@ -109,400 +79,45 @@ ODS NOPROCTITLE;
 ODS GRAPHICS / IMAGEMAP=ON;
 
 /* ------------------------------------------------------------------ */
-/* 5. SET UP EMPTY OUTPUT TABLES                                       */
-/* ------------------------------------------------------------------ */
-
-DATA anova_verbal_model;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA anova_verbal_overall;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA means_verbal;
-    LENGTH analysis $20 measure $20 decade 8;
-    STOP;
-RUN;
-
-DATA lsmeans_verbal;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA diffs_verbal;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA anova_visual_model;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA anova_visual_overall;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA means_visual;
-    LENGTH analysis $20 measure $20 decade 8;
-    STOP;
-RUN;
-
-DATA lsmeans_visual;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA diffs_visual;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA anova_crossmodal_model;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA anova_crossmodal_overall;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA means_crossmodal;
-    LENGTH analysis $20 measure $20 decade 8;
-    STOP;
-RUN;
-
-DATA lsmeans_crossmodal;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA diffs_crossmodal;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA anova_crosscomp_model;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA anova_crosscomp_overall;
-    LENGTH analysis $20 measure $20 Source $80;
-    STOP;
-RUN;
-
-DATA means_crosscomp;
-    LENGTH analysis $20 measure $20 decade 8;
-    STOP;
-RUN;
-
-DATA lsmeans_crosscomp;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-DATA diffs_crosscomp;
-    LENGTH analysis $20 measure $20;
-    STOP;
-RUN;
-
-/* ------------------------------------------------------------------ */
-/* 6. MACRO TO RUN ONE ANOVA AND APPEND OUTPUT TABLES                  */
-/* ------------------------------------------------------------------ */
-
-%MACRO run_one_anova(
-    data_in=,
-    depvar=,
-    analysis=,
-    out_model=,
-    out_overall=,
-    out_means=,
-    out_lsmeans=,
-    out_diffs=
-);
-
-    TITLE2 "&analysis ANOVA: &depvar by decade";
-
-    ODS OUTPUT
-        ModelANOVA = _m
-        OverallANOVA = _o
-        Means = _means
-        LSMeans = _lsm
-        Diffs = _diffs
-    ;
-
-    PROC GLM DATA=&data_in;
-        CLASS decade;
-        MODEL &depvar = decade;
-        MEANS decade / HOVTEST=LEVENE;
-        LSMEANS decade / PDIFF ADJUST=TUKEY;
-    RUN;
-    QUIT;
-
-    ODS OUTPUT CLOSE;
-
-    %IF %SYSFUNC(EXIST(work._m)) %THEN %DO;
-        DATA _m;
-            LENGTH analysis $20 measure $20;
-            SET _m;
-            analysis = "&analysis";
-            measure = "&depvar";
-        RUN;
-
-        PROC APPEND BASE=&out_model DATA=_m FORCE;
-        RUN;
-    %END;
-
-    %IF %SYSFUNC(EXIST(work._o)) %THEN %DO;
-        DATA _o;
-            LENGTH analysis $20 measure $20;
-            SET _o;
-            analysis = "&analysis";
-            measure = "&depvar";
-        RUN;
-
-        PROC APPEND BASE=&out_overall DATA=_o FORCE;
-        RUN;
-    %END;
-
-    %IF %SYSFUNC(EXIST(work._means)) %THEN %DO;
-        DATA _means;
-            LENGTH analysis $20 measure $20;
-            SET _means;
-            analysis = "&analysis";
-            measure = "&depvar";
-        RUN;
-
-        PROC APPEND BASE=&out_means DATA=_means FORCE;
-        RUN;
-    %END;
-
-    %IF %SYSFUNC(EXIST(work._lsm)) %THEN %DO;
-        DATA _lsm;
-            LENGTH analysis $20 measure $20;
-            SET _lsm;
-            analysis = "&analysis";
-            measure = "&depvar";
-        RUN;
-
-        PROC APPEND BASE=&out_lsmeans DATA=_lsm FORCE;
-        RUN;
-    %END;
-
-    %IF %SYSFUNC(EXIST(work._diffs)) %THEN %DO;
-        DATA _diffs;
-            LENGTH analysis $20 measure $20;
-            SET _diffs;
-            analysis = "&analysis";
-            measure = "&depvar";
-        RUN;
-
-        PROC APPEND BASE=&out_diffs DATA=_diffs FORCE;
-        RUN;
-    %END;
-
-    PROC DATASETS LIBRARY=work NOLIST;
-        DELETE _m _o _means _lsm _diffs;
-    QUIT;
-
-%MEND run_one_anova;
-
-/* ------------------------------------------------------------------ */
-/* 7. VERBAL DISCOURSE ANOVAS                                          */
+/* 1. Verbal discourse ANOVAs                                          */
 /* ------------------------------------------------------------------ */
 
 TITLE2 "Verbal discourse ANOVAs: ver1-ver8 by decade";
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver1,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
+ODS OUTPUT ModelANOVA=anova_verbal_model;
+ODS OUTPUT OverallANOVA=anova_verbal_overall;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver2,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
+PROC GLM DATA=work.tv_commercials_cca_scores;
+    CLASS decade;
+    MODEL ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8 = decade;
+    MEANS decade / HOVTEST=LEVENE;
+    LSMEANS decade / PDIFF ADJUST=TUKEY;
+RUN;
+QUIT;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver3,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver4,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver5,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver6,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver7,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=ver8,
-    analysis=verbal,
-    out_model=anova_verbal_model,
-    out_overall=anova_verbal_overall,
-    out_means=means_verbal,
-    out_lsmeans=lsmeans_verbal,
-    out_diffs=diffs_verbal
-);
+ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
-/* 8. VISUAL DISCOURSE ANOVAS                                          */
+/* 2. Visual discourse ANOVAs                                          */
 /* ------------------------------------------------------------------ */
 
 TITLE2 "Visual discourse ANOVAs: vis1-vis8 by decade";
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis1,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
+ODS OUTPUT ModelANOVA=anova_visual_model;
+ODS OUTPUT OverallANOVA=anova_visual_overall;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis2,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
+PROC GLM DATA=work.tv_commercials_cca_scores;
+    CLASS decade;
+    MODEL vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8 = decade;
+    MEANS decade / HOVTEST=LEVENE;
+    LSMEANS decade / PDIFF ADJUST=TUKEY;
+RUN;
+QUIT;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis3,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis4,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis5,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis6,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis7,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=vis8,
-    analysis=visual,
-    out_model=anova_visual_model,
-    out_overall=anova_visual_overall,
-    out_means=means_visual,
-    out_lsmeans=lsmeans_visual,
-    out_diffs=diffs_visual
-);
+ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
-/* 9. CROSS-MODAL CANONICAL VARIATE ANOVAS                             */
+/* 3. Cross-modal discourse ANOVAs                                     */
 /* ------------------------------------------------------------------ */
 
 /*
@@ -517,252 +132,70 @@ TITLE2 "Visual discourse ANOVAs: vis1-vis8 by decade";
 
 TITLE2 "Cross-modal discourse ANOVAs: canonical variate scores V1-W7 by decade";
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V1,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
+ODS OUTPUT ModelANOVA=anova_crossmodal_model;
+ODS OUTPUT OverallANOVA=anova_crossmodal_overall;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W1,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
+PROC GLM DATA=work.tv_commercials_cca_scores;
+    CLASS decade;
+    MODEL V1 W1
+          V2 W2
+          V3 W3
+          V4 W4
+          V5 W5
+          V6 W6
+          V7 W7 = decade;
+    MEANS decade / HOVTEST=LEVENE;
+    LSMEANS decade / PDIFF ADJUST=TUKEY;
+RUN;
+QUIT;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V2,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W2,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V3,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W3,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V4,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W4,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V5,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W5,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V6,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W6,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=V7,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=W7,
-    analysis=crossmodal,
-    out_model=anova_crossmodal_model,
-    out_overall=anova_crossmodal_overall,
-    out_means=means_crossmodal,
-    out_lsmeans=lsmeans_crossmodal,
-    out_diffs=diffs_crossmodal
-);
+ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
-/* 10. DERIVED CROSS-MODAL COMPOSITE ANOVAS                            */
+/* 4. Optional composite cross-modal scores                            */
 /* ------------------------------------------------------------------ */
 
 /*
-   This section analyses one composite score per canonical dimension.
+   This section creates one composite score per canonical dimension by
+   averaging the verbal-side and visual-side canonical variate scores.
 
-   Each composite is the mean of the verbal-side and visual-side
-   canonical variate scores for the same canonical dimension.
+   These variables are useful if you want one ANOVA per cross-modal
+   dimension rather than separate Vn and Wn tests.
+
+   Because Vn and Wn are already canonical variate scores from the same
+   canonical pair, the composite score should be interpreted as a derived
+   cross-modal index.
 */
+
+DATA tv_commercials_phase5_scores;
+    SET work.tv_commercials_cca_scores;
+
+    cross1 = MEAN(V1, W1);
+    cross2 = MEAN(V2, W2);
+    cross3 = MEAN(V3, W3);
+    cross4 = MEAN(V4, W4);
+    cross5 = MEAN(V5, W5);
+    cross6 = MEAN(V6, W6);
+    cross7 = MEAN(V7, W7);
+RUN;
 
 TITLE2 "Derived cross-modal composite ANOVAs: cross1-cross7 by decade";
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross1,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
+ODS OUTPUT ModelANOVA=anova_crossmodal_composite_model;
+ODS OUTPUT OverallANOVA=anova_xmod_comp_overall;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross2,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
+PROC GLM DATA=work.tv_commercials_phase5_scores;
+    CLASS decade;
+    MODEL cross1 cross2 cross3 cross4 cross5 cross6 cross7 = decade;
+    MEANS decade / HOVTEST=LEVENE;
+    LSMEANS decade / PDIFF ADJUST=TUKEY;
+RUN;
+QUIT;
 
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross3,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross4,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross5,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross6,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
-
-%run_one_anova(
-    data_in=work.tv_commercials_phase5_scores,
-    depvar=cross7,
-    analysis=crosscomp,
-    out_model=anova_crosscomp_model,
-    out_overall=anova_crosscomp_overall,
-    out_means=means_crosscomp,
-    out_lsmeans=lsmeans_crosscomp,
-    out_diffs=diffs_crosscomp
-);
+ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
-/* 11. EXPORT ANALYSIS DATA AND ANOVA RESULT TABLES                    */
+/* 5. Export analysis data and ANOVA result tables                     */
 /* ------------------------------------------------------------------ */
 
 TITLE2 "Exported Phase 5 data and ANOVA tables";
@@ -772,8 +205,6 @@ PROC EXPORT DATA=work.tv_commercials_phase5_scores
             DBMS=TAB
             REPLACE;
 RUN;
-
-/* Model ANOVA tables */
 
 PROC EXPORT DATA=work.anova_verbal_model
             OUTFILE="&whereisit/&myfolder/anova_verbal_model.tsv"
@@ -793,13 +224,13 @@ PROC EXPORT DATA=work.anova_crossmodal_model
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_crosscomp_model
-            OUTFILE="&whereisit/&myfolder/anova_crosscomp_model.tsv"
+PROC EXPORT DATA=work.anova_crossmodal_composite_model
+            OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_model.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
 
-/* Overall ANOVA tables */
+/* Optional: export overall ANOVA tables too */
 
 PROC EXPORT DATA=work.anova_verbal_overall
             OUTFILE="&whereisit/&myfolder/anova_verbal_overall.tsv"
@@ -819,86 +250,8 @@ PROC EXPORT DATA=work.anova_crossmodal_overall
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_crosscomp_overall
-            OUTFILE="&whereisit/&myfolder/anova_crosscomp_overall.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-/* Decade means tables */
-
-PROC EXPORT DATA=work.means_verbal
-            OUTFILE="&whereisit/&myfolder/means_verbal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.means_visual
-            OUTFILE="&whereisit/&myfolder/means_visual.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.means_crossmodal
-            OUTFILE="&whereisit/&myfolder/means_crossmodal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.means_crosscomp
-            OUTFILE="&whereisit/&myfolder/means_crosscomp.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-/* LSMeans tables */
-
-PROC EXPORT DATA=work.lsmeans_verbal
-            OUTFILE="&whereisit/&myfolder/lsmeans_verbal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.lsmeans_visual
-            OUTFILE="&whereisit/&myfolder/lsmeans_visual.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.lsmeans_crossmodal
-            OUTFILE="&whereisit/&myfolder/lsmeans_crossmodal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.lsmeans_crosscomp
-            OUTFILE="&whereisit/&myfolder/lsmeans_crosscomp.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-/* Tukey pairwise-comparison tables */
-
-PROC EXPORT DATA=work.diffs_verbal
-            OUTFILE="&whereisit/&myfolder/diffs_verbal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.diffs_visual
-            OUTFILE="&whereisit/&myfolder/diffs_visual.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.diffs_crossmodal
-            OUTFILE="&whereisit/&myfolder/diffs_crossmodal.tsv"
-            DBMS=TAB
-            REPLACE;
-RUN;
-
-PROC EXPORT DATA=work.diffs_crosscomp
-            OUTFILE="&whereisit/&myfolder/diffs_crosscomp.tsv"
+PROC EXPORT DATA=work.anova_xmod_comp_overall
+            OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_overall.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
@@ -906,8 +259,10 @@ RUN;
 ODS HTML CLOSE;
 
 /* ------------------------------------------------------------------ */
-/* 12. ZIP OUTPUT FILES                                                */
+/* 6. ZIP OUTPUT FILES                                                 */
 /* ------------------------------------------------------------------ */
+
+%LET addcntzip = /home/&sasusername/zip/output_&project..zip;
 
 FILENAME temp "&addcntzip";
 
@@ -929,7 +284,6 @@ RUN;
 
 DATA filelist;
     MODIFY filelist;
-
     rc1 = FILENAME('tmp', CATX('/', root, dname, filename));
     rc2 = DOPEN('tmp');
     dir = 1 & rc2;
@@ -991,10 +345,11 @@ DATA _NULL_;
 RUN;
 
 /* ------------------------------------------------------------------ */
-/* 13. OPTIONAL CLEANUP                                                */
+/* 7. Optional cleanup                                                 */
 /* ------------------------------------------------------------------ */
 
 /*
+   This cleanup follows the Phase 4 template.
    Comment out this section if you want the HTML and TSV files to remain
    visible in the SAS OnDemand folder after zipping.
 */

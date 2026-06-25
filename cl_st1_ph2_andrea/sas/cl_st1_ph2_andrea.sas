@@ -30,7 +30,7 @@
 options fmtsearch=(work library);
 
 /* enter the variable ID corresponding to the last keyword variable */
-%let lastkeywordvar = v000265 ;
+%let lastkeywordvar = v000267 ;
 
 /* enter number of factors to extract */
 %let extractfactors = 8 ;

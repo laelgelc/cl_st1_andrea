@@ -23,7 +23,7 @@
 */
 
 /* Match this to the actual folder in SAS OnDemand */
-%LET project = cl_st1_ph5_andrea;
+%LET project = cl_st1_ph5_andrea_ANOVA;
 %LET myfolder = &project;
 
 /* Replace with your SAS user ID */
@@ -278,7 +278,7 @@ DATA filelist;
     INPUT root;
     RETAIN filename dname ' ' level 0 dir 1;
 CARDS4;
-/home/u63529080/cl_st1_ph5_andrea
+/home/u63529080/cl_st1_ph5_andrea_ANOVA
 ;;;;
 RUN;
 

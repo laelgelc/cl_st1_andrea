@@ -45,6 +45,8 @@ python keylemmas.py \
 # used to construct binary keyword columns for SAS.
 # ------------------------------------------------------------
 
+# Run 1
+
 python select_kws_stratified.py \
     --per-decade 250 \
     --max-total 1200
@@ -77,6 +79,18 @@ Duplicates removed: 24
 
 Final unique keywords written to: corpus/09_kw_selected/keywords.txt
 Final unique keyword count: 265
+"
+
+# Run 2 - Considering lowercase alphabetic characters,
+# optionally joined by internal hyphens
+
+python select_kws_stratified.py \
+    --per-decade 250 \
+    --max-total 1200
+# Output: corpus/09_kw_selected/keywords.txt
+
+"
+
 "
 
 # ------------------------------------------------------------

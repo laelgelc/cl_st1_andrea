@@ -354,7 +354,6 @@ RUN;
    visible in the SAS OnDemand folder after zipping.
 */
 
-/*
 %LET path = &whereisit/&myfolder;
 
 FILENAME _folder_ "%BQUOTE(&path.)";
@@ -388,6 +387,5 @@ DATA _NULL_;
     rc = FDELETE(fname);
     rc = FILENAME(fname);
 RUN;
-*/
 
 /* END OF PROGRAMME */

@@ -86,6 +86,10 @@ TITLE2 "Verbal discourse ANOVAs: ver1-ver8 by decade";
 
 ODS OUTPUT ModelANOVA=anova_verbal_model;
 ODS OUTPUT OverallANOVA=anova_verbal_overall;
+ODS OUTPUT LSMeans=lsmeans_verbal;
+ODS OUTPUT Diffs=diffs_verbal;
+
+ODS EXCLUDE ALL;
 
 PROC GLM DATA=work.tv_commercials_cca_scores;
     CLASS decade;
@@ -95,6 +99,7 @@ PROC GLM DATA=work.tv_commercials_cca_scores;
 RUN;
 QUIT;
 
+ODS EXCLUDE NONE;
 ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
@@ -105,6 +110,10 @@ TITLE2 "Visual discourse ANOVAs: vis1-vis8 by decade";
 
 ODS OUTPUT ModelANOVA=anova_visual_model;
 ODS OUTPUT OverallANOVA=anova_visual_overall;
+ODS OUTPUT LSMeans=lsmeans_visual;
+ODS OUTPUT Diffs=diffs_visual;
+
+ODS EXCLUDE ALL;
 
 PROC GLM DATA=work.tv_commercials_cca_scores;
     CLASS decade;
@@ -114,6 +123,7 @@ PROC GLM DATA=work.tv_commercials_cca_scores;
 RUN;
 QUIT;
 
+ODS EXCLUDE NONE;
 ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
@@ -134,6 +144,10 @@ TITLE2 "Cross-modal discourse ANOVAs: canonical variate scores V1-W7 by decade";
 
 ODS OUTPUT ModelANOVA=anova_crossmodal_model;
 ODS OUTPUT OverallANOVA=anova_crossmodal_overall;
+ODS OUTPUT LSMeans=lsmeans_crossmodal;
+ODS OUTPUT Diffs=diffs_crossmodal;
+
+ODS EXCLUDE ALL;
 
 PROC GLM DATA=work.tv_commercials_cca_scores;
     CLASS decade;
@@ -149,6 +163,7 @@ PROC GLM DATA=work.tv_commercials_cca_scores;
 RUN;
 QUIT;
 
+ODS EXCLUDE NONE;
 ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
@@ -182,7 +197,11 @@ RUN;
 TITLE2 "Derived cross-modal composite ANOVAs: cross1-cross7 by decade";
 
 ODS OUTPUT ModelANOVA=anova_crossmodal_composite_model;
-ODS OUTPUT OverallANOVA=anova_xmod_comp_overall;
+ODS OUTPUT OverallANOVA=anova_crossmodal_composite_overall;
+ODS OUTPUT LSMeans=lsmeans_crossmodal_composite;
+ODS OUTPUT Diffs=diffs_crossmodal_composite;
+
+ODS EXCLUDE ALL;
 
 PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
@@ -192,6 +211,7 @@ PROC GLM DATA=work.tv_commercials_phase5_scores;
 RUN;
 QUIT;
 
+ODS EXCLUDE NONE;
 ODS OUTPUT CLOSE;
 
 /* ------------------------------------------------------------------ */
@@ -205,6 +225,8 @@ PROC EXPORT DATA=work.tv_commercials_phase5_scores
             DBMS=TAB
             REPLACE;
 RUN;
+
+/* Model ANOVA tables */
 
 PROC EXPORT DATA=work.anova_verbal_model
             OUTFILE="&whereisit/&myfolder/anova_verbal_model.tsv"
@@ -230,7 +252,7 @@ PROC EXPORT DATA=work.anova_crossmodal_composite_model
             REPLACE;
 RUN;
 
-/* Optional: export overall ANOVA tables too */
+/* Overall ANOVA tables */
 
 PROC EXPORT DATA=work.anova_verbal_overall
             OUTFILE="&whereisit/&myfolder/anova_verbal_overall.tsv"
@@ -250,8 +272,60 @@ PROC EXPORT DATA=work.anova_crossmodal_overall
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_xmod_comp_overall
+PROC EXPORT DATA=work.anova_crossmodal_composite_overall
             OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_overall.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+/* LSMeans tables */
+
+PROC EXPORT DATA=work.lsmeans_verbal
+            OUTFILE="&whereisit/&myfolder/lsmeans_verbal.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.lsmeans_visual
+            OUTFILE="&whereisit/&myfolder/lsmeans_visual.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.lsmeans_crossmodal
+            OUTFILE="&whereisit/&myfolder/lsmeans_crossmodal.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.lsmeans_crossmodal_composite
+            OUTFILE="&whereisit/&myfolder/lsmeans_crossmodal_composite.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+/* Tukey pairwise-comparison tables */
+
+PROC EXPORT DATA=work.diffs_verbal
+            OUTFILE="&whereisit/&myfolder/diffs_verbal.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.diffs_visual
+            OUTFILE="&whereisit/&myfolder/diffs_visual.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.diffs_crossmodal
+            OUTFILE="&whereisit/&myfolder/diffs_crossmodal.tsv"
+            DBMS=TAB
+            REPLACE;
+RUN;
+
+PROC EXPORT DATA=work.diffs_crossmodal_composite
+            OUTFILE="&whereisit/&myfolder/diffs_crossmodal_composite.tsv"
             DBMS=TAB
             REPLACE;
 RUN;

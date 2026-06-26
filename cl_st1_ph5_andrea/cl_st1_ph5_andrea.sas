@@ -20,7 +20,18 @@
 
    Only canonical dimensions 1-7 are used for cross-modal ANOVAs,
    because only the first seven canonical dimensions are statistically significant.
+
+   This revised version keeps the output small:
+   - no post-hoc pairwise LSMEANS;
+   - no Levene tests;
+   - no graphics;
+   - ANOVA tables are captured with ODS OUTPUT and exported as TSV;
+   - HTML output is a small summary of the saved ANOVA tables only.
 */
+
+/* ------------------------------------------------------------------ */
+/* 1. PROJECT SETTINGS                                                 */
+/* ------------------------------------------------------------------ */
 
 /* Match this to the actual folder in SAS OnDemand */
 %LET project = cl_st1_ph5_andrea_ANOVA;
@@ -33,34 +44,48 @@
 /* Input file exported from Phase 4 CCA */
 %LET inputfile = tv_commercials_cca_scores.tsv;
 
-/* Importing the Phase 4 CCA score data set */
+/* Main HTML output */
+%LET resultsfile = tv_commercials_phase5_anova-results.html;
+
+/* ZIP output file */
+%LET addcntzip = /home/&sasusername/zip/output_&project..zip;
+
+/* General ODS settings */
+ODS GRAPHICS OFF;
+ODS NOPROCTITLE;
+
+
+/* ------------------------------------------------------------------ */
+/* 2. IMPORT PHASE 4 CCA SCORE DATA                                    */
+/* ------------------------------------------------------------------ */
+
 PROC IMPORT DATAFILE="&whereisit/&myfolder/&inputfile"
-            OUT=tv_commercials_cca_scores
+            OUT=work.tv_commercials_cca_scores
             DBMS=TAB
             REPLACE;
    GETNAMES=YES;
    GUESSINGROWS=MAX;
 RUN;
 
-/* Inspect imported data */
+
+/* ------------------------------------------------------------------ */
+/* 3. BASIC DATA CHECKS                                                */
+/* ------------------------------------------------------------------ */
+
+/*
+   These checks are intentionally simple and should not create a huge output.
+   If you want an even smaller run, you may comment out this whole section.
+*/
+
+TITLE "Phase 5 ANOVA input checks";
+
 PROC CONTENTS DATA=work.tv_commercials_cca_scores;
 RUN;
 
-/* Check decade distribution */
 PROC FREQ DATA=work.tv_commercials_cca_scores;
     TABLES decade / MISSING;
 RUN;
 
-/* Descriptive statistics for verbal, visual, and canonical scores */
-PROC MEANS DATA=work.tv_commercials_cca_scores N NMISS MEAN STD MIN MAX;
-    CLASS decade;
-    VAR ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8
-        vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8
-        V1 V2 V3 V4 V5 V6 V7
-        W1 W2 W3 W4 W5 W6 W7;
-RUN;
-
-/* Overall descriptive statistics without decade grouping */
 PROC MEANS DATA=work.tv_commercials_cca_scores N NMISS MEAN STD MIN MAX;
     VAR ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8
         vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8
@@ -68,56 +93,79 @@ PROC MEANS DATA=work.tv_commercials_cca_scores N NMISS MEAN STD MIN MAX;
         W1 W2 W3 W4 W5 W6 W7;
 RUN;
 
-/* Main HTML output */
-%LET resultsfile = tv_commercials_phase5_anova-results.html;
 
-ODS HTML FILE="&whereisit/&myfolder/&resultsfile"
-         STYLE=HTMLBlue;
+/* ------------------------------------------------------------------ */
+/* 4. CREATE OPTIONAL CROSS-MODAL COMPOSITE SCORES                     */
+/* ------------------------------------------------------------------ */
+
+/*
+   One composite score is created per retained canonical dimension.
+   Each is the mean of the verbal-side and visual-side canonical variate scores.
+*/
+
+DATA work.tv_commercials_phase5_scores;
+    SET work.tv_commercials_cca_scores;
+
+    cross1 = MEAN(V1, W1);
+    cross2 = MEAN(V2, W2);
+    cross3 = MEAN(V3, W3);
+    cross4 = MEAN(V4, W4);
+    cross5 = MEAN(V5, W5);
+    cross6 = MEAN(V6, W6);
+    cross7 = MEAN(V7, W7);
+RUN;
+
+
+/* ------------------------------------------------------------------ */
+/* 5. VERBAL DISCOURSE ANOVAS                                          */
+/* ------------------------------------------------------------------ */
 
 TITLE "Phase 5 ANOVAs for &project";
-ODS NOPROCTITLE;
-ODS GRAPHICS / IMAGEMAP=ON;
-
-/* ------------------------------------------------------------------ */
-/* 1. Verbal discourse ANOVAs                                          */
-/* ------------------------------------------------------------------ */
-
 TITLE2 "Verbal discourse ANOVAs: ver1-ver8 by decade";
 
-ODS OUTPUT ModelANOVA=anova_verbal_model;
-ODS OUTPUT OverallANOVA=anova_verbal_overall;
+/*
+   ODS EXCLUDE ALL suppresses printed GLM output.
+   ODS OUTPUT still captures the required ANOVA datasets.
+*/
 
-PROC GLM DATA=work.tv_commercials_cca_scores;
+ODS EXCLUDE ALL;
+
+ODS OUTPUT ModelANOVA=work.anova_verbal_model;
+ODS OUTPUT OverallANOVA=work.anova_verbal_overall;
+
+PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
     MODEL ver1 ver2 ver3 ver4 ver5 ver6 ver7 ver8 = decade;
-    MEANS decade / HOVTEST=LEVENE;
-    LSMEANS decade / PDIFF ADJUST=TUKEY;
 RUN;
 QUIT;
 
 ODS OUTPUT CLOSE;
+ODS EXCLUDE NONE;
+
 
 /* ------------------------------------------------------------------ */
-/* 2. Visual discourse ANOVAs                                          */
+/* 6. VISUAL DISCOURSE ANOVAS                                          */
 /* ------------------------------------------------------------------ */
 
 TITLE2 "Visual discourse ANOVAs: vis1-vis8 by decade";
 
-ODS OUTPUT ModelANOVA=anova_visual_model;
-ODS OUTPUT OverallANOVA=anova_visual_overall;
+ODS EXCLUDE ALL;
 
-PROC GLM DATA=work.tv_commercials_cca_scores;
+ODS OUTPUT ModelANOVA=work.anova_visual_model;
+ODS OUTPUT OverallANOVA=work.anova_visual_overall;
+
+PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
     MODEL vis1 vis2 vis3 vis4 vis5 vis6 vis7 vis8 = decade;
-    MEANS decade / HOVTEST=LEVENE;
-    LSMEANS decade / PDIFF ADJUST=TUKEY;
 RUN;
 QUIT;
 
 ODS OUTPUT CLOSE;
+ODS EXCLUDE NONE;
+
 
 /* ------------------------------------------------------------------ */
-/* 3. Cross-modal discourse ANOVAs                                     */
+/* 7. CROSS-MODAL DISCOURSE ANOVAS                                     */
 /* ------------------------------------------------------------------ */
 
 /*
@@ -132,10 +180,12 @@ ODS OUTPUT CLOSE;
 
 TITLE2 "Cross-modal discourse ANOVAs: canonical variate scores V1-W7 by decade";
 
-ODS OUTPUT ModelANOVA=anova_crossmodal_model;
-ODS OUTPUT OverallANOVA=anova_crossmodal_overall;
+ODS EXCLUDE ALL;
 
-PROC GLM DATA=work.tv_commercials_cca_scores;
+ODS OUTPUT ModelANOVA=work.anova_crossmodal_model;
+ODS OUTPUT OverallANOVA=work.anova_crossmodal_overall;
+
+PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
     MODEL V1 W1
           V2 W2
@@ -144,67 +194,47 @@ PROC GLM DATA=work.tv_commercials_cca_scores;
           V5 W5
           V6 W6
           V7 W7 = decade;
-    MEANS decade / HOVTEST=LEVENE;
-    LSMEANS decade / PDIFF ADJUST=TUKEY;
 RUN;
 QUIT;
 
 ODS OUTPUT CLOSE;
+ODS EXCLUDE NONE;
+
 
 /* ------------------------------------------------------------------ */
-/* 4. Optional composite cross-modal scores                            */
+/* 8. OPTIONAL COMPOSITE CROSS-MODAL ANOVAS                            */
 /* ------------------------------------------------------------------ */
-
-/*
-   This section creates one composite score per canonical dimension by
-   averaging the verbal-side and visual-side canonical variate scores.
-
-   These variables are useful if you want one ANOVA per cross-modal
-   dimension rather than separate Vn and Wn tests.
-
-   Because Vn and Wn are already canonical variate scores from the same
-   canonical pair, the composite score should be interpreted as a derived
-   cross-modal index.
-*/
-
-DATA tv_commercials_phase5_scores;
-    SET work.tv_commercials_cca_scores;
-
-    cross1 = MEAN(V1, W1);
-    cross2 = MEAN(V2, W2);
-    cross3 = MEAN(V3, W3);
-    cross4 = MEAN(V4, W4);
-    cross5 = MEAN(V5, W5);
-    cross6 = MEAN(V6, W6);
-    cross7 = MEAN(V7, W7);
-RUN;
 
 TITLE2 "Derived cross-modal composite ANOVAs: cross1-cross7 by decade";
 
-ODS OUTPUT ModelANOVA=anova_crossmodal_composite_model;
-ODS OUTPUT OverallANOVA=anova_xmod_comp_overall;
+ODS EXCLUDE ALL;
+
+ODS OUTPUT ModelANOVA=work.anova_crossmodal_composite_model;
+ODS OUTPUT OverallANOVA=work.anova_crossmodal_composite_overall;
 
 PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
     MODEL cross1 cross2 cross3 cross4 cross5 cross6 cross7 = decade;
-    MEANS decade / HOVTEST=LEVENE;
-    LSMEANS decade / PDIFF ADJUST=TUKEY;
 RUN;
 QUIT;
 
 ODS OUTPUT CLOSE;
+ODS EXCLUDE NONE;
+
 
 /* ------------------------------------------------------------------ */
-/* 5. Export analysis data and ANOVA result tables                     */
+/* 9. EXPORT ANALYSIS DATA AND ANOVA TABLES                            */
 /* ------------------------------------------------------------------ */
 
-TITLE2 "Exported Phase 5 data and ANOVA tables";
+TITLE2 "Export Phase 5 data and ANOVA tables";
 
 PROC EXPORT DATA=work.tv_commercials_phase5_scores
             OUTFILE="&whereisit/&myfolder/tv_commercials_phase5_scores.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
+
+/* Main model ANOVA tables */
 
 PROC EXPORT DATA=work.anova_verbal_model
             OUTFILE="&whereisit/&myfolder/anova_verbal_model.tsv"
@@ -230,7 +260,7 @@ PROC EXPORT DATA=work.anova_crossmodal_composite_model
             REPLACE;
 RUN;
 
-/* Optional: export overall ANOVA tables too */
+/* Overall ANOVA tables */
 
 PROC EXPORT DATA=work.anova_verbal_overall
             OUTFILE="&whereisit/&myfolder/anova_verbal_overall.tsv"
@@ -250,19 +280,72 @@ PROC EXPORT DATA=work.anova_crossmodal_overall
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_xmod_comp_overall
+PROC EXPORT DATA=work.anova_crossmodal_composite_overall
             OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_overall.tsv"
             DBMS=TAB
             REPLACE;
 RUN;
 
+
+/* ------------------------------------------------------------------ */
+/* 10. SMALL HTML SUMMARY                                              */
+/* ------------------------------------------------------------------ */
+
+/*
+   This HTML file is intentionally small.
+   It prints only the already-captured ANOVA tables.
+*/
+
+ODS HTML FILE="&whereisit/&myfolder/&resultsfile"
+         STYLE=HTMLBlue;
+
+TITLE "Phase 5 ANOVA summary tables for &project";
+
+TITLE2 "Verbal discourse model ANOVA";
+PROC PRINT DATA=work.anova_verbal_model NOOBS;
+RUN;
+
+TITLE2 "Visual discourse model ANOVA";
+PROC PRINT DATA=work.anova_visual_model NOOBS;
+RUN;
+
+TITLE2 "Cross-modal canonical variate model ANOVA";
+PROC PRINT DATA=work.anova_crossmodal_model NOOBS;
+RUN;
+
+TITLE2 "Cross-modal composite model ANOVA";
+PROC PRINT DATA=work.anova_crossmodal_composite_model NOOBS;
+RUN;
+
+TITLE2 "Verbal discourse overall ANOVA";
+PROC PRINT DATA=work.anova_verbal_overall NOOBS;
+RUN;
+
+TITLE2 "Visual discourse overall ANOVA";
+PROC PRINT DATA=work.anova_visual_overall NOOBS;
+RUN;
+
+TITLE2 "Cross-modal canonical variate overall ANOVA";
+PROC PRINT DATA=work.anova_crossmodal_overall NOOBS;
+RUN;
+
+TITLE2 "Cross-modal composite overall ANOVA";
+PROC PRINT DATA=work.anova_crossmodal_composite_overall NOOBS;
+RUN;
+
 ODS HTML CLOSE;
 
+
 /* ------------------------------------------------------------------ */
-/* 6. ZIP OUTPUT FILES                                                 */
+/* 11. ZIP OUTPUT FILES                                                */
 /* ------------------------------------------------------------------ */
 
-%LET addcntzip = /home/&sasusername/zip/output_&project..zip;
+/*
+   This zips the contents of the SAS project folder.
+
+   The cleanup section at the end is commented out by default so that
+   the HTML and TSV files remain visible in the SAS OnDemand folder.
+*/
 
 FILENAME temp "&addcntzip";
 
@@ -284,6 +367,7 @@ RUN;
 
 DATA filelist;
     MODIFY filelist;
+
     rc1 = FILENAME('tmp', CATX('/', root, dname, filename));
     rc2 = DOPEN('tmp');
     dir = 1 & rc2;
@@ -344,16 +428,22 @@ DATA _NULL_;
     PUT _N_ @12 (rc:) (=);
 RUN;
 
+
 /* ------------------------------------------------------------------ */
-/* 7. Optional cleanup                                                 */
+/* 12. OPTIONAL CLEANUP                                                */
 /* ------------------------------------------------------------------ */
 
 /*
-   This cleanup follows the Phase 4 template.
-   Comment out this section if you want the HTML and TSV files to remain
-   visible in the SAS OnDemand folder after zipping.
+   This cleanup is intentionally commented out.
+
+   Leave it commented if you want the HTML and TSV files to remain
+   visible in your SAS OnDemand folder after zipping.
+
+   Uncomment only if you want to delete generated .png, .html, .tsv,
+   and .csv files from the project folder after creating the ZIP.
 */
 
+/*
 %LET path = &whereisit/&myfolder;
 
 FILENAME _folder_ "%BQUOTE(&path.)";
@@ -387,5 +477,6 @@ DATA _NULL_;
     rc = FDELETE(fname);
     rc = FILENAME(fname);
 RUN;
+*/
 
 /* END OF PROGRAMME */

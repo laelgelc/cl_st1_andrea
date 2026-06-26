@@ -210,7 +210,7 @@ TITLE2 "Derived cross-modal composite ANOVAs: cross1-cross7 by decade";
 ODS EXCLUDE ALL;
 
 ODS OUTPUT ModelANOVA=work.anova_crossmodal_composite_model;
-ODS OUTPUT OverallANOVA=work.anova_crossmodal_composite_overall;
+ODS OUTPUT OverallANOVA=work.anova_xmod_comp_overall;
 
 PROC GLM DATA=work.tv_commercials_phase5_scores;
     CLASS decade;
@@ -280,7 +280,7 @@ PROC EXPORT DATA=work.anova_crossmodal_overall
             REPLACE;
 RUN;
 
-PROC EXPORT DATA=work.anova_crossmodal_composite_overall
+PROC EXPORT DATA=work.anova_xmod_comp_overall
             OUTFILE="&whereisit/&myfolder/anova_crossmodal_composite_overall.tsv"
             DBMS=TAB
             REPLACE;
@@ -330,7 +330,7 @@ PROC PRINT DATA=work.anova_crossmodal_overall NOOBS;
 RUN;
 
 TITLE2 "Cross-modal composite overall ANOVA";
-PROC PRINT DATA=work.anova_crossmodal_composite_overall NOOBS;
+PROC PRINT DATA=work.anova_xmod_comp_overall NOOBS;
 RUN;
 
 ODS HTML CLOSE;

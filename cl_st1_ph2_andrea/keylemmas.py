@@ -33,8 +33,22 @@ import re
 from collections import defaultdict
 
 
-# POS tags to keep: nouns, proper nouns, main verbs, adjectives.
-VALID_TAG_PREFIXES = ("NN", "NP", "VB", "JJ")
+# POS tags to keep
+VALID_TAG_PREFIXES = (
+    "NN",   # Nouns
+    "NP",   # Proper nouns
+    "VB",   # Verbs
+    "JJ",   # Adjectives
+#    "UH",   # Interjections
+#    "PP",   # Personal pronouns and Possessive pronouns
+#    "RB",   # Adverbs
+#    "MD",   # Modals
+#    "WP",   # Wh-pronouns and Possessive wh-pronouns
+#    "WRB",  # Wh-adverbs
+#    "WDT",  # Wh-determiners
+#    "CD",   # Coordinating conjunctions
+#    "IN",   # Prepositions
+)
 
 # Lemmas to exclude after lowercasing.
 STOPWORDS = {

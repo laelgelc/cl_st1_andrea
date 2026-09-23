@@ -67,7 +67,7 @@ def load_keyword_index(index_file: Path) -> list[tuple[str, str]]:
 
 
 def main():
-    OUT_DIR.mkdir(exist_ok=True)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     items = load_keyword_index(INDEX_FILE)
 
